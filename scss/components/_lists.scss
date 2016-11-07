@@ -4,7 +4,6 @@
 	list-style: none;
 	> li {
 		font-family: $header-font-family;
-		padding: 15px 25px;
 		min-height: 20px;
 		border-bottom: 1px solid #eee;
 		a {
@@ -12,6 +11,13 @@
 			&:hover {
 				text-decoration: underline;
 			}
+		}
+		.list-wrap {
+			padding: 15px 25px;
+		}
+		.list-panel {
+			padding: 15px 25px;
+			background-color: rgba($dark-gray, $B-dividers);
 		}
 		.list-item-name {
 			width: 30%;

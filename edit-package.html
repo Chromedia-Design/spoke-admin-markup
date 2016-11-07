@@ -85,7 +85,7 @@
 						<div class="page-lead">
 							<nav aria-label="You are here:" role="navigation">
 							  	<ul class="breadcrumbs">
-							    	<li><a href="#">Packages</a></li>
+							    	<li><a href="#">Treatment Packages</a></li>
 							    	<li>Molar Root Canal</li>
 							  	</ul>
 							</nav>
@@ -96,12 +96,12 @@
 						<div class="callout primary">
 							<form class="form-single-line">
 							  	<div class="row">
-							    	<div class="medium-8 columns">
+							    	<div class="medium-9 columns">
 						      			<label>New Category Name
 						        			<input type="text" placeholder="">
 							      		</label>
 						    		</div>
-						    		<div class="medium-4 columns">
+						    		<div class="medium-3 columns">
 							      		<button type="submit" class="button expanded">+ Add Category</button>
 						    		</div>
 							  	</div>
@@ -111,27 +111,31 @@
 						<div class="panel">
 							<ul class="well-list">
 								<li>
-									<div class="list-item-name">
-										<a href="#">Molar Root Canal</a>
+									<div class="list-wrap">
+										<div class="list-item-name">
+											<a data-toggle="category1"><i class="fa fa-caret-down fa-fw"></i> Surgery</a>
+										</div>
+										<div class="list-detail">
+											<span>3 Active, All Required</span>
+										</div>
+										<div class="pull-right">
+											<a href="#" class="action-link"><i class="fa fa-edit"></i></a>
+											<a href="#" class="alert action-link"><i class="fa fa-remove"></i></a>
+										</div>
 									</div>
-									<div class="list-detail">
-										<span>5 Categories</span>
-									</div>
-									<div class="pull-right">
-										<a href="#" class="action-link"><i class="fa fa-edit"></i></a>
-										<a href="#" class="alert action-link"><i class="fa fa-remove"></i></a>
-									</div>
-								</li>
-								<li>
-									<div class="list-item-name">
-										<a href="#">Front Teeth Root Canal</a>
-									</div>
-									<div class="list-detail">
-										<span>4 Categories</span>
-									</div>
-									<div class="pull-right">
-										<a href="#" class="action-link"><i class="fa fa-edit"></i></a>
-										<a href="#" class="alert action-link"><i class="fa fa-remove"></i></a>
+									<div id="category1" class="list-panel" data-toggler data-animate="fade-in fade-out">
+										<form class="form-single-line">
+							  	<div class="row">
+							    	<div class="medium-9 columns">
+						      			<label>New Category Name
+						        			<input type="text" placeholder="">
+							      		</label>
+						    		</div>
+						    		<div class="medium-3 columns">
+							      		<button type="submit" class="button expanded">+ Add Category</button>
+						    		</div>
+							  	</div>
+							</form>
 									</div>
 								</li>
 							</ul>
@@ -167,7 +171,10 @@
             }).resize();
         });
 
-        
+        $(".list-item-name a").click(function () {
+        	$(".list-item-name a i").hasClass("fa-caret-down").removeClass("fa-caret-down").addClass("fa-caret-up");
+        	$(".list-item-name a i").hasClass("fa-caret-up").removeClass("fa-caret-up").addClass("fa-caret-down");
+        });
 
     </script>
 
