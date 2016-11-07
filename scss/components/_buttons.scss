@@ -1,4 +1,17 @@
 .button {
 	border-radius: 2px;
 	font-weight: 600;
+	&.link {
+		background: transparent;
+		border: none;
+		color: $text-black;
+		font-weight: 400;
+	}
+}
+
+.action-link {
+	margin-right: 1rem;
+	&.alert {
+		color: $alert-color;
+	}
 }

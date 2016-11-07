@@ -1,0 +1,18 @@
+.panel {
+	border: 1px solid rgba($black, $B-dividers);
+	.panel-heading {
+		padding: 30px 15px;
+		.input-group, .button {
+			margin-bottom: 0;
+		}
+	}
+	.panel-body {
+		display: none;
+		padding: 15px;
+	}
+	&.collapsible {
+		.panel-body {
+			background-color: rgba($black, $B-dividers);
+		}
+	}
+}

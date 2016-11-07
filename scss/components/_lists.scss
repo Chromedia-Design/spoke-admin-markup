@@ -1,0 +1,34 @@
+.well-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	> li {
+		font-family: $header-font-family;
+		padding: 15px 25px;
+		min-height: 20px;
+		border-bottom: 1px solid #eee;
+		a {
+			color: $text-black;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		.list-item-name {
+			width: 30%;
+			position: relative;
+			float: left;
+		}
+		.list-detail {
+			display: inline-block;
+			color: rgba($black, $B-subtext);
+		}
+		&:last-child {
+			border-bottom: none;
+		}
+		&:after {
+			content: " ";
+    		display: table;
+    		clear: both;
+		}
+	}
+}

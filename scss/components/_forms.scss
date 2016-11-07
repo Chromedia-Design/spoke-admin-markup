@@ -15,7 +15,37 @@
 textarea {
 	box-shadow: none;
 	border-radius: 2px;
+	border: 1px solid rgba($black, $B-dividers);
 	&:focus {
 		box-shadow: none;
+		border: 1px solid $text-black;
+	}
+}
+
+.button-append-submit {
+	margin-top: 25px;
+}
+
+.form-single-line {
+	[type='text'],
+	[type='password'],
+	[type='date'],
+	[type='datetime'],
+	[type='datetime-local'],
+	[type='month'],
+	[type='week'],
+	[type='email'],
+	[type='number'],
+	[type='search'],
+	[type='tel'],
+	[type='time'],
+	[type='url'],
+	[type='color'],
+	textarea {
+		margin-bottom: 0;
+	}
+	[type='submit'] {
+		margin-top: 25px;
+		margin-bottom: 0;
 	}
 }
