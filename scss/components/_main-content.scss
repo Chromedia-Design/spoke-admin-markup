@@ -1,0 +1,27 @@
+.content {
+	.top-bar {
+		// Override the blue caret after the dropdown link in the topbar
+		.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+			border-color: rgba($black, $B-text) transparent transparent;
+		}
+		.menu {
+			> li {
+				a {
+					position: relative;
+					color: rgba($black, $B-text);
+					.badge {
+						position: absolute;
+						top: 0;
+						right: 12px;
+						min-height: 2.1em;
+						line-height: 1.5em;
+					}
+				}
+			}
+		}
+	}
+}
+
+.page-lead {
+	margin: 2rem 0;
+}

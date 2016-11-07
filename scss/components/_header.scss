@@ -1,0 +1,53 @@
+header {
+	padding: 0.5rem;
+	background-color: rgba($white, $B-text);
+	a.logo {
+		display: block;
+		padding: 0.5rem 1rem;
+		img {
+			height: 1.5rem;
+			width: auto;
+		}
+	}
+}
+
+.site-nav {
+	background-color: $dark-gray;
+	// Override the blue caret that appears after the dropdown side menu
+	.is-accordion-submenu-parent > a::after {
+		border-color: $white transparent transparent;
+	}
+	> ul.menu {
+		padding: 2rem 0;
+		> li {
+			a {
+				font-family: $header-font-family;
+				text-transform: uppercase;
+				color: $text-white;
+				font-weight: 600;
+				border-bottom: 1px solid rgba($white, $W-dividers);
+				font-size: 0.875rem;
+			}
+			&.is-accordion-submenu-parent {
+				border-bottom: 1px solid rgba($white, $W-dividers);
+				padding-bottom: 0.5rem;
+				a {
+					border-bottom: none;
+				}
+			}
+			&.is-active {
+				a {
+					background-color: rgba($white, $B-text);
+					color: rgba($black, $B-text);
+				}
+			}
+			ul.nested {
+				> li {
+					a {
+						font-size: 0.75rem;
+					}
+				}
+			}
+		}
+	}
+}
