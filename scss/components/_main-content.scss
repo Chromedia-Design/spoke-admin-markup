@@ -8,11 +8,13 @@
 		vertical-align: middle;
 		.login-wrap {
 			margin: 0 auto;
-			padding: 2rem 2rem 1rem;
+			padding: 3rem 2rem 1rem;
 			width: 30%;
+			background: $white;
 			border: 1px solid rgba($black, $B-dividers);
+			border-radius: 2px;
 			form {
-				margin-top: 2rem;
+				margin-top: 3rem;
 			}
 		}
 	}

@@ -53,7 +53,7 @@ $foundation-palette: (
   secondary: #777,
   success: #3adb76,
   warning: #ffae00,
-  alert: #ec5840,
+  alert: #CE1518,
 );
 
 $light-gray: #B3C0C6;
@@ -62,6 +62,7 @@ $dark-gray: #5A7178;
 
 $black: #4b5f65;
 $white: #fefefe;
+$off-white: #fbfbfb;
 
 // * Opacity change/add per project requirements | these defaults help with many elements on the project
 // * Text Opacity refers to the opacity of Black or White text in the project.
@@ -91,7 +92,7 @@ $W-dividers:        0.12 !default;
 $W-disabled:        0.30 !default;
 $W-icons:           1.00 !default;
 
-$body-background: $white;
+$body-background: $off-white;
 $body-font-color: $text-black;
 $body-font-family: Rubik,'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $header-font-family: Poppins, 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
