@@ -1,3 +1,23 @@
+.login {
+	height: 100%;
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+	.login-inner {
+		display: table-cell;
+		vertical-align: middle;
+		.login-wrap {
+			margin: 0 auto;
+			padding: 2rem 2rem 1rem;
+			width: 30%;
+			border: 1px solid rgba($black, $B-dividers);
+			form {
+				margin-top: 2rem;
+			}
+		}
+	}
+}
+
 .content {
 	.top-bar {
 		// Override the blue caret after the dropdown link in the topbar
