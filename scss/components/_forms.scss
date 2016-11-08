@@ -20,6 +20,13 @@ textarea {
 		box-shadow: none;
 		border: 1px solid $text-black;
 	}
+	&.large-input {
+		font-size: 1.75rem;
+		font-weight: 600;
+		font-family: $header-font-family;
+		margin: 0;
+		color: rgba($black, $B-text);
+	}
 }
 
 .button-append-submit {
@@ -73,7 +80,7 @@ textarea {
 	.dropdown-pane {
 		.subheader {
 			color: rgba($black, $B-hinttext);
-			margin: 15px;
+			margin: 7px 15px 15px;
 			font-size: 0.75rem;
 			font-weight: 600;
 			text-transform: uppercase;
