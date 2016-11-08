@@ -11,7 +11,40 @@
 
 .action-link {
 	margin-right: 1rem;
+	&.dropdown {
+		padding: 5px 6px;
+		background-color: rgba($black, $B-dividers);
+		border: 1px solid rgba($black, $B-dividers);
+		border-radius: 2px;
+		.fa-caret-down {
+			color: rgba($black, $B-hinttext);
+		}
+		&.hover {
+			background: transparent;
+			border: 1px solid rgba($black, $B-dividers);
+		}
+	}
+	&.bordered {
+		padding: 3px 9px;
+		color: $white;
+		background-color: rgba($primary-color, $B-text);
+		border: 1px solid rgba($primary-color, $B-text);
+		border-radius: 4px;
+		&:hover {
+			text-decoration: none;
+		}
+		&.disabled {
+			cursor: default;
+			color: rgba($primary-color, $B-text);
+			background-color: transparent;
+			border: 1px solid rgba($primary-color, $B-text);
+		}
+	}
 	&.alert {
 		color: $alert-color;
+	}
+	&.small {
+		text-transform: uppercase;
+		font-size: 0.75rem;
 	}
 }
