@@ -64,3 +64,27 @@ textarea {
 .help-text {
 	font-style: normal;
 }
+
+.dropdown-pane {
+	width: 435px;
+}
+
+.list-wrap {
+	.dropdown-pane {
+		.subheader {
+			color: rgba($black, $B-hinttext);
+			margin: 15px;
+			font-size: 0.75rem;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+		label {
+			select {
+				margin: 0 5px;
+				border-radius: 2px;
+				width: auto;
+				display: inline-block;
+			}
+		}
+	}
+}

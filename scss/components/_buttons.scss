@@ -33,11 +33,17 @@
 		&:hover {
 			text-decoration: none;
 		}
-		&.disabled {
+		&.active {
 			cursor: default;
 			color: rgba($primary-color, $B-text);
 			background-color: transparent;
 			border: 1px solid rgba($primary-color, $B-text);
+		}
+		&.disabled {
+			cursor: default;
+			color: rgba($black, $B-hinttext);
+			background-color: transparent;
+			border: 1px solid rgba($black, $B-hinttext);
 		}
 	}
 	&.alert {
@@ -45,6 +51,6 @@
 	}
 	&.small {
 		text-transform: uppercase;
-		font-size: 0.75rem;
+		font-size: 0.5625rem;
 	}
 }
