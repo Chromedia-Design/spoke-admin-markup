@@ -9,7 +9,8 @@
 			transition: all 0.5s ease;
 			border: 1px solid #F2F5F6; 
 			padding: 2rem;
-			margin-bottom: 2rem;
+			padding-bottom:1rem;
+			margin-bottom: 2em;
 			background-color: #fff;
 			border-radius: 2px;
 		.logo{
@@ -21,6 +22,7 @@
 		.facility, .admin{
 			.name{
 				margin-bottom: .5rem;
+				color: #5A7178;
 			}
 			.address{
 				margin-bottom: 0px;
