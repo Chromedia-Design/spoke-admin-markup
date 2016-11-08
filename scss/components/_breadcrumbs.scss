@@ -1,0 +1,18 @@
+.breadcrumbs {
+	a {
+		color: rgba($black, $B-hinttext);
+	}
+	li {
+		font-family: $header-font-family;
+		font-size: 1rem;
+		font-weight: 600;
+		text-transform: none;
+		color: $text-black;
+		&:not(:last-child) {
+			&:after {
+				content: ">";
+				color: rgba($black, $B-hinttext);
+			}
+		}
+	}
+}
