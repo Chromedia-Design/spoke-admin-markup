@@ -1,17 +1,52 @@
 .search-result {
 	.search-item{
-		border: 1px solid #323232; 
+		border: 1px solid #F2F5F6; 
 		padding: 2rem;
 		margin-bottom: 2rem;
-		div{
-			display: inline-block;
-		}
+		background-color: #fff;
+		border-radius: 2px;
 		.logo{
-			border-radius:100%;
-			overflow: hidden;
+			img {
+				width: 100%;
+				margin-right: 4rem;
+				// border-radius: 100%;
+			}
 		}
-		.facility{}
+		.facility, .admin{
+			.name{
+				margin-bottom: .5rem;
+			}
+			.address{
+				margin-bottom: 0px;
+			}
+			.contact, .address{
+				font-size: .9rem;
+				color: #008EB2;
+				i {
+					margin-right: .5rem;
+				}
+			}
+	
+		}
 		.admin{}
-		.package-count{}
+		.package-count{
+			text-align: center;
+			div {
+				background-color: #72CC99;
+				border-radius: 100%;
+				width: 4.25rem;
+				height: 4.35rem;
+				margin-left: auto;
+				margin-right: auto;
+				padding:1rem;
+				font-size: 1.5rem;
+				color: #fff;
+				text-align: center;
+				margin-bottom: .5rem;
+			}
+			p {
+				font-size: .9rem;
+			}
+		}
 	}
-}
+} 
