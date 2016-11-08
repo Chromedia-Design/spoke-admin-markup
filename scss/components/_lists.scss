@@ -2,10 +2,29 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	.well-list {
+		> li {
+			border-bottom: 1px solid rgba($white, $W-hinttext);
+			.list-wrap {
+				padding-left: 60px;
+				background: transparent;
+			}
+			&.list-core {
+				.list-wrap {
+					background-color: rgba($primary-color, $B-dividers);
+				}
+			}
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+	}
 	> li {
 		font-family: $header-font-family;
 		min-height: 20px;
-		border-bottom: 1px solid #eee;
+		border-bottom: 1px solid rgba($black, $B-dividers);
+		position: relative;
+		overflow: hidden;
 		a {
 			color: $text-black;
 			&:hover {
@@ -13,11 +32,16 @@
 			}
 		}
 		.list-wrap {
+			background-color: $white;
 			padding: 15px 25px;
+			z-index: 1;
 		}
 		.list-panel {
-			padding: 15px 25px;
 			background-color: rgba($dark-gray, $B-dividers);
+			z-index: 2;
+			.form-single-line {
+				padding: 30px 30px 15px;
+			}
 		}
 		.list-item-name {
 			width: 30%;
