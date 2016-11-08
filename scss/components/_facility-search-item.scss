@@ -1,15 +1,21 @@
+.search-result-head{
+	margin-top: 4rem;
+}
+
 .search-result {
-	.search-item{
-		border: 1px solid #F2F5F6; 
-		padding: 2rem;
-		margin-bottom: 2rem;
-		background-color: #fff;
-		border-radius: 2px;
+	a{
+		.search-item{
+			box-shadow: 1px 1px 2px #F2F5F6;
+			transition: all 0.5s ease;
+			border: 1px solid #F2F5F6; 
+			padding: 2rem;
+			margin-bottom: 2rem;
+			background-color: #fff;
+			border-radius: 2px;
 		.logo{
 			img {
 				width: 100%;
 				margin-right: 4rem;
-				// border-radius: 100%;
 			}
 		}
 		.facility, .admin{
@@ -26,7 +32,6 @@
 					margin-right: .5rem;
 				}
 			}
-	
 		}
 		.admin{}
 		.package-count{
@@ -49,4 +54,13 @@
 			}
 		}
 	}
-} 
+
+		&:hover{
+			.search-item{
+				box-shadow: 5px 5px 10px #E1E1E1;
+				transition: all 0.5s ease;
+			}
+		}
+	}
+}
+		
