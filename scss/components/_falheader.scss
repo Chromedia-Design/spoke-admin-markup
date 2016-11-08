@@ -29,6 +29,10 @@
 		input {
 			background-color: transparent;
 		}
+
+		input:focus {
+			border: 0px solid transparent;
+		}
 	}
 	
 	.facility-logo {
@@ -41,7 +45,9 @@
 
 .facility-menus {
 	#clinicprofile {
-		display: inline-block;
+		// display: inline-block;
+		transition: 0.1s;
+		background-color: $white;
 	}
 
 	ul.tab {
