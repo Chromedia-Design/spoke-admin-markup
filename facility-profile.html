@@ -194,60 +194,72 @@
 					</div>
 				</div> -->
 
-				<!-- FACILITY HEADER-->
-				<div class="row panel-body fal-header">
-					<div class="medium-3 columns">
-						<div class="facility-logo">
-							<h2>
-								<img src="img/facility_logo.png" title="Florida Hospital">
-							</h2>
-						</div>
-					</div>
-					<div class="medium-5 columns">
-						<div class="facility-name form-single-line">
-							<input class="form-single-line" type="text" name="#" value="Florida Hospital - Orlando">
-						</div>
-
-						<div class="facility-address form-single-line">
-							<input class="form-single-line" type="text" name="#" value="601 E Rollins St, Orlando, FL 32803, United States">
-						</div>
-					</div>
-
-					<div class="medium-4"></div>
-				</div>
-				<div class="row panel-body facility-menus">
-					<div class="medium-12 columns">
-						<ul class="tab">
-							<li><a href="javascript:void(0)" class="tablinks" onclick="facilityoption(event, 'clinicprofile')">Clinic Profile</a></li>
-							<li><a href="javascript:void(0)" class="tablinks" onclick="facilityoption(event, 'specialization')">Specialization</a></li>
-							<li><a href="javascript:void(0)" class="tablinks" onclick="facilityoption(event, 'media')">Media</a></li>
-							<li><a href="javascript:void(0)" class="tablinks" onclick="facilityoption(event, 'staff')">Staff</a></li>
-						</ul>
-
-						<div id="clinicprofile" class="tabcontent">
-							<div class="row input-group">
-								<div class="medium-12 columns">
-									<input type="text" name="#" value="Overview">
-									<textarea> 
-									At the Florida Hospital Orlando, our primary goal is to cure every patient's cancer. Since we know that in many cases advanced stage cancers cannot be cured, our next goal is to make cancer a chronic disease, with which our patients can live and lead relatively normal lives.
-
-									We accomplish our goals daily in our Florida facility, which provides state-of-the-art, cutting edge medical treatment, and caring attention to the mind, body and soul of each and every patient. With this fusion of science and caring, we find that we are able to provide our patients with the best possible healing, and among the best cancer treatment available in Florida, and the world.">
-									</textarea>
+				<!-- FACILITY HEADER -->
+				<div class="row expanded">
+					<div class="medium-12  bg-white">
+						<div class="row panel-body fal-header">
+							<div class="medium-3 columns">
+								<div class="facility-logo">
+									<h2>
+										<img src="img/facility_logo.png" title="Florida Hospital">
+									</h2>
 								</div>
 							</div>
-						</div>
+							<div class="medium-5 columns">
+								<div class="facility-name form-single-line">
+									<input type="text" name="#" value="Florida Hospital - Orlando">
+								</div>
 
-						<div id="specialization" class="tabcontent">
-							<!-- YOUR CODE STARTS HERE -->
-						</div>
+								<div class="facility-address form-single-line">
+									<input class="form-single-line" type="text" name="#" value="601 E Rollins St, Orlando, FL 32803, United States">
+								</div>
+							</div>
 
-						<div id="media" class="tabcontent">
-							<!-- YOUR CODE STARTS HERE -->
+							<div class="medium-4"></div>
 						</div>
+						<div class="row">
+							<div class="medium-12">
+								<!-- tab -->
+								<ul class="tab" data-tabs id="facility-tabs">
+									<li class="tabs-title is-active"><a href="#Profile" aria-selected="true">Clinic Profile</a></li>
+									<li class="tabs-title"><a href="#Treatment" aria-selected="true">Treatment</a></li>
+									<li class="tabs-title"><a href="#Media" aria-selected="true">Media</a></li>
+									<li class="tabs-title"><a href="#Staff" aria-selected="true">Staff</a></li>
+								</ul>
+						<!-- tab -->
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- FACILITY HEADER END -->
 
-						<div id="staff" class="tabcontent">
-							<!-- YOUR CODE STARTS HERE -->
+				<div class="row panel-body facility-menus">
+					<div class="medium-12 columns">
+						
+
+						<!-- tab content -->
+						<div class="tabs-content" data-tabs-content="facility-tabs">
+						  <div class="tabs-panel is-active" id="Profile">
+							<input type="text" name="#" value="Overview">
+							<textarea> 
+							At the Florida Hospital Orlando, our primary goal is to cure every patient's cancer. Since we know that in many cases advanced stage cancers cannot be cured, our next goal is to make cancer a chronic disease, with which our patients can live and lead relatively normal lives.
+
+							We accomplish our goals daily in our Florida facility, which provides state-of-the-art, cutting edge medical treatment, and caring attention to the mind, body and soul of each and every patient. With this fusion of science and caring, we find that we are able to provide our patients with the best possible healing, and among the best cancer treatment available in Florida, and the world.">
+							</textarea>
+						  </div>
+						  <div class="tabs-panel" id="Treatment">
+						    <p>Suspendisse dictum feugiat nisl ut dapibus.</p>
+						  </div>
+						  <div class="tabs-panel" id="Media">
+						    <p>Suspendisse dictum feugiat nisl ut dapibus.</p>
+						  </div>
+						  <div class="tabs-panel" id="Staff">
+						    <p>Suspendisse dictum feugiat nisl ut dapibus.</p>
+						  </div>
 						</div>
+						<!-- tab content -->
+
 					</div>
 				</div>
 
