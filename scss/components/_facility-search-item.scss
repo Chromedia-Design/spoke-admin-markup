@@ -1,0 +1,66 @@
+.search-result-head{
+	margin-top: 4rem;
+}
+
+.search-result {
+	a{
+		.search-item{
+			box-shadow: 1px 1px 2px #F2F5F6;
+			transition: all 0.5s ease;
+			border: 1px solid #F2F5F6; 
+			padding: 2rem;
+			margin-bottom: 2rem;
+			background-color: #fff;
+			border-radius: 2px;
+		.logo{
+			img {
+				width: 100%;
+				margin-right: 4rem;
+			}
+		}
+		.facility, .admin{
+			.name{
+				margin-bottom: .5rem;
+			}
+			.address{
+				margin-bottom: 0px;
+			}
+			.contact, .address{
+				font-size: .9rem;
+				color: #008EB2;
+				i {
+					margin-right: .5rem;
+				}
+			}
+		}
+		.admin{}
+		.package-count{
+			text-align: center;
+			div {
+				background-color: #72CC99;
+				border-radius: 100%;
+				width: 4.25rem;
+				height: 4.35rem;
+				margin-left: auto;
+				margin-right: auto;
+				padding:1rem;
+				font-size: 1.5rem;
+				color: #fff;
+				text-align: center;
+				margin-bottom: .5rem;
+			}
+			p {
+				font-size: .9rem;
+			}
+		}
+	}
+
+		&:hover{
+			.search-item{
+				box-shadow: 5px 5px 10px #E1E1E1;
+				transition: all 0.5s ease;
+			}
+		}
+	}
+}
+		
