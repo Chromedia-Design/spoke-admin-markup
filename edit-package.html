@@ -119,23 +119,93 @@
 											<span>3 Active, All Required</span>
 										</div>
 										<div class="pull-right">
+											<button class="action-link dropdown" type="button" data-toggle="data-dropdown-1"><i class="fa fa-gear fa-fw"></i><i class="fa fa-caret-down fa-fw"></i></button>
+											<div class="dropdown-pane bottom" id="data-dropdown-1" data-dropdown data-hover="true" data-hover-pane="true">
+											  Example form in a dropdown.
+											  <form>
+											    <div class="row">
+											      <div class="medium-6 columns">
+											        <label>Name
+											          <input type="text" placeholder="Kirk, James T.">
+											        </label>
+											      </div>
+											      <div class="medium-6 columns">
+											        <label>Rank
+											          <input type="text" placeholder="Captain">
+											        </label>
+											      </div>
+											    </div>
+											  </form>
+											</div>
 											<a href="#" class="action-link"><i class="fa fa-edit"></i></a>
 											<a href="#" class="alert action-link"><i class="fa fa-remove"></i></a>
 										</div>
 									</div>
 									<div id="category1" class="list-panel" data-toggler data-animate="fade-in fade-out">
+
 										<form class="form-single-line">
-							  	<div class="row">
-							    	<div class="medium-9 columns">
-						      			<label>New Category Name
-						        			<input type="text" placeholder="">
-							      		</label>
-						    		</div>
-						    		<div class="medium-3 columns">
-							      		<button type="submit" class="button expanded">+ Add Category</button>
-						    		</div>
-							  	</div>
-							</form>
+										  	<div class="row">
+										    	<div class="medium-4 columns">
+									      			<label>Search Code/Descriptor
+									        			<input type="text" placeholder="">
+										      		</label>
+									    		</div>
+									    		<div class="medium-5 columns">
+									      			<label>Note <small>Optional</small>
+									        			<input type="text" placeholder="">
+										      		</label>
+									    		</div>
+									    		<div class="medium-3 columns">
+										      		<button type="submit" class="button expanded">+ Add Item</button>
+									    		</div>
+										  	</div>
+										</form>
+
+										<ul class="well-list">
+											<li class="list-core">
+												<div class="list-wrap">
+													<div class="list-item-name">
+														<input id="checkbox1" type="checkbox"><label for="checkbox1">4-Day Admission</label>
+													</div>
+													<div class="list-detail">
+														<span>005267</span>
+													</div>
+													<div class="pull-right">
+														<a href="#" class="small bordered action-link disabled">Core</a>
+														<a href="#" class="alert action-link"><i class="fa fa-remove"></i></a>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="list-wrap">
+													<div class="list-item-name">
+														<input id="checkbox1" type="checkbox"><label for="checkbox1">4-Day Admission</label>
+													</div>
+													<div class="list-detail">
+														<span>005267</span>
+													</div>
+													<div class="pull-right">
+														<a href="#" class="small bordered action-link">Mark As Core</a>
+														<a href="#" class="alert action-link"><i class="fa fa-remove"></i></a>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="list-wrap">
+													<div class="list-item-name">
+														<input id="checkbox1" type="checkbox"><label for="checkbox1">4-Day Admission</label>
+													</div>
+													<div class="list-detail">
+														<span>005267</span>
+													</div>
+													<div class="pull-right">
+														<a href="#" class="small bordered action-link">Mark As Core</a>
+														<a href="#" class="alert action-link"><i class="fa fa-remove"></i></a>
+													</div>
+												</div>
+											</li>
+										</ul>
+
 									</div>
 								</li>
 							</ul>
