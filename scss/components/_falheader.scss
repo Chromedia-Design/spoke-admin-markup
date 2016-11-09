@@ -1,4 +1,4 @@
-.fal-header {
+.jumbo-header {
 	padding: 40px 0px;
 	background-color: $white;
 
@@ -7,7 +7,7 @@
 		// pointer-events:none;
 	}
 
-	.facility-name {
+	.large-input {
 		input {
 			font-size: 28px;
 			font-weight: 600;
@@ -17,7 +17,7 @@
 		}
 	}
 
-	.facility-address {
+	.small-input {
 		input {
 			font-family: Poppins-Regular;
 			font-size: 12px;
@@ -25,7 +25,7 @@
 		}
 	}
 	
-	.facility-address, .facility-name {
+	.small-input, .large-input {
 		input {
 			background-color: transparent;
 		}
@@ -35,7 +35,7 @@
 		}
 	}
 	
-	.facility-logo {
+	.left-image {
 		img {
 			width: 100%;
 		}
@@ -43,7 +43,7 @@
 }
 
 
-.facility-menus {
+.spoke-menus {
 	#clinicprofile {
 		// display: inline-block;
 		transition: 0.1s;
@@ -55,7 +55,7 @@
 		margin: 0;
 		padding: 0;
 		overflow: hidden;
-	background-color: $white;
+		background-color: $white;
 	}
 
 	ul.tab li {
