@@ -1,4 +1,29 @@
+ul.tab {
+	font-size: .75rem;
+	font-weight: $global-weight-semibold;
+	font-family: $header-font-family;
+
+	li {
+		list-style: none;
+		display: inline-block;
+		text-align: center;
+		text-decoration: none;
+		&.is-active {
+			background-color: $white !important;
+			border-bottom:3px solid #FD0000;
+		}
+		&.tabs-title a{
+			background-color: $white;
+			transition: 0.1s;
+			color: rgba($black, $B-text);	
+		}
+		&.tabs-title a:active {
+			color: $black !important;
+		}
+	}
+}	
+
 .tabs-content{
 	border: 0px !important;
-	background-color: transparent !important;
+	margin-top: 1.25rem;
 }

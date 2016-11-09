@@ -197,7 +197,7 @@
 				<!-- FACILITY HEADER -->
 				<div class="row expanded">
 					<div class="medium-12  bg-white">
-						<div class="row panel-body jumbo-header">
+						<div class="row jumbo-header">
 							<div class="medium-3 columns">
 								<div class="left-image">
 									<h2>
@@ -206,12 +206,12 @@
 								</div>
 							</div>
 							<div class="medium-5 columns">
-								<div class="large-input form-single-line">
-									<input type="text" name="#" value="Florida Hospital - Orlando">
+								<div class="form-single-line">
+									<input class="large-input" type="text" name="#" value="Florida Hospital - Orlando">
 								</div>
 
-								<div class="small-input form-single-line">
-									<input type="text" name="#" value="601 E Rollins St, Orlando, FL 32803, United States">
+								<div class="form-single-line">
+									<input class="small-input" type="text" name="#" value="601 E Rollins St, Orlando, FL 32803, United States">
 								</div>
 							</div>
 
@@ -234,7 +234,7 @@
 				
 				<!-- FACILITY HEADER END -->
 
-				<div class="row panel-body spoke-menus">
+				<div class="row panel-body spoke-menu">
 					<div class="medium-12 columns">
 
 						<!-- tab content -->
@@ -294,19 +294,19 @@
 			}).resize();
 		}); 
 
-		function facilityoption(evt, Events) {
-			var i, tabcontent, tablinks;
-			tabcontent = document.getElementsByClassName("tabcontent");
-			for (i = 0; i < tabcontent.length; i++) {
-				tabcontent[i].style.display = "none";
-			}
-			tablinks = document.getElementsByClassName("tablinks");
-			for (i = 0; i < tablinks.length; i++) {
-				tablinks[i].className = tablinks[i].className.replace(" active", "");
-			}
-			document.getElementById(Events).style.display = "block";
-			evt.currentTarget.className += " active";
-		} 
+		// function facilityoption(evt, Events) {
+		// 	var i, tabcontent, tablinks;
+		// 	tabcontent = document.getElementsByClassName("tabcontent");
+		// 	for (i = 0; i < tabcontent.length; i++) {
+		// 		tabcontent[i].style.display = "none";
+		// 	}
+		// 	tablinks = document.getElementsByClassName("tablinks");
+		// 	for (i = 0; i < tablinks.length; i++) {
+		// 		tablinks[i].className = tablinks[i].className.replace(" active", "");
+		// 	}
+		// 	document.getElementById(Events).style.display = "block";
+		// 	evt.currentTarget.className += " active";
+		// } 
 
 	</script>
 
