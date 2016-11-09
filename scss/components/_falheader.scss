@@ -1,90 +1,14 @@
 .jumbo-header {
-	padding: 40px 0px;
-	background-color: $white;
-
-	input{
+	padding-top: 40px;
+	input {
 		border-style: none;
-		// pointer-events:none;
-	}
-
-	.large-input {
-		input {
-			font-size: 28px;
-			font-weight: 600;
-			font-family: Poppins-SemiBold;
-			color: #4D5557;
-			margin: 0;
-		}
-	}
-
-	.small-input {
-		input {
-			font-family: Poppins-Regular;
-			font-size: 12px;
-			color: #6E868D;
-		}
-	}
-	
-	.small-input, .large-input {
-		input {
-			background-color: transparent;
-		}
-
-		input:focus {
+		&:focus {
 			border: 0px solid transparent;
 		}
 	}
 	
-	.left-image {
-		img {
-			width: 100%;
-		}
-	}
-}
-
-
-.spoke-menus {
-	#clinicprofile {
-		// display: inline-block;
-		transition: 0.1s;
-		background-color: $white;
-	}
-
-	ul.tab {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		overflow: hidden;
-		background-color: $white;
-	}
-
-	ul.tab li {
-		float: left !important;
-		display: inline !important;
-	}
-
-	ul.tab li a {
-		display: inline-block;
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
-		transition: 0.1s;
-		font-size: 12px;
-		font-weight: 600;
-		font-family: Poppins-SemiBold;
-		color: #6E868D;
-	}
-
-	ul.tab li a:focus, .active {
-		border-bottom:3px solid #FD0000;
-		color: #4D5557;
-	}
-
-	.tabcontent {
-		margin-top: 20px;
-		display: none;
-		padding: 6px 12px;
-		border: 1px solid #ccc;
+	.left-image img {
+		width: 100%;
 	}
 }
 
