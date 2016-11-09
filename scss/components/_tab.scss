@@ -10,20 +10,28 @@ ul.tab {
 		text-decoration: none;
 		&.is-active {
 			background-color: $white !important;
-			border-bottom:3px solid #FD0000;
+			border-bottom:0.2rem solid #FD0000;
 		}
 		&.tabs-title a{
 			background-color: $white;
 			transition: 0.1s;
-			color: rgba($black, $B-text);	
-		}
-		&.tabs-title a:active {
-			color: $black !important;
+			color: rgba($black, $B-text);
 		}
 	}
 }	
 
 .tabs-content{
-	border: 0px !important;
+	border: 0rem !important;
 	margin-top: 1.25rem;
+	text-align: left;
+
+	input, textarea {
+		border-style: none;
+		&:focus {
+			border: 0px solid transparent;
+		}
+
+	}
 }
+
+div.overview {margin-bottom: 1.3rem;}
