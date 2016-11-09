@@ -24,6 +24,7 @@ textarea {
 		font-family: $header-font-family;
 		margin: 0;
 		color: rgba($black, $B-text);
+		height: auto;
 	}
 	&.small-input {
 		font-size: 12px;
