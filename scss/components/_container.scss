@@ -62,7 +62,6 @@
 		.info-name{
 			font-weight: 500;
 		}
-<<<<<<< HEAD
 		.info-position{
 			font-size: .9rem;
 		}
@@ -72,15 +71,6 @@
 			display: inline-block;
 		}
 	}
-=======
-		.info-position{}
-		
-	}
-	.person-action{
-		display: table-cell;
-		vertical-align: middle;
-	}
->>>>>>> 65a0ad1070e8e35ea13951afcda418cdcce2ea95
 	&>div {
 		align-content: center;
 		@extend .card;
