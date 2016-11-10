@@ -34,3 +34,7 @@ ul.tab {
 }
 
 div.overview {margin-bottom: 1.5rem;}
+
+.tabs-panel, .tabs-content {
+	background-color: transparent !important;
+}
