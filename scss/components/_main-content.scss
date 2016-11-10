@@ -21,6 +21,7 @@
 }
 
 .content {
+	overflow: scroll;
 	.top-bar {
 		// Override the blue caret after the dropdown link in the topbar
 		.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
