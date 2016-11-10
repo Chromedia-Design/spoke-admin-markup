@@ -30,7 +30,6 @@ header {
 			}
 			&.is-accordion-submenu-parent {
 				border-bottom: 1px solid rgba($white, $W-dividers);
-				padding-bottom: 0.5rem;
 				a {
 					border-bottom: none;
 				}
@@ -45,6 +44,9 @@ header {
 				> li {
 					a {
 						font-size: 0.75rem;
+					}
+					&:last-child {
+						padding-bottom: 0.5rem;
 					}
 				}
 			}
