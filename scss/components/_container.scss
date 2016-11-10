@@ -62,6 +62,7 @@
 		.info-name{
 			font-weight: 500;
 		}
+<<<<<<< HEAD
 		.info-position{
 			font-size: .9rem;
 		}
@@ -71,8 +72,16 @@
 			display: inline-block;
 		}
 	}
+=======
+		.info-position{}
+		
+	}
+	.person-action{
+		display: table-cell;
+		vertical-align: middle;
+	}
+>>>>>>> 65a0ad1070e8e35ea13951afcda418cdcce2ea95
 	&>div {
-		display: flex;
 		align-content: center;
 		@extend .card;
 		margin-bottom: 0px;
@@ -84,12 +93,25 @@
 	background-color: $white;
 	padding: 1.9rem 1.3rem;
 	margin-bottom: 1.3rem;
-	input{
+	input, select, .bold-div{
 		font-weight: 600;
 		font-family: $header-font-family;
 	}
+	.bold-div{
+		padding: 1rem .5rem;
+		background-color: $white;
+	}
 	.action-button{
 		text-align-last: right;
+	}
+}
+.image-upload {
+	background-image: url('./image_upload.png') no-repeat !important;
+	width: 14.25rem;
+	height: 14.25rem;
+	border: 1px solid #000 !important;
+	input[type="file"] {
+		opacity: 0;
 	}
 }
 .block-heading {
