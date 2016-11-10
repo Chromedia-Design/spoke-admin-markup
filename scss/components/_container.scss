@@ -20,15 +20,47 @@
 	.card-group-form{}
 	.card-group-item-container{
 		.card-group-item{
-			padding: 1rem;
-			&>div {
-				display: flex;
-				align-content: center;
-				@extend .card;
-				margin-bottom: 0px;
-				padding: 1rem;	
+			@extend .card-person;
+		}
+	}
+}
+
+
+.card-person{
+	display: block;
+	padding: 1rem;
+	.person-image{
+		img {
+			border-radius: 100%;
+		}
+	}
+	.person-info{
+		.info-name, .info-position, .info-email, .info-phone{
+			margin-bottom: 0px;
+		}
+		.info-email, .info-phone{
+			color: #008EB2;
+			font-size: .8rem;
+			i {
+				margin-right: 1rem;
 			}
 		}
+
+		.info-name{
+			font-weight: 500;
+		}
+		.info-position{}
+		.info-email{}
+		.info-phone{}
+		
+	}
+	.person-action{}
+	&>div {
+		display: flex;
+		align-content: center;
+		@extend .card;
+		margin-bottom: 0px;
+		padding: 1rem;	
 	}
 }
 
