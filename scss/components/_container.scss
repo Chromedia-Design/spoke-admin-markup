@@ -50,13 +50,13 @@
 			font-weight: 500;
 		}
 		.info-position{}
-		.info-email{}
-		.info-phone{}
 		
 	}
-	.person-action{}
+	.person-action{
+		display: table-cell;
+		vertical-align: middle;
+	}
 	&>div {
-		display: flex;
 		align-content: center;
 		@extend .card;
 		margin-bottom: 0px;
