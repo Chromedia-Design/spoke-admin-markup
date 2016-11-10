@@ -39,7 +39,6 @@ textarea {
 textarea, div, label {
 	&.large-input, &.small-input, &.medium-input, &.normal-input {
 		font-family: $header-font-family;
-		margin: 0;
 		color: rgba($black, $B-text);
 		height: auto;
 	}	
