@@ -219,7 +219,7 @@
             $(window).resize(function() {
                 clearTimeout(timer);
                 timer = setTimeout(function() {
-                  $('.site-nav').css("height", $(window).height());
+                  $('.site-nav, .content').css("height", $(window).height());
                 }, 40); 
             }).resize();
         });

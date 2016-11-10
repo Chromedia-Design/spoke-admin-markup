@@ -600,14 +600,9 @@
             $(window).resize(function() {
                 clearTimeout(timer);
                 timer = setTimeout(function() {
-                  $('.site-nav').css("height", $(window).height());
+                  $('.site-nav, .content').css("height", $(window).height());
                 }, 40); 
             }).resize();
-        });
-
-        $(".list-item-name a").click(function () {
-        	$(".list-item-name a i").hasClass("fa-caret-down").removeClass("fa-caret-down").addClass("fa-caret-up");
-        	$(".list-item-name a i").hasClass("fa-caret-up").removeClass("fa-caret-up").addClass("fa-caret-down");
         });
 
     </script>
