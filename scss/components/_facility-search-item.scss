@@ -3,7 +3,7 @@
 }
 
 .search-result {
-	.search-item{
+	.search-item {
 		display: block;
 		@extend .card;
 		padding: 1.5rem 2rem;
@@ -53,10 +53,7 @@
 				margin-bottom: 0;
 			}
 		}
-	}
-
-	&:hover{
-		.search-item{
+		&:hover{
 			box-shadow: 1px 5px 10px #E1E1E1;
 			transition: all 0.5s ease;
 		}
