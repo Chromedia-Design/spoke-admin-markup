@@ -7,9 +7,6 @@
 		display: block;
 		@extend .card;
 		padding: 1.5rem 2rem;
-		.columns {
-			display: table;
-		}
 		.logo{
 			display: table-cell;
 			vertical-align: middle;

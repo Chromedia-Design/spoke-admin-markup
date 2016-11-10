@@ -71,11 +71,10 @@
 	input{
 		font-weight: 600;
 		font-family: $header-font-family;
-			span {
-			color: rgba(243,122,122,1) !important;
-		}
 	}
-
+	.action-button{
+		text-align-last: right;
+	}
 }
 .block-heading {
 	background-color: $dark-gray;
