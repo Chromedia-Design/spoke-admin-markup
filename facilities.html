@@ -145,7 +145,7 @@
 								</div>
 							</a>
 
-							<a href="#" class="search-item">
+							<	a href="#" class="search-item">
 								<div class="row" data-equalizer>
 									<div class="columns medium-1">
 										<div class="logo" data-equalizer-watch>
@@ -210,7 +210,7 @@
             $(window).resize(function() {
                 clearTimeout(timer);
                 timer = setTimeout(function() {
-                  $('.site-nav').css("height", $(window).height());
+                  $('.site-nav, .content').css("height", $(window).height());
                 }, 40); 
             }).resize();
         });
