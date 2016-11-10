@@ -9,11 +9,9 @@ ul.tab {
 		text-align: center;
 		text-decoration: none;
 		&.is-active {
-			background-color: $white !important;
 			border-bottom:0.2rem solid #FD0000;
 		}
 		&.tabs-title a{
-			background-color: $white;
 			transition: 0.1s;
 			color: rgba($black, $B-text);
 		}
@@ -24,12 +22,16 @@ ul.tab {
 	border: 0rem !important;
 	margin-top: 1.25rem;
 	text-align: left;
+	background-color: transparent !important;
 
 	input, textarea {
 		border-style: none;
 		&:focus {
 			border: 0px solid transparent;
 		}
+	}
+
+	.tabs-panel {
 	}
 }
 
