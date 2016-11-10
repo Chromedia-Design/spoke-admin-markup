@@ -1,21 +1,21 @@
-ul.tab {
+ul.tabs {
 	font-size: .75rem;
 	font-weight: $global-weight-semibold;
 	font-family: $header-font-family;
+	border: none;
 
 	li {
 		list-style: none;
 		display: inline-block;
-		text-align: center;
+		justify-content: center;
 		text-decoration: none;
 		&.is-active {
-			background-color: $white !important;
 			border-bottom:0.2rem solid #FD0000;
 		}
 		&.tabs-title a{
-			background-color: $white;
 			transition: 0.1s;
 			color: rgba($black, $B-text);
+			background-color: transparent !important;
 		}
 	}
 }
@@ -24,6 +24,7 @@ ul.tab {
 	border: 0rem !important;
 	margin-top: 1.25rem;
 	text-align: left;
+	background-color: transparent !important;
 
 	input, textarea {
 		border-style: none;
