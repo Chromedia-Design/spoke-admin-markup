@@ -34,5 +34,24 @@
 
 .block-container {
 	background-color: $white;
-	padding: 1.9rem 1rem;
+	padding: 1.9rem 1.3rem;
+	margin-bottom: 1.3rem;
+	input{
+		font-weight: 600;
+		font-family: $header-font-family;
+			span {
+			color: rgba(243,122,122,1) !important;
+		}
+	}
+
+}
+.block-heading {
+	background-color: $dark-gray;
+	padding: 0.7rem 1.3rem;	
+	>label {
+		color: rgba($white, $W-text) !important;
+	}
+	input {
+		border: 1px solid rgba($black, $B-dividers) !important;		
+	}
 }
