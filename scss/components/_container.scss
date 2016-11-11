@@ -56,6 +56,12 @@
 		display: table-cell;
 		vertical-align: middle;
 	}
+	.info-position{}
+		
+	.person-action{
+		display: table-cell;
+		vertical-align: middle;
+	}
 	&>div {
 		align-content: center;
 		@extend .card;
