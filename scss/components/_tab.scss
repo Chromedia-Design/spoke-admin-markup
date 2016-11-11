@@ -1,9 +1,9 @@
-ul.tabs {
-	font-size: .75rem;
+.tabs {
+	margin: 1rem 0;
+	font-size: 0.75rem;
 	font-weight: $global-weight-semibold;
 	font-family: $header-font-family;
 	border: none;
-
 	li {
 		list-style: none;
 		display: inline-block;
@@ -22,12 +22,12 @@ ul.tabs {
 
 .tabs-content{
 	border: 0rem !important;
-	margin-top: 1.25rem;
-	text-align: left;
 	background-color: transparent !important;
 }
 
-div.overview {margin-bottom: 1.5rem;}
+div.overview {
+	margin-bottom: 1.5rem;
+}
 
 .tabs-panel, .tabs-content {
 	background-color: transparent !important;
