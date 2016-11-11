@@ -14,8 +14,11 @@
 .card-selected {
 	&:active{
 		.card-person{
-			// border: 1px solid #00858F; 
-			background-color: #323232;
+			&>div {
+				border: 1px solid #F2F5F6; 
+				box-shadow: 5px 5px 7px #F2F5F6;
+
+			}
 		}
 	}
 }
