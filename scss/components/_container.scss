@@ -11,24 +11,10 @@
 	// transition: all 0.5s ease;
 }
 
-.card-group {
-	margin-top: 2rem;
-	.card-header{
-		margin-bottom: 2rem;
-		padding: 0 1rem;
-	}
-	.card-group-form{}
-	.card-group-item-container{
-		.card-group-item{
-			@extend .card-person;
-		}
-	}
-}
-
-
 .card-person{
 	display: block;
-	padding: 1rem;
+	// padding: 1rem;
+	margin-bottom: 1rem;
 	.person-image{
 		img {
 			border-radius: 100%;

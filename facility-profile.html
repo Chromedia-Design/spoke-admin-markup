@@ -270,7 +270,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 										</div>
 									</div>
 								</div>
-<<<<<<< HEAD
 								<div class="block-container">
 									<div class="row">
 										<div class="medium-12 columns">
@@ -325,12 +324,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 									</div>
 								</div>
 								<!-- END OF PROFILE HIGHLIGHTS -->
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 7d25ba9544eee3f59fefa24fbcd9665f56d9a691
 								<!-- // END OF PROFILE HIGHLIGHTS -->
->>>>>>> d83fd172af23ba9d091cd354168e0d19b7a4017d
 						  	</div>
 						  <div class="tabs-panel" id="Treatment">
 
@@ -476,70 +470,30 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 							    				</select>
 							    			</div>
-		
 							    		</div>
-							    
 							    	</div>
 						    		
 						    	</div>
 						    </div>
 							<!-- // Search and Filter -->
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 7d25ba9544eee3f59fefa24fbcd9665f56d9a691
-						    <div class="card-group">
-					    		<div class="card-header">
-					    			<div>Administrative Staff<input type="button" class="button float-right" value="+ Add New"></div>
-					    		</div>
-					    		<div class="card-group-form">
-					    			<div class="card">NEW ADMIN SECTION</div>
-					    		</div>
-					    		
-					    		<div class="card-group-item-container row">
-					    			
-					    			<div class="columns medium-6 card-group-item">
-<div>
-					    				<div class="row" data-equalizer>
-					    					<div class="columns medium-3">
-					    						<div data-equalizer-watch class="person-image">
-					    							<img src="http://placehold.it/90x90">
-					    						</div>
-				    						</div>
-					    					<div class="columns medium-6">
-												<div data-equalizer-watch class="person-info">
-													<p class="info-name">David Warkentin</p>
-						    						<p class="info-position">Senior Administrator</p>
-						    						<p class="info-email"><i class="fa fa-envelope"></i>david_warkentin@hilll.com</p>
-						    						<p class="info-phone"><i class="fa fa-phone"></i>058-818-3600</p>	
-												</div>
-				    						</div>
-					    					<div class="columns medium-3">
-						    					<div data-equalizer-watch class="person-action">
-						    						<a href="#" class="button hollow"><i class="fa fa-trash"></i></a>
-						    						<a href="#" class="button hollow"><i class="fa fa-pencil"></i></a>
-						    					</div>
-				    						</div>
-					    				</div>
-</div>
-	
-					    			</div>
-=======
-						    <div>
+						    <div class="mb-4">
 					    		<div class="section-header mb-2">
 					    			<div>Administrative Staff <a href="#" class="button float-right" data-toggle="newAdmin">+ Add New</a></div>
 					    		</div>
 					    		
-					    		<!-- Add New -->
-					    		<div id="newAdmin" data-toggler data-animate="fade-in fade-out">
+					    		<!-- Add New Admin Form -->
+					    		<div class="mb-2 hidden" id="newAdmin" data-toggler data-animate="fade-in fade-out">
 					    			<div class="block-heading">
-										<label for="contactadress" class="medium-input white-ittle">Add New Administrator</label>
+										<label for="contactadress" class="medium-input white-title">Add New Administrator</label>
 									</div>
 									<div class="block-container">
-										<div class="row">
+										<div class="row mb-2">
 											<div class="medium-2 columns">
-												<h3>Picture</h3>
+												<!-- <h3>Picture</h3> -->
+												<label class="image-upload">
+													<input type="file">
+													<img src="img/image_upload.png">
+												</label>
 											</div>
 											<div class="medium-10 columns">
 												<div class="row">
@@ -556,6 +510,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 												</div>
 												<div class="row">
 													<div class="medium-6 columns">
+												      <label>Position
+												        <input type="text" placeholder="Position">
+												      </label>
+												    </div>
+												</div>
+												<div class="row">
+													<div class="medium-6 columns">
 												      <label>Email Address
 												        <input type="text" placeholder="Email Address">
 												      </label>
@@ -567,20 +528,19 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 												    </div>
 												</div>
 											</div>
-											
 										</div>
 										<div class="row">
 											<div class="medium-12 columns action-button">
-												<a href="#" class="action-link active">Cancel</a>
-												<a href="#" class="button">Save</a>
+												<a href="#" class="action-link active" data-toggle="newAdmin">Cancel</a>
+												<a href="#" class="button" data-toggle="newAdmin">Save</a>
 											</div>
 										</div>
 									</div>
 					    		</div>
-									
+					    		<!-- // Add New Admin Form -->
 								
 								<!-- Admin Items -->
-					    		<div class="card-group-item-container row"> 
+					    		<div class="row"> 
 					    			
 					    			<div class="columns medium-6 pl-0">
 						    			<div class="card-person">
@@ -636,15 +596,158 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 				    			</div>
 								<!-- // Admin Items -->
 						    </div>
-
 						    <div>
 					    		<div class="section-header mb-2">
-					    			<div>Doctors <a href="#" class="button float-right">+ Add New</a></div>
+					    			<div>Doctors <a href="#" class="button float-right" data-toggle="newDoctor">+ Add New</a></div>
 					    		</div>
+
+					    		<!-- Add New Doctor Form -->
+					    		<div class="mb-2 hidden" id="newDoctor" data-toggler data-animate="fade-in fade-out">
+					    			<div class="block-heading">
+										<label for="contactadress" class="medium-input white-title">Add New Doctor</label>
+									</div>
+									<div class="block-container">
+										<div class="row mb-2">
+											<div class="medium-12 columns">
+												Search Doctor
+												<div class="input-group">
+									    			<input type="text" class="input-group-field" placeholder="Search Doctors">
+									    			<div class="input-group-button">
+									    				<a href="#" class="button">Search</a>
+									    			</div>
+									    		</div>
+											</div>
+										</div>
+										<div class="row mb-2">
+											<div class="medium-12 columns">
+												<div class="row"> 
+					    			
+					    							<a href="#">
+										    			<div class="columns medium-4 pl-0">
+											    			<div class="card-person">
+											    				<div class="row">
+											    					<div class="columns medium-3">
+											    						<div class="person-image">
+											    							<img src="http://placehold.it/80x80">
+											    						</div>
+										    						</div>
+											    					<div class="columns medium-9">
+																		<div class="person-info">
+																			<p class="info-name">David Warkentin</p>
+												    						<p class="info-position">Senior Administrator</p>
+												    						<p class="info-email"><i class="fa fa-envelope"></i>david_warkentin@hilll.com</p>
+							    											<p class="info-phone"><i class="fa fa-phone"></i>058-818-3600</p>
+																		</div>
+										    						</div>
+											    				</div>
+											    			</div>
+														</div>
+													</a>
+
+													<a href="#">
+										    			<div class="columns medium-4 pl-0">
+											    			<div class="card-person">
+											    				<div class="row">
+											    					<div class="columns medium-3">
+											    						<div class="person-image">
+											    							<img src="http://placehold.it/80x80">
+											    						</div>
+										    						</div>
+											    					<div class="columns medium-9">
+																		<div class="person-info">
+																			<p class="info-name">David Warkentin</p>
+												    						<p class="info-position">Senior Administrator</p>
+												    						<p class="info-email"><i class="fa fa-envelope"></i>david_warkentin@hilll.com</p>
+							    											<p class="info-phone"><i class="fa fa-phone"></i>058-818-3600</p>
+																		</div>
+										    						</div>
+											    				</div>
+											    			</div>
+														</div>
+													</a>
+
+													<a href="#">
+										    			<div class="columns medium-4 pl-0">
+											    			<div class="card-person">
+											    				<div class="row">
+											    					<div class="columns medium-3">
+											    						<div class="person-image">
+											    							<img src="http://placehold.it/80x80">
+											    						</div>
+										    						</div>
+											    					<div class="columns medium-9">
+																		<div class="person-info">
+																			<p class="info-name">David Warkentin</p>
+												    						<p class="info-position">Senior Administrator</p>
+												    						<p class="info-email"><i class="fa fa-envelope"></i>david_warkentin@hilll.com</p>
+							    											<p class="info-phone"><i class="fa fa-phone"></i>058-818-3600</p>
+																		</div>
+										    						</div>
+											    				</div>
+											    			</div>
+														</div>
+													</a>
+
+													<a href="#">
+										    			<div class="columns medium-4 pl-0">
+											    			<div class="card-person">
+											    				<div class="row">
+											    					<div class="columns medium-3">
+											    						<div class="person-image">
+											    							<img src="http://placehold.it/80x80">
+											    						</div>
+										    						</div>
+											    					<div class="columns medium-9">
+																		<div class="person-info">
+																			<p class="info-name">David Warkentin</p>
+												    						<p class="info-position">Senior Administrator</p>
+												    						<p class="info-email"><i class="fa fa-envelope"></i>david_warkentin@hilll.com</p>
+							    											<p class="info-phone"><i class="fa fa-phone"></i>058-818-3600</p>
+																		</div>
+										    						</div>
+											    				</div>
+											    			</div>
+														</div>
+													</a>
+
+													<a href="#">
+										    			<div class="columns medium-4 pl-0">
+											    			<div class="card-person">
+											    				<div class="row">
+											    					<div class="columns medium-3">
+											    						<div class="person-image">
+											    							<img src="http://placehold.it/80x80">
+											    						</div>
+										    						</div>
+											    					<div class="columns medium-9">
+																		<div class="person-info">
+																			<p class="info-name">David Warkentin</p>
+												    						<p class="info-position">Senior Administrator</p>
+												    						<p class="info-email"><i class="fa fa-envelope"></i>david_warkentin@hilll.com</p>
+							    											<p class="info-phone"><i class="fa fa-phone"></i>058-818-3600</p>
+																		</div>
+										    						</div>
+											    				</div>
+											    			</div>
+														</div>
+													</a>
+
+									    		</div>
+											</div>
+										</div>
+										
+										<div class="row">
+											<div class="medium-12 columns action-button">
+												<a href="#" class="action-link active" data-toggle="newDoctor">Cancel</a>
+												<a href="#" class="button" data-toggle="newDoctor">Save</a>
+											</div>
+										</div>
+									</div>
+					    		</div>
+					    		<!-- // Add New Doctor Form -->
 					    		
 								<!-- Doctors Item -->
-					    		<div class="card-group-item-container row"> 
-					    			
+					    		<div class="row"> 
 					    			<div class="columns medium-6 pl-0">
 						    			<div class="card-person">
 						    				<div class="row">
@@ -800,11 +903,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 						    				</div>
 						    			</div>
 									</div>
->>>>>>> d83fd172af23ba9d091cd354168e0d19b7a4017d
 					    		</div>
 					    		<!-- // Doctors Item -->
 						    </div>
-
 						  </div>
 						
 						</div>
