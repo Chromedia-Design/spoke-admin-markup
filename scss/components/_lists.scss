@@ -24,12 +24,14 @@
 				padding: 15px 30px 15px;
 			}
 		}
-		.list-item-name {
+
+		.list-item-name, .list-item-image {
 			width: 30%;
 			position: relative;
 			float: left;
 		}
 		.list-detail {
+			max-width: 30%;
 			display: inline-block;
 			color: rgba($black, $B-subtext);
 		}
@@ -72,6 +74,9 @@
 	}
 	// Small version of the default well list
 	&.small {
+		.h6 {
+			font-size: 0.875rem;
+		}
 		[type='radio'],
 		[type='checkbox'] {
 			margin-bottom: 0;
