@@ -425,48 +425,56 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 						    <div>
 					    		<div class="section-header mb-2">
-					    			<div>Administrative Staff <a href="#" class="button float-right">+ Add New</a></div>
+					    			<div>Administrative Staff <a href="#" class="button float-right" data-toggle="newAdmin">+ Add New</a></div>
 					    		</div>
 					    		
 					    		<!-- Add New -->
-					    		<!-- START OF CONTACT AND ADRESS -->
-								<div class="block-heading">
-									<label for="contactadress" class="medium-input white-ittle">Address and Contact Information</label>
-								</div>
-								<div class="block-container">
-									<h1>TEST</h1>
-									<div class="row">
-										<div class="medium-4 columns">
-											<h3>Picture</h3>
+					    		<div id="newAdmin" data-toggler data-animate="fade-in fade-out">
+					    			<div class="block-heading">
+										<label for="contactadress" class="medium-input white-ittle">Add New Administrator</label>
+									</div>
+									<div class="block-container">
+										<div class="row">
+											<div class="medium-2 columns">
+												<h3>Picture</h3>
+											</div>
+											<div class="medium-10 columns">
+												<div class="row">
+													<div class="medium-6 columns">
+												      <label>First Name
+												        <input type="text" placeholder="First Name">
+												      </label>
+												    </div>
+												    <div class="medium-6 columns">
+												      <label>Last Name
+												        <input type="text" placeholder="last Name">
+												      </label>
+												    </div>
+												</div>
+												<div class="row">
+													<div class="medium-6 columns">
+												      <label>Email Address
+												        <input type="text" placeholder="Email Address">
+												      </label>
+												    </div>
+												    <div class="medium-6 columns">
+												      <label>Contact Number
+												        <input type="text" placeholder="Contact Number">
+												      </label>
+												    </div>
+												</div>
+											</div>
+											
 										</div>
-										<div class="medium-4 columns">
-											<h3>Name</h3>
-										</div>
-										<div class="medium-4 columns">
-											<h3>Contact</h3>
+										<div class="row">
+											<div class="medium-12 columns action-button">
+												<a href="#" class="action-link active">Cancel</a>
+												<a href="#" class="button">Save</a>
+											</div>
 										</div>
 									</div>
-									<div class="row">
-										<div class="medium-12 columns action-button">
-											<a href="#" class="action-link active">Cancel</a>
-											<a href="#" class="button">Save</a>
-										</div>
-									</div>
-								</div>
-								<!-- END OF CONTACT AND ADRESS -->
-				    			<!-- <div class="form-container panel">
-				    				<div class="form-container panel">
-				    					<div class="form-heading-highlight">Head</div>
-					    				<div class="form-fields">
-					    					<div class="row">
-					    						<div class="medium-4 columns">picture</div>
-					    						<div class="medium-4 columns">Name, Position</div>
-					    						<div class="medium-4 columns">Email, Contact</div>
-					    					</div>
-					    				</div>
-				    					<div class="form-action">Action</div>
-				    				</div>
-				    			</div> -->
+					    		</div>
+									
 								
 								<!-- Admin Items -->
 					    		<div class="card-group-item-container row"> 
