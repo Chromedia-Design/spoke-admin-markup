@@ -4,15 +4,30 @@
 
 .mb-4 { margin-bottom: 4rem; }
 
+<<<<<<< HEAD
 .mt-2 { margin-top: 2rem;}
 
 .pl-0 { padding-left: 0rem !important; }
+=======
+.pl-0 { padding-left: 0rem; }
+>>>>>>> 7b618398903f94de3c89922d7979daad2181211a
 .pl-1 { padding-left: 1rem; }
 
 .pr-0 { padding-right: 0rem; }
 .pr-1 { padding-right: 1rem; }
 
+<<<<<<< HEAD
 .b-notop-1 { 
 	border: solid 0.1rem $primary-light;
 	border-top: 0rem;
+=======
+
+
+
+.hidden { display:none; }
+
+.disabled {
+	pointer-events: none;
+	opacity: 0.25;
+>>>>>>> 7b618398903f94de3c89922d7979daad2181211a
 }

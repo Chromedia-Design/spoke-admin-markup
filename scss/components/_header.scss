@@ -20,13 +20,14 @@ header {
 	> ul.menu {
 		padding: 2rem 0;
 		> li {
+			transition: all ease-in 0.2s;
 			a {
 				font-family: $header-font-family;
 				text-transform: uppercase;
 				color: $text-white;
 				font-weight: 600;
 				border-bottom: 1px solid rgba($white, $W-dividers);
-				font-size: 0.875rem;
+				font-size: 0.75rem;
 			}
 			&.is-accordion-submenu-parent {
 				border-bottom: 1px solid rgba($white, $W-dividers);
@@ -35,18 +36,40 @@ header {
 				}
 			}
 			&.is-active {
+				background-color: rgba($white, $W-subtext);
 				a {
-					background-color: rgba($white, $B-text);
 					color: rgba($black, $B-text);
 				}
+				&.is-accordion-submenu-parent {
+					> a::after {
+						border-color: $text-black transparent transparent;
+					}
+				}
+				&:hover {
+					background-color: rgba($white, $W-subtext);
+				}
+			}
+			&:hover {
+				background-color: rgba($white, $W-dividers);
 			}
 			ul.nested {
+				margin-left: 0;
+				margin-bottom: 0.5rem;
 				> li {
 					a {
-						font-size: 0.75rem;
+						padding-left: 2.5rem;
+						font-size: 0.625rem;
+						font-weight: 600;
 					}
-					&:last-child {
-						padding-bottom: 0.5rem;
+					&.is-active {
+						background-color: rgba($white, $W-subtext);
+						color: rgba($black, $B-text);
+						&:hover {
+							background-color: rgba($white, $W-subtext);
+						}
+					}
+					&:hover {
+						background-color: rgba($white, $W-dividers);
 					}
 				}
 			}
