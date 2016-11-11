@@ -1,0 +1,222 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spoke Admin Portal</title>
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+	
+	<div class="expanded row medium-collapse">
+		<div class="medium-2 columns">
+			<div class="site-nav">
+				<header>
+					<a href="#" class="logo text-center">
+						<img src="img/logo.png" title="Spoke">
+					</a>
+				</header>
+				<ul class="menu vertical"  data-accordion-menu>
+					<li>
+						<a href="#"><i class="material-icons">dashboard</i> Dashboard</a>
+					</li>
+					<li>
+						<a href="#"><i class="material-icons">work</i> Practices</a>
+						<ul class="nested vertical menu is-active">
+							<li>
+								<a href="#">Specializations</a>
+							</li>
+							<li>
+								<a href="#">Treatments</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#"><i class="material-icons">card_giftcard</i> Packages</a>
+					</li>
+					<li>
+						<a href="#"><i class="material-icons">local_pharmacy</i> Facilities</a>
+					</li>
+					<li>
+						<a href="#"><i class="material-icons">local_hospital</i> Doctors</a>
+					</li>
+					<li>
+						<a href="#"><i class="material-icons">home</i> Companies</a>
+					</li>
+					<li>
+						<a href="#"><i class="material-icons">content_paste</i> Content</a>
+					</li>
+					<li class="is-active">
+						<a href="#"><i class="material-icons">person</i> User Accounts</a>
+						<ul class="nested vertical menu is-active">
+							<li class="is-active">
+								<a href="#">Users List</a>
+							</li>
+							<li>
+								<a href="#">Roles & Permissions</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="medium-10 columns">
+			<div class="content">
+
+				<div class="top-bar">
+				  	<div class="top-bar-left">
+						<!-- <ul class="menu">
+				      		<li><input type="search" placeholder="Search"></li>
+				      		<li><button type="button" class="button">Search</button></li>
+			    		</ul> -->
+				  	</div>
+				  	<div class="top-bar-right">
+				    	<ul class="dropdown menu" data-dropdown-menu>
+				    		<li>
+				    			<a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">6</span></a>
+			    			</li>
+				      		<li>
+				        		<a href="#">John Doe</a>
+				        		<ul class="menu vertical">
+				          			<li><a href="#"><i class="fa fa-info fa-fw"></i>Account Details</a></li>
+				          			<li><a href="#"><i class="fa fa-sign-out fa-fw"></i>Sign Out</a></li>
+				        		</ul>
+				      		</li>
+				    	</ul>
+				  	</div>
+				</div>
+
+				<div class="row">
+					<div class="medium-12 columns">
+						
+						<div class="page-lead">
+							<div class="row">
+								<div class="medium-6 columns"><h5>Users</h5></div>
+								<div class="medium-6 columns">
+									<ul class="menu pull-right">
+							      		<li><input type="search" placeholder="Search User..."></li>
+							      		<li><button type="button" class="button">Search</button></li>
+						    		</ul>
+								</div>
+							</div>
+						</div>						
+					
+						<div class="callout primary">
+							<form>
+							  	<div class="row">
+							    	<div class="medium-6 columns">
+						      			<label>Email Address
+						        			<input type="text" placeholder="">
+							      		</label>
+						    		</div>
+						    		<div class="medium-6 columns">
+						    			<label>Role
+						    				<select>
+						    					<option>Super Admin</option>
+						    					<option>Developers</option>
+						    					<option>Patient Admin</option>
+						    					<option>Content Admin</option>
+						    				</select>
+						    			</label>
+						    		</div>
+							    	<div class="medium-6 columns">
+							      		<label>Password
+							        		<input type="text" placeholder="">
+							      		</label>
+						    		</div>
+						    		<div class="medium-6 columns">
+							      		<label>Confirm Password
+							        		<input type="text" placeholder="">
+							      		</label>
+						    		</div>
+						    		<div class="medium-6 columns end">
+							      		<button type="submit" class="button">+ Add User</button>
+						    		</div>
+							  	</div>
+							</form>
+						</div>
+						
+						<div class="panel">
+							<ul class="well-list">
+								<li>
+									<div class="list-wrap">
+										<div class="list-item-name">
+											<a href="#">Will Smith</a>
+										</div>
+										<div class="list-detail">
+											<span>Super Admin</span>
+										</div>
+										<div class="pull-right">
+											<a href="#" class="action-link"><i class="fa fa-edit"></i></a>
+											<a href="#" class="alert action-link"><i class="fa fa-remove"></i></a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-wrap">
+										<div class="list-item-name">
+											<a href="#">Will Smith</a>
+										</div>
+										<div class="list-detail">
+											<span>Super Admin</span>
+										</div>
+										<div class="pull-right">
+											<a href="#" class="action-link"><i class="fa fa-edit"></i></a>
+											<a href="#" class="alert action-link"><i class="fa fa-remove"></i></a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-wrap">
+										<div class="list-item-name">
+											<a href="#">Will Smith</a>
+										</div>
+										<div class="list-detail">
+											<span>Super Admin</span>
+										</div>
+										<div class="pull-right">
+											<a href="#" class="action-link"><i class="fa fa-edit"></i></a>
+											<a href="#" class="alert action-link"><i class="fa fa-remove"></i></a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+
+
+				
+			</div>
+		</div>
+	</div>
+
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/what-input/what-input.js"></script>
+	<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+
+	<script src="js/app.js"></script>
+
+	<script type="text/javascript">
+        $(function () {
+            var timer;
+
+            $(window).resize(function() {
+                clearTimeout(timer);
+                timer = setTimeout(function() {
+                  $('.site-nav, .content').css("height", $(window).height());
+                }, 40); 
+            }).resize();
+        });
+
+        
+
+    </script>
+
+</body>
+</html>
