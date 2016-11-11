@@ -11,6 +11,26 @@
 	// transition: all 0.5s ease;
 }
 
+.card-selected {
+	&:active{
+		.card-person{
+			&>div {
+				border: 1px solid #F2F5F6; 
+				box-shadow: 5px 5px 7px #F2F5F6;
+
+			}
+		}
+	}
+}
+
+.section-header{
+	h5, a {
+		display: inline-block;
+	}
+	h5 {
+		margin-bottom: 0px;
+	}
+}
 .card-person{
 	display: block;
 	// padding: 1rem;
@@ -70,6 +90,7 @@
 		text-align-last: right;
 	}
 }
+
 .block-container-fade {background-color: $primary-light;}
 .block-container {background-color: $white; margin-bottom: 1.3rem;}
 .block-heading {
