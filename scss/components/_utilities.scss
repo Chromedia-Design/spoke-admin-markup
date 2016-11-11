@@ -1,11 +1,11 @@
-.inline-child * {
-	display:inline;
-}
+.inline-child * { display:inline; }
 
-.mb-2 {
-	margin-bottom: 2rem;
-}
+.mb-2 { margin-bottom: 2rem; }
 
-.mb-4 {
-	margin-bottom: 4rem;
-}
+.mb-4 { margin-bottom: 4rem; }
+
+.pl-0 { padding-left: 0rem !important; }
+.pl-1 { padding-left: 1rem; }
+
+.pr-0 { padding-right: 0rem; }
+.pr-1 { padding-right: 1rem; }

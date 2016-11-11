@@ -71,15 +71,12 @@
 			display: inline-block;
 		}
 	}
-<<<<<<< HEAD
 	.info-position{}
 		
 	.person-action{
 		display: table-cell;
 		vertical-align: middle;
 	}
-=======
->>>>>>> 71c25d2b795b65e7c34c3ff674efb37a9a7e5af0
 	&>div {
 		align-content: center;
 		@extend .card;
