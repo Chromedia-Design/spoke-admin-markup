@@ -4,8 +4,15 @@
 
 .mb-4 { margin-bottom: 4rem; }
 
+.mt-2 { margin-top: 2rem;}
+
 .pl-0 { padding-left: 0rem !important; }
 .pl-1 { padding-left: 1rem; }
 
 .pr-0 { padding-right: 0rem; }
 .pr-1 { padding-right: 1rem; }
+
+.b-notop-1 { 
+	border: solid 0.1rem $primary-light;
+	border-top: 0rem;
+}
