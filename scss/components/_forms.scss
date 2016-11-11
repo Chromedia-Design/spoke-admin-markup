@@ -12,7 +12,7 @@
 [type='time'],
 [type='url'],
 [type='color'],
-textarea {
+textarea, .bold-div {
 	box-shadow: none;
 	border-radius: 2px;
 	border: 1px solid rgba($black, $B-dividers);
@@ -61,7 +61,7 @@ textarea, div, label, select {
 
 .button-append-submit {
 	margin-top: 25px;
-}
+} 
 
 .form-single-line {
 	[type='text'],
