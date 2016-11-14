@@ -74,6 +74,9 @@
 	}
 	// Small version of the default well list
 	&.small {
+		.h6 {
+			font-size: 0.875rem;
+		}
 		[type='radio'],
 		[type='checkbox'] {
 			margin-bottom: 0;
