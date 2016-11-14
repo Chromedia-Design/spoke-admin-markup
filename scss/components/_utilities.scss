@@ -24,3 +24,35 @@
 	pointer-events: none;
 	opacity: 0.25;
 }
+
+.image-gallery-item {
+	overflow:hidden;
+	position: relative;
+	@extend .card;
+	max-height:242px;
+	&:hover{
+		.gallery-image-action{
+			bottom: 3.1rem;
+			transition: all 0.25s ease;
+
+		}
+	}
+}
+.gallery-image-action {
+	opacity:25%;
+	overflow:hidden;
+	position:relative;
+	bottom: 0rem;
+	transition: all 0.25s ease;
+	z-index: 5;
+	background-color: rgba(#fff, .25);
+	padding: .5rem;
+	a {
+		margin-bottom: 0px;
+	}
+}
+
+.v-align-center {
+	display: flex;
+	align-items:center;
+}
