@@ -37,7 +37,7 @@ textarea, .bold-div {
 [type='url'],
 [type='color'],
 textarea, div, label, select {
-	&.large-input, &.small-input, &.medium-input, &.normal-input {
+	&.large-input, &.small-input, &.medium-input {
 		font-family: $header-font-family;
 		color: rgba($black, $B-text);
 		height: auto;
