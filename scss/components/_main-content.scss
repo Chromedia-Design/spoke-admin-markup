@@ -46,7 +46,7 @@
 }
 
 .page-lead {
-	margin: 2rem 0;
+	margin: 2rem 0 1rem;
 	.h1,
 	.h2,
 	.h3,
@@ -57,5 +57,10 @@
 	.menu {
 		display: inline-block;
 		vertical-align: middle;
+	}
+	[class*='columns'] {
+		> * {
+			margin-bottom: 0;
+		}
 	}
 }
