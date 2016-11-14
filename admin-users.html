@@ -92,17 +92,35 @@
 						
 						<div class="page-lead">
 							<div class="row">
-								<div class="medium-6 columns"><h5>Users</h5></div>
 								<div class="medium-6 columns">
-									<ul class="menu pull-right">
+									<span class="h5">Users (25)</span>
+									<ul class="menu">
 							      		<li><input type="search" placeholder="Search User..."></li>
-							      		<li><button type="button" class="button">Search</button></li>
+							      		<li><button type="button" class="button secondary"><span class="i fa fa-search"></span></button></li>
 						    		</ul>
+								</div>
+								<div class="medium-4 columns">
+									<div class="row">
+										<div class="medium-3 columns">
+									      	<label for="right-label" class="text-right middle">Filter By</label>
+									    </div>
+									    <div class="medium-9 columns">
+									      	<select>
+									      		<option>Super Admin</option>
+						    					<option>Developers</option>
+						    					<option>Patient Admin</option>
+						    					<option>Content Admin</option>
+									      	</select>
+									    </div>
+									</div>
+								</div>
+								<div class="medium-2 columns">
+									<a  data-toggle="addUserPanel" class="button primary expanded">+ Add New User</a>
 								</div>
 							</div>
 						</div>						
 					
-						<div class="callout primary">
+						<div id="addUserPanel" class="callout primary" data-toggler data-animate="fade-in fade-out" style="display:none;">
 							<form>
 							  	<div class="row">
 							    	<div class="medium-6 columns">
@@ -156,10 +174,10 @@
 								<li>
 									<div class="list-wrap">
 										<div class="list-item-name">
-											<a href="#">Will Smith</a>
+											<a href="#">Margot Robbie</a>
 										</div>
 										<div class="list-detail">
-											<span>Super Admin</span>
+											<span>Patient Admin</span>
 										</div>
 										<div class="pull-right">
 											<a href="#" class="action-link"><i class="fa fa-edit"></i></a>
@@ -170,10 +188,10 @@
 								<li>
 									<div class="list-wrap">
 										<div class="list-item-name">
-											<a href="#">Will Smith</a>
+											<a href="#">Jared Leto</a>
 										</div>
 										<div class="list-detail">
-											<span>Super Admin</span>
+											<span>Developers</span>
 										</div>
 										<div class="pull-right">
 											<a href="#" class="action-link"><i class="fa fa-edit"></i></a>
