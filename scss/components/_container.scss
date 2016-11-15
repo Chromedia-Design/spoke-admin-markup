@@ -31,7 +31,7 @@
 		margin-bottom: 0px;
 	}
 }
-.card-person{
+.card-person {
 	display: block;
 	// padding: 1rem;
 	margin-bottom: 1rem;
@@ -76,30 +76,24 @@
 	}
 }
 
+.block {
+	margin-bottom: 2rem;
+	border: 1px solid rgba($black, $B-dividers);
+	border-radius: 2px;
+}
+
 .block-container, .block-container-fade {
 	padding: 1.9rem 1.3rem;
 	input, select, .bold-div{
 	font-weight: 600;
 	font-family: $header-font-family;
 	}
-	.bold-div{
-		padding: 1rem .5rem;
-		background-color: $white;
-	}
-	.action-button{
-		text-align-last: right;
-	}
-	.v-align, .v-align p{
-		// vertical-align: middle !important;
-		// border: solid 1px #000 !important;
-		
-	}
-	.button {margin-top: -.2rem !important}
 }
 
 .block-container-fade {background-color: $primary-light;}
 .block-container {background-color: $white;}
 .block-heading {
+	color: $white;
 	background-color: $dark-gray;
 	padding: 0.7rem 1.3rem;	
 	>label {

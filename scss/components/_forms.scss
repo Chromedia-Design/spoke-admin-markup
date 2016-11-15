@@ -129,3 +129,16 @@ textarea, div, label, select {
 		}
 	}
 }
+
+.form-group {
+	> div  {
+		margin-bottom: 1rem;
+		border-radius: 2px;
+		&:focus {
+			box-shadow: none;
+			padding: 0.5rem;
+			border: 1px solid rgba($black, $B-dividers);
+			border-radius: 2px
+		}
+	}
+}

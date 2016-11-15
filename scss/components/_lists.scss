@@ -24,14 +24,18 @@
 				padding: 15px 30px 15px;
 			}
 		}
-
-		.list-item-name, .list-item-image {
+		.list-item-image {
+			width: 7%;
+			float: left;
+			position: relative;
+		}
+		.list-item-name {
 			width: 30%;
 			position: relative;
 			float: left;
 		}
 		.list-detail {
-			max-width: 30%;
+			max-width: 45%;
 			display: inline-block;
 			color: rgba($black, $B-subtext);
 		}
