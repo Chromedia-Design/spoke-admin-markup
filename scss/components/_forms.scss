@@ -59,6 +59,17 @@ textarea, div, label, select {
 	}
 }
 
+textarea, .mce-tinymce {
+	margin: 0 0 1rem !important;
+}
+
+[type='file'] {
+	height: 2.5rem;
+    padding: .5rem;
+    background-color: #fefefe;
+    border: 1px solid #6E868D;
+}
+
 [type='submit'] {
 	margin-bottom: 0;
 }
