@@ -26,23 +26,23 @@
 }
 
 .image-gallery-item {
-	overflow:hidden;
+	// overflow:hidden;
 	position: relative;
 	@extend .card;
 	max-height:242px;
-	&:hover{
-		.gallery-image-action{
-			bottom: 3.1rem;
-			transition: all 0.25s ease;
+	// &:hover{
+	// 	.gallery-image-action{
+	// 		bottom: 3.1rem;
+	// 		transition: all 0.25s ease;
 
-		}
-	}
+	// 	}
+	// }
 }
+
 .gallery-image-action {
-	opacity:25%;
 	overflow:hidden;
 	position:relative;
-	bottom: 0rem;
+	bottom: 3.1rem;
 	transition: all 0.25s ease;
 	z-index: 5;
 	background-color: rgba(#fff, .25);
