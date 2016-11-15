@@ -31,7 +31,7 @@
 		margin-bottom: 0px;
 	}
 }
-.card-person{
+.card-person {
 	display: block;
 	// padding: 1rem;
 	margin-bottom: 1rem;
@@ -76,25 +76,21 @@
 	}
 }
 
+.block {
+	margin-bottom: 2rem;
+	border: 1px solid rgba($black, $B-dividers);
+	border-radius: 2px;
+	overflow: hidden;
+}
+
 .block-container, .block-container-fade {
 	padding: 1.9rem 1.3rem;
-	input, select, .bold-div{
-	font-weight: 600;
-	font-family: $header-font-family;
-	}
-	.bold-div{
-		padding: 1rem .5rem;
-		background-color: $white;
-	}
-	.action-button{
-		text-align-last: right;
-	}
-	.button {margin-top: -.2rem !important}
 }
 
 .block-container-fade {background-color: $primary-light;}
 .block-container {background-color: $white;}
 .block-heading {
+	color: $white;
 	background-color: $dark-gray;
 	padding: 0.7rem 1.3rem;	
 	>label {
@@ -104,6 +100,7 @@
 		border: 1px solid rgba($black, $B-dividers) !important;		
 	}
 }
+
 label.image-upload {
 	max-width: 14.25rem;
 	max-height: 14.25rem;
@@ -115,6 +112,18 @@ label.image-upload {
 	img{
 		margin-top: -2.5rem;
 	}
+}
+
+.thumbnail {
+	position: relative;
+	width: 270px;
+	height: 203px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+	background-color: $white;
+	border-radius: 2px;
 }
 
 
