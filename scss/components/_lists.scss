@@ -4,11 +4,13 @@
 	list-style: none;
 	> li {
 		font-family: $header-font-family;
+		font-weight: 400;
 		min-height: 20px;
 		border-bottom: 1px solid rgba($black, $B-dividers);
 		position: relative;
 		a {
 			color: $text-black;
+			font-weight: 400;
 			&:hover {
 				text-decoration: underline;
 			}
