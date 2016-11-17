@@ -1,0 +1,45 @@
+// Select2 Plugin Overrides
+.select2-container {
+	display: block;
+	width: 99.9% !important;
+	font-family: $body-font-family;
+	font-size: 1rem;
+	color: rgba($black, $B-text);
+	.select2-selection--single {
+		height: 2.4375rem;
+		.select2-selection__rendered {
+			padding:8px 20px 8px 8px;
+		}
+	}
+}
+
+.select2-container--default {
+	.select2-selection--single {
+		border-radius: 2px;
+		border: 1px solid $medium-gray;
+		.select2-selection__rendered {
+			line-height: 1.5em;
+			color: $text-black;
+
+		}
+		.select2-selection__arrow {
+			height: 2.4375rem;
+		}
+	}
+	.select2-search--dropdown {
+		.select2-search__field {
+			border: 1px solid $medium-gray;
+		}
+	}
+}
+
+.select2-search--dropdown {
+	padding: 8px;
+	.select2-search__field {
+		margin-bottom: 0;
+	}
+}
+
+.select2-results__option {
+	padding: 8px;
+}
