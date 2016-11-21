@@ -92,118 +92,75 @@
 						
 						<div class="page-lead">
 							<div class="row">
-								<div class="medium-4 columns end">
-									<div class="input-group">
-									  	<input class="input-group-field" type="text">
-									  	<div class="input-group-button">
-									    	<input type="submit" class="button" value="Search">
-									  	</div>
-									</div>
+								<div class="medium-12 columns">
+									<nav aria-label="You are here:" role="navigation">
+									  	<ul class="breadcrumbs">
+									    	<li><a href="admin-users.html">Users</a></li>
+									    	<li>Will Smith</li>
+									  	</ul>
+									</nav>
+								</div>
+							</div>	
+						</div>					
+						
+						<form>
+							<div class="row">
+								<div class="medium-3 columns">
+									<label>
+										First Name
+										<input type="text" value="Will">
+									</label>
+								</div>
+								<div class="medium-3 columns end">
+									<label>
+										Last Name
+										<input type="text" value="Smith">
+									</label>
 								</div>
 							</div>
-						</div>
-						<div class="page-lead">
+							<div class="row">
+								<div class="medium-6 columns end">
+									<label>
+										Email Address
+										<input type="text" value="will.smith@chromedia.com">
+									</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="medium-6 columns end">
+									<label>
+										Role
+										<select>
+											<option>Super Admin</option>
+					    					<option>Developers</option>
+					    					<option>Patient Admin</option>
+					    					<option>Content Admin</option>
+										</select>
+									</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="medium-6 columns end">
+									<label>
+										Password
+										<input type="password" value="password">
+									</label>
+								</div>
+							</div>
 							<div class="row">
 								<div class="medium-6 columns">
-									<span class="h5">Users (25)</span>
-								</div>
-								<div class="medium-4 columns">
-									<div class="row">
-										<div class="medium-3 columns">
-									      	<label for="right-label" class="text-right middle">Filter By</label>
-									    </div>
-									    <div class="medium-9 columns">
-									      	<select>
-									      		<option>Super Admin</option>
-						    					<option>Developers</option>
-						    					<option>Patient Admin</option>
-						    					<option>Content Admin</option>
-									      	</select>
-									    </div>
-									</div>
-								</div>
-								<div class="medium-2 columns">
-									<a  data-toggle="addUserPanel" class="button primary expanded">+ Add New User</a>
+									<label>
+										Confirm Password
+										<input type="password" value="password">
+									</label>
 								</div>
 							</div>
-						</div>						
-					
-						<div id="addUserPanel" class="callout secondary" data-toggler data-animate="fade-in fade-out" style="display:none;">
-							<form>
-							  	<div class="row">
-							    	<div class="medium-6 columns">
-						      			<label>Email Address
-						        			<input type="text" placeholder="">
-							      		</label>
-						    		</div>
-						    		<div class="medium-6 columns">
-						    			<label>Role
-						    				<select>
-						    					<option>Super Admin</option>
-						    					<option>Developers</option>
-						    					<option>Patient Admin</option>
-						    					<option>Content Admin</option>
-						    				</select>
-						    			</label>
-						    		</div>
-							    	<div class="medium-6 columns">
-							      		<label>Password
-							        		<input type="text" placeholder="">
-							      		</label>
-						    		</div>
-						    		<div class="medium-6 columns">
-							      		<label>Confirm Password
-							        		<input type="text" placeholder="">
-							      		</label>
-						    		</div>
-						    		<div class="medium-6 columns end">
-							      		<button type="submit" class="button">+ Add User</button>
-						    		</div>
-							  	</div>
-							</form>
-						</div>
-						
-						<table>
-							<thead>
-								<th><a href="#">Name <i class="fa fa-caret-up fa-fw"></i></a></th>
-								<th><a href="#">Role <i class="fa fa-caret-up fa-fw"></i></a></th>
-								<th></th>
-							</thead>
-							<tbody>
-								<tr>
-									<td><a href="admin-user-profile.html">Will Smith</a></td>
-									<td>Super Admin</td>
-									<td class="text-right">
-										<a class="action-link"><i class="fa fa-edit"></i></a>
-										<a class="action-link alert"><i class="fa fa-remove"></i></a>
-									</td>
-								</tr>
-								<tr>
-									<td><a href="admin-user-profile.html">Margot Robbie</a></td>
-									<td>Patient Admin</td>
-									<td class="text-right">
-										<a class="action-link"><i class="fa fa-edit"></i></a>
-										<a class="action-link alert"><i class="fa fa-remove"></i></a>
-									</td>
-								</tr>
-								<tr>
-									<td><a href="admin-user-profile.html">Viola Davis</a></td>
-									<td>Admin</td>
-									<td class="text-right">
-										<a class="action-link"><i class="fa fa-edit"></i></a>
-										<a class="action-link alert"><i class="fa fa-remove"></i></a>
-									</td>
-								</tr>
-								<tr>
-									<td><a href="admin-user-profile.html">cara.delivigne@chromedia.com</a></td>
-									<td>Content Admin</td>
-									<td class="text-right">
-										<a class="action-link"><i class="fa fa-edit"></i></a>
-										<a class="action-link alert"><i class="fa fa-remove"></i></a>
-									</td>
-								</tr>
-							</tbody>
-						</table>
+							<div class="row">
+								<div class="medium-12 columns">
+									<button type="submit" class="button primary">Save Changes</button>
+								</div>
+							</div>
+						</form>
 
 					</div>
 				</div>
