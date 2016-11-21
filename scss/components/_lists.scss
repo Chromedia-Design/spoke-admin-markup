@@ -4,7 +4,6 @@
 	list-style: none;
 	> li {
 		font-family: $header-font-family;
-		font-size: 0.875rem;
 		font-weight: 400;
 		min-height: 20px;
 		border-bottom: 1px solid rgba($black, $B-dividers);
@@ -16,21 +15,39 @@
 				text-decoration: underline;
 			}
 		}
+		[type='text'],
+		[type='password'],
+		[type='date'],
+		[type='datetime'],
+		[type='datetime-local'],
+		[type='month'],
+		[type='week'],
+		[type='email'],
+		[type='number'],
+		[type='search'],
+		[type='tel'],
+		[type='time'],
+		[type='url'],
+		[type='color'] {
+			margin-bottom: 0.5rem;
+		}
+		.input-group {
+			margin-bottom: 0;
+		}
+		[type='radio'],
+		[type='checkbox'] {
+			margin-bottom: 0;
+		}
 		.list-wrap {
 			background-color: $white;
 			padding: 15px 25px;
-			.dark {
-					background-color: $black;
+			&.with-input {
+				.list-item-name, .list-detail {
+					margin-top: 0.6rem;
 				}
-
-			.input input {
-				border: none;
-				font-size: .9rem;
-				padding: 0 .25rem !important;
-				// line-height: .75rem;
-				height: 2rem;
-				background-color: rgba($white, .25)
-				// background-color: rgba($black, .25);
+				.list-detail {
+					width: 30%;
+				}
 			}
 		}
 		.list-panel {
@@ -40,15 +57,18 @@
 				padding: 15px 30px 15px;
 			}
 		}
+		.pull-left {
+			margin-right: 1rem;
+		}
 		.list-item-image {
 			width: 7%;
-			float: left;
 			position: relative;
+			display: inline-block;
 		}
 		.list-item-name {
-			width: 30%;
+			width: 44%;
 			position: relative;
-			float: left;
+			display: inline-block;
 			> a,
 			span,
 			label {
@@ -61,28 +81,9 @@
 			}
 		}
 		.list-detail {
-			max-width: 45%;
+			width: 40%;
 			display: inline-block;
 			color: rgba($black, $B-subtext);
-			[type='text'],
-			[type='password'],
-			[type='date'],
-			[type='datetime'],
-			[type='datetime-local'],
-			[type='month'],
-			[type='week'],
-			[type='email'],
-			[type='number'],
-			[type='search'],
-			[type='tel'],
-			[type='time'],
-			[type='url'],
-			[type='color'] {
-				margin-bottom: 0;
-			}
-			.input-group {
-				margin-bottom: 0;
-			}
 		}
 		.list-note {
 			display: inline-block;
@@ -100,10 +101,10 @@
 	// Wells listed under the main list
 	.well-list {
 		> li {
-			font-size: 0.75rem;
+			font-size: 0.875rem;
 			border-bottom: 1px solid rgba($white, $W-hinttext);
 			.list-wrap {
-				padding-left: 60px;
+				padding-left: 65px;
 				background: transparent;
 			}
 			&.list-core {
@@ -113,8 +114,11 @@
 			}
 			.list-item-name {
 				label {
-					font-size: 0.75rem;
+					font-size: 0.875rem;
 				}
+			}
+			.list-detail {
+				width: 20%;
 			}
 			&:last-child {
 				border-bottom: none;
@@ -126,21 +130,26 @@
 		.h6 {
 			font-size: 0.875rem;
 		}
-		[type='radio'],
-		[type='checkbox'] {
-			margin-bottom: 0;
-		}
 		> li {
 			.list-wrap {
 				padding: 7px 15px;
 			}
 			.list-item-name {
-				width: 60%;
 				position: relative;
 				float: left;
+				> a,
+				span,
+				label {
+					display: inline-block;
+					width: 83%;
+					vertical-align: middle;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis; 
+				}
 			}
 			.list-detail {
-				max-width: 30%;
+				width: 40%;
 				display: inline-block;
 			}
 		}
@@ -152,27 +161,33 @@
 			.list-wrap {
 				padding-left: 30px;
 			}
+			> li {
+				.list-item-name {
+					label {
+						font-size: 0.875rem;
+					}
+				}
+			}
 			// Third tier of wells
 			.well-list {
-				font-size: 0.75rem;
 				.action-link {
 					line-height: 1.5rem;
 				}
 				.list-wrap {
-					padding-left: 60px;
-					label {
-						font-size: 0.75rem;
+					padding-left: 65px;
+				}
+				> li {
+					font-size: 0.75rem;
+					.list-item-name {
+						label {
+							font-size: 0.75rem;
+						}
+					}
+					.list-detail {
+						width: 30%;
 					}
 				}
 			}
-		}
-	}
-	&.with-inputs {
-		.h6 {
-			margin-top: 0.5rem;
-		}
-		.action-link {
-			line-height: 2.5rem;
 		}
 	}
 }
