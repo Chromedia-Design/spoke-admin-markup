@@ -1,0 +1,14 @@
+table {
+	font-family: $header-font-family;
+	font-size: 0.875rem;
+	thead {
+		th {
+			padding: 0.875rem 1rem 0.875rem;
+		}
+	}
+	tbody {
+		td {
+			padding: 0.875rem 1rem 0.875rem;
+		}
+	}
+}
