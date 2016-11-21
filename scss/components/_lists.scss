@@ -41,6 +41,22 @@
 			max-width: 45%;
 			display: inline-block;
 			color: rgba($black, $B-subtext);
+			[type='text'],
+			[type='password'],
+			[type='date'],
+			[type='datetime'],
+			[type='datetime-local'],
+			[type='month'],
+			[type='week'],
+			[type='email'],
+			[type='number'],
+			[type='search'],
+			[type='tel'],
+			[type='time'],
+			[type='url'],
+			[type='color'] {
+				margin-bottom: 0;
+			}
 		}
 		.list-note {
 			display: inline-block;
@@ -92,6 +108,15 @@
 			.list-wrap {
 				padding: 7px 15px;
 			}
+			.list-item-name {
+				width: 60%;
+				position: relative;
+				float: left;
+			}
+			.list-detail {
+				max-width: 30%;
+				display: inline-block;
+			}
 		}
 		// Wells listed under the main small list
 		.well-list {
@@ -114,6 +139,14 @@
 					}
 				}
 			}
+		}
+	}
+	&.with-inputs {
+		.h6 {
+			margin-top: 0.5rem;
+		}
+		.action-link {
+			line-height: 2.5rem;
 		}
 	}
 }
