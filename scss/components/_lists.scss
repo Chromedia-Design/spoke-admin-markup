@@ -19,6 +19,19 @@
 		.list-wrap {
 			background-color: $white;
 			padding: 15px 25px;
+			.dark {
+					background-color: $black;
+				}
+
+			.input input {
+				border: none;
+				font-size: .9rem;
+				padding: 0 .25rem !important;
+				// line-height: .75rem;
+				height: 2rem;
+				background-color: rgba($white, .25)
+				// background-color: rgba($black, .25);
+			}
 		}
 		.list-panel {
 			background-color: rgba($dark-gray, $B-dividers);
