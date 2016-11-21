@@ -36,6 +36,16 @@
 			width: 30%;
 			position: relative;
 			float: left;
+			> a,
+			span,
+			label {
+				display: inline-block;
+				width: 88%;
+				vertical-align: middle;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis; 
+			}
 		}
 		.list-detail {
 			max-width: 45%;
@@ -55,6 +65,9 @@
 			[type='time'],
 			[type='url'],
 			[type='color'] {
+				margin-bottom: 0;
+			}
+			.input-group {
 				margin-bottom: 0;
 			}
 		}
