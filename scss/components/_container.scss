@@ -1,10 +1,12 @@
 .card {
-	box-shadow: 1px 1px 2px #F2F5F6;
-	transition: all 0.5s ease;
-	border: 1px solid #F2F5F6; 
-	margin-bottom: 1rem;
-	background-color: #fff;
+	display: inline-block;
+	width: 100%;
+	transition: all 0.5s ease-in-out;
+	border: 1px solid rgba($black, $B-dividers); 
+	margin: 0 0 1rem;
+	background-color: $white;
 	border-radius: 2px;
+	box-shadow: 1px 1px 2px #F2F5F6;
 
 	// Use this for transition in pseudo-class :hover
 	// box-shadow: 1px 5px 10px #E1E1E1;
@@ -23,56 +25,50 @@
 	}
 }
 
-.section-header{
-	h5, a {
-		display: inline-block;
-	}
-	h5 {
-		margin-bottom: 0px;
-	}
-}
 .card-person {
-	display: block;
-	// padding: 1rem;
-	margin-bottom: 1rem;
-	.person-image{
-		img {
-			border-radius: 100%;
+	@extend .card;
+	min-height: 124px;
+	padding: 1rem;
+	.img-wrapper {
+		position: relative;
+		display: flex;
+		align-items: center;
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		overflow: hidden;
+		> img {
+			width: 100%;
+			height: auto;
+			display: inline-block;
 		}
 	}
-	.person-info{
+	.person-info {
 		.info-name, .info-position, .info-email, .info-phone{
-			margin-bottom: 0px;
+			width: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			margin-bottom: 0;
+		}
+		.info-name {
+			font-family: $header-font-family;
 		}
 		.info-email, .info-phone{
-			color: #008EB2;
-			font-size: .8rem;
+			color: $primary-color;
+			font-size: 0.75rem;
 			i {
 				margin-right: 1rem;
 			}
 		}
-
-		.info-name{
-			font-weight: 500;
+		.info-position{
+			font-size: 0.75rem;
 		}
-		.info-position{}
-		
 	}
-	.person-action{
-		display: table-cell;
-		vertical-align: middle;
-	}
-	.info-position{}
-		
-	.person-action{
-		display: table-cell;
-		vertical-align: middle;
-	}
-	&>div {
-		align-content: center;
-		@extend .card;
-		margin-bottom: 0px;
-		padding: 1rem;	
+	.person-action {
+		.button {
+			margin-bottom: 0;
+		}
 	}
 }
 
@@ -92,7 +88,7 @@
 .block-heading {
 	color: $white;
 	background-color: $dark-gray;
-	padding: 0.7rem 1.3rem;	
+	padding: 1rem 1.3rem 0.7rem;
 	>label {
 		color: rgba($white, $W-text) !important;
 	}
@@ -124,6 +120,14 @@ label.image-upload {
 	padding: 1rem;
 	background-color: $white;
 	border-radius: 2px;
+}
+
+.label-group {
+	p {
+		margin-bottom: 5px;
+		font-size: 0.875rem;
+		color: rgba($black, $B-subtext);
+	}
 }
 
 

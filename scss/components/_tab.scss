@@ -19,6 +19,12 @@
 	}
 }
 
+.tabs-title {
+	> a {
+		font-size: 0.875rem;
+	}
+}
+
 .tabs-content{
 	border: 0rem !important;
 	background-color: transparent !important;
