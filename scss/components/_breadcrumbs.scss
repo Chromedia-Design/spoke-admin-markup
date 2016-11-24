@@ -1,15 +1,16 @@
 .breadcrumbs {
 	border-bottom: 1px solid rgba($black, $B-dividers);
 	padding: 1rem 0;
+	margin: 1rem 0;
 	a {
-		color: rgba($black, $B-hinttext);
+		color: $text-black;
 	}
 	li {
 		font-family: $header-font-family;
 		font-size: 1rem;
 		font-weight: 600;
 		text-transform: none;
-		color: $text-black;
+		color: rgba($black, $B-hinttext);
 		&:not(:last-child) {
 			&:after {
 				content: ">";

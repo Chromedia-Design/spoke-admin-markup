@@ -4,11 +4,9 @@
 	transition: all 0.5s ease-in-out;
 	border: 1px solid rgba($black, $B-dividers); 
 	margin: 0 0 1rem;
-	padding: 1rem;
 	background-color: $white;
 	border-radius: 2px;
 	box-shadow: 1px 1px 2px #F2F5F6;
-	min-height: 124px;
 
 	// Use this for transition in pseudo-class :hover
 	// box-shadow: 1px 5px 10px #E1E1E1;
@@ -29,6 +27,8 @@
 
 .card-person {
 	@extend .card;
+	min-height: 124px;
+	padding: 1rem;
 	.img-wrapper {
 		position: relative;
 		display: flex;
@@ -65,6 +65,11 @@
 			font-size: 0.75rem;
 		}
 	}
+	.person-action {
+		.button {
+			margin-bottom: 0;
+		}
+	}
 }
 
 .block {
@@ -72,7 +77,6 @@
 	border: 1px solid rgba($black, $B-dividers);
 	border-radius: 2px;
 	overflow: hidden;
-	width: 100%;
 }
 
 .block-container, .block-container-fade {
@@ -84,7 +88,7 @@
 .block-heading {
 	color: $white;
 	background-color: $dark-gray;
-	padding: 0.7rem 1.3rem;	
+	padding: 1rem 1.3rem 0.7rem;
 	>label {
 		color: rgba($white, $W-text) !important;
 	}
@@ -116,6 +120,14 @@ label.image-upload {
 	padding: 1rem;
 	background-color: $white;
 	border-radius: 2px;
+}
+
+.label-group {
+	p {
+		margin-bottom: 5px;
+		font-size: 0.875rem;
+		color: rgba($black, $B-subtext);
+	}
 }
 
 

@@ -1,5 +1,8 @@
 .callout {
 	border-radius: 2px;
+	&.hi-padded {
+		padding: 2rem;
+	}
 }
 
 .callout-heading {

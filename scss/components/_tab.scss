@@ -1,4 +1,4 @@
-.tabs, .tabs-link {
+.tabs {
 	margin: 0 0 1rem;
 	font-weight: $global-weight-semibold;
 	font-family: $header-font-family;
@@ -19,6 +19,12 @@
 	}
 }
 
+.tabs-title {
+	> a {
+		font-size: 0.875rem;
+	}
+}
+
 .tabs-content{
 	border: 0rem !important;
 	background-color: transparent !important;
@@ -30,7 +36,4 @@ div.overview {
 
 .tabs-panel, .tabs-content {
 	background-color: transparent !important;
-	.page-lead {
-		margin: 1rem 0;
-	}
 }
