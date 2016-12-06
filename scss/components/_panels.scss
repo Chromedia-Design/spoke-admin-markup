@@ -1,4 +1,5 @@
 .panel {
+	margin-bottom: 1rem;
 	background: $white;
 	border: 1px solid rgba($black, $B-dividers);
 	border-radius: 2px;
@@ -16,5 +17,8 @@
 		.panel-body {
 			background-color: rgba($dark-gray, $B-dividers);
 		}
+	}
+	&.primary {
+		border: 1px solid rgba($primary-color, $B-text);
 	}
 }

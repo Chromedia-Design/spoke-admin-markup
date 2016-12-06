@@ -1,3 +1,68 @@
+body {
+	overflow: hidden;
+	&.frontend {
+		overflow: scroll;
+	}
+}
+
+hr {
+	border-bottom: 1px solid rgba($black, $B-dividers);
+}
+
+section {
+	&.section {
+		padding: 3.75rem 0;
+		.section-heading {
+			margin-bottom: 1.875rem;
+		}
+		&.white-bg {
+			background-color: $white;
+			border-top: 1px solid rgba($black, $B-dividers);
+			border-bottom: 1px solid rgba($black, $B-dividers);
+		}
+	}
+	&.jumbotron {
+		background-color: $white;
+		border-bottom: 1px solid rgba($black, $B-dividers);
+		.columns {
+			display: flex;
+			align-items: center;
+		}
+		.call-to-action {
+			padding: 3.75rem 0;
+			h1 {
+				margin-bottom: 1.875rem;
+				@media only screen and (min-width: 40em) {
+					font-size: 2.3125rem;
+					line-height: 1.5em;
+				}
+			}
+			p {
+				margin-bottom: 1.875rem;
+				@media only screen and (min-width: 40em) {
+					font-size: 1.3125rem;
+					line-height: 1.5em;
+				}
+			}
+		}
+		.lead-testimonial {
+			position: relative;
+			.story-card {
+				position: absolute;
+				padding: 1rem;
+				bottom: 0;
+				right: 0;
+				background-color: rgba($white, $W-subtext);
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+				.button {
+					margin-bottom: 0;
+				}
+			}
+		}	
+	}
+}
+
 .login {
 	height: 100%;
 	width: 100%;
@@ -21,7 +86,7 @@
 }
 
 .content {
-	overflow: scroll;
+	overflow-y: scroll;
 	.top-bar {
 		// Override the blue caret after the dropdown link in the topbar
 		.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
@@ -41,26 +106,6 @@
 					}
 				}
 			}
-		}
-	}
-}
-
-.page-lead {
-	margin: 2rem 0 2rem;
-	.h1,
-	.h2,
-	.h3,
-	.h4,
-	.h5 {
-		margin-right: 1rem;
-	}
-	.menu {
-		display: inline-block;
-		vertical-align: middle;
-	}
-	[class*='columns'] {
-		> * {
-			margin-bottom: 0;
 		}
 	}
 }

@@ -5,7 +5,7 @@
 .row-item-container {
 	@extend .card;
 	min-height: 60px;
-	padding: 2rem;
+	padding: 2rem 1.5rem;
 	> .row {
 		> .columns {
 			display: table;
@@ -61,7 +61,7 @@
 		}
 	}
 	&:hover{
-		box-shadow: 1px 5px 10px #E1E1E1;
+		box-shadow: 0 4px 25px rgba($black, $B-dividers);
 		transition: all 0.5s ease;
 	}
 }

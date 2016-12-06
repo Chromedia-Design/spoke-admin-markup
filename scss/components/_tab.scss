@@ -2,7 +2,10 @@
 	margin: 0 0 1rem;
 	font-weight: $global-weight-semibold;
 	font-family: $header-font-family;
-	border: none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid rgba($black, $B-dividers);
 	li {
 		list-style: none;
 		display: inline-block;
@@ -17,7 +20,53 @@
 			background-color: transparent !important;
 		}
 	}
+	&.justified {
+		display: table;
+		width: 100%;
+		.tabs-title {
+			display: table-cell;
+			float: none;
+			text-align: center;
+		}
+	}
+	&.spk-suggestions {
+		position: relative;
+		z-index: 2;
+		margin: 0;
+		border-spacing: 5px;
+		border-collapse: separate;
+		border: none;
+		background: transparent;
+		li {
+			padding: none;
+			border-top-left-radius: 4px;
+			border-top-right-radius: 4px;
+			background-color: rgba($black, $B-dividers);
+			@media only screen and (min-width: 40em) {
+				padding: 1rem;
+			}
+			> a {
+				font-size: 0.75rem;
+				color: rgba($black, $B-hinttext);
+				text-transform: uppercase;
+				padding: 1rem 0.5rem;
+				@media only screen and (min-width: 40em) {
+					font-size: 1.25rem;
+					padding: 1.25rem 1.5rem;
+				}
+			}
+			&.is-active {
+				border: 1px solid rgba($black, $B-dividers);
+				border-bottom: none;
+				background-color: $white;
+				a {
+					color: $text-black;
+				}
+			}
+		}
+	}
 }
+
 
 .tabs-title {
 	> a {
@@ -26,8 +75,14 @@
 }
 
 .tabs-content{
-	border: 0rem !important;
-	background-color: transparent !important;
+	border: none;
+	background-color: transparent;
+	&.spk-suggestions {
+		position: relative;
+		z-index: 1;
+		border-top: 1px solid rgba($black, $B-dividers);
+		margin-top: -6px;
+	}
 }
 
 div.overview {
@@ -37,3 +92,4 @@ div.overview {
 .tabs-panel, .tabs-content {
 	background-color: transparent !important;
 }
+

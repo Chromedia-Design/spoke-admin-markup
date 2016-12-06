@@ -10,6 +10,21 @@ table {
 	tbody {
 		td {
 			padding: 0.875rem 1rem 0.875rem;
+			.button {
+				margin-bottom: 0;
+			}
+		}
+	}
+	&.base-spacing {
+		thead {
+			th {
+				&:first-child {
+					width: 40%;
+				}
+				&:nth-child(2) {
+					width: 40%;
+				}
+			}
 		}
 	}
 }

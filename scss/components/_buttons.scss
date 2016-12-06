@@ -1,12 +1,29 @@
 .button {
+	font-family: $header-font-family;
 	border-radius: 2px;
-	font-weight: 400;
+	font-weight: $global-weight-semibold;
 	&.link {
 		background: transparent;
 		border: none;
 		color: $text-black;
 		font-weight: 400;
+		&:hover {
+			color: $white;
+		}
+		&.alert {
+			color: $alert-color;
+			&:hover {
+				color: $white;
+			}
+		}
 	}
+	&.primary {
+		font-weight: $global-weight-semibold;
+	}
+}
+
+.button-group {
+	margin-top: 1rem;
 }
 
 .action-link {
@@ -55,5 +72,21 @@
 	}
 	&:only-child {
 		margin-right: 0;
+	}
+}
+
+.brick {
+	@extend .button;
+	cursor: default;
+	font-weight: $global-weight-semibold;
+}
+
+.close-button {
+	position: absolute;
+	top: 1.5rem;
+	right: 1.5rem;
+	color: rgba($black, $B-dividers);
+	&:hover {
+		color: $text-black;
 	}
 }

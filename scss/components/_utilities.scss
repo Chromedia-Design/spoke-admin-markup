@@ -2,14 +2,16 @@
 
 .inline-block { display:inline-block; }
 
-.mb-2 { margin-bottom: 2rem; }
 .ml-1 { margin-left: 1rem; }
 .ml-1-5 { margin-left: 1.5rem; }
 .ml-2 { margin-left: 2rem; }
 
-.mb-4 { margin-bottom: 4rem; }
-
+.mt-1 { margin-top: 1rem;}
 .mt-2 { margin-top: 2rem;}
+
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
+.mb-4 { margin-bottom: 4rem; }
 
 .pl-0 { padding-left: 0rem; }
 .pl-1 { padding-left: 1rem; }
@@ -28,6 +30,15 @@
 .disabled {
 	pointer-events: none;
 	opacity: 0.25;
+}
+
+.truncate {
+	margin: 0;
+	display: block;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .v-align-center {
