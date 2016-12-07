@@ -28,6 +28,7 @@
 .img-card {
 	@extend .card;
 	height: 22rem;
+	position: relative;
 	.img-card-head {
 		position: relative;
 		height: 55%;

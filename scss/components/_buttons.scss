@@ -9,11 +9,13 @@
 		font-weight: 400;
 		&:hover {
 			color: $white;
+			background-color: $secondary-color;
 		}
 		&.alert {
 			color: $alert-color;
 			&:hover {
 				color: $white;
+				background-color: $alert-color;
 			}
 		}
 	}
