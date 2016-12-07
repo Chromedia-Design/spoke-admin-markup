@@ -102,6 +102,7 @@
 	border-radius: 2px;
 	color: $white;
 	transition: all 0.2s ease-in-out;
+	position: relative;
 	.subheader {
 		color: rgba($white, $W-subtext);
 		margin: 0;
@@ -110,6 +111,29 @@
 		justify-content: center;
 		display: flex;
 		align-items: center;
+		position: relative;
+		&:first-child {
+			&:before, &:after {
+				content: "";
+			  	position: absolute;
+			  	display: block;
+				right: 0.5rem;
+				width: 1px;
+				height: 50%;
+			}
+			&:before {
+				top: 0;
+			  background: -webkit-linear-gradient(bottom, #fff 0%, transparent 100%);
+			  background: -o-linear-gradient(bottom, #fff 0%, transparent 100%);
+			  background: linear-gradient(to top, #fff 0%, transparent 100%);
+			}
+			&:after {
+				bottom: 0;
+			  background: -webkit-linear-gradient(#fff 0%, transparent 100%);
+			  background: -o-linear-gradient(#fff 0%, transparent 100%);
+			  background: linear-gradient(#fff 0%, transparent 100%);
+			}
+		}
 	}
 	&:hover {
 		color: $white;
