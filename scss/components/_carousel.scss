@@ -1,0 +1,27 @@
+.owl-carousel {
+	&.small {
+		.owl-item {
+			> div {
+				height: 11rem;
+			}
+		}
+	}
+}
+
+.owl-item {
+	> div {
+		background-color: rgba($black, $B-text);
+		height: 22rem;
+		position: relative;
+		// display: flex;
+		// align-items: center;
+		// justify-content: center;
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: auto;
+		}
+	}
+}

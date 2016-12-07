@@ -90,3 +90,27 @@
 		color: $text-black;
 	}
 }
+
+.cta-button {
+	display: inline-block;
+	width: 100%;
+	margin: 0 0 1rem;
+	padding: 1rem;
+	background-color: rgba($alert-color, $B-text);
+	border-radius: 2px;
+	color: $white;
+	transition: all 0.2s ease-in-out;
+	.subheader {
+		color: rgba($white, $W-subtext);
+		margin: 0;
+	}
+	.columns {
+		justify-content: center;
+		display: flex;
+		align-items: center;
+	}
+	&:hover {
+		color: $white;
+		background-color: $alert-color;
+	}
+}

@@ -7,7 +7,7 @@
 }
 
 strong, b {
-	font-weight: 600;
+	font-weight: $global-weight-semibold;
 }
 
 i {
@@ -22,12 +22,24 @@ small {
 	text-decoration: underline;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	&.subheader {
+		font-weight: $global-weight-semibold;
+	}
+}
+
 .h1,
 .h2,
 .h3,
 .h4,
 .h5,
 .h6 {
+	display: block;
 	font-family: $header-font-family;
 	font-weight: 600;
 	line-height: 1.2em;
@@ -59,12 +71,19 @@ small {
 
 .primary-color {
 	color: $primary-color;
+	> * {
+		color: $primary-color;
+	}
 }
 
 .success-color {
 	color: $success-color;
+	> * {
+		color: $success-color;
+	}
 }
 
 .subheader {
 	color: rgba($black, $B-subtext);
+	font-weight: inherit;
 }

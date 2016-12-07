@@ -27,7 +27,7 @@
 
 .img-card {
 	@extend .card;
-	height: 20rem;
+	height: 22rem;
 	.img-card-head {
 		position: relative;
 		height: 55%;
@@ -41,9 +41,49 @@
 			min-width: 100%;
 			min-height: 100%;
 		}
+		.header, .footer {
+			position: absolute;
+			width: 100%;
+			padding: 0.5rem;
+			background-color: rgba($white, $W-dividers);
+		}
+		.header {
+			top: 0;
+		}
+		.footer {
+			bottom: 0;
+			padding-left: 0;
+			.story-card {
+				padding: 0.2rem 2rem 0.5rem;
+				background-color: $success-color;
+				display: inline-block;
+				border-top-right-radius: 2px;
+				border-bottom-right-radius: 2px;
+				h1,
+				h2,
+				h3,
+				h4,
+				h5,
+				h6,
+				p {
+					margin: 0;
+					color: $white;
+				}
+				p small {
+					font-size: 60%;
+					line-height: 1em;
+				}
+			}
+		}
 	}
 	.img-card-body {
 		padding: 1rem;
+		p {
+			margin-bottom: 0;
+			> small {
+				font-size: 0.75rem;
+			}
+		}
 		.media-object {
 			margin: 0;
 			.media-object-section {
@@ -61,8 +101,27 @@
 						}
 					}
 				}
+				h1,
+				h2,
+				h3,
+				h4,
+				h5,
+				h6 {
+					font-size: 1rem;
+					margin-bottom: 0;
+					overflow: hidden;
+					width: 100%;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					> small {
+						font-size: 0.875rem;
+					}
+				}
 			}
 		}
+	}
+	&.large {
+		height: 32rem;
 	}
 }
 

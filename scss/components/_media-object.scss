@@ -1,3 +1,15 @@
 .media-object {
 	margin: 1rem 0;
 }
+
+.media-object-section {
+	&.logo {
+		width: 20%;
+		img {
+			width: 100%;
+		}
+		@media only screen and (min-width: 40em) {
+			width: auto;
+		}
+	}
+}

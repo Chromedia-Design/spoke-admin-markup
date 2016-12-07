@@ -271,3 +271,18 @@
 		padding: 0.5rem;
 	}
 }
+
+.grouped-listing {
+	margin: 2rem 0;
+	ul, ol {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		> li {
+			margin-bottom: 1rem;
+		}
+	}
+	.subheader {
+		line-height: 1.6;
+	}
+}

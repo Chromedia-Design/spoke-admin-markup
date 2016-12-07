@@ -71,6 +71,7 @@
 .tabs-title {
 	> a {
 		font-size: 0.875rem;
+		line-height: 1.5em;
 	}
 }
 
@@ -83,6 +84,10 @@
 		border-top: 1px solid rgba($black, $B-dividers);
 		margin-top: -6px;
 	}
+}
+
+.tabs-panel {
+	padding: 0;
 }
 
 div.overview {

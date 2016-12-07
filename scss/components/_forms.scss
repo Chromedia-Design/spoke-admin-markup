@@ -1,4 +1,5 @@
 label {
+	color: rgba($black, $B-text);
 	&.small-label {
 		font-size: 0.75rem;
 	}
@@ -6,6 +7,36 @@ label {
 
 textarea {
 	height: 4rem;
+}
+
+legend {
+	font-size: 0.875rem;
+	&.labelize {
+		padding-left: 1rem;
+	}
+}
+
+.help-text {
+	margin-top: 0;
+}
+
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+select,
+textarea {
+	margin-bottom: 1.5rem;
 }
 
 [type='text'],
@@ -64,6 +95,17 @@ textarea, div, label, select {
 	}
 }
 
+[type='checkbox'],
+[type='radio'] {
+	margin: 0;
+	+ label {
+		display: inline;
+		font-size: 1rem;
+		line-height: 1.5em;
+		color: $text-black;
+	}
+}
+
 textarea, .mce-tinymce {
 	margin: 0 0 1rem !important;
 }
@@ -75,7 +117,7 @@ textarea, .mce-tinymce {
     border: 1px solid #6E868D;
 }
 
-[type='submit'], .cancel {
+[type='submit'], .cancel, .submit {
 	margin-bottom: 0;
 }
 
