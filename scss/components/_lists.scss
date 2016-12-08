@@ -1,3 +1,7 @@
+.fa-ul {
+	padding-left: 1.875rem;
+}
+
 .well-list {
 	margin: 0;
 	padding: 0;
@@ -280,6 +284,9 @@
 		list-style: none;
 		> li {
 			margin-bottom: 1rem;
+		}
+		&.fa-ul {
+			padding-left: 1.875rem;
 		}
 	}
 	.subheader {
