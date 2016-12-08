@@ -217,11 +217,6 @@
 		display: inline-block;
 		vertical-align: middle;
 	}
-	[class*='columns'] {
-		> * {
-			margin-bottom: 0;
-		}
-	}
 	.button {
 		margin-bottom: 0;
 	}
