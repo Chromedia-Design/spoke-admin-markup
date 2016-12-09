@@ -27,7 +27,7 @@
 
 .img-card {
 	@extend .card;
-	height: 22rem;
+	min-height: 22rem;
 	position: relative;
 	.img-card-head {
 		position: relative;
@@ -88,20 +88,6 @@
 		.media-object {
 			margin: 0;
 			.media-object-section {
-				&.logo {
-					width: 28%;
-					.img-wrapper {
-						overflow: hidden;
-						min-height: 44px;
-						display: flex;
-						align-items: center;
-						text-align: center;
-						border: 1px solid rgba($black, $B-dividers);
-						> img {
-							width: 100%;
-						}
-					}
-				}
 				h1,
 				h2,
 				h3,
@@ -202,7 +188,7 @@
 }
 
 .page-lead {
-	margin: 2rem 0;
+	margin: 1.5rem 0;
 	.h1,
 	.h2,
 	.h3,

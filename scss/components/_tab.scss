@@ -9,15 +9,17 @@
 	li {
 		list-style: none;
 		display: inline-block;
-		justify-content: center;
 		text-decoration: none;
-		&.is-active {
-			border-bottom:0.2rem solid #FD0000;
-		}
-		&.tabs-title a{
+		a {
 			transition: 0.1s;
-			color: rgba($black, $B-text);
+			color: rgba($black, $B-subtext);
 			background-color: transparent !important;
+		}
+		&.is-active {
+			border-bottom: 0.2rem solid $alert-color;
+			a {
+				color: rgba($black, $B-text);
+			}
 		}
 	}
 	&.justified {

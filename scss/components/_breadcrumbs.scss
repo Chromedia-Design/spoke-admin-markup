@@ -1,5 +1,4 @@
 .breadcrumbs {
-	border-bottom: 1px solid rgba($black, $B-dividers);
 	padding: 1rem 0;
 	margin: 1rem 0;
 	a {
@@ -7,12 +6,12 @@
 	}
 	li {
 		font-family: $header-font-family;
-		font-size: 0.875rem;
-		font-weight: 600;
+		font-size: 0.5625rem;
+		font-weight: $global-weight-semibold;
 		text-transform: none;
 		color: rgba($black, $B-hinttext);
 		@media only screen and (min-width: 40em) {
-			font-size: 1rem;
+			font-size: 0.75rem;
 		}
 		&:not(:last-child) {
 			&:after {

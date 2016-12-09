@@ -1,5 +1,6 @@
 label {
 	color: rgba($black, $B-text);
+	font-family: $header-font-family;
 	&.small-label {
 		font-size: 0.75rem;
 	}
@@ -13,6 +14,12 @@ legend {
 	font-size: 0.875rem;
 	&.labelize {
 		padding-left: 1rem;
+	}
+}
+
+select {
+	&:disabled {
+		background-color: rgba($black, $B-dividers);
 	}
 }
 
@@ -34,7 +41,8 @@ legend {
 [type='time'],
 [type='url'],
 [type='color'],
-textarea, .bold-div {
+textarea, select, .bold-div {
+	font-family: $body-font-family;
 	box-shadow: none;
 	border-radius: 2px;
 	border: 1px solid rgba($black, $B-dividers);
@@ -80,6 +88,7 @@ textarea, div, label, select {
 [type='radio'] {
 	margin: 0;
 	+ label {
+		font-family: $body-font-family;
 		display: inline;
 		font-size: 1rem;
 		line-height: 1.5em;
@@ -99,6 +108,7 @@ textarea, .mce-tinymce {
 }
 
 [type='submit'], .cancel, .submit {
+	margin-top: 2rem;
 	margin-bottom: 0;
 }
 
