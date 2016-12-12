@@ -85,6 +85,9 @@
 				font-size: 0.75rem;
 			}
 		}
+		a {
+			color: $text-black;
+		}
 		.media-object {
 			margin: 0;
 			.media-object-section {
@@ -198,6 +201,7 @@
 		margin-top: 0.5rem;
 		margin-bottom: 0.5rem;
 		margin-right: 1rem;
+		color: rgba($black, $B-subtext);
 	}
 	.menu {
 		display: inline-block;

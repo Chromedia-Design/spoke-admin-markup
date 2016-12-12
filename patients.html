@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Spoke Sales Portal</title>
+	<title>Spoke Admin Portal</title>
 	<link rel="stylesheet" href="css/app.css">
 </head>
 <body>
@@ -19,94 +19,120 @@
 				</header>
 				<ul class="menu vertical"  data-accordion-menu>
 					<li>
-						<a href="#">Dashboard</a>
+						<a href="#"><i class="material-icons">dashboard</i> Dashboard</a>
 					</li>
 					<li>
-						<a href="#">Messages</a>
-					</li>
-					<li class="is-active">
-						<a href="#">Patients</a>
-					</li>
-					<li>
-						<a href="#">Facilities</a>
-					</li>
-					<li>
-						<a href="#">Profile</a>
+						<a href="#"><i class="material-icons">work</i> Practices</a>
 						<ul class="nested vertical menu is-active">
 							<li>
-								<a href="#">Account Information</a>
+								<a href="#">Specializations</a>
 							</li>
 							<li>
-								<a href="#">Change My Password</a>
+								<a href="#">Treatments</a>
 							</li>
 						</ul>
+					</li>
+					<li>
+						<a href="#"><i class="material-icons">card_giftcard</i> Packages</a>
+					</li>
+					<li>
+						<a href="#"><i class="material-icons">local_pharmacy</i> Facilities</a>
+					</li>
+					<li>
+						<a href="#"><i class="material-icons">card_giftcard</i> Doctors</a>
+					</li>
+					<li>
+						<a href="#"><i class="material-icons">card_giftcard</i> Companies</a>
+					</li>
+					<li class="is-active">
+						<a href="#"><i class="material-icons">wc</i> Patients</a>
+					</li>
+					<li>
+						<a href="#"><i class="material-icons">card_giftcard</i> Content</a>
+					</li>
+					<li>
+						<a href="#"><i class="material-icons">card_giftcard</i> Users</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 		<div class="medium-10 columns">
 			<div class="content">
+
 				<div class="top-bar">
-				  	<!-- <div class="top-bar-left">
-						<ul class="menu">
+				  	<div class="top-bar-left">
+						<!-- <ul class="menu">
 				      		<li><input type="search" placeholder="Search"></li>
 				      		<li><button type="button" class="button">Search</button></li>
-			    		</ul>
-				  	</div> -->
+			    		</ul> -->
+				  	</div>
 				  	<div class="top-bar-right">
 				    	<ul class="dropdown menu" data-dropdown-menu>
 				    		<li>
 				    			<a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">6</span></a>
 			    			</li>
 				      		<li>
-				        		<a href="#">Sales Agent</a>
+				        		<a href="#">Administrator</a>
 				        		<ul class="menu vertical">
-				          			<li><a href="#">Account</a></li>
-				          			<li><a href="#">Sign Out</a></li>
+				          			<li><a href="#">One</a></li>
+				          			<li><a href="#">Two</a></li>
+				          			<li><a href="#">Three</a></li>
 				        		</ul>
 				      		</li>
 				    	</ul>
 				  	</div>
 				</div>
-				
+
 				<div class="row">
-					<div class="large-12 columns">
+					<div class="medium-12 columns">
 
 						<div class="menu-options mt-2">
 			                <div class="row collapse">
-			                    <div class="large-4 columns">
+			                    <div class="large-4 columns end">
 			                        <div class="input-group">
-			                            <input class="input-group-field" type="text" placeholder="Search patients..."></input>
+			                            <input class="input-group-field" type="text" placeholder="Search companies..."></input>
 			                            <div class="input-group-button">
 			                                <input type="submit" class="button secondary" value="Search">
 			                            </div>
 			                        </div>
 			                    </div>
-			                    <div class="large-8 columns">
+			                    <!-- <div class="large-8 columns">
 			                        <div class="row collapse">
-			                            <div class="large-5 large-offset-7 columns">
+			                            <div class="large-5 large-offset-2 columns">
 			                                <div class="row">
 			                                    <div class="large-4 columns">
-			                                        <label for="" class="small-label text-right middle">Status</label>
+			                                        <label for="" class="small-label text-right middle">Specialization</label>
 			                                    </div>
 			                                    <div class="large-8 columns">
 			                                        <select class="small-input">
-			                                            <option>All Status</option>
+			                                            <option>All Specializations</option>
 			                                        </select>
 			                                    </div>  
 			                                </div> 
 			                            </div>
+			                            <div class="large-5 columns end">
+			                                <div class="row">
+			                                    <div class="large-4 columns">
+			                                        <label for="" class="small-label text-right middle">Sub-Spec</label>
+			                                    </div>
+			                                    <div class="large-8 columns">
+			                                        <select class="small-input">
+			                                            <option>All Subspecializations</option>
+			                                        </select>
+			                                    </div>
+			                                </div>    
+			                            </div>
 			                        </div>
-			                    </div>
+			                    </div> -->
 			                </div>
 			            </div>
 
-						<div class="page-lead">
-			                <span class="h5">Patients <span>(102)</span></span>
-			                <a class="button primary pull-right" href="sales-add-patients.html">+ Add New Patient</a>
+			            <div class="page-lead">
+			                <span class="h5">Patients <span>(10)</span></span>
+			                <a class="button primary pull-right" href="add-patient.html">+ Add New Patient</a>
 			            </div>
 
-			            <table>
+						<table>
 			                <thead>
 			                <tr>
 			                    <th><a href="#">Name <i class="fa fa-caret-up fa-fw"></i></a></th>
@@ -263,10 +289,13 @@
 						  <li><a href="#" aria-label="Page 12">12</a></li>
 						  <li><a href="#" aria-label="Page 13">13</a></li>
 						  <li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
-						</ul>
+						</ul>						
 
 					</div>
 				</div>
+
+
+				
 			</div>
 		</div>
 	</div>
@@ -277,7 +306,7 @@
 	<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
 	<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
 	<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
-	
+
 	<script src="js/app.js"></script>
 
 	<script type="text/javascript">
@@ -291,6 +320,9 @@
                 }, 40); 
             }).resize();
         });
+
+        
+
     </script>
 
 </body>

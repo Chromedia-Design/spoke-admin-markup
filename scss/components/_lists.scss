@@ -45,6 +45,15 @@
 		.list-wrap {
 			background-color: $white;
 			padding: 15px 25px;
+			&.stack-for-small {
+				.list-item-image, .list-item-name, .list-detail {
+					@media only screen and (max-width: 40em) {
+						display: block;
+						width: 100%;
+					}
+					
+				}
+			}
 		}
 		.list-panel {
 			background-color: rgba($dark-gray, $B-dividers);
