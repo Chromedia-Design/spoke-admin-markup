@@ -211,8 +211,10 @@
 		vertical-align: middle;
 	}
 	.button {
-		margin-top: -0.5rem;
 		margin-bottom: 0;
+		&.link {
+			margin-top: -0.5rem;
+		}
 	}
 	&.sub-heading {
 		margin: 0 0 1rem;

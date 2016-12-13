@@ -61,6 +61,12 @@
 			.form-single-line {
 				padding: 15px 30px 15px;
 			}
+			.callout {
+				margin: 0;
+				background-color: rgba($dark-gray, $B-dividers);
+				border: none;
+				border-radius: 0;
+			}
 		}
 		.pull-left {
 			margin-right: 1rem;
