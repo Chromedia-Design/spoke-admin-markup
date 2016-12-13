@@ -37,10 +37,10 @@
 						<a href="#">Packages</a>
 						<ul class="nested vertical menu is-active">
 							<li class="is-active">
-								<a href="#">Manage Packages</a>
+								<a href="packages.html">Manage Packages</a>
 							</li>
 							<li>
-								<a href="#">Manage Episodes</a>
+								<a href="package-episodes">Manage Episodes</a>
 							</li>
 						</ul>
 					</li>
@@ -93,20 +93,24 @@
 					<div class="medium-12 columns">
 						<nav aria-label="You are here:" role="navigation">
 						  	<ul class="breadcrumbs">
-						    	<li><a href="#">Treatment Packages</a></li>
+						  		<li><a href="#">Dentistry</a></li>
+						  		<li><a href="#">Endodontics</a></li>
+						    	<li><a href="packages.html">Root Canal Treatment</a></li>
 						    	<li>Molar Root Canal</li>
 						  	</ul>
 						</nav>
 						
 						<div class="page-lead">
-							<input class="large-input" type="text" name="" value="Molar Root Canal">
-							<!-- <input type="text" name="" value="Root canal therapy is performed when the pulp which is composed of nerves and blood vessels in the tooth becomes infected or damaged. During root canal therapy, the pulp is removed, and the inside of the tooth is cleaned and sealed."> -->
-							<textarea>Root canal therapy is performed when the pulp which is composed of nerves and blood vessels in the tooth becomes infected or damaged. During root canal therapy, the pulp is removed, and the inside of the tooth is cleaned and sealed.</textarea>
+							<span class="h4">Molar Root Canal</span>
+							<a href="#" class="button link"><i class="fa fa-edit"></i></a>
 						</div>
+
+						<p class="mb-2">Root canal therapy is performed when the pulp which is composed of nerves and blood vessels in the tooth becomes infected or damaged. During root canal therapy, the pulp is removed, and the inside of the tooth is cleaned and sealed.</p>
 
 						<ul class="tabs" data-tabs id="example-tabs">
 							<li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Package Components</a></li>
 							<li class="tabs-title"><a href="#panel2">Package Clinical Indicator Triggers</a></li>
+							<li class="tabs-title"><a href="#panel3">Baseline Prices</a></li>
 						</ul>
 
 						<div class="tabs-content" data-tabs-content="example-tabs">
@@ -592,167 +596,391 @@
 
 									</ul>
 								</div>
-						  	</div>
+						  	</div> <!-- End of tab panel 1 -->
+
 						  	<div class="tabs-panel" id="panel2">
+
 						    	<p class="page-lead subheader">Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
 
-								<div class="menu-options mt-2">
+						    	<div class="row collapse">
+								  	<div class="medium-3 columns">
+								    	<ul class="tabs vertical" id="example-vert-tabs" data-tabs>
+								      		<li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">Qualifying Diagnosis</a></li>
+								      		<li class="tabs-title"><a href="#panel2v">Clinical Triggers</a></li>
+								    	</ul>
+								    </div>
+								    <div class="medium-9 columns">
+								    	<div class="tabs-content vertical" data-tabs-content="example-vert-tabs">
+
+								      		<div class="tabs-panel is-active" id="panel1v">
+								      			<div class="row">
+								      				<div class="large-12 columns">
+								      					<div class="page-lead">
+											                <span class="h5">Qualifying Diagnosis <span>(10)</span></span>
+											                <a class="button primary pull-right" href="#" data-open="addTrigger">+ Add Qualifying Diagnosis</a>
+
+															<div class="reveal" id="addTrigger" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+												                <div class="row">
+												                    <div class="large-12 columns">
+												                        <h5 class="reveal-heading">Add Add Qualifying Diagnosis</h5>
+												                    </div>
+												                </div>
+												                <form>
+												                    <div class="row">
+												                        <div class="large-12 columns">
+												                            <label>
+												                                Search Code/Descriptor
+												                                <select>
+												                                    <option disabled></option>
+												                                </select>
+												                            </label>
+												                        </div>
+												                    </div>
+												                    <div class="row">
+												                        <div class="medium-12 columns">
+												                            <div class="submit button-group pull-right">
+												                                <a class="button link" data-close>Cancel</a>
+												                                <button type="submit" class="button primary">Add Trigger</button>
+												                            </div>
+												                        </div>
+												                    </div>
+												                </form>
+												                <button class="close-button" data-close aria-label="Close modal" type="button">
+												                    <span aria-hidden="true">&times;</span>
+												                </button>
+												            </div>
+											            </div>
+
+												    	<table>
+												    		<thead>
+												    			<th>Code</th>
+												    			<th>Descriptor</th>
+												    			<th></th>
+												    		</thead>
+												    		<tbody>
+												    			<tr>
+												    				<td>0089</td>
+												    				<td>This is a description of this code</td>
+												    				<td>
+												    					<div class="pull-right">
+												    						<a class="action-link"><i class="fa fa-remove"></i></a>
+												    					</div>
+												    				</td>
+												    			</tr>
+												    			<tr>
+												    				<td>0089</td>
+												    				<td>This is a description of this code</td>
+												    				<td>
+												    					<div class="pull-right">
+												    						<a class="action-link"><i class="fa fa-remove"></i></a>
+												    					</div>
+												    				</td>
+												    			</tr>
+												    			<tr>
+												    				<td>0089</td>
+												    				<td>This is a description of this code</td>
+												    				<td>
+												    					<div class="pull-right">
+												    						<a class="action-link"><i class="fa fa-remove"></i></a>
+												    					</div>
+												    				</td>
+												    			</tr>
+												    			<tr>
+												    				<td>0089</td>
+												    				<td>This is a description of this code</td>
+												    				<td>
+												    					<div class="pull-right">
+												    						<a class="action-link"><i class="fa fa-remove"></i></a>
+												    					</div>
+												    				</td>
+												    			</tr>
+												    			<tr>
+												    				<td>0089</td>
+												    				<td>This is a description of this code</td>
+												    				<td>
+												    					<div class="pull-right">
+												    						<a class="action-link"><i class="fa fa-remove"></i></a>
+												    					</div>
+												    				</td>
+												    			</tr>
+												    			<tr>
+												    				<td>0089</td>
+												    				<td>This is a description of this code</td>
+												    				<td>
+												    					<div class="pull-right">
+												    						<a class="action-link"><i class="fa fa-remove"></i></a>
+												    					</div>
+												    				</td>
+												    			</tr>
+												    			<tr>
+												    				<td>0089</td>
+												    				<td>This is a description of this code</td>
+												    				<td>
+												    					<div class="pull-right">
+												    						<a class="action-link"><i class="fa fa-remove"></i></a>
+												    					</div>
+												    				</td>
+												    			</tr>
+												    			<tr>
+												    				<td>0089</td>
+												    				<td>This is a description of this code</td>
+												    				<td>
+												    					<div class="pull-right">
+												    						<a class="action-link"><i class="fa fa-remove"></i></a>
+												    					</div>
+												    				</td>
+												    			</tr>
+												    		</tbody>
+												    	</table>
+								      				</div>
+								      			</div>
+								      		</div>
+
+								      		<div class="tabs-panel" id="panel2v">
+								      			<div class="row">
+									      			<div class="large-12 columns">
+									      				<div class="page-lead">
+											                <span class="h5">Triggers <span>(10)</span></span>
+											                <a class="button primary pull-right" href="#" data-open="addTrigger">+ Add Trigger</a>
+
+															<div class="reveal" id="addTrigger" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+												                <div class="row">
+												                    <div class="large-12 columns">
+												                        <h5 class="reveal-heading">Add Clinical Indicator Trigger</h5>
+												                    </div>
+												                </div>
+												                <form>
+												                    <div class="row">
+												                        <div class="large-12 columns">
+												                            <label>
+												                                Search Code/Descriptor
+												                                <select>
+												                                    <option disabled></option>
+												                                </select>
+												                            </label>
+												                        </div>
+												                    </div>
+												                    <div class="row">
+												                        <div class="medium-12 columns">
+												                            <div class="submit button-group pull-right">
+												                                <a class="button link" data-close>Cancel</a>
+												                                <button type="submit" class="button primary">Add Trigger</button>
+												                            </div>
+												                        </div>
+												                    </div>
+												                </form>
+												                <button class="close-button" data-close aria-label="Close modal" type="button">
+												                    <span aria-hidden="true">&times;</span>
+												                </button>
+												            </div>
+
+											            </div>
+
+												    	<table>
+												    		<thead>
+												    			<th>Code</th>
+												    			<th>Descriptor</th>
+												    			<th></th>
+												    		</thead>
+												    		<tbody>
+												    			<tr>
+												    				<td>0089</td>
+												    				<td>This is a description of this code</td>
+												    				<td>
+												    					<div class="pull-right">
+												    						<a class="action-link"><i class="fa fa-remove"></i></a>
+												    					</div>
+												    				</td>
+												    			</tr>
+												    			<tr>
+												    				<td>0089</td>
+												    				<td>This is a description of this code</td>
+												    				<td>
+												    					<div class="pull-right">
+												    						<a class="action-link"><i class="fa fa-remove"></i></a>
+												    					</div>
+												    				</td>
+												    			</tr>
+												    			<tr>
+												    				<td>0089</td>
+												    				<td>This is a description of this code</td>
+												    				<td>
+												    					<div class="pull-right">
+												    						<a class="action-link"><i class="fa fa-remove"></i></a>
+												    					</div>
+												    				</td>
+												    			</tr>
+												    			<tr>
+												    				<td>0089</td>
+												    				<td>This is a description of this code</td>
+												    				<td>
+												    					<div class="pull-right">
+												    						<a class="action-link"><i class="fa fa-remove"></i></a>
+												    					</div>
+												    				</td>
+												    			</tr>
+												    			<tr>
+												    				<td>0089</td>
+												    				<td>This is a description of this code</td>
+												    				<td>
+												    					<div class="pull-right">
+												    						<a class="action-link"><i class="fa fa-remove"></i></a>
+												    					</div>
+												    				</td>
+												    			</tr>
+												    			<tr>
+												    				<td>0089</td>
+												    				<td>This is a description of this code</td>
+												    				<td>
+												    					<div class="pull-right">
+												    						<a class="action-link"><i class="fa fa-remove"></i></a>
+												    					</div>
+												    				</td>
+												    			</tr>
+												    			<tr>
+												    				<td>0089</td>
+												    				<td>This is a description of this code</td>
+												    				<td>
+												    					<div class="pull-right">
+												    						<a class="action-link"><i class="fa fa-remove"></i></a>
+												    					</div>
+												    				</td>
+												    			</tr>
+												    			<tr>
+												    				<td>0089</td>
+												    				<td>This is a description of this code</td>
+												    				<td>
+												    					<div class="pull-right">
+												    						<a class="action-link"><i class="fa fa-remove"></i></a>
+												    					</div>
+												    				</td>
+												    			</tr>
+												    		</tbody>
+												    	</table>
+									      			</div>
+									      		</div>
+								      		</div>
+
+								      	</div>
+							    	</div>
+						  		</div>
+
+						  	</div> <!-- End of tab panel 2 -->
+
+						  	<div class="tabs-panel" id="panel3">
+
+								<div class="menu-options mt-1">
 					                <div class="row collapse">
 					                    <div class="large-4 columns end">
 					                        <div class="input-group">
-					                            <input class="input-group-field" type="text" placeholder="Search terms..."></input>
+					                            <input class="input-group-field" type="text" placeholder="Search state..."></input>
 					                            <div class="input-group-button">
 					                                <input type="submit" class="button secondary" value="Search">
 					                            </div>
 					                        </div>
 					                    </div>
-					                    <div class="large-8 columns">
+					                    <!-- <div class="large-8 columns">
 					                        <div class="row collapse">
-					                            <div class="large-5 large-offset-7 columns">
+					                            <div class="large-5 large-offset-2 columns">
 					                                <div class="row">
 					                                    <div class="large-4 columns">
-					                                        <label for="" class="small-label text-right middle">Code Type</label>
+					                                        <label for="" class="small-label text-right middle">Specialization</label>
 					                                    </div>
 					                                    <div class="large-8 columns">
 					                                        <select class="small-input">
-					                                            <option>All Codes</option>
+					                                            <option>All Specializations</option>
 					                                        </select>
 					                                    </div>  
 					                                </div> 
 					                            </div>
+					                            <div class="large-5 columns end">
+					                                <div class="row">
+					                                    <div class="large-4 columns">
+					                                        <label for="" class="small-label text-right middle">Sub-Spec</label>
+					                                    </div>
+					                                    <div class="large-8 columns">
+					                                        <select class="small-input">
+					                                            <option>All Subspecializations</option>
+					                                        </select>
+					                                    </div>
+					                                </div>    
+					                            </div>
 					                        </div>
-					                    </div>
+					                    </div> -->
 					                </div>
 					            </div>
-					             <div class="page-lead">
-					                <span class="h5">Triggers <span>(10)</span></span>
-					                <a class="button primary pull-right" href="#" data-open="addTrigger">+ Add Trigger</a>
 
-									<div class="reveal" id="addTrigger" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-						                <div class="row">
-						                    <div class="large-12 columns">
-						                        <h5 class="reveal-heading">Add Clinical Indicator Trigger</h5>
-						                    </div>
-						                </div>
-						                <form>
-						                    <div class="row">
-						                        <div class="large-12 columns">
-						                            <label>
-						                                Search Code/Descriptor
-						                                <select>
-						                                    <option disabled></option>
-						                                </select>
-						                            </label>
-						                        </div>
-						                    </div>
-						                    <div class="row">
-						                        <div class="medium-12 columns">
-						                            <div class="submit button-group pull-right">
-						                                <a class="button link" data-close>Cancel</a>
-						                                <button type="submit" class="button primary">Add Trigger</button>
-						                            </div>
-						                        </div>
-						                    </div>
-						                </form>
-						                <button class="close-button" data-close aria-label="Close modal" type="button">
-						                    <span aria-hidden="true">&times;</span>
-						                </button>
-						            </div>
+								<table>
+									<thead>
+										<tr>
+											<th>
+												<input type="checkbox" name="">
+												<span class="ml-1">State Name</span>
+											</th>
+											<th>Price</th>
+											<th>
+												<select class="table-control">
+									                <option value="">Edit Prices</option>
+									          	</select>
+									          	<a href="#" class="button table-control small" disabled>Apply</a>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<input type="checkbox" name="">
+												<span class="ml-1">Alabama</span>
+											</td>
+											<td><input type="text" value="$0.00"></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>
+												<input type="checkbox" name="">
+												<span class="ml-1">Alaska</span>
+											</td>
+											<td><input type="text" value="$0.00"></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>
+												<input type="checkbox" name="">
+												<span class="ml-1">Arizona</span>
+											</td>
+											<td><input type="text" value="$0.00"></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>
+												<input type="checkbox" name="">
+												<span class="ml-1">Arkansas</span>
+											</td>
+											<td><input type="text" value="$0.00"></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>
+												<input type="checkbox" name="">
+												<span class="ml-1">California</span>
+											</td>
+											<td><input type="text" value="$0.00"></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>
+												<input type="checkbox" name="">
+												<span class="ml-1">Colorado</span>
+											</td>
+											<td><input type="text" value="$0.00"></td>
+											<td></td>
+										</tr>
+									</tbody>
+								</table>
 
-					            </div>
-
-						    	<table>
-						    		<thead>
-						    			<th>Code</th>
-						    			<th>Type</th>
-						    			<th>Descriptor</th>
-						    			<th></th>
-						    		</thead>
-						    		<tbody>
-						    			<tr>
-						    				<td>0089</td>
-						    				<td>CPT</td>
-						    				<td>This is a description of this code</td>
-						    				<td>
-						    					<div class="pull-right">
-						    						<a class="action-link"><i class="fa fa-remove"></i></a>
-						    					</div>
-						    				</td>
-						    			</tr>
-						    			<tr>
-						    				<td>0089</td>
-						    				<td>ICD</td>
-						    				<td>This is a description of this code</td>
-						    				<td>
-						    					<div class="pull-right">
-						    						<a class="action-link"><i class="fa fa-remove"></i></a>
-						    					</div>
-						    				</td>
-						    			</tr>
-						    			<tr>
-						    				<td>0089</td>
-						    				<td>CPT</td>
-						    				<td>This is a description of this code</td>
-						    				<td>
-						    					<div class="pull-right">
-						    						<a class="action-link"><i class="fa fa-remove"></i></a>
-						    					</div>
-						    				</td>
-						    			</tr>
-						    			<tr>
-						    				<td>0089</td>
-						    				<td>ICD</td>
-						    				<td>This is a description of this code</td>
-						    				<td>
-						    					<div class="pull-right">
-						    						<a class="action-link"><i class="fa fa-remove"></i></a>
-						    					</div>
-						    				</td>
-						    			</tr>
-						    			<tr>
-						    				<td>0089</td>
-						    				<td>CPT</td>
-						    				<td>This is a description of this code</td>
-						    				<td>
-						    					<div class="pull-right">
-						    						<a class="action-link"><i class="fa fa-remove"></i></a>
-						    					</div>
-						    				</td>
-						    			</tr>
-						    			<tr>
-						    				<td>0089</td>
-						    				<td>ICD</td>
-						    				<td>This is a description of this code</td>
-						    				<td>
-						    					<div class="pull-right">
-						    						<a class="action-link"><i class="fa fa-remove"></i></a>
-						    					</div>
-						    				</td>
-						    			</tr>
-						    			<tr>
-						    				<td>0089</td>
-						    				<td>CPT</td>
-						    				<td>This is a description of this code</td>
-						    				<td>
-						    					<div class="pull-right">
-						    						<a class="action-link"><i class="fa fa-remove"></i></a>
-						    					</div>
-						    				</td>
-						    			</tr>
-						    			<tr>
-						    				<td>0089</td>
-						    				<td>ICD</td>
-						    				<td>This is a description of this code</td>
-						    				<td>
-						    					<div class="pull-right">
-						    						<a class="action-link"><i class="fa fa-remove"></i></a>
-						    					</div>
-						    				</td>
-						    			</tr>
-						    		</tbody>
-						    	</table>
 						  	</div>
-						</div>			
+
+						</div>	<!-- End of tabs content		 -->
 
 					</div>
 				</div>

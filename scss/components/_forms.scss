@@ -11,6 +11,7 @@ textarea {
 }
 
 legend {
+	margin-top: 0.5rem;
 	font-size: 0.875rem;
 	font-family: $header-font-family;
 	&.labelize {
@@ -150,6 +151,20 @@ textarea, .mce-tinymce {
 			border-radius: 0 2px 2px 0;
 		}
 	}
+}
+
+.input-group-label {
+	color: rgba($black, $B-hinttext);
+	background-color: rgba($black, $B-dividers);
+	border-color: rgba($black, $B-dividers);
+	&:last-child {
+		border-radius: 0 2px 2px 0;
+	}
+}
+
+.input-group-field {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
 }
 
 .help-text {

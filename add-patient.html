@@ -98,6 +98,15 @@
 						<div class="callout hi-padded mb-2">
 							<form>
 								<div class="row">
+									<div class="large-6 columns end">
+										<label>Company Name
+					  						<select>
+					  							<option value="" disabled selected>Select a company</option>
+					  						</select>
+					  					</label>
+									</div>
+								</div>
+								<div class="row">
 									<div class="large-3 columns">
 										<label>First Name
 					  						<input type="text" name="" value="">
@@ -123,74 +132,6 @@
 					  					</label>
 									</div>
 								</div>
-								<div class="row">
-									<legend class="labelize">Birthdate</legend>
-									<div class="large-2 columns end">
-				  						<select>
-				  							<option>March</option>
-				  						</select>
-									</div>
-									<div class="large-2 columns end">
-				  						<select>
-				  							<option>17</option>
-				  						</select>
-									</div>
-									<div class="large-2 columns end">
-				  						<select>
-				  							<option>1976</option>
-				  						</select>
-									</div>
-								</div>
-								<div class="row">
-									<div class="large-6 columns">
-										<legend>Gender</legend>
-										<div class="mb-1">
-											<input type="radio" name="gender" value="male" id="gender"><label for="gender">Male</label>
-										</div>
-		    							<div class="mb-1">
-		    								<input type="radio" name="gender" value="female" id="gender"><label for="gender">Female</label>
-		    							</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="large-6 columns end">
-										<label>Company Name
-					  						<select>
-					  							<option value="" disabled selected>Select a company</option>
-					  						</select>
-					  					</label>
-									</div>
-								</div>
-								<div class="row">
-									<div class="large-6 columns end">
-										<label>Policy Number
-					  						<input type="text" name="" value="">
-					  					</label>
-									</div>
-								</div>
-								<hr>
-								<!-- <div class="row">
-									<div class="large-12 columns end">
-					  					<legend class="mb-1">Are you the primary or a dependent?</legend>
-					  					<div class="mb-1">
-					  						<input type="radio" name="" value="" id="" checked><label for="">Primary</label>
-					  					</div>
-		    							<div class="mb-1">
-		    								<input type="radio" name="" value="" id=""><label for="">Dependent</label>
-		    							</div>
-									</div>
-								</div>
-								<hr>
-								<div class="row">
-									<legend class="labelize">If dependent...</legend>
-									<div class="large-6 columns end">
-										<label>What is your relationship to the primary?
-					  						<select>
-					  							<option>Spouse</option>
-					  						</select>
-					  					</label>
-									</div>
-								</div> -->
 								<div class="row">
 									<div class="large-6 columns end">
 										<label>Home Address
@@ -229,10 +170,38 @@
 					  					</label>
 									</div>
 								</div>
-								<hr>
+								<div class="row">
+									<legend class="labelize">Birthdate</legend>
+									<div class="large-2 columns end">
+				  						<select>
+				  							<option>March</option>
+				  						</select>
+									</div>
+									<div class="large-2 columns end">
+				  						<select>
+				  							<option>17</option>
+				  						</select>
+									</div>
+									<div class="large-2 columns end">
+				  						<select>
+				  							<option>1976</option>
+				  						</select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="large-6 columns">
+										<legend>Gender</legend>
+										<div class="mb-1">
+											<input type="radio" name="gender" value="male" id="gender"><label for="gender">Male</label>
+										</div>
+		    							<div class="mb-1">
+		    								<input type="radio" name="gender" value="female" id="gender"><label for="gender">Female</label>
+		    							</div>
+									</div>
+								</div>
 								<div class="row">
 									<div class="large-6 columns end">
-										<label>Referring Physician
+										<label>Policy Number
 					  						<input type="text" name="" value="">
 					  					</label>
 									</div>
@@ -253,6 +222,13 @@
 					  						<input type="text" name="" value="">
 					  					</label>
 									</div>
+									<div class="large-6 columns end">
+										<label>Negotiated Rate for Procedure Package</label>
+										<div class="input-group">
+											<span class="input-group-label">$</span>
+  											<input class="input-group-field" type="text">
+										</div>
+									</div>
 								</div>
 								<div class="row">
 									<div class="large-6 columns end">
@@ -262,44 +238,80 @@
 									</div>
 								</div>
 								<hr>
-								<div class="row">
+								<div class="row collapse">
 									<div class="large-6 columns end">
-										<label>Negotiated Rate for Procedure Package
-											<p class="help-text subheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, perspiciatis voluptatem autem ipsa.</p>
-					  						<input type="text" name="">
-					  					</label>
+										<div class="row">
+											<legend class="labelize">Total Deductible</legend>
+											<div class="large-6 columns end">
+						  						<div class="input-group">
+						  							<div class="input-group-label">$</div>
+						  							<input class="input-group-field" type="text">
+						  						</div>
+											</div>
+											<div class="large-6 columns end">
+						  						<div class="input-group">
+						  							<input class="input-group-field" type="text">
+						  							<div class="input-group-label">%</div>
+						  						</div>
+											</div>
+										</div>
 									</div>
 								</div>
-								<div class="row">
+								<div class="row collapse">
 									<div class="large-6 columns end">
-										<label>Total Deductible
-											<p class="help-text subheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, perspiciatis voluptatem autem ipsa.</p>
-					  						<input type="text" name="">
-					  					</label>
+										<div class="row">
+											<legend class="labelize">Remaining Deductible</legend>
+											<div class="large-6 columns end">
+						  						<div class="input-group">
+						  							<div class="input-group-label">$</div>
+						  							<input class="input-group-field" type="text">
+						  						</div>
+											</div>
+											<div class="large-6 columns end">
+						  						<div class="input-group">
+						  							<input class="input-group-field" type="text">
+						  							<div class="input-group-label">%</div>
+						  						</div>
+											</div>
+										</div>
 									</div>
 								</div>
-								<div class="row">
+								<div class="row collapse">
 									<div class="large-6 columns end">
-										<label>Remaining Deductible
-											<p class="help-text subheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, perspiciatis voluptatem autem ipsa.</p>
-					  						<input type="text" name="">
-					  					</label>
+										<div class="row">
+											<legend class="labelize">Co-insurance Percentage After Deductible</legend>
+											<div class="large-6 columns end">
+						  						<div class="input-group">
+						  							<div class="input-group-label">$</div>
+						  							<input class="input-group-field" type="text">
+						  						</div>
+											</div>
+											<div class="large-6 columns end">
+						  						<div class="input-group">
+						  							<input class="input-group-field" type="text">
+						  							<div class="input-group-label">%</div>
+						  						</div>
+											</div>
+										</div>
 									</div>
 								</div>
-								<div class="row">
+								<div class="row collapse">
 									<div class="large-6 columns end">
-										<label>Co-insurance Percentage after Deductible
-											<p class="help-text subheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, perspiciatis voluptatem autem ipsa.</p>
-					  						<input type="text" name="">
-					  					</label>
-									</div>
-								</div>
-								<div class="row">
-									<div class="large-6 columns end">
-										<label>Out-Of-Pocket Maximum
-											<p class="help-text subheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, perspiciatis voluptatem autem ipsa.</p>
-					  						<input type="text" name="">
-					  					</label>
+										<div class="row">
+											<legend class="labelize">Out-Of-Pocket Maximum</legend>
+											<div class="large-6 columns end">
+						  						<div class="input-group">
+						  							<div class="input-group-label">$</div>
+						  							<input class="input-group-field" type="text">
+						  						</div>
+											</div>
+											<div class="large-6 columns end">
+						  						<div class="input-group">
+						  							<input class="input-group-field" type="text">
+						  							<div class="input-group-label">%</div>
+						  						</div>
+											</div>
+										</div>
 									</div>
 								</div>
 								<div class="row">

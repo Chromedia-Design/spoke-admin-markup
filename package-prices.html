@@ -35,8 +35,11 @@
 					<li class="is-active">
 						<a href="#">Packages</a>
 						<ul class="nested vertical menu is-active">
-							<li class="is-active">
+							<li>
 								<a href="packages.html">Manage Packages</a>
+							</li>
+							<li class="is-active">
+								<a href="package-prices.html">Manage Package Price</a>
 							</li>
 							<li>
 								<a href="package-episodes">Manage Episodes</a>
@@ -90,71 +93,50 @@
 
 				<div class="row">
 					<div class="medium-12 columns">
-
-						<nav aria-label="You are here:" role="navigation">
-						  	<ul class="breadcrumbs">
-						  		<li><a href="#">Dentistry</a></li>
-						  		<li><a href="#">Endodontics</a></li>
-						    	<li>Root Canal Treatment</li>
-						  	</ul>
-						</nav>
+						<div class="menu-options mt-1">
+			                <div class="row collapse">
+			                    <div class="large-4 columns end">
+			                        <div class="input-group">
+			                            <input class="input-group-field" type="text" placeholder="Search packages..."></input>
+			                            <div class="input-group-button">
+			                                <input type="submit" class="button secondary" value="Search">
+			                            </div>
+			                        </div>
+			                    </div>
+			                    <div class="large-8 columns">
+			                        <div class="row collapse">
+			                            <div class="large-5 large-offset-2 columns">
+			                                <div class="row">
+			                                    <div class="large-4 columns">
+			                                        <label for="" class="small-label text-right middle">Specialization</label>
+			                                    </div>
+			                                    <div class="large-8 columns">
+			                                        <select class="small-input">
+			                                            <option>All Specializations</option>
+			                                        </select>
+			                                    </div>  
+			                                </div> 
+			                            </div>
+			                            <div class="large-5 columns end">
+			                                <div class="row">
+			                                    <div class="large-4 columns">
+			                                        <label for="" class="small-label text-right middle">Sub-Spec</label>
+			                                    </div>
+			                                    <div class="large-8 columns">
+			                                        <select class="small-input">
+			                                            <option>All Subspecializations</option>
+			                                        </select>
+			                                    </div>
+			                                </div>    
+			                            </div>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
 						
-						<div class="page-lead">
-							<h5>Packages</h5>
-							<p class="subheader">Search treatments to add or edit packages.</p>
-						</div>
-						<div class="panel collapsible">
-							<div class="panel-heading">
-								<div class="row">
-									<div class="medium-8 columns">
-										<div class="input-group">
-									  		<input class="input-group-field" type="text" placeholder="Search treatment...">
-									  		<div class="input-group-button">
-									    		<input type="submit" class="button secondary" value="Submit">
-									  		</div>
-										</div>
-									</div>
-									<div class="medium-4 columns">
-										<a data-toggle="advancedSearch" class="link button">Advanced Search <i class="fa fa-caret-down fa-fw"></i></a>
-									</div>
-								</div>
-							</div>
-							<div id="advancedSearch" class="panel-body" data-toggler data-animate="fade-in fade-out">
-  								<form>
-  									<div class="row">
-									    <div class="medium-6 columns">
-									      	<label>Specialization
-									        	<select>
-									        		<option>Dentistry</option>
-									        	</select>
-									     	</label>
-									    </div>
-									    <div class="medium-6 columns">
-									      	<label>Treatments
-									        	<select>
-									        		<option>Endodontics</option>
-									        	</select>
-									     	</label>
-									    </div>
-								  	</div>
-								  	<div class="row">
-									    <div class="medium-6 columns">
-									      	<label>Treatments
-									        	<select>
-									        		<option>Root Canal Treatment</option>
-									        	</select>
-									     	</label>
-									    </div>
-									    <div class="medium-6 columns">
-								        	<button type="submit" class="button button-append-submit">Proceed</button>
-									    </div>
-								  	</div>
-  								</form>
-							</div>
-						</div>
 
 						<div class="page-lead">
-							<span class="h5"><small>Dentistry > Endodontics > </small>Root Canal Treatment</span>
+							<span class="h5">Packages (105)</span>
 							<a class="button primary pull-right" href="#" data-open="addPackage">+ Add Package</a>
 
 							<div class="reveal" id="addPackage" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
@@ -164,6 +146,16 @@
 				                    </div>
 				                </div>
 				                <form>
+				                	<div class="row">
+				                        <div class="large-12 columns">
+				                            <label>
+				                                Treatment Name
+				                                <select>
+				                                	<option selected disabled>Select A Treatment</option>
+				                                </select>
+				                            </label>
+				                        </div>
+				                    </div>
 				                    <div class="row">
 				                        <div class="large-12 columns">
 				                            <label>
@@ -195,38 +187,19 @@
 				            </div>
 						</div>
 					
-						<!-- <div class="callout primary">
-							<form class="form-single-line">
-							  	<div class="row">
-							    	<div class="medium-4 columns">
-						      			<label>New Package Name
-						        			<input type="text" placeholder="">
-							      		</label>
-						    		</div>
-							    	<div class="medium-5 columns">
-							      		<label>Short Description
-							        		<input type="text" placeholder="">
-							      		</label>
-						    		</div>
-						    		<div class="medium-3 columns">
-							      		<button type="submit" class="button expanded">+ Add Package</button>
-						    		</div>
-							  	</div>
-							</form>
-						</div> -->
 						
 						<div class="panel">
 							<ul class="well-list">
 								<li>
 									<div class="list-wrap">
 										<div class="list-item-name">
-											<a href="edit-package.html">Molar Root Canal</a>
+											<a href="package-edit-price.html">Molar Root Canal</a>
 										</div>
 										<div class="list-detail">
-											<span>5 Categories</span>
+											<span>$0 National Price</span>
 										</div>
 										<div class="pull-right">
-											<a href="edit-package.html" class="action-link"><i class="fa fa-edit"></i></a>
+											<a href="package-edit-price.html" class="action-link"><i class="fa fa-edit"></i></a>
 											<a href="#" class="alert action-link"><i class="fa fa-remove"></i></a>
 										</div>
 									</div>
@@ -234,13 +207,13 @@
 								<li>
 									<div class="list-wrap">
 										<div class="list-item-name">
-											<a href="edit-package.html">Front Teeth Root Canal</a>
+											<a href="package-edit-price.html">Knee Replacement</a>
 										</div>
 										<div class="list-detail">
-											<span>4 Categories</span>
+											<span>Multiple Prices</span>
 										</div>
 										<div class="pull-right">
-											<a href="edit-package.html" class="action-link"><i class="fa fa-edit"></i></a>
+											<a href="package-edit-price.html" class="action-link"><i class="fa fa-edit"></i></a>
 											<a href="#" class="alert action-link"><i class="fa fa-remove"></i></a>
 										</div>
 									</div>

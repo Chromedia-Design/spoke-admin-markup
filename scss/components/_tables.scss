@@ -2,6 +2,22 @@ table {
 	font-family: $header-font-family;
 	font-size: 0.875rem;
 	table-layout: fixed;
+	[type='text'],
+	[type='password'],
+	[type='date'],
+	[type='datetime'],
+	[type='datetime-local'],
+	[type='month'],
+	[type='week'],
+	[type='email'],
+	[type='number'],
+	[type='search'],
+	[type='tel'],
+	[type='time'],
+	[type='url'],
+	[type='color'] {
+		margin-bottom: 0;
+	}
 	thead {
 		background: transparent;
 		border: none;
@@ -36,4 +52,22 @@ table {
 			}
 		}
 	}
+}
+
+select.table-control {
+    padding: 0 1.5rem 0 0.8rem;
+    vertical-align: middle;
+    width: 60%;
+    margin: 0 0.275rem 0 0;
+    height: 2.2rem;
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: normal;
+}
+
+.button.table-control {
+	display: inline-block;
+    padding: 0.85em 0.5em;
+    margin: 0;
+    width: 33%;
 }
