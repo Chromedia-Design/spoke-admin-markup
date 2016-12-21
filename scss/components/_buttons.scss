@@ -1,12 +1,31 @@
 .button {
+	font-family: $header-font-family;
 	border-radius: 2px;
-	font-weight: 400;
+	font-weight: $global-weight-semibold;
 	&.link {
 		background: transparent;
 		border: none;
 		color: $text-black;
 		font-weight: 400;
+		&:hover {
+			color: $white;
+			background-color: $secondary-color;
+		}
+		&.alert {
+			color: $alert-color;
+			&:hover {
+				color: $white;
+				background-color: $alert-color;
+			}
+		}
 	}
+	&.primary {
+		font-weight: $global-weight-semibold;
+	}
+}
+
+.button-group {
+	margin-top: 1rem;
 }
 
 .action-link {
@@ -55,5 +74,69 @@
 	}
 	&:only-child {
 		margin-right: 0;
+	}
+}
+
+.brick {
+	@extend .button;
+	cursor: default;
+	font-weight: $global-weight-semibold;
+}
+
+.close-button {
+	position: absolute;
+	top: 1.5rem;
+	right: 1.5rem;
+	color: rgba($black, $B-dividers);
+	&:hover {
+		color: $text-black;
+	}
+}
+
+.cta-button {
+	display: inline-block;
+	width: 100%;
+	margin: 0 0 1rem;
+	padding: 1rem;
+	background-color: rgba($alert-color, $B-text);
+	border-radius: 2px;
+	color: $white;
+	transition: all 0.2s ease-in-out;
+	position: relative;
+	.subheader {
+		color: rgba($white, $W-subtext);
+		margin: 0;
+	}
+	.columns {
+		justify-content: center;
+		display: flex;
+		align-items: center;
+		position: relative;
+		&:first-child {
+			&:before, &:after {
+				content: "";
+			  	position: absolute;
+			  	display: block;
+				right: 0.5rem;
+				width: 1px;
+				height: 50%;
+			}
+			&:before {
+				top: 0;
+			  background: -webkit-linear-gradient(bottom, #fff 0%, transparent 100%);
+			  background: -o-linear-gradient(bottom, #fff 0%, transparent 100%);
+			  background: linear-gradient(to top, #fff 0%, transparent 100%);
+			}
+			&:after {
+				bottom: 0;
+			  background: -webkit-linear-gradient(#fff 0%, transparent 100%);
+			  background: -o-linear-gradient(#fff 0%, transparent 100%);
+			  background: linear-gradient(#fff 0%, transparent 100%);
+			}
+		}
+	}
+	&:hover {
+		color: $white;
+		background-color: $alert-color;
 	}
 }

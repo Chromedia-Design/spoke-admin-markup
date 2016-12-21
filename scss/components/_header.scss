@@ -1,8 +1,9 @@
 header {
 	padding: 0.5rem;
-	background-color: rgba($white, $B-text);
+	background-color: $white;
+	border-right: 1px solid rgba($black, $B-dividers);
 	a.logo {
-		display: block;
+		display: inline-block;
 		padding: 0.5rem 1rem;
 		img {
 			height: 1.5rem;
@@ -13,6 +14,7 @@ header {
 
 .site-nav {
 	background-color: $dark-gray;
+	overflow-y: auto;
 	// Override the blue caret that appears after the dropdown side menu
 	.is-accordion-submenu-parent > a::after {
 		border-color: $white transparent transparent;
@@ -64,6 +66,9 @@ header {
 					&.is-active {
 						background-color: rgba($white, $W-subtext);
 						color: rgba($black, $B-text);
+						a {
+							color: rgba($black, $B-text);
+						}
 						&:hover {
 							background-color: rgba($white, $W-subtext);
 						}

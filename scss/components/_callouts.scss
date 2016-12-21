@@ -7,4 +7,17 @@
 
 .callout-heading {
 	margin-bottom: 1rem;
+	.h1,
+	.h2,
+	.h3,
+	.h4,
+	.h5,
+	.h6 {
+		line-height: 2rem;
+		margin-right: 1rem;
+	}
+	.button, .button-group {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i');
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,600,600i');
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,600');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
@@ -7,7 +7,30 @@
 }
 
 strong, b {
-	font-weight: 500;
+	font-weight: $global-weight-semibold;
+}
+
+i {
+	font-weight: 400;
+}
+
+small {
+	line-height: 1.5em;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	&.subheader {
+		font-weight: $global-weight-semibold;
+	}
 }
 
 .h1,
@@ -45,6 +68,22 @@ strong, b {
 	font-size: 1rem;
 }
 
+.primary-color {
+	color: $primary-color;
+	> * {
+		color: $primary-color;
+	}
+}
+
+.success-color {
+	color: $success-color;
+	> * {
+		color: $success-color;
+	}
+}
+
 .subheader {
+	margin-top: 0;
 	color: rgba($black, $B-subtext);
+	font-weight: inherit;
 }

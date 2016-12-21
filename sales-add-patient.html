@@ -1,0 +1,246 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spoke Sales Portal</title>
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body class="frontend">
+	
+	<div class="expanded row medium-collapse">
+		<div class="medium-2 columns">
+			<div class="site-nav">
+				<header>
+					<a href="#" class="logo text-center">
+						<img src="img/logo.png" title="Spoke">
+					</a>
+				</header>
+				<ul class="menu vertical"  data-accordion-menu>
+					<li>
+						<a href="#">Dashboard</a>
+					</li>
+					<li>
+						<a href="#">Messages</a>
+					</li>
+					<li class="is-active">
+						<a href="#">Patients</a>
+					</li>
+					<li>
+						<a href="#">Facilities</a>
+					</li>
+					<li>
+						<a href="#">Profile</a>
+						<ul class="nested vertical menu is-active">
+							<li>
+								<a href="#">Account Information</a>
+							</li>
+							<li>
+								<a href="#">Change My Password</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="medium-10 columns">
+			<div class="content">
+				<div class="top-bar">
+				  	<!-- <div class="top-bar-left">
+						<ul class="menu">
+				      		<li><input type="search" placeholder="Search"></li>
+				      		<li><button type="button" class="button">Search</button></li>
+			    		</ul>
+				  	</div> -->
+				  	<div class="top-bar-right">
+				    	<ul class="dropdown menu" data-dropdown-menu>
+				    		<li>
+				    			<a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">6</span></a>
+			    			</li>
+				      		<li>
+				        		<a href="#">Sales Agent</a>
+				        		<ul class="menu vertical">
+				          			<li><a href="#">Account</a></li>
+				          			<li><a href="#">Sign Out</a></li>
+				        		</ul>
+				      		</li>
+				    	</ul>
+				  	</div>
+				</div>
+				
+				<div class="row">
+					<div class="large-12 columns">
+
+						<nav aria-label="You are here:" role="navigation">
+						  	<ul class="breadcrumbs">
+						    	<li><a href="sales-patients.html">Patients</a></li>
+						    	<li>Add New Patient</li>
+						  	</ul>
+						</nav>
+
+						<h5 class="mb-2">Add New Patient</h5>
+
+						<div class="callout hi-padded mb-2">
+							<form>
+								<div class="row">
+									<div class="large-3 columns">
+										<label>First Name
+					  						<input type="text" name="" value="">
+					  					</label>
+									</div>
+									<div class="large-3 columns end">
+										<label>Last Name
+					  						<input type="text" name="" value="">
+					  					</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="large-6 columns end">
+										<label>Email Address
+					  						<input type="text" name="" value="">
+					  					</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="large-6 columns end">
+										<label>Contact Number
+					  						<input type="text" name="" value="">
+					  					</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="large-6 columns end">
+										<label>Company Name
+					  						<select>
+					  							<option value="" disabled selected>Select a company</option>
+					  						</select>
+					  					</label>
+									</div>
+								</div>
+								<!-- <div class="row">
+									<div class="large-12 columns end">
+					  					<legend class="mb-1">Are you the primary or a dependent?</legend>
+					  					<div class="mb-1">
+					  						<input type="radio" name="" value="" id="" checked><label for="">Primary</label>
+					  					</div>
+		    							<div class="mb-1">
+		    								<input type="radio" name="" value="" id=""><label for="">Dependent</label>
+		    							</div>
+									</div>
+								</div>
+								<hr>
+								<div class="row">
+									<legend class="labelize">If dependent...</legend>
+									<div class="large-6 columns end">
+										<label>What is your relationship to the primary?
+					  						<select>
+					  							<option>Spouse</option>
+					  						</select>
+					  					</label>
+									</div>
+								</div> -->
+								<div class="row">
+									<div class="large-6 columns end">
+										<label>Home Address
+					  						<input type="text" name="" value="962 Church Way">
+					  						<input type="text" name="" value="">
+					  					</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="large-3 columns end">
+										<label>State
+					  						<select>
+					  							<option>Denver</option>
+					  						</select>
+					  					</label>
+									</div>
+									<div class="large-3 columns end">
+										<label>City
+					  						<select>
+					  							<option>Denver</option>
+					  						</select>
+					  					</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="large-3 columns end">
+										<label>Postal Code
+					  						<input type="text" name="" value="654512">
+					  					</label>
+									</div>
+									<div class="large-3 columns end">
+										<label>Country
+					  						<select disabled>
+					  							<option>United States of America</option>
+					  						</select>
+					  					</label>
+									</div>
+								</div>
+								<!-- <div class="row">
+									<div class="large-6 columns">
+										<div class="mt-2 mb-2">
+											<input type="checkbox" name="" value="" id="" checked=""><label for="">Send an email to this patient.</label>
+										</div>
+									</div>
+								</div> -->
+								<hr>
+								<div class="row">
+									<div class="large-6 columns end">
+										<label>Treatment
+											<p class="help-text subheader">This is the procedure that want to undergo.</p>
+					  						<select>
+					  							<option>Knee Replacement</option>
+					  						</select>
+					  					</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="large-6 columns end">
+										<label>Total Deductible
+											<p class="help-text subheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, perspiciatis voluptatem autem ipsa.</p>
+					  						<input type="text" name="">
+					  					</label>
+									</div>
+								</div>
+								<hr>
+								<div class="row">
+									<div class="large-12 columns end">
+										<a href="frontend-intake-form-2.html" class="submit button primary">Create This Patient</a>
+										<!-- <button type="submit" class="button primary pull-right">Proceed To The Next Step <i class="fa fa-angle-right fa-fw"></i></button> -->
+									</div>
+								</div>
+							</form>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/what-input/what-input.js"></script>
+	<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+	
+	<script src="js/app.js"></script>
+
+	<script type="text/javascript">
+        $(function () {
+            var timer;
+
+            $(window).resize(function() {
+                clearTimeout(timer);
+                timer = setTimeout(function() {
+                  $('.site-nav, .content').css("height", $(window).height());
+                }, 40); 
+            }).resize();
+        });
+    </script>
+
+</body>
+</html>

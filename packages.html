@@ -19,11 +19,11 @@
 				</header>
 				<ul class="menu vertical"  data-accordion-menu>
 					<li>
-						<a href="#"><i class="material-icons">dashboard</i> Dashboard</a>
+						<a href="#">Dashboard</a>
 					</li>
 					<li>
-						<a href="#"><i class="material-icons">work</i> Practices</a>
-						<ul class="nested vertical menu is-active">
+						<a href="#">Practices</a>
+						<ul class="nested vertical menu">
 							<li>
 								<a href="#">Specializations</a>
 							</li>
@@ -33,22 +33,30 @@
 						</ul>
 					</li>
 					<li class="is-active">
-						<a href="#"><i class="material-icons">card_giftcard</i> Packages</a>
+						<a href="#">Packages</a>
+						<ul class="nested vertical menu is-active">
+							<li class="is-active">
+								<a href="packages.html">Manage Packages</a>
+							</li>
+							<li>
+								<a href="package-episodes">Manage Episodes</a>
+							</li>
+						</ul>
 					</li>
 					<li>
-						<a href="#"><i class="material-icons">local_pharmacy</i> Facilities</a>
+						<a href="#">Facilities</a>
 					</li>
 					<li>
-						<a href="#"><i class="material-icons">card_giftcard</i> Doctors</a>
+						<a href="#">Doctors</a>
 					</li>
 					<li>
-						<a href="#"><i class="material-icons">card_giftcard</i> Companies</a>
+						<a href="#">Companies</a>
 					</li>
 					<li>
-						<a href="#"><i class="material-icons">card_giftcard</i> Content</a>
+						<a href="#">Content</a>
 					</li>
 					<li>
-						<a href="#"><i class="material-icons">card_giftcard</i> Users</a>
+						<a href="#">Users</a>
 					</li>
 				</ul>
 			</div>
@@ -82,11 +90,19 @@
 
 				<div class="row">
 					<div class="medium-12 columns">
-						<div class="page-lead">
-							<h5>Packages</h5>
-							<p>Search treatments to edit or add packages.</p>
-						</div>
+
+						<nav aria-label="You are here:" role="navigation">
+						  	<ul class="breadcrumbs">
+						  		<li><a href="#">Dentistry</a></li>
+						  		<li><a href="#">Endodontics</a></li>
+						    	<li>Root Canal Treatment</li>
+						  	</ul>
+						</nav>
 						
+						<div class="page-lead">
+							<h5>Manage Packages</h5>
+							<p class="subheader">Search treatments to add or edit packages.</p>
+						</div>
 						<div class="panel collapsible">
 							<div class="panel-heading">
 								<div class="row">
@@ -94,7 +110,7 @@
 										<div class="input-group">
 									  		<input class="input-group-field" type="text" placeholder="Search treatment...">
 									  		<div class="input-group-button">
-									    		<input type="submit" class="button" value="Submit">
+									    		<input type="submit" class="button secondary" value="Submit">
 									  		</div>
 										</div>
 									</div>
@@ -138,10 +154,48 @@
 						</div>
 
 						<div class="page-lead">
-							<h6>Packages for “Root Canal Treatment”</h6>
+							<span class="h5">Root Canal Treatment Packages</span>
+							<a class="button primary pull-right" href="#" data-open="addPackage">+ Add Package</a>
+
+							<div class="reveal" id="addPackage" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+				                <div class="row">
+				                    <div class="large-12 columns">
+				                        <h5 class="reveal-heading">Add Package</h5>
+				                    </div>
+				                </div>
+				                <form>
+				                    <div class="row">
+				                        <div class="large-12 columns">
+				                            <label>
+				                                Package Name
+				                                <input type="text">
+				                            </label>
+				                        </div>
+				                    </div>
+				                     <div class="row">
+				                        <div class="large-12 columns">
+				                            <label>
+				                                Package Description
+				                                <textarea></textarea>
+				                            </label>
+				                        </div>
+				                    </div>
+				                    <div class="row">
+				                        <div class="medium-12 columns">
+				                            <div class="submit button-group pull-right">
+				                                <a class="button link" data-close>Cancel</a>
+				                                <button type="submit" class="button primary">Add Package</button>
+				                            </div>
+				                        </div>
+				                    </div>
+				                </form>
+				                <button class="close-button" data-close aria-label="Close modal" type="button">
+				                    <span aria-hidden="true">&times;</span>
+				                </button>
+				            </div>
 						</div>
 					
-						<div class="callout primary">
+						<!-- <div class="callout primary">
 							<form class="form-single-line">
 							  	<div class="row">
 							    	<div class="medium-4 columns">
@@ -159,20 +213,20 @@
 						    		</div>
 							  	</div>
 							</form>
-						</div>
+						</div> -->
 						
 						<div class="panel">
 							<ul class="well-list">
 								<li>
 									<div class="list-wrap">
 										<div class="list-item-name">
-											<a href="#">Molar Root Canal</a>
+											<a href="edit-package.html">Molar Root Canal</a>
 										</div>
 										<div class="list-detail">
 											<span>5 Categories</span>
 										</div>
 										<div class="pull-right">
-											<a href="#" class="action-link"><i class="fa fa-edit"></i></a>
+											<a href="edit-package.html" class="action-link"><i class="fa fa-edit"></i></a>
 											<a href="#" class="alert action-link"><i class="fa fa-remove"></i></a>
 										</div>
 									</div>
@@ -180,13 +234,13 @@
 								<li>
 									<div class="list-wrap">
 										<div class="list-item-name">
-											<a href="#">Front Teeth Root Canal</a>
+											<a href="edit-package.html">Front Teeth Root Canal</a>
 										</div>
 										<div class="list-detail">
 											<span>4 Categories</span>
 										</div>
 										<div class="pull-right">
-											<a href="#" class="action-link"><i class="fa fa-edit"></i></a>
+											<a href="edit-package.html" class="action-link"><i class="fa fa-edit"></i></a>
 											<a href="#" class="alert action-link"><i class="fa fa-remove"></i></a>
 										</div>
 									</div>
@@ -194,6 +248,16 @@
 							</ul>
 						</div>
 
+						<div class="panel">
+							<div class="panel-heading">
+								<span class="h5">Test</span>
+								<a href="#" class="button primary">Edit</a>
+							</div>
+							<div class="panel-body">
+								<p>Test</p>
+							</div>
+						</div>
+						
 					</div>
 				</div>
 
