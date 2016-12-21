@@ -25,6 +25,10 @@
 	&.rounded {
 		border-radius: 1.875em;
 	}
+	&.info {
+		background-color: rgba($black, $B-dividers);
+		color: rgba($black, $B-subtext);
+	}
 }
 
 .button-group {

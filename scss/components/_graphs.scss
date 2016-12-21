@@ -1,26 +1,58 @@
 .spk-gain-graph {
 	.progress {
 		background-color: rgba($black, $B-dividers);
-		&.oop {
-			border-top-left-radius: 7px;
-			border-bottom-left-radius: 7px;
-			.progress-meter {
-				float: right;
+		border-radius: 7px;
+		.progress-meter {
+			display: inline-block;
+			float: left;
+			&.deductible {
+				position: relative;
+				background-color: $secondary-color;
 				border-top-left-radius: 7px;
 				border-bottom-left-radius: 7px;
+				&:after {
+					position: absolute;
+					top: 0.9rem;
+					right: 0;
+					content: ":";
+					color: rgba($black, $B-hinttext);
+				}
+				&:before {
+					position: absolute;
+					bottom: 0.9rem;
+					right: 0;
+					content: ":";
+					color: rgba($black, $B-hinttext);
+				}
 			}
-		}
-		&.bonus {
-			border-top-right-radius: 7px;
-			border-bottom-right-radius: 7px;
-			.progress-meter {
+			&.negate {
+				float: right;
+				background-color: $alert-color;
+			}
+			&.bonus {
 				background-color: $success-color;
-				border-top-right-radius: 7px;
-				border-bottom-right-radius: 7px;
 			}
 		}
 		&.small {
 			height: 0.5rem;
+			.progress-meter {
+				&.deductible {
+					&:after {
+						position: absolute;
+						top: 0.25rem;
+						right: 0;
+						content: ":";
+						color: rgba($black, $B-hinttext);
+					}
+					&:before {
+						position: absolute;
+						bottom: 0.25rem;
+						right: 0;
+						content: ":";
+						color: rgba($black, $B-hinttext);
+					}
+				}
+			}
 		}
 	}
 }
