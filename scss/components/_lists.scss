@@ -95,6 +95,10 @@
 			width: 40%;
 			display: inline-block;
 			color: rgba($black, $B-subtext);
+			label {
+				font-family: $header-font-family;
+				font-size: 0.875rem;
+			}
 		}
 		.list-note {
 			display: inline-block;
@@ -224,7 +228,10 @@
 				margin-top: 0.5rem;
 			}
 			.list-group {
-				[type='text'],
+				position: relative;
+				width: 22%;
+				line-height: 1em;
+				> [type='text'],
 				[type='password'],
 				[type='date'],
 				[type='datetime'],
@@ -237,10 +244,16 @@
 				[type='tel'],
 				[type='time'],
 				[type='url'],
-				[type='color'] {
+				[type='color'],
+				.table-wrapper {
 					display: inline-block;
 					width: 80%;
 					margin-right: 1rem;
+				}
+				.close-btn {
+					display: inline-block;
+					vertical-align: top;
+					margin-top: 1rem;
 				}
 			}
 		}
@@ -284,10 +297,25 @@
 }
 
 .linked-list {
+	padding: 0.5rem;
+	overflow: hidden;
+	border-radius: 2px;
+	margin: 0 0 1rem;
 	.list-item {
+		padding: 0.25rem 0.5rem 0;
 		display: inline-block;
 		font-family: $header-font-family;
-		padding: 0.5rem;
+		width: 75%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		color: rgba($black, $B-text);
+	}
+	.button {
+		margin-bottom: 0;
+	}
+	&:hover {
+		background-color: rgba($black, $B-dividers);
 	}
 }
 

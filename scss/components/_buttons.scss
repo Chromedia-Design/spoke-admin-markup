@@ -22,6 +22,9 @@
 	&.primary {
 		font-weight: $global-weight-semibold;
 	}
+	&.rounded {
+		border-radius: 1.875em;
+	}
 }
 
 .button-group {
