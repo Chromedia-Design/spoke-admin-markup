@@ -13,7 +13,7 @@ header {
 }
 
 .site-nav {
-	background-color: $dark-gray;
+	background-color: $primary-color;
 	overflow-y: auto;
 	// Override the blue caret that appears after the dropdown side menu
 	.is-accordion-submenu-parent > a::after {

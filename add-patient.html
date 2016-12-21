@@ -98,6 +98,7 @@
 						<ul class="tabs" data-tabs id="example-tabs">
 							<li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Patient Information</a></li>
 							<li class="tabs-title"><a href="#panel2">Patient Episodes</a></li>
+							<li class="tabs-title"><a href="#panel3">Transaction</a></li>
 						</ul>
 
 						<div class="tabs-content" data-tabs-content="example-tabs">
@@ -344,6 +345,212 @@
 									</ul>
 								</div>
 
+							</div>
+
+							<div class="tabs-panel" id="panel3">
+								<div class="callout hi-padded">
+									<form>
+										<div class="row">
+											<div class="large-6 columns end">
+												<label>Treatment Surgery Package
+							  						<select>
+							  							<option value="" disabled selected>Select a treatment</option>
+							  						</select>
+							  					</label>
+											</div>
+										</div>
+										<div class="row">
+											<div class="large-3 columns">
+												<label>First Name
+							  						<input type="text" name="" value="">
+							  					</label>
+											</div>
+											<div class="large-3 columns end">
+												<label>Last Name
+							  						<input type="text" name="" value="">
+							  					</label>
+											</div>
+										</div>
+										<div class="row">
+											<div class="large-6 columns end">
+												<label>Email Address
+							  						<input type="text" name="" value="">
+							  					</label>
+											</div>
+										</div>
+										<div class="row">
+											<div class="large-6 columns end">
+												<label>Contact Number
+							  						<input type="text" name="" value="">
+							  					</label>
+											</div>
+										</div>
+										<div class="row">
+											<div class="large-6 columns end">
+												<label>Home Address
+							  						<input type="text" name="" value="">
+							  						<input type="text" name="" value="">
+							  					</label>
+											</div>
+										</div>
+										<div class="row">
+											<div class="large-3 columns end">
+												<label>State
+							  						<select>
+							  							<option>Denver</option>
+							  						</select>
+							  					</label>
+											</div>
+											<div class="large-3 columns end">
+												<label>City
+							  						<select>
+							  							<option>Denver</option>
+							  						</select>
+							  					</label>
+											</div>
+										</div>
+										<div class="row">
+											<div class="large-3 columns end">
+												<label>Postal Code
+							  						<input type="text" name="" value="654512">
+							  					</label>
+											</div>
+											<div class="large-3 columns end">
+												<label>Country
+							  						<select disabled>
+							  							<option>United States of America</option>
+							  						</select>
+							  					</label>
+											</div>
+										</div>
+										<div class="row">
+											<legend class="labelize">Birthdate</legend>
+											<div class="large-2 columns end">
+						  						<select>
+						  							<option>March</option>
+						  						</select>
+											</div>
+											<div class="large-2 columns end">
+						  						<select>
+						  							<option>17</option>
+						  						</select>
+											</div>
+											<div class="large-2 columns end">
+						  						<select>
+						  							<option>1976</option>
+						  						</select>
+											</div>
+										</div>
+										<div class="row">
+											<div class="large-6 columns">
+												<legend>Gender</legend>
+												<div class="mb-1">
+													<input type="radio" name="gender" value="male" id="gender"><label for="gender">Male</label>
+												</div>
+				    							<div class="mb-1">
+				    								<input type="radio" name="gender" value="female" id="gender"><label for="gender">Female</label>
+				    							</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="large-6 columns end">
+												<label>Policy Number
+							  						<input type="text" name="" value="">
+							  					</label>
+											</div>
+										</div>
+										<div class="row">
+											<div class="large-6 columns end">
+												<label>Treatment
+													<p class="help-text subheader">This is the procedure that want to undergo.</p>
+							  						<select>
+							  							<option>Knee Replacement</option>
+							  						</select>
+							  					</label>
+											</div>
+										</div>
+										<div class="row">
+											<div class="large-6 columns end">
+												<label>Referring Physician
+							  						<input type="text" name="" value="">
+							  					</label>
+											</div>
+											<div class="large-6 columns end">
+												<label>Negotiated Rate for Procedure Package</label>
+												<div class="input-group">
+													<span class="input-group-label">$</span>
+		  											<input class="input-group-field" type="text">
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="large-6 columns end">
+												<label>Referring Physician Phone Number
+							  						<input type="text" name="" value="">
+							  					</label>
+											</div>
+										</div>
+										<hr>
+										<div class="row collapse">
+											<div class="large-6 columns end">
+												<div class="row">
+													<legend class="labelize">Total Deductible</legend>
+													<div class="large-6 columns end">
+								  						<div class="input-group">
+								  							<div class="input-group-label">$</div>
+								  							<input class="input-group-field" type="text">
+								  						</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row collapse">
+											<div class="large-6 columns end">
+												<div class="row">
+													<legend class="labelize">Remaining Deductible</legend>
+													<div class="large-6 columns end">
+								  						<div class="input-group">
+								  							<div class="input-group-label">$</div>
+								  							<input class="input-group-field" type="text">
+								  						</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row collapse">
+											<div class="large-6 columns end">
+												<div class="row">
+													<legend class="labelize">Co-insurance Percentage After Deductible</legend>
+													<div class="large-6 columns end">
+								  						<div class="input-group">
+								  							<input class="input-group-field" type="text">
+								  							<div class="input-group-label">%</div>
+								  						</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row collapse">
+											<div class="large-6 columns end">
+												<div class="row">
+													<legend class="labelize">Out-Of-Pocket Maximum</legend>
+													<div class="large-6 columns end">
+								  						<div class="input-group">
+								  							<div class="input-group-label">$</div>
+								  							<input class="input-group-field" type="text">
+								  						</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="large-12 columns end">
+												<a href="#" class="submit button success">Create Transaction</a>
+												<a href="#" class="submit button link">Cancel</a>
+											</div>
+										</div>
+									</form>
+								</div>	
 							</div>
 
 						</div>					

@@ -34,6 +34,11 @@ table {
 	}
 	tbody {
 		border-radius: 2px;
+		tr {
+			&:nth-child(even) {
+				background-color: $light-gray;
+			}
+		}
 		td {
 			padding: 0.875rem 1rem 0.875rem;
 			.button {
