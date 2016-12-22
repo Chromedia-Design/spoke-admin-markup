@@ -1,7 +1,8 @@
 .button {
 	font-family: $header-font-family;
 	border-radius: 2px;
-	font-weight: $global-weight-semibold;
+	font-weight: $global-weight-bold;
+	letter-spacing: 0.0625rem;
 	&.link {
 		background: transparent;
 		border: none;

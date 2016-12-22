@@ -19,6 +19,12 @@
 				text-decoration: underline;
 			}
 		}
+		.button {
+			font-weight: $global-weight-bold;
+			&:hover {
+				text-decoration: none;
+			}
+		}
 		[type='text'],
 		[type='password'],
 		[type='date'],
@@ -275,13 +281,13 @@
 				margin-right: 2rem;
 			}
 			.list-item-name {
-				width: 50%;
+				width: 40%;
 				> * {
 					margin-bottom: 0;
 				}
 			}
 			.list-detail {
-				width: 30%;
+				width: 40%;
 			}
 		}
 	}
