@@ -63,6 +63,7 @@ $dark-gray: #2C2C2C;
 $black: #2A2A2A;
 $white: #FFFFFF;
 $off-white: #F4F4F4;
+$background-white: #FBFBFB;
 $primary-light: #F2F5F6;
 
 // * Opacity change/add per project requirements | these defaults help with many elements on the project
@@ -93,7 +94,7 @@ $W-dividers:        0.12 !default;
 $W-disabled:        0.30 !default;
 $W-icons:           1.00 !default;
 
-$body-background: $off-white;
+$body-background: $background-white;
 $body-font-color: $text-black;
 $body-font-family: Rubik,'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $header-font-family: Lato, 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;

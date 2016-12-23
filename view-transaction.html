@@ -349,72 +349,177 @@
 
 							<div class="tabs-panel is-active" id="panel3">
 
-								<div class="page-lead">
-									<div class="row">
-										<div class="large-12 columns">
-											<span class="h5">Transactions</span>
-											<a data-open="exampleModal1" class="button success pull-right">Add New Transaction +</a>
-
-											<div class="reveal" id="exampleModal1" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-												<div class="row collapse">
-													<div class="large-12 columns">
-														<h5 class="reveal-heading">Add New Transaction</h5>
-													</div>
-												</div>
-												
-												<form>
-													<div class="row collapse">
-														<div class="large-12 columns end">
-															<label>Surgery Needed
-										  						<select>
-										  							<option value="" disabled selected>Select a Surgery</option>
-										  						</select>
-										  					</label>
-														</div>
-													</div>
-												</form>
-
-												<div class="row collapse">
-													<div class="large-12 columns">
-														<div class="button-group pull-right">
-															<a class="button link" data-close>Cancel</a>
-															<button type="submit" class="button success">Add Transaction</button>
-														</div>
-													</div>
-												</div>
-											  	<button class="close-button" data-close aria-label="Close modal" type="button">
-											    	<span aria-hidden="true">&times;</span>
-											  	</button>
-											</div>
-
-										</div>
+								<div class="row">
+									<div class="large-12 columns">
+										<nav aria-label="You are here:" role="navigation">
+										  	<ul class="breadcrumbs">
+										    	<li><a href="add-patient.html">Transactions</a></li>
+										    	<li>Total Knee Replacement</li>
+										  	</ul>
+										</nav>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="large-12 columns">
+										<span class="h5">Edit Transaction</span>
 									</div>
 								</div>
 
-								<div class="callout">
-									<table>
-						                <thead>
-						                <tr>
-						                    <th><a href="#">Surgery Package <i class="fa fa-caret-up fa-fw"></i></a></th>
-						                    <th># of Facilities</th>
-						                    <th><a href="#">Date Created <i class="fa fa-caret-up fa-fw"></i></a></th>
-						                    <th></th>
-						                </tr>
-						                </thead>
-						                <tbody>
-						                    <tr>
-						                        <td><a href="view-transaction.html">Total Knee Replacement</a></td>
-						                        <td>3</td>
-						                        <td>Dec 23, 2016</td>
-						                        <td class="text-right">
-						                            <a  class="action-link" href="#"><i class="fa fa-edit fa-fw"></i></a>
-						                            <a href="#" class="action-link"><i class="fa fa-remove fa-fw"></i></a>
-						                        </td>
-						                    </tr>
-						                    
-						                </tbody>
-						            </table>
-								</div>	
+								<form>
+									<div class="row">
+										<div class="large-6 columns end">
+											<label class="mt-2">Surgery Needed
+						  						<select>
+						  							<option value="" disabled selected>Total Knee Replacement</option>
+						  						</select>
+						  					</label>
+										</div>
+									</div>
+								</form>
+
+								<div class="row">
+									<div class="medium-12 columns">
+
+										<div class="page-lead">
+											<div class="row">
+												<div class="large-12 columns">
+													<span class="h5">Facilities</span>
+														<a data-open="exampleModal1" class="button success pull-right">Add New Facility +</a>
+
+													<div class="reveal" id="exampleModal1" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+														<div class="row collapse">
+															<div class="large-12 columns">
+																<h5 class="reveal-heading">Add New Facility</h5>
+															</div>
+														</div>
+														
+														<form>
+															<div class="row collapse">
+																<div class="large-12 columns end">
+																	<label>Facility
+												  						<select>
+												  							<option value="" disabled selected>Select a Facility</option>
+												  						</select>
+												  					</label>
+																</div>
+															</div>
+														</form>
+
+														<div class="row collapse">
+															<div class="large-12 columns">
+																<div class="button-group pull-right">
+																	<a class="button link" data-close>Cancel</a>
+																	<button type="submit" class="button success">Add Facility</button>
+																</div>
+															</div>
+														</div>
+													  	<button class="close-button" data-close aria-label="Close modal" type="button">
+													    	<span aria-hidden="true">&times;</span>
+													  	</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+
+										<div class="search-result">
+
+											<a href="#" class="row-item-container">
+												<div class="row" data-equalizer>
+													<div class="columns medium-1">
+														<div class="logo" data-equalizer-watch>
+															<img src="http://placehold.it/100x100">
+														</div>
+													</div>
+													<div class="columns medium-4">
+														<div class="facility" data-equalizer-watch>
+															<h6 class="name">National Hospital California</h6>
+															<p class="address"><i class="fa fa-map-marker"></i> Los Angeles, California</p>
+															<p class="contact"><i class="fa fa-phone"></i> 123 456 7890</p>
+														</div>
+													</div>
+													<div class="columns medium-4">
+														<div class="admin" data-equalizer-watch>
+															<h6 class="name">David Warkentin</h6>
+															<p class="address"><i class="fa fa-map-marker"></i> Los Angeles, California</p>
+															<p class="contact"><i class="fa fa-phone"></i> 123 456 7890</p>
+														</div>
+													</div>
+													<div class="columns medium-3">
+														<div class="package-count" data-equalizer-watch>
+															<div>123</div>
+															<p>Surgery Package</p>
+														</div>
+													</div>
+												</div>
+											</a>
+
+											<a href="#" class="row-item-container">
+												<div class="row" data-equalizer>
+													<div class="columns medium-1">
+														<div class="logo" data-equalizer-watch>
+															<img src="http://placehold.it/100x100">
+														</div>
+													</div>
+													<div class="columns medium-4">
+														<div class="facility" data-equalizer-watch>
+															<h6 class="name">National Hospital California</h6>
+															<p class="address"><i class="fa fa-map-marker"></i> Los Angeles, California</p>
+															<p class="contact"><i class="fa fa-phone"></i> 123 456 7890</p>
+														</div>
+													</div>
+													<div class="columns medium-4">
+														<div class="admin" data-equalizer-watch>
+															<h6 class="name">David Warkentin</h6>
+															<p class="address"><i class="fa fa-map-marker"></i> Los Angeles, California</p>
+															<p class="contact"><i class="fa fa-phone"></i> 123 456 7890</p>
+														</div>
+													</div>
+													<div class="columns medium-3">
+														<div class="package-count" data-equalizer-watch>
+															<div>123</div>
+															<p>Surgery Package</p>
+														</div>
+													</div>
+												</div>
+											</a>
+
+											<a href="#" class="row-item-container">
+												<div class="row" data-equalizer>
+													<div class="columns medium-1">
+														<div class="logo" data-equalizer-watch>
+															<img src="http://placehold.it/100x100">
+														</div>
+													</div>
+													<div class="columns medium-4">
+														<div class="facility" data-equalizer-watch>
+															<h6 class="name">National Hospital California</h6>
+															<p class="address"><i class="fa fa-map-marker"></i> Los Angeles, California</p>
+															<p class="contact"><i class="fa fa-phone"></i> 123 456 7890</p>
+														</div>
+													</div>
+													<div class="columns medium-4">
+														<div class="admin" data-equalizer-watch>
+															<h6 class="name">David Warkentin</h6>
+															<p class="address"><i class="fa fa-map-marker"></i> Los Angeles, California</p>
+															<p class="contact"><i class="fa fa-phone"></i> 123 456 7890</p>
+														</div>
+													</div>
+													<div class="columns medium-3">
+														<div class="package-count" data-equalizer-watch>
+															<div>123</div>
+															<p>Surgery Package</p>
+														</div>
+													</div>
+												</div>
+											</a>
+
+										</div>
+
+									</div>
+								</div>
+
 							</div>
 
 						</div>					
