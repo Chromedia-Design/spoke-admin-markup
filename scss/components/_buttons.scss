@@ -95,9 +95,10 @@
 	position: absolute;
 	top: 1.5rem;
 	right: 1.5rem;
-	color: rgba($black, $B-dividers);
+	color: rgba($white, $W-dividers);
+	transition: all ease-in 0.2s;
 	&:hover {
-		color: $text-black;
+		color: $text-white;
 	}
 }
 

@@ -1,10 +1,18 @@
 .reveal {
 	border-radius: 2px;
-	padding: 2rem;
-	.reveal-heading {
-		margin-bottom: 1rem;
-	}
+	padding: 0;
 	.button-group {
-		margin-bottom: 0;
+		margin: 0;
 	}
+}
+
+.reveal-heading, .reveal-body, .reveal-footer {
+	overflow: hidden;
+	padding: 1.5rem;
+	margin: 0;
+}
+
+.reveal-heading {
+	background-color: $primary-color;
+	color: $white;
 }
