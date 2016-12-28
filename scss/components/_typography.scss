@@ -6,6 +6,10 @@
 	font-size: 1rem;
 }
 
+a {
+	color: $success-color;
+}
+
 strong, b {
 	font-weight: $global-weight-semibold;
 }
