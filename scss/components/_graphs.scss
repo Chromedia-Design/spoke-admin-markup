@@ -24,6 +24,14 @@
 					content: ":";
 					color: rgba($black, $B-hinttext);
 				}
+				.deductible-label {
+					position: absolute;
+					margin: 0;
+					bottom: -3rem;
+					right: -4rem;
+					font-size: 0.75rem;
+					color: rgba($black, $B-subtext);
+				}
 			}
 			&.negate {
 				float: right;
@@ -31,6 +39,14 @@
 			}
 			&.bonus {
 				background-color: $success-color;
+				.bonus-label {
+					position: absolute;
+					margin: 0;
+					bottom: -3rem;
+					right: -4rem;
+					font-size: 0.75rem;
+					color: rgba($black, $B-subtext);
+				}
 			}
 		}
 		&.small {
