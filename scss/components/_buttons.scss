@@ -3,6 +3,7 @@
 	border-radius: 2px;
 	font-weight: $global-weight-bold;
 	// letter-spacing: 0.0425rem;
+	text-transform: capitalize;
 	&.link {
 		background: transparent;
 		border: none;
