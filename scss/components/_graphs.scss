@@ -27,10 +27,12 @@
 				.deductible-label {
 					position: absolute;
 					margin: 0;
-					bottom: -3rem;
-					right: -4rem;
+					top: 2rem;
+					bottom: -2rem;
+					right: 0.5rem;
 					font-size: 0.75rem;
 					color: rgba($black, $B-subtext);
+					text-align: right;
 				}
 			}
 			&.negate {
@@ -42,10 +44,12 @@
 				.bonus-label {
 					position: absolute;
 					margin: 0;
-					bottom: -3rem;
-					right: -4rem;
+					top: 2rem;
+					bottom: -2rem;
+					right: 0rem;
 					font-size: 0.75rem;
 					color: rgba($black, $B-subtext);
+					text-align: right;
 				}
 			}
 		}
