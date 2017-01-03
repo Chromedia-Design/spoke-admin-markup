@@ -3,7 +3,8 @@
 	border-radius: 2px;
 	font-weight: $global-weight-bold;
 	// letter-spacing: 0.0425rem;
-	text-transform: capitalize;
+	text-transform: uppercase;
+	line-height: 1.2;
 	&.link {
 		background: transparent;
 		border: none;
