@@ -15,11 +15,11 @@ section {
 		.section-heading {
 			margin-bottom: 1.875rem;
 		}
-		&.white-bg {
-			background-color: $white;
-			border-top: 1px solid rgba($black, $B-dividers);
-			border-bottom: 1px solid rgba($black, $B-dividers);
-		}
+	}
+	&.white-bg {
+		background-color: $white;
+		border-top: 1px solid rgba($black, $B-dividers);
+		border-bottom: 1px solid rgba($black, $B-dividers);
 	}
 	&.jumbotron {
 		background-color: $white;
@@ -44,6 +44,25 @@ section {
 					line-height: 1.5em;
 				}
 			}
+			.brick {
+				text-transform: none;
+				border-color: rgba($black, $B-dividers);
+				min-width: 10rem;
+				h1,
+				h2,
+				h3,
+				h4,
+				h5,
+				h6 {
+					margin: 0;
+				}
+				p {
+					margin: 0;
+					font-size: 0.75rem;
+					font-weight: normal;
+				}
+			}
+
 		}
 		.lead-testimonial {
 			position: relative;

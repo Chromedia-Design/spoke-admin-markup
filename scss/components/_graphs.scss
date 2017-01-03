@@ -41,6 +41,8 @@
 			}
 			&.bonus {
 				background-color: $success-color;
+				border-top-right-radius: 7px;
+				border-bottom-right-radius: 7px;
 				.bonus-label {
 					position: absolute;
 					margin: 0;
