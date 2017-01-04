@@ -308,9 +308,9 @@
 	border-radius: 2px;
 	margin: 0 0 1rem;
 	.list-item {
-		padding: 0.25rem 0.5rem 0;
+		padding: 0.3rem 0.5rem 0;
 		display: inline-block;
-		font-family: $header-font-family;
+		font-family: $body-font-family;
 		width: 75%;
 		white-space: nowrap;
 		overflow: hidden;
@@ -318,7 +318,7 @@
 		color: rgba($black, $B-text);
 	}
 	.button {
-		margin-bottom: 0;
+		margin: 0.15rem 0;
 	}
 	&:hover {
 		background-color: rgba($black, $B-dividers);

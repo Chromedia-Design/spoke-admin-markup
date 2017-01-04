@@ -1,10 +1,10 @@
 .button {
-	font-family: $header-font-family;
+	font-family: $body-font-family;
 	border-radius: 2px;
 	font-weight: $global-weight-bold;
 	// letter-spacing: 0.0425rem;
 	text-transform: uppercase;
-	line-height: 1.2;
+	// line-height: 1.2;
 	&.link {
 		background: transparent;
 		border: none;
@@ -31,6 +31,9 @@
 	&.info {
 		background-color: rgba($black, $B-dividers);
 		color: rgba($black, $B-subtext);
+	}
+	&.large {
+		line-height: 1.2;
 	}
 }
 

@@ -1,5 +1,5 @@
 table {
-	font-family: $header-font-family;
+	font-family: $body-font-family;
 	font-size: 0.875rem;
 	table-layout: fixed;
 	[type='text'],
@@ -36,7 +36,7 @@ table {
 		border-radius: 2px;
 		tr {
 			&:nth-child(even) {
-				background-color: $light-gray;
+				background-color: $primary-light;
 			}
 		}
 		td {
