@@ -7,7 +7,7 @@
 	padding: 0;
 	list-style: none;
 	> li {
-		font-family: $header-font-family;
+		font-family: $body-font-family;
 		font-weight: 400;
 		min-height: 20px;
 		border-bottom: 1px solid rgba($black, $B-dividers);
@@ -89,6 +89,7 @@
 			> a,
 			span,
 			label {
+				margin-bottom: 0;
 				display: inline-block;
 				width: 88%;
 				vertical-align: middle;
