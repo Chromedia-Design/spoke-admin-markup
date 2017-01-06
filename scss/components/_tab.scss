@@ -1,7 +1,8 @@
 .tabs {
 	margin: 0 0 1rem;
-	font-weight: $global-weight-semibold;
-	font-family: $header-font-family;
+	font-weight: $global-weight-bold;
+	font-family: $body-font-family;
+	background: transparent;
 	border-top: none;
 	border-left: none;
 	border-right: none;
@@ -10,6 +11,7 @@
 		list-style: none;
 		display: inline-block;
 		text-decoration: none;
+		text-transform: uppercase;
 		a {
 			transition: 0.1s;
 			color: rgba($black, $B-subtext);

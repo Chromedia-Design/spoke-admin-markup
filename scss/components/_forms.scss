@@ -1,32 +1,38 @@
 label {
-	color: rgba($black, $B-text);
-	font-family: $header-font-family;
+	color: rgba($black, $B-subtext);
+	font-family: $body-font-family;
 	&.small-label {
 		font-size: 0.75rem;
 	}
+}
+
+legend {
+	margin: 0;
+	font-size: 0.875rem;
+	line-height: 1.8;
+	font-family: $body-font-family;
+	color: rgba($black, $B-subtext);
+	&.labelize {
+		// used for multi-field inputs i.e birthdays, etc.
+		margin: 0;
+		padding-left: 1rem;
+	}
+}
+
+.help-text {
+	margin-top: 0;
+	font-style: normal;
+	color: rgba($black, $B-subtext);
 }
 
 textarea {
 	height: 4rem;
 }
 
-legend {
-	margin-top: 0.5rem;
-	font-size: 0.875rem;
-	font-family: $header-font-family;
-	&.labelize {
-		padding-left: 1rem;
-	}
-}
-
 select {
 	&:disabled {
 		background-color: rgba($black, $B-dividers);
 	}
-}
-
-.help-text {
-	margin-top: 0;
 }
 
 [type='text'],
@@ -45,6 +51,8 @@ select {
 [type='color'],
 textarea, select, .bold-div {
 	font-family: $body-font-family;
+	color: rgba($black, $B-text);
+	text-transform: none;
 	box-shadow: none;
 	border-radius: 2px;
 	border: 1px solid rgba($black, $B-dividers);
@@ -91,10 +99,11 @@ textarea, div, label, select {
 	margin: 0;
 	+ label {
 		font-family: $body-font-family;
-		display: inline;
+		display: inline-block;
 		font-size: 1rem;
 		line-height: 1.5em;
 		color: $text-black;
+		margin-bottom: 1rem;
 	}
 }
 
@@ -165,10 +174,6 @@ textarea, .mce-tinymce {
 .input-group-field {
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
-}
-
-.help-text {
-	font-style: normal;
 }
 
 .dropdown-pane {

@@ -5,10 +5,10 @@
 		color: $text-black;
 	}
 	li {
-		font-family: $header-font-family;
+		font-family: $body-font-family;
 		font-size: 0.5625rem;
-		font-weight: $global-weight-semibold;
-		text-transform: none;
+		font-weight: $global-weight-bold;
+		text-transform: uppercase;
 		color: rgba($black, $B-hinttext);
 		@media only screen and (min-width: 40em) {
 			font-size: 0.75rem;
