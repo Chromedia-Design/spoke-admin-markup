@@ -82,6 +82,14 @@ section {
 	}
 }
 
+.row {
+	// useful for inputs such as dates, etc...
+	&.multi-part-input {
+		margin-left: -0.9375rem !important;
+		margin-right: -0.9375rem !important;
+	}
+}
+
 .login {
 	height: 100%;
 	width: 100%;
