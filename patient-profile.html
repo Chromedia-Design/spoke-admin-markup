@@ -21,37 +21,13 @@
 					<li>
 						<a href="#"><i class="material-icons">dashboard</i> Dashboard</a>
 					</li>
-					<li>
-						<a href="#"><i class="material-icons">work</i> Practices</a>
-						<ul class="nested vertical menu is-active">
-							<li>
-								<a href="#">Specializations</a>
-							</li>
-							<li>
-								<a href="#">Treatments</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="#"><i class="material-icons">card_giftcard</i> Packages</a>
-					</li>
-					<li>
-						<a href="#"><i class="material-icons">local_pharmacy</i> Facilities</a>
-					</li>
-					<li>
-						<a href="#"><i class="material-icons">card_giftcard</i> Doctors</a>
-					</li>
-					<li>
-						<a href="#"><i class="material-icons">card_giftcard</i> Companies</a>
-					</li>
 					<li class="is-active">
 						<a href="#"><i class="material-icons">wc</i> Patients</a>
-					</li>
-					<li>
-						<a href="#"><i class="material-icons">card_giftcard</i> Content</a>
-					</li>
-					<li>
-						<a href="#"><i class="material-icons">card_giftcard</i> Users</a>
+						<ul class="nested vertical menu is-active">
+							<li class="is-active">
+								<a href="#">All Patients</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</div>
@@ -93,31 +69,28 @@
 						  	</ul>
 						</nav>
 
-						<div class="page-lead">
-							<span class="h5">Patient Information</span>
-							<a href="add-patient.html" class="button primary hollow pull-right"><i class="fa fa-pencil fa-fw"></i> Edit Patient</a>
-						</div>
-
 						<div class="callout">
+							<div class="row">
+								<div class="large-12 columns end">
+									<div class="page-lead">
+										<span class="h5">William Pinkerton</span>
+										<!-- <a href="#" class="button info hollow"><i class="fa fa-angle-up fa-fw"></i> Collapse</a> -->
+										<a href="add-patient.html" class="button info hollow pull-right"><i class="fa fa-pencil fa-fw"></i> Edit Patient</a>
+									</div>
+								</div>
+							</div>	
+							
 							<div class="row">
 								<div class="large-4 columns end">
 									<div class="label-group">
-										<p>Full Name</p>
-										<h6>William Pinkerton</h6>
+										<p>Company Name</p>
+										<h6>ACME Inc.</h6>
 									</div>
 								</div>
 								<div class="large-4 columns end">
 									<div class="label-group">
 										<p>Policy Number</p>
 										<h6>123-4567-890</h6>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="large-4 columns end">
-									<div class="label-group">
-										<p>Company Name</p>
-										<h6>ACME Inc.</h6>
 									</div>
 								</div>
 								<div class="large-4 columns end">
@@ -156,15 +129,14 @@
 								</div>
 							</div>
 							<hr>
-							<div class="row">
-								
+							<!-- <div class="row">
 								<div class="large-6 columns end">
 									<div class="label-group">
 										<p>Treatment</p>
 										<h6>Knee Replacement</h6>
 									</div>
 								</div>
-							</div>
+							</div> -->
 							<div class="row">
 								<div class="large-4 columns end">
 									<div class="label-group">
@@ -201,7 +173,7 @@
 								</div>
 								<div class="large-3 columns end">
 									<div class="label-group">
-										<p>Co-insurance Percentage After Deductible</p>
+										<p>Co-insurance Percentage</p>
 										<h6>10%</h6>
 									</div>
 								</div>
@@ -212,20 +184,143 @@
 									</div>
 								</div>
 							</div>
-						</div>
-
-						<div class="page-lead">
-							<span class="h5">Facilities</span>
-						</div>	
-						
-						<div class="callout">
-							
-						</div>					
-
+						</div>			
 					</div>
 				</div>
 
+				<div class="row">
+					<div class="large-12 columns end">
+						<div class="page-lead">
+							<span class="h6">Recent Activity</span>
+							<a href="add-patient.html" class="button hollow info small pull-right">See All</a>
+						</div>
 
+						<div class="panel">
+							<ul class="well-list">
+								<li>
+									<div class="list-wrap">
+										<div class="list-item-image">
+											<p class="text-center"><i class="fa fa-edit fa-fw"></i> </p>
+										</div>
+										<div class="list-item-name">
+											<p><a href="#">William Pinkerton</a> created new <a href="#">Knee Replacement</a> transaction.</p>
+										</div>
+										<div class="pull-right">
+											<span class="subheader"><i>Today</i></span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-wrap">
+										<div class="list-item-image">
+											<p class="text-center"><i class="fa fa-heart-o fa-fw"></i> </p>
+										</div>
+										<div class="list-item-name">
+											<p><a href="#">William Pinkerton</a> was interested in <a href="#">Boulder Surgery Center</a>.</p>
+										</div>
+										<div class="pull-right">
+											<span class="subheader"><i>Jan 1, 2017 4:55 PM</i></span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-wrap">
+										<div class="list-item-image">
+											<p class="text-center"><i class="fa fa-eye fa-fw"></i> </p>
+										</div>
+										<div class="list-item-name">
+											<p><a href="#">William Pinkerton</a> viewed his landing page.</p>
+										</div>
+										<div class="pull-right">
+											<span class="subheader"><i>Jan 1, 2017 4:55 PM</i></span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-wrap">
+										<div class="list-item-image">
+											<p class="text-center"><i class="fa fa-edit fa-fw"></i> </p>
+										</div>
+										<div class="list-item-name">
+											<p><a href="#">William Pinkerton</a> edited his profile.</p>
+										</div>
+										<div class="pull-right">
+											<span class="subheader"><i>Jan 1, 2017 4:55 PM</i></span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-wrap">
+										<div class="list-item-image">
+											<p class="text-center"><i class="fa fa-eye fa-fw"></i> </p>
+										</div>
+										<div class="list-item-name">
+											<p>Spoke Advocate viewed <a href="#">William Pinkerton</a> profile.</p>
+										</div>
+										<div class="pull-right">
+											<span class="subheader"><i>Jan 1, 2017 4:55 PM</i></span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-wrap">
+										<div class="list-item-image">
+											<p class="text-center"><i class="fa fa-comment-o fa-fw"></i> </p>
+										</div>
+										<div class="list-item-name">
+											<p><a href="#">William Pinkerton</a> received an <a href="#">email</a> message from <a href="#">Spoke Advocate</a>.</p>
+										</div>
+										<div class="pull-right">
+											<span class="subheader"><i>Jan 1, 2017 4:55 PM</i></span>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="row">
+					<div class="large-12 columns end">
+						<div class="page-lead">
+							<span class="h6">Inbox</span>
+							<a href="add-patient.html" class="button hollow info small pull-right">See All</a>
+						</div>
+
+						<div class="panel">
+							<ul class="well-list">
+								<li>
+									<div class="list-wrap">
+										<div class="list-note">
+											<span class="truncate"><a href="#"><a href="#">Spoke Advocate</a></span>
+										</div>
+										<div class="list-detail">
+											<span class="truncate"><a href="#">This is the subject - This is the body.</a></span>
+										</div>
+										<div class="pull-right">
+											<span class="subheader"><i>Jan 6, 2017 8:45 AM</i></span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-wrap">
+										<div class="list-note">
+											<span class="truncate"><a href="#"><a href="#">Emman Calabroso</a></span>
+										</div>
+										<div class="list-detail">
+											<span class="truncate"><a href="#">Hello! What's Up - This is the body.</a></span>
+										</div>
+										<div class="pull-right">
+											<span class="subheader"><i>Jan 6, 2017 8:45 AM</i></span>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 				
 			</div>
 		</div>

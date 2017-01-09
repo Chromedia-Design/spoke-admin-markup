@@ -28,12 +28,17 @@
 	&.rounded {
 		border-radius: 1.875em;
 	}
-	&.info {
-		background-color: rgba($black, $B-dividers);
-		color: rgba($black, $B-subtext);
-	}
 	&.large {
 		line-height: 1.2;
+	}
+}
+
+.info {
+	background-color: rgba($black, $B-dividers);
+	color: rgba($black, $B-subtext);
+	&.hollow {
+		border-color: rgba($black, $B-subtext);
+		color: rgba($black, $B-subtext);
 	}
 }
 

@@ -81,6 +81,11 @@
 			width: 7%;
 			position: relative;
 			display: inline-block;
+			vertical-align: top;
+			p {
+				margin: 0;
+				color: rgba($black, $B-hinttext);
+			}
 		}
 		.list-item-name {
 			width: 44%;
@@ -97,11 +102,15 @@
 				overflow: hidden;
 				text-overflow: ellipsis; 
 			}
+			> p {
+				margin-bottom: 0;
+			}
 		}
 		.list-detail {
 			width: 40%;
 			display: inline-block;
 			color: rgba($black, $B-subtext);
+			vertical-align: top;
 			label {
 				font-family: $header-font-family;
 				font-size: 0.875rem;
@@ -231,10 +240,10 @@
 			margin-bottom: 0;
 		}
 		> li {
-			.pull-left, .list-item-name, .list-detail {
+			> .pull-left, .list-item-name, .list-detail {
 				margin-top: 0.5rem;
 			}
-			.list-group {
+			> .list-group {
 				position: relative;
 				width: 22%;
 				line-height: 1em;

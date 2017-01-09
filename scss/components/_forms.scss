@@ -3,6 +3,10 @@ label {
 	font-family: $body-font-family;
 	&.small-label {
 		font-size: 0.75rem;
+		text-transform: uppercase;
+	}
+	&.middle {
+		padding-bottom: 0;
 	}
 }
 
@@ -263,5 +267,11 @@ label.image-upload {
 	select,
 	textarea {
 		margin-bottom: 0;
+	}
+	&.submenu {
+		padding: 1rem 0.5rem;
+		background-color: $white;
+		border: 1px solid rgba($black, $B-dividers);
+		border-radius: 2px;
 	}
 }
