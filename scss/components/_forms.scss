@@ -35,7 +35,7 @@ textarea {
 
 select {
 	&:disabled {
-		background-color: rgba($black, $B-dividers);
+		background-color: $light-gray;
 	}
 }
 
@@ -167,8 +167,8 @@ textarea, .mce-tinymce {
 }
 
 .input-group-label {
-	color: rgba($black, $B-hinttext);
-	background-color: rgba($black, $B-dividers);
+	color: rgba($black, $B-subtext);
+	background-color: $white;
 	border-color: rgba($black, $B-dividers);
 	&:last-child {
 		border-radius: 0 2px 2px 0;
