@@ -17,29 +17,31 @@
 			color: rgba($black, $B-subtext);
 		}
 		&.is-active {
-			border-bottom: 0.2rem solid $alert-color;
-			background-color: $white;
+			border-bottom: 0.2rem solid $secondary-color;
+			background-color: transparent;
 			a {
-				color: $alert-color;
-				background-color: $white;
+				color: $secondary-color;
+				background-color: transparent;
 			}
 		}
 	}
 	&.vertical {
 		border: none;
+		background: transparent;
 		li {
-			border: 1px solid rgba($black, $B-dividers);
-			border-right: none;
-			background-color: rgba($black, $B-dividers);
-			&.is-active {
-				border-right: 0.2rem solid $alert-color;
-				background-color: $white;
-				a {
-					background-color: $white;
-				}
+			border: none;
+			background: transparent;
+			text-transform: none;
+			a {
+				text-transform: none;
+				padding: 0.65rem 1.5rem;
 			}
-			&:last-child {
-				border-top: none;
+			&.is-active {
+				border-left: 0.2rem solid $secondary-color;
+				background-color: transparent;
+				a {
+					background-color: transparent;
+				}
 			}
 		}
 	}
@@ -93,7 +95,7 @@
 
 .tabs-title {
 	> a {
-		font-size: 0.875rem;
+		font-size: 1rem;
 		line-height: 1.5em;
 	}
 }
@@ -102,9 +104,8 @@
 	border: none;
 	background-color: transparent;
 	&.vertical {
-		border: 1px solid rgba($black, $B-dividers);
-		border-radius: 0 2px 2px 2px;
-		background-color: $white;
+		border: none;
+		background-color: transparent;
 	}
 	&.spk-suggestions {
 		position: relative;
