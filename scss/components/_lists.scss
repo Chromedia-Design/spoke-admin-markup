@@ -77,6 +77,17 @@
 		.pull-left {
 			margin-right: 1rem;
 		}
+		.list-item-icon {
+			width: 3%;
+			margin-right: 0.5rem;
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			p {
+				margin: 0;
+				color: rgba($black, $B-hinttext);
+			}
+		}
 		.list-item-image {
 			width: 7%;
 			position: relative;
@@ -120,7 +131,7 @@
 		.list-note {
 			display: inline-block;
 			width: 20%;
-			vertical-align: middle;
+			vertical-align: top;
 		}
 		&:last-child {
 			border-bottom: none;
