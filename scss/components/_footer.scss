@@ -1,0 +1,14 @@
+footer {
+	background-color: $primary-color;
+	hr {
+		margin: 0;
+		border-color: $white;
+	}
+	p {
+		margin: 0;
+		padding: 1.875rem 0;
+	}
+	> * {
+		color: $white;
+	}
+}
