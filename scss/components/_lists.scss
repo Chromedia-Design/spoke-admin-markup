@@ -103,7 +103,7 @@
 			position: relative;
 			display: inline-block;
 			> a,
-			span,
+			span,8
 			label {
 				margin-bottom: 0;
 				display: inline-block;
@@ -386,5 +386,40 @@
 	}
 	.subheader {
 		line-height: 1.6;
+	}
+}
+
+.stacked-list {
+	margin: 0;
+	padding: 0;
+	li {
+		list-style: none;
+		padding: 0.9375rem 0;
+		.media-object-section {
+			&:first-child {
+				padding-right: 2rem; 
+			}
+		}
+	}
+}
+
+ul.custom-list {
+	margin: 0; 
+	padding: 0 1rem;
+	list-style: none;
+	li {
+		padding: 0.5rem 0;
+		&:before {
+			content: "";
+			border-color: transparent $warning-color;
+			border-style: solid;
+			border-width: 0.35rem 0 0.35rem 0.45rem;
+			display: block;
+			height: 0;
+			width: 0;
+			left: -1rem;
+			top: 1rem;
+			position: relative;
+		}	
 	}
 }

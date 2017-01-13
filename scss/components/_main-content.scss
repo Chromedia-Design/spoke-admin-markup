@@ -16,10 +16,123 @@ section {
 			margin-bottom: 1.875rem;
 		}
 	}
+	&.hi-padded {
+		padding: 9.75rem 0;
+	}
 	&.white-bg {
 		background-color: $white;
 		border-top: 1px solid rgba($black, $B-dividers);
 		border-bottom: 1px solid rgba($black, $B-dividers);
+		+ .white-bg {
+			border-top: none;
+		}
+	}
+	&.primary-bg {
+		background-color: $primary-color;
+		> * {
+			color: $white;
+		}
+	}
+	&.secondary-bg {
+		background-color: $secondary-color;
+		> * {
+			color: $white;
+		}
+	}
+	&.success-bg {
+		background-color: $success-color;
+		> * {
+			color: $white;
+		}
+	}
+	&.borderless {
+		border: none;
+	}
+	&.home {
+		position: relative;
+		background: transparent url('https://s3.amazonaws.com/assets.spoke.com/images/breather.jpg') center center no-repeat;
+		background-size: cover;
+		header {
+			background: transparent;
+			border: none;
+		}
+		.call-to-action {
+			padding: 2rem 0 0;
+			h1 {
+				margin-bottom: 1rem;
+				@media only screen and (min-width: 40em) {
+					font-size: 3.3125rem;
+					line-height: 1.5em;
+				}
+			}
+			p {
+				margin-bottom: 1rem;
+				@media only screen and (min-width: 40em) {
+					font-size: 1.125rem;
+					line-height: 1.5em;
+				}
+				&.h3 {
+					@media only screen and (min-width: 40em) {
+						font-size: 2rem;
+						line-height: 1.5em;
+					}
+				}
+			}
+			.brick {
+				text-transform: none;
+				border-color: rgba($black, $B-dividers);
+				min-width: 10rem;
+				h1,
+				h2,
+				h3,
+				h4,
+				h5,
+				h6 {
+					margin: 0;
+				}
+				p {
+					margin: 0;
+					font-size: 0.75rem;
+					font-weight: normal;
+				}
+			}
+
+		}
+		.home-scene {
+			position: relative;
+			height: 11rem;
+			@media only screen and (min-width: 40em) {
+				height: 22rem;
+			}
+			.device {
+				position: absolute;
+			    -webkit-animation: fadeInDown .7s;
+				animation: fadeInDown .7s;
+				-webkit-animation-fill-mode: forwards;
+				animation-fill-mode: forwards;
+				&.browser {
+					width: 40rem;
+					top: -2rem;
+					left: 0;
+					// -ms-transform: rotate(7deg); /* IE 9 */
+    				// -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    				// 	transform: rotate(7deg);
+				}
+				&.mobile {
+					width: 34rem;
+					right: -3rem;
+					bottom: -7rem;
+				}
+				&.one {
+				    -webkit-animation-delay: .5s;
+					animation-delay: .5s;
+				}
+				&.two {
+				    -webkit-animation-delay: .7s;
+    				animation-delay: .7s;
+				}
+			}
+		}
 	}
 	&.jumbotron {
 		background-color: $white;
@@ -78,7 +191,7 @@ section {
 					margin-bottom: 0;
 				}
 			}
-		}	
+		}
 	}
 }
 
