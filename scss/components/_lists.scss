@@ -103,7 +103,7 @@
 			position: relative;
 			display: inline-block;
 			> a,
-			span,8
+			span,
 			label {
 				margin-bottom: 0;
 				display: inline-block;
@@ -397,7 +397,7 @@
 		padding: 0.9375rem 0;
 		.media-object-section {
 			&:first-child {
-				padding-right: 2rem; 
+				padding-right: 2rem; 	
 			}
 		}
 	}
