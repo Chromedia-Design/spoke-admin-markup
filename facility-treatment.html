@@ -96,7 +96,7 @@
 				
 
 				<!-- FACILITY HEADER -->
-				<div class="block">
+				<!-- <div class="block">
 					<div class="block-container">
 						<div class="row">
 							<div class="medium-3 columns">
@@ -136,32 +136,33 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				
 				<div class="row">
 					<div class="medium-12 columns">
-						<ul class="tabs" id="spoke-tabs"> <!--use data-tabs to use foundation tabs -->
-							<li class="tabs-title"><a href="facility-profile.html">Clinic Profile</a></li>
-							<li class="tabs-title is-active"><a href="facility-treatment.html" aria-selected="true">Treatment</a></li>
-							<li class="tabs-title"><a href="facility-media.html">Media</a></li>
-							<li class="tabs-title"><a href="facility-staff.html">Staff</a></li>
+						<ul class="tabs" id="main-tabs"> <!--use data-tabs to use foundation tabs -->
+							<li class="tabs-title"><a href="#profile">Clinic Profile</a></li>
+							<li class="tabs-title is-active"><a href="#treatment" aria-selected="true">Treatment</a></li>
+							<li class="tabs-title"><a href="#media">Media</a></li>
+							<li class="tabs-title"><a href="#staff">Staff</a></li>
 						</ul>
 					</div>
 				</div>
 				
 				<!-- FACILITY HEADER END -->
 
-				<div class="row panel-body spoke-menu">
+				<div class="row">
 					<div class="medium-12 columns">
 
 						<!-- tab content -->
-						<div class="tabs-content" data-tabs-content="spoke-tabs">
-							<div class="tabs-panel is-active" id="Treatment">
+						<div class="tabs-content" data-tabs-content="main-tabs">
+							<div class="tabs-panel" id="profile"></div>
+							<div class="tabs-panel is-active" id="treatment">
 								
 								<div class="row">
 									<div class="large-12 columns end">
 										<div class="page-lead">
-											<span class="h5">Facility Treatments</span>
+											<span class="h5">Facility Treatments (2)</span>
 											<a href="#" class="button success pull-right">Add New Treatment +</a>
 										</div>
 
@@ -203,350 +204,638 @@
 								<div class="row">
 
 									<div class="medium-12 columns">
-										<div class="callout">
-											<div class="callout-heading">
-												<span class="h6">Root Canal Treatment</span>
-												<a href="#" class="h6 pull-right"><i class="fa fa-remove"></i></a>
-											</div>
-											
-											<div class="callout secondary">
-												<div class="row">
-													<div class="medium-12 columns">
-														<p>Add package</p>
-														<div class="input-group">
-										    			<input type="text" class="input-group-field" placeholder="Surgery Package">
-										    			<div class="input-group-button">
-										    				<a href="#" class="button">Add</a>
-										    			</div>
-								    				</div>
-													</div>
+										<!-- Start of Treatment -->
+										<ul class="tabs combinational" data-tabs id="secondary-tabs">
+											<li class="tabs-text">
+												<span><a href=""><i class="fa fa-bars fa-fw"></i></a> Root Canal Treatment</span>
+											</li>
+											<li class="tabs-title is-active"><a href="#prices"><i class="fa fa-dollar fa-fw"></i> Prices</a></li>
+											<li class="tabs-title"><a href="#scores"><i class="fa fa-diamond fa-fw"></i> Scores</a></li>
+											<li class="tabs-title"><a href="#doctors" aria-selected="true"><i class="fa fa-user-md fa-fw"></i> Doctors</a></li>
+											<li class="tabs-option">
+												<div class="button-align">
+													<a href="#" class="button primary">+ Add Surgery Package</a>
+													<a href="#" class="button"><i class="material-icons">close</i></a>
+												</div>
+											</li>
+										</ul>
+										<div class="tabs-content" data-tabs-content="secondary-tabs">
+											<div class="tabs-panel is-active" id="prices">
+												<div class="callout">
+													<div class="panel">
+														<ul class="well-list with-input small">
+															<li>
+																<div class="list-wrap">
+																	<div class="list-item-name">
+																		<span class="h6"><a data-toggle="category1"><i class="fa fa-caret-down fa-fw"></i></a> Molar Root Canal</span>
+																	</div>
+																	<div class="list-detail">
+																		<input type="checkbox" id="on-off-" value="on"><label>Disable Category Auto-Sum</label>
+																	</div>
+																	<div class="list-group pull-right">
+																		<div class="table-wrapper">
+																			<div class="input-group">
+																				<span class="input-group-label">$</span>
+																				<input type="text" class="input-group-field" value="0">
+																			</div>
+																		</div>
+																		<a class="close-btn h6"><i class="material-icons">close</i></a>
+																	</div>
+																</div>
+																<div id="category1" class="list-panel" data-toggler data-animate="fade-in fade-out">
+
+																	<ul class="well-list with-input">
+
+																		<li>
+																			<div class="list-wrap">
+																				<div class="pull-left">
+																					<a data-toggle="category1-a" class="action-link">  <i class="fa fa-caret-down fa-fw"></i></a>
+																				</div>
+																				<div class="list-item-name">
+																					<input id="checkbox1" type="checkbox" checked><label for="checkbox1">Surgery</label>
+																				</div>
+																				<div class="list-detail">
+																					<span class="bordered action-link active">1 Required</span>
+																				</div>
+																				<div class="list-group pull-right">
+																					<div class="table-wrapper">
+																						<div class="input-group">
+																							<span class="input-group-label">$</span>
+																							<input type="text" class="input-group-field" value="0">
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div id="category1-a" class="list-panel" data-toggler data-animate="fade-in fade-out">
+																				<ul class="well-list">
+																					<li>
+																						<div class="list-wrap">
+																							<div class="list-item-name">
+																								<input id="checkbox1" type="checkbox" checked>
+																								<label for="checkbox1">
+																									4-Day Admission
+																								</label>
+																							</div>
+																							<div class="list-detail">
+																								<span>002547</span>
+																							</div>
+																						</div>
+																					</li>
+																					
+																					<li>
+																						<div class="list-wrap">
+																							<div class="list-item-name">
+																								<input id="checkbox1" type="checkbox" checked>
+																								<label for="checkbox1">
+																									Room and Board
+																								</label>
+																							</div>
+																							<div class="list-detail">
+																								<span>002547</span>
+																							</div>
+																						</div>
+																					</li>
+
+																					<li>
+																						<div class="list-wrap">
+																							<div class="list-item-name">
+																								<input id="checkbox1" type="checkbox" checked>
+																								<label for="checkbox1">
+																									Complete Blood Count
+																								</label>
+																							</div>
+																							<div class="list-detail">
+																								<span>002547</span>
+																							</div>
+																						</div>
+																					</li>
+
+																					<li>
+																						<div class="list-wrap">
+																							<div class="list-item-name">
+																								<input id="checkbox1" type="checkbox" checked>
+																								<label for="checkbox1">
+																									Complete Urinalysis
+																								</label>
+																							</div>
+																							<div class="list-detail">
+																								<span>002547</span>
+																							</div>
+																						</div>
+																					</li>
+
+																					<li>
+																						<div class="list-wrap">
+																							<div class="list-item-name">
+																								<input id="checkbox1" type="checkbox" checked>
+																								<label for="checkbox1">
+																									X-Ray
+																								</label>
+																							</div>
+																							<div class="list-detail">
+																								<span>002547</span>
+																							</div>
+																						</div>
+																					</li>
+																				</ul>
+																			</div>
+																		</li>
+
+																		<li>
+																			<div class="list-wrap">
+																				<div class="pull-left">
+																					<a data-toggle="category1-b" class="action-link"><i class="fa fa-caret-down fa-fw"></i></a>
+																				</div>
+																				<div class="list-item-name">
+																					<input id="checkbox1" type="checkbox" checked><label for="checkbox1">Doctors/Surgeon</label>
+																				</div>
+																				<div class="list-detail">
+																					<span class="bordered action-link">1 Required</span>
+																				</div>
+																				<div class="list-group pull-right">
+																					<div class="table-wrapper">
+																						<div class="input-group">
+																							<span class="input-group-label">$</span>
+																							<input type="text" class="input-group-field" value="0">
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div id="category1-b" class="list-panel" data-toggler data-animate="fade-in fade-out">
+																				<ul class="well-list">
+
+																					<li>
+																						<div class="list-wrap">
+																							<label for="checkbox1">No items yet.</label>
+																						</div>
+																					</li>
+																					
+																				</ul>
+																			</div>
+																		</li>
+
+																		<li>
+																			<div class="list-wrap">
+																				<div class="pull-left">
+																					<a data-toggle="category1-c" class="action-link"><i class="fa fa-caret-down fa-fw"></i></a>
+																				</div>
+																				<div class="list-item-name">
+																					<input id="checkbox1" type="checkbox" checked><label for="checkbox1">Anesthesiology</label>
+																				</div>
+																				<div class="list-detail">
+																					<span class="bordered action-link active">1 Required</span>
+																				</div>
+																				<div class="list-group pull-right">
+																					<div class="table-wrapper">
+																						<div class="input-group">
+																							<span class="input-group-label">$</span>
+																							<input type="text" class="input-group-field" value="0">
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div id="category1-c" class="list-panel" data-toggler data-animate="fade-in fade-out">
+																				<ul class="well-list">
+
+																					<li>
+																						<div class="list-wrap">
+																							<label for="checkbox1">No items yet.</label>
+																						</div>
+																					</li>
+																					
+																				</ul>
+																			</div>
+																		</li>
+
+																		<li>
+																			<div class="list-wrap">
+																				<div class="pull-left">
+																					<a data-toggle="category1-d" class="action-link"><i class="fa fa-caret-down fa-fw"></i></a>
+																				</div>
+																				<div class="list-item-name">
+																					<input id="checkbox1" type="checkbox" checked><label for="checkbox1">Post Operation</label>
+																				</div>
+																				<div class="list-detail">
+																					<span class="bordered action-link active">1 Required</span>
+																				</div>
+																				<div class="list-group pull-right">
+																					<div class="table-wrapper">
+																						<div class="input-group">
+																							<span class="input-group-label">$</span>
+																							<input type="text" class="input-group-field" value="0">
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div id="category1-d" class="list-panel" data-toggler data-animate="fade-in fade-out">
+																				<ul class="well-list">
+
+																					<li>
+																						<div class="list-wrap">
+																							<label for="checkbox1">No items yet.</label>
+																						</div>
+																					</li>
+																					
+																				</ul>
+																			</div>
+																		</li>
+
+																		<li>
+																			<div class="list-wrap">
+																				<div class="pull-left">
+																					<a data-toggle="category1-e" class="action-link"><i class="fa fa-caret-down fa-fw"></i></a>
+																				</div>
+																				<div class="list-item-name">
+																					<input id="checkbox1" type="checkbox" checked><label for="checkbox1">Physical Therapy</label>
+																				</div>
+																				<div class="list-detail">
+																					<span class="bordered action-link active">1 Required</span>
+																				</div>
+																				<div class="list-group pull-right">
+																					<div class="table-wrapper">
+																						<div class="input-group">
+																							<span class="input-group-label">$</span>
+																							<input type="text" class="input-group-field" value="0">
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div id="category1-e" class="list-panel" data-toggler data-animate="fade-in fade-out">
+																				<ul class="well-list">
+
+																					<li>
+																						<div class="list-wrap">
+																							<label for="checkbox1">No items yet.</label>
+																						</div>
+																					</li>
+																					
+																				</ul>
+																			</div>
+																		</li>
+																		
+																	</ul>
+																</div>
+															</li>
+
+															<li>
+																<div class="list-wrap">
+																	<div class="list-item-name">
+																		<span class="h6"><a data-toggle="category2"><i class="fa fa-caret-down fa-fw"></i></a> Front Teeth Canal and has a very long name that it does not fit here</span>
+																	</div>
+																	<div class="list-detail">
+																		<input type="checkbox" id="on-off-" value="on"><label>Disable Category Auto-Sum</label>
+																	</div>
+																	<div class="list-group pull-right">
+																		<div class="table-wrapper">
+																			<div class="input-group">
+																				<span class="input-group-label">$</span>
+																				<input type="text" class="input-group-field" value="0">
+																			</div>
+																		</div>
+																		<a class="close-btn h6"><i class="material-icons">close</i></a>
+																	</div>
+																</div>
+																<div id="category2" class="list-panel" data-toggler data-animate="fade-in fade-out">
+
+																	<ul class="well-list">
+
+																		<li>
+																			<div class="list-wrap">
+																				<div class="pull-left">
+																					<a data-toggle="category2-a" class="action-link"><i class="fa fa-caret-down fa-fw"></i></a>
+																				</div>
+																				<div class="list-item-name">
+																					<input id="checkbox1" type="checkbox" checked><label for="checkbox1">Doctors/Surgeons</label>
+																				</div>
+																				<div class="list-detail">
+																					<span class="bordered action-link active">1 Required</span>
+																				</div>
+																				<div class="list-group pull-right">
+																					<div class="table-wrapper">
+																						<div class="input-group">
+																							<span class="input-group-label">$</span>
+																							<input type="text" class="input-group-field" value="0">
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div id="category2-a" class="list-panel" data-toggler data-animate="fade-in fade-out">
+																				<ul class="well-list">
+
+																					<li>
+																						<div class="list-wrap">
+																							<label for="checkbox1">No items yet.</label>
+																						</div>
+																					</li>
+																					
+																				</ul>
+																			</div>
+																		</li>
+																		
+																	</ul>
+																</div>
+															</li>
+														</ul>
+													</div>	
 												</div>
 											</div>
-
-											<div class="panel primary">
-
-												<ul class="well-list with-input small">
-
-													<li>
-														<div class="list-wrap">
-															<div class="list-item-name">
-																<span class="h6"><a data-toggle="category1"><i class="fa fa-caret-down fa-fw"></i></a> Molar Root Canal</span>
-															</div>
-															<div class="list-detail">
-																<input type="checkbox" id="on-off-" value="on"><label>Disable Category Auto-Sum</label>
-															</div>
-															<div class="list-group pull-right">
-																<div class="table-wrapper">
-																	<div class="input-group">
-																		<span class="input-group-label">$</span>
-																		<input type="text" class="input-group-field" value="0">
+											<div class="tabs-panel" id="scores">
+												<div class="callout"></div>
+											</div>
+											<div class="tabs-panel" id="doctors">
+												<div class="callout"></div>
+											</div>
+										</div> <!-- End of Treatment -->
+										
+										<!-- Start of Treatment -->
+										<ul class="tabs combinational" data-tabs id="secondary-tabs2">
+											<li class="tabs-text">
+												<span><a href=""><i class="fa fa-bars fa-fw"></i></a> Knee Replacement</span>
+											</li>
+											<li class="tabs-title is-active"><a href="#prices2"><i class="fa fa-dollar fa-fw"></i> Prices</a></li>
+											<li class="tabs-title"><a href="#scores2"><i class="fa fa-diamond fa-fw"></i> Scores</a></li>
+											<li class="tabs-title"><a href="#doctors2" aria-selected="true"><i class="fa fa-user-md fa-fw"></i> Doctors</a></li>
+											<li class="tabs-option">
+												<div class="button-align">
+													<a href="#" class="button primary">+ Add Surgery Package</a>
+													<a href="#" class="button"><i class="material-icons">close</i></a>
+												</div>
+											</li>
+										</ul>
+										<div class="tabs-content" data-tabs-content="secondary-tabs2">
+											<div class="tabs-panel is-active" id="prices2">
+												<div class="callout">
+													<div class="panel">
+														<ul class="well-list with-input small">
+															<li>
+																<div class="list-wrap">
+																	<div class="list-item-name">
+																		<span class="h6"><a data-toggle="category1"><i class="fa fa-caret-down fa-fw"></i></a> Total Knee Replacement</span>
+																	</div>
+																	<div class="list-detail">
+																		<input type="checkbox" id="on-off-" value="on"><label>Disable Category Auto-Sum</label>
+																	</div>
+																	<div class="list-group pull-right">
+																		<div class="table-wrapper">
+																			<div class="input-group">
+																				<span class="input-group-label">$</span>
+																				<input type="text" class="input-group-field" value="0">
+																			</div>
+																		</div>
+																		<a class="close-btn h6"><i class="material-icons">close</i></a>
 																	</div>
 																</div>
-																<a class="close-btn h6"><i class="fa fa-remove"></i></a>
-															</div>
-														</div>
-														<div id="category1" class="list-panel" data-toggler data-animate="fade-in fade-out">
+																<div id="category1" class="list-panel" data-toggler data-animate="fade-in fade-out">
 
-															<ul class="well-list with-input">
+																	<ul class="well-list with-input">
 
-																<li>
-																	<div class="list-wrap">
-																		<div class="pull-left">
-																			<a data-toggle="category1-a" class="action-link">  <i class="fa fa-caret-down fa-fw"></i></a>
-																		</div>
-																		<div class="list-item-name">
-																			<input id="checkbox1" type="checkbox" checked><label for="checkbox1">Surgery</label>
-																		</div>
-																		<div class="list-detail">
-																			<span>1 Required</span>
-																		</div>
-																		<div class="list-group pull-right">
-																			<div class="table-wrapper">
-																				<div class="input-group">
-																					<span class="input-group-label">$</span>
-																					<input type="text" class="input-group-field" value="0">
+																		<li>
+																			<div class="list-wrap">
+																				<div class="pull-left">
+																					<a data-toggle="category1-a" class="action-link">  <i class="fa fa-caret-down fa-fw"></i></a>
+																				</div>
+																				<div class="list-item-name">
+																					<input id="checkbox1" type="checkbox" checked><label for="checkbox1">Surgery</label>
+																				</div>
+																				<div class="list-detail">
+																					<span class="bordered action-link active">1 Required</span>
+																				</div>
+																				<div class="list-group pull-right">
+																					<div class="table-wrapper">
+																						<div class="input-group">
+																							<span class="input-group-label">$</span>
+																							<input type="text" class="input-group-field" value="0">
+																						</div>
+																					</div>
 																				</div>
 																			</div>
-																		</div>
-																	</div>
-																	<div id="category1-a" class="list-panel" data-toggler data-animate="fade-in fade-out">
-																		<ul class="well-list">
-																			<li>
-																				<div class="list-wrap">
-																					<div class="list-item-name">
-																						<input id="checkbox1" type="checkbox" checked>
-																						<label for="checkbox1">
-																							4-Day Admission
-																						</label>
-																					</div>
-																					<div class="list-detail">
-																						<span>002547</span>
-																					</div>
-																				</div>
-																			</li>
-																			
-																			<li>
-																				<div class="list-wrap">
-																					<div class="list-item-name">
-																						<input id="checkbox1" type="checkbox" checked>
-																						<label for="checkbox1">
-																							Room and Board
-																						</label>
-																					</div>
-																					<div class="list-detail">
-																						<span>002547</span>
-																					</div>
-																				</div>
-																			</li>
+																			<div id="category1-a" class="list-panel" data-toggler data-animate="fade-in fade-out">
+																				<ul class="well-list">
+																					<li>
+																						<div class="list-wrap">
+																							<div class="list-item-name">
+																								<input id="checkbox1" type="checkbox" checked>
+																								<label for="checkbox1">
+																									4-Day Admission
+																								</label>
+																							</div>
+																							<div class="list-detail">
+																								<span>002547</span>
+																							</div>
+																						</div>
+																					</li>
+																					
+																					<li>
+																						<div class="list-wrap">
+																							<div class="list-item-name">
+																								<input id="checkbox1" type="checkbox" checked>
+																								<label for="checkbox1">
+																									Room and Board
+																								</label>
+																							</div>
+																							<div class="list-detail">
+																								<span>002547</span>
+																							</div>
+																						</div>
+																					</li>
 
-																			<li>
-																				<div class="list-wrap">
-																					<div class="list-item-name">
-																						<input id="checkbox1" type="checkbox" checked>
-																						<label for="checkbox1">
-																							Complete Blood Count
-																						</label>
-																					</div>
-																					<div class="list-detail">
-																						<span>002547</span>
-																					</div>
-																				</div>
-																			</li>
+																					<li>
+																						<div class="list-wrap">
+																							<div class="list-item-name">
+																								<input id="checkbox1" type="checkbox" checked>
+																								<label for="checkbox1">
+																									Complete Blood Count
+																								</label>
+																							</div>
+																							<div class="list-detail">
+																								<span>002547</span>
+																							</div>
+																						</div>
+																					</li>
 
-																			<li>
-																				<div class="list-wrap">
-																					<div class="list-item-name">
-																						<input id="checkbox1" type="checkbox" checked>
-																						<label for="checkbox1">
-																							Complete Urinalysis
-																						</label>
-																					</div>
-																					<div class="list-detail">
-																						<span>002547</span>
-																					</div>
-																				</div>
-																			</li>
+																					<li>
+																						<div class="list-wrap">
+																							<div class="list-item-name">
+																								<input id="checkbox1" type="checkbox" checked>
+																								<label for="checkbox1">
+																									Complete Urinalysis
+																								</label>
+																							</div>
+																							<div class="list-detail">
+																								<span>002547</span>
+																							</div>
+																						</div>
+																					</li>
 
-																			<li>
-																				<div class="list-wrap">
-																					<div class="list-item-name">
-																						<input id="checkbox1" type="checkbox" checked>
-																						<label for="checkbox1">
-																							X-Ray
-																						</label>
-																					</div>
-																					<div class="list-detail">
-																						<span>002547</span>
-																					</div>
-																				</div>
-																			</li>
-																		</ul>
-																	</div>
-																</li>
+																					<li>
+																						<div class="list-wrap">
+																							<div class="list-item-name">
+																								<input id="checkbox1" type="checkbox" checked>
+																								<label for="checkbox1">
+																									X-Ray
+																								</label>
+																							</div>
+																							<div class="list-detail">
+																								<span>002547</span>
+																							</div>
+																						</div>
+																					</li>
+																				</ul>
+																			</div>
+																		</li>
 
-																<li>
-																	<div class="list-wrap">
-																		<div class="pull-left">
-																			<a data-toggle="category1-b" class="action-link"><i class="fa fa-caret-down fa-fw"></i></a>
-																		</div>
-																		<div class="list-item-name">
-																			<input id="checkbox1" type="checkbox" checked><label for="checkbox1">Doctors/Surgeon</label>
-																		</div>
-																		<div class="list-detail">
-																			<span>1 Required</span>
-																		</div>
-																		<div class="list-group pull-right">
-																			<div class="table-wrapper">
-																				<div class="input-group">
-																					<span class="input-group-label">$</span>
-																					<input type="text" class="input-group-field" value="0">
+																		<li>
+																			<div class="list-wrap">
+																				<div class="pull-left">
+																					<a data-toggle="category1-b" class="action-link"><i class="fa fa-caret-down fa-fw"></i></a>
+																				</div>
+																				<div class="list-item-name">
+																					<input id="checkbox1" type="checkbox" checked><label for="checkbox1">Doctors/Surgeon</label>
+																				</div>
+																				<div class="list-detail">
+																					<span class="bordered action-link active">1 Required</span>
+																				</div>
+																				<div class="list-group pull-right">
+																					<div class="table-wrapper">
+																						<div class="input-group">
+																							<span class="input-group-label">$</span>
+																							<input type="text" class="input-group-field" value="0">
+																						</div>
+																					</div>
 																				</div>
 																			</div>
-																		</div>
-																	</div>
-																	<div id="category1-b" class="list-panel" data-toggler data-animate="fade-in fade-out">
-																		<ul class="well-list">
+																			<div id="category1-b" class="list-panel" data-toggler data-animate="fade-in fade-out">
+																				<ul class="well-list">
 
-																			<li>
-																				<div class="list-wrap">
-																					<label for="checkbox1">No items yet.</label>
+																					<li>
+																						<div class="list-wrap">
+																							<label for="checkbox1">No items yet.</label>
+																						</div>
+																					</li>
+																					
+																				</ul>
+																			</div>
+																		</li>
+
+																		<li>
+																			<div class="list-wrap">
+																				<div class="pull-left">
+																					<a data-toggle="category1-c" class="action-link"><i class="fa fa-caret-down fa-fw"></i></a>
 																				</div>
-																			</li>
-																			
-																		</ul>
-																	</div>
-																</li>
-
-																<li>
-																	<div class="list-wrap">
-																		<div class="pull-left">
-																			<a data-toggle="category1-c" class="action-link"><i class="fa fa-caret-down fa-fw"></i></a>
-																		</div>
-																		<div class="list-item-name">
-																			<input id="checkbox1" type="checkbox" checked><label for="checkbox1">Anesthesiology</label>
-																		</div>
-																		<div class="list-detail">
-																			<span>1 Required</span>
-																		</div>
-																		<div class="list-group pull-right">
-																			<div class="table-wrapper">
-																				<div class="input-group">
-																					<span class="input-group-label">$</span>
-																					<input type="text" class="input-group-field" value="0">
+																				<div class="list-item-name">
+																					<input id="checkbox1" type="checkbox" checked><label for="checkbox1">Anesthesiology</label>
+																				</div>
+																				<div class="list-detail">
+																					<span class="bordered action-link active">1 Required</span>
+																				</div>
+																				<div class="list-group pull-right">
+																					<div class="table-wrapper">
+																						<div class="input-group">
+																							<span class="input-group-label">$</span>
+																							<input type="text" class="input-group-field" value="0">
+																						</div>
+																					</div>
 																				</div>
 																			</div>
-																		</div>
-																	</div>
-																	<div id="category1-c" class="list-panel" data-toggler data-animate="fade-in fade-out">
-																		<ul class="well-list">
+																			<div id="category1-c" class="list-panel" data-toggler data-animate="fade-in fade-out">
+																				<ul class="well-list">
 
-																			<li>
-																				<div class="list-wrap">
-																					<label for="checkbox1">No items yet.</label>
+																					<li>
+																						<div class="list-wrap">
+																							<label for="checkbox1">No items yet.</label>
+																						</div>
+																					</li>
+																					
+																				</ul>
+																			</div>
+																		</li>
+
+																		<li>
+																			<div class="list-wrap">
+																				<div class="pull-left">
+																					<a data-toggle="category1-d" class="action-link"><i class="fa fa-caret-down fa-fw"></i></a>
 																				</div>
-																			</li>
-																			
-																		</ul>
-																	</div>
-																</li>
-
-																<li>
-																	<div class="list-wrap">
-																		<div class="pull-left">
-																			<a data-toggle="category1-d" class="action-link"><i class="fa fa-caret-down fa-fw"></i></a>
-																		</div>
-																		<div class="list-item-name">
-																			<input id="checkbox1" type="checkbox" checked><label for="checkbox1">Post Operation</label>
-																		</div>
-																		<div class="list-detail">
-																			<span>1 Required</span>
-																		</div>
-																		<div class="list-group pull-right">
-																			<div class="table-wrapper">
-																				<div class="input-group">
-																					<span class="input-group-label">$</span>
-																					<input type="text" class="input-group-field" value="0">
+																				<div class="list-item-name">
+																					<input id="checkbox1" type="checkbox" checked><label for="checkbox1">Post Operation</label>
+																				</div>
+																				<div class="list-detail">
+																					<span class="bordered action-link active">1 Required</span>
+																				</div>
+																				<div class="list-group pull-right">
+																					<div class="table-wrapper">
+																						<div class="input-group">
+																							<span class="input-group-label">$</span>
+																							<input type="text" class="input-group-field" value="0">
+																						</div>
+																					</div>
 																				</div>
 																			</div>
-																		</div>
-																	</div>
-																	<div id="category1-d" class="list-panel" data-toggler data-animate="fade-in fade-out">
-																		<ul class="well-list">
+																			<div id="category1-d" class="list-panel" data-toggler data-animate="fade-in fade-out">
+																				<ul class="well-list">
 
-																			<li>
-																				<div class="list-wrap">
-																					<label for="checkbox1">No items yet.</label>
+																					<li>
+																						<div class="list-wrap">
+																							<label for="checkbox1">No items yet.</label>
+																						</div>
+																					</li>
+																					
+																				</ul>
+																			</div>
+																		</li>
+
+																		<li>
+																			<div class="list-wrap">
+																				<div class="pull-left">
+																					<a data-toggle="category1-e" class="action-link"><i class="fa fa-caret-down fa-fw"></i></a>
 																				</div>
-																			</li>
-																			
-																		</ul>
-																	</div>
-																</li>
-
-																<li>
-																	<div class="list-wrap">
-																		<div class="pull-left">
-																			<a data-toggle="category1-e" class="action-link"><i class="fa fa-caret-down fa-fw"></i></a>
-																		</div>
-																		<div class="list-item-name">
-																			<input id="checkbox1" type="checkbox" checked><label for="checkbox1">Physical Therapy</label>
-																		</div>
-																		<div class="list-detail">
-																			<span>1 Required</span>
-																		</div>
-																		<div class="list-group pull-right">
-																			<div class="table-wrapper">
-																				<div class="input-group">
-																					<span class="input-group-label">$</span>
-																					<input type="text" class="input-group-field" value="0">
+																				<div class="list-item-name">
+																					<input id="checkbox1" type="checkbox" checked><label for="checkbox1">Physical Therapy</label>
+																				</div>
+																				<div class="list-detail">
+																					<span class="bordered action-link active">1 Required</span>
+																				</div>
+																				<div class="list-group pull-right">
+																					<div class="table-wrapper">
+																						<div class="input-group">
+																							<span class="input-group-label">$</span>
+																							<input type="text" class="input-group-field" value="0">
+																						</div>
+																					</div>
 																				</div>
 																			</div>
-																		</div>
-																	</div>
-																	<div id="category1-e" class="list-panel" data-toggler data-animate="fade-in fade-out">
-																		<ul class="well-list">
+																			<div id="category1-e" class="list-panel" data-toggler data-animate="fade-in fade-out">
+																				<ul class="well-list">
 
-																			<li>
-																				<div class="list-wrap">
-																					<label for="checkbox1">No items yet.</label>
-																				</div>
-																			</li>
-																			
-																		</ul>
-																	</div>
-																</li>
-																
-															</ul>
-														</div>
-													</li>
-
-													<li>
-														<div class="list-wrap">
-															<div class="list-item-name">
-																<span class="h6"><a data-toggle="category2"><i class="fa fa-caret-down fa-fw"></i></a> Front Teeth Canal and has a very long name that it does not fit here</span>
-															</div>
-															<div class="list-detail">
-																<input type="checkbox" id="on-off-" value="on"><label>Disable Category Auto-Sum</label>
-															</div>
-															<div class="list-group pull-right">
-																<div class="table-wrapper">
-																	<div class="input-group">
-																		<span class="input-group-label">$</span>
-																		<input type="text" class="input-group-field" value="0">
-																	</div>
+																					<li>
+																						<div class="list-wrap">
+																							<label for="checkbox1">No items yet.</label>
+																						</div>
+																					</li>
+																					
+																				</ul>
+																			</div>
+																		</li>
+																		
+																	</ul>
 																</div>
-																<a class="close-btn h6"><i class="fa fa-remove"></i></a>
-															</div>
-														</div>
-														<div id="category2" class="list-panel" data-toggler data-animate="fade-in fade-out">
+															</li>
+														</ul>
+													</div>	
+												</div>
+											</div>
+											<div class="tabs-panel" id="scores2">
+												<div class="callout"></div>
+											</div>
+											<div class="tabs-panel" id="doctors2">
+												<div class="callout"></div>
+											</div>
+										</div> <!-- End of Treatment -->
 
-															<ul class="well-list">
-
-																<li>
-																	<div class="list-wrap">
-																		<div class="pull-left">
-																			<a data-toggle="category2-a" class="action-link"><i class="fa fa-caret-down fa-fw"></i></a>
-																		</div>
-																		<div class="list-item-name">
-																			<input id="checkbox1" type="checkbox" checked><label for="checkbox1">Doctors/Surgeons</label>
-																		</div>
-																		<div class="list-detail">
-																			<span>1 Required</span>
-																		</div>
-																		<div class="list-group pull-right">
-																			<div class="table-wrapper">
-																				<div class="input-group">
-																					<span class="input-group-label">$</span>
-																					<input type="text" class="input-group-field" value="0">
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																	<div id="category2-a" class="list-panel" data-toggler data-animate="fade-in fade-out">
-																		<ul class="well-list">
-
-																			<li>
-																				<div class="list-wrap">
-																					<label for="checkbox1">No items yet.</label>
-																				</div>
-																			</li>
-																			
-																		</ul>
-																	</div>
-																</li>
-																
-															</ul>
-														</div>
-													</li>
-
-
-												</ul>
-											</div>	
-
-										</div>
 									</div>
 								</div>
 							</div>
+							<div class="tabs-panel" id="media"></div>
+							<div class="tabs-panel" id="staff"></div>
 						</div>
 						<!-- // tab content -->
 					</div>

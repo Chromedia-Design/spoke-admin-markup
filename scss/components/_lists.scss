@@ -62,8 +62,8 @@
 			}
 		}
 		.list-panel {
-			background-color: rgba($dark-gray, $B-dividers);
-			display: none;
+			background-color: $primary-light;
+			// display: none;
 			.form-single-line {
 				padding: 15px 30px 15px;
 			}
@@ -105,6 +105,7 @@
 			> a,
 			span,
 			label {
+				font-family: $body-font-family;
 				margin-bottom: 0;
 				display: inline-block;
 				width: 88%;
@@ -147,8 +148,11 @@
 		> li {
 			font-size: 0.875rem;
 			border-bottom: 1px solid rgba($white, $W-hinttext);
+			.list-panel {
+				background-color: darken($primary-light, 3%);
+			}
 			.list-wrap {
-				padding-left: 65px;
+				padding-left: 85px;
 				background: transparent;
 			}
 			&.list-core {
@@ -219,7 +223,7 @@
 					line-height: 1.5rem;
 				}
 				.list-wrap {
-					padding-left: 65px;
+					padding-left: 85px;
 				}
 				> li {
 					font-size: 0.75rem;

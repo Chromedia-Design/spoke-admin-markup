@@ -31,6 +31,9 @@
 	&.large {
 		line-height: 1.2;
 	}
+	&:focus {
+		color: inherit;
+	}
 }
 
 .info {
@@ -42,8 +45,11 @@
 	}
 }
 
-.button-group {
-	margin-top: 1rem;
+.button-align {
+	@extend .button-group;
+	.button {
+		margin-right: 1rem;
+	}
 }
 
 .action-link {
@@ -63,18 +69,18 @@
 	}
 	&.bordered {
 		padding: 3px 9px;
-		color: $white;
-		background-color: rgba($primary-color, $B-text);
-		border: 1px solid rgba($primary-color, $B-text);
+		color: $alert-color;
+		background-color: transparent;
+		border: 1px solid rgba($alert-color, $B-text);
 		border-radius: 4px;
 		&:hover {
 			text-decoration: none;
 		}
 		&.active {
 			cursor: default;
-			color: rgba($primary-color, $B-text);
+			color: $success-color;
 			background-color: transparent;
-			border: 1px solid rgba($primary-color, $B-text);
+			border: 1px solid rgba($success-color, $B-text);
 		}
 		&.disabled {
 			cursor: default;
