@@ -41,7 +41,7 @@
 		[type='color'] {
 			margin-bottom: 0.5rem;
 		}
-		.input-group {
+		.input-group, .button-group, .button-align {
 			margin-bottom: 0;
 		}
 		[type='radio'],
@@ -93,9 +93,26 @@
 			position: relative;
 			display: inline-block;
 			vertical-align: top;
+			float: left;
 			p {
 				margin: 0;
 				color: rgba($black, $B-hinttext);
+			}
+			.img-wrapper {
+				position: relative;
+				overflow: hidden;
+				width: 44px;
+				height: 44px;
+				> img {
+					position: absolute;
+					z-index: 1;
+					width: 100%;
+					height: auto;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+				}
 			}
 		}
 		.list-item-name {
@@ -106,6 +123,7 @@
 			span,
 			label {
 				font-family: $body-font-family;
+				color: rgba($black, $B-text);
 				margin-bottom: 0;
 				display: inline-block;
 				width: 88%;

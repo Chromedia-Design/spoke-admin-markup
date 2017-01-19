@@ -78,3 +78,13 @@
 		border: 1px solid rgba($black, $B-dividers);
 	}
 }
+
+.vertical-feature-block {
+	img {
+	    display: block;
+    	padding: 1.25rem;
+    	margin: 1rem auto 0 auto;
+    	height: 50%;
+    	width: 50%;
+	}
+}
