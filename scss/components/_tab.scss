@@ -90,6 +90,12 @@
 		}
 		+ .tabs-content {
 			margin-top: -1px;
+			.callout {
+				margin-bottom: 0;
+			}
+			&:not(:last-child) {
+				margin-bottom: 1rem;
+			}
 		}
 	}
 	&.spk-suggestions {
@@ -141,6 +147,7 @@
 	float: left;
 	text-transform: none;
 	> span, > a {
+		font-family: $body-font-family;
 		display: inline-block;
 	    padding: 1.25rem 1.5rem 1.25rem 0;
 	}
@@ -148,7 +155,31 @@
 
 .tabs-option {
 	float: right;
+	.button {
+		margin-bottom: 0;
+	}
 	> .button-group, > .button-align {
+		padding: 0.625rem 1.5rem;
+		display: inline-block;
+		margin-bottom: 0;
+	}
+}
+
+.tabs-input {
+	position: relative;
+	float: right;
+	width: 30%;
+	.button {
+		margin-bottom: 0;
+	}
+	.input-group {
+		margin-bottom: 0;
+	}
+	.table-wrapper {
+		width: 80%;
+		float: left;
+	}
+	.button-group, .button-align {
 		padding: 0.625rem 1.5rem;
 		display: inline-block;
 		margin-bottom: 0;

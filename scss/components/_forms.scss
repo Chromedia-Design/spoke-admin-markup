@@ -263,15 +263,38 @@ label.image-upload {
 	[type='url'],
 	[type='color'],
 	.input-group,
+	.switch,
 	label,
 	select,
-	textarea {
+	textarea,
+	.button {
 		margin-bottom: 0;
+	}
+	.switch {
+		&.tiny {
+			margin: 0.5rem 0;
+		}
 	}
 	&.submenu {
 		padding: 1rem 0.5rem;
 		background-color: $white;
 		border: 1px solid rgba($black, $B-dividers);
 		border-radius: 2px;
+	}
+}
+
+// Switches/Toggles
+.switch-paddle {
+	border-radius: 1rem;
+	&:after {
+		border-radius: 1rem;
+	}
+}
+
+input {
+	&:checked {
+		~ .switch-paddle {
+			background: $success-color;
+		}
 	}
 }

@@ -310,21 +310,23 @@
 					margin-top: 1rem;
 				}
 			}
-			// Wells listed under the main small list
+			// Wells listed under the main  list
 			.well-list {
-				> li {
-					> .list-wrap {
-						> .pull-left, > .list-item-name, > .list-detail {
-							margin-top: 0.7rem;
+				&.with-input {
+					> li {
+						> .list-wrap {
+							> .pull-left, > .list-item-name, > .list-detail {
+								margin-top: 0.7rem;
+							}
 						}
 					}
-					// Third tier of wells
-					.well-list {
-						> li {
-							> .list-wrap {
-								> .pull-left, > .list-item-name, > .list-detail {
-									margin-top: 0;
-								}
+				}
+				// Third tier of wells
+				.well-list {
+					> li {
+						> .list-wrap {
+							> .pull-left, > .list-item-name, > .list-detail {
+								margin-top: 0;
 							}
 						}
 					}
