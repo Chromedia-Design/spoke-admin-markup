@@ -103,7 +103,7 @@ textarea, div, label, select {
 	margin: 0;
 	+ label {
 		font-family: $body-font-family;
-		display: inline-block;
+		display: inline;
 		font-size: 1rem;
 		line-height: 1.5em;
 		color: $text-black;
@@ -277,7 +277,7 @@ label.image-upload {
 	}
 	&.submenu {
 		padding: 1rem 0.5rem;
-		background-color: $white;
+		background-color: $primary-light;
 		border: 1px solid rgba($black, $B-dividers);
 		border-radius: 2px;
 	}

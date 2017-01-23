@@ -21,25 +21,17 @@
 					<li>
 						<a href="#">Dashboard</a>
 					</li>
-					<li>
-						<a href="#">Practices</a>
+					<li class="is-active">
+						<a href="#">Medical Procedures</a>
 						<ul class="nested vertical menu">
 							<li>
 								<a href="#">Specializations</a>
 							</li>
 							<li>
-								<a href="#">Treatments</a>
+								<a href="#">Subspecializations</a>
 							</li>
-						</ul>
-					</li>
-					<li class="is-active">
-						<a href="#">Packages</a>
-						<ul class="nested vertical menu is-active">
 							<li class="is-active">
-								<a href="packages.html">Manage Packages</a>
-							</li>
-							<li>
-								<a href="package-episodes">Manage Episodes</a>
+								<a href="#">Treatments</a>
 							</li>
 						</ul>
 					</li>
@@ -98,94 +90,47 @@
 						    	<li>Root Canal Treatment</li>
 						  	</ul>
 						</nav>
-						
-						<div class="page-lead">
-							<h5>Manage Packages</h5>
-							<p class="subheader">Search treatments to add or edit packages.</p>
-						</div>
-						<div class="panel collapsible">
-							<div class="panel-heading">
-								<div class="row">
-									<div class="medium-8 columns">
-										<div class="input-group">
-									  		<input class="input-group-field" type="text" placeholder="Search treatment...">
-									  		<div class="input-group-button">
-									    		<input type="submit" class="button secondary" value="Submit">
-									  		</div>
-										</div>
-									</div>
-									<div class="medium-4 columns">
-										<a data-toggle="advancedSearch" class="link button">Advanced Search <i class="fa fa-caret-down fa-fw"></i></a>
-									</div>
-								</div>
-							</div>
-							<div id="advancedSearch" class="panel-body" data-toggler data-animate="fade-in fade-out">
-  								<form>
-  									<div class="row">
-									    <div class="medium-6 columns">
-									      	<label>Specialization
-									        	<select>
-									        		<option>Dentistry</option>
-									        	</select>
-									     	</label>
-									    </div>
-									    <div class="medium-6 columns">
-									      	<label>Treatments
-									        	<select>
-									        		<option>Endodontics</option>
-									        	</select>
-									     	</label>
-									    </div>
-								  	</div>
-								  	<div class="row">
-									    <div class="medium-6 columns">
-									      	<label>Treatments
-									        	<select>
-									        		<option>Root Canal Treatment</option>
-									        	</select>
-									     	</label>
-									    </div>
-									    <div class="medium-6 columns">
-								        	<button type="submit" class="button button-append-submit">Proceed</button>
-									    </div>
-								  	</div>
-  								</form>
-							</div>
-						</div>
 
 						<div class="page-lead">
-							<span class="h5">Root Canal Treatment Packages</span>
-							<a class="button primary pull-right" href="#" data-open="addPackage">+ Add Package</a>
+							<span class="h5">Packages (2)</span>
+							<a class="button success pull-right" href="#" data-open="addPackage">+ Add Package</a>
 
 							<div class="reveal" id="addPackage" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-				                <div class="row">
+				                <div class="row collapse">
 				                    <div class="large-12 columns">
-				                        <h5 class="reveal-heading">Add Package</h5>
+				                        <h5 class="reveal-heading">+ Add Package</h5>
 				                    </div>
 				                </div>
 				                <form>
-				                    <div class="row">
+				                	<div class="row collapse">
+				                		<div class="reveal-body">
+				                			<div class="row">
+						                        <div class="large-12 columns">
+						                            <label>
+						                                Package Name
+						                                <input type="text">
+						                            </label>
+						                        </div>
+						                    </div>
+						                     <div class="row">
+						                        <div class="large-12 columns">
+						                            <label>
+						                                Package Description
+						                                <textarea></textarea>
+						                            </label>
+						                        </div>
+						                    </div>
+				                		</div>
+				                	</div>
+				                    
+				                    <div class="row collapse">
 				                        <div class="large-12 columns">
-				                            <label>
-				                                Package Name
-				                                <input type="text">
-				                            </label>
-				                        </div>
-				                    </div>
-				                     <div class="row">
-				                        <div class="large-12 columns">
-				                            <label>
-				                                Package Description
-				                                <textarea></textarea>
-				                            </label>
-				                        </div>
-				                    </div>
-				                    <div class="row">
-				                        <div class="medium-12 columns">
-				                            <div class="submit button-group pull-right">
-				                                <a class="button link" data-close>Cancel</a>
-				                                <button type="submit" class="button primary">Add Package</button>
-				                            </div>
+				                        	<div class="reveal-footer">
+				                        		<div class="submit button-group pull-right">
+					                                <a class="button link" data-close>Cancel</a>
+					                                <button type="submit" class="button primary">Add Package</button>
+					                            </div>
+				                        	</div>
 				                        </div>
 				                    </div>
 				                </form>
@@ -194,26 +139,6 @@
 				                </button>
 				            </div>
 						</div>
-					
-						<!-- <div class="callout primary">
-							<form class="form-single-line">
-							  	<div class="row">
-							    	<div class="medium-4 columns">
-						      			<label>New Package Name
-						        			<input type="text" placeholder="">
-							      		</label>
-						    		</div>
-							    	<div class="medium-5 columns">
-							      		<label>Short Description
-							        		<input type="text" placeholder="">
-							      		</label>
-						    		</div>
-						    		<div class="medium-3 columns">
-							      		<button type="submit" class="button expanded">+ Add Package</button>
-						    		</div>
-							  	</div>
-							</form>
-						</div> -->
 						
 						<div class="panel">
 							<ul class="well-list">
@@ -227,7 +152,7 @@
 										</div>
 										<div class="pull-right">
 											<a href="edit-package.html" class="action-link"><i class="fa fa-edit"></i></a>
-											<a href="#" class="alert action-link"><i class="fa fa-remove"></i></a>
+											<a href="#" class="action-link"><i class="fa fa-remove"></i></a>
 										</div>
 									</div>
 								</li>
@@ -241,21 +166,11 @@
 										</div>
 										<div class="pull-right">
 											<a href="edit-package.html" class="action-link"><i class="fa fa-edit"></i></a>
-											<a href="#" class="alert action-link"><i class="fa fa-remove"></i></a>
+											<a href="#" class="action-link"><i class="fa fa-remove"></i></a>
 										</div>
 									</div>
 								</li>
 							</ul>
-						</div>
-
-						<div class="panel">
-							<div class="panel-heading">
-								<span class="h5">Test</span>
-								<a href="#" class="button primary">Edit</a>
-							</div>
-							<div class="panel-body">
-								<p>Test</p>
-							</div>
 						</div>
 						
 					</div>

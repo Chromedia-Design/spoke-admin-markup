@@ -12,6 +12,23 @@
 		min-height: 20px;
 		border-bottom: 1px solid rgba($black, $B-dividers);
 		position: relative;
+		&.headline {
+			> .list-wrap {
+				background: transparent;
+			}
+			.list-item-name,
+			.list-detail {
+				> * {
+					display: inline-block;
+					margin: 0.5rem 0 0;
+					text-transform: uppercase;
+					color: rgba($black, $B-subtext);
+				}
+			}
+			.button {
+				margin: 0;
+			}
+		}
 		a {
 			color: $text-black;
 			font-weight: 400;
@@ -330,6 +347,15 @@
 							}
 						}
 					}
+				}
+			}
+		}
+	}
+	&.striped {
+		> li {
+			&:nth-child(even) {
+				.list-wrap {
+					background-color: rgba($light-gray, $B-dividers);
 				}
 			}
 		}

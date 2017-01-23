@@ -54,6 +54,7 @@
 
 .action-link {
 	margin-right: 1rem;
+	display: inline-block;
 	&.dropdown {
 		padding: 5px 6px;
 		background-color: rgba($black, $B-dividers);
@@ -148,15 +149,15 @@
 			}
 			&:before {
 				top: 0;
-			  background: -webkit-linear-gradient(bottom, #fff 0%, transparent 100%);
-			  background: -o-linear-gradient(bottom, #fff 0%, transparent 100%);
-			  background: linear-gradient(to top, #fff 0%, transparent 100%);
+			    background: -webkit-linear-gradient(bottom, #fff 0%, transparent 100%);
+			    background: -o-linear-gradient(bottom, #fff 0%, transparent 100%);
+			    background: linear-gradient(to top, #fff 0%, transparent 100%);
 			}
 			&:after {
 				bottom: 0;
-			  background: -webkit-linear-gradient(#fff 0%, transparent 100%);
-			  background: -o-linear-gradient(#fff 0%, transparent 100%);
-			  background: linear-gradient(#fff 0%, transparent 100%);
+			    background: -webkit-linear-gradient(#fff 0%, transparent 100%);
+			    background: -o-linear-gradient(#fff 0%, transparent 100%);
+			    background: linear-gradient(#fff 0%, transparent 100%);
 			}
 		}
 	}
