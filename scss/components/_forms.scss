@@ -180,6 +180,54 @@ textarea, .mce-tinymce {
 	border-bottom-left-radius: 0;
 }
 
+.is-dropdown-submenu {
+	border-radius: 2px;
+	border: 2px solid rgba($black, $B-dividers);
+	margin-top: 0.62rem;
+	> li {
+		background-color: rgba($black, $B-dividers);
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		height: 0;
+		width: 0;
+		border-bottom: 0.5rem solid rgba($black, $B-dividers);
+		border-left: 0.5rem solid transparent;
+		border-right: 0.5rem solid transparent;
+	}
+}
+
+.dropdown.menu {
+	> li {
+		&.is-dropdown-submenu-parent {
+			> a {
+				&.info {
+					&:after {
+						border-color: rgba($black, $B-subtext) transparent transparent;
+					}
+				}
+			}
+		}
+		&.opens-left {
+			> .is-dropdown-submenu {
+				&:after {
+					right: 5%;
+					top: -0.62rem;
+				}
+			}
+		}
+		&.opens-right {
+			> .is-dropdown-submenu {
+				&:after {
+					left: 5%;
+					top: -0.62rem;
+				}
+			}
+		}
+	}
+}
+
 .dropdown-pane {
 	width: 435px;
 }
@@ -243,7 +291,13 @@ label.image-upload {
 	h4,
 	h5,
 	h6 {
-		font-weight: $global-weight-semibold;
+		font-family: $body-font-family;
+		line-height: 1.5em;
+		font-weight: $global-weight-bold;
+	    width: 100%;
+    	overflow: hidden;
+    	white-space: nowrap;
+    	text-overflow: ellipsis;
 	}
 }
 

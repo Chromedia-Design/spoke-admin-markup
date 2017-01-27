@@ -96,10 +96,11 @@
 		}
 		.list-item-icon {
 			width: 3%;
-			margin-right: 0.5rem;
+			margin-right: 1rem;
 			position: relative;
 			display: inline-block;
 			vertical-align: top;
+			float: left;
 			p {
 				margin: 0;
 				color: rgba($black, $B-hinttext);
@@ -205,6 +206,28 @@
 			}
 			&:last-child {
 				border-bottom: none;
+			}
+		}
+	}
+	&.notifications {
+		> li {
+			.list-wrap {
+				padding: 0.75rem;
+				display: block;
+				> * {
+					font-size: 0.875rem;
+				}
+				.list-note {
+					padding: 1.5rem 0;
+				}
+				.button {
+					margin-bottom: 0;
+				}
+			}
+			&:nth-child(even) {
+				.list-wrap {
+					background-color: rgba($light-gray, $B-dividers);
+				}
 			}
 		}
 	}

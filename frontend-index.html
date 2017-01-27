@@ -22,8 +22,20 @@
             <div id="responsive-menu">
                 <div class="top-bar-right">
                     <ul class="menu">
+                    	<li>
+                            <a class="button link info" href="#">My Account</a>
+                        </li>
                         <li>
-                            <a href="login.html">Hi, Debbie Malone</a>
+                            <ul class="dropdown menu" data-dropdown-menu>
+					      		<li>
+					        		<a class="button hollow rounded" href="#">Denver</a>
+					        		<ul class="menu vertical">
+					          			<li><a href="#">Alabama</a></li>
+					          			<li><a href="#">Minnesota</a></li>
+					          			<li><a href="#">Detroit</a></li>
+					        		</ul>
+					      		</li>
+					    	</ul>
                         </li>
                     </ul>
                 </div>
@@ -35,9 +47,12 @@
         <div class="row" data-equalizer>
         	<div class="large-7 columns" data-equalizer-watch>
         		<div class="call-to-action">
-        			<h1>Hello, <span class="underline">Debbie Malone</span>! We understand you need a <span class="underline">Total Knee Replacement</span>.</h1>
-	                <p class="subheader">Surgery prices and quality vary greatly in healthcare, and the process can be complex, frustrating and expensive. Spoke Health's SurgeryHub will help you find the best quality facility for the best price, and personalize your experience. Informed choices and money back are just a click away.</p>
-	                <a href="frontend-intake-form.html" class="button hollow rounded success">LET'S GET STARTED</a>
+        			<h1>Hello, Debbie Malone! We understand you need a Total Knee Replacement.</h1>
+        			<h1 class="subheader"><small>We can help you financially and provide concierge service.</small></h1>
+	                <p class="subheader">Navigating an upcoming surgery can be complex, frustrating and expensive. Surgery prices and quality vary greatly in healthcare. Often facilities that incur expensive out-of-pocket costs are the lowest quality.</p>
+	                <p class="subheader">Spoke Health's SurgeryHub™ will help you find the best quality facility for the best price. Our Advocates and personalized experience helps you make informed choices that reward you with cash allowances.</p>
+	                <a href="frontend-intake-form.html" class="button hollow rounded success mt-0-5">LET'S GET STARTED</a>
+	                <a href="#" class="button link info mt-0-5">Update My Account</a>
 	                <div class="row mt-1">
 	                	<div class="large-12 columns">
 	                		<div class="brick hollow text-center">
@@ -70,75 +85,19 @@
         </div>
 	</section>
 
-	<section class="section">
-		<div class="row">
-			<div class="large-6 columns">
-				<div class="media-object">
-				  	<div class="media-object-section middle">
-				    	<div class="img-wrapper">
-				      		<img src= "img/benefit-1.png">
-				    	</div>
-				  	</div>
-				  	<div class="media-object-section middle">
-				   		<p>The average employee out-of-pocket costs for the <span class="underline">Total Knee Replacement</span> is <span class="underline">$7,000</span>. We can help reduce that to zero.</p>
-				   		<!-- <a href="#" class="button link alert small">SEE COMPUTATION</a> -->
-				  	</div>
-				</div>
-			</div>
-			<div class="large-6 columns">
-				<div class="media-object">
-				  	<div class="media-object-section middle">
-				    	<div class="img-wrapper">
-				      		<img src= "img/benefit-2.png">
-				    	</div>
-				  	</div>
-				  	<div class="media-object-section middle">
-				   		<p>Depending on the facility you choose, you could be eligible for a cash bonus of up to <span class="underline">$4,193</span>.</p>
-				   		<!-- <a href="#" class="button link alert small">SEE COMPUTATION</a> -->
-				  	</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="large-6 columns">
-				<div class="media-object">
-				  	<div class="media-object-section middle">
-				    	<div class="img-wrapper">
-				      		<img src= "img/benefit-3.png">
-				    	</div>
-				  	</div>
-				  	<div class="media-object-section middle">
-				   		<p>We work seamlessly with your employer and insurance administrators to let you focus on what's important in your life.</p>
-				  	</div>
-				</div>
-			</div>
-			<div class="large-6 columns">
-				<div class="media-object">
-				  	<div class="media-object-section middle">
-				    	<div class="img-wrapper">
-				      		<img src= "img/benefit-4.png">
-				    	</div>
-				  	</div>
-				  	<div class="media-object-section middle">
-				   		<p>Our network includes only the highest quality facilities in the United States.</p>
-				  	</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
 	<section class="section white-bg">
 		<div class="row">
 			<div class="large-8 columns medium-centered">
 				<div class="section-heading">
-					<h3 class="text-center">Take a look at what you can get</h3>
-					<p class="subheader text-center">This is an example* of the benefits you could avail for a <span class="underline">Total Knee Replacement</span>. Look through all of our options and find the best match for your needs.</p>
+					<!-- <h3 class="text-center">Take a look at what you can get</h3> -->
+					<p class="subheader text-center">These are the benefits you could avail for a <span class="underline">Total Knee Replacement</span>.</p>
+					<p class="subheader text-center">Look through <a href="frontend-intake-form.html">all of our options</a> and find the best match for your needs.</p>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="large-10 columns medium-centered">
-				<div class="spk-gain-graph mt-2 row">
+				<div class="spk-gain-graph row">
 					<div class="small-10 columns">
 						<div class="progress mt-1" role="progressbar" tabindex="0" aria-valuenow="0" aria-valuemin="0" aria-valuetext="100 percent" aria-valuemax="100">
 					  		<div class="progress-meter deductible" style="width: 63%;">
@@ -222,6 +181,71 @@
 				</p>
 			</div>
 		</div> -->
+	</section>
+
+	<section class="section white-bg">
+		<div class="row">
+			<div class="large-8 columns medium-centered">
+				<div class="section-heading">
+					<h3 class="text-center">Take a look at what you can get</h3>
+					<!-- <p class="subheader text-center">These are the benefits you could avail for a <span class="underline">Total Knee Replacement</span>.</p> -->
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="large-6 columns">
+				<div class="media-object">
+				  	<div class="media-object-section middle">
+				    	<div class="img-wrapper">
+				      		<img src= "img/benefit-1.png">
+				    	</div>
+				  	</div>
+				  	<div class="media-object-section middle">
+				   		<p>The average employee out-of-pocket costs for the <span class="underline">Total Knee Replacement</span> is <span class="underline">$7,000</span>. We can help reduce that to zero.</p>
+				   		<!-- <a href="#" class="button link alert small">SEE COMPUTATION</a> -->
+				  	</div>
+				</div>
+			</div>
+			<div class="large-6 columns">
+				<div class="media-object">
+				  	<div class="media-object-section middle">
+				    	<div class="img-wrapper">
+				      		<img src= "img/benefit-2.png">
+				    	</div>
+				  	</div>
+				  	<div class="media-object-section middle">
+				   		<p>Depending on the facility you choose, you could be eligible for a cash bonus of up to <span class="underline">$4,193</span>.</p>
+				   		<!-- <a href="#" class="button link alert small">SEE COMPUTATION</a> -->
+				  	</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="large-6 columns">
+				<div class="media-object">
+				  	<div class="media-object-section middle">
+				    	<div class="img-wrapper">
+				      		<img src= "img/benefit-3.png">
+				    	</div>
+				  	</div>
+				  	<div class="media-object-section middle">
+				   		<p>We work seamlessly with your employer and insurance administrators to let you focus on what's important in your life.</p>
+				  	</div>
+				</div>
+			</div>
+			<div class="large-6 columns">
+				<div class="media-object">
+				  	<div class="media-object-section middle">
+				    	<div class="img-wrapper">
+				      		<img src= "img/benefit-4.png">
+				    	</div>
+				  	</div>
+				  	<div class="media-object-section middle">
+				   		<p>Our network includes only the highest quality facilities in the United States.</p>
+				  	</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<!-- <section class="section white-bg">

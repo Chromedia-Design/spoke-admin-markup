@@ -207,7 +207,33 @@
 
 .page-lead {
 	margin: 1rem 0;
-	height: 2.5rem;
+	min-height: 2rem;
+	.img-wrapper {
+		position: relative;
+		width: 4.3125rem;
+		height: 4.3125rem;
+		display: inline-block;
+		margin-right: 1rem;
+		vertical-align: middle;
+		> img {
+			position: absolute;
+			z-index: 1;
+			width: 100%;
+			height: auto;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+		+ .h1,
+		+ .h2,
+		+ .h3,
+		+ .h4,
+		+ .h5,
+		+ .h6 {
+			width: 60%;
+		}
+	}
 	.h1,
 	.h2,
 	.h3,
@@ -220,9 +246,23 @@
 		margin-bottom: 0.5rem;
 		margin-right: 1rem;
 		color: rgba($black, $B-text);
+		width: 66%;
+		&.primary-color {
+			color: darken($primary-color, 5%);
+		}
+		&.success-color {
+			color: darken($success-color, 5%);
+		}
+		.action-link {
+			margin-left: 1rem;
+			margin-bottom: 0;
+		}
 	}
 	small {
 		font-weight: normal;
+	}
+	.button {
+		margin-bottom: 0;
 	}
 	.menu {
 		display: inline-block;
@@ -233,7 +273,7 @@
 		vertical-align: middle;
 	}
 	&.sub-heading {
-		margin: 0 0 1rem;
+		margin: 0 0 0.5rem;
 	}
 }
 

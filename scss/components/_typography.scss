@@ -29,33 +29,7 @@ h4,
 h5,
 h6 {
 	&.subheader {
-		font-weight: $global-weight-semibold;
-	}
-}
-
-span {
-	&.h1,
-	&.h2,
-	&.h3,
-	&.h4,
-	&.h5,
-	&.h6 {
-		font-family: $header-font-family;
-		font-weight: 700;
-		line-height: 1.2em;
-	}
-}
-
-p {
-	&.h1,
-	&.h2,
-	&.h3,
-	&.h4,
-	&.h5,
-	&.h6 {
-		font-family: $body-font-family;
-		font-weight: 400;
-		line-height: 1.5em;
+		font-weight: $global-weight-bold;
 	}
 }
 
@@ -83,6 +57,32 @@ p {
 	font-size: 1rem;
 }
 
+span {
+	&.h1,
+	&.h2,
+	&.h3,
+	&.h4,
+	&.h5,
+	&.h6 {
+		font-family: $header-font-family;
+		font-weight: $global-weight-bold;
+		line-height: 1.2em;
+	}
+}
+
+p {
+	&.h1,
+	&.h2,
+	&.h3,
+	&.h4,
+	&.h5,
+	&.h6 {
+		font-family: $body-font-family;
+		font-weight: 400;
+		line-height: 1.5em;
+	}
+}
+
 .primary-color {
 	color: $primary-color;
 	> * {
@@ -90,10 +90,38 @@ p {
 	}
 }
 
+.secondary-color {
+	color: $secondary-color;
+	> * {
+		color: $secondary-color;
+	}
+}
+
 .success-color {
 	color: $success-color;
 	> * {
 		color: $success-color;
+	}
+}
+
+.warning-color {
+	color: $warning-color;
+	> * {
+		color: $warning-color;
+	}
+}
+
+.alert-color {
+	color: $alert-color;
+	> * {
+		color: $alert-color;
+	}
+}
+
+.white-color {
+	color: $white;
+	> * {
+		color: $white;
 	}
 }
 

@@ -1,7 +1,12 @@
 .top-bar {
 	background-color: $white;
-	border-bottom: 1px solid rgba($black, $B-dividers);
+	padding: 1rem 0;
+	border-bottom: none;
 	ul {
-		background-color: $white;
+		background-color: transparent;
 	}
+}
+
+.menu-text {
+	font-weight: normal;
 }

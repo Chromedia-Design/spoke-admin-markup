@@ -1,0 +1,301 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spoke Admin Portal</title>
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+	
+	<div class="expanded row medium-collapse">
+		<div class="medium-2 columns">
+			<div class="site-nav">
+				<header>
+					<a href="#" class="logo text-center">
+						<img src="img/logo.png" title="Spoke">
+					</a>
+				</header>
+				<ul class="menu vertical"  data-accordion-menu>
+					<li>
+						<a href="#"><i class="material-icons">dashboard</i> Dashboard</a>
+					</li>
+					<li class="is-active">
+						<a href="#"><i class="material-icons">wc</i> Patients</a>
+						<ul class="nested vertical menu is-active">
+							<li class="is-active">
+								<a href="#">All Patients</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="medium-10 columns">
+			<div class="content">
+
+				<div class="top-bar">
+				  	<div class="top-bar-left">
+						<!-- <ul class="menu">
+				      		<li><input type="search" placeholder="Search"></li>
+				      		<li><button type="button" class="button">Search</button></li>
+			    		</ul> -->
+				  	</div>
+				  	<div class="top-bar-right">
+				    	<ul class="dropdown menu" data-dropdown-menu>
+				    		<li>
+				    			<a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">6</span></a>
+			    			</li>
+				      		<li>
+				        		<a href="#">Administrator</a>
+				        		<ul class="menu vertical">
+				          			<li><a href="#">One</a></li>
+				          			<li><a href="#">Two</a></li>
+				          			<li><a href="#">Three</a></li>
+				        		</ul>
+				      		</li>
+				    	</ul>
+				  	</div>
+				</div>
+
+				<div class="row">
+					<div class="medium-12 columns">
+
+						<nav aria-label="You are here:" role="navigation">
+						  	<ul class="breadcrumbs">
+						    	<li><a href="patients.html">Patients</a></li>
+						    	<li>William Pinkerton</li>
+						  	</ul>
+						</nav>	
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="large-12 columns">
+						<ul class="tabs" data-tabs id="example-tabs">
+							<li class="tabs-title is-active"><a href="#panel1">Overview</a></li>
+							<li class="tabs-title"><a href="#panel2">Communications</a></li>
+							<li class="tabs-title"><a href="#panel3">Episodes</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="large-12 columns">
+						<div class="page-lead">
+							<span class="h6">Communications &nbsp;<small class="alert-color">2 Unread</small></span>
+							<a href="add-patient.html" class="button hollow info small pull-right">See All ...</a>
+						</div>
+
+						<div class="panel">
+							<ul class="well-list notifications">
+								<li>
+									<div class="list-wrap">
+										<div class="list-item-icon">
+											<p class="text-center"><i class="fa fa-envelope-o fa-fw"></i></p>
+										</div>
+										<div class="list-item-name">
+											<span class="truncate">From: Administrator</span>
+											<span class="truncate">To: William Pinkerton</span>
+											<a href="#"><span class="h6">Re: Facility Inquiry</span></a>
+											<span class="truncate">I sent an inquiry letter to the facility you are interested in.</span>
+										</div>
+										<div class="list-note">
+											<span class="subheader truncate">Date Sent:&nbsp;<i><b>Today</b></i></span>
+											<span class="subheader truncate">Date Clicked:&nbsp;<i><b>Today</b></i></span>
+										</div>
+										<div class="pull-right">
+											<a href="#" class="button link info" disabled><i class="fa fa-bookmark-o fa-fw"></i></a>
+											<a href="#" class="button link info"><i class="fa fa-reply fa-fw"></i></a>
+										</div>
+									</div>
+								</li>                     
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="large-6 columns end">
+							
+						<div class="page-lead">
+							<span class="h6">Recent Activity</span>
+							<a href="add-patient.html" class="button hollow info small pull-right">See All ...</a>
+						</div>
+						
+						<div class="menu-options submenu mb-1">
+							<div class="row collapse">
+								<div class="large-8 large-offset-4 columns">
+									<div class="row">
+	                                    <div class="large-6 columns">
+	                                        <label for="" class="small-label text-right middle">Activities from:</label>
+	                                    </div>
+	                                    <div class="large-6 columns">
+	                                        <select class="small-input">
+	                                            <option>All</option>
+	                                            <option selected="true">Employee</option>
+	                                            <option>Administrator</option>
+	                                        </select>
+	                                    </div>  
+	                                </div> 
+								</div>
+							</div>
+						</div>
+
+						<div class="panel">
+							<ul class="well-list notifications">
+								<li>
+									<div class="list-wrap">
+										<div class="list-item-icon">
+											<p><i class="fa fa-heart-o fa-fw"></i> </p>
+										</div>
+										<div class="list-item-name">
+											<p><a href="#"><b>William Pinkerton</b></a> was interested in <a href="#"><b>Boulder Surgery Center</b></a>.</p>
+										</div>
+										<div class="list-note text-right">
+											<span class="subheader"><i>Jan-16 11:00 AM</i></span>
+										</div>
+										<div class="pull-right">
+											<ul class="dropdown menu" data-dropdown-menu>
+											  	<li>
+											    	<a href="#" class="action-link info"><i class="fa fa-ellipsis-v fa-fw"></i></a>
+											    	<ul class="menu">
+											      		<li><a href="#"><i class="fa fa-envelope-o fa-fw"></i>&nbsp; Reply</a></li>
+											    	</ul>
+											  	</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+					<div class="large-6 columns end">
+
+						<div class="callout mt-1">
+							<div class="row">
+								<div class="large-12 columns end">
+									<div class="page-lead">
+										<div class="img-wrapper">
+											<img src="img/logo-harley-davidson.png" alt="">
+										</div>
+										<span class="h6 success-color">Harley Davidson, Incorporated</span>
+										<a href="add-patient.html" class="button info hollow small pull-right"><i class="fa fa-pencil fa-fw"></i></a>
+									</div>
+								</div>
+							</div>	
+							<div class="row">
+								<div class="large-12 columns end">
+									<div class="label-group">
+										<span class="h6">William Pinkerton</span>
+									</div>
+								</div>
+							</div>	
+							
+							<div class="row">
+								<div class="large-8 columns end">
+									<div class="label-group">
+										<p><i class="fa fa-envelope-o fa-fw"></i>&nbsp; william.pinkerton@domain.com</p>
+									</div>
+								</div>
+								<div class="large-4 columns end">
+									<div class="label-group">
+										<p><i class="fa fa-phone fa-fw"></i>&nbsp; 123-456-7890</p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="large-12 columns end">
+									<div class="label-group">
+										<p><i class="fa fa-map-marker fa-fw"></i>&nbsp; 336 1st Dr, El Paso, NJ, USA 23654</p>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="large-4 columns end">
+									<div class="label-group">
+										<p>Policy Number</p>
+										<h6>123-4567-890</h6>
+									</div>
+								</div>
+								<div class="large-4 columns end">
+									<div class="label-group">
+										<p>Gender</p>
+										<h6>Male</h6>
+									</div>
+								</div>
+								<div class="large-4 columns end">
+									<div class="label-group">
+										<p>Birthdate</p>
+										<h6>March 17, 1976</h6>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="page-lead">
+							<span class="h6">Recent Episodes</span>
+							<!-- <a href="add-patient.html" class="button hollow info small pull-right">See All ...</a> -->
+						</div>
+
+						<div class="callout">
+							<table class="base-spacing">
+				                <thead>
+				                <tr>
+				                    <th><a href="#">Surgery Package <i class="fa fa-caret-up fa-fw"></i></a></th>
+				                    <th><a href="#">Date Created <i class="fa fa-caret-up fa-fw"></i></a></th>
+				                    <th></th>
+				                </tr>
+				                </thead>
+				                <tbody>
+				                    <tr>
+				                        <td><a href="view-transaction.html">Total Knee Replacement</a></td>
+				                        <td>Dec 23, 2016</td>
+				                        <td class="text-right">
+				                            <a  class="button link info" href="#"><i class="fa fa-edit fa-fw"></i></a>
+				                        </td>
+				                    </tr>
+				                    
+				                </tbody>
+				            </table>
+						</div>
+						
+					</div>
+
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/what-input/what-input.js"></script>
+	<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+
+	<script src="js/app.js"></script>
+
+	<script type="text/javascript">
+        $(function () {
+            var timer;
+
+            $(window).resize(function() {
+                clearTimeout(timer);
+                timer = setTimeout(function() {
+                  $('.site-nav, .content').css("height", $(window).height());
+                }, 40); 
+            }).resize();
+        });
+
+        
+
+    </script>
+
+</body>
+</html>
