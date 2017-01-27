@@ -29,6 +29,22 @@
 				background-color: transparent;
 			}
 		}
+		&.alert {
+			> a {
+				position: relative;
+				&:after {
+					content: "";
+					position: absolute;
+					height: 0.875rem;
+					width: 0.875rem;
+					background-color: $alert-color;
+					border-radius: 50%;
+					right: 1.25rem;
+					top: 1rem;
+					border: 2px solid $white;
+				}
+			}
+		}
 	}
 	&.vertical {
 		border: none;
@@ -203,6 +219,9 @@
 
 .tabs-panel {
 	padding: 0;
+	.breadcrumbs {
+		margin-top: 0;
+	}
 }
 
 div.overview {

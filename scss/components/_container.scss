@@ -253,6 +253,9 @@
 		&.success-color {
 			color: darken($success-color, 5%);
 		}
+		&.subheader {
+			color: rgba($black, $B-subtext);
+		}
 		.action-link {
 			margin-left: 1rem;
 			margin-bottom: 0;
