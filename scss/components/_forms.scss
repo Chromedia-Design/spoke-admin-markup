@@ -346,8 +346,13 @@ label.image-upload {
 }
 
 input {
+	~ .switch-paddle {
+		display: inline-block;
+		background: $light-gray;
+	}
 	&:checked {
 		~ .switch-paddle {
+			display: inline-block;
 			background: $success-color;
 		}
 	}

@@ -460,6 +460,7 @@
 	}
 }
 
+// List with left labels (facility awards & services)
 .grouped-listing {
 	margin: 2rem 0;
 	ul, ol {
@@ -468,16 +469,27 @@
 		list-style: none;
 		> li {
 			margin-bottom: 1rem;
+			&:first-child {
+				.media-object {
+					margin-top: 0;
+				}
+			}
 		}
 		&.fa-ul {
 			padding-left: 1.875rem;
 		}
 	}
 	.subheader {
-		line-height: 1.6;
+		font-size: 0.875rem;
+		line-height: 1.5em;
+		i.fa {
+			float: left;
+			margin: 0 1rem 2rem 0;
+		}
 	}
 }
 
+// This is a simple stacked list
 .stacked-list {
 	margin: 0;
 	padding: 0;
@@ -492,6 +504,7 @@
 	}
 }
 
+// This is a list with triangular bullets
 ul.custom-list {
 	margin: 0; 
 	padding: 0 1rem;
