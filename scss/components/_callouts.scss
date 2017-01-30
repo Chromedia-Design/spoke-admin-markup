@@ -4,6 +4,12 @@
 	&.hi-padded {
 		padding: 2rem;
 	}
+	&.warning {
+		border-color: lighten($warning-color, 15%);
+		> * {
+			color: darken($warning-color, 5%);
+		}
+	}
 	.page-lead {
 		margin-top: 0;
 	}
@@ -28,5 +34,22 @@
 	.button, .button-group, .button-align {
 		margin-top: 0;
 		margin-bottom: 0;
+	}
+}
+
+.callout-body {
+	.button, .button-group, .button-align {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.h1,
+	.h2,
+	.h3,
+	.h4,
+	.h5,
+	.h6 {
+		font-family: $body-font-family;
+		line-height: 2rem;
+		margin-right: 1rem;
 	}
 }

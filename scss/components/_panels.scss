@@ -23,3 +23,27 @@
 		border: 1px solid lighten($primary-color, 64%);
 	}
 }
+
+// This is used for the dates on the activity log
+p.date-bind {
+	position: relative;
+    display: inline-block;
+    padding: 10px 0;
+    width: 7rem;
+    background: $secondary-color;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    line-height: 1em;
+    border-radius: 1.875rem;
+    &:after {
+    	position: absolute;
+    	content: "|";
+    	bottom: -1rem;
+    	left: 1rem;
+    	height: 1rem;
+    	width: 1rem;
+    	color: rgba($black, $B-hinttext);
+    }
+}

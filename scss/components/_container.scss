@@ -89,7 +89,7 @@
 		p {
 			margin-bottom: 0;
 			> small {
-				font-size: 0.75rem;
+				font-size: 0.875rem;
 			}
 		}
 		a {
@@ -109,15 +109,16 @@
 					overflow: hidden;
 					white-space: nowrap;
 					text-overflow: ellipsis;
-					@media only screen and (max-width: 39.9375em) {
-						width: 10rem;
-					}
-					@media only screen and (min-width: 40em) {
-						width: 40rem;
-					}
-					@media only screen and (min-width: 64em) {
-						width: 10rem;
-					}
+					width: 100%;
+					// @media only screen and (max-width: 39.9375em) {
+					// 	width: 10rem;
+					// }
+					// @media only screen and (min-width: 40em) {
+					// 	width: 40rem;
+					// }
+					// @media only screen and (min-width: 64em) {
+					// 	width: 10rem;
+					// }
 					> small {
 						font-size: 0.875rem;
 					}

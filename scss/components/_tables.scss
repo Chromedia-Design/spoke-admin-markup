@@ -41,6 +41,9 @@ table {
 		}
 		td {
 			padding: 0.5rem 1rem;
+			a {
+				color: rgba($black, $B-text);
+			}
 			.button {
 				margin-bottom: 0;
 			}
