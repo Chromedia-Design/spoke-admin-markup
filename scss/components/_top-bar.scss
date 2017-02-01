@@ -4,6 +4,12 @@
 	border-bottom: none;
 	ul {
 		background-color: transparent;
+		&.is-dropdown-submenu {
+			background: $white;
+			> li {
+				background: rgba($black, $B-dividers);
+			}
+		}
 	}
 }
 

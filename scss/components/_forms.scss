@@ -8,6 +8,10 @@ label {
 	&.middle {
 		padding-bottom: 0;
 	}
+	small {
+		margin-top: 0.3125rem;
+		color: rgba($black, $B-hinttext);
+	}
 }
 
 legend {
