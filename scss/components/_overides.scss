@@ -1,9 +1,34 @@
-.red {
-
-}
-
 section.provider {
 	position: relative;
-    background: transparent url(https://s3.amazonaws.com/assets.spoke.com/images/breather.jpg) center center no-repeat;
-    background-size: cover;
+    background: transparent url(../img/med-provider-bg.png) center center no-repeat !important;
+    background-size: cover !important;
+    box-sizing: inherit;
 }
+
+section.parallax-background {
+  // background-color: #0078A0;
+  // height: 620px;
+  // background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: fixed !important;
+  width: 100%;
+}
+
+section.parallax-content {
+  max-width: 100%;
+  position: relative;
+  top: 500px;
+  padding: 50px;
+  font-size: 20px;
+  background-color: #fff;
+}
+
+
+
+
+
+
+
