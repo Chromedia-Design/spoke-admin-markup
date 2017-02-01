@@ -40,9 +40,12 @@ table {
 			}
 		}
 		td {
-			padding: 0.5rem 1rem;
+			padding: 1rem;
 			a {
 				color: rgba($black, $B-text);
+			}
+			.media-object {
+				margin: 0;
 			}
 			.button {
 				margin-bottom: 0;
