@@ -8,10 +8,14 @@ label {
 	&.middle {
 		padding-bottom: 0;
 	}
+	small {
+		margin-top: 0.3125rem;
+		color: rgba($black, $B-hinttext);
+	}
 }
 
 legend {
-	margin: 0;
+	margin: 0 0 0.5rem;
 	font-size: 0.875rem;
 	line-height: 1.8;
 	font-family: $body-font-family;
@@ -103,7 +107,7 @@ textarea, div, label, select {
 	margin: 0;
 	+ label {
 		font-family: $body-font-family;
-		display: inline-block;
+		display: inline;
 		font-size: 1rem;
 		line-height: 1.5em;
 		color: $text-black;
@@ -180,6 +184,54 @@ textarea, .mce-tinymce {
 	border-bottom-left-radius: 0;
 }
 
+.is-dropdown-submenu {
+	border-radius: 2px;
+	border: 2px solid rgba($black, $B-dividers);
+	margin-top: 0.62rem;
+	> li {
+		background-color: rgba($black, $B-dividers);
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		height: 0;
+		width: 0;
+		border-bottom: 0.5rem solid rgba($black, $B-dividers);
+		border-left: 0.5rem solid transparent;
+		border-right: 0.5rem solid transparent;
+	}
+}
+
+.dropdown.menu {
+	> li {
+		&.is-dropdown-submenu-parent {
+			> a {
+				&.info {
+					&:after {
+						border-color: rgba($black, $B-subtext) transparent transparent;
+					}
+				}
+			}
+		}
+		&.opens-left {
+			> .is-dropdown-submenu {
+				&:after {
+					right: 5%;
+					top: -0.62rem;
+				}
+			}
+		}
+		&.opens-right {
+			> .is-dropdown-submenu {
+				&:after {
+					left: 5%;
+					top: -0.62rem;
+				}
+			}
+		}
+	}
+}
+
 .dropdown-pane {
 	width: 435px;
 }
@@ -243,7 +295,13 @@ label.image-upload {
 	h4,
 	h5,
 	h6 {
-		font-weight: $global-weight-semibold;
+		font-family: $body-font-family;
+		line-height: 1.5em;
+		font-weight: $global-weight-bold;
+	    width: 100%;
+    	overflow: hidden;
+    	white-space: nowrap;
+    	text-overflow: ellipsis;
 	}
 }
 
@@ -263,15 +321,43 @@ label.image-upload {
 	[type='url'],
 	[type='color'],
 	.input-group,
+	.switch,
 	label,
 	select,
-	textarea {
+	textarea,
+	.button {
 		margin-bottom: 0;
+	}
+	.switch {
+		&.tiny {
+			margin: 0.5rem 0;
+		}
 	}
 	&.submenu {
 		padding: 1rem 0.5rem;
-		background-color: $white;
+		background-color: $primary-light;
 		border: 1px solid rgba($black, $B-dividers);
 		border-radius: 2px;
+	}
+}
+
+// Switches/Toggles
+.switch-paddle {
+	border-radius: 1rem;
+	&:after {
+		border-radius: 1rem;
+	}
+}
+
+input {
+	~ .switch-paddle {
+		display: inline-block;
+		background: $light-gray;
+	}
+	&:checked {
+		~ .switch-paddle {
+			display: inline-block;
+			background: $success-color;
+		}
 	}
 }

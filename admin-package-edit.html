@@ -22,25 +22,17 @@
 					<li>
 						<a href="#">Dashboard</a>
 					</li>
-					<li>
-						<a href="#">Practices</a>
+					<li class="is-active">
+						<a href="#">Medical Procedures</a>
 						<ul class="nested vertical menu">
 							<li>
 								<a href="#">Specializations</a>
 							</li>
 							<li>
-								<a href="#">Treatments</a>
+								<a href="#">Subspecializations</a>
 							</li>
-						</ul>
-					</li>
-					<li class="is-active">
-						<a href="#">Packages</a>
-						<ul class="nested vertical menu is-active">
 							<li class="is-active">
-								<a href="packages.html">Manage Packages</a>
-							</li>
-							<li>
-								<a href="package-episodes">Manage Episodes</a>
+								<a href="#">Treatments</a>
 							</li>
 						</ul>
 					</li>
@@ -101,8 +93,52 @@
 						</nav>
 						
 						<div class="page-lead">
-							<span class="h4">Molar Root Canal</span>
-							<a href="#" class="button link"><i class="fa fa-edit"></i></a>
+							<span class="h4">Molar Root Canal <a href="#" class="action-link subheader" data-open="editPackage"><i class="fa fa-pencil fa-fw"></i></a></span>
+
+							<div class="reveal" id="editPackage" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+				                <div class="row collapse">
+				                    <div class="large-12 columns">
+				                        <h5 class="reveal-heading">Edit Package</h5>
+				                    </div>
+				                </div>
+				                <form>
+				                	<div class="row collapse">
+				                		<div class="reveal-body">
+				                			<div class="row">
+						                        <div class="large-12 columns">
+						                            <label>
+						                                Package Name
+						                                <input type="text" value="Molar Root Canal">
+						                            </label>
+						                        </div>
+						                    </div>
+						                     <div class="row">
+						                        <div class="large-12 columns">
+						                            <label>
+						                                Package Description
+						                                <textarea>Root canal therapy is performed when the pulp which is composed of nerves and blood vessels in the tooth becomes infected or damaged. During root canal therapy, the pulp is removed, and the inside of the tooth is cleaned and sealed.</textarea>
+						                            </label>
+						                        </div>
+						                    </div>
+				                		</div>
+				                	</div>
+				                    
+				                    <div class="row collapse">
+				                        <div class="large-12 columns">
+				                        	<div class="reveal-footer">
+				                        		<div class="submit button-group pull-right">
+					                                <a class="button link" data-close>Cancel</a>
+					                                <button type="submit" class="button primary">Add Package</button>
+					                            </div>
+				                        	</div>
+				                        </div>
+				                    </div>
+				                </form>
+				                <button class="close-button" data-close aria-label="Close modal" type="button">
+				                    <span aria-hidden="true">&times;</span>
+				                </button>
+				            </div>
+
 						</div>
 
 						<p class="mb-2">Root canal therapy is performed when the pulp which is composed of nerves and blood vessels in the tooth becomes infected or damaged. During root canal therapy, the pulp is removed, and the inside of the tooth is cleaned and sealed.</p>
@@ -115,20 +151,47 @@
 
 						<div class="tabs-content" data-tabs-content="example-tabs">
 						  	<div class="tabs-panel is-active" id="panel1">
-						  		<p class="page-lead subheader">Add or edit the included categories for this package.</p>
-						    	<div class="callout primary">
-									<form class="form-single-line">
-									  	<div class="row">
-									    	<div class="medium-9 columns">
-								      			<label>New Category Name
-								        			<input type="text" placeholder="">
-									      		</label>
-								    		</div>
-								    		<div class="medium-3 columns">
-									      		<button type="submit" class="button expanded">Create Category</button>
-								    		</div>
-									  	</div>
-									</form>
+
+								<div class="page-lead">
+									<span class="h5">Categories (5)</span>
+									<a href="#" class="button success pull-right" data-open="addCategory">Add Category +</a>
+
+									<div class="reveal" id="addCategory" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+						                <div class="row collapse">
+						                    <div class="large-12 columns">
+						                        <h5 class="reveal-heading">Add Category</h5>
+						                    </div>
+						                </div>
+						                <form>
+						                	<div class="row collapse">
+						                		<div class="reveal-body">
+						                			<div class="row">
+								                        <div class="large-12 columns">
+								                            <label>
+								                                Category Name
+								                                <input type="text" value="Molar Root Canal">
+								                            </label>
+								                        </div>
+								                    </div>
+						                		</div>
+						                	</div>
+						                    
+						                    <div class="row collapse">
+						                        <div class="large-12 columns">
+						                        	<div class="reveal-footer">
+						                        		<div class="submit button-group pull-right">
+							                                <a class="button link" data-close>Cancel</a>
+							                                <button type="submit" class="button primary">Add Category</button>
+							                            </div>
+						                        	</div>
+						                        </div>
+						                    </div>
+						                </form>
+						                <button class="close-button" data-close aria-label="Close modal" type="button">
+						                    <span aria-hidden="true">&times;</span>
+						                </button>
+						            </div>
+
 								</div>
 								
 								<div class="panel">
@@ -144,7 +207,7 @@
 													<span>3/5 Required</span>
 												</div>
 												<div class="pull-right">
-													<button class="action-link dropdown" type="button" data-toggle="data-dropdown-1"><i class="fa fa-gear fa-fw"></i><i class="fa fa-caret-down fa-fw"></i></button>
+													<!-- <button class="action-link dropdown" type="button" data-toggle="data-dropdown-1"><i class="fa fa-gear fa-fw"></i><i class="fa fa-caret-down fa-fw"></i></button>
 													<div class="dropdown-pane bottom" id="data-dropdown-1" data-dropdown data-auto-focus="true">
 													  	<h6 class="subheader">PACKAGE CONDITION</h6>
 													  	<form>
@@ -169,54 +232,75 @@
 													  			</div>
 													  		</div>
 													  	</form>
-													</div>
+													</div> -->
 													<a href="#" class="action-link"><i class="fa fa-edit"></i></a>
-													<a href="#" class="alert action-link"><i class="fa fa-remove"></i></a>
+													<a href="#" class="action-link"><i class="fa fa-remove"></i></a>
 												</div>
 											</div>
 											<div id="category1" class="list-panel" data-toggler data-animate="fade-in fade-out">
 
-												<form class="form-single-line">
-												  	<div class="row">
-												    	<div class="medium-9 columns">
-											      			<label>Search/Add Component
-											        			<select class="select2">
-											        				<option value="">This could be a code, a description or a custom name</option>
-											        				<option value="">1</option>
-											        				<option value="">1</option>
-											        			</select>
-												      		</label>
-											    		</div>
-														<!-- <div class="medium-3 columns">
-											      			<label>Descriptor
-											        			<input type="text" placeholder="">
-												      		</label>
-											    		</div>
-											    		<div class="medium-3 columns">
-											      			<label>Note <small>Optional</small>
-											        			<input type="text" placeholder="">
-												      		</label>
-											    		</div> -->
-											    		<div class="medium-3 columns">
-												      		<button type="submit" class="button expanded">+ Add Item</button>
-											    		</div>
-												  	</div>
-												</form>
+												<ul class="well-list striped">
 
-												<ul class="well-list">
-													<li class="list-core">
+													<li class="headline">
+														<div class="list-wrap">
+															<div class="list-item-name">
+																<b>Component Name</b>
+															</div>
+															<div class="list-detail">
+																<b>Code</b>
+															</div>
+															<div class="pull-right">
+																<a href="#" class="button primary small" data-open="addComponent">Add Component +</a>
+
+																<div class="reveal" id="addComponent" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+													                <div class="row collapse">
+													                    <div class="large-12 columns">
+													                        <h5 class="reveal-heading">Add Component</h5>
+													                    </div>
+													                </div>
+													                <form>
+													                	<div class="row collapse">
+													                		<div class="reveal-body">
+													                			<div class="row">
+															                        <div class="large-12 columns">
+															                            <label>
+															                                Component Name
+															                                <input type="text" value="Molar Root Canal">
+															                            </label>
+															                        </div>
+															                    </div>
+													                		</div>
+													                	</div>
+													                    
+													                    <div class="row collapse">
+													                        <div class="large-12 columns">
+													                        	<div class="reveal-footer">
+													                        		<div class="submit button-group pull-right">
+														                                <a class="button link" data-close>Cancel</a>
+														                                <button type="submit" class="button primary">Add Component</button>
+														                            </div>
+													                        	</div>
+													                        </div>
+													                    </div>
+													                </form>
+													                <button class="close-button" data-close aria-label="Close modal" type="button">
+													                    <span aria-hidden="true">&times;</span>
+													                </button>
+													            </div>
+
+															</div>
+														</div>
+													</li>
+													<li>
 														<div class="list-wrap">
 															<div class="list-item-name">
 																<input id="checkbox1" type="checkbox" checked><label for="checkbox1">4-Day Admission that is applicable to senior citizens and disabled persons.</label>
-															</div>
-															<div class="list-note">
 															</div>
 															<div class="list-detail">
 																<span>005267</span>
 															</div>
 															<div class="pull-right">
-																<a href="#" class="small bordered action-link active">Core</a>
-																<a href="#" class="alert action-link"><i class="fa fa-remove"></i></a>
+																<a href="#" class="action-link"><i class="fa fa-remove"></i></a>
 															</div>
 														</div>
 													</li>
@@ -225,14 +309,11 @@
 															<div class="list-item-name">
 																<input id="checkbox1" type="checkbox" checked><label for="checkbox1">Room and Board</label>
 															</div>
-															<div class="list-note">
-															</div>
 															<div class="list-detail">
 																<span>005267</span>
 															</div>
 															<div class="pull-right">
-																<a href="#" class="small bordered action-link">Mark As Core</a>
-																<a href="#" class="alert action-link"><i class="fa fa-remove"></i></a>
+																<a href="#" class="action-link"><i class="fa fa-remove"></i></a>
 															</div>
 														</div>
 													</li>
@@ -241,15 +322,11 @@
 															<div class="list-item-name">
 																<input id="checkbox1" type="checkbox" checked><label for="checkbox1">Complete Blood Count</label>
 															</div>
-															<div class="list-note">
-																<span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Take note of this item."><i class="fa fa-info-circle"></i></span>
-															</div>
 															<div class="list-detail">
 																<span>005267</span>
 															</div>
 															<div class="pull-right">
-																<a href="#" class="small bordered action-link">Mark As Core</a>
-																<a href="#" class="alert action-link"><i class="fa fa-remove"></i></a>
+																<a href="#" class="action-link"><i class="fa fa-remove"></i></a>
 															</div>
 														</div>
 													</li>
@@ -258,14 +335,11 @@
 															<div class="list-item-name">
 																<input id="checkbox1" type="checkbox"><label for="checkbox1">Complete Urinalysis</label>
 															</div>
-															<div class="list-note">
-															</div>
 															<div class="list-detail">
 																<span>005267</span>
 															</div>
 															<div class="pull-right">
-																<a href="#" class="small bordered action-link disabled">Mark As Core</a>
-																<a href="#" class="alert action-link"><i class="fa fa-remove"></i></a>
+																<a href="#" class="action-link"><i class="fa fa-remove"></i></a>
 															</div>
 														</div>
 													</li>
@@ -274,14 +348,11 @@
 															<div class="list-item-name">
 																<input id="checkbox1" type="checkbox"><label for="checkbox1">X-Ray</label>
 															</div>
-															<div class="list-note">
-															</div>
 															<div class="list-detail">
 																<span>005267</span>
 															</div>
 															<div class="pull-right">
-																<a href="#" class="small bordered action-link disabled">Mark As Core</a>
-																<a href="#" class="alert action-link"><i class="fa fa-remove"></i></a>
+																<a href="#" class="action-link"><i class="fa fa-remove"></i></a>
 															</div>
 														</div>
 													</li>
@@ -300,7 +371,7 @@
 													<span></span>
 												</div>
 												<div class="pull-right">
-													<button class="action-link dropdown" type="button" data-toggle="data-dropdown-2"><i class="fa fa-gear fa-fw"></i><i class="fa fa-caret-down fa-fw"></i></button>
+													<!-- <button class="action-link dropdown" type="button" data-toggle="data-dropdown-2"><i class="fa fa-gear fa-fw"></i><i class="fa fa-caret-down fa-fw"></i></button>
 													<div class="dropdown-pane bottom" id="data-dropdown-2" data-dropdown data-auto-focus="true">
 													  <h6 class="subheader">PACKAGE CONDITION</h6>
 													  	<form>
@@ -325,37 +396,64 @@
 													  			</div>
 													  		</div>
 													  	</form>
-													</div>
+													</div> -->
 													<a href="#" class="action-link"><i class="fa fa-edit"></i></a>
-													<a href="#" class="alert action-link"><i class="fa fa-remove"></i></a>
+													<a href="#" class="action-link"><i class="fa fa-remove"></i></a>
 												</div>
 											</div>
 											<div id="category2" class="list-panel" data-toggler data-animate="fade-in fade-out">
 
-												<form class="form-single-line">
-												  	<div class="row">
-												    	<div class="medium-9 columns">
-											      			<label>Search/Add Component
-											        			<input type="text" placeholder="">
-												      		</label>
-											    		</div>
-											    		<!-- <div class="medium-3 columns">
-											      			<label>Descriptor
-											        			<input type="text" placeholder="">
-												      		</label>
-											    		</div>
-											    		<div class="medium-3 columns">
-											      			<label>Note <small>Optional</small>
-											        			<input type="text" placeholder="">
-												      		</label>
-											    		</div> -->
-											    		<div class="medium-3 columns">
-												      		<button type="submit" class="button expanded">+ Add Item</button>
-											    		</div>
-												  	</div>
-												</form>
-
 												<ul class="well-list">
+													<li class="headline">
+														<div class="list-wrap">
+															<div class="list-item-name">
+																<b>Component Name</b>
+															</div>
+															<div class="list-detail">
+																<b>Code</b>
+															</div>
+															<div class="pull-right">
+																<a href="#" class="button primary small" data-open="addComponent">Add Component +</a>
+
+																<div class="reveal" id="addComponent" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+													                <div class="row collapse">
+													                    <div class="large-12 columns">
+													                        <h5 class="reveal-heading">Add Component</h5>
+													                    </div>
+													                </div>
+													                <form>
+													                	<div class="row collapse">
+													                		<div class="reveal-body">
+													                			<div class="row">
+															                        <div class="large-12 columns">
+															                            <label>
+															                                Component Name
+															                                <input type="text" value="Molar Root Canal">
+															                            </label>
+															                        </div>
+															                    </div>
+													                		</div>
+													                	</div>
+													                    
+													                    <div class="row collapse">
+													                        <div class="large-12 columns">
+													                        	<div class="reveal-footer">
+													                        		<div class="submit button-group pull-right">
+														                                <a class="button link" data-close>Cancel</a>
+														                                <button type="submit" class="button primary">Add Component</button>
+														                            </div>
+													                        	</div>
+													                        </div>
+													                    </div>
+													                </form>
+													                <button class="close-button" data-close aria-label="Close modal" type="button">
+													                    <span aria-hidden="true">&times;</span>
+													                </button>
+													            </div>
+
+															</div>
+														</div>
+													</li>
 													<li>
 														<div class="list-wrap">
 															<p>Add an item using the form above...</p>
@@ -376,7 +474,7 @@
 													<span></span>
 												</div>
 												<div class="pull-right">
-													<button class="action-link dropdown" type="button" data-toggle="data-dropdown-3"><i class="fa fa-gear fa-fw"></i><i class="fa fa-caret-down fa-fw"></i></button>
+													<!-- <button class="action-link dropdown" type="button" data-toggle="data-dropdown-3"><i class="fa fa-gear fa-fw"></i><i class="fa fa-caret-down fa-fw"></i></button>
 													<div class="dropdown-pane bottom" id="data-dropdown-3" data-dropdown data-auto-focus="true">
 													  <h6 class="subheader">PACKAGE CONDITION</h6>
 													  	<form>
@@ -401,37 +499,64 @@
 													  			</div>
 													  		</div>
 													  	</form>
-													</div>
+													</div> -->
 													<a href="#" class="action-link"><i class="fa fa-edit"></i></a>
-													<a href="#" class="alert action-link"><i class="fa fa-remove"></i></a>
+													<a href="#" class="action-link"><i class="fa fa-remove"></i></a>
 												</div>
 											</div>
 											<div id="category3" class="list-panel" data-toggler data-animate="fade-in fade-out">
 
-												<form class="form-single-line">
-												  	<div class="row">
-												    	<div class="medium-9 columns">
-											      			<label>Search/Add Component
-											        			<input type="text" placeholder="">
-												      		</label>
-											    		</div>
-											    		<!-- <div class="medium-3 columns">
-											      			<label>Descriptor
-											        			<input type="text" placeholder="">
-												      		</label>
-											    		</div>
-											    		<div class="medium-3 columns">
-											      			<label>Note <small>Optional</small>
-											        			<input type="text" placeholder="">
-												      		</label>
-											    		</div> -->
-											    		<div class="medium-3 columns">
-												      		<button type="submit" class="button expanded">+ Add Item</button>
-											    		</div>
-												  	</div>
-												</form>
-
 												<ul class="well-list">
+													<li class="headline">
+														<div class="list-wrap">
+															<div class="list-item-name">
+																<b>Component Name</b>
+															</div>
+															<div class="list-detail">
+																<b>Code</b>
+															</div>
+															<div class="pull-right">
+																<a href="#" class="button primary small" data-open="addComponent">Add Component +</a>
+
+																<div class="reveal" id="addComponent" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+													                <div class="row collapse">
+													                    <div class="large-12 columns">
+													                        <h5 class="reveal-heading">Add Component</h5>
+													                    </div>
+													                </div>
+													                <form>
+													                	<div class="row collapse">
+													                		<div class="reveal-body">
+													                			<div class="row">
+															                        <div class="large-12 columns">
+															                            <label>
+															                                Component Name
+															                                <input type="text" value="Molar Root Canal">
+															                            </label>
+															                        </div>
+															                    </div>
+													                		</div>
+													                	</div>
+													                    
+													                    <div class="row collapse">
+													                        <div class="large-12 columns">
+													                        	<div class="reveal-footer">
+													                        		<div class="submit button-group pull-right">
+														                                <a class="button link" data-close>Cancel</a>
+														                                <button type="submit" class="button primary">Add Component</button>
+														                            </div>
+													                        	</div>
+													                        </div>
+													                    </div>
+													                </form>
+													                <button class="close-button" data-close aria-label="Close modal" type="button">
+													                    <span aria-hidden="true">&times;</span>
+													                </button>
+													            </div>
+
+															</div>
+														</div>
+													</li>
 													<li>
 														<div class="list-wrap">
 															<p>Add an item using the form above...</p>
@@ -452,7 +577,7 @@
 													<span></span>
 												</div>
 												<div class="pull-right">
-													<button class="action-link dropdown" type="button" data-toggle="data-dropdown-4"><i class="fa fa-gear fa-fw"></i><i class="fa fa-caret-down fa-fw"></i></button>
+													<!-- <button class="action-link dropdown" type="button" data-toggle="data-dropdown-4"><i class="fa fa-gear fa-fw"></i><i class="fa fa-caret-down fa-fw"></i></button>
 													<div class="dropdown-pane bottom" id="data-dropdown-4" data-dropdown data-auto-focus="true">
 													  <h6 class="subheader">PACKAGE CONDITION</h6>
 													  	<form>
@@ -477,37 +602,64 @@
 													  			</div>
 													  		</div>
 													  	</form>
-													</div>
+													</div> -->
 													<a href="#" class="action-link"><i class="fa fa-edit"></i></a>
-													<a href="#" class="alert action-link"><i class="fa fa-remove"></i></a>
+													<a href="#" class="action-link"><i class="fa fa-remove"></i></a>
 												</div>
 											</div>
 											<div id="category4" class="list-panel" data-toggler data-animate="fade-in fade-out">
 
-												<form class="form-single-line">
-												  	<div class="row">
-												    	<div class="medium-3 columns">
-											      			<label>Search/Add Component
-											        			<input type="text" placeholder="">
-												      		</label>
-											    		</div>
-											    		<!-- <div class="medium-3 columns">
-											      			<label>Descriptor
-											        			<input type="text" placeholder="">
-												      		</label>
-											    		</div>
-											    		<div class="medium-3 columns">
-											      			<label>Note <small>Optional</small>
-											        			<input type="text" placeholder="">
-												      		</label>
-											    		</div> -->
-											    		<div class="medium-3 columns">
-												      		<button type="submit" class="button expanded">+ Add Item</button>
-											    		</div>
-												  	</div>
-												</form>
-
 												<ul class="well-list">
+													<li class="headline">
+														<div class="list-wrap">
+															<div class="list-item-name">
+																<b>Component Name</b>
+															</div>
+															<div class="list-detail">
+																<b>Code</b>
+															</div>
+															<div class="pull-right">
+																<a href="#" class="button primary small" data-open="addComponent">Add Component +</a>
+
+																<div class="reveal" id="addComponent" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+													                <div class="row collapse">
+													                    <div class="large-12 columns">
+													                        <h5 class="reveal-heading">Add Component</h5>
+													                    </div>
+													                </div>
+													                <form>
+													                	<div class="row collapse">
+													                		<div class="reveal-body">
+													                			<div class="row">
+															                        <div class="large-12 columns">
+															                            <label>
+															                                Component Name
+															                                <input type="text" value="Molar Root Canal">
+															                            </label>
+															                        </div>
+															                    </div>
+													                		</div>
+													                	</div>
+													                    
+													                    <div class="row collapse">
+													                        <div class="large-12 columns">
+													                        	<div class="reveal-footer">
+													                        		<div class="submit button-group pull-right">
+														                                <a class="button link" data-close>Cancel</a>
+														                                <button type="submit" class="button primary">Add Component</button>
+														                            </div>
+													                        	</div>
+													                        </div>
+													                    </div>
+													                </form>
+													                <button class="close-button" data-close aria-label="Close modal" type="button">
+													                    <span aria-hidden="true">&times;</span>
+													                </button>
+													            </div>
+
+															</div>
+														</div>
+													</li>
 													<li>
 														<div class="list-wrap">
 															<p>Add an item using the form above...</p>
@@ -528,7 +680,7 @@
 													<span></span>
 												</div>
 												<div class="pull-right">
-													<button class="action-link dropdown" type="button" data-toggle="data-dropdown-5"><i class="fa fa-gear fa-fw"></i><i class="fa fa-caret-down fa-fw"></i></button>
+													<!-- <button class="action-link dropdown" type="button" data-toggle="data-dropdown-5"><i class="fa fa-gear fa-fw"></i><i class="fa fa-caret-down fa-fw"></i></button>
 													<div class="dropdown-pane bottom" id="data-dropdown-5" data-dropdown data-auto-focus="true">
 													  <h6 class="subheader">PACKAGE CONDITION</h6>
 													  	<form>
@@ -553,37 +705,64 @@
 													  			</div>
 													  		</div>
 													  	</form>
-													</div>
+													</div> -->
 													<a href="#" class="action-link"><i class="fa fa-edit"></i></a>
-													<a href="#" class="alert action-link"><i class="fa fa-remove"></i></a>
+													<a href="#" class="action-link"><i class="fa fa-remove"></i></a>
 												</div>
 											</div>
 											<div id="category5" class="list-panel" data-toggler data-animate="fade-in fade-out">
 
-												<form class="form-single-line">
-												  	<div class="row">
-												    	<div class="medium-3 columns">
-											      			<label>Search/Add Component
-											        			<input type="text" placeholder="">
-												      		</label>
-											    		</div>
-											    		<!-- <div class="medium-3 columns">
-											      			<label>Descriptor
-											        			<input type="text" placeholder="">
-												      		</label>
-											    		</div>
-											    		<div class="medium-3 columns">
-											      			<label>Note <small>Optional</small>
-											        			<input type="text" placeholder="">
-												      		</label>
-											    		</div> -->
-											    		<div class="medium-3 columns">
-												      		<button type="submit" class="button expanded">+ Add Item</button>
-											    		</div>
-												  	</div>
-												</form>
-
 												<ul class="well-list">
+													<li class="headline">
+														<div class="list-wrap">
+															<div class="list-item-name">
+																<b>Component Name</b>
+															</div>
+															<div class="list-detail">
+																<b>Code</b>
+															</div>
+															<div class="pull-right">
+																<a href="#" class="button primary small" data-open="addComponent">Add Component +</a>
+
+																<div class="reveal" id="addComponent" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+													                <div class="row collapse">
+													                    <div class="large-12 columns">
+													                        <h5 class="reveal-heading">Add Component</h5>
+													                    </div>
+													                </div>
+													                <form>
+													                	<div class="row collapse">
+													                		<div class="reveal-body">
+													                			<div class="row">
+															                        <div class="large-12 columns">
+															                            <label>
+															                                Component Name
+															                                <input type="text" value="Molar Root Canal">
+															                            </label>
+															                        </div>
+															                    </div>
+													                		</div>
+													                	</div>
+													                    
+													                    <div class="row collapse">
+													                        <div class="large-12 columns">
+													                        	<div class="reveal-footer">
+													                        		<div class="submit button-group pull-right">
+														                                <a class="button link" data-close>Cancel</a>
+														                                <button type="submit" class="button primary">Add Component</button>
+														                            </div>
+													                        	</div>
+													                        </div>
+													                    </div>
+													                </form>
+													                <button class="close-button" data-close aria-label="Close modal" type="button">
+													                    <span aria-hidden="true">&times;</span>
+													                </button>
+													            </div>
+
+															</div>
+														</div>
+													</li>
 													<li>
 														<div class="list-wrap">
 															<p>Add an item using the form above...</p>
@@ -600,8 +779,6 @@
 
 						  	<div class="tabs-panel" id="panel2">
 
-						    	<p class="page-lead subheader">Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
-
 				      			<div class="row">
 				      				<div class="large-12 columns">
 				      					<div class="page-lead">
@@ -609,30 +786,35 @@
 							                <a class="button primary pull-right" href="#" data-open="addTrigger">+ Add Qualifying Diagnosis</a>
 
 											<div class="reveal" id="addTrigger" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-								                <div class="row">
+								                <div class="row collapse">
 								                    <div class="large-12 columns">
 								                        <h5 class="reveal-heading">Add Add Qualifying Diagnosis</h5>
 								                    </div>
 								                </div>
 								                <form>
-								                    <div class="row">
-								                        <div class="large-12 columns">
-								                            <label>
-								                                Search Code/Descriptor
-								                                <select>
-								                                    <option disabled></option>
-								                                </select>
-								                            </label>
-								                        </div>
-								                    </div>
-								                    <div class="row">
-								                        <div class="medium-12 columns">
-								                            <div class="submit button-group pull-right">
-								                                <a class="button link" data-close>Cancel</a>
-								                                <button type="submit" class="button primary">Add Trigger</button>
-								                            </div>
-								                        </div>
-								                    </div>
+								                	<div class="reveal-body">
+								                		 <div class="row collapse">
+									                        <div class="large-12 columns">
+									                            <label>
+									                                Search Code/Descriptor
+									                                <select>
+									                                    <option disabled></option>
+									                                </select>
+									                            </label>
+									                        </div>
+									                    </div>
+								                	</div>
+								                   
+								                	<div class="reveal-footer">
+								                		<div class="row collapse">
+									                        <div class="medium-12 columns">
+									                            <div class="submit button-group pull-right">
+									                                <a class="button link" data-close>Cancel</a>
+									                                <button type="submit" class="button primary">Add Trigger</button>
+									                            </div>
+									                        </div>
+									                    </div>
+								                	</div>
 								                </form>
 								                <button class="close-button" data-close aria-label="Close modal" type="button">
 								                    <span aria-hidden="true">&times;</span>

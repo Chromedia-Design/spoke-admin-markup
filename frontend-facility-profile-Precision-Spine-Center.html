@@ -29,8 +29,20 @@
             <div id="responsive-menu">
                 <div class="top-bar-right">
                     <ul class="menu">
+                    	<li>
+                            <a class="button link info" href="#">My Account</a>
+                        </li>
                         <li>
-                            <a href="login.html">Hi, Debbie Malone</a>
+                            <ul class="dropdown menu" data-dropdown-menu>
+					      		<li>
+					        		<a class="button hollow rounded" href="#">Denver</a>
+					        		<ul class="menu vertical">
+					          			<li><a href="#">Alabama</a></li>
+					          			<li><a href="#">Minnesota</a></li>
+					          			<li><a href="#">Detroit</a></li>
+					        		</ul>
+					      		</li>
+					    	</ul>
                         </li>
                     </ul>
                 </div>
@@ -38,13 +50,12 @@
         </div>
     </header>
 
-	<section>
+	<section class="t-bordered">
 		<div class="row">
 			<div class="large-12 columns">
 				<nav aria-label="You are here:" role="navigation">
 				  	<ul class="breadcrumbs">
 				    	<li><a href="frontend-index.html">Home</a></li>
-				    	<li><a href="frontend-intake-form.html">Intake Form</a></li>
 				    	<li><a href="frontend-results-page.html">Results</a></li>
 				    	<li>Precision Spine Center</li>
 				  	</ul>
@@ -77,185 +88,187 @@
 		</div>
 
 		<div class="row mt-2">
-			<div class="large-4 large-push-8 columns">
-				<!-- <a href="#" class="cta-button">
-					<div class="row" data-equalizer>
-						<div class="large-5 columns" data-equalizer-watch>
-							<div class="text-group">
-								<span class="h6 text-center subheader"><small>TOTAL BENEFITS</small></span>
-								<h5 class="text-center">$ 13,900</h5>
+			<div class="large-5 large-push-7 columns">
+
+				<div class="callout">
+					<a href="#" data-open="exampleModal1" class="button primary large expanded">I'm interested. Save this facility to my profile.</a>
+
+					<div class="reveal" id="exampleModal1" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+						<div class="row collapse">
+							<div class="large-12 columns">
+								<h5 class="reveal-heading">Precision Spine Center</h5>
 							</div>
 						</div>
-						<div class="large-7 columns" data-equalizer-watch>
-							<span class="h6"><b>I'm interested. Save this facility to my profile.</b></span>
-						</div>
-					</div>
-				</a> -->
-				<a href="#" data-open="exampleModal1" class="button primary large expanded">I'm interested. Save this facility to my profile.</a>
-
-				<div class="reveal" id="exampleModal1" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-					<div class="row collapse">
-						<div class="large-12 columns">
-							<h5 class="reveal-heading">Precision Spine Center</h5>
-						</div>
-					</div>
-					<div class="row collapse">
-						<div class="large-12 columns">
-							<div class="reveal-body">
-								<p>Thank you for expressing interest in Precision Spine Center.</p>
-								<p>Your patient advocate has been notified and will contact the facility on your behalf. Expect to be contacted by the facility in the near future.</p>
-								<p><small>Here's an article to help you prepare for your treatment: <a href="#">Top Questions to Ask Your Surgeon</a></small></p>
-								<p><small>For more information on the procedure you're going to receive, visit our <a href="#">Knowledge Center</a>.</small></p>
+						<div class="row collapse">
+							<div class="large-12 columns">
+								<div class="reveal-body">
+									<p>Thank you for expressing interest in Precision Spine Center.</p>
+									<p>Your patient advocate has been notified and will contact the facility on your behalf. Expect to be contacted by the facility in the near future.</p>
+									<p><small>Here's an article to help you prepare for your treatment: <a href="#">Top Questions to Ask Your Surgeon</a></small></p>
+									<p><small>For more information on the procedure you're going to receive, visit our <a href="#">Knowledge Center</a>.</small></p>
+								</div>
 							</div>
 						</div>
+					  	<button class="close-button" data-close aria-label="Close modal" type="button">
+					    	<span aria-hidden="true">&times;</span>
+					  	</button>
 					</div>
-				  	<button class="close-button" data-close aria-label="Close modal" type="button">
-				    	<span aria-hidden="true">&times;</span>
-				  	</button>
-				</div>
 
-				<div class="spk-gain-graph mt-2 mb-2 row">
-					<div class="small-9 columns">
-						<div class="progress mt-0-5" role="progressbar" tabindex="0" aria-valuenow="0" aria-valuemin="0" aria-valuetext="100 percent" aria-valuemax="100">
-					  		<div class="progress-meter deductible" style="width: 63%;">
-					  			<p class="progress-meter-text">$7,000</p>
-					  			<!-- <div class="progress-meter negate" style="width: 10%;"></div> -->
-					  			<p class="deductible-label">Your Deductible</p>
-					  		</div>
-					  		<div class="progress-meter bonus" style="width: 37%;">
-					  			<p class="progress-meter-text">$4,193</p>
-					  			<!-- <p class="bonus-label">Bonus: <b>$9,900</b></p> -->
-					  		</div>
+					<div class="spk-gain-graph mt-2 mb-2 row">
+						<div class="small-9 columns">
+							<div class="progress mt-0-5" role="progressbar" tabindex="0" aria-valuenow="0" aria-valuemin="0" aria-valuetext="100 percent" aria-valuemax="100">
+						  		<div class="progress-meter deductible" style="width: 63%;">
+						  			<p class="progress-meter-text">$7,000</p>
+						  			<!-- <div class="progress-meter negate" style="width: 10%;"></div> -->
+						  			<p class="deductible-label">Your Deductible</p>
+						  		</div>
+						  		<div class="progress-meter bonus" style="width: 37%;">
+						  			<p class="progress-meter-text">$4,193</p>
+						  			<!-- <p class="bonus-label">Bonus: <b>$9,900</b></p> -->
+						  		</div>
+							</div>
+						</div>
+						<div class="small-3 columns">
+							<div class="brick small success text-center expanded">$11,193</div>
 						</div>
 					</div>
-					<div class="small-3 columns">
-						<div class="brick small success text-center expanded">$11,193</div>
-					</div>
 				</div>
 
-				<div class="row">
-					<p class="text-center">
-						<div class="large mpirica-wrapper mt-2">
-				      		<span class="rating">470</span>
-				      		<img src= "img/mpirica.png">
-				    	</div>
-					</p>
-				</div>
 			</div>
-			<div class="large-8 large-pull-4 columns">
-				<div class="media-object">
-				  	<div class="media-object-section logo middle">
-				    	<div class="img-wrapper">
-				      		<img src= "img/logo-Precision-Spine-Center.png">
-				    	</div>
-				  	</div>
-				  	<div class="media-object-section middle">
-				   		<h4>Precision Spine Center</h4>
-				   		<p class="subheader"><small><a href="#">Millennium Center, 6825 S. Galena Street, Suite 314, Centennial, CO, United States Of America</a></small></p>
-				  	</div>
-				  	<div class="media-object-section middle">
-				   		<div class="mpirica-wrapper">
-				      		<span class="rating">470</span>
-				      		<img src= "img/mpirica.png">
-				    	</div>
-				  	</div>
-				</div>
-				<hr class="mt-2 mb-2">
-				<div class="section-heading mt-2 mb-2">
-					<h5>Overview</h5>
-				</div>
-				<p>Welcome to Precision Spine Center, a multidisciplinary treatment center of excellence serving Denver and the Rocky Mountain region. We are pioneers in the use of advanced 3D navigation during surgery to precisely target—and effectively treat— a wide variety of spinal disorders.</p>
-				<p>Our center is one of a select few centers in the U.S. to consistently use advanced 3D technology to address spine pathology with laser-guided precision.</p>
-				<p><b>Our Philosophy</b></p>
-				<p>At Precision Spine Center, surgery is not always the answer to our patient’s spinal issues. Our multi-disciplinary approach allows us to explore a variety of treatment options, depending upon the severity of the patient’s problems and pain.</p>
-				<p>We believe that open and timely communication with our patients and our referring physicians is critical in having an efficient and effective patient care model. In order to understand, we must communicate.</p>
-				<p><b>About Our Practice</b></p>
-				<p>The professionals at Precision Spine Center represent a multidisciplinary team of spine care experts with an excellent track record of success in treating a wide variety of spinal disorders. We are one of a very few centers in the United States to consistently use 3D navigation during surgery, as well as computer-assisted spine surgery. This advanced technology allows us to accurately treat the affected area without damaging healthy bone, tissue or nerves, and enables the precise placement of implanted devices to achieve optimal outcomes.</p>
-				<p>Precision Spine Center takes a truly patient-centric approach to healthcare. Our Physicians take the time to discuss the details of your medical condition and the various treatment/surgical options that are available. Precision Spine Center is a place where Physicians listen.</p>
-				<p>Spine care is our specialty, our sole focus, our passion. If you’re seeking long-term relief and/or optimum spine health, we invite you to consult with us.</p>
-				<p>When surgical intervention is the best option for your condition, you can be confident that our spine surgeons are among the region’s most skilled and capable. We employ the latest neurosurgical techniques.</p>
+			<div class="large-7 large-pull-5 columns">
 
-				<div class="row">
-					<div class="grouped-listing">
-						<div class="large-4 columns">
-							<h6 class="subheader"><i class="fa fa-trophy fa-border primary-color"></i> AWARDS & ACCREDITATIONS</h6>
-						</div>
-						<div class="large-8 columns">
-							<ul>
-								<li>Medical Tourism Association (MTA) Member</li>
-								<li>JCI Accredited since 1950</li>
-							</ul>
+				<div class="callout hi-padded">
+					<div class="media-object">
+					  	<div class="media-object-section logo middle">
+					    	<div class="img-wrapper">
+					      		<img src= "img/logo-Precision-Spine-Center.png">
+					    	</div>
+					  	</div>
+					  	<div class="media-object-section middle">
+					   		<h5>Precision Spine Center</h5>
+					   		<p class="subheader"><small><a href="#">Millennium Center, 6825 S. Galena Street, Suite 314, Centennial, CO, United States Of America</a></small></p>
+					  	</div>
+					</div>
+					<hr class="mt-2 mb-2">
+					<div class="section-heading mt-2 mb-2">
+						<h5>Overview</h5>
+					</div>
+					<p>Welcome to Precision Spine Center, a multidisciplinary treatment center of excellence serving Denver and the Rocky Mountain region. We are pioneers in the use of advanced 3D navigation during surgery to precisely target—and effectively treat— a wide variety of spinal disorders.</p>
+					<p>Our center is one of a select few centers in the U.S. to consistently use advanced 3D technology to address spine pathology with laser-guided precision.</p>
+					<p><b>Our Philosophy</b></p>
+					<p>At Precision Spine Center, surgery is not always the answer to our patient’s spinal issues. Our multi-disciplinary approach allows us to explore a variety of treatment options, depending upon the severity of the patient’s problems and pain.</p>
+					<p>We believe that open and timely communication with our patients and our referring physicians is critical in having an efficient and effective patient care model. In order to understand, we must communicate.</p>
+					<p><b>About Our Practice</b></p>
+					<p>The professionals at Precision Spine Center represent a multidisciplinary team of spine care experts with an excellent track record of success in treating a wide variety of spinal disorders. We are one of a very few centers in the United States to consistently use 3D navigation during surgery, as well as computer-assisted spine surgery. This advanced technology allows us to accurately treat the affected area without damaging healthy bone, tissue or nerves, and enables the precise placement of implanted devices to achieve optimal outcomes.</p>
+					<p>Precision Spine Center takes a truly patient-centric approach to healthcare. Our Physicians take the time to discuss the details of your medical condition and the various treatment/surgical options that are available. Precision Spine Center is a place where Physicians listen.</p>
+					<p>Spine care is our specialty, our sole focus, our passion. If you’re seeking long-term relief and/or optimum spine health, we invite you to consult with us.</p>
+					<p>When surgical intervention is the best option for your condition, you can be confident that our spine surgeons are among the region’s most skilled and capable. We employ the latest neurosurgical techniques.</p>
+
+					<div class="row">
+						<div class="grouped-listing">
+							<div class="large-4 columns">
+								<h6 class="subheader"><i class="fa fa-trophy fa-border primary-color"></i> AWARDS & ACCREDITATIONS</h6>
+							</div>
+							<div class="large-8 columns">
+								<ul>
+									<li>
+										<div class="media-object">
+										  	<div class="media-object-section logo middle">
+										    	<div class="img-wrapper">
+										      		<img src= "img/logo-Precision-Spine-Center.png">
+										    	</div>
+										  	</div>
+										  	<div class="media-object-section middle">
+										   		<p class="h6">Medical Tourism Association (MTA) Member</p>
+										  	</div>
+										</div>
+									</li>
+									<li>
+										<div class="media-object">
+										  	<div class="media-object-section logo middle">
+										    	<div class="img-wrapper">
+										      		<img src= "img/logo-Precision-Spine-Center.png">
+										    	</div>
+										  	</div>
+										  	<div class="media-object-section middle">
+										   		<p class="h6">JCI Accredited since 1950</p>
+										  	</div>
+										</div>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="row">
-					<div class="grouped-listing">
-						<div class="large-4 columns">
-							<h6 class="subheader"><i class="fa fa-gear fa-border success-color"></i> ANCILLARY SERVICES</h6>
-						</div>
-						<div class="large-8 columns">
-							<ul class="fa-ul">
-							  	<li><i class="fa-li fa fa-credit-card"></i>Billing & Insurance Assistance</li>
-							  	<li><i class="fa-li fa fa-tty"></i>Online and Telephone Support</li>
-							  	<li><i class="fa-li fa fa-briefcase"></i>Travel and Accomodation Arrangements</li>
-							  	<li><i class="fa-li fa fa-cutlery"></i>Patient and Visitor Amenities</li>
-							  	<li><i class="fa-li fa fa-hand-spock-o"></i>Language Assistance / Interpreter Services</li>
-							</ul>
+					<div class="row">
+						<div class="grouped-listing">
+							<div class="large-4 columns">
+								<h6 class="subheader"><i class="fa fa-gear fa-border success-color"></i> ANCILLARY SERVICES</h6>
+							</div>
+							<div class="large-8 columns">
+								<ul class="fa-ul">
+								  	<li><i class="fa-li fa fa-credit-card"></i>Billing & Insurance Assistance</li>
+								  	<li><i class="fa-li fa fa-tty"></i>Online and Telephone Support</li>
+								  	<li><i class="fa-li fa fa-briefcase"></i>Travel and Accomodation Arrangements</li>
+								  	<li><i class="fa-li fa fa-cutlery"></i>Patient and Visitor Amenities</li>
+								  	<li><i class="fa-li fa fa-hand-spock-o"></i>Language Assistance / Interpreter Services</li>
+								</ul>
+							</div>
 						</div>
 					</div>
+					
+					<!-- <div class="section-heading mt-2 mb-2">
+						<h5>Procedure: Knee Replacement</h5>
+					</div>
+					<p>If painful joints are interfering with daily activities, it may be time to consider a surgical treatment option. A common type of knee surgery is knee replacement which falls into two categories: partial and total replacement. Knee surgery is performed to examine or repair tissues inside the knee joint using surgical instruments placed into the joint through small incisions.</p>
+					<p>If painful joints are interfering with daily activities, it may be time to consider a surgical treatment option. A common type of knee surgery is knee replacement which falls into two categories: partial and total replacement. Knee surgery is performed to examine or repair tissues inside the knee joint using surgical instruments placed into the joint through small incisions.</p> -->
+
+					<!-- <div class="row">
+						<div class="large-12 columns">
+							<div id="owl-example2" class="owl-carousel small">
+							  	<div>
+							  		<img src="img/slide-1.png" alt="">
+							  	</div>
+							  	<div>
+							  		<img src="img/slide-2.png" alt="">
+							  	</div>
+							  	<div>
+							  		<img src="img/slide-3.png" alt="">
+							  	</div>
+							  	<div>
+							  		<img src="img/slide-1.png" alt="">
+							  	</div>
+							  	<div>
+							  		<img src="img/slide-2.png" alt="">
+							  	</div>
+							  	<div>
+							  		<img src="img/slide-3.png" alt="">
+							  	</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="section-heading mt-2 mb-2">
+						<h5>Meet Your Specialist</h5>
+					</div>
+					<div class="media-object stack-for-small">
+					  	<div class="media-object-section">
+					    	<div class="img-wrapper bordered circle">
+					      		<img src= "img/specialist.png">
+					    	</div>
+					  	</div>
+					  	<div class="media-object-section middle">
+					  		<div class="mb-2">
+					  			<span class="h5">Dr. David Warkentin</span><br>
+					   			<span class="subheader"><small>University of Manitoba, 1998</small></span><br>
+					   			<span class="subheader"><small>Best Doctor in the East Valley 2013</small></span><br>
+					  		</div>
+					   		<p>Many of us have back problems, it is a very wide problem for people, ever since we started walking on our tow legs and raised our backs a large percent of human have suffered pain in the back from different reasons. The chiropractic was invented to help solve or reduce back pain by training back experts that will offer help and relief to those needing back pain help.</p>
+					   		<p>The great advantage that chiropractor have is the fact they focus only on the back, a chiropractor knows almost anything there is to know about the back, the spine, the nervous system structure and the biochemical patterns in the back, and that is the major reason why many people use chiropractors not only for help but also for a diagnosis that will send them the right way if the chiropractor couldn’t help.</p>
+					  	</div>
+					</div> -->
 				</div>
 				
-				<div class="section-heading mt-2 mb-2">
-					<h5>Procedure: Knee Replacement</h5>
-				</div>
-				<p>If painful joints are interfering with daily activities, it may be time to consider a surgical treatment option. A common type of knee surgery is knee replacement which falls into two categories: partial and total replacement. Knee surgery is performed to examine or repair tissues inside the knee joint using surgical instruments placed into the joint through small incisions.</p>
-				<p>If painful joints are interfering with daily activities, it may be time to consider a surgical treatment option. A common type of knee surgery is knee replacement which falls into two categories: partial and total replacement. Knee surgery is performed to examine or repair tissues inside the knee joint using surgical instruments placed into the joint through small incisions.</p>
-
-				<!-- <div class="row">
-					<div class="large-12 columns">
-						<div id="owl-example2" class="owl-carousel small">
-						  	<div>
-						  		<img src="img/slide-1.png" alt="">
-						  	</div>
-						  	<div>
-						  		<img src="img/slide-2.png" alt="">
-						  	</div>
-						  	<div>
-						  		<img src="img/slide-3.png" alt="">
-						  	</div>
-						  	<div>
-						  		<img src="img/slide-1.png" alt="">
-						  	</div>
-						  	<div>
-						  		<img src="img/slide-2.png" alt="">
-						  	</div>
-						  	<div>
-						  		<img src="img/slide-3.png" alt="">
-						  	</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="section-heading mt-2 mb-2">
-					<h5>Meet Your Specialist</h5>
-				</div>
-				<div class="media-object stack-for-small">
-				  	<div class="media-object-section">
-				    	<div class="img-wrapper bordered circle">
-				      		<img src= "img/specialist.png">
-				    	</div>
-				  	</div>
-				  	<div class="media-object-section middle">
-				  		<div class="mb-2">
-				  			<span class="h5">Dr. David Warkentin</span><br>
-				   			<span class="subheader"><small>University of Manitoba, 1998</small></span><br>
-				   			<span class="subheader"><small>Best Doctor in the East Valley 2013</small></span><br>
-				  		</div>
-				   		<p>Many of us have back problems, it is a very wide problem for people, ever since we started walking on our tow legs and raised our backs a large percent of human have suffered pain in the back from different reasons. The chiropractic was invented to help solve or reduce back pain by training back experts that will offer help and relief to those needing back pain help.</p>
-				   		<p>The great advantage that chiropractor have is the fact they focus only on the back, a chiropractor knows almost anything there is to know about the back, the spine, the nervous system structure and the biochemical patterns in the back, and that is the major reason why many people use chiropractors not only for help but also for a diagnosis that will send them the right way if the chiropractor couldn’t help.</p>
-				  	</div>
-				</div> -->
 			</div>
 		</div>
 

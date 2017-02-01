@@ -5,20 +5,68 @@
 	// letter-spacing: 0.0425rem;
 	text-transform: uppercase;
 	// line-height: 1.2;
+	&.hollow {
+		border-width: 2px;
+		background: transparent;
+		&.success,
+		&.primary,
+		&.secondary,
+		&.alert,
+		&.warning,
+		&.info {
+			border-width: 2px;
+			&.small {
+				border-width: 1px;
+			}
+		}
+	}
 	&.link {
 		background: transparent;
 		border: none;
 		color: $text-black;
-		font-weight: 400;
+		font-weight: $global-weight-bold;
 		&:hover {
 			color: $white;
 			background-color: $secondary-color;
 		}
+		&.info {
+			color: rgba($black, $B-subtext);
+			background: transparent;
+			&:hover {
+				background-color: $light-gray;
+			}
+		}
 		&.alert {
 			color: $alert-color;
+			background-color: transparent;
 			&:hover {
 				color: $white;
 				background-color: $alert-color;
+			}
+		}
+	}
+	&.info {
+		background-color: rgba($black, $B-dividers);
+		color: rgba($black, $B-subtext);
+		&.hollow {
+			background: transparent;
+			border-color: rgba($black, $B-subtext);
+			color: rgba($black, $B-subtext);
+			&:hover {
+				background-color: rgba($black, $B-dividers);
+			}
+		}
+	}
+	&.white {
+		background-color: $white;
+		color: rgba($black, $B-text);
+		&.hollow {
+			background: transparent;
+			border-color: $white;
+			color: $white;
+			&:hover {
+				background-color: $white;
+				color: rgba($black, $B-text);
 			}
 		}
 	}
@@ -31,23 +79,21 @@
 	&.large {
 		line-height: 1.2;
 	}
-}
-
-.info {
-	background-color: rgba($black, $B-dividers);
-	color: rgba($black, $B-subtext);
-	&.hollow {
-		border-color: rgba($black, $B-subtext);
-		color: rgba($black, $B-subtext);
+	&:focus {
+		color: inherit;
 	}
 }
 
-.button-group {
-	margin-top: 1rem;
+.button-align {
+	@extend .button-group;
+	.button {
+		margin-right: 1rem;
+	}
 }
 
 .action-link {
 	margin-right: 1rem;
+	display: inline-block;
 	&.dropdown {
 		padding: 5px 6px;
 		background-color: rgba($black, $B-dividers);
@@ -63,18 +109,18 @@
 	}
 	&.bordered {
 		padding: 3px 9px;
-		color: $white;
-		background-color: rgba($primary-color, $B-text);
-		border: 1px solid rgba($primary-color, $B-text);
+		color: $alert-color;
+		background-color: transparent;
+		border: 1px solid rgba($alert-color, $B-text);
 		border-radius: 4px;
 		&:hover {
 			text-decoration: none;
 		}
 		&.active {
 			cursor: default;
-			color: rgba($primary-color, $B-text);
+			color: $success-color;
 			background-color: transparent;
-			border: 1px solid rgba($primary-color, $B-text);
+			border: 1px solid rgba($success-color, $B-text);
 		}
 		&.disabled {
 			cursor: default;
@@ -88,7 +134,7 @@
 	}
 	&.small {
 		text-transform: uppercase;
-		font-size: 0.5625rem;
+		font-size: 0.75rem;
 	}
 	&:only-child {
 		margin-right: 0;
@@ -142,15 +188,15 @@
 			}
 			&:before {
 				top: 0;
-			  background: -webkit-linear-gradient(bottom, #fff 0%, transparent 100%);
-			  background: -o-linear-gradient(bottom, #fff 0%, transparent 100%);
-			  background: linear-gradient(to top, #fff 0%, transparent 100%);
+			    background: -webkit-linear-gradient(bottom, #fff 0%, transparent 100%);
+			    background: -o-linear-gradient(bottom, #fff 0%, transparent 100%);
+			    background: linear-gradient(to top, #fff 0%, transparent 100%);
 			}
 			&:after {
 				bottom: 0;
-			  background: -webkit-linear-gradient(#fff 0%, transparent 100%);
-			  background: -o-linear-gradient(#fff 0%, transparent 100%);
-			  background: linear-gradient(#fff 0%, transparent 100%);
+			    background: -webkit-linear-gradient(#fff 0%, transparent 100%);
+			    background: -o-linear-gradient(#fff 0%, transparent 100%);
+			    background: linear-gradient(#fff 0%, transparent 100%);
 			}
 		}
 	}

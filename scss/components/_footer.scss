@@ -1,12 +1,8 @@
 footer {
 	background-color: $primary-color;
-	hr {
-		margin: 0;
-		border-color: $white;
-	}
-	p {
-		margin: 0;
-		padding: 1.875rem 0;
+	.footer-wrapper {
+		border-top: 1px solid rgba($white, $W-dividers);
+		padding: 3.75rem 0;
 	}
 	> * {
 		color: $white;

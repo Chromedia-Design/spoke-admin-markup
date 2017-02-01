@@ -12,6 +12,28 @@
 		min-height: 20px;
 		border-bottom: 1px solid rgba($black, $B-dividers);
 		position: relative;
+		&.headline {
+			> .list-wrap {
+				background: transparent;
+			}
+			.list-item-name,
+			.list-detail {
+				> * {
+					display: inline-block;
+					margin: 0.5rem 0 0;
+					text-transform: uppercase;
+					color: rgba($black, $B-subtext);
+				}
+			}
+			.button {
+				margin: 0;
+			}
+		}
+		&.primary {
+			> .list-wrap {
+				background: lighten($primary-color, 69%);
+			}
+		}
 		a {
 			color: $text-black;
 			font-weight: 400;
@@ -41,7 +63,7 @@
 		[type='color'] {
 			margin-bottom: 0.5rem;
 		}
-		.input-group {
+		.input-group, .button-group, .button-align {
 			margin-bottom: 0;
 		}
 		[type='radio'],
@@ -51,6 +73,7 @@
 		.list-wrap {
 			background-color: $white;
 			padding: 15px 25px;
+			border-radius: 2px;
 			&.stack-for-small {
 				.list-item-image, .list-item-name, .list-detail {
 					@media only screen and (max-width: 40em) {
@@ -62,8 +85,8 @@
 			}
 		}
 		.list-panel {
-			background-color: rgba($dark-gray, $B-dividers);
-			display: none;
+			background-color: $primary-light;
+			// display: none;
 			.form-single-line {
 				padding: 15px 30px 15px;
 			}
@@ -79,10 +102,16 @@
 		}
 		.list-item-icon {
 			width: 3%;
-			margin-right: 0.5rem;
+			margin-right: 1rem;
 			position: relative;
 			display: inline-block;
 			vertical-align: top;
+			// float: left;
+			span {
+				vertical-align: middle;
+				color: rgba($black, $B-hinttext);
+				line-height: 1.5rem;
+			}
 			p {
 				margin: 0;
 				color: rgba($black, $B-hinttext);
@@ -93,18 +122,39 @@
 			position: relative;
 			display: inline-block;
 			vertical-align: top;
+			// float: left;
 			p {
 				margin: 0;
 				color: rgba($black, $B-hinttext);
+			}
+			.img-wrapper {
+				position: relative;
+				overflow: hidden;
+				width: 44px;
+				height: 44px;
+				> img {
+					position: absolute;
+					z-index: 1;
+					width: 100%;
+					height: auto;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+				}
 			}
 		}
 		.list-item-name {
 			width: 44%;
 			position: relative;
 			display: inline-block;
+			vertical-align: top;
+			// float: left;
 			> a,
 			span,
 			label {
+				font-family: $body-font-family;
+				color: rgba($black, $B-text);
 				margin-bottom: 0;
 				display: inline-block;
 				width: 88%;
@@ -121,7 +171,8 @@
 			width: 40%;
 			display: inline-block;
 			color: rgba($black, $B-subtext);
-			vertical-align: top;
+			vertical-align: middle;
+			// float: left;
 			label {
 				margin-bottom: 0;
 				font-family: $body-font-family;
@@ -132,6 +183,11 @@
 			display: inline-block;
 			width: 20%;
 			vertical-align: top;
+			// float: left;
+			span {
+				vertical-align: middle;
+				line-height: 1.5rem;
+			}
 		}
 		&:last-child {
 			border-bottom: none;
@@ -147,8 +203,11 @@
 		> li {
 			font-size: 0.875rem;
 			border-bottom: 1px solid rgba($white, $W-hinttext);
+			.list-panel {
+				background-color: darken($primary-light, 3%);
+			}
 			.list-wrap {
-				padding-left: 65px;
+				padding-left: 85px;
 				background: transparent;
 			}
 			&.list-core {
@@ -166,6 +225,25 @@
 			}
 			&:last-child {
 				border-bottom: none;
+			}
+		}
+	}
+	&.notifications {
+		> li {
+			.list-wrap {
+				padding: 0.75rem;
+				display: block;
+				> * {
+					font-size: 0.875rem;
+				}
+				.button {
+					margin-bottom: 0;
+				}
+			}
+			&:nth-child(even) {
+				.list-wrap {
+					background-color: rgba($light-gray, $B-dividers);
+				}
 			}
 		}
 	}
@@ -219,7 +297,7 @@
 					line-height: 1.5rem;
 				}
 				.list-wrap {
-					padding-left: 65px;
+					padding-left: 85px;
 				}
 				> li {
 					font-size: 0.75rem;
@@ -288,24 +366,35 @@
 					margin-top: 1rem;
 				}
 			}
-			// Wells listed under the main small list
+			// Wells listed under the main  list
 			.well-list {
-				> li {
-					> .list-wrap {
-						> .pull-left, > .list-item-name, > .list-detail {
-							margin-top: 0.7rem;
-						}
-					}
-					// Third tier of wells
-					.well-list {
-						> li {
-							> .list-wrap {
-								> .pull-left, > .list-item-name, > .list-detail {
-									margin-top: 0;
-								}
+				&.with-input {
+					> li {
+						> .list-wrap {
+							> .pull-left, > .list-item-name, > .list-detail {
+								margin-top: 0.7rem;
 							}
 						}
 					}
+				}
+				// Third tier of wells
+				.well-list {
+					> li {
+						> .list-wrap {
+							> .pull-left, > .list-item-name, > .list-detail {
+								margin-top: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.striped {
+		> li {
+			&:nth-child(even) {
+				.list-wrap {
+					background-color: rgba($light-gray, $B-dividers);
 				}
 			}
 		}
@@ -371,6 +460,7 @@
 	}
 }
 
+// List with left labels (facility awards & services)
 .grouped-listing {
 	margin: 2rem 0;
 	ul, ol {
@@ -379,16 +469,27 @@
 		list-style: none;
 		> li {
 			margin-bottom: 1rem;
+			&:first-child {
+				.media-object {
+					margin-top: 0;
+				}
+			}
 		}
 		&.fa-ul {
 			padding-left: 1.875rem;
 		}
 	}
 	.subheader {
-		line-height: 1.6;
+		font-size: 0.875rem;
+		line-height: 1.5em;
+		i.fa {
+			float: left;
+			margin: 0 1rem 2rem 0;
+		}
 	}
 }
 
+// This is a simple stacked list
 .stacked-list {
 	margin: 0;
 	padding: 0;
@@ -403,6 +504,7 @@
 	}
 }
 
+// This is a list with triangular bullets
 ul.custom-list {
 	margin: 0; 
 	padding: 0 1rem;

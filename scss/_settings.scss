@@ -49,22 +49,22 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #283D4B,
-  secondary: #17659B,
-  success: #81A714,
-  warning: #D4822D,
-  alert: #FF1B19,
+  primary:         #283D4B,
+  secondary:       #17659B,
+  success:         #81A714,
+  warning:         #D4822D,
+  alert:           #FF1B19,
 );
 
-$light-gray: #E3E3E3;
-$medium-gray: #73746f;
-$dark-gray: #2C2C2C;
+$light-gray:       #E3E3E3;
+$medium-gray:      #73746f;
+$dark-gray:        #2C2C2C;
 
-$black: #2A2A2A;
-$white: #FFFFFF;
-$off-white: #F4F4F4;
+$black:            #2A2A2A;
+$white:            #FFFFFF;
+$off-white:        #F4F4F4;
 $background-white: #FBFBFB;
-$primary-light: #F2F5F6;
+$primary-light:    #F2F5F6;
 
 // * Opacity change/add per project requirements | these defaults help with many elements on the project
 // * Text Opacity refers to the opacity of Black or White text in the project.
@@ -96,7 +96,7 @@ $W-icons:           1.00 !default;
 
 $body-background: $background-white;
 $body-font-color: $text-black;
-$body-font-family: Karla,'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: Roboto,'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $header-font-family: Lato, 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
@@ -378,7 +378,7 @@ $select-background: $white;
 $select-triangle-color: $dark-gray;
 $select-radius: $global-radius;
 $input-color: $black;
-$input-placeholder-color: $light-gray;
+$input-placeholder-color: rgba($black, $B-subtext);
 $input-font-family: inherit;
 $input-font-size: rem-calc(16);
 $input-background: $white;

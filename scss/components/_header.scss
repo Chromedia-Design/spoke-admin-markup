@@ -1,5 +1,5 @@
 header {
-	padding: 0.5rem;
+	padding: 1rem;
 	background-color: $white;
 	border-right: 1px solid rgba($black, $B-dividers);
 	a.logo {
@@ -8,6 +8,32 @@ header {
 		img {
 			height: 1.5rem;
 			width: auto;
+		}
+	}
+	.menu {
+		> li {
+			color: rgba($black, $B-text);
+			a {
+				color: rgba($black, $B-text);
+				margin-right: 1rem;
+			}
+			&.menu-text {
+				font-weight: $global-weight-bold;
+				color: rgba($black, $B-subtext);
+			}
+			&:last-child {
+				a {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+	.dropdown.menu > li.is-dropdown-submenu-parent {
+		> a {
+			&:after {
+				border-color: $primary-color transparent transparent;
+				right: 10px;
+			}
 		}
 	}
 }

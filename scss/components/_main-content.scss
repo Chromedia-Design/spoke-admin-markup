@@ -2,6 +2,9 @@ body {
 	overflow: hidden;
 	&.frontend {
 		overflow: scroll;
+		header {
+			border-right: none;
+		}
 	}
 }
 
@@ -10,6 +13,10 @@ hr {
 }
 
 section {
+	.top-bar {
+		background: transparent;
+		border-bottom: none;
+	}
 	&.section {
 		padding: 3.75rem 0;
 		.section-heading {
@@ -39,11 +46,20 @@ section {
 			color: $white;
 		}
 	}
+	&.alert-bg {
+		background-color: darken($warning-color, 27%);
+		> * {
+			color: $white;
+		}
+	}
 	&.success-bg {
 		background-color: $success-color;
 		> * {
 			color: $white;
 		}
+	}
+	&.t-bordered {
+		border-top: 1px solid rgba($black, $B-dividers);
 	}
 	&.borderless {
 		border: none;
@@ -142,18 +158,21 @@ section {
 			align-items: center;
 		}
 		.call-to-action {
-			padding: 3.75rem 0;
+			padding: 2rem 0;
 			h1 {
-				margin-bottom: 1.875rem;
+				margin-bottom: 1rem;
 				@media only screen and (min-width: 40em) {
 					font-size: 2.3125rem;
 					line-height: 1.5em;
 				}
 			}
+			h5 {
+				margin-bottom: 1rem;
+			}
 			p {
-				margin-bottom: 1.875rem;
+				margin-bottom: 1rem;
 				@media only screen and (min-width: 40em) {
-					font-size: 1.125rem;
+					font-size: 1rem;
 					line-height: 1.5em;
 				}
 			}
@@ -166,12 +185,12 @@ section {
 				h3,
 				h4,
 				h5,
-				h6 {
-					margin: 0;
+				h6, .button {
+					margin-bottom: 0;
 				}
 				p {
-					margin: 0;
-					font-size: 0.75rem;
+					margin-bottom: 0;
+					font-size: 0.875rem;
 					font-weight: normal;
 				}
 			}
@@ -203,6 +222,7 @@ section {
 	}
 }
 
+// This is only used on the login page
 .login {
 	height: 100%;
 	width: 100%;
@@ -225,9 +245,12 @@ section {
 	}
 }
 
+
+// Primarily used for the sidebar menu
 .content {
 	overflow-y: scroll;
 	.top-bar {
+		border-bottom: 1px solid rgba($black, $B-dividers);
 		// Override the blue caret after the dropdown link in the topbar
 		.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
 			border-color: rgba($black, $B-text) transparent transparent;
