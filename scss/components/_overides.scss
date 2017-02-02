@@ -1,34 +1,63 @@
-section.provider {
-	position: relative;
-    background: transparent url(../img/med-provider-bg.png) center center no-repeat !important;
-    background-size: cover !important;
-    box-sizing: inherit;
+//Settings
+
+$light-blue:       rgba(6,94,153,50);
+$light-green:      rgba(128,169,0,50);
+
+//end Settings
+
+
+
+
+section {
+	&.provider {
+		position: relative;
+		background: transparent url(../img/med-provider-bg.png) center center no-repeat !important;
+		background-size: cover !important;
+		box-sizing: inherit;
+	}
 }
 
-section.parallax-background {
-  // background-color: #0078A0;
-  // height: 620px;
-  // background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: fixed !important;
-  width: 100%;
+div {
+	&.white-bg {
+		background-color: $white !important;
+		border-bottom: 2px solid rgba($light-gray, $B-dividers);
+		+ .white-bg {
+			border-top: none;
+		}
+	}
+	&.hi-padded {
+		padding: 3.75rem 3.75rem;
+	}
+
+	&.provider-ico img {
+		max-width: 15rem;
+		width: 100%;
+	}
 }
 
-section.parallax-content {
-  max-width: 100%;
-  position: relative;
-  top: 500px;
-  padding: 50px;
-  font-size: 20px;
-  background-color: #fff;
+p {
+	&.larger {
+		font-size: 40px !important;
+	}
+	
+	&.light-blue {
+		color: $light-blue !important;
+	}
+	
+	&.light-green {
+		color: $light-green !important;
+	}
+
+	&.light-green, &.light-blue {
+		opacity: 0.5;
+	}
 }
 
-
-
-
-
-
-
+span {
+	&.sub-title {
+		color: #000 !important;
+		opacity: 0.8 !important;
+		font-size: 1.3rem;
+		line-height: 0.05em !important;
+	}
+}
