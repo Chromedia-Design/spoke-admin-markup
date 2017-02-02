@@ -22,8 +22,20 @@
             <div id="responsive-menu">
                 <div class="top-bar-right">
                     <ul class="menu">
+                    	<li>
+                            <a class="button link info" href="#">My Account</a>
+                        </li>
                         <li>
-                            <a href="login.html">Hi, Debbie Malone</a>
+                            <ul class="dropdown menu" data-dropdown-menu>
+					      		<li>
+					        		<a class="button hollow rounded" href="#">Denver</a>
+					        		<ul class="menu vertical">
+					          			<li><a href="#">Alabama</a></li>
+					          			<li><a href="#">Minnesota</a></li>
+					          			<li><a href="#">Detroit</a></li>
+					        		</ul>
+					      		</li>
+					    	</ul>
                         </li>
                     </ul>
                 </div>
@@ -31,7 +43,7 @@
         </div>
     </header>
 
-    <section class="white-bg">
+    <!-- <section class="white-bg">
 		<div class="row">
 			<div class="large-8 columns medium-centered">
 				<div class="section-heading">
@@ -65,28 +77,26 @@
 		    	<p class="text-center mb-2"><small>Sit back and we'll take it from there…</small></p>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
-	<section class="section">
+	<section class="t-bordered">
 
-		<!-- <div class="row">
+		<div class="row">
 			<div class="large-12 columns">
-				<div class="success callout hi-padded" data-closable="slide-out-right">
-  					<h5 class="mb-1">Thank you for completing the intake form.</h5>
-  					<p>Below are the facilities we suggest you consider based on the information you provided.</p>
-  					<p>Please do not hesitate to <a href="#">contact us</a> with any question.</p>
-  					<button class="close-button" aria-label="Dismiss alert" type="button" data-close>
-    					<span aria-hidden="true">&times;</span>
-  					</button>
-				</div>
+				<nav aria-label="You are here:" role="navigation">
+				  	<ul class="breadcrumbs mb-2">
+				    	<li><a href="frontend-index.html">Home</a></li>
+				    	<li>Search Results</li>
+				  	</ul>
+				</nav>
 			</div>
-		</div> -->
+		</div>
 
 		<div class="row">
 			
 			<div class="large-4 columns end">
-				<div class="img-card"">
-  					<div class="img-card-head">
+			    <div class="img-card" onclick="location.href='frontend-facility-profile-Precision-Spine-Center.html';" style="cursor: pointer;">
+					<div class="img-card-head">
   						<div class="header">
   							<a data-open="exampleModal1" class="button primary small pull-right">I'M INTERESTED</a>
   						</div>
@@ -112,7 +122,7 @@
 						    	</div>
 						  	</div>
 						  	<div class="media-object-section middle">
-						   		<h6><a href="frontend-facility-profile-Precision-Spine-Center.html">Precision Spine Center</a></h6>
+						   		<h6>Precision Spine Center</h6>
 						   		<p class="subheader"><small>Centennial (4.7 miles)</small></p>
 						  	</div>
 						</div>
@@ -120,7 +130,6 @@
 							<div class="small-12 columns">
 								<div class="progress small mt-1" role="progressbar" tabindex="0" aria-valuenow="0" aria-valuemin="0" aria-valuetext="100 percent" aria-valuemax="100">
 							  		<div class="progress-meter deductible" style="width: 63%;">
-							  			<!-- <div class="progress-meter negate" style="width: 10%;"></div> -->
 							  		</div>
 							  		<div class="progress-meter bonus" style="width: 37%;">
 							  		</div>
@@ -135,12 +144,12 @@
 								<p class="text-center success-color"><small>Receive <b>$4,193</b> Bonus</small></p>
 							</div>
 						</div>
-                    </div>
-  				</div>
+					</div>
+				</div>	
 			</div>
 
 			<div class="large-4 columns end">
-				<div class="img-card"">
+				<div class="img-card"onclick="location.href='frontend-facility-profile-Center-for-Spine-&-Orthopedics.html';" style="cursor: pointer;">
   					<div class="img-card-head">
   						<div class="header">
   							<a data-open="exampleModal1" class="button primary small pull-right">I'M INTERESTED</a>
@@ -167,7 +176,7 @@
 						    	</div>
 						  	</div>
 						  	<div class="media-object-section middle">
-						   		<h6><a href="frontend-facility-profile-Center-for-Spine-&-Orthopedics.html">Center for Spine and Orthopedics</a></h6>
+						   		<h6>Center for Spine and Orthopedics</h6>
 						   		<p class="subheader"><small>Denver (8.5 miles)</small></p>
 						  	</div>
 						</div>
@@ -195,7 +204,7 @@
 			</div>
 
 			<div class="large-4 columns end">
-				<div class="img-card"">
+				<div class="img-card" onclick="location.href='frontend-facility-profile-Denver-Spine-Surgeons.html';" style="cursor: pointer;">
   					<div class="img-card-head">
   						<div class="header">
   							<a data-open="exampleModal1" class="button primary small pull-right">I'M INTERESTED</a>
@@ -222,7 +231,7 @@
 						    	</div>
 						  	</div>
 						  	<div class="media-object-section middle">
-						   		<h6><a href="frontend-facility-profile-Denver-Spine-Surgeons.html">Denver Spine Surgeons</a></h6>
+						   		<h6>Denver Spine Surgeons</h6>
 						   		<p class="subheader"><small>Greenwood Village (6.2 miles)</small></p>
 						  	</div>
 						</div>
@@ -250,7 +259,7 @@
 			</div>
 
 			<div class="large-4 columns end">
-				<div class="img-card"">
+				<div class="img-card" onclick="location.href='frontend-facility-profile-Boulder-Surgery-Center.html';" style="cursor: pointer;">
   					<div class="img-card-head">
   						<div class="header">
   							<a data-open="exampleModal1" class="button primary small pull-right">I'M INTERESTED</a>
@@ -277,7 +286,7 @@
 						    	</div>
 						  	</div>
 						  	<div class="media-object-section title middle">
-						   		<h6><a href="frontend-facility-profile-Boulder-Surgery-Center.html">Boulder Surgery Center</a></h6>
+						   		<h6>Boulder Surgery Center</h6>
 						   		<p class="subheader"><small>Boulder (13.4 miles)</small></p>
 						  	</div>
 						</div>
@@ -304,7 +313,7 @@
   				</div>
 			</div>
 			<div class="large-4 columns end">
-				<div class="img-card"">
+				<div class="img-card" onclick="location.href='frontend-facility-profile-Arête-Surgical-Center.html';" style="cursor: pointer;">
   					<div class="img-card-head">
   						<div class="header">
   							<a data-open="exampleModal1" class="button primary small pull-right">I'M INTERESTED</a>
@@ -331,7 +340,7 @@
 						    	</div>
 						  	</div>
 						  	<div class="media-object-section middle">
-						   		<h6><a href="frontend-facility-profile-Arête-Surgical-Center.html">Arete Surgical Center</a></h6>
+						   		<h6>Arete Surgical Center</h6>
 						   		<p class="subheader"><small>Johnstown (2.4 miles)</small></p>
 						  	</div>
 						</div>
@@ -358,7 +367,7 @@
   				</div>
 			</div>
 			<div class="large-4 columns end">
-				<div class="img-card"">
+				<div class="img-card" onclick="location.href='frontend-facility-profile-Denver-Vail-Orthopedics.html';" style="cursor: pointer;">
   					<div class="img-card-head">
   						<div class="header">
   							<a data-open="exampleModal1" class="button primary small pull-right">I'M INTERESTED</a>
@@ -385,7 +394,7 @@
 						    	</div>
 						  	</div>
 						  	<div class="media-object-section middle">
-						   		<h6><a href="frontend-facility-profile-Denver-Vail-Orthopedics.html">Denver Vail Orthopedics</a></h6>
+						   		<h6>Denver Vail Orthopedics</h6>
 						   		<p class="subheader"><small>Denver (5.9 miles)</small></p>
 						  	</div>
 						</div>
