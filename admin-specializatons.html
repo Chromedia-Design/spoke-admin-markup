@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Spoke Admin Portal</title>
+	<title>Spoke Sales Portal</title>
 	<link rel="stylesheet" href="css/app.css">
 </head>
 <body>
@@ -24,7 +24,7 @@
 					<li class="is-active">
 						<a href="#">Medical Procedures</a>
 						<ul class="nested vertical menu ">
-							<li class="">
+							<li class="is-active">
 								<a href="/admin/specializations">Specializations</a>
 							</li>
 
@@ -34,7 +34,7 @@
 							<li class="">
 								<a href="/admin/treatments">Treatments</a>
 							</li>
-							<li class="is-active">
+							<li class="">
 								<a href="/admin/packages/index">Treatment Packages</a>
 							</li>
 							<li class="">
@@ -111,52 +111,41 @@
 		</div>
 		<div class="medium-10 columns">
 			<div class="content">
-
 				<div class="top-bar">
-				  	<div class="top-bar-left">
-						<!-- <ul class="menu">
+				  	<!-- <div class="top-bar-left">
+						<ul class="menu">
 				      		<li><input type="search" placeholder="Search"></li>
 				      		<li><button type="button" class="button">Search</button></li>
-			    		</ul> -->
-				  	</div>
+			    		</ul>
+				  	</div> -->
 				  	<div class="top-bar-right">
 				    	<ul class="dropdown menu" data-dropdown-menu>
 				    		<li>
 				    			<a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">6</span></a>
 			    			</li>
 				      		<li>
-				        		<a href="#">Administrator</a>
+				        		<a href="#">Sales Agent</a>
 				        		<ul class="menu vertical">
-				          			<li><a href="#">One</a></li>
-				          			<li><a href="#">Two</a></li>
-				          			<li><a href="#">Three</a></li>
+				          			<li><a href="#">Account</a></li>
+				          			<li><a href="#">Sign Out</a></li>
 				        		</ul>
 				      		</li>
 				    	</ul>
 				  	</div>
 				</div>
-
+				
 				<div class="row">
-					<div class="medium-12 columns">
-
-						<!-- <nav aria-label="You are here:" role="navigation">
-						  	<ul class="breadcrumbs">
-						  		<li><a href="#">Specializations</a></li>
-						  		<li><a href="#">Dentistry</a></li>
-						  		<li><a href="#">Endodontics</a></li>
-						    	<li>Root Canal Treatment</li>
-						  	</ul>
-						</nav> -->
+					<div class="large-12 columns">
 
 						<div class="page-lead">
-			                <span class="h5">Treatment Packages (9)</span>
-			                <a data-open="exampleModal2" class="button success pull-right">+ Add New Package</a>
+			                <span class="h5">Specializations <span>(102)</span></span>
+			                <a data-open="exampleModal1" class="button success pull-right">+ Add New Specialization</a>
 			            </div>
 
-						<div class="reveal" id="exampleModal2" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+			            <div class="reveal" id="exampleModal1" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
 							<div class="row collapse">
 								<div class="large-12 columns">
-									<h5 class="reveal-heading">Add New Package</h5>
+									<h5 class="reveal-heading">Add New Specialization</h5>
 								</div>
 							</div>
 							<div class="row collapse">
@@ -165,25 +154,15 @@
 										<div class="row">
 											<div class="large-12 columns">
 												<label for="">
-													Treatment Name
-													<select>
-														<option selected>Molar Root Canal</option>
-													</select>
-												</label>
-											</div>
-										</div>
-										<div class="row">
-											<div class="large-12 columns">
-												<label for="">
-													Package Name
-													<input type="text" value="">
+													Specialization Name
+													<input type="text">
 												</label>
 											</div>
 										</div>
 										<div class="row">
 											<div class="large-12 columns">
 												<label>
-													Package Description
+													Description
 													<textarea name="" id="" cols="30" rows="5"></textarea>
 												</label>
 											</div>
@@ -206,7 +185,7 @@
 						  	</button>
 						</div>
 
-						<div id="filters" class="submenu menu-options mb-1" data-toggler data-animate="fade-in fade-out">
+					 	<div id="filters" class="submenu menu-options mb-1" data-toggler data-animate="fade-in fade-out">
 			            	<div class="row collapse">
 			            		<div class="large-4 columns end">
 			            			<div class="input-group">
@@ -218,10 +197,10 @@
 			            		</div>
 			            		<!-- <div class="large-7 large-offset-1 columns end">
 			                        <div class="row collapse">
-			                        	<div class="large-6 columns end">
+			                            <div class="large-4 columns end">
 			                                <div class="row">
 			                                    <div class="large-4 columns">
-			                                        <label for="" class="small-label text-right middle">Specialization</label>
+			                                        <label for="" class="small-label text-right middle">Company</label>
 			                                    </div>
 			                                    <div class="large-8 columns">
 			                                        <select class="small-input">
@@ -230,10 +209,10 @@
 			                                    </div>  
 			                                </div> 
 			                            </div>
-			                            <div class="large-6 columns end">
+			                            <div class="large-5 columns end">
 			                                <div class="row">
 			                                    <div class="large-5 columns">
-			                                        <label for="" class="small-label text-right middle">Subspecialization</label>
+			                                        <label for="" class="small-label text-right middle">Assigned To</label>
 			                                    </div>
 			                                    <div class="large-7 columns">
 			                                        <select class="small-input">
@@ -246,38 +225,73 @@
 			                    </div> -->
 			            	</div>
 			            </div>	
-						
-						<table class="base-spacing">
+
+			            <table class="base-spacing">
 				            <thead>
 					            <tr>
-					                <th><a href="#">Package Name <i class="fa fa-caret-up fa-fw"></i></a></th>
-					                <th><a href="#"># Of Categories <i class="fa fa-caret-up fa-fw"></i></a></th>
+					                <th><a href="#">Name <i class="fa fa-caret-up fa-fw"></i></a></th>
+					                <th>Description</th>
 					                <th></th>
 					            </tr>
 				            </thead>
 				            <tbody>
 	                            <tr>
-				                    <td><a href="/admin/specializations/1">Molar Root Canal</a></td>
-				                    <td>4</td>
+				                    <td><a href="/admin/specializations/1">Alternative Medicine</a></td>
+				                    <td><p class="truncate">A center that specializes in any medical treatment or intervention that is incompatible with conventional Western medicine.</p></td>
 				                    <td class="text-right">
+				                        <a  class="action-link subheader" href="/admin/specializations/1"><i class="fa fa-eye fa-fw"></i></a>
 				                        <a class="action-link subheader" data-open="editSpecialization"><i class="fa fa-edit fa-fw"></i></a>
 				                    </td>
 				                </tr>
 	                            <tr>
-				                    <td><a href="/admin/specializations/2">Front Teeth Root Canal</a></td>
-				                    <td>2</td>
+				                    <td><a href="/admin/specializations/2">Cardiology</a></td>
+				                    <td><p class="truncate">Medical centers specialized in the diagnosis and treatment of congenital heart defects, coronary artery disease, heart failure, valvular heart disease and electrophysiology.</p></td>
 				                    <td class="text-right">
+				                        <a  class="action-link subheader" href="/admin/specializations/2"><i class="fa fa-eye fa-fw"></i></a>
+				                        <a class="action-link subheader" data-open="editSpecialization"><i class="fa fa-edit fa-fw"></i></a>
+				                    </td>
+				                </tr>
+	                            <tr>
+				                    <td><a href="/admin/specializations/3">Dentistry</a></td>
+				                    <td><p class="truncate">Traveling abroad for dental treatment is a popular choice for people who after affordable and high quality dental care such as dental implants, cosmetic dentistry, and oral surgery. The chance to visit amazing destinations - Mexico, Thailand, Hungary, to name a few -  is a definite plus.</p></td>
+				                    <td class="text-right">
+				                        <a  class="action-link subheader" href="/admin/specializations/3"><i class="fa fa-eye fa-fw"></i></a>
+				                        <a class="action-link subheader" data-open="editSpecialization"><i class="fa fa-edit fa-fw"></i></a>
+				                    </td>
+				                </tr>
+	                            <tr>
+				                    <td><a href="/admin/specializations/4">Dermatology</a></td>
+				                    <td><p class="truncate">A center that specializes in the diseases and some cosmetic problems of the skin, scalp, hair, and nails.</p></td>
+				                    <td class="text-right">
+				                        <a  class="action-link subheader" href="/admin/specializations/4"><i class="fa fa-eye fa-fw"></i></a>
+				                        <a class="action-link subheader" data-open="editSpecialization"><i class="fa fa-edit fa-fw"></i></a>
+				                    </td>
+				                </tr>
+	                            <tr>
+				                    <td><a href="/admin/specializations/5">Gastroenterology</a></td>
+				                    <td><p class="truncate">Medical center specialized in the diagnosis and treatment of conditions and diseases of the digestive system.</p></td>
+				                    <td class="text-right">
+				                        <a  class="action-link subheader" href="/admin/specializations/5"><i class="fa fa-eye fa-fw"></i></a>
 				                        <a class="action-link subheader" data-open="editSpecialization"><i class="fa fa-edit fa-fw"></i></a>
 				                    </td>
 				                </tr>
 			                </tbody>
 		                </table>
-						
+
+			            <ul class="pagination text-center" role="navigation" aria-label="Pagination">
+						  <li class="pagination-previous disabled">Previous</li>
+						  <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+						  <li><a href="#" aria-label="Page 2">2</a></li>
+						  <li><a href="#" aria-label="Page 3">3</a></li>
+						  <li><a href="#" aria-label="Page 4">4</a></li>
+						  <li class="ellipsis"></li>
+						  <li><a href="#" aria-label="Page 12">12</a></li>
+						  <li><a href="#" aria-label="Page 13">13</a></li>
+						  <li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
+						</ul>
+
 					</div>
 				</div>
-
-
-				
 			</div>
 		</div>
 	</div>
@@ -288,7 +302,7 @@
 	<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
 	<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
 	<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
-
+	
 	<script src="js/app.js"></script>
 
 	<script type="text/javascript">
@@ -302,9 +316,6 @@
                 }, 40); 
             }).resize();
         });
-
-        
-
     </script>
 
 </body>
