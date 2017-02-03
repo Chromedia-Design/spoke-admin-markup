@@ -52,7 +52,7 @@
 			padding: 0.5rem;
 			background-color: rgba($white, $W-dividers);
 			.button {
-				margin: 0;
+				margin: 0.65rem 0 0;
 			}
 		}
 		.header {
@@ -60,27 +60,36 @@
 		}
 		.footer {
 			bottom: 0;
-			padding-left: 0;
-			.story-card {
-				padding: 0.2rem 2rem 0.5rem;
-				background-color: $success-color;
-				display: inline-block;
-				border-top-right-radius: 2px;
-				border-bottom-right-radius: 2px;
-				h1,
-				h2,
-				h3,
-				h4,
-				h5,
-				h6,
-				p {
-					margin: 0;
-					color: $white;
-				}
-				p small {
-					font-size: 60%;
-					line-height: 1em;
-				}
+		}
+		.story-card {
+			margin-left: -10px;
+			padding: 0.2rem 2rem 0.5rem;
+			background-color: $primary-color;
+			display: inline-block;
+			position: relative;
+			&:after {
+				position: absolute;
+				content: "";
+				top: 0;
+				right: -20px;
+				width: 18px;
+				height: 100%;
+				border-top: 55px solid $primary-color;
+				border-right: 20px solid transparent;
+			}
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			p {
+				margin: 0;
+				color: $white;
+			}
+			p small {
+				font-size: 60%;
+				line-height: 1em;
 			}
 		}
 	}

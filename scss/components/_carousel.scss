@@ -25,3 +25,14 @@
 		}
 	}
 }
+
+.owl-theme .owl-controls {
+	margin-top: 5px;
+	.owl-page {
+		span {
+			width: 9px;
+			height: 9px;
+			background: $primary-color;
+		}
+	}
+}

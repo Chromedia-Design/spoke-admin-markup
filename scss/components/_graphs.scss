@@ -1,27 +1,22 @@
 .spk-gain-graph {
+	margin-bottom: 1rem;
 	.progress {
 		background-color: rgba($black, $B-dividers);
-		border-radius: 7px;
+		border-radius: 8px;
+		height: 1.2rem;
 		.progress-meter {
 			display: inline-block;
 			float: left;
 			&.deductible {
 				position: relative;
 				background-color: $secondary-color;
-				border-top-left-radius: 7px;
-				border-bottom-left-radius: 7px;
+				border-top-left-radius: 8px;
+				border-bottom-left-radius: 8px;
 				&:after {
 					position: absolute;
 					top: 0.9rem;
-					right: 0;
-					content: ":";
-					color: rgba($black, $B-hinttext);
-				}
-				&:before {
-					position: absolute;
-					bottom: 0.9rem;
-					right: 0;
-					content: ":";
+					right: -2px;
+					content: "|";
 					color: rgba($black, $B-hinttext);
 				}
 				.deductible-label {
@@ -41,8 +36,8 @@
 			}
 			&.bonus {
 				background-color: $success-color;
-				border-top-right-radius: 7px;
-				border-bottom-right-radius: 7px;
+				border-top-right-radius: 8px;
+				border-bottom-right-radius: 8px;
 				.bonus-label {
 					position: absolute;
 					margin: 0;
@@ -61,19 +56,38 @@
 				&.deductible {
 					&:after {
 						position: absolute;
-						top: 0.25rem;
+						top: 0rem;
 						right: 0;
-						content: ":";
+						content: "|";
 						color: rgba($black, $B-hinttext);
 					}
-					&:before {
-						position: absolute;
-						bottom: 0.25rem;
-						right: 0;
-						content: ":";
-						color: rgba($black, $B-hinttext);
-					}
+					// &:before {
+					// 	position: absolute;
+					// 	bottom: 0.25rem;
+					// 	right: 0;
+					// 	content: ":";
+					// 	color: rgba($black, $B-hinttext);
+					// }
 				}
+			}
+		}
+	}
+}
+
+.mpirica-graph {
+	margin-top: 80px;
+	.progress {
+		background-color: rgba($black, $B-dividers);
+		border-radius: 8px;
+		height: 0.5rem;
+		margin-bottom: 0;
+		.progress-meter {
+			border-radius: 8px;
+			position: relative;
+			.mpirica-wrapper {
+				position: absolute;
+				right: 0;
+				top: -70px;
 			}
 		}
 	}
