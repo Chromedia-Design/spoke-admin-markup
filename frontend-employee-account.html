@@ -44,20 +44,20 @@
     </header>
 
 	
-	<div class="row">
+	<div class="row mt-4">
 		<div class="column medium-3 b-all-1">
-			<div class="mt-4">
+			<div class=" circle">
 				<img src="http://placehold.it/350x300">
 			</div>
 			<div><h5>& buttons</h4></div>
 			
 		</div>
 		<div class="column medium-9">
-			<div class="row">
+			<!-- <div class="row">
 				<div class="columns medium-12 b-all-1">
 					<h5>Header buttons</h5>
 				</div>
-			</div>
+			</div> -->
 			<div class="row">
 				<div class="column medium-8 b-all-1">
 					<h5>Personal Information</h5>
@@ -178,43 +178,43 @@
 				<div class="column medium-4 ">
 					<h5>Episodes</h5>		
 					<div class="callout">
-						<a href="#">
+						<a data-open="episode1">
 							Star Wars: Episode VII
 							<label>The Force Awakens</label>
 						</a>
 					</div>
 					<div class="callout">
-						<a href="#">
+						<a data-open="episode1">
 							Star Wars: Episode VI
 							<label>Return Of The Jedi</label>
 						</a>
 					</div>
 					<div class="callout">
-						<a href="#">
+						<a data-open="episode1">
 							Star Wars: Episode V
 							<label>The Empire Strikes Back</label>
 						</a>
 					</div>
 					<div class="callout">
-						<a href="#">
+						<a data-open="episode1">
 							Star Wars: Episode IV
 							<label>A New Hope</label>
 						</a>
 					</div>
 					<div class="callout">
-						<a href="#">
+						<a data-open="episode1">
 							Star Wars: Episode III
 							<label>Revenge Of The Sith</label>
 						</a>
 					</div>
 					<div class="callout">
-						<a href="#">
+						<a data-open="episode1">
 							Star Wars: Episode II
 							<label>Attack Of The Clones</label>
 						</a>
 					</div>
 					<div class="callout">
-						<a href="#">
+						<a data-open="episode1">
 							Star Wars: Episode I
 							<label>The Phantom Menace</label>
 						</a>
@@ -234,6 +234,24 @@
 		</div>
 	</div>
 
+<div class="reveal" id="episode1" data-reveal>
+		<div class="row collapse">
+			<div class="large-12 columns">
+				<h5 class="reveal-heading">Star Wars: Episode VII: The Force Awakens</h5>
+			</div>
+		</div>
+		
+		<div class="row collapse">
+			<div class="large-12 columns">
+				<div class="reveal-footer">
+					<h4>Episode content</h4>
+				</div>
+			</div>
+		</div>
+	  	<button class="close-button" data-close aria-label="Close modal" type="button">
+	    	<span aria-hidden="true">&times;</span>
+	  	</button>
+	</div>
 
 
 	<section class="section">

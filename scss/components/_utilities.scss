@@ -24,6 +24,7 @@
 
 .pb-0 { padding-bottom: 0rem !important; }
 .pb-1 { padding-bottom: 1rem; }
+.pad1 { padding: 1rem; }
 
 
 .hidden { display:none; }
@@ -51,4 +52,9 @@
 .v-align-center {
 	display: flex;
 	align-items:center;
+}
+
+.circle { 
+	border-radius: 100%; 
+	overflow: hidden;
 }
