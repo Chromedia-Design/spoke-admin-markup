@@ -1,5 +1,4 @@
 .spk-gain-graph {
-	margin-bottom: 1rem;
 	.progress {
 		background-color: rgba($black, $B-dividers);
 		border-radius: 8px;
@@ -75,20 +74,59 @@
 }
 
 .mpirica-graph {
-	margin-top: 80px;
+	padding: 80px 15px 15px;
+	border: 1px solid rgba($black, $B-dividers);
 	.progress {
-		background-color: rgba($black, $B-dividers);
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff1b19+0,fdc513+56,fdc513+56,81a714+84 */
+		background: #ff1b19; /* Old browsers */
+        background: -moz-linear-gradient(left,  #ff1b19 0%, #fdc513 56%, #fdc513 56%, #81a714 84%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left,  #ff1b19 0%,#fdc513 56%,#fdc513 56%,#81a714 84%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right,  #ff1b19 0%,#fdc513 56%,#fdc513 56%,#81a714 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff1b19', endColorstr='#81a714',GradientType=1 ); /* IE6-9 */
 		border-radius: 8px;
 		height: 0.5rem;
 		margin-bottom: 0;
 		.progress-meter {
 			border-radius: 8px;
 			position: relative;
+			display: inline-block;
+			float: left;
+			visibility: hidden;
 			.mpirica-wrapper {
 				position: absolute;
 				right: 0;
 				top: -70px;
+				visibility: visible;
+			}
+			.mpirica-bubble {
+				visibility: visible;
+				position: absolute;
+				right: 0;
+				top: -2.5rem;
+				background-color: $success-color;
+				max-width: 10rem;
+				padding: 0.5rem 0.75rem 0.25rem;
+				color: $white;
+				border-radius: 4px;
+				font-weight: bold;
+				&:before {
+					position: absolute;
+				    display: block;
+				    width: 0;
+				    height: 0;
+				    border: inset 0.25rem;
+				    content: '';
+				    border-bottom-width: 0;
+				    border-top-style: solid;
+				    border-color: $success-color transparent transparent;
+				    top: 100%;
+				    bottom: auto;
+				    left: 43%;
+				}
 			}
 		}
+	}
+	&.bubble {
+		padding: 50px 15px 15px;
 	}
 }
