@@ -1,0 +1,113 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spoke</title>
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body class="frontend">
+
+	<header class="top-bar">
+        <div class="row">
+            <div class="top-bar-title">
+                <span data-responsive-toggle="responsive-menu" data-hide-for="large">
+                    <span class="menu-icon dark" data-toggle></span>
+                </span>
+                <a href="#" class="logo">
+                	<img src="img/logo.png" alt="Spoke">
+            	</a>
+            </div>
+            <div id="responsive-menu">
+                <div class="top-bar-right">
+                    <ul class="menu">
+                    	<li>
+                            <a class="button link info" href="#">My Account</a>
+                        </li>
+                        <li>
+                            <ul class="dropdown menu" data-dropdown-menu>
+					      		<li>
+					        		<a class="button hollow rounded" href="#">Denver</a>
+					        		<ul class="menu vertical">
+					          			<li><a href="#">Alabama</a></li>
+					          			<li><a href="#">Minnesota</a></li>
+					          			<li><a href="#">Detroit</a></li>
+					        		</ul>
+					      		</li>
+					    	</ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+	
+	<div class="row">
+		<div class="column medium-3 b-notop-1">
+			<div><h3>Picture</h5></div>
+			<div><h5>& buttons</h4></div>
+			
+		</div>
+		<div class="column medium-9">
+			<section class="b-notop-1"><h5>Header buttons</h5></section>
+			<div class="row">
+				<div class="column medium-8 b-notop-1"><h3>Personal Information</h3></div>
+				<div class="column medium-4 b-notop-1"><h3>History</h3></div>
+			</div>
+			<div class="row">
+				<div class="column medium-12 b-notop-1">
+					<h4>Others</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<section class="section">
+		<div class="row">
+			<div class="large-8 columns medium-centered">
+				<div class="section-heading">
+					<h3 class="text-center">Let us help you find the best facility</h3>
+				</div>
+				<p class="text-center">
+					<a href="frontend-results-page.html" class="button success large">LET US GET STARTED</a>
+				</p>
+			</div>
+		</div>
+	</section>
+
+
+
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/what-input/what-input.js"></script>
+	<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+	
+	<script src="js/app.js"></script>
+
+	<script type="text/javascript">
+
+		$(function () {
+            var timer;
+
+            $(window).resize(function() {
+                clearTimeout(timer);
+                timer = setTimeout(function() {
+                  $('.site-nav, .content').css("height", $(window).height());
+                }, 40); 
+            }).resize();
+        });
+
+    	$(document).ready(function($) {
+    		$('#onBoarding').foundation('open');
+    	});
+
+    </script>
+
+</body>
+</html>
