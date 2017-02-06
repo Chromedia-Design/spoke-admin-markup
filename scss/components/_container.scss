@@ -50,7 +50,7 @@
 			z-index: 2;
 			width: 100%;
 			padding: 0.5rem;
-			background-color: rgba($white, $W-dividers);
+			// background-color: rgba($white, $W-dividers);
 			.button {
 				margin: 0.65rem 0 0;
 			}
@@ -92,9 +92,20 @@
 				line-height: 1em;
 			}
 		}
+		.mpirica-graph {
+			border: none;
+		}
 	}
 	.img-card-body {
 		padding: 1rem;
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin-bottom: 0;
+		}
 		p {
 			margin-bottom: 0;
 			> small {
