@@ -33,7 +33,9 @@
 	border: solid 0.1rem $primary-light;
 	border-top: 0rem;
 }
-.b-all-1 { border: solid 0.1rem $primary-light}
+.b-all-1 { border: solid 0.1rem $primary-light; }
+
+.b-left-1 { border-left: solid 0.1rem $primary-light; }
 
 .disabled {
 	pointer-events: none;
