@@ -6,11 +6,13 @@
 .ml-1-5 { margin-left: 1.5rem; }
 .ml-2 { margin-left: 2rem; }
 
+.mt-0 { margin-top: 0; }
 .mt-1 { margin-top: 1rem; }
 .mt-0-5 { margin-top: 0.5rem; }
 .mt-2 { margin-top: 2rem; }
 .mt-4 { margin-top: 4rem; }
 
+.mb-0 { margin-bottom: 0; }
 .mb-1 { margin-bottom: 1rem; }
 .mb-0-5 { margin-bottom: 0.5rem; }
 .mb-2 { margin-bottom: 2rem; }
@@ -33,9 +35,14 @@
 	border: solid 0.1rem $primary-light;
 	border-top: 0rem;
 }
+<<<<<<< HEAD
 .b-all-1 { border: solid 0.1rem $primary-light; }
 
 .b-left-1 { border-left: solid 0.1rem $primary-light; }
+=======
+
+.b-all-1 { border: solid 0.1rem $primary-light}
+>>>>>>> 87f09284265e5ffb5015ba7ba2c80c740721c51c
 
 .disabled {
 	pointer-events: none;
@@ -59,4 +66,8 @@
 .circle { 
 	border-radius: 100%; 
 	overflow: hidden;
+}
+
+.marginless {
+	margin: 0;
 }
