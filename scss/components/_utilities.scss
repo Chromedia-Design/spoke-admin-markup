@@ -2,6 +2,7 @@
 
 .inline-block { display:inline-block; }
 
+.mr-1 {margin-right: 1rem;}
 .ml-1 { margin-left: 1rem; }
 .ml-1-5 { margin-left: 1.5rem; }
 .ml-2 { margin-left: 2rem; }
@@ -26,7 +27,11 @@
 
 .pb-0 { padding-bottom: 0rem !important; }
 .pb-1 { padding-bottom: 1rem; }
+
+.pt-1 { padding-top: 1rem; }
+
 .pad1 { padding: 1rem; }
+
 
 
 .hidden { display:none; }
@@ -35,14 +40,14 @@
 	border: solid 0.1rem $primary-light;
 	border-top: 0rem;
 }
-<<<<<<< HEAD
+
 .b-all-1 { border: solid 0.1rem $primary-light; }
 
 .b-left-1 { border-left: solid 0.1rem $primary-light; }
-=======
+
 
 .b-all-1 { border: solid 0.1rem $primary-light}
->>>>>>> 87f09284265e5ffb5015ba7ba2c80c740721c51c
+
 
 .disabled {
 	pointer-events: none;

@@ -6,7 +6,9 @@ $light-green:      rgba(128,169,0,50);
 //end Settings
 
 
-
+.normal {
+	font-weight: normal !important;
+}
 
 section {
 	&.provider {
@@ -35,7 +37,7 @@ div {
 	}
 }
 
-p {
+p, button {
 	&.larger {
 		font-size: 40px !important;
 	}
@@ -59,5 +61,22 @@ span {
 		opacity: 0.8 !important;
 		font-size: 1.3rem;
 		line-height: 0.05em !important;
+	}
+}
+
+h5 {
+	&.reveal-heading {
+		img {
+			max-width: 3.75rem !important;
+			width: 100% !important;
+		}
+	}
+}
+
+button {
+	span {
+		.close{
+			color: rgba (0,0,0,0.5) !important;
+		}
 	}
 }
