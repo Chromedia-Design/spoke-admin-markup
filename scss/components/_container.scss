@@ -301,6 +301,16 @@
 		margin-bottom: 0;
 		vertical-align: middle;
 	}
+	&.short-label {
+		.h1,
+		.h2,
+		.h3,
+		.h4,
+		.h5,
+		.h6 {
+			width: 50%;
+		}
+	}
 	&.sub-heading {
 		margin: 0 0 0.5rem;
 	}
