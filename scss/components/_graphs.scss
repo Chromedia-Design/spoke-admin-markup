@@ -74,8 +74,13 @@
 }
 
 .mpirica-graph {
-	padding: 80px 15px 15px;
-	border: 1px solid rgba($black, $B-dividers);
+	padding: 80px 0 0;
+	.label-text {
+		color: $white;
+		font-size: 0.875rem;
+		font-weight: $global-weight-bold;
+		text-transform: uppercase;
+	}
 	.progress {
 		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff1b19+0,fdc513+56,fdc513+56,81a714+84 */
 		background: #ff1b19; /* Old browsers */
