@@ -17,38 +17,94 @@
 						<img src="img/logo.png" title="Spoke">
 					</a>
 				</header>
-				<ul class="menu vertical"  data-accordion-menu>
-					<li>
-						<a href="#">Dashboard</a>
+				<ul class="menu vertical" data-accordion-menu>
+					<li class="">
+						<a href="/admin/">Dashboard</a>
 					</li>
 					<li class="is-active">
 						<a href="#">Medical Procedures</a>
-						<ul class="nested vertical menu">
-							<li>
-								<a href="#">Specializations</a>
+						<ul class="nested vertical menu ">
+							<li class="">
+								<a href="/admin/specializations">Specializations</a>
 							</li>
-							<li>
-								<a href="#">Subspecializations</a>
+
+							<li class="">
+								<a href="/admin/sub-specializations">Subspecializations</a>
+							</li>
+							<li class="">
+								<a href="/admin/treatments">Treatments</a>
 							</li>
 							<li class="is-active">
-								<a href="#">Treatments</a>
+								<a href="/admin/packages/index">Treatment Packages</a>
+							</li>
+							<li class="">
+								<a href="/admin/categories">Categories</a>
 							</li>
 						</ul>
 					</li>
 					<li>
 						<a href="#">Facilities</a>
+						<ul class="nested vertical menu ">
+							<li class="">
+								<a href="/admin/facilities">All Facilities</a>
+							</li>
+							<li class="">
+								<a href="/admin/facility-services">Ancillary Services</a>
+							</li>
+							<li class="">
+								<a href="/admin/awards">Awards</a>
+							</li>
+						</ul>
 					</li>
 					<li>
 						<a href="#">Doctors</a>
+						<ul class="nested vertical menu ">
+							<li class="">
+								<a href="/admin/doctors">All Doctors</a>
+							</li>
+						</ul>
 					</li>
 					<li>
 						<a href="#">Companies</a>
+						<ul class="nested vertical menu ">
+							<li class="">
+								<a href="/admin/clients">All Companies</a>
+							</li>
+						</ul>
 					</li>
+
 					<li>
 						<a href="#">Content</a>
+						<ul class="nested vertical menu">
+							<li>
+								<a href="#">Geo Data</a>
+								<ul class="geo-nav nested vertical menu ">
+									<li class="regions">
+										<a href="/admin/regions">World Regions</a>
+									</li>
+
+									<li class="countries">
+										<a href="/admin/countries">Countries</a>
+									</li>
+
+									<li class="us-states">
+										<a href="/admin/states">US States</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Migrations</a>
+								
+							</li>
+						</ul>
 					</li>
 					<li>
 						<a href="#">Users</a>
+						<ul class="nested vertical menu ">
+							<li class="">
+								<a href="/admin/users">Users</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</div>
@@ -83,95 +139,139 @@
 				<div class="row">
 					<div class="medium-12 columns">
 
-						<nav aria-label="You are here:" role="navigation">
+						<!-- <nav aria-label="You are here:" role="navigation">
 						  	<ul class="breadcrumbs">
+						  		<li><a href="#">Specializations</a></li>
 						  		<li><a href="#">Dentistry</a></li>
 						  		<li><a href="#">Endodontics</a></li>
 						    	<li>Root Canal Treatment</li>
 						  	</ul>
-						</nav>
+						</nav> -->
 
 						<div class="page-lead">
-							<span class="h5">Packages (2)</span>
-							<a class="button success pull-right" href="#" data-open="addPackage">+ Add Package</a>
+			                <span class="h5">Treatment Packages (9)</span>
+			                <a data-open="exampleModal2" class="button success pull-right">+ Add New Package</a>
+			            </div>
 
-							<div class="reveal" id="addPackage" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-				                <div class="row collapse">
-				                    <div class="large-12 columns">
-				                        <h5 class="reveal-heading">+ Add Package</h5>
-				                    </div>
-				                </div>
-				                <form>
-				                	<div class="row collapse">
-				                		<div class="reveal-body">
-				                			<div class="row">
-						                        <div class="large-12 columns">
-						                            <label>
-						                                Package Name
-						                                <input type="text">
-						                            </label>
-						                        </div>
-						                    </div>
-						                     <div class="row">
-						                        <div class="large-12 columns">
-						                            <label>
-						                                Package Description
-						                                <textarea></textarea>
-						                            </label>
-						                        </div>
-						                    </div>
-				                		</div>
-				                	</div>
-				                    
-				                    <div class="row collapse">
-				                        <div class="large-12 columns">
-				                        	<div class="reveal-footer">
-				                        		<div class="submit button-group pull-right">
-					                                <a class="button link" data-close>Cancel</a>
-					                                <button type="submit" class="button primary">Add Package</button>
-					                            </div>
-				                        	</div>
-				                        </div>
-				                    </div>
-				                </form>
-				                <button class="close-button" data-close aria-label="Close modal" type="button">
-				                    <span aria-hidden="true">&times;</span>
-				                </button>
-				            </div>
+						<div class="reveal" id="exampleModal2" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+							<div class="row collapse">
+								<div class="large-12 columns">
+									<h5 class="reveal-heading">Add New Package</h5>
+								</div>
+							</div>
+							<div class="row collapse">
+								<div class="large-12 columns">
+									<div class="reveal-body">
+										<div class="row">
+											<div class="large-12 columns">
+												<label for="">
+													Treatment Name
+													<select>
+														<option selected>Molar Root Canal</option>
+													</select>
+												</label>
+											</div>
+										</div>
+										<div class="row">
+											<div class="large-12 columns">
+												<label for="">
+													Package Name
+													<input type="text" value="">
+												</label>
+											</div>
+										</div>
+										<div class="row">
+											<div class="large-12 columns">
+												<label>
+													Package Description
+													<textarea name="" id="" cols="30" rows="5"></textarea>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row collapse">
+								<div class="large-12 columns">
+									<div class="reveal-footer">
+										<div class="button-group pull-right">
+											<a class="button link" data-close>Cancel</a>
+											<a href="#" data-open="exampleModal2" class="button success">Save</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						  	<button class="close-button" data-close aria-label="Close modal" type="button">
+						    	<span aria-hidden="true">&times;</span>
+						  	</button>
 						</div>
+
+						<div id="filters" class="submenu menu-options mb-1" data-toggler data-animate="fade-in fade-out">
+			            	<div class="row collapse">
+			            		<div class="large-4 columns end">
+			            			<div class="input-group">
+			            				<input type="text" class="input-group-field" value="" placeholder="Search keyword...">
+			            				<div class="input-group-button">
+			            					<input type="submit" class="button info" value="Search">
+		            					</div>
+	            					</div>
+			            		</div>
+			            		<!-- <div class="large-7 large-offset-1 columns end">
+			                        <div class="row collapse">
+			                        	<div class="large-6 columns end">
+			                                <div class="row">
+			                                    <div class="large-4 columns">
+			                                        <label for="" class="small-label text-right middle">Specialization</label>
+			                                    </div>
+			                                    <div class="large-8 columns">
+			                                        <select class="small-input">
+			                                            <option>All</option>
+			                                        </select>
+			                                    </div>  
+			                                </div> 
+			                            </div>
+			                            <div class="large-6 columns end">
+			                                <div class="row">
+			                                    <div class="large-5 columns">
+			                                        <label for="" class="small-label text-right middle">Subspecialization</label>
+			                                    </div>
+			                                    <div class="large-7 columns">
+			                                        <select class="small-input">
+			                                            <option>All</option>
+			                                        </select>
+			                                    </div>  
+			                                </div> 
+			                            </div>
+			                        </div>
+			                    </div> -->
+			            	</div>
+			            </div>	
 						
-						<div class="panel">
-							<ul class="well-list">
-								<li>
-									<div class="list-wrap">
-										<div class="list-item-name">
-											<a href="edit-package.html">Molar Root Canal</a>
-										</div>
-										<div class="list-detail">
-											<span>5 Categories</span>
-										</div>
-										<div class="pull-right">
-											<a href="edit-package.html" class="action-link"><i class="fa fa-edit"></i></a>
-											<a href="#" class="action-link"><i class="fa fa-remove"></i></a>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="list-wrap">
-										<div class="list-item-name">
-											<a href="edit-package.html">Front Teeth Root Canal</a>
-										</div>
-										<div class="list-detail">
-											<span>4 Categories</span>
-										</div>
-										<div class="pull-right">
-											<a href="edit-package.html" class="action-link"><i class="fa fa-edit"></i></a>
-											<a href="#" class="action-link"><i class="fa fa-remove"></i></a>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
+						<table class="base-spacing">
+				            <thead>
+					            <tr>
+					                <th><a href="#">Package Name <i class="fa fa-caret-up fa-fw"></i></a></th>
+					                <th><a href="#"># Of Categories <i class="fa fa-caret-up fa-fw"></i></a></th>
+					                <th></th>
+					            </tr>
+				            </thead>
+				            <tbody>
+	                            <tr>
+				                    <td><a href="/admin/specializations/1">Molar Root Canal</a></td>
+				                    <td>4</td>
+				                    <td class="text-right">
+				                        <a class="action-link subheader" data-open="editSpecialization"><i class="fa fa-edit fa-fw"></i></a>
+				                    </td>
+				                </tr>
+	                            <tr>
+				                    <td><a href="/admin/specializations/2">Front Teeth Root Canal</a></td>
+				                    <td>2</td>
+				                    <td class="text-right">
+				                        <a class="action-link subheader" data-open="editSpecialization"><i class="fa fa-edit fa-fw"></i></a>
+				                    </td>
+				                </tr>
+			                </tbody>
+		                </table>
 						
 					</div>
 				</div>

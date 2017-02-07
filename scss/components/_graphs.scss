@@ -1,27 +1,21 @@
 .spk-gain-graph {
 	.progress {
 		background-color: rgba($black, $B-dividers);
-		border-radius: 7px;
+		border-radius: 8px;
+		height: 1.2rem;
 		.progress-meter {
 			display: inline-block;
 			float: left;
 			&.deductible {
 				position: relative;
 				background-color: $secondary-color;
-				border-top-left-radius: 7px;
-				border-bottom-left-radius: 7px;
+				border-top-left-radius: 8px;
+				border-bottom-left-radius: 8px;
 				&:after {
 					position: absolute;
 					top: 0.9rem;
-					right: 0;
-					content: ":";
-					color: rgba($black, $B-hinttext);
-				}
-				&:before {
-					position: absolute;
-					bottom: 0.9rem;
-					right: 0;
-					content: ":";
+					right: -2px;
+					content: "|";
 					color: rgba($black, $B-hinttext);
 				}
 				.deductible-label {
@@ -41,8 +35,8 @@
 			}
 			&.bonus {
 				background-color: $success-color;
-				border-top-right-radius: 7px;
-				border-bottom-right-radius: 7px;
+				border-top-right-radius: 8px;
+				border-bottom-right-radius: 8px;
 				.bonus-label {
 					position: absolute;
 					margin: 0;
@@ -61,20 +55,83 @@
 				&.deductible {
 					&:after {
 						position: absolute;
-						top: 0.25rem;
+						top: 0rem;
 						right: 0;
-						content: ":";
+						content: "|";
 						color: rgba($black, $B-hinttext);
 					}
-					&:before {
-						position: absolute;
-						bottom: 0.25rem;
-						right: 0;
-						content: ":";
-						color: rgba($black, $B-hinttext);
-					}
+					// &:before {
+					// 	position: absolute;
+					// 	bottom: 0.25rem;
+					// 	right: 0;
+					// 	content: ":";
+					// 	color: rgba($black, $B-hinttext);
+					// }
 				}
 			}
 		}
+	}
+}
+
+.mpirica-graph {
+	padding: 80px 0 0;
+	.label-text {
+		color: $white;
+		font-size: 0.875rem;
+		font-weight: $global-weight-bold;
+		text-transform: uppercase;
+	}
+	.progress {
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff1b19+0,fdc513+56,fdc513+56,81a714+84 */
+		background: #ff1b19; /* Old browsers */
+        background: -moz-linear-gradient(left,  #ff1b19 0%, #fdc513 56%, #fdc513 56%, #81a714 84%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left,  #ff1b19 0%,#fdc513 56%,#fdc513 56%,#81a714 84%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right,  #ff1b19 0%,#fdc513 56%,#fdc513 56%,#81a714 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff1b19', endColorstr='#81a714',GradientType=1 ); /* IE6-9 */
+		border-radius: 8px;
+		height: 0.5rem;
+		margin-bottom: 0;
+		.progress-meter {
+			border-radius: 8px;
+			position: relative;
+			display: inline-block;
+			float: left;
+			visibility: hidden;
+			.mpirica-wrapper {
+				position: absolute;
+				right: 0;
+				top: -70px;
+				visibility: visible;
+			}
+			.mpirica-bubble {
+				visibility: visible;
+				position: absolute;
+				right: 0;
+				top: -2.5rem;
+				background-color: $success-color;
+				max-width: 10rem;
+				padding: 0.5rem 0.75rem 0.25rem;
+				color: $white;
+				border-radius: 4px;
+				font-weight: bold;
+				&:before {
+					position: absolute;
+				    display: block;
+				    width: 0;
+				    height: 0;
+				    border: inset 0.25rem;
+				    content: '';
+				    border-bottom-width: 0;
+				    border-top-style: solid;
+				    border-color: $success-color transparent transparent;
+				    top: 100%;
+				    bottom: auto;
+				    left: 43%;
+				}
+			}
+		}
+	}
+	&.bubble {
+		padding: 50px 15px 15px;
 	}
 }

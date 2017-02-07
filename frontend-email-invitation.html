@@ -4,9 +4,48 @@
       background-color: #F4F4F4;
    }
 
+   div.client-wrapper {
+      font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+      background-color: #FFFFFF;
+      width: 46rem;
+      margin: 3rem auto 0;
+      height: 44rem;
+      border-radius: 4px;
+      border: 1px solid #efefef;
+      position: relative;
+   }
+
+   .client-wrapper-header {
+      background-color: #efefef;
+      border-bottom: 1px solid #cccccc;
+      padding: 10px 15px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+   }
+
+   .client-wrapper-header table {
+      padding: 0;
+      margin: 0;
+      font-size: 0.75rem;
+      color: #17659B;
+      table-layout: fixed;
+   }
+
+   .client-wrapper-header table span.subheader {
+      color: #999999;
+   }
+
+   .client-wrapper-body {
+      overflow: scroll;
+      height: 38rem;
+      margin-top: 6rem;
+   }
+
    table {
       font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-      font-size:  1rem;
+      font-size:  0.875rem;
       line-height: 1.5em;
       font-weight:  normal;
       width:  100%;
@@ -17,6 +56,13 @@
       color:  #464646;
    }
 
+   .wrap {
+      max-width:  40rem;
+      width:  100%;
+      padding:  1rem;
+      padding-bottom: 0rem;
+   }
+
    td > img  {
       width:  auto;
    }
@@ -25,13 +71,6 @@
      td > img {
          width: auto;
       }    
-   }
-
-   .wrap {
-      max-width:  40rem;
-      width:  100%;
-      padding:  1rem;
-      padding-bottom: 0rem;
    }
 
    .box  {
@@ -91,90 +130,98 @@
       margin-bottom:  4rem;
    }
 
+   .text-right {
+      text-align: right;
+   }
+
    small {
       font-size:  10;
       color:  #B9B9B9;
    }
 
 </style>
-<body style="background-color: #f4f4f4;">
-<table>
-<tr>
-<td>
-   <table  class="wrap">
-      <tr>
+<body style="background: #F4F4F4 url('https://s3.amazonaws.com/assets.spoke.com/images/spoke-email-client-bg.jpg') no-repeat top center; background-size: 1280px 800px;">
+
+   <div class="client-wrapper">
+      <div class="client-wrapper-header">
+         <table>
+            <tr>
+               <td><span class="subheader">To:</span> &nbsp;Richard Coyte</td>
+               <td class="text-right">Send | Attach Files</td>
+            </tr>
+            <tr>
+               <td><span class="subheader">Cc:</span> </td>
+            </tr>
+            <tr>
+               <td><span class="subheader">Bcc:</span> </td>
+            </tr>
+         </table>
+      </div>
+      <div class="client-wrapper-body">
+         <table>
+         <tr>
          <td>
-            <table>
+            <table  class="wrap">
                <tr>
-                  <td class="centered">
-                        <img  src="img/spoke-logo-300x60.png" alt="Spoke">
-                  </td>
-               </tr> 
-            </table>
+                  <td>
+                     <table>
+                        <tr>
+                           <td class="centered">
+                                 <img  src="img/spoke-logo-300x60.png" alt="Spoke">
+                           </td>
+                        </tr> 
+                     </table>
 
-            <table class="mid-box">
-               <tr>
-                  <td>
-                     <p>
-                        Dear  Richard  Coyte,   
-                     </p>
-                     <p>
-                        Navigating an upcoming surgery can be complex, frustrating and expensive. Surgery prices and quality vary greatly in healthcare. Often facilities that incur expensive out-of-pocket costs are the lowest quality.
-                     </p>
-                     <p>
-                        Did you know that employees of Excel Energy can save thousands of dollars in out-of-pocket expenses and get cash allowances simply by shopping for quality surgery options?
-                     </p>
-                     <p>As an Employee Benefit, Excel Energy has partnered with Spoke Health. Spoke Health's SurgeryHub™ will help you find the best quality facility for the best price. Our Advocates and personalized experience helps you make informed choices that reward you with cash allowances.</p>
-                     <p>Click here to find out how Spoke can help you save money on a surgical procedure.</p>
-                  </td>
-               </tr>
-               <tr>
-                  <td class="centered">
-                     <a  class="button" href="frontend-onboard.html">proceed to  spoke  health</a>
-                  </td>
-               </tr>
-               <tr>
-                  <td>
-                     <p class="spacer">
-                        There is no obligation and no upfront costs, we just want to help you find the best possible treatment with the lowest cost to you.
-                     </p>
-                  </td>
-               </tr>
-               <tr>
-                  <td>
-                     <p>
-                        Sincerely,<br />Greg  Mogab<br  /><small>  Spoke  Health </small>
-                     </p>
-                  </td>
-               </tr>
-               <tr>
-                  <td class="centered">
-                     <!-- <p><small><br />
-                        At  Spoke  Health,  we take  the  privacy  and  security of  your personal  and  medical  information  seriously. We  strictly comply  with the Health  Insurance  Portability  and  Accountability Act (HIPAA),  ensuring that  our  system and processes are in  place  for  the  safety of  your data.</small>
-                     </p> -->
-                     <p><small><br />
-                        To learn more about Spoke Health <a href="#">Click Here</a>, or feel free to contact your HR manager or visit your company’s benefits portal.</small>
-                     </p>
+                     <table class="mid-box">
+                        <tr>
+                           <td>
+                              <p>
+                                 Dear  Richard  Coyte,   
+                              </p>
+                              <p>
+                                 Navigating an upcoming surgery can be complex, frustrating and expensive. Surgery prices and quality vary greatly in healthcare. Often facilities that incur expensive out-of-pocket costs are the lowest quality.
+                              </p>
+                              <p>
+                                 Did you know that employees of Excel Energy can save thousands of dollars in out-of-pocket expenses and get cash allowances simply by shopping for quality surgery options?
+                              </p>
+                              <p>As an Employee Benefit, Excel Energy has partnered with Spoke Health. Spoke Health's SurgeryHub™ will help you find the best quality facility for the best price. Our Advocates and personalized experience helps you make informed choices that reward you with cash allowances.</p>
+                              <p>Click here to find out how Spoke can help you save money on a surgical procedure.</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="centered">
+                              <a  class="button" href="frontend-onboard.html">proceed to  spoke  health</a>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <p class="spacer">
+                                 There is no obligation and no upfront costs, we just want to help you find the best possible treatment with the lowest cost to you.
+                              </p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <p>
+                                 Sincerely,<br />Greg  Mogab<br  /><small>  Spoke  Health </small>
+                              </p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="centered">
+                              <p><small><br />
+                                 To learn more about Spoke Health <a href="#">Click Here</a>, or feel free to contact your HR manager or visit your company’s benefits portal.</small>
+                              </p>
+                           </td>
+                        </tr>
+                     </table>
                   </td>
                </tr>
             </table>
-
-            <!-- <table  class="box">
-               <tr>
-                  <td>
-                     <p class="centered">
-                        <img src="logo.png">
-                     </p>
-                     <p>
-                        With Spoke Health you can finally have peace of mind about your surgery. We are your advocate to find the the highest quality facilities and surgeons for the lowest out-of-pocket cost.
-                     </p>
-                  </td>
-               </tr>
-            </table> -->
          </td>
-      </tr>
-   </table>
-</td>
-</tr>
-</table>
+         </tr>
+         </table>
+      </div>
+   </div>
+
 </body> 

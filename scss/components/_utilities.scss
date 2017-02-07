@@ -7,11 +7,13 @@
 .ml-1-5 { margin-left: 1.5rem; }
 .ml-2 { margin-left: 2rem; }
 
+.mt-0 { margin-top: 0; }
 .mt-1 { margin-top: 1rem; }
 .mt-0-5 { margin-top: 0.5rem; }
 .mt-2 { margin-top: 2rem; }
 .mt-4 { margin-top: 4rem; }
 
+.mb-0 { margin-bottom: 0; }
 .mb-1 { margin-bottom: 1rem; }
 .mb-0-5 { margin-bottom: 0.5rem; }
 .mb-2 { margin-bottom: 2rem; }
@@ -25,7 +27,11 @@
 
 .pb-0 { padding-bottom: 0rem !important; }
 .pb-1 { padding-bottom: 1rem; }
+
 .pt-1 { padding-top: 1rem; }
+
+.pad1 { padding: 1rem; }
+
 
 
 .hidden { display:none; }
@@ -34,6 +40,14 @@
 	border: solid 0.1rem $primary-light;
 	border-top: 0rem;
 }
+
+.b-all-1 { border: solid 0.1rem $primary-light; }
+
+.b-left-1 { border-left: solid 0.1rem $primary-light; }
+
+
+.b-all-1 { border: solid 0.1rem $primary-light}
+
 
 .disabled {
 	pointer-events: none;
@@ -52,4 +66,13 @@
 .v-align-center {
 	display: flex;
 	align-items:center;
+}
+
+.circle { 
+	border-radius: 100%; 
+	overflow: hidden;
+}
+
+.marginless {
+	margin: 0;
 }

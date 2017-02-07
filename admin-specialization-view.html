@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Spoke Admin Portal</title>
+	<title>Spoke Sales Portal</title>
 	<link rel="stylesheet" href="css/app.css">
 </head>
 <body>
@@ -21,10 +21,10 @@
 					<li class="">
 						<a href="/admin/">Dashboard</a>
 					</li>
-					<li class="">
+					<li class="is-active">
 						<a href="#">Medical Procedures</a>
 						<ul class="nested vertical menu ">
-							<li class="">
+							<li class="is-active">
 								<a href="/admin/specializations">Specializations</a>
 							</li>
 
@@ -42,10 +42,10 @@
 							</li>
 						</ul>
 					</li>
-					<li class="is-active">
+					<li>
 						<a href="#">Facilities</a>
 						<ul class="nested vertical menu ">
-							<li class="is-active">
+							<li class="">
 								<a href="/admin/facilities">All Facilities</a>
 							</li>
 							<li class="">
@@ -111,107 +111,74 @@
 		</div>
 		<div class="medium-10 columns">
 			<div class="content">
+
 				<div class="top-bar">
-				  	<div class="top-bar-left">
-						<!-- <ul class="menu">
+				  	<!-- <div class="top-bar-left">
+						<ul class="menu">
 				      		<li><input type="search" placeholder="Search"></li>
 				      		<li><button type="button" class="button">Search</button></li>
-			    		</ul> -->
-				  	</div>
+			    		</ul>
+				  	</div> -->
 				  	<div class="top-bar-right">
 				    	<ul class="dropdown menu" data-dropdown-menu>
 				    		<li>
 				    			<a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">6</span></a>
 			    			</li>
 				      		<li>
-				        		<a href="#">Administrator</a>
+				        		<a href="#">Sales Agent</a>
 				        		<ul class="menu vertical">
-				          			<li><a href="#">One</a></li>
-				          			<li><a href="#">Two</a></li>
-				          			<li><a href="#">Three</a></li>
+				          			<li><a href="#">Account</a></li>
+				          			<li><a href="#">Sign Out</a></li>
 				        		</ul>
 				      		</li>
 				    	</ul>
 				  	</div>
 				</div>
-				
+
 				<div class="row">
 					<div class="medium-12 columns">
-						
-						<div class="page-lead">
-							<span class="h5">Facilities <span>(102)</span></span>
-							<a data-open="exampleModal1" class="button success pull-right">+ Add New Facility</a>
-						</div>
+						<nav aria-label="You are here:" role="navigation">
+						  	<ul class="breadcrumbs">
+						    	<li><a href="admin-specializations.html">Specializations</a></li>
+						    	<li>Alternative Medicine</li>
+						  	</ul>
+						</nav>	
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="large-12 columns">
 
-						<div class="reveal" id="exampleModal1" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+						<div class="page-lead short-label">
+			                <span class="h5">Alternative Medicine <a class="button info link small ml-1" data-open="exampleModal1"><i class="fa fa-pencil fa-fw"></i> Edit</a></span>
+			                <div class="button-align pull-right">
+			                	<a data-open="exampleModal2" class="button success">+ Add New Subspecialization</a>
+			                	<a data-open="exampleModal3" class="button success">+ Add New Treatment</a>
+			                </div>
+			            </div>
+
+			            <div class="reveal" id="exampleModal1" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
 							<div class="row collapse">
 								<div class="large-12 columns">
-									<h5 class="reveal-heading">Add New Facility</h5>
+									<h5 class="reveal-heading">Edit Alternative Medicine</h5>
 								</div>
 							</div>
 							<div class="row collapse">
 								<div class="large-12 columns">
 									<div class="reveal-body">
 										<div class="row">
-											<div class="large-3 columns">
-												<div class="img-wrapper bordered mb-1">
-													<img src="img/logo-harley-davidson.png">
-												</div>
-											</div>
-											<div class="large-9 columns">
+											<div class="large-12 columns">
 												<label for="">
-													<input type="file">
+													Specialization Name
+													<input type="text" value="Alternative Medicine">
 												</label>
 											</div>
 										</div>
 										<div class="row">
 											<div class="large-12 columns">
-												<label for="">
-													Facility Name
-													<input type="text">
-												</label>
-											</div>
-										</div>
-										<div class="row">
-											<div class="large-12 columns">
-												<label for="">
-													Address
-													<input type="text">
-													<input type="text">
-												</label>
-											</div>
-										</div>
-										<div class="row">
-											<div class="large-6 columns">
-												<label for="">
-													State
-													<select>
-														<option>Select State</option>
-													</select>
-												</label>
-											</div>
-											<div class="large-6 columns">
-												<label for="">
-													City
-													<select>
-														<option>Select City</option>
-													</select>
-												</label>
-											</div>
-										</div>
-										<div class="row">
-											<div class="large-6 columns">
-												<label for="">
-													Zip Code
-													<input type="text" name="">
-												</label>
-											</div>
-											<div class="large-6 columns">
-												<label for="">
-													Country
-													<select>
-														<option>United States of America</option>
-													</select>
+												<label>
+													Description
+													<textarea name="" id="" cols="30" rows="5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem sint modi, ullam quos totam suscipit. Animi quaerat et, aliquid blanditiis quas quasi officia amet deserunt a ipsa, aut repudiandae necessitatibus.</textarea>
 												</label>
 											</div>
 										</div>
@@ -233,7 +200,85 @@
 						  	</button>
 						</div>
 
-						<div id="filters" class="submenu menu-options mb-1" data-toggler data-animate="fade-in fade-out">
+						<div class="reveal" id="exampleModal2" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+							<div class="row collapse">
+								<div class="large-12 columns">
+									<h5 class="reveal-heading">Add New Subspecialization</h5>
+								</div>
+							</div>
+							<div class="row collapse">
+								<div class="large-12 columns">
+									<div class="reveal-body">
+										<div class="row">
+											<div class="large-12 columns">
+												<label for="">
+													Subspecialization Name
+													<input type="text" value="">
+												</label>
+											</div>
+										</div>
+										<div class="row">
+											<div class="large-12 columns">
+												<label>
+													Description
+													<textarea name="" id="" cols="30" rows="5"></textarea>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row collapse">
+								<div class="large-12 columns">
+									<div class="reveal-footer">
+										<div class="button-group pull-right">
+											<a class="button link" data-close>Cancel</a>
+											<a href="#" data-open="exampleModal2" class="button success">Save</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						  	<button class="close-button" data-close aria-label="Close modal" type="button">
+						    	<span aria-hidden="true">&times;</span>
+						  	</button>
+						</div>
+
+						<div class="reveal" id="exampleModal3" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+							<div class="row collapse">
+								<div class="large-12 columns">
+									<h5 class="reveal-heading">Add New Treatment</h5>
+								</div>
+							</div>
+							<div class="row collapse">
+								<div class="large-12 columns">
+									<div class="reveal-body">
+										<div class="row">
+											<div class="large-12 columns">
+												<label for="">
+													Treatment Name
+													<input type="text" value="">
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row collapse">
+								<div class="large-12 columns">
+									<div class="reveal-footer">
+										<div class="button-group pull-right">
+											<a class="button link" data-close>Cancel</a>
+											<a href="#" data-open="exampleModal2" class="button success">Save</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						  	<button class="close-button" data-close aria-label="Close modal" type="button">
+						    	<span aria-hidden="true">&times;</span>
+						  	</button>
+						</div>
+
+					 	<div id="filters" class="submenu menu-options mb-1" data-toggler data-animate="fade-in fade-out">
 			            	<div class="row collapse">
 			            		<div class="large-4 columns end">
 			            			<div class="input-group">
@@ -245,10 +290,10 @@
 			            		</div>
 			            		<!-- <div class="large-7 large-offset-1 columns end">
 			                        <div class="row collapse">
-			                        	<div class="large-6 columns end">
+			                            <div class="large-4 columns end">
 			                                <div class="row">
 			                                    <div class="large-4 columns">
-			                                        <label for="" class="small-label text-right middle">Specialization</label>
+			                                        <label for="" class="small-label text-right middle">Company</label>
 			                                    </div>
 			                                    <div class="large-8 columns">
 			                                        <select class="small-input">
@@ -257,10 +302,10 @@
 			                                    </div>  
 			                                </div> 
 			                            </div>
-			                            <div class="large-6 columns end">
+			                            <div class="large-5 columns end">
 			                                <div class="row">
 			                                    <div class="large-5 columns">
-			                                        <label for="" class="small-label text-right middle">Subspecialization</label>
+			                                        <label for="" class="small-label text-right middle">Assigned To</label>
 			                                    </div>
 			                                    <div class="large-7 columns">
 			                                        <select class="small-input">
@@ -274,101 +319,43 @@
 			            	</div>
 			            </div>	
 
-						<div class="search-result">
+			            <table class="base-spacing">
+				            <thead>
+					            <tr>
+					                <th><a href="#">Subspecialization/Treatment Name <i class="fa fa-caret-up fa-fw"></i></a></th>
+					                <th>Description</th>
+					                <th></th>
+					            </tr>
+				            </thead>
+				            <tbody>
+	                            <tr>
+				                    <td><a href="/admin/specializations/1">Adolescent Gynecology</a></td>
+				                    <td><p class="truncate">A center that specializes in any medical treatment or intervention that is incompatible with conventional Western medicine.</p></td>
+				                    <td class="text-right">
+				                        <a  class="action-link subheader" href="/admin/specializations/1"><i class="fa fa-eye fa-fw"></i></a>
+				                        <a class="action-link subheader" data-open="editSpecialization"><i class="fa fa-edit fa-fw"></i></a>
+				                    </td>
+				                </tr>
+	                            <tr>
+				                    <td><a href="/admin/specializations/2">Ambulatory Care Anesthesia</a></td>
+				                    <td><p class="truncate">Medical centers specialized in the diagnosis and treatment of congenital heart defects, coronary artery disease, heart failure, valvular heart disease and electrophysiology.</p></td>
+				                    <td class="text-right">
+				                        <a  class="action-link subheader" href="/admin/specializations/2"><i class="fa fa-eye fa-fw"></i></a>
+				                        <a class="action-link subheader" data-open="editSpecialization"><i class="fa fa-edit fa-fw"></i></a>
+				                    </td>
+				                </tr>
+	                            <tr>
+				                    <td><a href="/admin/specializations/3">Andrology</a></td>
+				                    <td><p class="truncate">Traveling abroad for dental treatment is a popular choice for people who after affordable and high quality dental care such as dental implants, cosmetic dentistry, and oral surgery. The chance to visit amazing destinations - Mexico, Thailand, Hungary, to name a few -  is a definite plus.</p></td>
+				                    <td class="text-right">
+				                        <a  class="action-link subheader" href="/admin/specializations/3"><i class="fa fa-eye fa-fw"></i></a>
+				                        <a class="action-link subheader" data-open="editSpecialization"><i class="fa fa-edit fa-fw"></i></a>
+				                    </td>
+				                </tr>
+			                </tbody>
+		                </table>
 
-							<a href="#" class="row-item-container">
-								<div class="row" data-equalizer>
-									<div class="columns medium-1">
-										<div class="logo" data-equalizer-watch>
-											<img src="http://placehold.it/100x100">
-										</div>
-									</div>
-									<div class="columns medium-4">
-										<div class="facility" data-equalizer-watch>
-											<h6 class="name">National Hospital California</h6>
-											<p class="address"><i class="fa fa-map-marker"></i> Los Angeles, California</p>
-											<p class="contact"><i class="fa fa-phone"></i> 123 456 7890</p>
-										</div>
-									</div>
-									<div class="columns medium-4">
-										<div class="admin" data-equalizer-watch>
-											<h6 class="name">David Warkentin</h6>
-											<p class="address"><i class="fa fa-map-marker"></i> Los Angeles, California</p>
-											<p class="contact"><i class="fa fa-phone"></i> 123 456 7890</p>
-										</div>
-									</div>
-									<div class="columns medium-3">
-										<div class="package-count" data-equalizer-watch>
-											<div>123</div>
-											<p>Surgery Package</p>
-										</div>
-									</div>
-								</div>
-							</a>
-
-							<a href="#" class="row-item-container">
-								<div class="row" data-equalizer>
-									<div class="columns medium-1">
-										<div class="logo" data-equalizer-watch>
-											<img src="http://placehold.it/100x100">
-										</div>
-									</div>
-									<div class="columns medium-4">
-										<div class="facility" data-equalizer-watch>
-											<h6 class="name">National Hospital California</h6>
-											<p class="address"><i class="fa fa-map-marker"></i> Los Angeles, California</p>
-											<p class="contact"><i class="fa fa-phone"></i> 123 456 7890</p>
-										</div>
-									</div>
-									<div class="columns medium-4">
-										<div class="admin" data-equalizer-watch>
-											<h6 class="name">David Warkentin</h6>
-											<p class="address"><i class="fa fa-map-marker"></i> Los Angeles, California</p>
-											<p class="contact"><i class="fa fa-phone"></i> 123 456 7890</p>
-										</div>
-									</div>
-									<div class="columns medium-3">
-										<div class="package-count" data-equalizer-watch>
-											<div>123</div>
-											<p>Surgery Package</p>
-										</div>
-									</div>
-								</div>
-							</a>
-
-							<a href="#" class="row-item-container">
-								<div class="row" data-equalizer>
-									<div class="columns medium-1">
-										<div class="logo" data-equalizer-watch>
-											<img src="http://placehold.it/100x100">
-										</div>
-									</div>
-									<div class="columns medium-4">
-										<div class="facility" data-equalizer-watch>
-											<h6 class="name">National Hospital California</h6>
-											<p class="address"><i class="fa fa-map-marker"></i> Los Angeles, California</p>
-											<p class="contact"><i class="fa fa-phone"></i> 123 456 7890</p>
-										</div>
-									</div>
-									<div class="columns medium-4">
-										<div class="admin" data-equalizer-watch>
-											<h6 class="name">David Warkentin</h6>
-											<p class="address"><i class="fa fa-map-marker"></i> Los Angeles, California</p>
-											<p class="contact"><i class="fa fa-phone"></i> 123 456 7890</p>
-										</div>
-									</div>
-									<div class="columns medium-3">
-										<div class="package-count" data-equalizer-watch>
-											<div>123</div>
-											<p>Surgery Package</p>
-										</div>
-									</div>
-								</div>
-							</a>
-
-						</div>
-
-				  		<ul class="pagination text-center" role="navigation" aria-label="Pagination">
+			           <!--  <ul class="pagination text-center" role="navigation" aria-label="Pagination">
 						  <li class="pagination-previous disabled">Previous</li>
 						  <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
 						  <li><a href="#" aria-label="Page 2">2</a></li>
@@ -378,7 +365,8 @@
 						  <li><a href="#" aria-label="Page 12">12</a></li>
 						  <li><a href="#" aria-label="Page 13">13</a></li>
 						  <li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
-						</ul>
+						</ul> -->
+
 					</div>
 				</div>
 			</div>
