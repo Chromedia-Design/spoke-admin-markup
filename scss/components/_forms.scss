@@ -123,7 +123,14 @@ textarea, .mce-tinymce {
 	height: 2.5rem;
     padding: .5rem;
     background-color: #fefefe;
-    border: 1px solid #6E868D;
+    border: 1px solid rgba($black, $B-dividers);
+    &:focus {
+		box-shadow: none;
+		border: 1px solid $text-black;
+	}
+	&.selected {
+		box-shadow: none;
+	}
 }
 
 [type='submit'], .cancel, .submit {
@@ -339,6 +346,15 @@ label.image-upload {
 		border: 1px solid rgba($black, $B-dividers);
 		border-radius: 2px;
 	}
+}
+
+.trumbowyg-box,
+.trumbowyg-editor {
+	margin-top: 0;
+}
+
+.trumbowyg-editor {
+	color: $text-black;
 }
 
 // Switches/Toggles

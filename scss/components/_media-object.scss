@@ -35,6 +35,12 @@
 				height: 2.75rem;
 			}
 		}
+		&.large {
+			.img-wrapper {
+				width: 8.625rem;
+				height: 8.625rem;
+			}
+		}
 		@media only screen and (min-width: 40em) {
 			width: auto;
 		}

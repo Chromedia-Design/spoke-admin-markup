@@ -17,10 +17,23 @@
 		margin-top: 0;
 		padding-top: 0;
 	}
+	table {
+		margin-bottom: 0;
+	}
 }
 
 .callout-heading {
 	margin-bottom: 1rem;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: $body-font-family;
+		line-height: 2rem;
+		margin-right: 1rem;
+	}
 	.h1,
 	.h2,
 	.h3,
