@@ -84,8 +84,7 @@
 		<div class="row">
 			<div class="large-12 columns">
 				<div class="page-lead">
-					<span class="h5 subheader">6 Results - Denver</span>
-					<a href="" data-open="Greetings" class="button secondary small pull-right">See How It Works</a>
+					<a href="" data-open="cardLabels" class="button info small pull-right">Help</a>
 				</div>
 			</div>
 		</div>	
@@ -177,12 +176,12 @@
 						  	</div>
 						  	<div class="media-object-section middle">
 						   		<h6>Center for Spine and Orthopedics</h6>
-						   		<p class="subheader"><small>Denver (8.5 miles)</small></p>
+						   		<!-- <p class="subheader"><small>Denver (8.5 miles)</small></p> -->
 						  	</div>
 						</div>
 						<div class="row collapse">
 							<div class="small-12 columns">
-								<h6 class="mt-0-5 text-right"><span class="subheader">TOTAL:</span>&nbsp;$ 5,500</h6>
+								<h6 class="mt-0-5 text-right"><span class="subheader">TOTAL SAVINGS:</span>&nbsp;$ 5,500</h6>
 							</div>
 						</div>
 						<div class="spk-gain-graph row collapse">
@@ -651,6 +650,33 @@
 		</div>
 
 		<!-- START MODAL HERE -->
+		<div class="reveal large" id="cardLabels" data-reveal>
+			<div class="row collapse">
+				<div class="large-12 columns">
+					<div class="reveal-body transparent">
+						<div class="row">
+							<div class="large-9 medium-centered columns">
+								<div class="img-wrapper">
+									<img src="img/spoke-facility-card-label.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row collapse">
+				<div class="large-12 columns">
+					<div class="reveal-footer transparent">
+						<div class="row">
+							<div class="large-9 medium-centered columns">
+								<a href="#" class="button white hollow large expanded" data-close>Ok, I got it.</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="reveal" id="Greetings" data-reveal	>
 			<div class="row collapse">
 				<div class="large-12 columns">
@@ -895,7 +921,7 @@
         });
 
         $(document).ready(function($) {
-    		$('#Greetings').foundation('open');
+    		$('#cardLabels').foundation('open');
     	});
     </script>
 
