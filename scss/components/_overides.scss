@@ -6,9 +6,8 @@ $light-green:      rgba(128,169,0,50);
 //end Settings
 
 
-.normal {
-	font-weight: normal !important;
-}
+.normal { font-weight: normal !important; }
+// .bold { font-weight: bold !important;}
 
 section {
 	&.provider {
@@ -80,3 +79,56 @@ button {
 		}
 	}
 }
+
+
+.chat-area {
+	max-width: 22rem;
+	width: 100%;
+	position: fixed;
+	z-index: 999;
+	bottom: 0;
+	right: 0;
+	margin-right: 3.125rem;
+	margin-bottom: 3.125rem;
+}
+
+.popup {
+	display: none;
+}
+
+div {
+	> * {
+
+		&.chat-area {
+			header {
+			}
+		}
+
+		.chat-message {
+			border: 1px solid #fff;
+			border-radius: 0.5rem;
+			section {
+				border-bottom: 1px solid rgba($light-gray, $B-dividers);	
+			}
+		}
+
+		.chat, .chat-message {
+			box-shadow: 0 2px 5px 0 rgba(0,0,0,0.21);
+		}
+
+		.chat-support {
+			background-color: $success-color;
+			width: 3.125rem;
+			height: 3.125rem;
+			-moz-border-radius: 3.125rem;
+			-webkit-border-radius: 3.125rem;
+			border-radius: 3.125rem;
+
+			font-size: 1.7rem;
+			text-align: center;
+			box-shadow: 0 2px 5px 0 rgba(0,0,0,0.21);
+			color: #fff;
+		}
+	}
+}  
+
