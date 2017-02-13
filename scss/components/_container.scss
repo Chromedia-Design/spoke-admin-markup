@@ -211,19 +211,40 @@
 	border: 1px solid rgba($black, $B-dividers);
 	border-radius: 2px;
 	overflow: hidden;
+	table {
+		margin-bottom: 0;
+	}
 }
 
 .block-container, .block-container-fade {
 	padding: 1.9rem 1.3rem;
 }
 
-.block-container-fade {background-color: $primary-light;}
-.block-container {background-color: $white;}
+.block-container-fade { 
+	background-color: $primary-light;
+}
+
+.block-container { 
+	background-color: $white;
+}
+
 .block-heading {
 	color: $white;
-	background-color: $dark-gray;
-	padding: 1rem 1.3rem 0.7rem;
-	>label {
+	background-color: $primary-color;
+	padding: 1rem;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	.h1,
+	.h2,
+	.h3,
+	.h4,
+	.h5,
+	.h6 {
+		font-family: $body-font-family;
+		line-height: 2.2rem;
+		margin-right: 1rem;
+	}
+	> label {
 		color: rgba($white, $W-text) !important;
 	}
 	input {

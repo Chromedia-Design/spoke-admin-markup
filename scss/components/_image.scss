@@ -22,7 +22,7 @@
 
 .gallery-item {
 	position: relative;
-	margin-bottom: 2rem;
+	margin-top: 1rem;
 	background-color: $black;
 	.image {
 		width: 100%;
@@ -55,16 +55,19 @@
 
 .thumbnail {
 	position: relative;
-	width: 16.875rem;
-	height: 12.6875rem;
 	overflow: hidden;
 	display: flex;
 	align-items: center;
 	padding: 1rem;
 	background-color: $white;
 	border-radius: 2px;
+	border: 1px solid rgba($black, $B-dividers);
+	box-shadow: none;
 	&.variable {
 		height: auto;
+	}
+	&:hover {
+		box-shadow: none;
 	}
 }
 

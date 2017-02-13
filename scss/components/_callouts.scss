@@ -1,6 +1,7 @@
 .callout {
 	padding: 1.5rem 1rem;
 	border-radius: 2px;
+	position: relative;
 	&.hi-padded {
 		padding: 2rem;
 	}
@@ -17,10 +18,33 @@
 		margin-top: 0;
 		padding-top: 0;
 	}
+	table {
+		margin-bottom: 0;
+	}
+	> .media-object {
+		margin-bottom: 0;
+	}
+	.close {
+		&.media {
+			position: absolute;
+			right: 1.5rem;
+			top: 1.5rem;
+		}
+	}
 }
 
 .callout-heading {
 	margin-bottom: 1rem;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: $body-font-family;
+		line-height: 2rem;
+		margin-right: 1rem;
+	}
 	.h1,
 	.h2,
 	.h3,

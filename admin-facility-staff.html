@@ -83,69 +83,33 @@
 
 				<div class="row">
 					<div class="medium-12 columns">
-						<div class="page-lead">
-							<nav aria-label="You are here:" role="navigation">
-							  	<ul class="breadcrumbs">
-							    	<li><a href="#">Facilities</a></li>
-							    	<li>Florida Hospital-Orlando</li>
-							  	</ul>
-							</nav>
-						</div>
+						<nav aria-label="You are here:" role="navigation">
+						  	<ul class="breadcrumbs">
+						    	<li><a href="#">Facilities</a></li>
+						    	<li><a href="#">Florida Hospital-Orlando</a></li>
+						    	<li>Edit Profile</li>
+						  	</ul>
+						</nav>
 					</div>
 				</div>
-				
 
-				<!-- FACILITY HEADER -->
-				<div class="block">
-					<div class="block-container">
-						<div class="row">
-							<div class="medium-3 columns">
-								<div class="thumbnail">
-									<img src="img/facility_logo.png" title="Florida Hospital">
-								</div>
-							</div>
-							<div class="medium-9 columns">
-								<form>
-									<div class="row">
-										<div class="medium-6 columns end">
-											<div class="input-group">
-												<input class="input-group-field" type="file">
-												<div class="input-group-button">
-											    	<input type="submit" class="button secondary" value="Upload">
-											  	</div>
-											</div>
-										</div>
-									</div>
-								</form>
-								<form>
-									<div class="row">
-						  				<div class="medium-12 columns">
-						  					<label>Facility Name
-						  						<input type="text" name="" value="Florida Hospital - Orlando">
-						  					</label>
-						  				</div>
-						  			</div>
-						  			<div class="row">
-						  				<div class="medium-12 columns">
-						  					<div class="pull-right">
-						  						<a href="#" class="button primary">Save Changes</a>
-						  					</div>
-						  				</div>
-						  			</div>
-								</form>
-							</div>
+				<div class="row">
+					<div class="large-12 columns">
+						<div class="page-lead">
+							<span class="h5">Edit Facility</span>
+							<a href="admin-facility-view.html" class="button info pull-right"><i class="fa fa-angle-left fa-fw"></i>&nbsp;Back To Facility Profile</a>
 						</div>
 					</div>
-				</div>
+				</div>	
 				
 
 				<div class="row">
 					<div class="medium-12 columns">
 						<ul class="tabs" id="spoke-tabs"> <!--use data-tabs to use foundation tabs -->
-							<li class="tabs-title"><a href="facility-profile.html">Clinic Profile</a></li>
-							<li class="tabs-title"><a href="facility-treatment.html">Treatment</a></li>
-							<li class="tabs-title"><a href="facility-media.html">Media</a></li>
-							<li class="tabs-title is-active"><a href="facility-staff.html" aria-selected="true">Staff</a></li>
+							<li class="tabs-title"><a href="admin-facility-profile.html">Facility Profile</a></li>
+							<li class="tabs-title"><a href="admin-facility-treatment.html">Packages</a></li>
+							<li class="tabs-title"><a href="admin-facility-media.html">Media</a></li>
+							<li class="tabs-title is-active"><a href="admin-facility-staff.html">Staff</a></li>
 						</ul>
 					</div>
 				</div>
@@ -159,279 +123,115 @@
 						<div class="tabs-content" data-tabs-content="spoke-tabs">
 							<div class="tabs-panel is-active" id="Staff">
 
-							  	<!-- Search and Filter -->
-							    <div class="panel mb-2">
-							    	<div class="panel-heading">
-							    		<div class="row">
-								    		<div class="columns medium-4">
-								    			<div class="input-group">
-									    			<input type="text" class="input-group-field" placeholder="search">
-									    			<div class="input-group-button">
-									    				<a href="#" class="button"><i class="fa fa-search"></i></a>
-									    			</div>
-									    		</div>
-								    		</div>
-								    		<div class="columns medium-4"></div>
-								    		<div class="columns medium-4">
-								    			<div class="input-group">
-								    				<select name="" id="">
-								    					<option value="">Sort By</option>
-								    					<option value="">Alphabetic Order</option>
-								    					<option value="">Other option 1</option>
-								    					<option value="">Other option 2</option>
-								    					<option value="">Other option 3</option>
+								
+								<div class="block">
+									<div class="block-heading">
+										<span class="h5">Administrative Staff</span>
+										<a href="#" data-open="addStaff" class="button white hollow small pull-right">Add New Staff +</a>
 
-								    				</select>
-								    			</div>
-								    		</div>
-								    	</div>
-							    		
-							    	</div>
-							    </div>
-
-								<!-- // Search and Filter -->
-							    <div class="mb-4">
-						    		<div class="mb-2">
-						    			<span class="h5">Administrative Staff</span>
-						    			<a href="#" class="button pull-right" data-toggle="newAdmin">Add New <i class="fa fa-caret-down fa-fw"></i></a>
-						    		</div>
-						    		
-						    		<!-- Add New Admin Form -->
-						    		<div class="block mb-2 hidden" id="newAdmin" data-toggler data-animate="fade-in fade-out">
-						    			<div class="block-heading">
-											<span class="h5">Add New Administrator</span>
-										</div>
-										<div class="block-container">
-											<div class="row mb-2">
-												<div class="medium-2 columns">
-													<!-- <h3>Picture</h3> -->
-													<label class="image-upload">
-														<input type="file">
-														<img src="img/image_upload.png">
-													</label>
-												</div>
-												<div class="medium-10 columns">
-													<div class="row">
-														<div class="medium-6 columns">
-													      <label>First Name
-													        <input type="text" placeholder="First Name">
-													      </label>
-													    </div>
-													    <div class="medium-6 columns">
-													      <label>Last Name
-													        <input type="text" placeholder="last Name">
-													      </label>
-													    </div>
-													</div>
-													<div class="row">
-														<div class="medium-6 columns">
-													      <label>Position
-													        <input type="text" placeholder="Position">
-													      </label>
-													    </div>
-													</div>
-													<div class="row">
-														<div class="medium-6 columns">
-													      <label>Email Address
-													        <input type="text" placeholder="Email Address">
-													      </label>
-													    </div>
-													    <div class="medium-6 columns">
-													      <label>Contact Number
-													        <input type="text" placeholder="Contact Number">
-													      </label>
-													    </div>
-													</div>
+										<div class="reveal" id="addStaff" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+											<div class="row collapse">
+												<div class="large-12 columns">
+													<h5 class="reveal-heading">Add Staff</h5>
 												</div>
 											</div>
-											<div class="row">
-												<div class="medium-12 columns">
-													<div class="pull-right">
-														<a href="#" class="button link" data-toggle="newAdmin">Cancel</a>
-														<a href="#" class="button" data-toggle="newAdmin">Add Staff</a>
-													</div>
-												</div>
-											</div>
-										</div>
-						    		</div>
-						    		<!-- // Add New Admin Form -->
-									
-									<!-- Admin Items -->
-						    		<div class="row"> 
-						    			
-						    			<div class="columns medium-6 end">
-							    			<div class="card card-person">
-							    				<div class="row v-align-center">
-							    					<div class="columns medium-3 text-center">
-							    						<div class="img-wrapper">
-							    							<img src="http://placehold.it/80x80">
-							    						</div>
-						    						</div>
-							    					<div class="columns medium-6">
-														<div class="person-info">
-															<p class="info-name">David Warkentin</p>
-								    						<p class="info-position">Senior Administrator</p>
-								    						<p class="info-email"><i class="fa fa-envelope"></i>david_warkentin@hilll.com</p>
-								    						<p class="info-phone"><i class="fa fa-phone"></i>058-818-3600</p>	
+											<form>
+												<div class="row collapse">
+													<div class="large-12 columns">
+														<div class="reveal-body">
+															<div class="row">
+												  				<div class="medium-6 columns">
+																	<label>
+																		First Name
+																		<input type="text">
+																	</label>											
+																</div>
+																<div class="medium-6 columns">
+																	<label>
+																		Last Name
+																		<input type="text">
+																	</label>											
+																</div>
+												  			</div>
+												  			<div class="row">
+												  				<div class="medium-12 columns">
+																	<label>
+																		Position
+																		<input type="text">
+																	</label>											
+																</div>
+												  			</div>
+												  			<div class="row">
+												  				<div class="medium-6 columns">
+																	<label>
+																		Email Address
+																		<input type="text">
+																	</label>											
+																</div>
+																<div class="medium-6 columns">
+																	<label>
+																		Contact Number
+																		<input type="text">
+																	</label>											
+																</div>
+												  			</div>
 														</div>
-						    						</div>
-							    					<div class="columns medium-3">
-								    					<div class="person-action text-center">
-								    						<a href="#" class="button link small"><i class="fa fa-trash"></i></a>
-								    						<a href="#" class="button link small"><i class="fa fa-pencil"></i></a>
-								    					</div>
-						    						</div>
-							    				</div>
-							    			</div>
-										</div>
-
-										<div class="columns medium-6 end">
-							    			<div class="card card-person">
-							    				<div class="row v-align-center">
-							    					<div class="columns medium-3 text-center">
-							    						<div class="img-wrapper">
-							    							<img src="http://placehold.it/80x80">
-							    						</div>
-						    						</div>
-							    					<div class="columns medium-6">
-														<div class="person-info">
-															<p class="info-name">David Warkentin</p>
-								    						<p class="info-position">Senior Administrator</p>
-								    						<p class="info-email"><i class="fa fa-envelope"></i>david_warkentin@hilll.com</p>
-								    						<p class="info-phone"><i class="fa fa-phone"></i>058-818-3600</p>	
-														</div>
-						    						</div>
-							    					<div class="columns medium-3">
-								    					<div class="person-action text-center">
-								    						<a href="#" class="button link small"><i class="fa fa-trash"></i></a>
-								    						<a href="#" class="button link small"><i class="fa fa-pencil"></i></a>
-								    					</div>
-						    						</div>
-							    				</div>
-							    			</div>
-										</div>
-
-										<div class="columns medium-6 end">
-							    			<div class="card card-person">
-							    				<div class="row v-align-center">
-							    					<div class="columns medium-3 text-center">
-							    						<div class="img-wrapper">
-							    							<img src="http://placehold.it/80x80">
-							    						</div>
-						    						</div>
-							    					<div class="columns medium-6">
-														<div class="person-info">
-															<p class="info-name">David Warkentin</p>
-								    						<p class="info-position">Senior Administrator</p>
-								    						<p class="info-email"><i class="fa fa-envelope"></i>david_warkentin@hilll.com</p>
-								    						<p class="info-phone"><i class="fa fa-phone"></i>058-818-3600</p>	
-														</div>
-						    						</div>
-							    					<div class="columns medium-3">
-								    					<div class="person-action text-center">
-								    						<a href="#" class="button link small"><i class="fa fa-trash"></i></a>
-								    						<a href="#" class="button link small"><i class="fa fa-pencil"></i></a>
-								    					</div>
-						    						</div>
-							    				</div>
-							    			</div>
-										</div>
-					    			</div>
-									<!-- // Admin Items -->
-							    </div>
-
-							    <div class="mb-4">
-							    	<div class="mb-2">
-						    			<span class="h5">Doctors</span>
-						    			<a href="#" class="button pull-right" data-toggle="newDoctor">Add New <i class="fa fa-caret-down fa-fw"></i></a>
-						    		</div>
-
-						    		<!-- Add New Doctor Form -->
-						    		<div class="block mb-2 hidden" id="newDoctor" data-toggler data-animate="fade-in fade-out">
-						    			<div class="block-heading">
-											<span class="h5">Add New Doctor</span>
-										</div>
-										<div class="block-container">
-											<div class="row mb-2 ">
-												<div class="medium-12 columns">
-													Search Doctor
-													<div class="input-group">
-										    			<input type="text" class="input-group-field" placeholder="Search Doctors">
-										    			<div class="input-group-button">
-										    				<a href="#" class="button">Search</a>
-										    			</div>
-										    		</div>
-												</div>
-											</div>
-											<div class="row"> 
-				    			
-				    							<a href="#" class="card-selected">
-									    			<div class="columns medium-6 end">
-										    			<div class="card card-person">
-										    				<div class="row v-align-center">
-										    					<div class="columns medium-3">
-										    						<div class="img-wrapper">
-										    							<img src="http://placehold.it/80x80">
-										    						</div>
-									    						</div>
-										    					<div class="columns medium-9">
-																	<div class="person-info">
-																		<p class="info-name">David Warkentin</p>
-											    						<p class="info-position">Senior Administrator</p>
-											    						<p class="info-email"><i class="fa fa-envelope"></i>david_warkentin@hilll.com</p>
-						    											<p class="info-phone"><i class="fa fa-phone"></i>058-818-3600</p>
-																	</div>
-									    						</div>
-										    				</div>
-										    			</div>
-													</div>
-												</a>
-
-								    		</div>
-											
-											<div class="row">
-												<div class="medium-12 columns">
-													<div class="pull-right">
-														<a href="#" class="button link" data-toggle="newDoctor">Cancel</a>
-														<a href="#" class="button" data-toggle="newDoctor">Add Doctor</a>
 													</div>
 												</div>
-											</div>
-										</div>
-						    		</div>
-						    		<!-- // Add New Doctor Form -->
-						    		
-									<!-- Doctors Item -->
-						    		<div class="row"> 
-						    			<div class="columns medium-6 end">
-							    			<div class="card card-person">
-							    				<div class="row v-align-center">
-							    					<div class="columns medium-3">
-						    						<div class="img-wrapper">
-						    							<img src="http://placehold.it/80x80">
-						    						</div>
-					    						</div>
-						    					<div class="columns medium-6">
-													<div class="person-info">
-														<p class="info-name">David Warkentin</p>
-							    						<p class="info-position">Senior Administrator</p>
-							    						<p class="info-email"><i class="fa fa-envelope"></i>david_warkentin@hilll.com</p>
-							    						<p class="info-phone"><i class="fa fa-phone"></i>058-818-3600</p>	
+												<div class="row collapse">
+													<div class="large-12 columns">
+														<div class="reveal-footer">
+															<div class="button-group pull-right">
+																<a class="button link" data-close>Cancel</a>
+																<a href="#" class="button success">Add Staff</a>
+															</div>
+														</div>
 													</div>
-					    						</div>
-						    					<div class="columns medium-3">
-							    					<div class="person-action text-center">
-							    						<a href="#" class="button link small"><i class="fa fa-trash"></i></a>
-							    						<a href="#" class="button link small"><i class="fa fa-pencil"></i></a>
-							    					</div>
-					    						</div>
-						    				</div>
-						    			</div>
+												</div>
+											</form>
+										  	<button class="close-button" data-close aria-label="Close modal" type="button">
+										    	<span aria-hidden="true">&times;</span>
+										  	</button>
+										</div>
+
 									</div>
-					    		</div>
-						    		<!-- // Doctors Item -->
-							    </div>
-							  </div>
+									<div class="block-container">
+										<!-- Admin Items -->
+							    		<div class="row"> 
+							    			
+							    			<div class="columns medium-6 end">
+								    			<div class="card card-person">
+								    				<div class="row v-align-center">
+								    					<div class="columns medium-3 text-center">
+								    						<div class="img-wrapper">
+								    							<img src="img/avatar_placeholder.png">
+								    						</div>
+							    						</div>
+								    					<div class="columns medium-6">
+															<div class="person-info">
+																<p class="info-name">David Warkentin</p>
+									    						<p class="info-position">Senior Administrator</p>
+									    						<p class="info-email"><i class="fa fa-envelope"></i>david_warkentin@hilll.com</p>
+									    						<p class="info-phone"><i class="fa fa-phone"></i>058-818-3600</p>	
+															</div>
+							    						</div>
+								    					<div class="columns medium-3">
+									    					<div class="person-action text-center">
+									    						<a href="#" class="button link small"><i class="fa fa-trash"></i></a>
+									    						<a href="#" class="button link small"><i class="fa fa-pencil"></i></a>
+									    					</div>
+							    						</div>
+								    				</div>
+								    			</div>
+											</div>
+
+						    			</div>
+										<!-- // Admin Items -->
+									</div>
+								</div>
+
+
+
 							</div>
 						</div>
 						<!-- // tab content -->
