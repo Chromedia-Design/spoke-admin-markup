@@ -88,7 +88,7 @@ button {
 	max-width: 22rem;
 	position: fixed;
 	z-index: 999;
-	top: auto;
+	top: auto !important;
 	bottom: 8rem;
 	right: 2rem;
 	display: inline-block;
