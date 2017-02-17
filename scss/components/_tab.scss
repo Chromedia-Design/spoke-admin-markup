@@ -227,3 +227,9 @@
 div.overview {
 	margin-bottom: 1.5rem;
 }
+
+.tab-wrapper {
+	&:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+}
