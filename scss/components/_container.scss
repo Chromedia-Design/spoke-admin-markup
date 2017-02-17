@@ -297,6 +297,7 @@
 		margin-right: 1rem;
 		color: rgba($black, $B-text);
 		width: 66%;
+		vertical-align: top;
 		&.primary-color {
 			color: darken($primary-color, 5%);
 		}
@@ -314,7 +315,7 @@
 	.text-wrapper {
 		vertical-align: top;
 		display: inline-block;
-		margin-top: 2rem;
+		margin-top: 2.5rem;
 		margin-bottom: 0.5rem;
 		margin-right: 1rem;
 		color: rgba($black, $B-text);
@@ -325,6 +326,7 @@
 		.h4,
 		.h5,
 		.h6 {
+			margin-top: 0;
 			margin-right: 0;
 		}
 	}

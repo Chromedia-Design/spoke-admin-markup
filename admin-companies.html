@@ -83,79 +83,117 @@
 				<div class="row">
 					<div class="medium-12 columns">
 
-						<div class="menu-options mt-2">
-			                <div class="row collapse">
-			                    <div class="large-4 columns end">
-			                        <div class="input-group">
-			                            <input class="input-group-field" type="text" placeholder="Search companies..."></input>
-			                            <div class="input-group-button">
-			                                <input type="submit" class="button secondary" value="Search">
-			                            </div>
-			                        </div>
-			                    </div>
-			                    <!-- <div class="large-8 columns">
-			                        <div class="row collapse">
-			                            <div class="large-5 large-offset-2 columns">
-			                                <div class="row">
-			                                    <div class="large-4 columns">
-			                                        <label for="" class="small-label text-right middle">Specialization</label>
-			                                    </div>
-			                                    <div class="large-8 columns">
-			                                        <select class="small-input">
-			                                            <option>All Specializations</option>
-			                                        </select>
-			                                    </div>  
-			                                </div> 
-			                            </div>
-			                            <div class="large-5 columns end">
-			                                <div class="row">
-			                                    <div class="large-4 columns">
-			                                        <label for="" class="small-label text-right middle">Sub-Spec</label>
-			                                    </div>
-			                                    <div class="large-8 columns">
-			                                        <select class="small-input">
-			                                            <option>All Subspecializations</option>
-			                                        </select>
-			                                    </div>
-			                                </div>    
-			                            </div>
-			                        </div>
-			                    </div> -->
-			                </div>
-			            </div>
+						<div class="page-lead">
+			                <span class="h5">Companies (1)</span>
+			                <a class="button success pull-right" data-open="exampleModal1">Add New Company +</a>
 
-			            <div class="page-lead">
-			                <span class="h5">Companies <span>(3)</span></span>
-			                <a class="button success pull-right" href="add-company.html">Add New Company +</a>
-			            </div>
-
-			            <div class="search-result">
-			            	<div class="row-item-container">
-								<div class="row" data-equalizer>
-									<div class="columns medium-1">
-										<div class="logo" data-equalizer-watch>
-											<img src="http://placehold.it/100x100">
-										</div>
-									</div>
-									<div class="columns medium-4">
-										<div class="facility" data-equalizer-watch>
-											<h6 class="name"><a href="#">Excel Energy</a></h6>
-										</div>
-									</div>
-									<div class="columns medium-4">
-										<div class="admin" data-equalizer-watch>
-											<p class="contact">Flat: 50%</p>
-										</div>
-									</div>
-									<div class="columns medium-3 text-center">
-										<div class="admin" data-equalizer-watch>
-											<a href="" class="button link"><i class="fa fa-edit fa-fw"></i></a>
-											<a href="" class="button link"><i class="fa fa-trash fa-fw"></i></a>
-										</div>
+			                <div class="reveal" id="exampleModal1" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+								<div class="row collapse">
+									<div class="large-12 columns">
+										<h5 class="reveal-heading">Add New Company</h5>
 									</div>
 								</div>
+								<form>
+									<div class="row collapse">
+										<div class="large-12 columns">
+											<div class="reveal-body">
+												<div class="row">
+													<div class="large-12 columns end">
+														<div class="media-object">
+														  	<div class="media-object-section logo middle">
+														    	<div class="img-wrapper circle">
+														      		<img src= "img/avatar_placeholder.png">
+														    	</div>
+														  	</div>
+														  	<div class="media-object-section middle">
+														   		<label>
+														   			<small class="subheader">JPG, GIF or PNG. Image must be at least 69x69 in size.</small>
+														   			<input type="file" name="">
+														   		</label>
+														  	</div>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="large-12 columns">
+														<label>
+															Company Name
+															<input type="text">
+														</label>
+													</div>
+												</div>
+												<div class="row">
+													<div class="large-6 columns end">
+														<label>
+															Percentage of Savings (Reward)
+															<input type="text">
+														</label>
+													</div>
+												</div>	
+											</div>
+										</div>
+									</div>
+									<div class="row collapse">
+										<div class="large-12 columns">
+											<div class="reveal-footer">
+												<div class="button-group pull-right">
+													<a class="button link" data-close>Cancel</a>
+													<a href="#" class="button success">Add Company</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+							  	<button class="close-button" data-close aria-label="Close modal" type="button">
+							    	<span aria-hidden="true">&times;</span>
+							  	</button>
 							</div>
+
 			            </div>
+
+			             <div id="filters" class="submenu menu-options mb-1" data-toggler data-animate="fade-in fade-out">
+			            	<div class="row collapse">
+			            		<div class="large-4 columns end">
+			            			<div class="input-group">
+			            				<input type="text" class="input-group-field" value="" placeholder="Search keyword...">
+			            				<div class="input-group-button">
+			            					<input type="submit" class="button info" value="Search">
+		            					</div>
+	            					</div>
+			            		</div>
+			            	</div>
+			            </div>	
+
+						<table class="base-spacing">
+			                <thead>
+			                <tr>
+			                    <th>Company Name</th>
+			                    <th>Percentage of Savings</th>
+			                    <th></th>
+			                </tr>
+			                </thead>
+			                <tbody>
+			                    <tr>
+			                        <td>
+			                        	<div class="media-object">
+										  	<div class="media-object-section logo middle">
+										    	<div class="img-wrapper circle">
+										      		<img src= "img/logo-harley-davidson.png">
+										    	</div>
+										  	</div>
+										  	<div class="media-object-section middle">
+										   		<p><a href="admin-company-view.html">Harley Davidson</a></p>
+										  	</div>
+										</div>
+			                        </td>
+			                        <td><span>50%</span></td>
+			                        <td class="text-right">
+			                            <a  class="action-link subheader" href="admin-company-view.html"><i class="fa fa-eye fa-fw"></i></a>
+			                            <a data-open="exampleModal1" href="#" class="action-link subheader"><i class="fa fa-edit fa-fw"></i></a>
+			                        </td>
+			                    </tr>
+			                </tbody>
+			            </table>
 
 					</div>
 				</div>
