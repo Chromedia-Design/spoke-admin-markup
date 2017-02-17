@@ -28,6 +28,7 @@
 .pb-0 { padding-bottom: 0rem !important; }
 .pb-1 { padding-bottom: 1rem; }
 .pb-0-5 { padding-bottom: 0.5rem; }
+.pr-0-5 { padding-right: 0.5rem; }
 
 .pt-1 { padding-top: 1rem; }
 .pt-0-5 { padding-top: 0.5rem; }
@@ -43,6 +44,8 @@
 	border: solid 0.1rem $primary-light;
 	border-top: 0rem;
 }
+
+.b-top-1 { border-top: solid 0.1rem $primary-light; }
 
 .b-all-1 { border: solid 0.1rem $primary-light; }
 
