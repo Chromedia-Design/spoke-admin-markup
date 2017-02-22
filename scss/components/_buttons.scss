@@ -2,9 +2,7 @@
 	font-family: $body-font-family;
 	border-radius: 2px;
 	font-weight: $global-weight-bold;
-	// letter-spacing: 0.0425rem;
 	text-transform: uppercase;
-	// line-height: 1.2;
 	&.hollow {
 		border-width: 2px;
 		background: transparent;
@@ -67,6 +65,15 @@
 			&:hover {
 				background-color: $white;
 				color: rgba($black, $B-text);
+			}
+		}
+		&.link {
+			background: transparent;
+			color: $white;
+			border: 2px solid transparent;
+			transition: all ease-in 0.2s;
+			&:hover {
+				border: 2px solid $white;
 			}
 		}
 	}
