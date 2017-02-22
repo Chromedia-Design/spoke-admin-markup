@@ -79,7 +79,7 @@ $W-subtext:         0.70 !default;
 $W-text:            1.00 !default;
 
 // * Text Colors I only change the opacity of text and stay in this defaults all the time.
-$text-white:        rgba($white, $W-text) !default;
+$text-white:        #FFFFFF;
 $text-black:        rgba($black, $B-text) !default;
 
 // * Element Opacity refers to the opacity of Black or White elements in the project

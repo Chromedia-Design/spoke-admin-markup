@@ -17,6 +17,48 @@ section {
 		background: transparent;
 		border-bottom: none;
 	}
+	.call-to-action {
+		padding: 2rem 0 0;
+		h1 {
+			margin-bottom: 1rem;
+			@media only screen and (min-width: 40em) {
+				font-size: 3.3125rem;
+				line-height: 1.2em;
+			}
+		}
+		p {
+			margin-bottom: 1rem;
+			@media only screen and (min-width: 40em) {
+				font-size: 1.125rem;
+				line-height: 1.2em;
+			}
+			&.h3 {
+				@media only screen and (min-width: 40em) {
+					font-size: 2rem;
+					line-height: 1.2em;
+				}
+			}
+		}
+		.brick {
+			text-transform: none;
+			border-color: rgba($black, $B-dividers);
+			min-width: 10rem;
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				margin: 0;
+			}
+			p {
+				margin: 0;
+				font-size: 0.75rem;
+				font-weight: normal;
+			}
+		}
+
+	}
 	&.section {
 		padding: 3.75rem 0;
 		.section-heading {
@@ -72,48 +114,6 @@ section {
 			background: transparent;
 			border: none;
 		}
-		.call-to-action {
-			padding: 2rem 0 0;
-			h1 {
-				margin-bottom: 1rem;
-				@media only screen and (min-width: 40em) {
-					font-size: 3.3125rem;
-					line-height: 1.5em;
-				}
-			}
-			p {
-				margin-bottom: 1rem;
-				@media only screen and (min-width: 40em) {
-					font-size: 1.125rem;
-					line-height: 1.5em;
-				}
-				&.h3 {
-					@media only screen and (min-width: 40em) {
-						font-size: 2rem;
-						line-height: 1.5em;
-					}
-				}
-			}
-			.brick {
-				text-transform: none;
-				border-color: rgba($black, $B-dividers);
-				min-width: 10rem;
-				h1,
-				h2,
-				h3,
-				h4,
-				h5,
-				h6 {
-					margin: 0;
-				}
-				p {
-					margin: 0;
-					font-size: 0.75rem;
-					font-weight: normal;
-				}
-			}
-
-		}
 		.home-scene {
 			position: relative;
 			height: 11rem;
@@ -150,6 +150,11 @@ section {
 			}
 		}
 	}
+	&.provider {
+		position: relative;
+		background: transparent url('https://s3.amazonaws.com/assets.spoke.com/images/med-provider-bg.png') center center no-repeat;
+		background-size: cover;
+	}
 	&.jumbotron {
 		background-color: $white;
 		border-bottom: 1px solid rgba($black, $B-dividers);
@@ -163,7 +168,7 @@ section {
 				margin-bottom: 1rem;
 				@media only screen and (min-width: 40em) {
 					font-size: 2.3125rem;
-					line-height: 1.5em;
+					line-height: 1.2em;
 				}
 			}
 			h5 {
@@ -201,11 +206,20 @@ section {
 			.story-card {
 				position: absolute;
 				padding: 1rem;
+				max-width: 16rem;
 				bottom: 0;
 				right: 0;
 				background-color: rgba($white, $W-subtext);
 				border-top-left-radius: 2px;
 				border-top-right-radius: 2px;
+				h1,
+				h2,
+				h3,
+				h4,
+				h5,
+				h6,
+				p,
+				blockquote,
 				.button {
 					margin-bottom: 0;
 				}

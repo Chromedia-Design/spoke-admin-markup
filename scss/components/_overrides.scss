@@ -1,0 +1,47 @@
+.chat-support, .chat-area {
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.21);
+}
+
+.chat-area {
+	max-width: 22rem;
+	position: fixed;
+	z-index: 999;
+	top: auto !important;
+	bottom: 8rem;
+	right: 2rem;
+	display: inline-block;
+}
+
+.chat-support {
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	background-color: $success-color;
+	display: inline-block;
+	width: 3.125rem;
+	height: 3.125rem;
+	-moz-border-radius: 3.125rem;
+	-webkit-border-radius: 3.125rem;
+	border-radius: 3.125rem;
+	text-align: center;
+	vertical-align: middle;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.21);
+	color: #fff;
+	i.fa {
+		font-size: 1.7rem;
+		line-height: 1.8em;
+		vertical-align: middle;
+	}
+}
+
+.message-status {
+	> ul {
+		margin: 0;
+		padding: 0px 5px;
+
+		> li {
+			padding: 0;
+			padding-right: 20px;
+		}
+	}
+}
