@@ -37,6 +37,7 @@ h5,
 h6 {
 	letter-spacing: -0.1px;
 	margin-bottom: 1rem;
+	line-height: 1.2em;
 	&.subheader {
 		font-weight: $global-weight-bold;
 	}
@@ -137,6 +138,9 @@ p {
 	margin-top: 0;
 	color: rgba($black, $B-subtext);
 	font-weight: inherit;
+	&.white {
+		color: rgba($white, $W-text);
+	}
 }
 
 .drop-cap {
@@ -146,7 +150,7 @@ p {
 }
 
 .trademark {
-	font-weight: normal;
 	font-size: 0.6125em;
+	line-height: 1.5em;
 	vertical-align: top;
 }
