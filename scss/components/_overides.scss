@@ -129,7 +129,6 @@ button {
 }
 
 
-
 // COMMUNICATION //
 
 .noti {
@@ -137,19 +136,21 @@ button {
 }
 
 .inbound, .outbound {
+	display: none;
+	> * {
+		img {
+			max-width: 2.62rem;
+			width: 100%;
+		}
 
-	img {
-		max-width: 2.62rem;
-		width: 100%;
-	}
+		small {
+			font-size: 0.7rem;
+		}
 
-	small {
-		font-size: 0.7rem;
-	}
-
-	.panel {
-		border-radius: 3px !important;
-		border-color: transparent;
+		.panel {
+			border-radius: 3px !important;
+			border-color: transparent;
+		}
 	}
 }
 
