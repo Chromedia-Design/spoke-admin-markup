@@ -74,8 +74,8 @@
 				<div class="row">
 					<div class="large-12 columns">
 						<ul class="tabs" data-tabs id="example-tabs">
-							<li class="tabs-title is-active"><a href="#panel1">Overview</a></li>
-							<li class="tabs-title alert"><a href="#panel2">Communications</a></li>
+							<li class="tabs-title"><a href="#panel1">Overview</a></li>
+							<li class="tabs-title alert is-active"><a href="#panel2">Communications</a></li>
 							<li class="tabs-title"><a href="#panel3">Episodes</a></li>
 						</ul>
 					</div>
@@ -83,7 +83,7 @@
 
 				<div class="tabs-content" data-tabs-content="example-tabs">
 
-					<div class="tabs-panel is-active" id="panel1">
+					<div class="tabs-panel" id="panel1">
 						
 						<div class="row">
 							<div class="large-12 columns">
@@ -298,12 +298,24 @@
 
 					</div>
 
-					<div class="tabs-panel" id="panel2">
+					<div class="tabs-panel is-active" id="panel2">
+
+<!-- 						<div class="row">
+							<div class="medium-12 columns">
+
+								<nav aria-label="You are here:" role="navigation">
+								  	<ul class="breadcrumbs">
+								    	<li><a href="admin-patient-messages.html">Inbox</a></li>
+								    	<li>Spoke Health Invite</li>
+								  	</ul>
+								</nav>	
+							</div>
+						</div> -->
 
 						<div class="row">
 							<div class="large-12 columns">
 								<div class="page-lead">
-									<a href="#"><span class="h6">Inbox <small class="subheader">Unread Messages (2)</small></span></a>
+									<a href="admin-patient-messages.html"><span class="h6">Inbox <small class="subheader">Unread Messages (2)</small></span></a>
 									<a data-open="newmail" class="button success small pull-right"><i class="fa fa-plus pr-0-5" aria-hidden="true"></i>Compose New</a>
 								</div>
 
@@ -355,299 +367,72 @@
 								</div>
 
 
-								<div class="panel">
-									<ul class="well-list notifications">
-										<li>
-											<div class="list-wrap">
-												<div class="list-item-icon">
-													<p class="text-center success-color"><i class="fa fa-envelope fa-fw"></i></p>
-												</div>
-												<div class="list-note">
-													<span class="truncate success-color">From: Administrator</span>
-												</div>
-												<div class="list-item-name">
-													<a href="admin-patient-inmessages.html"><span class="h6">Spoke Health Invite</span></a>
-													<span class="truncate">Click here to find out how Spoke can help you save money on a surgical procedure.</span>
-												</div>
-												<!-- <div class="list-note">
-													<span class="subheader truncate">Date Sent:&nbsp;<i><b>Jan-27 8:00 AM</b></i></span>
-													<span class="subheader truncate">Date Clicked:&nbsp;<i><b>Jan-28 12:45 PM</b></i></span>
-												</div> -->
-												<div class="pull-right">
-													<ul class="dropdown menu" data-dropdown-menu>
-													  	<li>
-													    	<a href="#" class="action-link info"><i class="fa fa-ellipsis-v fa-fw"></i></a>
-													    	<ul class="menu">
-													      		<li><a href="#"><i class="fa fa-reply fa-fw"></i>&nbsp; Reply</a></li>
-													    	</ul>
-													  	</li>
-													</ul>
+								<div class="panel d-bg">
+									<div class="row">
+										<div class="large-12 medium-12 columns noti">
+											<div class="pt-1 pb-1">
+												<span class="h5 primary-color">Spoke Health Invite</span>
+											</div>
+										</div>
+
+										<div class="large-12 medium-12 columns b-top-1-darker v-scroll">
+											<div class="pt-1 pb-1 inbound">
+												<img src="img/spoke-graphic-logo.png">
+												<span class="pl-1 h6">Spoke Health Admin</span> <span class="subheader">to me</span>
+												<div class="row">
+													<div class="large-10 large-offset-1 medium-10 medium-offset-1 columns">
+														<small class="subheader pull-right pad1 mb-0">
+															Feb 4, 2017 3:56 PM
+														</small>
+														<div class="panel pad2 subheader">
+															<p>
+																Hi, Debbie Malone!<br /><br />
+																Aenean ultrices sodales velit, a iaculis magna. Aenean quis egestas nunc. Suspendisse aliquam viverra fringilla. Aliquam finibus lorem at maximus ultricies. Nullam ultrices diam ultrices hendrerit mattis. Nulla sodales felis quis sapien ornare, eget tempus orci lacinia. Sed sit amet diam quis magna volutpat faucibus.<br /><br />
+
+																Nullam dolor leo, commodo eget facilisis non, molestie id nisi. Maecenas hendrerit malesuada lectus, ac rutrum massa scelerisque at. Nam id lacus viverra, faucibus felis eget, mollis odio. Nunc sit amet egestas dolor.
+															</p>
+														</div>
+													</div>
 												</div>
 											</div>
-											<div class="b-top-1">
-												<div class="stacked-list message-status">
-													<ul class="v-align-center">
-														<li>
-															<label>
-																<small>
-																	<strong>Sent: </strong>
-																	<span>Feb 15, </span>12:45pm
-																</small>
-															</label>
-														</li>
-														<li>
-															<label>
-																<small>
-																	<strong>Received: </strong>
-																	<span>Feb 15, </span>12:45pm
-																</small>
-															</label>
-														</li>
-														<li>
-															<label>
-																<small>
-																	<strong>Seen: </strong>
-																	<!-- <span>Feb 15, </span>12:45pm -->
-																</small>
-															</label>
-														</li>
-													</ul>
+											<div class="pt-1 pb-1 outbound">
+												<div class="text-right">
+												 <!-- <span class="subheader ">to me</span> -->
+												 <span class="pr-1 h6">Debbie Malone</span>
+												<img src="img/user-icon.png">
+												</div>
+
+												<div class="row">
+													<div class="large-10 large-offset-1 medium-10 medium-offset-1 columns">
+														<small class="subheader pull-right pad1 mb-0">
+															Feb 4, 2017 3:56 PM
+														</small>
+														<div class="panel pad2 subheader">
+															<p>
+																Hi, <br /><br />
+																Nullam rutrum, lacus vitae facilisis eleifend, ante purus dictum ante, id tristique mauris ipsum vitae erat. Cras rutrum massa sit amet velit tempus volutpat. Cras vel eros sit amet metus pharetra commodo?
+															</p>
+														</div>
+													</div>
 												</div>
 											</div>
-										</li>
-										<li>
-											<div class="list-wrap">
-												<div class="list-item-icon">
-													<p class="text-center success-color"><i class="fa fa-envelope fa-fw"></i></p>
-												</div>
-												<div class="list-note">
-													<span class="truncate success-color">From: Administrator</span>
-												</div>
-												<div class="list-item-name">
-													<a href="#"><span class="h6">Spoke Health Invite</span></a>
-													<span class="truncate">Click here to find out how Spoke can help you save money on a surgical procedure.</span>
-												</div>
-												<!-- <div class="list-note">
-													<span class="subheader truncate">Date Sent:&nbsp;<i><b>Jan-27 8:00 AM</b></i></span>
-													<span class="subheader truncate">Date Clicked:&nbsp;<i><b>Jan-28 12:45 PM</b></i></span>
-												</div> -->
-												<div class="pull-right">
-													<ul class="dropdown menu" data-dropdown-menu>
-													  	<li>
-													    	<a href="#" class="action-link info"><i class="fa fa-ellipsis-v fa-fw"></i></a>
-													    	<ul class="menu">
-													      		<li><a href="#"><i class="fa fa-reply fa-fw"></i>&nbsp; Reply</a></li>
-													    	</ul>
-													  	</li>
-													</ul>
+										</div>
+
+										<div class="large-12 medium-12 columns b-top-1-darker bg-white pb-1">
+											<div class="pt-1 reply">
+												<img src="img/user-icon.png">
+												<span class="pl-1">Debbie Malone</span>
+											</div>
+											<div class="row">
+												<div class="large-10 large-offset-1 medium-10 medium-offset-1 columns">
+													<textarea rows="4"></textarea>
+													<a href="" class="button pull-right">
+														Send
+													</a>
 												</div>
 											</div>
-											<div class="b-top-1">
-												<div class="stacked-list message-status">
-													<ul class="v-align-center">
-														<li>
-															<label>
-																<small>
-																	<strong>Sent: </strong>
-																	<span>Feb 15, </span>12:45pm
-																</small>
-															</label>
-														</li>
-														<li>
-															<label>
-																<small>
-																	<strong>Received: </strong>
-																	<span>Feb 15, </span>12:45pm
-																</small>
-															</label>
-														</li>
-														<li>
-															<label>
-																<small>
-																	<strong>Seen: </strong>
-																	<!-- <span>Feb 15, </span>12:45pm -->
-																</small>
-															</label>
-														</li>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="list-wrap">
-												<div class="list-item-icon">
-													<p class="text-center"><i class="fa fa-envelope-o fa-fw"></i></p>
-												</div>
-												<div class="list-note">
-													<span class="truncate">From: Administrator</span>
-												</div>
-												<div class="list-item-name">
-													<a href="#"><span class="h6">Spoke Health Invite</span></a>
-													<span class="truncate">Click here to find out how Spoke can help you save money on a surgical procedure.</span>
-												</div>
-												<!-- <div class="list-note">
-													<span class="subheader truncate">Date Sent:&nbsp;<i><b>Jan-27 8:00 AM</b></i></span>
-													<span class="subheader truncate">Date Clicked:&nbsp;<i><b>Jan-28 12:45 PM</b></i></span>
-												</div> -->
-												<div class="pull-right">
-													<ul class="dropdown menu" data-dropdown-menu>
-													  	<li>
-													    	<a href="#" class="action-link info"><i class="fa fa-ellipsis-v fa-fw"></i></a>
-													    	<ul class="menu">
-													      		<li><a href="#"><i class="fa fa-reply fa-fw"></i>&nbsp; Reply</a></li>
-													    	</ul>
-													  	</li>
-													</ul>
-												</div>
-											</div>
-											<div class="b-top-1">
-												<div class="stacked-list message-status">
-													<ul class="v-align-center">
-														<li>
-															<label>
-																<small>
-																	<strong>Sent: </strong>
-																	<span>Feb 15, </span>12:45pm
-																</small>
-															</label>
-														</li>
-														<li>
-															<label>
-																<small>
-																	<strong>Received: </strong>
-																	<span>Feb 15, </span>12:45pm
-																</small>
-															</label>
-														</li>
-														<li>
-															<label>
-																<small>
-																	<strong>Seen: </strong>
-																	<span>Feb 15, </span>12:45pm
-																</small>
-															</label>
-														</li>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="list-wrap">
-												<div class="list-item-icon">
-													<p class="text-center"><i class="fa fa-envelope-o fa-fw"></i></p>
-												</div>
-												<div class="list-note">
-													<span class="truncate">From: Administrator</span>
-												</div>
-												<div class="list-item-name">
-													<a href="#"><span class="h6">Spoke Health Invite</span></a>
-													<span class="truncate">Click here to find out how Spoke can help you save money on a surgical procedure.</span>
-												</div>
-												<!-- <div class="list-note">
-													<span class="subheader truncate">Date Sent:&nbsp;<i><b>Jan-27 8:00 AM</b></i></span>
-													<span class="subheader truncate">Date Clicked:&nbsp;<i><b>Jan-28 12:45 PM</b></i></span>
-												</div> -->
-												<div class="pull-right">
-													<ul class="dropdown menu" data-dropdown-menu>
-													  	<li>
-													    	<a href="#" class="action-link info"><i class="fa fa-ellipsis-v fa-fw"></i></a>
-													    	<ul class="menu">
-													      		<li><a href="#"><i class="fa fa-reply fa-fw"></i>&nbsp; Reply</a></li>
-													    	</ul>
-													  	</li>
-													</ul>
-												</div>
-											</div>
-											<div class="b-top-1">
-												<div class="stacked-list message-status">
-													<ul class="v-align-center">
-														<li>
-															<label>
-																<small>
-																	<strong>Sent: </strong>
-																	<span>Feb 15, </span>12:45pm
-																</small>
-															</label>
-														</li>
-														<li>
-															<label>
-																<small>
-																	<strong>Received: </strong>
-																	<span>Feb 15, </span>12:45pm
-																</small>
-															</label>
-														</li>
-														<li>
-															<label>
-																<small>
-																	<strong>Seen: </strong>
-																	<span>Feb 15, </span>12:45pm
-																</small>
-															</label>
-														</li>
-													</ul>
-												</div>
-											</div>
-										</li>  
-										<li>
-											<div class="list-wrap">
-												<div class="list-item-icon">
-													<p class="text-center"><i class="fa fa-envelope-o fa-fw"></i></p>
-												</div>
-												<div class="list-note">
-													<span class="truncate">From: Administrator</span>
-												</div>
-												<div class="list-item-name">
-													<a href="#"><span class="h6">Spoke Health Invite</span></a>
-													<span class="truncate">Click here to find out how Spoke can help you save money on a surgical procedure.</span>
-												</div>
-												<!-- <div class="list-note">
-													<span class="subheader truncate">Date Sent:&nbsp;<i><b>Jan-27 8:00 AM</b></i></span>
-													<span class="subheader truncate">Date Clicked:&nbsp;<i><b>Jan-28 12:45 PM</b></i></span>
-												</div> -->
-												<div class="pull-right">
-													<ul class="dropdown menu" data-dropdown-menu>
-													  	<li>
-													    	<a href="#" class="action-link info"><i class="fa fa-ellipsis-v fa-fw"></i></a>
-													    	<ul class="menu">
-													      		<li><a href="#"><i class="fa fa-reply fa-fw"></i>&nbsp; Reply</a></li>
-													    	</ul>
-													  	</li>
-													</ul>
-												</div>
-											</div>
-											<div class="b-top-1">
-												<div class="stacked-list message-status">
-													<ul class="v-align-center">
-														<li>
-															<label>
-																<small>
-																	<strong>Sent: </strong>
-																	<span>Feb 15, </span>12:45pm
-																</small>
-															</label>
-														</li>
-														<li>
-															<label>
-																<small>
-																	<strong>Received: </strong>
-																	<span>Feb 15, </span>12:45pm
-																</small>
-															</label>
-														</li>
-														<li>
-															<label>
-																<small>
-																	<strong>Seen: </strong>
-																	<span>Feb 15, </span>12:45pm
-																</small>
-															</label>
-														</li>
-													</ul>
-												</div>
-											</div>
-										</li>                 
-									</ul>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>

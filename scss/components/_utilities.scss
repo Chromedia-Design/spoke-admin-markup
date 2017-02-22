@@ -35,6 +35,7 @@
 .pt-0-7 { padding-top: 0.7rem; }
 
 .pad1 { padding: 1rem; }
+.pad2 { padding: 2rem; }
 .mar1 { margin: 1rem; }
 
 
@@ -44,6 +45,8 @@
 	border: solid 0.1rem $primary-light;
 	border-top: 0rem;
 }
+
+.b-top-1-darker { border-top: 1px solid rgba($black, $B-dividers); }
 
 .b-top-1 { border-top: solid 0.1rem $primary-light; }
 

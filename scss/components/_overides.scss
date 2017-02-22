@@ -119,11 +119,43 @@ button {
 .message-status {
 	> ul {
 		margin: 0;
-		padding: 0px 5px;
+		padding: 0rem 0.31rem;
 
 		> li {
 			padding: 0;
-			padding-right: 20px;
+			padding-right: 1.25rem;
 		}
 	}
+}
+
+
+
+// COMMUNICATION //
+
+.noti {
+	border-left: 0.31rem solid #3CAFD7;
+}
+
+.inbound, .outbound {
+
+	img {
+		max-width: 2.62rem;
+		width: 100%;
+	}
+
+	small {
+		font-size: 0.7rem;
+	}
+
+	.panel {
+		border-radius: 3px !important;
+		border-color: transparent;
+	}
+}
+
+.d-bg { background-color: rgba($off-white,0.5); }
+
+.v-scroll { 
+	overflow-y: auto;
+	max-height: 430px; 
 }
