@@ -495,7 +495,7 @@
 .stacked-list {
 	margin: 0;
 	padding: 0;
-	li {
+	> li {
 		list-style: none;
 		padding: 0.9375rem 0;
 		.media-object-section {
@@ -503,6 +503,19 @@
 				padding-right: 2rem; 	
 			}
 		}
+	}
+}
+
+.inline-list {
+	margin: 0;
+	padding: 0;
+	> li {
+		padding: 0 0.9375rem;
+		list-style: none;
+		display: inline-block;
+	}
+	.button {
+		margin: 0;
 	}
 }
 

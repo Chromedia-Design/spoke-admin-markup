@@ -2,13 +2,9 @@
 	background-color: $white;
 	padding: 1rem 0;
 	border-bottom: none;
-	ul {
-		background-color: transparent;
-		&.is-dropdown-submenu {
-			background: $white;
-			> li {
-				background: rgba($black, $B-dividers);
-			}
+	.top-bar-right {
+		> .menu {
+			background-color: transparent;
 		}
 	}
 }

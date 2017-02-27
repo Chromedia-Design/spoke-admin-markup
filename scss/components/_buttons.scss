@@ -83,6 +83,10 @@
 	&.rounded {
 		border-radius: 1.875em;
 	}
+	&.circle {
+		border-radius: 50%;
+		line-height: 1.4em;
+	}
 	&.large {
 		line-height: 1.2;
 	}

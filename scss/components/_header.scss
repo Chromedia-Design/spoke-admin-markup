@@ -28,14 +28,6 @@ header {
 			}
 		}
 	}
-	.dropdown.menu > li.is-dropdown-submenu-parent {
-		> a {
-			&:after {
-				border-color: $primary-color transparent transparent;
-				right: 10px;
-			}
-		}
-	}
 }
 
 .site-nav {
