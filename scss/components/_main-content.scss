@@ -150,6 +150,11 @@ section {
 			}
 		}
 	}
+	&.employer {
+		position: relative;
+		background: transparent url('https://s3.amazonaws.com/assets.spoke.com/images/med-employer-bg.jpg') center center no-repeat;
+		background-size: cover;
+	}
 	&.provider {
 		position: relative;
 		background: transparent url('https://s3.amazonaws.com/assets.spoke.com/images/med-provider-bg.png') center center no-repeat;
