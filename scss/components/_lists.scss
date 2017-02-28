@@ -555,16 +555,20 @@ ul.vertical-list {
     padding: 0;
     list-style: none;
     li {
+    	margin-bottom: .7rem;
     	div {
-    		display: flex;
-	  		align-items: flex-start;
 		  	.activity-icon{
 				// padding: 0 1rem;
 				color: rgba($black, $B-hinttext);
 		  	}
 		  	.activity-name{
 		  		display: block;
+		  		.show-ip {
+		  			color: rgba($black, $B-hinttext);
+		  			font-size: .7rem;
+		  		}
 		  	}
+		  	.activity-note{}
 		  	.activity-time{}
 		  }
     }
