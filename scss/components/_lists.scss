@@ -551,26 +551,51 @@ ul.vertical-list {
 }
 
 .activity {
-	margin: 0;
-    padding: 0;
-    list-style: none;
-    li {
-    	margin-bottom: .7rem;
-    	div {
-		  	.activity-icon{
-				// padding: 0 1rem;
-				color: rgba($black, $B-hinttext);
-		  	}
-		  	.activity-name{
-		  		display: block;
-		  		.show-ip {
-		  			color: rgba($black, $B-hinttext);
-		  			font-size: .7rem;
-		  		}
-		  	}
-		  	.activity-note{}
-		  	.activity-time{}
-		  }
+	// border-bottom: 1px solid #f1f1f1;
+    margin-bottom: 3rem;
+	ul{
+		margin: 0;
+	    padding: 0;
+	    list-style: none;
+	    
+	    li {
+	    	margin-bottom: .7rem;
+	    	padding-bottom: .7rem;
+	    	border-bottom: 1px solid #f1f1f1;
+	    	div {
+			  	.activity-icon{
+					// padding: 0 1rem;
+					color: rgba($black, $B-hinttext);
+			  	}
+			  	.activity-name{
+			  		display: block;
+			  		.show-ip {
+			  			color: rgba($black, $B-hinttext);
+			  			font-size: .7rem;
+			  		}
+			  		.activity-action{
+			  			.action-taken{
+			  				border-width: 0px 0px 0px 0px;
+			  				border-color: #283D4B;
+			  				border-style: solid;
+			  				background-color: #d1f1de;
+    						color: #283D4B;
+    						font-size: .75rem;
+						    padding: 0.85em 1em;
+						    border-radius: 2px;
+						    font-weight: bold;
+						    text-transform: uppercase;
+			  			}
+			  		}
+			  	}
+			  	.activity-note{}
+			  	.activity-time{}
+			  }
+			  &:last-child{
+				border-bottom: none;
+			  }
+	    }
+
     }
     
 }
