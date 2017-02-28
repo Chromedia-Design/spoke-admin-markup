@@ -132,6 +132,12 @@ p {
 	> * {
 		color: $white;
 	}
+	&:hover {
+		color: darken($white, 5%);
+		> * {
+			color: darken($white, 5%);
+		}
+	}
 }
 
 .subheader {
