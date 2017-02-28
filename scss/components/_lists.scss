@@ -227,6 +227,7 @@
 				border-bottom: none;
 			}
 		}
+
 	}
 	&.notifications {
 		> li {
@@ -538,4 +539,38 @@ ul.custom-list {
 			position: relative;
 		}	
 	}
+}
+
+// see activity log filter section for example
+ul.vertical-list {
+	margin-left:0px;
+	li {
+		display: inline-block;
+		margin-right: 2.5rem;
+	}
+}
+
+.activity {
+	margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+    	margin-bottom: .7rem;
+    	div {
+		  	.activity-icon{
+				// padding: 0 1rem;
+				color: rgba($black, $B-hinttext);
+		  	}
+		  	.activity-name{
+		  		display: block;
+		  		.show-ip {
+		  			color: rgba($black, $B-hinttext);
+		  			font-size: .7rem;
+		  		}
+		  	}
+		  	.activity-note{}
+		  	.activity-time{}
+		  }
+    }
+    
 }
