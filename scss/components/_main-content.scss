@@ -10,6 +10,14 @@ body {
 
 hr {
 	border-bottom: 1px solid rgba($black, $B-dividers);
+	&.white {
+		border-color: $white;
+	}
+	&.marker {
+		max-width: 5rem;
+		border-width: 0.5rem;
+		margin-left: 0;
+	}
 }
 
 section {
