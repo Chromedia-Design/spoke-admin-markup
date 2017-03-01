@@ -588,7 +588,11 @@ ul.vertical-list {
 			  			}
 			  		}
 			  	}
-			  	.activity-note{}
+			  	.activity-note{
+			  		a i{
+						color: rgba($black, $B-hinttext);
+					}
+			  	}
 			  	.activity-time{}
 			  }
 			  &:last-child{
