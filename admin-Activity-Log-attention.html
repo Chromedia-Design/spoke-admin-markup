@@ -1,0 +1,218 @@
+	<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spoke Admin Portal</title>
+	<link rel="stylesheet" href="js/trumbowyg/ui/trumbowyg.min.css">
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+	<div class="expanded row medium-collapse">
+		<div class="medium-2 columns">
+			<div class="site-nav">
+				<header>
+					<a href="#" class="logo text-center">
+						<img src="img/logo.png" title="Spoke">
+					</a>
+				</header>
+				<ul class="menu vertical"  data-accordion-menu>
+					<li class="is-active">
+						<a href="#">Activity Log</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="medium-10 columns">
+			<div class="content">
+
+				<div class="top-bar">
+				  	<div class="top-bar-left">
+						<!-- <ul class="menu">
+					  		<li><input type="search" placeholder="Search"></li>
+					  		<li><button type="button" class="button">Search</button></li>
+						</ul> -->
+				  	</div>
+				  	<div class="top-bar-right">
+						<ul class="dropdown menu" data-dropdown-menu>
+							<li>
+								<a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">6</span></a>
+							</li>
+					  		<li>
+								<a href="#">Administrator</a>
+								<ul class="menu vertical">
+						  			<li><a href="#">One</a></li>
+						  			<li><a href="#">Two</a></li>
+						  			<li><a href="#">Three</a></li>
+								</ul>
+					  		</li>
+						</ul>
+				  	</div>
+				</div>
+				
+
+				<!-- Beadcrumbs -->
+				<!-- <div class="row">
+					<div class="medium-12 columns">
+						<nav aria-label="You are here:" role="navigation">
+						  	<ul class="breadcrumbs">
+						    	<li><a href="#">Facilities</a></li>
+						    	<li><a href="#">Florida Hospital-Orlando</a></li>
+						    	<li>Edit Profile</li>
+						  	</ul>
+						</nav>
+					</div>
+				</div> -->
+
+				
+				
+
+				<div class="row">
+					<div class="medium-12 columns">
+						<ul class="tabs" id="spoke-tabs"> <!--use data-tabs to use foundation tabs -->
+							<li class="tabs-title"><a href="admin-Activity-Log.html">All Activities</a></li>
+							<li class="tabs-title"><a href="admin-Activity-Log-unassigned.html">Unassigned</a></li>
+							<li class="tabs-title is-active"><a href="#">Need Attention</a></li>
+							<li class="tabs-title"><a href="#">Done</a></li>
+							<li class="tabs-title"><a href="#">What else?</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<!-- FACILITY HEADER END -->
+				<!-- <div class="row mb-2 mt-1">
+					<div class="column medium-12">
+						<ul class="vertical-list">
+							<li class="subheader">Filter by: </li>
+							<li><a href="#" class="link">All</a></li>
+							<li><a href="#" class="link">New User</a></li>
+							<li><a href="#" class="link">Message</a></li>
+							<li><a href="#" class="link">Interest</a></li>
+							<li><a href="#" class="link">Change details</a></li>
+							<li><a href="#" class="link">Custom</a></li>
+							<li><a href="#" class="link">What else?</a></li>
+
+
+						</ul>
+					</div>
+				</div> -->
+				
+				<div class="row panel-body spoke-menu">
+					<div class="medium-12 columns">
+
+						<!-- tab content -->
+						<div class="tabs-content" data-tabs-content="spoke-tabs">
+							<div class="tabs-panel is-active" id="Staff">
+
+								<div class="activity">
+									<p class="date-bind">Jan-26</p>
+									<ul class="mb-1">
+										<li>
+											<div class="row">
+												<div class="activity-icon columns medium-1">
+													<p><i class="fa fa-bookmark fa-fw"></i> </p>
+												</div>
+												<div class="activity-name columns medium-9">
+													<p><b><a href="admin-Activity-Log-filter-user.html">Timothy Sanders</a></b><span data-tooltip aria-haspopup="true" class="has-tip show-ip" data-disable-hover='false' tabindex=1 title="210.213.251.118"> (show IP) </span> is interested with <b>OSS Orthopaedic Hospital</b>.</p>
+													<p class="mt-0-5">
+														<a class="button small hollow warning">Assign To Advocate</a>
+													</p>
+												</div>
+												<div class="columns medium-1">
+													<p>
+														<!-- <a href="#" class="link"><i class="fa fa-sticky-note"></i></a> -->
+													</p>
+												</div>
+												<div class="pull-right activity-time columns medium-1">
+													<p>10:04</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="row">
+												<div class="activity-icon columns medium-1">
+													<p><i class="fa fa-bookmark fa-fw"></i> </p>
+												</div>
+												<div class="activity-name columns medium-9">
+													<p><b><a href="admin-Activity-Log-filter-user.html">Timothy Sanders</a></b><span data-tooltip aria-haspopup="true" class="has-tip show-ip" data-disable-hover='false' tabindex=1 title="210.213.251.118"> (show IP) </span> is interested with <b>Beverly Hills Cancer Center</b>.</p>
+													<p class="mt-0-5">
+														<a class="button small hollow warning">Assign To Advocate</a>
+													</p>
+												</div>
+												<div class="columns medium-1">
+													<p>
+														<a href="#" class="link"><i class="fa fa-sticky-note"></i></a>
+													</p>
+												</div>
+												<div class="pull-right activity-time columns medium-1">
+													<p>09:52</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="row">
+												<div class="activity-icon columns medium-1">
+													<p><i class="fa fa-bookmark fa-fw"></i> </p>
+												</div>
+												<div class="activity-name columns medium-9">
+													<p><b><a href="admin-Activity-Log-filter-user.html">Timothy Sanders</a></b><span data-tooltip aria-haspopup="true" class="has-tip show-ip" data-disable-hover='false' tabindex=1 title="210.213.251.118"> (show IP) </span> is interested with <b>Desert Springs Hospital Medical Center</b>.</p>
+													<p class="mt-0-5">
+														<a class="button small hollow warning">Assign To Advocate</a>
+													</p>
+												</div>
+												<div class="columns medium-1">
+													<p>
+														<a href="#" class="link"><i class="fa fa-sticky-note"></i></a>
+													</p>
+												</div>
+												<div class="pull-right activity-time columns medium-1">
+													<p>09:47</p>
+												</div>
+											</div>
+										</li>
+										<li class="text-center"><a href="admin-Activity-Log-date.html" class="button hollow ">View All</a></li>
+									</ul>
+								</div>									
+
+
+
+							</div>
+						</div>
+						<!-- // tab content -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/what-input/what-input.js"></script>
+	<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+		
+	<script src="js/trumbowyg/trumbowyg.min.js"></script>
+	<script src="js/app.js"></script>
+
+	<script type="text/javascript">
+		$(function () {
+            var timer;
+
+            $(window).resize(function() {
+                clearTimeout(timer);
+                timer = setTimeout(function() {
+                  $('.site-nav, .content').css("height", $(window).height());
+                }, 40); 
+            }).resize();
+        });
+
+        $('.wysiwyg').trumbowyg();
+
+	</script>
+
+</body>
+</html>
