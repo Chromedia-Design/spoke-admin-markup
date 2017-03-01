@@ -502,6 +502,19 @@
 				padding-right: 2rem; 	
 			}
 		}
+
+		.no-decoration {
+			text-decoration: none;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		a {
+			&.no-decoration {
+				color: rgba($primary-color,0.6);
+			}
+		}
 	}
 }
 
