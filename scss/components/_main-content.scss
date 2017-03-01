@@ -14,8 +14,8 @@ hr {
 		border-color: $white;
 	}
 	&.marker {
-		max-width: 5rem;
-		border-width: 0.5rem;
+		max-width: 4rem;
+		border-width: 0.25rem;
 		margin-left: 0;
 	}
 }
@@ -161,6 +161,16 @@ section {
 	&.employer {
 		position: relative;
 		background: transparent url('https://s3.amazonaws.com/assets.spoke.com/images/med-employer-bg.jpg') center center no-repeat;
+		background-size: cover;
+	}
+	&.employer-section-2 {
+		position: relative;
+		background: $primary-color url('https://s3.amazonaws.com/assets.spoke.com/images/employer-section-2.png') top center no-repeat;
+		background-size: cover;
+	}
+	&.employer-section-3 {
+		position: relative;
+		background: $white url('https://s3.amazonaws.com/assets.spoke.com/images/employer-section-3.png') top center no-repeat;
 		background-size: cover;
 	}
 	&.provider {
