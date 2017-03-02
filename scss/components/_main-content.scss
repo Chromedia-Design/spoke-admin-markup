@@ -89,10 +89,36 @@ section {
 		> * {
 			color: $white;
 		}
+		.call-to-action {
+			> * {
+				color: $white;
+			}
+		}
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: $white;
+		}
 	}
 	&.secondary-bg {
 		background-color: $secondary-color;
 		> * {
+			color: $white;
+		}
+		.call-to-action {
+			> * {
+				color: $white;
+			}
+		}
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
 			color: $white;
 		}
 	}
@@ -101,10 +127,36 @@ section {
 		> * {
 			color: $white;
 		}
+		.call-to-action {
+			> * {
+				color: $white;
+			}
+		}
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: $white;
+		}
 	}
 	&.success-bg {
 		background-color: $success-color;
 		> * {
+			color: $white;
+		}
+		.call-to-action {
+			> * {
+				color: $white;
+			}
+		}
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
 			color: $white;
 		}
 	}
