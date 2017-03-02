@@ -178,6 +178,72 @@ section {
 		background: transparent url('https://s3.amazonaws.com/assets.spoke.com/images/med-provider-bg.png') center center no-repeat;
 		background-size: cover;
 	}
+	&.provider-section-2 {
+		position: relative;
+		background: $primary-color url('https://s3.amazonaws.com/assets.spoke.com/images/provider-section-2.jpg') center center no-repeat;
+		background-size: cover;
+		.wrapper {
+			> * {
+				position: relative;
+				z-index: 1;
+			}
+			&:before {
+				content: '';
+				position: absolute;
+				width: 1000px;
+				height: 100%;
+				top: 0;
+				left: 0;
+				background-color: rgba($white, $W-subtext);
+				z-index: 0;
+			    transform: skew(15deg, 0);
+			}
+			&:after {
+				content: '';
+			    position: absolute;
+			    width: 1000px;
+			    height: 100%;
+			    top: 0;
+			    left: -1000px;
+			    background-color: rgba($white, $W-subtext);
+			    z-index: 0;
+			    transform: skew(15deg, 0);
+			}
+		}
+	}
+	&.provider-section-3 {
+		position: relative;
+		background: $primary-color url('https://s3.amazonaws.com/assets.spoke.com/images/provider-section-3.jpg') center center no-repeat;
+		background-size: cover;
+		.wrapper {
+			> * {
+				position: relative;
+				z-index: 1;
+			}
+			&:before {
+				content: '';
+				position: absolute;
+				width: 1000px;
+				height: 100%;
+				top: 0;
+				right: 0;
+				background-color: rgba($white, $W-subtext);
+				z-index: 0;
+			    transform: skew(15deg, 0);
+			}
+			&:after {
+				content: '';
+			    position: absolute;
+			    width: 1000px;
+			    height: 100%;
+			    top: 0;
+			    right: -1000px;
+			    background-color: rgba($white, $W-subtext);
+			    z-index: 0;
+			    transform: skew(15deg, 0);
+			}
+		}
+	}
 	&.jumbotron {
 		background-color: $white;
 		border-bottom: 1px solid rgba($black, $B-dividers);
