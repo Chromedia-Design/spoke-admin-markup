@@ -48,7 +48,7 @@
 		color: rgba($black, $B-subtext);
 		&.hollow {
 			background: transparent;
-			border-color: rgba($black, $B-subtext);
+			border-color: rgba($black, $B-dividers);
 			color: rgba($black, $B-subtext);
 			&:hover {
 				background-color: rgba($black, $B-dividers);
@@ -156,6 +156,14 @@
 	@extend .button;
 	cursor: default;
 	font-weight: $global-weight-semibold;
+	text-transform: none;
+	&.link {
+		color: $text-black;
+		&:hover {
+			color: $text-black;
+			background: transparent;
+		}
+	}
 }
 
 .close-button {

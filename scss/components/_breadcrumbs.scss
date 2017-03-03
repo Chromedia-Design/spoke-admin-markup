@@ -46,3 +46,62 @@
 		}
 	}
  }
+
+ .stepbars {
+	padding: 0;
+	margin: 30px auto;
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+	counter-reset: step;
+	li {
+		list-style-type: none;
+		color: rgba($black, $B-text);
+		text-transform: uppercase;
+		font-size: 12px;
+		width: 25%;
+		float: left;
+		position: relative;
+		text-align: center;
+		&:before {
+			position: relative;
+			content: counter(step);
+			counter-increment: step;
+			width: 20px;
+			line-height: 20px;
+			display: block;
+			font-size: 10px;
+			color: #333;
+			background: $light-gray;
+			border-radius: 2px;
+			margin: 0 auto 15px auto;
+			z-index: 5;
+		}
+		&:after {
+			/*progressbar connectors*/
+			content: '';
+			width: 100%;
+			height: 2px;
+			background: $light-gray;
+			position: absolute;
+			left: -50%;
+			top: 9px;
+		}
+		&:first-child {
+			&:after {
+				/*connector not needed before the first step*/
+				content: none;
+			}
+		}
+		&.active {
+			/*marking active/completed steps green*/
+			/*The number of the step and the connector before it = green*/
+			&:before, &:after {
+				background: $success-color;
+				color: white;
+			}
+		}
+	}
+	.button {
+		margin-bottom: 0;
+	}
+}
