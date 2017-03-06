@@ -77,13 +77,14 @@
 							<li class="tabs-title is-active"><a href="#panel1">Overview</a></li>
 							<li class="tabs-title alert"><a href="#panel2">Communications</a></li>
 							<li class="tabs-title"><a href="#panel3">Episodes</a></li>
+							<li class="tabs-title"><a href="#">Saved Facilities</a></li>
 						</ul>
 					</div>
 				</div>
 
 				<div class="tabs-content" data-tabs-content="example-tabs">
 
-					<div class="tabs-panel" id="panel1">
+					<div class="tabs-panel is-active" id="panel1">
 						
 						<div class="row">
 							<div class="large-12 columns">
@@ -101,15 +102,13 @@
 
 						<div class="row">
 							<div class="large-7 columns end">
-									
-								<div class="page-lead">
-									<span class="h6">Recent Activity</span>
-									<!-- <a href="add-patient.html" class="button hollow info small pull-right">See All ...</a> -->
-								</div>
 								
-								<div class="menu-options submenu mb-1">
+								<div class="menu-options mt-1 mb-1">
 									<div class="row collapse">
-										<div class="large-8 large-offset-4 columns">
+										<div class="large-4 columns">
+											<span class="h6">Recent Activity</span>
+										</div>
+										<div class="large-8 columns">
 											<div class="row">
 			                                    <div class="large-6 columns">
 			                                        <label for="" class="small-label text-right middle">Activities from:</label>
@@ -231,12 +230,18 @@
 								<div class="callout mt-1">
 									<div class="row">
 										<div class="large-12 columns end">
-											<div class="page-lead">
-												<div class="img-wrapper">
-													<img src="img/logo-harley-davidson.png" alt="">
+											<div class="media-object full-table">
+												<div class="media-object-section middle logo small">
+													<div class="img-wrapper">
+														<img src="img/logo-harley-davidson.png" alt="">
+													</div>
 												</div>
-												<span class="h6 success-color">Harley Davidson, Incorporated</span>
-												<a href="admin-patient-edit.html" class="button info hollow small pull-right"><i class="fa fa-pencil fa-fw"></i></a>
+												<div class="media-object-section middle">
+													<span class="h6 success-color">Harley Davidson, Incorporated.</span>
+												</div>
+												<div class="media-object-section middle">
+													<a href="admin-patient-edit.html" class="button info hollow small pull-right"><i class="fa fa-pencil fa-fw"></i></a>
+												</div>
 											</div>
 										</div>
 									</div>	
@@ -290,6 +295,35 @@
 											</div>
 										</div>
 									</div>
+									<hr>
+									<div class="row">
+										<div class="large-12 columns">
+											<div class="label-group">
+												<p><small>CURRENT EPISODE</small></p>
+												<h6><small class="success-color">Total Knee Replacement</small></h6>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="large-4 columns end">
+											<div class="label-group">
+												<p><small>FIRST CONTACT</small></p>
+												<h6><small class="subheader">Jan 12, 8:00 AM</small><br>-</h6>
+											</div>
+										</div>
+										<div class="large-4 columns end">
+											<div class="label-group">
+												<p><small>LAST CONTACT</small></p>
+												<h6><small class="subheader">Jan 23, 8:00 AM</small><br><small class="subheader">23 days ago</small></h6>
+											</div>
+										</div>
+										<div class="large-4 columns end">
+											<div class="label-group">
+												<p><small>LAST ATTEMPT</small></p>
+												<h6><small class="subheader">Jan 26, 8:00 AM</small><br>-</h6>
+											</div>
+										</div>
+									</div>
 								</div>
 								
 							</div>
@@ -298,7 +332,7 @@
 
 					</div>
 
-					<div class="tabs-panel is-active" id="panel2">
+					<div class="tabs-panel" id="panel2">
 
 						<div class="row">
 							<div class="large-12 columns">
@@ -368,6 +402,7 @@
 					                        <td>6</td>
 					                        <td>Dec 23, 2016</td>
 					                        <td class="text-right">
+					                        	<a  class="button link info" href="admin-patient-episode-view.html"><i class="fa fa-eye fa-fw"></i></a>
 					                            <a  class="button link info" href="admin-patient-episode-edit.html"><i class="fa fa-edit fa-fw"></i></a>
 					                            <!-- <a href="#" class="button link info"><i class="fa fa-remove fa-fw"></i></a> -->
 					                        </td>

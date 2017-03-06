@@ -1,8 +1,18 @@
 .media-object {
 	margin: 1rem 0;
-	&.stack-for-small {
-		.img-wrapper {
-			@media only screen and (min-width: 40em) {
+	&.full-table {
+		display: table;
+		width: 100%;
+		.logo {
+			width: 4.4125rem;
+			height: auto;
+			&.small {
+				width: 2.75rem;
+				height: auto;
+			}
+			&.large {
+				width: 8.625rem;
+				height: auto;
 			}
 		}
 	}
@@ -16,7 +26,6 @@
 
 .media-object-section {
 	&.logo {
-		width: 20%;
 		.img-wrapper {
 			overflow: hidden;
 			width: 4.3125rem;
@@ -40,9 +49,6 @@
 				width: 8.625rem;
 				height: 8.625rem;
 			}
-		}
-		@media only screen and (min-width: 40em) {
-			width: auto;
 		}
 	}
 }
