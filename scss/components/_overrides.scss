@@ -34,6 +34,13 @@
 	}
 }
 
+.no-decoration {
+	text-decoration: none;
+	&:hover {
+		text-decoration: none !important;
+	}
+}
+
 .message-status {
 	> ul {
 		margin: 0;
