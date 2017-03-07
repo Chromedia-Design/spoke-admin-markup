@@ -64,6 +64,21 @@ table {
 			}
 		}
 	}
+	&.thirds-spacing {
+		thead {
+			th {
+				&:first-child {
+					width: 30%;
+				}
+				&:nth-child(2) {
+					width: 30%;
+				}
+				&:nth-child(3) {
+					width: 20%;
+				}
+			}
+		}
+	}
 }
 
 select.table-control {

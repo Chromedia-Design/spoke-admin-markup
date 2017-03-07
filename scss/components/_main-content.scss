@@ -234,6 +234,7 @@ section {
 		position: relative;
 		background: $primary-color url('https://s3.amazonaws.com/assets.spoke.com/images/provider-section-2.jpg') center center no-repeat;
 		background-size: cover;
+		overflow: hidden;
 		.wrapper {
 			> * {
 				position: relative;
@@ -267,6 +268,7 @@ section {
 		position: relative;
 		background: $primary-color url('https://s3.amazonaws.com/assets.spoke.com/images/provider-section-3.jpg') center center no-repeat;
 		background-size: cover;
+		overflow: hidden;
 		.wrapper {
 			> * {
 				position: relative;
