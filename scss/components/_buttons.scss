@@ -45,10 +45,10 @@
 	}
 	&.info {
 		background-color: rgba($black, $B-dividers);
-		color: rgba($black, $B-subtext);
+		color: rgba($black, $B-text);
 		&.hollow {
 			background: transparent;
-			border-color: rgba($black, $B-dividers);
+			border-color: rgba($black, $B-hinttext);
 			color: rgba($black, $B-subtext);
 			&:hover {
 				background-color: rgba($black, $B-dividers);

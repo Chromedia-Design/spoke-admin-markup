@@ -302,24 +302,47 @@
 					<div class="tabs-panel" id="panel2">
 
 						<div class="row">
-							<div class="column large-12-12">
-								<ul class="vertical-list">
-									<li class="subheader">Filter by: </li>
-									<!-- <li><a href="#" class="link">All</a></li> -->
-									<li><a href="admin-patient-messages-emails.html" class="link">Email</a></li>
-									<li><a href="admin-patient-messages-calls.html" class="link">Calls</a></li>
-									<!-- <li><a href="admin-patient-messages-chat.html" class="link">Chat</a></li> -->
-								</ul>
-							</div>
-						</div>
-
-						<div class="row">
 							<div class="large-12 columns">
 								<div class="page-lead">
-									<a href="#"><span class="h6">Inbox <small class="subheader">Unread Messages (2)</small></span></a>
-									<a data-open="newnote" class="button info small pull-right"><i class="fa fa-sticky-note-o pr-0-5" aria-hidden="true"></i>Create Note</a>
-									<a data-open="newmail" class="button success small pull-right mr-1"><i class="fa fa-plus pr-0-5" aria-hidden="true"></i>New Mail</a>
+									<span class="h5">Communications <small class="subheader">Unread (2)</small></span>
+									<div class="button-align pull-right">
+										<a data-open="newmail" class="button success"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; Compose</a>
+										<a data-open="newnote" class="button info"><i class="fa fa-sticky-note-o fa-fw" aria-hidden="true"></i>&nbsp;Create Note</a>
+									</div>
 								</div>
+
+								<div id="filters" class="submenu menu-options mb-1" data-toggler data-animate="fade-in fade-out">
+					            	<div class="row collapse">
+					            		<div class="large-4 columns end">
+					            			<div class="input-group">
+					            				<input type="text" class="input-group-field" value="" placeholder="Search keyword...">
+					            				<div class="input-group-button">
+					            					<a href="#" class="button info"><i class="fa fa-search"></i></a>
+				            					</div>
+			            					</div>
+					            		</div>
+					            		<div class="large-7 large-offset-1 columns end">
+					                        <div class="row collapse">
+					                            <div class="large-4 large-offset-8 columns end">
+					                                <div class="row">
+					                                    <div class="large-4 columns">
+					                                        <label for="" class="small-label text-right middle">Type</label>
+					                                    </div>
+					                                    <div class="large-8 columns">
+					                                        <select class="small-input">
+					                                            <option selected="true">All</option>
+					                                            <option>Emails</option>
+					                                            <option>Notes</option>
+					                                            <option>Calls</option>
+					                                            <option>Chat</option>
+					                                        </select>
+					                                    </div>  
+					                                </div> 
+					                            </div>
+					                        </div>
+					                    </div>
+					            	</div>
+					            </div>
 								
 								<!-- NEW MAIL -->
 								<div class="reveal" id="newmail" data-reveal>
@@ -448,8 +471,11 @@
 										<div class="large-12 columns">
 											<div class="reveal-footer">
 												<div class="button-align pull-right">
-													<a data-close class="button link">
-														Done
+													<a data-open="newnote" class="button link">
+														Edit
+													</a>
+													<a data-close class="button">
+														Close
 													</a>
 												</div>
 											</div>
@@ -463,46 +489,108 @@
 								<!-- END VIEW NOTE -->
 
 								<div class="panel">
-									<ul class="well-list notifications">
+									<ul class="well-list">
+
 										<li>
 											<div class="list-wrap">
 												<div class="list-item-icon">
-													<p class="text-center success-color"><i class="fa fa-envelope fa-fw"></i></p>
+													<p class="text-center"><i class="fa fa-sticky-note-o fa-fw" aria-hidden="true"></i></p>
 												</div>
 												<div class="list-note">
-													<span class="truncate success-color">From: Administrator</span>
+													<span class="h6 truncate">Spoke Health Advocate</span>
+													<span class="subheader"><small><a href="#">Attached To: Link</a></small></span>
 												</div>
-												<div class="list-item-name">
-													<a href="admin-patient-inmessages.html"><span class="h6">Spoke Health Invite</span></a>
-													<span class="truncate">Click here to find out how Spoke can help you save money on a surgical procedure.</span>
+												<div class="list-detail">
+													<span class="subheader">@here, please make sure this patient gets all his queries answered. He is somekind of a VIP.</span>
 												</div>
-												<div class="pull-right">
-													<ul class="dropdown menu" data-dropdown-menu>
-													  	<li>
-													    	<a href="#" class="action-link info"><i class="fa fa-ellipsis-v fa-fw"></i></a>
-													    	<ul class="menu">
-													      		<li><a data-open="newnote"><i class="fa fa-sticky-note-o" aria-hidden="true"></i>&nbsp; Add Note</a></li>
-													    	</ul>
-													  	</li>
-													</ul>
+												<div class="list-note">
+													<span class="subheader pull-right">Feb-14 8:00AM</span>
 												</div>
 											</div>
+										</li>
+
+										<li>
+											<div class="list-wrap">
+												<div class="list-item-icon">
+													<p class="text-center alert-color"><i class="material-icons">call_missed</i></p>
+												</div>
+												<div class="list-note">
+													<span class="h6 truncate alert-color">To: Spoke Health Advocate</span>
+													<span class="subheader">-</span>
+												</div>
+												<div class="list-note">
+													<span class="subheader truncate">William Pinkerton</span>
+													<span class="subheader">720-875-1041</span>
+												</div>
+												<div class="list-detail">
+													<span class="subheader pull-right">Feb-14 8:00AM</span>
+												</div>
+												<div class="pull-right">
+													<span data-open="newnote" class="button info hollow small button-v-align">
+														<i class="fa fa-sticky-note-o fa-fw" aria-hidden="true"></i>&nbsp; Add Note
+													</span>
+												</div>
+											</div>
+										</li>
+
+										<li>
+											<div class="list-wrap">
+												<div class="list-item-icon">
+													<p class="text-center alert-color"><i class="material-icons">call_missed</i></p>
+												</div>
+												<div class="list-note">
+													<span class="h6 truncate alert-color">To: William Pinkerton</span>
+													<span class="subheader">720-875-1041</span>
+												</div>
+												<div class="list-note">
+													<span class="subheader truncate">Spoke Health Advocate</span>
+													<span class="subheader">-</span>
+												</div>
+												<div class="list-detail">
+													<span class="subheader pull-right">Feb-14 8:00AM</span>
+												</div>
+												<div class="pull-right">
+													<span data-open="newnote" class="button info hollow small button-v-align">
+														<i class="fa fa-sticky-note-o fa-fw" aria-hidden="true"></i>&nbsp; Add Note
+													</span>
+												</div>
+											</div>
+										</li>
+
+										<li>
+											<a href="admin-patient-inmessages.html" class="list-wrap">
+												<div class="list-item-icon">
+													<p class="text-center success-color"><i class="fa fa-envelope-o fa-fw"></i></p>
+												</div>
+												<div class="list-note">
+													<span class="truncate success-color">William Pinkerton</span>
+												</div>
+												<div class="list-item-name">
+													<span class="h6">Spoke Health Invite</span>
+													<span class="truncate">I have a few questions regarding this invite.</span>
+												</div>
+												<div class="pull-right">
+													<span data-open="newnote" class="button info hollow small button-v-align">
+														<i class="fa fa-sticky-note-o fa-fw" aria-hidden="true"></i>&nbsp; Add Note
+													</span>
+												</div>
+											</a>
 											<div class="b-top-1">
 												<div class="message-status">
-													<ul class="v-align-center stacked-list">
+													<ul class="inline-list">
 														<li>
 															<label>
 																<small>
-																	<strong>Sent: </strong>
-																	<span>Feb 15, </span>12:45pm
+																	<strong>Seen: </strong>
+																	<span>Feb-15 </span>12:45PM
 																</small>
 															</label>
 														</li>
 														<li>
 															<label>
 																<small>
-																	<strong>Seen: </strong>
-																	<!-- <span>Feb 15, </span>12:45pm -->
+																	<strong>Read: </strong>
+																	-
 																</small>
 															</label>
 														</li>
@@ -510,217 +598,80 @@
 												</div>
 											</div>
 										</li>
+										
 										<li>
 											<div class="list-wrap">
 												<div class="list-item-icon">
-													<p class="text-center success-color"><i class="fa fa-envelope fa-fw"></i></p>
+													<p class="text-center"><i class="material-icons">call_made</i></p>
 												</div>
 												<div class="list-note">
-													<span class="truncate success-color">From: Administrator</span>
+													<span class="h6 truncate">To: William Pinkerton</span>
+													<span class="subheader">720-875-1041</span>
 												</div>
-												<div class="list-item-name">
-													<a href="#"><span class="h6">Spoke Health Invite</span></a>
-													<span class="truncate">Click here to find out how Spoke can help you save money on a surgical procedure.</span>
+												<div class="list-note">
+													<span class="subheader truncate">Spoke Health Advocate</span>
+													<span class="subheader">-</span>
+												</div>
+												<div class="list-detail">
+													<span class="subheader pull-right">Feb-14 8:00AM</span>
 												</div>
 												<div class="pull-right">
-													<ul class="dropdown menu" data-dropdown-menu>
-													  	<li>
-													    	<a href="#" class="action-link info"><i class="fa fa-ellipsis-v fa-fw"></i></a>
-													    	<ul class="menu">
-													      		<li><a data-open="newnote"><i class="fa fa-sticky-note-o" aria-hidden="true"></i>&nbsp; Add Note</a></li>
-													    	</ul>
-													  	</li>
-													</ul>
+													<span data-open="newnote" class="button info hollow small button-v-align">
+														<i class="fa fa-sticky-note-o fa-fw" aria-hidden="true"></i>&nbsp; Add Note
+													</span>
 												</div>
 											</div>
-											<div class="b-top-1">
-												<div class="message-status">
-													<ul class="stacked-list v-align-center">
-														<li>
-															<label>
-																<small>
-																	<strong>Sent: </strong>
-																	<span>Feb 15, </span>12:45pm
-																</small>
-															</label>
-														</li>
-														<li>
-															<label>
-																<small>
-																	<strong>Seen: </strong>
-																	<!-- <span>--- --, </span>12:45pm -->
-																</small>
-															</label>
-														</li>
-													</ul>
-												</div>
-											</div>
-										</li>
+										</li> 
+
 										<li>
-											<div class="list-wrap">
+											<a href="admin-patient-inmessages.html" class="list-wrap">
 												<div class="list-item-icon">
 													<p class="text-center"><i class="fa fa-envelope-o fa-fw"></i></p>
 												</div>
 												<div class="list-note">
-													<span class="truncate">From: Administrator</span>
+													<span class="truncate">Spoke Health Advocate</span>
 												</div>
 												<div class="list-item-name">
-													<a href="#"><span class="h6">Spoke Health Invite</span></a>
+													<span class="h6">Spoke Health Invite</span>
 													<span class="truncate">Click here to find out how Spoke can help you save money on a surgical procedure.</span>
 												</div>
 												<div class="pull-right">
-													<ul class="dropdown menu" data-dropdown-menu>
+													<!-- <ul class="dropdown menu" data-dropdown-menu>
 													  	<li>
 													    	<a href="#" class="action-link info"><i class="fa fa-ellipsis-v fa-fw"></i></a>
 													    	<ul class="menu">
 													      		<li><a data-open="newnote"><i class="fa fa-sticky-note-o" aria-hidden="true"></i>&nbsp; Add Note</a></li>
 													    	</ul>
 													  	</li>
-													</ul>
+													</ul> -->
+													<span data-open="newnote" class="button info hollow small button-v-align">
+														<i class="fa fa-sticky-note-o fa-fw" aria-hidden="true"></i>&nbsp; Add Note
+													</span>
 												</div>
-											</div>
+											</a>
 											<div class="b-top-1">
 												<div class="message-status">
-													<ul class="stacked-list v-align-center">
-														<li>
-															<label>
-																<small>
-																	<strong>Sent: </strong>
-																	<span>Feb 15, </span>12:45pm
-																</small>
-															</label>
-														</li>
+													<ul class="inline-list">
 														<li>
 															<label>
 																<small>
 																	<strong>Seen: </strong>
-																	<span>Feb 15, </span>12:45pm
+																	<span>Feb-15 </span>12:45PM
 																</small>
 															</label>
 														</li>
 														<li>
 															<label>
 																<small>
-																	<a data-open="viewnote" class="no-decoration">
-																		<strong><i class="fa fa-sticky-note-o" aria-hidden="true"></i> Notes Attached!</strong>
-																	</a>
+																	<strong>Read: </strong>
+																	<span>Feb-15 </span>12:45PM
 																</small>
 															</label>
 														</li>
 													</ul>
 												</div>
 											</div>
-										</li>
-										<li>
-											<div class="list-wrap">
-												<div class="list-item-icon">
-													<p class="text-center"><i class="fa fa-envelope-o fa-fw"></i></p>
-												</div>
-												<div class="list-note">
-													<span class="truncate">From: Administrator</span>
-												</div>
-												<div class="list-item-name">
-													<a href="#"><span class="h6">Spoke Health Invite</span></a>
-													<span class="truncate">Click here to find out how Spoke can help you save money on a surgical procedure.</span>
-												</div>
-												<div class="pull-right">
-													<ul class="dropdown menu" data-dropdown-menu>
-													  	<li>
-													    	<a href="#" class="action-link info"><i class="fa fa-ellipsis-v fa-fw"></i></a>
-													    	<ul class="menu">
-													      		<li><a data-open="newnote"><i class="fa fa-sticky-note-o" aria-hidden="true"></i>&nbsp; Add Note</a></li>
-													    	</ul>
-													  	</li>
-													</ul>
-												</div>
-											</div>
-											<div class="b-top-1">
-												<div class="message-status">
-													<ul class="stacked-list v-align-center">
-														<li>
-															<label>
-																<small>
-																	<strong>Sent: </strong>
-																	<span>Feb 15, </span>12:45pm
-																</small>
-															</label>
-														</li>
-														<li>
-															<label>
-																<small>
-																	<strong>Seen: </strong>
-																	<span>Feb 15, </span>12:45pm
-																</small>
-															</label>
-														</li>
-														<li>
-															<label>
-																<small>
-																	<a data-open="viewnote" class="no-decoration">
-																		<strong><i class="fa fa-sticky-note-o" aria-hidden="true"></i> Notes Attached!</strong>
-																	</a>
-																</small>
-															</label>
-														</li>
-													</ul>
-												</div>
-											</div>
-										</li>  
-										<li>
-											<div class="list-wrap">
-												<div class="list-item-icon">
-													<p class="text-center"><i class="fa fa-envelope-o fa-fw"></i></p>
-												</div>
-												<div class="list-note">
-													<span class="truncate">From: Administrator</span>
-												</div>
-												<div class="list-item-name">
-													<a href="#"><span class="h6">Spoke Health Invite</span></a>
-													<span class="truncate">Click here to find out how Spoke can help you save money on a surgical procedure.</span>
-												</div>
-												<div class="pull-right">
-													<ul class="dropdown menu" data-dropdown-menu>
-													  	<li>
-													    	<a href="#" class="action-link info"><i class="fa fa-ellipsis-v fa-fw"></i></a>
-													    	<ul class="menu">
-													      		<li><a data-open="newnote"><i class="fa fa-sticky-note-o" aria-hidden="true"></i>&nbsp; Add Note</a></li>
-													    	</ul>
-													  	</li>
-													</ul>
-												</div>
-											</div>
-											<div class="b-top-1">
-												<div class="message-status">
-													<ul class="stacked-list v-align-center">
-														<li>
-															<label>
-																<small>
-																	<strong>Sent: </strong>
-																	<span>Feb 15, </span>12:45pm
-																</small>
-															</label>
-														</li>
-														<li>
-															<label>
-																<small>
-																	<strong>Seen: </strong>
-																	<span>Feb 15, </span>12:45pm
-																</small>
-															</label>
-														</li>
-														<li>
-															<label>
-																<small>
-																	<a data-open="viewnote" class="no-decoration">
-																		<strong><i class="fa fa-sticky-note-o" aria-hidden="true"></i> Notes Attached!</strong>
-																	</a>
-																</small>
-															</label>
-														</li>
-													</ul>
-												</div>
-											</div>
-										</li>                 
+										</li>             
 									</ul>
 								</div>
 							</div>

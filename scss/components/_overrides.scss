@@ -34,22 +34,11 @@
 	}
 }
 
-.no-decoration {
-	text-decoration: none;
-	&:hover {
-		text-decoration: none !important;
-	}
-}
-
 .message-status {
 	> ul {
 		margin: 0;
-		padding: 0px 5px;
-
-		> li {
-			padding: 0;
-			padding-right: 20px;
-		}
+		padding: 5px 25%;
+		text-transform: uppercase;
 	}
 }
 
