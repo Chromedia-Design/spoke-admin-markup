@@ -37,13 +37,14 @@ p.date-bind {
     font-size: 0.875rem;
     line-height: 1em;
     border-radius: 1.875rem;
+    font-weight: $global-weight-bold;
     &:after {
     	position: absolute;
-    	content: "|";
+    	content: "";
     	bottom: -1rem;
     	left: 1rem;
     	height: 1rem;
-    	width: 1rem;
-    	color: rgba($black, $B-hinttext);
+    	width: 1px;
+    	background-color: rgba($black, $B-hinttext);
     }
 }
