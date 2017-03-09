@@ -70,6 +70,10 @@
 						  	</ul>
 						</nav>
 
+						<div class="page-lead">
+							<span class="h5">Edit Patient Profile</span>
+						</div>
+
 						<div class="callout mt-1">
 							
 							<form>
@@ -99,10 +103,12 @@
 					  						<input type="text" name="" value="123-4567-7890">
 					  					</label>
 									</div>
+								</div>
+								<div class="row">
 									<div class="large-4 columns end">
 										<legend>Gender</legend>
-											<input type="radio" name="gender" value="male" id="gender" checked=""><label for="gender">Male</label>
-		    								<input type="radio" name="gender" value="female" id="gender"><label for="gender">Female</label>
+										<input type="radio" name="gender" value="male" id="gender" checked=""><label for="gender">Male</label>
+	    								<input type="radio" name="gender" value="female" id="gender"><label for="gender">Female</label>
 									</div>
 								</div>
 								<div class="row">
@@ -111,11 +117,15 @@
 					  						<input type="text" name="" value="william.pinkerton@domain.com">
 					  					</label>
 									</div>
+								</div>
+								<div class="row">
 									<div class="large-4 columns end">
 										<label>Contact Number
 					  						<input type="text" name="" value="123-4567-8900">
 					  					</label>
 									</div>
+								</div>
+								<div class="row">
 									<div class="large-4 columns end">
 										<div class="row multi-part-input">
 											<legend class="labelize">Birthdate</legend>
@@ -138,7 +148,7 @@
 									</div>
 								</div>
 								<div class="row">
-									<div class="large-8 columns end">
+									<div class="large-9 columns end">
 										<label>Street Address
 					  						<input type="text" name="" value="46 Platte St.">
 					  						<input type="text" name="" value="">
@@ -146,6 +156,13 @@
 									</div>
 								</div>
 								<div class="row">
+									<div class="large-3 columns end">
+										<label>Country
+					  						<select>
+					  							<option>United States of America</option>
+					  						</select>
+					  					</label>
+									</div>
 									<div class="large-3 columns end">
 										<label>State
 					  						<select>
@@ -160,13 +177,8 @@
 					  						</select>
 					  					</label>
 									</div>
-									<div class="large-3 columns end">
-										<label>Country
-					  						<select>
-					  							<option>United States of America</option>
-					  						</select>
-					  					</label>
-									</div>
+								</div>
+								<div class="row">
 									<div class="large-3 columns end">
 										<label>Postal Code
 					  						<input type="text" name="" value="654512">
@@ -176,6 +188,7 @@
 								<div class="row">
 									<div class="large-12 columns end">
 										<div class="button-group submit">
+											<a href="admin-patient-profile.html" class="submit button link">Cancel</a>
 											<a href="admin-patient-profile.html" class="submit button primary">Save Changes</a>
 										</div>
 									</div>

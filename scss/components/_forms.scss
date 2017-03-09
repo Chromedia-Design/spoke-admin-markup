@@ -64,9 +64,11 @@ textarea, select, .bold-div {
 	box-shadow: none;
 	border-radius: 2px;
 	border: 1px solid rgba($black, $B-dividers);
+	background-color: $background-white;
 	&:focus {
 		box-shadow: none;
 		border: 1px solid $text-black;
+		background-color: $background-white;
 	}
 }
 
@@ -104,7 +106,7 @@ textarea, div, label, select {
 
 [type='checkbox'],
 [type='radio'] {
-	margin: 0;
+	margin: 0 0 1rem;
 	+ label {
 		font-family: $body-font-family;
 		display: inline;
