@@ -5,14 +5,32 @@
 	border-radius: 2px;
 	.panel-heading {
 		padding: 1rem;
+		border-bottom: 1px solid rgba($black, $B-dividers);
 		.input-group, .button {
 			margin-bottom: 0;
 		}
+		.media-object {
+			margin: 0;
+		}
 	}
 	.panel-body {
-		border-top: 1px solid rgba($black, $B-dividers);
-		padding: 15px;
+		padding: 1rem;
+		&:not(:last-child) {
+			border-bottom: 1px solid rgba($black, $B-dividers);
+		}
+		.media-object {
+			margin-top: 0;
+		}
 	}
+	.panel-footer {
+		padding: 1rem;
+		.button {
+			margin: 0;
+		}
+		.media-object {
+			margin: 0;
+		}
+	}	
 	&.collapsible {
 		.panel-body {
 			display: none;
