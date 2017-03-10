@@ -179,13 +179,14 @@ textarea, .mce-tinymce {
 	[type='time'],
 	[type='url'],
 	[type='color'],
-	textarea {
+	textarea, .button {
 		margin-bottom: 0;
 	}
-	[type='submit'] {
+	[type='submit'], .submit {
 		margin-top: 25px;
 		margin-bottom: 0;
 	}
+
 }
 
 .input-group {
@@ -377,7 +378,7 @@ label.image-upload {
 		}
 	}
 	&.submenu {
-		padding: 1rem 0.5rem;
+		padding: 0.5rem;
 		background-color: $primary-light;
 		border: 1px solid rgba($black, $B-dividers);
 		border-radius: 2px;
