@@ -71,6 +71,7 @@
 			margin-bottom: 0;
 		}
 		.list-wrap {
+			display: block;
 			background-color: $white;
 			padding: 15px 25px;
 			border-radius: 2px;
@@ -82,6 +83,9 @@
 					}
 					
 				}
+			}
+			.button-v-align {
+				margin: 0.5rem 0;
 			}
 		}
 		.list-panel {
@@ -178,15 +182,21 @@
 				font-family: $body-font-family;
 				font-size: 0.875rem;
 			}
+			.subheader {
+				margin: 0;
+			}
 		}
 		.list-note {
 			display: inline-block;
 			width: 20%;
-			vertical-align: top;
+			vertical-align: middle;
 			// float: left;
 			span {
 				vertical-align: middle;
 				line-height: 1.5rem;
+			}
+			.subheader {
+				margin: 0;
 			}
 		}
 		&:last-child {
@@ -573,7 +583,7 @@ ul.vertical-list {
 	    
 	    li {
 	    	margin-bottom: .7rem;
-	    	padding-bottom: .7rem;
+	    	// padding-bottom: .7rem;
 	    	border-bottom: 1px solid #f1f1f1;
 	    	div {
 			  	.activity-icon{

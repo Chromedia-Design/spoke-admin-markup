@@ -3,16 +3,42 @@
 	background: $white;
 	border: 1px solid rgba($black, $B-dividers);
 	border-radius: 2px;
-	.panel-heading {
+	.panel-heading,
+	.panel-body,
+	.panel-footer {
 		padding: 1rem;
+		&.sub-panel {
+			background-color: $background-white;
+			> * {
+				color: rgba($black, $B-subtext);
+			}
+		}
+	}
+	.panel-heading {
+		border-bottom: 1px solid rgba($black, $B-dividers);
 		.input-group, .button {
 			margin-bottom: 0;
 		}
+		.media-object {
+			margin: 0;
+		}
 	}
 	.panel-body {
-		border-top: 1px solid rgba($black, $B-dividers);
-		padding: 15px;
+		&:not(:last-child) {
+			border-bottom: 1px solid rgba($black, $B-dividers);
+		}
+		.media-object {
+			margin-top: 0;
+		}
 	}
+	.panel-footer {
+		.button {
+			margin: 0;
+		}
+		.media-object {
+			margin: 0;
+		}
+	}	
 	&.collapsible {
 		.panel-body {
 			display: none;

@@ -1,3 +1,23 @@
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba($black, $B-hinttext);
+  font-style: italic;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  color: rgba($black, $B-hinttext);
+  font-style: italic;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+  color: rgba($black, $B-hinttext);
+  font-style: italic;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: rgba($black, $B-hinttext);
+  font-style: italic;
+}
+
 label {
 	color: rgba($black, $B-subtext);
 	font-family: $body-font-family;
@@ -10,7 +30,7 @@ label {
 	}
 	small {
 		margin-top: 0.3125rem;
-		color: rgba($black, $B-hinttext);
+		color: rgba($black, $B-subtext);
 	}
 }
 
@@ -64,9 +84,11 @@ textarea, select, .bold-div {
 	box-shadow: none;
 	border-radius: 2px;
 	border: 1px solid rgba($black, $B-dividers);
+	background-color: $background-white;
 	&:focus {
 		box-shadow: none;
 		border: 1px solid $text-black;
+		background-color: $background-white;
 	}
 }
 
@@ -104,7 +126,7 @@ textarea, div, label, select {
 
 [type='checkbox'],
 [type='radio'] {
-	margin: 0;
+	margin: 0 0 1rem;
 	+ label {
 		font-family: $body-font-family;
 		display: inline;
@@ -157,13 +179,14 @@ textarea, .mce-tinymce {
 	[type='time'],
 	[type='url'],
 	[type='color'],
-	textarea {
+	textarea, .button {
 		margin-bottom: 0;
 	}
-	[type='submit'] {
+	[type='submit'], .submit {
 		margin-top: 25px;
 		margin-bottom: 0;
 	}
+
 }
 
 .input-group {
@@ -355,7 +378,7 @@ label.image-upload {
 		}
 	}
 	&.submenu {
-		padding: 1rem 0.5rem;
+		padding: 0.5rem;
 		background-color: $primary-light;
 		border: 1px solid rgba($black, $B-dividers);
 		border-radius: 2px;
