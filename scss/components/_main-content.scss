@@ -168,6 +168,7 @@ section {
 	}
 	&.home {
 		position: relative;
+		// background: transparent url('../img/breather.jpg') center center no-repeat;
 		background: transparent url('https://s3.amazonaws.com/assets.spoke.com/images/breather.jpg') center center no-repeat;
 		background-size: cover;
 		header {
