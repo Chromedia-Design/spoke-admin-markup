@@ -576,28 +576,30 @@ ul.vertical-list {
 .activity {
 	// border-bottom: 1px solid #f1f1f1;
     margin-bottom: 3rem;
-	ul{
+	ul {
 		margin: 0;
 	    padding: 0;
 	    list-style: none;
-	    
 	    li {
-	    	margin-bottom: .7rem;
-	    	// padding-bottom: .7rem;
-	    	border-bottom: 1px solid #f1f1f1;
+	    	font-size: 0.875rem;
+	    	padding: 0.875rem 0;
+	    	border-bottom: 1px solid rgba($black, $B-dividers);
+	    	p {
+	    		margin: 0;
+	    	}
 	    	div {
-			  	.activity-icon{
+			  	.activity-icon {
 					// padding: 0 1rem;
 					color: rgba($black, $B-hinttext);
 			  	}
-			  	.activity-name{
+			  	.activity-name {
 			  		display: block;
 			  		.show-ip {
 			  			color: rgba($black, $B-hinttext);
 			  			font-size: .7rem;
 			  		}
-			  		.activity-action{
-			  			.action-taken{
+			  		.activity-action {
+			  			.action-taken {
 			  				border-width: 0px 0px 0px 0px;
 			  				border-color: #283D4B;
 			  				border-style: solid;
@@ -611,18 +613,19 @@ ul.vertical-list {
 			  			}
 			  		}
 			  	}
-			  	.activity-note{
-			  		a i{
+			  	.activity-note {
+			  		a i {
 						color: rgba($black, $B-hinttext);
 					}
 			  	}
-			  	.activity-time{}
-			  }
-			  &:last-child{
+			  	.activity-time { }
+		  	}
+		  	&:first-child {
+		  		border-top: 1px solid rgba($black, $B-dividers); 
+		  	}	
+		  	&:last-child {
 				border-bottom: none;
-			  }
+		  	}
 	    }
-
     }
-    
 }
