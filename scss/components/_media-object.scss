@@ -25,6 +25,9 @@
 }
 
 .media-object-section {
+	&:first-child {
+		padding-right: 1.5rem;
+	}
 	&.logo {
 		.img-wrapper {
 			overflow: hidden;
