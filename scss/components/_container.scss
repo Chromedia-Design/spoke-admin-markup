@@ -122,6 +122,9 @@
 		}
 		.media-object {
 			margin: 0;
+			display: table;
+			width: 100%;
+			table-layout: fixed;
 			.media-object-section {
 				h1,
 				h2,
@@ -147,6 +150,12 @@
 					> small {
 						font-size: 0.875rem;
 					}
+				}
+				&.logo {
+					width: 20%;
+				}
+				+ .media-object-section {
+					padding-left: 1rem;
 				}
 			}
 		}
