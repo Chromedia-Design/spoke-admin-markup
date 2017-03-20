@@ -1,6 +1,14 @@
 .pagination{
 	margin: 4rem 0;
-	.current {
+	.current, .active {
 		border-radius: 2px;
+		background: $primary-color;
+		cursor: default;
+		a, .button {
+			color: $white;
+		}
+	}
+	.previous, .next {
+		text-transform: capitalize;
 	}
 }
