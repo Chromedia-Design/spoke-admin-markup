@@ -2,6 +2,7 @@
 	padding: 0;
 	border: none;
 	background: transparent;
+	overflow-y: visible;
 	.callout {
 		padding: 1rem;
 	}
@@ -11,7 +12,7 @@
 }
 
 .reveal-heading, .reveal-body, .reveal-footer {
-	overflow: hidden;
+	overflow: visible;
 	padding: 1.5rem;
 	margin: 0;
 	background-color: $white;
