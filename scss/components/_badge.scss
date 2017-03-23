@@ -1,8 +1,14 @@
 .badge {
-	background: $white;
 	&.alert {
-		background-color: $white;
-		color: $alert-color;
-		border: 1px solid $alert-color;
+		background-color: $alert-color;
+		color: $white;
+		border: none;
 	}
+}
+
+.label {
+	vertical-align: middle;
+	border-radius: 2px;
+	padding: 0.4rem 0.5rem 0.333rem;
+	margin: -3px 0 0;
 }

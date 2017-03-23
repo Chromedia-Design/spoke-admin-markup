@@ -16,7 +16,10 @@
 	}
 	.panel-heading {
 		border-bottom: 1px solid rgba($black, $B-dividers);
-		.input-group, .button {
+		p,
+		span, 
+		.input-group,
+		.button {
 			margin-bottom: 0;
 		}
 		.media-object {

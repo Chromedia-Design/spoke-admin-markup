@@ -277,11 +277,15 @@
 		color: rgba($black, $B-text);
 		width: 66%;
 		vertical-align: top;
+		line-height: 1.2em;
 		&.primary-color {
-			color: darken($primary-color, 5%);
+			color: $primary-color;
+		}
+		&.secondary-color {
+			color: $secondary-color;
 		}
 		&.success-color {
-			color: darken($success-color, 5%);
+			color: $success-color;
 		}
 		&.subheader {
 			color: rgba($black, $B-subtext);

@@ -37,33 +37,36 @@
 		&.call {
 			> .list-wrap {
 				background-color: $background-white;
+				.list-item-icon {
+					p {
+						height: 2rem;
+						width: 2rem;
+						background-color: $success-color;
+						border-radius: 50%;
+						> i {
+							color: $white;
+							line-height: 2rem;
+						}
+					}
+				}
 			}
 			&.success {
 				> .list-wrap {
-					// background-color: darken($success-color, 12%);
-					background-color: rgba($success-color, $B-dividers);
-					.list-item-icon p,
-					.list-note span {
-						color: darken($success-color, 7%);
+					.list-item-icon {
+						p {
+							background-color: $success-color;
+						}
 					}
 				}
 			}
 			&.missed {
 				> .list-wrap {
-					// background-color: darken($alert-color, 7%);
-					background-color: rgba($alert-color, $B-dividers);
-					.list-item-icon p,
-					.list-note span {
-						color: $alert-color;
+					.list-item-icon {
+						p {
+							background-color: $alert-color;
+						}
 					}
 				}
-			}
-		}
-		a {
-			color: $text-black;
-			font-weight: 400;
-			&:hover {
-				text-decoration: underline;
 			}
 		}
 		.button {
@@ -99,6 +102,9 @@
 			display: block;
 			background-color: $white;
 			padding: 15px 25px;
+			&:hover {
+				text-decoration: none;
+			}
 			&.stack-for-small {
 				.list-item-image, .list-item-name, .list-detail {
 					@media only screen and (max-width: 40em) {
@@ -106,6 +112,13 @@
 						width: 100%;
 					}
 					
+				}
+			}
+			a {
+				color: $text-black;
+				font-weight: 400;
+				&:hover {
+					text-decoration: underline;
 				}
 			}
 			.button-v-align {
@@ -135,6 +148,9 @@
 			display: inline-block;
 			vertical-align: middle;
 			// float: left;
+			&.align-top {
+				vertical-align: top;
+			}
 			span {
 				vertical-align: middle;
 				color: rgba($black, $B-hinttext);
@@ -211,13 +227,17 @@
 			}
 		}
 		.list-note {
+			color: $text-black;
 			display: inline-block;
 			width: 20%;
 			vertical-align: middle;
 			// float: left;
+			&.align-top {
+				vertical-align: top;
+			}
 			span {
 				vertical-align: middle;
-				line-height: 2rem;
+				line-height: 1.75rem;
 			}
 			.subheader {
 				margin: 0;
