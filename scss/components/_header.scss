@@ -30,6 +30,16 @@ header {
 	}
 }
 
+.menu-icon {
+	margin-left: 0.5rem;
+	&.dark {
+		&:after {
+			background: rgba($black, $B-hinttext);
+			box-shadow: 0 7px 0 rgba($black, $B-hinttext), 0 14px 0 rgba($black, $B-hinttext);
+		}
+	}
+}
+
 .site-nav {
 	background-color: $primary-color;
 	overflow-y: auto;
