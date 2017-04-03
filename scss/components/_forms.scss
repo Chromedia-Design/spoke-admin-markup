@@ -230,6 +230,14 @@ textarea, .mce-tinymce {
 						}
 					}
 				}
+				&.drop-text {
+					> a {
+						padding-right: 1rem;
+						&:after {
+							border: none;
+						}
+					}
+				}
 			}
 			&.opens-left {
 				> .is-dropdown-submenu {
@@ -250,7 +258,7 @@ textarea, .mce-tinymce {
 		}
 	}
 	&.is-dropdown-submenu {
-		margin-top: 0.62rem;
+		margin-top: 0;
 		border-radius: 2px;
 		border: none;
 		background-color: $light-gray;
@@ -271,6 +279,21 @@ textarea, .mce-tinymce {
 			border-bottom: 0.5rem solid rgba($black, $B-dividers);
 			border-left: 0.5rem solid transparent;
 			border-right: 0.5rem solid transparent;
+		}
+		// Notifications list on the header
+		&.notifications {
+			> li {
+				font-size: 0.75rem;
+				padding: 0.5rem 1rem;
+				span {
+					a {
+						color: $secondary-color;
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
 		}
 	}
 }

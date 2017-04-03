@@ -26,10 +26,10 @@ table {
 		text-transform: uppercase;
 		font-size: 0.75rem;
 		th {
+			padding: 0 1rem 0.875rem;
 			a {
 				color: rgba($black, $B-subtext);
 			}
-			padding: 0.875rem 1rem 0.875rem;
 		}
 	}
 	tbody {
