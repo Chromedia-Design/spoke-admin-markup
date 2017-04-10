@@ -82,7 +82,7 @@
 		}
 	}
 	&.primary {
-		font-weight: $global-weight-semibold;
+		font-weight: $global-weight-bold;
 	}
 	&.rounded {
 		border-radius: 1.875em;
@@ -156,7 +156,7 @@
 .brick {
 	@extend .button;
 	cursor: default;
-	font-weight: $global-weight-semibold;
+	font-weight: $global-weight-bold;
 	text-transform: none;
 	&.link {
 		color: $text-black;
