@@ -41,7 +41,7 @@ header {
 }
 
 .site-nav {
-	background-color: rgba($primary-color, $B-text);
+	background-color: $primary-color;
 	overflow-y: auto;
 	// Override the blue caret that appears after the dropdown side menu
 	.is-accordion-submenu-parent > a::after {
@@ -53,11 +53,11 @@ header {
 			transition: all ease-in 0.2s;
 			a {
 				font-family: $body-font-family;
-				text-transform: uppercase;
+				// text-transform: uppercase;
 				color: $text-white;
 				font-weight: $global-weight-bold;
 				border-bottom: 1px solid rgba($white, $W-dividers);
-				font-size: 0.75rem;
+				font-size: 0.875rem;
 			}
 			&.is-accordion-submenu-parent {
 				border-bottom: 1px solid rgba($white, $W-dividers);
@@ -84,12 +84,12 @@ header {
 			}
 			ul.nested {
 				margin-left: 0;
-				margin-bottom: 0.5rem;
+				// margin-bottom: 0.5rem;
 				> li {
 					a {
 						padding-left: 2.5rem;
-						font-size: 0.625rem;
-						font-weight: 600;
+						font-size: 0.75rem;
+						font-weight: normal;
 					}
 					&.is-active {
 						background-color: rgba($white, $W-subtext);
