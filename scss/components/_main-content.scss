@@ -17,6 +17,9 @@ hr {
 		max-width: 4rem;
 		border-width: 0.25rem;
 		margin-left: 0;
+		&.center {
+			margin: 0 auto;
+		}
 	}
 }
 
@@ -38,7 +41,7 @@ section {
 			margin-bottom: 1rem;
 			@media only screen and (min-width: 40em) {
 				font-size: 1.125rem;
-				line-height: 1.2em;
+				line-height: 1.5em;
 			}
 			&.h3 {
 				@media only screen and (min-width: 40em) {
@@ -106,6 +109,11 @@ section {
 		a {
 			&:hover {
 				text-decoration: underline; 
+			}
+			&.button {
+				&:hover {
+					text-decoration: none;
+				}
 			}
 		}
 	}
@@ -180,6 +188,9 @@ section {
 		header {
 			background: transparent;
 			border: none;
+		}
+		.call-to-action {
+			padding: 8rem 0 0;
 		}
 		.home-scene {
 			position: relative;
