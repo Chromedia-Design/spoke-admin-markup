@@ -55,8 +55,30 @@ table {
 			}
 		}
 	}
-	&.base-spacing {
+	&.single-spacing {
 		thead {
+			th {
+				&:first-child {
+					width: 70%;
+				}
+				&:nth-child(2) {
+					width: 30%;
+				}
+			}
+		}
+		tbody {
+			td {
+				&:first-child {
+					width: 80%;
+				}
+				&:nth-child(2) {
+					width: 20%;
+				}
+			}
+		}
+	}
+	&.base-spacing {
+		thead, tbody {
 			th {
 				&:first-child {
 					width: 40%;
@@ -68,7 +90,7 @@ table {
 		}
 	}
 	&.thirds-spacing {
-		thead {
+		thead, tbody {
 			th {
 				&:first-child {
 					width: 30%;

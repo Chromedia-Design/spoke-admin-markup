@@ -18,6 +18,45 @@
   font-style: italic;
 }
 
+form {
+	&.large {
+		label, .labelize, legend {
+			font-size: 1rem;
+		}
+		[type='text'],
+		[type='password'],
+		[type='date'],
+		[type='datetime'],
+		[type='datetime-local'],
+		[type='month'],
+		[type='week'],
+		[type='email'],
+		[type='number'],
+		[type='search'],
+		[type='tel'],
+		[type='time'],
+		[type='url'],
+		[type='color'],
+		textarea,
+		select {
+			font-size: 1.3125rem;
+			height: 4.3125rem;
+			padding: 1rem 1.5rem;
+			margin-bottom: 2rem;
+		}
+	 	[type='checkbox'],
+		[type='radio'] {
+			margin: 0.3rem 0 0.85rem;
+			+ label {
+				font-size: 1.3125rem;
+				&:last-child {
+					margin-bottom: 2rem;
+				}
+			}
+		}
+	}
+}
+
 label {
 	color: rgba($black, $B-subtext);
 	font-family: $body-font-family;
@@ -88,7 +127,7 @@ textarea, select, .bold-div {
 	&:focus {
 		box-shadow: none;
 		border: 1px solid $text-black;
-		background-color: $background-white;
+		background-color: $white;
 	}
 }
 

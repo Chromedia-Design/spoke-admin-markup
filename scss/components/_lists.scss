@@ -312,6 +312,16 @@
 			}
 		}
 	}
+	&.message-preview {
+		> li {
+			.list-wrap {
+				padding: 15px;
+			}
+			.list-detail {
+				width: 57%;
+			}
+		}
+	}
 	// Small version of the default well list
 	&.small {
 		.h6 {

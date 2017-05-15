@@ -29,6 +29,25 @@
 	@extend .card;
 	height: auto;
 	position: relative;
+	&.empty {
+		background-color: transparent;
+		border-radius: 2px;
+		border: 1px dashed rgba($black, $B-dividers);
+		.img-card-head {
+			padding: 53%;
+			background-color: transparent;
+			> .text-placeholder {
+				position: absolute;
+				z-index: 1;
+				top: 45%;
+				left: 0;
+				width: 95%;
+				text-align: center;
+				color: rgba($black, $B-hinttext);
+				font-weight: $global-weight-bold;
+			}
+		}
+	}
 	.img-card-head {
 		position: relative;
 		// height: 55%;
@@ -265,6 +284,12 @@
 .page-lead {
 	margin: 1rem 0;
 	min-height: 2rem;
+	&.tall {
+		margin: 3rem 0 4rem;
+		&.sub-heading {
+			margin: 0 0 4rem;
+		}
+	}
 	.h1,
 	.h2,
 	.h3,
@@ -279,6 +304,7 @@
 		width: 66%;
 		vertical-align: top;
 		line-height: 1.2em;
+		font-weight: $global-weight-bold;
 		&.primary-color {
 			color: $primary-color;
 		}
@@ -293,6 +319,18 @@
 		}
 		.action-link {
 			margin-left: 1rem;
+			margin-bottom: 0;
+		}
+		&.full {
+			width: 100%;
+		}
+		+ .h1,
+			.h2,
+			.h3,
+			.h4,
+			.h5,
+			.h6 {
+			margin-top: 0;
 			margin-bottom: 0;
 		}
 	}
@@ -377,4 +415,61 @@
 			z-index: 3;
 		}
 	}
+}
+
+/* CSS talk bubble */
+.talk-bubble {
+	margin: 0 2.5rem;
+	padding: 1rem 1.5rem;
+  	display: inline-block;
+  	position: relative;
+	// width: 100%;
+	height: auto;
+	background-color: $white;
+	border-radius: 2px;
+}
+
+.talktext {
+	.h1,
+	.h2,
+	.h3,
+	.h4,
+	.h5,
+	.h6 {
+		line-height: 1.5em;
+	}
+	.subheader {
+		line-height: 1.5em;
+	}
+}
+
+.border {
+  	border: 2px solid $light-gray;
+}
+
+/* Right triangle, left side slightly down */
+.tri-right.border.left-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  	left: -2.5rem;
+	right: auto;
+  	top: 30px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: $light-gray $light-gray transparent transparent;
+}
+
+.tri-right.left-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  	left: -35px;
+	right: auto;
+  	top: 32px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: $white $white transparent transparent;
 }
