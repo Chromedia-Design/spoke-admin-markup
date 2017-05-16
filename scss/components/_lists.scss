@@ -165,7 +165,7 @@
 			width: 7%;
 			position: relative;
 			display: inline-block;
-			vertical-align: top;
+			vertical-align: middle;
 			float: left;
 			p {
 				margin: 0;
@@ -186,6 +186,14 @@
 					right: 0;
 					bottom: 0;
 				}
+			}
+			&.align-top {
+				vertical-align: top;
+				float: none;
+			}
+			&.align-middle {
+				vertical-align: middle;
+				float: none;
 			}
 		}
 		.list-item-name {
@@ -319,6 +327,19 @@
 			}
 			.list-detail {
 				width: 57%;
+			}
+			.list-item-image {
+				width: 19%;
+				> .img-wrapper {
+					margin-left: 0.5rem;
+					border: 1px solid rgba($black, $B-hinttext);
+					background-color: $off-white;
+					span.h5 {
+						font-weight: normal;
+						color: rgba($black, $B-hinttext);
+						line-height: 2.7rem;
+					}
+				}
 			}
 		}
 	}
