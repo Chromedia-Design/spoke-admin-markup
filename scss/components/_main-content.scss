@@ -2,9 +2,9 @@ body {
 	overflow: hidden;
 	&.frontend {
 		overflow: scroll;
-		background-color: $white;
 		header {
 			border-right: none;
+			background: transparent;
 		}
 	}
 }
@@ -85,7 +85,11 @@ section {
 	}
 	&.white-bg {
 		background-color: $white;
+		border-top: 1px solid rgba($black, $B-dividers);
 		border-bottom: 1px solid rgba($black, $B-dividers);
+		+ .white-bg {
+			border-top: none;
+		}
 	}
 	&.primary-bg {
 		background-color: $primary-color;

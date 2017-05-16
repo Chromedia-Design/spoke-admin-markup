@@ -64,6 +64,23 @@
                 <div class="medium-12 columns">
                     <form class="large">
                         <div class="row">
+                            <div class="large-6 columns end">
+                                <legend>Are you the patient?</legend>
+                                <input type="radio" name="gender" value="male" id="gender" checked=""><label for="gender">Yes, I'm the patient.</label>
+                                <input type="radio" name="gender" value="female" id="gender"><label for="gender">No, one of my dependents is the patient.</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="large-6 columns">
+                                <label>
+                                    Which of your dependents is the patient?
+                                    <select>
+                                        <option>Kevin McHale</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
                             <div class="large-6 columns">
                                 <label>
                                     Surgical Procedure
@@ -74,24 +91,22 @@
                             </div>
                             <div class="large-6 columns">
                                 <label>
-                                    Deductible
+                                    Estimated Remaining Deductible
                                     <input type="text">
                                 </label>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="large-6 columns end">
-                                <legend>Are you the patient?</legend>
-                                <input type="radio" name="gender" value="male" id="gender" checked=""><label for="gender">Yes, I'm the patient.</label>
-                                <input type="radio" name="gender" value="female" id="gender"><label for="gender">No, one of my dependents is the patient.</label>
-                            </div>
-                        </div>
-                        <div class="row">
                             <div class="large-6 columns">
                                 <label>
-                                    Select who of your dependents is the patient
+                                    If you do need a surgery, when would you hope to be getting treatment?
                                     <select>
-                                        <option>Kevin McHale</option>
+                                        <option>As soon as possible</option>
+                                        <option>2 - 4 Weeks</option>
+                                        <option>4 - 8 Weeks</option>
+                                        <option>2 - 4 Months</option>
+                                        <option>4 - 6 Months</option>
+                                        <option>6+ months</option>
                                     </select>
                                 </label>
                             </div>
@@ -103,7 +118,7 @@
                         </div>
                         <div class="row">
                             <div class="large-12 columns end">
-                                <a href="frontend-index.html" class="submit button primary large pull-right">Continue</a>
+                                <a href="frontend-index.html" class="submit button primary large pull-right">Continue &nbsp;<i class="fa fa-long-arrow-right"></i></a>
                             </div>
                         </div>
                     </form>

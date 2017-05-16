@@ -473,3 +473,16 @@
 	border: 20px solid;
 	border-color: $white $white transparent transparent;
 }
+
+.orbit {
+	.img-card {
+		margin-bottom: 0;
+	}
+}
+
+.orbit-bullets {
+	button {
+		height: 0.8rem;
+		width: 0.8rem;
+	}
+}
