@@ -94,6 +94,23 @@
 	&.large {
 		line-height: 1.2;
 	}
+	&:hover {
+		.fa-long-arrow-right {
+			animation: bounce 2s infinite;
+		}
+	}
+}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+    	transform: translateX(0);
+  	}
+	40% {
+		transform: translateX(-9px);
+  	}
+	60% {
+		transform: translateX(-4px);
+  	}
 }
 
 .button-align {
