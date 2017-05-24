@@ -1,5 +1,5 @@
 .callout {
-	padding: 1.5rem 1rem;
+	padding: 1.5rem;
 	border-radius: 2px;
 	position: relative;
 	&.hi-padded {
@@ -24,6 +24,13 @@
 	}
 	> .media-object {
 		margin-bottom: 0;
+	}
+	> * {
+		&:last-child {
+			.media-object.full-table {
+				margin: 0;
+			}
+		}
 	}
 	.close {
 		&.media {

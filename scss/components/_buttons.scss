@@ -177,6 +177,14 @@
 	text-transform: none;
 	&.link {
 		color: $text-black;
+		&.subheader {
+			color: rgba($black, $B-subtext);
+			font-weight: normal;
+			&:hover {
+				color: rgba($black, $B-subtext);
+				background: transparent;
+			}
+		}
 		&:hover {
 			color: $text-black;
 			background: transparent;

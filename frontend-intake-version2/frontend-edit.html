@@ -53,13 +53,14 @@
                         <span class="h4">Edit Profile</span>
                     </div>
                     <div class="row collapse mt-2">
-                        <div class="large-3 columns">
+                        <div class="large-2 columns">
                             <ul class="tabs vertical" id="example-vert-tabs" data-tabs>
                                 <li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">Employee Profile</a></li>
-                                <li class="tabs-title"><a href="#panel2v">Change Password</a></li>
+                                <li class="tabs-title"><a href="#panel2v">Employee Episodes</a></li>
+                                <li class="tabs-title"><a href="#panel3v">Change Password</a></li>
                             </ul>
                         </div>
-                        <div class="large-9 columns">
+                        <div class="large-10 columns">
                             <div class="tabs-content vertical" data-tabs-content="example-vert-tabs">
                                 <div class="tabs-panel is-active" id="panel1v">
                                     <div class="callout">
@@ -200,66 +201,12 @@
                                                     <input type="text" name="" value="654512">
                                                 </div>
                                             </div>
-                                            
-                                            <hr>
-                                            <div class="row">
-                                                <div class="large-2 columns end">
-                                                    <label class="text-right">Are you the patient</label>
-                                                </div>
-                                                <div class="large-6 columns end">
-                                                    <input type="radio" name="" value="" id="" checked=""><label for="">Yes</label>
-                                                    <input type="radio" name="" value="" id=""><label for="">No</label>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="large-4 columns end">
-                                                    <label class="text-right middle">Which of your dependents is the patient?</label>
-                                                </div>
-                                                <div class="large-4 columns end">
-                                                    <select>
-                                                        <option>Kevin McHale</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="large-4 columns end">
-                                                    <label class="text-right middle">Surgical Procedure</label>
-                                                </div>
-                                                <div class="large-4 columns end">
-                                                    <select>
-                                                        <option>Total Knee Replacement</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="large-4 columns end">
-                                                    <label class="text-right middle">Estimated Remaining Deductible</label>
-                                                </div>
-                                                <div class="large-4 columns end">
-                                                    <input type="text" name="" value="654512">
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="large-4 columns end">
-                                                    <label class="text-right middle">If you do need a surgery, when would you hope to be getting treatment?</label>
-                                                </div>
-                                                <div class="large-4 columns end">
-                                                    <select>
-                                                        <option>As soon as possible</option>
-                                                        <option>2 - 4 Weeks</option>
-                                                        <option>4 - 8 Weeks</option>
-                                                        <option>2 - 4 Months</option>
-                                                        <option>4 - 6 Months</option>
-                                                        <option>6+ months</option>
-                                                    </select>
-                                                </div>
-                                            </div>
 
                                             <div class="row">
                                                 <div class="large-12 columns end">
                                                     <div class="button-group submit">
-                                                        <!-- <a href="#" class="submit button link">Cancel</a> -->
-                                                        <a href="#" class="submit button primary">Save Changes</a>
+                                                        <a href="#" class="button primary">Save Changes</a>
+                                                        <a href="#" class="info button link">Cancel</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -267,13 +214,122 @@
 
                                     </div>
                                 </div>
+
                                 <div class="tabs-panel" id="panel2v">
+                                    
+                                    <!-- <div class="callout">
+                                        <div class="row">
+                                            <div class="large-4 columns end">
+                                                <label class="text-right">Are you the patient</label>
+                                            </div>
+                                            <div class="large-6 columns end">
+                                                <input type="radio" name="" value="" id="" checked=""><label for="">Yes</label>
+                                                <input type="radio" name="" value="" id=""><label for="">No</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="large-4 columns end">
+                                                <label class="text-right middle">Which of your dependents is the patient?</label>
+                                            </div>
+                                            <div class="large-4 columns end">
+                                                <select>
+                                                    <option>Kevin McHale</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="large-4 columns end">
+                                                <label class="text-right middle">Surgical Procedure</label>
+                                            </div>
+                                            <div class="large-4 columns end">
+                                                <select>
+                                                    <option>Total Knee Replacement</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="large-4 columns end">
+                                                <label class="text-right middle">Estimated Remaining Deductible</label>
+                                            </div>
+                                            <div class="large-4 columns end">
+                                                <input type="text" name="" value="654512">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="large-4 columns end">
+                                                <label class="text-right middle">When would you be getting treatment?</label>
+                                            </div>
+                                            <div class="large-4 columns end">
+                                                <select>
+                                                    <option>As soon as possible</option>
+                                                    <option>2 - 4 Weeks</option>
+                                                    <option>4 - 8 Weeks</option>
+                                                    <option>2 - 4 Months</option>
+                                                    <option>4 - 6 Months</option>
+                                                    <option>6+ months</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="large-12 columns end">
+                                                <div class="button-group submit">
+                                                    <a href="#" class="button primary">Save Changes</a>
+                                                    <a href="#" class="info button link">Cancel</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> -->
+
+                                    <div class="callout">
+                                        <table class="thirds-spacing">
+                                            <thead>
+                                                <th>Surgery Package</th>
+                                                <th>Date Created</th>
+                                                <th>Status</th>
+                                                <th></th>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        Total Knee Replacement
+                                                    </td>
+                                                    <td>
+                                                        May-24, 8:00 AM
+                                                    </td>
+                                                    <td>
+                                                        <span class="brick success hollow small">Active</span>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <a href="frontend-edit-episode.html" class="button info link small"><i class="fa fa-edit fa-fw"></i></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Hip Surgery
+                                                    </td>
+                                                    <td>
+                                                        Apr-21, 8:00 AM
+                                                    </td>
+                                                    <td>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <a href="#" class="button info hollow small">Activate</a>
+                                                        <a href="frontend-edit-episode.html" class="button info link small"><i class="fa fa-edit fa-fw"></i></a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+
+                                <div class="tabs-panel" id="panel3v">
                                     
                                     <div class="callout">
                                         <form>
                                             <div class="row">
                                                 <div class="large-2 columns end">
-                                                    <label class="text-right middle">Old Password</label>
+                                                    <label class="middle">Old Password</label>
                                                 </div>
                                                 <div class="large-6 columns end">
                                                     <input type="password" name="" value="">
@@ -281,7 +337,7 @@
                                             </div>
                                             <div class="row">
                                                 <div class="large-2 columns end">
-                                                    <label class="text-right middle">New Password</label>
+                                                    <label class="middle">New Password</label>
                                                 </div>
                                                 <div class="large-6 columns end">
                                                     <input type="password" name="" value="">
@@ -289,7 +345,7 @@
                                             </div>
                                             <div class="row">
                                                 <div class="large-2 columns end">
-                                                    <label class="text-right middle">Confirm Password</label>
+                                                    <label class="middle">Confirm Password</label>
                                                 </div>
                                                 <div class="large-6 columns end">
                                                     <input type="password" name="" value="">
@@ -298,8 +354,8 @@
                                              <div class="row">
                                                 <div class="large-12 columns end">
                                                     <div class="button-group submit">
-                                                        <!-- <a href="#" class="submit button link">Cancel</a> -->
                                                         <a href="#" class="submit button primary">Change Password</a>
+                                                        <a href="#" class="info button link">Cancel</a>
                                                     </div>
                                                 </div>
                                             </div>

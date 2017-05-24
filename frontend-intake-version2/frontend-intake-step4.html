@@ -39,10 +39,10 @@
     <section class="section lo-padded">
     	<div class="container">
             <div class="row">
-                <div class="medium-8 columns end">
+                <div class="medium-12 columns end">
                     <div class="page-lead tall sub-heading">
                         <div class="media-object stack-for-small">
-                            <div class="media-object-section logo large middle">
+                            <div class="media-object-section logo large">
                                 <div class="img-wrapper circle">
                                     <img src= "../img/Smiling-Middle-Aged-Lady-Arms-Square.png">
                                 </div>
@@ -53,14 +53,14 @@
                                     <div class="talktext">
                                         <p>Below are some of the facilities I found that provide 
                                         <b>Total Knee Replacement</b> in the <b>Denver</b> area. All of these choices are top quality and cover your deductible + give you a cash allowance.</p>
-                                        <p>View the profiles of these facilities by clicking on the cards below. If you see one that interests you let me know by clicking on the PIN icon in the top right corner. I'll follow up with you as soon as possible.</p>
+                                        <p>View the profiles of these facilities by clicking on the cards below. If you see one that interests you, let me know by clicking on the PIN icon in the top right corner. I'll follow up with you as soon as possible.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="medium-4 columns end">
+                <!-- <div class="medium-4 columns end">
                     <div class="callout mt-1 mb-1">
                         <div class="row">
                             <div class="large-12 columns end">
@@ -68,7 +68,7 @@
                                     <div class="media-object-section middle">
                                         <div class="label-group">
                                              <p><small>Employee Name</small></p>
-                                            <span class="h5">John Doe</span>
+                                            <span class="h6">John Doe</span>
                                         </div>
                                     </div>
                                     <div class="media-object-section middle">
@@ -80,28 +80,126 @@
                         <div class="row">
                             <div class="large-12 columns end">
                                 <div class="label-group">
-                                    <p><small>Surgical Procedure Needed</small></p>
-                                    <span class="h6">Total Knee Replacement</span>
-                                </div>
-                            </div>
-                        </div>  
-
-                        <div class="row">
-                            <div class="large-12 columns end">
-                                <div class="label-group">
                                      <p><small>Location</small></p>
                                     <span class="h6">Denver, Colorado</span>
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="large-12 columns end">
+                                <div class="media-object full-table">
+                                    <div class="media-object-section middle">
+                                        <div class="label-group">
+                                             <p><small>Surgical Procedure Needed</small></p>
+                                            <span class="h6">Total Knee Replacement</span>
+                                        </div>
+                                    </div>
+                                    <div class="media-object-section middle">
+                                        <a href="frontend-edit.html" class="button info hollow small pull-right"><i class="fa fa-pencil fa-fw"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
                    </div>
+                </div> -->
+            </div>
+
+            <div class="row">
+                <div class="large-12 columns">
+                    <div class="callout marginless">
+                        <div class="row">
+                            <div class="large-4 columns end">
+                                <div class="media-object full-table">
+                                    <div class="media-object-section middle">
+                                        <div class="label-group">
+                                             <p><small>Employee Name</small></p>
+                                            <span class="h6">John Doe</span>
+                                        </div>
+                                    </div>
+                                    <div class="media-object-section middle">
+                                        <a href="frontend-edit.html" class="button info hollow small pull-right"><i class="fa fa-pencil fa-fw"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="large-4 columns end">
+                                <div class="label-group marginless">
+                                     <p><small>Location</small></p>
+                                    <span class="h6">Denver, Colorado</span>
+                                </div>
+                            </div>
+                            <div class="large-4 columns end">
+                                <div class="media-object full-table">
+                                    <div class="media-object-section middle">
+                                        <div class="label-group">
+                                             <p><small>Surgical Procedure Needed</small></p>
+                                            <span class="h6">Total Knee Replacement</span>
+                                        </div>
+                                    </div>
+                                    <div class="media-object-section middle">
+                                        <a href="frontend-edit.html" class="button info hollow small pull-right"><i class="fa fa-pencil fa-fw"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="row">
                 <div class="large-12 columns">
-                    <div class="page-lead mt-2">
-                       <p class="h5 full">Recommended Facilities</p>
+                    <div class="page-lead short-label">
+                       <p class="h5">Recommended Facilities<a class="button info small hollow ml-1" data-toggle="filters">Advanced Options <i class="fa fa-angle-down fa-fw"></i></a></p>
+                        <span class="brick link subheader pull-right mt-0-5">Note: Further options OUTSIDE of Denver can net over $8,000 in allowances.</span>
+                       <div id="filters" class="submenu menu-options mb-2" data-toggler data-animate="fade-in fade-out">
+                            <div class="row">
+                                <div class="large-4 columns end">
+                                    <div class="row">
+                                        <div class="large-7 columns">
+                                            <label for="" class="small-label text-right middle">Nearest Facilities (DENVER)</label>
+                                        </div>
+                                        <div class="large-5 columns">
+                                            <div class="switch tiny">
+                                                <input class="switch-input" id="tinySwitch1" type="checkbox" name="exampleSwitch" checked="true">
+                                                <label class="switch-paddle" for="tinySwitch1">
+                                                    <span class="show-for-sr">Tiny Sandwiches Enabled</span>
+                                                </label>
+                                            </div>
+                                        </div>  
+                                    </div> 
+                                </div>
+                                <div class="large-4 columns end">
+                                    <div class="row">
+                                        <div class="large-7 columns">
+                                            <label for="" class="small-label text-right middle">Domestic Facilities (within US)</label>
+                                        </div>
+                                        <div class="large-5 columns">
+                                            <div class="switch tiny">
+                                                <input class="switch-input" id="tinySwitch2" type="checkbox" name="exampleSwitch" checked="false">
+                                                <label class="switch-paddle" for="tinySwitch2">
+                                                    <span class="show-for-sr">Tiny Sandwiches Enabled</span>
+                                                </label>
+                                            </div>
+                                        </div>  
+                                    </div> 
+                                </div>
+                                <div class="large-4 columns end">
+                                    <div class="row">
+                                        <div class="large-7 columns">
+                                            <label for="" class="small-label text-right middle">International Facilities</label>
+                                        </div>
+                                        <div class="large-5 columns">
+                                            <div class="switch tiny">
+                                                <input class="switch-input" id="tinySwitch3" type="checkbox" name="exampleSwitch" checked="false">
+                                                <label class="switch-paddle" for="tinySwitch3">
+                                                    <span class="show-for-sr">Tiny Sandwiches Enabled</span>
+                                                </label>
+                                            </div>
+                                        </div>  
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
                    </div>
                 </div>
             </div>
@@ -112,13 +210,7 @@
                     <a class="img-card selected" href="frontend-facility-profile.html">
                         <div class="img-card-head">
                             <div class="header">
-                                <!-- <div class="story-card">
-                                    <p class="text-center subheader">
-                                        <small>TOTAL SAVINGS</small>
-                                    </p>
-                                    <h6 class="text-center">$ 11,193</h6>
-                                </div> -->
-                                <!-- <span data-open="exampleModal1" class="button alert rounded small pull-right"><i class="fa fa-bookmark-o"></i></span> -->
+                                <span class="brick success small pull-right"><i class="fa fa-map-pin"></i> &nbsp;PINNED</span>
                             </div>
                             <img src="https://s3.amazonaws.com/assets.spoke.com/static/thumb-stjoseph-hospital.jpg">
                             <div class="footer">
@@ -558,6 +650,11 @@
                 }, 40); 
             }).resize();
         });
+
+        $('.page-lead .button.secondary').click(function() {
+            $('.fa-angle-down, .fa-angle-up').toggleClass('fa-angle-down fa-angle-up');
+        });
+
     </script>
 
 </body>
