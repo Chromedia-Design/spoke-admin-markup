@@ -174,8 +174,8 @@
 						<div class="row collapse">
 							<div class="large-12 columns">
 								<div class="page-lead short-label">
-									<span class="h6">Page Builder</span>
-									<div class="button-align pull-right small">
+									<span class="h5">Page Builder</span>
+									<div class="button-align pull-right">
 										<span class="brick link"><span class="subheader">Last Changes:</span> Mar-3 8:00am</span>
 										<a href="#" class="button info"><i class="fa fa-eye fa-fw"></i>&nbsp; Preview</a>
 									</div>
@@ -205,9 +205,9 @@
 
 							<div class="row collapse">
 								<div class="large-12 columns">
-									<div class="page-lead">
-										<span class="h6">Facilities</span>
-										<a href="#" class="button primary small pull-right">Add Facility +</a>
+									<div class="page-lead sub-heading">
+										<span class="h5">Facilities</span>
+										<a href="#" class="button primary pull-right">Add Facility +</a>
 									</div>	
 								</div>
 							</div>
@@ -216,7 +216,7 @@
 								<div class="large-12 columns">
 									<ul class="tabs" data-tabs id="example-tabs">
 										<li class="tabs-title is-active"><a href="#panel1">Suggested</a></li>
-										<li class="tabs-title alert"><a href="#panel2">Saved</a></li>
+										<li class="tabs-title alert"><a href="#panel2">Pinned</a></li>
 									</ul>
 								</div>
 							</div>
@@ -224,11 +224,45 @@
 							<div class="tabs-content" data-tabs-content="example-tabs">
 
 								<div class="tabs-panel is-active" id="panel1">
-									<table class="base-spacing">
+									<div class="submenu menu-options mb-1">
+										<div class="row collapse">
+											<div class="large-5 columns end">
+				                                <div class="row">
+				                                    <div class="large-3 columns">
+				                                        <label for="" class="text-right middle">Filter</label>
+				                                    </div>
+				                                    <div class="large-9 columns">
+				                                        <select class="">
+				                                            <option>All Facilities</option>
+				                                            <option>Nearest Facilities</option>
+				                                            <option>Domestic</option>
+				                                            <option>International</option>
+				                                        </select>
+				                                    </div>  
+				                                </div> 
+				                            </div>
+				                            <div class="large-5 large-offset-2 columns end">
+				                                <div class="row">
+				                                    <div class="large-3 columns">
+				                                        <label for="" class="text-right middle">Sort By</label>
+				                                    </div>
+				                                    <div class="large-9 columns">
+				                                        <select class="">
+				                                            <option>Alphabetical</option>
+				                                            <option>Newest First</option>
+				                                             <option>Oldest First</option>
+				                                        </select>
+				                                    </div>  
+				                                </div> 
+				                            </div>
+										</div>
+									</div>	
+									<table class="thirds-spacing">
 						                <thead>
 						                <tr>
 						                    <th>Facility Name</th>
-						                    <th></th>
+						                    <th>Location</th>
+						                    <th>Added By</th>
 						                    <th></th>
 						                </tr>
 						                </thead>
@@ -236,7 +270,8 @@
 
 						                	<tr>
 						                        <td><a href="#">Center for Spine and Orthopedics</a></td>
-						                        <td class="subheader">added by Emman C. Mar-3 8:00am</td>
+						                        <td>Denver, Colorado, USA</td>
+						                        <td class="subheader">Emman C. Mar-3 8:00am</td>
 						                        <td class="text-right">
 						                            <a href="#" class="button link info"><i class="fa fa-remove fa-fw"></i></a>
 						                        </td>
@@ -244,7 +279,8 @@
 
 						                    <tr>
 						                        <td><a href="#">Precision Surgery Center</a></td>
-						                        <td class="subheader">added by Emman C. Mar-3 8:00am</td>
+						                        <td>Denver, Colorado, USA</td>
+						                        <td class="subheader">Emman C. Mar-3 8:00am</td>
 						                        <td class="text-right">
 						                            <a href="#" class="button link info"><i class="fa fa-remove fa-fw"></i></a>
 						                        </td>
@@ -252,7 +288,8 @@
 
 						                    <tr>
 						                        <td><a href="#">Arete Surgical Center</a></td>
-						                        <td class="subheader">added by Emman C. Mar-3 8:00am</td>
+						                        <td>Denver, Colorado, USA</td>
+						                        <td class="subheader">Emman C. Mar-3 8:00am</td>
 						                        <td class="text-right">
 						                            <a href="#" class="button link info"><i class="fa fa-remove fa-fw"></i></a>
 						                        </td>
@@ -260,7 +297,8 @@
 
 						                    <tr>
 						                        <td><a href="#">Denver Spine Surgeons</a></td>
-						                        <td class="subheader">added by Emman C. Mar-3 8:00am</td>
+						                        <td>Denver, Colorado, USA</td>
+						                        <td class="subheader">Emman C. Mar-3 8:00am</td>
 						                        <td class="text-right">
 						                            <a href="#" class="button link info"><i class="fa fa-remove fa-fw"></i></a>
 						                        </td>
@@ -268,7 +306,8 @@
 
 						                    <tr>
 						                        <td><a href="#">Boulder Surgery Center</a></td>
-						                        <td class="subheader">added by Emman C. Mar-3 8:00am</td>
+						                        <td>Denver, Colorado, USA</td>
+						                        <td class="subheader">Emman C. Mar-3 8:00am</td>
 						                        <td class="text-right">
 						                            <a href="#" class="button link info"><i class="fa fa-remove fa-fw"></i></a>
 						                        </td>
@@ -276,7 +315,8 @@
 
 						                    <tr>
 						                        <td><a href="#">Denver Vail Orthopedics</a></td>
-						                        <td class="subheader">added by Emman C. Mar-3 8:00am</td>
+						                        <td>Denver, Colorado, USA</td>
+						                        <td class="subheader">Emman C. Mar-3 8:00am</td>
 						                        <td class="text-right">
 						                            <a href="#" class="button link info"><i class="fa fa-remove fa-fw"></i></a>
 						                        </td>
