@@ -3,7 +3,7 @@
 	&.full-table {
 		display: table;
 		width: 100%;
-		margin: 0 0 1rem;
+		// margin: 0 0 1rem;
 		.logo {
 			width: 4.4125rem;
 			height: auto;
@@ -44,7 +44,7 @@
 			}
 		}
 		&.small {
-			.img-wrapper {
+			.img-wrapper { 
 				width: 2.75rem;
 				height: 2.75rem;
 			}

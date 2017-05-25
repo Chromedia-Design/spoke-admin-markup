@@ -76,7 +76,7 @@
 .mpirica-graph {
 	padding: 80px 0 0;
 	.label-text {
-		color: $white;
+		// color: $white;
 		font-size: 0.875rem;
 		font-weight: $global-weight-bold;
 		text-transform: uppercase;
@@ -96,7 +96,8 @@
 			position: relative;
 			display: inline-block;
 			float: left;
-			visibility: hidden;
+			// visibility: hidden;
+			background-color: transparent;
 			.mpirica-wrapper {
 				position: absolute;
 				right: 0;
@@ -133,6 +134,91 @@
 	}
 	&.bubble {
 		padding: 50px 15px 15px;
+	}
+	&.compacted {
+		padding: 1rem 0 0;
+		.progress {
+			.progress-meter {
+				position: relative;
+				&:after {
+					position: absolute;
+					top: -1rem;
+					right: 0;
+					content: "|";
+					color: $success-color
+				}
+			}
+		}
+	}
+	&.small {
+		.progress {
+			height: 0.25rem;
+			.mpirica-wrapper {
+				width: 35px;
+				height: 35px;
+				span.rating {
+
+				}
+				> img {
+					width: 35px;
+					height: 35px;
+				}
+			}
+		}
+	}
+}
+
+.mpirica-wrapper {
+	width: 70px;
+	height: 70px;
+	position: relative;
+	span.rating {
+		display: block;
+		position: absolute;
+		width: 80%;
+		top: 30px;
+		left: 8px;
+		z-index: 4;
+		text-align: center;
+		color: $white;
+		font-weight: bold;
+	}
+	> img {
+		width: 70px;
+		height: 70px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 3;
+	}
+	&.large {
+		width: 400px;
+		height: 400px;
+		position: relative;
+		span.rating {
+			display: block;
+			position: absolute;
+			width: 80%;
+			top: 165px;
+			left: 40px;
+			z-index: 4;
+			text-align: center;
+			color: $white;
+			font-weight: bold;
+			font-size: 6rem;
+		}
+		> img {
+			width: 400px;
+			height: 400px;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: 3;
+		}
 	}
 }
 

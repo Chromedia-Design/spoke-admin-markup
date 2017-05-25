@@ -99,7 +99,7 @@ textarea {
 
 select {
 	&:disabled {
-		background-color: $off-white;
+		background-color: $light-gray;
 	}
 }
 
@@ -127,7 +127,7 @@ textarea, select, .bold-div {
 	background-color: $background-white;
 	&:focus {
 		box-shadow: none;
-		border: 1px solid $text-black;
+		border: 1px solid $success-color;
 		background-color: $white;
 	}
 }
@@ -443,7 +443,7 @@ label.image-upload {
 		}
 	}
 	&.submenu {
-		padding: 0.5rem;
+		padding: 1rem;
 		background-color: $primary-light;
 		border: 1px solid rgba($black, $B-dividers);
 		border-radius: 2px;
