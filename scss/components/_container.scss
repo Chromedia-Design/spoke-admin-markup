@@ -83,6 +83,9 @@
 		}
 		.footer {
 			bottom: 0;
+			.label-text {
+				color: $white;
+			}
 		}
 		.story-card {
 			margin-left: -10px;
@@ -357,65 +360,11 @@
 		.h4,
 		.h5,
 		.h6 {
-			width: 50%;
+			width: 45%;
 		}
 	}
 	&.sub-heading {
 		margin: 0 0 0.5rem;
-	}
-}
-
-.mpirica-wrapper {
-	width: 70px;
-	height: 70px;
-	position: relative;
-	span.rating {
-		display: block;
-		position: absolute;
-		width: 80%;
-		top: 30px;
-		left: 8px;
-		z-index: 4;
-		text-align: center;
-		color: $white;
-		font-weight: bold;
-	}
-	> img {
-		width: 70px;
-		height: 70px;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		z-index: 3;
-	}
-	&.large {
-		width: 400px;
-		height: 400px;
-		position: relative;
-		span.rating {
-			display: block;
-			position: absolute;
-			width: 80%;
-			top: 165px;
-			left: 40px;
-			z-index: 4;
-			text-align: center;
-			color: $white;
-			font-weight: bold;
-			font-size: 6rem;
-		}
-		> img {
-			width: 400px;
-			height: 400px;
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			z-index: 3;
-		}
 	}
 }
 

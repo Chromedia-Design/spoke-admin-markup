@@ -460,8 +460,18 @@ label.image-upload {
 }
 
 // Switches/Toggles
+
+.switch {
+	&.tiny {
+		.switch-paddle {
+			margin-left: 0;
+		}
+	}
+}
+
 .switch-paddle {
 	border-radius: 1rem;
+	margin: 0;
 	&:after {
 		border-radius: 1rem;
 	}
