@@ -256,6 +256,11 @@ textarea, .mce-tinymce {
 	border-bottom-left-radius: 0;
 }
 
+.is-dropdown-submenu {
+	min-width: 220px;
+	max-width: 435px;
+}
+
 .menu {
 	&.dropdown {
 		background-color: transparent;
