@@ -289,7 +289,11 @@ textarea, .mce-tinymce {
 			&.opens-left {
 				> .is-dropdown-submenu {
 					&:after {
-						right: 5%;
+						right: 3%;
+						top: -0.4rem;
+					}
+					&:before {
+						right: 3%;
 						top: -0.5rem;
 					}
 				}
@@ -297,8 +301,12 @@ textarea, .mce-tinymce {
 			&.opens-right {
 				> .is-dropdown-submenu {
 					&:after {
-						left: 5%;
+						left: 3%;
 						top: -0.5rem;
+					}
+					&:after {
+						left: 3%;
+						top: -0.4rem;
 					}
 				}
 			}
@@ -307,8 +315,9 @@ textarea, .mce-tinymce {
 	&.is-dropdown-submenu {
 		margin-top: 0;
 		border-radius: 2px;
-		border: none;
-		background-color: $light-gray;
+		// display: block;
+		// border: none;
+		background-color: $white;
 		> li {
 			background-color: transparent;
 			&:first-child {
@@ -323,7 +332,16 @@ textarea, .mce-tinymce {
 			position: absolute;
 			height: 0;
 			width: 0;
-			border-bottom: 0.5rem solid rgba($black, $B-dividers);
+			border-bottom: 0.5rem solid $white;
+			border-left: 0.5rem solid transparent;
+			border-right: 0.5rem solid transparent;
+		}
+		&:before {
+			content: "";
+			position: absolute;
+			height: 0;
+			width: 0;
+			border-bottom: 0.5rem solid $medium-gray;
 			border-left: 0.5rem solid transparent;
 			border-right: 0.5rem solid transparent;
 		}
