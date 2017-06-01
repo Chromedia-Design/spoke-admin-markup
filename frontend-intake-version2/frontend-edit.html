@@ -39,7 +39,7 @@
                         <a href="#">John Doe &nbsp;</a>
                         <ul class="menu vertical">
                             <li><a href="frontend-edit.html"><i class="fa fa-user"></i>&nbsp; Account Profile</a></li>
-                            <li><a href="frontend-edit-episode.html"><i class="fa fa-user"></i>&nbsp; Episode Information</a></li>
+                            <!-- <li><a href="frontend-edit-episode.html"><i class="fa fa-user"></i>&nbsp; Episode Information</a></li> -->
                             <li><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Sign Out</a></li>
                         </ul>
                     </li>
@@ -55,7 +55,7 @@
 
                     <nav aria-label="You are here:" role="navigation">
                         <ul class="breadcrumbs">
-                            <li><a href="frontend-intake-step4.html">Recommended Facilities</a></li>
+                            <li><a href="frontend-intake-step4.html">Dashboard</a></li>
                             <li>Edit Profile</li>
                         </ul>
                     </nav>
@@ -67,7 +67,7 @@
                         <div class="large-3 columns">
                             <ul class="tabs vertical" id="example-vert-tabs" data-tabs>
                                 <li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">Employee Profile</a></li>
-                                <li class="tabs-title"><a href="#panel2v">Employee Episodes</a></li>
+                                <!-- <li class="tabs-title"><a href="#panel2v">Employee Episodes</a></li> -->
                                 <li class="tabs-title"><a href="#panel3v">Change Password</a></li>
                             </ul>
                         </div>
@@ -227,7 +227,7 @@
                                     </div>
                                 </div>
 
-                                <div class="tabs-panel" id="panel2v">
+                                <!-- <div class="tabs-panel" id="panel2v">
 
                                     <div class="callout">
                                         <table class="thirds-spacing">
@@ -270,7 +270,7 @@
                                         </table>
                                     </div>
 
-                                </div>
+                                </div> -->
 
                                 <div class="tabs-panel" id="panel3v">
                                     
@@ -321,56 +321,43 @@
         </div>
     </section>
 
-    <a href="#" data-open="chatSupport" class="chat-support"><i class="fa fa-comments" aria-hidden="true"></i></a>
-    <div id="chatSupport" class="reveal chat-area popup" data-reveal>
-        <div class="row collapse">
-            <div class="large-12 columns">
-                <div class="reveal-heading">
-                    <!-- <img src="img/logo.png"> -->
-                    <span class="h6">Leave us a message</span>
-                </div>
-            </div>
+    <a data-toggle="chatSupport" class="offcanvas-trigger"><i class="fa fa-comments" aria-hidden="true"></i></a>
+
+    <div id="chatSupport" class="offcanvas-area" data-toggler data-animate="slide-in-right slide-out-right">
+        
+        <div class="offcanvas-header">
+            <span class="h6 text">Spoke Health Support</span>
+            <a data-toggle="chatSupport" class="btn-close pull-right"><span aria-hidden="true">&times;</span></a>
         </div>
-        <div class="row collapse">
-            <div class="large-12 columns">
-                <div class="reveal-body">
-                    <div class="row">
-                        <div class="large-12 columns">
-                            <label>
-                                Enter your Name
-                                <input type="text" name="">
-                            </label>
-                        </div>
+
+        <div class="offcanvas-body">
+            <div class="media-object">
+                <div class="media-object-section logo small">
+                    <div class="img-wrapper circle">
+                        <img src= "../img/Smiling-Middle-Aged-Lady-Arms-Square.png">
                     </div>
-                    <div class="row">
-                        <div class="large-12 columns">
-                            <label>
-                                Email Address
-                                <input type="text" name="">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="large-12 columns">
-                            <label>
-                                How can I help you?
-                                <textarea class="small-input"></textarea>
-                            </label>
+                </div>
+                <div class="media-object-section middle">
+                    <div class="small talk-bubble border tri-right left-in">
+                        <div class="talktext">
+                            <p>Welcome to your dashboard!</p>
+                            <p>Here are some of the facilities I found that provide Total Knee Replacement in the Denver area. All of these choices are top quality and cover your deductible + give you a cash allowance.</p>
+                            <p>View the profiles of these facilities by clicking on the cards below. If you see one that interests you, got to the facility profile and click the Inquire button. I'll follow up with you as soon as possible.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row collapse">
-            <div class="large-12 columns">
-                <div class="reveal-footer">
-                    <div class="button-align pull-right">
-                        <a href="#" class="button link" data-close>
-                            Cancel
-                        </a>
-                        <a href="#" class="button success">
-                            Send
-                        </a>
+            <div class="media-object">
+                <div class="media-object-section logo small">
+                    <div class="img-wrapper circle">
+                        <img src= "../img/Smiling-Middle-Aged-Lady-Arms-Square.png">
+                    </div>
+                </div>
+                <div class="media-object-section middle">
+                    <div class="small talk-bubble border tri-right left-in">
+                        <div class="talktext">
+                            <p>I'm always available to assist you. Simply schedule a time for a phone call <a class="white-color underline" href="#">here</a>. You may chat with me by clicking on the icon in the lower right of your screen anytime. Or send secure messages by clicking on the "dashboard" tab at the top of the page and I'll get right back to you.</p>
+                        </div>
                     </div>
                 </div>
             </div>
