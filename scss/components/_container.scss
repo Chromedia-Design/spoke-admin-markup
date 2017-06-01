@@ -98,19 +98,20 @@
 		}
 		.story-card {
 			margin-left: -10px;
-			padding: 0.2rem 2rem 0.5rem;
+			padding: 0.5rem 1rem;
 			background-color: $primary-color;
 			display: inline-block;
 			position: relative;
+			font-family: $body-font-family;
 			&:after {
 				position: absolute;
 				content: "";
 				top: 0;
-				right: -20px;
-				width: 18px;
+				right: -15px;
+				width: 15px;
 				height: 100%;
-				border-top: 55px solid $primary-color;
-				border-right: 20px solid transparent;
+				border-top: 33px solid $primary-color;
+				border-right: 15px solid transparent;
 			}
 			h1,
 			h2,
@@ -119,6 +120,8 @@
 			h5,
 			h6,
 			p {
+				font-family: $body-font-family;
+				font-size: 87%;
 				margin: 0;
 				color: $white;
 			}
@@ -150,6 +153,14 @@
 			> small {
 				font-size: 0.875rem;
 			}
+		}
+		span.h6 {
+			display: inline-block;
+			margin-top: 0.5rem;
+			color: $text-black;
+		}
+		.button {
+			margin: 0;
 		}
 		a {
 			color: $text-black;
@@ -189,7 +200,7 @@
 					width: 20%;
 				}
 				+ .media-object-section {
-					padding-left: 1rem;
+					padding-left: 1.5rem;
 				}
 			}
 		}
@@ -387,6 +398,28 @@
 	height: auto;
 	background-color: $secondary-color;
 	border-radius: 6px;
+	&.small {
+		margin: 0 0 0 1rem;
+		padding: 0.75rem;
+		border-radius: 2px;
+		.talktext {
+			> * {
+				font-size: 0.875rem;
+			}
+		}
+		&.tri-right.border.left-in:before {
+			left: -20px;
+			top: 15px;
+			border: 10px solid;
+			border-color: $secondary-color $secondary-color transparent transparent;
+		}
+		&.tri-right.left-in:after {
+			left: -15px;
+			top: 17px;
+			border: 8px solid;
+			border-color: $secondary-color $secondary-color transparent transparent;
+		}
+	}
 }
 
 .talktext {
@@ -430,7 +463,7 @@
 	border-color: $secondary-color $secondary-color transparent transparent;
 }
 
-.tri-right.left-in:after{
+.tri-right.left-in:after {
 	content: ' ';
 	position: absolute;
 	width: 0;

@@ -5,6 +5,9 @@ body {
 		header {
 			border-right: none;
 			background: transparent;
+			&.bordered {
+				border-bottom: 1px solid rgba($black, $B-dividers);
+			}
 		}
 	}
 }
@@ -76,6 +79,9 @@ section {
 		.section-heading {
 			margin-bottom: 1.875rem;
 		}
+	}
+	&.no-padded {
+		padding: 0 0 2rem;
 	}
 	&.lo-padded {
 		padding: 2rem 0;

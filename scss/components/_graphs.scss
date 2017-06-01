@@ -8,7 +8,7 @@
 			float: left;
 			&.deductible {
 				position: relative;
-				background-color: $secondary-color;
+				background-color: $primary-color;
 				border-top-left-radius: 8px;
 				border-bottom-left-radius: 8px;
 				&:after {
@@ -16,7 +16,7 @@
 					top: 0.9rem;
 					right: -2px;
 					content: "|";
-					color: rgba($black, $B-hinttext);
+					color: rgba($black, $B-dividers);
 				}
 				.deductible-label {
 					position: absolute;

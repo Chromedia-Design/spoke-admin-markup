@@ -2,17 +2,34 @@
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.21);
 }
 
-.chat-area {
-	max-width: 22rem;
+.offcanvas-area {
+	display: none;
+	width: 24rem;
 	position: fixed;
 	z-index: 999;
-	top: auto !important;
-	bottom: 8rem;
-	right: 2rem;
-	display: inline-block;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 0;
+	background-color: $white;
+	border-left: 1px solid rgba($black, $B-dividers);
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	.offcanvas-header {
+		width: 100%;
+		padding: 0.5rem 1rem;
+		background-color: $primary-color;
+		color: $white;
+		.btn-close {
+			color: $white;
+			font-weight: $global-weight-bold;
+		}
+	}
+	.offcanvas-body {
+		padding: 0.5rem 1rem;
+	}
 }
 
-.chat-support {
+.offcanvas-trigger {
 	position: fixed;
 	bottom: 2rem;
 	right: 2rem;

@@ -332,9 +332,10 @@
 				width: 57%;
 			}
 			.list-item-image {
-				width: 19%;
+				width: auto;
 				> .img-wrapper {
 					margin-left: 0.5rem;
+					margin-right: 1rem;
 					border: 1px solid rgba($black, $B-hinttext);
 					background-color: $off-white;
 					span.h5 {

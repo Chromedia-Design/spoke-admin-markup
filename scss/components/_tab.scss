@@ -40,7 +40,7 @@
 					background-color: $alert-color;
 					border-radius: 50%;
 					right: 1.25rem;
-					top: 1rem;
+					top: .3rem;
 					border: 2px solid $white;
 				}
 			}
@@ -151,10 +151,18 @@
 			}
 		}
 	}
+	&.small {
+		.tabs-title {
+			> a {
+				font-size: 0.875rem;
+			}
+		}
+	}
 }
 
 .tabs-title {
 	> a {
+		padding: .675rem 1.5rem;
 		font-size: 1rem;
 		line-height: 1.5em;
 	}
