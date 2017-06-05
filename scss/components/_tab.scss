@@ -82,6 +82,9 @@
 		li {
 			&.tabs-title {
 				text-transform: none;
+				> a {
+					padding: 1.25rem 1.5rem;
+				}
 				&.is-active {
 					position: relative;
 					background-color: $white;
