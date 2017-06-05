@@ -13,18 +13,30 @@
 	background-color: $white;
 	border-left: 1px solid rgba($black, $B-dividers);
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	.offcanvas-area-inner {
+		position: relative;
+		width: auto;
+		height: auto;
+	}
 	.offcanvas-header {
+		position: absolute;
+		z-index: 5;
+		top: 0;
 		width: 100%;
 		padding: 0.5rem 1rem;
 		background-color: $primary-color;
 		color: $white;
 		.btn-close {
+			position: relative;
+			z-index: 6;
 			color: $white;
 			font-weight: $global-weight-bold;
 		}
 	}
 	.offcanvas-body {
-		padding: 0.5rem 1rem;
+		padding: 3rem 1rem 0.5rem;
+		position: relative;
+		overflow-y: scroll;
 	}
 }
 

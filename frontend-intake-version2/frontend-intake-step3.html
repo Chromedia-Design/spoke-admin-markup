@@ -64,42 +64,9 @@
                 <div class="medium-12 columns">
                     <form class="large">
                         <div class="row">
-                            <div class="large-6 columns end">
-                                <legend>Are you the patient?</legend>
-                                <input type="radio" name="gender" value="male" id="gender" checked=""><label for="gender">Yes, I'm the patient.</label>
-                                <input type="radio" name="gender" value="female" id="gender"><label for="gender">No, one of my dependents is the patient.</label>
-                            </div>
-                        </div>
-                        <div class="row">
                             <div class="large-6 columns">
                                 <label>
-                                    Which of your dependents is the patient?
-                                    <select>
-                                        <option>Kevin McHale</option>
-                                    </select>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="large-6 columns">
-                                <label>
-                                    Surgical Procedure
-                                    <select>
-                                        <option>Total Knee Replacement</option>
-                                    </select>
-                                </label>
-                            </div>
-                            <div class="large-6 columns">
-                                <label>
-                                    Estimated Remaining Deductible
-                                    <input type="text">
-                                </label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="large-6 columns">
-                                <label>
-                                    If you do need a surgery, when would you hope to be getting treatment?
+                                    How soon do you hope to get your treatment?
                                     <select>
                                         <option>As soon as possible</option>
                                         <option>2 - 4 Weeks</option>
@@ -111,6 +78,65 @@
                                 </label>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="large-9 columns end">
+                                <legend>Are you willing to be flexible on the schedule if it meant a larger allowance?</legend>
+                                <input type="radio" name="flex" value="yes" id="flex" checked=""><label for="flex">Yes</label>
+                                <input type="radio" name="flex" value="no" id="flex"><label for="flex">No</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="large-9 columns end">
+                                <legend>Where would you prefer to receive your treatment?</legend>
+                                <input type="radio" name="location" value="" id="location"><label for="location">I want to receive my treatment locally.</label>
+                                <input type="radio" name="location" value="" id="location"><label for="location">I am willing to travel to near cities or states.</label>
+                                <input type="radio" name="location" value="" id="location"><label for="location">I am willing to travel domestically.</label>
+                                <input type="radio" name="location" value="" id="location" checked=""><label for="location">I am willing to travel internationally.</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="large-12 columns end">
+                                <legend>What countries are you interested in traveling to?</legend>
+                                <div class="row mb-2">
+                                    <div class="large-3 columns end">
+                                        <input class="mb-0"  type="checkbox" name="country" value="" id="country" checked=""><label class="mb-0" for="country">Afghanistan</label>
+                                    </div>
+                                    <div class="large-3 columns end">
+                                        <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">Albania</label>
+                                    </div>
+                                    <div class="large-3 columns end">
+                                        <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">Bangladesh</label>
+                                    </div>
+                                    <div class="large-3 columns end">
+                                        <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">Brazil</label>
+                                    </div>
+                                    <div class="large-3 columns end">
+                                        <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">Cameroon</label>
+                                    </div>
+                                    <div class="large-3 columns end">
+                                        <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">Ecuador</label>
+                                    </div>
+                                    <div class="large-3 columns end">
+                                        <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">Germany</label>
+                                    </div>
+                                    <div class="large-3 columns end">
+                                        <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">Netherlands</label>
+                                    </div>
+                                    <div class="large-3 columns end">
+                                        <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">Zambia</label>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="large-9 columns end">
+                                <legend>Are you using any other health Benefit Programs?</legend>
+                                <input type="checkbox" name="programs" value="" id="programs" checked=""><label for="programs">Tele-Medicine</label>
+                                <input type="checkbox" name="programs" value="" id="programs"><label for="programs">Wellness Programs</label>
+                                <input type="checkbox" name="programs" value="" id="programs"><label for="programs">Prescription Drug Programs</label>
+                            </div>
+                        </div>
+
                         <div class="row">
                             <div class="large-9 columns end">
                                 <p class="help-text subheader"><small></small>By submitting this form, you authorize us to retrieve your insurance and deductible information, so we can provide customized results for you.</p>

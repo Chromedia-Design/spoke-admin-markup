@@ -54,15 +54,11 @@
                 <div class="medium-12 columns">
 
                     <nav aria-label="You are here:" role="navigation">
-                        <ul class="breadcrumbs">
+                        <ul class="breadcrumbs marginless">
                             <li><a href="frontend-intake-step4.html">Dashboard</a></li>
                             <li>Edit Profile</li>
                         </ul>
                     </nav>
-
-                    <div class="page-lead sub-heading">
-                        <span class="h5">Edit Profile</span>
-                    </div>
                     <div class="row collapse">
                         <div class="large-3 columns">
                             <ul class="tabs vertical" id="example-vert-tabs" data-tabs>
@@ -380,7 +376,7 @@
             $(window).resize(function() {
                 clearTimeout(timer);
                 timer = setTimeout(function() {
-                  $('.frontend').css("height", $(window).height());
+                  $('#chatSupport .offcanvas-body').css("height", $(window).height());
                 }, 40); 
             }).resize();
         });

@@ -461,39 +461,40 @@
     <a data-toggle="chatSupport" class="offcanvas-trigger"><i class="fa fa-comments" aria-hidden="true"></i></a>
 
     <div id="chatSupport" class="offcanvas-area" data-toggler data-animate="slide-in-right slide-out-right">
-        
-        <div class="offcanvas-header">
-            <span class="h6 text">Spoke Health Support</span>
-            <a data-toggle="chatSupport" class="btn-close pull-right"><span aria-hidden="true">&times;</span></a>
-        </div>
+        <div class="offcanvas-area-inner">
+            <div class="offcanvas-header">
+                <span class="h6 text">Spoke Health Support</span>
+                <a data-toggle="chatSupport" class="btn-close pull-right"><span aria-hidden="true">&times;</span></a>
+            </div>
 
-        <div class="offcanvas-body">
-            <div class="media-object">
-                <div class="media-object-section logo small">
-                    <div class="img-wrapper circle">
-                        <img src= "../img/Smiling-Middle-Aged-Lady-Arms-Square.png">
+            <div class="offcanvas-body">
+                <div class="media-object">
+                    <div class="media-object-section logo small">
+                        <div class="img-wrapper circle">
+                            <img src= "../img/Smiling-Middle-Aged-Lady-Arms-Square.png">
+                        </div>
                     </div>
-                </div>
-                <div class="media-object-section middle">
-                    <div class="small talk-bubble border tri-right left-in">
-                        <div class="talktext">
-                            <p>Welcome to your dashboard!</p>
-                            <p>Here are some of the facilities I found that provide Total Knee Replacement in the Denver area. All of these choices are top quality and cover your deductible + give you a cash allowance.</p>
-                            <p>View the profiles of these facilities by clicking on the cards below. If you see one that interests you, got to the facility profile and click the Inquire button. I'll follow up with you as soon as possible.</p>
+                    <div class="media-object-section middle">
+                        <div class="small talk-bubble border tri-right left-in">
+                            <div class="talktext">
+                                <p>Welcome to your dashboard!</p>
+                                <p>Here are some of the facilities I found that provide Total Knee Replacement in the Denver area. All of these choices are top quality and cover your deductible + give you a cash allowance.</p>
+                                <p>View the profiles of these facilities by clicking on the cards below. If you see one that interests you, got to the facility profile and click the Inquire button. I'll follow up with you as soon as possible.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="media-object">
-                <div class="media-object-section logo small">
-                    <div class="img-wrapper circle">
-                        <img src= "../img/Smiling-Middle-Aged-Lady-Arms-Square.png">
+                <div class="media-object">
+                    <div class="media-object-section logo small">
+                        <div class="img-wrapper circle">
+                            <img src= "../img/Smiling-Middle-Aged-Lady-Arms-Square.png">
+                        </div>
                     </div>
-                </div>
-                <div class="media-object-section middle">
-                    <div class="small talk-bubble border tri-right left-in">
-                        <div class="talktext">
-                            <p>I'm always available to assist you. Simply schedule a time for a phone call <a class="white-color underline" href="#">here</a>. You may chat with me by clicking on the icon in the lower right of your screen anytime. Or send secure messages by clicking on the "dashboard" tab at the top of the page and I'll get right back to you.</p>
+                    <div class="media-object-section middle">
+                        <div class="small talk-bubble border tri-right left-in">
+                            <div class="talktext">
+                                <p>I'm always available to assist you. Simply schedule a time for a phone call <a class="white-color underline" href="#">here</a>. You may chat with me by clicking on the icon in the lower right of your screen anytime. Or send secure messages by clicking on the "dashboard" tab at the top of the page and I'll get right back to you.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -512,16 +513,16 @@
 
 	<script type="text/javascript">
 
-        // $(function () {
-        //     var timer;
+        $(function () {
+            var timer;
 
-        //     $(window).resize(function() {
-        //         clearTimeout(timer);
-        //         timer = setTimeout(function() {
-        //           $('.frontend').css("height", $(window).height());
-        //         }, 40); 
-        //     }).resize();
-        // });
+            $(window).resize(function() {
+                clearTimeout(timer);
+                timer = setTimeout(function() {
+                  $('#chatSupport .offcanvas-body').css("height", $(window).height());
+                }, 40); 
+            }).resize();
+        });
 
     </script>
 
