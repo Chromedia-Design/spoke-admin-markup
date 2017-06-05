@@ -231,13 +231,13 @@
                         <div class="row">
 
                             <div class="large-4 columns end">
-                                <a class="img-card" href="frontend-facility-profile.html">
+                                <a class="img-card selected" href="frontend-facility-profile.html">
                                     <div class="img-card-head">
                                         <div class="header">
                                             <div class="story-card">
                                                 <h6 class="text-center">TOP 20%</h6>
                                             </div>
-                                            <span class="brick success small pull-right"><i class="fa fa-comments"></i> &nbsp;Inquiry Sent</span>
+                                            <span class="brick success small pull-right"><i class="fa fa-comments"></i> &nbsp;In Process</span>
                                         </div>
                                         <img src="https://s3.amazonaws.com/assets.spoke.com/static/thumb-stjoseph-hospital.jpg">
                                     </div>
@@ -435,7 +435,7 @@
                                 <div class="callout">
                                     <div class="callout-body">
                                         <span class="h6"><i class="fa fa-magic fa-border secondary-color"></i>&nbsp; Interested in a larger cash allowance? Willingness to travel outside the Denver area can net over $5,000. <span class="subheader">30+ Results</span></span>
-                                        <a href="#" class="button secondary small pull-right">Expand Results</a>
+                                        <a href="#" class="button secondary hollow small pull-right">Expand Results</a>
                                     </div>
                                 </div>
                             </div>
@@ -446,7 +446,7 @@
                                 <div class="callout">
                                     <div class="callout-body">
                                         <span class="h6"><i class="fa fa-plane fa-border secondary-color"></i>&nbsp; Interested in a cash allowance of $10,000? Look for options outside the USA. <span class="subheader">90+ Results</span></span>
-                                        <a href="#" class="button secondary small pull-right">Expand Results</a>
+                                        <a href="#" class="button secondary hollow small pull-right">Expand Results</a>
                                     </div>
                                 </div>
                             </div>
@@ -458,16 +458,30 @@
         </div>
     </section>
 
-    <a data-toggle="chatSupport" class="offcanvas-trigger"><i class="fa fa-comments" aria-hidden="true"></i></a>
+    <a data-open="chatSupport" class="offcanvas-trigger"><i class="fa fa-comments" aria-hidden="true"></i></a>
 
-    <div id="chatSupport" class="offcanvas-area" data-toggler data-animate="slide-in-right slide-out-right">
+    <div id="chatSupport" class="offcanvas-area reveal" data-reveal data-animate="slide-in-right slide-out-right">
         <div class="offcanvas-area-inner">
             <div class="offcanvas-header">
                 <span class="h6 text">Spoke Health Support</span>
-                <a data-toggle="chatSupport" class="btn-close pull-right"><span aria-hidden="true">&times;</span></a>
+                <a data-close class="btn-close pull-right"><span aria-hidden="true">&times;</span></a>
             </div>
 
             <div class="offcanvas-body">
+                <div class="media-object" data-animate="slide-in-right slide-out-right">
+                    <div class="media-object-section logo small">
+                        <div class="img-wrapper circle">
+                            <img src= "../img/Smiling-Middle-Aged-Lady-Arms-Square.png">
+                        </div>
+                    </div>
+                    <div class="media-object-section middle">
+                        <div class="small talk-bubble border tri-right left-in">
+                            <div class="talktext">
+                                <p>Okay, We’ve got your account set up now! Thank you!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="media-object">
                     <div class="media-object-section logo small">
                         <div class="img-wrapper circle">
@@ -477,14 +491,42 @@
                     <div class="media-object-section middle">
                         <div class="small talk-bubble border tri-right left-in">
                             <div class="talktext">
-                                <p>Welcome to your dashboard!</p>
-                                <p>Here are some of the facilities I found that provide Total Knee Replacement in the Denver area. All of these choices are top quality and cover your deductible + give you a cash allowance.</p>
-                                <p>View the profiles of these facilities by clicking on the cards below. If you see one that interests you, got to the facility profile and click the Inquire button. I'll follow up with you as soon as possible.</p>
+                                <p>I’ve searched through facilities in Denver and found 6 good local options for a Total Knee replacement.</p>
+                                <p>Four of the facilities and their surgeons are in the top 20%; 2 of the facilities are in the top 10% of quality outcomes locally and nationally.</p>
+                                <p>All of the options eliminate your deductible of $2,500 and all of the options provide a cash allowance between $900 and $2,700 (depending on the facility you choose).</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="media-object">
+                    <div class="media-object-section logo small">
+                        <div class="img-wrapper circle">
+                            <img src= "../img/Smiling-Middle-Aged-Lady-Arms-Square.png">
+                        </div>
+                    </div>
+                    <div class="media-object-section middle">
+                        <div class="small talk-bubble border tri-right left-in">
+                            <div class="talktext">
+                                <p>You will see your options arranged in order of financial benefit, with the largest payout at the top. Read more about your options by clicking “LEARN MORE” to view the profiles of the facilities and the surgeons that operate there.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="media-object">
+                    <div class="media-object-section logo small">
+                        <div class="img-wrapper circle">
+                            <img src= "../img/Smiling-Middle-Aged-Lady-Arms-Square.png">
+                        </div>
+                    </div>
+                    <div class="media-object-section middle">
+                        <div class="small talk-bubble border tri-right left-in">
+                            <div class="talktext">
+                                <p>PLEASE let me know if these options are of interest to you by selecting any or all of the facilities that you want me to explore further.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="media-object">
                     <div class="media-object-section logo small">
                         <div class="img-wrapper circle">
                             <img src= "../img/Smiling-Middle-Aged-Lady-Arms-Square.png">
@@ -497,7 +539,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -512,6 +554,8 @@
 	<script src="../js/app.js"></script>
 
 	<script type="text/javascript">
+
+        $(document).ready(function(){$('#chatSupport').foundation('open')});
 
         $(function () {
             var timer;

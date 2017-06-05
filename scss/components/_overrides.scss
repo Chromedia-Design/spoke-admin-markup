@@ -3,7 +3,7 @@
 }
 
 .offcanvas-area {
-	width: 24rem;
+	width: 30rem;
 	position: fixed;
 	z-index: 999;
 	top: 0;
@@ -11,7 +11,7 @@
 	bottom: 0;
 	border-radius: 0;
 	background-color: $white;
-	border-left: 1px solid rgba($black, $B-dividers);
+	// border-left: 1px solid rgba($black, $B-dividers);
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 	.offcanvas-area-inner {
 		position: relative;
