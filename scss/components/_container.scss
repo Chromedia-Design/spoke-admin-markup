@@ -489,3 +489,10 @@
 		width: 0.8rem;
 	}
 }
+
+.tour-wrapper {
+	padding: 0 1rem;
+	border-radius: 4px;
+	background-color: rgba($primary-color, $B-text);
+	border: 1px solid rgba($primary-color, $B-subtext);
+}

@@ -9,6 +9,14 @@
 	.button-group {
 		margin: 0;
 	}
+	&.onboarding {
+		.reveal-body {
+			min-height: 25rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
 }
 
 .reveal-heading, .reveal-body, .reveal-footer {
@@ -18,6 +26,12 @@
 	background-color: $white;
 	&.transparent {
 		background-color: transparent;
+	}
+	&.primary {
+		background-color: $primary-color;
+		> * {
+			color: $white;
+		}
 	}
 }
 
@@ -29,6 +43,18 @@
 	&.sub-modals {
 		background-color: $white !important;
 		color: rgba($black, $B-subtext) !important;
+	}
+}
+
+.reveal-body {
+	&.rounded {
+		border-radius: 4px;
+	}
+	&.primary {
+		background-color: $primary-color;
+		> * {
+			color: $white;
+		}
 	}
 }
 
