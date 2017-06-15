@@ -89,6 +89,13 @@
 	}
 }
 
+// Power Tour Overrides
+
+#powertour-mask {
+	// background-color: rgba(10,16,35,0.54);
+	background-color: rgba($white, $W-text);
+}
+
 .connectordot-tl {
 	background-color: $warning-color;
 	&:before {
