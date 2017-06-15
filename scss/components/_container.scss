@@ -110,7 +110,7 @@
 				right: -15px;
 				width: 15px;
 				height: 100%;
-				border-top: 33px solid $primary-color;
+				border-top: 50px solid $primary-color;
 				border-right: 15px solid transparent;
 			}
 			h1,
@@ -493,6 +493,6 @@
 .tour-wrapper {
 	padding: 0 1rem;
 	border-radius: 4px;
-	background-color: rgba($primary-color, $B-text);
-	border: 1px solid rgba($primary-color, $B-subtext);
+	// background-color: rgba($white, $W-dividers);
+	// border: 1px solid rgba($white, $W-hinttext);
 }

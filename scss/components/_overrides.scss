@@ -97,6 +97,16 @@
 	}
 }
 
+.connectordot-lt {
+	width: 300px;
+	left: -270px;
+	background-color: $warning-color;
+	&:before {
+		background-color: $white;
+		border: 2px solid $warning-color;
+	}
+}
+
 .connectordot-bl {
 	height: 30px;
 	bottom: -30px;
