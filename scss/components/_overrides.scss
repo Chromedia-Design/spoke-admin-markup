@@ -93,7 +93,8 @@
 
 #powertour-mask {
 	// background-color: rgba(10,16,35,0.54);
-	background-color: rgba($white, $W-text);
+	background-color: $white;
+	opacity: 0.92;
 }
 
 .connectordot-tl {
