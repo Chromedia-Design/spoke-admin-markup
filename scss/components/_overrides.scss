@@ -117,13 +117,27 @@
 	}
 }
 
-.connectordot-lm {
-	width: 280px;
-	left: -255px;
-	background-color: $warning-color;
-	&:before {
-		background-color: $white;
-		border: 2px solid $warning-color;
+#stepTwo {
+	.connectordot-lm {
+		width: 280px;
+		left: -255px;
+		background-color: $warning-color;
+		&:before {
+			background-color: $white;
+			border: 2px solid $warning-color;
+		}
+	}
+}
+
+#stepFour {
+	.connectordot-lm {
+		width: 165px;
+		left: -142px;
+		background-color: $warning-color;
+		&:before {
+			background-color: $white;
+			border: 2px solid $warning-color;
+		}
 	}
 }
 
