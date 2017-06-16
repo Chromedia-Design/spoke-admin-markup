@@ -136,7 +136,7 @@
 		}
 	}
 	.img-card-body {
-		padding: 1rem;
+		padding: 1.25rem;
 		h1,
 		h2,
 		h3,
@@ -144,14 +144,16 @@
 		h5,
 		h6 {
 			font-family: $body-font-family;
-			color: $text-black;
 			margin-bottom: 0;
 		}
 		p {
-			color: $text-black;
 			margin-bottom: 0;
 			> small {
+				color: inherit;
 				font-size: 0.875rem;
+			}
+			&.subheader {
+				color: rgba($black, $B-subtext);
 			}
 		}
 		span.h6 {
@@ -177,7 +179,7 @@
 				h4,
 				h5,
 				h6 {
-					font-size: 1rem;
+					line-height: 1.5em;
 					margin-bottom: 0;
 					overflow: hidden;
 					white-space: nowrap;
@@ -199,9 +201,9 @@
 				&.logo {
 					width: 20%;
 				}
-				+ .media-object-section {
-					padding-left: 1.5rem;
-				}
+				// + .media-object-section {
+				// 	padding-left: 1.5rem;
+				// }
 			}
 		}
 	}
