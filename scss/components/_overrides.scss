@@ -97,6 +97,17 @@
 	opacity: 0.95;
 }
 
+.powertour-step {
+	.close-button {
+		top: -1rem;
+		right: -1rem;
+		color: rgba($black, $B-hinttext);
+		&:hover {
+			color: rgba($black, $B-subtext);
+		}
+	}
+}
+
 .connectordot-tl {
 	height: 135px;
 	top: -75px;
