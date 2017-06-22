@@ -481,8 +481,12 @@
             </div>
         </div>
     </section>
-
-    <a id="hookFive" data-toggle="chatSupport" class="offcanvas-trigger"><i class="fa fa-comments" aria-hidden="true"></i></a>
+    
+    <div id="hookFive" class="offcanvas-trigger-group">
+        <a data-toggle="chatSupport" class="offcanvas-trigger"><i class="fa fa-comments" aria-hidden="true"></i></a>
+        <a data-open="scheduleCalendar" class="offcanvas-trigger"><i class="fa fa-phone" aria-hidden="true"></i></a>
+    </div>
+    
 
     <div id="chatSupport" class="offcanvas-area reveal" data-reveal data-animation-in="slide-in-right" data-animation-out="slide-out-right" data-options="showDelay:50; hideDelay:50">
         <div class="offcanvas-area-inner">
@@ -795,154 +799,158 @@
 
         // $(document).ready(function(){$('#onboardingStep1').foundation('open')});
 
-        $.powerTour({
-            tours : [
-                {
-                    trigger            : '#startTour',
-                    startWith          : 1,
-                    easyCancel         : false,
-                    escKeyCancel       : true,
-                    scrollHorizontal   : false,
-                    keyboardNavigation : true,
-                    loopTour           : false,
-                    highlightStartSpeed : 200,// new 2.5.0
-                    highlightEndSpeed  : 200,// new 2.3.0
-                    onStartTour        : function(ui){ },
-                    onEndTour          : function(ui){ },   
-                    onProgress         : function(ui){ },
-                    steps : [
-                          {
-                              hookTo          : '#hookOne',
-                              content         : '#stepOne',
-                              width           : 700,
-                              position        : 'sc',
-                              offsetY         : 0,
-                              offsetX         : 0,
-                              fxIn            : 'fadeIn',
-                              fxOut           : 'fadeOut',
-                              showStepDelay   : 0,
-                              center          : 'step',
-                              scrollSpeed     : 400,
-                              scrollEasing    : 'swing',
-                              scrollDelay     : 0,
-                              timer           : false,
-                              highlight       : true,
-                              keepHighlighted : true,
-                              keepVisible     : false,// new 2.2.0
-                              onShowStep      : function(ui){},
-                              onHideStep      : function(ui){ }
-                          },
-                          {
-                              hookTo          : '#hookTwo',
-                              content         : '#stepTwo',
-                              width           : 700,
-                              position        : 'rt',
-                              offsetY         : -90,
-                              offsetX         : 20,
-                              fxIn            : 'fadeIn',
-                              fxOut           : 'fadeOut',
-                              showStepDelay   : 0,
-                              center          : 'step',
-                              scrollSpeed     : 400,
-                              scrollEasing    : 'swing',
-                              scrollDelay     : 0,
-                              timer           : false,
-                              highlight       : true,
-                              keepHighlighted : true,
-                              keepVisible     : false,// new 2.2.0
-                              onShowStep      : function(ui){},
-                              onHideStep      : function(ui){ }
-                          },
-                          {
-                              hookTo          : '#hookTwo',
-                              content         : '#stepThree',
-                              width           : 700,
-                              position        : 'bl',
-                              offsetY         : 60,
-                              offsetX         : 0,
-                              fxIn            : 'fadeIn',
-                              fxOut           : 'fadeOut',
-                              showStepDelay   : 0,
-                              center          : 'step',
-                              scrollSpeed     : 400,
-                              scrollEasing    : 'swing',
-                              scrollDelay     : 0,
-                              timer           : false,
-                              highlight       : true,
-                              keepHighlighted : true,
-                              keepVisible     : false,// new 2.2.0
-                              onShowStep      : function(ui){},
-                              onHideStep      : function(ui){ }
-                          },
-                          {
-                              hookTo          : '#hookTwo',
-                              content         : '#stepFour',
-                              width           : 700,
-                              position        : 'rb',
-                              offsetY         : -12,
-                              offsetX         : 20,
-                              fxIn            : 'fadeIn',
-                              fxOut           : 'fadeOut',
-                              showStepDelay   : 0,
-                              center          : 'step',
-                              scrollSpeed     : 400,
-                              scrollEasing    : 'swing',
-                              scrollDelay     : 0,
-                              timer           : false,
-                              highlight       : true,
-                              keepHighlighted : true,
-                              keepVisible     : false,// new 2.2.0
-                              onShowStep      : function(ui){},
-                              onHideStep      : function(ui){ }
-                          },
-                          {
-                              hookTo          : '#hookFive',
-                              content         : '#stepFive',
-                              width           : 700,
-                              position        : 'lt',
-                              offsetY         : -180,
-                              offsetX         : 20,
-                              fxIn            : 'fadeIn',
-                              fxOut           : 'bounceOutLeft',
-                              showStepDelay   : 0,
-                              center          : 'step',
-                              scrollSpeed     : 400,
-                              scrollEasing    : 'swing',
-                              scrollDelay     : 0,
-                              timer           : false,
-                              highlight       : true,
-                              keepHighlighted : false,
-                              keepVisible     : false,// new 2.2.0
-                              onShowStep      : function(ui){},
-                              onHideStep      : function(ui){ }
-                          }
-                    ],
-                    stepDefaults : [
-                        {
-                            width           : 300,
-                            position        : 'tr',
-                            offsetY         : 0,
-                            offsetX         : 0,
-                            fxIn            : 'fadeIn',
-                            fxOut           : 'fadeOut',
-                            showStepDelay   : 0,
-                            center          : 'step',
-                            scrollSpeed     : 400,
-                            scrollEasing    : 'swing',
-                            scrollDelay     : 0,
-                            timer           : '00:00',
-                            highlight       : true,
-                            keepHighlighted : false,
-                            keepVisible     : false,// new 2.2.0
-                            onShowStep      : function(ui){ },
-                            onHideStep      : function(ui){ }
-                        }
-                     ]
-                }
-            ]
+        $(document).ready(function(){
+            $.powerTour({
+                tours : [
+                    {
+                        trigger            : '#startTour',
+                        startWith          : 1,
+                        easyCancel         : false,
+                        escKeyCancel       : true,
+                        scrollHorizontal   : false,
+                        keyboardNavigation : true,
+                        loopTour           : false,
+                        highlightStartSpeed : 200,// new 2.5.0
+                        highlightEndSpeed  : 200,// new 2.3.0
+                        onStartTour        : function(ui){ },
+                        onEndTour          : function(ui){ },   
+                        onProgress         : function(ui){ },
+                        steps : [
+                              {
+                                  hookTo          : '#hookOne',
+                                  content         : '#stepOne',
+                                  width           : 700,
+                                  position        : 'sc',
+                                  offsetY         : 0,
+                                  offsetX         : 0,
+                                  fxIn            : 'fadeIn',
+                                  fxOut           : 'fadeOut',
+                                  showStepDelay   : 0,
+                                  center          : 'step',
+                                  scrollSpeed     : 400,
+                                  scrollEasing    : 'swing',
+                                  scrollDelay     : 0,
+                                  timer           : false,
+                                  highlight       : true,
+                                  keepHighlighted : true,
+                                  keepVisible     : false,// new 2.2.0
+                                  onShowStep      : function(ui){},
+                                  onHideStep      : function(ui){ }
+                              },
+                              {
+                                  hookTo          : '#hookTwo',
+                                  content         : '#stepTwo',
+                                  width           : 700,
+                                  position        : 'rt',
+                                  offsetY         : -90,
+                                  offsetX         : 20,
+                                  fxIn            : 'fadeIn',
+                                  fxOut           : 'fadeOut',
+                                  showStepDelay   : 0,
+                                  center          : 'step',
+                                  scrollSpeed     : 400,
+                                  scrollEasing    : 'swing',
+                                  scrollDelay     : 0,
+                                  timer           : false,
+                                  highlight       : true,
+                                  keepHighlighted : true,
+                                  keepVisible     : false,// new 2.2.0
+                                  onShowStep      : function(ui){},
+                                  onHideStep      : function(ui){ }
+                              },
+                              {
+                                  hookTo          : '#hookTwo',
+                                  content         : '#stepThree',
+                                  width           : 700,
+                                  position        : 'bl',
+                                  offsetY         : 60,
+                                  offsetX         : 0,
+                                  fxIn            : 'fadeIn',
+                                  fxOut           : 'fadeOut',
+                                  showStepDelay   : 0,
+                                  center          : 'step',
+                                  scrollSpeed     : 400,
+                                  scrollEasing    : 'swing',
+                                  scrollDelay     : 0,
+                                  timer           : false,
+                                  highlight       : true,
+                                  keepHighlighted : true,
+                                  keepVisible     : false,// new 2.2.0
+                                  onShowStep      : function(ui){},
+                                  onHideStep      : function(ui){ }
+                              },
+                              {
+                                  hookTo          : '#hookTwo',
+                                  content         : '#stepFour',
+                                  width           : 700,
+                                  position        : 'rb',
+                                  offsetY         : -12,
+                                  offsetX         : 20,
+                                  fxIn            : 'fadeIn',
+                                  fxOut           : 'fadeOut',
+                                  showStepDelay   : 0,
+                                  center          : 'step',
+                                  scrollSpeed     : 400,
+                                  scrollEasing    : 'swing',
+                                  scrollDelay     : 0,
+                                  timer           : false,
+                                  highlight       : true,
+                                  keepHighlighted : true,
+                                  keepVisible     : false,// new 2.2.0
+                                  onShowStep      : function(ui){},
+                                  onHideStep      : function(ui){ }
+                              },
+                              {
+                                  hookTo          : '#hookFive',
+                                  content         : '#stepFive',
+                                  width           : 700,
+                                  position        : 'lt',
+                                  offsetY         : -180,
+                                  offsetX         : 20,
+                                  fxIn            : 'fadeIn',
+                                  fxOut           : 'bounceOutLeft',
+                                  showStepDelay   : 0,
+                                  center          : 'step',
+                                  scrollSpeed     : 400,
+                                  scrollEasing    : 'swing',
+                                  scrollDelay     : 0,
+                                  timer           : false,
+                                  highlight       : true,
+                                  keepHighlighted : true,
+                                  keepVisible     : false,// new 2.2.0
+                                  onShowStep      : function(ui){},
+                                  onHideStep      : function(ui){ }
+                              }
+                        ],
+                        stepDefaults : [
+                            {
+                                width           : 300,
+                                position        : 'tr',
+                                offsetY         : 0,
+                                offsetX         : 0,
+                                fxIn            : 'fadeIn',
+                                fxOut           : 'fadeOut',
+                                showStepDelay   : 0,
+                                center          : 'step',
+                                scrollSpeed     : 400,
+                                scrollEasing    : 'swing',
+                                scrollDelay     : 0,
+                                timer           : '00:00',
+                                highlight       : true,
+                                keepHighlighted : false,
+                                keepVisible     : false,// new 2.2.0
+                                onShowStep      : function(ui){ },
+                                onHideStep      : function(ui){ }
+                            }
+                         ]
+                    }
+                ]
+            });
+
+            $.powerTour('run', 1);
         });
 
-        $.powerTour('run',1);
+        
 
         $(function () {
             var timer;

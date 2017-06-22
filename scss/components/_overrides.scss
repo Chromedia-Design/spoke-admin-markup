@@ -67,6 +67,17 @@
 	}
 }
 
+.offcanvas-trigger-group {
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	.offcanvas-trigger {
+		position: relative;
+		display: inline-block;
+		margin: 0 0.5rem;
+	}
+}
+
 .message-status {
 	> ul {
 		margin: 0;
@@ -99,11 +110,18 @@
 
 .powertour-step {
 	.close-button {
+		display: none;
+		position: absolute;
 		top: -1rem;
 		right: -1rem;
 		color: rgba($black, $B-hinttext);
 		&:hover {
 			color: rgba($black, $B-subtext);
+		}
+	}
+	&.powertour-activestep {
+		.close-button {
+			display: inline-block;
 		}
 	}
 }
