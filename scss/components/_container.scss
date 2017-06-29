@@ -474,7 +474,8 @@
 }
 
 .timestamp {
-	float: right;
+	display: block;
+	text-align: right;
 	margin: 0.125rem 0 0;
 	font-size: 0.875rem;
 	color: rgba($black, $B-hinttext);
