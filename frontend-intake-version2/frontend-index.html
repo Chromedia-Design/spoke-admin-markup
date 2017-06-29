@@ -46,7 +46,7 @@
                 <div class="row">
                     <div class="large-12 columns">
                         <ul class="tabs small mt-0-5" data-tabs id="example-tabs">
-                            <li class="tabs-title"><a href="#panel1">Messages</a></li>
+                            <li class="tabs-title"><a href="#panel1">Inbox</a></li>
                             <li class="tabs-title is-active"><a href="#panel2">Provider Options</a></li>
                         </ul>
                     </div>
@@ -96,10 +96,6 @@
                             <div class="medium-9 columns end">        
 
                                 <div class="panel">
-                                    <div class="panel-heading">
-                                        <span class="h6">Communications</span>
-                                        <!-- <a href="#" class="button info hollow pull-right small">See All</a> -->
-                                    </div>
                                     <div class="panel-body wide">
                                         <ul class="well-list message-preview">
                                             <li>
@@ -470,7 +466,7 @@
                                                 <span>If you are interested in traveling outside of the Denver area, I found an option for you in Tulsa, Oklahoma that will pay you a cash allowance of $4,500.</span>
                                             </div>
                                             <div class="media-object-section middle">
-                                                <a href="#" class="button info hollow small pull-right">I'm Interested</a>
+                                                <a href="#" class="button secondary small pull-right">I'm Interested</a>
                                             </div>
                                         </div>
                                     </div>
@@ -492,7 +488,7 @@
                                                 <span>Further yet, if you are willing to travel to Costa Rica or other international destinations we will cover your travel expenses and give you a cash allowance of up to $6,000.</span>
                                             </div>
                                             <div class="media-object-section middle">
-                                                <a href="#" class="button info hollow small pull-right">I'm Interested</a>
+                                                <a href="#" class="button secondary small pull-right">I'm Interested</a>
                                             </div>
                                         </div>
                                     </div>
@@ -514,46 +510,158 @@
 
     <div id="chatSupport" class="offcanvas-area reveal" data-reveal data-animation-in="slide-in-right" data-animation-out="slide-out-right" data-options="showDelay:50; hideDelay:50">
         <div class="offcanvas-area-inner">
+            <a data-close class="btn-close pull-right"><span aria-hidden="true">&times;</span></a>
             <div class="offcanvas-header">
-                <span class="h6 text">Spoke Health Support</span>
-                <a data-close class="btn-close pull-right"><span aria-hidden="true">&times;</span></a>
+                <div class="input-group">
+                    <input type="text" class="input-group-field" value="" placeholder="Search messages...">
+                    <div class="input-group-button">
+                        <a href="#" class="button info"><i class="fa fa-search"></i></a>
+                    </div>
+                </div>
             </div>
 
             <div class="offcanvas-body">
-                <div class="media-object" data-animate="slide-in-right slide-out-right">
-                    <div class="media-object-section logo small">
-                        <div class="img-wrapper circle">
-                            <img src= "../img/Smiling-Middle-Aged-Lady-Arms-Square.png">
+
+                <div class="main-content">
+
+                    <div class="inner">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <span class="h6">Pinned Messages</span>
+                                <a href="#" class="button info hollow pull-right small">See All</a>
+                            </div>
+                            <div class="panel-body wide">
+                                <ul class="well-list message-preview">
+                                    <li class="selected">
+                                        <a id="expandChat" class="list-wrap">
+                                            <div class="list-item-image align-middle text-center">
+                                                <div class="img-wrapper circle logo small">
+                                                    <img src="../img/Smiling-Middle-Aged-Lady-Arms-Square.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="list-detail">
+                                                <span class="truncate">Follow Up</span>
+                                                <span class="truncate"><small>Lorem ipsum dolor sit amet.</small></span>
+                                            </div>
+                                            <div class="list-note text-center">
+                                                <span class="subheader pull-right"><small>Feb-12 6:34AM</small></span>
+                                            </div>
+                                            <div class="pull-right align-middle">
+                                                <span class="pinned button link small"><i class="fa fa-heart"></i></span>
+                                            </div>
+                                        </a>
+                                    </li>          
+                                </ul>
+                            </div>
+                        </div> 
+
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <span class="h6">Messages</span>
+                                <a href="#" class="button info hollow pull-right small">See All</a>
+                            </div>
+                            <div class="panel-body wide">
+                                <ul class="well-list message-preview">
+                                    <li>
+                                        <a id="expandChat" class="list-wrap">
+                                            <div class="list-item-image align-middle">
+                                                <div class="img-wrapper circle logo small">
+                                                    <img src="../img/Smiling-Middle-Aged-Lady-Arms-Square.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="list-detail">
+                                                <span class="truncate">Confirmation</span>
+                                                <span class="truncate"><small>Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small></span>
+                                            </div>
+                                            <div class="list-note text-center">
+                                                <span class="subheader pull-right"><small>Feb-12 6:34AM</small></span>
+                                            </div>
+                                            <div class="pull-right align-middle">
+                                                <span class="pin button link small"><i class="fa fa-heart"></i></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a id="expandChat" class="list-wrap">
+                                            <div class="list-item-image align-middle">
+                                                <div class="img-wrapper circle logo small">
+                                                    <img src="../img/Smiling-Middle-Aged-Lady-Arms-Square.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="list-detail">
+                                                <span class="truncate">Spoke Health Invite - John Doe</span>
+                                                <span class="truncate"><small>Click here to find out how Spoke can help you save money on a surgical procedure.</small></span>
+                                            </div>
+                                            <div class="list-note text-center">
+                                                <span class="subheader pull-right"><small>Feb-12 6:34AM</small></span>
+                                            </div>
+                                            <div class="pull-right align-middle">
+                                                <span class="pin button link small"><i class="fa fa-heart"></i></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="media-object-section middle">
-                        <div class="small talk-bubble border tri-right left-in">
-                            <div class="talktext">
-                                <p>Okay, We’ve got your account set up now! Thank you!</p>
-                                <p>I’ve searched through providers in Denver and found 6 good local options for a Total Knee replacement.</p>
-                                <p>All of the providers are in the top 25% in your area (in fact, two are in the top 10% nationally).</p>
-                                <p>All of the options eliminate your out of pocket expense and pay you a cash bonus!</p>
-                                <p>All of the providers are within your local area.</p>
-                                <p>You may chat with me by clicking on the icon in the lower right of your screen anytime. Or send secure messages by clicking on the "dashboard" tab at the top of the page and I'll get right back to you.</p>
+
+                    <div class="footer-content">
+                        <a href="" class="button secondary expanded"><i class="fa fa-edit"></i>&nbsp; Compose New Message</a>
+                    </div>
+                </div>
+
+                <div class="side-content">
+                    <div class="inner">
+
+                        <div class="row">
+                            <div class="large-12 columns">
+                                <div class="page-lead short-label">
+                                   <p class="h5">
+                                        Sarah Bourdon <span class="badge success"></span><br>
+                                        <span class="subheader"><small>Spoke Advocate</small></span>
+                                    </p>
+                                    <a class="button circle hollow  pull-right"><i class="fa fa-video-camera"></i></a>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="media-object" data-animate="slide-in-right slide-out-right">
+                            <div class="media-object-section middle">
+                                <div class="small talk-bubble border tri-right left-in">
+                                    <div class="talktext">
+                                        <p>Okay, We’ve got your account set up now! Thank you!</p>
+                                        <p>I’ve searched through providers in Denver and found 6 good local options for a Total Knee replacement.</p>
+                                        <p>All of the providers are in the top 25% in your area (in fact, two are in the top 10% nationally).</p>
+                                        <p>All of the options eliminate your out of pocket expense and pay you a cash bonus!</p>
+                                        <p>All of the providers are within your local area.</p>
+                                        <p>You may chat with me by clicking on the icon in the lower right of your screen anytime. Or send secure messages by clicking on the "dashboard" tab at the top of the page and I'll get right back to you.</p>
+                                    </div>
+                                </div>
+                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+                            </div>
+                        </div>
+                        <div class="media-object" data-animate="slide-in-right slide-out-right">
+                            <div class="media-object-section middle">
+                                <div class="small owner talk-bubble border tri-right right-in">
+                                    <div class="talktext">
+                                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui.</p>
+                                    </div>
+                                </div>
+                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-content">
+                        <div class="input-group">
+                            <input type="text" class="input-group-field" value="" placeholder="Write a reply...">
+                            <div class="input-group-button">
+                                <a href="#" class="button success"><i class="fa fa-send"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="media-object">
-                    <div class="media-object-section logo small">
-                        <div class="img-wrapper circle">
-                            <img src= "../img/Smiling-Middle-Aged-Lady-Arms-Square.png">
-                        </div>
-                    </div>
-                    <div class="media-object-section middle">
-                        <div class="small talk-bubble border tri-right left-in">
-                            <div class="talktext">
-                                <p>I'm always available to assist you. Simply schedule a time for a phone call here.</p>
-                                <p class="text-center"><a data-open="scheduleCalendar" class="button success expanded mb-0"><i class="fa fa-phone"></i>&nbsp; Schedule A Call</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
@@ -575,131 +683,6 @@
             </div>
         </div>
     </div>
-
-    <!-- <div id="onboardingStep1" class="reveal onboarding tiny" data-reveal data-animation-in="slide-in-right" data-animation-out="slide-out-left">
-        <div class="row collapse">
-            <div class="large-12 columns">
-                <div class="reveal-heading primary">
-                    <p class="text-center marginless"><small>WELCOME</small></p>
-                </div>
-            </div>
-        </div>
-        <div class="row collapse">
-            <div class="large-12 columns">
-                <div class="reveal-body primary">
-                    <div class="wrapper">
-                        <div class="img-wrapper mb-2">
-                            <img src="http://placehold.it/200x200" alt="">
-                        </div>
-                        <p class="h6 text-center">Okay, we’ve got your account set up now! <br>Thank you!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row collapse">
-            <div class="large-12 columns">
-                <div class="reveal-footer primary">
-                    <a data-toggle="onboardingStep2" data-close class="button secondary expanded">Next &nbsp;<i class="fa fa-angle-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="onboardingStep2" class="reveal onboarding tiny" data-reveal data-animation-in="slide-in-right" data-animation-out="slide-out-left">
-        <div class="row collapse">
-            <div class="large-12 columns">
-                <div class="reveal-heading primary">
-                    <p class="text-center marginless"><small>CARD DETAILS</small></p>
-                </div>
-            </div>
-        </div>
-        <div class="row collapse">
-            <div class="large-12 columns">
-                <div class="reveal-body primary">
-                    <div class="wrapper">
-                        <div class="img-wrapper mb-2">
-                            <img src="http://placehold.it/200x200" alt="">
-                        </div>
-                        <p>All of the options eliminate your deductible of $2,500 and all of the options provide a cash allowance between $900 and $2,700 (depending on the facility you choose).</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row collapse">
-            <div class="large-12 columns">
-                <div class="reveal-footer primary">
-                    <div class="button-align expanded">
-                        <a data-toggle="onboardingStep1" data-close class="button white link secondary"> <i class="fa fa-angle-left"></i> &nbsp;Previous</a>
-                        <a data-toggle="onboardingStep3" data-close class="button secondary">Next &nbsp;<i class="fa fa-angle-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="onboardingStep3" class="reveal onboarding tiny" data-reveal data-animation-in="slide-in-right" data-animation-out="slide-out-left">
-        <div class="row collapse">
-            <div class="large-12 columns">
-                <div class="reveal-heading primary">
-                    <p class="text-center marginless"><small>FACILITY PROFILE</small></p>
-                </div>
-            </div>
-        </div>
-        <div class="row collapse">
-            <div class="large-12 columns">
-                <div class="reveal-body primary">
-                    <div class="wrapper">
-                        <div class="img-wrapper mb-2">
-                            <img src="http://placehold.it/200x200" alt="">
-                        </div>
-                        <p>On this page, you will see your options arranged in order of financial benefit, with the largest payout at the top. Read more about your options by clicking “LEARN MORE” to view the profiles of the facilities and the surgeons that operate there.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row collapse">
-            <div class="large-12 columns">
-                <div class="reveal-footer primary">
-                    <div class="button-align expanded">
-                        <a data-toggle="onboardingStep2" data-close class="button white link secondary"> <i class="fa fa-angle-left"></i> &nbsp;Previous</a>
-                        <a data-toggle="onboardingStep4" data-close class="button secondary">Next &nbsp;<i class="fa fa-angle-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="onboardingStep4" class="reveal onboarding tiny" data-reveal data-animation-in="slide-in-right" data-animation-out="slide-out-left">
-        <div class="row collapse">
-            <div class="large-12 columns">
-                <div class="reveal-heading primary">
-                    <p class="text-center marginless"><small>SUPPORT</small></p>
-                </div>
-            </div>
-        </div>
-        <div class="row collapse">
-            <div class="large-12 columns">
-                <div class="reveal-body primary">
-                    <div class="wrapper">
-                        <div class="img-wrapper mb-2">
-                            <img src="http://placehold.it/200x200" alt="">
-                        </div>
-                        <p>PLEASE let me know if these options are of interest to you by selecting any or all of the facilities that you want me to explore further.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row collapse">
-            <div class="large-12 columns">
-                <div class="reveal-footer primary">
-                    <div class="button-align expanded">
-                        <a data-toggle="onboardingStep3" data-close class="button white link secondary"> <i class="fa fa-angle-left"></i> &nbsp;Previous</a>
-                        <a data-close class="button secondary">End &nbsp;<i class="fa fa-angle-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
     <!-- Power Tour -->
     <div id="stepOne" class="tour-wrapper">
@@ -868,9 +851,13 @@
 
 	<script type="text/javascript">
 
-        // $(document).ready(function(){$('#onboardingStep1').foundation('open')});
-
         $(document).ready(function(){
+
+            $("#expandChat").click(function () {
+                $("#chatSupport").toggleClass("expanded");
+                event.preventDefault();
+            });
+
             $.powerTour({
                 tours : [
                     {
@@ -1060,10 +1047,8 @@
                 ]
             });
 
-            $.powerTour('run', 1);
+            // $.powerTour('run', 1);
         });
-
-        
 
         $(function () {
             var timer;

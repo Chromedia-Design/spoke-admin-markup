@@ -328,9 +328,15 @@
 		> li {
 			.list-wrap {
 				padding: 15px;
+				transition: all 0.2s;
 			}
 			.list-detail {
-				width: 57%;
+				width: 50%;
+				> span {
+					&:first-child {
+						color: $text-black;
+					}
+				}
 			}
 			.list-item-image {
 				width: auto;
@@ -343,6 +349,32 @@
 						font-weight: normal;
 						color: rgba($black, $B-hinttext);
 						line-height: 2.7rem;
+					}
+				}
+			}
+			&.selected {
+				.list-wrap {
+					background-color: rgba($success-color, $B-dividers);
+				}
+			}
+			&:hover {
+				.list-wrap {
+					background-color: rgba($success-color, $B-dividers);
+				}
+			}
+			// Button styles
+			.pull-right {
+				.button {
+					margin: 0.5rem 0;
+					&.pin {
+						color: $medium-gray;
+						&:hover {
+							color: $alert-color;
+							background: transparent;
+						}
+					}
+					&.pinned {
+						color: $alert-color;
 					}
 				}
 			}

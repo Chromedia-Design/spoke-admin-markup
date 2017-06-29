@@ -14,10 +14,26 @@
 	// border-left: 1px solid rgba($black, $B-dividers);
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 	// overflow-y: scroll;
+	transition: width 0.2s ease-in-out;
 	.offcanvas-area-inner {
 		position: relative;
 		width: auto;
 		height: auto;
+		.btn-close {
+			position: absolute;
+			top: 0;
+			left: -44px;
+			display: block;
+			height: 56px;
+			width: 44px;
+			z-index: 4;
+			font-weight: $global-weight-bold;
+			background: $background-white;
+			padding: 15px;
+			box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+			border-radius: 8px 0 0 8px;
+			color: $text-black;
+		}
 	}
 	.offcanvas-header {
 		position: absolute;
@@ -25,24 +41,93 @@
 		top: 0;
 		width: 100%;
 		padding: 0.5rem 1rem;
-		background-color: $primary-color;
-		color: $white;
-		.btn-close {
-			position: relative;
-			z-index: 6;
-			color: $white;
-			font-weight: $global-weight-bold;
+		background-color: $background-white;
+		border-bottom: 1px solid rgba($black, $B-dividers);
+		.input-group {
+			margin: 0;
 		}
 	}
 	.offcanvas-body {
-		padding: 3rem 1rem 0.5rem;
 		position: relative;
-		overflow-y: scroll;
+		overflow-y: hidden;
+		padding: 0;
+	}
+}
+
+#chatSupport {
+	.main-content,
+	.side-content {
+		position: relative;
+		padding: 3.5rem 0 4.5rem;
+		height: 100%;
+		.inner {
+			overflow-y: scroll;
+			height: 100%;
+			&::-webkit-scrollbar {
+				display: none;
+			}
+		}
+		.footer-content {
+			position: absolute;
+			z-index: 8;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			padding: 1rem;
+			background-color: $white;
+			border-top: 1px solid rgba($black, $B-dividers);
+			.input-group, .button {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.main-content {
+		width: 100%;
+		float: left;
+		border-right: 1px solid rgba($black, $B-dividers);
+		.panel {
+			border-left: none;
+			border-right: none;
+		}
+	}
+	.side-content {
+		display: none;
+		background-color: $background-white;
+		.page-lead {
+			.h1,
+			.h2,
+			.h3,
+			.h4,
+			.h5,
+			.h6 {
+				line-height: 1.2em;
+			}
+			.badge {
+				width: 0.5rem;
+				height: 0.5rem;
+				min-width: 0.5rem;
+				padding: 0;
+			}
+			.button {
+				margin: 0.5rem 0;
+			}
+		}
+	}
+	&.expanded {
+		width: 60rem;
+		.main-content {
+			width: 50%;
+		}
+		.side-content {
+			display: inline-block;
+			width: 50%;
+		}
 	}
 }
 
 .offcanvas-trigger {
 	position: fixed;
+	z-index: 20;
 	bottom: 1rem;
 	right: 1rem;
 	background-color: $success-color;
@@ -189,5 +274,12 @@
 	&:before {
 		background-color: $white;
 		border: 2px solid $warning-color;
+	}
+}
+
+.sticky {
+	position: relative;
+	&.is-anchored {
+		position: relative;
 	}
 }

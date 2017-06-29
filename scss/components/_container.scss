@@ -64,7 +64,7 @@
 		overflow: hidden;
 		> img {
 			position: absolute;
-			z-index: 1;
+			z-index: 0;
 			width: 100%;
 			height: auto;
 			top: 0;
@@ -334,6 +334,10 @@
 		vertical-align: top;
 		line-height: 1.5em;
 		font-weight: $global-weight-bold;
+		span {
+			font-size: 1rem;
+			line-height: 1.2rem;
+		}
 		&.primary-color {
 			color: $primary-color;
 		}
@@ -423,7 +427,57 @@
 			border: 8px solid;
 			border-color: $secondary-color $secondary-color transparent transparent;
 		}
+		&.tri-right.border.right-in:before {
+			right: -20px;
+			top: 15px;
+			border: 10px solid;
+			border-color: $secondary-color transparent transparent $secondary-color;
+		}
+		&.tri-right.right-in:after {
+			right: -15px;
+			top: 17px;
+			border: 8px solid;
+			border-color: $secondary-color transparent transparent $secondary-color;
+		}
 	}
+	&.owner {
+		background-color: $light-gray;
+		border: 2px solid $light-gray;
+		&.tri-right.border.right-in:before {
+			right: -20px;
+			top: 15px;
+			border: 10px solid;
+			border-color: $light-gray transparent transparent $light-gray;
+		}
+		&.tri-right.right-in:after {
+			right: -15px;
+			top: 17px;
+			border: 8px solid;
+			border-color: $light-gray transparent transparent $light-gray;
+		}
+		.talktext {
+			color: $text-black;
+			.h1,
+			.h2,
+			.h3,
+			.h4,
+			.h5,
+			.h6 {
+				color: $text-black;
+			}
+		}
+		+ .timestamp {
+			float: left;
+			margin-left: 1rem;
+		}
+	}
+}
+
+.timestamp {
+	float: right;
+	margin: 0.125rem 0 0;
+	font-size: 0.875rem;
+	color: rgba($black, $B-hinttext);
 }
 
 .talktext {
@@ -479,6 +533,34 @@
 	border: 20px solid;
 	border-color: $secondary-color $secondary-color transparent transparent;
 }
+
+/* Right triangle, right side slightly down*/
+.tri-right.border.right-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+    left: auto;
+	right: -2.5rem;
+    top: 20px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: $secondary-color transparent transparent $secondary-color;
+}
+.tri-right.right-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+    left: auto;
+	right: -35px;
+    top: 22px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: $secondary-color transparent transparent $secondary-color;
+}
+
+// Orbit Overrides
 
 .orbit {
 	.img-card {
