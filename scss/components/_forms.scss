@@ -47,11 +47,39 @@ form {
 		}
 	 	[type='checkbox'],
 		[type='radio'] {
-			margin: 0.3rem 0 0.85rem;
+			margin: 0.5rem 0 0.85rem;
 			+ label {
 				font-size: 1.3125rem;
+				> [type='text'] {
+					display: inline-block;
+					margin: 0;
+					width: auto;
+					border-top: none;
+					border-left: none;
+					border-right: none;
+					font-size: 1.3125rem;
+					line-height: 1.5em;
+					height: 1.75rem;
+					padding: 0 1rem 0.5rem;
+					background-color: transparent;
+				}
 				&:last-child {
 					margin-bottom: 2rem;
+				}
+			}
+		}
+		.help-text {
+			[type='checkbox'],
+			[type='radio'] {
+				margin: 0.35rem 0 0.65rem;
+				+ label {
+					font-size: 1rem;
+				}
+
+			}
+			&.subheader {
+				label {
+					color: rgba(10, 16, 35, 0.54);
 				}
 			}
 		}
@@ -89,8 +117,22 @@ legend {
 
 .help-text {
 	margin-top: 0;
+	font-size: 0.8125rem;
 	font-style: normal;
 	color: rgba($black, $B-subtext);
+	[type='checkbox'],
+	[type='radio'] {
+		margin: 0.25rem 0 0.75rem;
+		+ label {
+			font-size: 0.8125rem;
+		}
+
+	}
+	&.subheader {
+		label {
+			color: rgba(10, 16, 35, 0.54);
+		}
+	}
 }
 
 textarea {
@@ -167,7 +209,7 @@ textarea, div, label, select {
 [type='checkbox'],
 [type='radio'] {
 	float: left;
-	margin: 0.15rem 0 0.85rem;
+	margin: 0.25rem 0 0.75rem;
 	+ label {
 		font-family: $body-font-family;
 		display: block;
@@ -176,7 +218,24 @@ textarea, div, label, select {
 		color: $text-black;
 		margin-left: 1.5rem;
 		margin-bottom: 0.5rem;
+		&:last-child {
+			margin-bottom: 1rem;
+		}
+		> [type='text'] {
+			display: inline-block;
+			margin: 0;
+			width: auto;
+			border-top: none;
+			border-left: none;
+			border-right: none;
+			font-size: 1rem;
+			line-height: 1.5em;
+			height: 1.75rem;
+			padding: 0 1rem 0.5rem;
+			background-color: transparent;
+		}
 	}
+
 }
 
 textarea, .mce-tinymce {

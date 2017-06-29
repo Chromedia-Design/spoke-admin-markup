@@ -136,6 +136,7 @@
 		}
 	}
 	.img-card-body {
+		position: relative;
 		padding: 1.25rem;
 		h1,
 		h2,
@@ -168,6 +169,7 @@
 			color: $text-black;
 		}
 		.media-object {
+			position: relative;
 			margin: 0;
 			display: table;
 			width: 100%;

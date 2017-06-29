@@ -99,6 +99,9 @@
 			animation: bounce 2s infinite;
 		}
 	}
+	&.plain {
+		text-transform: none;
+	}
 }
 
 @keyframes bounce {

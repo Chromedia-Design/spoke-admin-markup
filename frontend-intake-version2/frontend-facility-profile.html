@@ -12,6 +12,11 @@
 	<!-- Default Theme -->
 	<link rel="stylesheet" href="../js/owl-carousel/owl.theme.css">
 
+	<link rel="stylesheet" href="../js/powertour/css/powertour.min.3.2.0.css" />
+    <link rel="stylesheet" href="../js/powertour/css/powertour-style-clean.min.css" />
+    <link rel="stylesheet" href="../js/powertour/css/powertour-connectors.min.css" />
+    <link rel="stylesheet" href="../js/powertour/css/animate.min.css" />
+
 	<link rel="stylesheet" href="../css/app.css">
 </head>
 <body class="frontend">
@@ -55,15 +60,16 @@
 			<div class="large-12 columns">
 				<nav aria-label="You are here:" role="navigation">
 				  	<ul class="breadcrumbs">
-				    	<li><a href="frontend-index.html">Recommended Facilities</a></li>
+				    	<li><a href="frontend-index.html">Provider Options</a></li>
 				    	<li>Precision Spine Center</li>
 				  	</ul>
 				</nav>
 			</div>
 		</div>
+
 		<div class="row">
 			<div class="large-12 columns">
-				<div id="owl-example" class="owl-carousel">
+				<div id="facilityImages" class="owl-carousel">
 				  	<div>
 				  		<img src="../img/slide-precision-spine-center-1.jpg" alt="">
 				  	</div>
@@ -89,46 +95,7 @@
 		<div class="row">
 			<div class="large-4 large-push-8 columns">
 
-				<a href="#" data-open="exampleModal1" class="button success large expanded mt-1"><i class="fa fa-comments fa-fw"></i>&nbsp; I'm interested. Explore this option.</a>
-
-				<div class="reveal" id="exampleModal1" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-					<div class="row collapse">
-						<div class="large-12 columns">
-							<h5 class="reveal-heading">Precision Spine Center</h5>
-						</div>
-					</div>
-					<div class="row collapse">
-						<div class="large-12 columns">
-							<div class="reveal-body">
-								<div class="media-object">
-						            <div class="media-object-section logo large">
-						                <div class="img-wrapper circle">
-						                    <img src= "../img/Smiling-Middle-Aged-Lady-Arms-Square.png">
-						                </div>
-						            </div>
-						            <div class="media-object-section middle">
-						                <div class="talk-bubble border tri-right left-in">
-						                    <div class="talktext">
-						                    	<p class="h5">Fantastic!</p>
-						                        <p>I'll start researching Denver Vail Orthopedics and get back to you as soon as I can. Continue to look at other facilities and let me know if any other options interest you as well.</p>
-						                    </div>
-						                </div>
-						            </div>
-						        </div>
-							</div>
-						</div>
-					</div>
-					<div class="row collapse">
-						<div class="large-12 columns">
-							<div class="reveal-footer">
-								<a data-close class="button expanded success">Got it.</a>
-							</div>
-						</div>
-					</div>
-				  	<button class="close-button" data-close aria-label="Close modal" type="button">
-				    	<span aria-hidden="true">&times;</span>
-				  	</button>
-				</div>
+				<a id="interestTrigger" class="button success large plain expanded mt-1">I'm interested. Explore this option.</a>
 
 				<div class="callout mt-1">
 					
@@ -147,6 +114,7 @@
 								  	</div>
 								</div>
 							</div>
+							<p class="mt-1 mb-0 pull-right"><small><a href="https://www.mpirica.com/quality-score">More about MPIRICA Scores &nbsp;<i class="fa fa-angle-right"></i></a></small></p>
 						</div>
 					</div>
 				</div>
@@ -315,61 +283,271 @@
 					</div>
 				</div>
 				
-				<!-- <div class="section-heading mt-2 mb-2">
-					<h5>Procedure: Knee Replacement</h5>
-				</div>
-				<p>If painful joints are interfering with daily activities, it may be time to consider a surgical treatment option. A common type of knee surgery is knee replacement which falls into two categories: partial and total replacement. Knee surgery is performed to examine or repair tissues inside the knee joint using surgical instruments placed into the joint through small incisions.</p>
-				<p>If painful joints are interfering with daily activities, it may be time to consider a surgical treatment option. A common type of knee surgery is knee replacement which falls into two categories: partial and total replacement. Knee surgery is performed to examine or repair tissues inside the knee joint using surgical instruments placed into the joint through small incisions.</p> -->
+			</div>
+		</div>
 
-				<!-- <div class="row">
-					<div class="large-12 columns">
-						<div id="owl-example2" class="owl-carousel small">
-						  	<div>
-						  		<img src="img/slide-1.png" alt="">
-						  	</div>
-						  	<div>
-						  		<img src="img/slide-2.png" alt="">
-						  	</div>
-						  	<div>
-						  		<img src="img/slide-3.png" alt="">
-						  	</div>
-						  	<div>
-						  		<img src="img/slide-1.png" alt="">
-						  	</div>
-						  	<div>
-						  		<img src="img/slide-2.png" alt="">
-						  	</div>
-						  	<div>
-						  		<img src="img/slide-3.png" alt="">
-						  	</div>
-						</div>
-					</div>
+		<div class="row">
+            <div class="large-12 columns">
+                <div class="page-lead short-label">
+                   <p class="h5">
+                        Similar Listings
+                    </p>
+                    <a class="button link info mt-0-5 pull-right">See All Options <i class="fa fa-angle-right"></i></a>
+               </div>
+            </div>
+        </div>
+
+		<div class="row">
+			<div class="large-12 columns">
+
+				<div id="facilityList" class="owl-carousel mb-4">
+				  	<div>
+				  		<a class="img-card" href="frontend-facility-profile.html">
+                            <div class="img-card-head">
+                                <div class="header">
+                                    <div class="story-card">
+                                        <h6>TOP 20%</h6>
+                                        <p class="subheader">
+                                            <small>QUALITY PROVIDER</small>
+                                        </p>
+                                    </div>
+                                </div>
+                                <img src="https://s3.amazonaws.com/assets.spoke.com/static/thumb-denver-vail.jpg">
+                            </div>
+                            <div class="img-card-body">
+                                <div class="media-object">
+                                    <div class="media-object-section logo small middle">
+                                        <div class="img-wrapper">
+                                            <img src= "../img/logo-Denver-Vail-Orthopedics.png">
+                                        </div>
+                                    </div>
+                                    <div class="media-object-section middle">
+                                        <h6>Denver Vail Orthopedics</h6>
+                                        <p class="subheader"><small>DENVER</small>&nbsp; <small>2.1 miles</small></p>
+                                    </div>
+                                </div>
+                                <div class="row mt-1">
+                                    <div class="small-12 columns">
+                                        <div class="media-object">
+                                            <div class="media-object-section middle">
+                                                <div class="text-group">
+                                                    <p class="h4 success-color">$5,500</p>
+                                                    <p class="subheader"><small>YOUR BONUS</small></p>
+                                                </div>
+                                            </div>
+                                            <div class="media-object-section middle">
+                                                <span href="#" class="button info small hollow pull-right">Learn More</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+				  	</div>
+
+				  	<div>
+				  		<a class="img-card" href="frontend-facility-profile.html">
+                            <div class="img-card-head">
+                                <div class="header">
+                                    <div class="story-card">
+                                        <h6>TOP 20%</h6>
+                                        <p class="subheader">
+                                            <small>QUALITY PROVIDER</small>
+                                        </p>
+                                    </div>
+                                    <!-- <span class="brick success small pull-right"><i class="fa fa-comments"></i> &nbsp;Exploring</span> -->
+                                </div>
+                                <img src="https://s3.amazonaws.com/assets.spoke.com/static/thumb-boulder-center.jpg">
+                            </div>
+                            <div class="img-card-body">
+                                <div class="media-object">
+                                    <div class="media-object-section small logo middle">
+                                        <div class="img-wrapper">
+                                            <img src= "../img/fh_orlando_logo.png">
+                                        </div>
+                                    </div>
+                                    <div class="media-object-section title middle">
+                                        <h6>Boulder Surgery Center</h6>
+                                        <p class="subheader"><small>BOULDER</small>&nbsp; <small>2.1 miles</small></p>
+                                    </div>
+                                </div>
+                                <div class="row mt-1">
+                                    <div class="small-12 columns">
+                                        <div class="media-object">
+                                            <div class="media-object-section middle">
+                                                <div class="text-group">
+                                                    <p class="h4 success-color">$5,500</p>
+                                                    <p class="subheader"><small>YOUR BONUS</small></p>
+                                                </div>
+                                            </div>
+                                            <div class="media-object-section middle">
+                                                <span href="#" class="button info small hollow pull-right">Learn More</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+				  	</div>
+
+				  	<div>
+				  		<a class="img-card" href="frontend-facility-profile.html">
+                            <div class="img-card-head">
+                                <div class="header">
+                                    <div class="story-card">
+                                        <h6>TOP 20%</h6>
+                                        <p class="subheader">
+                                            <small>QUALITY PROVIDER</small>
+                                        </p>
+                                    </div>
+                                    <!-- <span data-open="exampleModal1" class="button alert rounded small pull-right"><i class="fa fa-search"></i></span> -->
+                                </div>
+                                <img src="https://s3.amazonaws.com/assets.spoke.com/static/thumb-denverspine-surgeons.jpg">
+                            </div>
+                            <div class="img-card-body">
+                                <div class="media-object">
+                                    <div class="media-object-section logo small middle">
+                                        <div class="img-wrapper">
+                                            <img src= "../img/logo-Denver-Spine-Surgeons.png">
+                                        </div>
+                                    </div>
+                                    <div class="media-object-section middle">
+                                        <h6>Denver Spine Surgeons</h6>
+                                        <p class="subheader"><small>GREENWOOD</small>&nbsp; <small>2.1 miles</small></p>
+                                    </div>
+                                </div>
+                                <div class="row mt-1">
+                                    <div class="small-12 columns">
+                                        <div class="media-object">
+                                            <div class="media-object-section middle">
+                                                <div class="text-group">
+                                                    <p class="h4 success-color">$5,500</p>
+                                                    <p class="subheader"><small>YOUR BONUS</small></p>
+                                                </div>
+                                            </div>
+                                            <div class="media-object-section middle">
+                                                <span href="#" class="button info small hollow pull-right">Learn More</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+				  	</div>
+
+				  	<div>
+				  		<a class="img-card" href="frontend-facility-profile.html">
+                            <div class="img-card-head">
+                                <div class="header">
+                                    <div class="story-card">
+                                        <h6>TOP 20%</h6>
+                                        <p class="subheader">
+                                            <small>QUALITY PROVIDER</small>
+                                        </p>
+                                    </div>
+                                    <!-- <span data-open="exampleModal1" class="button alert rounded small pull-right"><i class="fa fa-search"></i></span> -->
+                                </div>
+                                <img src="https://s3.amazonaws.com/assets.spoke.com/static/thumb-denverspine-surgeons.jpg">
+                            </div>
+                            <div class="img-card-body">
+                                <div class="media-object">
+                                    <div class="media-object-section logo small middle">
+                                        <div class="img-wrapper">
+                                            <img src= "../img/logo-Denver-Spine-Surgeons.png">
+                                        </div>
+                                    </div>
+                                    <div class="media-object-section middle">
+                                        <h6>Denver Spine Surgeons</h6>
+                                        <p class="subheader"><small>GREENWOOD</small>&nbsp; <small>2.1 miles</small></p>
+                                    </div>
+                                </div>
+                                <div class="row mt-1">
+                                    <div class="small-12 columns">
+                                        <div class="media-object">
+                                            <div class="media-object-section middle">
+                                                <div class="text-group">
+                                                    <p class="h4 success-color">$5,500</p>
+                                                    <p class="subheader"><small>YOUR BONUS</small></p>
+                                                </div>
+                                            </div>
+                                            <div class="media-object-section middle">
+                                                <span href="#" class="button info small hollow pull-right">Learn More</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+				  	</div>
+
 				</div>
 
-				<div class="section-heading mt-2 mb-2">
-					<h5>Meet Your Specialist</h5>
-				</div>
-				<div class="media-object stack-for-small">
-				  	<div class="media-object-section">
-				    	<div class="img-wrapper bordered circle">
-				      		<img src= "img/specialist.png">
-				    	</div>
-				  	</div>
-				  	<div class="media-object-section middle">
-				  		<div class="mb-2">
-				  			<span class="h5">Dr. David Warkentin</span><br>
-				   			<span class="subheader"><small>University of Manitoba, 1998</small></span><br>
-				   			<span class="subheader"><small>Best Doctor in the East Valley 2013</small></span><br>
-				  		</div>
-				   		<p>Many of us have back problems, it is a very wide problem for people, ever since we started walking on our tow legs and raised our backs a large percent of human have suffered pain in the back from different reasons. The chiropractic was invented to help solve or reduce back pain by training back experts that will offer help and relief to those needing back pain help.</p>
-				   		<p>The great advantage that chiropractor have is the fact they focus only on the back, a chiropractor knows almost anything there is to know about the back, the spine, the nervous system structure and the biochemical patterns in the back, and that is the major reason why many people use chiropractors not only for help but also for a diagnosis that will send them the right way if the chiropractor couldn’t help.</p>
-				  	</div>
-				</div> -->
-				
 			</div>
 		</div>
 
 	</section>
+
+	<!-- <div class="reveal" id="exampleModal1" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+		<div class="row collapse">
+			<div class="large-12 columns">
+				<h5 class="reveal-heading">Precision Spine Center</h5>
+			</div>
+		</div>
+		<div class="row collapse">
+			<div class="large-12 columns">
+				<div class="reveal-body">
+					<div class="media-object">
+			            <div class="media-object-section logo large">
+			                <div class="img-wrapper circle">
+			                    <img src= "../img/Smiling-Middle-Aged-Lady-Arms-Square.png">
+			                </div>
+			            </div>
+			            <div class="media-object-section middle">
+			                <div class="talk-bubble border tri-right left-in">
+			                    <div class="talktext">
+			                    	<p class="h5">Fantastic!</p>
+			                        <p>I'll start researching Denver Vail Orthopedics and get back to you as soon as I can. Continue to look at other facilities and let me know if any other options interest you as well.</p>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+				</div>
+			</div>
+		</div>
+		<div class="row collapse">
+			<div class="large-12 columns">
+				<div class="reveal-footer">
+					<a data-close class="button expanded success">Got it.</a>
+				</div>
+			</div>
+		</div>
+	  	<button class="close-button" data-close aria-label="Close modal" type="button">
+	    	<span aria-hidden="true">&times;</span>
+	  	</button>
+	</div> -->
+
+	<!-- Power Tour -->
+    <div id="interestModal" class="tour-wrapper">
+        <div class="page-lead">
+            <div class="media-object mb-1">
+                <div class="media-object-section logo large">
+                    <div class="img-wrapper circle">
+                        <img src= "../img/Smiling-Middle-Aged-Lady-Arms-Square.png">
+                    </div>
+                </div>
+                <div class="media-object-section middle">
+                    <div class="talk-bubble border tri-right left-in">
+                        <div class="talktext">
+                            <p class="h5 full">Fantastic!</p>
+                            <p class="subheader">I'll start researching Denver Vail Orthopedics and get back to you as soon as I can. Continue to look at other providers and let me know if any other options interest you as well.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="button success expanded" data-powertour-action="stop">Got it.</a>
+        <a class="close-button" data-powertour-action="stop"><i class="fa fa-times-circle-o"></i></a>
+    </div>
 
 
 	<script src="../bower_components/jquery/dist/jquery.js"></script>
@@ -378,20 +556,93 @@
 	<script src="../bower_components/foundation-sites/js/foundation.toggler.js"></script>
 	<script src="../bower_components/foundation-sites/js/foundation.util.motion.js"></script>
 	<script src="../bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+ 	<script src="../js/powertour/js/powertour.3.2.0.min.js"></script>
 	
 	<script src="../js/owl-carousel/owl.carousel.js"></script>
 
 	<script src="../js/app.js"></script>
 
 	<script type="text/javascript">
+
         $(document).ready(function() {
  
-		  	$("#owl-example").owlCarousel({
+		  	$("#facilityImages").owlCarousel({
 		  		items: 2,
 		  		nav: true,
 		  		loop: true
 		  		// itemsScaleUp: true
 		  	});
+
+		  	$("#facilityList").owlCarousel({
+		  		items: 3,
+		  		padding: 30,
+		  		nav: true,
+		  		loop: false
+		  		// itemsScaleUp: true
+		  	});
+
+		  	$.powerTour({
+                tours : [
+                    {
+                        trigger            : '#interestTrigger',
+                        startWith          : 1,
+                        easyCancel         : false,
+                        escKeyCancel       : true,
+                        scrollHorizontal   : false,
+                        keyboardNavigation : true,
+                        loopTour           : false,
+                        highlightStartSpeed : 200,// new 2.5.0
+                        highlightEndSpeed  : 200,// new 2.3.0
+                        onStartTour        : function(ui){ },
+                        onEndTour          : function(ui){ },   
+                        onProgress         : function(ui){ },
+                        steps : [
+                              {
+                                  hookTo          : '#modalOne',
+                                  content         : '#interestModal',
+                                  width           : 700,
+                                  position        : 'sc',
+                                  offsetY         : 0,
+                                  offsetX         : 0,
+                                  fxIn            : 'fadeIn',
+                                  fxOut           : 'fadeOut',
+                                  showStepDelay   : 0,
+                                  center          : 'step',
+                                  scrollSpeed     : 400,
+                                  scrollEasing    : 'swing',
+                                  scrollDelay     : 0,
+                                  timer           : false,
+                                  highlight       : true,
+                                  keepHighlighted : true,
+                                  keepVisible     : false,// new 2.2.0
+                                  onShowStep      : function(ui){},
+                                  onHideStep      : function(ui){ }
+                              }
+                        ],
+                        stepDefaults : [
+                            {
+                                width           : 300,
+                                position        : 'sc',
+                                offsetY         : 0,
+                                offsetX         : 0,
+                                fxIn            : 'fadeIn',
+                                fxOut           : 'fadeOut',
+                                showStepDelay   : 0,
+                                center          : 'step',
+                                scrollSpeed     : 400,
+                                scrollEasing    : 'swing',
+                                scrollDelay     : 0,
+                                timer           : '00:00',
+                                highlight       : true,
+                                keepHighlighted : false,
+                                keepVisible     : false,// new 2.2.0
+                                onShowStep      : function(ui){ },
+                                onHideStep      : function(ui){ }
+                            }
+                         ]
+                    }
+                ]
+            });
 		 
 		});
     </script>

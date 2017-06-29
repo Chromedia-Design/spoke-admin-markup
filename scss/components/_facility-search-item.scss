@@ -24,6 +24,7 @@
 		display: table-cell;
 		vertical-align: middle;
 		.name { 
+			font-family: $body-font-family;
 			margin-bottom: 0;
 			color: $text-black;
 			width: 100%;
@@ -32,6 +33,7 @@
 			text-overflow: ellipsis;
 		}
 		.contact, .address {
+			font-family: $body-font-family;
 			font-size: 0.75rem;
 			color: $primary-color;
 			margin-bottom: 0;
