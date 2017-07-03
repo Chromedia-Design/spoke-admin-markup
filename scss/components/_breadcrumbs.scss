@@ -23,6 +23,24 @@
 	}
 }
 
+#facilitySection {
+	.breadcrumbs {
+		background-color: $white;
+	}
+	.is-stuck {
+		.breadcrumbs {
+			margin: 0;
+			padding: 1.8rem;
+			border: 1px solid rgba($black, $B-dividers);
+			border-radius: 4px;
+			background-color: $white;
+			li {
+				font-size: 1rem;
+			}
+		}
+	}
+}
+
  .hierarchs {
  	padding: 0;
 	margin: 0.25rem 0;
