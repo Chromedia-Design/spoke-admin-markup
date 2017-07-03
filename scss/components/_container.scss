@@ -438,8 +438,8 @@
 		}
 	}
 	&.owner {
-		background-color: $light-gray;
-		border: 2px solid $light-gray;
+		background-color: $background-white;
+		border: 1px solid $light-gray;
 		&.tri-right.border.right-in:before {
 			right: -20px;
 			top: 15px;
@@ -447,10 +447,10 @@
 			border-color: $light-gray transparent transparent $light-gray;
 		}
 		&.tri-right.right-in:after {
-			right: -15px;
-			top: 17px;
-			border: 8px solid;
-			border-color: $light-gray transparent transparent $light-gray;
+			right: -17px;
+			top: 16px;
+			border: 9px solid;
+			border-color: $background-white transparent transparent $background-white;
 		}
 		.talktext {
 			color: $text-black;

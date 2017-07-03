@@ -520,53 +520,70 @@
                 </div>
             </div>
 
+            <div id="chatStatus" class="row">
+                <div class="large-12 columns">
+                   <div class="page-lead">
+                        <div class="media-object full-table">
+                            <div class="media-object-section logo middle">
+                                <div class="img-wrapper circle">
+                                    <img src= "../img/Smiling-Middle-Aged-Lady-Arms-Square.png">
+                                </div>
+                            </div>
+                            <div class="media-object-section middle">
+                                <p class="h5">
+                                    Sarah Bourdon <span class="badge success"></span><br>
+                                    <span class="subheader"><small>Available for quick chat and video call</small></span>
+                                </p>
+                            </div>
+                            <div class="media-object-section middle">
+                                <div class="button-align pull-right">
+                                    <a class="button circle hollow"><i class="fa fa-calendar"></i></a>
+                                    <a data-toggle="videoCall" class="button circle hollow"><i class="fa fa-video-camera"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="videoCall" class="row" data-toggler data-animate="fade-in fade-out">
+                <div class="large-12 columns">
+                   <iframe width="930" height="698" src="https://www.youtube.com/embed/mM5_T-F1Yn4" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
             <div class="offcanvas-body">
 
                 <div class="main-content">
-
                     <div class="inner">
 
                         <div class="panel">
                             <div class="panel-body">
                                 <div class="media-object full-table">
                                     <div class="media-object-section middle logo small">
-                                        <div class="img-wrapper circle">
-                                            <img src="../img/Smiling-Middle-Aged-Lady-Arms-Square.png" alt="">
-                                        </div>
+                                        <span class="h5"><i class="fa fa-calendar fa-fw"></i></span>
                                     </div>
                                     <div class="media-object-section middle">
                                         <span>You have a scheduled call today.</span>
                                     </div>
                                     <div class="media-object-section middle">
-                                        <a href="#" class="button circle hollow secondary small pull-right"><i class="fa fa-video-camera"></i></a>
+                                        <a href="#" class="button circle hollow small pull-right"><i class="fa fa-video-camera"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="panel">
-                            <div class="panel-heading">
-                                <span class="h6">Pinned Messages</span>
-                                <a href="#" class="button info hollow pull-right small">See All</a>
-                            </div>
                             <div class="panel-body wide">
                                 <ul class="well-list message-preview">
-                                    <li class="selected">
+                                    <li class="">
                                         <a id="expandChat" class="list-wrap">
-                                            <div class="list-item-image align-middle text-center">
-                                                <div class="img-wrapper circle logo small">
-                                                    <img src="../img/Smiling-Middle-Aged-Lady-Arms-Square.png" alt="">
-                                                </div>
-                                            </div>
                                             <div class="list-detail">
-                                                <span class="truncate">Follow Up</span>
-                                                <span class="truncate"><small>Lorem ipsum dolor sit amet.</small></span>
+                                                <span class="truncate">Quick Chat</span>
+                                                <span class="truncate"><small>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui.</small></span>
                                             </div>
                                             <div class="list-note text-center">
                                                 <span class="subheader"><small>Today</small></span>
-                                            </div>
-                                            <div class="pull-right align-middle">
-                                                <span class="pinned button link small"><i class="fa fa-heart"></i></span>
                                             </div>
                                         </a>
                                     </li>          
@@ -576,46 +593,50 @@
 
                         <div class="panel">
                             <div class="panel-heading">
-                                <span class="h6">Messages</span>
-                                <a href="#" class="button info hollow pull-right small">See All</a>
+                                <span class="h6">PINNED</span>
+                            </div>
+                            <div class="panel-body wide">
+                                <ul class="well-list message-preview">
+                                    <li class="selected">
+                                        <a id="expandChat" class="list-wrap">
+                                            <div class="list-detail">
+                                                <span class="truncate">Follow Up</span>
+                                                <span class="truncate"><small>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui.</small></span>
+                                            </div>
+                                            <div class="list-note text-center">
+                                                <span class="subheader"><small>Today</small></span>
+                                            </div>
+                                        </a>
+                                    </li>          
+                                </ul>
+                            </div>
+                        </div> 
+
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <span class="h6">MESSAGES</span>
                             </div>
                             <div class="panel-body wide">
                                 <ul class="well-list message-preview">
                                     <li>
                                         <a id="expandChat" class="list-wrap">
-                                            <div class="list-item-image align-middle">
-                                                <div class="img-wrapper circle logo small">
-                                                    <img src="../img/Smiling-Middle-Aged-Lady-Arms-Square.png" alt="">
-                                                </div>
-                                            </div>
                                             <div class="list-detail">
-                                                <span class="truncate">Confirmation</span>
+                                                <span class="truncate">Confirm Your Email</span>
                                                 <span class="truncate"><small>Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small></span>
                                             </div>
                                             <div class="list-note text-center">
                                                 <span class="subheader"><small>Yesterday</small></span>
                                             </div>
-                                            <div class="pull-right align-middle">
-                                                <span class="pin button link small"><i class="fa fa-heart"></i></span>
-                                            </div>
                                         </a>
                                     </li>
                                     <li>
                                         <a id="expandChat" class="list-wrap">
-                                            <div class="list-item-image align-middle">
-                                                <div class="img-wrapper circle logo small">
-                                                    <img src="../img/Smiling-Middle-Aged-Lady-Arms-Square.png" alt="">
-                                                </div>
-                                            </div>
                                             <div class="list-detail">
-                                                <span class="truncate">Spoke Health Invite - John Doe</span>
+                                                <span class="truncate">Invitation</span>
                                                 <span class="truncate"><small>Click here to find out how Spoke can help you save money on a surgical procedure.</small></span>
                                             </div>
                                             <div class="list-note text-center">
                                                 <span class="subheader"><small>Feb-12</small></span>
-                                            </div>
-                                            <div class="pull-right align-middle">
-                                                <span class="pin button link small"><i class="fa fa-heart"></i></span>
                                             </div>
                                         </a>
                                     </li>
@@ -626,24 +647,23 @@
                     </div>
 
                     <div class="footer-content">
-                        <a href="" class="button secondary expanded"><i class="fa fa-edit"></i>&nbsp; Compose New Message</a>
+                        <a href="" class="button expanded"><i class="fa fa-edit"></i>&nbsp; Compose New Message</a>
                     </div>
                 </div>
 
                 <div class="side-content">
                     <div class="inner">
-
                         <div class="row">
                             <div class="large-12 columns">
-                                <div class="page-lead short-label">
+                                <div class="page-lead full-label">
                                    <p class="h5">
-                                        Sarah Bourdon <span class="badge success"></span><br>
-                                        <span class="subheader"><small>Spoke Advocate</small></span>
+                                        Follow Up<br>
+                                        <span class="subheader"><small>Last activity: a few minutes ago</small></span>
                                     </p>
-                                    <a class="button circle hollow  pull-right"><i class="fa fa-video-camera"></i></a>
                                </div>
                             </div>
                         </div>
+
                         <div class="media-object" data-animate="slide-in-right slide-out-right">
                             <div class="media-object-section middle">
                                 <div class="small talk-bubble border tri-right left-in">
@@ -918,11 +938,6 @@
 
         $(document).ready(function(){
 
-            $("#expandChat").click(function () {
-                $("#chatSupport").toggleClass("expanded");
-                event.preventDefault();
-            });
-
             $.powerTour({
                 tours : [
                     {
@@ -1113,6 +1128,15 @@
             });
 
             // $.powerTour('run', 1);
+
+        });
+
+        $('#chatSupport').foundation('open');
+
+        $(function () {
+            $("#chatSupport").on('open.zf.reveal', function () {
+                console.log('Modal open.')
+            });
         });
 
         $(function () {
@@ -1120,9 +1144,10 @@
 
             $(window).resize(function() {
                 clearTimeout(timer);
+
                 timer = setTimeout(function() {
-                  $('#chatSupport .offcanvas-body').css("height", $(window).height());
-                }, 40); 
+                  $('#chatSupport .offcanvas-area-inner').css("height", $(window).height());
+                }, 40);
             }).resize();
         });
 
