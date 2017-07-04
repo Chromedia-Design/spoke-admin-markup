@@ -15,25 +15,25 @@
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 	// overflow-y: scroll;
 	transition: width 0.2s ease-in-out;
+	.btn-close {
+		position: absolute;
+		top: 0;
+		left: -44px;
+		display: block;
+		height: 56px;
+		width: 44px;
+		z-index: 4;
+		font-weight: $global-weight-bold;
+		background: $background-white;
+		padding: 15px;
+		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+		border-radius: 8px 0 0 8px;
+		color: $text-black;
+	}
 	.offcanvas-area-inner {
 		position: relative;
 		width: auto;
 		height: auto;
-		.btn-close {
-			position: absolute;
-			top: 0;
-			left: -44px;
-			display: block;
-			height: 56px;
-			width: 44px;
-			z-index: 4;
-			font-weight: $global-weight-bold;
-			background: $background-white;
-			padding: 15px;
-			box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-			border-radius: 8px 0 0 8px;
-			color: $text-black;
-		}
 	}
 	.offcanvas-header {
 		position: relative;
@@ -75,6 +75,15 @@
 	#videoCall,
 	.offcanvas-body {
 		width: 100%;
+	}
+	#chatStatus {
+		.badge {
+			width: 0.5rem;
+			height: 0.5rem;
+			min-width: 0.5rem;
+			padding: 0;
+			vertical-align: middle;
+		}
 	}
 	.offcanvas-body {
 		min-height: 570px;
@@ -130,16 +139,35 @@
 		.footer-content {
 			border-right: 1px solid rgba($black, $B-dividers);
 		}
+		.dropdown.menu {
+			> li {
+				a {
+					color: $text-black;
+					padding: 0.7rem;
+				}
+				&.opens-left {
+					> .is-dropdown-submenu {
+						left: auto !important;
+					    right: 0 !important;
+					    top: 100% !important;
+					    &:after {
+					    	right: 3% !important;
+					    	left: auto !important;
+					    }
+					    > li {
+					    	a {
+					    		&:hover {
+									background-color: rgba($secondary-color, $B-dividers);
+								}
+					    	}
+					    }
+					}
+				}
+			}
+		}
 	}
 	.side-content {
 		background-color: $off-white;
-	}
-	.badge {
-		width: 0.5rem;
-		height: 0.5rem;
-		min-width: 0.5rem;
-		padding: 0;
-		vertical-align: middle;
 	}
 	.page-lead {
 		.h1,

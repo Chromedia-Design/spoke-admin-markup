@@ -121,6 +121,16 @@
 	.button {
 		margin-right: 1rem;
 	}
+	&.small {
+		.button {
+			margin-right: 0.75rem;
+		}
+	}
+	&.tiny {
+		.button {
+			margin-right: 0.325rem;
+		}
+	}
 }
 
 .action-link {
