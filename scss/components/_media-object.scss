@@ -31,6 +31,16 @@
 }
 
 .media-object-section {
+	a {
+		color: inherit;
+	}
+	.badge {
+		width: 0.5rem;
+		height: 0.5rem;
+		min-width: 0.5rem;
+		padding: 0;
+		vertical-align: middle;
+	}
 	&:first-child {
 		padding-right: 1.5rem;
 	}
@@ -48,6 +58,10 @@
 			img {
 				width: 100%;
 			}
+			span.h5 {
+				font-weight: normal;
+				color: rgba($black, $B-hinttext);
+			}
 		}
 		&.small {
 			.img-wrapper { 
@@ -64,7 +78,7 @@
 	}
 	&.small {
 		&:first-child {
-			padding-right: 0.5rem;
+			padding-right: 1rem;
 		}
 	}
 }

@@ -3,6 +3,8 @@
 .inline-block { display:inline-block; }
 
 .mr-1 {margin-right: 1rem !important;}
+.mr-2 {margin-right: 2rem !important;}
+.mr-3 {margin-right: 3rem !important;}
 .ml-1 { margin-left: 1rem !important; }
 .ml-1-5 { margin-left: 1.5rem !important; }
 .ml-2 { margin-left: 2rem !important; }
@@ -67,6 +69,7 @@
 .truncate {
 	margin: 0;
 	display: block;
+	line-height: 1.5em;
 	width: 100%;
 	white-space: nowrap;
 	overflow: hidden;

@@ -311,7 +311,12 @@
 				border-bottom: none;
 			}
 		}
-
+	}
+	.media-object {
+		padding: 0.875rem 1rem;
+		&:hover {
+			background-color: rgba($light-gray, $B-hinttext);
+		}
 	}
 	&.notifications {
 		> li {
@@ -341,7 +346,6 @@
 				background-color: $background-white;
 			}
 			.list-detail {
-				width: 75%;
 				> span {
 					&:first-child {
 						color: $text-black;

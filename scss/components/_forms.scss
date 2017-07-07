@@ -349,7 +349,7 @@ textarea, .mce-tinymce {
 				> .is-dropdown-submenu {
 					&:after {
 						right: 3%;
-						top: -0.4rem;
+						top: -0.45rem;
 					}
 					&:before {
 						right: 3%;
@@ -365,7 +365,7 @@ textarea, .mce-tinymce {
 					}
 					&:after {
 						left: 3%;
-						top: -0.4rem;
+						top: -0.45rem;
 					}
 				}
 			}
@@ -400,7 +400,7 @@ textarea, .mce-tinymce {
 			position: absolute;
 			height: 0;
 			width: 0;
-			border-bottom: 0.5rem solid $medium-gray;
+			border-bottom: 0.5rem solid $dark-gray;
 			border-left: 0.5rem solid transparent;
 			border-right: 0.5rem solid transparent;
 		}

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../js/powertour/css/powertour-connectors.min.css" />
     <link rel="stylesheet" href="../js/powertour/css/animate.min.css" />
 	<link rel="stylesheet" href="../css/app.css">
+    <script src="https://static.opentok.com/v2/js/opentok.min.js"></script>
 </head>
 <body class="frontend">
 
@@ -548,7 +549,12 @@
 
             <div id="videoCall" class="row" data-toggler data-animate="fade-in fade-out">
                 <div class="large-12 columns">
-                   <iframe width="930" height="698" src="https://www.youtube.com/embed/mM5_T-F1Yn4" frameborder="0" allowfullscreen></iframe>
+                    <!-- <div id="otEmbedContainer" style="width:930px; height:698px"></div>
+                    <script src="https://tokbox.com/embed/embed/ot-embed.js?embedId=4cd56b61-5ebe-4e11-873e-4c46f577702d&room=DEFAULT_ROOM"></script> -->
+                    <div id="videos">
+                        <div id="subscriber"></div>
+                        <div id="publisher"></div>
+                    </div>
                 </div>
             </div>
 
@@ -575,13 +581,13 @@
                                         <!-- <a href="#" class="button circle hollow small pull-right"><i class="fa fa-video-camera"></i></a> -->
                                         <ul class="dropdown menu" data-dropdown-menu>
                                             <li>
-                                                <a class="button circle hollow small"><i class="fa fa-video-camera"></i></a>
+                                                <a class="button circle hollow small"><i class="fa fa-video-camera fa-fw"></i></a>
                                             </li>
                                             <li class="opens-left">
                                                 <a>&nbsp; &nbsp; </a>
                                                 <ul class="menu vertical">
                                                     <li><a href="#"><i class="fa fa-calendar"></i>&nbsp; Reschedule Call</a></li>
-                                                    <li><a href="#"><i class="fa fa-close"></i>&nbsp; Cancel Call</a></li>
+                                                    <li><a href="#"><i class="fa fa-times-circle"></i>&nbsp; Cancel Call</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -728,7 +734,7 @@
                             <div class="media-object-section middle">
                                 <div class="small talk-bubble border tri-right left-in">
                                     <div class="talktext">
-                                        <p>All of the providers are within your local area.</p>
+                                        <p>Alright.</p>
                                     </div>
                                 </div>
                                 <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
@@ -745,11 +751,11 @@
                             </div>
                         </div>
                         <!-- Owner chat -->
-                        <div class="media-object" data-animate="slide-in-right slide-out-right">
+                        <div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
                             <div class="media-object-section middle">
-                                <div class="small owner talk-bubble border tri-right right-in">
+                                <div class="small white-bg talk-bubble border tri-right right-in">
                                     <div class="talktext">
-                                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui.</p>
+                                        <p>OK.</p>
                                     </div>
                                 </div>
                                 <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>

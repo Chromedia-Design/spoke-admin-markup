@@ -1,0 +1,89 @@
+.offcanvas-area {
+	width: 30rem;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 0;
+	background-color: $white;
+	// border-left: 1px solid rgba($black, $B-dividers);
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	// overflow-y: scroll;
+	transition: width 0.2s ease-in-out;
+	.btn-close {
+		position: absolute;
+		top: 0;
+		left: -44px;
+		display: block;
+		height: 56px;
+		width: 44px;
+		z-index: 4;
+		font-weight: $global-weight-bold;
+		background: $background-white;
+		padding: 15px;
+		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+		border-radius: 8px 0 0 8px;
+		color: $text-black;
+	}
+	.offcanvas-area-inner {
+		position: relative;
+		width: auto;
+		height: auto;
+	}
+	.offcanvas-header {
+		position: relative;
+		z-index: 5;
+		top: 0;
+		width: 100%;
+		padding: 0.5rem 1rem;
+		background-color: $background-white;
+		border-bottom: 1px solid rgba($black, $B-dividers);
+		.input-group {
+			margin: 0;
+		}
+	}
+	.offcanvas-body {
+		position: relative;
+		overflow-y: hidden;
+		padding: 0;
+	}
+}
+
+.offcanvas-trigger {
+	position: fixed;
+	z-index: 20;
+	bottom: 1rem;
+	right: 1rem;
+	background-color: $success-color;
+	display: inline-block;
+	width: 3.125rem;
+	height: 3.125rem;
+	-moz-border-radius: 3.125rem;
+	-webkit-border-radius: 3.125rem;
+	border-radius: 3.125rem;
+	text-align: center;
+	vertical-align: middle;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.21);
+	color: #fff;
+	i.fa {
+		color: $white;
+		font-size: 1.7rem;
+		line-height: 1.8em;
+		vertical-align: middle;
+	}
+	&:hover {
+		background-color: darken($success-color, 5%);
+	}
+}
+
+.offcanvas-trigger-group {
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	.offcanvas-trigger {
+		position: relative;
+		display: inline-block;
+		margin: 0 0.5rem;
+	}
+}
