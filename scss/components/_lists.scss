@@ -291,7 +291,7 @@
 				background-color: darken($primary-light, 3%);
 			}
 			.list-wrap {
-				padding-left: 85px;
+				padding-left: 50px;
 				background: transparent;
 			}
 			&.list-core {
@@ -366,19 +366,27 @@
 					}
 				}
 			}
+			&.unread {
+				.list-wrap {
+					background-color: $white;
+					.list-detail {
+						font-weight: $global-weight-bold;
+						color: $primary-color;
+						small {
+							font-weight: normal;
+							color: rgba($black, $B-subtext);
+						}
+					}
+				}
+			}
 			&.selected {
 				border-right: none;
 				.list-wrap {
 					position: relative;
 					background-color: $white;
-					border-radius: 0;
-					.list-detail {
-						font-weight: $global-weight-bold;
-						color: $primary-color;
-					}
+					border-radius: 0;	
 					&:after {
 						position: absolute;
-						z-index: 8;
 						content: '';
 						width: 0; 
   						height: 0; 
@@ -392,7 +400,6 @@
 					}
 					&:before {
 						position: absolute;
-						z-index: 8;
 						content: '';
 						width: 0; 
   						height: 0; 

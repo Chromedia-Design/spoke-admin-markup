@@ -3,7 +3,7 @@
 	width: 100%;
 	transition: all 0.5s ease-in-out;
 	border: 1px solid rgba($black, $B-dividers); 
-	margin: 1rem 0;
+	margin: 0 0 2rem;
 	background-color: $white;
 	border-radius: 2px;
 	box-shadow: 1px 1px 2px #F2F5F6;
@@ -61,7 +61,6 @@
 		// height: 55%;
 		padding-bottom: 75%;
 		background-color: $text-black;
-		overflow: hidden;
 		> img {
 			position: absolute;
 			z-index: 0;
@@ -97,11 +96,12 @@
 			}
 		}
 		.story-card {
+			position: absolute;
+			left: 0;
 			margin-left: -10px;
 			padding: 0.5rem 1rem;
-			background-color: $primary-color;
+			background-color: $secondary-color;
 			display: inline-block;
-			position: relative;
 			font-family: $body-font-family;
 			&:after {
 				position: absolute;
@@ -110,7 +110,7 @@
 				right: -15px;
 				width: 15px;
 				height: 100%;
-				border-top: 50px solid $primary-color;
+				border-top: 50px solid $secondary-color;
 				border-right: 15px solid transparent;
 			}
 			h1,

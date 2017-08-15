@@ -91,7 +91,6 @@ section {
 	}
 	&.white-bg {
 		background-color: $white;
-		border-top: 1px solid rgba($black, $B-dividers);
 		border-bottom: 1px solid rgba($black, $B-dividers);
 		+ .white-bg {
 			border-top: none;

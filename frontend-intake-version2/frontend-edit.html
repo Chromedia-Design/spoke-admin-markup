@@ -63,7 +63,7 @@
                         <div class="large-3 columns">
                             <ul class="tabs vertical" id="example-vert-tabs" data-tabs>
                                 <li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">Employee Profile</a></li>
-                                <!-- <li class="tabs-title"><a href="#panel2v">Employee Episodes</a></li> -->
+                                <li class="tabs-title"><a href="#panel2v">Medical Preferences</a></li>
                                 <li class="tabs-title"><a href="#panel3v">Change Password</a></li>
                             </ul>
                         </div>
@@ -223,50 +223,104 @@
                                     </div>
                                 </div>
 
-                                <!-- <div class="tabs-panel" id="panel2v">
+                                <div class="tabs-panel" id="panel2v">
 
                                     <div class="callout">
-                                        <table class="thirds-spacing">
-                                            <thead>
-                                                <th>Surgery Package</th>
-                                                <th>Date Created</th>
-                                                <th>Status</th>
-                                                <th></th>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        Total Knee Replacement
-                                                    </td>
-                                                    <td>
-                                                        May-24, 8:00 AM
-                                                    </td>
-                                                    <td>
-                                                        <span class="brick success hollow small">Active</span>
-                                                    </td>
-                                                    <td class="text-right">
-                                                        <a href="frontend-edit-episode.html" class="button info link small"><i class="fa fa-edit fa-fw"></i></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        Hip Surgery
-                                                    </td>
-                                                    <td>
-                                                        Apr-21, 8:00 AM
-                                                    </td>
-                                                    <td>
-                                                    </td>
-                                                    <td class="text-right">
-                                                        <a href="#" class="button info hollow tiny">Activate</a>
-                                                        <a href="frontend-edit-episode.html" class="button info link small"><i class="fa fa-edit fa-fw"></i></a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <form>
+                                            <div class="row">
+                                                <div class="large-6 columns end">
+                                                    <label class="middle">When were you thinking of having your surgery?</label>
+                                                </div>
+                                                <div class="large-6 columns end">
+                                                    <select>
+                                                        <option>As soon as possible</option>
+                                                        <option>2 - 4 Weeks</option>
+                                                        <option>4 - 8 Weeks</option>
+                                                        <option>2 - 4 Months</option>
+                                                        <option>4 - 6 Months</option>
+                                                        <option>6+ months</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="large-6 columns end">
+                                                    <label class="">Are you willing to be flexible on the schedule if we were able to secure a larger bonus?</label>
+                                                </div>
+                                                <div class="large-6 columns end">
+                                                    <input type="radio" name="flex" value="yes" id="flex" checked=""><label for="flex">Yes</label>
+                                                    <input type="radio" name="flex" value="no" id="flex"><label for="flex">No</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="large-6 columns end">
+                                                    <label class="">Are you willing to travel outside your local area if a larger bonus were available?</label>
+                                                </div>
+                                                <div class="large-6 columns end">
+                                                    <input type="radio" name="location" value="" id="location"><label for="location">No, I want only local facilities.</label>
+                                                    <input type="radio" name="location" value="" id="location"><label for="location">Yes, I'm willing to travel outside my immediate area.</label>
+                                                    <input type="radio" name="location" value="" id="location"><label for="location">I'm interested in seeing options throughout the USA.</label>
+                                                    <input type="radio" name="location" value="" id="location" checked=""><label for="location">If the bonus was big enough, I'd consider travelling to another country.</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="large-6 columns end">
+                                                    <label class="">Select the countries that you'd entertain travelling to:</label>
+                                                </div>
+                                                <div class="large-6 columns end">
+                                                    <div class="row mb-2">
+                                                        <div class="large-12 columns end">
+                                                            <input class="mb-0"  type="checkbox" name="country" value="" id="country" checked=""><label class="mb-0" for="country">Costa Rica</label>
+                                                        </div>
+                                                        <div class="large-12 columns end">
+                                                            <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">Mexico</label>
+                                                        </div>
+                                                        <div class="large-12 columns end">
+                                                            <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">Brazil</label>
+                                                        </div>
+                                                        <div class="large-12 columns end">
+                                                            <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">Belgium</label>
+                                                        </div>
+                                                        <div class="large-12 columns end">
+                                                            <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">Thailand</label>
+                                                        </div>
+                                                        <div class="large-12 columns end">
+                                                            <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">India</label>
+                                                        </div>
+                                                        <div class="large-12 columns end">
+                                                            <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">Singapore</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="large-6 columns end">
+                                                    <label class="">Are you using any other health benefit programs?</label>
+                                                </div>
+                                                <div class="large-6 columns end">
+                                                    <input type="checkbox" name="programs" value="" id="programs" checked=""><label for="programs">Tele-Medicine</label>
+                                                    <input type="checkbox" name="programs" value="" id="programs"><label for="programs">Wellness Programs</label>
+                                                    <input type="checkbox" name="programs" value="" id="programs"><label for="programs">Prescription Drug Programs</label>
+                                                    <input type="checkbox" name="programs" value="" id="programs"><label for="programs">Gym and Fitness Programs</label>
+                                                    <input type="checkbox" name="programs" value="" id="programs"><label for="programs">Other: <input type="text" name="programs" value=""></label>
+                                                </div>
+                                            </div>
+
+                                             <div class="row">
+                                                <div class="large-12 columns end">
+                                                    <div class="button-group submit">
+                                                        <a href="#" class="submit button primary">Save Changes</a>
+                                                        <a href="#" class="info button link">Cancel</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
 
-                                </div> -->
+                                </div>
 
                                 <div class="tabs-panel" id="panel3v">
                                     
@@ -317,7 +371,7 @@
         </div>
     </section>
 
-    <a data-toggle="chatSupport" class="offcanvas-trigger"><i class="fa fa-comments" aria-hidden="true"></i></a>
+    <!-- <a data-toggle="chatSupport" class="offcanvas-trigger"><i class="fa fa-comments" aria-hidden="true"></i></a>
 
     <div id="chatSupport" class="offcanvas-area" data-toggler data-animate="slide-in-right slide-out-right">
         
@@ -358,7 +412,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 	<script src="../bower_components/jquery/dist/jquery.js"></script>
 	<script src="../bower_components/what-input/what-input.js"></script>

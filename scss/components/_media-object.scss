@@ -40,6 +40,9 @@
 		min-width: 0.5rem;
 		padding: 0;
 		vertical-align: middle;
+		&.info {
+			background-color: $light-gray;
+		}
 	}
 	&:first-child {
 		padding-right: 1.5rem;

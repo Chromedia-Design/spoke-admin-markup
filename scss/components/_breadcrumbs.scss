@@ -33,9 +33,25 @@
 			padding: 1.8rem;
 			border: 1px solid rgba($black, $B-dividers);
 			border-radius: 4px;
-			background-color: $white;
+			background-color: $light-gray;
 			li {
 				font-size: 1rem;
+				&:not(:last-child) {
+					a {
+						margin-left: 1rem;
+					}
+					&:before {
+						content: "<";
+						color: rgba($black, $B-text);
+						top: 0;
+					}
+					&:after {
+						content: "";
+					}
+				}
+				&:last-child {
+					display: none;
+				}
 			}
 		}
 	}

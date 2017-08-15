@@ -35,10 +35,11 @@
 #powertour-mask {
 	// background-color: rgba(10,16,35,0.54);
 	background-color: $white;
-	opacity: 0.95;
+	opacity: 0.87;
 }
 
 .powertour-step {
+	z-index: 2;
 	.close-button {
 		display: none;
 		position: absolute;
@@ -76,7 +77,7 @@
 	}
 }
 
-#stepThree {
+#stepTwo {
 	.connectordot-lm {
 		width: 280px;
 		left: -255px;
@@ -88,7 +89,7 @@
 	}
 }
 
-#stepFour {
+#stepThree {
 	.connectordot-lm {
 		width: 165px;
 		left: -142px;
@@ -100,7 +101,7 @@
 	}
 }
 
-#stepFive {
+#stepFour {
 	.connectordot-lm {
 		width: 65px;
 		left: -42px;
@@ -127,4 +128,12 @@
 	&.is-anchored {
 		position: relative;
 	}
+	&.is-stuck {
+		margin-top: 0 !important;
+	}
+}
+
+.modal-tour {
+	@extend .reveal;
+	display: block !important;
 }

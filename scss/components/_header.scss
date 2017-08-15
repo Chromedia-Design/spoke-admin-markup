@@ -15,16 +15,13 @@ header {
 			color: rgba($black, $B-text);
 			a {
 				color: rgba($black, $B-text);
-				margin-right: 1rem;
+				&.button {
+					margin: 0 1rem;
+				}
 			}
 			&.menu-text {
 				font-weight: $global-weight-bold;
 				color: rgba($black, $B-subtext);
-			}
-			&:last-child {
-				a {
-					margin-right: 0;
-				}
 			}
 		}
 		&.submenu {
@@ -49,6 +46,7 @@ header {
 	}
 }
 
+// This is for the sidebar navigation on the left
 .site-nav {
 	background-color: $primary-color;
 	overflow-y: auto;
