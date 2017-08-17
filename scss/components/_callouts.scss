@@ -47,6 +47,31 @@
 			top: 1.5rem;
 		}
 	}
+	&.fixed-notification {
+		position: relative;
+		color: $white;
+		background-color: $alert-color;
+		border-bottom: 1px solid rgba($alert-color, $B-text);
+		border-radius: 0;
+		border: none;
+		width: 100%;
+		margin: 0 auto;
+		p {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		a {
+			color: $white;
+			text-decoration: underline;
+		}
+		.close-button {
+			color: rgba($white, $W-hinttext);
+			&:hover {
+				color: rgba($white, $W-text);
+			}
+		}
+	}
 }
 
 .callout-heading {
