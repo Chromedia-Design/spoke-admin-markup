@@ -396,16 +396,15 @@
     
 
     <div id="chatSupport" class="offcanvas-area reveal" data-reveal data-animation-in="slide-in-right" data-animation-out="slide-out-right" data-options="showDelay:50; hideDelay:50">
-        <a data-close class="btn-close"><span aria-hidden="true">&times;</span></a>
         <div class="offcanvas-area-inner">
-            <div class="offcanvas-header">
+            <!-- <div class="offcanvas-header">
                 <div class="input-group">
                     <input type="text" class="input-group-field" value="" placeholder="Search messages...">
                     <div class="input-group-button">
                         <a href="#" class="button info"><i class="fa fa-search"></i></a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <div id="chatStatus" class="row">
                 <div class="large-12 columns">
@@ -419,13 +418,13 @@
                             <div class="media-object-section middle">
                                 <p class="h5">
                                     Sarah Bourdon <span class="badge success"></span><br>
-                                    <span class="subheader"><small>Available for quick chat and video call</small></span>
+                                    <span class="subheader"><small>Last activity: a few minutes ago</small></span>
                                 </p>
                             </div>
                             <div class="media-object-section middle">
                                 <div class="button-align pull-right">
                                     <!-- <a class="button hollow"><i class="fa fa-calendar"></i>&nbsp; Schedule A Call</a> -->
-                                    <a data-toggle="videoCall" class="button hollow"><i class="fa fa-video-camera"></i>&nbsp; Start A Video Call</a>
+                                    <a data-toggle="videoCall" class="button hollow"><i class="fa fa-video-camera"></i>&nbsp; Video Call</a>
                                 </div>
                             </div>
                         </div>
@@ -444,7 +443,7 @@
 
             <div class="offcanvas-body">
 
-                <div class="main-content">
+                <!-- <div class="main-content">
                     <div class="inner">
 
                         <div class="panel">
@@ -462,7 +461,6 @@
                                         </p>
                                     </div>
                                     <div class="media-object-section middle">
-                                        <!-- <a href="#" class="button circle hollow small pull-right"><i class="fa fa-video-camera"></i></a> -->
                                         <ul class="dropdown menu" data-dropdown-menu>
                                             <li>
                                                 <a class="button circle hollow small"><i class="fa fa-video-camera fa-fw"></i></a>
@@ -559,11 +557,11 @@
                     <div class="footer-content">
                         <a href="" class="button expanded"><i class="fa fa-edit"></i>&nbsp; Compose New Message</a>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="side-content">
                     <div class="inner">
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="large-12 columns">
                                 <div class="page-lead full-label">
                                    <p class="h5">
@@ -572,7 +570,7 @@
                                     </p>
                                </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="media-object" data-animate="slide-in-right slide-out-right">
                             <div class="media-object-section middle">
@@ -659,6 +657,9 @@
 
             </div>
         </div>
+
+        <a data-close class="btn-close"><span aria-hidden="true">&times;</span></a>
+
     </div>
 
     <div id="scheduleCalendar" class="reveal" data-reveal>
@@ -1023,21 +1024,21 @@
             }).resize();
         });
 
-        var fixedNotification = $(".fixed-notification");
-        $(document).scroll(function (e) {
-            if( $(this).scrollTop() != 0 ) {
-                fixedNotification.css ( {
-                    "position" : "fixed",
-                    "z-index"  : "999",
-                    "top"      : "0"
-                });
-            }
-            else {
-                fixedNotification.css ( {
-                    "position" : "relative"
-                });
-            }
-        });
+        // var fixedNotification = $(".fixed-notification");
+        // $(document).scroll(function (e) {
+        //     if( $(this).scrollTop() != 0 ) {
+        //         fixedNotification.css ( {
+        //             "position" : "fixed",
+        //             "z-index"  : "999",
+        //             "top"      : "0"
+        //         });
+        //     }
+        //     else {
+        //         fixedNotification.css ( {
+        //             "position" : "relative"
+        //         });
+        //     }
+        // });
 
     </script>
 

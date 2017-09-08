@@ -169,7 +169,7 @@
 
 // Main Chat Panels
 #chatSupport, #chatClient {
-	width: 60rem;
+	// width: 60rem;
 	a {
 		text-decoration: none;
 	}
@@ -194,6 +194,16 @@
 		width: 100%;
 	}
 	#chatStatus {
+		.h1,
+		.h2,
+		.h3,
+		.h4,
+		.h5,
+		.h6 {
+			span.subheader {
+				line-height: 1em;
+			}
+		}
 		.badge {
 			width: 0.5rem;
 			height: 0.5rem;
@@ -236,6 +246,15 @@
 			border-top: 1px solid rgba($black, $B-dividers);
 			.input-group, .button {
 				margin-bottom: 0;
+			}
+		}
+		&:only-child {
+			width: 100%;
+			&::-webkit-scrollbar {
+				display: none;
+			}
+			&::-moz-scrollbar {
+				display: none;
 			}
 		}
 	}
@@ -348,6 +367,10 @@
 			}
 		}
 	}
+}
+
+#chatSupport {
+	width: 40rem;
 }
 
 #chatClient {
