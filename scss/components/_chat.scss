@@ -1,0 +1,451 @@
+/* CSS talk bubble */
+.talk-bubble {
+	margin: 0 0 0 2.5rem;
+	padding: 1.5rem;
+  	display: inline-block;
+  	position: relative;
+	// width: 100%;
+	height: auto;
+	background-color: $secondary-color;
+	border-radius: 6px;
+	&.small {
+		margin: 0 0 0 1rem;
+		padding: 0.75rem;
+		border-radius: 8px;
+		.talktext {
+			> * {
+				font-size: 0.875rem;
+			}
+		}
+		&.tri-right.border.left-in:before {
+			left: -20px;
+			top: 15px;
+			border: 10px solid;
+			border-color: $secondary-color $secondary-color transparent transparent;
+		}
+		&.tri-right.left-in:after {
+			left: -15px;
+			top: 17px;
+			border: 8px solid;
+			border-color: $secondary-color $secondary-color transparent transparent;
+		}
+		&.tri-right.border.right-in:before {
+			right: -20px;
+			top: 15px;
+			border: 10px solid;
+			border-color: $secondary-color transparent transparent $secondary-color;
+		}
+		&.tri-right.right-in:after {
+			right: -15px;
+			top: 17px;
+			border: 8px solid;
+			border-color: $secondary-color transparent transparent $secondary-color;
+		}
+	}
+	&.white-bg {
+		background-color: $background-white;
+		border: 1px solid $light-gray;
+		&.tri-right.border.right-in:before {
+			right: -20px;
+			top: 15px;
+			border: 10px solid;
+			border-color: $light-gray transparent transparent $light-gray;
+		}
+		&.tri-right.right-in:after {
+			right: -17px;
+			top: 16px;
+			border: 9px solid;
+			border-color: $background-white transparent transparent $background-white;
+		}
+		.talktext {
+			color: $text-black;
+			.h1,
+			.h2,
+			.h3,
+			.h4,
+			.h5,
+			.h6 {
+				color: $text-black;
+			}
+		}
+		+ .timestamp {
+			text-align: left;
+			margin-left: 1rem;
+		}
+	}
+}
+
+.timestamp {
+	display: block;
+	text-align: right;
+	margin: 0.125rem 0 0;
+	font-size: 0.875rem;
+	color: rgba($black, $B-hinttext);
+}
+
+.talktext {
+	color: $white;
+	.h1,
+	.h2,
+	.h3,
+	.h4,
+	.h5,
+	.h6 {
+		color: $white;
+		margin-top: 0;
+		line-height: 1.5em;
+	}
+	.subheader {
+		line-height: 1.5em;
+		color: rgba($white, $W-subtext);
+	}
+	> * {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.border {
+  	border: 2px solid $secondary-color;
+}
+
+/* Right triangle, left side slightly down */
+.tri-right.border.left-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  	left: -2.5rem;
+	right: auto;
+  	top: 20px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: $secondary-color $secondary-color transparent transparent;
+}
+
+.tri-right.left-in:after {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  	left: -35px;
+	right: auto;
+  	top: 22px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: $secondary-color $secondary-color transparent transparent;
+}
+
+/* Right triangle, right side slightly down*/
+.tri-right.border.right-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+    left: auto;
+	right: -2.5rem;
+    top: 20px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: $secondary-color transparent transparent $secondary-color;
+}
+.tri-right.right-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+    left: auto;
+	right: -35px;
+    top: 22px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: $secondary-color transparent transparent $secondary-color;
+}
+
+#chat-tabs {
+	margin-bottom: 0;
+}
+
+// Main Chat Panels
+#chatSupport, #chatClient {
+	// width: 60rem;
+	a {
+		text-decoration: none;
+	}
+	.offcanvas-area-inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start; /*align items in main axis*/
+		align-items: stretch; /* align items in Cross Axis */
+    	align-content: stretch; /* Extra space in Cross Axis */
+    	overflow-y: scroll;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+		&::-moz-scrollbar {
+			display: none;
+		}
+	}
+	.offcanvas-header,
+	#chatStatus,
+	#videoCall,
+	.offcanvas-body {
+		width: 100%;
+	}
+	#chatStatus {
+		.h1,
+		.h2,
+		.h3,
+		.h4,
+		.h5,
+		.h6 {
+			span.subheader {
+				line-height: 1em;
+			}
+		}
+		.badge {
+			width: 0.5rem;
+			height: 0.5rem;
+			min-width: 0.5rem;
+			padding: 0;
+			vertical-align: middle;
+		}
+	}
+	.offcanvas-body {
+		min-height: 570px;
+		flex: 1 1 auto; /*grows*/
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start; /*align items in main axis*/
+		align-items: stretch; /* align items in Cross Axis */
+    	align-content: stretch; /* Extra space in Cross Axis */
+	}
+	.main-content,
+	.side-content {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start; /*align items in main axis*/
+		align-items: stretch; /* align items in Cross Axis */
+    	align-content: stretch; /* Extra space in Cross Axis */
+    	border-top: 1px solid rgba($black, $B-dividers);
+		.inner {
+			flex: 1 1 auto;
+			overflow-y: scroll;
+			&::-webkit-scrollbar {
+				display: none;
+			}
+			&::-moz-scrollbar {
+				display: none;
+			}
+		}
+		.footer-content {
+			padding: 1rem;
+			background-color: $white;
+			border-top: 1px solid rgba($black, $B-dividers);
+			.input-group, .button {
+				margin-bottom: 0;
+			}
+		}
+		&:only-child {
+			width: 100%;
+			&::-webkit-scrollbar {
+				display: none;
+			}
+			&::-moz-scrollbar {
+				display: none;
+			}
+		}
+	}
+	.main-content {
+		background-color: $white;
+		.panel {
+			border-right: none;
+			border-left: none;
+			border-radius: 0;
+		}
+		.inner {
+			box-shadow: inset -1px 0 0 rgba($black, $B-dividers);
+			> .panel:first-child {
+				border-top: none;
+			}
+		}
+		.well-list {
+			&.message-preview {
+				> li {
+					.list-detail {
+						width: 75%;
+					}
+				}
+			}
+		}
+		.footer-content {
+			border-right: 1px solid rgba($black, $B-dividers);
+		}
+		.menu {
+			&.is-dropdown-submenu {
+				> li {
+					> a {
+						color: $text-black;
+						padding: 0.7rem 1rem;
+					}
+				}
+			}
+			&.dropdown {
+				> li {
+					> a {
+						display: inline-block;
+						vertical-align: bottom;
+						width: 100%;
+						color: $text-black;
+						padding: 0.7rem;
+						img,
+						i,
+						svg {
+							&:only-child {
+								margin: 0;
+							}
+						}
+					}
+					&.opens-left {
+						> .is-dropdown-submenu {
+							left: auto !important;
+						    right: 0 !important;
+						    top: 100% !important;
+						    &:after {
+						    	right: 3% !important;
+						    	left: auto !important;
+						    }
+						    > li {
+						    	a {
+						    		&:hover {
+										background-color: rgba($medium-gray, $B-dividers);
+									}
+						    	}
+						    }
+						}
+					}
+				}
+			}
+		}
+	}
+	.side-content {
+		background-color: $off-white;
+	}
+	.page-lead {
+		.h1,
+		.h2,
+		.h3,
+		.h4,
+		.h5,
+		.h6 {
+			line-height: 1.2em;
+		}
+		.button, .button-align {
+			margin-top: 0.5rem;
+			margin-bottom: 0.5rem;
+		}
+		.button-align {
+			.button {
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+		}
+	}
+	.panel {
+		.panel-heading {
+			border-right: 1px solid rgba($black, $B-dividers);
+			.h6 {
+				color: $medium-gray;
+			}
+		}
+		.panel-body {
+			border-right: 1px solid rgba($black, $B-dividers);
+			&.wide {
+				border-right: none;
+			}
+		}
+	}
+}
+
+#chatSupport {
+	width: 40rem;
+}
+
+#chatClient {
+	width: 100%;
+	.chat-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start; /*align items in main axis*/
+		align-items: stretch; /* align items in Cross Axis */
+    	align-content: stretch; /* Extra space in Cross Axis */
+    	overflow-y: scroll;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+		&::-moz-scrollbar {
+			display: none;
+		}
+		.chat-header,
+		.chat-body {
+			width: 100%;
+		}
+		.chat-header {
+			margin-top: 1rem;
+		}
+		.chat-body {
+			flex: 1 1 auto;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start; /*align items in main axis*/
+			align-items: stretch; /* align items in Cross Axis */
+	    	align-content: stretch; /* Extra space in Cross Axis */
+	    	border-right: 1px solid rgba($black, $B-dividers);
+	    	border-left: 1px solid rgba($black, $B-dividers);
+		}
+		.main-content {
+			.well-list {
+				&.message-preview {
+					> li {
+						.list-detail {
+							width: 40%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// TokBox Defaults
+#videos {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto 1rem;
+    border: 1px solid rgba($black, $B-dividers);
+    border-radius: 2px;
+    background-color: $text-black;
+}
+
+#subscriber {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 930px;
+    height: 698px;
+    z-index: 10;
+}
+
+#publisher {
+    position: absolute;
+    width: 360px;
+    height: 240px;
+    bottom: 10px;
+    left: 10px;
+    z-index: 100;
+    border: 3px solid white;
+    border-radius: 3px;
+}

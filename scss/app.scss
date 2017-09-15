@@ -81,3 +81,46 @@
 @import 'components/_sliders';
 @import 'components/_footer';
 @import 'components/_overrides';
+@import 'components/_accordion';
+@import 'components/_offcanvas';
+@import 'components/_chat';
+
+.Select-menu-outer {
+  position: relative !important;
+}
+
+.alertify, .alertify-logs {
+  z-index: 9999 !important;
+}
+
+.loading-wrapper {
+  display: table;
+  height: 94%;
+  width: 100%;
+  table-layout: fixed;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.loading-ripple {
+  display: table-cell;
+  vertical-align: middle;
+  height: 84px;
+  width: 84px;
+  background: url("https://s3.amazonaws.com/assets.spoke.com/images/ripple.svg") no-repeat center;
+}
+
+.loader {
+  border: solid 3px #fff;
+  border-top: solid 3px #777;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+  display: inline-flex;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

@@ -3,6 +3,7 @@
 	&.full-table {
 		display: table;
 		width: 100%;
+		// margin: 0 0 1rem;
 		.logo {
 			width: 4.4125rem;
 			height: auto;
@@ -15,6 +16,11 @@
 				height: auto;
 			}
 		}
+		.media-object-section {
+			.button {
+				white-space: nowrap;
+			}
+		}
 	}
 	&.mt-0 {
 		margin-top: 0;
@@ -25,6 +31,22 @@
 }
 
 .media-object-section {
+	a {
+		color: inherit;
+	}
+	.badge {
+		width: 0.5rem;
+		height: 0.5rem;
+		min-width: 0.5rem;
+		padding: 0;
+		vertical-align: middle;
+		&.info {
+			background-color: $light-gray;
+		}
+	}
+	&:first-child {
+		padding-right: 1.5rem;
+	}
 	&.logo {
 		.img-wrapper {
 			overflow: hidden;
@@ -32,14 +54,20 @@
 			height: 4.3125rem;
 			display: flex;
 			align-items: center;
+			justify-content: center;
 			text-align: center;
 			border: 1px solid rgba($black, $B-dividers);
+			background-color: $white;
 			img {
 				width: 100%;
 			}
+			span.h5 {
+				font-weight: normal;
+				color: rgba($black, $B-hinttext);
+			}
 		}
 		&.small {
-			.img-wrapper {
+			.img-wrapper { 
 				width: 2.75rem;
 				height: 2.75rem;
 			}
@@ -49,6 +77,11 @@
 				width: 8.625rem;
 				height: 8.625rem;
 			}
+		}
+	}
+	&.small {
+		&:first-child {
+			padding-right: 1rem;
 		}
 	}
 }

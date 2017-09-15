@@ -1,5 +1,5 @@
 .callout {
-	padding: 1.5rem 1rem;
+	padding: 1.5rem;
 	border-radius: 2px;
 	position: relative;
 	&.hi-padded {
@@ -12,6 +12,7 @@
 		}
 	}
 	.page-lead {
+		// This should have an inherent bottom margin for treatment packages containers
 		margin-top: 0;
 	}
 	.breadcrumbs {
@@ -24,11 +25,51 @@
 	> .media-object {
 		margin-bottom: 0;
 	}
+	> * {
+		&:first-child {
+			.media-object.full-table {
+				margin-top: 0;
+			}
+		}
+		&:last-child {
+			.label-group {
+				margin-bottom: 0;
+			}
+			.media-object.full-table {
+				margin: 0;
+			}
+		}
+	}
 	.close {
 		&.media {
 			position: absolute;
 			right: 1.5rem;
 			top: 1.5rem;
+		}
+	}
+	&.fixed-notification {
+		position: relative;
+		color: $white;
+		background-color: $alert-color;
+		border-bottom: 1px solid rgba($alert-color, $B-text);
+		border-radius: 0;
+		border: none;
+		width: 100%;
+		margin: 0 auto;
+		p {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		a {
+			color: $white;
+			text-decoration: underline;
+		}
+		.close-button {
+			color: rgba($white, $W-hinttext);
+			&:hover {
+				color: rgba($white, $W-text);
+			}
 		}
 	}
 }

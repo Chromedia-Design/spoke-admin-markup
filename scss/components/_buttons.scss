@@ -11,9 +11,13 @@
 		&.secondary,
 		&.alert,
 		&.warning,
-		&.info {
+		&.info,
+		&.white {
 			border-width: 2px;
 			&.small {
+				border-width: 1px;
+			}
+			&.tiny {
 				border-width: 1px;
 			}
 		}
@@ -78,7 +82,7 @@
 		}
 	}
 	&.primary {
-		font-weight: $global-weight-semibold;
+		font-weight: $global-weight-bold;
 	}
 	&.rounded {
 		border-radius: 1.875em;
@@ -90,15 +94,42 @@
 	&.large {
 		line-height: 1.2;
 	}
-	&:focus {
-		color: inherit;
+	&:hover {
+		.fa-long-arrow-right {
+			animation: bounce 2s infinite;
+		}
 	}
+	&.plain {
+		text-transform: none;
+	}
+}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+    	transform: translateX(0);
+  	}
+	40% {
+		transform: translateX(-9px);
+  	}
+	60% {
+		transform: translateX(-4px);
+  	}
 }
 
 .button-align {
 	@extend .button-group;
 	.button {
 		margin-right: 1rem;
+	}
+	&.small {
+		.button {
+			margin-right: 0.75rem;
+		}
+	}
+	&.tiny {
+		.button {
+			margin-right: 0.325rem;
+		}
 	}
 }
 
@@ -155,10 +186,18 @@
 .brick {
 	@extend .button;
 	cursor: default;
-	font-weight: $global-weight-semibold;
+	font-weight: $global-weight-bold;
 	text-transform: none;
 	&.link {
 		color: $text-black;
+		&.subheader {
+			color: rgba($black, $B-subtext);
+			font-weight: normal;
+			&:hover {
+				color: rgba($black, $B-subtext);
+				background: transparent;
+			}
+		}
 		&:hover {
 			color: $text-black;
 			background: transparent;
@@ -168,7 +207,7 @@
 
 .close-button {
 	position: absolute;
-	top: 1.5rem;
+	top: 1.25rem;
 	right: 1.5rem;
 	color: rgba($white, $W-dividers);
 	transition: all ease-in 0.2s;
@@ -224,3 +263,12 @@
 		background-color: $alert-color;
 	}
 }
+
+.input-group-button {
+	a,
+	input,
+	.button {
+		font-weight: normal;
+	}
+}
+

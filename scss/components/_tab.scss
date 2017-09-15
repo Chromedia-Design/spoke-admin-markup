@@ -40,25 +40,26 @@
 					background-color: $alert-color;
 					border-radius: 50%;
 					right: 1.25rem;
-					top: 1rem;
+					top: .3rem;
 					border: 2px solid $white;
 				}
 			}
 		}
 	}
 	&.vertical {
-		border: none;
+		border-left: 1px solid rgba($black, $B-dividers);
+		border-bottom: none;
 		background: transparent;
 		li {
-			border: none;
 			background: transparent;
 			text-transform: none;
 			a {
 				text-transform: none;
-				padding: 0.65rem 1.5rem;
+				padding: 1rem 1.5rem;
 			}
 			&.is-active {
 				border-left: 0.2rem solid $warning-color;
+				border-bottom: none;
 				background-color: transparent;
 				a {
 					background-color: transparent;
@@ -81,6 +82,9 @@
 		li {
 			&.tabs-title {
 				text-transform: none;
+				> a {
+					padding: 1.25rem 1.5rem;
+				}
 				&.is-active {
 					position: relative;
 					background-color: $white;
@@ -150,10 +154,18 @@
 			}
 		}
 	}
+	&.small {
+		.tabs-title {
+			> a {
+				font-size: 0.875rem;
+			}
+		}
+	}
 }
 
 .tabs-title {
 	> a {
+		padding: .675rem 1.5rem;
 		font-size: 1rem;
 		line-height: 1.5em;
 	}

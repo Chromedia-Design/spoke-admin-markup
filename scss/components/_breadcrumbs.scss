@@ -23,6 +23,40 @@
 	}
 }
 
+#facilitySection {
+	.breadcrumbs {
+		background-color: $white;
+	}
+	.is-stuck {
+		.breadcrumbs {
+			margin: 0;
+			padding: 1.8rem;
+			border: 1px solid rgba($black, $B-dividers);
+			border-radius: 4px;
+			background-color: $light-gray;
+			li {
+				font-size: 1rem;
+				&:not(:last-child) {
+					a {
+						margin-left: 1rem;
+					}
+					&:before {
+						content: "<";
+						color: rgba($black, $B-text);
+						top: 0;
+					}
+					&:after {
+						content: "";
+					}
+				}
+				&:last-child {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
  .hierarchs {
  	padding: 0;
 	margin: 0.25rem 0;
@@ -58,7 +92,7 @@
 		color: rgba($black, $B-text);
 		text-transform: uppercase;
 		font-size: 12px;
-		width: 25%;
+		width: 33.33%;
 		float: left;
 		position: relative;
 		text-align: center;

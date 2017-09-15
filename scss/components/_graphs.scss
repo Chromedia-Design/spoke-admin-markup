@@ -8,7 +8,7 @@
 			float: left;
 			&.deductible {
 				position: relative;
-				background-color: $secondary-color;
+				background-color: $primary-color;
 				border-top-left-radius: 8px;
 				border-bottom-left-radius: 8px;
 				&:after {
@@ -16,7 +16,7 @@
 					top: 0.9rem;
 					right: -2px;
 					content: "|";
-					color: rgba($black, $B-hinttext);
+					color: rgba($black, $B-dividers);
 				}
 				.deductible-label {
 					position: absolute;
@@ -56,7 +56,7 @@
 					&:after {
 						position: absolute;
 						top: 0rem;
-						right: 0;
+						right: -2px;
 						content: "|";
 						color: rgba($black, $B-hinttext);
 					}
@@ -73,10 +73,14 @@
 	}
 }
 
+.progress-meter-text {
+	line-height: 1em;
+}
+
 .mpirica-graph {
-	padding: 80px 0 0;
+	padding: 70px 0 0;
 	.label-text {
-		color: $white;
+		// color: $white;
 		font-size: 0.875rem;
 		font-weight: $global-weight-bold;
 		text-transform: uppercase;
@@ -96,7 +100,8 @@
 			position: relative;
 			display: inline-block;
 			float: left;
-			visibility: hidden;
+			// visibility: hidden;
+			background-color: transparent;
 			.mpirica-wrapper {
 				position: absolute;
 				right: 0;
@@ -134,4 +139,171 @@
 	&.bubble {
 		padding: 50px 15px 15px;
 	}
+	&.compacted {
+		padding: 1rem 0 0;
+		.progress {
+			.progress-meter {
+				position: relative;
+				&:after {
+					position: absolute;
+					top: -1rem;
+					right: 0;
+					content: "|";
+					color: $success-color
+				}
+			}
+		}
+	}
+	&.small {
+		.progress {
+			height: 0.25rem;
+			.mpirica-wrapper {
+				width: 35px;
+				height: 35px;
+				span.rating {
+
+				}
+				> img {
+					width: 35px;
+					height: 35px;
+				}
+			}
+		}
+	}
+}
+
+.mpirica-wrapper {
+	width: 70px;
+	height: 70px;
+	position: relative;
+	span.rating {
+		display: block;
+		position: absolute;
+		width: 80%;
+		top: 30px;
+		left: 8px;
+		z-index: 4;
+		text-align: center;
+		color: $white;
+		font-weight: bold;
+	}
+	> img {
+		width: 70px;
+		height: 70px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 3;
+	}
+	&.large {
+		width: 400px;
+		height: 400px;
+		position: relative;
+		span.rating {
+			display: block;
+			position: absolute;
+			width: 80%;
+			top: 165px;
+			left: 40px;
+			z-index: 4;
+			text-align: center;
+			color: $white;
+			font-weight: bold;
+			font-size: 6rem;
+		}
+		> img {
+			width: 400px;
+			height: 400px;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: 3;
+		}
+	}
+}
+
+@mixin circle-graph-circle($size) {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - #{$size/2});
+  top: calc(50% - #{$size/2});
+  width: $size;
+  height: $size;
+}
+
+$circle-graph-size: rem-calc(180);
+$circle-graph-percent-number-size: rem-calc(24);
+$circle-graph-percent-unit-size: rem-calc(16);
+$circle-graph-background-color: $light-gray;
+$circle-graph-empty-color: $dark-gray;
+$circle-graph-fill-color: $secondary-color;
+
+.circle-graph {
+  width: $circle-graph-size;
+  height: $circle-graph-size;
+  border-radius: 50%;
+  background-color: $circle-graph-empty-color;
+  position: relative;
+  margin: 0 auto;
+
+  &.gt-50 {
+    background-color: $circle-graph-fill-color;
+  }
+}
+
+.circle-graph-progress {
+  @include circle-graph-circle($circle-graph-size);
+  clip: rect(0, $circle-graph-size, $circle-graph-size, #{$circle-graph-size/2});
+
+  .circle-graph-progress-fill {
+    @include circle-graph-circle($circle-graph-size);
+    clip: rect(0, #{$circle-graph-size/2}, $circle-graph-size, 0);
+    background: $circle-graph-fill-color;
+    transform: rotate(60deg);
+  }
+
+  .gt-50 & {
+    clip: rect(0, #{$circle-graph-size/2}, $circle-graph-size, 0);
+
+    .circle-graph-progress-fill {
+      clip: rect(0, $circle-graph-size, $circle-graph-size, #{$circle-graph-size/2});
+      background: $circle-graph-empty-color;
+    }
+  }
+}
+
+.circle-graph-percents {
+  @include circle-graph-circle(#{$circle-graph-size/1.45});
+  background: $circle-graph-background-color;
+  text-align: center;
+  display: table;
+  z-index: 4;
+
+  .circle-graph-percents-number {
+    display: block;
+    font-size: $circle-graph-percent-number-size;
+    font-weight: bold;
+    color: $circle-graph-fill-color;
+  }
+
+  .circle-graph-percents-units {
+    display: block;
+    font-size: $circle-graph-percent-unit-size;
+    font-weight: bold;
+  }
+}
+
+.circle-graph-percents-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 0;
+
+  span {
+    line-height: 1;
+  }
 }

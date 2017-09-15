@@ -1,4 +1,5 @@
 .owl-carousel {
+	margin-bottom: 1rem; 
 	&.small {
 		.owl-item {
 			> div {
@@ -11,7 +12,7 @@
 .owl-item {
 	> div {
 		background-color: rgba($black, $B-text);
-		height: 22rem;
+		height: 24.625rem;
 		position: relative;
 		// display: flex;
 		// align-items: center;
@@ -34,5 +35,31 @@
 			height: 9px;
 			background: $primary-color;
 		}
+	}
+}
+
+#facilityList {
+	.owl-item {
+		width: 328px !important;
+		height: 420px;
+		margin-right: 30px;
+		> div {	
+			background: transparent;
+		}
+	}
+}
+
+// Orbit Overrides
+.orbit {
+	.img-card {
+		margin-bottom: 0;
+		border: none;
+	}
+}
+
+.orbit-bullets {
+	button {
+		height: 0.8rem;
+		width: 0.8rem;
 	}
 }

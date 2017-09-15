@@ -2,42 +2,10 @@
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.21);
 }
 
-.chat-area {
-	max-width: 22rem;
-	position: fixed;
-	z-index: 999;
-	top: auto !important;
-	bottom: 8rem;
-	right: 2rem;
-	display: inline-block;
-}
-
-.chat-support {
-	position: fixed;
-	bottom: 2rem;
-	right: 2rem;
-	background-color: $success-color;
-	display: inline-block;
-	width: 3.125rem;
-	height: 3.125rem;
-	-moz-border-radius: 3.125rem;
-	-webkit-border-radius: 3.125rem;
-	border-radius: 3.125rem;
-	text-align: center;
-	vertical-align: middle;
-	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.21);
-	color: #fff;
-	i.fa {
-		font-size: 1.7rem;
-		line-height: 1.8em;
-		vertical-align: middle;
-	}
-}
-
 .message-status {
 	> ul {
 		margin: 0;
-		padding: 5px 25%;
+		padding: 0 24%;
 		text-transform: uppercase;
 	}
 }
@@ -54,4 +22,118 @@
 	.panel {
 		border-color: transparent;
 	}
+}
+
+// Power Tour Overrides
+.tour-wrapper {
+	padding: 0 1rem;
+	border-radius: 4px;
+	// background-color: rgba($white, $W-dividers);
+	// border: 1px solid rgba($white, $W-hinttext);
+}
+
+#powertour-mask {
+	// background-color: rgba(10,16,35,0.54);
+	background-color: $white;
+	opacity: 0.87;
+}
+
+.powertour-step {
+	z-index: 2;
+	.close-button {
+		display: none;
+		position: absolute;
+		top: -1rem;
+		right: -1rem;
+		color: rgba($black, $B-hinttext);
+		&:hover {
+			color: rgba($black, $B-subtext);
+		}
+	}
+	&.powertour-activestep {
+		.close-button {
+			display: inline-block;
+		}
+	}
+}
+
+.connectordot-tl {
+	height: 135px;
+	top: -75px;
+	background-color: $warning-color;
+	&:before {
+		background-color: $white;
+		border: 2px solid $warning-color;
+	}
+}
+
+.connectordot-lt {
+	width: 300px;
+	left: -255px;
+	background-color: $warning-color;
+	&:before {
+		background-color: $white;
+		border: 2px solid $warning-color;
+	}
+}
+
+#stepTwo {
+	.connectordot-lm {
+		width: 280px;
+		left: -255px;
+		background-color: $warning-color;
+		&:before {
+			background-color: $white;
+			border: 2px solid $warning-color;
+		}
+	}
+}
+
+#stepThree {
+	.connectordot-lm {
+		width: 165px;
+		left: -142px;
+		background-color: $warning-color;
+		&:before {
+			background-color: $white;
+			border: 2px solid $warning-color;
+		}
+	}
+}
+
+#stepFour {
+	.connectordot-lm {
+		width: 65px;
+		left: -42px;
+		background-color: $warning-color;
+		&:before {
+			background-color: $white;
+			border: 2px solid $warning-color;
+		}
+	}
+}
+
+.connectordot-bl {
+	height: 30px;
+	bottom: -30px;
+	background-color: $warning-color;
+	&:before {
+		background-color: $white;
+		border: 2px solid $warning-color;
+	}
+}
+
+.sticky {
+	position: relative;
+	&.is-anchored {
+		position: relative;
+	}
+	&.is-stuck {
+		margin-top: 0 !important;
+	}
+}
+
+.modal-tour {
+	@extend .reveal;
+	display: block !important;
 }

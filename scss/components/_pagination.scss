@@ -1,6 +1,22 @@
 .pagination{
 	margin: 4rem 0;
-	.current {
+	a, .button {
 		border-radius: 2px;
+	}
+	.current, .active {
+		border-radius: 2px;
+		background: $primary-color;
+		cursor: default;
+		padding: 0;
+		a, .button {
+			padding: .1875rem .625rem;
+			color: $white;
+			&:hover {
+				background: transparent;
+			}
+		}
+	}
+	.previous, .next {
+		text-transform: capitalize;
 	}
 }

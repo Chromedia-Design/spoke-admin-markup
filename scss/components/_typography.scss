@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Bitter:400i');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 .material-icons {
@@ -7,7 +8,7 @@
 }
 
 strong, b {
-	font-weight: $global-weight-semibold;
+	font-weight: $global-weight-bold;
 }
 
 i {
@@ -15,14 +16,43 @@ i {
 }
 
 blockquote {
-	margin: 1rem 0;
-	padding: .5625rem 1.25rem;
-	border-left: 1px solid rgba($black, $B-dividers);
+	position: relative;
+	font-family: Bitter, Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+	font-style: italic;
+	color: rgba($black, $B-subtext);
+	margin: 1.5rem 0;
+	padding: .5625rem 0;
+	border: none;
+	p {
+		color: rgba($black, $B-subtext);
+	}
+	footer {
+		background: transparent;
+		> * {
+			color: inherit;
+		}
+	}
+	&:before {
+		position: absolute;
+		content: "“";
+		font-size: 3.125rem;
+		font-family: Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+		font-style: normal;
+		line-height: 1;
+		color: $warning-color;
+		top: 0;
+		left: -2rem;
+	}
 }
 
 small {
 	font-size: 87%;
 	line-height: 1.5em;
+}
+
+address {
+	font-size: 0.875rem;
+	font-style: normal;
 }
 
 .underline {
@@ -35,7 +65,6 @@ h3,
 h4,
 h5,
 h6 {
-	letter-spacing: -0.1px;
 	margin-bottom: 1rem;
 	line-height: 1.2em;
 	&.subheader {
@@ -51,8 +80,7 @@ h6 {
 .h6 {
 	font-family: $body-font-family;
 	font-weight: $global-weight-bold;
-	letter-spacing: -0.1px;
-	line-height: 1.2em;
+	line-height: 1.3em;
 }
 
 .h1 {
@@ -90,6 +118,10 @@ p {
 		font-weight: 400;
 		line-height: 1.5em;
 	}
+}
+
+.lead {
+	margin-bottom: 2rem;
 }
 
 .primary-color {
@@ -159,4 +191,19 @@ p {
 	font-size: 0.6125em;
 	line-height: 1.5em;
 	vertical-align: top;
+}
+
+.text-group {
+	h1,
+	h2,
+	h3,
+	h4
+	h5,
+	.h1,
+	.h2,
+	.h3,
+	.h4,
+	.h5 {
+		line-height: 1.2em;
+	}
 }

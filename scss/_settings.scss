@@ -46,7 +46,7 @@
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1200);
+$global-width: rem-calc(1080);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary:         #283D4B,
@@ -96,7 +96,7 @@ $W-icons:           1.00 !default;
 
 $body-background: $background-white;
 $body-font-color: $text-black;
-$body-font-family: Roboto,'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $header-font-family: Lato, 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;

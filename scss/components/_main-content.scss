@@ -1,9 +1,13 @@
 body {
-	overflow: hidden;
+	// overflow: hidden;
 	&.frontend {
-		overflow: scroll;
+		// overflow: scroll;
 		header {
 			border-right: none;
+			background: transparent;
+			&.bordered {
+				border-bottom: 1px solid rgba($black, $B-dividers);
+			}
 		}
 	}
 }
@@ -17,6 +21,9 @@ hr {
 		max-width: 4rem;
 		border-width: 0.25rem;
 		margin-left: 0;
+		&.center {
+			margin: 0 auto;
+		}
 	}
 }
 
@@ -38,7 +45,7 @@ section {
 			margin-bottom: 1rem;
 			@media only screen and (min-width: 40em) {
 				font-size: 1.125rem;
-				line-height: 1.2em;
+				line-height: 1.5em;
 			}
 			&.h3 {
 				@media only screen and (min-width: 40em) {
@@ -73,12 +80,17 @@ section {
 			margin-bottom: 1.875rem;
 		}
 	}
+	&.no-padded {
+		padding: 0 0 2rem;
+	}
+	&.lo-padded {
+		padding: 2rem 0;
+	}
 	&.hi-padded {
 		padding: 9.75rem 0;
 	}
 	&.white-bg {
 		background-color: $white;
-		border-top: 1px solid rgba($black, $B-dividers);
 		border-bottom: 1px solid rgba($black, $B-dividers);
 		+ .white-bg {
 			border-top: none;
@@ -99,8 +111,19 @@ section {
 		h3,
 		h4,
 		h5,
-		h6 {
+		h6,
+		a {
 			color: $white;
+		}
+		a {
+			&:hover {
+				text-decoration: underline; 
+			}
+			&.button {
+				&:hover {
+					text-decoration: none;
+				}
+			}
 		}
 	}
 	&.secondary-bg {
@@ -168,11 +191,15 @@ section {
 	}
 	&.home {
 		position: relative;
+		// background: transparent url('../img/breather.jpg') center center no-repeat;
 		background: transparent url('https://s3.amazonaws.com/assets.spoke.com/images/breather.jpg') center center no-repeat;
 		background-size: cover;
 		header {
 			background: transparent;
 			border: none;
+		}
+		.call-to-action {
+			padding: 8rem 0 0;
 		}
 		.home-scene {
 			position: relative;

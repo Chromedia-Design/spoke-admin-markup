@@ -48,7 +48,7 @@
 				    			<a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">6</span></a>
 			    			</li>
 				      		<li>
-				        		<a href="#">Administrator</a>
+				        		<a href="#">Spoke Health Advocate</a>
 				        		<ul class="menu vertical">
 				          			<li><a href="#">One</a></li>
 				          			<li><a href="#">Two</a></li>
@@ -65,7 +65,9 @@
 						<nav aria-label="You are here:" role="navigation">
 						  	<ul class="breadcrumbs">
 						    	<li><a href="admin-patients.html">Patients</a></li>
-						    	<li>William Pinkerton</li>
+						    	<li><a href="admin-patient-profile.html">William Pinkerton</a></li>
+						    	<li><a href="admin-patient-messages.html">Communications</a></li>
+						    	<li>View Message</li>
 						  	</ul>
 						</nav>	
 					</div>
@@ -73,365 +75,66 @@
 				
 				<div class="row">
 					<div class="large-12 columns">
-						<ul class="tabs" data-tabs id="example-tabs">
-							<li class="tabs-title"><a href="#panel1">Overview</a></li>
-							<li class="tabs-title alert is-active"><a href="#panel2">Communications</a></li>
-							<li class="tabs-title"><a href="#panel3">Episodes</a></li>
-						</ul>
-					</div>
-				</div>
 
-				<div class="tabs-content" data-tabs-content="example-tabs">
-
-					<div class="tabs-panel" id="panel1">
-						
-						<div class="row">
-							<div class="large-12 columns">
-								<div class="callout warning" data-closable>
-									<div class="callout-body">
-										<span class="h6">This employee has 1 new communication item.</span>
-								  		<a href="#" class="button warning hollow">View</a>
-									</div>
-								  	<button class="close-button" aria-label="Dismiss alert" type="button" data-close>
-								    	<span aria-hidden="true">&times;</span>
-								  	</button>
-								</div>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="large-7 columns end">
-									
-								<div class="page-lead">
-									<span class="h6">Recent Activity</span>
-									<!-- <a href="add-patient.html" class="button hollow info small pull-right">See All ...</a> -->
-								</div>
-								
-								<div class="menu-options submenu mb-1">
-									<div class="row collapse">
-										<div class="large-8 large-offset-4 columns">
-											<div class="row">
-			                                    <div class="large-6 columns">
-			                                        <label for="" class="small-label text-right middle">Activities from:</label>
-			                                    </div>
-			                                    <div class="large-6 columns">
-			                                        <select class="small-input">
-			                                            <option selected="true">All</option>
-			                                            <option>Employee</option>
-			                                            <option>Administrator</option>
-			                                        </select>
-			                                    </div>  
-			                                </div> 
-										</div>
-									</div>
-								</div>
-								
-								<p class="date-bind">Today</p>
-								<div class="panel">
-									<ul class="well-list notifications">
-										<li>
-											<div class="list-wrap">
-												<div class="list-item-icon">
-													<p><i class="fa fa-user fa-fw"></i> </p>
-												</div>
-												<div class="list-item-name">
-													<p><b>William Pinkerton</b> was interested in <b>Boulder Surgery Center</b>.</p>
-												</div>
-												<div class="pull-right">
-													<ul class="dropdown menu" data-dropdown-menu>
-													  	<li>
-													    	<a href="#" class="action-link info"><i class="fa fa-ellipsis-v fa-fw"></i></a>
-													    	<ul class="menu">
-													      		<li><a href="#"><i class="fa fa-envelope-o fa-fw"></i>&nbsp; Assign To Advocate</a></li>
-													    	</ul>
-													  	</li>
-													</ul>
-												</div>
-											</div>
-										</li>
-									</ul>
-								</div>
-
-								<p class="date-bind">Yesterday</p>
-								<div class="panel">
-									<ul class="well-list notifications">
-										<li>
-											<div class="list-wrap">
-												<div class="list-item-icon">
-													<p><i class="fa fa-user fa-fw"></i> </p>
-												</div>
-												<div class="list-item-name">
-													<p><b>William Pinkerton</b> visited employee landing page.</p>
-												</div>
-												<div class="pull-right">
-													<ul class="dropdown menu" data-dropdown-menu>
-													  	<li>
-													    	<a href="#" class="action-link info"><i class="fa fa-ellipsis-v fa-fw"></i></a>
-													    	<ul class="menu">
-													      		<li><a href="#"><i class="fa fa-envelope-o fa-fw"></i>&nbsp; Assign To Advocate</a></li>
-													    	</ul>
-													  	</li>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="list-wrap">
-												<div class="list-item-icon">
-													<p><i class="fa fa-user fa-fw"></i> </p>
-												</div>
-												<div class="list-item-name">
-													<p><b>William Pinkerton</b> clicked on the invite link.</p>
-												</div>
-												<div class="pull-right">
-													<ul class="dropdown menu" data-dropdown-menu>
-													  	<li>
-													    	<a href="#" class="action-link info"><i class="fa fa-ellipsis-v fa-fw"></i></a>
-													    	<ul class="menu">
-													      		<li><a href="#"><i class="fa fa-envelope-o fa-fw"></i>&nbsp; Assign To Advocate</a></li>
-													    	</ul>
-													  	</li>
-													</ul>
-												</div>
-											</div>
-										</li>
-									</ul>
-								</div>
-								
-								<p class="date-bind">Jan-27</p>
-								<div class="panel">
-									<ul class="well-list notifications">
-										<li>
-											<div class="list-wrap">
-												<div class="list-item-icon">
-													<p><i class="fa fa-headphones fa-fw"></i> </p>
-												</div>
-												<div class="list-item-name">
-													<p><b>Spoke Advocate</b> sent invite to <b>William Pinkerton</b>.</p>
-												</div>
-												<div class="pull-right">
-													<ul class="dropdown menu" data-dropdown-menu>
-													  	<li>
-													    	<a href="#" class="action-link info"><i class="fa fa-ellipsis-v fa-fw"></i></a>
-													    	<ul class="menu">
-													      		<li><a href="#"><i class="fa fa-envelope-o fa-fw"></i>&nbsp; Assign To Advocate</a></li>
-													    	</ul>
-													  	</li>
-													</ul>
-												</div>
-											</div>
-										</li>
-									</ul>
-								</div>
-
+						<div class="panel">
+							<div class="panel-heading">
+								<span class="h5 primary-color">Spoke Health Invite</span>
 							</div>
 
-							<div class="large-5 columns end">
-
-								<div class="callout mt-1">
-									<div class="row">
-										<div class="large-12 columns end">
-											<div class="page-lead">
-												<div class="img-wrapper">
-													<img src="img/logo-harley-davidson.png" alt="">
-												</div>
-												<span class="h6 success-color">Harley Davidson, Incorporated</span>
-												<a href="admin-patient-edit.html" class="button info hollow small pull-right"><i class="fa fa-pencil fa-fw"></i></a>
-											</div>
-										</div>
-									</div>	
-									<div class="row">
-										<div class="large-12 columns end">
-											<div class="label-group">
-												<span class="h6">William Pinkerton</span>
-											</div>
-										</div>
-									</div>	
-									
-									<div class="row">
-										<div class="large-12 columns end">
-											<div class="label-group">
-												<p><i class="fa fa-envelope-o fa-fw"></i>&nbsp; william.pinkerton@domain.com</p>
-											</div>
+							<div class="panel-body sub-panel">
+								<div class="media-object full-table">
+									<div class="media-object-section middle logo small">
+										<div class="img-wrapper circle">
+											<img src="img/spoke-graphic-logo.png">
 										</div>
 									</div>
-									<div class="row">
-										<div class="large-12 columns end">
-											<div class="label-group">
-												<p><i class="fa fa-phone fa-fw"></i>&nbsp; 123-456-7890</p>
-											</div>
-										</div>
+									<div class="media-object-section middle">
+										<span class="h6">Spoke Health</span>
 									</div>
-									<div class="row">
-										<div class="large-12 columns end">
-											<div class="label-group">
-												<p><i class="fa fa-map-marker fa-fw"></i>&nbsp; 336 1st Dr, El Paso, NJ, USA 23654</p>
-											</div>
-										</div>
-									</div>
-									<hr>
-									<div class="row">
-										<div class="large-4 columns end">
-											<div class="label-group">
-												<p>Policy Number</p>
-												<h6>123-4567-890</h6>
-											</div>
-										</div>
-										<div class="large-3 columns end">
-											<div class="label-group">
-												<p>Gender</p>
-												<h6>Male</h6>
-											</div>
-										</div>
-										<div class="large-5 columns end">
-											<div class="label-group">
-												<p>Birthdate</p>
-												<h6>March 17, 1976</h6>
-											</div>
-										</div>
+									<div class="media-object-section middle">
+										<span class="subheader pull-right">Feb-4 3:56PM</span>
 									</div>
 								</div>
-								
+
+								<p>Hi, William Pinkerton!</p>
+								<p>Aenean ultrices sodales velit, a iaculis magna. Aenean quis egestas nunc. Suspendisse aliquam viverra fringilla. Aliquam finibus lorem at maximus ultricies. Nullam ultrices diam ultrices hendrerit mattis. Nulla sodales felis quis sapien ornare, eget tempus orci lacinia. Sed sit amet diam quis magna volutpat faucibus.</p>
+								<p>Nullam dolor leo, commodo eget facilisis non, molestie id nisi. Maecenas hendrerit malesuada lectus, ac rutrum massa scelerisque at. Nam id lacus viverra, faucibus felis eget, mollis odio. Nunc sit amet egestas dolor.</p>
 							</div>
-
-						</div>
-
-					</div>
-
-					<div class="tabs-panel is-active" id="panel2">
-
-						<div class="row">
-							<div class="large-12 columns">
-
-								<nav aria-label="You are here:" role="navigation">
-								  	<ul class="breadcrumbs">
-								    	<li><a href="admin-patient-messages.html">All</a></li>
-								    	<li>Spoke Health Invite</li>
-								  	</ul>
-								</nav>
-
-								<div class="panel">
-									<div class="panel-heading">
-										<span class="h5 primary-color">Spoke Health Invite</span>
-									</div>
-<<<<<<< HEAD
-									<div class="row collapse">
-										<div class="large-12 columns">
-											<div class="reveal-body">
-												<div class="row">
-													<div class="large-12 columns">
-														<label>
-															Enter Subject
-															<input type="text" name="">
-														</label>
-													</div>
-												</div>
-												<div class="row">
-													<div class="large-12 columns">
-														<label>
-															Message
-															<textarea rows="7" class="small-input"></textarea>
-														</label>
-													</div>
-=======
-
-									<div class="panel-body sub-panel">
-										<div class="media-object full-table">
-											<div class="media-object-section middle logo small">
-												<div class="img-wrapper circle">
-													<img src="img/spoke-graphic-logo.png">
->>>>>>> ff3dc8c229e8e3bfa812e5279b523b03088632bf
-												</div>
-											</div>
-											<div class="media-object-section middle">
-												<span class="h6">Spoke Health</span>
-											</div>
-											<div class="media-object-section middle">
-												<span class="subheader pull-right">Feb-4 3:56PM</span>
-											</div>
+							
+							<div class="panel-body">
+								<div class="media-object full-table">
+									<div class="media-object-section middle logo small">
+										<div class="img-wrapper circle">
+											<img src="img/user-icon.png">
 										</div>
-
-										<p>Hi, Debbie Malone!</p>
-										<p>Aenean ultrices sodales velit, a iaculis magna. Aenean quis egestas nunc. Suspendisse aliquam viverra fringilla. Aliquam finibus lorem at maximus ultricies. Nullam ultrices diam ultrices hendrerit mattis. Nulla sodales felis quis sapien ornare, eget tempus orci lacinia. Sed sit amet diam quis magna volutpat faucibus.</p>
-										<p>Nullam dolor leo, commodo eget facilisis non, molestie id nisi. Maecenas hendrerit malesuada lectus, ac rutrum massa scelerisque at. Nam id lacus viverra, faucibus felis eget, mollis odio. Nunc sit amet egestas dolor.</p>
 									</div>
-									
-									<div class="panel-body">
-										<div class="media-object full-table">
-											<div class="media-object-section middle logo small">
-												<div class="img-wrapper circle">
-													<img src="img/user-icon.png">
-												</div>
-											</div>
-											<div class="media-object-section middle">
-												<span class="h6">Debbie Malone</span>
-											</div>
-											<div class="media-object-section middle">
-												<span class="subheader pull-right">Feb-4 3:57PM</span>
-											</div>
-										</div>
-
-										<p>Hi,</p>
-										<p>Nullam rutrum, lacus vitae facilisis eleifend, ante purus dictum ante, id tristique mauris ipsum vitae erat. Cras rutrum massa sit amet velit tempus volutpat. Cras vel eros sit amet metus pharetra commodo?</p>
+									<div class="media-object-section middle">
+										<span class="h6">William Pinkerton</span>
 									</div>
+									<div class="media-object-section middle">
+										<span class="subheader pull-right">Feb-4 3:57PM</span>
+									</div>
+								</div>
+							</div>
+							
 
-									<div class="panel-footer">
-										<div class="media-object full-table">
-											<div class="media-object-section logo small">
-												<div class="img-wrapper circle">
-													<img src="img/spoke-graphic-logo.png">
-												</div>
-											</div>
-											<div class="media-object-section">
-												<textarea rows="4" placeholder="Compose a reply."></textarea>
-												<a href="" class="button pull-right">
-													Reply
-												</a>
-											</div>
+							<div class="panel-footer">
+								<div class="media-object full-table">
+									<div class="media-object-section logo small">
+										<div class="img-wrapper circle">
+											<img src="img/spoke-graphic-logo.png">
 										</div>
+									</div>
+									<div class="media-object-section">
+										<textarea rows="4" placeholder="Compose a reply."></textarea>
+										<a href="" class="button pull-right">
+											Reply
+										</a>
 									</div>
 								</div>
 							</div>
 						</div>
-
 					</div>
-
-					<div class="tabs-panel" id="panel3">
-						
-						<div class="row">
-							<div class="large-12 columns">
-								<div class="page-lead">
-									<span class="h6">Episodes</span>
-									<a href="admin-patient-episode-edit.html" class="button primary pull-right">Add New Episode +</a>
-								</div>
-
-								<table>
-					                <thead>
-					                <tr>
-					                    <th><a href="#">Surgery Package <i class="fa fa-caret-up fa-fw"></i></a></th>
-					                    <th># of Facilities</th>
-					                    <th><a href="#">Date Created <i class="fa fa-caret-up fa-fw"></i></a></th>
-					                    <th></th>
-					                </tr>
-					                </thead>
-					                <tbody>
-					                    <tr>
-					                        <td><a href="admin-patient-episode-view.html">Total Knee Replacement</a></td>
-					                        <td>6</td>
-					                        <td>Dec 23, 2016</td>
-					                        <td class="text-right">
-					                            <a  class="button link info" href="admin-patient-episode-edit.html"><i class="fa fa-edit fa-fw"></i></a>
-					                            <!-- <a href="#" class="button link info"><i class="fa fa-remove fa-fw"></i></a> -->
-					                        </td>
-					                    </tr>
-					                    
-					                </tbody>
-					            </table>
-							</div>
-						</div>	
-
-					</div>
-
 				</div>
 				
 			</div>
