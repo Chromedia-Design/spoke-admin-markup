@@ -1,0 +1,22 @@
+.monthly-day-event {
+	> .monthly-day-number {
+		font-size: rem-calc(12);
+	}
+}
+
+.monthly-day-title-wrap {
+	div {
+		font-size: rem-calc(12);
+		font-weight: bold;
+	}
+}
+
+.monthly-today {
+	.monthly-day-number {
+		padding: 2px;
+		width: auto;
+		height: auto;
+		text-align: center;
+		font-size: rem-calc(9);
+	}
+}

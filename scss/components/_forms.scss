@@ -318,6 +318,52 @@ textarea, .mce-tinymce {
 .is-dropdown-submenu {
 	min-width: 220px;
 	max-width: 435px;
+	margin-top: 0;
+	border-radius: 2px;
+	background-color: $white !important;
+	> li {
+		background-color: transparent;
+		&:first-child {
+			margin-top: 0.5rem;
+		}
+		&:last-child {
+			margin-bottom: 0.5rem;
+		}
+	}
+	&:after {
+		top: -0.45rem;
+		content: "";
+		position: absolute;
+		height: 0;
+		width: 0;
+		border-bottom: 0.5rem solid $white;
+		border-left: 0.5rem solid transparent;
+		border-right: 0.5rem solid transparent;
+	}
+	&:before {
+		top: -0.5rem;
+		content: "";
+		position: absolute;
+		height: 0;
+		width: 0;
+		border-bottom: 0.5rem solid $dark-gray;
+		border-left: 0.5rem solid transparent;
+		border-right: 0.5rem solid transparent;
+	}
+	&.notifications {
+		> li {
+			font-size: 0.75rem;
+			padding: 0.5rem 1rem;
+			span {
+				a {
+					color: $secondary-color;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
 }
 
 .menu {
@@ -349,11 +395,9 @@ textarea, .mce-tinymce {
 				> .is-dropdown-submenu {
 					&:after {
 						right: 3%;
-						top: -0.45rem;
 					}
 					&:before {
 						right: 3%;
-						top: -0.5rem;
 					}
 				}
 			}
@@ -361,60 +405,9 @@ textarea, .mce-tinymce {
 				> .is-dropdown-submenu {
 					&:after {
 						left: 3%;
-						top: -0.5rem;
 					}
-					&:after {
+					&:before {
 						left: 3%;
-						top: -0.45rem;
-					}
-				}
-			}
-		}
-	}
-	&.is-dropdown-submenu {
-		margin-top: 0;
-		border-radius: 2px;
-		// display: block;
-		// border: none;
-		background-color: $white;
-		> li {
-			background-color: transparent;
-			&:first-child {
-				margin-top: 0.5rem;
-			}
-			&:last-child {
-				margin-bottom: 0.5rem;
-			}
-		}
-		&:after {
-			content: "";
-			position: absolute;
-			height: 0;
-			width: 0;
-			border-bottom: 0.5rem solid $white;
-			border-left: 0.5rem solid transparent;
-			border-right: 0.5rem solid transparent;
-		}
-		&:before {
-			content: "";
-			position: absolute;
-			height: 0;
-			width: 0;
-			border-bottom: 0.5rem solid $dark-gray;
-			border-left: 0.5rem solid transparent;
-			border-right: 0.5rem solid transparent;
-		}
-		// Notifications list on the header
-		&.notifications {
-			> li {
-				font-size: 0.75rem;
-				padding: 0.5rem 1rem;
-				span {
-					a {
-						color: $secondary-color;
-						&:hover {
-							text-decoration: underline;
-						}
 					}
 				}
 			}
