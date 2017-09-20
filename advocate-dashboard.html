@@ -5,6 +5,7 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Spoke Admin Portal</title>
+	<link rel="stylesheet" href="js/monthly/css/monthly.css">
 	<link rel="stylesheet" href="css/app.css">
 </head>
 <body>
@@ -21,12 +22,12 @@
 					<li class="is-active">
 						<a href="advocate-dashboard.html"><i class="material-icons">dashboard</i> Dashboard</a>
 					</li>
-					<li>
+					<!-- <li>
 						<a href="advocate-employees.html"><i class="material-icons">face</i> Assigned Employees</a>
-					</li>
-					<li>
+					</li> -->
+					<!-- <li>
 						<a href="advocate-facilities.html"><i class="material-icons">local_hospital</i> Facilities</a>
-					</li>
+					</li> -->
 					<li>
 						<a href="advocate-profile.html"><i class="material-icons">account_circle</i> Profile</a>
 						<ul class="nested vertical menu">
@@ -76,6 +77,9 @@
 				          			</li>
 				        		</ul>
 			    			</li>
+			    			<li>
+				        		<a href="#"><i class="fa fa-comment-o fa-lg"></i><span class="alert badge" id="notifCount">2</span></a>
+				      		</li>
 				      		<li>
 				        		<a href="#">Spoke Advocate &nbsp;</a>
 				        		<ul class="menu vertical">
@@ -86,91 +90,61 @@
 				  	</div>
 				</div>
 
-				<div class="row">
-					<div class="large-12 columns end">
+				<div class="row collapse expanded">
 
-						<div class="page-lead">
-							<span class="h5">Hi, Spoke Health Advocate.</span>
-						</div>
+					<div class="large-8 columns" style="background-color: #FFFFFF;">
 
-						<div class="callout warning" data-closable>
-							<div class="callout-body">
-								<span class="h6">You have 5 new communication items.</span>
-						  		<a href="advocate-notifications.html" class="button warning hollow">View</a>
-							</div>
-						  	<button class="close-button" aria-label="Dismiss alert" type="button" data-close>
-						    	<span aria-hidden="true">&times;</span>
-						  	</button>
-						</div>
-
-						<div class="menu-options mt-2 mb-1">
-							<div class="row collapse">
-								<div class="large-12 columns">
-									<span class="h6">Recent Activity</span>
+						<ul class="accordion mt-1" data-accordion data-multi-expand="true">
+							<li class="accordion-item is-active" data-accordion-item>
+								<a class="accordion-title">Timeline</a>
+								<div class="accordion-content" data-tab-content>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio doloribus ab eius similique quae eveniet ullam natus voluptatem neque, quo a tempora quisquam aliquid, expedita odio, quas sapiente fugiat recusandae!</p>
 								</div>
-							</div>
-						</div>
-
-						<div class="row collapse">
-							<div class="large-12 columns end">
-								<div class="input-group">
-		            				<input type="text" class="input-group-field" value="" placeholder="Write a quick comment...">
-		            				<div class="input-group-button">
-		            					<a href="#" class="button info"><i class="fa fa-sticky-note-o fa-fw" aria-hidden="true"></i>&nbsp; Post</a>
-	            					</div>
-            					</div>
-							</div>
-						</div>
-
-						<div class="activity">
-							<ul class="mb-1">
-								<li>
-									<div class="row">
-										<div class="activity-icon columns medium-1">
-											<p class="text-center"><i class="fa fa-sign-out fa-fw"></i> </p>
-										</div>
-										<div class="activity-name columns medium-8">
-											<p><b>John Doe</b> logged out.
-											</p>
-										</div>
-										<div class="activity-time columns medium-3">
-											<p class="pull-right subheader"><small>Jan 12, 8:00AM</small></p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="row">
-										<div class="activity-icon columns medium-1">
-											<p class="text-center"><i class="fa fa-pencil fa-fw"></i> </p>
-										</div>
-										<div class="activity-name columns medium-8">
-											<p><b>John Doe</b> updated his account information.
-											</p>
-										</div>
-										<div class="activity-time columns medium-3">
-											<p class="pull-right subheader"><small>Jan 12, 8:00AM</small></p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="row">
-										<div class="activity-icon columns medium-1">
-											<p class="text-center"><i class="fa fa-sign-out fa-fw"></i> </p>
-										</div>
-										<div class="activity-name columns medium-8">
-											<p><b>John Doe</b> logged in.
-											</p>
-										</div>
-										<div class="activity-time columns medium-3">
-											<p class="pull-right subheader"><small>Jan 12, 8:00AM</small></p>
-										</div>
-									</div>
-								</li>
-								<li class="text-center"><a href="#" class="button hollow mt-1">View More</a></li>
-							</ul>
-						</div>
+							</li>
+							<li class="accordion-item is-active" data-accordion-item>
+								<a class="accordion-title">Recent Employee Activity</a>
+								<div class="accordion-content" data-tab-content>
+									<p class="subheader"><small>These employees have recently been using the system.</small></p>
+									<table class="striped hover">
+										<tr>
+											<td><a href="#">Jeremy Foster</a></td>
+											<td class="text-right">a few seconds ago</td>
+										</tr>
+										<tr>
+											<td><a href="#">Steven Black</a>&nbsp; <span class="badge success">&nbsp;</span></td>
+											<td class="text-right">a few days ago</td>
+										</tr>
+										<tr>
+											<td><a href="#">Elizabeth Morales</a></td>
+											<td class="text-right">Sep 21, 2017</td>
+										</tr>
+									</table>
+								</div>
+							</li>
+						</ul>
 
 					</div>
+
+					<div class="large-4 columns">
+						
+						<div class="row">
+							<div class="large-12 columns">
+								
+								<div class="menu-options">
+									<div class="row collapse">
+										<div class="large-12 columns">
+											<span class="h6">Scheduled</span>
+										</div>
+									</div>
+								</div>
+
+								<div id="eventCalendar" style="position: relative; border: 1px solid rgba(10, 16, 35, 0.12);"></div>
+
+							</div>
+						</div>	
+
+					</div>
+
 				</div>
 				
 			</div>
@@ -184,9 +158,11 @@
 	<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
 	<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
 
+	<script src="js/monthly/js/monthly.js"></script>
 	<script src="js/app.js"></script>
 
 	<script type="text/javascript">
+
         $(function () {
             var timer;
 
@@ -198,9 +174,7 @@
             }).resize();
         });
 
-        $('.page-lead .button.secondary').click(function() {
-    		$('.fa-angle-down, .fa-angle-up').toggleClass('fa-angle-down fa-angle-up');
-    	});
+        $('#eventCalendar').monthly();
 
     </script>
 

@@ -4,6 +4,13 @@
 		color: $white;
 		border: none;
 	}
+	&.small {
+	    width: 0.5rem;
+	    height: 0.5rem;
+	    min-width: 0.5rem;
+	    padding: 0;
+	    vertical-align: middle;
+	}
 }
 
 .label {

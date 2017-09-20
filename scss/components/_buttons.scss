@@ -52,7 +52,7 @@
 		color: rgba($black, $B-text);
 		&.hollow {
 			background: transparent;
-			border-color: rgba($black, $B-hinttext);
+			border-color: rgba($black, 0.48);
 			color: rgba($black, $B-subtext);
 			&:hover {
 				background-color: rgba($black, $B-dividers);
