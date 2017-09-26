@@ -6,9 +6,23 @@
 		padding: 2rem;
 	}
 	&.warning {
-		border-color: lighten($warning-color, 15%);
+		border-color: lighten($warning-color, 25%);
 		> * {
 			color: darken($warning-color, 5%);
+		}
+		table {
+			thead,
+			tbody,
+			tfoot {
+				background: transparent;
+				border: none;
+				color: $text-black;
+			}
+			tbody {
+				tr:nth-child(even) {
+					background: transparent;
+				}
+			}
 		}
 	}
 	.page-lead {

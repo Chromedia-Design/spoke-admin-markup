@@ -321,6 +321,7 @@ textarea, .mce-tinymce {
 	margin-top: 0;
 	border-radius: 2px;
 	background-color: $white !important;
+	z-index: 999;
 	> li {
 		background-color: transparent;
 		&:first-child {
@@ -394,15 +395,19 @@ textarea, .mce-tinymce {
 			&.opens-left {
 				> .is-dropdown-submenu {
 					&:after {
-						right: 3%;
+						right: 3% !important;
+						left: auto !important;
 					}
 					&:before {
-						right: 3%;
+						right: 3% !important;
+						left: auto !important;
 					}
 				}
 			}
 			&.opens-right {
 				> .is-dropdown-submenu {
+					left: 25%;
+					top: 125%;
 					&:after {
 						left: 3%;
 					}

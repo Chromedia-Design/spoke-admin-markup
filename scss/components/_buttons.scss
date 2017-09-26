@@ -101,6 +101,7 @@
 	}
 	&.plain {
 		text-transform: none;
+		border-width: 1px;
 	}
 }
 
@@ -114,6 +115,16 @@
 	60% {
 		transform: translateX(-4px);
   	}
+}
+
+.button-group {
+	display: inline-block;
+	&.plain {
+		.button {
+			// text-transform: none;
+			border-width: 1px;
+		}
+	}
 }
 
 .button-align {
@@ -261,14 +272,6 @@
 	&:hover {
 		color: $white;
 		background-color: $alert-color;
-	}
-}
-
-.input-group-button {
-	a,
-	input,
-	.button {
-		font-weight: normal;
 	}
 }
 

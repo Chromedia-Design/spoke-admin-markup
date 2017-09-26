@@ -339,13 +339,16 @@
 	}
 	&.message-preview {
 		> li {
-			border-right: 1px solid rgba($black, $B-dividers);
 			.list-wrap {
 				padding: 15px;
 				transition: all 0.2s;
 				background-color: $background-white;
+				&:hover {
+					cursor: pointer;
+				}
 			}
 			.list-detail {
+				width: 60%;
 				> span {
 					&:first-child {
 						color: $text-black;
@@ -380,7 +383,6 @@
 				}
 			}
 			&.selected {
-				border-right: none;
 				.list-wrap {
 					position: relative;
 					background-color: $white;
@@ -412,6 +414,11 @@
 						background-color: transparent;
 					}
 				}
+				.pull-right {
+					.dropdown.menu {
+						margin-right: 2rem;
+					}
+				}
 			}
 			&:hover {
 				.list-wrap {
@@ -431,6 +438,38 @@
 					}
 					&.pinned {
 						color: $alert-color;
+					}
+				}
+			}
+		}
+		.menu {
+			&.dropdown {
+				> li {
+					> a {
+						display: inline-block;
+						vertical-align: bottom;
+						width: 100%;
+						color: $text-black;
+						img,
+						i,
+						svg {
+							&:only-child {
+								margin: 0;
+							}
+						}
+					}
+					&.opens-left,
+					&.opens-right {
+						> .is-dropdown-submenu {
+						    > li {
+						    	a {
+						    		text-decoration: none;
+						    		&:hover {
+										background-color: rgba($medium-gray, $B-dividers);
+									}
+						    	}
+						    }
+						}
 					}
 				}
 			}
