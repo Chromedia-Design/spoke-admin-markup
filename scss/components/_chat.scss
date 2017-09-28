@@ -9,7 +9,7 @@
 	background-color: $secondary-color;
 	border-radius: 6px;
 	+ .timestamp {
-		text-align: center;
+		text-align: left;
 	}
 	&.small {
 		margin: 0 0 0 1rem;
@@ -123,6 +123,9 @@
 			  	width: 0;
 			}
 		}
+		+ .timestamp {
+			text-align: center;
+		}
 	}
 	&.info-bg {
 		position: relative;
@@ -130,11 +133,13 @@
 		border-radius: 1px;
 		padding: 1.5rem 1.5rem 0;
 		.talktext {
-			text-align: left;
 			color: $text-black;
 			p {
 				margin-bottom: 0;
 			}
+		}
+		+ .timestamp {
+			text-align: center;
 		}
 	}
 }
@@ -145,6 +150,9 @@
 	margin: 0.125rem 0 0 1rem;
 	font-size: 0.875rem;
 	color: rgba($black, $B-subtext);
+	.pull-left {
+		line-height: 1.8em;
+	}
 }
 
 .talktext {
@@ -406,6 +414,13 @@
 			&.pull-right {
 				.media-object-section {
 					float: right;
+					&.logo {
+						padding-left: 1.5rem;
+						text-decoration: none;
+						a {
+							text-decoration: none;
+						}
+					}
 				}
 			}
 			&.text-center {
@@ -484,9 +499,6 @@
 		.chat-header,
 		.chat-body {
 			width: 100%;
-		}
-		.chat-header {
-			margin-top: 1rem;
 		}
 		.chat-body {
 			flex: 1 1 auto;

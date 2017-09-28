@@ -27,7 +27,7 @@
 						<a href="advocate-employees.html"><i class="material-icons">face</i>Employees</a>
 					</li>
 					<li class="is-active">
-						<a href="advocate-communications.html">Communications</a>
+						<a href="advocate-communications.html">Inbox</a>
 					</li>
 					<li>
 						<a href="#">Doctors</a>
@@ -108,8 +108,8 @@
 						<div class="row">
 							<div class="large-12 columns">
 								<div class="page-lead">
-					                <span class="h5">Communications</span>
-					                <a class="button success mt-0-25 pull-right" href="#"><i class="fa fa-edit"></i>&nbsp; Compose</a>
+					                <span class="h5">Inbox</span>
+					                <a class="button success mt-0-25 pull-right" href="advocate-communications-compose.html"><i class="fa fa-edit"></i>&nbsp; Compose</a>
 					            </div>
 							</div>
 						</div>
@@ -218,6 +218,7 @@
                                         </div>
                                         <div class="pull-right">
                                         	<ul class="dropdown menu mt-0-5" data-dropdown-menu>
+                                        		<li><i class="fa fa-check-circle success-color"></i></li>
 	                                            <li>
 	                                                <a></a>
 	                                                <ul class="menu vertical">
@@ -247,6 +248,7 @@
                                         </div>
                                         <div class="pull-right">
                                         	<ul class="dropdown menu mt-0-5" data-dropdown-menu>
+                                        		<li><i class="fa fa-check-circle success-color"></i></li>
 	                                            <li>
 	                                                <a></a>
 	                                                <ul class="menu vertical">
@@ -530,7 +532,10 @@
 			aspectRatio: 1,
 			height: 'auto',
 			fixedWeekCount: false,
-			events: sampleEvents
+			events: sampleEvents,
+			dayClick: function () {
+				alert('text');
+			}
 		});
 
         $('#eventScheduler').fullCalendar({
@@ -548,7 +553,10 @@
 			editable: true,
 			eventLimit: true, // allow "more" link when too many events
 			titleFormat: 'MMM D',
-			events: sampleEvents
+			events: sampleEvents,
+			dayClick: function () {
+				alert('text');
+			}
 		});
 
 		$(function () {
@@ -560,6 +568,10 @@
                   $('.site-nav, .content').css("height", $(window).height());
                 }, 40); 
             }).resize();
+        });
+
+        $('.list-wrap').click(function () {
+        	window.location.href = 'advocate-communications-view.html';
         });
 
     </script>
