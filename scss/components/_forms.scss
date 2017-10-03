@@ -472,7 +472,6 @@ label.image-upload {
 }
 
 .label-group {
-	margin: 0 0 1rem;
 	p {
 		margin-bottom: 0;
 		font-size: 0.875rem;
@@ -487,11 +486,32 @@ label.image-upload {
 		margin: 0;
 		font-family: $body-font-family;
 		line-height: 1.5em;
-		font-weight: $global-weight-bold;
+		font-weight: $global-weight-normal;
 	    width: 100%;
     	overflow: hidden;
     	white-space: nowrap;
     	text-overflow: ellipsis;
+	}
+}
+
+.label-block {
+	.label-group {
+		padding: 0.5rem 1rem;
+		border: 1px solid rgba($black, $B-dividers);
+	}
+	.columns {
+		&:not(:first-child) {
+			.label-group {
+				border-left: none;
+			}
+		}
+	}
+	+ .label-block {
+		.columns {
+			.label-group {
+				border-top: none;
+			}
+		}
 	}
 }
 

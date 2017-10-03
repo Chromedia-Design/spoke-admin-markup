@@ -665,6 +665,23 @@
 	}
 }
 
+.table-list {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
+
+.table-list-item {
+	position: relative;
+	list-style: none;
+	display: table-row;
+}
+
+.table-list-cell {
+	position: relative;
+	display: table-cell;
+}
+
 .linked-list {
 	padding: 0.5rem;
 	overflow: hidden;
@@ -790,26 +807,65 @@ ul.vertical-list {
 	}
 }
 
-.activity {
-	// border-bottom: 1px solid #f1f1f1;
-    margin-bottom: 3rem;
-	ul {
-		margin: 0;
-	    padding: 0;
-	    list-style: none;
-	    li {
-	    	font-size: 0.875rem;
-	    	padding: 0.875rem 0;
-	    	border-bottom: 1px solid rgba($black, $B-dividers);
-	    	p {
-	    		margin: 0;
-	    	}
-	    	div {
-			  	.activity-icon {
-					// padding: 0 1rem;
+.activity-listing {
+	position: relative;
+	padding-left: 39px;
+	margin-bottom: 2rem;
+	&:before {
+	    position: absolute;
+	    top: 0;
+	    bottom: 30px;
+	    left: 14px;
+	    z-index: -1;
+	    display: block;
+	    width: 2px;
+	    content: "";
+	    background-color: #dfdfdf;
+	}
+	.listing-title {
+		position: relative;
+		margin-top: 15px;
+		color: rgba($black, $B-subtext);
+		&:before {
+			position: absolute;
+			top: 0;
+			left: -34px;
+			content: "";
+			width: 21px;
+			height: 21px;
+			border-radius: 50%;
+			background-color: #dfdfdf;
+		}
+		&:after {
+			position: absolute;
+			top: 4px;
+			left: -30px;
+			content: "";
+			width: 13px;
+			height: 13px;
+			border-radius: 50%;
+			background-color: $white;
+		}
+	}
+	.table-list {
+		margin: 12px 0 0;
+		padding: 0;
+		border-bottom: 1px solid rgba(10,16,35,0.25);
+		border-radius: 2px;
+	    li.table-list-item {
+	    	.table-list-cell {
+	    		vertical-align: middle;
+	    		border-top: 1px solid rgba(10,16,35,0.25);
+	    		padding: 8px 10px;
+	    		p {
+	    			font-size: rem-calc(14);
+	    			margin-bottom: 0;
+	    		}
+			  	&.activity-icon {
+			  		width: 3%;
 					color: rgba($black, $B-hinttext);
 			  	}
-			  	.activity-name {
+			  	&.activity-name {
 			  		display: block;
 			  		.show-ip {
 			  			color: rgba($black, $B-hinttext);
@@ -830,18 +886,14 @@ ul.vertical-list {
 			  			}
 			  		}
 			  	}
-			  	.activity-note {
-			  		a i {
-						color: rgba($black, $B-hinttext);
-					}
+			  	&:first-child {
+			  		border-left: 1px solid rgba(10,16,35,0.25);
+			  		border-top-left-radius: 2px;
 			  	}
-			  	.activity-time { }
-		  	}
-		  	&:first-child {
-		  		border-top: 1px solid rgba($black, $B-dividers); 
-		  	}	
-		  	&:last-child {
-				border-bottom: none;
+			  	&:last-child {
+			  		border-right: 1px solid rgba(10,16,35,0.25);
+			  		border-top-right-radius: 2px;
+			  	}
 		  	}
 	    }
     }
