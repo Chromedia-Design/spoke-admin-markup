@@ -47,7 +47,8 @@
 	&:first-child {
 		padding-right: 1.5rem;
 	}
-	&.logo {
+	&.logo,
+	&.cover {
 		.img-wrapper {
 			overflow: hidden;
 			width: 4.3125rem;
@@ -77,6 +78,13 @@
 				width: 8.625rem;
 				height: 8.625rem;
 			}
+		}
+	}
+	&.cover {
+		.img-wrapper {
+			width: 12.9375rem;
+			height: 18rem;
+			align-items: bottom;
 		}
 	}
 	&.small {

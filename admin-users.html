@@ -89,84 +89,42 @@
 
 				<div class="row">
 					<div class="medium-12 columns">
-						
+
 						<div class="page-lead">
-							<div class="row">
-								<div class="medium-4 columns end">
-									<div class="input-group">
-									  	<input class="input-group-field" type="text">
-									  	<div class="input-group-button">
-									    	<input type="submit" class="button" value="Search">
-									  	</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="page-lead">
-							<div class="row">
-								<div class="medium-6 columns">
-									<span class="h5">Users (25)</span>
-								</div>
-								<div class="medium-4 columns">
-									<div class="row">
-										<div class="medium-3 columns">
-									      	<label for="right-label" class="text-right middle">Filter By</label>
-									    </div>
-									    <div class="medium-9 columns">
-									      	<select>
-									      		<option>Super Admin</option>
-						    					<option>Developers</option>
-						    					<option>Patient Admin</option>
-						    					<option>Content Admin</option>
-									      	</select>
-									    </div>
-									</div>
-								</div>
-								<div class="medium-2 columns">
-									<a  data-toggle="addUserPanel" class="button primary expanded">+ Add New User</a>
-								</div>
-							</div>
-						</div>						
-						
-						<div class="row">
-							<div class="medium-12 columns">
-								<div id="addUserPanel" class="callout secondary" data-toggler data-animate="fade-in fade-out" style="display:none;">
-							<form>
-							  	<div class="row">
-							    	<div class="medium-6 columns">
-						      			<label>Email Address
-						        			<input type="text" placeholder="">
-							      		</label>
-						    		</div>
-						    		<div class="medium-6 columns">
-						    			<label>Role
-						    				<select>
-						    					<option>Super Admin</option>
-						    					<option>Developers</option>
-						    					<option>Patient Admin</option>
-						    					<option>Content Admin</option>
-						    				</select>
-						    			</label>
-						    		</div>
-							    	<div class="medium-6 columns">
-							      		<label>Password
-							        		<input type="text" placeholder="">
-							      		</label>
-						    		</div>
-						    		<div class="medium-6 columns">
-							      		<label>Confirm Password
-							        		<input type="text" placeholder="">
-							      		</label>
-						    		</div>
-						    		<div class="medium-6 columns end">
-							      		<button type="submit" class="button">+ Add User</button>
-						    		</div>
-							  	</div>
-							</form>
-						</div>
-							</div>
-						</div>
-						
+			                <span class="h5">Users <span>(10)</span></span>
+			                <a class="button success pull-right" href="admin-users-add.html">+ Add New User</a>
+			            </div>
+
+			            <div id="filters" class="submenu menu-options mb-1" data-toggler data-animate="fade-in fade-out">
+			            	<div class="row collapse">
+			            		<div class="large-4 columns end">
+			            			<form>
+			            				<div class="input-group">
+				            				<input type="text" class="input-group-field" value="" placeholder="Search keyword...">
+				            				<div class="input-group-button">
+				            					<a href="#" class="button info"><i class="fa fa-search"></i></a>
+			            					</div>
+		            					</div>
+			            			</form>
+			            		</div>
+			            		<div class="large-7 large-offset-1 columns end">
+			                        <div class="row collapse">
+			                            <div class="large-6 columns end">
+			                                <div class="row">
+			                                    <div class="large-4 columns">
+			                                        <label for="" class="text-right middle">Roles</label>
+			                                    </div>
+			                                    <div class="large-8 columns">
+			                                        <select class="">
+			                                            <option>All</option>
+			                                        </select>
+			                                    </div>  
+			                                </div> 
+			                            </div>
+			                        </div>
+			                    </div>
+			            	</div>
+			            </div>					
 						
 						<table>
 							<thead>
@@ -176,35 +134,79 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td><a href="admin-user-profile.html">Will Smith</a></td>
-									<td>Super Admin</td>
+									<td>
+										<div class="media-object">
+											<div class="media-object-section logo middle small">
+												<div class="img-wrapper circle">
+													<img src="img/specialist.png" alt="">
+												</div>
+											</div>
+											<div class="media-object-section middle">
+												<p><a href="admin-user-profile.html">Will Smith</a></p>
+											</div>
+										</div>
+									</td>
+									<td>Super Administrator</td>
 									<td class="text-right">
 										<a class="action-link"><i class="fa fa-edit"></i></a>
-										<a class="action-link alert"><i class="fa fa-remove"></i></a>
+										<a class="action-link alert"><i class="fa fa-trash"></i></a>
 									</td>
 								</tr>
 								<tr>
-									<td><a href="admin-user-profile.html">Margot Robbie</a></td>
-									<td>Patient Admin</td>
+									<td>
+										<div class="media-object">
+											<div class="media-object-section logo middle small">
+												<div class="img-wrapper circle">
+													<img src="img/specialist.png" alt="">
+												</div>
+											</div>
+											<div class="media-object-section middle">
+												<p><a href="admin-user-profile.html">Margot Robbie</a></p>
+											</div>
+										</div>
+									</td>
+									<td>Administrator</td>
 									<td class="text-right">
 										<a class="action-link"><i class="fa fa-edit"></i></a>
-										<a class="action-link alert"><i class="fa fa-remove"></i></a>
+										<a class="action-link alert"><i class="fa fa-trash"></i></a>
 									</td>
 								</tr>
 								<tr>
-									<td><a href="admin-user-profile.html">Viola Davis</a></td>
-									<td>Admin</td>
+									<td>
+										<div class="media-object">
+											<div class="media-object-section logo middle small">
+												<div class="img-wrapper circle">
+													<img src="img/specialist.png" alt="">
+												</div>
+											</div>
+											<div class="media-object-section middle">
+												<p><a href="admin-user-profile.html">Viola Davis</a></p>
+											</div>
+										</div>
+									</td>
+									<td>Advocate</td>
 									<td class="text-right">
 										<a class="action-link"><i class="fa fa-edit"></i></a>
-										<a class="action-link alert"><i class="fa fa-remove"></i></a>
+										<a class="action-link alert"><i class="fa fa-trash"></i></a>
 									</td>
 								</tr>
 								<tr>
-									<td><a href="admin-user-profile.html">cara.delivigne@chromedia.com</a></td>
-									<td>Content Admin</td>
+									<td>
+										<div class="media-object">
+											<div class="media-object-section logo middle small">
+												<div class="img-wrapper circle">
+													<img src="img/specialist.png" alt="">
+												</div>
+											</div>
+											<div class="media-object-section middle">
+												<p><a href="admin-user-profile.html">caradelivigne</a></p>
+											</div>
+										</div>
+									</td>
+									<td>Advocate</td>
 									<td class="text-right">
 										<a class="action-link"><i class="fa fa-edit"></i></a>
-										<a class="action-link alert"><i class="fa fa-remove"></i></a>
+										<a class="action-link alert"><i class="fa fa-trash"></i></a>
 									</td>
 								</tr>
 							</tbody>

@@ -104,7 +104,7 @@
 							<li class="tabs-title"><a href="#panel3">Episode Details</a></li>
 						</ul>
 
-						<div class="callout">
+						<div id="employeeProfile" class="callout">
 							<div class="row collapse">
 								<div class="large-12 columns end">
 									<div class="media-object full-table mb-0">
@@ -269,7 +269,7 @@
 								</div>
 
 								<div class="activity-listing">
-									<div class="listing-title">October 2, 2017</div>
+									<div class="listing-title">Oct 2, 2017</div>
 									<ol class="table-list">
 										<li class="table-list-item">
 											<div class="table-list-cell activity-icon">
@@ -294,7 +294,7 @@
 											</div>
 										</li>
 									</ol>
-									<div class="listing-title">October 1, 2017</div>
+									<div class="listing-title">Oct 1, 2017</div>
 									<ol class="table-list">
 										<li class="table-list-item">
 											<div class="table-list-cell activity-icon">
@@ -330,7 +330,7 @@
 											</div>
 										</li>
 									</ol>
-									<div class="listing-title">September 30, 2017</div>
+									<div class="listing-title">Sep 30, 2017</div>
 									<ol class="table-list">
 										<li class="table-list-item">
 											<div class="table-list-cell activity-icon">
@@ -343,8 +343,52 @@
 												<p class="pull-right subheader">8:00AM</p>
 											</div>
 										</li>
+										<li class="table-list-item">
+											<div class="table-list-cell activity-icon">
+												<p><i class="fa fa-eye fa-fw"></i></p>
+											</div>
+											<div class="table-list-cell activity-name">
+												<p>John Doe opened his transactional email.</p>
+											</div>
+											<div class="table-list-cell activity-time">
+												<p class="pull-right subheader">8:00AM</p>
+											</div>
+										</li>
+										<li class="table-list-item">
+											<div class="table-list-cell activity-icon">
+												<p><i class="fa fa-eye fa-fw"></i></p>
+											</div>
+											<div class="table-list-cell activity-name">
+												<p>John Doe opened his transactional email.</p>
+											</div>
+											<div class="table-list-cell activity-time">
+												<p class="pull-right subheader">8:00AM</p>
+											</div>
+										</li>
+										<li class="table-list-item">
+											<div class="table-list-cell activity-icon">
+												<p><i class="fa fa-eye fa-fw"></i></p>
+											</div>
+											<div class="table-list-cell activity-name">
+												<p>John Doe opened his transactional email.</p>
+											</div>
+											<div class="table-list-cell activity-time">
+												<p class="pull-right subheader">8:00AM</p>
+											</div>
+										</li>
+										<li class="table-list-item">
+											<div class="table-list-cell activity-icon">
+												<p><i class="fa fa-eye fa-fw"></i></p>
+											</div>
+											<div class="table-list-cell activity-name">
+												<p>John Doe opened his transactional email.</p>
+											</div>
+											<div class="table-list-cell activity-time">
+												<p class="pull-right subheader">8:00AM</p>
+											</div>
+										</li>
 									</ol>
-									<div class="listing-title"><a href="#" class="button info hollow small">View More</a></div>
+									<div class="listing-title"><a href="#" class="button primary small">View More</a></div>
 								</div>
 
 							</div>
@@ -697,6 +741,83 @@
 
 							<div class="tabs-panel" id="panel3">
 
+								<!-- <div class="row collapse">
+									<div class="large-12 columns">
+										<div class="page-lead">
+											<span class="h5">Episodes</span>
+											<a href="admin-patient-episode-edit.html" class="button primary small pull-right">Add New Episode +</a>
+										</div>
+
+										<table class="">
+							                <thead>
+							                <tr>
+							                    <th><a href="#">Surgery Package <i class="fa fa-caret-up fa-fw"></i></a></th>
+							                    <th><a href="#">Date Created <i class="fa fa-caret-up fa-fw"></i></a></th>
+							                    <th>Assigned To</th>
+							                    <th></th>
+							                </tr>
+							                </thead>
+							                <tbody>
+							                    <tr>
+							                        <td><a href="admin-patient-episode-view.html">Total Knee Replacement</a></td>
+							                        <td>Dec 23, 2016</td>
+							                        <td><span class="warning-color"><i class="fa fa-warning"></i> UNASSIGNED</span></td>
+							                        <td class="text-right">
+							                        	<a href="#" class="button hollow small success">Active</a>
+							                        	<a  class="button link info" data-open="assignAdvocate"><i class="fa fa-user-plus fa-fw"></i></a>
+							                        	<a  class="button link info" href="admin-patient-episode-view.html"><i class="fa fa-eye fa-fw"></i></a>
+							                            <a  class="button link info" href="admin-patient-episode-edit.html"><i class="fa fa-edit fa-fw"></i></a>
+							                            <a href="#" class="button link info"><i class="fa fa-remove fa-fw"></i></a>
+							                        </td>
+							                    </tr>
+							                    
+							                </tbody>
+							            </table>
+
+										<div class="reveal" id="assignAdvocate" data-reveal>
+											<div class="row collapse">
+												<div class="large-12 columns img-small">
+													<h5 class="reveal-heading v-align-center">Assign To Advocate</h5>
+												</div>
+											</div>
+											<div class="row collapse">
+												<div class="large-12 columns">
+													<div class="reveal-body">
+														<div class="row">
+															<div class="large-12 columns">
+																<label>
+																	Advocate Name
+																	<select>
+																		<option>Search Advocates</option>
+																	</select>
+																</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row collapse">
+												<div class="large-12 columns">
+													<div class="reveal-footer">
+														<div class="button-align pull-right">
+															<a href="#" class="button link" data-close>
+																Cancel
+															</a>
+															<a href="#" class="button success">
+																Assign
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										  	<button class="close-button" data-close aria-label="Close modal" type="button">
+										    	<span aria-hidden="true">&times;</span>
+										  	</button>
+										</div>
+
+									</div>
+								</div> -->
+
 								<div class="row collapse">
 									<div class="large-12 columns">
 										
@@ -988,19 +1109,35 @@
 	<script src="js/app.js"></script>
 
 	<script type="text/javascript">
+
+		var topBarHeight = $('.top-bar').outerHeight(true);
+        var breadcrumbsHeight = $('.breadcrumbs').outerHeight(true);
+        var tabBarHeight = $('.tabs').outerHeight(true);
+        var profileHeight = $('#employeeProfile').outerHeight(true);
+        var chatheaderHeight = $('.chat-header').outerHeight(true);
+
         $(function () {
             var timer;
-            var topBarHeight = $('.top-bar').outerHeight();
-            var tabBarHeight = $('#chat-tabs').outerHeight();
 
             $(window).resize(function() {
                 clearTimeout(timer);
                 timer = setTimeout(function() {
                   $('#chatSupport, .site-nav, .content').css("height", $(window).height());
                   $('#chatSupport .offcanvas-area-inner').css("height", $(window).height());
-                  $('#chatClient .chat-wrapper').css("height", $(window).height() - (topBarHeight + tabBarHeight));
+                  $('#chatClient .chat-wrapper').css("height", $(window).height() - (topBarHeight + breadcrumbsHeight + tabBarHeight + profileHeight + chatheaderHeight));
                 }, 40); 
             }).resize();
+        });
+
+		function calculateChatHeight() {
+			profileHeight = $('#employeeProfile').outerHeight(true);
+        	$('#chatClient .chat-wrapper').css("height", $(window).height() - (topBarHeight + breadcrumbsHeight + tabBarHeight + profileHeight + chatheaderHeight + 16));
+		}        
+
+        $('#moreView').on("on.zf.toggler", function (e) {
+        	calculateChatHeight();
+        }).on("off.zf.toggler", function (e) {
+        	calculateChatHeight();
         });
 
     </script>

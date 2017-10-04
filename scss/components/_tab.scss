@@ -112,6 +112,7 @@
 			margin-top: -1px;
 			.callout {
 				margin-bottom: 0;
+				z-index: -1;
 			}
 			&:not(:last-child) {
 				margin-bottom: 1rem;
