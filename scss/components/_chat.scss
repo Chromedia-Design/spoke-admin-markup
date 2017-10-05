@@ -10,6 +10,10 @@
 	border-radius: 6px;
 	+ .timestamp {
 		text-align: left;
+		clear: both;
+		.pull-left {
+			margin-right: 1rem;
+		}
 	}
 	&.small {
 		margin: 0 0 0 1rem;
@@ -420,6 +424,9 @@
 						a {
 							text-decoration: none;
 						}
+					}
+					.talk-bubble {
+						float: right;
 					}
 				}
 			}
