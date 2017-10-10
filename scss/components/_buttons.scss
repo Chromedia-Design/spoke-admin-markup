@@ -126,6 +126,9 @@
 			border-width: 1px;
 		}
 	}
+	&.expanded {
+		width: 100%;
+	}
 }
 
 .button-align {
