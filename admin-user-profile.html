@@ -105,17 +105,20 @@
 							<div class="row collapse">
 								<div class="large-12 columns end">
 									<div class="media-object full-table">
-										<div class="media-object-section middle logo small">
-											<div class="img-wrapper circle">
+										<div class="media-object-section middle logo">
+											<div class="img-wrapper circle ">
 												<img src="img/Smiling-Middle-Aged-Lady-Arms-Square.png" alt="">
 											</div>
 										</div>
 										<div class="media-object-section middle">
-											<span class="h5">Will Smith</span>
+											<h5>Will Smith</span>  &nbsp;<span class="badge success"></h5>
+											<p><span class="label">Active</span>&nbsp;<span class="label warning">Locked</span>&nbsp;<span class="label alert">Deactivated</span></p>
 										</div>
 										<div class="media-object-section middle">
 											<div class="button-align small pull-right">
-												<a href="#" class="button info"><i class="fa fa-key fa-fw"></i>&nbsp Reset Password</a>
+												<a href="#" class="button alert"><i class="fa fa-power-off fa-fw"></i>&nbsp; Deactivate</a>
+												<a href="#" class="button primary"><i class="fa fa-key fa-fw"></i>&nbsp; Reset Password</a>
+												<a href="#" class="button success"><i class="fa fa-bolt fa-fw"></i>&nbsp; Reactivate</a>
 												<a href="admin-users-add.html" class="button info"><i class="fa fa-edit fa-fw"></i>&nbsp; Edit</a>
 											</div>
 										</div>
@@ -124,100 +127,311 @@
 							</div>
 
 							<div class="row collapse label-block">
-								<div class="large-6 columns end">
+								<div class="large-3 columns end">
 									<div class="label-group">
 										<p>Email Address</p>
 										<h6>will.smith@domain.com</h6>
 									</div>
 								</div>
-								<div class="large-6 columns end">
+								<div class="large-3 columns end">
 									<div class="label-group">
 										<p>Role</p>
 										<h6>Administrator</h6>
 									</div>
 								</div>
+								<div class="large-3 columns end">
+									<div class="label-group">
+										<p>Last Activity</p>
+										<h6>Oct 12, 2016 8:00 AM</h6>
+									</div>
+								</div>
+								<div class="large-3 columns end">
+									<div class="label-group">
+										<p>Password Set</p>
+										<h6>Oct 12, 2016 8:00 AM</h6>
+									</div>
+								</div>
+							</div>
+
+							<div class="row collapse label-block">
+								
 							</div>
 
 						</div>
 
-						<div class="callout">
-							<div class="row collapse">
-								<div class="large-12 columns">
-									<div class="page-lead">
-										<span class="h6">Assigned Employees</span>
-										<a href="#" data-open="addEmployee" class="button hollow primary small pull-right">Add Employee +</a>
+						<ul class="tabs justified" data-tabs id="userProfile-tabs">
+							<li class="tabs-title is-active"><a href="#panel1">Assigned Employees</a></li>
+							<li class="tabs-title"><a href="#panel2">User Activity</a></li>
+							<li class="tabs-title"><a href="#panel3">Communications</a></li>
+						</ul>
 
-									</div>	
-								</div>
+						<div class="tabs-content" data-tabs-content="userProfile-tabs">
+							
+							<div class="tabs-panel is-active" id="panel1">
+
+								<div class="callout">
+									<div class="row collapse">
+										<div class="large-12 columns">
+											<div class="page-lead">
+												<span class="h6">Assigned Employees</span>
+												<a href="#" data-open="addEmployee" class="button primary pull-right">Assign Employee +</a>
+
+											</div>	
+										</div>
+									</div>
+
+						            <ul class="flex-list hover">
+						            	<li class="list-heading">
+						            		<div class="row expanded align-middle">
+								            	<div class="columns">
+								            		<span>Name</span>
+								            	</div>
+								            	<div class="columns">
+								            		<span>Company Name</span>
+								            	</div>
+								            	<div class="columns">
+								            		<span>Recent Activity</span>
+								            	</div>
+								            </div>
+						            	</li>
+						            	<li>
+						            		<a href="advocate-employee-profile.html">
+						            			<div class="row expanded align-middle">
+									            	<div class="columns">
+									            		<span>John Doe</span>
+									            	</div>
+									            	<div class="columns">
+									            		<span>Excel Energy</span>
+									            	</div>
+									            	<div class="columns">
+									            		<span>Jan 9, 2017, 8:45 AM</span>
+									            	</div>
+									            </div>
+						            		</a>
+						            	</li>
+						            	<li>
+						            		<a href="advocate-employee-profile.html">
+						            			<div class="row expanded align-middle">
+									            	<div class="columns">
+									            		<span>Henry Marshall</span>
+									            	</div>
+									            	<div class="columns">
+									            		<span>Excel Energy</span>
+									            	</div>
+									            	<div class="columns">
+									            		<span>Jan 9, 2017, 8:45 AM</span>
+									            	</div>
+									            </div>
+						            		</a>
+						            	</li>
+						            	<li>
+						            		<a href="advocate-employee-profile.html">
+						            			<div class="row expanded align-middle">
+									            	<div class="columns">
+									            		<span>Justin Ford</span>
+									            	</div>
+									            	<div class="columns">
+									            		<span>Excel Energy</span>
+									            	</div>
+									            	<div class="columns">
+									            		<span>Jan 9, 2017, 8:45 AM</span>
+									            	</div>
+									            </div>
+						            		</a>
+						            	</li>
+						            </ul>
+
+								</div>	
 							</div>
 
-							<table class="thirds-spacing">
-				                <thead>
-				                <tr>
-				                    <th><a href="#">Name <i class="fa fa-caret-up fa-fw"></i></a></th>
-				                    <th><a href="#">Company Name <i class="fa fa-caret-up fa-fw"></i></a></th>
-				                    <th><a href="#">Recent Activity <i class="fa fa-caret-up fa-fw"></i></a></th>
-				                    <th></th>
-				                </tr>
-				                </thead>
-				                <tbody>
-				                    <tr>
-				                        <td><a href="advocate-employee-profile.html">John Doe</a></td>
-				                        <td><a href="#">Excel Energy</a></td>
-				                        <td>Jan 9, 2017, 8:45 AM</td>
-				                        <td class="text-right">
-				                            <a  class="action-link" href="advocate-employee-profile.html"><i class="fa fa-eye fa-fw"></i></a>
-			                             	<a  class="action-link" href="#"><i class="fa fa-phone"></i></a>
-			                             	<a  class="action-link" href="#"><i class="fa fa-envelope-o"></i></a>
-				                            <a href="#" class="action-link"><i class="fa fa-edit fa-fw"></i></a>
-				                        </td>
-				                    </tr>
-				                    <tr>
-				                        <td><a href="advocate-employee-profile.html">Alex Quesada</a></td>
-				                        <td><a href="#">Excel Energy</a></td>
-				                        <td>Jan 9, 2017, 8:45 AM</td>
-				                        <td class="text-right">
-				                            <a  class="action-link" href="advocate-employee-profile.html"><i class="fa fa-eye fa-fw"></i></a>
-			                             	<a  class="action-link" href="#"><i class="fa fa-phone"></i></a>
-			                             	<a  class="action-link" href="#"><i class="fa fa-envelope-o"></i></a>
-				                            <a href="#" class="action-link"><i class="fa fa-edit fa-fw"></i></a>
-				                        </td>
-				                    </tr>
-				                    <tr>
-				                        <td><a href="advocate-employee-profile.html">Janet Ellis</a></td>
-				                        <td><a href="#">Excel Energy</a></td>
-				                        <td>Jan 9, 2017, 8:45 AM</td>
-				                        <td class="text-right">
-				                            <a  class="action-link" href="advocate-employee-profile.html"><i class="fa fa-eye fa-fw"></i></a>
-			                             	<a  class="action-link" href="#"><i class="fa fa-phone"></i></a>
-			                             	<a  class="action-link" href="#"><i class="fa fa-envelope-o"></i></a>
-				                            <a href="#" class="action-link"><i class="fa fa-edit fa-fw"></i></a>
-				                        </td>
-				                    </tr>
-				                    <tr>
-				                        <td><a href="advocate-employee-profile.html">Kathleen Jordan</a></td>
-				                        <td><a href="#">Excel Energy</a></td>
-				                        <td>Jan 9, 2017, 8:45 AM</td>
-				                        <td class="text-right">
-				                            <a  class="action-link" href="advocate-employee-profile.html"><i class="fa fa-eye fa-fw"></i></a>
-			                             	<a  class="action-link" href="#"><i class="fa fa-phone"></i></a>
-			                             	<a  class="action-link" href="#"><i class="fa fa-envelope-o"></i></a>
-				                            <a href="#" class="action-link"><i class="fa fa-edit fa-fw"></i></a>
-				                        </td>
-				                    </tr>
-				                    <tr>
-				                        <td><a href="advocate-employee-profile.html">Albert Gibson</a></td>
-				                        <td><a href="#">Excel Energy</a></td>
-				                        <td>Jan 9, 2017, 8:45 AM</td>
-				                        <td class="text-right">
-				                            <a  class="action-link" href="advocate-employee-profile.html"><i class="fa fa-eye fa-fw"></i></a>
-			                             	<a  class="action-link" href="#"><i class="fa fa-phone"></i></a>
-			                             	<a  class="action-link" href="#"><i class="fa fa-envelope-o"></i></a>
-				                            <a href="#" class="action-link"><i class="fa fa-edit fa-fw"></i></a>
-				                        </td>
-				                    </tr>
-				                </tbody>
-				            </table>
+							<div class="tabs-panel" id="panel2">
+
+								<div class="activity-listing">
+									<div class="listing-title">Oct 2, 2017</div>
+									<ol class="table-list">
+										<li class="table-list-item">
+											<div class="table-list-cell activity-icon">
+												<p><i class="fa fa-sign-out fa-fw"></i></p>
+											</div>
+											<div class="table-list-cell activity-name">
+												<p>Will Smith logged out.</p>
+											</div>
+											<div class="table-list-cell activity-time">
+												<p class="pull-right subheader">a few seconds ago</p>
+											</div>
+										</li>
+									</ol>
+									<div class="listing-title">Sep 30, 2017</div>
+									<ol class="table-list">
+										<li class="table-list-item">
+											<div class="table-list-cell activity-icon">
+												<p><i class="fa fa-eye fa-fw"></i></p>
+											</div>
+											<div class="table-list-cell activity-name">
+												<p>Will Smith opened his transactional email.</p>
+											</div>
+											<div class="table-list-cell activity-time">
+												<p class="pull-right subheader">8:00AM</p>
+											</div>
+										</li>
+										<li class="table-list-item">
+											<div class="table-list-cell activity-icon">
+												<p><i class="fa fa-eye fa-fw"></i></p>
+											</div>
+											<div class="table-list-cell activity-name">
+												<p>Will Smith opened his transactional email.</p>
+											</div>
+											<div class="table-list-cell activity-time">
+												<p class="pull-right subheader">8:00AM</p>
+											</div>
+										</li>
+										<li class="table-list-item">
+											<div class="table-list-cell activity-icon">
+												<p><i class="fa fa-eye fa-fw"></i></p>
+											</div>
+											<div class="table-list-cell activity-name">
+												<p>Will Smith opened his transactional email.</p>
+											</div>
+											<div class="table-list-cell activity-time">
+												<p class="pull-right subheader">8:00AM</p>
+											</div>
+										</li>
+										<li class="table-list-item">
+											<div class="table-list-cell activity-icon">
+												<p><i class="fa fa-eye fa-fw"></i></p>
+											</div>
+											<div class="table-list-cell activity-name">
+												<p>Will Smith opened his transactional email.</p>
+											</div>
+											<div class="table-list-cell activity-time">
+												<p class="pull-right subheader">8:00AM</p>
+											</div>
+										</li>
+										<li class="table-list-item">
+											<div class="table-list-cell activity-icon">
+												<p><i class="fa fa-eye fa-fw"></i></p>
+											</div>
+											<div class="table-list-cell activity-name">
+												<p>Will Smith opened his transactional email.</p>
+											</div>
+											<div class="table-list-cell activity-time">
+												<p class="pull-right subheader">8:00AM</p>
+											</div>
+										</li>
+									</ol>
+									<div class="listing-title"><a href="#" class="button primary small">View More</a></div>
+								</div>
+
+							</div>
+							
+							<div class="tabs-panel" id="panel3">
+
+								<div class="callout">
+
+						            <div class="activity-listing">
+						            	<div class="listing-title">Oct 2, 2017</div>
+						            	<ul class="flex-list hover mt-1">
+							            	<li>
+							            		<a href="advocate-employee-profile.html">
+							            			<div class="row expanded align-middle">
+										            	<div class="medium-3 columns">
+										            		<span class="h6">Kenneth Faried</span>
+										            	</div>
+										            	<div class="medium-6 columns">
+										            		<span class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, incidunt, id. Sapiente cumque dolorum, in asperiores maiores debitis eveniet nostrum illum, minima ad beatae dolore id cupiditate officiis aut rem.</span>
+										            	</div>
+										            	<div class="columns">
+										            		<span class="subheader pull-right">a few seconds ago</span>
+										            	</div>
+										            </div>
+							            		</a>
+							            	</li>
+							            	<li>
+							            		<a href="advocate-employee-profile.html">
+							            			<div class="row expanded align-middle">
+										            	<div class="medium-3 columns">
+										            		<span class="h6">Kenneth Faried</span>
+										            	</div>
+										            	<div class="medium-6 columns">
+										            		<span class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, incidunt, id. Sapiente cumque dolorum, in asperiores maiores debitis eveniet nostrum illum, minima ad beatae dolore id cupiditate officiis aut rem.</span>
+										            	</div>
+										            	<div class="columns">
+										            		<span class="subheader pull-right">a few seconds ago</span>
+										            	</div>
+										            </div>
+							            		</a>
+							            	</li>
+							            	<li>
+							            		<a href="advocate-employee-profile.html">
+							            			<div class="row expanded align-middle">
+										            	<div class="medium-3 columns">
+										            		<span class="h6">Kenneth Faried</span>
+										            	</div>
+										            	<div class="medium-6 columns">
+										            		<span class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, incidunt, id. Sapiente cumque dolorum, in asperiores maiores debitis eveniet nostrum illum, minima ad beatae dolore id cupiditate officiis aut rem.</span>
+										            	</div>
+										            	<div class="columns">
+										            		<span class="subheader pull-right">a few seconds ago</span>
+										            	</div>
+										            </div>
+							            		</a>
+							            	</li>
+							            </ul>
+							            <div class="listing-title">Oct 1, 2017</div>
+						            	<ul class="flex-list hover mt-1">
+							            	<li>
+							            		<a href="advocate-employee-profile.html">
+							            			<div class="row expanded align-middle">
+										            	<div class="medium-3 columns">
+										            		<span class="h6">Kenneth Faried</span>
+										            	</div>
+										            	<div class="medium-6 columns">
+										            		<span class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, incidunt, id. Sapiente cumque dolorum, in asperiores maiores debitis eveniet nostrum illum, minima ad beatae dolore id cupiditate officiis aut rem.</span>
+										            	</div>
+										            	<div class="columns">
+										            		<span class="subheader pull-right">a few seconds ago</span>
+										            	</div>
+										            </div>
+							            		</a>
+							            	</li>
+							            	<li>
+							            		<a href="advocate-employee-profile.html">
+							            			<div class="row expanded align-middle">
+										            	<div class="medium-3 columns">
+										            		<span class="h6">Kenneth Faried</span>
+										            	</div>
+										            	<div class="medium-6 columns">
+										            		<span class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, incidunt, id. Sapiente cumque dolorum, in asperiores maiores debitis eveniet nostrum illum, minima ad beatae dolore id cupiditate officiis aut rem.</span>
+										            	</div>
+										            	<div class="columns">
+										            		<span class="subheader pull-right">a few seconds ago</span>
+										            	</div>
+										            </div>
+							            		</a>
+							            	</li>
+							            	<li>
+							            		<a href="advocate-employee-profile.html">
+							            			<div class="row expanded align-middle">
+										            	<div class="medium-3 columns">
+										            		<span class="h6">Kenneth Faried</span>
+										            	</div>
+										            	<div class="medium-6 columns">
+										            		<span class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, incidunt, id. Sapiente cumque dolorum, in asperiores maiores debitis eveniet nostrum illum, minima ad beatae dolore id cupiditate officiis aut rem.</span>
+										            	</div>
+										            	<div class="columns">
+										            		<span class="subheader pull-right">a few seconds ago</span>
+										            	</div>
+										            </div>
+							            		</a>
+							            	</li>
+							            </ul>
+							            <div class="listing-title"><a href="#" class="button primary small">View More</a></div>
+						            </div>
+
+								</div>	
+
+							</div>
+
 						</div>
 
 					</div>

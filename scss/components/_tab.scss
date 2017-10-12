@@ -17,15 +17,16 @@
 			transition: 0.1s;
 			color: rgba($black, $B-subtext);
 			background-color: transparent;
+			letter-spacing: -0.3125px;
 			&:focus {
 				background-color: transparent;
 			}
 		}
 		&.is-active {
-			border-bottom: 0.2rem solid $warning-color;
+			border-bottom: 0.2rem solid darken($warning-color, 5%);
 			background-color: transparent;
 			a {
-				color: $warning-color;
+				color: darken($warning-color, 5%);
 				background-color: transparent;
 			}
 		}

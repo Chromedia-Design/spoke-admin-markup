@@ -126,91 +126,185 @@
 			            	</div>
 			            </div>					
 						
-						<table>
-							<thead>
-								<th><a href="#">Name <i class="fa fa-caret-up fa-fw"></i></a></th>
-								<th><a href="#">Role <i class="fa fa-caret-up fa-fw"></i></a></th>
-								<th></th>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<div class="media-object">
-											<div class="media-object-section logo middle small">
-												<div class="img-wrapper circle">
-													<img src="img/specialist.png" alt="">
+						<ul class="tabs" data-tabs id="users-tabs">
+							<li class="tabs-title is-active">
+								<a href="#panel1" aria-selected="true">Current Users</a>
+							</li>
+							<li class="tabs-title">
+								<a href="#panel2">Deactivated</a>
+							</li>
+						</ul>
+
+						<div class="tabs-content" data-tabs-content="users-tabs">
+							
+							<div class="tabs-panel is-active" id="panel1">
+								
+								<table>
+									<thead>
+										<th><a href="#">Name <i class="fa fa-caret-up fa-fw"></i></a></th>
+										<th><a href="#">Role <i class="fa fa-caret-up fa-fw"></i></a></th>
+										<th>Last Login</th>
+										<th></th>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<div class="media-object">
+													<div class="media-object-section logo middle small">
+														<div class="img-wrapper circle">
+															<img src="img/specialist.png" alt="">
+														</div>
+													</div>
+													<div class="media-object-section middle">
+														<p><a href="admin-user-profile.html">Will Smith</a> &nbsp;<span class="badge success"></span></p>
+													</div>
 												</div>
-											</div>
-											<div class="media-object-section middle">
-												<p><a href="admin-user-profile.html">Will Smith</a></p>
-											</div>
-										</div>
-									</td>
-									<td>Super Administrator</td>
-									<td class="text-right">
-										<a class="action-link"><i class="fa fa-edit"></i></a>
-										<a class="action-link alert"><i class="fa fa-trash"></i></a>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="media-object">
-											<div class="media-object-section logo middle small">
-												<div class="img-wrapper circle">
-													<img src="img/specialist.png" alt="">
+											</td>
+											<td>Super Administrator</td>
+											<td>Oct 12, 2017</td>
+											<td class="text-right">
+												<div class="button-align small">
+													<a class="button hollow"><i class="fa fa-edit"></i></a>
 												</div>
-											</div>
-											<div class="media-object-section middle">
-												<p><a href="admin-user-profile.html">Margot Robbie</a></p>
-											</div>
-										</div>
-									</td>
-									<td>Administrator</td>
-									<td class="text-right">
-										<a class="action-link"><i class="fa fa-edit"></i></a>
-										<a class="action-link alert"><i class="fa fa-trash"></i></a>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="media-object">
-											<div class="media-object-section logo middle small">
-												<div class="img-wrapper circle">
-													<img src="img/specialist.png" alt="">
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="media-object">
+													<div class="media-object-section logo middle small">
+														<div class="img-wrapper circle">
+															<img src="img/specialist.png" alt="">
+														</div>
+													</div>
+													<div class="media-object-section middle">
+														<p><a href="admin-user-profile.html">Margot Robbie</a> &nbsp;<span class="badge success"></span></p>
+													</div>
 												</div>
-											</div>
-											<div class="media-object-section middle">
-												<p><a href="admin-user-profile.html">Viola Davis</a></p>
-											</div>
-										</div>
-									</td>
-									<td>Advocate</td>
-									<td class="text-right">
-										<a class="action-link"><i class="fa fa-edit"></i></a>
-										<a class="action-link alert"><i class="fa fa-trash"></i></a>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="media-object">
-											<div class="media-object-section logo middle small">
-												<div class="img-wrapper circle">
-													<img src="img/specialist.png" alt="">
+											</td>
+											<td>Administrator</td>
+											<td>Oct 12, 2017</td>
+											<td class="text-right">
+												<div class="button-align small">
+													<a class="button hollow"><i class="fa fa-refresh"></i>&nbsp; Resend Invite</a>
+													<a class="button hollow"><i class="fa fa-edit"></i></a>
 												</div>
-											</div>
-											<div class="media-object-section middle">
-												<p><a href="admin-user-profile.html">caradelivigne</a></p>
-											</div>
-										</div>
-									</td>
-									<td>Advocate</td>
-									<td class="text-right">
-										<a class="action-link"><i class="fa fa-edit"></i></a>
-										<a class="action-link alert"><i class="fa fa-trash"></i></a>
-									</td>
-								</tr>
-							</tbody>
-						</table>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="media-object">
+													<div class="media-object-section logo middle small">
+														<div class="img-wrapper circle">
+															<img src="img/specialist.png" alt="">
+														</div>
+													</div>
+													<div class="media-object-section middle">
+														<p><a href="admin-user-profile.html">Viola Davis</a></p>
+													</div>
+												</div>
+											</td>
+											<td>Advocate</td>
+											<td>Oct 12, 2017</td>
+											<td class="text-right">
+												<div class="button-align small">
+													<a class="button hollow"><i class="fa fa-refresh"></i>&nbsp; Resend Invite</a>
+													<a class="button hollow"><i class="fa fa-edit"></i></a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="media-object">
+													<div class="media-object-section logo middle small">
+														<div class="img-wrapper circle">
+															<img src="img/specialist.png" alt="">
+														</div>
+													</div>
+													<div class="media-object-section middle">
+														<p><a href="admin-user-profile.html">Cara Dean</a> &nbsp; <i class="fa fa-lock alert-color"></i></p>
+													</div>
+												</div>
+											</td>
+											<td>Advocate</td>
+											<td>Oct 12, 2017</td>
+											<td class="text-right">
+												<div class="button-align small">
+													<a class="button hollow"><i class="fa fa-edit"></i></a>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+
+							</div>
+
+							<div class="tabs-panel" id="panel2">
+
+								<table>
+									<thead>
+										<th><a href="#">Name <i class="fa fa-caret-up fa-fw"></i></a></th>
+										<th><a href="#">Role <i class="fa fa-caret-up fa-fw"></i></a></th>
+										<th>Last Login</th>
+										<th></th>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<div class="media-object">
+													<div class="media-object-section logo middle small">
+														<div class="img-wrapper circle">
+															<img src="img/specialist.png" alt="">
+														</div>
+													</div>
+													<div class="media-object-section middle">
+														<p><a href="admin-user-profile.html">Patricia Harrison</a></p>
+													</div>
+												</div>
+											</td>
+											<td>Super Administrator</td>
+											<td>Oct 12, 2017</td>
+											<td class="text-right"></td>
+										</tr>
+										<tr>
+											<td>
+												<div class="media-object">
+													<div class="media-object-section logo middle small">
+														<div class="img-wrapper circle">
+															<img src="img/specialist.png" alt="">
+														</div>
+													</div>
+													<div class="media-object-section middle">
+														<p><a href="admin-user-profile.html">Louis Hill</a></p>
+													</div>
+												</div>
+											</td>
+											<td>Administrator</td>
+											<td>Oct 12, 2017</td>
+											<td class="text-right"></td>
+										</tr>
+										<tr>
+											<td>
+												<div class="media-object">
+													<div class="media-object-section logo middle small">
+														<div class="img-wrapper circle">
+															<img src="img/specialist.png" alt="">
+														</div>
+													</div>
+													<div class="media-object-section middle">
+														<p><a href="admin-user-profile.html">Mildred Webb</a></p>
+													</div>
+												</div>
+											</td>
+											<td>Advocate</td>
+											<td>Oct 12, 2017</td>
+											<td class="text-right"></td>
+										</tr>
+									</tbody>
+								</table>
+
+							</div>
+
+						</div>	
 
 					</div>
 				</div>

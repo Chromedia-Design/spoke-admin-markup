@@ -665,6 +665,48 @@
 	}
 }
 
+.flex-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	> li {
+		border: 1px solid rgba($black, $B-dividers);
+		border-radius: 2px;
+		padding: 0.8125rem 1rem;
+		margin-bottom: 0.3125rem;
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p,
+		span,
+		.subheader {
+			margin-bottom: 0;
+			line-height: 1.5em;
+		}
+		a {
+			color: rgba($black, $B-text);
+		}
+		&.list-heading {
+			padding: 0 1rem 0.3125rem;
+			background: transparent;
+			border: none;
+			color: rgba($black, $B-subtext);
+			text-transform: uppercase;
+			font-size: 0.75rem;
+		}
+	}
+	&:hover {
+		> li {
+			&:hover {
+				background-color: $body-background;
+			}
+		}
+	}
+}
+
 .table-list {
 	display: table;
 	width: 100%;

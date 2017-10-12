@@ -1,10 +1,9 @@
 .button {
 	font-family: $body-font-family;
-	border-radius: 2px;
+	border-radius: 4px;
 	font-weight: $global-weight-bold;
 	text-transform: uppercase;
 	&.hollow {
-		border-width: 2px;
 		background: transparent;
 		&.success,
 		&.primary,
@@ -13,7 +12,6 @@
 		&.warning,
 		&.info,
 		&.white {
-			border-width: 2px;
 			&.small {
 				border-width: 1px;
 			}
@@ -135,15 +133,27 @@
 	@extend .button-group;
 	.button {
 		margin-right: 1rem;
+		&:only-child,
+		&:last-child {
+			margin-right: 0;
+		}
 	}
 	&.small {
 		.button {
 			margin-right: 0.75rem;
+			&:only-child,
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 	}
 	&.tiny {
 		.button {
 			margin-right: 0.325rem;
+			&:only-child,
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 	}
 }
@@ -193,7 +203,8 @@
 		text-transform: uppercase;
 		font-size: 0.75rem;
 	}
-	&:only-child {
+	&:only-child,
+	&:last-child {
 		margin-right: 0;
 	}
 }

@@ -170,8 +170,8 @@
 							<div class="panel-heading">
 								<span class="h6">Account Information</span>
 							</div>
-							<div class="panel-body">
-								<form>
+							<form>
+								<div class="panel-body">
 									<div class="row">
 										<div class="large-6 columns end">
 											<label>
@@ -207,15 +207,64 @@
 										</div>
 									</div>
 									<div class="row">
-										<div class="large-12 columns end">
-											<div class="button-align submit pull-right">
-												<a href="admin-users.html" class="button link">Cancel</a>
-												<a href="admin-user-profile.html" class="button success"><i class="fa fa-save"></i>&nbsp; Save</a>
-											</div>
+										<div class="large-6 columns end">
+											<label>
+												Mobile Number
+												<input type="text">
+											</label>
 										</div>
 									</div>
-								</form>
-							</div>
+								</div>
+								<div class="panel-footer">
+									<h6>Deactivation</h6>
+									<p class="subheader">This will remove the user's access to the Spoke Health system. However, you can reactivate this account at any time.</p>
+									<p class="mb-0">
+										<a href="#" class="button alert hollow plain mb-0" data-open="confirmDeactivation">Deactivate this account.</a>
+									</p>
+
+									<div class="reveal" id="confirmDeactivation" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+										<div class="row collapse">
+											<div class="large-12 columns">
+												<h5 class="reveal-heading">Account Deactivation</h5>
+											</div>
+										</div>
+										<form>
+											<div class="row collapse">
+												<div class="large-12 columns">
+													<div class="reveal-body">
+														<div class="row">
+															<div class="large-12 columns end">
+																This will remove the user's access to the Spoke Health system. However, you can reactivate this account at any time.
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row collapse">
+												<div class="large-12 columns">
+													<div class="reveal-footer">
+														<div class="button-group pull-right">
+															<a class="button link" data-close>Cancel</a>
+															<a href="#" class="button alert">Yes, Deactivate This Account.</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</form>
+									  	<button class="close-button" data-close aria-label="Close modal" type="button">
+									    	<span aria-hidden="true">&times;</span>
+									  	</button>
+									</div>
+								</div>
+								<div class="row">
+									<div class="large-12 columns end">
+										<div class="button-align pull-right mb-1">
+											<a href="admin-users.html" class="button link">Cancel</a>
+											<a href="admin-user-profile.html" class="button success"><i class="fa fa-save"></i>&nbsp; Save Changes</a>
+										</div>
+									</div>
+								</div>
+							</form>
 						</div>
 
 					</div>
@@ -234,6 +283,7 @@
 	<script src="js/app.js"></script>
 
 	<script type="text/javascript">
+
         $(function () {
             var timer;
 
@@ -244,8 +294,6 @@
                 }, 40); 
             }).resize();
         });
-
-        
 
     </script>
 
