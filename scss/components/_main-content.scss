@@ -418,12 +418,31 @@ section {
 		.login-wrap {
 			margin: 0 auto;
 			padding: 2rem;
-			width: 30%;
+			width: 33.3%;
 			background: $white;
 			border: 1px solid rgba($black, $B-dividers);
 			border-radius: 2px;
 			form {
 				margin-top: 2rem;
+			}
+		}
+	}
+	.login-banner {
+		margin: 2rem auto;
+		padding: 2rem 23%;
+		width: 100%;
+		border-top: 1px solid rgba($black, $B-dividers);
+		border-bottom: 1px solid rgba($black, $B-dividers);
+		> p,
+		> b {
+			font-size: rem-calc(14);
+			line-height: 1.5em;
+			color: $medium-gray;
+			a {
+				color: $medium-gray;
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 		}
 	}
