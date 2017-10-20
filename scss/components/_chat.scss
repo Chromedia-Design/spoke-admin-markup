@@ -413,13 +413,13 @@
 	.side-content {
 		background-color: $off-white;
 		.media-object {
-			clear: both;
+			display: table;
 			width: 80%;
 			&.pull-right {
 				.media-object-section {
-					float: right;
 					&.logo {
-						padding-left: 1.5rem;
+						width: 1%;
+						padding: 0 1rem 0 0;
 						text-decoration: none;
 						a {
 							text-decoration: none;
