@@ -89,16 +89,19 @@
 				  	</div>
 				</div>
 
-				<div class="row expanded">
+				<div class="row">
 					<div class="large-12 columns">
-						
 						<nav aria-label="You are here:" role="navigation">
 						  	<ul class="breadcrumbs mt-0">
 						    	<li><a href="advocate-employees.html"><i class="fa fa-arrow-left"></i>&nbsp; Employees</a></li>
 						  	</ul>
 						</nav>
+					</div>
+				</div>
 
-						<div id="employeeProfile" class="callout">
+				<div class="row">
+					<div class="large-12 columns">
+						<div id="employeeProfile" class="callout lo-padded">
 							<div class="row collapse">
 								<div class="large-12 columns end">
 									<div class="media-object full-table mb-0">
@@ -108,14 +111,14 @@
 											</div>
 										</div>
 										<div class="media-object-section middle">
-											<span class="h5">Raymond Peterson</span>
+											<span class="h5">Raymond Peterson&nbsp; <a data-open="generalNote" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a></span>
 										</div>
 										<div class="media-object-section middle">
 											<div class="button-align pull-right">
 												<a href="#" class="button circle hollow"><i class="fa fa-envelope fa-fw"></i></a>
 												<a href="#" class="button circle hollow"><i class="fa fa-phone fa-fw"></i></a>
 												<a href="#" class="button circle hollow"><i class="fa fa-video-camera fa-fw"></i></a>
-												<a data-open="generalNote" data-tooltip aria-haspopup="true" class="button circle hollow has-tip" data-disable-hover="false" tabindex="1" title="Add a general note."><i class="fa fa-sticky-note"></i></a>
+												<!-- <a data-open="generalNote" data-tooltip aria-haspopup="true" class="button circle hollow has-tip" data-disable-hover="false" tabindex="1" title="Add a general note."><i class="fa fa-sticky-note"></i></a> -->
 				                                <div class="dropdown-pane" id="generalNote" data-dropdown data-close-on-click="true">
 												  	<form>
 										    			<div class="row collapse">
@@ -143,7 +146,7 @@
 								<a data-toggle="moreView" class="button"><i class="fa fa-sort fa-fw"></i></a>
 							</div>
 
-							<div id="moreView" class="mt-1" data-toggler data-animate="fade-in fade-out">
+							<div id="moreView" class="mt-1" data-toggler data-animate="fade-in fade-out" style="display: none;">
 
 								<div class="row collapse label-block">
 									<div class="large-12 columns end">
@@ -234,6 +237,11 @@
 
 							</div>
 						</div>
+					</div>
+				</div>
+
+				<div class="row expanded">
+					<div class="large-12 columns">
 
 						<ul class="tabs justified" data-tabs id="example-tabs">
 							<li class="tabs-title is-active"><a href="#panel1">Overview</a></li>
@@ -409,378 +417,402 @@
 
 							<div class="tabs-panel" id="panel2">
 
-								<div id="chatClient" class="chat mt-2">
-							        <div class="chat-wrapper">
+								<div class="row collapse">
+									<div class="medium-9 columns">
+										<div id="chatClient" class="chat mt-2">
+									        <div class="chat-wrapper">
 
-							        	<div class="chat-header">
-							                <div class="plain button-align ">
-							                	<a href="advocate-communications.html" class="button info link"><i class="fa fa-arrow-left"></i>&nbsp; All Messages</a>
-							                </div>
-							                <div class="plain button-group small ml-1">
-							                	<a href="#" class="button info hollow"><i class="fa fa-angle-left"></i>&nbsp; Prev</a>
-							                	<a href="#" class="button info hollow"><i class="fa fa-angle-right"></i>&nbsp; Next</a>
-							                </div>
-							                <div class="plain button-group small ml-1">
-							                	<a href="#" class="button success"><i class="fa fa-check"></i>&nbsp; Mark As Done</a>
-							                </div>
-							                <div class="plain button-group small pull-right">
-							                	<a href="#" class="button"><i class="fa fa-sticky-note"></i>&nbsp; View Pinned Notes</a>
-							                </div>
-							            </div>
+									        	<div class="chat-header">
+									                <div class="plain button-align mr-1">
+									                	<a href="advocate-communications.html" class="button info link"><i class="fa fa-arrow-left"></i>&nbsp; All Messages</a>
+									                </div>
+									                <div class="plain button-group small m4-1">
+									                	<a href="#" class="button info hollow"><i class="fa fa-angle-left"></i>&nbsp; Prev</a>
+									                	<a href="#" class="button info hollow"><i class="fa fa-angle-right"></i>&nbsp; Next</a>
+									                </div>
+									                <div class="plain button-group small">
+									                	<a href="#" class="button success"><i class="fa fa-check"></i>&nbsp; Mark As Done</a>
+									                </div>
+									                <div class="pull-right">
+									                	<div class="inline-form-group">
+									                		<label for="">Filter:</label>
+									                		<select>
+									                			<option>All</option>
+									                			<option>Messages</option>
+									                			<option>Calls</option>
+									                			<option>Notes</option>
+									                			<option>Transactional Emails</option>
+									                		</select>
+									                	</div>
+									                </div>
+									            </div>
 
-							            <div class="chat-body">
-							                
-							                <div class="side-content">
-							                   	<div class="inner">
+									            <div class="chat-body">
+									                
+									                <div class="side-content">
+									                   	<div class="inner">
 
-							                   		<div class="wrapper">
-							                   			<div class="media-object" data-animate="slide-in-right slide-out-right">
-								                            <div class="media-object-section middle">
-								                                <div class="small talk-bubble border tri-right left-in">
-								                                    <div class="talktext">
-								                                        <p>Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-								                                    </div>
-								                                </div>
-								                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small>&nbsp; <a data-open="quickNote-1" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a></span>
-							                                	<div class="dropdown-pane" id="quickNote-1" data-dropdown data-close-on-click="true">
-																  	<form>
-														    			<div class="row collapse">
-																      		<div class="medium-12 columns">
-																        		<label>
-																          			<textarea placeholder="Add a note..."></textarea>
-																        		</label>
-																      		</div>
-																    	</div>
-																    	<div class="row collapse">
-																      		<div class="medium-12 columns">
-																        		<button class="button expanded mb-0"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</button>
-																      		</div>
-																    	</div>
-																  	</form>
-																</div>
-								                            </div>
-								                        </div>
-							                   		</div>
-							                        
-							                       	<div class="wrapper pull-right">
-							                       		<div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
-								                            <div class="media-object-section middle">
-								                                <div class="small white-bg talk-bubble border tri-right right-in">
-								                                    <div class="talktext">
-								                                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed eos cupiditate placeat nobis distinctio rem dolor iste omnis neque. Sequi veritatis sint, repellat quasi ipsam numquam cumque deleniti recusandae, facere!</p>
-								                                    </div>
-								                                </div>
-								                                <span class="subheader timestamp"><small><i class="fa fa-check-circle"></i>&nbsp; Seen</small><small>Jun 29, 4:30 PM</small>&nbsp; <a data-open="quickNote-2" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a></span>
-								                                <div class="dropdown-pane" id="quickNote-2" data-dropdown data-close-on-click="true">
-																  	<form>
-														    			<div class="row collapse">
-																      		<div class="medium-12 columns">
-																        		<label>
-																          			<textarea placeholder="Add a note..."></textarea>
-																        		</label>
-																      		</div>
-																    	</div>
-																    	<div class="row collapse">
-																      		<div class="medium-12 columns">
-																        		<button class="button expanded mb-0"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</button>
-																      		</div>
-																    	</div>
-																  	</form>
-																</div>
-								                            </div>
-								                            <div class="media-object-section logo small">
-								                        		<div class="img-wrapper circle">
-								                                    <span class="h5 centered"><a data-open="quickNote-12" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Kevin Doyle">K</a></span>
-								                                </div>
-								                        	</div>
-								                        </div>
-							                       	</div>
-							                        
-													<div class="wrapper">
-														<div class="media-object" data-animate="slide-in-right slide-out-right">
-								                            <div class="media-object-section middle">
-								                                <div class="small talk-bubble border tri-right left-in">
-								                                    <div class="talktext">
-								                                        <p>Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-								                                    </div>
-								                                </div>
-								                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small>&nbsp; <a data-open="quickNote-3" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a></span>
-								                                <div class="dropdown-pane" id="quickNote-3" data-dropdown data-close-on-click="true">
-																  	<form>
-														    			<div class="row collapse">
-																      		<div class="medium-12 columns">
-																        		<label>
-																          			<textarea placeholder="Add a note..."></textarea>
-																        		</label>
-																      		</div>
-																    	</div>
-																    	<div class="row collapse">
-																      		<div class="medium-12 columns">
-																        		<button class="button expanded mb-0"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</button>
-																      		</div>
-																    	</div>
-																  	</form>
-																</div>
-								                            </div>
-								                        </div>
-													</div>
-							                        
-													<div class="wrapper pull-right">
-														<div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
-								                            <div class="media-object-section middle">
-								                                <div class="small white-bg talk-bubble border tri-right right-in">
-								                                    <div class="talktext">
-								                                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui.</p>
-								                                    </div>
-								                                </div>
-								                                <span class="subheader timestamp"><small><i class="fa fa-check-circle"></i>&nbsp; Seen</small><small>Jun 29, 4:30 PM</small>&nbsp; <a data-open="quickNote-4" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a></span>
-								                                <div class="dropdown-pane" id="quickNote-4" data-dropdown data-close-on-click="true">
-																  	<form>
-														    			<div class="row collapse">
-																      		<div class="medium-12 columns">
-																        		<label>
-																          			<textarea placeholder="Add a note..."></textarea>
-																        		</label>
-																      		</div>
-																    	</div>
-																    	<div class="row collapse">
-																      		<div class="medium-12 columns">
-																        		<button class="button expanded mb-0"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</button>
-																      		</div>
-																    	</div>
-																  	</form>
-																</div>
-								                            </div>
-								                            <div class="media-object-section logo small">
-								                        		<div class="img-wrapper circle">
-								                                    <span class="h5 centered"><a data-open="quickNote-12" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Kevin Doyle">K</a></span>
-								                                </div>
-								                        	</div>
-								                        </div>
-													</div>
-							                        
-													<div class="wrapper">
-														<div class="media-object" data-animate="slide-in-right slide-out-right">
-								                            <div class="media-object-section middle">
-								                                <div class="small talk-bubble border tri-right left-in">
-								                                    <div class="talktext">
-								                                        <p>Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-								                                    </div>
-								                                </div>
-								                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small>&nbsp; <a data-open="quickNote-5" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a></span>
-								                                <div class="dropdown-pane" id="quickNote-5" data-dropdown data-close-on-click="true">
-																  	<form>
-														    			<div class="row collapse">
-																      		<div class="medium-12 columns">
-																        		<label>
-																          			<textarea placeholder="Add a note..."></textarea>
-																        		</label>
-																      		</div>
-																    	</div>
-																    	<div class="row collapse">
-																      		<div class="medium-12 columns">
-																        		<button class="button expanded mb-0"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</button>
-																      		</div>
-																    	</div>
-																  	</form>
-																</div>
-								                            </div>
-								                        </div>
-													</div>
-							                        
-													<div class="wrapper pull-right">
-														<div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
-								                            <div class="media-object-section middle">
-								                                <div class="small white-bg talk-bubble border tri-right right-in">
-								                                    <div class="talktext">
-								                                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui.</p>
-								                                    </div>
-								                                </div>
-								                                <span class="subheader timestamp"><small><i class="fa fa-check-circle"></i>&nbsp; Seen</small><small>Jun 29, 4:30 PM</small>&nbsp; <a data-open="quickNote-6" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a></span>
-								                                <div class="dropdown-pane" id="quickNote-6" data-dropdown data-close-on-click="true">
-																  	<form>
-														    			<div class="row collapse">
-																      		<div class="medium-12 columns">
-																        		<label>
-																          			<textarea placeholder="Add a note..."></textarea>
-																        		</label>
-																      		</div>
-																    	</div>
-																    	<div class="row collapse">
-																      		<div class="medium-12 columns">
-																        		<button class="button expanded mb-0"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</button>
-																      		</div>
-																    	</div>
-																  	</form>
-																</div>
-								                            </div>
-								                            <div class="media-object-section logo small">
-								                        		<div class="img-wrapper circle">
-								                                    <span class="h5 centered"><a data-open="quickNote-12" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Kevin Doyle">K</a></span>
-								                                </div>
-								                        	</div>
-								                        </div>
-													</div>
-							                        	
-													<div class="wrapper pull-right">
-														<div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
-								                            <div class="media-object-section middle">
-								                                <div class="small success-bg talk-bubble border tri-right right-in">
-								                                    <div class="talktext">
-								                                        <p><a data-toggle="chatSupport"><i class="fa fa-phone"></i>&nbsp; Call Made 00:26</a></p>
-								                                    </div>
-								                                </div>
-								                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small>&nbsp; <a data-open="quickNote-7" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a></span>
-								                                <div class="dropdown-pane" id="quickNote-7" data-dropdown data-close-on-click="true">
-																  	<form>
-														    			<div class="row collapse">
-																      		<div class="medium-12 columns">
-																        		<label>
-																          			<textarea placeholder="Add a note..."></textarea>
-																        		</label>
-																      		</div>
-																    	</div>
-																    	<div class="row collapse">
-																      		<div class="medium-12 columns">
-																        		<button class="button expanded mb-0"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</button>
-																      		</div>
-																    	</div>
-																  	</form>
-																</div>
-								                            </div>
-								                            <div class="media-object-section logo small">
-								                        		<div class="img-wrapper circle">
-								                                    <span class="h5 centered"><a data-open="quickNote-12" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Kevin Doyle">K</a></span>
-								                                </div>
-								                        	</div>
-								                        </div>
-													</div>
-							                        
-													
-													<div class="wrapper text-center">
-														<div class="media-object" data-animate="slide-in-right slide-out-right">
-								                            <div class="media-object-section middle">
-								                                <div class="small warning-bg talk-bubble">
-								                                    <div class="talktext">
-								                                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui.</p>
-								                                    </div>
-								                                </div>
-								                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small>&nbsp; <a href="#" data-tooltip aria-haspopup="true" class="has-tip pull-right" data-disable-hover="false" tabindex="1" title="Pin This Note"><i class="fa fa-star-o fa-fw"></i></a>&nbsp; <a href="#" data-tooltip aria-haspopup="true" class="has-tip pull-right success-color" data-disable-hover="false" tabindex="1" title="Unpin This Note"><i class="fa fa-star fa-fw"></i></a></span>
-								                            </div>
-								                        </div>
-													</div>
-							                        
-													<div class="wrapper text-center">
-														<div class="media-object" data-animate="slide-in-right slide-out-right">
-								                            <div class="media-object-section middle">
-								                                <div class="small info-bg talk-bubble">
-								                                    <div class="talktext">
-								                                        <p><i class="fa fa-envelope-open fa-fw success-color"></i>&nbsp;<i class="fa fa-sign-in fa-fw success-color"></i>&nbsp; Opened and Followed Transactional Email</p>
-								                                    </div>
-								                                </div>
-								                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small>&nbsp; <a data-open="quickNote-8" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a></span>
-								                                <div class="dropdown-pane" id="quickNote-8" data-dropdown data-close-on-click="true">
-																  	<form>
-														    			<div class="row collapse">
-																      		<div class="medium-12 columns">
-																        		<label>
-																          			<textarea placeholder="Add a note..."></textarea>
-																        		</label>
-																      		</div>
-																    	</div>
-																    	<div class="row collapse">
-																      		<div class="medium-12 columns">
-																        		<button class="button expanded mb-0"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</button>
-																      		</div>
-																    	</div>
-																  	</form>
-																</div>
-								                            </div>
-								                        </div>
-													</div>
-							                        
-													<div class="wrapper text-center">
-														<div class="media-object text-center" data-animate="slide-in-right slide-out-right">
-								                            <div class="media-object-section middle">
-								                                <div class="small info-bg talk-bubble">
-								                                    <div class="talktext">
-								                                        <p><i class="fa fa-envelope-o fa-fw"></i>&nbsp;<i class="fa fa-sign-in fa-fw"></i>&nbsp; Unopened and Unfollowed Transactional Email</p>
-								                                    </div>
-								                                </div>
-								                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small>&nbsp; <a data-open="quickNote-9" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a></span>
-								                                <div class="dropdown-pane" id="quickNote-9" data-dropdown data-close-on-click="true">
-																  	<form>
-														    			<div class="row collapse">
-																      		<div class="medium-12 columns">
-																        		<label>
-																          			<textarea placeholder="Add a note..."></textarea>
-																        		</label>
-																      		</div>
-																    	</div>
-																    	<div class="row collapse">
-																      		<div class="medium-12 columns">
-																        		<button class="button expanded mb-0"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</button>
-																      		</div>
-																    	</div>
-																  	</form>
-																</div>
-								                            </div>
-								                        </div>
-													</div>
-							                        
-													<div class="wrapper pull-right">
-														<div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
-								                            <div class="media-object-section middle">
-								                                <div class="small white-bg talk-bubble border tri-right right-in">
-								                                    <div class="talktext">
-								                                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui.</p>
-								                                    </div>
-								                                </div>
-								                                <span class="subheader timestamp"><small><i class="fa fa-check-circle"></i>&nbsp; Seen</small><small>Jun 29, 4:30 PM</small>&nbsp; <a data-open="quickNote-10" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a></span>
-								                                <div class="dropdown-pane" id="quickNote-10" data-dropdown data-close-on-click="true">
-																  	<form>
-														    			<div class="row collapse">
-																      		<div class="medium-12 columns">
-																        		<label>
-																          			<textarea placeholder="Add a note..."></textarea>
-																        		</label>
-																      		</div>
-																    	</div>
-																    	<div class="row collapse">
-																      		<div class="medium-12 columns">
-																        		<button class="button expanded mb-0"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</button>
-																      		</div>
-																    	</div>
-																  	</form>
-																</div>
-								                            </div>
-								                            <div class="media-object-section logo small">
-								                        		<div class="img-wrapper circle">
-								                                    <span class="h5 centered"><a data-open="quickNote-12" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Kevin Doyle">K</a></span>
-								                                </div>
-								                        	</div>
-								                        </div>
-													</div>
+									                   		<div class="wrapper">
+									                   			<div class="media-object" data-animate="slide-in-right slide-out-right">
+										                            <div class="media-object-section middle">
+										                                <div class="small talk-bubble border tri-right left-in">
+										                                    <div class="talktext">
+										                                        <p>Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+										                                    </div>
+										                                </div>
+										                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small>&nbsp; <a data-open="quickNote-1" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a></span>
+									                                	<div class="dropdown-pane" id="quickNote-1" data-dropdown data-close-on-click="true">
+																		  	<form>
+																    			<div class="row collapse">
+																		      		<div class="medium-12 columns">
+																		        		<label>
+																		          			<textarea placeholder="Add a note..."></textarea>
+																		        		</label>
+																		      		</div>
+																		    	</div>
+																		    	<div class="row collapse">
+																		      		<div class="medium-12 columns">
+																		        		<button class="button expanded mb-0"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</button>
+																		      		</div>
+																		    	</div>
+																		  	</form>
+																		</div>
+										                            </div>
+										                        </div>
+									                   		</div>
+									                        
+									                       	<div class="wrapper pull-right">
+									                       		<div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+										                            <div class="media-object-section middle">
+										                                <div class="small white-bg talk-bubble border tri-right right-in">
+										                                    <div class="talktext">
+										                                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed eos cupiditate placeat nobis distinctio rem dolor iste omnis neque. Sequi veritatis sint, repellat quasi ipsam numquam cumque deleniti recusandae, facere!</p>
+										                                    </div>
+										                                </div>
+										                                <span class="subheader timestamp"><small class="pull-left"><i class="fa fa-check-circle"></i>&nbsp; Seen</small><small>Jun 29, 4:30 PM</small>&nbsp; <a data-open="quickNote-2" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a></span>
+										                                <div class="dropdown-pane" id="quickNote-2" data-dropdown data-close-on-click="true">
+																		  	<form>
+																    			<div class="row collapse">
+																		      		<div class="medium-12 columns">
+																		        		<label>
+																		          			<textarea placeholder="Add a note..."></textarea>
+																		        		</label>
+																		      		</div>
+																		    	</div>
+																		    	<div class="row collapse">
+																		      		<div class="medium-12 columns">
+																		        		<button class="button expanded mb-0"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</button>
+																		      		</div>
+																		    	</div>
+																		  	</form>
+																		</div>
+										                            </div>
+										                            <div class="media-object-section logo small">
+										                        		<div class="img-wrapper circle">
+										                                    <span class="h5 centered"><a data-open="quickNote-12" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Kevin Doyle">K</a></span>
+										                                </div>
+										                        	</div>
+										                        </div>
+									                       	</div>
+									                        
+															<div class="wrapper">
+																<div class="media-object" data-animate="slide-in-right slide-out-right">
+										                            <div class="media-object-section middle">
+										                                <div class="small talk-bubble border tri-right left-in">
+										                                    <div class="talktext">
+										                                        <p>Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+										                                    </div>
+										                                </div>
+										                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small>&nbsp; <a data-open="quickNote-3" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a></span>
+										                                <div class="dropdown-pane" id="quickNote-3" data-dropdown data-close-on-click="true">
+																		  	<form>
+																    			<div class="row collapse">
+																		      		<div class="medium-12 columns">
+																		        		<label>
+																		          			<textarea placeholder="Add a note..."></textarea>
+																		        		</label>
+																		      		</div>
+																		    	</div>
+																		    	<div class="row collapse">
+																		      		<div class="medium-12 columns">
+																		        		<button class="button expanded mb-0"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</button>
+																		      		</div>
+																		    	</div>
+																		  	</form>
+																		</div>
+										                            </div>
+										                        </div>
+															</div>
+									                        
+															<div class="wrapper pull-right">
+																<div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+										                            <div class="media-object-section middle">
+										                                <div class="small white-bg talk-bubble border tri-right right-in">
+										                                    <div class="talktext">
+										                                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui.</p>
+										                                    </div>
+										                                </div>
+										                                <span class="subheader timestamp"><small class="pull-left"><i class="fa fa-check-circle"></i>&nbsp; Seen</small><small>Jun 29, 4:30 PM</small>&nbsp; <a data-open="quickNote-4" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a></span>
+										                                <div class="dropdown-pane" id="quickNote-4" data-dropdown data-close-on-click="true">
+																		  	<form>
+																    			<div class="row collapse">
+																		      		<div class="medium-12 columns">
+																		        		<label>
+																		          			<textarea placeholder="Add a note..."></textarea>
+																		        		</label>
+																		      		</div>
+																		    	</div>
+																		    	<div class="row collapse">
+																		      		<div class="medium-12 columns">
+																		        		<button class="button expanded mb-0"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</button>
+																		      		</div>
+																		    	</div>
+																		  	</form>
+																		</div>
+										                            </div>
+										                            <div class="media-object-section logo small">
+										                        		<div class="img-wrapper circle">
+										                                    <span class="h5 centered"><a data-open="quickNote-12" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Kevin Doyle">K</a></span>
+										                                </div>
+										                        	</div>
+										                        </div>
+															</div>
+									                        
+															<div class="wrapper">
+																<div class="media-object" data-animate="slide-in-right slide-out-right">
+										                            <div class="media-object-section middle">
+										                                <div class="small talk-bubble border tri-right left-in">
+										                                    <div class="talktext">
+										                                        <p>Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+										                                    </div>
+										                                </div>
+										                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small>&nbsp; <a data-open="quickNote-5" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a></span>
+										                                <div class="dropdown-pane" id="quickNote-5" data-dropdown data-close-on-click="true">
+																		  	<form>
+																    			<div class="row collapse">
+																		      		<div class="medium-12 columns">
+																		        		<label>
+																		          			<textarea placeholder="Add a note..."></textarea>
+																		        		</label>
+																		      		</div>
+																		    	</div>
+																		    	<div class="row collapse">
+																		      		<div class="medium-12 columns">
+																		        		<button class="button expanded mb-0"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</button>
+																		      		</div>
+																		    	</div>
+																		  	</form>
+																		</div>
+										                            </div>
+										                        </div>
+															</div>
+									                        
+															<div class="wrapper pull-right">
+																<div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+										                            <div class="media-object-section middle">
+										                                <div class="small white-bg talk-bubble border tri-right right-in">
+										                                    <div class="talktext">
+										                                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui.</p>
+										                                    </div>
+										                                </div>
+										                                <span class="subheader timestamp"><small class="pull-left"><i class="fa fa-check-circle"></i>&nbsp; Seen</small><small>Jun 29, 4:30 PM</small>&nbsp; <a data-open="quickNote-6" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a></span>
+										                                <div class="dropdown-pane" id="quickNote-6" data-dropdown data-close-on-click="true">
+																		  	<form>
+																    			<div class="row collapse">
+																		      		<div class="medium-12 columns">
+																		        		<label>
+																		          			<textarea placeholder="Add a note..."></textarea>
+																		        		</label>
+																		      		</div>
+																		    	</div>
+																		    	<div class="row collapse">
+																		      		<div class="medium-12 columns">
+																		        		<button class="button expanded mb-0"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</button>
+																		      		</div>
+																		    	</div>
+																		  	</form>
+																		</div>
+										                            </div>
+										                            <div class="media-object-section logo small">
+										                        		<div class="img-wrapper circle">
+										                                    <span class="h5 centered"><a data-open="quickNote-12" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Kevin Doyle">K</a></span>
+										                                </div>
+										                        	</div>
+										                        </div>
+															</div>
+									                        	
+															<div class="wrapper pull-right">
+																<div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+										                            <div class="media-object-section middle">
+										                                <div class="small success-bg talk-bubble border tri-right right-in">
+										                                    <div class="talktext">
+										                                        <p><a data-toggle="chatSupport"><i class="fa fa-phone"></i>&nbsp; Call Made 00:26</a></p>
+										                                    </div>
+										                                </div>
+										                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small>&nbsp; <a data-open="quickNote-7" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a></span>
+										                                <div class="dropdown-pane" id="quickNote-7" data-dropdown data-close-on-click="true">
+																		  	<form>
+																    			<div class="row collapse">
+																		      		<div class="medium-12 columns">
+																		        		<label>
+																		          			<textarea placeholder="Add a note..."></textarea>
+																		        		</label>
+																		      		</div>
+																		    	</div>
+																		    	<div class="row collapse">
+																		      		<div class="medium-12 columns">
+																		        		<button class="button expanded mb-0"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</button>
+																		      		</div>
+																		    	</div>
+																		  	</form>
+																		</div>
+										                            </div>
+										                            <div class="media-object-section logo small">
+										                        		<div class="img-wrapper circle">
+										                                    <span class="h5 centered"><a data-open="quickNote-12" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Kevin Doyle">K</a></span>
+										                                </div>
+										                        	</div>
+										                        </div>
+															</div>
+									                        
+															
+															<div class="wrapper text-center">
+																<div class="media-object" data-animate="slide-in-right slide-out-right">
+										                            <div class="media-object-section middle">
+										                                <div class="small warning-bg talk-bubble">
+										                                    <div class="talktext">
+										                                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui.</p>
+										                                    </div>
+										                                </div>
+										                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small>&nbsp; <a href="#" data-tooltip aria-haspopup="true" class="has-tip pull-right" data-disable-hover="false" tabindex="1" title="Pin This Note"><i class="fa fa-star-o fa-fw"></i></a>&nbsp; <a href="#" data-tooltip aria-haspopup="true" class="has-tip pull-right success-color" data-disable-hover="false" tabindex="1" title="Unpin This Note"><i class="fa fa-star fa-fw"></i></a></span>
+										                            </div>
+										                        </div>
+															</div>
+									                        
+															<div class="wrapper text-center">
+																<div class="media-object" data-animate="slide-in-right slide-out-right">
+										                            <div class="media-object-section middle">
+										                                <div class="small info-bg talk-bubble">
+										                                    <div class="talktext">
+										                                        <p><i class="fa fa-envelope-open fa-fw success-color"></i>&nbsp;<i class="fa fa-sign-in fa-fw success-color"></i>&nbsp; Opened and Followed Transactional Email</p>
+										                                    </div>
+										                                </div>
+										                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small>&nbsp; <a data-open="quickNote-8" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a></span>
+										                                <div class="dropdown-pane" id="quickNote-8" data-dropdown data-close-on-click="true">
+																		  	<form>
+																    			<div class="row collapse">
+																		      		<div class="medium-12 columns">
+																		        		<label>
+																		          			<textarea placeholder="Add a note..."></textarea>
+																		        		</label>
+																		      		</div>
+																		    	</div>
+																		    	<div class="row collapse">
+																		      		<div class="medium-12 columns">
+																		        		<button class="button expanded mb-0"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</button>
+																		      		</div>
+																		    	</div>
+																		  	</form>
+																		</div>
+										                            </div>
+										                        </div>
+															</div>
+									                        
+															<div class="wrapper text-center">
+																<div class="media-object text-center" data-animate="slide-in-right slide-out-right">
+										                            <div class="media-object-section middle">
+										                                <div class="small info-bg talk-bubble">
+										                                    <div class="talktext">
+										                                        <p><i class="fa fa-envelope-o fa-fw"></i>&nbsp;<i class="fa fa-sign-in fa-fw"></i>&nbsp; Unopened and Unfollowed Transactional Email</p>
+										                                    </div>
+										                                </div>
+										                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small>&nbsp; <a data-open="quickNote-9" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a></span>
+										                                <div class="dropdown-pane" id="quickNote-9" data-dropdown data-close-on-click="true">
+																		  	<form>
+																    			<div class="row collapse">
+																		      		<div class="medium-12 columns">
+																		        		<label>
+																		          			<textarea placeholder="Add a note..."></textarea>
+																		        		</label>
+																		      		</div>
+																		    	</div>
+																		    	<div class="row collapse">
+																		      		<div class="medium-12 columns">
+																		        		<button class="button expanded mb-0"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</button>
+																		      		</div>
+																		    	</div>
+																		  	</form>
+																		</div>
+										                            </div>
+										                        </div>
+															</div>
+									                        
+															<div class="wrapper pull-right">
+																<div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+										                            <div class="media-object-section middle">
+										                                <div class="small white-bg talk-bubble border tri-right right-in">
+										                                    <div class="talktext">
+										                                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui.</p>
+										                                    </div>
+										                                </div>
+										                                <span class="subheader timestamp"><small class="pull-left"><i class="fa fa-check-circle"></i>&nbsp; Seen</small><small>Jun 29, 4:30 PM</small>&nbsp; <a data-open="quickNote-10" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a></span>
+										                                <div class="dropdown-pane" id="quickNote-10" data-dropdown data-close-on-click="true">
+																		  	<form>
+																    			<div class="row collapse">
+																		      		<div class="medium-12 columns">
+																		        		<label>
+																		          			<textarea placeholder="Add a note..."></textarea>
+																		        		</label>
+																		      		</div>
+																		    	</div>
+																		    	<div class="row collapse">
+																		      		<div class="medium-12 columns">
+																		        		<button class="button expanded mb-0"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</button>
+																		      		</div>
+																		    	</div>
+																		  	</form>
+																		</div>
+										                            </div>
+										                            <div class="media-object-section logo small">
+										                        		<div class="img-wrapper circle">
+										                                    <span class="h5 centered"><a data-open="quickNote-12" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Kevin Doyle">K</a></span>
+										                                </div>
+										                        	</div>
+										                        </div>
+															</div>
 
-							                    </div>
-							                    <div class="footer-content">
-						                    		 <div class="collapse row">
-							                            <div class="medium-12 columns">
-							                                <textarea placeholder="Write a message..."></textarea>
-							                            </div>
-							                        </div>
-							                        <div class="collapse row">
-							                            <div class="medium-12 columns">
-							                                <a href="" class="button success pull-right"><i class="fa fa-send"></i>&nbsp; Reply</a>
-							                            </div>
-							                        </div>
-							                    </div>
-												
-							                </div>
+									                    </div>
+									                    <div class="footer-content">
+								                    		 <div class="collapse row">
+									                            <div class="medium-12 columns">
+									                                <textarea placeholder="Write a message..."></textarea>
+									                            </div>
+									                        </div>
+									                        <div class="collapse row">
+									                            <div class="medium-12 columns">
+									                                <a href="" class="button success pull-right"><i class="fa fa-send"></i>&nbsp; Reply</a>
+									                            </div>
+									                        </div>
+									                    </div>
+														
+									                </div>
 
-							            </div>
-							        </div>
-							    </div>
+									            </div>
+									        </div>
+									    </div>
+									</div>
+
+									<div class="medium-3 columns">
+
+										<div class="small warning-bg talk-bubble">
+		                                    <div class="talktext">
+		                                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui.</p>
+		                                    </div>
+		                                </div>
+
+									</div>
+
+								</div>
 
 							</div>
 
@@ -1155,15 +1187,14 @@
 
 	<script type="text/javascript">
 
-		var topBarHeight = $('.top-bar').outerHeight(true);
-        var breadcrumbsHeight = $('.breadcrumbs').outerHeight(true);
-        var tabBarHeight = $('.tabs').outerHeight(true);
-        var profileHeight = $('#employeeProfile').outerHeight(true);
-        var chatheaderHeight = $('.chat-header').outerHeight(true);
+		// var topBarHeight = $('.top-bar').outerHeight(true);
+  //       var breadcrumbsHeight = $('.breadcrumbs').outerHeight(true);
+  //       var tabBarHeight = $('.tabs').outerHeight(true);
+  //       var profileHeight = $('#employeeProfile').outerHeight(true);
+  //       var chatheaderHeight = $('.chat-header').outerHeight(true);
 
         $(function () {
             var timer;
-
             $(window).resize(function() {
                 clearTimeout(timer);
                 timer = setTimeout(function() {
@@ -1174,16 +1205,16 @@
             }).resize();
         });
 
-		function calculateChatHeight() {
-			profileHeight = $('#employeeProfile').outerHeight(true);
-        	$('#chatClient .chat-wrapper').css("height", $(window).height() - (topBarHeight + breadcrumbsHeight + tabBarHeight + profileHeight + chatheaderHeight + 16));
-		}        
+		// function calculateChatHeight() {
+		// 	profileHeight = $('#employeeProfile').outerHeight(true);
+  //       	$('#chatClient .chat-wrapper').css("height", $(window).height() - (topBarHeight + breadcrumbsHeight + tabBarHeight + profileHeight + chatheaderHeight + 16));
+		// }        
 
-        $('#moreView').on("on.zf.toggler", function (e) {
-        	calculateChatHeight();
-        }).on("off.zf.toggler", function (e) {
-        	calculateChatHeight();
-        });
+        // $('#moreView').on("on.zf.toggler", function (e) {
+        // 	calculateChatHeight();
+        // }).on("off.zf.toggler", function (e) {
+        // 	calculateChatHeight();
+        // });
 
     </script>
 

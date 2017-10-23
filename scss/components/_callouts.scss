@@ -6,6 +6,9 @@
 	&.hi-padded {
 		padding: 2rem;
 	}
+	&.lo-padded {
+		padding: 0.875rem;
+	}
 	&.warning {
 		border-color: lighten($warning-color, 25%);
 		> * {

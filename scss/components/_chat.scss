@@ -50,7 +50,7 @@
 		}
 	}
 	&.white-bg {
-		background-color: $background-white;
+		background-color: $white;
 		border: 1px solid $light-gray;
 		&.tri-right.border.right-in:before {
 			right: -20px;
@@ -62,7 +62,7 @@
 			right: -17px;
 			top: 16px;
 			border: 9px solid;
-			border-color: $background-white transparent transparent $background-white;
+			border-color: $white transparent transparent $white;
 		}
 		.talktext {
 			color: $text-black;
@@ -121,7 +121,7 @@
 			  	right: -13px;
 			  	border-width: 0 16px 16px 0;
 			  	border-style: solid;
-			  	border-color: darken(#FFFFA5, 40%) $white;
+			  	border-color: darken(#FFFFA5, 40%) $off-white;
 			  	display: block;
 			  	width: 0;
 			}
@@ -132,7 +132,8 @@
 	}
 	&.info-bg {
 		position: relative;
-		background-color: #F4F4F4;
+		background-color: $white;
+		border: $light-gray;
 		border-radius: 1px;
 		padding: 1rem 1.5rem;
 		.talktext {
@@ -305,6 +306,7 @@
 		align-items: stretch; /* align items in Cross Axis */
     	align-content: stretch; /* Extra space in Cross Axis */
     	border-top: 1px solid rgba($black, $B-dividers);
+    	border-bottom: 1px solid rgba($black, $B-dividers);
 		.inner {
 			flex: 1 1 auto;
 			overflow-y: scroll;
@@ -410,12 +412,12 @@
 		}
 	}
 	.side-content {
-		background-color: $white;
+		background-color: $off-white;
 		.wrapper {
 			display: block;
 			overflow: hidden;
 			clear: both;
-			width: 80%;
+			width: 90%;
 			// CSS for the notes
 			&.text-center {
 				position: relative;
@@ -435,6 +437,7 @@
 			}
 		}
 		.media-object {
+			margin: 0.5rem 0;
 			.media-object-section {
 				&.logo {
 					padding: 0 1rem;
