@@ -34,9 +34,10 @@ table {
 	}
 	tbody {
 		border-radius: 2px;
+		border: 1px solid $light-gray;
 		tr {
 			&:nth-child(even) {
-				background-color: $primary-light;
+				background-color: $off-white;
 			}
 		}
 		td {
@@ -104,6 +105,13 @@ table {
 					width: 20%;
 				}
 			}
+		}
+	}
+	.media-object-section {
+		p,
+		a,
+		span {
+			word-break: break-all;
 		}
 	}
 }
