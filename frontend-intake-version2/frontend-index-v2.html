@@ -14,6 +14,13 @@
 </head>
 <body class="frontend">
 
+    <div class="callout alert fixed-notification" data-closable>
+        <p class="text-center">You are temporarily logged in as John Doe. When you are done, <a href="#">switch back</a> to your account.</p>
+<!--         <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+        </button> -->
+    </div>
+
     <header class="top-bar bordered">
         <div class="row">
             <div class="auto columns">
@@ -386,10 +393,23 @@
 
         </div>
     </section>
+    
+    <!-- <div id="hookFive" class="offcanvas-trigger-group">
+        <a data-toggle="chatSupport" class="offcanvas-trigger"><i class="fa fa-comments" aria-hidden="true"></i>&nbsp; Communications</a>
+        <a data-open="scheduleCalendar" class="offcanvas-trigger"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp; Schedule A Call</a>
+    </div> -->
+    
 
     <div id="chatSupport" class="offcanvas-area reveal" data-reveal data-animation-in="slide-in-right" data-animation-out="slide-out-right" data-options="showDelay:50; hideDelay:50">
-
         <div class="offcanvas-area-inner">
+            <!-- <div class="offcanvas-header">
+                <div class="input-group">
+                    <input type="text" class="input-group-field" value="" placeholder="Search messages...">
+                    <div class="input-group-button">
+                        <a href="#" class="button info"><i class="fa fa-search"></i></a>
+                    </div>
+                </div>
+            </div> -->
 
             <div id="chatStatus" class="row">
                 <div class="large-12 columns">
@@ -408,6 +428,7 @@
                             </div>
                             <div class="media-object-section middle">
                                 <div class="button-align pull-right">
+                                    <!-- <a class="button hollow"><i class="fa fa-calendar"></i>&nbsp; Schedule A Call</a> -->
                                     <a data-toggle="videoCall" class="button circle hollow"><i class="fa fa-video-camera"></i></a>
                                 </div>
                             </div>
@@ -427,6 +448,122 @@
 
             <div class="offcanvas-body">
 
+                <div class="main-content">
+                    <div class="inner">
+
+                        <div class="panel">
+                            <div class="panel-body">
+                                <div class="media-object full-table">
+                                    <div class="media-object-section middle logo small">
+                                        <div class="img-wrapper circle text-center">
+                                            <span class="h5"><i class="fa fa-calendar fa-fw"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="media-object-section middle">
+                                        <p class="h6">
+                                            You have a scheduled call today.<br>
+                                            <span class="subheader"><small>At 3:00 PM MST</small></span>
+                                        </p>
+                                    </div>
+                                    <div class="media-object-section middle">
+                                        <ul class="dropdown menu" data-dropdown-menu>
+                                            <li>
+                                                <a class="button circle hollow small"><i class="fa fa-video-camera fa-fw"></i></a>
+                                            </li>
+                                            <li class="opens-left">
+                                                <a>&nbsp; &nbsp; </a>
+                                                <ul class="menu vertical">
+                                                    <li><a href="#"><i class="fa fa-calendar"></i>&nbsp; Reschedule Call</a></li>
+                                                    <li><a href="#"><i class="fa fa-times-circle"></i>&nbsp; Cancel Call</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel">
+                            <div class="panel-body wide">
+                                <ul class="well-list message-preview">
+                                    <li class="unread">
+                                        <a id="expandChat" class="list-wrap">
+                                            <div class="list-detail">
+                                                <span class="truncate">Quick Chat</span>
+                                                <span class="truncate"><small>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui.</small></span>
+                                            </div>
+                                            <div class="list-note text-center">
+                                                <span class="badge success">14</span>
+                                                <span class="subheader"><small>Today</small></span>
+                                            </div>
+                                        </a>
+                                    </li>          
+                                </ul>
+                            </div>
+                        </div> 
+
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <span class="h6">PINNED</span>
+                            </div>
+                            <div class="panel-body wide">
+                                <ul class="well-list message-preview">
+                                    <li class="selected">
+                                        <a id="expandChat" class="list-wrap">
+                                            <div class="list-detail">
+                                                <span class="truncate">Follow Up</span>
+                                                <span class="truncate"><small>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui.</small></span>
+                                            </div>
+                                            <div class="list-note text-center">
+                                                <span class="subheader"><small>Today</small></span>
+                                            </div>
+                                        </a>
+                                    </li>          
+                                </ul>
+                            </div>
+                        </div> 
+
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <span class="h6">MESSAGES</span>
+                            </div>
+                            <div class="panel-body wide">
+                                <ul class="well-list message-preview">
+                                    <li class="unread">
+                                        <a id="expandChat" class="list-wrap">
+                                            <div class="list-detail">
+                                                <span class="truncate">Confirm Your Email</span>
+                                                <span class="truncate"><small>Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small></span>
+                                            </div>
+                                            <div class="list-note text-center">
+                                                <span class="badge success">2</span>
+                                                <span class="subheader"><small>Yesterday</small></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="unread">
+                                        <a id="expandChat" class="list-wrap">
+                                            <div class="list-detail">
+                                                <span class="truncate">Invitation</span>
+                                                <span class="truncate"><small>Click here to find out how Spoke can help you save money on a surgical procedure.</small></span>
+                                            </div>
+                                            <div class="list-note text-center">
+                                                <span class="badge success">12</span>
+                                                <span class="subheader"><small>Feb-12</small></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-content">
+                        <a href="" class="button expanded"><i class="fa fa-edit"></i>&nbsp; Compose New Message</a>
+                    </div>
+                </div>
+
                 <div class="side-content">
                     <div class="inner">
                         
@@ -443,6 +580,7 @@
                             </div>
                         </div>
                         
+                        <!-- Owner chat -->
                         <div class="wrapper pull-right">
                             <div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
                                 <div class="media-object-section middle">

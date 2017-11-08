@@ -246,7 +246,6 @@
 
 // Main Chat Panels
 #chatSupport, #chatClient {
-	// width: 60rem;
 	a {
 		text-decoration: none;
 	}
@@ -310,6 +309,7 @@
     	border-bottom: 1px solid rgba($black, $B-dividers);
 		.inner {
 			flex: 1 1 auto;
+			padding: 1rem 0;
 			overflow-y: scroll;
 			&::-webkit-scrollbar {
 				display: none;
