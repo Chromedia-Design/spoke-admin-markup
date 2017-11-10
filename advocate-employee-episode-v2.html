@@ -131,7 +131,7 @@
 						</div>
 					</div>
 
-					<div class="large-9 columns">
+					<div id="profileContent" class="large-9 columns">
 
 						<div class="row">
 							<div class="large-12 columns">
@@ -423,34 +423,18 @@
 
 	<script type="text/javascript">
 
-		// var topBarHeight = $('.top-bar').outerHeight(true);
-  //       var breadcrumbsHeight = $('.breadcrumbs').outerHeight(true);
-  //       var tabBarHeight = $('.tabs').outerHeight(true);
-  //       var profileHeight = $('#employeeProfile').outerHeight(true);
-  //       var chatheaderHeight = $('.chat-header').outerHeight(true);
+		var topBarHeight = $('.top-bar').outerHeight(true);
 
         $(function () {
             var timer;
             $(window).resize(function() {
                 clearTimeout(timer);
                 timer = setTimeout(function() {
-                  $('#chatSupport, .site-nav, .content').css("height", $(window).height());
-                  $('#chatSupport .offcanvas-area-inner').css("height", $(window).height());
-                  $('#chatClient .chat-wrapper').css("height", $(window).height() - (topBarHeight + breadcrumbsHeight + tabBarHeight + profileHeight + chatheaderHeight));
+                  $('#chatSupport, #chatSupport .offcanvas-area-inner, .site-nav, .content').css("height", $(window).height());
+                  $('.site-nav.secondary, #profileContent, #chatClient .chat-wrapper').css("height", $(window).height() - topBarHeight);
                 }, 40); 
             }).resize();
         });
-
-		// function calculateChatHeight() {
-		// 	profileHeight = $('#employeeProfile').outerHeight(true);
-  //       	$('#chatClient .chat-wrapper').css("height", $(window).height() - (topBarHeight + breadcrumbsHeight + tabBarHeight + profileHeight + chatheaderHeight + 16));
-		// }        
-
-        // $('#moreView').on("on.zf.toggler", function (e) {
-        // 	calculateChatHeight();
-        // }).on("off.zf.toggler", function (e) {
-        // 	calculateChatHeight();
-        // });
 
     </script>
 

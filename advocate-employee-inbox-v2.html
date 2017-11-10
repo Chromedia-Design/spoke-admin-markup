@@ -131,12 +131,12 @@
 						</div>
 					</div>
 
-					<div class="large-9 columns">
+					<div id="profileContent" class="large-9 columns">
 						
 						<div id="chatClient" class="chat">
-					        <div class="chat-wrapper mt-1">
+					        <div class="chat-wrapper">
 
-					        	<div class="chat-header">
+					        	<div class="chat-header mt-1">
 					                <div class="plain button-align mr-1">
 					                	<a href="advocate-communications.html" class="button info link"><i class="fa fa-arrow-left"></i>&nbsp; All Messages</a>
 					                </div>
@@ -195,7 +195,7 @@
 						                        </div>
 					                   		</div>
 					                        
-					                       	<!-- <div class="wrapper pull-right">
+					                       	<div class="wrapper pull-right">
 					                       		<div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
 						                            <div class="media-object-section middle">
 						                                <div class="small white-bg talk-bubble border tri-right right-in">
@@ -227,9 +227,9 @@
 						                                </div>
 						                        	</div>
 						                        </div>
-					                       	</div> -->
+					                       	</div>
 					                        
-											<!-- <div class="wrapper">
+											<div class="wrapper">
 												<div class="media-object" data-animate="slide-in-right slide-out-right">
 						                            <div class="media-object-section middle">
 						                                <div class="small talk-bubble border tri-right left-in">
@@ -256,7 +256,7 @@
 														</div>
 						                            </div>
 						                        </div>
-											</div> -->
+											</div>
 					                        
 											<div class="wrapper pull-right">
 												<div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
@@ -518,34 +518,18 @@
 
 	<script type="text/javascript">
 
-		// var topBarHeight = $('.top-bar').outerHeight(true);
-  //       var breadcrumbsHeight = $('.breadcrumbs').outerHeight(true);
-  //       var tabBarHeight = $('.tabs').outerHeight(true);
-  //       var profileHeight = $('#employeeProfile').outerHeight(true);
-  //       var chatheaderHeight = $('.chat-header').outerHeight(true);
+		var topBarHeight = $('.top-bar').outerHeight(true);
 
         $(function () {
             var timer;
             $(window).resize(function() {
                 clearTimeout(timer);
                 timer = setTimeout(function() {
-                  $('#chatSupport, .site-nav, .content').css("height", $(window).height());
-                  $('#chatSupport .offcanvas-area-inner').css("height", $(window).height());
-                  $('#chatClient .chat-wrapper').css("height", $(window).height() - (topBarHeight + breadcrumbsHeight + tabBarHeight + profileHeight + chatheaderHeight));
+                  $('#chatSupport, #chatSupport .offcanvas-area-inner, .site-nav, .content').css("height", $(window).height());
+                  $('.site-nav.secondary, #profileContent, #chatClient .chat-wrapper').css("height", $(window).height() - topBarHeight);
                 }, 40); 
             }).resize();
         });
-
-		// function calculateChatHeight() {
-		// 	profileHeight = $('#employeeProfile').outerHeight(true);
-  //       	$('#chatClient .chat-wrapper').css("height", $(window).height() - (topBarHeight + breadcrumbsHeight + tabBarHeight + profileHeight + chatheaderHeight + 16));
-		// }        
-
-        // $('#moreView').on("on.zf.toggler", function (e) {
-        // 	calculateChatHeight();
-        // }).on("off.zf.toggler", function (e) {
-        // 	calculateChatHeight();
-        // });
 
     </script>
 
