@@ -258,8 +258,6 @@
 	}
 }
 
-
-
 .block {
 	width: 100%;
 	margin-bottom: 2rem;
@@ -385,10 +383,78 @@
 		.h4,
 		.h5,
 		.h6 {
-			width: 45%;
+			width: 30%;
+		}
+	}
+	&.long-label {
+		.h1,
+		.h2,
+		.h3,
+		.h4,
+		.h5,
+		.h6 {
+			width: 60%;
 		}
 	}
 	&.sub-heading {
 		margin: 0 0 0.5rem;
 	}
+}
+
+$card-user-profile-bg: $dark-gray;
+$card-user-profile-text-color: $text-black;
+
+.card-user-profile {
+  	position: relative;
+  	padding: 1rem;
+}
+
+.card-user-profile-content {
+  	position: relative;
+}
+
+.card-user-profile-actions {
+  	a {
+  		color: auto;
+  		border-bottom: auto;
+  	}
+}
+
+.card-user-profile-avatar {
+  	margin: 0 auto 0.5rem;
+    overflow: hidden;
+    width: 2.75rem;
+    height: 2.75rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgba($black, $B-dividers);
+    background-color: #fff;
+    border-radius: 50%;
+  	img {
+    	width: 100%;
+  	}
+  	span.h5 {
+  		font-weight: normal;
+    	color: rgba($black, $B-hinttext);
+  	}
+}
+
+.card-user-profile-name {
+  	font-size: 1.3125rem;
+  	text-align: center;
+}
+
+.card-user-profile-status {
+	text-align: center;
+}
+
+.card-user-profile-info {
+  	font-size: 0.875rem;
+  	letter-spacing: 1px;
+  	opacity: 0.8;
 }

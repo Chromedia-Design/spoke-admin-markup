@@ -58,9 +58,8 @@ header {
 		padding: 2rem 0;
 		> li {
 			transition: all ease-in 0.2s;
-			a {
+			> a {
 				font-family: $body-font-family;
-				// text-transform: uppercase;
 				color: $text-white;
 				font-weight: $global-weight-bold;
 				border-bottom: 1px solid rgba($white, $W-dividers);
@@ -91,7 +90,6 @@ header {
 			}
 			ul.nested {
 				margin-left: 0;
-				// margin-bottom: 0.5rem;
 				> li {
 					a {
 						padding-left: 2.5rem;
@@ -110,6 +108,38 @@ header {
 					}
 					&:hover {
 						background-color: rgba($white, $W-dividers);
+					}
+				}
+			}
+		}
+	}
+	&.secondary {
+		background-color: $white;
+		border-right: 1px solid rgba($black, $B-dividers);
+		border-left: 1px solid rgba($black, $B-dividers);
+		> ul.menu {
+			padding: 1rem 0;
+			> li {
+				> a {
+					font-size: 1rem;
+					color: $text-black;
+					border-bottom: 1px solid rgba($black, $B-dividers);
+				}
+				.card-user-profile {
+					border-bottom: 1px solid rgba($black, $B-dividers);
+				}
+				&.is-active {
+					background-color: $primary-color;
+					> a {
+						color: rgba($white, $W-text);
+					}
+					&.is-accordion-submenu-parent {
+						> a::after {
+							border-color: $white transparent transparent;
+						}
+					}
+					&:hover {
+						background-color: rgba($black, $B-subtext);
 					}
 				}
 			}
