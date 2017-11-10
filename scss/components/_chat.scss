@@ -531,8 +531,8 @@
 			justify-content: flex-start; /*align items in main axis*/
 			align-items: stretch; /* align items in Cross Axis */
 	    	align-content: stretch; /* Extra space in Cross Axis */
-	    	border-right: 1px solid rgba($black, $B-dividers);
-	    	border-left: 1px solid rgba($black, $B-dividers);
+	    	// border-right: 1px solid rgba($black, $B-dividers);
+	    	// border-left: 1px solid rgba($black, $B-dividers);
 		}
 		.main-content {
 			.well-list {
