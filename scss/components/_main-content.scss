@@ -482,4 +482,10 @@ section {
 
 #profileContent {
 	overflow-y: scroll;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	&::-moz-scrollbar {
+		display: none;
+	}
 }

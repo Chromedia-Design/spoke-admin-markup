@@ -414,6 +414,10 @@ $card-user-profile-text-color: $text-black;
 }
 
 .card-user-profile-actions {
+	.button-align,
+	.button-group {
+		margin-bottom: 0;
+	}
   	a {
   		color: auto;
   		border-bottom: auto;
