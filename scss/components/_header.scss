@@ -114,7 +114,7 @@ header {
 		}
 	}
 	&.secondary {
-		background-color: $white;
+		background-color: $off-white;
 		border-right: 1px solid rgba($black, $B-dividers);
 		border-left: 1px solid rgba($black, $B-dividers);
 		> ul.menu {
@@ -128,6 +128,7 @@ header {
 				}
 				.card-user-profile {
 					border-bottom: 1px solid rgba($black, $B-dividers);
+					background: $white;
 				}
 				&.is-active {
 					background-color: $primary-color;
