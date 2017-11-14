@@ -1,7 +1,6 @@
 header {
 	padding: 1rem;
 	background-color: $white;
-	border-right: 1px solid rgba($black, $B-dividers);
 	a.logo {
 		display: inline-block;
 		padding: 0.4rem 1rem;
@@ -50,6 +49,7 @@ header {
 .site-nav {
 	background-color: $primary-color;
 	overflow-y: auto;
+	border-right: 1px solid $light-gray;
 	// Override the blue caret that appears after the dropdown side menu
 	.is-accordion-submenu-parent > a::after {
 		border-color: $white transparent transparent;
@@ -122,17 +122,14 @@ header {
 		}
 	}
 	&.secondary {
-		background-color: $off-white;
-		border-right: 1px solid rgba($black, $B-dividers);
-		border-left: 1px solid rgba($black, $B-dividers);
+		background-color: lighten($primary-color, 15%);
+		border-right: 1px solid $light-gray;
 		> ul.menu {
 			padding: 1rem 0;
 			> li {
 				> a {
 					font-size: 1rem;
-					color: $text-black;
 					border-bottom: 1px solid rgba($black, $B-dividers);
-					font-weight: normal;
 				}
 				.card-user-profile {
 					border-bottom: 1px solid rgba($black, $B-dividers);
