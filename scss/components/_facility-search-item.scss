@@ -5,7 +5,9 @@
 .row-item-container {
 	@extend .card;
 	min-height: 60px;
-	padding: 2rem 1.5rem;
+	padding: 0.3125rem 0 !important;
+	display: block !important;
+	border-radius: 2px;
 	> .row {
 		> .columns {
 			display: table;
@@ -43,22 +45,25 @@
 		}
 	}
 	.package-count {
+		display: inline-block;
 		text-align: center;
+		padding: 1rem 0;
 		div {
-			background-color: #72CC99;
-			border-radius: 100%;
-			width: 4.25rem;
-			height: 4.35rem;
-			margin-left: auto;
-			margin-right: auto;
-			padding:1rem;
-			font-size: 1.5rem;
-			color: #fff;
+			margin: 0 auto;
+			background-color: $secondary-color;
+			border-radius: 50%;
+			width: 2.875rem;
+			height: 2.875rem;
+			padding: 0.5rem;
+			font-size: 1rem;
+			line-height: 1.9em;
+			font-weight: bold;
+			color: $white;
 			text-align: center;
-			margin-bottom: .5rem;
 		}
 		p {
-			font-size: .9rem;
+			color: $text-black;
+			font-size: 0.75rem;
 			margin-bottom: 0;
 		}
 	}

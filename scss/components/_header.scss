@@ -76,6 +76,13 @@ header {
 				a {
 					color: rgba($black, $B-text);
 				}
+				ul.nested {
+					> li {
+						a {
+							color: $text-black;
+						}
+					}
+				}
 				&.is-accordion-submenu-parent {
 					> a::after {
 						border-color: $text-black transparent transparent;
@@ -92,6 +99,7 @@ header {
 				margin-left: 0;
 				> li {
 					a {
+						color: $text-white;
 						padding-left: 2.5rem;
 						font-size: 0.75rem;
 						font-weight: normal;
