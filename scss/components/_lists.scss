@@ -696,13 +696,12 @@
 			color: rgba($black, $B-subtext);
 			text-transform: uppercase;
 			font-size: 0.75rem;
-		}
-	}
-	&:hover {
-		> li {
 			&:hover {
-				background-color: $body-background;
+				background-color: transparent;
 			}
+		}
+		&:hover {
+			background-color: $primary-light;
 		}
 	}
 }
@@ -859,11 +858,10 @@ ul.vertical-list {
 	    top: 0;
 	    bottom: 30px;
 	    left: 14px;
-	    z-index: -1;
 	    display: block;
 	    width: 2px;
 	    content: "";
-	    background-color: #dfdfdf;
+	    background-color: rgba($black, $B-dividers);
 	}
 	.listing-title {
 		position: relative;
@@ -879,7 +877,7 @@ ul.vertical-list {
 			width: 21px;
 			height: 21px;
 			border-radius: 50%;
-			background-color: #dfdfdf;
+			background-color: $light-gray;
 		}
 		&:after {
 			position: absolute;
@@ -903,7 +901,7 @@ ul.vertical-list {
 	    		border-top: 1px solid rgba(10,16,35,0.25);
 	    		padding: 8px 10px;
 	    		p {
-	    			font-size: rem-calc(12);
+	    			font-size: rem-calc(14);
 	    			margin-bottom: 0;
 	    		}
 			  	&.activity-icon {

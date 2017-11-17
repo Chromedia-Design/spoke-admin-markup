@@ -305,9 +305,19 @@
 	}
 }
 
+.align-middle {
+	display: flex;
+	align-items: center;
+	.column,
+	.columns {
+		flex: 1 1 0px;
+	}
+}
+
 .page-lead {
 	margin: 1rem 0;
 	min-height: 2rem;
+	vertical-align: middle;
 	&.tall {
 		margin: 3rem 0;
 		&.sub-heading {
@@ -326,7 +336,7 @@
 		margin-right: 1rem;
 		color: rgba($black, $B-text);
 		width: 66%;
-		vertical-align: top;
+		// vertical-align: top;
 		line-height: 1.5em;
 		font-weight: $global-weight-bold;
 		span {
@@ -365,7 +375,9 @@
 	small {
 		font-weight: normal;
 	}
-	.button {
+	.button,
+	.button-group,
+	.button-align {
 		margin-bottom: 0;
 	}
 	.menu {
