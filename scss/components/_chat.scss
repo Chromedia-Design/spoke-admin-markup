@@ -122,13 +122,14 @@
 			  	right: -13px;
 			  	border-width: 0 16px 16px 0;
 			  	border-style: solid;
-			  	border-color: darken(#FFFFA5, 40%) $off-white;
+			  	border-color: darken(#FFFFA5, 40%) $white;
 			  	display: block;
 			  	width: 0;
 			}
 		}
 		+ .timestamp {
 			text-align: center;
+			line-height: 1.8em;
 		}
 	}
 	&.info-bg {
@@ -429,7 +430,7 @@
 					width: 100%;
 					height: 1px;
 					background-color: rgba($black, $B-dividers);
-					top: 50%;
+					top: 33%;
 					left: 0;
 				}
 				.media-object-section {
