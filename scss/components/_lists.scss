@@ -908,6 +908,9 @@ ul.vertical-list {
 			  		width: 3%;
 					color: rgba($black, $B-hinttext);
 			  	}
+			  	&.activity-time {
+			  		width: 27%;
+			  	}
 			  	&.activity-name {
 			  		display: block;
 			  		.show-ip {
