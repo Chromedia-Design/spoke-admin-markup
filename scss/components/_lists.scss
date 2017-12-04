@@ -893,12 +893,13 @@ ul.vertical-list {
 	.table-list {
 		margin: 12px 0 0;
 		padding: 0;
-		border-bottom: 1px solid rgba(10,16,35,0.25);
-		border-radius: 2px;
+		border-radius: $global-radius;
+		border-spacing: 0 3px;
 	    li.table-list-item {
+	    	box-shadow: 0 0 1px rgba($black, $B-dividers);
+	    	border-radius: $global-radius;
 	    	.table-list-cell {
 	    		vertical-align: middle;
-	    		border-top: 1px solid rgba(10,16,35,0.25);
 	    		padding: 8px 10px;
 	    		p {
 	    			font-size: rem-calc(14);
@@ -931,14 +932,6 @@ ul.vertical-list {
 						    text-transform: uppercase;
 			  			}
 			  		}
-			  	}
-			  	&:first-child {
-			  		border-left: 1px solid rgba(10,16,35,0.25);
-			  		border-top-left-radius: 2px;
-			  	}
-			  	&:last-child {
-			  		border-right: 1px solid rgba(10,16,35,0.25);
-			  		border-top-right-radius: 2px;
 			  	}
 		  	}
 	    }
