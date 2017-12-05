@@ -261,14 +261,14 @@
 .facility-card {
 	@extend .card;
 	min-height: 60px;
-	padding: 0.3125rem 0 !important;
+	padding: 0;
 	display: block !important;
 	border-radius: $global-radius;
 	.name { 
 		font-family: $body-font-family;
-		margin-bottom: 0;
+		margin-bottom: 5px;
 		color: $text-black;
-		word-break: break-all;
+		word-break: break-word;
 	}
 	.contact,
 	.address {
