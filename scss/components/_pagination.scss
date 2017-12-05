@@ -1,6 +1,9 @@
 .pagination{
 	margin: 4rem 0;
-	a, .button {
+	a,
+	span,
+	.button {
+		display: inline-block;
 		border-radius: 2px;
 		padding: .1875rem .625rem;
 	}
@@ -8,8 +11,10 @@
 		border-radius: 2px;
 		background: $primary-color;
 		cursor: default;
-		padding: 0;
-		a, .button {
+		padding: .1875rem .625rem;
+		a,
+		span,
+		.button {
 			color: $white;
 			&:hover {
 				background: transparent;
