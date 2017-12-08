@@ -22,10 +22,10 @@
 						<a href="#"><i class="material-icons">dashboard</i> Dashboard</a>
 					</li>
 					<li class="is-active">
-						<a href="#"><i class="material-icons">wc</i> Patients</a>
+						<a href="#"><i class="material-icons">wc</i> Employees</a>
 						<ul class="nested vertical menu is-active">
 							<li class="is-active">
-								<a href="#">All Patients</a>
+								<a href="#">All Employees</a>
 							</li>
 						</ul>
 					</li>
@@ -59,13 +59,62 @@
 				  	</div>
 				</div>
 
-				<div class="row">
-					<div class="medium-12 columns">
+				<div class="page-lead row align-middle expanded">
+					<div class="auto columns">
+						<span class="h5">Employees <span>(10)</span><a class="button secondary small hollow ml-1 mb-0" data-toggle="filters">Show Filters <i class="fa fa-angle-down fa-fw"></i></a></span>
+					</div>
+					<div class="auto columns">
+						<div class="button-align small pull-right mb-0">
+							<a class="button success" href="admin-employee-edit.html">+ Create New</a>
+							<a class="button hollow" href="#"><i class="fa fa-users"></i>&nbsp; Bulk Select</a>
+							<a data-open="assignUsers" class="button success"><i class="fa fa-user-plus fa-fw"></i>&nbsp; Assign To</a>
+							<a class="button hollow" href="#"><i class="fa fa-users"></i>&nbsp; Cancel</a>
+						</div>
+					</div>
 
-			            <div class="page-lead">
-			                <span class="h5">Patients <span>(10)</span><a class="button secondary small hollow ml-1" data-toggle="filters">Show Filters <i class="fa fa-angle-down fa-fw"></i></a></span>
-			                <a class="button success pull-right" href="admin-patient-edit.html">+ Add New Patient</a>
-			            </div>
+					<div class="reveal" id="assignUsers" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+						<div class="row collapse">
+							<div class="large-12 columns">
+								<h5 class="reveal-heading">Assign To</h5>
+							</div>
+						</div>
+						<form>
+							<div class="row collapse">
+								<div class="large-12 columns">
+									<div class="reveal-body">
+										<div class="row">
+											<div class="auto columns">
+												<label>
+													Spoke Health Advocate
+													<select>
+														<option>Select One.</option>
+													</select>
+												</label>
+											</div>
+										</div>	
+									</div>
+								</div>
+							</div>
+							<div class="row collapse">
+								<div class="large-12 columns">
+									<div class="reveal-footer">
+										<div class="button-group pull-right">
+											<a class="button link" data-close>Cancel</a>
+											<a href="#" class="button success">Assign</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					  	<button class="close-button" data-close aria-label="Close modal" type="button">
+					    	<span aria-hidden="true">&times;</span>
+					  	</button>
+					</div>
+
+				</div>
+
+				<div class="row expanded">
+					<div class="medium-12 columns">
 
 			            <div id="filters" class="submenu menu-options mb-1" data-toggler data-animate="fade-in fade-out">
 			            	<div class="row collapse">
@@ -112,32 +161,36 @@
 
 						<table class="thirds-spacing">
 			                <thead>
-			                <tr>
-			                    <th><a href="#">Name <i class="fa fa-caret-up fa-fw"></i></a></th>
-			                    <th><a href="#">Company Name <i class="fa fa-caret-up fa-fw"></i></a></th>
-			                    <th><a href="#">Recent Activity <i class="fa fa-caret-up fa-fw"></i></a></th>
-			                    <th></th>
-			                </tr>
+				                <tr>
+				                    <th>
+				                    	<input type="checkbox" class="mr-1" name="">&nbsp; 
+				                    	<a href="#">Name <i class="fa fa-caret-up fa-fw"></i></a></th>
+				                    <th><a href="#">Company Name <i class="fa fa-caret-up fa-fw"></i></a></th>
+				                    <th><a href="#">Recent Activity <i class="fa fa-caret-up fa-fw"></i></a></th>
+				                    <th></th>
+				                </tr>
 			                </thead>
 			                <tbody>
 			                    <tr>
-			                        <td><a href="admin-patient-profile.html">Joseph Hicks</a></td>
+			                        <td>
+			                        	<input type="checkbox" class="mr-1" name="">&nbsp; 
+			                        	<a href="admin-employee-profile.html">Joseph Hicks</a></td>
 			                        <td><a href="#">Excel Energy</a></td>
 			                        <td>Jan 9, 2017, 8:45 AM</td>
 			                        <td class="text-right">
-			                        	<a href="email-invitation.html" class="action-link"><i class="fa fa-envelope-o fa-fw"></i></a>
-			                            <a  class="action-link" href="patient-profile.html"><i class="fa fa-eye fa-fw"></i></a>
-			                            <a href="add-patient.html" class="action-link"><i class="fa fa-edit fa-fw"></i></a>
+			                        	<a data-open="assignUsers" class="action-link"><i class="fa fa-user-plus"></i></a>
+			                            <a href="admin-employee-add.html" class="action-link"><i class="fa fa-edit"></i></a>
 			                        </td>
 			                    </tr>
 			                    <tr>
-			                        <td><a href="admin-patient-profile.html">Phillip Martinez</a></td>
+			                        <td>
+			                        	<input type="checkbox" class="mr-1" name="">&nbsp; 
+			                        	<a href="admin-employee-profile.html">Phillip Martinez</a></td>
 			                        <td><a href="#">Excel Energy</a></td>
 			                        <td>Jan 9, 2017, 8:45 AM</td>
 			                        <td class="text-right">
-			                        	<a href="email-invitation.html" class="action-link"><i class="fa fa-envelope-o fa-fw"></i></a>
-			                            <a  class="action-link" href="patient-profile.html"><i class="fa fa-eye fa-fw"></i></a>
-			                            <a href="add-patient.html" class="action-link"><i class="fa fa-edit fa-fw"></i></a>
+			                        	<a data-open="assignUsers" class="action-link"><i class="fa fa-user-plus"></i></a>
+			                            <a href="admin-employee-add.html" class="action-link"><i class="fa fa-edit"></i></a>
 			                        </td>
 			                    </tr>
 			                </tbody>
@@ -157,8 +210,6 @@
 
 					</div>
 				</div>
-
-
 				
 			</div>
 		</div>

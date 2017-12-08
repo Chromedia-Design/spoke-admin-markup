@@ -4,14 +4,14 @@
 	span,
 	.button {
 		display: inline-block;
-		border-radius: 2px;
-		padding: .1875rem .625rem;
+		border-radius: $global-radius;
 	}
-	.current, .active {
-		border-radius: 2px;
+	.current,
+	.active {
+		border-radius: $global-radius;
 		background: $primary-color;
 		cursor: default;
-		padding: .1875rem .625rem;
+		padding: 0;
 		a,
 		span,
 		.button {

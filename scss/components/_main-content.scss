@@ -416,7 +416,7 @@ section {
 		display: table-cell;
 		vertical-align: middle;
 		.login-wrap {
-			margin: 0 auto;
+			margin: 0 auto 1rem;
 			padding: 2rem;
 			width: 33.3%;
 			background: $white;
@@ -428,20 +428,29 @@ section {
 		}
 	}
 	.login-banner {
-		margin: 2rem auto;
-		padding: 2rem 23%;
-		width: 100%;
-		border-top: 1px solid rgba($black, $B-dividers);
-		border-bottom: 1px solid rgba($black, $B-dividers);
-		> p,
-		> b {
-			font-size: rem-calc(14);
-			line-height: 1.5em;
-			color: $medium-gray;
-			a {
-				color: $medium-gray;
-				&:hover {
+		display: table-row;
+		height: 7rem;
+		.login-banner-wrap {
+			display: table-cell;
+			margin: 0 auto;
+			padding: 2rem;
+			width: 100%;
+			border-top: 1px solid rgba($black, $B-dividers);
+			border-bottom: 1px solid rgba($black, $B-dividers);
+			vertical-align: bottom;
+			background-color: $primary-color;
+			> p,
+			> b {
+				margin-bottom: 0;
+				font-size: rem-calc(12);
+				line-height: 1.5em;
+				color: $white;
+				a {
+					color: $white;
 					text-decoration: underline;
+					&:hover {
+						text-decoration: underline;
+					}
 				}
 			}
 		}

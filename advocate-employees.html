@@ -89,80 +89,154 @@
 				  	</div>
 				</div>
 
-				<div class="row expanded">
-					<div class="large-12 columns end">
+				<div class="page-lead row align-middle expanded">
+					<div class="auto columns">
+						<span class="h5">Employees <span>(10)</span><a class="button secondary small hollow ml-1 mb-0" data-toggle="filters">Show Filters <i class="fa fa-angle-down fa-fw"></i></a></span>
+					</div>
+					<div class="auto columns">
+						<div class="button-align small pull-right mb-0">
+							<!-- <a class="button success" href="admin-patient-edit.html" disabled>+ Create New</a> -->
+							<!-- <a class="button hollow" href="#"><i class="fa fa-users"></i>&nbsp; Bulk Select</a> -->
+							<!-- <a href="#" class="button success"><i class="fa fa-user-plus fa-fw"></i>&nbsp; Assign To</a> -->
+							<!-- <a class="button hollow" href="#"><i class="fa fa-users"></i>&nbsp; Cancel</a> -->
+						</div>
+					</div>
 
-						<div class="page-lead">
-			                <span class="h5">Employees</span>
-			            </div>
+					<div class="reveal" id="assignUsers" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+						<div class="row collapse">
+							<div class="large-12 columns">
+								<h5 class="reveal-heading">Assign To</h5>
+							</div>
+						</div>
+						<form>
+							<div class="row collapse">
+								<div class="large-12 columns">
+									<div class="reveal-body">
+										<div class="row">
+											<div class="auto columns">
+												<label>
+													Spoke Health Advocate
+													<select>
+														<option>Select One.</option>
+													</select>
+												</label>
+											</div>
+										</div>	
+									</div>
+								</div>
+							</div>
+							<div class="row collapse">
+								<div class="large-12 columns">
+									<div class="reveal-footer">
+										<div class="button-group pull-right">
+											<a class="button link" data-close>Cancel</a>
+											<a href="#" class="button success">Assign</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					  	<button class="close-button" data-close aria-label="Close modal" type="button">
+					    	<span aria-hidden="true">&times;</span>
+					  	</button>
+					</div>
+
+				</div>
+
+				<div class="row expanded">
+					<div class="medium-12 columns">
+
+			            <div id="filters" class="submenu menu-options mb-1" data-toggler data-animate="fade-in fade-out">
+			            	<div class="row collapse">
+			            		<div class="large-4 columns end">
+			            			<form>
+			            				<div class="input-group">
+				            				<input type="text" class="input-group-field" value="" placeholder="Search keyword...">
+				            				<div class="input-group-button">
+				            					<a href="#" class="button info"><i class="fa fa-search"></i></a>
+			            					</div>
+		            					</div>
+			            			</form>
+			            		</div>
+			            		<div class="large-7 large-offset-1 columns end">
+			                        <div class="row collapse">
+			                            <div class="large-6 columns end">
+			                                <div class="row">
+			                                    <div class="large-4 columns">
+			                                        <label for="" class="text-right middle">Company</label>
+			                                    </div>
+			                                    <div class="large-8 columns">
+			                                        <select class="">
+			                                            <option>All</option>
+			                                        </select>
+			                                    </div>  
+			                                </div> 
+			                            </div>
+			                            <div class="large-6 columns end">
+			                                <div class="row">
+			                                    <div class="large-5 columns">
+			                                        <label for="" class="text-right middle">Assigned To</label>
+			                                    </div>
+			                                    <div class="large-7 columns">
+			                                        <select class="">
+			                                            <option>All</option>
+			                                        </select>
+			                                    </div>  
+			                                </div> 
+			                            </div>
+			                        </div>
+			                    </div>
+			            	</div>
+			            </div>	
 
 						<table class="thirds-spacing">
 			                <thead>
-			                <tr>
-			                    <th><a href="#">Name <i class="fa fa-caret-up fa-fw"></i></a></th>
-			                    <th><a href="#">Company Name <i class="fa fa-caret-up fa-fw"></i></a></th>
-			                    <th><a href="#">Recent Activity <i class="fa fa-caret-up fa-fw"></i></a></th>
-			                    <th></th>
-			                </tr>
+				                <tr>
+				                    <th>
+				                    	<!-- <input type="checkbox" class="mr-1" name="">&nbsp;  -->
+				                    	<a href="#">Name <i class="fa fa-caret-up fa-fw"></i></a></th>
+				                    <th><a href="#">Company Name <i class="fa fa-caret-up fa-fw"></i></a></th>
+				                    <th><a href="#">Recent Activity <i class="fa fa-caret-up fa-fw"></i></a></th>
+				                    <th></th>
+				                </tr>
 			                </thead>
 			                <tbody>
 			                    <tr>
-			                        <td><a href="advocate-employee-profile.html">John Doe</a></td>
+			                        <td>
+			                        	<!-- <input type="checkbox" class="mr-1" name="">&nbsp;  -->
+			                        	<a href="admin-employee-profile.html">Joseph Hicks</a></td>
 			                        <td><a href="#">Excel Energy</a></td>
 			                        <td>Jan 9, 2017, 8:45 AM</td>
 			                        <td class="text-right">
-			                            <a  class="action-link" href="advocate-employee-profile.html"><i class="fa fa-eye fa-fw"></i></a>
-		                             	<a  class="action-link" href="#"><i class="fa fa-phone"></i></a>
-		                             	<a  class="action-link" href="#"><i class="fa fa-envelope-o"></i></a>
-			                            <a href="#" class="action-link"><i class="fa fa-edit fa-fw"></i></a>
+			                        	<!-- <a href="#" class="action-link"><i class="fa fa-user-plus"></i></a> -->
+			                            <a href="admin-employee-add.html" class="action-link"><i class="fa fa-edit"></i></a>
 			                        </td>
 			                    </tr>
 			                    <tr>
-			                        <td><a href="advocate-employee-profile.html">Alex Quesada</a></td>
+			                        <td>
+			                        	<!-- <input type="checkbox" class="mr-1" name="">&nbsp;  -->
+			                        	<a href="admin-employee-profile.html">Phillip Martinez</a></td>
 			                        <td><a href="#">Excel Energy</a></td>
 			                        <td>Jan 9, 2017, 8:45 AM</td>
 			                        <td class="text-right">
-			                            <a  class="action-link" href="advocate-employee-profile.html"><i class="fa fa-eye fa-fw"></i></a>
-		                             	<a  class="action-link" href="#"><i class="fa fa-phone"></i></a>
-		                             	<a  class="action-link" href="#"><i class="fa fa-envelope-o"></i></a>
-			                            <a href="#" class="action-link"><i class="fa fa-edit fa-fw"></i></a>
-			                        </td>
-			                    </tr>
-			                    <tr>
-			                        <td><a href="advocate-employee-profile.html">Janet Ellis</a></td>
-			                        <td><a href="#">Excel Energy</a></td>
-			                        <td>Jan 9, 2017, 8:45 AM</td>
-			                        <td class="text-right">
-			                            <a  class="action-link" href="advocate-employee-profile.html"><i class="fa fa-eye fa-fw"></i></a>
-		                             	<a  class="action-link" href="#"><i class="fa fa-phone"></i></a>
-		                             	<a  class="action-link" href="#"><i class="fa fa-envelope-o"></i></a>
-			                            <a href="#" class="action-link"><i class="fa fa-edit fa-fw"></i></a>
-			                        </td>
-			                    </tr>
-			                    <tr>
-			                        <td><a href="advocate-employee-profile.html">Kathleen Jordan</a></td>
-			                        <td><a href="#">Excel Energy</a></td>
-			                        <td>Jan 9, 2017, 8:45 AM</td>
-			                        <td class="text-right">
-			                            <a  class="action-link" href="advocate-employee-profile.html"><i class="fa fa-eye fa-fw"></i></a>
-		                             	<a  class="action-link" href="#"><i class="fa fa-phone"></i></a>
-		                             	<a  class="action-link" href="#"><i class="fa fa-envelope-o"></i></a>
-			                            <a href="#" class="action-link"><i class="fa fa-edit fa-fw"></i></a>
-			                        </td>
-			                    </tr>
-			                    <tr>
-			                        <td><a href="advocate-employee-profile.html">Albert Gibson</a></td>
-			                        <td><a href="#">Excel Energy</a></td>
-			                        <td>Jan 9, 2017, 8:45 AM</td>
-			                        <td class="text-right">
-			                            <a  class="action-link" href="advocate-employee-profile.html"><i class="fa fa-eye fa-fw"></i></a>
-		                             	<a  class="action-link" href="#"><i class="fa fa-phone"></i></a>
-		                             	<a  class="action-link" href="#"><i class="fa fa-envelope-o"></i></a>
-			                            <a href="#" class="action-link"><i class="fa fa-edit fa-fw"></i></a>
+			                        	<!-- <a href="#" class="action-link"><i class="fa fa-user-plus"></i></a> -->
+			                            <a href="admin-employee-add.html" class="action-link"><i class="fa fa-edit"></i></a>
 			                        </td>
 			                    </tr>
 			                </tbody>
 			            </table>
+
+						<ul class="pagination text-center" role="navigation" aria-label="Pagination">
+							<li class="pagination-previous disabled">Previous</li>
+							<li class="current"><a href="#">1</a></li>
+							<li><a href="#" aria-label="Page 2">2</a></li>
+							<li><a href="#" aria-label="Page 3">3</a></li>
+							<li><a href="#" aria-label="Page 4">4</a></li>
+							<li class="ellipsis"></li>
+							<li><a href="#" aria-label="Page 12">12</a></li>
+							<li><a href="#" aria-label="Page 13">13</a></li>
+							<li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
+						</ul>				
 
 					</div>
 				</div>

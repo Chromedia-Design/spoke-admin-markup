@@ -686,6 +686,11 @@
 			margin-bottom: 0;
 			line-height: 1.5em;
 		}
+		.button,
+		.button-align,
+		.button-group {
+			margin-bottom: 0;
+		}
 		a {
 			color: rgba($black, $B-text);
 		}

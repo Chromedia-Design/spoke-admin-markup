@@ -87,7 +87,7 @@
 				  	</div>
 				</div>
 
-				<div class="row">
+				<div class="row expanded">
 					<div class="medium-12 columns">
 						
 						<div class="row">
@@ -111,7 +111,7 @@
 											</div>
 										</div>
 										<div class="media-object-section middle">
-											<h5>Will Smith</span>  &nbsp;<span class="badge success"></h5>
+											<h5>Sarah Bourdon</span>  &nbsp;<span class="badge success"></h5>
 											<p><span class="label success">Active</span>&nbsp;<span class="label secondary">Invited</span>&nbsp;<span class="label warning">Locked</span>&nbsp;<span class="label alert">Deactivated</span></p>
 										</div>
 										<div class="media-object-section middle">
@@ -129,13 +129,13 @@
 								<div class="large-3 columns end">
 									<div class="label-group">
 										<p>Email Address</p>
-										<h6>will.smith@domain.com</h6>
+										<h6>sarah.bourdon@domain.com</h6>
 									</div>
 								</div>
 								<div class="large-3 columns end">
 									<div class="label-group">
 										<p>Role</p>
-										<h6>Administrator</h6>
+										<h6>Advocate</h6>
 									</div>
 								</div>
 								<div class="large-3 columns end">
@@ -169,33 +169,79 @@
 							<div class="tabs-panel is-active" id="panel1">
 
 								<div class="callout">
-									<div class="row collapse">
-										<div class="large-12 columns">
-											<div class="page-lead">
-												<span class="h6">Assigned Employees</span>
-												<!-- <a href="#" data-open="addEmployee" class="button primary pull-right">Assign Employee +</a> -->
-											</div>	
+									<div class="page-lead row align-middle expanded">
+										<div class="auto columns">
+											<span class="h6">Assigned Employees</span>
 										</div>
+										<div class="auto columns">
+											<div class="button-align small pull-right">
+												<a href="#" class="button hollow" disabled><i class="fa fa-users fa-fw"></i>&nbsp; Bulk Assign</a>
+												<a data-open="assignUsers" class="button success"><i class="fa fa-user-plus fa-fw"></i>&nbsp; Assign To</a>
+												<a href="#" class="button hollow">Cancel</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="reveal" id="assignUsers" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+										<div class="row collapse">
+											<div class="large-12 columns">
+												<h5 class="reveal-heading">Assign To</h5>
+											</div>
+										</div>
+										<form>
+											<div class="row collapse">
+												<div class="large-12 columns">
+													<div class="reveal-body">
+														<div class="row">
+															<div class="auto columns">
+																<label>
+																	Spoke Health Advocate
+																	<select>
+																		<option>Select One.</option>
+																	</select>
+																</label>
+															</div>
+														</div>	
+													</div>
+												</div>
+											</div>
+											<div class="row collapse">
+												<div class="large-12 columns">
+													<div class="reveal-footer">
+														<div class="button-group pull-right">
+															<a class="button link" data-close>Cancel</a>
+															<a href="#" class="button success">Assign</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</form>
+									  	<button class="close-button" data-close aria-label="Close modal" type="button">
+									    	<span aria-hidden="true">&times;</span>
+									  	</button>
 									</div>
 
 						            <ul class="flex-list hover">
 						            	<li class="list-heading">
 						            		<div class="row expanded align-middle">
 								            	<div class="columns">
-								            		<span>Name</span>
+								            		<input type="checkbox" class="mr-1" name="">&nbsp; 
+								            		<a href="#"><i class="fa fa-caret-down fa-fw"></i>&nbsp; Name</a>
 								            	</div>
 								            	<div class="columns">
-								            		<span>Company Name</span>
+								            		<a href="#"><i class="fa fa-caret-down fa-fw"></i>&nbsp; Company</a>
 								            	</div>
 								            	<div class="columns">
-								            		<span>Recent Activity</span>
+								            		<a href="#"><i class="fa fa-caret-down fa-fw"></i>&nbsp; Last Activity</a>
 								            	</div>
+								            	<div class="columns"></div>
 								            </div>
 						            	</li>
 						            	<li>
-						            		<a href="advocate-employee-profile.html">
+						            		<div href="advocate-employee-profile.html" style="cursor: pointer;" onclick="window.location='advocate-employee-profile-v2.html';">
 						            			<div class="row expanded align-middle">
 									            	<div class="columns">
+									            		<input type="checkbox" class="mr-1" name="">&nbsp; 
 									            		<span>John Doe</span>
 									            	</div>
 									            	<div class="columns">
@@ -204,13 +250,19 @@
 									            	<div class="columns">
 									            		<span>Jan 9, 2017, 8:45 AM</span>
 									            	</div>
+									            	<div class="columns">
+									            		<div class="button-align small pull-right">
+									            			<a class="button hollow"><i class="fa fa-user-plus"></i></a>
+									            		</div>
+									            	</div>
 									            </div>
-						            		</a>
+						            		</div>
 						            	</li>
 						            	<li>
-						            		<a href="advocate-employee-profile.html">
+						            		<div href="advocate-employee-profile.html" style="cursor: pointer;" onclick="window.location='advocate-employee-profile-v2.html';">
 						            			<div class="row expanded align-middle">
 									            	<div class="columns">
+									            		<input type="checkbox" class="mr-1" name="">&nbsp; 
 									            		<span>Henry Marshall</span>
 									            	</div>
 									            	<div class="columns">
@@ -219,13 +271,19 @@
 									            	<div class="columns">
 									            		<span>Jan 9, 2017, 8:45 AM</span>
 									            	</div>
+									            	<div class="columns">
+									            		<div class="button-align small pull-right">
+									            			<a class="button hollow"><i class="fa fa-user-plus"></i></a>
+									            		</div>
+									            	</div>
 									            </div>
-						            		</a>
+						            		</div>
 						            	</li>
 						            	<li>
-						            		<a href="advocate-employee-profile.html">
+						            		<div href="advocate-employee-profile.html" style="cursor: pointer;" onclick="window.location='advocate-employee-profile-v2.html';">
 						            			<div class="row expanded align-middle">
 									            	<div class="columns">
+									            		<input type="checkbox" class="mr-1" name="">&nbsp; 
 									            		<span>Justin Ford</span>
 									            	</div>
 									            	<div class="columns">
@@ -234,8 +292,13 @@
 									            	<div class="columns">
 									            		<span>Jan 9, 2017, 8:45 AM</span>
 									            	</div>
+									            	<div class="columns">
+									            		<div class="button-align small pull-right">
+									            			<a class="button hollow"><i class="fa fa-user-plus"></i></a>
+									            		</div>
+									            	</div>
 									            </div>
-						            		</a>
+						            		</div>
 						            	</li>
 						            </ul>
 

@@ -16,8 +16,14 @@ table {
 	[type='time'],
 	[type='url'],
 	[type='color'],
+	[type='checkbox'],
+	[type='radio'],
 	.input-group {
 		margin-bottom: 0;
+	}
+	[type='checkbox'],
+	[type='radio'] {
+		margin-top: 0.15rem;
 	}
 	thead {
 		background: transparent;
