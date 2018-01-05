@@ -73,13 +73,39 @@
 
 .img-wrapper {
 	position: relative;
-	text-align: center;
-	background-color: transparent;
+	overflow: hidden;
+    width: 10rem;
+    height: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    img {
+    	width: 100%;
+    }
 	&.circle {
 		border-radius: 50%;
 	}
 	&.bordered {
 		border: 1px solid rgba($black, $B-dividers);
+	}
+	&.small {
+		width: rem-calc(102);
+	}
+	&.full {
+		width: 100%;
+	}
+	// This wrapper is primarily used in the landing page of the employee portal
+	&.landing {
+		background-color: transparent;
+		width: 20rem;
+	}
+	&.screenshot-scene {
+		width: 100%;
 	}
 }
 

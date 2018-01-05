@@ -137,7 +137,7 @@
 		background-color: $white;
 		border: $light-gray;
 		border-radius: 1px;
-		padding: 1rem 1.5rem;
+		padding: 0.325rem 1.5rem;
 		.talktext {
 			color: $text-black;
 			p {
@@ -416,8 +416,7 @@
 	.side-content {
 		background-color: $white;
 		.wrapper {
-			display: block;
-			overflow: hidden;
+			display: inline-block;
 			clear: both;
 			width: 90%;
 			// CSS for the notes

@@ -13,25 +13,27 @@
     <section class="jumbotron primary-bg provider">
     	<header class="top-bar">
 	        <div class="row">
-	            <div class="top-bar-title">
-	                <span data-responsive-toggle="responsive-menu" data-hide-for="large">
-	                    <span class="menu-icon dark" data-toggle></span>
-	                </span>
-	                <a href="#" class="logo">
-	                	<img src="img/spoke-logo-300x60-white.png" alt="Spoke">
-	            	</a>
-	            </div>
-	            <div id="responsive-menu">
-	                <div class="top-bar-right">
-	                    <ul class="menu">
-	                        <li>
-	                            <a class="button link white" href="home.html">Members</a>
-	                        </li>
-	                        <li>
-	                        	<a class="button link white" href="home-employers.html">Employers</a>
-	                        </li>
-	                    </ul>
-	                </div>
+	            <div class="columns">
+	            	<div class="top-bar-title">
+		                <span data-responsive-toggle="responsive-menu" data-hide-for="large">
+		                    <span class="menu-icon dark" data-toggle></span>
+		                </span>
+		                <a href="#" class="logo">
+		                	<img src="img/spoke-logo-300x60-white.png" alt="Spoke">
+		            	</a>
+		            </div>
+		            <div id="responsive-menu">
+		                <div class="top-bar-right">
+		                    <ul class="menu">
+		                        <li>
+		                            <a class="button link white" href="home.html">Members</a>
+		                        </li>
+		                        <li>
+		                        	<a class="button link white" href="home-employers.html">Employers</a>
+		                        </li>
+		                    </ul>
+		                </div>
+		            </div>
 	            </div>
 	        </div>
 	    </header>
@@ -62,19 +64,19 @@
 		</div>
 		<div class="row">
 			<div class="large-4 columns">
-				<div class="img-wrapper mb-2">
+				<div class="img-wrapper centered mb-2">
 					<img src="img/prov-patient-access.png" alt="">
 				</div>	
 				<p>You’ve built a top-class surgical facility that is capable of providing exemplary care, and at Spoke Health<span class="trademark">&trade;</span>, we want to help you operate at full capacity. We work with our clients to proactively reach their employees at the exact moment they are considering a surgical procedure, and educate them on the best possible options for that procedure.</p>
 			</div>
 			<div class="large-4 columns">
-			<div class="img-wrapper mb-2">
+			<div class="img-wrapper centered mb-2">
 					<img src="img/prov-who-we-work-with.png" alt="">
 				</div>
 				<p>To provide those options, we’ve built a narrow network of top-rated facilities. However, rather than building provider networks designed for patient access, we give you access to patients through a non-negotiated, flexible arrangement. Our role is not to negotiate you down and require you accept every patient. Our role is to facilitate a patient-provider transaction based on each party's greatest needs at the moment intervention is required.</p>
 			</div>
 			<div class="large-4 columns">
-			<div class="img-wrapper mb-2">
+			<div class="img-wrapper centered mb-2">
 					<img src="img/prov-teamwork.png" alt="">
 				</div>
 				<p>Couple this proactive engagement with our dedicated care advocate program, a single, assigned care navigator who helps track indicated preoperative requirements and facilitates the patient-provider relationship and we are able to create a frictionless experience for all involved. By empowering patients AND the highest rated providers, we create value on both sides of the patient-provider transaction.</p>
@@ -163,15 +165,14 @@
 
 	<script src="js/app.js"></script>
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-90479224-1"></script>
 	<script>
-	  	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
-	  	ga('create', 'UA-90479224-1', 'auto');
-	  	ga('send', 'pageview');
-
+	  gtag('config', 'UA-90479224-1');
 	</script>
 
 </body>

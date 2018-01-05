@@ -1,17 +1,21 @@
 footer {
 	background-color: $primary-color;
+	border-top: 1px solid rgba($white, $W-dividers);
 	.footer-wrapper {
-		border-top: 1px solid rgba($white, $W-dividers);
 		padding: 3.75rem 0;
+		&.small {
+			border-top: 1px solid rgba($white, $W-dividers);
+			padding: 1rem 0;
+		}
 	}
 	> * {
 		color: $white;
 	}
 	a {
-		color: $white;
+		color: rgba($white, $W-subtext);
 		&:hover {
 			color: $white;
-			text-decoration: underline;
+			text-decoration: none;
 		}
 	}
 }
