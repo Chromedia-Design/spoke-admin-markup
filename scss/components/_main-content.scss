@@ -416,9 +416,9 @@ section {
 		display: table-cell;
 		vertical-align: middle;
 		.login-wrap {
-			margin: 0 auto 1rem;
+			margin: 0 auto;
 			padding: 2rem;
-			width: 33.3%;
+			width: rem-calc(480);
 			background: $white;
 			border: 1px solid rgba($black, $B-dividers);
 			border-radius: 2px;
