@@ -245,6 +245,7 @@ textarea, div, label, select {
 
 textarea, .mce-tinymce {
 	margin: 0 0 1rem !important;
+	line-height: 1.5em;
 }
 
 [type='file'] {
@@ -262,7 +263,7 @@ textarea, .mce-tinymce {
 }
 
 [type='submit'], .cancel, .submit {
-	margin-top: 2rem;
+	margin-top: 1rem;
 	margin-bottom: 0;
 }
 

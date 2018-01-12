@@ -60,7 +60,7 @@
 
 .b-left-1 { border-left: solid 0.1rem $primary-light; }
 
-.b-all-1 { border: solid 0.1rem $primary-light}
+.b-all-1 { border: solid 0.1rem $primary-light, }
 
 .disabled {
 	pointer-events: none;
@@ -80,7 +80,7 @@
 
 .v-align-center {
 	display: flex;
-	align-items:center;
+	align-items: center;
 }
 
 .circle { 

@@ -11,6 +11,13 @@ footer {
 	> * {
 		color: $white;
 	}
+	.white {
+		color: rgba($white, $W-text);
+		&.subheader {
+			color: rgba($white, $W-subtext);
+			line-height: 1.5em;
+		}
+	}
 	a {
 		color: rgba($white, $W-subtext);
 		&:hover {

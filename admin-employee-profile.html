@@ -19,13 +19,31 @@
 				</header>
 				<ul class="menu vertical"  data-accordion-menu>
 					<li>
-						<a href="#"><i class="material-icons">dashboard</i> Dashboard</a>
+						<a href="advocate-dashboard.html"><i class="material-icons">dashboard</i> Dashboard</a>
 					</li>
 					<li class="is-active">
-						<a href="#"><i class="material-icons">wc</i> Patients</a>
-						<ul class="nested vertical menu is-active">
-							<li class="is-active">
-								<a href="#">All Patients</a>
+						<a href="advocate-employees.html"><i class="material-icons">face</i>Employees</a>
+					</li>
+					<li>
+						<a href="advocate-communications.html">Inbox</a>
+					</li>
+					<li>
+						<a href="#">Doctors</a>
+					</li>
+					<li>
+						<a href="advocate-facilities.html">Facilities</a>
+					</li>
+					<li>
+						<a href="#">Activity Logs</a>
+					</li>
+					<li>
+						<a href="advocate-profile.html"><i class="material-icons">account_circle</i> Profile</a>
+						<ul class="nested vertical menu">
+							<li>
+								<a href="advocate-profile.html">User Information</a>
+							</li>
+							<li>
+								<a href="advocate-password.html">Change My Password</a>
 							</li>
 						</ul>
 					</li>
@@ -44,15 +62,27 @@
 				  	</div>
 				  	<div class="top-bar-right">
 				    	<ul class="dropdown menu" data-dropdown-menu>
-				    		<li>
-				    			<a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">6</span></a>
+				    		<li class="drop-text">
+				    			<a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">24</span></a>
+				    			<ul class="notifications menu vertical">
+				          			<li>
+				          				<span>Admin Admin recently made changes to <a href="#">Denver Vail Orthopedics</a>.</span>
+				          			</li>
+				          			<li>
+				          				<span>Admin Admin recently made changes to <a href="#">Denver Vail Orthopedics</a>.</span>
+				          			</li>
+				          			<li>
+				          				<a href="#" class="button info hollow tiny expanded">View All</a>
+				          			</li>
+				        		</ul>
 			    			</li>
+			    			<li>
+				        		<a data-toggle="chatSupport"><i class="fa fa-phone-square fa-lg"></i><span class="success badge" id="notifCount">1</span></a>
+				      		</li>
 				      		<li>
-				        		<a href="#">Administrator</a>
+				        		<a href="#">Spoke Advocate &nbsp;</a>
 				        		<ul class="menu vertical">
-				          			<li><a href="#">One</a></li>
-				          			<li><a href="#">Two</a></li>
-				          			<li><a href="#">Three</a></li>
+				          			<li><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Sign Out</a></li>
 				        		</ul>
 				      		</li>
 				    	</ul>
@@ -89,6 +119,9 @@
 									<a href="advocate-employee-profile-v2.html"><i class="fa fa-address-book-o"></i> &nbsp;Overview</a>
 								</li>
 								<li>
+									<a href="advocate-employee-episode-v2.html"><i class="fa fa-stethoscope"></i> &nbsp;Episode Details</a>
+								</li>
+								<li>
 									<a href="advocate-employee-notes-v2.html"><i class="fa fa-sticky-note-o"></i> &nbsp;Notes</a>
 								</li>
 								<li>
@@ -96,9 +129,6 @@
 								</li>
 								<li>
 									<a href="advocate-employee-inbox-v2.html"><i class="fa fa-comment-o"></i> &nbsp;Inbox</a>
-								</li>
-								<li>
-									<a href="advocate-employee-episode-v2.html"><i class="fa fa-stethoscope"></i> &nbsp;Episode Details</a>
 								</li>
 							</ul>
 						</div>
@@ -112,7 +142,7 @@
 							</div>
 							<div class="auto columns">
 								<div class="button-align pull-right">
-									<a href= "admin-patient-edit.html" class="button secondary"><i class="fa fa-edit fa-fw"></i>&nbsp; Edit</a>
+									<a href= "admin-employee-edit.html" class="button secondary"><i class="fa fa-edit fa-fw"></i>&nbsp; Edit</a>
 								</div>
 							</div>
 						</div>	
@@ -158,30 +188,33 @@
 												</div>
 											</div>
 										</div>
+
+										<div class="row collapse label-block">
+											<div class="large-12 columns end">
+												<div class="label-group">
+													<p>Current Episode</p>
+													<h6>Total Knee Replacement</h6>
+												</div>
+											</div>
+										</div>
 									
 										<div class="row collapse label-block">
-											<div class="large-3 columns end">
+											<div class="large-4 columns end">
 												<div class="label-group">
 													<p>Policy #</p>
 													<h6>123-4567-890</h6>
 												</div>
 											</div>
-											<div class="large-3 columns end">
+											<div class="large-4 columns end">
 												<div class="label-group">
 													<p>Gender</p>
 													<h6>Male</h6>
 												</div>
 											</div>
-											<div class="large-3 columns end">
+											<div class="large-4 columns end">
 												<div class="label-group">
 													<p>Birthdate</p>
 													<h6>March 17, 1976</h6>
-												</div>
-											</div>
-											<div class="large-3 columns end">
-												<div class="label-group">
-													<p>Current Episode</p>
-													<h6>Total Knee Replacement</h6>
 												</div>
 											</div>
 										</div>
@@ -211,9 +244,9 @@
 							</div>
 						</div>
 
-						<div class="page-lead row align-middle">
+						<div class="row align-middle">
 							<div class="large-12 columns">
-								<span class="h5">Employee Milestones</span>
+								<span class="h5">Episode Milestones</span>
 							</div>
 						</div>
 
@@ -247,6 +280,8 @@
 							</div>
 						</div>
 
+
+
 					</div>
 
 				</div>
@@ -265,18 +300,19 @@
 	<script src="js/app.js"></script>
 
 	<script type="text/javascript">
+
+		var topBarHeight = $('.top-bar').outerHeight(true);
+
         $(function () {
             var timer;
-
             $(window).resize(function() {
                 clearTimeout(timer);
                 timer = setTimeout(function() {
-                  $('.site-nav, .content').css("height", $(window).height());
+                  $('#chatSupport, #chatSupport .offcanvas-area-inner, .site-nav, .content').css("height", $(window).height());
+                  $('.site-nav.secondary, #profileContent, #chatClient .chat-wrapper').css("height", $(window).height() - topBarHeight);
                 }, 40); 
             }).resize();
         });
-
-        
 
     </script>
 
