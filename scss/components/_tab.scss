@@ -1,6 +1,5 @@
 .tabs {
 	margin: 0 0 1rem;
-	font-weight: $global-weight-bold;
 	font-family: $body-font-family;
 	background: transparent;
 	border-top: none;
@@ -11,20 +10,30 @@
 		list-style: none;
 		display: inline-block;
 		text-decoration: none;
-		text-transform: uppercase;
 		background-color: transparent;
 		a {
+			font-weight: $global-weight-bold;
 			transition: 0.1s;
 			color: rgba($black, $B-subtext);
 			background-color: transparent;
-			letter-spacing: -0.3125px;
 			&:focus {
 				background-color: transparent;
 			}
 		}
 		&.is-active {
-			border-bottom: 0.2rem solid darken($warning-color, 5%);
+			position: relative;
+			// border-bottom: 0.2rem solid darken($warning-color, 5%);
 			background-color: transparent;
+			&:after {
+				position: absolute;
+				content: '';
+				bottom: -3px;
+				left: 30%;
+				margin: 0 auto;
+				width: 40%;
+				height: 0.2rem;
+				background-color: darken($warning-color, 5%);
+			}
 			a {
 				color: darken($warning-color, 5%);
 				background-color: transparent;
@@ -40,8 +49,8 @@
 					width: 0.875rem;
 					background-color: $alert-color;
 					border-radius: 50%;
-					right: 1.25rem;
-					top: .3rem;
+					right: 1rem;
+					top: .6rem;
 					border: 2px solid $white;
 				}
 			}
@@ -62,6 +71,9 @@
 				border-left: 0.2rem solid $warning-color;
 				border-bottom: none;
 				background-color: transparent;
+				&:after {
+					display: none;
+				}
 				a {
 					background-color: transparent;
 				}
@@ -81,30 +93,31 @@
 		margin-bottom: 0;
 		border-bottom: none;
 		li {
-			&.tabs-title {
-				text-transform: none;
-				> a {
-					padding: 1.25rem 1.5rem;
+			text-transform: none;
+			> a {
+				padding: 1.25rem 1.5rem;
+			}
+			&.is-active {
+				position: relative;
+				background-color: $white;
+				border-top-left-radius: 8px;
+				border-top-right-radius: 8px;
+				border-top: 1px solid rgba($black, $B-hinttext);
+				border-left: 1px solid rgba($black, $B-hinttext);
+				border-right: 1px solid rgba($black, $B-hinttext);
+				border-bottom: none;
+				&:after {
+					position: absolute;
+					content: "";
+					width: 100%;
+					border: 1px solid $white;
+					bottom: -1px;
+					z-index: 2;
+					background-color: transparent;
+				    height: 0;
+				    left: 0;
 				}
-				&.is-active {
-					position: relative;
-					background-color: $white;
-					border-top-left-radius: 8px;
-					border-top-right-radius: 8px;
-					border-top: 1px solid rgba($black, $B-hinttext);
-					border-left: 1px solid rgba($black, $B-hinttext);
-					border-right: 1px solid rgba($black, $B-hinttext);
-					border-bottom: none;
-					&:after {
-						position: absolute;
-						content: "";
-						width: 100%;
-						border: 1px solid $white;
-						bottom: -1px;
-						z-index: 2;
-					}
-				}
-			} 
+			}
 			&.tabs-text {
 				text-transform: none;
 			}
@@ -167,7 +180,7 @@
 
 .tabs-title {
 	> a {
-		padding: .675rem 1.5rem;
+		padding: 1rem 1.5rem;
 		font-size: 1rem;
 		line-height: 1.5em;
 	}

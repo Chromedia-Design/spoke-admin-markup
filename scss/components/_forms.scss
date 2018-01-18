@@ -83,6 +83,16 @@ form {
 				}
 			}
 		}
+		.input-group-field {
+			margin: 0;
+			border-radius: 0;
+		}
+		.input-group-button {
+			.button {
+				height: 4.3125rem;
+				font-size: 1.3125rem;
+			}
+		}
 	}
 }
 
@@ -565,14 +575,17 @@ label.image-upload {
 .trumbowyg-box,
 .trumbowyg-editor {
 	margin-top: 0;
-}
-
-.trumbowyg-editor {
 	color: $text-black;
 }
 
+.chat {
+	.trumbowyg-box,
+	.trumbowyg-editor {
+		min-height: rem-calc(90) !important;
+	}
+}
+	
 // Switches/Toggles
-
 .switch {
 	&.tiny {
 		.switch-paddle {

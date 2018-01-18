@@ -821,6 +821,62 @@
 	.button {
 		margin: 0;
 	}
+	&.attachments {
+		> li {
+			position: relative;
+			display: inline-block;
+			border: 1px solid rgba($black, $B-dividers);
+			padding: 2rem 1.5rem;
+			margin: 1rem 1rem 2rem 0;
+			color: rgba($black, $B-subtext);
+			background-color: $white;
+			.btn-close,
+			.btn-dl {
+				position: absolute;
+				display: block;
+				padding: 0.75rem;
+				margin: auto;
+				height: 3rem;
+				width: 3rem;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				text-align: center;
+				border-radius: 50%;
+				color: $alert-color;
+				background-color: $white;
+				border: 1px solid $alert-color;
+				transition: all ease-in 0.2s;
+				opacity: 0;
+			}
+			.btn-dl {
+				color: $success-color;
+				background-color: $white;
+				border: 1px solid $success-color;
+			}
+			.filename {
+				position: absolute;
+				color: rgba($black, $B-text);
+				font-family: $body-font-family;
+				font-size: rem-calc(12);
+				left: 0;
+				right: 0;
+				bottom: -1.5rem;
+				margin: auto;
+				width: 100%;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+			&:hover {
+				.btn-close,
+				.btn-dl {
+					opacity: 1;
+				}
+			}
+		}
+	}
 }
 
 // This is a list with triangular bullets

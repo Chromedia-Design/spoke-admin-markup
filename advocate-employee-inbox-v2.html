@@ -5,6 +5,7 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Spoke Admin Portal</title>
+	<link rel="stylesheet" href="js/trumbowyg/ui/trumbowyg.min.css">
 	<link rel="stylesheet" href="css/app.css">
 </head>
 <body>
@@ -459,6 +460,16 @@
 						                                <div class="small white-bg talk-bubble border tri-right right-in">
 						                                    <div class="talktext">
 						                                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui.</p>
+						                                        <ul class="attachments inline-list">
+								                        			<li class="file-attachment fa fa-file-o fa-lg">
+								                        				<a class="btn-dl"><i class="fa fa-cloud-download"></i></a>
+								                        				<span class="filename">Screenshot_Screen_2018-19-823.jpg</span>
+								                        			</li>
+								                        			<li class="image-attachment fa fa-file-image-o fa-lg">
+								                        				<a class="btn-dl"><i class="fa fa-cloud-download"></i></a>
+								                        				<span class="filename">Filename.jpg</span>
+								                        			</li>
+								                        		</ul>
 						                                    </div>
 						                                </div>
 						                                <span class="subheader timestamp"><small class="pull-left"><i class="fa fa-check-circle"></i>&nbsp; Seen</small><small>Jun 29, 4:30 PM</small>&nbsp; <a data-open="quickNote-10" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a></span>
@@ -478,7 +489,7 @@
 														    	</div>
 														  	</form>
 														</div>
-						                            </div>
+			 			                            </div>
 						                            <div class="media-object-section logo small">
 						                        		<div class="img-wrapper circle">
 						                                    <span class="h5 centered"><a data-open="quickNote-12" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Kevin Doyle">K</a></span>
@@ -491,12 +502,28 @@
 					                    <div class="footer-content">
 				                    		 <div class="collapse row">
 					                            <div class="medium-12 columns">
-					                                <textarea placeholder="Write a message..."></textarea>
+					                                <textarea class="wysiwyg" placeholder="Write a message..." style="height: 30px;"></textarea>
 					                            </div>
 					                        </div>
 					                        <div class="collapse row">
+					                        	<div class="columns">
+					                        		<span class="h6 subheader">Attachments</span>
+					                        		<ul class="attachments inline-list">
+					                        			<li class="file-attachment fa fa-file-o fa-lg">
+					                        				<a class="btn-close"><i class="fa fa-trash"></i></a>
+					                        				<span class="filename">Screenshot_Screen_2018-19-823.jpg</span>
+					                        			</li>
+					                        			<li class="image-attachment fa fa-file-image-o fa-lg">
+					                        				<a class="btn-close"><i class="fa fa-trash"></i></a>
+					                        				<span class="filename">Filename.jpg</span>
+					                        			</li>
+					                        		</ul>
+					                        	</div>
+					                        </div>
+					                        <div class="collapse row">
 					                            <div class="medium-12 columns">
-					                                <a href="" class="button success pull-right"><i class="fa fa-send"></i>&nbsp; Reply</a>
+					                            	<a href="" class="plain button info link pull-left"><i class="fa fa-paperclip"></i>&nbsp; Attach Files</a>
+					                                <a href="" class="button success pull-right"><i class="fa fa-send"></i>&nbsp; Submit</a>
 					                            </div>
 					                        </div>
 					                    </div>
@@ -521,7 +548,8 @@
 	<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
 	<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
 	<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
-
+	
+	<script src="js/trumbowyg/trumbowyg.min.js"></script>
 	<script src="js/app.js"></script>
 
 	<script type="text/javascript">
@@ -537,6 +565,10 @@
                   $('.site-nav.secondary, #profileContent, #chatClient .chat-wrapper').css("height", $(window).height() - topBarHeight);
                 }, 40); 
             }).resize();
+        });
+
+        $('.wysiwyg').trumbowyg({
+        	btns: [['bold', 'italic'], ['link']]
         });
 
     </script>
