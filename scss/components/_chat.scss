@@ -468,7 +468,7 @@
 			// Thread Styles Start
 			> .wrapper {
 				position: relative;
-				padding: 0.5rem 0.5rem 0rem 1.5rem;
+				padding: 0.5rem 0.5rem 0rem 2.5rem;
 				background: $primary-light;
 				border: 1px solid $light-gray-hex;
 				z-index: 5;
@@ -492,6 +492,7 @@
 				}
 				// Deep threads
 				.wrapper {
+					padding: 0.5rem 0.5rem 0rem 0.5rem;
 					background: $background-white;
 					margin-bottom: 0.5rem;
 					.talk-bubble.warning-bg .talktext:before {
