@@ -9,11 +9,9 @@
 	background-color: $secondary-color;
 	border-radius: 6px;
 	+ .timestamp {
+		margin: 0.3125rem 0 0.3125rem 1rem;
 		text-align: left;
 		clear: both;
-		.pull-left {
-			margin-right: 1rem;
-		}
 	}
 	&.small {
 		margin: 0 0 0 1rem;
@@ -49,6 +47,7 @@
 			border-color: $secondary-color transparent transparent $secondary-color;
 		}
 	}
+	// This is for the owner's dialog box
 	&.white-bg {
 		background-color: $white;
 		border: 1px solid $light-gray;
@@ -76,9 +75,11 @@
 			}
 		}
 		+ .timestamp {
+			margin: 0.3125rem 1rem 0.3125rem 0;
 			text-align: right;
 		}
 	}
+	// This is for the owner's call dialog box
 	&.success-bg {
 		background-color: $success-color;
 		border: 1px solid $success-color;
@@ -95,8 +96,8 @@
 			border-color: $success-color transparent transparent $success-color;
 		}
 		+ .timestamp {
+			margin: 0.3125rem 1rem 0.3125rem 0;
 			text-align: right;
-			margin-left: 1rem;
 		}
 	}
 	&.warning-bg {
@@ -128,7 +129,7 @@
 			}
 		}
 		+ .timestamp {
-			text-align: center;
+			margin: 0.3125rem 0;
 			line-height: 1.8em;
 		}
 	}
@@ -153,11 +154,26 @@
 .timestamp {
 	display: block;
 	text-align: left;
-	margin: 0.3125rem 0 0.3125rem 1rem;
+	margin: 0.3125rem 0;
 	font-size: 0.875rem;
 	color: rgba($black, $B-subtext);
 	.pull-left {
 		line-height: 1.8em;
+	}
+	.button-align,
+	.button-group {
+		margin: 0;
+		.button {
+			color: rgba($black, $B-subtext);
+			background: transparent;
+			padding: 0;
+			font-size:  0.875rem;
+			text-transform: none;
+			font-weight: normal;
+			&:hover {
+				color: rgba($black, $B-subtext);
+			}
+		}
 	}
 }
 
@@ -422,9 +438,13 @@
 	.side-content {
 		background-color: $background-white;
 		.wrapper {
-			display: inline-block;
+			position: relative;
+			display: block;
 			clear: both;
 			width: 90%;
+			padding: 0.5rem 1rem;
+			// border: 1px solid rgba($black, $B-dividers);
+			// border-radius: $global-radius;
 			// CSS for the notes
 			&.text-center {
 				position: relative;
@@ -442,32 +462,73 @@
 					display: inline-block;
 				}
 			}
-		}
-		.media-object {
-			margin: 0.5rem 0;
-			.media-object-section {
-				&.logo {
-					padding: 0 1rem;
-					text-decoration: none;
-					a {
-						text-decoration: none;
-					}
+			// Threading of Notes
+			$light-gray-hex:	#CBCFD3;
+
+			// Thread Styles Start
+			> .wrapper {
+				position: relative;
+				padding: 0.5rem 0.5rem 0rem 1.5rem;
+				background: $primary-light;
+				border: 1px solid $light-gray-hex;
+				z-index: 5;
+				border-radius: $global-radius;
+				.talk-bubble.warning-bg .talktext:before {
+					border-color: #d8d800 $primary-light;
+				}
+				&:before {
+				    position: absolute;
+				    content: '';
+				    width: 100%;
+				    height: 3rem;
+				    top: -3rem;
+				    left: -5rem;
+				    border-radius: $global-radius;
+				    background-color: transparent;
+				    border-left: 1px solid $light-gray-hex;
+				    border-top: 1px solid $light-gray-hex;
+				    border-bottom: 1px solid $light-gray-hex;
+				    z-index: 1;
+				}
+				// Deep threads
+				.wrapper {
+					background: $background-white;
+					margin-bottom: 0.5rem;
 				}
 			}
+		}
+		.media-object {
+			position: relative;
+			z-index: 9;
+			margin: 0;
+			clear: both;
 			// CSS for the owner's chat box
 			&.pull-right {
 				.media-object-section {
-					&:first-child {
-						padding-right: 0;
-					}
 					.talk-bubble {
 						float: right;
 						margin: 0 1rem 0 0;
-					}
-					.timestamp {
-						margin: 0.3125rem 1rem 0.3125rem 0;
+						&.warning-bg {
+							margin: 0;
+						}
 					}
 				}
+			}
+			//Button placement CSS (expanding threads)
+			.btn-expand {
+				position: absolute;
+				z-index: 10;
+				bottom: rem-calc(35);
+				left: rem-calc(-20);
+				width: rem-calc(25);
+				height: rem-calc(25);
+				background: $secondary-color;
+				color: $white;
+				font-size: rem-calc(12);
+				text-align: center;
+				border-radius: 50%;
+				vertical-align: middle;
+				line-height: 2em;
 			}
 		}
 	}
