@@ -494,6 +494,9 @@
 				.wrapper {
 					background: $background-white;
 					margin-bottom: 0.5rem;
+					.talk-bubble.warning-bg .talktext:before {
+						border-color: #d8d800 $background-white;
+					}
 				}
 			}
 		}
