@@ -266,6 +266,103 @@
 	margin-bottom: 0;
 }
 
+//Chat wrappers CSS
+.wrapper {
+	position: relative;
+	display: block;
+	clear: both;
+	width: 90%;
+	padding: 0.5rem 1rem;
+	// border: 1px solid rgba($black, $B-dividers);
+	// border-radius: $global-radius;
+	// CSS for the notes
+	.media-object {
+		position: relative;
+		z-index: 9;
+		margin: 0;
+		clear: both;
+		// CSS for the owner's chat box
+		&.pull-right {
+			.media-object-section {
+				.talk-bubble {
+					float: right;
+					margin: 0 1rem 0 0;
+					&.warning-bg {
+						margin: 0;
+					}
+				}
+			}
+		}
+		//Button placement CSS (expanding threads)
+		.btn-expand {
+			position: absolute;
+			z-index: 10;
+			bottom: rem-calc(35);
+			left: rem-calc(-20);
+			width: rem-calc(25);
+			height: rem-calc(25);
+			background: $secondary-color;
+			color: $white;
+			font-size: rem-calc(12);
+			text-align: center;
+			border-radius: 50%;
+			vertical-align: middle;
+			line-height: 2em;
+		}
+	}
+	&.text-center {
+		position: relative;
+		width: 100%;
+		&:before {
+			position: absolute;
+			content: '';
+			width: 100%;
+			height: 1px;
+			background-color: rgba($black, $B-dividers);
+			top: 33%;
+			left: 0;
+		}
+	}
+	// Threading of Notes
+	$light-gray-hex:	#CBCFD3;
+
+	// Thread Styles Start
+	> .wrapper {
+		position: relative;
+		padding: 0.5rem 0.5rem 0rem 2.5rem;
+		background: $primary-light;
+		border: 1px solid $light-gray-hex;
+		z-index: 5;
+		border-radius: $global-radius;
+		.talk-bubble.warning-bg .talktext:before {
+			border-color: #d8d800 $primary-light;
+		}
+		&:before {
+		    position: absolute;
+		    content: '';
+		    width: 100%;
+		    height: 3rem;
+		    top: -3rem;
+		    left: -5rem;
+		    border-radius: $global-radius;
+		    background-color: transparent;
+		    border-left: 1px solid $light-gray-hex;
+		    border-top: 1px solid $light-gray-hex;
+		    border-bottom: 1px solid $light-gray-hex;
+		    z-index: 1;
+		}
+		// Deep threads
+		.wrapper {
+			padding: 0.5rem 0.5rem 0rem 0.5rem;
+			background: $background-white;
+			margin-bottom: 0.5rem;
+			.talk-bubble.warning-bg .talktext:before {
+				border-color: #d8d800 $background-white;
+			}
+		}
+	}
+}
+
 // Main Chat Panels
 #chatSupport, #chatClient {
 	background-color: $white;
@@ -437,104 +534,6 @@
 	}
 	.side-content {
 		background-color: $background-white;
-		.wrapper {
-			position: relative;
-			display: block;
-			clear: both;
-			width: 90%;
-			padding: 0.5rem 1rem;
-			// border: 1px solid rgba($black, $B-dividers);
-			// border-radius: $global-radius;
-			// CSS for the notes
-			&.text-center {
-				position: relative;
-				width: 100%;
-				&:before {
-					position: absolute;
-					content: '';
-					width: 100%;
-					height: 1px;
-					background-color: rgba($black, $B-dividers);
-					top: 33%;
-					left: 0;
-				}
-				.media-object-section {
-					display: inline-block;
-				}
-			}
-			// Threading of Notes
-			$light-gray-hex:	#CBCFD3;
-
-			// Thread Styles Start
-			> .wrapper {
-				position: relative;
-				padding: 0.5rem 0.5rem 0rem 2.5rem;
-				background: $primary-light;
-				border: 1px solid $light-gray-hex;
-				z-index: 5;
-				border-radius: $global-radius;
-				.talk-bubble.warning-bg .talktext:before {
-					border-color: #d8d800 $primary-light;
-				}
-				&:before {
-				    position: absolute;
-				    content: '';
-				    width: 100%;
-				    height: 3rem;
-				    top: -3rem;
-				    left: -5rem;
-				    border-radius: $global-radius;
-				    background-color: transparent;
-				    border-left: 1px solid $light-gray-hex;
-				    border-top: 1px solid $light-gray-hex;
-				    border-bottom: 1px solid $light-gray-hex;
-				    z-index: 1;
-				}
-				// Deep threads
-				.wrapper {
-					padding: 0.5rem 0.5rem 0rem 0.5rem;
-					background: $background-white;
-					margin-bottom: 0.5rem;
-					.talk-bubble.warning-bg .talktext:before {
-						border-color: #d8d800 $background-white;
-					}
-				}
-			}
-		}
-		.media-object {
-			position: relative;
-			z-index: 9;
-			margin: 0;
-			clear: both;
-			// CSS for the owner's chat box
-			&.pull-right {
-				.media-object-section {
-					.talk-bubble {
-						float: right;
-						margin: 0 1rem 0 0;
-						&.warning-bg {
-							margin: 0;
-						}
-					}
-				}
-			}
-			//Button placement CSS (expanding threads)
-			.btn-expand {
-				position: absolute;
-				z-index: 10;
-				bottom: rem-calc(35);
-				left: rem-calc(-20);
-				width: rem-calc(25);
-				height: rem-calc(25);
-				background: $secondary-color;
-				color: $white;
-				font-size: rem-calc(12);
-				text-align: center;
-				border-radius: 50%;
-				vertical-align: middle;
-				line-height: 2em;
-			}
-		}
 	}
 	.page-lead {
 		.h1,
