@@ -301,8 +301,9 @@
 			left: rem-calc(-20);
 			width: rem-calc(25);
 			height: rem-calc(25);
-			background: $secondary-color;
-			color: $white;
+			background: $white;
+			color: $secondary-color;
+			border: 1px solid $secondary-color;
 			font-size: rem-calc(12);
 			text-align: center;
 			border-radius: 50%;
@@ -329,7 +330,7 @@
 	// Thread Styles Start
 	> .wrapper {
 		position: relative;
-		padding: 0.5rem 0.5rem 0rem 2.5rem;
+		padding: 1rem 1rem 0.5rem 2.5rem;
 		background: $primary-light;
 		border: 1px solid $light-gray-hex;
 		z-index: 5;
@@ -353,7 +354,7 @@
 		}
 		// Deep threads
 		.wrapper {
-			padding: 0.5rem 0.5rem 0rem 0.5rem;
+			padding: 1rem 1rem 0.5rem 1rem;
 			background: $background-white;
 			margin-bottom: 0.5rem;
 			.talk-bubble.warning-bg .talktext:before {
