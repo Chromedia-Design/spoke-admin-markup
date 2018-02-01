@@ -313,7 +313,7 @@
 	}
 	&.text-center {
 		position: relative;
-		width: 100%;
+		min-width: 60rem;
 		&:before {
 			position: absolute;
 			content: '';
