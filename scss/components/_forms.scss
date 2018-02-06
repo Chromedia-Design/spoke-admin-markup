@@ -517,6 +517,7 @@ label.image-upload {
 
 .label-block {
 	.label-group {
+		margin-top: -1px;
 		padding: 0.5rem 1rem;
 		border: 1px solid rgba($black, $B-dividers);
 	}
@@ -524,13 +525,6 @@ label.image-upload {
 		&:not(:first-child) {
 			.label-group {
 				border-left: none;
-			}
-		}
-	}
-	+ .label-block {
-		.columns {
-			.label-group {
-				border-top: none;
 			}
 		}
 	}
