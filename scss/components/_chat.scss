@@ -313,7 +313,7 @@
 	}
 	&.text-center {
 		position: relative;
-		min-width: 60rem;
+		width: 100%;
 		&:before {
 			position: absolute;
 			content: '';
@@ -322,6 +322,15 @@
 			background-color: rgba($black, $B-dividers);
 			top: 33%;
 			left: 0;
+		}
+		.media-object {
+			display: inline-block;
+			margin: 0 auto;
+			.talk-bubble {
+				* {
+					text-align: left;
+				}
+			}
 		}
 	}
 	// Threading of Notes
