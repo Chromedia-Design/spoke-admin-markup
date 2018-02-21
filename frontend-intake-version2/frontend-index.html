@@ -391,88 +391,327 @@
 
         <div class="offcanvas-area-inner">
 
-            <div id="chatStatus" class="row">
-                <div class="large-12 columns">
-                   <div class="page-lead">
-                        <div class="media-object full-table">
-                            <div class="media-object-section logo middle">
-                                <div class="img-wrapper circle">
-                                    <img src= "../img/Smiling-Middle-Aged-Lady-Arms-Square.png">
-                                </div>
-                            </div>
-                            <div class="media-object-section middle">
-                                <p class="h5">
-                                    Sarah Bourdon <span class="badge success"></span><br>
-                                    <span class="subheader"><small>Last activity: a few minutes ago</small></span>
-                                </p>
-                            </div>
-                            <div class="media-object-section middle">
-                                <div class="button-align pull-right">
-                                    <a data-toggle="videoCall" class="button circle hollow"><i class="fa fa-video-camera"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="videoCall" class="row" data-toggler data-animate="fade-in fade-out" style="display: none;">
-                <div class="large-12 columns">
-                    <div id="videos">
-                        <div id="subscriber"></div>
-                        <div id="publisher"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="offcanvas-body">
-
-                <div class="side-content">
-                    <div class="inner">
-                        
-                        <div class="wrapper">
-                            <div class="media-object" data-animate="slide-in-right slide-out-right">
-                                <div class="media-object-section middle">
-                                    <div class="small talk-bubble border tri-right left-in">
-                                        <div class="talktext">
-                                            <p>If you have questions, you can reach me anytime by sending me a secure message or schedule a call and we can go over it on the phone together.</p>
-                                        </div>
+            <div data-reactroot>
+                
+                <div id="chatStatus" class="row">
+                    <div class="large-12 columns">
+                       <div class="page-lead">
+                            <div class="media-object full-table">
+                                <div class="media-object-section logo middle">
+                                    <div class="img-wrapper circle">
+                                        <img src= "../img/Smiling-Middle-Aged-Lady-Arms-Square.png">
                                     </div>
-                                    <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
                                 </div>
-                            </div>
-                        </div>
-                        
-                        <div class="wrapper pull-right">
-                            <div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
                                 <div class="media-object-section middle">
-                                    <div class="small white-bg talk-bubble border tri-right right-in">
-                                        <div class="talktext">
-                                            <p>OK.</p>
-                                        </div>
-                                    </div>
-                                    <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+                                    <p class="h5">
+                                        Sarah Bourdon <span class="badge success"></span><br>
+                                        <span class="subheader"><small>Last activity: a few minutes ago</small></span>
+                                    </p>
                                 </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="footer-content">
-                        <div class="collapse row">
-                            <div class="medium-12 columns">
-                                <textarea></textarea>
-                            </div>
-                        </div>
-                        <div class="collapse row">
-                            <div class="medium-12 columns">
-                                <a href="" class="button success pull-right"><i class="fa fa-send"></i></a>
+                                <div class="media-object-section middle">
+                                    <div class="button-align pull-right">
+                                        <a data-toggle="videoCall" class="button circle hollow"><i class="fa fa-video-camera"></i></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <div id="videoCall" class="row" data-toggler data-animate="fade-in fade-out">
+                    <div class="large-12 columns">
+                        <div id="videos">
+                            <div id="subscriber"></div>
+                            <div id="publisher"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offcanvas-body">
+
+                    <div class="side-content">
+                        <div class="inner">
+                            
+                            <div class="wrapper">
+                                <div class="media-object" data-animate="slide-in-right slide-out-right">
+                                    <div class="media-object-section middle">
+                                        <div class="small talk-bubble border tri-right left-in">
+                                            <div class="talktext">
+                                                <p>If you have questions, you can reach me anytime by sending me a secure message or schedule a call and we can go over it on the phone together.</p>
+                                            </div>
+                                        </div>
+                                        <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="wrapper pull-right">
+                                <div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+                                    <div class="media-object-section middle">
+                                        <div class="small white-bg talk-bubble border tri-right right-in">
+                                            <div class="talktext">
+                                                <p>OK.</p>
+                                            </div>
+                                        </div>
+                                        <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="wrapper">
+                                <div class="media-object" data-animate="slide-in-right slide-out-right">
+                                    <div class="media-object-section middle">
+                                        <div class="small talk-bubble border tri-right left-in">
+                                            <div class="talktext">
+                                                <p>If you have questions, you can reach me anytime by sending me a secure message or schedule a call and we can go over it on the phone together.</p>
+                                            </div>
+                                        </div>
+                                        <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="wrapper pull-right">
+                                <div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+                                    <div class="media-object-section middle">
+                                        <div class="small white-bg talk-bubble border tri-right right-in">
+                                            <div class="talktext">
+                                                <p>OK.</p>
+                                            </div>
+                                        </div>
+                                        <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="wrapper">
+                                <div class="media-object" data-animate="slide-in-right slide-out-right">
+                                    <div class="media-object-section middle">
+                                        <div class="small talk-bubble border tri-right left-in">
+                                            <div class="talktext">
+                                                <p>If you have questions, you can reach me anytime by sending me a secure message or schedule a call and we can go over it on the phone together.</p>
+                                            </div>
+                                        </div>
+                                        <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="wrapper pull-right">
+                                <div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+                                    <div class="media-object-section middle">
+                                        <div class="small white-bg talk-bubble border tri-right right-in">
+                                            <div class="talktext">
+                                                <p>OK.</p>
+                                            </div>
+                                        </div>
+                                        <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="wrapper">
+                                <div class="media-object" data-animate="slide-in-right slide-out-right">
+                                    <div class="media-object-section middle">
+                                        <div class="small talk-bubble border tri-right left-in">
+                                            <div class="talktext">
+                                                <p>If you have questions, you can reach me anytime by sending me a secure message or schedule a call and we can go over it on the phone together.</p>
+                                            </div>
+                                        </div>
+                                        <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="wrapper pull-right">
+                                <div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+                                    <div class="media-object-section middle">
+                                        <div class="small white-bg talk-bubble border tri-right right-in">
+                                            <div class="talktext">
+                                                <p>OK.</p>
+                                            </div>
+                                        </div>
+                                        <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="wrapper">
+                                <div class="media-object" data-animate="slide-in-right slide-out-right">
+                                    <div class="media-object-section middle">
+                                        <div class="small talk-bubble border tri-right left-in">
+                                            <div class="talktext">
+                                                <p>If you have questions, you can reach me anytime by sending me a secure message or schedule a call and we can go over it on the phone together.</p>
+                                            </div>
+                                        </div>
+                                        <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="wrapper pull-right">
+                                <div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+                                    <div class="media-object-section middle">
+                                        <div class="small white-bg talk-bubble border tri-right right-in">
+                                            <div class="talktext">
+                                                <p>OK.</p>
+                                            </div>
+                                        </div>
+                                        <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="wrapper">
+                                <div class="media-object" data-animate="slide-in-right slide-out-right">
+                                    <div class="media-object-section middle">
+                                        <div class="small talk-bubble border tri-right left-in">
+                                            <div class="talktext">
+                                                <p>If you have questions, you can reach me anytime by sending me a secure message or schedule a call and we can go over it on the phone together.</p>
+                                            </div>
+                                        </div>
+                                        <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="wrapper pull-right">
+                                <div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+                                    <div class="media-object-section middle">
+                                        <div class="small white-bg talk-bubble border tri-right right-in">
+                                            <div class="talktext">
+                                                <p>OK.</p>
+                                            </div>
+                                        </div>
+                                        <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="wrapper">
+                                <div class="media-object" data-animate="slide-in-right slide-out-right">
+                                    <div class="media-object-section middle">
+                                        <div class="small talk-bubble border tri-right left-in">
+                                            <div class="talktext">
+                                                <p>If you have questions, you can reach me anytime by sending me a secure message or schedule a call and we can go over it on the phone together.</p>
+                                            </div>
+                                        </div>
+                                        <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="wrapper pull-right">
+                                <div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+                                    <div class="media-object-section middle">
+                                        <div class="small white-bg talk-bubble border tri-right right-in">
+                                            <div class="talktext">
+                                                <p>OK.</p>
+                                            </div>
+                                        </div>
+                                        <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="wrapper">
+                                <div class="media-object" data-animate="slide-in-right slide-out-right">
+                                    <div class="media-object-section middle">
+                                        <div class="small talk-bubble border tri-right left-in">
+                                            <div class="talktext">
+                                                <p>If you have questions, you can reach me anytime by sending me a secure message or schedule a call and we can go over it on the phone together.</p>
+                                            </div>
+                                        </div>
+                                        <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="wrapper pull-right">
+                                <div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+                                    <div class="media-object-section middle">
+                                        <div class="small white-bg talk-bubble border tri-right right-in">
+                                            <div class="talktext">
+                                                <p>OK.</p>
+                                            </div>
+                                        </div>
+                                        <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="wrapper">
+                                <div class="media-object" data-animate="slide-in-right slide-out-right">
+                                    <div class="media-object-section middle">
+                                        <div class="small talk-bubble border tri-right left-in">
+                                            <div class="talktext">
+                                                <p>If you have questions, you can reach me anytime by sending me a secure message or schedule a call and we can go over it on the phone together.</p>
+                                            </div>
+                                        </div>
+                                        <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="wrapper pull-right">
+                                <div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+                                    <div class="media-object-section middle">
+                                        <div class="small white-bg talk-bubble border tri-right right-in">
+                                            <div class="talktext">
+                                                <p>OK.</p>
+                                            </div>
+                                        </div>
+                                        <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="wrapper">
+                                <div class="media-object" data-animate="slide-in-right slide-out-right">
+                                    <div class="media-object-section middle">
+                                        <div class="small talk-bubble border tri-right left-in">
+                                            <div class="talktext">
+                                                <p>If you have questions, you can reach me anytime by sending me a secure message or schedule a call and we can go over it on the phone together.</p>
+                                            </div>
+                                        </div>
+                                        <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="wrapper pull-right">
+                                <div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+                                    <div class="media-object-section middle">
+                                        <div class="small white-bg talk-bubble border tri-right right-in">
+                                            <div class="talktext">
+                                                <p>OK.</p>
+                                            </div>
+                                        </div>
+                                        <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="footer-content">
+                            <div class="collapse row">
+                                <div class="medium-12 columns">
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                            <div class="collapse row">
+                                <div class="medium-12 columns">
+                                    <a href="" class="button success pull-right"><i class="fa fa-send"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
+
         </div>
 
         <a data-close class="btn-close"><span aria-hidden="true">&times;</span></a>

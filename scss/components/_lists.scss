@@ -826,18 +826,18 @@
 			position: relative;
 			display: inline-block;
 			border: 1px solid rgba($black, $B-dividers);
-			padding: 2rem 1.5rem;
-			margin: 1rem 1rem 3rem 0;
+			padding: 1rem;
+			margin: 1rem 1rem 2rem 0;
 			color: rgba($black, $B-subtext);
 			background-color: $white;
 			.btn-close,
 			.btn-dl {
 				position: absolute;
 				display: block;
-				padding: 0.75rem;
+				padding: 0.325rem;
 				margin: auto;
-				height: 3rem;
-				width: 3rem;
+				height: 2rem;
+				width: 2rem;
 				top: 0;
 				bottom: 0;
 				left: 0;

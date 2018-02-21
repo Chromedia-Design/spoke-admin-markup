@@ -392,6 +392,21 @@
 		&::-moz-scrollbar {
 			display: none;
 		}
+		// React selectors
+		> [data-reactroot] {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start; /*align items in main axis*/
+			align-items: stretch; /* align items in Cross Axis */
+	    	align-content: stretch; /* Extra space in Cross Axis */
+	    	overflow-y: scroll;
+			&::-webkit-scrollbar {
+				display: none;
+			}
+			&::-moz-scrollbar {
+				display: none;
+			}
+		}
 	}
 	.offcanvas-header,
 	#chatStatus,
@@ -400,6 +415,7 @@
 		width: 100%;
 	}
 	#chatStatus {
+		display: block;
 		.h1,
 		.h2,
 		.h3,
@@ -417,6 +433,9 @@
 			padding: 0;
 			vertical-align: middle;
 		}
+	}
+	#videoCall {
+		display: block;
 	}
 	.offcanvas-body {
 		min-height: 570px;
@@ -454,6 +473,13 @@
 			border-top: 1px solid rgba($black, $B-dividers);
 			.input-group, .button {
 				margin-bottom: 0;
+			}
+			.tabs-title {
+				> a {
+					font-size: rem-calc(12);
+					text-transform: uppercase;
+					padding: 0 1.5rem 0.5rem;
+				}
 			}
 		}
 		&:only-child {
@@ -603,6 +629,13 @@
 		.chat-header,
 		.chat-body {
 			width: 100%;
+		}
+		.chat-header {
+			margin: 0.5rem 0;
+			.button,
+			.button-group {
+				margin-bottom: 0;
+			}
 		}
 		.chat-body {
 			flex: 1 1 auto;

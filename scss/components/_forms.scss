@@ -572,10 +572,17 @@ label.image-upload {
 	color: $text-black;
 }
 
+.trumbowyg-textarea {
+	margin: 0 !important;
+}
+
 .chat {
 	.trumbowyg-box,
 	.trumbowyg-editor {
-		min-height: rem-calc(90) !important;
+		min-height: rem-calc(67) !important;
+	}
+	.trumbowyg-editor {
+		padding: 0.5rem !important;
 	}
 }
 	
