@@ -175,7 +175,7 @@
 						                            <div class="media-object-section middle">
 						                                <div class="small talk-bubble border tri-right left-in">
 						                                    <div class="talktext">
-						                                        <p>Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+						                                        <p>Test <a href="#">This is a test</a>.</p>
 						                                    </div>
 						                                </div>
 						                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small>&nbsp; <a data-open="quickNote-3" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a></span>
@@ -196,7 +196,100 @@
 														  	</form>
 														</div>
 						                            </div>
+
+						                            <!-- Appears when entry has subthreads	 -->
+					                        	 	<a class="btn-expand" data-toggle="threadLayer1"><i class="fa fa-plus"></i></a>
 						                        </div>
+												
+												<!-- First Thread Layer -->
+												<div id="threadLayer1" class="wrapper pull-right" data-toggler data-animate="fade-in fade-out">
+													<div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+							                            <div class="media-object-section middle">
+							                                <div class="small warning-bg talk-bubble">
+							                                    <div class="talktext">
+							                                        <p>Test <a href="#">This is a test.</a></p>
+							                                    </div>
+							                                </div>
+							                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small>&nbsp;
+							                                	<div class="button-align pull-right">
+							                                		<a href="#" class="button"><i class="fa fa-star-o"></i>&nbsp; Pin This Note</a>
+							                                		<a data-open="quickNote-7" data-tooltip aria-haspopup="true" class="button has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a>
+							                                	</div>
+						                                	</span>
+							                            </div>
+							                            <div class="media-object-section logo small">
+							                        		<div class="img-wrapper circle">
+							                                    <span class="h5 centered"><a data-open="quickNote-12" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Kevin Doyle">K</a></span>
+							                                </div>
+							                        	</div>
+							                        	<!-- Appears when entry has subthreads	 -->
+					                        	 		<a class="btn-expand" data-toggle="threadLayer2"><i class="fa fa-plus"></i></a>
+							                        </div>
+							                        <!-- Second Layer -->
+							                        <div id="threadLayer2" class="wrapper pull-right" data-toggler data-animate="fade-in fade-out">
+														<div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+								                            <div class="media-object-section middle">
+								                                <div class="small warning-bg talk-bubble">
+								                                    <div class="talktext">
+								                                        <p>This is a relational note to the note made above.</p>
+								                                    </div>
+								                                </div>
+								                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small>&nbsp;
+								                                	<div class="button-align pull-right">
+								                                		<a href="#" class="button"><i class="fa fa-star-o"></i>&nbsp; Pin This Note</a>
+								                                		
+								                                	</div>
+							                                	</span>
+								                            </div>
+								                            <div class="media-object-section logo small">
+								                        		<div class="img-wrapper circle">
+								                                    <span class="h5 centered"><a data-open="quickNote-12" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Kevin Doyle">K</a></span>
+								                                </div>
+								                        	</div>
+								                        </div>
+								                        <div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+								                            <div class="media-object-section middle">
+								                                <div class="small warning-bg talk-bubble">
+								                                    <div class="talktext">
+								                                        <p>This is a relational note to the same note above this group.</p>
+								                                    </div>
+								                                </div>
+								                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small>&nbsp;
+								                                	<div class="button-align pull-right">
+								                                		<a href="#" class="button"><i class="fa fa-star-o"></i>&nbsp; Pin This Note</a>
+								                                		
+								                                	</div>
+							                                	</span>
+								                            </div>
+								                            <div class="media-object-section logo small">
+								                        		<div class="img-wrapper circle">
+								                                    <span class="h5 centered"><a data-open="quickNote-12" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Kevin Doyle">K</a></span>
+								                                </div>
+								                        	</div>
+								                        </div>
+													</div>
+													<div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+							                            <div class="media-object-section middle">
+							                                <div class="small warning-bg talk-bubble">
+							                                    <div class="talktext">
+							                                        <p>This is a relational note to the call made above. This is a long one since I want to test the behavior when the content gets too large.</p>
+							                                    </div>
+							                                </div>
+							                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small>&nbsp;
+							                                	<div class="button-align pull-right">
+							                                		<a href="#" class="button"><i class="fa fa-star-o"></i>&nbsp; Pin This Note</a>
+							                                		<a data-open="quickNote-7" data-tooltip aria-haspopup="true" class="button has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a>
+							                                	</div>
+						                                	</span>
+							                            </div>
+							                            <div class="media-object-section logo small">
+							                        		<div class="img-wrapper circle">
+							                                    <span class="h5 centered"><a data-open="quickNote-12" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Kevin Doyle">K</a></span>
+							                                </div>
+							                        	</div>
+							                        </div>
+												</div>
+
 											</div>
 					                        
 											<div class="wrapper pull-right">
@@ -204,7 +297,7 @@
 						                            <div class="media-object-section middle">
 						                                <div class="small white-bg talk-bubble border tri-right right-in">
 						                                    <div class="talktext">
-						                                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui.</p>
+						                                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. <a href="#">This is a test.</a></p>
 						                                    </div>
 						                                </div>
 						                                <span class="subheader timestamp"><small class="pull-left"><i class="fa fa-check-circle"></i>&nbsp; Seen</small><small>Jun 29, 4:30 PM</small>&nbsp; <a data-open="quickNote-4" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a></span>
@@ -230,7 +323,99 @@
 						                                    <span class="h5 centered"><a data-open="quickNote-12" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Kevin Doyle">K</a></span>
 						                                </div>
 						                        	</div>
+
+						                        	<!-- Appears when entry has subthreads	 -->
+					                        	 	<a class="btn-expand" data-toggle="threadLayer9"><i class="fa fa-plus"></i></a>
 						                        </div>
+
+						                        <!-- First Thread Layer -->
+												<div id="threadLayer9" class="wrapper pull-right" data-toggler data-animate="fade-in fade-out">
+													<div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+							                            <div class="media-object-section middle">
+							                                <div class="small warning-bg talk-bubble">
+							                                    <div class="talktext">
+							                                        <p>Test <a href="#">This is a test.</a></p>
+							                                    </div>
+							                                </div>
+							                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small>&nbsp;
+							                                	<div class="button-align pull-right">
+							                                		<a href="#" class="button"><i class="fa fa-star-o"></i>&nbsp; Pin This Note</a>
+							                                		<a data-open="quickNote-7" data-tooltip aria-haspopup="true" class="button has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a>
+							                                	</div>
+						                                	</span>
+							                            </div>
+							                            <div class="media-object-section logo small">
+							                        		<div class="img-wrapper circle">
+							                                    <span class="h5 centered"><a data-open="quickNote-12" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Kevin Doyle">K</a></span>
+							                                </div>
+							                        	</div>
+							                        	<!-- Appears when entry has subthreads	 -->
+					                        	 		<a class="btn-expand" data-toggle="threadLayer10"><i class="fa fa-plus"></i></a>
+							                        </div>
+							                        <!-- Second Layer -->
+							                        <div id="threadLayer10" class="wrapper pull-right" data-toggler data-animate="fade-in fade-out">
+														<div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+								                            <div class="media-object-section middle">
+								                                <div class="small warning-bg talk-bubble">
+								                                    <div class="talktext">
+								                                        <p>This is a relational note to the note made above.</p>
+								                                    </div>
+								                                </div>
+								                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small>&nbsp;
+								                                	<div class="button-align pull-right">
+								                                		<a href="#" class="button"><i class="fa fa-star-o"></i>&nbsp; Pin This Note</a>
+								                                		
+								                                	</div>
+							                                	</span>
+								                            </div>
+								                            <div class="media-object-section logo small">
+								                        		<div class="img-wrapper circle">
+								                                    <span class="h5 centered"><a data-open="quickNote-12" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Kevin Doyle">K</a></span>
+								                                </div>
+								                        	</div>
+								                        </div>
+								                        <div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+								                            <div class="media-object-section middle">
+								                                <div class="small warning-bg talk-bubble">
+								                                    <div class="talktext">
+								                                        <p>This is a relational note to the same note above this group.</p>
+								                                    </div>
+								                                </div>
+								                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small>&nbsp;
+								                                	<div class="button-align pull-right">
+								                                		<a href="#" class="button"><i class="fa fa-star-o"></i>&nbsp; Pin This Note</a>
+								                                		
+								                                	</div>
+							                                	</span>
+								                            </div>
+								                            <div class="media-object-section logo small">
+								                        		<div class="img-wrapper circle">
+								                                    <span class="h5 centered"><a data-open="quickNote-12" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Kevin Doyle">K</a></span>
+								                                </div>
+								                        	</div>
+								                        </div>
+													</div>
+													<div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+							                            <div class="media-object-section middle">
+							                                <div class="small warning-bg talk-bubble">
+							                                    <div class="talktext">
+							                                        <p>This is a relational note to the call made above. This is a long one since I want to test the behavior when the content gets too large.</p>
+							                                    </div>
+							                                </div>
+							                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small>&nbsp;
+							                                	<div class="button-align pull-right">
+							                                		<a href="#" class="button"><i class="fa fa-star-o"></i>&nbsp; Pin This Note</a>
+							                                		<a data-open="quickNote-7" data-tooltip aria-haspopup="true" class="button has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a>
+							                                	</div>
+						                                	</span>
+							                            </div>
+							                            <div class="media-object-section logo small">
+							                        		<div class="img-wrapper circle">
+							                                    <span class="h5 centered"><a data-open="quickNote-12" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Kevin Doyle">K</a></span>
+							                                </div>
+							                        	</div>
+							                        </div>
+												</div>
 											</div>
 					                        	
 											<div class="wrapper pull-right">
@@ -265,11 +450,11 @@
 						                                </div>
 						                        	</div>
 						                        	<!-- Appears when entry has subthreads	 -->
-					                        	 	<a class="btn-expand" data-toggle="threadLayer1"><i class="fa fa-plus"></i></a>
+					                        	 	<a class="btn-expand" data-toggle="threadLayer3"><i class="fa fa-plus"></i></a>
 						                        </div>
 												
 												<!-- First Thread Layer -->
-												<div id="threadLayer1" class="wrapper pull-right" data-toggler data-animate="fade-in fade-out">
+												<div id="threadLayer3" class="wrapper pull-right" data-toggler data-animate="fade-in fade-out">
 													<div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
 							                            <div class="media-object-section middle">
 							                                <div class="small warning-bg talk-bubble">
@@ -290,10 +475,10 @@
 							                                </div>
 							                        	</div>
 							                        	<!-- Appears when entry has subthreads	 -->
-					                        	 		<a class="btn-expand" data-toggle="threadLayer2"><i class="fa fa-plus"></i></a>
+					                        	 		<a class="btn-expand" data-toggle="threadLayer4"><i class="fa fa-plus"></i></a>
 							                        </div>
 							                        <!-- Second Layer -->
-							                        <div id="threadLayer2" class="wrapper pull-right" data-toggler data-animate="fade-in fade-out">
+							                        <div id="threadLayer4" class="wrapper pull-right" data-toggler data-animate="fade-in fade-out">
 														<div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
 								                            <div class="media-object-section middle">
 								                                <div class="small warning-bg talk-bubble">
@@ -380,7 +565,98 @@
 						                                    <span class="h5 centered"><a data-open="quickNote-12" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Kevin Doyle">K</a></span>
 						                                </div>
 						                        	</div>
+						                        	<!-- Appears when entry has subthreads	 -->
+					                        	 	<a class="btn-expand" data-toggle="threadLayer5"><i class="fa fa-plus"></i></a>
 						                        </div>
+
+						                        <!-- First Thread Layer -->
+												<div id="threadLayer5" class="wrapper pull-right" data-toggler data-animate="fade-in fade-out">
+													<div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+							                            <div class="media-object-section middle">
+							                                <div class="small warning-bg talk-bubble">
+							                                    <div class="talktext">
+							                                        <p>This is a relational note to the call made above. This is a long one since I want to test the behavior when the content gets too large.</p>
+							                                    </div>
+							                                </div>
+							                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small>&nbsp;
+							                                	<div class="button-align pull-right">
+							                                		<a href="#" class="button"><i class="fa fa-star-o"></i>&nbsp; Pin This Note</a>
+							                                		<a data-open="quickNote-7" data-tooltip aria-haspopup="true" class="button has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a>
+							                                	</div>
+						                                	</span>
+							                            </div>
+							                            <div class="media-object-section logo small">
+							                        		<div class="img-wrapper circle">
+							                                    <span class="h5 centered"><a data-open="quickNote-12" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Kevin Doyle">K</a></span>
+							                                </div>
+							                        	</div>
+							                        	<!-- Appears when entry has subthreads	 -->
+					                        	 		<a class="btn-expand" data-toggle="threadLayer6"><i class="fa fa-plus"></i></a>
+							                        </div>
+							                        <!-- Second Layer -->
+							                        <div id="threadLayer6" class="wrapper pull-right" data-toggler data-animate="fade-in fade-out">
+														<div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+								                            <div class="media-object-section middle">
+								                                <div class="small warning-bg talk-bubble">
+								                                    <div class="talktext">
+								                                        <p>This is a relational note to the note made above.</p>
+								                                    </div>
+								                                </div>
+								                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small>&nbsp;
+								                                	<div class="button-align pull-right">
+								                                		<a href="#" class="button"><i class="fa fa-star-o"></i>&nbsp; Pin This Note</a>
+								                                		
+								                                	</div>
+							                                	</span>
+								                            </div>
+								                            <div class="media-object-section logo small">
+								                        		<div class="img-wrapper circle">
+								                                    <span class="h5 centered"><a data-open="quickNote-12" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Kevin Doyle">K</a></span>
+								                                </div>
+								                        	</div>
+								                        </div>
+								                        <div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+								                            <div class="media-object-section middle">
+								                                <div class="small warning-bg talk-bubble">
+								                                    <div class="talktext">
+								                                        <p>This is a relational note to the same note above this group.</p>
+								                                    </div>
+								                                </div>
+								                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small>&nbsp;
+								                                	<div class="button-align pull-right">
+								                                		<a href="#" class="button"><i class="fa fa-star-o"></i>&nbsp; Pin This Note</a>
+								                                		
+								                                	</div>
+							                                	</span>
+								                            </div>
+								                            <div class="media-object-section logo small">
+								                        		<div class="img-wrapper circle">
+								                                    <span class="h5 centered"><a data-open="quickNote-12" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Kevin Doyle">K</a></span>
+								                                </div>
+								                        	</div>
+								                        </div>
+													</div>
+													<div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+							                            <div class="media-object-section middle">
+							                                <div class="small warning-bg talk-bubble">
+							                                    <div class="talktext">
+							                                        <p>This is a relational note to the call made above. This is a long one since I want to test the behavior when the content gets too large.</p>
+							                                    </div>
+							                                </div>
+							                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small>&nbsp;
+							                                	<div class="button-align pull-right">
+							                                		<a href="#" class="button"><i class="fa fa-star-o"></i>&nbsp; Pin This Note</a>
+							                                		<a data-open="quickNote-7" data-tooltip aria-haspopup="true" class="button has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a>
+							                                	</div>
+						                                	</span>
+							                            </div>
+							                            <div class="media-object-section logo small">
+							                        		<div class="img-wrapper circle">
+							                                    <span class="h5 centered"><a data-open="quickNote-12" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Kevin Doyle">K</a></span>
+							                                </div>
+							                        	</div>
+							                        </div>
+												</div>
 											</div>
 
 											<div class="wrapper text-center">
@@ -409,7 +685,100 @@
 														  	</form>
 														</div>
 						                            </div>
+						                            <!-- Appears when entry has subthreads	 -->
+					                        	 	<a class="btn-expand" data-toggle="threadLayer7"><i class="fa fa-plus"></i></a>
 						                        </div>
+												
+												
+						                        <!-- First Thread Layer -->
+												<div id="threadLayer7" class="wrapper pull-right" data-toggler data-animate="fade-in fade-out">
+													<div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+							                            <div class="media-object-section middle">
+							                                <div class="small warning-bg talk-bubble">
+							                                    <div class="talktext">
+							                                        <p>This is a relational note to the call made above. This is a long one since I want to test the behavior when the content gets too large.</p>
+							                                    </div>
+							                                </div>
+							                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small>&nbsp;
+							                                	<div class="button-align pull-right">
+							                                		<a href="#" class="button"><i class="fa fa-star-o"></i>&nbsp; Pin This Note</a>
+							                                		<a data-open="quickNote-7" data-tooltip aria-haspopup="true" class="button has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a>
+							                                	</div>
+						                                	</span>
+							                            </div>
+							                            <div class="media-object-section logo small">
+							                        		<div class="img-wrapper circle">
+							                                    <span class="h5 centered"><a data-open="quickNote-12" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Kevin Doyle">K</a></span>
+							                                </div>
+							                        	</div>
+							                        	<!-- Appears when entry has subthreads	 -->
+					                        	 		<a class="btn-expand" data-toggle="threadLayer8"><i class="fa fa-plus"></i></a>
+							                        </div>
+							                        <!-- Second Layer -->
+							                        <div id="threadLayer8" class="wrapper pull-right" data-toggler data-animate="fade-in fade-out">
+														<div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+								                            <div class="media-object-section middle">
+								                                <div class="small warning-bg talk-bubble">
+								                                    <div class="talktext">
+								                                        <p>This is a relational note to the note made above.</p>
+								                                    </div>
+								                                </div>
+								                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small>&nbsp;
+								                                	<div class="button-align pull-right">
+								                                		<a href="#" class="button"><i class="fa fa-star-o"></i>&nbsp; Pin This Note</a>
+								                                		
+								                                	</div>
+							                                	</span>
+								                            </div>
+								                            <div class="media-object-section logo small">
+								                        		<div class="img-wrapper circle">
+								                                    <span class="h5 centered"><a data-open="quickNote-12" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Kevin Doyle">K</a></span>
+								                                </div>
+								                        	</div>
+								                        </div>
+								                        <div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+								                            <div class="media-object-section middle">
+								                                <div class="small warning-bg talk-bubble">
+								                                    <div class="talktext">
+								                                        <p>This is a relational note to the same note above this group.</p>
+								                                    </div>
+								                                </div>
+								                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small>&nbsp;
+								                                	<div class="button-align pull-right">
+								                                		<a href="#" class="button"><i class="fa fa-star-o"></i>&nbsp; Pin This Note</a>
+								                                		
+								                                	</div>
+							                                	</span>
+								                            </div>
+								                            <div class="media-object-section logo small">
+								                        		<div class="img-wrapper circle">
+								                                    <span class="h5 centered"><a data-open="quickNote-12" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Kevin Doyle">K</a></span>
+								                                </div>
+								                        	</div>
+								                        </div>
+													</div>
+													<div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+							                            <div class="media-object-section middle">
+							                                <div class="small warning-bg talk-bubble">
+							                                    <div class="talktext">
+							                                        <p>This is a relational note to the call made above. This is a long one since I want to test the behavior when the content gets too large.</p>
+							                                    </div>
+							                                </div>
+							                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small>&nbsp;
+							                                	<div class="button-align pull-right">
+							                                		<a href="#" class="button"><i class="fa fa-star-o"></i>&nbsp; Pin This Note</a>
+							                                		<a data-open="quickNote-7" data-tooltip aria-haspopup="true" class="button has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-sticky-note-o"></i></a>
+							                                	</div>
+						                                	</span>
+							                            </div>
+							                            <div class="media-object-section logo small">
+							                        		<div class="img-wrapper circle">
+							                                    <span class="h5 centered"><a data-open="quickNote-12" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Kevin Doyle">K</a></span>
+							                                </div>
+							                        	</div>
+							                        </div>
+												</div>
+
 											</div>
 					                        
 											<div class="wrapper text-center">
