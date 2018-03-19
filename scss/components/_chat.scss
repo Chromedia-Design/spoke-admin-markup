@@ -73,6 +73,9 @@
 			.h6 {
 				color: $text-black;
 			}
+			a {
+				color: $secondary-color;
+			}
 		}
 		+ .timestamp {
 			margin: 0.3125rem 1rem 0.3125rem 0;
@@ -95,9 +98,30 @@
 			border: 9px solid;
 			border-color: $success-color transparent transparent $success-color;
 		}
+		.talktext {
+			a {
+				text-decoration: none;
+			}
+		}
 		+ .timestamp {
 			margin: 0.3125rem 1rem 0.3125rem 0;
 			text-align: right;
+		}
+	}
+	&.alert-bg {
+		background-color: $alert-color;
+		border: 1px solid $alert-color;
+		&.tri-right.border.right-in:before {
+			right: -20px;
+			top: 15px;
+			border: 10px solid;
+			border-color: $alert-color transparent transparent $alert-color;
+		}
+		&.tri-right.right-in:after {
+			right: -17px;
+			top: 16px;
+			border: 9px solid;
+			border-color: $alert-color transparent transparent $alert-color;
 		}
 	}
 	&.warning-bg {
@@ -106,6 +130,7 @@
 		border: 1px solid #FFFFA5;
 		border-radius: 1px;
 		margin: 0;
+		width: 100%;
 		// box-shadow: 2px 2px 10px 5px rgba($black, $B-dividers);
 		&.tri-right.border.right-in:before {
 			display: none;
@@ -116,6 +141,9 @@
 		.talktext {
 			position: relative;
 			color: $text-black;
+			a {
+				color: $text-black;
+			}
 			&:before {
 				content: "";
 			  	position: absolute;
@@ -138,7 +166,8 @@
 		background-color: $background-white;
 		border: $light-gray;
 		border-radius: 1px;
-		padding: 0.325rem 1.5rem;
+		margin: 0;
+		padding: 0.75rem 1rem;
 		.talktext {
 			color: $text-black;
 			p {
@@ -160,9 +189,21 @@
 	.pull-left {
 		line-height: 1.8em;
 	}
+	.button {
+		margin: 0 0 0 1rem;
+		color: rgba($black, $B-subtext);
+		background: transparent;
+		padding: 0;
+		font-size:  0.875rem;
+		text-transform: none;
+		font-weight: normal;
+		&:hover {
+			color: rgba($black, $B-subtext);
+		}
+	}
 	.button-align,
 	.button-group {
-		margin: 0;
+		margin: 0 0 0 1rem;
 		.button {
 			color: rgba($black, $B-subtext);
 			background: transparent;
@@ -197,6 +238,10 @@
 		&:last-child {
 			margin-bottom: 0;
 		}
+	}
+	a {
+		color: $white;
+		text-decoration: underline;
 	}
 	.attachments {
 		> li {
@@ -280,9 +325,11 @@
 		position: relative;
 		z-index: 9;
 		margin: 0;
-		clear: both;
+		float: left;
 		// CSS for the owner's chat box
 		&.pull-right {
+			float: right;
+			clear: both;
 			.media-object-section {
 				.talk-bubble {
 					float: right;
@@ -298,7 +345,7 @@
 			position: absolute;
 			z-index: 10;
 			bottom: rem-calc(35);
-			left: rem-calc(-20);
+			right: rem-calc(12);
 			width: rem-calc(25);
 			height: rem-calc(25);
 			background: $white;
@@ -311,6 +358,10 @@
 			line-height: 2em;
 		}
 	}
+
+	// Threading of Notes
+	$light-gray-hex:	#CBCFD3;
+
 	&.text-center {
 		position: relative;
 		width: 100%;
@@ -320,26 +371,43 @@
 			width: 100%;
 			height: 1px;
 			background-color: rgba($black, $B-dividers);
-			top: 33%;
+			top: 30%;
 			left: 0;
 		}
-		.media-object {
+		> .media-object {
 			display: inline-block;
 			margin: 0 auto;
+			float: none;
 			.talk-bubble {
 				* {
 					text-align: left;
 				}
 			}
+			//Button placement CSS (expanding threads)
+			.btn-expand {
+				left: rem-calc(-14);
+			}
+		}
+		> .wrapper {
+			&:before {
+				width: 50%;
+				height: 3rem; 
+				top: -3rem;
+			    left: -5rem;
+			    border-right: none;
+			    border-left: 1px solid $light-gray-hex;
+			}
+			.talktext {
+				text-align: left;
+			}
 		}
 	}
-	// Threading of Notes
-	$light-gray-hex:	#CBCFD3;
 
 	// Thread Styles Start
 	> .wrapper {
 		position: relative;
 		padding: 1rem 1rem 0.5rem 2.5rem;
+		margin: 0 0 1rem;
 		background: $primary-light;
 		border: 1px solid $light-gray-hex;
 		z-index: 5;
@@ -351,12 +419,12 @@
 		    position: absolute;
 		    content: '';
 		    width: 100%;
-		    height: 3rem;
-		    top: -3rem;
-		    left: -5rem;
+		    height: rem-calc(49);
+		    top: rem-calc(-49);
+		    right: -5rem;
 		    border-radius: $global-radius;
 		    background-color: transparent;
-		    border-left: 1px solid $light-gray-hex;
+		    border-right: 1px solid $light-gray-hex;
 		    border-top: 1px solid $light-gray-hex;
 		    border-bottom: 1px solid $light-gray-hex;
 		    z-index: 1;
@@ -371,14 +439,26 @@
 			}
 		}
 	}
+	&.pull-right {
+		.media-object {
+			//Button placement CSS (expanding threads)
+			.btn-expand {
+				left: rem-calc(-14);
+			}
+		}
+		.wrapper {
+			&:before {
+			    left: -5rem;
+			    border-right: none;
+			    border-left: 1px solid $light-gray-hex;
+			}
+		}
+	}
 }
 
 // Main Chat Panels
 #chatSupport, #chatClient {
 	background-color: $white;
-	a {
-		text-decoration: none;
-	}
 	.offcanvas-area-inner {
 		display: flex;
 		flex-direction: column;
@@ -395,6 +475,7 @@
 		// React selectors
 		> [data-reactroot] {
 			display: flex;
+			height: 100%;
 			flex-direction: column;
 			justify-content: flex-start; /*align items in main axis*/
 			align-items: stretch; /* align items in Cross Axis */
@@ -460,12 +541,13 @@
 			flex: 1 1 auto;
 			padding: 1rem 0;
 			overflow-y: scroll;
-			&::-webkit-scrollbar {
-				display: none;
-			}
-			&::-moz-scrollbar {
-				display: none;
-			}
+			overflow-x: hidden;
+			// &::-webkit-scrollbar {
+			// 	display: none;
+			// }
+			// &::-moz-scrollbar {
+			// 	display: none;
+			// }
 		}
 		.footer-content {
 			padding: 1rem;

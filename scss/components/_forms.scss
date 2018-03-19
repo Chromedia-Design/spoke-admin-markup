@@ -579,10 +579,39 @@ label.image-upload {
 .chat {
 	.trumbowyg-box,
 	.trumbowyg-editor {
-		min-height: rem-calc(67) !important;
+		min-height: rem-calc(192) !important;
 	}
 	.trumbowyg-editor {
 		padding: 0.5rem !important;
+	}
+	.editor-one {
+		.trumbowyg-editor {
+			min-height: rem-calc(192) !important;
+		}
+	}
+}
+
+.rdw-editor-toolbar {
+	margin-bottom: 0 !important;
+}
+
+.rdw-editor-main {
+	border: 1px solid rgba($black, $B-dividers);
+	padding: 0.5rem;
+    border-top: none;
+    margin-bottom: 1rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    height: rem-calc(100) !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	&::-moz-scrollbar {
+		display: none;
 	}
 }
 	
