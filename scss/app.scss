@@ -54,12 +54,12 @@
 @import 'vendor/font-awesome/font-awesome';
 
 // Components
+@import 'components/_mixins';
 @import 'components/_typography';
 @import 'components/_color';
 @import 'components/_utilities';
 @import 'components/_header';
 @import 'components/_main-content';
-@import 'components/_top-bar';
 @import 'components/_badge';
 @import 'components/_buttons';
 @import 'components/_forms';

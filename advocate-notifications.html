@@ -45,16 +45,21 @@
 			<div class="content">
 
 				<div class="top-bar">
-				  	<div class="top-bar-left">
-						<!-- <ul class="menu">
+				  	<!-- <div class="top-bar-left">
+						<ul class="menu">
 				      		<li><input type="search" placeholder="Search"></li>
 				      		<li><button type="button" class="button">Search</button></li>
-			    		</ul> -->
-				  	</div>
+			    		</ul>
+				  	</div> -->
 				  	<div class="top-bar-right">
 				    	<ul class="dropdown menu" data-dropdown-menu>
+				    		<li>
+				    			<div data-reactroot>
+				    				<a href="#">Testing</a>
+				    			</div>
+				    		</li>
 				    		<li class="drop-text">
-				    			<a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">24</span></a>
+		    					<a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">24</span></a>
 				    			<ul class="notifications menu vertical">
 				    				<li>
 				    					<ol>
@@ -100,13 +105,61 @@
 						        		</ol>
 				    				</li>
 				    			</ul>
-			    			</li>
-				      		<li>
-				        		<a href="#">Spoke Advocate &nbsp;</a>
-				        		<ul class="menu vertical">
-				          			<li><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Sign Out</a></li>
-				        		</ul>
-				      		</li>
+		    				</li>
+		    				<li>
+				    			<div data-reactroot>
+				    				<a data-open="example-dropdown">Plain Dropdown</a>
+										<div class="notifications dropdown-pane position-bottom" id="example-dropdown" data-dropdown data-hover="true" data-hover-pane="true">
+									  	<ol>
+						          			<li class="active">
+						          				<span>You have a new email from <a href="#">John Doe</a>.</span>
+						          				<small class="subheader">12 months ago</small>
+						          			</li>
+						          			<li class="active">
+						          				<span>You have a missed call from <a href="#">Alex Quesada</a>.</span>
+						          				<small class="subheader">12 months ago</small>
+						          			</li>
+						          			<li>
+						          				<span>You have a new email from <a href="#">Janet Ellis</a>.</span>
+						          				<small class="subheader">12 months ago</small>
+						          			</li>
+						          			<li>
+						          				<span>You have a new email from <a href="#">Kathleen Jordan</a>.</span>
+						          				<small class="subheader">12 months ago</small>
+						          			</li>
+						          			<li>
+						          				<span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+						          				<small class="subheader">12 months ago</small>
+						          			</li>
+						          			<li>
+						          				<span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+						          				<small class="subheader">12 months ago</small>
+						          			</li>
+						          			<li>
+						          				<span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+						          				<small class="subheader">12 months ago</small>
+						          			</li>
+						          			<li>
+						          				<span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+						          				<small class="subheader">12 months ago</small>
+						          			</li>
+						          			<li>
+						          				<span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+						          				<small class="subheader">12 months ago</small>
+						          			</li>
+						          			<!-- <li>
+						          				<a href="#" class="button info hollow tiny expanded">View All Notifications</a>
+						          			</li> -->
+						        		</ol>
+											</div>
+			    				</div>
+				    		</li>
+			      		<li>
+			        		<a href="#">Spoke Advocate &nbsp;</a>
+			        		<ul class="menu vertical">
+			          			<li><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Sign Out</a></li>
+			        		</ul>
+			      		</li>
 				    	</ul>
 				  	</div>
 				</div>
@@ -115,8 +168,8 @@
 					<div class="large-12 columns end">
 
 						<div class="page-lead">
-			                <span class="h5">Notifications</span>
-			            </div>
+                <span class="h5">Notifications</span>
+            </div>
 
 					</div>
 				</div>

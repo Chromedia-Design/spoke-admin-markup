@@ -1,0 +1,57 @@
+@mixin mainMenu() {
+    > a {
+    	display: block;
+    	padding: 0.7rem 1rem;
+    	line-height: 1;
+    }
+} 
+
+@mixin headerMenu() {
+	> a {
+		color: rgba($black, $B-text);
+		&.button {
+			margin: 0 1rem;
+		}
+	}
+}
+
+@mixin notificationsDropdownMenu() {
+	// Main List
+	ol {
+		margin: 0;
+		list-style: none;
+		min-width: rem-calc(300);
+		max-height: rem-calc(300);
+		overflow-y: scroll;
+		> li {
+			list-style: none;
+			font-size: 0.75rem;
+			padding: 0.5rem 1rem;
+			background-color: $off-white;
+			border-bottom: 1px solid rgba($black, $B-dividers);
+			> span {
+				display: inline-block;
+				a {
+					color: $secondary-color;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+			> small.subheader {
+				font-style: italic;
+				margin: 0;
+			}
+			&.active {
+				background-color: $white;
+			}
+			&:first-child {
+				margin-top: 0;
+			}
+			&:last-child {
+				margin-bottom: 0;
+				border-bottom: none;
+			}
+		}
+	}
+}

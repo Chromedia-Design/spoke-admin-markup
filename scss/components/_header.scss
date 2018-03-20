@@ -12,11 +12,10 @@ header {
 	.menu {
 		> li {
 			color: rgba($black, $B-text);
-			a {
-				color: rgba($black, $B-text);
-				&.button {
-					margin: 0 1rem;
-				}
+			@include headerMenu();
+			// ReactJS Handlers
+			> [data-reactroot] {
+				@include headerMenu();
 			}
 			&.menu-text {
 				font-weight: $global-weight-bold;
@@ -33,6 +32,21 @@ header {
 			}
 		}
 	}
+}
+
+.top-bar {
+	background-color: $white;
+	padding: 1rem 0;
+	border-bottom: none;
+	.top-bar-right {
+		> .menu {
+			background-color: transparent;
+		}
+	}
+}
+
+.menu-text {
+	font-weight: normal;
 }
 
 .menu-icon {
@@ -64,6 +78,10 @@ header {
 		padding: 2rem 0;
 		> li {
 			transition: all ease-in 0.2s;
+			// ReactJS Handlers
+			> [data-reactroot] {
+				
+			}
 			> a {
 				font-family: $body-font-family;
 				color: $text-white;

@@ -370,49 +370,22 @@ textarea, .mce-tinymce {
 	&.notifications {
 		> li {
 			margin: 0;
-			// Main List
-			ol {
-				margin: 0;
-				list-style: none;
-				min-width: rem-calc(300);
-				max-height: rem-calc(300);
-				overflow-y: scroll;
-				> li {
-					list-style: none;
-					font-size: 0.75rem;
-					padding: 0.5rem 1rem;
-					background-color: $off-white;
-					border-bottom: 1px solid rgba($black, $B-dividers);
-					> span {
-						display: inline-block;
-						a {
-							color: $secondary-color;
-							&:hover {
-								text-decoration: underline;
-							}
-						}
-					}
-					> small.subheader {
-						font-style: italic;
-						margin: 0;
-					}
-					&.active {
-						background-color: $white;
-					}
-					&:first-child {
-						margin-top: 0;
-					}
-					&:last-child {
-						margin-bottom: 0;
-						border-bottom: none;
-					}
-				}
+			@include notificationsDropdownMenu();
+			> [data-reactroot] {
+				@include notificationsDropdownMenu();
 			}
 		}
 	}
 }
 
 .menu {
+	> li {
+		// ReactJS Handlers
+		> [data-reactroot] {
+			@include mainMenu();
+			@include headerMenu();
+		}
+	}
 	&.dropdown {
 		background-color: transparent;
 		> li {
@@ -466,8 +439,12 @@ textarea, .mce-tinymce {
 }
 
 .dropdown-pane {
-	width: 435px;
+	max-width: 435px;
 	border-radius: 2px;
+	&.notifications {
+		padding: 0;
+		@include notificationsDropdownMenu();
+	}
 }
 
 .list-wrap {
