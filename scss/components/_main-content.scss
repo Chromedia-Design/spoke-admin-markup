@@ -473,7 +473,7 @@ section {
 		}
 		.menu {
 			> li {
-				a {
+				> a {
 					position: relative;
 					color: rgba($black, $B-text);
 					.badge,
