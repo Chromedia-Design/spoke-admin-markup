@@ -332,7 +332,6 @@ textarea, .mce-tinymce {
 }
 
 .is-dropdown-submenu {
-	display: inline-block;
 	min-width: 220px;
 	max-width: 435px;
 	margin-top: 0;
@@ -369,28 +368,45 @@ textarea, .mce-tinymce {
 		border-right: 0.5rem solid transparent;
 	}
 	&.notifications {
-		min-width: rem-calc(300);
-		max-height: rem-calc(300);
-		overflow-y: scroll;
-		overflow-x: hidden;
 		> li {
-			font-size: 0.75rem;
-			padding: 0.5rem 1rem;
-			border-bottom: 1px solid rgba($black, $B-dividers);
-			> span {
-				a {
-					color: $secondary-color;
-					&:hover {
-						text-decoration: underline;
+			margin: 0;
+			// Main List
+			ol {
+				margin: 0;
+				list-style: none;
+				min-width: rem-calc(300);
+				max-height: rem-calc(300);
+				overflow-y: scroll;
+				> li {
+					list-style: none;
+					font-size: 0.75rem;
+					padding: 0.5rem 1rem;
+					background-color: $off-white;
+					border-bottom: 1px solid rgba($black, $B-dividers);
+					> span {
+						display: inline-block;
+						a {
+							color: $secondary-color;
+							&:hover {
+								text-decoration: underline;
+							}
+						}
+					}
+					> small.subheader {
+						font-style: italic;
+						margin: 0;
+					}
+					&.active {
+						background-color: $white;
+					}
+					&:first-child {
+						margin-top: 0;
+					}
+					&:last-child {
+						margin-bottom: 0;
+						border-bottom: none;
 					}
 				}
-			}
-			&:first-child {
-				margin-top: 0;
-			}
-			&:last-child {
-				margin-bottom: 0;
-				border-bottom: none;
 			}
 		}
 	}
