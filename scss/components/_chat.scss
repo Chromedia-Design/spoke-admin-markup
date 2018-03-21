@@ -466,6 +466,7 @@
 		align-items: stretch; /* align items in Cross Axis */
     	align-content: stretch; /* Extra space in Cross Axis */
     	overflow-y: scroll;
+    	height: 100vh;
 		&::-webkit-scrollbar {
 			display: none;
 		}
@@ -517,9 +518,11 @@
 	}
 	#videoCall {
 		display: block;
+    	width: 100%;
+    	background-color: $black;
 	}
 	.offcanvas-body {
-		min-height: 570px;
+		// min-height: 570px;
 		flex: 1 1 auto; /*grows*/
 		display: flex;
 		flex-direction: row;
@@ -746,9 +749,9 @@
 // TokBox Defaults
 #videos {
     position: relative;
-    width: 100%;
+    width: 50%;
     height: 100%;
-    margin: 0 auto 1rem;
+    margin: 0 auto;
     border: 1px solid rgba($black, $B-dividers);
     border-radius: 2px;
     background-color: $text-black;
