@@ -1,7 +1,5 @@
 body {
-	overflow: hidden;
 	&.frontend {
-		overflow: auto;
 		header {
 			border-right: none;
 			background: transparent;
@@ -476,20 +474,6 @@ section {
 				> a {
 					position: relative;
 					color: rgba($black, $B-text);
-					.badge,
-					.label {
-						position: absolute;
-						top: 0;
-						right: 12px;
-						min-height: 2.1em;
-						line-height: 1.5em;
-						font-weight: $global-weight-bold;
-					}
-					.label {
-						right: -6px;
-						font-size: rem-calc(11);
-						line-height: 1;
-					}
 				}
 			}
 		}

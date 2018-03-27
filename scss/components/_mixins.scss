@@ -23,6 +23,12 @@
 		min-width: rem-calc(300);
 		max-height: rem-calc(300);
 		overflow-y: scroll;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+		&::-moz-scrollbar {
+			display: none;
+		}
 		> li {
 			list-style: none;
 			font-size: 0.75rem;
@@ -41,6 +47,9 @@
 			> small.subheader {
 				font-style: italic;
 				margin: 0;
+			}
+			&.heading {
+				background-color: $white;
 			}
 			&.active {
 				background-color: $white;

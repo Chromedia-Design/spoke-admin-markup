@@ -69,7 +69,13 @@
 
 .reveal-overlay {
 	background-color: rgba($black, $B-subtext);
-	overflow: hidden;
+	overflow: scroll;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	&::-moz-scrollbar {
+		display: none;
+	}
 }
 
 #cardLabelsModal {

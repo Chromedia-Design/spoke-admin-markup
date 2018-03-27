@@ -41,6 +41,25 @@ header {
 	.top-bar-right {
 		> .menu {
 			background-color: transparent;
+			> li {
+				position: relative;
+				a {
+					.badge,
+					.label {
+						position: absolute;
+						top: 0;
+						right: 12px;
+						min-height: 2.1em;
+						line-height: 1.5em;
+						font-weight: $global-weight-bold;
+					}
+					.label {
+						right: -6px;
+						font-size: rem-calc(11);
+						line-height: 1;
+					}
+				}
+			}
 		}
 	}
 }

@@ -401,12 +401,12 @@ textarea, .mce-tinymce {
 						}
 					}
 				}
-				&.drop-text {
-					> a {
-						padding-right: 1rem;
-						&:after {
-							border: none;
-						}
+			}
+			&.drop-text {
+				> a {
+					padding-right: 1rem;
+					&:after {
+						border: none;
 					}
 				}
 			}
@@ -610,7 +610,7 @@ label.image-upload {
     border-top-right-radius: 0;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    height: rem-calc(100) !important;
+    height: 15vh !important;
     overflow-x: hidden;
     overflow-y: scroll;
 	&::-webkit-scrollbar {
@@ -619,6 +619,11 @@ label.image-upload {
 	&::-moz-scrollbar {
 		display: none;
 	}
+}
+
+//This is the note editor.
+.editor-one .rdw-editor-main {
+	height: 16.25rem !important;
 }
 	
 // Switches/Toggles
