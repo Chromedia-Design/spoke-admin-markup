@@ -94,10 +94,10 @@ $W-dividers:        0.12 !default;
 $W-disabled:        0.30 !default;
 $W-icons:           1.00 !default;
 
-$body-background: $background-white;
+$body-background: $primary-light;
 $body-font-color: $text-black;
-$body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Nueue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$header-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Nueue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$body-font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Nueue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$header-font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Nueue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;

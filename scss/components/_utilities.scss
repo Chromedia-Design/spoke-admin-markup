@@ -81,6 +81,9 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 	vertical-align: middle;
+	* {
+		margin-bottom: 0;
+	}
 }
 
 .v-align-center {
