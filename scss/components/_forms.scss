@@ -308,11 +308,27 @@ textarea, .mce-tinymce {
 
 .input-group {
 	> :first-child {
-		border-radius: 2px 0 0 2px;
+		border-radius: 4px 0 0 4px;
 	}
 	> :last-child {
 		> * {
-			border-radius: 0 2px 2px 0;
+			border-radius: 0 4px 4px 0;
+		}
+	}
+	&.rounded {
+		.input-group-label {
+			&:first-child {
+				padding-left: 1.5rem;
+				border-radius: 32px 0 0 32px;
+			}
+		}
+		.input-group-button {
+			&:last-child {
+				.button {
+					padding-right: 2rem;
+					border-radius: 0 32px 32px 0;
+				}
+			}
 		}
 	}
 }

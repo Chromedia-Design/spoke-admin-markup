@@ -12,17 +12,22 @@ i {
 
 blockquote {
 	position: relative;
-	font-family: Bitter, Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+	font-family: "IBM Plex Serif", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
 	font-style: italic;
 	color: rgba($black, $B-subtext);
 	margin: 1.5rem 0;
 	padding: .5625rem 0;
 	border: none;
-	p {
-		color: rgba($black, $B-subtext);
+	> p {
+		font-family: "IBM Plex Serif", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif !important;
+		color: rgba($black, $B-text);
 	}
 	footer {
+		display: block;
+		margin-top: 1rem;
 		background: transparent;
+		font-family: $body-font-family;
+		font-style: normal;
 		> * {
 			color: inherit;
 		}
@@ -31,10 +36,10 @@ blockquote {
 		position: absolute;
 		content: "“";
 		font-size: 3.125rem;
-		font-family: Bitter, Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+		font-family: "IBM Plex Serif", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
 		font-style: normal;
 		line-height: 1;
-		color: $warning-color;
+		color: $text-black;
 		top: 0;
 		left: -2rem;
 	}

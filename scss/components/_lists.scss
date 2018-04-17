@@ -998,3 +998,75 @@ ul.vertical-list {
 	    }
     }
 }
+
+.step-bullets {
+	margin: 0;
+	text-align: left;
+	button {
+		
+	}
+	> button {
+		position: relative;
+		padding: 1rem 1rem 1rem 4rem;
+		display: block;
+		width: 100% !important;
+		height: 100% !important;
+		text-align: left;
+		background-color: $white;
+		border-radius: 0;
+		transition: all 0.2s ease-in-out;
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin-bottom: rem-calc(12);
+		}
+		p {
+			color: rgba($black, $B-subtext);
+			margin-bottom: 0;
+		}
+		&.is-active {
+			background: $primary-light;
+			box-shadow: 2px 0 0 0 $success-color;
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				color: darken($success-color, 10%);
+			}
+			p {
+				color: $text-black;
+			}
+			&:before {
+				height: 2rem;
+				color: $white;
+				background-color: $success-color;
+				border-color: $success-color;
+			}
+		}
+		&:hover {
+			background: $primary-light;
+		}
+		&:before {
+			position: absolute;
+			top: 0.875rem;
+			left: 1rem;
+			content: attr(data-step);
+			font-family: "IBM Plex Serif", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+			font-weight: bold;
+			padding: 0.5rem;
+			border: 1px solid $text-black;
+			border-radius: 50%;
+			width: 2rem;
+			height: 2rem;
+			text-align: center;
+			font-size: 1rem;
+			line-height: 0.9;
+			vertical-align: middle;
+		}
+	}
+}

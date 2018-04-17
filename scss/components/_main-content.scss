@@ -7,6 +7,14 @@ body {
 				border-bottom: 1px solid rgba($black, $B-dividers);
 			}
 		}
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: 'IBM Plex Serif', serif;
+		}
 	}
 }
 
@@ -19,6 +27,7 @@ hr {
 		max-width: 4rem;
 		border-width: 0.25rem;
 		margin-left: 0;
+		border-radius: 2rem;
 		&.center {
 			margin: 0 auto;
 		}
@@ -31,16 +40,15 @@ section {
 		border-bottom: none;
 	}
 	.call-to-action {
-		padding: 2rem 0 0;
 		h1 {
-			margin-bottom: 1rem;
+			margin-bottom: 0;
 			@media only screen and (min-width: 40em) {
-				font-size: 3.3125rem;
+				font-size: 3.125rem;
 				line-height: 1.2em;
 			}
 		}
 		p {
-			margin-bottom: 1rem;
+			margin-bottom: 0;
 			@media only screen and (min-width: 40em) {
 				font-size: 1.125rem;
 				line-height: 1.5em;
@@ -197,7 +205,7 @@ section {
 			border: none;
 		}
 		.call-to-action {
-			padding: 8rem 0 0;
+			padding: 8rem 0;
 		}
 		.home-scene {
 			position: relative;
