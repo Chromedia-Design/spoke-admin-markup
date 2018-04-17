@@ -1,0 +1,452 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spoke</title>
+	<link rel="stylesheet" href="../css/app.css">
+</head>
+<body class="frontend">
+
+	<header class="top-bar">
+        <div class="row">
+            <div class="top-bar-title">
+                <span data-responsive-toggle="responsive-menu" data-hide-for="large">
+                    <span class="menu-icon dark" data-toggle></span>
+                </span>
+                <a href="#" class="logo">
+                    <img src="../img/logo.png" alt="Spoke">
+                </a>
+            </div>
+            <div id="responsive-menu">
+                <div class="top-bar-right">
+                    <!-- <ul class="dropdown menu" data-dropdown-menu>
+                        <li><a href="#">Need Support?</a></li>
+                        <li>
+                            <a href="#">John Doe &nbsp;</a>
+                            <ul class="menu vertical">
+                                <li><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Account Details</a></li>
+                                <li><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Sign Out</a></li>
+                            </ul>
+                        </li>
+                    </ul> -->
+                </div>
+            </div>
+            <div class="top-bar-right">
+                <ul class="dropdown menu" data-dropdown-menu>
+                    <li>
+                        <a href="#">John Doe &nbsp;</a>
+                        <ul class="menu vertical">
+                            <li><a href="frontend-edit.html"><i class="fa fa-user"></i>&nbsp; Account Profile</a></li>
+                            <!-- <li><a href="frontend-edit-episode.html"><i class="fa fa-user"></i>&nbsp; Episode Information</a></li> -->
+                            <li><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Sign Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section>
+    	<div class="container">
+            <div class="row">
+                <div class="medium-12 columns">
+
+                    <nav aria-label="You are here:" role="navigation">
+                        <ul class="breadcrumbs marginless">
+                            <li><a href="frontend-intake-step4.html">Dashboard</a></li>
+                            <li>Edit Profile</li>
+                        </ul>
+                    </nav>
+                    <div class="row collapse">
+                        <div class="large-3 columns">
+                            <ul class="tabs vertical" id="example-vert-tabs" data-tabs>
+                                <li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">Employee Profile</a></li>
+                                <li class="tabs-title"><a href="#panel2v">Medical Preferences</a></li>
+                                <li class="tabs-title"><a href="#panel3v">Change Password</a></li>
+                            </ul>
+                        </div>
+                        <div class="large-9 columns">
+                            <div class="tabs-content vertical" data-tabs-content="example-vert-tabs">
+                                <div class="tabs-panel is-active" id="panel1v">
+                                    <div class="callout">
+                                        <form>
+                                            <div class="panel">
+                                                <div class="panel-heading">
+                                                    <span class="h6">Contact Information</span>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class="large-3 columns end">
+                                                            <label class="text-right middle">Email Address</label>
+                                                        </div>
+                                                        <div class="large-6 columns end">
+                                                            <input type="text" name="" value="william.pinkerton@domain.com">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="large-3 columns end">
+                                                            <label class="text-right middle">Phone Number</label>
+                                                        </div>
+                                                        <div class="large-6 columns end">
+                                                            <input type="text" name="" value="123-4567-8900">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="panel">
+                                                <div class="panel-heading">
+                                                    <span class="h6">Basic Information</span>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class="large-3 columns end">
+                                                            <label class="text-right middle">First Name</label>
+                                                        </div>
+                                                        <div class="large-6 columns end">
+                                                            <input type="text" name="" value="William">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="large-3 columns end">
+                                                            <label class="text-right middle">Last Name</label>
+                                                        </div>
+                                                        <div class="large-6 columns end">
+                                                            <input type="text" name="" value="Pinkerton">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="large-3 columns end">
+                                                            <label class="text-right middle">Company Name</label>
+                                                        </div>
+                                                        <div class="large-6 columns end">
+                                                            <select disabled="true">
+                                                                <option value="" disabled selected>ACME, Inc.</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="large-3 columns end">
+                                                            <label class="text-right middle">Policy Number</label>
+                                                        </div>
+                                                        <div class="large-6 columns end">
+                                                            <input type="text" name="" value="123-4567-7890" disabled="true">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="large-3 columns end">
+                                                            <label class="text-right middle">Birthdate</label>
+                                                        </div>
+                                                        <div class="large-6 columns end">
+                                                            <div class="row multi-part-input">
+                                                                <div class="large-4 columns end">
+                                                                    <select>
+                                                                        <option>March</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="large-4 columns end">
+                                                                    <select>
+                                                                        <option>17</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="large-4 columns end">
+                                                                    <select>
+                                                                        <option>1976</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="large-3 columns end">
+                                                            <label class="text-right">Gender</label>
+                                                        </div>
+                                                        <div class="large-6 columns end">
+                                                            <input type="radio" name="gender" value="male" id="gender" checked=""><label for="gender">Male</label>
+                                                            <input type="radio" name="gender" value="female" id="gender"><label for="gender">Female</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="large-3 columns end">
+                                                            <label class="text-right middle">Street Address</label>
+                                                        </div>
+                                                        <div class="large-6 columns end">
+                                                            <input type="text" name="" value="46 Platte St.">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="large-3 columns end">
+                                                            <label class="text-right middle">State</label>
+                                                        </div>
+                                                        <div class="large-6 columns end">
+                                                            <select>
+                                                                <option>Colorado</option>
+                                                            </select>
+                                                        </div>
+                                                        
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="large-3 columns end">
+                                                            <label class="text-right middle">City</label>
+                                                        </div>
+                                                        <div class="large-6 columns end">
+                                                            <select>
+                                                                <option>Denver</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="large-3 columns end">
+                                                            <label class="text-right middle">Zip Code</label>
+                                                        </div>
+                                                        <div class="large-6 columns end">
+                                                            <input type="text" name="" value="654512">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="large-12 columns end">
+                                                    <div class="button-group submit">
+                                                        <a href="#" class="button primary">Save Changes</a>
+                                                        <a href="#" class="info button link">Cancel</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form> 
+
+                                    </div>
+                                </div>
+
+                                <div class="tabs-panel" id="panel2v">
+
+                                    <div class="callout">
+                                        <form>
+                                            <div class="row">
+                                                <div class="large-6 columns end">
+                                                    <label class="middle">When were you thinking of having your surgery?</label>
+                                                </div>
+                                                <div class="large-6 columns end">
+                                                    <select>
+                                                        <option>As soon as possible</option>
+                                                        <option>2 - 4 Weeks</option>
+                                                        <option>4 - 8 Weeks</option>
+                                                        <option>2 - 4 Months</option>
+                                                        <option>4 - 6 Months</option>
+                                                        <option>6+ months</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="large-6 columns end">
+                                                    <label class="">Are you willing to be flexible on the schedule if we were able to secure a larger bonus?</label>
+                                                </div>
+                                                <div class="large-6 columns end">
+                                                    <input type="radio" name="flex" value="yes" id="flex" checked=""><label for="flex">Yes</label>
+                                                    <input type="radio" name="flex" value="no" id="flex"><label for="flex">No</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="large-6 columns end">
+                                                    <label class="">Are you willing to travel outside your local area if a larger bonus were available?</label>
+                                                </div>
+                                                <div class="large-6 columns end">
+                                                    <input type="radio" name="location" value="" id="location"><label for="location">No, I want only local facilities.</label>
+                                                    <input type="radio" name="location" value="" id="location"><label for="location">Yes, I'm willing to travel outside my immediate area.</label>
+                                                    <input type="radio" name="location" value="" id="location"><label for="location">I'm interested in seeing options throughout the USA.</label>
+                                                    <input type="radio" name="location" value="" id="location" checked=""><label for="location">If the bonus was big enough, I'd consider travelling to another country.</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="large-6 columns end">
+                                                    <label class="">Select the countries that you'd entertain travelling to:</label>
+                                                </div>
+                                                <div class="large-6 columns end">
+                                                    <div class="row mb-2">
+                                                        <div class="large-12 columns end">
+                                                            <input class="mb-0"  type="checkbox" name="country" value="" id="country" checked=""><label class="mb-0" for="country">Costa Rica</label>
+                                                        </div>
+                                                        <div class="large-12 columns end">
+                                                            <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">Mexico</label>
+                                                        </div>
+                                                        <div class="large-12 columns end">
+                                                            <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">Brazil</label>
+                                                        </div>
+                                                        <div class="large-12 columns end">
+                                                            <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">Belgium</label>
+                                                        </div>
+                                                        <div class="large-12 columns end">
+                                                            <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">Thailand</label>
+                                                        </div>
+                                                        <div class="large-12 columns end">
+                                                            <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">India</label>
+                                                        </div>
+                                                        <div class="large-12 columns end">
+                                                            <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">Singapore</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="large-6 columns end">
+                                                    <label class="">Are you using any other health benefit programs?</label>
+                                                </div>
+                                                <div class="large-6 columns end">
+                                                    <input type="checkbox" name="programs" value="" id="programs" checked=""><label for="programs">Tele-Medicine</label>
+                                                    <input type="checkbox" name="programs" value="" id="programs"><label for="programs">Wellness Programs</label>
+                                                    <input type="checkbox" name="programs" value="" id="programs"><label for="programs">Prescription Drug Programs</label>
+                                                    <input type="checkbox" name="programs" value="" id="programs"><label for="programs">Gym and Fitness Programs</label>
+                                                    <input type="checkbox" name="programs" value="" id="programs"><label for="programs">Other: <input type="text" name="programs" value=""></label>
+                                                </div>
+                                            </div>
+
+                                             <div class="row">
+                                                <div class="large-12 columns end">
+                                                    <div class="button-group submit">
+                                                        <a href="#" class="submit button primary">Save Changes</a>
+                                                        <a href="#" class="info button link">Cancel</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+
+                                <div class="tabs-panel" id="panel3v">
+                                    
+                                    <div class="callout">
+                                        <form>
+                                            <div class="row">
+                                                <div class="large-3 columns end">
+                                                    <label class="middle">Old Password</label>
+                                                </div>
+                                                <div class="large-6 columns end">
+                                                    <input type="password" name="" value="" placeholder="Enter old password">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="large-3 columns end">
+                                                    <label class="middle">New Password</label>
+                                                </div>
+                                                <div class="large-6 columns end">
+                                                    <input type="password" name="" value="">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="large-3 columns end">
+                                                    <label class="middle">Confirm Password</label>
+                                                </div>
+                                                <div class="large-6 columns end">
+                                                    <input type="password" name="" value="">
+                                                </div>
+                                            </div>
+                                             <div class="row">
+                                                <div class="large-12 columns end">
+                                                    <div class="button-group submit">
+                                                        <a href="#" class="submit button primary">Change Password</a>
+                                                        <a href="#" class="info button link">Cancel</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <a data-toggle="chatSupport" class="offcanvas-trigger"><i class="fa fa-comments" aria-hidden="true"></i></a>
+
+    <div id="chatSupport" class="offcanvas-area" data-toggler data-animate="slide-in-right slide-out-right">
+        
+        <div class="offcanvas-header">
+            <span class="h6 text">Spoke Health Support</span>
+            <a data-toggle="chatSupport" class="btn-close pull-right"><span aria-hidden="true">&times;</span></a>
+        </div>
+
+        <div class="offcanvas-body">
+            <div class="media-object">
+                <div class="media-object-section logo small">
+                    <div class="img-wrapper circle">
+                        <img src= "../img/Smiling-Middle-Aged-Lady-Arms-Square.png">
+                    </div>
+                </div>
+                <div class="media-object-section middle">
+                    <div class="small talk-bubble border tri-right left-in">
+                        <div class="talktext">
+                            <p>Welcome to your dashboard!</p>
+                            <p>Here are some of the facilities I found that provide Total Knee Replacement in the Denver area. All of these choices are top quality and cover your deductible + give you a cash allowance.</p>
+                            <p>View the profiles of these facilities by clicking on the cards below. If you see one that interests you, got to the facility profile and click the Inquire button. I'll follow up with you as soon as possible.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="media-object">
+                <div class="media-object-section logo small">
+                    <div class="img-wrapper circle">
+                        <img src= "../img/Smiling-Middle-Aged-Lady-Arms-Square.png">
+                    </div>
+                </div>
+                <div class="media-object-section middle">
+                    <div class="small talk-bubble border tri-right left-in">
+                        <div class="talktext">
+                            <p>I'm always available to assist you. Simply schedule a time for a phone call <a class="white-color underline" href="#">here</a>. You may chat with me by clicking on the icon in the lower right of your screen anytime. Or send secure messages by clicking on the "dashboard" tab at the top of the page and I'll get right back to you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+	<script src="../bower_components/jquery/dist/jquery.js"></script>
+	<script src="../bower_components/what-input/what-input.js"></script>
+	<script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+	<script src="../bower_components/foundation-sites/js/foundation.toggler.js"></script>
+	<script src="../bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+	<script src="../bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+	
+	<script src="../js/app.js"></script>
+
+	<script type="text/javascript">
+        $(function () {
+            var timer;
+
+            $(window).resize(function() {
+                clearTimeout(timer);
+                timer = setTimeout(function() {
+                  $('#chatSupport .offcanvas-body').css("height", $(window).height());
+                }, 40); 
+            }).resize();
+        });
+
+        $("[data-circle-graph]").each(function() {
+          var $graph = $(this),
+              percent = parseInt($graph.data('percent'), 10),
+              deg = 360*percent/100;
+          if(percent > 50) {
+            $graph.addClass('gt-50');
+          }
+          $graph.find('.circle-graph-progress-fill').css('transform','rotate('+ deg +'deg)');
+          $graph.find('.circle-graph-percents-number').html(percent+'%');
+        });
+
+    </script>
+
+</body>
+</html>

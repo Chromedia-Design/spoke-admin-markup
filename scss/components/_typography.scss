@@ -1,0 +1,210 @@
+.material-icons {
+	font-size: 1rem;
+}
+
+strong, b {
+	font-weight: $global-weight-bold;
+}
+
+i {
+	font-weight: 400;
+}
+
+blockquote {
+	position: relative;
+	font-family: "IBM Plex Serif", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+	font-style: italic;
+	color: rgba($black, $B-subtext);
+	margin: 1.5rem 0;
+	padding: .5625rem 0;
+	border: none;
+	> p {
+		font-family: "IBM Plex Serif", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif !important;
+		color: rgba($black, $B-text);
+	}
+	footer {
+		display: block;
+		margin-top: 1rem;
+		background: transparent;
+		font-family: $body-font-family;
+		font-style: normal;
+		> * {
+			color: inherit;
+		}
+	}
+	&:before {
+		position: absolute;
+		content: "“";
+		font-size: 3.125rem;
+		font-family: "IBM Plex Serif", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+		font-style: normal;
+		line-height: 1;
+		color: $text-black;
+		top: 0;
+		left: -2rem;
+	}
+}
+
+small {
+	display: inline-block;
+	font-size: 87%;
+	line-height: 1.5em;
+}
+
+address {
+	font-size: 0.875rem;
+	font-style: normal;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 1rem;
+	line-height: 1.2em;
+	&.subheader {
+		font-weight: $global-weight-bold;
+	}
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	font-family: $body-font-family;
+	font-weight: $global-weight-bold;
+	line-height: 1.3em;
+}
+
+.h1 {
+	font-size: 4.1875rem;
+}
+
+.h2 {
+	font-size: 3.125rem;
+}
+
+.h3 {
+	font-size: 2.3125rem;
+}
+
+.h4 {
+	font-size: 1.75rem;
+}
+
+.h5 {
+	font-size: 1.3125rem;
+}
+
+.h6 {
+	font-size: 1rem;
+}
+
+p {
+	&.h1,
+	&.h2,
+	&.h3,
+	&.h4,
+	&.h5,
+	&.h6 {
+		font-family: $body-font-family;
+		font-weight: 400;
+		line-height: 1.5em;
+	}
+}
+
+.primary-color {
+	color: $primary-color;
+	> * {
+		color: $primary-color;
+	}
+}
+
+.secondary-color {
+	color: $secondary-color;
+	> * {
+		color: $secondary-color;
+	}
+}
+
+.success-color {
+	color: $success-color;
+	> * {
+		color: $success-color;
+	}
+}
+
+.warning-color {
+	color: $warning-color;
+	> * {
+		color: $warning-color;
+	}
+}
+
+.alert-color {
+	color: $alert-color;
+	> * {
+		color: $alert-color;
+	}
+}
+
+.white-color {
+	color: $white;
+	> * {
+		color: $white;
+	}
+	&:hover {
+		color: darken($white, 5%);
+		> * {
+			color: darken($white, 5%);
+		}
+	}
+}
+
+.subheader {
+	margin-top: 0;
+	color: rgba($black, $B-subtext);
+	font-weight: inherit;
+	&.white {
+		color: rgba($white, $W-text);
+	}
+}
+
+.drop-cap {
+	display: inline-block;
+	float: left;
+	margin: 0 1rem 2rem 0;
+}
+
+.trademark {
+	font-size: 0.6125em;
+	line-height: 1.5em;
+	vertical-align: top;
+}
+
+.text-group {
+	h1,
+	h2,
+	h3,
+	h4
+	h5,
+	.h1,
+	.h2,
+	.h3,
+	.h4,
+	.h5 {
+		line-height: 1.2em;
+	}
+}
+
+.has-tip {
+	border-bottom: none;
+}

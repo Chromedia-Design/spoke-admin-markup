@@ -1,0 +1,27 @@
+.pagination{
+	margin: 4rem 0;
+	a,
+	span,
+	.button {
+		display: inline-block;
+		border-radius: $global-radius;
+	}
+	.current,
+	.active {
+		border-radius: $global-radius;
+		background: $primary-color;
+		cursor: default;
+		padding: 0;
+		a,
+		span,
+		.button {
+			color: $white;
+			&:hover {
+				background: transparent;
+			}
+		}
+	}
+	.previous, .next {
+		text-transform: capitalize;
+	}
+}

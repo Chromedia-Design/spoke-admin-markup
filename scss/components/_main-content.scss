@@ -1,0 +1,499 @@
+body {
+	&.frontend {
+		header {
+			border-right: none;
+			background: transparent;
+			&.bordered {
+				border-bottom: 1px solid rgba($black, $B-dividers);
+			}
+		}
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: 'IBM Plex Serif', serif;
+		}
+	}
+}
+
+hr {
+	border-bottom: 1px solid rgba($black, $B-dividers);
+	&.white {
+		border-color: $white;
+	}
+	&.marker {
+		max-width: 4rem;
+		border-width: 0.25rem;
+		margin-left: 0;
+		border-radius: 2rem;
+		&.center {
+			margin: 0 auto;
+		}
+	}
+}
+
+section {
+	.top-bar {
+		background: transparent;
+		border-bottom: none;
+	}
+	.call-to-action {
+		h1 {
+			margin-bottom: 0;
+			@media only screen and (min-width: 40em) {
+				font-size: 3.125rem;
+				line-height: 1.2em;
+			}
+		}
+		p {
+			margin-bottom: 0;
+			@media only screen and (min-width: 40em) {
+				font-size: 1.125rem;
+				line-height: 1.5em;
+			}
+			&.h3 {
+				@media only screen and (min-width: 40em) {
+					font-size: 2rem;
+					line-height: 1.2em;
+				}
+			}
+		}
+		.brick {
+			text-transform: none;
+			border-color: rgba($black, $B-dividers);
+			min-width: 10rem;
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				margin: 0;
+			}
+			p {
+				margin: 0;
+				font-size: 0.75rem;
+				font-weight: normal;
+			}
+		}
+
+	}
+	&.section {
+		padding: 3.75rem 0;
+		.section-heading {
+			margin-bottom: 1.875rem;
+		}
+	}
+	&.no-padded {
+		padding: 0 0 2rem;
+	}
+	&.lo-padded {
+		padding: 2rem 0;
+	}
+	&.hi-padded {
+		padding: 9.75rem 0;
+	}
+	&.white-bg {
+		background-color: $white;
+		border-bottom: 1px solid rgba($black, $B-dividers);
+		+ .white-bg {
+			border-top: none;
+		}
+	}
+	&.primary-bg {
+		background-color: $primary-color;
+		> * {
+			color: $white;
+		}
+		.call-to-action {
+			> * {
+				color: $white;
+			}
+		}
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		a {
+			color: $white;
+		}
+		a {
+			&:hover {
+				text-decoration: underline; 
+			}
+			&.button {
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	&.secondary-bg {
+		background-color: $secondary-color;
+		> * {
+			color: $white;
+		}
+		.call-to-action {
+			> * {
+				color: $white;
+			}
+		}
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: $white;
+		}
+	}
+	&.alert-bg {
+		background-color: darken($warning-color, 27%);
+		> * {
+			color: $white;
+		}
+		.call-to-action {
+			> * {
+				color: $white;
+			}
+		}
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: $white;
+		}
+	}
+	&.success-bg {
+		background-color: $success-color;
+		> * {
+			color: $white;
+		}
+		.call-to-action {
+			> * {
+				color: $white;
+			}
+		}
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: $white;
+		}
+	}
+	&.t-bordered {
+		border-top: 1px solid rgba($black, $B-dividers);
+	}
+	&.borderless {
+		border: none;
+	}
+	&.home {
+		position: relative;
+		// background: transparent url('../img/breather.jpg') center center no-repeat;
+		background: transparent url('https://s3.amazonaws.com/assets.spoke.com/images/breather.jpg') center center no-repeat;
+		background-size: cover;
+		header {
+			background: transparent;
+			border: none;
+		}
+		.call-to-action {
+			padding: 8rem 0;
+		}
+		.home-scene {
+			position: relative;
+			height: 11rem;
+			@media only screen and (min-width: 40em) {
+				height: 22rem;
+			}
+			.device {
+				position: absolute;
+			    -webkit-animation: fadeInDown .7s;
+				animation: fadeInDown .7s;
+				-webkit-animation-fill-mode: forwards;
+				animation-fill-mode: forwards;
+				&.browser {
+					width: 40rem;
+					top: -2rem;
+					left: 0;
+					// -ms-transform: rotate(7deg); /* IE 9 */
+    				// -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    				// 	transform: rotate(7deg);
+				}
+				&.mobile {
+					width: 34rem;
+					right: -3rem;
+					bottom: -7rem;
+				}
+				&.one {
+				    -webkit-animation-delay: .5s;
+					animation-delay: .5s;
+				}
+				&.two {
+				    -webkit-animation-delay: .7s;
+    				animation-delay: .7s;
+				}
+			}
+		}
+	}
+	&.employer {
+		position: relative;
+		background: transparent url('https://s3.amazonaws.com/assets.spoke.com/images/med-employer-bg.jpg') center center no-repeat;
+		background-size: cover;
+	}
+	&.employer-section-2 {
+		position: relative;
+		background: $primary-color url('https://s3.amazonaws.com/assets.spoke.com/images/employer-section-2.png') top center no-repeat;
+		background-size: cover;
+	}
+	&.employer-section-3 {
+		position: relative;
+		background: $white url('https://s3.amazonaws.com/assets.spoke.com/images/employer-section-3.png') top center no-repeat;
+		background-size: cover;
+	}
+	&.provider {
+		position: relative;
+		background: transparent url('https://s3.amazonaws.com/assets.spoke.com/images/med-provider-bg.png') center center no-repeat;
+		background-size: cover;
+	}
+	&.provider-section-2 {
+		position: relative;
+		background: $primary-color url('https://s3.amazonaws.com/assets.spoke.com/images/provider-section-2.jpg') center center no-repeat;
+		background-size: cover;
+		overflow: hidden;
+		.wrapper {
+			> * {
+				position: relative;
+				z-index: 1;
+			}
+			&:before {
+				content: '';
+				position: absolute;
+				width: 1000px;
+				height: 100%;
+				top: 0;
+				left: 0;
+				background-color: rgba($white, $W-subtext);
+				z-index: 0;
+			    transform: skew(15deg, 0);
+			}
+			&:after {
+				content: '';
+			    position: absolute;
+			    width: 1000px;
+			    height: 100%;
+			    top: 0;
+			    left: -1000px;
+			    background-color: rgba($white, $W-subtext);
+			    z-index: 0;
+			    transform: skew(15deg, 0);
+			}
+		}
+	}
+	&.provider-section-3 {
+		position: relative;
+		background: $primary-color url('https://s3.amazonaws.com/assets.spoke.com/images/provider-section-3.jpg') center center no-repeat;
+		background-size: cover;
+		overflow: hidden;
+		.wrapper {
+			> * {
+				position: relative;
+				z-index: 1;
+			}
+			&:before {
+				content: '';
+				position: absolute;
+				width: 1000px;
+				height: 100%;
+				top: 0;
+				right: 0;
+				background-color: rgba($white, $W-subtext);
+				z-index: 0;
+			    transform: skew(15deg, 0);
+			}
+			&:after {
+				content: '';
+			    position: absolute;
+			    width: 1000px;
+			    height: 100%;
+			    top: 0;
+			    right: -1000px;
+			    background-color: rgba($white, $W-subtext);
+			    z-index: 0;
+			    transform: skew(15deg, 0);
+			}
+		}
+	}
+	&.jumbotron {
+		background-color: $white;
+		border-bottom: 1px solid rgba($black, $B-dividers);
+		.columns {
+			display: flex;
+			align-items: center;
+		}
+		.call-to-action {
+			padding: 2rem 0;
+			h1 {
+				margin-bottom: 1rem;
+				@media only screen and (min-width: 40em) {
+					font-size: 2.3125rem;
+					line-height: 1.2em;
+				}
+			}
+			h5 {
+				margin-bottom: 1rem;
+			}
+			p {
+				margin-bottom: 1rem;
+				@media only screen and (min-width: 40em) {
+					font-size: 1rem;
+					line-height: 1.5em;
+				}
+			}
+			.brick {
+				text-transform: none;
+				border-color: rgba($black, $B-dividers);
+				min-width: 10rem;
+				h1,
+				h2,
+				h3,
+				h4,
+				h5,
+				h6, .button {
+					margin-bottom: 0;
+				}
+				p {
+					margin-bottom: 0;
+					font-size: 0.875rem;
+					font-weight: normal;
+				}
+			}
+
+		}
+		.lead-testimonial {
+			position: relative;
+			.story-card {
+				position: absolute;
+				padding: 1rem;
+				max-width: 16rem;
+				bottom: 0;
+				right: 0;
+				background-color: rgba($white, $W-subtext);
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+				h1,
+				h2,
+				h3,
+				h4,
+				h5,
+				h6,
+				p,
+				blockquote,
+				.button {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+.row {
+	// useful for inputs such as dates, etc...
+	&.multi-part-input {
+		margin-left: -0.9375rem !important;
+		margin-right: -0.9375rem !important;
+	}
+}
+
+// This is only used on the login page
+.login {
+	height: 100%;
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+	.login-inner {
+		display: table-cell;
+		vertical-align: middle;
+		.login-wrap {
+			margin: 0 auto;
+			padding: 2rem;
+			width: rem-calc(480);
+			background: $white;
+			border: 1px solid rgba($black, $B-dividers);
+			border-radius: 2px;
+			form {
+				margin-top: 2rem;
+			}
+		}
+	}
+	.login-banner {
+		display: table-row;
+		height: 7rem;
+		.login-banner-wrap {
+			display: table-cell;
+			margin: 0 auto;
+			padding: 2rem;
+			width: 100%;
+			border-top: 1px solid rgba($black, $B-dividers);
+			border-bottom: 1px solid rgba($black, $B-dividers);
+			vertical-align: bottom;
+			background-color: $primary-color;
+			> p,
+			> b {
+				margin-bottom: 0;
+				font-size: rem-calc(12);
+				line-height: 1.5em;
+				color: $white;
+				a {
+					color: $white;
+					text-decoration: underline;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+// Primarily used for the sidebar menu
+.content {
+	overflow-y: scroll;
+	.top-bar {
+		border-bottom: 1px solid rgba($black, $B-dividers);
+		// Override the blue caret after the dropdown link in the topbar
+		.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+			border-color: rgba($black, $B-text) transparent transparent;
+		}
+		[type='submit'] {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		.menu {
+			> li {
+				> a {
+					position: relative;
+					color: rgba($black, $B-text);
+				}
+			}
+		}
+	}
+}
+
+#profileContent {
+	overflow-y: scroll;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	&::-moz-scrollbar {
+		display: none;
+	}
+}

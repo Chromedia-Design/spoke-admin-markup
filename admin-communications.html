@@ -1,0 +1,409 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spoke Admin Portal</title>
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+	
+	<div class="expanded row medium-collapse">
+		<div class="medium-2 columns">
+			<div class="site-nav">
+				<header>
+					<a href="#" class="logo text-center">
+						<img src="img/logo.png" title="Spoke">
+					</a>
+				</header>
+				<ul class="menu vertical"  data-accordion-menu>
+					<li class="is-active">
+						<a href="#"><i class="material-icons">email</i> Communication</a>
+					</li>
+					<li>
+						<a href="#"><i class="material-icons">wc</i> Patients</a>
+						<ul class="nested vertical menu">
+							<li class="is-active">
+								<a href="#">All Patients</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="medium-10 columns">
+			<div class="content">
+
+				<div class="top-bar">
+				  	<div class="top-bar-left">
+						<!-- <ul class="menu">
+				      		<li><input type="search" placeholder="Search"></li>
+				      		<li><button type="button" class="button">Search</button></li>
+			    		</ul> -->
+				  	</div>
+				  	<div class="top-bar-right">
+				    	<ul class="dropdown menu" data-dropdown-menu>
+				    		<li class="drop-text">
+				    			<a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">24</span></a>
+				    			<ul class="notifications menu vertical">
+				          			<li>
+				          				<span>You have a new email from <a href="#">John Doe</a>.</span>
+				          			</li>
+				          			<li>
+				          				<span>You have a missed call from <a href="#">Alex Quesada</a>.</span>
+				          			</li>
+				          			<li>
+				          				<span>You have a new email from <a href="#">Janet Ellis</a>.</span>
+				          			</li>
+				          			<li>
+				          				<span>You have a new email from <a href="#">Kathleen Jordan</a>.</span>
+				          			</li>
+				          			<li>
+				          				<span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+				          			</li>
+				          			<li>
+				          				<a href="#" class="button info hollow tiny expanded">View All</a>
+				          			</li>
+				        		</ul>
+			    			</li>
+				      		<li>
+				        		<a href="#">Administrator &nbsp;</a>
+				        		<ul class="menu vertical">
+				          			<li><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Sign Out</a></li>
+				        		</ul>
+				      		</li>
+				    	</ul>
+				  	</div>
+				</div>
+
+				<div class="row">
+					<div class="medium-12 columns">
+
+						<ul id="chat-tabs" class="tabs justified" data-tabs>
+							<li class="tabs-title is-active"><a href="#messages">Communications</a></li>
+							<li class="tabs-title"><a href="#contacts">Assigned Employees</a></li>
+						</ul>
+
+						<div class="tabs-content" data-tabs-content="chat-tabs">
+							
+							<div class="tabs-panel is-active" id="messages">
+								<div id="chatClient" class="chat">
+							        <div class="chat-wrapper">
+
+							            <div class="chat-header">
+							                <div class="input-group">
+							                    <input type="text" class="input-group-field" value="" placeholder="Search messages...">
+							                    <div class="input-group-button">
+							                        <a href="#" class="button info"><i class="fa fa-search"></i></a>
+							                    </div>
+							                </div>
+							            </div>
+
+							            <div class="chat-body">
+							                <div class="main-content">
+							                    <div class="inner">
+
+							                    	<div class="panel">
+							                            <div class="panel-body">
+							                                <div class="media-object full-table">
+							                                    <div class="media-object-section middle logo small">
+							                                        <div class="img-wrapper circle text-center">
+							                                            <span class="h5"><i class="fa fa-calendar fa-fw"></i></span>
+							                                        </div>
+							                                    </div>
+							                                    <div class="media-object-section middle">
+							                                        <p class="h6">
+							                                            You have a scheduled call with Keenan Thompson.<br>
+							                                            <span class="subheader"><small>Today at 3:00 PM MST</small></span>
+							                                        </p>
+							                                    </div>
+							                                    <div class="media-object-section middle">
+							                                        <ul class="dropdown menu" data-dropdown-menu>
+							                                            <li class="opens-left">
+							                                                <a>&nbsp; &nbsp; </a>
+							                                                <ul class="menu vertical">
+							                                                	<li><a href="#"><i class="fa fa-phone"></i>&nbsp; Go To Call</a></li>
+							                                                    <li><a href="#"><i class="fa fa-calendar"></i>&nbsp; Reschedule Call</a></li>
+							                                                    <li><a href="#"><i class="fa fa-times-circle"></i>&nbsp; Cancel Call</a></li>
+							                                                </ul>
+							                                            </li>
+							                                        </ul>
+							                                    </div>
+							                                </div>
+							                            </div>
+							                        </div>
+
+							                        <div class="panel">
+							                            <div class="panel-heading">
+							                                <span class="h6">PINNED</span>
+							                            </div>
+							                            <div class="panel-body wide">
+							                                <ul class="well-list message-preview">
+							                                    <li class="selected">
+							                                        <span id="expandChat" class="list-wrap">
+		                                            					<div class="list-item-image align-middle text-center">
+		                                                					<div class="img-wrapper circle logo small">
+		                                                    					<span class="h5">H</span>
+		                                                					</div>
+		                                            					</div>
+							                                            <div class="list-detail">
+							                                                <span class="truncate">Harry Styles</span>
+							                                                <span class="truncate"><small>Follow Up</small></span>
+							                                            </div>
+							                                            <div class="list-note text-center">
+							                                                <span class="subheader"><small>Today</small></span>
+							                                            </div>
+							                                            <div class="pull-right">
+							                                            	<ul class="dropdown menu mt-0-5" data-dropdown-menu>
+									                                            <li class="opens-left">
+									                                                <a>&nbsp; &nbsp; </a>
+									                                                <ul class="menu vertical">
+									                                                    <li><a href="#"><i class="fa fa-map-pin"></i>&nbsp; Unpin Thread</a></li>
+									                                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Archive</a></li>
+									                                                </ul>
+									                                            </li>
+									                                        </ul>
+							                                            </div>	
+							                                        </span>
+							                                    </li>          
+							                                </ul>
+							                            </div>
+							                        </div> 
+
+							                        <div class="panel">
+							                            <div class="panel-heading">
+							                                <span class="h6">MESSAGES</span>
+							                            </div>
+							                            <div class="panel-body wide">
+							                                <ul class="well-list message-preview">
+							                                	<li>
+							                                		<span class="list-wrap">
+							                                			<p class="mb-0">You have no messages at this time.</p>
+							                                		</span>
+							                                	</li>
+							                                    <li class="unread">
+							                                        <span id="expandChat" class="list-wrap">
+							                                        	<div class="list-item-image align-middle text-center">
+		                                                					<div class="img-wrapper circle logo small">
+		                                                    					<span class="h5">H</span>
+		                                                					</div>
+		                                            					</div>
+							                                            <div class="list-detail">
+							                                                <span class="truncate">Heidi McRoberts</span>
+							                                                <span class="truncate"><small>This is a subect of the message</small></span>
+							                                            </div>
+							                                            <div class="list-note text-center">
+							                                                <span class="badge success">2</span>
+							                                                <span class="subheader"><small>Yesterday</small></span>
+							                                            </div>
+							                                            <div class="pull-right">
+							                                            	<ul class="dropdown menu mt-0-5" data-dropdown-menu>
+									                                            <li class="opens-left">
+									                                                <a>&nbsp; &nbsp; </a>
+									                                                <ul class="menu vertical">
+									                                                    <li><a href="#"><i class="fa fa-map-pin"></i>&nbsp; Pin Thread</a></li>
+									                                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Archive</a></li>
+									                                                </ul>
+									                                            </li>
+									                                        </ul>
+							                                            </div>	
+							                                        </span>
+							                                    </li>
+							                                    <li class="unread">
+							                                        <span id="expandChat" class="list-wrap">
+							                                        	<div class="list-item-image align-middle text-center">
+		                                                					<div class="img-wrapper circle logo small">
+		                                                    					<span class="h5">S</span>
+		                                                					</div>
+		                                            					</div>
+							                                            <div class="list-detail">
+							                                                <span class="truncate">Shawna Barnhart</span>
+							                                                <span class="truncate"><small>This is another subject.</small></span>
+							                                            </div>
+							                                            <div class="list-note text-center">
+							                                                <span class="badge success">12</span>
+							                                                <span class="subheader"><small>Feb-12</small></span>
+							                                            </div>
+							                                            <div class="pull-right">
+							                                            	<ul class="dropdown menu mt-0-5" data-dropdown-menu>
+									                                            <li class="opens-left">
+									                                                <a>&nbsp; &nbsp; </a>
+									                                                <ul class="menu vertical">
+									                                                    <li><a href="#"><i class="fa fa-map-pin"></i>&nbsp; Pin Thread</a></li>
+									                                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Archive</a></li>
+									                                                </ul>
+									                                            </li>
+									                                        </ul>
+							                                            </div>	
+							                                        </span>
+							                                    </li>
+							                                    
+							                                </ul>
+							                            </div>
+							                        </div>
+							                    </div>
+
+							                    <div class="footer-content">
+							                        <a href="" class="button expanded"><i class="fa fa-edit"></i>&nbsp; Compose New Message</a>
+							                    </div>
+							                </div>
+
+							                <div class="side-content">
+							                   	<div class="inner">
+							                        <div class="row">
+							                            <div class="large-12 columns">
+							                                <div class="page-lead full-label">
+							                                   <p class="h5">
+							                                        Follow Up<br>
+							                                        <span class="subheader"><small>Last activity: a few minutes ago</small></span>
+							                                    </p>
+							                               </div>
+							                            </div>
+							                        </div>
+
+							                        <div class="media-object" data-animate="slide-in-right slide-out-right">
+							                            <div class="media-object-section middle">
+							                                <div class="small talk-bubble border tri-right left-in">
+							                                    <div class="talktext">
+							                                        <p>Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+							                                    </div>
+							                                </div>
+							                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+							                            </div>
+							                        </div>
+							                       
+							                        <div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+							                            <div class="media-object-section middle">
+							                                <div class="small white-bg talk-bubble border tri-right right-in">
+							                                    <div class="talktext">
+							                                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui.</p>
+							                                    </div>
+							                                </div>
+							                                <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+							                            </div>
+							                        </div>
+
+							                        <!-- Compose Message -->
+													<div class="row">
+														<div class="large-12 columns">
+															<div class="page-lead full-label">
+																<p class="h5">
+							                                        Compose Message
+							                                    </p>
+																<div class="input-group mt-1">
+																	<select class="input-group-field">
+																		<option value="" disabled>Choose a contact employee</option>
+																		<option>Brian Adams</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="row">
+														<div class="large-12 columns">
+															<p class="subheader">Compose a new message below.</p>
+														</div>
+													</div>
+
+							                    </div>
+							                    <div class="footer-content">
+							                        <div class="input-group">
+							                            <input type="text" class="input-group-field" value="" placeholder="Write a message...">
+							                            <div class="input-group-button">
+							                                <a href="#" class="button success"><i class="fa fa-send"></i></a>
+							                            </div>
+							                        </div>
+							                    </div>
+												
+							                </div>
+
+							            </div>
+							        </div>
+							    </div>
+							</div>
+
+							<div class="tabs-panel" id="contacts">
+								
+								<div class="panel mt-1">
+		                            <div class="panel-body wide">
+		                                <ul class="well-list">
+		                                    <li>
+		                                        <div class="media-object full-table">
+												  	<div class="media-object-section logo middle small">
+												    	<div class="img-wrapper circle">
+												      		<span class="h5">J</span>
+												    	</div>
+												  	</div>
+												  	<div class="media-object-section middle">
+												   		<span class="h6"><a href="admin-doctor-view.html">Johnny Kennedy</a></span>&nbsp; <span class="badge success"></span><br>
+												   		<p class="subheader"><small>ACME Corporation</small></p>
+												  	</div>
+												  	<div class="media-object-section middle">
+				                                        <div class="button-align pull-right">
+				                                        	<a class="button hollow" data-open="emman-dropdown"><i class="fa fa-send"></i></a>
+															<div class="dropdown-pane" id="emman-dropdown" data-dropdown data-close-on-click="true">
+															  	<form>
+													    			<div class="row">
+															      		<div class="medium-12 columns">
+															        		<label>
+															          			<textarea placeholder="Your Message"></textarea>
+															        		</label>
+															      		</div>
+															    	</div>
+															    	<div class="row">
+															      		<div class="medium-12 columns">
+															        		<button class="button expanded"><i class="fa fa-send"></i>&nbsp; Send</button>
+															      		</div>
+															    	</div>
+															  	</form>
+															</div>
+															<a class="button hollow" data-open="emman-dropdown"><i class="fa fa-phone"></i></a>
+				                                        </div>
+				                                    </div>
+												</div>
+		                                    </li>
+		                                </ul>
+		                            </div>
+		                        </div>
+
+							</div>
+	
+						</div>		
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/what-input/what-input.js"></script>
+	<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+
+	<script src="js/app.js"></script>
+
+	<script type="text/javascript">
+        $(function () {
+            var timer;
+            var topBarHeight = $('.top-bar').outerHeight();
+            var tabBarHeight = $('#chat-tabs').outerHeight();
+
+            $(window).resize(function() {
+                clearTimeout(timer);
+                timer = setTimeout(function() {
+              		$('.site-nav, .content').css("height", $(window).height());
+               		$('#chatClient .chat-wrapper').css("height", $(window).height() - (topBarHeight + tabBarHeight));
+                }, 40); 
+            }).resize();
+        });
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+.badge {
+	line-height: 1.5em;
+	&.alert {
+		background-color: $alert-color;
+		color: $white;
+		border: none;
+	}
+	&.small {
+	    width: 0.5rem;
+	    height: 0.5rem;
+	    min-width: 0.5rem;
+	    padding: 0;
+	    vertical-align: middle;
+	}
+}
+
+.label {
+	vertical-align: middle;
+	border-radius: 2px;
+	padding: 0.4rem 0.5rem 0.333rem;
+	margin: -3px 0 0;
+}

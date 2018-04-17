@@ -1,0 +1,577 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spoke Admin Portal</title>
+	<link rel="stylesheet" href="js/fullcalendar/fullcalendar.min.css">
+	<link rel="stylesheet" href="js/fullcalendar/fullcalendar.print.min.css" media="print">
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+	
+	<div class="expanded row medium-collapse">
+		<div class="medium-2 columns">
+			<div class="site-nav">
+				<header>
+					<a href="#" class="logo text-center">
+						<img src="img/logo.png" title="Spoke">
+					</a>
+				</header>
+				<ul class="menu vertical"  data-accordion-menu>
+					<li>
+						<a href="advocate-dashboard.html"><i class="material-icons">dashboard</i> Dashboard</a>
+					</li>
+					<li>
+						<a href="advocate-employees.html"><i class="material-icons">face</i>Employees</a>
+					</li>
+					<li class="is-active">
+						<a href="advocate-communications.html">Inbox</a>
+					</li>
+					<li>
+						<a href="#">Doctors</a>
+					</li>
+					<li>
+						<a href="advocate-facilities.html">Facilities</a>
+					</li>
+					<li>
+						<a href="#">Activity Logs</a>
+					</li>
+					<li>
+						<a href="advocate-profile.html"><i class="material-icons">account_circle</i> Profile</a>
+						<ul class="nested vertical menu">
+							<li>
+								<a href="advocate-profile.html">User Information</a>
+							</li>
+							<li>
+								<a href="advocate-password.html">Change My Password</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="medium-10 columns">
+			<div class="content">
+
+				<div class="top-bar">
+				  	<div class="top-bar-left">
+						<!-- <ul class="menu">
+				      		<li><input type="search" placeholder="Search"></li>
+				      		<li><button type="button" class="button">Search</button></li>
+			    		</ul> -->
+				  	</div>
+				  	<div class="top-bar-right">
+				    	<ul class="dropdown menu" data-dropdown-menu>
+				    		<li class="drop-text">
+				    			<a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">24</span></a>
+				    			<ul class="notifications menu vertical">
+				          			<li>
+				          				<span>You have a new email from <a href="#">John Doe</a>.</span>
+				          			</li>
+				          			<li>
+				          				<span>You have a missed call from <a href="#">Alex Quesada</a>.</span>
+				          			</li>
+				          			<li>
+				          				<span>You have a new email from <a href="#">Janet Ellis</a>.</span>
+				          			</li>
+				          			<li>
+				          				<span>You have a new email from <a href="#">Kathleen Jordan</a>.</span>
+				          			</li>
+				          			<li>
+				          				<span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+				          			</li>
+				          			<li>
+				          				<a href="#" class="button info hollow tiny expanded">View All</a>
+				          			</li>
+				        		</ul>
+			    			</li>
+			    			<li>
+				        		<a data-toggle="chatSupport"><i class="fa fa-phone-square fa-lg"></i><span class="success badge" id="notifCount">1</span></a>
+				      		</li>
+				      		<li>
+				        		<a href="#">Spoke Advocate &nbsp;</a>
+				        		<ul class="menu vertical">
+				          			<li><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Sign Out</a></li>
+				        		</ul>
+				      		</li>
+				    	</ul>
+				  	</div>
+				</div>
+
+				<div class="row collapse expanded">
+					
+
+					<div class="large-8 columns" style="background-color: #FFFFFF;">
+
+						<div class="page-lead row align-middle expanded">
+							<div class="auto columns">
+								<span class="h6">Inbox</span>
+							</div>
+						</div>
+
+		                <div class="menu-options mb-1">
+							<div class="row">
+								<div class="large-6 columns">
+									<div class="input-group">
+					                    <input type="text" class="input-group-field" value="" placeholder="Search keyword...">
+					                    <div class="input-group-button">
+					                        <a href="#" class="button info"><i class="fa fa-search"></i></a>
+					                    </div>
+					                </div>
+								</div>
+								<div class="large-6 columns">
+									<div class="row">
+	                                    <div class="large-6 columns">
+	                                        <label for="" class="small-label text-right middle">Filter</label>
+	                                    </div>
+	                                    <div class="large-6 columns">
+	                                        <select class="small-input">
+	                                            <option selected="true">All</option>
+	                                            <option>New</option>
+	                                            <option>Done</option>
+	                                        </select>
+	                                    </div>  
+	                                </div> 
+								</div>
+							</div>
+						</div>
+
+						<div class="panel">
+							<ul class="well-list message-preview">
+                                <li class="unread">
+                                    <span id="expandChat" class="list-wrap">
+                                    	<div class="list-item-image align-middle text-center">
+                        					<div class="img-wrapper circle logo small">
+                            					<span class="h5">H</span>
+                        					</div>
+                    					</div>
+                                        <div class="list-detail">
+                                            <span class="truncate">Heidi McRoberts&nbsp; <span class="badge success small"></span></span>
+                                            <span class="truncate"><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ipsam voluptatibus doloribus consectetur voluptate facere non! Perferendis quod, tempora consequuntur vel nemo mollitia accusamus possimus? Sequi, labore voluptate sed sit.</small></span>
+                                        </div>
+                                        <div class="list-note text-center">
+                                            <span class="badge success">2</span>
+                                            <span class="subheader"><small>Yesterday</small></span>
+                                        </div>
+                                        <div class="pull-right">
+                                        	<ul class="dropdown menu mt-0-5" data-dropdown-menu>
+	                                            <li>
+	                                                <a></a>
+	                                                <ul class="menu vertical">
+	                                                    <li><a href="#"><i class="fa fa-phone"></i>&nbsp; Call</a></li>
+	                                                	<li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</a></li>
+	                                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Archive</a></li>
+	                                                </ul>
+	                                            </li>
+	                                        </ul>
+                                        </div>	
+                                    </span>
+                                </li>
+                                <li class="unread">
+                                    <span id="expandChat" class="list-wrap">
+                                    	<div class="list-item-image align-middle text-center">
+                        					<div class="img-wrapper circle logo small">
+                            					<span class="h5">S</span>
+                        					</div>
+                    					</div>
+                                        <div class="list-detail">
+                                            <span class="truncate">Shawna Barnhart&nbsp; <span class="badge success small"></span></span>
+                                            <span class="truncate"><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore repellat ab ad et exercitationem at eligendi dolorem, repudiandae blanditiis itaque autem nulla perspiciatis qui culpa soluta. Delectus architecto consequuntur perferendis!.</small></span>
+                                        </div>
+                                        <div class="list-note text-center">
+                                            <span class="badge success">12</span>
+                                            <span class="subheader"><small>Feb-12</small></span>
+                                        </div>
+                                        <div class="pull-right">
+                                        	<ul class="dropdown menu mt-0-5" data-dropdown-menu>
+	                                            <li>
+	                                                <a></a>
+	                                                <ul class="menu vertical">
+	                                                    <li><a href="#"><i class="fa fa-phone"></i>&nbsp; Call</a></li>
+	                                                	<li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</a></li>
+	                                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Archive</a></li>
+	                                                </ul>
+	                                            </li>
+	                                        </ul>
+                                        </div>	
+                                    </span>
+                                </li>
+                                <li class="">
+                                    <span id="expandChat" class="list-wrap">
+                                    	<div class="list-item-image align-middle text-center">
+                        					<div class="img-wrapper circle logo small">
+                            					<span class="h5">A</span>
+                        					</div>
+                    					</div>
+                                        <div class="list-detail">
+                                            <span class="truncate">Adam Hernandez</span>
+                                            <span class="truncate"><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore repellat ab ad et exercitationem at eligendi dolorem, repudiandae blanditiis itaque autem nulla perspiciatis qui culpa soluta. Delectus architecto consequuntur perferendis!.</small></span>
+                                        </div>
+                                        <div class="list-note text-center">
+                                            <!-- <span class="badge success">12</span> -->
+                                            <span class="subheader"><small>Feb-12</small></span>
+                                        </div>
+                                        <div class="pull-right">
+                                        	<ul class="dropdown menu mt-0-5" data-dropdown-menu>
+                                        		<li><i class="fa fa-check-circle success-color"></i></li>
+	                                            <li>
+	                                                <a></a>
+	                                                <ul class="menu vertical">
+	                                                    <li><a href="#"><i class="fa fa-phone"></i>&nbsp; Call</a></li>
+	                                                	<li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</a></li>
+	                                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Archive</a></li>
+	                                                </ul>
+	                                            </li>
+	                                        </ul>
+                                        </div>	
+                                    </span>
+                                </li>
+                                <li class="">
+                                    <span id="expandChat" class="list-wrap">
+                                    	<div class="list-item-image align-middle text-center">
+                        					<div class="img-wrapper circle logo small">
+                            					<span class="h5">S</span>
+                        					</div>
+                    					</div>
+                                        <div class="list-detail">
+                                            <span class="truncate">Sean Hicks</span>
+                                            <span class="truncate"><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore repellat ab ad et exercitationem at eligendi dolorem, repudiandae blanditiis itaque autem nulla perspiciatis qui culpa soluta. Delectus architecto consequuntur perferendis!.</small></span>
+                                        </div>
+                                        <div class="list-note text-center">
+                                            <!-- <span class="badge success">12</span> -->
+                                            <span class="subheader"><small>Feb-12</small></span>
+                                        </div>
+                                        <div class="pull-right">
+                                        	<ul class="dropdown menu mt-0-5" data-dropdown-menu>
+                                        		<li><i class="fa fa-check-circle success-color"></i></li>
+	                                            <li>
+	                                                <a></a>
+	                                                <ul class="menu vertical">
+	                                                    <li><a href="#"><i class="fa fa-phone"></i>&nbsp; Call</a></li>
+	                                                	<li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</a></li>
+	                                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Archive</a></li>
+	                                                </ul>
+	                                            </li>
+	                                        </ul>
+                                        </div>	
+                                    </span>
+                                </li>
+                                <li class="">
+                                    <span id="expandChat" class="list-wrap">
+                                    	<div class="list-item-image align-middle text-center">
+                        					<div class="img-wrapper circle logo small">
+                            					<span class="h5">S</span>
+                        					</div>
+                    					</div>
+                                        <div class="list-detail">
+                                            <span class="truncate">Sara Lopez&nbsp; <span class="badge success small"></span></span>
+                                            <span class="truncate"><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore repellat ab ad et exercitationem at eligendi dolorem, repudiandae blanditiis itaque autem nulla perspiciatis qui culpa soluta. Delectus architecto consequuntur perferendis!.</small></span>
+                                        </div>
+                                        <div class="list-note text-center">
+                                            <!-- <span class="badge success">12</span> -->
+                                            <span class="subheader"><small>Feb-12</small></span>
+                                        </div>
+                                        <div class="pull-right">
+                                        	<ul class="dropdown menu mt-0-5" data-dropdown-menu>
+	                                            <li>
+	                                                <a></a>
+	                                                <ul class="menu vertical">
+	                                                    <li><a href="#"><i class="fa fa-phone"></i>&nbsp; Call</a></li>
+	                                                	<li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</a></li>
+	                                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Archive</a></li>
+	                                                </ul>
+	                                            </li>
+	                                        </ul>
+                                        </div>	
+                                    </span>
+                                </li>
+                                <li class="">
+                                    <span id="expandChat" class="list-wrap">
+                                    	<div class="list-item-image align-middle text-center">
+                        					<div class="img-wrapper circle logo small">
+                            					<span class="h5">K</span>
+                        					</div>
+                    					</div>
+                                        <div class="list-detail">
+                                            <span class="truncate">Kathryn Boyd</span>
+                                            <span class="truncate"><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore repellat ab ad et exercitationem at eligendi dolorem, repudiandae blanditiis itaque autem nulla perspiciatis qui culpa soluta. Delectus architecto consequuntur perferendis!.</small></span>
+                                        </div>
+                                        <div class="list-note text-center">
+                                            <!-- <span class="badge success">12</span> -->
+                                            <span class="subheader"><small>Feb-12</small></span>
+                                        </div>
+                                        <div class="pull-right">
+                                        	<ul class="dropdown menu mt-0-5" data-dropdown-menu>
+	                                            <li>
+	                                                <a></a>
+	                                                <ul class="menu vertical">
+	                                                    <li><a href="#"><i class="fa fa-phone"></i>&nbsp; Call</a></li>
+	                                                	<li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</a></li>
+	                                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Archive</a></li>
+	                                                </ul>
+	                                            </li>
+	                                        </ul>
+                                        </div>	
+                                    </span>
+                                </li>
+                                <li class="">
+                                    <span id="expandChat" class="list-wrap">
+                                    	<div class="list-item-image align-middle text-center">
+                        					<div class="img-wrapper circle logo small">
+                            					<span class="h5">K</span>
+                        					</div>
+                    					</div>
+                                        <div class="list-detail">
+                                            <span class="truncate">Kathy Alexander</span>
+                                            <span class="truncate"><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore repellat ab ad et exercitationem at eligendi dolorem, repudiandae blanditiis itaque autem nulla perspiciatis qui culpa soluta. Delectus architecto consequuntur perferendis!.</small></span>
+                                        </div>
+                                        <div class="list-note text-center">
+                                            <!-- <span class="badge success">12</span> -->
+                                            <span class="subheader"><small>Feb-12</small></span>
+                                        </div>
+                                        <div class="pull-right">
+                                        	<ul class="dropdown menu mt-0-5" data-dropdown-menu>
+	                                            <li>
+	                                                <a></a>
+	                                                <ul class="menu vertical">
+	                                                    <li><a href="#"><i class="fa fa-phone"></i>&nbsp; Call</a></li>
+	                                                	<li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</a></li>
+	                                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Archive</a></li>
+	                                                </ul>
+	                                            </li>
+	                                        </ul>
+                                        </div>	
+                                    </span>
+                                </li>
+                                <li class="">
+                                    <span id="expandChat" class="list-wrap">
+                                    	<div class="list-item-image align-middle text-center">
+                        					<div class="img-wrapper circle logo small">
+                            					<span class="h5">R</span>
+                        					</div>
+                    					</div>
+                                        <div class="list-detail">
+                                            <span class="truncate">Ralph Wilson</span>
+                                            <span class="truncate"><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore repellat ab ad et exercitationem at eligendi dolorem, repudiandae blanditiis itaque autem nulla perspiciatis qui culpa soluta. Delectus architecto consequuntur perferendis!.</small></span>
+                                        </div>
+                                        <div class="list-note text-center">
+                                            <!-- <span class="badge success">12</span> -->
+                                            <span class="subheader"><small>Feb-12</small></span>
+                                        </div>
+                                        <div class="pull-right">
+                                        	<ul class="dropdown menu mt-0-5" data-dropdown-menu>
+	                                            <li>
+	                                                <a></a>
+	                                                <ul class="menu vertical">
+	                                                    <li><a href="#"><i class="fa fa-phone"></i>&nbsp; Call</a></li>
+	                                                	<li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</a></li>
+	                                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Archive</a></li>
+	                                                </ul>
+	                                            </li>
+	                                        </ul>
+                                        </div>	
+                                    </span>
+                                </li>
+                                <li class="">
+                                    <span id="expandChat" class="list-wrap">
+                                    	<div class="list-item-image align-middle text-center">
+                        					<div class="img-wrapper circle logo small">
+                            					<span class="h5">P</span>
+                        					</div>
+                    					</div>
+                                        <div class="list-detail">
+                                            <span class="truncate">Phyllis Russell</span>
+                                            <span class="truncate"><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore repellat ab ad et exercitationem at eligendi dolorem, repudiandae blanditiis itaque autem nulla perspiciatis qui culpa soluta. Delectus architecto consequuntur perferendis!.</small></span>
+                                        </div>
+                                        <div class="list-note text-center">
+                                            <!-- <span class="badge success">12</span> -->
+                                            <span class="subheader"><small>Feb-12</small></span>
+                                        </div>
+                                        <div class="pull-right">
+                                        	<ul class="dropdown menu mt-0-5" data-dropdown-menu>
+	                                            <li>
+	                                                <a></a>
+	                                                <ul class="menu vertical">
+	                                                    <li><a href="#"><i class="fa fa-phone"></i>&nbsp; Call</a></li>
+	                                                	<li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</a></li>
+	                                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Archive</a></li>
+	                                                </ul>
+	                                            </li>
+	                                        </ul>
+                                        </div>	
+                                    </span>
+                                </li>
+                                <li class="">
+                                    <span id="expandChat" class="list-wrap">
+                                    	<div class="list-item-image align-middle text-center">
+                        					<div class="img-wrapper circle logo small">
+                            					<span class="h5">L</span>
+                        					</div>
+                    					</div>
+                                        <div class="list-detail">
+                                            <span class="truncate">Louis Campbell</span>
+                                            <span class="truncate"><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore repellat ab ad et exercitationem at eligendi dolorem, repudiandae blanditiis itaque autem nulla perspiciatis qui culpa soluta. Delectus architecto consequuntur perferendis!.</small></span>
+                                        </div>
+                                        <div class="list-note text-center">
+                                            <!-- <span class="badge success">12</span> -->
+                                            <span class="subheader"><small>Feb-12</small></span>
+                                        </div>
+                                        <div class="pull-right">
+                                        	<ul class="dropdown menu mt-0-5" data-dropdown-menu>
+	                                            <li>
+	                                                <a></a>
+	                                                <ul class="menu vertical">
+	                                                    <li><a href="#"><i class="fa fa-phone"></i>&nbsp; Call</a></li>
+	                                                	<li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</a></li>
+	                                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Archive</a></li>
+	                                                </ul>
+	                                            </li>
+	                                        </ul>
+                                        </div>	
+                                    </span>
+                                </li>
+                                <li class="">
+                                    <span id="expandChat" class="list-wrap">
+                                    	<div class="list-item-image align-middle text-center">
+                        					<div class="img-wrapper circle logo small">
+                            					<span class="h5">K</span>
+                        					</div>
+                    					</div>
+                                        <div class="list-detail">
+                                            <span class="truncate">Katherine White</span>
+                                            <span class="truncate"><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore repellat ab ad et exercitationem at eligendi dolorem, repudiandae blanditiis itaque autem nulla perspiciatis qui culpa soluta. Delectus architecto consequuntur perferendis!.</small></span>
+                                        </div>
+                                        <div class="list-note text-center">
+                                            <!-- <span class="badge success">12</span> -->
+                                            <span class="subheader"><small>Feb-12</small></span>
+                                        </div>
+                                        <div class="pull-right">
+                                        	<ul class="dropdown menu mt-0-5" data-dropdown-menu>
+	                                            <li>
+	                                                <a></a>
+	                                                <ul class="menu vertical">
+	                                                    <li><a href="#"><i class="fa fa-phone"></i>&nbsp; Call</a></li>
+	                                                	<li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</a></li>
+	                                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Archive</a></li>
+	                                                </ul>
+	                                            </li>
+	                                        </ul>
+                                        </div>	
+                                    </span>
+                                </li>
+                                
+                            </ul>
+						</div>
+
+					</div>
+
+					<div class="large-4 columns">
+						
+						<div class="row">
+							<div class="large-12 columns">
+
+								<div id="eventCalendar" class="mt-1 mb-1"></div>
+
+		                        <div id="eventScheduler" class="mt-1 mb-1"></div>
+
+							</div>
+						</div>	
+
+					</div>
+
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/what-input/what-input.js"></script>
+	<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+
+	<script src='js/fullcalendar/lib/moment.min.js'></script>
+	<script src='js/fullcalendar/fullcalendar.min.js'></script>
+
+	<script src="js/app.js"></script>
+
+	<script type="text/javascript">
+
+        var sampleEvents = {
+        	"events": [
+				{
+					title: 'Scheduled Call with John Doe',
+					start: '2017-09-25T13:00:00'
+				},
+				{
+					title: 'Scheduled Call with Amy Thompson',
+					start: '2017-09-25T15:00:00',
+					end: '2017-09-25T16:00:00'
+				},
+				{
+					title: 'Scheduled Call with Dorothy White',
+					start: '2017-09-25T16:00:00',
+					end: '2017-09-25T17:00:00'
+				}
+			]
+        };
+
+        $('#eventCalendar').fullCalendar({
+			header: {
+				left: 'prev',
+				center: 'title',
+				right: 'next'
+			},
+			aspectRatio: 1,
+			height: 'auto',
+			fixedWeekCount: false,
+			events: sampleEvents,
+			dayClick: function () {
+				alert('text');
+			}
+		});
+
+        $('#eventScheduler').fullCalendar({
+			defaultView: 'agendaDay',
+			header: {
+				left: 'title',
+				center: '',
+				right: 'today prev,next'
+			},
+			allDayText: 'All-Day',
+			slotLabelFormat: 'h(:mm) A',
+			minTime: '07:00:00',
+			maxTime: '20:00:00',
+			height: 'auto',
+			editable: true,
+			eventLimit: true, // allow "more" link when too many events
+			titleFormat: 'MMM D',
+			events: sampleEvents,
+			dayClick: function () {
+				alert('text');
+			}
+		});
+
+		$(function () {
+            var timer;
+
+            $(window).resize(function() {
+                clearTimeout(timer);
+                timer = setTimeout(function() {
+                  $('.site-nav, .content').css("height", $(window).height());
+                }, 40); 
+            }).resize();
+        });
+
+        $('.list-wrap').click(function () {
+        	window.location.href = 'advocate-employee-inbox-v2.html';
+        });
+
+    </script>
+
+</body>
+</html>

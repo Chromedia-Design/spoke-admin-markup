@@ -1,0 +1,415 @@
+	<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spoke Admin Portal</title>
+	<link rel="stylesheet" href="js/trumbowyg/ui/trumbowyg.min.css">
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+	<div class="expanded row medium-collapse">
+		<div class="medium-2 columns">
+			<div class="site-nav">
+				<header>
+					<a href="#" class="logo text-center">
+						<img src="img/logo.png" title="Spoke">
+					</a>
+				</header>
+				<ul class="menu vertical"  data-accordion-menu>
+					<li class="is-active">
+						<a href="#"><i class="material-icons">dashboard</i> Dashboard</a>
+					</li>
+					<li>
+						<a href="#"><i class="material-icons">work</i> Practices</a>
+						<ul class="nested vertical menu is-active">
+							<li>
+								<a href="#">Specializations</a>
+							</li>
+							<li>
+								<a href="#">Treatments</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#"><i class="material-icons">card_giftcard</i> Packages</a>
+					</li>
+					<li>
+						<a href="#"><i class="material-icons">local_pharmacy</i> Facilities</a>
+					</li>
+					<li>
+						<a href="#"><i class="material-icons">card_giftcard</i> Doctors</a>
+					</li>
+					<li>
+						<a href="#"><i class="material-icons">card_giftcard</i> Companies</a>
+					</li>
+					<li>
+						<a href="#"><i class="material-icons">card_giftcard</i> Content</a>
+					</li>
+					<li>
+						<a href="#"><i class="material-icons">card_giftcard</i> Users</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="medium-10 columns">
+			<div class="content">
+
+				<div class="top-bar">
+				  	<div class="top-bar-left">
+						<!-- <ul class="menu">
+					  		<li><input type="search" placeholder="Search"></li>
+					  		<li><button type="button" class="button">Search</button></li>
+						</ul> -->
+				  	</div>
+				  	<div class="top-bar-right">
+						<ul class="dropdown menu" data-dropdown-menu>
+							<li>
+								<a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">6</span></a>
+							</li>
+					  		<li>
+								<a href="#">Administrator</a>
+								<ul class="menu vertical">
+						  			<li><a href="#">One</a></li>
+						  			<li><a href="#">Two</a></li>
+						  			<li><a href="#">Three</a></li>
+								</ul>
+					  		</li>
+						</ul>
+				  	</div>
+				</div>
+				
+
+				<!-- Beadcrumbs -->
+				<!-- <div class="row">
+					<div class="medium-12 columns">
+						<nav aria-label="You are here:" role="navigation">
+						  	<ul class="breadcrumbs">
+						    	<li><a href="#">Facilities</a></li>
+						    	<li><a href="#">Florida Hospital-Orlando</a></li>
+						    	<li>Edit Profile</li>
+						  	</ul>
+						</nav>
+					</div>
+				</div> -->
+
+				
+				
+
+				<!-- <div class="row">
+					<div class="medium-12 columns">
+						<ul class="tabs" id="spoke-tabs">
+							<li class="tabs-title is-active"><a href="admin-Activity-Log.html">All Activities</a></li>
+							<li class="tabs-title"><a href="admin-Activity-Log-unassigned.html">Unassigned</a></li>
+							<li class="tabs-title"><a href="admin-Activity-Log-attention.html">Need Attention</a></li>
+							<li class="tabs-title"><a href="#">Done</a></li>
+							<li class="tabs-title"><a href="#">What else?</a></li>
+						</ul>
+					</div>
+				</div> -->
+				
+				<!-- FACILITY HEADER END -->
+				<!-- <div class="row mb-2 mt-1">
+					<div class="column medium-12">
+						<ul class="vertical-list">
+							<li class="subheader">Filter by: </li>
+							<li><a href="#" class="link">Message</a></li>
+							<li><a href="#" class="link">Interest</a></li>
+							<li><a href="#" class="link">Change details</a></li>
+							<li><a href="#" class="link">Custom</a></li>
+							<li><a href="#" class="link">What else?</a></li>
+						</ul>
+					</div>
+				</div> -->
+
+				<div class="row">
+					<div class="medium-12 columns">
+
+						<!-- tab content -->
+						<div class="tabs-content" data-tabs-content="spoke-tabs">
+							<div class="tabs-panel is-active" id="Staff">
+
+
+								<!-- Begin Assign to advocate -->
+                				<div class="reveal" id="assignToAdvocate" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+									<div class="row collapse">
+										<div class="large-12 columns">
+											<h5 class="reveal-heading">Assign Advocate</h5>
+										</div>
+									</div>
+									<form>
+										<div class="row collapse">
+											<div class="large-12 columns">
+												<div class="reveal-body">
+													<p><b>William Pinkerton</b> is interested with <b>Boulder Surgery Center</b>.</p>
+													<div class="row">
+														<div class="large-12 columns">
+															<label>
+																Advocate
+																<select class="normal-input">
+																	<option>
+																		Choose one
+																	</option>
+																	<option>
+																		Denver
+																	</option>
+																	<option>
+																		Bankok
+																	</option>
+																	<option>
+																		Manila
+																	</option>														
+																</select>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row collapse">
+											<div class="large-12 columns">
+												<div class="reveal-footer">
+													<div class="button-group pull-right">
+														<a class="button link" data-close>Cancel</a>
+														<a href="#" class="button success">Assign</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</form>
+								  	<button class="close-button" data-close aria-label="Close modal" type="button">
+								    	<span aria-hidden="true">&times;</span>
+								  	</button>
+								</div>
+								<!-- End Assign to advocate -->
+
+								<!-- Begin View Changes -->
+                				<div class="reveal" id="viewChanges" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+									<div class="row collapse">
+										<div class="large-12 columns">
+											<h5 class="reveal-heading">View Changes</h5>
+										</div>
+									</div>
+									<form>
+										<div class="row collapse">
+											<div class="large-12 columns">
+												<div class="reveal-body">
+													<p><b>Timothy Sanders</b> updated information.</p>
+													<hr  class="mb-4">
+													<div class="row">
+														<div class="large-12 columns">
+															<p class="subheader"><b>Name</b></p>
+															<b>Timoy</b> to <b>Timothy</b>
+															<hr>
+															<p class="subheader"><b>Date of Birth</b></p>
+															<b>january 12, 1972</b> to <b>January 21, 1972</b>
+															<hr>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row collapse">
+											<div class="large-12 columns">
+												<div class="reveal-footer">
+													<div class="button-group pull-right">
+														<!-- <a class="button link" data-close>Cancel</a> -->
+														<!-- <a href="#" class="button success">Assign</a> -->
+													</div>
+												</div>
+											</div>
+										</div>
+									</form>
+								  	<button class="close-button" data-close aria-label="Close modal" type="button">
+								    	<span aria-hidden="true">&times;</span>
+								  	</button>
+								</div>
+								<!-- End View Changes -->
+
+								<div class="page-lead">
+									<div class="row collapse">
+										<div class="large-4 columns">
+											<span class="h6">Recent Activity</span>
+										</div>
+										<div class="large-8 columns">
+											<!-- <div class="row">
+			                                    <div class="large-6 columns">
+			                                        <label for="" class="small-label text-right middle">Activities from:</label>
+			                                    </div>
+			                                    <div class="large-6 columns">
+			                                        <select class="small-input">
+			                                            <option selected="true">All</option>
+			                                            <option>Employee</option>
+			                                            <option>Administrator</option>
+			                                        </select>
+			                                    </div>  
+			                                </div>  -->
+										</div>
+									</div>
+								</div>
+
+								<div class="activity-listing">
+									<div class="listing-title">Oct 2, 2017</div>
+										<ol class="table-list">
+											<li class="table-list-item">
+												<div class="table-list-cell activity-icon">
+													<p><i class="fa fa-sign-out fa-fw"></i></p>
+												</div>
+												<div class="table-list-cell activity-name">
+													<p>John Doe logged out.</p>
+												</div>
+												<div class="table-list-cell activity-time">
+													<p class="pull-right subheader">a few seconds ago</p>
+												</div>
+											</li>
+											<li class="table-list-item">
+												<div class="table-list-cell activity-icon">
+													<p><i class="fa fa-check-circle fa-fw"></i></p>
+												</div>
+												<div class="table-list-cell activity-name">
+													<p>John Doe selected Denver Vail Orthopedics.</p>
+												</div>
+												<div class="table-list-cell activity-time">
+													<p class="pull-right subheader">an hour ago</p>
+												</div>
+											</li>
+										</ol>
+										<div class="listing-title">Oct 1, 2017</div>
+										<ol class="table-list">
+											<li class="table-list-item">
+												<div class="table-list-cell activity-icon">
+													<p><i class="fa fa-eye fa-fw"></i></p>
+												</div>
+												<div class="table-list-cell activity-name">
+													<p>John Doe viewed his results page.</p>
+												</div>
+												<div class="table-list-cell activity-time">
+													<p class="pull-right subheader">8:00AM</p>
+												</div>
+											</li>
+											<li class="table-list-item">
+												<div class="table-list-cell activity-icon">
+													<p><i class="fa fa-check-circle fa-fw"></i></p>
+												</div>
+												<div class="table-list-cell activity-name">
+													<p>John Doe successfully created his account.</p>
+												</div>
+												<div class="table-list-cell activity-time">
+													<p class="pull-right subheader">8:00AM</p>
+												</div>
+											</li>
+											<li class="table-list-item">
+												<div class="table-list-cell activity-icon">
+													<p><i class="fa fa-check-circle fa-fw"></i></p>
+												</div>
+												<div class="table-list-cell activity-name">
+													<p>John Doe followed transactional email link.</p>
+												</div>
+												<div class="table-list-cell activity-time">
+													<p class="pull-right subheader">8:00AM</p>
+												</div>
+											</li>
+										</ol>
+										<div class="listing-title">Sep 30, 2017</div>
+										<ol class="table-list">
+											<li class="table-list-item">
+												<div class="table-list-cell activity-icon">
+													<p><i class="fa fa-eye fa-fw"></i></p>
+												</div>
+												<div class="table-list-cell activity-name">
+													<p>John Doe opened his transactional email.</p>
+												</div>
+												<div class="table-list-cell activity-time">
+													<p class="pull-right subheader">8:00AM</p>
+												</div>
+											</li>
+											<li class="table-list-item">
+												<div class="table-list-cell activity-icon">
+													<p><i class="fa fa-eye fa-fw"></i></p>
+												</div>
+												<div class="table-list-cell activity-name">
+													<p>John Doe opened his transactional email.</p>
+												</div>
+												<div class="table-list-cell activity-time">
+													<p class="pull-right subheader">8:00AM</p>
+												</div>
+											</li>
+											<li class="table-list-item">
+												<div class="table-list-cell activity-icon">
+													<p><i class="fa fa-eye fa-fw"></i></p>
+												</div>
+												<div class="table-list-cell activity-name">
+													<p>John Doe opened his transactional email.</p>
+												</div>
+												<div class="table-list-cell activity-time">
+													<p class="pull-right subheader">8:00AM</p>
+												</div>
+											</li>
+											<li class="table-list-item">
+												<div class="table-list-cell activity-icon">
+													<p><i class="fa fa-eye fa-fw"></i></p>
+												</div>
+												<div class="table-list-cell activity-name">
+													<p>John Doe opened his transactional email.</p>
+												</div>
+												<div class="table-list-cell activity-time">
+													<p class="pull-right subheader">8:00AM</p>
+												</div>
+											</li>
+											<li class="table-list-item">
+												<div class="table-list-cell activity-icon">
+													<p><i class="fa fa-eye fa-fw"></i></p>
+												</div>
+												<div class="table-list-cell activity-name">
+													<p>John Doe opened his transactional email.</p>
+												</div>
+												<div class="table-list-cell activity-time">
+													<p class="pull-right subheader">8:00AM</p>
+												</div>
+											</li>
+										</ol>
+										<div class="listing-title"><a href="#" class="button primary small">View More</a></div>
+									</div>
+									
+								</div>
+								
+							</div>
+						</div>
+						<!-- // tab content -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/what-input/what-input.js"></script>
+	<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+		
+	<script src="js/trumbowyg/trumbowyg.min.js"></script>
+	<script src="js/app.js"></script>
+
+	<script type="text/javascript">
+		$(function () {
+            var timer;
+
+            $(window).resize(function() {
+                clearTimeout(timer);
+                timer = setTimeout(function() {
+                  $('.site-nav, .content').css("height", $(window).height());
+                }, 40); 
+            }).resize();
+        });
+
+        $('.wysiwyg').trumbowyg();
+
+	</script>
+
+</body>
+</html>

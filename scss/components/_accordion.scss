@@ -1,0 +1,25 @@
+.accordion-content {
+	&.wide {
+		padding: 0;
+	}
+	.message-preview {
+		> li {
+			border-right: none;
+		}
+	}
+}
+
+.accordion-title {
+	font-size: 1rem;
+	line-height: 1rem;
+	font-weight: $global-weight-bold;
+	transition: all 0.2s ease-in-out;
+	&:hover, &:visited, &:focus {
+		background-color: rgba($primary-color, $B-dividers);
+		color: $text-black;
+	}
+	&.is-active {
+		background-color: rgba($primary-color, $B-dividers);
+		color: $text-black;
+	}
+}

@@ -1,0 +1,52 @@
+// Monthly.js Overrides
+.monthly-day-event {
+	> .monthly-day-number {
+		font-size: rem-calc(12);
+	}
+}
+
+.monthly-day-title-wrap {
+	div {
+		font-size: rem-calc(12);
+		font-weight: bold;
+	}
+}
+
+.monthly-today {
+	.monthly-day-number {
+		padding: 2px;
+		width: auto;
+		height: auto;
+		text-align: center;
+		font-size: rem-calc(9);
+	}
+}
+
+// FullCalendar.js Overrides
+.fc-month-view .fc-event-container{
+    // display: none;
+    .fc-content {
+    	display: none;
+    }
+}
+
+#eventCalendar,
+#eventScheduler {
+	.fc-toolbar {
+		h2 {
+			font-family: $body-font-family;
+			font-size: rem-calc(16);
+			line-height: 2em;
+		}
+	}
+	table {
+		margin-bottom: 0;
+		thead, tbody, tfoot {
+			border: none;
+			background-color: transparent;
+		}
+		tbody tr:nth-child(even) {
+			background: transparent;
+		}
+	}
+}

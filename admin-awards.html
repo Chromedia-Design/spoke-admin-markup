@@ -1,0 +1,230 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spoke Sales Portal</title>
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+	
+	<div class="expanded row medium-collapse">
+		<div class="medium-2 columns">
+			<div class="site-nav">
+				<header>
+					<a href="#" class="logo text-center">
+						<img src="img/logo.png" title="Spoke">
+					</a>
+				</header>
+				<ul class="menu vertical"  data-accordion-menu>
+					<li>
+						<a href="#">Awards</a>
+						<ul class="nested vertical menu is-active">
+							<li>
+								<a href="#">Awards</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="medium-10 columns">
+			<div class="content">
+				<div class="top-bar">
+				  	<!-- <div class="top-bar-left">
+						<ul class="menu">
+				      		<li><input type="search" placeholder="Search"></li>
+				      		<li><button type="button" class="button">Search</button></li>
+			    		</ul>
+				  	</div> -->
+				  	<div class="top-bar-right">
+				    	<ul class="dropdown menu" data-dropdown-menu>
+				    		<li>
+				    			<a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">6</span></a>
+			    			</li>
+				      		<li>
+				        		<a href="#">Sales Agent</a>
+				        		<ul class="menu vertical">
+				          			<li><a href="#">Account</a></li>
+				          			<li><a href="#">Sign Out</a></li>
+				        		</ul>
+				      		</li>
+				    	</ul>
+				  	</div>
+				</div>
+				
+				<div class="row">
+					<div class="large-12 columns">
+
+						<div class="menu-options mt-2">
+			                <div class="row collapse">
+			                    <div class="large-4 columns">
+			                        <div class="input-group">
+			                            <input class="input-group-field" type="text" placeholder="Search patients..."></input>
+			                            <div class="input-group-button">
+			                                <input type="submit" class="button secondary" value="Search">
+			                            </div>
+			                        </div>
+			                    </div>
+			                    <!-- <div class="large-8 columns">
+			                        <div class="row collapse">
+			                            <div class="large-5 large-offset-7 columns">
+			                                <div class="row">
+			                                    <div class="large-4 columns">
+			                                        <label for="" class="small-label text-right middle">Status</label>
+			                                    </div>
+			                                    <div class="large-8 columns">
+			                                        <select class="small-input">
+			                                            <option>All Status</option>
+			                                        </select>
+			                                    </div>  
+			                                </div> 
+			                            </div>
+			                        </div>
+			                    </div> -->
+			                </div>
+			            </div>
+
+				<div class="page-lead">
+			                	<span class="h5">Awards <span>(102)</span></span>
+			                	<a data-open="exampleModal1" class="button primary small pull-right">+ Add New Award</a>
+			            	</div>
+
+			            <div class="reveal" id="exampleModal1" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+					<div class="row collapse">
+						<div class="large-12 columns">
+							<h5 class="reveal-heading">Add New Award</h5>
+						</div>
+					</div>
+					<div class="row collapse">
+						<div class="large-12 columns">
+							<div class="reveal-body">
+								<label for="">
+									Name
+									<input type="text">
+									Description
+									<textarea name="" id="" cols="30" rows="5"></textarea>
+									Awarding body
+									<input type="text">
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="row collapse">
+						<div class="large-12 columns">
+							<div class="reveal-footer">
+								<div class="button-group pull-right">
+									<a class="button link" data-close>Cancel</a>
+									<a href="#" data-open="exampleModal2" class="button success">Save</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				  	<button class="close-button" data-close aria-label="Close modal" type="button">
+				    		<span aria-hidden="true">&times;</span>
+				  	</button>
+				</div>
+
+			            <table>
+			                <thead>
+			                <tr>
+			                    <th><a href="#">Name <i class="fa fa-caret-up fa-fw"></i></a></th>
+			                    <th><a href="#">Description <i class="fa fa-caret-up fa-fw"></i></a></th>
+			                    <th><a href="#">Awarding body <i class="fa fa-caret-up fa-fw"></i></a></th>
+
+			                    <th></th>
+			                </tr>
+			                </thead>
+			                <tbody>
+			                    <tr>
+			                        <td><b>Join Commission International (JCI)</b><p>Award</p></td>
+			                        <td>JCI works with health care organizations, govern…</td>
+			                        <td>Joint Commission International (JCI)</td>
+			                        <td class="text-right">
+			                            <a  class="action-link" href="#"><i class="fa fa-trash fa-fw"></i></a>
+			                            <a href="#" class="action-link"><i class="fa fa-edit fa-fw"></i></a>
+			                        </td>
+			                    </tr>
+			                    <tr>
+			                        <td><b>Hospital Accreditation</b><p>Accreditation</p></td>
+			                        <td>Designed for a broad spectrum of health care prov…</td>
+			                        <td>Joint Commission International (JCI)</td>
+			                        <td class="text-right">
+			                        	<a  class="action-link" href="#"><i class="fa fa-trash fa-fw"></i></a>
+			                            <a href="#" class="action-link"><i class="fa fa-edit fa-fw"></i></a>
+			                        </td>
+			                    </tr>
+			                    <tr>
+			                        <td><b>ISO (International Organization for Standardization) - Best Hospital Certification</b><p>Certification</p></td>
+			                        <td>JCI works with health care organizations, governments, and </td>
+			                        <td>ISO (International Organization for Standardization)</td>
+			                        <td class="text-right">
+			                        	<a  class="action-link" href="#"><i class="fa fa-trash fa-fw"></i></a>
+			                            <a href="#" class="action-link"><i class="fa fa-edit fa-fw"></i></a>
+			                        </td>
+			                    </tr>
+			                    <tr>
+			                        <td><b>ISO 9002 - Quality Management Systems</b><p>Certification</p></td>
+			                        <td>The ISO 9002 is a certificate on quality of process, infras…</td>
+			                        <td>ISO (International Organization for Standardization)</td>
+			                        <td class="text-right">
+			                        	<a  class="action-link" href="#"><i class="fa fa-trash fa-fw"></i></a>
+			                            <a href="#" class="action-link"><i class="fa fa-edit fa-fw"></i></a>
+			                        </td>
+			                    </tr>
+			                    <tr>
+			                        <td><b>ISO 9002:1994</b><p>Certification</p></td>
+			                        <td>ISO 9002: 1994 since 1999</td>
+			                        <td>ISO (International Organization for Standardization)</td>
+			                        <td class="text-right">
+			                        	<a  class="action-link" href="#"><i class="fa fa-trash fa-fw"></i></a>
+			                            <a href="#" class="action-link"><i class="fa fa-edit fa-fw"></i></a>
+			                        </td>
+			                    </tr>
+			                
+			                </tbody>
+			            </table>
+
+			            <ul class="pagination text-center" role="navigation" aria-label="Pagination">
+						  <li class="pagination-previous disabled">Previous</li>
+						  <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+						  <li><a href="#" aria-label="Page 2">2</a></li>
+						  <li><a href="#" aria-label="Page 3">3</a></li>
+						  <li><a href="#" aria-label="Page 4">4</a></li>
+						  <li class="ellipsis"></li>
+						  <li><a href="#" aria-label="Page 12">12</a></li>
+						  <li><a href="#" aria-label="Page 13">13</a></li>
+						  <li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/what-input/what-input.js"></script>
+	<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+	
+	<script src="js/app.js"></script>
+
+	<script type="text/javascript">
+        $(function () {
+            var timer;
+
+            $(window).resize(function() {
+                clearTimeout(timer);
+                timer = setTimeout(function() {
+                  $('.site-nav, .content').css("height", $(window).height());
+                }, 40); 
+            }).resize();
+        });
+    </script>
+
+</body>
+</html>
