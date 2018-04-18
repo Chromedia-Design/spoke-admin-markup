@@ -39,6 +39,17 @@ section {
 		background: transparent;
 		border-bottom: none;
 	}
+	.icon-wrapper {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: rem-calc(90);
+		height: rem-calc(90);
+		margin: 0 auto 1rem;
+		padding: 1rem;
+		border-radius: $global-radius;
+	}
 	.call-to-action {
 		h1 {
 			margin-bottom: 0;
