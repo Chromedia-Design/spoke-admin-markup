@@ -23,7 +23,7 @@ table {
 	}
 	[type='checkbox'],
 	[type='radio'] {
-		margin-top: 0.15rem;
+		margin-top: 0.5em;
 	}
 	thead {
 		background: transparent;
@@ -39,13 +39,6 @@ table {
 		}
 	}
 	tbody {
-		border-radius: 2px;
-		border: 1px solid $light-gray;
-		tr {
-			&:nth-child(even) {
-				background-color: $primary-light;
-			}
-		}
 		td {
 			padding: 0.5rem 0.875rem;
 			a {
@@ -118,6 +111,15 @@ table {
 		a,
 		span {
 			word-break: break-all;
+		}
+	}
+	&.striped {
+		tbody {
+			tr {
+				&:nth-child(even) {
+					background-color: $primary-light;
+				}
+			}
 		}
 	}
 }

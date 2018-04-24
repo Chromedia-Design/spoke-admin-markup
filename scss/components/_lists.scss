@@ -6,75 +6,51 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	> li {
-		font-family: $body-font-family;
-		font-weight: 400;
-		min-height: 20px;
-		border-bottom: 1px solid rgba($black, $B-dividers);
-		position: relative;
-		&.headline {
-			> .list-wrap {
+	.media-object {
+		padding: 0.875rem 1rem;
+		&:hover {
+			background-color: rgba($light-gray, $B-hinttext);
+		}
+	}
+	// Wells listed under the main list
+	.well-list {
+		> li {
+			border-top: none;
+			border-left: none;
+			border-right: none;
+			border-bottom: 1px solid rgba($white, $W-hinttext);
+			border-radius: $global-radius;
+			margin-bottom: 0;
+			.list-wrap {
+				padding: 0.5rem 1rem;
 				background: transparent;
 			}
-			.list-item-name,
+			.list-panel {
+				background-color: darken($primary-light, 3%);
+			}
+			.list-item-name {
+				label {
+					font-size: 0.875rem;
+				}
+			}
 			.list-detail {
-				> * {
-					display: inline-block;
-					margin: 0.5rem 0 0;
-					text-transform: uppercase;
-					color: rgba($black, $B-subtext);
-				}
+				width: 20%;
 			}
-			.button {
-				margin: 0;
-			}
-		}
-		&.primary {
-			> .list-wrap {
-				background: lighten($primary-color, 69%);
-			}
-		}
-		&.call {
-			> .list-wrap {
-				background-color: $background-white;
-				.list-item-icon {
-					p {
-						height: 2rem;
-						width: 2rem;
-						background-color: $success-color;
-						border-radius: 50%;
-						> i {
-							color: $white;
-							line-height: 2rem;
-						}
-					}
-				}
-			}
-			&.success {
-				> .list-wrap {
-					.list-item-icon {
-						p {
-							background-color: $success-color;
-						}
-					}
-				}
-			}
-			&.missed {
-				> .list-wrap {
-					.list-item-icon {
-						p {
-							background-color: $alert-color;
-						}
-					}
+			&.list-core {
+				.list-wrap {
+					background-color: rgba($primary-color, $B-dividers);
 				}
 			}
 		}
-		.button {
-			font-weight: $global-weight-bold;
-			&:hover {
-				text-decoration: none;
-			}
-		}
+	}
+	> li {
+		position: relative;
+		font-family: $body-font-family;
+		font-weight: 400;
+		border: 1px solid rgba($black, $B-dividers);
+		border-radius: $global-radius;
+		margin-bottom: 1rem;
+		background: $white;
 		[type='text'],
 		[type='password'],
 		[type='date'],
@@ -89,23 +65,18 @@
 		[type='time'],
 		[type='url'],
 		[type='color'] {
-			margin-bottom: 0.5rem;
+			margin-bottom: 0;
 		}
 		.input-group, .button-group, .button-align {
 			margin-bottom: 0;
 		}
 		[type='radio'],
 		[type='checkbox'] {
-			margin-top: 0.35rem;
-			margin-bottom: 0;
+			margin: 0.5em 0 0;
 		}
 		.list-wrap {
-			display: block;
 			background-color: $white;
-			padding: 15px 25px;
-			&:hover {
-				text-decoration: none;
-			}
+			padding: 0.875rem 1rem;
 			&.stack-for-small {
 				.list-item-image, .list-item-name, .list-detail {
 					@media only screen and (max-width: 40em) {
@@ -115,26 +86,10 @@
 					
 				}
 			}
-			a {
-				color: $text-black;
-				font-weight: 400;
-				&:hover {
-					text-decoration: underline;
-				}
-			}
-			.button.primary {
-				color: $white;
-			}
-			.button-v-align {
-				margin: 0.5rem 0;
-			}
 		}
 		.list-panel {
-			background-color: $primary-light;
-			// display: none;
-			.form-single-line {
-				padding: 15px 30px 15px;
-			}
+			position: relative;
+			padding: 0 1rem;
 			.callout {
 				margin: 0;
 				background-color: rgba($dark-gray, $B-dividers);
@@ -142,16 +97,12 @@
 				border-radius: 0;
 			}
 		}
-		.pull-left {
-			margin-right: 1rem;
-		}
 		.list-item-icon {
 			width: 3%;
 			margin-right: 1rem;
 			position: relative;
 			display: inline-block;
 			vertical-align: middle;
-			// float: left;
 			&.align-top {
 				vertical-align: top;
 			}
@@ -205,7 +156,6 @@
 			position: relative;
 			display: inline-block;
 			vertical-align: top;
-			// float: left;
 			> a,
 			span,
 			label {
@@ -228,7 +178,6 @@
 			display: inline-block;
 			color: rgba($black, $B-subtext);
 			vertical-align: middle;
-			// float: left;
 			label {
 				margin-bottom: 0;
 				font-family: $body-font-family;
@@ -243,7 +192,6 @@
 			display: inline-block;
 			width: 20%;
 			vertical-align: middle;
-			// float: left;
 			&.align-top {
 				vertical-align: top;
 			}
@@ -263,61 +211,61 @@
 				margin: 0;
 			}
 		}
+		&.primary {
+			> .list-wrap {
+				background: lighten($primary-color, 69%);
+			}
+		}
+		&.call {
+			> .list-wrap {
+				background-color: $background-white;
+				.list-item-icon {
+					p {
+						height: 2rem;
+						width: 2rem;
+						background-color: $success-color;
+						border-radius: 50%;
+						> i {
+							color: $white;
+							line-height: 2rem;
+						}
+					}
+				}
+			}
+			&.success {
+				> .list-wrap {
+					.list-item-icon {
+						p {
+							background-color: $success-color;
+						}
+					}
+				}
+			}
+			&.missed {
+				> .list-wrap {
+					.list-item-icon {
+						p {
+							background-color: $alert-color;
+						}
+					}
+				}
+			}
+		}
+		// Heading radius
 		&:first-child {
 			.list-wrap {
-				border-top-left-radius: 2px;
-				border-top-right-radius: 2px;
+				border-top-left-radius: $global-radius;
+				border-top-right-radius: $global-radius;
 			}
 		}
 		&:last-child {
-			border-bottom: none;
 			.list-wrap {
-				border-bottom-left-radius: 2px;
-				border-bottom-right-radius: 2px;
-			}
-		}
-		&:after {
-			content: " ";
-    		display: none;
-    		clear: both;
-		}
-	}
-	// Wells listed under the main list
-	.well-list {
-		> li {
-			font-size: 0.875rem;
-			border-bottom: 1px solid rgba($white, $W-hinttext);
-			.list-panel {
-				background-color: darken($primary-light, 3%);
-			}
-			.list-wrap {
-				padding-left: 50px;
-				background: transparent;
-			}
-			&.list-core {
-				.list-wrap {
-					background-color: rgba($primary-color, $B-dividers);
-				}
-			}
-			.list-item-name {
-				label {
-					font-size: 0.875rem;
-				}
-			}
-			.list-detail {
-				width: 20%;
-			}
-			&:last-child {
-				border-bottom: none;
+				border-bottom-left-radius: $global-radius;
+				border-bottom-right-radius: $global-radius;
 			}
 		}
 	}
-	.media-object {
-		padding: 0.875rem 1rem;
-		&:hover {
-			background-color: rgba($light-gray, $B-hinttext);
-		}
-	}
+	// Notifications list
 	&.notifications {
 		> li {
 			.list-wrap {
@@ -337,6 +285,7 @@
 			}
 		}
 	}
+	// Message list
 	&.message-preview {
 		> li {
 			.list-wrap {

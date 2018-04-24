@@ -85,6 +85,11 @@
 	&.justified {
 		display: table;
 		width: 100%;
+		table-layout: fixed;
+		&:before,
+		&:after {
+			display: none;
+		}
 		.tabs-title {
 			display: table-cell;
 			float: none;
