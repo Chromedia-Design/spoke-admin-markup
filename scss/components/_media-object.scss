@@ -3,30 +3,11 @@
 	&.full-table {
 		display: table;
 		width: 100%;
-		// margin: 0 0 1rem;
-		.logo {
-			width: 4.4125rem;
-			height: auto;
-			&.small {
-				width: 2.75rem;
-				height: auto;
-			}
-			&.large {
-				width: 8.625rem;
-				height: auto;
-			}
-		}
 		.media-object-section {
 			.button {
 				white-space: nowrap;
 			}
 		}
-	}
-	&.mt-0 {
-		margin-top: 0;
-	}
-	&.mb-0 {
-		margin-bottom: 0;
 	}
 }
 
@@ -43,9 +24,6 @@
 		&.info {
 			background-color: $light-gray;
 		}
-	}
-	&:first-child {
-		padding-right: 1.5rem;
 	}
 	&.logo,
 	&.cover {
@@ -85,11 +63,6 @@
 			width: 12.9375rem;
 			height: 18rem;
 			align-items: bottom;
-		}
-	}
-	&.small {
-		&:first-child {
-			padding-right: 1rem;
 		}
 	}
 }

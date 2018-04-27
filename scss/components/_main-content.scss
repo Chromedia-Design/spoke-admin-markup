@@ -508,3 +508,123 @@ section {
 		display: none;
 	}
 }
+
+// Package builder: requires row class
+#packageBuilder {
+	font-size: rem-calc(14);
+	table {
+		font-size: rem-calc(14);
+	}
+	[type='checkbox'] + label,
+	[type='radio'] + label {
+		font-size: rem-calc(14);
+	}
+	.menu.vertical {
+		> li {
+			position: relative;
+			z-index: 2;
+			margin-bottom: rem-calc(9);
+			border-top-left-radius: $global-radius;
+			border-bottom-left-radius: $global-radius;
+			border-top: 1px solid rgba($black, $B-dividers);
+			border-bottom: 1px solid rgba($black, $B-dividers);
+			border-left: 1px solid rgba($black, $B-dividers);
+			background-color: $background-white;
+			> a {
+				color: rgba($black, $B-subtext);
+				line-height: 1.5em;
+				// desriptions
+				.subheader {
+					font-weight: normal;
+				}
+			}
+			&.is-active {
+				background-color: $white;
+				> a {
+					background-color: $white;
+					font-weight: bold;
+					color: $text-black;
+				}
+				&:after {
+					position: absolute;
+					content: '';
+					width: 0.5rem;
+					height: 100%;
+					top: 0;
+					bottom: 0;
+					right: -0.25rem;
+					background-color: $white;
+				}
+			}
+		}
+	}
+	.nested.menu {
+		overflow: hidden;
+		> li {
+			position: relative;
+			z-index: 1;
+			border: none;
+			margin-bottom: 0;
+			background: transparent;
+			&:before {
+				position: absolute;
+				content: '';
+				top: rem-calc(-135);
+				height: rem-calc(160);
+				width: rem-calc(16);
+				border-bottom: 1px solid $light-gray;
+				border-left: 1px solid $light-gray;
+			}
+			&.is-active {
+				position: relative;
+				z-index: 2;
+				background: transparent;
+				> a {
+					font-weight: bold;
+					color: $text-black;
+					background: transparent;
+					border-bottom: 1px solid rgba($black, $B-dividers);
+				}
+				&:before {
+					border-bottom: 1px solid $text-black;
+					border-left: 1px solid $text-black;
+				}
+			}
+		}
+	}
+	.tabs {
+		> li {
+			a {
+				padding: rem-calc(6) rem-calc(6);
+				font-size: rem-calc(12);
+			}
+			&.is-active {
+				&:after {
+					height: 2px;
+				}
+			}
+		}
+	}
+	.badge {
+		padding: rem-calc(3) rem-calc(6);
+		border-radius: 8px;
+		font-weight: bold;
+	}
+	.media-object.full-table {
+		table-layout: fixed;
+	}
+	// Sizing
+	> .columns {
+		padding: rem-calc(6);
+		background-color: $white;
+		border-top: 1px solid $light-gray;
+		border-bottom: 1px solid $light-gray;
+		border-right: 1px solid $light-gray;
+		&.transparent {
+			padding: rem-calc(6) 0;
+			border-top: none;
+			border-bottom: none;
+			background: transparent;
+		}
+	}
+}

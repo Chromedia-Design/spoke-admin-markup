@@ -72,18 +72,19 @@
 		}
 		[type='radio'],
 		[type='checkbox'] {
-			margin: 0.5em 0 0;
+			margin: 0;
+			display: inline-block;
+			height: 1.325em;
 		}
 		.list-wrap {
 			background-color: $white;
-			padding: 0.875rem 1rem;
+			padding: 0.5rem 0.875rem;
 			&.stack-for-small {
 				.list-item-image, .list-item-name, .list-detail {
 					@media only screen and (max-width: 40em) {
 						display: block;
 						width: 100%;
-					}
-					
+					}	
 				}
 			}
 		}
@@ -288,33 +289,52 @@
 	// Message list
 	&.message-preview {
 		> li {
+			margin-bottom: 0;
+			border: none;
 			.list-wrap {
-				padding: 15px;
+				display: flex;
+				align-items: center;
 				transition: all 0.2s;
 				background-color: $background-white;
+				border-bottom: 1px solid rgba($black, $B-dividers);
 				&:hover {
 					cursor: pointer;
 				}
 			}
-			.list-detail {
-				width: 60%;
-				> span {
-					&:first-child {
-						color: $text-black;
-					}
-				}
-			}
 			.list-item-image {
-				width: auto;
+				margin-right: 0.5rem;
 				> .img-wrapper {
-					margin-left: 0.5rem;
-					margin-right: 1rem;
+					margin: 0;
 					border: 1px solid rgba($black, $B-hinttext);
 					background-color: $off-white;
 					span.h5 {
 						font-weight: normal;
 						color: rgba($black, $B-hinttext);
 						line-height: 2.7rem;
+					}
+				}
+			}
+			.list-detail {
+				width: 70%;
+				> span {
+					&:first-child {
+						color: $text-black;
+					}
+				}
+			}
+			// Button styles
+			.pull-right {
+				.button {
+					margin: 0.5rem 0;
+					&.pin {
+						color: $medium-gray;
+						&:hover {
+							color: $alert-color;
+							background: transparent;
+						}
+					}
+					&.pinned {
+						color: $alert-color;
 					}
 				}
 			}
@@ -374,20 +394,9 @@
 					background-color: $white;
 				}
 			}
-			// Button styles
-			.pull-right {
-				.button {
-					margin: 0.5rem 0;
-					&.pin {
-						color: $medium-gray;
-						&:hover {
-							color: $alert-color;
-							background: transparent;
-						}
-					}
-					&.pinned {
-						color: $alert-color;
-					}
+			&:last-child {
+				.list-wrap {
+					border-bottom: none;
 				}
 			}
 		}

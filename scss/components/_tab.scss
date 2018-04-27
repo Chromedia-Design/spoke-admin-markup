@@ -51,8 +51,8 @@
 					width: 0.875rem;
 					background-color: $alert-color;
 					border-radius: 50%;
-					right: 1rem;
-					top: .6rem;
+					right: 0.5rem;
+					top: .3rem;
 					border: 2px solid $white;
 				}
 			}
@@ -187,9 +187,9 @@
 
 .tabs-title {
 	> a {
-		padding: 1rem 1.5rem;
+		padding: 0.875rem 1rem;
 		font-size: 1rem;
-		line-height: 1.5em;
+		line-height: 1em;
 	}
 }
 

@@ -3,9 +3,9 @@
 	width: 100%;
 	transition: all 0.5s ease-in-out;
 	border: 1px solid rgba($black, $B-dividers); 
-	margin: 0 0 1rem;
+	margin: 0 0 rem-calc(30);
 	background-color: $white;
-	border-radius: 2px;
+	border-radius: $global-radius;
 	box-shadow: 1px 1px 2px #F2F5F6;
 
 	// Use this for transition in pseudo-class :hover
@@ -34,7 +34,7 @@
 	transition: all 0.2s ease-in-out;
 	&.empty {
 		background-color: transparent;
-		border-radius: 2px;
+		border-radius: $global-radius;
 		border: 1px dashed rgba($black, $B-dividers);
 		.img-card-head {
 			padding: 53%;
@@ -61,6 +61,8 @@
 		// height: 55%;
 		padding-bottom: 75%;
 		background-color: $text-black;
+		border-top-left-radius: $global-radius;
+		border-top-right-radius: $global-radius;
 		> img {
 			position: absolute;
 			z-index: 0;
@@ -216,8 +218,7 @@
 
 .card-person {
 	@extend .card;
-	min-height: 124px;
-	padding: 1rem;
+	padding: rem-calc(12px);
 	.img-wrapper {
 		position: relative;
 		display: flex;
@@ -256,11 +257,20 @@
 			margin-bottom: 0;
 		}
 	}
+	&.media-object.full-table {
+		//Section widths
+		.logo {
+			width: 25%;
+			height: auto;
+		}
+		.description {
+			width: 55%;
+		}
+	}
 }
 
 .facility-card {
 	@extend .card;
-	min-height: 60px;
 	padding: 0;
 	margin: 0 0 5px;
 	display: block !important;
@@ -297,7 +307,7 @@
 	width: 100%;
 	margin-bottom: 2rem;
 	border: 1px solid rgba($black, $B-dividers);
-	border-radius: 2px;
+	border-radius: $global-radius;
 	overflow: hidden;
 	table {
 		margin-bottom: 0;
