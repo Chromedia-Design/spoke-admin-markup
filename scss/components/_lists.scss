@@ -297,6 +297,11 @@
 				transition: all 0.2s;
 				background-color: $background-white;
 				border-bottom: 1px solid rgba($black, $B-dividers);
+				// account for links after this list wrapper
+				> .wrapper {
+					display: block;
+					width: 100%;
+				}
 				&:hover {
 					cursor: pointer;
 				}
