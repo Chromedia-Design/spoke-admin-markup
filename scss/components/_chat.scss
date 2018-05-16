@@ -17,6 +17,7 @@
 		margin: 0 0 0 1rem;
 		padding: 0.75rem 1rem;
 		border-radius: 8px;
+		min-width: rem-calc(224);
 		.talktext {
 			> * {
 				font-size: 0.875rem;
@@ -194,7 +195,7 @@
 		color: rgba($black, $B-subtext);
 		background: transparent;
 		padding: 0;
-		font-size:  0.875rem;
+		font-size: rem-calc(13);
 		text-transform: none;
 		font-weight: normal;
 		&:hover {
@@ -208,7 +209,7 @@
 			color: rgba($black, $B-subtext);
 			background: transparent;
 			padding: 0;
-			font-size:  0.875rem;
+			font-size: rem-calc(13);
 			text-transform: none;
 			font-weight: normal;
 			&:hover {
@@ -348,7 +349,7 @@
 				position: absolute;
 				z-index: 10;
 				bottom: rem-calc(35);
-				right: rem-calc(12);
+				right: rem-calc(4);
 				width: rem-calc(25);
 				height: rem-calc(25);
 				background: $white;
@@ -377,7 +378,9 @@
 				top: 30%;
 				left: 0;
 			}
+			// Style usually for notes
 			> .media-object {
+				background-color: $background-white;
 				display: inline-block;
 				margin: 0 auto;
 				float: none;
@@ -389,6 +392,10 @@
 				//Button placement CSS (expanding threads)
 				.btn-expand {
 					left: rem-calc(-14);
+				}
+				// Usually for emails
+				&.bordered {
+					border: 1px solid rgba($black, $B-dividers);
 				}
 			}
 			> .wrapper {
@@ -453,6 +460,17 @@
 				    left: -5rem;
 				    border-right: none;
 				    border-left: 1px solid $light-gray-hex;
+				}
+			}
+		}
+		&.pull-left {
+			.inline-list {
+				&.attachments {
+					> li {
+						.filename {
+							color: rgba($white, $W-text);
+						}
+					}
 				}
 			}
 		}

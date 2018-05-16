@@ -463,10 +463,13 @@ section {
 				line-height: 1.5em;
 				color: $white;
 				a {
+					display: inline-block;
 					color: $white;
-					text-decoration: underline;
+					line-height: 1.5em;
+					border-bottom: 1px dotted rgba($white, $W-dividers);
+					transition: border 0.2s ease-in-out;
 					&:hover {
-						text-decoration: underline;
+						border-bottom: 1px solid rgba($white, $W-text);
 					}
 				}
 			}
