@@ -64,22 +64,59 @@
 				  	<div class="top-bar-right">
 				    	<ul class="dropdown menu" data-dropdown-menu>
 				    		<li class="drop-text">
-				    			<a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">24</span></a>
-				    			<ul class="notifications menu vertical">
-				          			<li>
-				          				<span>Admin Admin recently made changes to <a href="#">Denver Vail Orthopedics</a>.</span>
-				          			</li>
-				          			<li>
-				          				<span>Admin Admin recently made changes to <a href="#">Denver Vail Orthopedics</a>.</span>
-				          			</li>
-				          			<li>
-				          				<a href="#" class="button info hollow tiny expanded">View All</a>
-				          			</li>
-				        		</ul>
-			    			</li>
-			    			<li>
+                                <a data-toggle="chatSupport"><i class="fa fa-envelope-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">24</span></a>
+                                <ul class="notifications menu vertical">
+                                    <li>
+                                        <ol>
+                                            <li class="heading">
+                                                <h6 class="text-center mb-0">Notifications</h6>
+                                            </li>   
+                                    <li class="active">
+                                        <span>You have a new email from <a href="#">John Doe</a>.</span>
+                                        <small class="subheader">12 months ago</small>
+                                    </li>
+                                    <li class="active">
+                                        <span>You have a missed call from <a href="#">Alex Quesada</a>.</span>
+                                        <small class="subheader">12 months ago</small>
+                                    </li>
+                                    <li>
+                                        <span>You have a new email from <a href="#">Janet Ellis</a>.</span>
+                                        <small class="subheader">12 months ago</small>
+                                    </li>
+                                    <li>
+                                        <span>You have a new email from <a href="#">Kathleen Jordan</a>.</span>
+                                        <small class="subheader">12 months ago</small>
+                                    </li>
+                                    <li>
+                                        <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+                                        <small class="subheader">12 months ago</small>
+                                    </li>
+                                    <li>
+                                        <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+                                        <small class="subheader">12 months ago</small>
+                                    </li>
+                                    <li>
+                                        <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+                                        <small class="subheader">12 months ago</small>
+                                    </li>
+                                    <li>
+                                        <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+                                        <small class="subheader">12 months ago</small>
+                                    </li>
+                                    <li>
+                                        <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+                                        <small class="subheader">12 months ago</small>
+                                    </li>
+                                    <!-- <li>
+                                        <a href="#" class="button info hollow tiny expanded">View All Notifications</a>
+                                    </li> -->
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+<!-- 			    			<li>
 				        		<a data-toggle="chatSupport"><i class="fa fa-phone-square fa-lg"></i><span class="success badge" id="notifCount">1</span></a>
-				      		</li>
+				      		</li> -->
 				      		<li>
 				        		<a href="#">Spoke Advocate &nbsp;</a>
 				        		<ul class="menu vertical">
@@ -109,9 +146,9 @@
 
 									  	<div class="card-user-profile-actions text-center">
 									    	<div class="button-align">
-									    		<a href="#" class="button hollow circle success"><i class="fa fa-phone fa-fw fa-lg"></i></a>
-												<a href="#" class="button hollow circle success"><i class="fa fa-video-camera fa-fw fa-lg"></i></a>
-												<a href="#" class="button hollow circle success"><i class="fa fa-comment fa-fw fa-lg"></i></a>
+									    		<a data-toggle="chatSupport" class="button hollow circle success"><i class="fa fa-phone fa-fw fa-lg"></i></a>
+												<a data-toggle="chatSupport" class="button hollow circle success"><i class="fa fa-video-camera fa-fw fa-lg"></i></a>
+												<a data-toggle="chatSupport" class="button hollow circle success"><i class="fa fa-comment fa-fw fa-lg"></i></a>
 									    	</div>
 									  	</div>
 									</div>
@@ -1022,6 +1059,84 @@
 			</div>
 		</div>
 	</div>
+
+	<div id="chatSupport" class="offcanvas-area reveal" data-reveal data-animation-in="slide-in-right" data-animation-out="slide-out-right" data-options="showDelay:50; hideDelay:50">
+
+        <div class="offcanvas-area-inner">
+
+            <div data-reactroot>
+                
+                <div id="chatStatus" class="row">
+                    <div class="large-12 columns">
+                       <div class="page-lead row collapse align-middle">
+                            <div class="medium-9 columns">
+                                <div class="media-object">
+                                    <div class="media-object-section logo middle">
+                                        <div class="img-wrapper circle">
+                                            <img src= "img/Smiling-Middle-Aged-Lady-Arms-Square.png">
+                                        </div>
+                                    </div>
+                                    <div class="media-object-section middle">
+                                        <p class="h5">
+                                            Shawn Clark <span class="badge success"></span><br>
+                                            <span class="subheader"><small>Last activity: a few minutes ago</small></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="auto columns">
+                            	<span class="label">Ringing...</span>
+                            	<span class="label success">Ongoing 01:23</span>
+                            	<span class="label alert">Busy</span>
+                            	<span class="label warning">Idle</span>
+                                <!-- <div class="button-align pull-right">
+                                    <a data-toggle="videoCall" class="button alert circle hollow"><i class="fa fa-stop"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="videoCall" class="row" data-toggler data-animate="fade-in fade-out">
+                    <div class="large-12 columns">
+                        <div id="videos">
+                            <div id="subscriber"></div>
+                            <div id="publisher"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offcanvas-body">
+
+                    <div class="side-content">
+                        <div class="inner">
+
+                        </div>
+
+                        <div class="footer-content">
+                            <div class="collapse row">
+                                <div class="medium-12 columns">
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                            <div class="collapse row">
+                                <div class="medium-12 columns">
+                                    <!-- <a href="" class="plain button info hollow pull-left"><i class="fa fa-paperclip"></i>&nbsp; Attach Files</a> -->
+                                    <a href="" class="button success pull-right"><i class="fa fa-send"></i>&nbsp; Send</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <a data-close class="btn-close"><span aria-hidden="true">&times;</span></a>
+
+    </div>
 
 	<script src="bower_components/jquery/dist/jquery.js"></script>
 	<script src="bower_components/what-input/what-input.js"></script>
