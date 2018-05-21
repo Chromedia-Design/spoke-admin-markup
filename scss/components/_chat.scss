@@ -313,6 +313,9 @@
 	margin-bottom: 0;
 }
 
+// Threading of Notes Variables
+$light-gray-hex:	#CBCFD3;
+
 // Main Chat Panels for the
 // Provider and the Client
 #chatSupport, #chatClient {
@@ -324,6 +327,43 @@
 		clear: both;
 		width: 90%;
 		padding: 0.5rem 1rem;
+		// Thread Styles Start
+		> .wrapper {
+			position: relative;
+			padding: 1rem 1rem 0.5rem 2.5rem;
+			margin: 0 0 1rem;
+			background: $primary-light;
+			border: 1px solid $light-gray-hex;
+			z-index: 5;
+			border-radius: $global-radius;
+			.talk-bubble.warning-bg .talktext:before {
+				border-color: #d8d800 $primary-light;
+			}
+			&:before {
+			    position: absolute;
+			    content: '';
+			    width: 100%;
+			    height: rem-calc(49);
+			    top: rem-calc(-49);
+			    right: -5rem;
+			    border-radius: $global-radius;
+			    background-color: transparent;
+			    border-right: 1px solid $light-gray-hex;
+			    border-top: 1px solid $light-gray-hex;
+			    border-bottom: 1px solid $light-gray-hex;
+				border-radius: 0 25px 25px 0;
+			    z-index: 1;
+			}
+			// Deep threads
+			.wrapper {
+				padding: 1rem 1rem 0.5rem 1rem;
+				background: $background-white;
+				margin-bottom: 0.5rem;
+				.talk-bubble.warning-bg .talktext:before {
+					border-color: #d8d800 $background-white;
+				}
+			}
+		}
 		// CSS for the notes
 		.media-object {
 			position: relative;
@@ -362,10 +402,6 @@
 				line-height: 2em;
 			}
 		}
-		
-		// Threading of Notes
-		$light-gray-hex:	#CBCFD3;
-
 		&.text-center {
 			position: relative;
 			width: 100%;
@@ -375,11 +411,12 @@
 				width: 100%;
 				height: 1px;
 				background-color: rgba($black, $B-dividers);
-				top: 30%;
+				top: 50%;
 				left: 0;
 			}
 			// Style usually for notes
 			> .media-object {
+				max-width: 80%;
 				background-color: $background-white;
 				display: inline-block;
 				margin: 0 auto;
@@ -391,7 +428,8 @@
 				}
 				//Button placement CSS (expanding threads)
 				.btn-expand {
-					left: rem-calc(-14);
+					left: -1.25rem;
+					bottom: 1.5rem;
 				}
 				// Usually for emails
 				&.bordered {
@@ -401,52 +439,23 @@
 			> .wrapper {
 				&:before {
 					width: 50%;
-					height: 3rem; 
-					top: -3rem;
+					height: 2.8rem; 
+					top: -2.8rem;
 				    left: -5rem;
 				    border-right: none;
 				    border-left: 1px solid $light-gray-hex;
-				    border-top-left-radius: 25px;
-					border-bottom-left-radius: 25px;
+					border-radius: 25px 0 0 25px;
+				}
+				~ .media-object {
+					position: relative;
+					&:before {
+						height: 2rem;
+						width: 2rem;
+						background: $black;
+					}
 				}
 				.talktext {
 					text-align: left;
-				}
-			}
-		}
-		// Thread Styles Start
-		> .wrapper {
-			position: relative;
-			padding: 1rem 1rem 0.5rem 2.5rem;
-			margin: 0 0 1rem;
-			background: $primary-light;
-			border: 1px solid $light-gray-hex;
-			z-index: 5;
-			border-radius: $global-radius;
-			.talk-bubble.warning-bg .talktext:before {
-				border-color: #d8d800 $primary-light;
-			}
-			&:before {
-			    position: absolute;
-			    content: '';
-			    width: 100%;
-			    height: rem-calc(49);
-			    top: rem-calc(-49);
-			    right: -5rem;
-			    border-radius: $global-radius;
-			    background-color: transparent;
-			    border-right: 1px solid $light-gray-hex;
-			    border-top: 1px solid $light-gray-hex;
-			    border-bottom: 1px solid $light-gray-hex;
-			    z-index: 1;
-			}
-			// Deep threads
-			.wrapper {
-				padding: 1rem 1rem 0.5rem 1rem;
-				background: $background-white;
-				margin-bottom: 0.5rem;
-				.talk-bubble.warning-bg .talktext:before {
-					border-color: #d8d800 $background-white;
 				}
 			}
 		}
@@ -462,8 +471,7 @@
 				    left: -5rem;
 				    border-right: none;
 				    border-left: 1px solid $light-gray-hex;
-				    border-top-left-radius: 25px;
-					border-bottom-left-radius: 25px;
+					border-radius: 25px 0 0 25px;
 				}
 			}
 		}
@@ -479,8 +487,7 @@
 			}
 			.wrapper {
 				&:before {
-					border-top-right-radius: 25px;
-					border-bottom-right-radius: 25px;
+					border-radius: 0 25px 25px 0;
 				}
 			}
 		}
