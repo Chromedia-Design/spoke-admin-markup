@@ -296,14 +296,20 @@
 				align-items: center;
 				transition: all 0.2s;
 				background-color: $background-white;
-				border-bottom: 1px solid rgba($black, $B-dividers);
 				// account for links after this list wrapper
 				> .wrapper {
 					display: block;
 					width: 100%;
 				}
+				&:only-child,
+				&:last-child {
+					border-bottom: 1px solid rgba($black, $B-dividers);
+				}
 				&:hover {
 					cursor: pointer;
+				}
+				+ .list-wrap {
+					padding-top: 0;
 				}
 			}
 			.list-item-image {
@@ -325,6 +331,12 @@
 					&:first-child {
 						color: $text-black;
 					}
+				}
+			}
+			.attachments {
+				margin-left: 8%;
+				> li {
+					margin: 0 1rem 2rem 0;
 				}
 			}
 			// Button styles

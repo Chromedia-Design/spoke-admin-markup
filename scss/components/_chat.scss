@@ -792,7 +792,12 @@ $light-gray-hex:	#CBCFD3;
     position: relative;
     left: 0;
     top: 0;
-    width: 100%;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    // Aspect ration of 16:9
+    height: 30vh;
+    width: 53vh;
     padding-bottom: 30vh;
     z-index: 10;
     > * {

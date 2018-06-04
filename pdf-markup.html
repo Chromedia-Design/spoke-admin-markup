@@ -80,32 +80,38 @@
             <img src="https://s3.amazonaws.com/assets.spoke.chromedia.com/static/logo.png" alt="Spoke Health">
         </td>
         <td>
-            <h5 class="text-right"><strong>PROVIDER OPTIONS</strong></h5>
+            <h5 class="text-right">Name: <strong>John Doe</strong></h5>
+        </td>
+        <td>
+            <h5 class="text-right">Surgery: <strong>Total Knee Replacement</strong></h5>
+        </td>
+        <td>
+            <h5 class="text-right">Date Downloaded: <strong>May 22, 2015 5:19PM</strong></h5>
         </td>
     </tr>
     </thead>
     <tbody>
         <!-- Entry Start -->
         <tr>
-            <td colspan="2">
+            <td colspan="4">
                 <table class="provider-entry">
                     <thead>
                     <tr class="dotted">
                         <td>
-                            <h5><strong>{{ tf.facility.name }}</strong></h5>
+                            <h5><strong>Denver Vail Orthopedics</strong></h5>
                         </td>
                         <td>
-                            <h5 class="pull-right">Bonus: ${{ tf.potentialBonus | number_format }}</h5>
+                            <h5 class="pull-right">Bonus: $5,500</h5>
                         </td>
                         <td>
-                            <h5 class="pull-right">MPIRICA Score: {{ tf.mpiricaScore }}</h5>
+                            <h5 class="pull-right">MPIRICA Score: 700</h5>
                         </td>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
                         <td colspan="3">
-                            <h6 class="subheader">{{ tf.location.name | upper }}</h6>
+                            <h6 class="subheader">Millennium Center, 6825 S. Galena Street, Suite 314, Centennial, CO, United States Of America</h6>
                         </td>
                     </tr>
                     <tr>
@@ -121,11 +127,11 @@
                                             <tbody>
                                                 <tr class="dotted">
                                                     <td>
-                                                        <h6><b>{{ facDoctor.name }}</b></h6>
+                                                        <h6><b>Dan Stevens</b></h6>
                                                     </td>
                                                     <td>
                                                         <h6 class="pull-right">MPIRICA
-                                                            Score: {{ facDoctor.score }}</h6>
+                                                            Score: 680</h6>
                                                     </td>
                                                 </tr>
                                             </tbody>
