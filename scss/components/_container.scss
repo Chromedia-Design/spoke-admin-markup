@@ -139,23 +139,38 @@
 	}
 	.img-card-body {
 		position: relative;
-		padding: 1.25rem;
+		.img-card-body-section {
+			padding: 0.25rem 0.875rem;
+			border-bottom: 1px solid rgba($black, $B-dividers);
+			&:first-child {
+				padding-top: 0.65rem;
+			}
+			&:last-child {
+				padding-bottom: 0.65rem;
+				border-bottom: none;
+			}
+		}
 		h1,
 		h2,
 		h3,
 		h4,
 		h5,
 		h6 {
+			color: $text-black;
 			font-family: $body-font-family;
 			margin-bottom: 0;
 		}
-		p {
+		p,
+		span,
+		small {
+			color: $text-black;
 			margin-bottom: 0;
 			> small {
 				color: inherit;
 				font-size: 0.875rem;
 			}
 			&.subheader {
+				margin: 0;
 				color: rgba($black, $B-subtext);
 			}
 		}
@@ -173,9 +188,7 @@
 		.media-object {
 			position: relative;
 			margin: 0;
-			display: table;
-			width: 100%;
-			table-layout: fixed;
+			padding: 0.25rem 0;
 			.media-object-section {
 				h1,
 				h2,
@@ -189,25 +202,28 @@
 					white-space: nowrap;
 					text-overflow: ellipsis;
 					width: 100%;
-					// @media only screen and (max-width: 39.9375em) {
-					// 	width: 10rem;
-					// }
-					// @media only screen and (min-width: 40em) {
-					// 	width: 40rem;
-					// }
-					// @media only screen and (min-width: 64em) {
-					// 	width: 10rem;
-					// }
 					> small {
 						font-size: 0.875rem;
 					}
 				}
 				&.logo {
 					width: 20%;
+					&.tiny {
+						width: 10%;
+					}
 				}
-				// + .media-object-section {
-				// 	padding-left: 1.5rem;
-				// }
+			}
+		}
+		.inline-list {
+			> li {
+				display: inline-block;
+				position: relative;
+				color: $text-black;
+				padding: 0;
+				font-size: 12px;
+				border-radius: 10px;
+				padding: 0 8px;
+				border: 1px solid rgba($black, $B-dividers);
 			}
 		}
 	}
