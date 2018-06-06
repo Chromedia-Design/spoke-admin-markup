@@ -113,6 +113,16 @@
 	}
 }
 
+#stepFive {
+	.connectordot-lm {
+		background-color: $warning-color;
+		&:before {
+			background-color: $white;
+			border: 2px solid $warning-color;
+		}
+	}
+}
+
 .connectordot-bl {
 	height: 30px;
 	bottom: -30px;
