@@ -543,3 +543,29 @@ $card-user-profile-text-color: $text-black;
   	letter-spacing: 1px;
   	opacity: 0.8;
 }
+
+.shrink {
+	float: none;
+	width: auto;
+}
+
+.spoke-list {
+	font-size: 0.875rem;
+	border-left: 1px solid rgba($black, $B-dividers);
+	border-right: 1px solid rgba($black, $B-dividers);
+	background: $white;
+	.spoke-list-heading {
+		color: $medium-gray;
+		font-size: rem-calc(12);
+		font-weight: bold;
+		text-align: left;
+		text-transform: uppercase;
+		background: $light-gray;
+		padding: 0.3125rem;
+	}
+	.spoke-list-item {
+		cursor: pointer;
+		padding: 0.5rem 0.3125rem;
+		border-bottom: 1px solid rgba($black, $B-dividers);
+	}
+}

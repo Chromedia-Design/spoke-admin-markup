@@ -1,6 +1,7 @@
 <style type="text/css">
     /*CUSTOM  CSS*/
     body {
+        color: #909090;
         background-color: #FFFFFF;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Nueue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     }
@@ -25,10 +26,10 @@
         content: "";
         width: 100%;
         height: 0;
-        border: 1px dashed #DFE5E6;
+        border: 1px dashed #F5F5F5;
         left: 0;
         right: 0;
-        top: 0;
+        top: -0.5rem;
         bottom: 0;
         margin: auto;
         z-index: -1;
@@ -37,16 +38,16 @@
         vertical-align: top;
     }
     table.container {
-        width: 87%;
+        width: 57%;
         margin: 0 auto;
     }
     table.container > thead tr td {
         padding: 1rem 0;
-        border-bottom: 1px solid #DFE5E6;
+        border-bottom: 1px solid #F5F5F5;
     }
     table.provider-entry {
         padding: 1rem 0;
-        border-bottom: 1px solid #DFE5E6;
+        border-bottom: 1px solid #F5F5F5;
     }
     h1,
     h2,
@@ -54,6 +55,7 @@
     h4,
     h5,
     h6 {
+        color: #4C4C4C;
         font-weight: normal;
         margin: 0 0 0.5rem;
         padding: 0 0.3125rem;
@@ -82,18 +84,18 @@
         <td>
         </td>
         <td>
-            <h4 class="text-right"><strong>Provider Options</strong></h4>
+            <h3 class="text-right"><strong>PROVIDER OPTIONS</strong></h3>
         </td>
     </tr>
     <tr>
         <td>
-            <h5>Name: <strong>John Doe</strong></h5>
+            <h5><span class="subheader">Name:</span> <strong>John Doe</strong></h5>
         </td>
         <td>
-            <h5>Surgery: <strong>Total Knee Replacement</strong></h5>
+            <h5><span class="subheader">Surgery:</span> <strong>Total Knee Replacement</strong></h5>
         </td>
         <td>
-            <h5>Date Downloaded: <strong>May 22, 2015 5:19PM</strong></h5>
+            <h5><span class="subheader">Date Downloaded:</span> <strong>May 22, 2015 5:19PM</strong></h5>
         </td>
     </tr>
     </thead>
@@ -105,20 +107,17 @@
                     <thead>
                     <tr class="dotted">
                         <td>
-                            <h5><strong>Denver Vail Orthopedics</strong></h5>
+                            <h3><strong>Arete Surgical Center</strong></h3>
                         </td>
                         <td>
-                            <h5 class="pull-right">Bonus: $5,500</h5>
-                        </td>
-                        <td>
-                            <h5 class="pull-right">MPIRICA Score: 700</h5>
+                            <h3 class="pull-right">MPIRICA Score: 700</h3>
                         </td>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
                         <td colspan="3">
-                            <h6 class="subheader">Millennium Center, 6825 S. Galena Street, Suite 314, Centennial, CO, United States Of America</h6>
+                            <h5 class="subheader">Millennium Center, 6825 S. Galena Street, Suite 314, Centennial, CO, United States Of America</h5>
                         </td>
                     </tr>
                     <tr>
@@ -127,18 +126,116 @@
                                 <tbody>
                                 <tr>
                                     <td>
-                                        <h6 class="subheader">Doctors</h6>
+                                        <h5 class="subheader">Doctors</h5>
                                     </td>
                                     <td>
                                         <table>
                                             <tbody>
                                                 <tr class="dotted">
                                                     <td>
-                                                        <h6><b>Dan Stevens</b></h6>
+                                                        <h5><b>Robert Polanco</b></h5>
                                                     </td>
                                                     <td>
-                                                        <h6 class="pull-right">MPIRICA
-                                                            Score: 680</h6>
+                                                        <h5 class="pull-right">MPIRICA
+                                                            Score: 680</h5>
+                                                    </td>
+                                                </tr>
+                                                <tr class="dotted">
+                                                    <td>
+                                                        <h5><b>Wade Andrews</b></h5>
+                                                    </td>
+                                                    <td>
+                                                        <h5 class="pull-right">MPIRICA
+                                                            Score: 680</h5>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr> <!--  End of entry -->
+
+        <!-- Entry Start -->
+        <tr>
+            <td colspan="3">
+                <table class="provider-entry">
+                    <thead>
+                    <tr class="dotted">
+                        <td>
+                            <h3><strong>Hospital Israelita Albert Einstein (HIAE)</strong></h3>
+                        </td>
+                        <td>
+                            <h3 class="pull-right">MPIRICA Score: 700</h3>
+                        </td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td colspan="3">
+                            <h5 class="subheader">Millennium Center, 6825 S. Galena Street, Suite 314, Centennial, CO, United States Of America</h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <h5 class="subheader">Doctors</h5>
+                                    </td>
+                                    <td>
+                                        <table>
+                                            <tbody>
+                                                <tr class="dotted">
+                                                    <td>
+                                                        <h5><b>Dan Stevens</b></h5>
+                                                    </td>
+                                                    <td>
+                                                        <h5 class="pull-right">MPIRICA
+                                                            Score: 680</h5>
+                                                    </td>
+                                                </tr>
+                                                <tr class="dotted">
+                                                    <td>
+                                                        <h5><b>Dan Stevens</b></h5>
+                                                    </td>
+                                                    <td>
+                                                        <h5 class="pull-right">MPIRICA
+                                                            Score: 680</h5>
+                                                    </td>
+                                                </tr>
+                                                <tr class="dotted">
+                                                    <td>
+                                                        <h5><b>Dan Stevens</b></h5>
+                                                    </td>
+                                                    <td>
+                                                        <h5 class="pull-right">MPIRICA
+                                                            Score: 680</h5>
+                                                    </td>
+                                                </tr>
+                                                <tr class="dotted">
+                                                    <td>
+                                                        <h5><b>Dan Stevens</b></h5>
+                                                    </td>
+                                                    <td>
+                                                        <h5 class="pull-right">MPIRICA
+                                                            Score: 680</h5>
+                                                    </td>
+                                                </tr>
+                                                <tr class="dotted">
+                                                    <td>
+                                                        <h5><b>Dan Stevens</b></h5>
+                                                    </td>
+                                                    <td>
+                                                        <h5 class="pull-right">MPIRICA
+                                                            Score: 680</h5>
                                                     </td>
                                                 </tr>
                                             </tbody>

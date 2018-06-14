@@ -686,24 +686,6 @@
 	}
 }
 
-.table-list {
-	display: table;
-	width: 100%;
-	table-layout: fixed;
-}
-
-.table-list-item {
-	position: relative;
-	list-style: none;
-	display: table-row;
-	background: $white;
-}
-
-.table-list-cell {
-	position: relative;
-	display: table-cell;
-}
-
 .linked-list {
 	padding: 0.5rem;
 	overflow: hidden;
@@ -883,6 +865,24 @@ ul.vertical-list {
 		display: inline-block;
 		margin-right: 2.5rem;
 	}
+}
+
+.table-list {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
+
+.table-list-item {
+	position: relative;
+	list-style: none;
+	display: table-row;
+	background: $white;
+}
+
+.table-list-cell {
+	position: relative;
+	display: table-cell;
 }
 
 .activity-listing {
