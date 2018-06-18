@@ -563,11 +563,29 @@ label.image-upload {
 }	
 
 .label-block {
+	margin-top: -1px;
 	.label-group {
-		margin-top: -1px;
 		padding: 0.5rem 1rem;
 		border: 1px solid rgba($black, $B-dividers);
 		height: 100%;
+		[type='text'],
+		[type='password'],
+		[type='date'],
+		[type='datetime'],
+		[type='datetime-local'],
+		[type='month'],
+		[type='week'],
+		[type='email'],
+		[type='number'],
+		[type='search'],
+		[type='tel'],
+		[type='time'],
+		[type='url'],
+		[type='color'],
+		textarea,
+		select {
+			margin-bottom: 0;
+		}
 	}
 	.columns {
 		&:not(:first-child) {
@@ -739,7 +757,7 @@ input {
   	padding: 0.75rem 1.25rem 0.75rem 2rem;
   	transition: width 0.2s ease-in-out;
   	&:focus {
-    	width: 24rem;
+    	width: 100%;
     	border-bottom: 1px solid $light-gray;
   	}
 }

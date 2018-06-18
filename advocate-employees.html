@@ -19,31 +19,13 @@
 				</header>
 				<ul class="menu vertical"  data-accordion-menu>
 					<li>
-						<a href="advocate-dashboard.html"><i class="material-icons">dashboard</i> Dashboard</a>
+						<a href="#">Dashboard</a>
 					</li>
 					<li class="is-active">
-						<a href="advocate-employees.html"><i class="material-icons">face</i>Employees</a>
-					</li>
-					<li>
-						<a href="advocate-communications.html">Inbox</a>
-					</li>
-					<li>
-						<a href="#">Doctors</a>
-					</li>
-					<li>
-						<a href="advocate-facilities.html">Facilities</a>
-					</li>
-					<li>
-						<a href="#">Activity Logs</a>
-					</li>
-					<li>
-						<a href="advocate-profile.html"><i class="material-icons">account_circle</i> Profile</a>
-						<ul class="nested vertical menu">
-							<li>
-								<a href="advocate-profile.html">User Information</a>
-							</li>
-							<li>
-								<a href="advocate-password.html">Change My Password</a>
+						<a href="#">Employees</a>
+						<ul class="nested vertical menu is-active">
+							<li class="is-active">
+								<a href="#">All Employees</a>
 							</li>
 						</ul>
 					</li>
@@ -62,27 +44,15 @@
 				  	</div>
 				  	<div class="top-bar-right">
 				    	<ul class="dropdown menu" data-dropdown-menu>
-				    		<li class="drop-text">
-				    			<a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">24</span></a>
-				    			<ul class="notifications menu vertical">
-				          			<li>
-				          				<span>Admin Admin recently made changes to <a href="#">Denver Vail Orthopedics</a>.</span>
-				          			</li>
-				          			<li>
-				          				<span>Admin Admin recently made changes to <a href="#">Denver Vail Orthopedics</a>.</span>
-				          			</li>
-				          			<li>
-				          				<a href="#" class="button info hollow tiny expanded">View All</a>
-				          			</li>
-				        		</ul>
+				    		<li>
+				    			<a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">6</span></a>
 			    			</li>
-			    			<li>
-				        		<a data-toggle="chatSupport"><i class="fa fa-phone-square fa-lg"></i><span class="success badge" id="notifCount">1</span></a>
-				      		</li>
 				      		<li>
-				        		<a href="#">Spoke Advocate &nbsp;</a>
+				        		<a href="#">Administrator</a>
 				        		<ul class="menu vertical">
-				          			<li><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Sign Out</a></li>
+				          			<li><a href="#">One</a></li>
+				          			<li><a href="#">Two</a></li>
+				          			<li><a href="#">Three</a></li>
 				        		</ul>
 				      		</li>
 				    	</ul>
@@ -90,141 +60,147 @@
 				</div>
 
 				<div class="page-lead row align-middle expanded">
-					<div class="auto columns">
-						<span class="h5">Employees <span>(10)</span><a class="button secondary small hollow ml-1 mb-0" data-toggle="filters">Show Filters <i class="fa fa-angle-down fa-fw"></i></a></span>
+					<div class="shrink columns">
+						<span class="h5">Employees</span>
+						<span class="subheader"><small>216 Items</small></span>
 					</div>
-					<div class="auto columns">
+					<div class="medium-3 columns">
+						<input type="search" name="search" placeholder="Search employees..." class="animated-search-form">
+					</div>
+					<div class="columns">
 						<div class="button-align small pull-right mb-0">
-							<!-- <a class="button success" href="admin-patient-edit.html" disabled>+ Create New</a> -->
-							<!-- <a class="button hollow" href="#"><i class="fa fa-users"></i>&nbsp; Bulk Select</a> -->
-							<!-- <a href="#" class="button success"><i class="fa fa-user-plus fa-fw"></i>&nbsp; Assign To</a> -->
-							<!-- <a class="button hollow" href="#"><i class="fa fa-users"></i>&nbsp; Cancel</a> -->
+							<select class="borderless">
+							    <option value="" disabled selected>Company</option>
+							    <option value="starbuck">Starbuck</option>
+							    <option value="hotdog">Hot Dog</option>
+							    <option value="apollo">Apollo</option>
+						  	</select>
+							<select class="borderless">
+							    <option value="" disabled selected>Advocate</option>
+							    <option value="starbuck">Starbuck</option>
+							    <option value="hotdog">Hot Dog</option>
+							    <option value="apollo">Apollo</option>
+						  	</select>
+							<a class="button success rounded" href="admin-employee-edit.html">+ Create New Employee</a>
 						</div>
-					</div>
-
-					<div class="reveal" id="assignUsers" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-						<div class="row collapse">
-							<div class="large-12 columns">
-								<h5 class="reveal-heading">Assign To</h5>
-							</div>
-						</div>
-						<form>
-							<div class="row collapse">
-								<div class="large-12 columns">
-									<div class="reveal-body">
-										<div class="row">
-											<div class="auto columns">
-												<label>
-													Spoke Health Advocate
-													<select>
-														<option>Select One.</option>
-													</select>
-												</label>
-											</div>
-										</div>	
-									</div>
-								</div>
-							</div>
-							<div class="row collapse">
-								<div class="large-12 columns">
-									<div class="reveal-footer">
-										<div class="button-group pull-right">
-											<a class="button link" data-close>Cancel</a>
-											<a href="#" class="button success">Assign</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</form>
-					  	<button class="close-button" data-close aria-label="Close modal" type="button">
-					    	<span aria-hidden="true">&times;</span>
-					  	</button>
 					</div>
 
 				</div>
 
 				<div class="row expanded">
 					<div class="medium-12 columns">
+						
+						<div class="spoke-list">
 
-			            <div id="filters" class="submenu menu-options mb-1" data-toggler data-animate="fade-in fade-out">
-			            	<div class="row collapse expanded">
-			            		<div class="large-4 columns end">
-			            			<form>
-			            				<div class="input-group">
-				            				<input type="text" class="input-group-field" value="" placeholder="Search keyword...">
-				            				<div class="input-group-button">
-				            					<a href="#" class="button info"><i class="fa fa-search"></i></a>
-			            					</div>
-		            					</div>
-			            			</form>
-			            		</div>
-			            		<div class="large-7 large-offset-1 columns end">
-			                        <div class="row collapse">
-			                            <div class="large-6 columns end">
-			                                <div class="row">
-			                                    <div class="large-4 columns">
-			                                        <label for="" class="text-right middle">Company</label>
-			                                    </div>
-			                                    <div class="large-8 columns">
-			                                        <select class="">
-			                                            <option>All</option>
-			                                        </select>
-			                                    </div>  
-			                                </div> 
-			                            </div>
-			                            <div class="large-6 columns end">
-			                                <div class="row">
-			                                    <div class="large-5 columns">
-			                                        <label for="" class="text-right middle">Assigned To</label>
-			                                    </div>
-			                                    <div class="large-7 columns">
-			                                        <select class="">
-			                                            <option>All</option>
-			                                        </select>
-			                                    </div>  
-			                                </div> 
-			                            </div>
-			                        </div>
-			                    </div>
-			            	</div>
-			            </div>	
+							<div class="spoke-list-heading row expanded align-middle">
+								<div class="medium-3 columns">
+									<input type="checkbox" class="mb-0 mr-1" name="">&nbsp; 
+									<a href="#">Employee <i class="fa fa-caret-up fa-fw"></i></a>
+								</div>
+								<div class="medium-2 columns">
+									<a href="#">Company <i class="fa fa-caret-up fa-fw"></i></a>
+								</div>
+								<div class="medium-2 columns">
+									<a href="#">Episode <i class="fa fa-caret-up fa-fw"></i></a>
+								</div>
+								<div class="medium-2 columns">
+									<a href="#">Status <i class="fa fa-caret-up fa-fw"></i></a>
+								</div>
+								<div class="medium-2 columns">
+									<a href="#">Last Activity <i class="fa fa-caret-up fa-fw"></i></a>
+								</div>
+								<div class="shrink columns">
+								</div>
+							</div>
 
-						<table class="thirds-spacing">
-			                <thead>
-				                <tr>
-				                    <th>
-				                    	<!-- <input type="checkbox" class="mr-1" name="">&nbsp;  -->
-				                    	<a href="#">Name <i class="fa fa-caret-up fa-fw"></i></a></th>
-				                    <th><a href="#">Company Name <i class="fa fa-caret-up fa-fw"></i></a></th>
-				                    <th><a href="#">Recent Activity <i class="fa fa-caret-up fa-fw"></i></a></th>
-				                    <th></th>
-				                </tr>
-			                </thead>
-			                <tbody>
-			                    <tr>
-			                        <td>
-			                        	<!-- <input type="checkbox" class="mr-1" name="">&nbsp;  -->
-			                        	<a href="admin-employee-profile.html">Joseph Hicks</a></td>
-			                        <td><a href="#">Excel Energy</a></td>
-			                        <td>Jan 9, 2017, 8:45 AM</td>
-			                        <td class="text-right">
-			                        	<!-- <a href="#" class="action-link"><i class="fa fa-user-plus"></i></a> -->
-			                            <a href="admin-employee-add.html" class="action-link"><i class="fa fa-edit"></i></a>
-			                        </td>
-			                    </tr>
-			                    <tr>
-			                        <td>
-			                        	<!-- <input type="checkbox" class="mr-1" name="">&nbsp;  -->
-			                        	<a href="admin-employee-profile.html">Phillip Martinez</a></td>
-			                        <td><a href="#">Excel Energy</a></td>
-			                        <td>Jan 9, 2017, 8:45 AM</td>
-			                        <td class="text-right">
-			                        	<!-- <a href="#" class="action-link"><i class="fa fa-user-plus"></i></a> -->
-			                            <a href="admin-employee-add.html" class="action-link"><i class="fa fa-edit"></i></a>
-			                        </td>
-			                    </tr>
-			                </tbody>
-			            </table>
+							<div class="spoke-list-item row expanded align-middle" onclick="location.href='advocate-employee-profile-v2.html'">
+								<div class="medium-3 columns">
+									<div class="row collapse align-middle">
+										<div class="shrink columns">
+											<input type="checkbox" class="mb-0 mr-1" name="">
+										</div>
+										<div class="columns">
+											<p class="h6 mb-0">John Doe</p>
+											<p class="subheader"><small>Advocate: Christine Lambert</small></p>
+										</div>
+									</div>
+								</div>
+								<div class="medium-2 columns">
+									<p>Magellan Health Inc.</p>
+								</div>
+								<div class="medium-2 columns">
+									<p><a href="advocate-employee-episode-v2.html">Total Knee Replacement</a></p>
+									<!-- <a href="#" class="button success hollow rounded tiny">Create Episode</a> -->
+								</div>
+								<div class="medium-2 columns">
+									Account Created
+								</div>
+								<div class="medium-2 columns">
+									June 15, 2018
+								</div>
+								<div class="shrink columns">
+								</div>
+							</div>
+
+							<div class="spoke-list-item row expanded align-middle" onclick="location.href='advocate-employee-profile-v2.html'">
+								<div class="medium-3 columns">
+									<div class="row collapse align-middle">
+										<div class="shrink columns">
+											<input type="checkbox" class="mb-0 mr-1" name="">
+										</div>
+										<div class="columns">
+											<p class="h6 mb-0">Michelle Gonzalez</p>
+											<p class="subheader"><small>Advocate: Christine Lambert</small></p>
+										</div>
+									</div>
+								</div>
+								<div class="medium-2 columns">
+									<p>Martin's Fish & Fries</p>
+								</div>
+								<div class="medium-2 columns">
+									<!-- <p><a href="advocate-employee-episode-v2.html">Total Knee Replacement</a></p> -->
+									<a href="#" class="button success hollow rounded tiny">Create Episode</a>
+								</div>
+								<div class="medium-2 columns">
+									<p>-</p>
+								</div>
+								<div class="medium-2 columns">
+									June 17, 2018
+								</div>
+								<div class="shrink columns">
+								</div>
+							</div>
+
+							<div class="spoke-list-item row expanded align-middle" onclick="location.href='advocate-employee-profile-v2.html'">
+								<div class="medium-3 columns">
+									<div class="row collapse align-middle">
+										<div class="shrink columns">
+											<input type="checkbox" class="mb-0 mr-1" name="">
+										</div>
+										<div class="columns">
+											<p class="h6 mb-0">Craig Wilson</p>
+											<p class="subheader"><small>Advocate: Cheryl Mitchell</small></p>
+										</div>
+									</div>
+								</div>
+								<div class="medium-2 columns">
+									<p>Martin's Fish & Fries</p>
+								</div>
+								<div class="medium-2 columns">
+									<p><a href="advocate-employee-episode-v2.html">Dental Surgery</a></p>
+									<!-- <a href="#" class="button success hollow rounded tiny">Create Episode</a> -->
+								</div>
+								<div class="medium-2 columns">
+									<p><a href="#" class="button hollow rounded tiny"><i class="fa fa-envelope-o"></i>&nbsp; Send Invite</a></p>
+								</div>
+								<div class="medium-2 columns">
+									June 17, 2018
+								</div>
+								<div class="shrink columns">
+								</div>
+							</div>
+
+						</div>
 
 						<ul class="pagination text-center" role="navigation" aria-label="Pagination">
 							<li class="pagination-previous disabled">Previous</li>

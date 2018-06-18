@@ -401,7 +401,7 @@
 		margin-top: 0.5rem;
 		margin-bottom: 0.5rem;
 		margin-right: 1rem;
-		color: rgba($black, $B-text);
+		color: $secondary-color;
 		line-height: 1.5em;
 		font-weight: $global-weight-bold;
 		span {
@@ -551,21 +551,42 @@ $card-user-profile-text-color: $text-black;
 
 .spoke-list {
 	font-size: 0.875rem;
+	border-top: 1px solid rgba($black, $B-dividers);
 	border-left: 1px solid rgba($black, $B-dividers);
 	border-right: 1px solid rgba($black, $B-dividers);
 	background: $white;
 	.spoke-list-heading {
-		color: $medium-gray;
+		color: rgba($black, $B-subtext);
 		font-size: rem-calc(12);
 		font-weight: bold;
 		text-align: left;
 		text-transform: uppercase;
-		background: $light-gray;
-		padding: 0.3125rem;
+		background: $background-white;
+		padding: 0.5rem 0.3125rem;
+		a {
+			color: rgba($black, $B-subtext);
+		}
 	}
 	.spoke-list-item {
+		background: $primary-light;
 		cursor: pointer;
-		padding: 0.5rem 0.3125rem;
+		padding: 1rem 0.5rem;
 		border-bottom: 1px solid rgba($black, $B-dividers);
+		p,
+		.button {
+			margin: 0;
+		}
+		p {
+			width: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			a {
+				color: $secondary-color;
+			}
+		}
+		&:hover {
+			background: $white;
+		}
 	}
 }
