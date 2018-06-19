@@ -7,6 +7,9 @@
 			.button {
 				white-space: nowrap;
 			}
+			&.logo {
+				width: 20%;
+			}
 		}
 		&.fixed {
 			table-layout: fixed;

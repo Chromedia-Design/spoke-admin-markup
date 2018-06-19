@@ -138,14 +138,23 @@
 
 .button-align {
 	@extend .button-group;
-	.button {
+	.button,
+	select {
+		display: inline-block;
+		margin-bottom: 0;
 		margin-right: 1rem;
+		width: auto;
 		&:only-child,
 		&:last-child {
 			margin-right: 0;
 		}
 	}
 	&.small {
+		select {
+			font-size: 0.875rem;
+			line-height: 1.2em;
+			height: 2.2rem;
+		}
 		.button {
 			margin-right: 0.75rem;
 			&:only-child,

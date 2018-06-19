@@ -300,7 +300,6 @@ textarea, .mce-tinymce {
 		margin-top: 25px;
 		margin-bottom: 0;
 	}
-
 }
 
 .input-group {
@@ -561,13 +560,32 @@ label.image-upload {
     		text-overflow: none;
     	}
 	}
-}
+}	
 
 .label-block {
+	margin-top: -1px;
 	.label-group {
-		margin-top: -1px;
 		padding: 0.5rem 1rem;
 		border: 1px solid rgba($black, $B-dividers);
+		height: 100%;
+		[type='text'],
+		[type='password'],
+		[type='date'],
+		[type='datetime'],
+		[type='datetime-local'],
+		[type='month'],
+		[type='week'],
+		[type='email'],
+		[type='number'],
+		[type='search'],
+		[type='tel'],
+		[type='time'],
+		[type='url'],
+		[type='color'],
+		textarea,
+		select {
+			margin-bottom: 0;
+		}
 	}
 	.columns {
 		&:not(:first-child) {
@@ -608,9 +626,9 @@ label.image-upload {
 	}
 	&.submenu {
 		padding: 1rem;
-		background-color: $primary-light;
+		background-color: $white;
 		border: 1px solid rgba($black, $B-dividers);
-		border-radius: 2px;
+		border-radius: $global-radius;
 	}
 }
 
@@ -726,4 +744,20 @@ input {
 		width: auto;
 		margin: 0 0.5rem;
 	}
+}
+
+.animated-search-form[type=search] {
+	margin: 0;
+	display: inline-block;
+	width: 12rem;
+	border: none;
+  	border-radius: $global-radius;
+  	background: transparent url('https://s3.amazonaws.com/assets.spoke.com/images/search-icon.svg') no-repeat 0.625rem 0.625rem;
+  	background-size: 15px 15px;
+  	padding: 0.75rem 1.25rem 0.75rem 2rem;
+  	transition: width 0.2s ease-in-out;
+  	&:focus {
+    	width: 100%;
+    	border-bottom: 1px solid $light-gray;
+  	}
 }

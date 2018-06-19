@@ -19,10 +19,10 @@
 				</header>
 				<ul class="menu vertical"  data-accordion-menu>
 					<li>
-						<a href="#"><i class="material-icons">dashboard</i> Dashboard</a>
+						<a href="#">Dashboard</a>
 					</li>
 					<li>
-						<a href="#"><i class="material-icons">work</i> Practices</a>
+						<a href="#">Practices</a>
 						<ul class="nested vertical menu is-active">
 							<li>
 								<a href="#">Specializations</a>
@@ -33,22 +33,22 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#"><i class="material-icons">card_giftcard</i> Packages</a>
+						<a href="#">Packages</a>
 					</li>
 					<li>
-						<a href="#"><i class="material-icons">local_pharmacy</i> Facilities</a>
+						<a href="#">Facilities</a>
 					</li>
 					<li>
-						<a href="#"><i class="material-icons">card_giftcard</i> Doctors</a>
+						<a href="#">Doctors</a>
 					</li>
 					<li class="is-active">
-						<a href="#"><i class="material-icons">card_giftcard</i> Companies</a>
+						<a href="#">Companies</a>
 					</li>
 					<li>
-						<a href="#"><i class="material-icons">card_giftcard</i> Content</a>
+						<a href="#">Content</a>
 					</li>
 					<li>
-						<a href="#"><i class="material-icons">card_giftcard</i> Users</a>
+						<a href="#">Users</a>
 					</li>
 				</ul>
 			</div>
@@ -80,79 +80,20 @@
 				  	</div>
 				</div>
 
-				<div class="row">
+				<div class="row expanded">
 					<div class="medium-12 columns">
 
-						<div class="page-lead">
-			                <span class="h5">Companies (1)</span>
-			                <a class="button success pull-right" data-open="exampleModal1">Add New Company +</a>
-
-			                <div class="reveal" id="exampleModal1" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-								<div class="row collapse">
-									<div class="large-12 columns">
-										<h5 class="reveal-heading">Add New Company</h5>
-									</div>
-								</div>
-								<form>
-									<div class="row collapse">
-										<div class="large-12 columns">
-											<div class="reveal-body">
-												<div class="row">
-													<div class="large-12 columns end">
-														<div class="media-object">
-														  	<div class="media-object-section logo middle">
-														    	<div class="img-wrapper circle">
-														      		<img src= "img/avatar_placeholder.png">
-														    	</div>
-														  	</div>
-														  	<div class="media-object-section middle">
-														   		<label>
-														   			<small class="subheader">JPG, GIF or PNG. Image must be at least 69x69 in size.</small>
-														   			<input type="file" name="">
-														   		</label>
-														  	</div>
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="large-12 columns">
-														<label>
-															Company Name
-															<input type="text">
-														</label>
-													</div>
-												</div>
-												<div class="row">
-													<div class="large-6 columns end">
-														<label>
-															Percentage of Savings (Reward)
-															<input type="text">
-														</label>
-													</div>
-												</div>	
-											</div>
-										</div>
-									</div>
-									<div class="row collapse">
-										<div class="large-12 columns">
-											<div class="reveal-footer">
-												<div class="button-group pull-right">
-													<a class="button link" data-close>Cancel</a>
-													<a href="#" class="button success">Add Company</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</form>
-							  	<button class="close-button" data-close aria-label="Close modal" type="button">
-							    	<span aria-hidden="true">&times;</span>
-							  	</button>
+						<div class="page-lead row collapse expanded align-middle">
+							<div class="columns">
+								<span class="h5">Companies (1)</span>
 							</div>
-
+			                <div class="columns">
+			                	<a class="button success mb-0 pull-right" href="admin-company-view.html">Add New Company +</a>
+			                </div>
 			            </div>
 
 			             <div id="filters" class="submenu menu-options mb-1" data-toggler data-animate="fade-in fade-out">
-			            	<div class="row collapse">
+			            	<div class="row collapse expanded">
 			            		<div class="large-4 columns end">
 			            			<div class="input-group">
 			            				<input type="text" class="input-group-field" value="" placeholder="Search keyword...">
@@ -176,7 +117,7 @@
 			                    <tr>
 			                        <td>
 			                        	<div class="media-object">
-										  	<div class="media-object-section logo middle">
+										  	<div class="media-object-section small logo middle">
 										    	<div class="img-wrapper circle">
 										      		<img src= "img/logo-harley-davidson.png">
 										    	</div>
@@ -188,8 +129,10 @@
 			                        </td>
 			                        <td><span>50%</span></td>
 			                        <td class="text-right">
-			                            <a  class="action-link subheader" href="admin-company-view.html"><i class="fa fa-eye fa-fw"></i></a>
-			                            <a data-open="exampleModal1" href="#" class="action-link subheader"><i class="fa fa-edit fa-fw"></i></a>
+			                            <div class="button-align tiny pull-right">
+			                            	<a  class="button hollow" href="admin-company-view.html"><i class="fa fa-eye fa-fw"></i>&nbsp; View</a>
+			                            	<a  class="button hollow" href="#"><i class="fa fa-edit fa-fw"></i>&nbsp; Edit</a>
+			                            </div>
 			                        </td>
 			                    </tr>
 			                </tbody>
@@ -197,8 +140,6 @@
 
 					</div>
 				</div>
-
-
 				
 			</div>
 		</div>

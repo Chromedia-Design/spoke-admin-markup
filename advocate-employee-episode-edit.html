@@ -19,10 +19,10 @@
 				</header>
 				<ul class="menu vertical" data-accordion-menu>
 					<li>
-						<a href="advocate-dashboard.html"><i class="material-icons">dashboard</i> Dashboard</a>
+						<a href="advocate-dashboard.html">Dashboard</a>
 					</li>
 					<li class="is-active">
-						<a href="advocate-employees.html"><i class="material-icons">face</i> Employees</a>
+						<a href="advocate-employees.html">Employees</a>
 					</li>
 					<li>
 						<a href="advocate-communications.html">Inbox</a>
@@ -37,7 +37,7 @@
 						<a href="#">Activity Logs</a>
 					</li>
 					<li>
-						<a href="advocate-profile.html"><i class="material-icons">account_circle</i> Profile</a>
+						<a href="advocate-profile.html">Profile</a>
 						<ul class="nested vertical menu">
 							<li>
 								<a href="advocate-profile.html">User Information</a>
@@ -152,109 +152,267 @@
 
 								<div class="page-lead row collapse expanded align-middle">
 									<div class="auto columns">
-										<span class="h5">Episode Details</span>
+										<span class="h6">Episode Information</span>
 									</div>
 								</div>
 
-								<div class="callout lo-padded">
+								<div class="row">
+                                    <div class="large-3 columns end">
+                                        <label class="text-center middle">Surgery Needed</label>
+                                    </div>
+                                    <div class="large-9 columns end">
+                                        <select>
+				  							<option value="" disabled selected>Total Knee Replacement</option>
+				  							<option value="">Dental Surgery</option>
+				  						</select>
+                                    </div>
+                                </div>
 
-									<form>
-										<div class="row">
-											<div class="large-6 columns end">
-												<label>Surgery Needed
-							  						<select>
-							  							<option value="" disabled selected>Total Knee Replacement</option>
-							  						</select>
-							  					</label>
-											</div>
+								<div class="row label-block collapse">
+									<div class="large-3 columns end">
+										<div class="label-group">
+											<p>Total Deductible</p>
+											<h6>10,000.00 <small>USD</small></h6>
+											<p class="subheader"><small>From PoKitDoc Jan-12 8:00am</small></p>
 										</div>
-										<div class="row">
-											<div class="large-6 columns end">
-												<label>Spoke Health Advocate
-							  						<select>
-							  							<option value="" disabled selected>Search Advocates</option>
-							  						</select>
-							  					</label>
-											</div>
+									</div>
+									<div class="large-3 columns end">
+										<div class="label-group">
+											<p>Remaining Deductible</p>
+											<h6>10,000.00 <small>USD</small></h6>
+											<p class="subheader"><small>Edited by Emman C. Jan-12 8:00am</small></p>
 										</div>
-										<hr>
-										<div class="row">
-											<div class="large-6 columns end">
-												<label>Referring Physician
-							  						<input type="text" value="Florence Nightingale">
-							  					</label>
-											</div>
+									</div>
+									<div class="large-3 columns end">
+										<div class="label-group">
+											<p>Co-insurance %</p>
+											<h6>10,000.00 <small>USD</small></h6>
+											<p class="subheader"><small>From PoKitDoc Jan-12 8:00am</small></p>
 										</div>
-										<div class="row">
-											<div class="large-6 columns end">
-												<label>Referring Physician Contact Number
-							  						<input type="text" value="123-456-7890">
-							  					</label>
-											</div>
+									</div>
+									<div class="large-3 columns end">
+										<div class="label-group">
+											<p>Out-of-Pocket Maximum</p>
+											<h6>10,000.00 <small>USD</small></h6>
+											<p class="subheader"><small>From PoKitDoc Jan-12 8:00am</small></p>
 										</div>
-										<div class="row">
-											<div class="large-6 columns end">
-												<label>Negotiated Rate for Procedure Package
-							  						<div class="input-group">
-												  		<span class="input-group-label">$</span>
-												  		<input class="input-group-field" type="text" value="10,000">
+									</div>
+								</div>
+
+								<div class="page-lead row collapse expanded align-middle">
+									<div class="shrink columns">
+										<span class="h6">Contact Information</span>
+									</div>
+									<div class="shrink columns">
+										<div class="button-align tiny">
+											<a data-open="changeContact" class="button hollow rounded success"><i class="fa fa-edit"></i>&nbsp; Change</a>
+
+											<div class="reveal" id="changeContact" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+												<div class="row collapse">
+													<div class="large-12 columns">
+														<h5 class="reveal-heading">Change Contact Information</h5>
 													</div>
-							  					</label>
-											</div>
-										</div>
-										<hr>
-										<div class="row">
-											<div class="large-6 columns end">
-												<label>Total Deductible
-							  						<div class="input-group">
-												  		<span class="input-group-label">$</span>
-												  		<input class="input-group-field" type="text" value="10,000">
-													</div>
-							  					</label>
-											</div>
-										</div>
-										<div class="row">
-											<div class="large-6 columns end">
-												<label>Remaining Deductible
-							  						<div class="input-group">
-												  		<span class="input-group-label">$</span>
-												  		<input class="input-group-field" type="text" value="10,000">
-													</div>
-							  					</label>
-											</div>
-										</div>
-										<div class="row">
-											<div class="large-6 columns end">
-												<label>Co-insurance %
-							  						<div class="input-group">
-												  		<input class="input-group-field" type="text" value="10,000">
-												  		<span class="input-group-label">%</span>
-													</div>
-							  					</label>
-											</div>
-										</div>
-										<div class="row">
-											<div class="large-6 columns end">
-												<label>Out-Of-Pocket Maximum
-							  						<div class="input-group">
-												  		<span class="input-group-label">$</span>
-												  		<input class="input-group-field" type="text" value="10,000">
-													</div>
-							  					</label>
-											</div>
-										</div>
-										<div class="row">
-											<div class="large-12 columns">
-												<div class="button-align submit">
-													<a href="admin-employee-profile-v2.html" class="button link">Cancel</a>
-													<a href="admin-employee-profile-v2.html" class="button success">Save Changes</a>
 												</div>
+												<form>
+													<div class="row collapse">
+														<div class="large-12 columns">
+															<div class="reveal-body">
+																<div class="row">
+																	<div class="auto columns">
+																		<label>
+																			Email Address
+																			<input type="email" value="john.doe@domain.com">
+																		</label>
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="auto columns">
+																		<label>
+																			Phone Number
+																			<input type="email" value="john.doe@domain.com">
+																		</label>
+																	</div>
+																</div>	
+																<div class="row">
+																	<div class="large-12 columns end">
+																		<label>Street Address
+													  						<input type="text" name="" value="46 Platte St.">
+													  						<input type="text" name="" value="">
+													  					</label>
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="large-4 columns end">
+																		<label>Country
+													  						<select>
+													  							<option>United States of America</option>
+													  						</select>
+													  					</label>
+																	</div>
+																	<div class="large-4 columns end">
+																		<label>State
+													  						<select>
+													  							<option>Denver</option>
+													  						</select>
+													  					</label>
+																	</div>
+																	<div class="large-4 columns end">
+																		<label>City
+													  						<select>
+													  							<option>Denver</option>
+													  						</select>
+													  					</label>
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="large-4 columns end">
+																		<label>Postal Code
+													  						<input type="text" name="" value="654512">
+													  					</label>
+																	</div>
+																</div>	
+															</div>
+														</div>
+													</div>
+													<div class="row collapse">
+														<div class="large-12 columns">
+															<div class="reveal-footer">
+																<div class="button-group pull-right">
+																	<a class="button link" data-close>Cancel</a>
+																	<a href="#" class="button success">Save Changes</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</form>
+											  	<button class="close-button" data-close aria-label="Close modal" type="button">
+											    	<span aria-hidden="true">&times;</span>
+											  	</button>
 											</div>
+
 										</div>
+									</div>
+								</div>
 
-									</form>
+								<div class="row collapse label-block">
+									<div class="large-6 columns end">
+										<div class="label-group">
+											<p>Email Address</p>
+											<h6>r.peterson@domain.com</h6>
+										</div>
+									</div>
+									<div class="large-6 columns end">
+										<div class="label-group">
+											<p>Phone Number</p>
+											<h6>123-456-7890</h6>
+										</div>
+									</div>
+								</div>
 
-								</div>	
+								<div class="row collapse label-block">
+									<div class="large-12 columns end">
+										<div class="label-group">
+											<p>Address</p>
+											<h6>336 1st Dr, El Paso, NJ, USA 23654</h6>
+										</div>
+									</div>
+								</div>
+
+								<div class="page-lead row collapse expanded align-middle">
+									<div class="auto columns">
+										<span class="h6 mb-0">Medical Information</span>
+										<p class="subheader"><small>7 of 10 Answered</small></p>
+									</div>
+								</div>
+
+								<div class="row label-block collapse">
+		                            <div class="columns">
+		                                <div class="label-group">
+		                                	<label>
+			                                    <span for="" class="badge success mb-0-5">1</span> When were you thinking of having your surgery?
+			                                    <select>
+			                                        <option>As soon as possible</option>
+			                                        <option>2 - 4 Weeks</option>
+			                                        <option>4 - 8 Weeks</option>
+			                                        <option>2 - 4 Months</option>
+			                                        <option>4 - 6 Months</option>
+			                                        <option>6+ months</option>
+			                                    </select>
+			                                </label>
+		                                </div>
+		                            </div>
+		                        </div>
+		                        <div class="row label-block collapse">
+		                            <div class="columns">
+		                                <div class="label-group">
+		                                	<legend><span for="" class="badge alert mb-0-5">2</span> Are you willing to be flexible on the schedule if we were able to secure a larger bonus?</legend>
+		                                	<input type="radio" name="flex" value="yes" id="flex"><label for="flex">Yes</label>
+		                                	<input type="radio" name="flex" value="no" id="flex"><label for="flex">No</label>
+		                                </div>
+		                            </div>
+		                        </div>
+		                        <div class="row label-block collapse">
+		                            <div class="columns">
+		                                <div class="label-group">
+		                                	<legend><span for="" class="badge success mb-0-5">3</span> Are you willing to travel outside your local area if a larger bonus were available?</legend>
+		                                	<input type="radio" name="location" value="" id="location"><label for="location">No, I want only local facilities.</label>
+		                                	<input type="radio" name="location" value="" id="location"><label for="location">Yes, I'm willing to travel outside my immediate area.</label>
+		                                	<input type="radio" name="location" value="" id="location"><label for="location">I'm interested in seeing options throughout the USA.</label>
+		                                	<input type="radio" name="location" value="" id="location" checked=""><label for="location">If the bonus was big enough, I'd consider travelling to another country.</label>
+		                                </div>
+		                            </div>
+		                        </div>
+		                        <div class="row label-block collapse">
+		                            <div class="columns">
+		                                <div class="label-group">
+		                                	<legend><span for="" class="badge success mb-0-5">4</span> Select the countries that you'd entertain travelling to:</legend>
+			                                <div class="row mb-2">
+			                                    <div class="large-3 columns end">
+			                                        <input class="mb-0"  type="checkbox" name="country" value="" id="country" checked=""><label class="mb-0" for="country">Costa Rica</label>
+			                                    </div>
+			                                    <div class="large-3 columns end">
+			                                        <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">Mexico</label>
+			                                    </div>
+			                                    <div class="large-3 columns end">
+			                                        <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">Brazil</label>
+			                                    </div>
+			                                    <div class="large-3 columns end">
+			                                        <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">Belgium</label>
+			                                    </div>
+			                                    <div class="large-3 columns end">
+			                                        <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">Thailand</label>
+			                                    </div>
+			                                    <div class="large-3 columns end">
+			                                        <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">India</label>
+			                                    </div>
+			                                    <div class="large-3 columns end">
+			                                        <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">Singapore</label>
+			                                    </div>
+			                                </div>
+		                                </div>
+		                            </div>
+		                        </div>
+		                        <div class="row label-block collapse">
+		                            <div class="columns">
+		                                <div class="label-group">
+		                                	<legend><span for="" class="badge success mb-0-5">5</span> Are you using any other health benefit programs?</legend>
+			                                <input type="checkbox" name="programs" value="" id="programs" checked=""><label for="programs">Tele-Medicine</label>
+			                                <input type="checkbox" name="programs" value="" id="programs"><label for="programs">Wellness Programs</label>
+			                                <input type="checkbox" name="programs" value="" id="programs"><label for="programs">Prescription Drug Programs</label>
+			                                <input type="checkbox" name="programs" value="" id="programs"><label for="programs">Gym and Fitness Programs</label>
+			                                <input type="checkbox" name="programs" value="" id="programs"><label for="programs">Other: <input type="text" name="programs" value=""></label>
+		                                </div>
+		                            </div>
+		                        </div>
+								<hr>
+		                        <div class="row collapse">
+		                        	<div class="columns">
+		                        		<div class="button-align small">
+		                        			<a href="#" class="button rounded">Save Changes</a>
+		                        		</div>
+		                        	</div>
+		                        </div>
+
 							</div>
 						</div>
 
