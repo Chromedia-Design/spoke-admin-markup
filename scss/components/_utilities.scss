@@ -86,6 +86,14 @@
 	}
 }
 
+.align-vertical-top {
+	vertical-align: text-top;
+}
+
+.align-vertical-bottom {
+	vertical-align: text-bottom;
+}
+
 .v-align-center {
 	display: flex;
 	align-items: center;

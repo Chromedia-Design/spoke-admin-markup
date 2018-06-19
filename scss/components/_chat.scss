@@ -4,7 +4,7 @@
 	padding: 1.5rem;
   	display: inline-block;
   	position: relative;
-	// width: 100%;
+	max-width: 100%;
 	height: auto;
 	background-color: $secondary-color;
 	border-radius: 6px;
@@ -14,8 +14,8 @@
 		clear: both;
 	}
 	&.small {
-		margin: 0 0 0 1rem;
-		padding: 0.75rem 1rem;
+		margin: 0 0 0 0rem;
+		padding: 0.5rem .75rem;
 		border-radius: 8px;
 		min-width: rem-calc(224);
 		.talktext {
@@ -23,30 +23,30 @@
 				font-size: 0.875rem;
 			}
 		}
-		&.tri-right.border.left-in:before {
-			left: -20px;
-			top: 15px;
-			border: 10px solid;
-			border-color: $secondary-color $secondary-color transparent transparent;
-		}
-		&.tri-right.left-in:after {
-			left: -15px;
-			top: 17px;
-			border: 8px solid;
-			border-color: $secondary-color $secondary-color transparent transparent;
-		}
-		&.tri-right.border.right-in:before {
-			right: -20px;
-			top: 15px;
-			border: 10px solid;
-			border-color: $secondary-color transparent transparent $secondary-color;
-		}
-		&.tri-right.right-in:after {
-			right: -15px;
-			top: 17px;
-			border: 8px solid;
-			border-color: $secondary-color transparent transparent $secondary-color;
-		}
+		// &.tri-right.border.left-in:before {
+		// 	left: -20px;
+		// 	top: 15px;
+		// 	border: 10px solid;
+		// 	border-color: $secondary-color $secondary-color transparent transparent;
+		// }
+		// &.tri-right.left-in:after {
+		// 	left: -15px;
+		// 	top: 17px;
+		// 	border: 8px solid;
+		// 	border-color: $secondary-color $secondary-color transparent transparent;
+		// }
+		// &.tri-right.border.right-in:before {
+		// 	right: -20px;
+		// 	top: 15px;
+		// 	border: 10px solid;
+		// 	border-color: $secondary-color transparent transparent $secondary-color;
+		// }
+		// &.tri-right.right-in:after {
+		// 	right: -15px;
+		// 	top: 17px;
+		// 	border: 8px solid;
+		// 	border-color: $secondary-color transparent transparent $secondary-color;
+		// }
 	}
 	// This is for the owner's dialog box
 	&.white-bg {
@@ -181,6 +181,12 @@
 	}
 }
 
+ul.attchments {
+	margin-bottom: .25rem;
+	.attachment {
+
+	}
+}
 .timestamp {
 	display: block;
 	text-align: left;
@@ -257,57 +263,57 @@
 }
 
 /* Right triangle, left side slightly down */
-.tri-right.border.left-in:before {
-	content: ' ';
-	position: absolute;
-	width: 0;
-	height: 0;
-  	left: -2.5rem;
-	right: auto;
-  	top: 20px;
-	bottom: auto;
-	border: 20px solid;
-	border-color: $secondary-color $secondary-color transparent transparent;
-}
+// .tri-right.border.left-in:before {
+// 	content: ' ';
+// 	position: absolute;
+// 	width: 0;
+// 	height: 0;
+//   	left: -2.5rem;
+// 	right: auto;
+//   	top: 20px;
+// 	bottom: auto;
+// 	border: 20px solid;
+// 	border-color: $secondary-color $secondary-color transparent transparent;
+// }
 
-.tri-right.left-in:after {
-	content: ' ';
-	position: absolute;
-	width: 0;
-	height: 0;
-  	left: -35px;
-	right: auto;
-  	top: 22px;
-	bottom: auto;
-	border: 20px solid;
-	border-color: $secondary-color $secondary-color transparent transparent;
-}
+// .tri-right.left-in:after {
+// 	content: ' ';
+// 	position: absolute;
+// 	width: 0;
+// 	height: 0;
+//   	left: -35px;
+// 	right: auto;
+//   	top: 22px;
+// 	bottom: auto;
+// 	border: 20px solid;
+// 	border-color: $secondary-color $secondary-color transparent transparent;
+// }
 
 /* Right triangle, right side slightly down*/
-.tri-right.border.right-in:before {
-	content: ' ';
-	position: absolute;
-	width: 0;
-	height: 0;
-    left: auto;
-	right: -2.5rem;
-    top: 20px;
-	bottom: auto;
-	border: 20px solid;
-	border-color: $secondary-color transparent transparent $secondary-color;
-}
-.tri-right.right-in:after{
-	content: ' ';
-	position: absolute;
-	width: 0;
-	height: 0;
-    left: auto;
-	right: -35px;
-    top: 22px;
-	bottom: auto;
-	border: 20px solid;
-	border-color: $secondary-color transparent transparent $secondary-color;
-}
+// .tri-right.border.right-in:before {
+// 	content: ' ';
+// 	position: absolute;
+// 	width: 0;
+// 	height: 0;
+//     left: auto;
+// 	right: -2.5rem;
+//     top: 20px;
+// 	bottom: auto;
+// 	border: 20px solid;
+// 	border-color: $secondary-color transparent transparent $secondary-color;
+// }
+// .tri-right.right-in:after{
+// 	content: ' ';
+// 	position: absolute;
+// 	width: 0;
+// 	height: 0;
+//     left: auto;
+// 	right: -35px;
+//     top: 22px;
+// 	bottom: auto;
+// 	border: 20px solid;
+// 	border-color: $secondary-color transparent transparent $secondary-color;
+// }
 
 #chat-tabs {
 	margin-bottom: 0;
@@ -830,4 +836,106 @@ $light-gray-hex:	#CBCFD3;
     	bottom: 0;
     	z-index: 0;
     }
+}
+
+.chat-button-container {
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	width: 4rem;
+	height: 4rem;
+	// border: 1px solid #323232;
+	border-radius: 50%;
+	box-shadow: 0 5px 40px rgba(0,0,0,.16)!important;
+	text-align: center;
+	background-color: #1EBE44;
+	i {
+		font-size: 2rem;
+		margin-top: .89rem;
+		color: #fff;
+	}
+	z-index: 999;
+}
+
+.chat-container {
+	z-index: 999;
+	position: fixed;
+	bottom: 6rem;
+	right: 1rem;
+	height: 600px;
+	max-height: 700px;	
+	width: 376px;
+	background-color: #f5f7f9;
+	box-shadow: 0 5px 40px rgba(0,0,0,.16)!important;
+	border-radius: 8px!important;
+	// overflow: hidden;
+	.chat-header-container {
+		background-color: #1EBE44;
+		height: 80px;
+		.chat-header {
+			background-color: transparent;
+			padding: .5rem 1rem;
+			.chat-header-action {}
+			.chat-header-user {
+				margin-top: .5rem;
+				img {}
+				p, small, span {
+					margin: 0px;
+					color: #fff;
+					
+				}
+			}
+			
+		}
+	}
+	.chat-body-container {
+		overflow: hidden;
+		overflow-y: scroll;
+		height: 363px;
+		.chat-body {
+			padding: 1rem;
+		}
+	}
+	.chat-input-container	{
+		background-color: #fff;
+		height: 164px;
+		.attachments {
+			max-height: 100px;
+			padding: 0px .25rem;
+			background: linear-gradient(#f5f7f9, #e9edf1);
+			border-bottom: 0px solid #f5f7f9;
+			overflow: auto;
+			// overflow-x: scroll;
+			white-space: nowrap;
+			.file-attachment {
+				margin: .25rem 1rem;
+			}
+		}
+		.chat-input {
+			padding: .25rem 1rem;
+			input, textarea {
+				width: 75%;
+				margin-bottom: 0px;
+				margin-right: .5rem;
+				border: 0px;
+				box-shadow: none;
+				font-size: .95rem;
+				
+			}
+			textarea {
+				resize: none;
+				padding: 0px;
+				height: 1.25rem;
+				background-color: transparent;
+			}
+			button {
+				padding: .5rem .5rem;
+				margin-bottom: 0px;
+			}
+			button, input, textarea {
+				display: inline-block;
+				vertical-align: text-top;
+			}
+		}
+	}
 }

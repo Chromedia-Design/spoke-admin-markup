@@ -3,6 +3,9 @@
 	border-radius: 4px;
 	font-weight: $global-weight-bold;
 	text-transform: uppercase;
+	&.clear {
+		border: 0px !important;
+	}
 	&.hollow {
 		background: transparent;
 		&.success,
@@ -78,6 +81,10 @@
 				border: 2px solid $white;
 			}
 		}
+	}
+	&.white-text {
+		background-color: transparent;
+		color: $white;
 	}
 	&.primary {
 		font-weight: $global-weight-bold;
