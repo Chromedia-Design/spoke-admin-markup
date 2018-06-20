@@ -3,6 +3,9 @@
 	border-radius: 4px;
 	font-weight: $global-weight-bold;
 	text-transform: uppercase;
+	&.clear {
+		border: 0px !important;
+	}
 	&.hollow {
 		background: transparent;
 		&.success,
@@ -79,6 +82,10 @@
 			}
 		}
 	}
+	&.white-text {
+		background-color: transparent;
+		color: $white;
+	}
 	&.primary {
 		font-weight: $global-weight-bold;
 	}
@@ -86,7 +93,7 @@
 		border-radius: 1.875em;
 	}
 	&.circle {
-		padding: 0.85em;
+		// padding: 0.85em;
 		border-radius: 50%;
 	}
 	&.large {
