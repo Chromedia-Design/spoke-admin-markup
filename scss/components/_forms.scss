@@ -776,6 +776,6 @@ input {
   	transition: width 0.2s ease-in-out;
   	&:focus {
     	width: 100%;
-    	border-bottom: 1px solid $light-gray;
+    	box-shadow: 0 1px 0 0 $light-gray;
   	}
 }
