@@ -787,9 +787,10 @@ $light-gray-hex:	#CBCFD3;
 
 // TokBox Defaults
 #videos {
-    position: relative;
+    position: absolute;
     width: auto;
-    height: 30vh;
+    // height: 30vh;
+    height: 600px;
     margin: 0 auto;
     background-color: $text-black;
 }
@@ -820,9 +821,12 @@ $light-gray-hex:	#CBCFD3;
 
 #publisher {
     position: absolute;
-    width: 10%;
+    // width: 10%;
+    width: 5rem;
+    height: 5rem;
     padding-bottom: 10%;
-    bottom: 10px;
+    // bottom: 10px;
+    top: 10px;
     left: 10px;
     z-index: 100;
     border: 1px solid white;
@@ -838,6 +842,9 @@ $light-gray-hex:	#CBCFD3;
     }
 }
 
+
+$main-color: #1ebd44;
+
 #chat-toggle {
 	position: fixed;
 	bottom: 1rem;
@@ -848,7 +855,7 @@ $light-gray-hex:	#CBCFD3;
 	border-radius: 50%;
 	box-shadow: 0 5px 40px rgba(0,0,0,.16)!important;
 	text-align: center;
-	background-color: #1EBE44;
+	background-color: $main-color;
 	i {
 		font-size: 2rem;
 		margin-top: .89rem;
@@ -858,18 +865,17 @@ $light-gray-hex:	#CBCFD3;
 }
 
 #chat-notification {
-	height: auto;
-	.chat-header-intro {
+	.chat-header-container {
 		.chat-header {
-			background-color: #1ebd44 !important;
+			background-color: $main-color !important;
 			.chat-header-user {
 				.user-name, .user-role {
-					color: #fff;
+					color: #fff !important;
 				}
 			}
 			.chat-header-video {
 				.timestamp {
-					color: #fff;
+					color: #fff !important;
 				}
 			}
 		}
@@ -883,7 +889,28 @@ $light-gray-hex:	#CBCFD3;
 	height: 600px;
 	max-height: 700px;
 	overflow-y: scroll;
+	.chat-header-container {
+		.chat-header {
+
+		}
+	}
+	.chat-video-container {
+		position: relative;
+		height: 100%;
+		display: none;
+		.chat-video-Header {}
+		#videos {}
+		.chat-video-control {
+			clear: both;
+			width: 100%;
+			position: absolute;
+			bottom: 10px;
+
+		}
+	}
 }
+
+
 
 #chat-container, #chat-notification {
 	z-index: 999;
@@ -895,7 +922,7 @@ $light-gray-hex:	#CBCFD3;
 	// overflow: hidden;
 	.chat-header-intro {
 		padding: 1rem;
-		background-color: #1ebd44;
+		background-color: $main-color;
 		position: sticky;
 		top: 0px;
 		margin-bottom: 1.5rem;
@@ -912,7 +939,7 @@ $light-gray-hex:	#CBCFD3;
 		height: 80px;
 		&:hover {
 			.chat-header {
-				background-color: #1ebd44 !important;
+				background-color: $main-color !important;
 				.chat-header-user {
 					.user-name, .user-role {
 						color: #fff;
@@ -926,14 +953,15 @@ $light-gray-hex:	#CBCFD3;
 			}
 		}
 		.chat-header {
-			background-color: #1EBE44;
-			box-shadow: 0px 2px 15px #caccce;
+			background-color: $main-color;
+			box-shadow: 0px 2px 15px rgba(31, 31, 31, 0.25);
 			padding: .5rem 1rem;
 			.chat-header-action {
 				img {
 					display: none;
 				}
 			}
+			// Columns Begin
 			.chat-header-action {}
 			.chat-header-user {
 				margin-top: .5rem;
@@ -952,6 +980,9 @@ $light-gray-hex:	#CBCFD3;
 					display: none;
 				}
 			}
+			// Columns End
+
+			// States Begin
 			&.shrinked {
 				border-radius: 2rem;
     			margin: .5rem 1rem;
@@ -959,7 +990,7 @@ $light-gray-hex:	#CBCFD3;
 				.chat-header-action {
 					img {
 						display: inherit;
-						margin-top: .75rem;
+						margin-top: .5rem;
 					}
 					button {
 						display: none;
@@ -1001,20 +1032,22 @@ $light-gray-hex:	#CBCFD3;
 					height: 1.5rem;
 				}
 			}
+			// States End
 		}
 	}
 	.chat-body-container {
 		overflow: hidden;
 		overflow-y: scroll;
-		height: 356px;
+		height: 456px; //356px
 		.chat-body {
 			padding: 1rem;
 		}
 	}
 	.chat-input-container	{
 		background-color: #fff;
-		height: 164px;
+		height: 63px; //164px
 		.attachments {
+			display: none;
 			max-height: 100px;
 			padding: 0px .25rem;
 			background: linear-gradient(#f5f7f9, #e9edf1);

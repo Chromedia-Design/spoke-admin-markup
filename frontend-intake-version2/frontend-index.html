@@ -27,7 +27,7 @@
                 </div>
                 <div id="responsive-menu">
                     <div class="top-bar-right">
-                        <ul id="" class="dropdown menu" data-dropdown-menu>
+                        <ul id="mainMenu" class="dropdown menu" data-dropdown-menu>
                             <li>
                                 <a data-open="scheduleCalendar" class="button hollow success small"><i class="fa fa-calendar"></i>&nbsp; Schedule A Call</a>
                             </li>
@@ -824,7 +824,7 @@
                 <div class="large-12 columns">
                     <div class="callout">
                         <div class="callout-body">
-                            <div class="media-object full-table">
+                            <div class="media-object">
                                 <div class="media-object-section middle logo small">
                                     <div class="img-wrapper circle">
                                         <img src="../img/Smiling-Middle-Aged-Lady-Arms-Square.png" alt="">
@@ -846,7 +846,7 @@
                 <div class="large-12 columns">
                     <div class="callout">
                         <div class="callout-body">
-                            <div class="media-object full-table">
+                            <div class="media-object">
                                 <div class="media-object-section middle logo small">
                                     <div class="img-wrapper circle">
                                         <img src="../img/Smiling-Middle-Aged-Lady-Arms-Square.png" alt="">
@@ -1377,7 +1377,8 @@
         </div>
         <a class="button success expanded" data-powertour-action="stop">That's it, Let's get started.</a>
     </div>
-
+    
+    <!-- CHat Component -->
     <div id="chat-toggle">
         <i class="fa fa-comment"></i>
     </div>
@@ -1385,9 +1386,9 @@
     <div id="chat-notification">
         <div class="chat-header-container">
             <div class="chat-header row shrinked active">
-                <div class="columns small-2 chat-header-action pl-0">
+                <div class="columns small-2 chat-header-action pl-0 pr-0">
                     <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
-                    <img src="https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602499.jpg" align="left" class="user-image circle tiny">
+                    <img src="http://i.pravatar.cc/300" align="left" class="user-image circle tiny">
                 </div>
                 <div class="columns small-7 chat-header-user">
                     <p class="mb-0 user-name"><b>John Robert</b></p>
@@ -1401,9 +1402,9 @@
         </div>
         <div class="chat-header-container">
             <div class="chat-header row shrinked active">
-                <div class="columns small-2 chat-header-action pl-0">
+                <div class="columns small-2 chat-header-action pl-0 pr-0">
                     <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
-                    <img src="https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602499.jpg" align="left" class="user-image circle tiny">
+                    <img src="http://i.pravatar.cc/299" align="left" class="user-image circle tiny">
                 </div>
                 <div class="columns small-7 chat-header-user">
                     <p class="mb-0 user-name"><b>John Robert</b></p>
@@ -1417,9 +1418,9 @@
         </div>
         <div class="chat-header-container">
             <div class="chat-header row shrinked active">
-                <div class="columns small-2 chat-header-action pl-0">
+                <div class="columns small-2 chat-header-action pl-0 pr-0">
                     <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
-                    <img src="https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602499.jpg" align="left" class="user-image circle tiny">
+                    <img src="http://i.pravatar.cc/288" align="left" class="user-image circle tiny">
                 </div>
                 <div class="columns small-7 chat-header-user">
                     <p class="mb-0 user-name"><b>John Robert</b></p>
@@ -1434,16 +1435,39 @@
     </div>
     
     <div id="chat-container">
+
+        <div class="chat-video-container">
+            <div class="chat-video-Header">
+                <div class="chat-header row shrinked active">
+                    
+                </div>
+            </div>
+            <div id="videos">
+                <div id="subscriber"></div>
+                <div id="publisher"></div>
+            </div>
+            <div class="chat-video-control row align-center">
+                <div class="columns col-md-2 center-text">
+                    <button id="chat-video-compress" class="button large circle"><i class="fa fa-compress"></i></button>
+                </div>
+                <div class="columns col-md-2 center-text">
+                    <button id="chat-video-end-call" class="button large circle"><i class="fa fa-phone"></i></button>
+                </div>
+            </div>
+        </div>
+
         <div class="chat-header-intro">
             <span class="h5 white-color">Messages</span>
-            <!-- <button class="btn-new button clear circle large white"><i class="fa fa-plus large"></i></button> -->
+            <button data-open="exampleModal1" class="btn-new button clear circle large white"><i class="fa fa-plus large"></i></button>
         </div>
 
         <div class="chat-header-container">
             <div class="chat-header row shrinked active">
-                <div class="columns small-2 chat-header-action pl-0">
+                <div class="columns small-2 chat-header-action pl-0 pr-0">
                     <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
+                    
                     <img src="https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602499.jpg" align="left" class="user-image circle tiny">
+
                 </div>
                 <div class="columns small-7 chat-header-user">
                     <p class="mb-0 user-name"><b>John Robert</b></p>
@@ -1457,9 +1481,9 @@
         </div>
         <div class="chat-header-container">
             <div class="chat-header row shrinked active">
-                <div class="columns small-2 chat-header-action pl-0">
+                <div class="columns small-2 chat-header-action pl-0 pr-0">
                     <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
-                    <img src="https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602499.jpg" align="left" class="user-image circle tiny">
+                    <img src="http://i.pravatar.cc/300" align="left" class="user-image circle tiny">
                 </div>
                 <div class="columns small-7 chat-header-user">
                     <p class="mb-0 user-name"><b>John Robert</b></p>
@@ -1473,9 +1497,9 @@
         </div>
         <div class="chat-header-container">
             <div class="chat-header row shrinked active">
-                <div class="columns small-2 chat-header-action pl-0">
+                <div class="columns small-2 chat-header-action pl-0 pr-0">
                     <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
-                    <img src="https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602499.jpg" align="left" class="user-image circle tiny">
+                    <img src="http://i.pravatar.cc/299" align="left" class="user-image circle tiny">
                 </div>
                 <div class="columns small-7 chat-header-user">
                     <p class="mb-0 user-name"><b>John Robert</b></p>
@@ -1489,9 +1513,9 @@
         </div>
         <div class="chat-header-container">
             <div class="chat-header row shrinked">
-                <div class="columns small-2 chat-header-action pl-0">
+                <div class="columns small-2 chat-header-action pl-0 pr-0">
                     <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
-                    <img src="https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602499.jpg" align="left" class="user-image circle tiny">
+                    <img src="http://i.pravatar.cc/298" align="left" class="user-image circle tiny">
                 </div>
                 <div class="columns small-7 chat-header-user">
                     <p class="mb-0 user-name"><b>John Robert</b></p>
@@ -1505,9 +1529,9 @@
         </div>
         <div class="chat-header-container">
             <div class="chat-header row shrinked">
-                <div class="columns small-2 chat-header-action pl-0">
+                <div class="columns small-2 chat-header-action pl-0 pr-0">
                     <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
-                    <img src="https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602499.jpg" align="left" class="user-image circle tiny">
+                    <img src="http://i.pravatar.cc/297" align="left" class="user-image circle tiny">
                 </div>
                 <div class="columns small-7 chat-header-user">
                     <p class="mb-0 user-name"><b>John Robert</b></p>
@@ -1521,9 +1545,9 @@
         </div>
         <div class="chat-header-container">
             <div class="chat-header row shrinked">
-                <div class="columns small-2 chat-header-action pl-0">
+                <div class="columns small-2 chat-header-action pl-0 pr-0">
                     <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
-                    <img src="https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602499.jpg" align="left" class="user-image circle tiny">
+                    <img src="http://i.pravatar.cc/296" align="left" class="user-image circle tiny">
                 </div>
                 <div class="columns small-7 chat-header-user">
                     <p class="mb-0 user-name"><b>John Robert</b></p>
@@ -1537,9 +1561,9 @@
         </div>
         <div class="chat-header-container">
             <div class="chat-header row shrinked">
-                <div class="columns small-2 chat-header-action pl-0">
+                <div class="columns small-2 chat-header-action pl-0 pr-0">
                     <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
-                    <img src="https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602499.jpg" align="left" class="user-image circle tiny">
+                    <img src="http://i.pravatar.cc/295" align="left" class="user-image circle tiny">
                 </div>
                 <div class="columns small-7 chat-header-user">
                     <p class="mb-0 user-name"><b>John Robert</b></p>
@@ -1553,9 +1577,9 @@
         </div>
         <div class="chat-header-container">
             <div class="chat-header row shrinked">
-                <div class="columns small-2 chat-header-action pl-0">
+                <div class="columns small-2 chat-header-action pl-0 pr-0">
                     <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
-                    <img src="https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602499.jpg" align="left" class="user-image circle tiny">
+                    <img src="http://i.pravatar.cc/294" align="left" class="user-image circle tiny">
                 </div>
                 <div class="columns small-7 chat-header-user">
                     <p class="mb-0 user-name"><b>John Robert</b></p>
@@ -1568,13 +1592,12 @@
             </div>
         </div>
 
-        
         <div class="chat-body-container hide">
             <div class="chat-body">
                 <div class="wrapper">
                     <div class="media-object" data-animate="slide-in-right slide-out-right">
                         <div class="media-object-section">
-                            <img src="https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602499.jpg" align="left" class="user-image circle small">
+                            <img src="http://i.pravatar.cc/300" align="left" class="user-image circle small">
                         </div>
                         <div class="media-object-section middle">
                             <div class="small talk-bubble border tri-right left-in">
@@ -1599,7 +1622,7 @@
                 <div class="wrapper">
                     <div class="media-object" data-animate="slide-in-right slide-out-right">
                         <div class="media-object-section">
-                            <img src="https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602499.jpg" align="left" class="user-image circle small">
+                            <img src="http://i.pravatar.cc/300" align="left" class="user-image circle small">
                         </div>
                         <div class="media-object-section middle">
                             <div class="small talk-bubble border tri-right left-in">
@@ -1646,14 +1669,39 @@
             </ul>
             <div class="chat-input">                
                     <textarea name="" id="" placeholder="What's on your mind?"></textarea>
-                    <button class="button secondary hollow large clear">
+                    <button id="btnAttach" class="button secondary hollow large clear">
                         <i class="fa fa-paperclip"></i>
                     </button>
-                    <button class="button hollow large clear success">
+                    <button id="btnSend" class="button hollow large clear success">
                         <i class="fa fa-paper-plane"></i>
                     </button>
             </div>
         </div>
+
+    </div>
+
+    <div class="reveal align-center-middle text-center video-call" id="exampleModal1" data-reveal>
+        <div class="row video-call-caller mb-2">
+            <div class="columns col-md-12">
+                <p class="h2 white-color mb-4">Liam Neeson Calling...</p>
+                <img src="http://i.pravatar.cc/300" alt="" class="user-image circle">
+            </div>
+        </div>
+        <div class="row video-call-action">
+          <div class="columns col-md-2">
+            <button id="btn-call-reject" class="button clear large circle alert">
+                <i class="fa fa-times"></i>
+            </button>
+        </div>
+          <div class="columns col-md-2">
+              <button id="btn-call-answer" class="button clear large circle success" data-close aria-label="Close modal">
+                <i class="fa fa-phone"></i>
+            </button>
+          </div>
+      </div>
+      <!-- <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button> -->
     </div>
 
 

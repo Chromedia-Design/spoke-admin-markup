@@ -31,6 +31,9 @@
 			background-color: $light-gray;
 		}
 	}
+	.button {
+		white-space: nowrap;
+	}
 	&.logo,
 	&.cover {
 		.img-wrapper {

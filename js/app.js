@@ -1,33 +1,75 @@
 $(document).foundation();
 
+
+// BEGIN Employee Chat Component 
 $("#chat-toggle").on("click",function(){
   $("#chat-notification").slideUp()
   $(this).siblings('#chat-container').slideToggle()
 })
 
+
 $("#chat-container .chat-header-container").on("click",function(event){
-  console.log("in")
+
+  // Back To Notification List / Close Message
   if( ($(event.target).hasClass('btnBack')) || ($(event.target).hasClass('fa')) ) {
     $(this).children('.chat-header').addClass('shrinked')
     $(this).prevAll('.chat-header-container').slideToggle()
     $(this).nextAll('.chat-header-container').slideToggle()
     $(this).siblings('.chat-header-intro').slideToggle()
+    $(this).siblings('.chat-body-container, .chat-input-container').slideUp()
     $(this).siblings('.chat-body-container, .chat-input-container').addClass('hide')
-    // $(this).siblings('.chat-header-intro').show()
     return;
   }
 
-  
+  // Open Message
   $(this).siblings('.chat-header-container').slideUp()
   $(this).siblings('.chat-body-container, .chat-input-container').removeClass('hide')
+  $(this).siblings('.chat-body-container, .chat-input-container').slideDown()
   $(this).children('.chat-header').removeClass('shrinked active')
   $(this).siblings('.chat-header-intro').slideUp()
 })
 
+// Open Message
 $("#chat-notification").on("click",".chat-header-container",function(event){
   openNotification()  
 })
 
+// Attach File
+$("#btnAttach").on("click",function(){
+  $(this).parents(".chat-input-container").animate({"height": "164px"}, 400)
+  $(this).parent(".chat-input").prev(".attachments").slideDown()
+  $(this).parents(".chat-input-container").siblings(".chat-body-container").animate({"height": "356px"}, 400)
+})
+
+// Send Message
+$("#btnSend").on("click", function(){
+  $(this).parents(".chat-input-container").animate({"height": "63px"}, 400)
+  $(this).parent(".chat-input").prev(".attachments").slideUp()
+  $(this).parents(".chat-input-container").siblings(".chat-body-container").animate({"height": "456px"}, 400)
+})
+
+// Answer Video Call
+$("#btn-call-answer").on("click",function(){
+  $("#chat-container").children('.chat-video-container').slideDown()
+  $("#chat-container").children('.chat-video-container').siblings().slideUp()
+})
+
+// Collapse Video Call / Go to Message
+$("#chat-video-compress").on("click",function(){
+  $("#chat-container").children('.chat-video-container').slideUp()
+  $("#chat-container").children('.chat-video-container').siblings().slideDown()
+  $("#chat-container").children('.chat-header-intro').hide()
+  $("#chat-container").children('.chat-header-container:first').children(".chat-header").removeClass('shrinked active')
+  $("#chat-container").children('.chat-header-container:first').siblings(".chat-header-container").hide()
+  $("#chat-container").children('.chat-header-container:first').siblings(".chat-body-container, .chat-input-container").removeClass('hide')
+})
+
+$(".btn-video").on("click",function(){
+  $("#chat-container").children('.chat-video-container').siblings().slideUp()
+  $("#chat-container").children('.chat-video-container').slideDown()
+})
+
+// Opening a message by clicking a Notification
 function openNotification() {
   $("#chat-notification").slideUp()
   $("#chat-container").slideToggle()
@@ -36,6 +78,7 @@ function openNotification() {
   $("#chat-container").children('.chat-header-container:first').siblings(".chat-header-container").hide()
   $("#chat-container").children('.chat-header-container:first').siblings(".chat-body-container, .chat-input-container").removeClass('hide')
 }
+// END Employee Chat Component 
 
 // replace these values with those generated in your TokBox Account
 var apiKey = "45907482";
