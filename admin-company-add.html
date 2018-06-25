@@ -58,10 +58,6 @@
 
 				<div class="top-bar">
 				  	<div class="top-bar-left">
-						<!-- <ul class="menu">
-				      		<li><input type="search" placeholder="Search"></li>
-				      		<li><button type="button" class="button">Search</button></li>
-			    		</ul> -->
 				  	</div>
 				  	<div class="top-bar-right">
 				    	<ul class="dropdown menu" data-dropdown-menu>
@@ -81,76 +77,91 @@
 				</div>
 
 				<div class="row expanded ">
-					<div class="large-12 columns">
+					<div class="medium-9 columns medium-centered">
 						
 						<nav aria-label="You are here:" role="navigation">
 						  	<ul class="breadcrumbs">
-						    	<li><a href="companies.html">Companies</a></li>
+						    	<li><a href="admin-companies.html">Companies</a></li>
 						    	<li>Add New Company</li>
 						  	</ul>
 						</nav>
 
-						<div class="page-lead">
-							<span class="h5">Add New Company</span>
+						<div class="page-lead row align-middle collapse expanded">
+							<div class="shrink columns">
+								<span class="h5">Add New Company</span>
+							</div>
 						</div>
 
-						<div class="callout hi-padded">
+						<div class="callout">
 
-			                <div class="row expanded">
-			                    <div class="large-3 columns">
-			                        <div class="thumbnail">
-			                            <img src="img/logo-harley-davidson.png">
-			                        </div>
-			                    </div>
-			                    <div class="medium-9 columns">
-			                        <div class="row">
-			                            <div class="medium-6 columns end">
-			                                <div class="input-group">
-			                                    <input type="file" class="input-group" name="file"/>
-			                                </div>
-			                            </div>
-			                        </div>
-			                        <div class="row">
-			                            <div class="medium-12 columns">
-			                                <label>Company Name
-			                                    <input type="text" name="name" value="Harley Davidson"/>
-			                                </label>
-			                            </div>
-			                        </div>
-			                    </div>
-			                </div>
-
-			                <div class="row expanded">
-								<div class="large-12 columns">
-									<div class="page-lead">
-				                		<span class="h5">Reward</span>
-				                	</div>
+			                <div class="row">
+								<div class="auto columns">
+									<div class="media-object">
+									  	<div class="media-object-section logo large middle">
+									    	<div class="img-wrapper">
+									      		<img src= "img/facility_logo.png">
+									    	</div>
+									  	</div>
+									  	<div class="media-object-section middle">
+									   		<label>
+									   			<small class="subheader">Company Logo. JPG, GIF or PNG. Image must be at least 69x69 in size.</small>
+									   			<input type="file" name="">
+									   		</label>
+									  	</div>
+									</div>
 								</div>
 							</div>
-
-			                <div class="callout">
-			                	<div class="row">
-				                	<div class="large-12 columns">
-				                		<div class="mt-1 mb-1">
-				                			<span class="h6 subheader">Flat Saving System</span>
-				                		</div>
-				                	</div>
-				                	<div class="large-5 columns end">
-					                	<div class="slider" data-slider data-initial-start="50" data-end="200">
-										  	<span class="slider-handle"  data-slider-handle role="slider" tabindex="1"></span>
-										  	<span class="slider-fill" data-slider-fill></span>
-										  	<input type="hidden">
-										</div>
-				                	</div>
-				                	<div class="large-1 columns end">
-				                		<span class="brick info">50%</span>
-				                	</div>
-				                </div>
-			                </div>
-
+							<div class="row">
+								<div class="auto columns">
+									<div class="media-object">
+									  	<div class="media-object-section logo tiny middle">
+									    	<div class="img-wrapper">
+									      		<img src= "img/facility_logo.png">
+									    	</div>
+									  	</div>
+									  	<div class="media-object-section middle">
+									   		<label>
+									   			<small class="subheader">Company Favicon. JPG, GIF or PNG. Image must be at least 69x69 in size.</small>
+									   			<input type="file" name="">
+									   		</label>
+									  	</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+				  				<div class="auto columns">
+				  					<label>Company Name
+				  						<input type="text" name="" value="">
+				  					</label>
+				  				</div>
+				  			</div>
+							<div class="row">
+				  				<div class="auto columns">
+				  					<label>Company Page Title
+				  						<input type="text" name="" value="">
+				  					</label>
+				  				</div>
+				  			</div>
+							<div class="row">
+								<div class="large-12 columns">
+			                		<label for="">Percentage of Savings</label>
+			                	</div>
+							</div>
+							<div class="row">
+								<div class="large-5 columns end">
+				                	<div class="slider" data-slider data-initial-start="50" data-end="200">
+									  	<span class="slider-handle"  data-slider-handle role="slider" tabindex="1"></span>
+									  	<span class="slider-fill" data-slider-fill></span>
+									  	<input type="hidden">
+									</div>
+			                	</div>
+			                	<div class="large-1 columns end">
+			                		<span class="brick info">50%</span>
+			                	</div>
+							</div>
 		                	<div class="row">
 		                		<div class="large-12 columns">
-		                			<div class="submit button-group pull-right">
+		                			<div class="submit button-group">
 					                	<a href="#" class="button link">Cancel</a>
 					                	<a href="#" class="button success">Save Changes</a>
 					                </div>

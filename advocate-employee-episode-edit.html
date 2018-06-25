@@ -108,9 +108,9 @@
 
 									  	<div class="card-user-profile-actions text-center">
 									    	<div class="button-align">
-									    		<a href="#" class="button circle success"><i class="fa fa-phone fa-fw"></i></a>
-												<a href="#" class="button circle success"><i class="fa fa-video-camera fa-fw"></i></a>
-												<a href="#" class="button circle success"><i class="fa fa-comments fa-fw"></i></a>
+									    		<a href="#" class="button circle success"><i class="fa fa-phone"></i></a>
+												<a href="#" class="button circle success"><i class="fa fa-video-camera"></i></a>
+												<a href="#" class="button circle success"><i class="fa fa-comments"></i></a>
 									    	</div>
 									  	</div>
 									</div>
@@ -326,81 +326,113 @@
 								</div>
 
 								<div class="row label-block collapse">
+									<div class="shrink columns">
+										<div class="label-group">
+											<span for="" class="badge success mb-0-5">1</span>
+										</div>
+									</div>
 		                            <div class="columns">
-		                                <div class="label-group">
-		                                	<label>
-			                                    <span for="" class="badge success mb-0-5">1</span> When were you thinking of having your surgery?
+		                            	<div class="label-group">
+		                            		<label>
+			                                     When were you thinking of having your surgery?
 			                                    <select>
+			                                    	<option value=""></option>
 			                                        <option>As soon as possible</option>
-			                                        <option>2 - 4 Weeks</option>
+			                                        <option selected>2 - 4 Weeks</option>
 			                                        <option>4 - 8 Weeks</option>
 			                                        <option>2 - 4 Months</option>
 			                                        <option>4 - 6 Months</option>
 			                                        <option>6+ months</option>
 			                                    </select>
 			                                </label>
+		                            	</div>
+		                            </div>
+		                        </div>
+		                        <div class="row label-block collapse">
+		                        	<div class="shrink columns">
+										<div class="label-group">
+											<span for="" class="badge alert mb-0-5">2</span>
+										</div>
+									</div>
+		                            <div class="columns">
+		                                <div class="label-group">
+		                                	<label>
+			                                     Are you willing to be flexible on the schedule if we were able to secure a larger bonus?
+			                                    <select>
+			                                    	<option value=""></option>
+			                                        <option>Yes</option>
+			                                        <option>No</option>
+			                                    </select>
+			                                </label>
 		                                </div>
 		                            </div>
 		                        </div>
 		                        <div class="row label-block collapse">
+		                        	<div class="shrink columns">
+										<div class="label-group">
+											<span for="" class="badge success mb-0-5">3</span>
+										</div>
+									</div>
 		                            <div class="columns">
 		                                <div class="label-group">
-		                                	<legend><span for="" class="badge alert mb-0-5">2</span> Are you willing to be flexible on the schedule if we were able to secure a larger bonus?</legend>
-		                                	<input type="radio" name="flex" value="yes" id="flex"><label for="flex">Yes</label>
-		                                	<input type="radio" name="flex" value="no" id="flex"><label for="flex">No</label>
+		                                	<label>
+			                                     Are you willing to travel outside your local area if a larger bonus were available?
+			                                    <select>
+			                                    	<option value=""></option>
+			                                        <option>No, I want only local facilities.</option>
+			                                        <option>Yes, I'm willing to travel outside my immediate area.</option>
+			                                        <option selected>I'm interested in seeing options throughout the USA.</option>
+			                                        <option>If the bonus was big enough, I'd consider travelling to another country.</option>
+			                                    </select>
+			                                </label>
 		                                </div>
 		                            </div>
 		                        </div>
 		                        <div class="row label-block collapse">
+		                        	<div class="shrink columns">
+										<div class="label-group">
+											<span for="" class="badge success mb-0-5">4</span>
+										</div>
+									</div>
 		                            <div class="columns">
 		                                <div class="label-group">
-		                                	<legend><span for="" class="badge success mb-0-5">3</span> Are you willing to travel outside your local area if a larger bonus were available?</legend>
-		                                	<input type="radio" name="location" value="" id="location"><label for="location">No, I want only local facilities.</label>
-		                                	<input type="radio" name="location" value="" id="location"><label for="location">Yes, I'm willing to travel outside my immediate area.</label>
-		                                	<input type="radio" name="location" value="" id="location"><label for="location">I'm interested in seeing options throughout the USA.</label>
-		                                	<input type="radio" name="location" value="" id="location" checked=""><label for="location">If the bonus was big enough, I'd consider travelling to another country.</label>
+		                                	<legend>Select the countries that you'd entertain travelling to:</legend>
+		                                	<div class="checkbox-wrapper">
+		                                		<input class="mb-0"  type="checkbox" name="country" value="" id="country" checked=""><label class="mb-0" for="country">Costa Rica</label>
+		                                	</div>
+		                                	<div class="checkbox-wrapper">
+		                                		<input class="mb-0"  type="checkbox" name="country" value="" id="country" checked=""><label class="mb-0" for="country">Mexico</label>
+		                                	</div>
+		                                	<div class="checkbox-wrapper">
+		                                		<input class="mb-0"  type="checkbox" name="country" value="" id="country" checked=""><label class="mb-0" for="country">Brazil</label>
+		                                	</div>
 		                                </div>
 		                            </div>
 		                        </div>
 		                        <div class="row label-block collapse">
+		                        	<div class="shrink columns">
+										<div class="label-group">
+											<span for="" class="badge success mb-0-5">5</span>
+										</div>
+									</div>
 		                            <div class="columns">
 		                                <div class="label-group">
-		                                	<legend><span for="" class="badge success mb-0-5">4</span> Select the countries that you'd entertain travelling to:</legend>
-			                                <div class="row mb-2">
-			                                    <div class="large-3 columns end">
-			                                        <input class="mb-0"  type="checkbox" name="country" value="" id="country" checked=""><label class="mb-0" for="country">Costa Rica</label>
-			                                    </div>
-			                                    <div class="large-3 columns end">
-			                                        <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">Mexico</label>
-			                                    </div>
-			                                    <div class="large-3 columns end">
-			                                        <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">Brazil</label>
-			                                    </div>
-			                                    <div class="large-3 columns end">
-			                                        <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">Belgium</label>
-			                                    </div>
-			                                    <div class="large-3 columns end">
-			                                        <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">Thailand</label>
-			                                    </div>
-			                                    <div class="large-3 columns end">
-			                                        <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">India</label>
-			                                    </div>
-			                                    <div class="large-3 columns end">
-			                                        <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">Singapore</label>
-			                                    </div>
-			                                </div>
-		                                </div>
-		                            </div>
-		                        </div>
-		                        <div class="row label-block collapse">
-		                            <div class="columns">
-		                                <div class="label-group">
-		                                	<legend><span for="" class="badge success mb-0-5">5</span> Are you using any other health benefit programs?</legend>
-			                                <input type="checkbox" name="programs" value="" id="programs" checked=""><label for="programs">Tele-Medicine</label>
-			                                <input type="checkbox" name="programs" value="" id="programs"><label for="programs">Wellness Programs</label>
-			                                <input type="checkbox" name="programs" value="" id="programs"><label for="programs">Prescription Drug Programs</label>
-			                                <input type="checkbox" name="programs" value="" id="programs"><label for="programs">Gym and Fitness Programs</label>
-			                                <input type="checkbox" name="programs" value="" id="programs"><label for="programs">Other: <input type="text" name="programs" value=""></label>
+		                                	<legend>Are you using any other health benefit programs?</legend>
+		                                	<div class="checkbox-wrapper">
+		                                		<input type="checkbox" name="programs" value="" id="programs" checked=""><label for="programs">Tele-Medicine</label>
+		                                	</div>
+		                                	<div class="checkbox-wrapper">
+		                                		<input type="checkbox" name="programs" value="" id="programs"><label for="programs">Wellness Programs</label>
+		                                	</div>
+		                                	<div class="checkbox-wrapper">
+		                                		<input type="checkbox" name="programs" value="" id="programs"><label for="programs">Prescription Drug Programs</label>
+		                                	</div>
+		                                	<div class="checkbox-wrapper">
+		                                		<input type="checkbox" name="programs" value="" id="programs"><label for="programs">Gym and Fitness Programs</label>
+		                                	</div>
+		                                	<div class="checkbox-wrapper">
+		                                		<input type="checkbox" name="programs" value="" id="programs"><label for="programs">Other: <input type="text" name="programs" value=""></label>
+		                                	</div>
 		                                </div>
 		                            </div>
 		                        </div>

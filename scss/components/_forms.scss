@@ -50,6 +50,7 @@ form {
 			+ label {
 				font-size: 1.3125rem;
 				vertical-align:middle;
+				margin: 0.5em 0;
 				> [type='text'] {
 					display: inline-block;
 					margin: 0;
@@ -63,8 +64,17 @@ form {
 					padding: 0 1rem 0.5rem;
 					background-color: transparent;
 				}
-				&:last-child {
-					margin-bottom: 2rem;
+			}
+		}
+		.checkbox-wrapper {
+			display: flex;
+			[type='checkbox'],
+			[type='radio'] {
+				display: inline-block;
+				line-height: 1.5em;
+				margin: 0.6125em 0.6125em 0.6125em 0;
+				+ label {
+					margin: 0;
 				}
 			}
 		}
@@ -98,6 +108,19 @@ form {
 
 fieldset {
 	margin-bottom: 1rem;
+}
+
+.checkbox-wrapper {
+	display: flex;
+	[type='checkbox'],
+	[type='radio'] {
+		display: inline-block;
+		line-height: 1.5em;
+		margin: 0.3125em 0;
+		+ label {
+			margin-bottom: 0;
+		}
+	}
 }
 
 label {
@@ -228,12 +251,8 @@ textarea, div, label, select {
 	+ label {
 		font-family: $body-font-family;
 		display: inline;
-		font-size: 1rem;
 		color: $text-black;
 		margin-bottom: 0.5rem;
-		&:last-child {
-			margin-bottom: 1rem;
-		}
 		> [type='text'] {
 			display: inline-block;
 			margin: 0;
@@ -241,7 +260,6 @@ textarea, div, label, select {
 			border-top: none;
 			border-left: none;
 			border-right: none;
-			font-size: 1rem;
 			line-height: 1.5em;
 			height: 1.75rem;
 			padding: 0 1rem 0.5rem;
@@ -758,6 +776,6 @@ input {
   	transition: width 0.2s ease-in-out;
   	&:focus {
     	width: 100%;
-    	border-bottom: 1px solid $light-gray;
+    	box-shadow: 0 1px 0 0 $light-gray;
   	}
 }

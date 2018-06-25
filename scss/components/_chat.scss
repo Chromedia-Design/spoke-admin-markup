@@ -1,5 +1,6 @@
 /* CSS talk bubble */
 .talk-bubble {
+	user-select: text;
 	margin: 0 0 0 2.5rem;
 	padding: 1.5rem;
   	display: inline-block;
@@ -148,8 +149,8 @@
 			&:before {
 				content: "";
 			  	position: absolute;
-		  		top: -13px;
-			  	right: -20px;
+		  		top: -9px;
+			  	right: -13px;
 			  	border-width: 0 16px 16px 0;
 			  	border-style: solid;
 			  	border-color: darken(#FFFFA5, 40%) $background-white;
@@ -383,7 +384,7 @@ $light-gray-hex:	#CBCFD3;
 				.media-object-section {
 					.talk-bubble {
 						float: right;
-						margin: 0 1rem 0 0;
+						// margin: 0 1rem 0 0;
 						&.warning-bg {
 							margin: 0;
 						}
@@ -865,6 +866,7 @@ $main-color: #1ebd44;
 }
 
 #chat-notification {
+	user-select: none;
 	.chat-header-container {
 		.chat-header {
 			background-color: $main-color !important;
@@ -883,6 +885,7 @@ $main-color: #1ebd44;
 }
 
 #chat-container {
+	user-select: none;
 	display: none;
 	background-color: #f5f7f9;
 	box-shadow: 0 5px 40px rgba(0,0,0,.16)!important;

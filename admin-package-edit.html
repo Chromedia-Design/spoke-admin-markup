@@ -218,50 +218,52 @@
 						<div class="tabs-content" data-tabs-content="example-tabs">
 						  	<div class="tabs-panel is-active" id="panel1">
 
-						  		<div class="reveal" id="addCategory" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-					                <div class="row collapse">
-					                    <div class="large-12 columns">
-					                        <h5 class="reveal-heading">Add Category</h5>
-					                    </div>
-					                </div>
-					                <form>
-					                	<div class="row collapse">
-					                		<div class="auto columns">
-					                			<div class="reveal-body">
-					                			<div class="row">
-								                        <div class="large-12 columns">
-								                            <label>
-								                                Category Name
-								                                <input type="text" value="Molar Root Canal">
-								                            </label>
-								                        </div>
-								                    </div>
-						                		</div>
-					                		</div>
-					                	</div>
-					                    
-					                    <div class="row collapse">
-					                        <div class="large-12 columns">
-					                        	<div class="reveal-footer">
-					                        		<div class="submit button-group pull-right">
-						                                <a class="button link" data-close>Cancel</a>
-						                                <button type="submit" class="button primary">Add Category</button>
-						                            </div>
-					                        	</div>
-					                        </div>
-					                    </div>
-					                </form>
-					                <button class="close-button" data-close aria-label="Close modal" type="button">
-					                    <span aria-hidden="true">&times;</span>
-					                </button>
-					            </div>
-
 								<div class="row align-middle collapse page-lead">
 									<div class="auto columns">
 										<span class="h6">Categories (5)</span>		
 									</div>
 									<div class="auto-columns">
 										<a class="button success hollow pull-right" data-open="addCategory"><i class="fa fa-plus"></i>&nbsp; Add Category</a>
+
+										<div class="reveal" id="addCategory" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+							                <div class="row collapse">
+							                    <div class="large-12 columns">
+							                        <h5 class="reveal-heading">Add Category</h5>
+							                    </div>
+							                </div>
+							                <form>
+							                	<div class="row collapse">
+							                		<div class="auto columns">
+							                			<div class="reveal-body">
+							                			<div class="row">
+										                        <div class="large-12 columns">
+										                            <label>
+										                                Category Name
+										                                <input type="text" value="Molar Root Canal">
+										                            </label>
+										                        </div>
+										                    </div>
+								                		</div>
+							                		</div>
+							                	</div>
+							                    
+							                    <div class="row collapse">
+							                        <div class="large-12 columns">
+							                        	<div class="reveal-footer">
+							                        		<div class="submit button-group pull-right">
+								                                <a class="button link" data-close>Cancel</a>
+								                                <button type="submit" class="button primary">Add Category</button>
+								                            </div>
+							                        	</div>
+							                        </div>
+							                    </div>
+							                </form>
+							                <button class="close-button" data-close aria-label="Close modal" type="button">
+							                    <span aria-hidden="true">&times;</span>
+							                </button>
+							            </div>
+
+
 									</div>
 								</div>
 								
@@ -333,7 +335,10 @@
 												<tbody>
 													<tr>
 														<td>
-															<input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1" class=" mb-0">4-Day Admission that is applicable to senior citizens and disabled persons.</label>
+															<div class="checkbox-wrapper">
+																<input id="checkbox1" type="checkbox" class="mb-0" checked>
+																<label for="checkbox1" class=" mb-0">4-Day Admission that is applicable to senior citizens and disabled persons.</label>
+															</div>
 														</td>
 														<td>
 															<span>005267</span>
@@ -344,7 +349,9 @@
 													</tr>
 													<tr>
 														<td>
-															<input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1" class=" mb-0">Room and Board</label>
+															<div class="checkbox-wrapper">
+																<input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1" class=" mb-0">Room and Board</label>
+															</div>
 														</td>
 														<td>
 															<span>005267</span>
@@ -355,7 +362,9 @@
 													</tr>
 													<tr>
 														<td>
-															<input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1" class=" mb-0">Complete Blood Count</label>
+															<div class="checkbox-wrapper">
+																<input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1" class=" mb-0">Complete Blood Count</label>
+															</div>
 														</td>
 														<td>
 															<span>005267</span>
@@ -366,7 +375,9 @@
 													</tr>
 													<tr>
 														<td>
-															<input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1" class=" mb-0">Complete Urinalysis</label>
+															<div class="checkbox-wrapper">
+																<input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1" class=" mb-0">Complete Urinalysis</label>
+															</div>
 														</td>
 														<td>
 															<span>005267</span>
@@ -377,7 +388,9 @@
 													</tr>
 													<tr>
 														<td>
-															<input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1" class=" mb-0">X-Ray</label>
+															<div class="checkbox-wrapper">
+																<input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1" class=" mb-0">X-Ray</label>
+															</div>
 														</td>
 														<td>
 															<span>005267</span>
@@ -473,19 +486,159 @@
 
 				      			<div class="row">
 				      				<div class="large-12 columns">
-				      					<div class="page-lead">
-							                <span class="h5">Qualifying Diagnosis <span>(10)</span></span>
-							                <a class="button primary pull-right" href="#" data-open="addTrigger">+ Add Qualifying Diagnosis</a>
 
-											<div class="reveal" id="addTrigger" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-								                <div class="row collapse">
-								                    <div class="large-12 columns">
-								                        <h5 class="reveal-heading">Add Add Qualifying Diagnosis</h5>
-								                    </div>
-								                </div>
-								                <form>
-								                	<div class="reveal-body">
-								                		 <div class="row collapse">
+				      					<div class="page-lead row align-middle collapse">
+							               <div class="shrink columns">
+							               		<span class="h5">Qualifying Diagnosis <span>(10)</span></span>
+							               </div>
+							               <div class="columns">
+							               		<a class="button primary pull-right" href="#" data-open="addTrigger">+ Add Qualifying Diagnosis</a>
+
+												<div class="reveal" id="addTrigger" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+									                <div class="row collapse">
+									                    <div class="large-12 columns">
+									                        <h5 class="reveal-heading">Add Add Qualifying Diagnosis</h5>
+									                    </div>
+									                </div>
+									                <form>
+									                	<div class="reveal-body">
+									                		 <div class="row collapse">
+										                        <div class="large-12 columns">
+										                            <label>
+										                                Search Code/Descriptor
+										                                <select>
+										                                    <option disabled></option>
+										                                </select>
+										                            </label>
+										                        </div>
+										                    </div>
+									                	</div>
+									                   
+									                	<div class="reveal-footer">
+									                		<div class="row collapse">
+										                        <div class="medium-12 columns">
+										                            <div class="submit button-group pull-right">
+										                                <a class="button link" data-close>Cancel</a>
+										                                <button type="submit" class="button primary">Add Trigger</button>
+										                            </div>
+										                        </div>
+										                    </div>
+									                	</div>
+									                </form>
+									                <button class="close-button" data-close aria-label="Close modal" type="button">
+									                    <span aria-hidden="true">&times;</span>
+									                </button>
+									            </div>
+
+							               </div>
+							            </div>
+
+								    	<div class="row">
+								    		<div class="columns">
+								    			<table>
+										    		<thead>
+										    			<th>Code</th>
+										    			<th>Descriptor</th>
+										    			<th></th>
+										    		</thead>
+										    		<tbody>
+										    			<tr>
+										    				<td>0089</td>
+										    				<td>This is a description of this code</td>
+										    				<td>
+										    					<div class="pull-right">
+										    						<a class="action-link"><i class="fa fa-remove"></i></a>
+										    					</div>
+										    				</td>
+										    			</tr>
+										    			<tr>
+										    				<td>0089</td>
+										    				<td>This is a description of this code</td>
+										    				<td>
+										    					<div class="pull-right">
+										    						<a class="action-link"><i class="fa fa-remove"></i></a>
+										    					</div>
+										    				</td>
+										    			</tr>
+										    			<tr>
+										    				<td>0089</td>
+										    				<td>This is a description of this code</td>
+										    				<td>
+										    					<div class="pull-right">
+										    						<a class="action-link"><i class="fa fa-remove"></i></a>
+										    					</div>
+										    				</td>
+										    			</tr>
+										    			<tr>
+										    				<td>0089</td>
+										    				<td>This is a description of this code</td>
+										    				<td>
+										    					<div class="pull-right">
+										    						<a class="action-link"><i class="fa fa-remove"></i></a>
+										    					</div>
+										    				</td>
+										    			</tr>
+										    			<tr>
+										    				<td>0089</td>
+										    				<td>This is a description of this code</td>
+										    				<td>
+										    					<div class="pull-right">
+										    						<a class="action-link"><i class="fa fa-remove"></i></a>
+										    					</div>
+										    				</td>
+										    			</tr>
+										    			<tr>
+										    				<td>0089</td>
+										    				<td>This is a description of this code</td>
+										    				<td>
+										    					<div class="pull-right">
+										    						<a class="action-link"><i class="fa fa-remove"></i></a>
+										    					</div>
+										    				</td>
+										    			</tr>
+										    			<tr>
+										    				<td>0089</td>
+										    				<td>This is a description of this code</td>
+										    				<td>
+										    					<div class="pull-right">
+										    						<a class="action-link"><i class="fa fa-remove"></i></a>
+										    					</div>
+										    				</td>
+										    			</tr>
+										    			<tr>
+										    				<td>0089</td>
+										    				<td>This is a description of this code</td>
+										    				<td>
+										    					<div class="pull-right">
+										    						<a class="action-link"><i class="fa fa-remove"></i></a>
+										    					</div>
+										    				</td>
+										    			</tr>
+										    		</tbody>
+										    	</table>
+								    		</div>
+								    	</div>
+				      				</div>
+				      			</div>
+
+				      			<div class="row">
+					      			<div class="large-12 columns">
+
+					      				<div class="page-lead row align-middle collapse">
+					      					<div class="shrink columns">
+					      						<span class="h5">Triggers <span>(10)</span></span>
+					      					</div>
+							                <div class="columns">
+							                	<a class="button primary pull-right" href="#" data-open="addTrigger">+ Add Trigger</a>
+
+												<div class="reveal" id="addTrigger" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+									                <div class="row">
+									                    <div class="large-12 columns">
+									                        <h5 class="reveal-heading">Add Clinical Indicator Trigger</h5>
+									                    </div>
+									                </div>
+									                <form>
+									                    <div class="row">
 									                        <div class="large-12 columns">
 									                            <label>
 									                                Search Code/Descriptor
@@ -495,10 +648,7 @@
 									                            </label>
 									                        </div>
 									                    </div>
-								                	</div>
-								                   
-								                	<div class="reveal-footer">
-								                		<div class="row collapse">
+									                    <div class="row">
 									                        <div class="medium-12 columns">
 									                            <div class="submit button-group pull-right">
 									                                <a class="button link" data-close>Cancel</a>
@@ -506,218 +656,101 @@
 									                            </div>
 									                        </div>
 									                    </div>
-								                	</div>
-								                </form>
-								                <button class="close-button" data-close aria-label="Close modal" type="button">
-								                    <span aria-hidden="true">&times;</span>
-								                </button>
-								            </div>
-							            </div>
-
-								    	<table>
-								    		<thead>
-								    			<th>Code</th>
-								    			<th>Descriptor</th>
-								    			<th></th>
-								    		</thead>
-								    		<tbody>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    		</tbody>
-								    	</table>
-				      				</div>
-				      			</div>
-
-				      			<div class="row">
-					      			<div class="large-12 columns">
-					      				<div class="page-lead">
-							                <span class="h5">Triggers <span>(10)</span></span>
-							                <a class="button primary pull-right" href="#" data-open="addTrigger">+ Add Trigger</a>
-
-											<div class="reveal" id="addTrigger" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-								                <div class="row">
-								                    <div class="large-12 columns">
-								                        <h5 class="reveal-heading">Add Clinical Indicator Trigger</h5>
-								                    </div>
-								                </div>
-								                <form>
-								                    <div class="row">
-								                        <div class="large-12 columns">
-								                            <label>
-								                                Search Code/Descriptor
-								                                <select>
-								                                    <option disabled></option>
-								                                </select>
-								                            </label>
-								                        </div>
-								                    </div>
-								                    <div class="row">
-								                        <div class="medium-12 columns">
-								                            <div class="submit button-group pull-right">
-								                                <a class="button link" data-close>Cancel</a>
-								                                <button type="submit" class="button primary">Add Trigger</button>
-								                            </div>
-								                        </div>
-								                    </div>
-								                </form>
-								                <button class="close-button" data-close aria-label="Close modal" type="button">
-								                    <span aria-hidden="true">&times;</span>
-								                </button>
-								            </div>
+									                </form>
+									                <button class="close-button" data-close aria-label="Close modal" type="button">
+									                    <span aria-hidden="true">&times;</span>
+									                </button>
+									            </div>
+							                </div>
 
 							            </div>
 
-								    	<table>
-								    		<thead>
-								    			<th>Code</th>
-								    			<th>Descriptor</th>
-								    			<th></th>
-								    		</thead>
-								    		<tbody>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    		</tbody>
-								    	</table>
+							            <div class="row">
+							            	<div class="columns">
+							            		<table>
+										    		<thead>
+										    			<th>Code</th>
+										    			<th>Descriptor</th>
+										    			<th></th>
+										    		</thead>
+										    		<tbody>
+										    			<tr>
+										    				<td>0089</td>
+										    				<td>This is a description of this code</td>
+										    				<td>
+										    					<div class="pull-right">
+										    						<a class="action-link"><i class="fa fa-remove"></i></a>
+										    					</div>
+										    				</td>
+										    			</tr>
+										    			<tr>
+										    				<td>0089</td>
+										    				<td>This is a description of this code</td>
+										    				<td>
+										    					<div class="pull-right">
+										    						<a class="action-link"><i class="fa fa-remove"></i></a>
+										    					</div>
+										    				</td>
+										    			</tr>
+										    			<tr>
+										    				<td>0089</td>
+										    				<td>This is a description of this code</td>
+										    				<td>
+										    					<div class="pull-right">
+										    						<a class="action-link"><i class="fa fa-remove"></i></a>
+										    					</div>
+										    				</td>
+										    			</tr>
+										    			<tr>
+										    				<td>0089</td>
+										    				<td>This is a description of this code</td>
+										    				<td>
+										    					<div class="pull-right">
+										    						<a class="action-link"><i class="fa fa-remove"></i></a>
+										    					</div>
+										    				</td>
+										    			</tr>
+										    			<tr>
+										    				<td>0089</td>
+										    				<td>This is a description of this code</td>
+										    				<td>
+										    					<div class="pull-right">
+										    						<a class="action-link"><i class="fa fa-remove"></i></a>
+										    					</div>
+										    				</td>
+										    			</tr>
+										    			<tr>
+										    				<td>0089</td>
+										    				<td>This is a description of this code</td>
+										    				<td>
+										    					<div class="pull-right">
+										    						<a class="action-link"><i class="fa fa-remove"></i></a>
+										    					</div>
+										    				</td>
+										    			</tr>
+										    			<tr>
+										    				<td>0089</td>
+										    				<td>This is a description of this code</td>
+										    				<td>
+										    					<div class="pull-right">
+										    						<a class="action-link"><i class="fa fa-remove"></i></a>
+										    					</div>
+										    				</td>
+										    			</tr>
+										    			<tr>
+										    				<td>0089</td>
+										    				<td>This is a description of this code</td>
+										    				<td>
+										    					<div class="pull-right">
+										    						<a class="action-link"><i class="fa fa-remove"></i></a>
+										    					</div>
+										    				</td>
+										    			</tr>
+										    		</tbody>
+										    	</table>
+							            	</div>
+							            </div>
+	
 					      			</div>
 					      		</div>
 
@@ -725,173 +758,136 @@
 
 						  	<div class="tabs-panel" id="panel3">
 
-								<!-- <div class="menu-options mt-1">
-					                <div class="row collapse">
-					                    <div class="large-4 columns end">
-					                        <div class="input-group">
-					                            <input class="input-group-field" type="text" placeholder="Search state..."></input>
-					                            <div class="input-group-button">
-					                                <input type="submit" class="button secondary" value="Search">
-					                            </div>
-					                        </div>
-					                    </div>
-					                    <div class="large-8 columns">
-					                        <div class="row collapse">
-					                            <div class="large-5 large-offset-2 columns">
-					                                <div class="row">
-					                                    <div class="large-4 columns">
-					                                        <label for="" class="small-label text-right middle">Specialization</label>
-					                                    </div>
-					                                    <div class="large-8 columns">
-					                                        <select class="small-input">
-					                                            <option>All Specializations</option>
-					                                        </select>
-					                                    </div>  
-					                                </div> 
-					                            </div>
-					                            <div class="large-5 columns end">
-					                                <div class="row">
-					                                    <div class="large-4 columns">
-					                                        <label for="" class="small-label text-right middle">Sub-Spec</label>
-					                                    </div>
-					                                    <div class="large-8 columns">
-					                                        <select class="small-input">
-					                                            <option>All Subspecializations</option>
-					                                        </select>
-					                                    </div>
-					                                </div>    
-					                            </div>
-					                        </div>
-					                    </div>
-					                </div>
-					            </div> -->
+								<div class="row">
+									<div class="columns">
+										<table>
+											<thead>
+												<tr>
+													<th>
+														<input type="checkbox" name="">
+														<span class="ml-1">State Name</span>
+													</th>
+													<th>Price</th>
+													<th>
+														<!-- <select class="table-control">
+											                <option value="">Edit Prices</option>
+											          	</select>
+											          	<a href="#" class="button table-control small" disabled>Apply</a> -->
+											          	<a href="#" data-open="batchEdit" class="button table-control secondary small pull-right">Edit Price</a>
+											          	<div class="reveal" id="batchEdit" data-reveal>
+															<div className="row">
+										                    	<div className="medium-12 columns">
+										                        	<h5 className="reveal-heading">Edit Price</h5>
+										                    	</div>
+										                	</div>
 
-								<table>
-									<thead>
-										<tr>
-											<th>
-												<input type="checkbox" name="">
-												<span class="ml-1">State Name</span>
-											</th>
-											<th>Price</th>
-											<th>
-												<!-- <select class="table-control">
-									                <option value="">Edit Prices</option>
-									          	</select>
-									          	<a href="#" class="button table-control small" disabled>Apply</a> -->
-									          	<a href="#" data-open="batchEdit" class="button table-control secondary small pull-right">Edit Price</a>
-									          	<div class="reveal" id="batchEdit" data-reveal>
-													<div className="row">
-								                    	<div className="medium-12 columns">
-								                        	<h5 className="reveal-heading">Edit Price</h5>
-								                    	</div>
-								                	</div>
-
-									                <form>
-									                    <div className="row">
-									                        <div className="large-12 columns">
-									                            <label>
-									                                Baseline Price
-									                                <input type="text" name="">
-									                            </label>
-									                        </div>
-									                    </div>
-									                    <div className="row">
-									                        <div className="medium-12 columns">
-									                            <div className="button-group submit pull-right">
-									                                <a className="button link">Cancel</a>
-									                                <button type="submit" className="button primary">Save Changes</button>
-									                            </div>
-									                        </div>
-									                    </div>
-									                </form>
-													<span aria-hidden="true">&times;</span>
-													</button>
-												</div>
-											</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>
-												<input type="checkbox" name="">
-												<span class="ml-1">Alabama</span>
-											</td>
-											<td>
-												<div class="input-group">
-													<span class="input-group-label">$</span>
-													<input class="input-group-field" type="text" value="0.00">
-												</div>
-											</td>
-											<td></td>
-										</tr>
-										<tr>
-											<td>
-												<input type="checkbox" name="">
-												<span class="ml-1">Alaska</span>
-											</td>
-											<td>
-												<div class="input-group">
-													<span class="input-group-label">$</span>
-													<input class="input-group-field" type="text" value="0.00">
-												</div>
-											</td>
-											<td></td>
-										</tr>
-										<tr>
-											<td>
-												<input type="checkbox" name="">
-												<span class="ml-1">Arizona</span>
-											</td>
-											<td>
-												<div class="input-group">
-													<span class="input-group-label">$</span>
-													<input class="input-group-field" type="text" value="0.00">
-												</div>
-											</td>
-											<td></td>
-										</tr>
-										<tr>
-											<td>
-												<input type="checkbox" name="">
-												<span class="ml-1">Arkansas</span>
-											</td>
-											<td>
-												<div class="input-group">
-													<span class="input-group-label">$</span>
-													<input class="input-group-field" type="text" value="0.00">
-												</div>
-											</td>
-											<td></td>
-										</tr>
-										<tr>
-											<td>
-												<input type="checkbox" name="">
-												<span class="ml-1">California</span>
-											</td>
-											<td>
-												<div class="input-group">
-													<span class="input-group-label">$</span>
-													<input class="input-group-field" type="text" value="0.00">
-												</div>
-											</td>
-											<td></td>
-										</tr>
-										<tr>
-											<td>
-												<input type="checkbox" name="">
-												<span class="ml-1">Colorado</span>
-											</td>
-											<td>
-												<div class="input-group">
-													<span class="input-group-label">$</span>
-													<input class="input-group-field" type="text" value="0.00">
-												</div>
-											</td>
-											<td></td>
-										</tr>
-									</tbody>
-								</table>
+											                <form>
+											                    <div className="row">
+											                        <div className="large-12 columns">
+											                            <label>
+											                                Baseline Price
+											                                <input type="text" name="">
+											                            </label>
+											                        </div>
+											                    </div>
+											                    <div className="row">
+											                        <div className="medium-12 columns">
+											                            <div className="button-group submit pull-right">
+											                                <a className="button link">Cancel</a>
+											                                <button type="submit" className="button primary">Save Changes</button>
+											                            </div>
+											                        </div>
+											                    </div>
+											                </form>
+															<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+													</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														<input type="checkbox" name="">
+														<span class="ml-1">Alabama</span>
+													</td>
+													<td>
+														<div class="input-group">
+															<span class="input-group-label">$</span>
+															<input class="input-group-field" type="text" value="0.00">
+														</div>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>
+														<input type="checkbox" name="">
+														<span class="ml-1">Alaska</span>
+													</td>
+													<td>
+														<div class="input-group">
+															<span class="input-group-label">$</span>
+															<input class="input-group-field" type="text" value="0.00">
+														</div>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>
+														<input type="checkbox" name="">
+														<span class="ml-1">Arizona</span>
+													</td>
+													<td>
+														<div class="input-group">
+															<span class="input-group-label">$</span>
+															<input class="input-group-field" type="text" value="0.00">
+														</div>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>
+														<input type="checkbox" name="">
+														<span class="ml-1">Arkansas</span>
+													</td>
+													<td>
+														<div class="input-group">
+															<span class="input-group-label">$</span>
+															<input class="input-group-field" type="text" value="0.00">
+														</div>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>
+														<input type="checkbox" name="">
+														<span class="ml-1">California</span>
+													</td>
+													<td>
+														<div class="input-group">
+															<span class="input-group-label">$</span>
+															<input class="input-group-field" type="text" value="0.00">
+														</div>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>
+														<input type="checkbox" name="">
+														<span class="ml-1">Colorado</span>
+													</td>
+													<td>
+														<div class="input-group">
+															<span class="input-group-label">$</span>
+															<input class="input-group-field" type="text" value="0.00">
+														</div>
+													</td>
+													<td></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
 
 						  	</div>
 
