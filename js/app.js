@@ -5,6 +5,7 @@ $(document).foundation();
 $("#chat-toggle").on("click",function(){
   $("#chat-notification").slideUp()
   $(this).siblings('#chat-container').slideToggle()
+  $(this).children('.fa').toggleClass('fa-comment fa-times');
 })
 
 
