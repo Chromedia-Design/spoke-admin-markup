@@ -1,0 +1,58 @@
+.fb-header {}
+
+.fb-body {
+	.fb-components-container {
+		.component-group {
+			padding: 1rem;
+			.component-group-title {
+				margin: 0px;
+				margin-left: 1rem;
+				color: #8c8c8c;
+			}
+			.components {
+				margin-left: 0rem;
+				list-style-type: none !important;
+				margin-bottom: 0px;
+				a {
+					li {
+						transition: all .25s;
+						border-radius: 3px;
+						padding: .35rem 0rem;
+						padding-left: 1.5rem;
+						font-size: 1.05rem;
+						color: #323232;
+						.fa {
+							margin-right: .5rem;
+							color: #3b77a5;
+						}
+					}
+					&:hover {
+						li {
+							transition: all .25s;
+							background-color: lighten(#4981ab,48%);
+							.fa {
+								color: darken(#3b77a5, 10%);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.fb-container {
+		.fb-editor {
+			margin: 0px 1rem;
+			background-color: #fff;
+			min-height: 80vh;
+			padding: 4rem;
+			padding-bottom: 1rem;
+			margin-bottom: 1rem;
+			// padding-top: 2rem;
+			// border-radius: .5rem;
+			.row {
+				margin-bottom: 2rem;
+			}	
+		}
+	}
+	.fb-component-attr-container {}
+}
