@@ -610,11 +610,25 @@ section {
 	}
 	.badge {
 		padding: rem-calc(3) rem-calc(6);
-		border-radius: 8px;
+		border-radius: 20px;
 		font-weight: bold;
 	}
 	.media-object.full-table {
 		table-layout: fixed;
+	}
+	table {
+		&.base-spacing {
+			thead {
+				th {
+					&:first-child {
+						width: 50%;
+					}
+					&:nth-child(2) {
+						width: 30%;
+					}
+				}
+			}
+		}
 	}
 	// Sizing
 	> .columns {

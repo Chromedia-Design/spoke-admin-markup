@@ -13,7 +13,7 @@
 <body>
 	<div class="expanded row medium-collapse">
 		
-		<div class="reveal full" style="display: block;">
+		<div class="reveal-extend">
 			<div class="row align-middle expanded reveal-heading">
 				<div class="shrink columns">
 					<div class="button-align small mb-0">
@@ -201,15 +201,57 @@
 								<div id="category1" class="list-panel" data-toggler data-animate="fade-in fade-out" style="display: none;">
 									<ul class="tabs" data-tabs id="package-category-tabs">
 										<li class="tabs-title is-active"><a href="#panel1a" aria-selected="true">COMPONENTS</a></li>
-										<li class="tabs-title"><a href="#panel1b">DOCTORS</a></li>
+										<li class="tabs-title"><a href="#panel1b">Staff</a></li>
 									</ul>
 									<div class="tabs-content" data-tabs-content="package-category-tabs">
 										<div class="tabs-panel is-active" id="panel1a">
-											<table class="single-spacing striped">
+											<table class="base-spacing striped">
 												<thead>
 													<tr>
 														<th>COMPONENT NAME</th>
 														<th>CODE</th>
+														<th>
+															<a data-open="addCategory" class="button tiny hollow rounded mb-0 pull-right">+ Add</a>
+
+															<div class="reveal" id="addCategory" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+												                <div class="row collapse">
+												                    <div class="large-12 columns">
+												                        <h5 class="reveal-heading">Add Category</h5>
+												                    </div>
+												                </div>
+												                <form>
+												                	<div class="row collapse">
+												                		<div class="auto columns">
+												                			<div class="reveal-body">
+												                			<div class="row">
+															                        <div class="large-12 columns">
+															                            <label>
+															                                Category Name
+															                                <input type="text" value="Molar Root Canal">
+															                            </label>
+															                        </div>
+															                    </div>
+													                		</div>
+												                		</div>
+												                	</div>
+												                    
+												                    <div class="row collapse">
+												                        <div class="large-12 columns">
+												                        	<div class="reveal-footer">
+												                        		<div class="submit button-group pull-right">
+													                                <a class="button link" data-close>Cancel</a>
+													                                <button type="submit" class="button primary">Add Category</button>
+													                            </div>
+												                        	</div>
+												                        </div>
+												                    </div>
+												                </form>
+												                <button class="close-button" data-close aria-label="Close modal" type="button">
+												                    <span aria-hidden="true">&times;</span>
+												                </button>
+												            </div>
+
+														</th>
 													</tr>
 												</thead>
 												<tbody>
@@ -222,6 +264,7 @@
 														<td>
 															<span>005267</span>
 														</td>
+														<td></td>
 													</tr>
 													<tr>
 														<td>
@@ -232,6 +275,7 @@
 														<td>
 															<span>005267</span>
 														</td>
+														<td></td>
 													</tr>
 													<tr>
 														<td>
@@ -242,6 +286,7 @@
 														<td>
 															<span>005267</span>
 														</td>
+														<td></td>
 													</tr>
 													<tr>
 														<td>
@@ -252,6 +297,7 @@
 														<td>
 															<span>005267</span>
 														</td>
+														<td></td>
 													</tr>
 													<tr>
 														<td>
@@ -262,11 +308,58 @@
 														<td>
 															<span>005267</span>
 														</td>
+														<td></td>
 													</tr>
 												</tbody>
 											</table>
 										</div>
 										<div class="tabs-panel" id="panel1b">
+											<div class="row collapse align-middle mb-0-5">
+												<div class="columns">
+													<span class="h6"><small>Assigned Staff</small></span>
+												</div>
+												<div class="columns">
+													<a data-open="addCategory" class="button tiny hollow rounded mb-0 pull-right">+ Add</a>
+
+														<div class="reveal" id="addCategory" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+											                <div class="row collapse">
+											                    <div class="large-12 columns">
+											                        <h5 class="reveal-heading">Add Category</h5>
+											                    </div>
+											                </div>
+											                <form>
+											                	<div class="row collapse">
+											                		<div class="auto columns">
+											                			<div class="reveal-body">
+											                			<div class="row">
+														                        <div class="large-12 columns">
+														                            <label>
+														                                Category Name
+														                                <input type="text" value="Molar Root Canal">
+														                            </label>
+														                        </div>
+														                    </div>
+												                		</div>
+											                		</div>
+											                	</div>
+											                    
+											                    <div class="row collapse">
+											                        <div class="large-12 columns">
+											                        	<div class="reveal-footer">
+											                        		<div class="submit button-group pull-right">
+												                                <a class="button link" data-close>Cancel</a>
+												                                <button type="submit" class="button primary">Add Category</button>
+												                            </div>
+											                        	</div>
+											                        </div>
+											                    </div>
+											                </form>
+											                <button class="close-button" data-close aria-label="Close modal" type="button">
+											                    <span aria-hidden="true">&times;</span>
+											                </button>
+											            </div>
+												</div>
+											</div>
 											<div class="media-object card-person full-table mt-0 mb-0-5">
 												<div class="media-object-section logo small middle">
 													<div class="img-wrapper circle">
@@ -306,15 +399,16 @@
 								<div id="category2" class="list-panel" data-toggler data-animate="fade-in fade-out" style="display: none;">
 									<ul class="tabs" data-tabs id="package-category-tabs">
 										<li class="tabs-title is-active"><a href="#panel2a" aria-selected="true">COMPONENTS</a></li>
-										<li class="tabs-title"><a href="#panel2b">DOCTORS</a></li>
+										<li class="tabs-title"><a href="#panel2b">Staff</a></li>
 									</ul>
 									<div class="tabs-content" data-tabs-content="package-category-tabs">
 										<div class="tabs-panel is-active" id="panel2a">
-											<table class="single-spacing striped">
+											<table class="base-spacing striped">
 												<thead>
 													<tr>
 														<th>COMPONENT NAME</th>
 														<th>CODE</th>
+														<th><a data-open="addCategory" class="button tiny hollow rounded mb-0 pull-right">+ Add</a></th>
 													</tr>
 												</thead>
 												<tbody>
@@ -327,6 +421,7 @@
 														<td>
 															<span>005267</span>
 														</td>
+														<td></td>
 													</tr>
 													<tr>
 														<td>
@@ -337,6 +432,7 @@
 														<td>
 															<span>005267</span>
 														</td>
+														<td></td>
 													</tr>
 													<tr>
 														<td>
@@ -347,6 +443,7 @@
 														<td>
 															<span>005267</span>
 														</td>
+														<td></td>
 													</tr>
 													<tr>
 														<td>
@@ -357,6 +454,7 @@
 														<td>
 															<span>005267</span>
 														</td>
+														<td></td>
 													</tr>
 													<tr>
 														<td>
@@ -367,6 +465,7 @@
 														<td>
 															<span>005267</span>
 														</td>
+														<td></td>
 													</tr>
 												</tbody>
 											</table>
@@ -411,15 +510,16 @@
 								<div id="category3" class="list-panel" data-toggler data-animate="fade-in fade-out" style="display: none;">
 									<ul class="tabs" data-tabs id="package-category-tabs">
 										<li class="tabs-title is-active"><a href="#panel3a" aria-selected="true">COMPONENTS</a></li>
-										<li class="tabs-title"><a href="#panel3b">DOCTORS</a></li>
+										<li class="tabs-title"><a href="#panel3b">Staff</a></li>
 									</ul>
 									<div class="tabs-content" data-tabs-content="package-category-tabs">
 										<div class="tabs-panel is-active" id="panel3a">
-											<table class="single-spacing striped">
+											<table class="base-spacing striped">
 												<thead>
 													<tr>
 														<th>COMPONENT NAME</th>
 														<th>CODE</th>
+														<th><a data-open="addCategory" class="button tiny hollow rounded mb-0 pull-right">+ Add</a></th>
 													</tr>
 												</thead>
 												<tbody>
@@ -432,6 +532,7 @@
 														<td>
 															<span>005267</span>
 														</td>
+														<td></td>
 													</tr>
 													<tr>
 														<td>
@@ -442,6 +543,7 @@
 														<td>
 															<span>005267</span>
 														</td>
+														<td></td>
 													</tr>
 													<tr>
 														<td>
@@ -452,6 +554,7 @@
 														<td>
 															<span>005267</span>
 														</td>
+														<td></td>
 													</tr>
 													<tr>
 														<td>
@@ -462,6 +565,7 @@
 														<td>
 															<span>005267</span>
 														</td>
+														<td></td>
 													</tr>
 													<tr>
 														<td>
@@ -472,6 +576,7 @@
 														<td>
 															<span>005267</span>
 														</td>
+														<td></td>
 													</tr>
 												</tbody>
 											</table>
