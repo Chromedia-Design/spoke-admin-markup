@@ -12,6 +12,11 @@
 	    padding: 0;
 	    vertical-align: middle;
 	}
+	&.rounded {
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+		border-radius: 50%;
+	}
 }
 
 .label {

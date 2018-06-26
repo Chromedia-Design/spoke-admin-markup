@@ -17,6 +17,11 @@
 			justify-content: center;
 		}
 	}
+	&.full {
+		.reveal-heading, .reveal-body, .reveal-footer {
+			border-radius: 0;
+		}
+	}
 }
 
 .reveal-heading, .reveal-body, .reveal-footer {
@@ -38,8 +43,8 @@
 .reveal-heading {
 	background-color: $primary-color;
 	color: $white;
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
+	border-top-left-radius: $global-radius;
+	border-top-right-radius: $global-radius;
 	&.sub-modals {
 		background-color: $white !important;
 		color: rgba($black, $B-subtext) !important;
@@ -48,7 +53,7 @@
 
 .reveal-body {
 	&.rounded {
-		border-radius: 4px;
+		border-radius: $global-radius;
 	}
 	&.primary {
 		background-color: $primary-color;
@@ -59,8 +64,8 @@
 }
 
 .reveal-footer {
-	border-bottom-left-radius: 4px;
-	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: $global-radius;
+	border-bottom-right-radius: $global-radius;
 	overflow: hidden;
 	.button {
 		margin-bottom: 0;

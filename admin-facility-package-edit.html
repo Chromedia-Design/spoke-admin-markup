@@ -1,0 +1,532 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spoke Admin Portal</title>
+	<link rel="stylesheet" href="js/trumbowyg/ui/trumbowyg.min.css">
+	<link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+	<div class="expanded row medium-collapse">
+		
+		<div class="reveal full" style="display: block;">
+			<div class="row align-middle expanded reveal-heading">
+				<div class="shrink columns">
+					<div class="button-align small mb-0">
+						<a class="button rounded hollow white" href="admin-facility-view.html"><i class="fa fa-close"></i></a>
+					</div>
+				</div>
+				<div class="columns">
+					<span class="h6">Edit Packages</span>
+					<p class="subheader mb-0 white"><small>Start by creating/selecting a treatment and a package under it. Some conditions must be met in order for the package to be active.</small></p>
+				</div>
+				<div class="shrink columns">
+					<div class="button-align small mb-0 pull-right">
+						<a href="#" class="button success">Save Changes</a>
+					</div>
+				</div>
+			</div>
+			<div class="reveal-body">
+
+				<!-- Start of Package Roullette -->
+				<div id="packageBuilder" class="row expanded collapse">
+
+					<div class="transparent medium-3 columns">
+
+						<div class="page-lead row align-middle">
+							<div class="medium-9 columns">
+								<h6 class="mb-0">Treatments</h6>
+								<p class="subheader mb-0"><small>1/2 Active Treatment</small></p>
+							</div>
+							<div class="medium-3 columns">
+								<div class="button-group pull-right tiny mb-0">
+									<a href="#" class="button success rounded">Add</a>
+								</div>
+							</div>
+						</div>
+
+						<ul class="menu vertical"  data-accordion-menu>
+							<li class="is-active">
+								<a href="#">Root Canal Treatment</a>
+								<ul class="nested vertical menu">
+									<li class="is-active">
+										<a href="#">
+											<i class="fa fa-check-circle success-color"></i>&nbsp; Molar Root Canal
+											<p class="subheader mb-0"><small>3 Categories</small></p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa fa-exclamation-circle alert-color"></i>&nbsp; Front Teeth Canal
+											<p class="subheader mb-0"><small>3 Incomplete Categories</small></p>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Total Knee Replacement</a>
+								<ul class="nested vertical menu">
+									<li>
+										<a href="#">
+											<i class="fa fa-check-circle alert-color"></i>&nbsp; Molar Root Canal
+											<p class="subheader mb-0"><small>3 Categories</small></p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa fa-exclamation-circle warning-color"></i>&nbsp; Front Teeth Canal
+											<p class="subheader mb-0"><small>3 Incomplete Categories</small></p>
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+
+					<div class="medium-3 columns">
+						<div class="page-lead row align-middle">
+							<div class="medium-9 columns">
+								<h6 class="mb-0">Staff</h6>
+								<p class="subheader mb-0"><small>1/2 Active Doctors</small></p>
+							</div>
+							<div class="medium-3 columns">
+								<div class="button-group pull-right tiny mb-0">
+									<a href="#" class="button success rounded">Add</a>
+								</div>
+							</div>
+						</div>
+						<ul class="tabs" data-tabs id="example-tabs">
+							<li class="tabs-title is-active"><a href="#panel1" aria-selected="true">ALL</a></li>
+							<li class="tabs-title"><a href="#panel2">ACTIVE</a></li>
+							<li class="tabs-title"><a href="#panel3">INACTIVE</a></li>
+							<li class="tabs-title"><a href="#panel4">LINKED</a></li>
+						</ul>
+						<div class="media-object card-person full-table mt-0 mb-0-5">
+							<div class="media-object-section logo small middle">
+								<div class="img-wrapper circle">
+									<img src="img/specialist.png" alt="">
+								</div>
+							</div>
+							<div class="media-object-section description middle">
+								<small data-tooltip tabindex="1" title="Theodore Constantinople" class="truncate">Theodore Constantinople</small>
+								<small class="subheader"><i class="fa fa-check-circle success-color"></i>&nbsp; 3 Categories</small>
+							</div>
+							<div class="media-object-section middle">
+								<div class="button-group tiny pull-right">
+									<a href="#" class="button info circle"><i class="fa fa-close"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="media-object card-person full-table mt-0 mb-0-5">
+							<div class="media-object-section logo small middle">
+								<div class="img-wrapper circle">
+									<img src="img/specialist.png" alt="">
+								</div>
+							</div>
+							<div class="media-object-section description middle">
+								<small data-tooltip tabindex="1" title="Katherine Wallace McPhee" class="truncate">Katherine Wallace McPhee</small>
+								<small class="subheader"><i class="fa fa-check-circle alert-color"></i>&nbsp; Unassigned</small>
+							</div>
+							<div class="media-object-section middle">
+								<div class="button-group tiny pull-right">
+									<a href="#" class="button info circle"><i class="fa fa-close"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="medium-6 columns">
+						<div class="page-lead row align-middle">
+							<div class="auto columns">
+								<h6 class="mb-0">Package Categories</h6>
+								<p class="subheader mb-0"><small>1/12 Completed Categories</small></p>
+							</div>
+						</div>
+						<ul class="tabs" data-tabs id="example-tabs">
+							<li class="tabs-title is-active"><a href="#panel1" aria-selected="true">ALL</a></li>
+							<li class="tabs-title"><a href="#panel2">COMPLETE</a></li>
+							<li class="tabs-title"><a href="#panel3">INCOMPLETE</a></li>
+						</ul>
+						<div class="page-lead row align-middle">
+		            		<div class="large-3 columns">
+		            			<p class="subheader mb-0">Total Price</p>
+		            		</div>
+		            		<div class="large-9 columns">
+		                        <div class="row align-middle collapse">
+		                            <div class="large-6 columns">
+		                                <div class="row align-middle">
+		                                    <div class="large-6 columns">
+		                                        <small class="subheader mb-0">AUTOSUM</small>
+		                                    </div>
+		                                    <div class="large-6 columns">
+		                                        <div class="switch tiny mb-0">
+												  	<input class="switch-input" id="tinySwitch1" type="checkbox" name="exampleSwitch" checked="true">
+												  	<label class="switch-paddle" for="tinySwitch1">
+												    	<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+												  	</label>
+												</div>
+		                                    </div>  
+		                                </div> 
+		                            </div>
+		                            <div class="large-6 columns">
+		                            	<div class="input-group mb-0">
+											<span class="input-group-label">$</span>
+											<input type="text" class="input-group-field" value="0">
+										</div>
+		                            </div>
+		                        </div>
+		                    </div>
+		            	</div>
+
+						<ul class="well-list">
+							<li>
+								<div class="list-wrap row align-middle collapse">
+									<div class="auto columns">
+										<a data-toggle="category1"><i class="fa fa-caret-down fa-fw"></i> <b>Surgeon</b></a>
+									</div>
+									<div class="auto columns">
+										<span class="badge success">Doctor Required</span>
+									</div>
+									<div class="auto columns">
+										<div class="input-group mb-0">
+											<span class="input-group-label">$</span>
+											<input type="text" class="input-group-field" value="0">
+										</div>
+									</div>
+								</div>
+								<div id="category1" class="list-panel" data-toggler data-animate="fade-in fade-out" style="display: none;">
+									<ul class="tabs" data-tabs id="package-category-tabs">
+										<li class="tabs-title is-active"><a href="#panel1a" aria-selected="true">COMPONENTS</a></li>
+										<li class="tabs-title"><a href="#panel1b">DOCTORS</a></li>
+									</ul>
+									<div class="tabs-content" data-tabs-content="package-category-tabs">
+										<div class="tabs-panel is-active" id="panel1a">
+											<table class="single-spacing striped">
+												<thead>
+													<tr>
+														<th>COMPONENT NAME</th>
+														<th>CODE</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>
+															<div class="checkbox-wrapper">
+																<input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1" class=" mb-0">4-Day Admission that is applicable to senior citizens and disabled persons.</label>
+															</div>
+														</td>
+														<td>
+															<span>005267</span>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="checkbox-wrapper">
+																<input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1" class=" mb-0">Room and Board</label>
+															</div>
+														</td>
+														<td>
+															<span>005267</span>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="checkbox-wrapper">
+																<input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1" class=" mb-0">Complete Blood Count</label>
+															</div>
+														</td>
+														<td>
+															<span>005267</span>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="checkbox-wrapper">
+																<input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1" class=" mb-0">Complete Urinalysis</label>
+															</div>
+														</td>
+														<td>
+															<span>005267</span>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="checkbox-wrapper">
+																<input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1" class=" mb-0">X-Ray</label>
+															</div>
+														</td>
+														<td>
+															<span>005267</span>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="tabs-panel" id="panel1b">
+											<div class="media-object card-person full-table mt-0 mb-0-5">
+												<div class="media-object-section logo small middle">
+													<div class="img-wrapper circle">
+														<img src="img/specialist.png" alt="">
+													</div>
+												</div>
+												<div class="media-object-section description middle">
+													<small data-tooltip tabindex="1" title="Theodore Constantinople" class="truncate">Theodore Constantinople</small>
+													<small class="subheader"><i class="fa fa-check-circle success-color"></i>&nbsp; 3 Categories</small>
+												</div>
+												<div class="media-object-section middle">
+													<div class="button-group tiny pull-right">
+														<a href="#" class="button info circle"><i class="fa fa-close"></i></a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<li>
+								<div class="list-wrap row align-middle collapse">
+									<div class="auto columns">
+										<a data-toggle="category2"><i class="fa fa-caret-down fa-fw"></i> <b>Anaesthetics</b></a>
+									</div>
+									<div class="auto columns">
+										<span class="badge success">Doctor Required</span>
+									</div>
+									<div class="auto columns">
+										<div class="input-group mb-0">
+											<span class="input-group-label">$</span>
+											<input type="text" class="input-group-field" value="0">
+										</div>
+									</div>
+								</div>
+								<div id="category2" class="list-panel" data-toggler data-animate="fade-in fade-out" style="display: none;">
+									<ul class="tabs" data-tabs id="package-category-tabs">
+										<li class="tabs-title is-active"><a href="#panel2a" aria-selected="true">COMPONENTS</a></li>
+										<li class="tabs-title"><a href="#panel2b">DOCTORS</a></li>
+									</ul>
+									<div class="tabs-content" data-tabs-content="package-category-tabs">
+										<div class="tabs-panel is-active" id="panel2a">
+											<table class="single-spacing striped">
+												<thead>
+													<tr>
+														<th>COMPONENT NAME</th>
+														<th>CODE</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>
+															<div class="checkbox-wrapper">
+																<input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1" class=" mb-0">4-Day Admission that is applicable to senior citizens and disabled persons.</label>
+															</div>
+														</td>
+														<td>
+															<span>005267</span>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="checkbox-wrapper">
+																<input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1" class=" mb-0">Room and Board</label>
+															</div>
+														</td>
+														<td>
+															<span>005267</span>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="checkbox-wrapper">
+																<input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1" class=" mb-0">Complete Blood Count</label>
+															</div>
+														</td>
+														<td>
+															<span>005267</span>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="checkbox-wrapper">
+																<input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1" class=" mb-0">Complete Urinalysis</label>
+															</div>
+														</td>
+														<td>
+															<span>005267</span>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="checkbox-wrapper">
+																<input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1" class=" mb-0">X-Ray</label>
+															</div>
+														</td>
+														<td>
+															<span>005267</span>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="tabs-panel" id="panel2b">
+											<div class="media-object card-person full-table mt-0 mb-0-5">
+												<div class="media-object-section logo small middle">
+													<div class="img-wrapper circle">
+														<img src="img/specialist.png" alt="">
+													</div>
+												</div>
+												<div class="media-object-section description middle">
+													<small data-tooltip tabindex="1" title="Theodore Constantinople" class="truncate">Theodore Constantinople</small>
+													<small class="subheader"><i class="fa fa-check-circle success-color"></i>&nbsp; 3 Categories</small>
+												</div>
+												<div class="media-object-section middle">
+													<div class="button-group tiny pull-right">
+														<a href="#" class="button info circle"><i class="fa fa-close"></i></a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<li>
+								<div class="list-wrap row align-middle collapse">
+									<div class="auto columns">
+										<a data-toggle="category3"><i class="fa fa-caret-down fa-fw"></i> <b>Post Surgery</b></a>
+									</div>
+									<div class="auto columns">
+										<span class="badge success">Doctor Required</span>
+									</div>
+									<div class="auto columns">
+										<div class="input-group mb-0">
+											<span class="input-group-label">$</span>
+											<input type="text" class="input-group-field" value="0">
+										</div>
+									</div>
+								</div>
+								<div id="category3" class="list-panel" data-toggler data-animate="fade-in fade-out" style="display: none;">
+									<ul class="tabs" data-tabs id="package-category-tabs">
+										<li class="tabs-title is-active"><a href="#panel3a" aria-selected="true">COMPONENTS</a></li>
+										<li class="tabs-title"><a href="#panel3b">DOCTORS</a></li>
+									</ul>
+									<div class="tabs-content" data-tabs-content="package-category-tabs">
+										<div class="tabs-panel is-active" id="panel3a">
+											<table class="single-spacing striped">
+												<thead>
+													<tr>
+														<th>COMPONENT NAME</th>
+														<th>CODE</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>
+															<div class="checkbox-wrapper">
+																<input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1" class=" mb-0">4-Day Admission that is applicable to senior citizens and disabled persons.</label>
+															</div>
+														</td>
+														<td>
+															<span>005267</span>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="checkbox-wrapper">
+																<input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1" class=" mb-0">Room and Board</label>
+															</div>
+														</td>
+														<td>
+															<span>005267</span>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="checkbox-wrapper">
+																<input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1" class=" mb-0">Complete Blood Count</label>
+															</div>
+														</td>
+														<td>
+															<span>005267</span>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="checkbox-wrapper">
+																<input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1" class=" mb-0">Complete Urinalysis</label>
+															</div>
+														</td>
+														<td>
+															<span>005267</span>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="checkbox-wrapper">
+																<input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1" class=" mb-0">X-Ray</label>
+															</div>
+														</td>
+														<td>
+															<span>005267</span>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="tabs-panel" id="panel3b">
+											<div class="media-object card-person full-table mt-0 mb-0-5">
+												<div class="media-object-section logo small middle">
+													<div class="img-wrapper circle">
+														<img src="img/specialist.png" alt="">
+													</div>
+												</div>
+												<div class="media-object-section description middle">
+													<small data-tooltip tabindex="1" title="Theodore Constantinople" class="truncate">Theodore Constantinople</small>
+													<small class="subheader"><i class="fa fa-check-circle success-color"></i>&nbsp; 3 Categories</small>
+												</div>
+												<div class="media-object-section middle">
+													<div class="button-group tiny pull-right">
+														<a href="#" class="button info circle"><i class="fa fa-close"></i></a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							
+						</ul>
+
+					</div>
+				</div> <!-- End of Package Roullette -->
+			</div>
+		</div>
+
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="bower_components/what-input/what-input.js"></script>
+		<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+		<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+		<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+		<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+		<script src="js/trumbowyg/trumbowyg.min.js"></script>
+		<script src="js/app.js"></script>
+		<script type="text/javascript">
+		$(function() {
+				var timer;
+
+				$(window).resize(function() {
+						clearTimeout(timer);
+						timer = setTimeout(function() {
+								$('.site-nav, .content').css("height", $(window).height());
+						}, 40);
+				}).resize();
+		});
+
+		$('.wysiwyg').trumbowyg();
+		</script>
+</body>
+
+</html>
