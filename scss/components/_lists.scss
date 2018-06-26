@@ -216,6 +216,9 @@
 				background: lighten($primary-color, 69%);
 			}
 		}
+		&.is-active {
+			border: 1px solid $secondary-color;
+		}
 		&.call {
 			> .list-wrap {
 				background-color: $background-white;

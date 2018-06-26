@@ -44,7 +44,49 @@
 							</div>
 							<div class="medium-3 columns">
 								<div class="button-group pull-right tiny mb-0">
-									<a href="#" class="button success rounded">Add</a>
+									<a data-open="addTreatment" class="button success rounded">Add</a>
+
+									<div class="reveal" id="addTreatment" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+						                <div class="row collapse">
+						                    <div class="large-12 columns">
+						                        <h5 class="reveal-heading">Add Treatment</h5>
+						                    </div>
+						                </div>
+						                <form>
+						                	<div class="row collapse">
+						                		<div class="auto columns">
+						                			<div class="reveal-body">
+						                				<div class="row">
+						                					<div class="auto columns">
+						                						<div class="input-group">
+																  	<span class="input-group-label"><i class="fa fa-search"></i></span>
+																  	<input class="input-group-field" type="text" placeholder="Search treatments...">
+																  	<div class="input-group-button">
+																    	<input type="submit" class="button" value="Search">
+																  	</div>
+																</div>
+						                					</div>
+						                				</div>
+							                		</div>
+						                		</div>
+						                	</div>
+						                    
+						                    <div class="row collapse">
+						                        <div class="large-12 columns">
+						                        	<div class="reveal-footer">
+						                        		<div class="submit button-group pull-right">
+							                                <a class="button link" data-close>Cancel</a>
+							                                <button type="submit" class="button primary">Add Treatment</button>
+							                            </div>
+						                        	</div>
+						                        </div>
+						                    </div>
+						                </form>
+						                <button class="close-button" data-close aria-label="Close modal" type="button">
+						                    <span aria-hidden="true">&times;</span>
+						                </button>
+						            </div>
+
 								</div>
 							</div>
 						</div>
@@ -91,11 +133,11 @@
 						<div class="page-lead row align-middle">
 							<div class="medium-9 columns">
 								<h6 class="mb-0">Staff</h6>
-								<p class="subheader mb-0"><small>1/2 Active Doctors</small></p>
+								<p class="subheader mb-0"><small>1/2 Active Staff</small></p>
 							</div>
 							<div class="medium-3 columns">
 								<div class="button-group pull-right tiny mb-0">
-									<a href="#" class="button success rounded">Add</a>
+									<a data-open="addDoctor" class="button success rounded">Add</a>
 								</div>
 							</div>
 						</div>
@@ -105,15 +147,16 @@
 							<li class="tabs-title"><a href="#panel3">INACTIVE</a></li>
 							<li class="tabs-title"><a href="#panel4">LINKED</a></li>
 						</ul>
-						<div class="media-object card-person full-table mt-0 mb-0-5">
-							<div class="media-object-section logo small middle">
+						<div class="media-object card-person full-table mt-0-5 mb-0-5">
+							<div class="media-object-section logo small">
 								<div class="img-wrapper circle">
 									<img src="img/specialist.png" alt="">
 								</div>
 							</div>
-							<div class="media-object-section description middle">
+							<div class="media-object-section description">
 								<small data-tooltip tabindex="1" title="Theodore Constantinople" class="truncate">Theodore Constantinople</small>
-								<small class="subheader"><i class="fa fa-check-circle success-color"></i>&nbsp; 3 Categories</small>
+								<p class="mb-0"><small class="subheader mb-0">Surgeon</small></p>
+								<p class="mb-0"><small class="subheader mb-0"><i class="fa fa-check-circle success-color"></i>&nbsp; 3 Categories</small></p>
 							</div>
 							<div class="media-object-section middle">
 								<div class="button-group tiny pull-right">
@@ -121,15 +164,16 @@
 								</div>
 							</div>
 						</div>
-						<div class="media-object card-person full-table mt-0 mb-0-5">
-							<div class="media-object-section logo small middle">
+						<div class="media-object card-person full-table mt-0-5 mb-0-5">
+							<div class="media-object-section logo small">
 								<div class="img-wrapper circle">
 									<img src="img/specialist.png" alt="">
 								</div>
 							</div>
-							<div class="media-object-section description middle">
+							<div class="media-object-section description">
 								<small data-tooltip tabindex="1" title="Katherine Wallace McPhee" class="truncate">Katherine Wallace McPhee</small>
-								<small class="subheader"><i class="fa fa-check-circle alert-color"></i>&nbsp; Unassigned</small>
+								<p class="mb-0"><small class="subheader mb-0">Anaesthesiologist</small></p>
+								<p class="mb-0"><small class="subheader mb-0"><i class="fa fa-check-circle alert-color"></i>&nbsp; Unassigned</small></p>
 							</div>
 							<div class="media-object-section middle">
 								<div class="button-group tiny pull-right">
@@ -183,13 +227,13 @@
 		            	</div>
 
 						<ul class="well-list">
-							<li>
+							<li class="is-active">
 								<div class="list-wrap row align-middle collapse">
 									<div class="auto columns">
 										<a data-toggle="category1"><i class="fa fa-caret-down fa-fw"></i> <b>Surgeon</b></a>
 									</div>
 									<div class="auto columns">
-										<span class="badge success">Doctor Required</span>
+										<!-- <span class="badge success">Staff Required</span> -->
 									</div>
 									<div class="auto columns">
 										<div class="input-group mb-0">
@@ -223,11 +267,30 @@
 												                	<div class="row collapse">
 												                		<div class="auto columns">
 												                			<div class="reveal-body">
-												                			<div class="row">
+												                				<div class="row">
+												                					<div class="auto columns">
+												                						<div class="input-group">
+																						  	<span class="input-group-label"><i class="fa fa-search"></i></span>
+																						  	<input class="input-group-field" type="text" placeholder="Search existing categories...">
+																						  	<div class="input-group-button">
+																						    	<input type="submit" class="button" value="Search">
+																						  	</div>
+																						</div>
+												                					</div>
+												                				</div>
+												                				<div class="row">
 															                        <div class="large-12 columns">
 															                            <label>
 															                                Category Name
-															                                <input type="text" value="Molar Root Canal">
+															                                <input type="text" value="">
+															                            </label>
+															                        </div>
+															                    </div>
+															                    <div class="row">
+															                        <div class="large-12 columns">
+															                            <label>
+															                                Code
+															                                <input type="text" value="">
 															                            </label>
 															                        </div>
 															                    </div>
@@ -319,48 +382,98 @@
 													<span class="h6"><small>Assigned Staff</small></span>
 												</div>
 												<div class="columns">
-													<a data-open="addCategory" class="button tiny hollow rounded mb-0 pull-right">+ Add</a>
+													<a data-open="addDoctor" class="button tiny hollow rounded mb-0 pull-right">+ Add</a>
 
-														<div class="reveal" id="addCategory" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-											                <div class="row collapse">
-											                    <div class="large-12 columns">
-											                        <h5 class="reveal-heading">Add Category</h5>
-											                    </div>
-											                </div>
-											                <form>
-											                	<div class="row collapse">
-											                		<div class="auto columns">
-											                			<div class="reveal-body">
-											                			<div class="row">
-														                        <div class="large-12 columns">
-														                            <label>
-														                                Category Name
-														                                <input type="text" value="Molar Root Canal">
-														                            </label>
-														                        </div>
-														                    </div>
-												                		</div>
+													<div class="reveal" id="addDoctor" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+										                <div class="row collapse">
+										                    <div class="large-12 columns">
+										                        <h5 class="reveal-heading">Add New Doctor</h5>
+										                    </div>
+										                </div>
+										                <form>
+										                	<div class="row collapse">
+										                		<div class="auto columns">
+										                			<div class="reveal-body">
+										                				<div class="row">
+										                					<div class="auto columns">
+										                						<div class="input-group">
+																				  	<span class="input-group-label"><i class="fa fa-search"></i></span>
+																				  	<input class="input-group-field" type="text" placeholder="Search existing doctors...">
+																				  	<div class="input-group-button">
+																				    	<input type="submit" class="button" value="Search">
+																				  	</div>
+																				</div>
+										                					</div>
+										                				</div>
+										                				<div class="row">
+																			<div class="auto columns end">
+																				<div class="media-object">
+																				  	<div class="media-object-section logo middle">
+																				    	<div class="img-wrapper circle">
+																				      		<img src= "img/specialist.png">
+																				    	</div>
+																				  	</div>
+																				  	<div class="media-object-section middle">
+																				   		<label>
+																				   			<small class="subheader">JPG, GIF or PNG. Image must be at least 69x69 in size.</small>
+																				   			<input type="file" name="">
+																				   		</label>
+																				  	</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="row">
+																			<div class="large-6 columns end">
+																				<label>
+																					First Name
+																					<input type="text">
+																				</label>
+																			</div>
+																			<div class="large-6 columns end">
+																				<label>
+																					Last Name
+																					<input type="text">
+																				</label>
+																			</div>
+																		</div>
+																		<div class="row">
+																			<div class="auto columns end">
+																				<label>
+																					Email Address
+																					<input type="text">
+																				</label>
+																			</div>
+																		</div>	
+																		<div class="row">
+																			<div class="auto columns end">
+																				<label>
+																					Contact Number
+																					<input type="text">
+																				</label>
+																			</div>
+																		</div>
 											                		</div>
-											                	</div>
-											                    
-											                    <div class="row collapse">
-											                        <div class="large-12 columns">
-											                        	<div class="reveal-footer">
-											                        		<div class="submit button-group pull-right">
-												                                <a class="button link" data-close>Cancel</a>
-												                                <button type="submit" class="button primary">Add Category</button>
-												                            </div>
-											                        	</div>
-											                        </div>
-											                    </div>
-											                </form>
-											                <button class="close-button" data-close aria-label="Close modal" type="button">
-											                    <span aria-hidden="true">&times;</span>
-											                </button>
-											            </div>
+										                		</div>
+										                	</div>
+										                    
+										                    <div class="row collapse">
+										                        <div class="large-12 columns">
+										                        	<div class="reveal-footer">
+										                        		<div class="submit button-group pull-right">
+											                                <a class="button link" data-close>Cancel</a>
+											                                <button type="submit" class="button primary">Add Doctor</button>
+											                            </div>
+										                        	</div>
+										                        </div>
+										                    </div>
+										                </form>
+										                <button class="close-button" data-close aria-label="Close modal" type="button">
+										                    <span aria-hidden="true">&times;</span>
+										                </button>
+										            </div>
 												</div>
 											</div>
-											<div class="media-object card-person full-table mt-0 mb-0-5">
+											<div class="media-object card-person full-table">
 												<div class="media-object-section logo small middle">
 													<div class="img-wrapper circle">
 														<img src="img/specialist.png" alt="">
@@ -368,7 +481,7 @@
 												</div>
 												<div class="media-object-section description middle">
 													<small data-tooltip tabindex="1" title="Theodore Constantinople" class="truncate">Theodore Constantinople</small>
-													<small class="subheader"><i class="fa fa-check-circle success-color"></i>&nbsp; 3 Categories</small>
+													<p class="mb-0"><small class="subheader mb-0">Surgeon</small></p>
 												</div>
 												<div class="media-object-section middle">
 													<div class="button-group tiny pull-right">
@@ -387,7 +500,7 @@
 										<a data-toggle="category2"><i class="fa fa-caret-down fa-fw"></i> <b>Anaesthetics</b></a>
 									</div>
 									<div class="auto columns">
-										<span class="badge success">Doctor Required</span>
+										<!-- <span class="badge alert">Staff Required</span> -->
 									</div>
 									<div class="auto columns">
 										<div class="input-group mb-0">
@@ -471,15 +584,25 @@
 											</table>
 										</div>
 										<div class="tabs-panel" id="panel2b">
-											<div class="media-object card-person full-table mt-0 mb-0-5">
+
+											<div class="row collapse align-middle mb-0-5">
+												<div class="columns">
+													<span class="h6"><small>Assigned Staff</small></span>
+												</div>
+												<div class="columns">
+													<a data-open="addDoctor" class="button tiny hollow rounded mb-0 pull-right">+ Add</a>
+												</div>
+											</div>
+
+											<div class="media-object card-person full-table">
 												<div class="media-object-section logo small middle">
 													<div class="img-wrapper circle">
 														<img src="img/specialist.png" alt="">
 													</div>
 												</div>
 												<div class="media-object-section description middle">
-													<small data-tooltip tabindex="1" title="Theodore Constantinople" class="truncate">Theodore Constantinople</small>
-													<small class="subheader"><i class="fa fa-check-circle success-color"></i>&nbsp; 3 Categories</small>
+													<small data-tooltip tabindex="1" title="Theodore Constantinople" class="truncate">Katherine Wallace McPhee</small>
+													<p class="mb-0"><small class="subheader mb-0">Anaesthesiologist</small></p>
 												</div>
 												<div class="media-object-section middle">
 													<div class="button-group tiny pull-right">
@@ -498,7 +621,7 @@
 										<a data-toggle="category3"><i class="fa fa-caret-down fa-fw"></i> <b>Post Surgery</b></a>
 									</div>
 									<div class="auto columns">
-										<span class="badge success">Doctor Required</span>
+										<span class="badge alert">Staff Required</span>
 									</div>
 									<div class="auto columns">
 										<div class="input-group mb-0">
@@ -582,15 +705,25 @@
 											</table>
 										</div>
 										<div class="tabs-panel" id="panel3b">
-											<div class="media-object card-person full-table mt-0 mb-0-5">
+
+											<div class="row collapse align-middle mb-0-5">
+												<div class="columns">
+													<span class="h6"><small>Assigned Staff</small></span>
+												</div>
+												<div class="columns">
+													<a data-open="addDoctor" class="button tiny hollow rounded mb-0 pull-right">+ Add</a>
+												</div>
+											</div>
+
+											<div class="media-object card-person full-table">
 												<div class="media-object-section logo small middle">
 													<div class="img-wrapper circle">
 														<img src="img/specialist.png" alt="">
 													</div>
 												</div>
 												<div class="media-object-section description middle">
-													<small data-tooltip tabindex="1" title="Theodore Constantinople" class="truncate">Theodore Constantinople</small>
-													<small class="subheader"><i class="fa fa-check-circle success-color"></i>&nbsp; 3 Categories</small>
+													<small data-tooltip tabindex="1" title="Theodore Constantinople" class="truncate">Katherine Wallace McPhee</small>
+													<p class="mb-0"><small class="subheader mb-0">Anaesthesiologist</small></p>
 												</div>
 												<div class="media-object-section middle">
 													<div class="button-group tiny pull-right">
