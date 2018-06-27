@@ -1005,7 +1005,7 @@ $main-color: #1ebd44;
 
 			// States Begin
 			&.shrinked {
-				border-radius: 2rem;
+				border-radius: .5rem;
     			margin: .5rem 1rem;
 				background-color: transparent;
 				.chat-header-action {
@@ -1066,8 +1066,8 @@ $main-color: #1ebd44;
 					font-size: .85rem;
 					padding: .25rem;
 					position: absolute;
-					right: .5rem;
-					bottom: -4px;
+					right: -.3rem;
+					bottom: -5px;
 					
 				}
 			}
