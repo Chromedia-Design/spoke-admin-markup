@@ -1,102 +1,101 @@
 $(document).foundation();
 
-
 // BEGIN Employee Chat Component ------------------------------------------------------------
 $("#chat-toggle").on("click",function(){
-  $("#chat-notification").slideUp()
-  $(this).siblings('#chat-container').slideToggle()
-  $(this).children('.fa').toggleClass('fa-comment fa-times');
+$("#chat-notification").slideUp()
+$(this).siblings('#chat-container').slideToggle()
+$(this).children('.fa').toggleClass('fa-comment fa-times');
 })
 
 
 $("#chat-container .chat-header-container").on("click",function(event){
 
-  // Back To Notification List / Close Message
-  if( ($(event.target).hasClass('btnBack')) || ($(event.target).hasClass('fa fa-chevron-left')) ) {
-    console.log("Back To Notification List / Close Message")
-    // $(this).children('.chat-header').addClass('shrinked')
-    $("#chat-container").children(".chat-header-container").children(".chat-header").addClass('shrinked')
-    $(this).prevAll('.chat-header-container').slideToggle()
-    $(this).nextAll('.chat-header-container').slideToggle()
-    $(this).siblings('.chat-header-intro').slideToggle()
-    $(this).siblings('.chat-body-container, .chat-input-container').slideUp()
-    $(this).siblings('.chat-body-container, .chat-input-container').hide()
-    return;
-  }
+// Back To Notification List / Close Message
+if( ($(event.target).hasClass('btnBack')) || ($(event.target).hasClass('fa fa-chevron-left')) ) {
+  console.log("Back To Notification List / Close Message")
+  // $(this).children('.chat-header').addClass('shrinked')
+  $("#chat-container").children(".chat-header-container").children(".chat-header").addClass('shrinked')
+  $(this).prevAll('.chat-header-container').slideToggle()
+  $(this).nextAll('.chat-header-container').slideToggle()
+  $(this).siblings('.chat-header-intro').slideToggle()
+  $(this).siblings('.chat-body-container, .chat-input-container').slideUp()
+  $(this).siblings('.chat-body-container, .chat-input-container').hide()
+  return;
+}
 
-  // Open ongoing videocall
-  if( ($(event.target).hasClass('btn-video')) || ($(event.target).hasClass('fa fa-video-camera')) ) {
-    console.log("oops")
-    $("#chat-container").children('.chat-video-container').slideDown()
-    $("#chat-container").children('.chat-video-container').siblings().slideUp()
-    $("#chat-container").children(".chat-body-container").slideUp()
-    return;
-  }
+// Open ongoing videocall
+if( ($(event.target).hasClass('btn-video')) || ($(event.target).hasClass('fa fa-video-camera')) ) {
+  console.log("oops")
+  $("#chat-container").children('.chat-video-container').slideDown()
+  $("#chat-container").children('.chat-video-container').siblings().slideUp()
+  $("#chat-container").children(".chat-body-container").slideUp()
+  return;
+}
 
-  // Open Message
-  console.log("Open Message")
-    $(this).siblings('.chat-header-container').slideUp()
-    $(this).siblings('.chat-body-container, .chat-input-container').removeClass('hide')
-    $(this).siblings('.chat-body-container, .chat-input-container').slideDown()
-    $(this).children('.chat-header').removeClass('shrinked active')
-    $(this).siblings('.chat-header-intro').slideUp()
-  })
+// Open Message
+console.log("Open Message")
+  $(this).siblings('.chat-header-container').slideUp()
+  $(this).siblings('.chat-body-container, .chat-input-container').removeClass('hide')
+  $(this).siblings('.chat-body-container, .chat-input-container').slideDown()
+  $(this).children('.chat-header').removeClass('shrinked active')
+  $(this).siblings('.chat-header-intro').slideUp()
+})
 
 // Open Message
 $("#chat-notification").on("click",".chat-header-container",function(event){
-  console.log("Open Message")
-  openNotification()  
+console.log("Open Message")
+openNotification()  
 })
 
 // Attach File
 $("#btnAttach").on("click",function(){
-  console.log("Attach File")
-  $(this).parents(".chat-input-container").animate({"height": "164px"}, 400)
-  $(this).parent(".chat-input").prev(".attachments").slideDown()
-  $(this).parents(".chat-input-container").siblings(".chat-body-container").animate({"height": "356px"}, 400)
+console.log("Attach File")
+$(this).parents(".chat-input-container").animate({"height": "164px"}, 400)
+$(this).parent(".chat-input").prev(".attachments").slideDown()
+$(this).parents(".chat-input-container").siblings(".chat-body-container").animate({"height": "356px"}, 400)
 })
 
 // Send Message
 $("#btnSend").on("click", function(){
-  console.log("Send Message")
-  $(this).parents(".chat-input-container").animate({"height": "63px"}, 400)
-  $(this).parent(".chat-input").prev(".attachments").slideUp()
-  $(this).parents(".chat-input-container").siblings(".chat-body-container").animate({"height": "456px"}, 400)
+console.log("Send Message")
+$(this).parents(".chat-input-container").animate({"height": "63px"}, 400)
+$(this).parent(".chat-input").prev(".attachments").slideUp()
+$(this).parents(".chat-input-container").siblings(".chat-body-container").animate({"height": "456px"}, 400)
 })
 
 // Answer Video Call
 $("#btn-call-answer").on("click",function(){
-  console.log("Answer Video Call")
-  $("#chat-container").slideDown();
-  $("#chat-container").children('.chat-video-container').slideDown()
-  $("#chat-container").children('.chat-video-container').siblings().slideUp()
+console.log("Answer Video Call")
+$("#chat-container").slideDown();
+$("#chat-container").children('.chat-video-container').slideDown()
+$("#chat-container").children('.chat-video-container').siblings().slideUp()
 })
 
 
 $(".btn-video").on("click",function(event){
 
-  
+
 })
 
 // Collapse Video Call / Go to Message
 $("#chat-video-compress").on("click",function(){
-  console.log()
-  $("#chat-container").children('.chat-video-container').slideUp()
-  $("#chat-container").children('.chat-video-container').siblings().slideDown()
-  $("#chat-container").children('.chat-header-intro').hide()
-  $("#chat-container").children('.chat-header-container:first').children(".chat-header").removeClass('shrinked active')
-  $("#chat-container").children('.chat-header-container:first').siblings(".chat-header-container").hide()
-  $("#chat-container").children('.chat-header-container:first').siblings(".chat-body-container, .chat-input-container").removeClass('hide')
+console.log()
+$("#chat-container").children('.chat-video-container').slideUp()
+$("#chat-container").children('.chat-video-container').siblings().slideDown()
+$("#chat-container").children('.chat-header-intro').hide()
+$("#chat-container").children('.chat-header-container:first').children(".chat-header").removeClass('shrinked active')
+$("#chat-container").children('.chat-header-container:first').siblings(".chat-header-container").hide()
+$("#chat-container").children('.chat-header-container:first').siblings(".chat-body-container, .chat-input-container").removeClass('hide')
 })
 
 // Opening a message by clicking a Notification
 function openNotification() {
-  $("#chat-notification").slideUp()
-  $("#chat-container").slideToggle()
-  $("#chat-container").children('.chat-header-intro').hide()
-  $("#chat-container").children('.chat-header-container:first').children(".chat-header").removeClass('shrinked active')
-  $("#chat-container").children('.chat-header-container:first').siblings(".chat-header-container").hide()
-  $("#chat-container").children('.chat-header-container:first').siblings(".chat-body-container, .chat-input-container").removeClass('hide')
+$("#chat-notification").slideUp()
+$("#chat-container").slideToggle()
+$("#chat-container").children('.chat-header-intro').hide()
+$("#chat-container").children('.chat-header-container:first').children(".chat-header").removeClass('shrinked active')
+$("#chat-container").children('.chat-header-container:first').siblings(".chat-header-container").hide()
+$("#chat-container").children('.chat-header-container:first').siblings(".chat-body-container, .chat-input-container").removeClass('hide')
 }
 // END Employee Chat Component ------------------------------------------------------------
 

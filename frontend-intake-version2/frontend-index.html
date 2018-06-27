@@ -107,6 +107,7 @@
                     <span class="h5 mt-0 mb-0">
                         Provider Options (4)
                         <a id="startTour" class="button info hollow tiny ml-1 mb-0">What's this?</a>
+                        <!-- <button class="button large alert">CLICK ME</button> -->
                     </span>
                 </div>
                 <div class="auto columns">
@@ -1390,7 +1391,7 @@
     </div>
 
     <div id="chat-notification">
-        <div class="chat-header-container">
+        <!-- <div class="chat-header-container">
             <div class="chat-header row shrinked active">
                 <div class="columns small-2 chat-header-action pl-0 pr-0">
                     <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
@@ -1398,12 +1399,13 @@
                 </div>
                 <div class="columns small-7 chat-header-user">
                     <p class="mb-0 user-name"><b>John Robert</b></p>
-                    <span class=" user-role">Customer Support</span>
+                    <span class=" user-role">Regarding your previous message</span>
                 </div>
                 <div class="columns small-3 chat-header-video">
                     <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
                     <p class="timestamp mt-0-5 pull-right">12:32</p>
                 </div>
+                <div class="counter">4</div>
             </div>
         </div>
         <div class="chat-header-container">
@@ -1414,13 +1416,67 @@
                 </div>
                 <div class="columns small-7 chat-header-user">
                     <p class="mb-0 user-name"><b>John Robert</b></p>
-                    <span class=" user-role">Customer Support</span>
+                    <span class=" user-role">We already sent the file you requested</span>
                 </div>
                 <div class="columns small-3 chat-header-video">
                     <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
                     <p class="timestamp mt-0-5 pull-right">12:32</p>
                 </div>
+                <div class="counter">2</div>
             </div>
+        </div> -->
+        <div class="form-notification mb-2">
+            <div class="media-object" data-animate="slide-in-right slide-out-right">
+                <div class="media-object-section">
+                    <img src="http://i.pravatar.cc/300" align="left" class="user-image circle small">
+                </div>
+                <div class="media-object-section middle">
+                    <div class="small talk-bubble border tri-right left-in">
+                        <div class="talktext">
+                            <p>Did you sleep well last night?</p>
+                        </div>
+                    </div> 
+                    <span class="subheader timestamp mb-2"><small>Jun 29, 4:30 PM</small></span>
+                    <div class="row">
+                        <div class="columns small-6">
+                            <button class="button mb-0 success">Yes</button>
+                        </div>
+                        <div class="columns small-6">
+                            <button class="button mb-0 alert">No</button>
+                        </div>
+                    </div>
+                    <!-- <div class="row">
+                        <div class="columns small-12">
+                            <input type="text">
+                        </div>                        
+                    </div>
+                    <div class="row">
+                        <div class="columns small-12">
+                            <select>
+                              <option value="Yes">Yes</option>
+                              <option value="No">No</option>
+                            </select>
+                        </div>                        
+                    </div>
+                    <div class="row">
+                        <div class="columns small-12">
+                            <form>
+                              <input type="radio" name="ok" value="Yes" checked> Yes<br>
+                              <input type="radio" name="ok" value="No"> No<br>
+                            </form>
+                        </div>                        
+                    </div>
+                    <div class="row">
+                        <div class="columns small-12">
+                            <form>
+                              <input type="checkbox" name="oks" value="Yes"> Yes<br>
+                              <input type="checkbox" name="oks" value="No"> No<br>
+                            </form>
+                        </div>                        
+                    </div> -->
+                </div>
+            </div>
+            
         </div>
         <div class="chat-header-container">
             <div class="chat-header row shrinked active">
@@ -1430,24 +1486,20 @@
                 </div>
                 <div class="columns small-7 chat-header-user">
                     <p class="mb-0 user-name"><b>John Robert</b></p>
-                    <span class=" user-role">Customer Support</span>
+                    <span class=" user-role">We have to register you manually</span>
                 </div>
                 <div class="columns small-3 chat-header-video">
                     <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
                     <p class="timestamp mt-0-5 pull-right">12:32</p>
                 </div>
+                <div class="counter">7</div>
             </div>
         </div>
     </div>
     
     <div id="chat-container">
 
-        <div class="chat-video-container">
-            <div class="chat-video-Header">
-                <div class="chat-header row shrinked active">
-                    
-                </div>
-            </div>
+        <div class="chat-video-container">            
             <div id="videos">
                 <div id="subscriber"></div>
                 <div id="publisher"></div>
@@ -1457,14 +1509,14 @@
                     <button id="chat-video-compress" class="button large circle"><i class="fa fa-compress"></i></button>
                 </div>
                 <div class="columns col-md-2 center-text">
-                    <button id="chat-video-end-call" class="button large circle"><i class="fa fa-phone"></i></button>
+                    <button id="chat-video-end-call" class="button alert large circle"><i class="fa fa-phone"></i></button>
                 </div>
             </div>
         </div>
 
         <div class="chat-header-intro">
             <span class="h5 white-color">Messages</span>
-            <button data-open="exampleModal1" class="btn-new button clear circle large white"><i class="fa fa-plus large"></i></button>
+            <button data-open="exampleModal1" class="btn-new button clear circle large white"><i class="fa fa-phone large"></i></button>
         </div>
 
         <div class="chat-header-container">
@@ -1483,6 +1535,7 @@
                     <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
                     <p class="timestamp mt-0-5 pull-right">12:32</p>
                 </div>
+                <div class="counter">4</div>
             </div>
         </div>
         <div class="chat-header-container">
@@ -1499,6 +1552,7 @@
                     <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
                     <p class="timestamp mt-0-5 pull-right">12:32</p>
                 </div>
+                <div class="counter">4</div>
             </div>
         </div>
         <div class="chat-header-container">
@@ -1515,6 +1569,7 @@
                     <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
                     <p class="timestamp mt-0-5 pull-right">12:32</p>
                 </div>
+                <div class="counter">4</div>
             </div>
         </div>
         <div class="chat-header-container">
@@ -1531,6 +1586,7 @@
                     <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
                     <p class="timestamp mt-0-5 pull-right">12:32</p>
                 </div>
+                <div class="counter">4</div>
             </div>
         </div>
         <div class="chat-header-container">
@@ -1547,6 +1603,7 @@
                     <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
                     <p class="timestamp mt-0-5 pull-right">12:32</p>
                 </div>
+                <div class="counter">4</div>
             </div>
         </div>
         <div class="chat-header-container">
@@ -1563,6 +1620,7 @@
                     <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
                     <p class="timestamp mt-0-5 pull-right">12:32</p>
                 </div>
+                <div class="counter">4</div>
             </div>
         </div>
         <div class="chat-header-container">
@@ -1579,6 +1637,7 @@
                     <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
                     <p class="timestamp mt-0-5 pull-right">12:32</p>
                 </div>
+                <div class="counter">4</div>
             </div>
         </div>
         <div class="chat-header-container">
@@ -1595,6 +1654,7 @@
                     <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
                     <p class="timestamp mt-0-5 pull-right">12:32</p>
                 </div>
+                <div class="counter">4</div>
             </div>
         </div>
 
