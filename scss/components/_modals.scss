@@ -3,6 +3,15 @@
 	border: none;
 	background: transparent;
 	overflow-y: visible;
+
+	&.video-call {
+		.video-call-caller {
+			img {
+				border: .5rem solid #fff;
+			}
+		}
+	}
+
 	.callout {
 		padding: 1rem;
 	}
@@ -70,6 +79,10 @@
 	.button {
 		margin-bottom: 0;
 	}
+}
+
+.reveal-overlay {
+	background-color: rgba(10, 16, 35, 0.8) !important;
 }
 
 .reveal-overlay {
