@@ -71,8 +71,7 @@ form {
 			[type='checkbox'],
 			[type='radio'] {
 				display: inline-block;
-				line-height: 1.5em;
-				margin: 0.6125em 0.6125em 0.6125em 0;
+				margin: 0 0.6125em 0 0;
 				+ label {
 					margin: 0;
 				}
@@ -116,9 +115,16 @@ fieldset {
 	[type='radio'] {
 		display: inline-block;
 		line-height: 1.5em;
-		margin: 0.3125em 0;
+		margin: 0.5em 0 0 0;
 		+ label {
 			margin-bottom: 0;
+		}
+	}
+	&.align-middle {
+		align-items: center;
+		[type='checkbox'],
+		[type='radio'] {
+			margin: 0;
 		}
 	}
 }
