@@ -48,6 +48,7 @@
 .pt-0-5 { padding-top: 0.5rem !important; }
 .pt-0-7 { padding-top: 0.7rem !important; }
 
+.pad0 { padding: 0rem; }
 .pad1 { padding: 1rem; }
 .pad2 { padding: 2rem; }
 .mar1 { margin: 1rem; }
@@ -101,8 +102,10 @@
 	align-items: center;
 }
 
+.center-content { text-align: center; }
+
 .circle { 
-	border-radius: 100%; 
+	border-radius: 100rem; 
 	overflow: hidden;
 }
 
@@ -123,6 +126,17 @@
 	width: 100%;
 }
 
-.box-shadow	{
-	box-shadow: 0px 7px 10px rgba(50,50,50,.2);
-}
+.box-shadow	{ box-shadow: 0px 7px 10px rgba(50,50,50,.2) }
+
+.disp-block { display: block }
+.disp-inline { display: inline }
+.disp-inline-block { display: inline-block }
+
+.bg-primary { background-color: $primary-color }
+.bg-secondary { background-color: $secondary-color }
+.bg-success { background-color: $success-color }
+.bg-warning { background-color: $warning-color }
+.bg-alert { background-color: $alert-color }
+
+.clr-white { color: $white }
+.clr-black { color: $black }
