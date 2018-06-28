@@ -97,22 +97,21 @@
 		}
 	}
 	&.combinational {
-		margin-bottom: 0;
-		border-bottom: none;
+		display: flex;
+		align-items: center;
+		margin: 0;
+		border-bottom: 1px solid rgba($black, $B-dividers);
 		li {
 			text-transform: none;
-			> a {
-				padding: 1.25rem 1.5rem;
-			}
 			&.is-active {
 				position: relative;
 				z-index: 10;
 				background-color: $white;
 				border-top-left-radius: 8px;
 				border-top-right-radius: 8px;
-				border-top: 1px solid rgba($black, $B-hinttext);
-				border-left: 1px solid rgba($black, $B-hinttext);
-				border-right: 1px solid rgba($black, $B-hinttext);
+				border-top: 1px solid rgba($black, $B-dividers);
+				border-left: 1px solid rgba($black, $B-dividers);
+				border-right: 1px solid rgba($black, $B-dividers);
 				border-bottom: none;
 				&:after {
 					position: absolute;
@@ -127,18 +126,16 @@
 				}
 			}
 			&.tabs-text {
-				text-transform: none;
+				margin-right: 1rem;
 			}
 		}
 		+ .tabs-content {
-			margin-top: -5px;
-			.callout {
-				margin-bottom: 0;
-				// z-index: -1;
-			}
-			&:not(:last-child) {
-				margin-bottom: 1rem;
-			}
+			background: $white;
+			padding: 0.5rem 1rem 1rem;
+			border-top: none;
+			border-left: 1px solid rgba($black, $B-dividers);
+			border-right: 1px solid rgba($black, $B-dividers);
+			border-bottom: 1px solid rgba($black, $B-dividers);
 		}
 	}
 	&.spk-suggestions {
@@ -191,29 +188,14 @@
 		padding: 0.875rem 1rem;
 		font-size: 1rem;
 		line-height: 1em;
-	}
-}
-
-.tabs-text {
-	float: left;
-	text-transform: none;
-	> span, > a {
-		font-family: $body-font-family;
-		display: inline-block;
-	    padding: 1.25rem 1.5rem 1.25rem 0;
+		.badge {
+			vertical-align: middle;
+		}
 	}
 }
 
 .tabs-option {
-	float: right;
-	.button {
-		margin-bottom: 0;
-	}
-	> .button-group, > .button-align {
-		padding: 0.625rem 1.5rem;
-		display: inline-block;
-		margin-bottom: 0;
-	}
+	flex: 1 1 auto;
 }
 
 .tabs-input {
@@ -237,7 +219,7 @@
 	}
 }
 
-.tabs-content{
+.tabs-content {
 	border: none;
 	background-color: transparent;
 	&.vertical {

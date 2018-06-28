@@ -629,6 +629,22 @@ section {
 				}
 			}
 		}
+		&.thirds-spacing {
+			thead, tbody {
+				th,
+				td {
+					&:first-child {
+						width: 40%;
+					}
+					&:nth-child(2) {
+						width: 20%;
+					}
+					&:nth-child(3) {
+						width: 20%;
+					}
+				}
+			}
+		}
 	}
 	// Sizing
 	> .columns {
