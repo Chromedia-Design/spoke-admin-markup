@@ -53,6 +53,7 @@ console.log("Attach File")
 $(this).parents(".chat-input-container").animate({"height": "164px"}, 400)
 $(this).parent(".chat-input").prev(".attachments").slideDown()
 $(this).parents(".chat-input-container").siblings(".chat-body-container").animate({"height": "356px"}, 400)
+// $(this).parents(".chat-input-container").siblings(".chat-body-container").slideUp()
 })
 
 // Send Message
@@ -60,6 +61,7 @@ $("#btnSend").on("click", function(){
 console.log("Send Message")
 $(this).parents(".chat-input-container").animate({"height": "63px"}, 400)
 $(this).parent(".chat-input").prev(".attachments").slideUp()
+$(this).parents(".chat-input-container").siblings(".chat-body-container").slideDown()
 $(this).parents(".chat-input-container").siblings(".chat-body-container").animate({"height": "456px"}, 400)
 })
 
