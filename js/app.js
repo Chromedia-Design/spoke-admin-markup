@@ -102,7 +102,25 @@ $("#chat-container").children('.chat-header-container:first').siblings(".chat-bo
 // END Employee Chat Component ------------------------------------------------------------
 
 
+$(".fb-item-choices-container").on('click', '.input-group-button .button', function(event) {
+  event.preventDefault();
+  /* Act on the event */
+  val = $(this).parent(".input-group-button").siblings('.input-group-field')
+  if ( !val.val() ) {
+    return;
+  }
+  $(this).parents(".input-group").siblings('.fb-item-choices').append('<li><input type="text" value="'+ val.val() +'"><span class="remove pull-right"><i class="fa fa-close"></i></span></li>')
+  val.val("")
+  val.focus();
+});
 
+$(".fb-item-choices-container").on('click', '.remove', function(event) {
+  event.preventDefault();
+  /* Act on the event */
+  $(this).parent().remove();
+
+
+});
 
 
 // replace these values with those generated in your TokBox Account
