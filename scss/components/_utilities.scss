@@ -9,6 +9,7 @@
 .mr-2-5 {margin-right: 2.5rem !important;}
 .mr-3 {margin-right: 3rem !important;}
 
+.ml-0 { margin-left: 0rem !important; }
 .ml-0-5 {margin-left: 0.5rem !important;}
 .ml-1 { margin-left: 1rem !important; }
 .ml-1-5 { margin-left: 1.5rem !important; }
@@ -21,6 +22,7 @@
 .mt-0-5 { margin-top: 0.5rem !important; }
 .mt-0-25 { margin-top: 0.25rem !important; }
 .mt-2 { margin-top: 2rem !important; }
+.mt-3 { margin-top: 3rem !important; }
 .mt-4 { margin-top: 4rem !important; }
 .mt-6 { margin-top: 6rem !important; }
 
@@ -63,6 +65,8 @@
 .b-top-1-darker { border-top: 1px solid rgba($black, $B-dividers); }
 
 .b-top-1 { border-top: solid 0.1rem $primary-light; }
+
+.b-bottom-1 { border-bottom: solid 1px red !important; }
 
 .b-all-1 { border: solid 0.1rem $primary-light; }
 
@@ -110,7 +114,7 @@
 }
 
 .borderless {
-	border: none;
+	border: 0px ;
 }
 
 .marginless {
@@ -140,3 +144,11 @@
 
 .clr-white { color: $white }
 .clr-black { color: $black }
+
+
+.remove {
+	cursor: pointer;
+	// pading: .10rem .20rem !important;
+	margin-left: .5rem;
+	padding: .5rem;
+}
