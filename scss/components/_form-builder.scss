@@ -43,64 +43,21 @@
 		}
 	}
 	.fb-container {
-		.fb-editor {
-			// margin: 0px 1rem;
+		.fb-editor {			
 			background-color: #fff;
 			min-height: 80vh;
-			padding: 2rem;
-			padding-bottom: 1rem;
-			margin-bottom: 1rem;
-			// padding-top: 2rem;
-			// border-radius: .5rem;
 			.row {
 				margin-bottom: 2rem;
 			}
 			.fb-item {
-				.fb-control-left {}
-				.fb-item-content {
-					.fb-item-choices-container {
-						ul.fb-item-choices {
-							margin: 0px;
-							li {
-								// border-radius: 50rem;
-								// background-color: $success-color;
-								// padding: .35rem .5rem;
-								padding: 0px;
-								padding-right: .5rem;
-								margin-bottom: 1rem;
-								margin-right: .5rem;
-								// color: #fff;
-								border: 0px;
-								border-bottom: 1px solid #eaeaea;
-							  	resize: horizontal;
-								// padding-right: 1.5rem;
-								display: block;
-								input {
-									background-color: transparent;
-									display: inline-block;
-									resize: horizontal;
-									width: 94%;
-									margin-bottom: 0px;
-									border-top: 0px;
-									border-left: 0px;
-									border-right: 0px;
-									border: 0px;
-									color: #797979;
-									&:focus {
-										color: #323232;
-										border-color: #323232;
-									}
-								}
-							}
-						}
+				&.selected {
+					.fb-item-content { 
+						// border: 2px solid #17659B !important;
 					}
 				}
-				.fb-item-question {}
-				.fb-control-right {}
 			}
 		}
 	}
-	.fb-component-attr-container {}
 }
 
 .editable {

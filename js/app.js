@@ -101,10 +101,9 @@ $("#chat-container").children('.chat-header-container:first').siblings(".chat-bo
 }
 // END Employee Chat Component ------------------------------------------------------------
 
-
+// Add Choice
 $(".fb-item-choices-container").on('click', '.input-group-button .button', function(event) {
   event.preventDefault();
-  /* Act on the event */
   val = $(this).parent(".input-group-button").siblings('.input-group-field')
   if ( !val.val() ) {
     return;
@@ -112,14 +111,19 @@ $(".fb-item-choices-container").on('click', '.input-group-button .button', funct
   $(this).parents(".input-group").siblings('.fb-item-choices').append('<li><input type="text" value="'+ val.val() +'"><span class="remove pull-right"><i class="fa fa-close"></i></span></li>')
   val.val("")
   val.focus();
+   // $(this).insertAfter($(this).parent());
 });
 
+// Remove Choice
 $(".fb-item-choices-container").on('click', '.remove', function(event) {
   event.preventDefault();
-  /* Act on the event */
   $(this).parent().remove();
+});
 
-
+$(".fb-item").on('click', ':last-child', function(event) {
+  event.preventDefault();
+  /* Act on the event */
+  $(this).children('.editor-content').children('').first().nextAll().slideToggle()
 });
 
 
