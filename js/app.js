@@ -1,6 +1,6 @@
 $(document).foundation();
 
-$('.editor-content').children('div:first-child').nextAll().slideToggle()
+// $('.editor-content').children('div:first-child').nextAll().slideToggle()
 
 // BEGIN Employee Chat Component ------------------------------------------------------------
 $("#chat-toggle").on("click",function(){

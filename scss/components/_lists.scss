@@ -1053,7 +1053,7 @@ ul.vertical-list {
 	li {
 		padding: 0px;
 		padding-right: .5rem;
-		margin-bottom: 1rem;
+		margin-bottom: .75rem;
 		margin-right: .5rem;
 		border: 0px;
 		border-bottom: 1px solid #eaeaea;
@@ -1069,7 +1069,11 @@ ul.vertical-list {
 			border-left: 0px;
 			border-right: 0px;
 			border: 0px;
-			color: #797979;
+			// color: #797979;
+			font-size: .85rem;
+			padding: .35rem .5rem;
+			font-weight: 600;
+			color: lighten(#000,50%);
 			&:focus {
 				color: #323232;
 				border-color: #323232;

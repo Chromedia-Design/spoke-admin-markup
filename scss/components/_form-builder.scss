@@ -64,7 +64,7 @@
 	border: 0px;
 	border-bottom: 1px solid darken($primary-light,20%);
 	background-color: transparent;
-	border-radius: 0px;
+	border-radius: 0px !important;
 	// width: 5rem;
 	width: 100%; 
 	box-sizing: border-box;
