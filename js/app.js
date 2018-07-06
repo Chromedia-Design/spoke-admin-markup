@@ -1,5 +1,7 @@
 $(document).foundation();
 
+$('.editor-content').children('div:first-child').nextAll().slideToggle()
+
 // BEGIN Employee Chat Component ------------------------------------------------------------
 $("#chat-toggle").on("click",function(){
 $("#chat-notification").slideUp()
@@ -102,28 +104,32 @@ $("#chat-container").children('.chat-header-container:first').siblings(".chat-bo
 // END Employee Chat Component ------------------------------------------------------------
 
 // Add Choice
-$(".fb-item-choices-container").on('click', '.input-group-button .button', function(event) {
+$(".editor-content").on('click', '.input-group-button .button', function(event) {
   event.preventDefault();
   val = $(this).parent(".input-group-button").siblings('.input-group-field')
   if ( !val.val() ) {
     return;
   }
-  $(this).parents(".input-group").siblings('.fb-item-choices').append('<li><input type="text" value="'+ val.val() +'"><span class="remove pull-right"><i class="fa fa-close"></i></span></li>')
+  $(this).parents(".input-group").siblings('ul').append('<li><input type="text" value="'+ val.val() +'"><span class="remove pull-right"><i class="fa fa-close"></i></span></li>')
   val.val("")
   val.focus();
    // $(this).insertAfter($(this).parent());
 });
 
 // Remove Choice
-$(".fb-item-choices-container").on('click', '.remove', function(event) {
+$(".editor-content").on('click', '.remove', function(event) {
   event.preventDefault();
   $(this).parent().remove();
 });
 
-$(".fb-item").on('click', ':last-child', function(event) {
-  event.preventDefault();
+$(".fb-item").on('click', '.editable', function(event) {
+  // event.preventDefault();
   /* Act on the event */
-  $(this).children('.editor-content').children('').first().nextAll().slideToggle()
+  $(this).parents(".fb-item").siblings('.fb-item').find(".editor-content").children("div:first-child").nextAll().slideUp()
+  // alert( $(event.target).attr('class') )
+  $(this).parents(".editor-content").children().first().nextAll().slideDown()
+
+  // $(this).children('.editor-content').children('').first().nextAll().slideToggle()
 });
 
 
