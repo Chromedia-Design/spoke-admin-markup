@@ -4,7 +4,7 @@ $('.editor-content').children('div:first-child').nextAll().slideToggle()
 
 
 // dropdown
-$(".dropdown-checkbox").on('click', '.dropbtn', function(event) {
+$(".dropdown-checkbox").on('click', '.dropbtn, .fa', function(event) {
   // event.preventDefault();
   $(this).parents(".dropdown-checkbox").find('.dropdown-content').toggleClass('show');
 });

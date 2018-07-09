@@ -824,6 +824,18 @@ input {
 }
 
 .dropdown-checkbox {
+	[type='text'] {
+		&:readonly {
+	    	display: none !important;
+			font-family: $body-font-family;
+			color: rgba($black, $B-text);
+			text-transform: none;
+			box-shadow: none;
+			border-radius: 2px;
+			border: 1px solid rgba($black, $B-dividers);
+			background-color: $primary-light;
+		}
+	}
   .dropbtn {
     // background-color: #3498DB;
     // color: white;
@@ -834,15 +846,7 @@ input {
     // &:hover, &:focus {
     //   background-color: #2980B9;
     // }
-    &:readonly {
-		font-family: $body-font-family;
-		color: rgba($black, $B-text);
-		text-transform: none;
-		box-shadow: none;
-		border-radius: 2px;
-		border: 1px solid rgba($black, $B-dividers);
-		background-color: $primary-light;
-	}
+
   }
   position: relative;
   display: inline-block;
