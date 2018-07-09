@@ -2,6 +2,30 @@ $(document).foundation();
 
 $('.editor-content').children('div:first-child').nextAll().slideToggle()
 
+
+// dropdown
+$(".dropdown-checkbox").on('click', '.dropbtn', function(event) {
+  // event.preventDefault();
+  $(this).parents(".dropdown-checkbox").find('.dropdown-content').toggleClass('show');
+});
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+
 // BEGIN Employee Chat Component ------------------------------------------------------------
 $("#chat-toggle").on("click",function(){
 $("#chat-notification").slideUp()
@@ -178,5 +202,6 @@ session.on('streamCreated', function(event) {
     height: '100%'
   }, handleError);
 });
+
 
 
