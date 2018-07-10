@@ -1,9 +1,6 @@
 $(document).foundation();
 
-$('.editor-content').children('div:first-child').nextAll().slideToggle()
-
-
-// dropdown
+// dropdown ------------------------------------------------------------
 $(".dropdown-checkbox").on('click', '.dropbtn, .fa', function(event) {
   // event.preventDefault();
   $(this).parents(".dropdown-checkbox").find('.dropdown-content').toggleClass('show');
@@ -23,7 +20,7 @@ window.onclick = function(event) {
     }
   }
 }
-
+// dropdown ------------------------------------------------------------
 
 
 // BEGIN Employee Chat Component ------------------------------------------------------------
@@ -127,6 +124,11 @@ $("#chat-container").children('.chat-header-container:first').siblings(".chat-bo
 }
 // END Employee Chat Component ------------------------------------------------------------
 
+// Form builder ------------------------------------------------------------
+
+// Close Form Item
+$('.editor-content').children('div:first-child').nextAll().slideToggle()
+
 // Add Choice
 $(".editor-content").on('click', '.input-group-button .button', function(event) {
   event.preventDefault();
@@ -145,16 +147,15 @@ $(".editor-content").on('click', '.remove', function(event) {
   event.preventDefault();
   $(this).parent().remove();
 });
-
+ 
 $(".fb-item").on('click', '.editable', function(event) {
   // event.preventDefault();
   /* Act on the event */
-  $(this).parents(".fb-item").siblings('.fb-item').find(".editor-content").children("div:first-child").nextAll().slideUp()
-  // alert( $(event.target).attr('class') )
-  $(this).parents(".editor-content").children().first().nextAll().slideDown()
 
-  // $(this).children('.editor-content').children('').first().nextAll().slideToggle()
+  $(this).parents(".fb-item").siblings('.fb-item').find(".editor-content").children("div:first-child").nextAll().slideUp()
+  $(this).parents(".editor-content").children().first().nextAll().slideDown()
 });
+// Form builder ------------------------------------------------------------
 
 
 // replace these values with those generated in your TokBox Account

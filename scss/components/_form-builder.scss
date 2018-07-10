@@ -71,7 +71,36 @@
 }
 
 .constraint {
-	border: 0px;
     border-radius: 5px;
     background-color: rgb(245, 246, 247);
 }
+
+.content-nav {
+	a {
+		li {
+			padding: .5rem .5rem;
+			button {
+				visibility: hidden;
+			}
+			&:hover {
+				button {
+					visibility: visible;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
