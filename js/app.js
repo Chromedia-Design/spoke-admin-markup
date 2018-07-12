@@ -3,18 +3,20 @@ $(document).foundation();
 // dropdown ------------------------------------------------------------
 $(".dropdown-checkbox").on('click', '.dropbtn, .fa', function(event) {
   // event.preventDefault();
+  // $(this).parents(".dropdown-checkbox").find('.dropdown-content').slideDown();
   $(this).parents(".dropdown-checkbox").find('.dropdown-content').toggleClass('show');
 });
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+  if (!event.target.matches('.dropbtn') && !event.target.matches('select, select option') ) {
 
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
       if (openDropdown.classList.contains('show')) {
+        // openDropdown.classList.contains('show').slideUp();
         openDropdown.classList.remove('show');
       }
     }
@@ -127,7 +129,9 @@ $("#chat-container").children('.chat-header-container:first').siblings(".chat-bo
 // Form builder ------------------------------------------------------------
 
 // Close Form Item
-$('.editor-content').children('div:first-child').nextAll().slideToggle()
+
+// $('.editor-content').children('div:first-child').nextAll().slideToggle()
+$('.editor-content').removeClass('box-shadow')
 
 // Add Choice
 $(".editor-content").on('click', '.input-group-button .button', function(event) {
@@ -136,7 +140,7 @@ $(".editor-content").on('click', '.input-group-button .button', function(event) 
   if ( !val.val() ) {
     return;
   }
-  $(this).parents(".input-group").siblings('ul').append('<li><input type="text" value="'+ val.val() +'"><span class="remove pull-right"><i class="fa fa-close"></i></span></li>')
+  $(this).parents(".input-group").siblings('ul').append('<li><div class="input-group bg-black10 mb-0"><input class="input-group-field" type="text" value="'+ val.val()+'"><div class="input-group-button"><button class="button success borderless hollow clear alert remove"><i class="fa fa-times"></i></button></div></div></li>')
   val.val("")
   val.focus();
    // $(this).insertAfter($(this).parent());
@@ -145,13 +149,14 @@ $(".editor-content").on('click', '.input-group-button .button', function(event) 
 // Remove Choice
 $(".editor-content").on('click', '.remove', function(event) {
   event.preventDefault();
-  $(this).parent().remove();
+  $(this).parents("li").remove();
 });
  
 $(".fb-item").on('click', '.editable', function(event) {
   // event.preventDefault();
   /* Act on the event */
-
+  $(this).parents(".editor-content").addClass('box-shadow')
+  $(this).parents(".fb-item").siblings('.fb-item').find(".editor-content").removeClass('box-shadow')
   $(this).parents(".fb-item").siblings('.fb-item').find(".editor-content").children("div:first-child").nextAll().slideUp()
   $(this).parents(".editor-content").children().first().nextAll().slideDown()
 });

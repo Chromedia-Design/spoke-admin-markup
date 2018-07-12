@@ -1051,19 +1051,17 @@ ul.vertical-list {
 
 .input-list {
 	li {
-		padding: 0px;
-		padding-right: .5rem;
-		margin-bottom: .75rem;
-		margin-right: .5rem;
+		padding: 0px;		
 		border: 0px;
-		border-bottom: 1px solid #eaeaea;
+		margin-bottom: .5rem;
+		// border-bottom: 1px solid #eaeaea;
 	  	resize: horizontal;
 	  	display: block;
 	  	input {
 	  		background-color: transparent;
 			display: inline-block;
 			resize: horizontal;
-			width: 94%;
+			// width: 94%;
 			margin-bottom: 0px;
 			border-top: 0px;
 			border-left: 0px;

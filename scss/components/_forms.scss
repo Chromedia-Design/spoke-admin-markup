@@ -856,15 +856,19 @@ input {
     width: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    a {
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-      &:hover {
-        background-color: #ddd;
-      }
+    [type='checkbox'] {
+    	margin-right: .5rem;
     }
+    
+    // a {
+    //   color: black;
+    //   padding: 12px 16px;
+    //   text-decoration: none;
+    //   display: block;
+    //   &:hover {
+    //     background-color: #ddd;
+    //   }
+    // }
   }
   .show {
     display: block !important;
