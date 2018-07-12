@@ -45,19 +45,15 @@
 	.fb-container {
 		.fb-editor {			
 			background-color: #fff;
-			min-height: 80vh;
-			.row {
-				// margin-bottom: 2rem;
-			}
-			.fb-item {
-				&.selected {
-					.fb-item-content { 
-						// border: 2px solid #17659B !important;
-					}
-				}
-			}
+			min-height: 80vh;			
 		}
 	}
+}
+
+.editor-content {
+	overflow-y: scroll;
+	max-height: 75vh;
+	padding: 1rem;
 }
 
 .editable {
