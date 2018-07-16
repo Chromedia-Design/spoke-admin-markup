@@ -592,4 +592,18 @@ $card-user-profile-text-color: $text-black;
 			background: $white;
 		}
 	}
+
+	&.compact {
+		.spoke-list-item {
+			padding: .5rem;
+		}
+	}
 }
+
+
+
+
+
+
+
+
