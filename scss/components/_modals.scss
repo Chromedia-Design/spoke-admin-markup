@@ -4,6 +4,13 @@
 	background: transparent;
 	overflow-y: visible;
 
+	&.reveal-body-scrollable {
+		.reveal-body {
+			overflow-y: scroll;
+			max-height: 75vh;
+		}
+	}
+
 	&.video-call {
 		.video-call-caller {
 			img {
