@@ -372,6 +372,10 @@
 	align-items: center;
 	&.flex {
 		align-items: stretch;
+		.label-group {
+			display: flex;
+			align-items: center;
+		}
 	}
 }
 
