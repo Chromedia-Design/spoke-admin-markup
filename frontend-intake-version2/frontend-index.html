@@ -1391,61 +1391,74 @@
     </div>
 
     <div id="chat-notification">
-        <!-- <div class="chat-header-container">
-            <div class="chat-header row shrinked active">
-                <div class="columns small-2 chat-header-action pl-0 pr-0">
-                    <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
-                    <img src="http://i.pravatar.cc/300" align="left" class="user-image circle tiny">
-                </div>
-                <div class="columns small-7 chat-header-user">
-                    <p class="mb-0 user-name"><b>John Robert</b></p>
-                    <span class=" user-role">Regarding your previous message</span>
-                </div>
-                <div class="columns small-3 chat-header-video">
-                    <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
-                    <p class="timestamp mt-0-5 pull-right">12:32</p>
-                </div>
-                <div class="counter">4</div>
-            </div>
-        </div>
-        <div class="chat-header-container">
-            <div class="chat-header row shrinked active">
-                <div class="columns small-2 chat-header-action pl-0 pr-0">
-                    <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
-                    <img src="http://i.pravatar.cc/299" align="left" class="user-image circle tiny">
-                </div>
-                <div class="columns small-7 chat-header-user">
-                    <p class="mb-0 user-name"><b>John Robert</b></p>
-                    <span class=" user-role">We already sent the file you requested</span>
-                </div>
-                <div class="columns small-3 chat-header-video">
-                    <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
-                    <p class="timestamp mt-0-5 pull-right">12:32</p>
-                </div>  
-                <div class="counter">2</div>
-            </div>
-        </div> -->
         <div class="form-notification">
-            <div class="media-object" data-animate="slide-in-right slide-out-right">
-                <div class="media-object-section">
-                    <img src="http://i.pravatar.cc/300" align="left" class="user-image circle small">
-                </div>
-                <div class="media-object-section middle">
-                    <div class="small talk-bubble border tri-right left-in mb-2">
-                        <div class="talktext">
-                            <p>Did you sleep well last night?</p>
-                        </div>
-                    </div> 
-                    <!-- <span class="subheader timestamp mb-2"><small>Jun 29, 4:30 PM</small></span> -->
+            <div class="mb-1">
+                <span><strong>Pre surgery questions: </strong> 1 of 4</span>
+            </div>
+            <div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit data-auto-play="false">
+              <ul class="orbit-container">
+                <li class="orbit-slide is-active">
+                  <div class="docs-example-orbit-slide">
+                    <p>On a scale of 0 to 5, How much pain you felt after she left you?</p>
                     <div class="row">
-                        <div class="columns small-6">
-                            <button class="button mb-0 success">Yes</button>
-                        </div>
-                        <div class="columns small-6">
-                            <button class="button mb-0 alert">No</button>
+                        <div class="columns">
+                            <ul>
+                                <li class="inline-block" name="scale"><input type="radio"><label>1</label></li>
+                                <li class="inline-block" name="scale"><input type="radio"><label>2</label></li>
+                                <li class="inline-block" name="scale"><input type="radio"><label>3</label></li>
+                                <li class="inline-block" name="scale"><input type="radio"><label>4</label></li>
+                                <li class="inline-block" name="scale"><input type="radio"><label>5</label></li>
+                            </ul>
                         </div>
                     </div>
-                </div>
+                  </div>
+                </li>
+                <li class="orbit-slide">
+                  <div class="docs-example-orbit-slide">
+                    <p>Did you sleep well last saturday night after the party?</p>
+                    <div class="row">
+                        <div class="columns">
+                            <button class="button success mb-0">Yes</button>
+                        </div>
+                        <div class="columns">
+                            <button class="button alert mb-0">No</button>
+                        </div>
+                    </div>
+                  </div>
+                </li>                
+                <li class="orbit-slide">
+                  <div class="docs-example-orbit-slide">
+                    <p>I'm really sorry about this but will you tell me your name again.</p>
+                    <div class="row">
+                        <div class="columns">
+                            <input type="text" placeholder="your name" class=" mb-0">
+                        </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="orbit-slide">
+                  <div class="docs-example-orbit-slide">
+                    <p>W/c of the following numbers are familiar to you?</p>
+                    <div class="row">
+                        <div class="columns">
+                            <ul>
+                                <li class="inline-block" name="game"><input type="checkbox"><label>1</label></li>
+                                <li class="inline-block" name="game"><input type="checkbox"><label>2</label></li>
+                                <li class="inline-block" name="game"><input type="checkbox"><label>3</label></li>
+                                <li class="inline-block" name="game"><input type="checkbox"><label>4</label></li>
+                                <li class="inline-block" name="game"><input type="checkbox"><label>5</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <nav class="orbit-bullets">
+                <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+              </nav>
             </div>
             
         </div>
