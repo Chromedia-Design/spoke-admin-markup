@@ -135,6 +135,14 @@
 .clr-warning { color: $warning-color !important }
 .clr-alert { color: $alert-color !important }
 
+.clr-black50 { color: darken(#fff, 50%) !important }
+
+
+// List
+.list-style-type-none {
+	list-style-type: none !important;
+}
+
 
 // miscellaneous ----------------------------------------
 .remove {
