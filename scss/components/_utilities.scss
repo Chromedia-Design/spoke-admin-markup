@@ -94,8 +94,37 @@
 .b-bottom-1 { border-bottom: solid 1px red !important; }
 .b-all-1 { border: solid 0.1rem $primary-light; }
 .b-left-1 { border-left: solid 0.1rem $primary-light; }
+.b-right-1 { border-right: solid 0.1rem $primary-light !important; }
+.b-right-2 { border-right: solid 0.11rem $primary-light !important; }
 .b-all-1 { border: solid 0.1rem $primary-light; }
 .borderless { border: 0px !important; }
+
+.border {
+	&.p1 {
+		border-width: 1px;
+	}
+	&.style-dashed {
+		border-style: dashed !important;
+	}
+	&.style-solid {
+		border-style: solid !important;
+	}
+	&.primary {
+		border-color: $primary-color !important;
+	}
+	&.secondary {
+		border-color: $secondary-color !important;
+	}
+	&.success {
+		border-color: $success-color !important;
+	}
+	&.warning {
+		border-color: $warning-color !important;
+	}
+	&.alert {
+		border-color: $alert-color !important;
+	}	
+}
 
 
 // Alignment ----------------------------------------
@@ -135,6 +164,7 @@
 .clr-warning { color: $warning-color !important }
 .clr-alert { color: $alert-color !important }
 
+.clr-black20 { color: darken(#fff, 20%) !important }
 .clr-black50 { color: darken(#fff, 50%) !important }
 
 

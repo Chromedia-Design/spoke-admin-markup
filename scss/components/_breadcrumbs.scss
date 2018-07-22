@@ -134,9 +134,43 @@
 				background: $success-color;
 				color: white;
 			}
+
+			
 		}
 	}
+
+	&.pain-scale {
+		li {
+			&:before {
+				width: 3rem;
+				height: 3rem;
+				// font-size: 1.5rem;
+				line-height: 3rem;
+			}
+			&:after {
+				top: 1.2rem;
+				height: .5rem;
+			}
+
+			&.active {
+				&.alert {
+					&:before {
+						background-color: $alert-color;
+					}			
+				}
+				&:after {
+					background-color: $light-gray;
+				}
+			}
+		}
+		
+	}
+
+
+
 	.button {
 		margin-bottom: 0;
 	}
+
+
 }
