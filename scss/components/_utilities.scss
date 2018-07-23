@@ -188,6 +188,18 @@
 .circle { 
 	border-radius: 100rem; 
 	overflow: hidden;
+	&.c1 {
+		width: 1rem;
+		height: 1rem;
+	}
+	&.c1-5 {
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+	&.c2 {
+		width: 2rem;
+		height: 2rem;
+	}
 }
 
 .disabled {
@@ -209,6 +221,16 @@
 	}
 }
 
+$badge-padding: 1em;
+$badge-minwidth: 3em;
+$badge-font-size: 1rem;
 
 
+.badge {
+	&.large {
+		// line-height: 3.5rem;
+		// min-width: 4.1em;
+		font-size: 1.5rem;
+	}
+}
 
