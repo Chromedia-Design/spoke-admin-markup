@@ -234,3 +234,40 @@ $badge-font-size: 1rem;
 	}
 }
 
+.handoff {
+	position: relative !important;
+	&:after {
+		font-family: FontAwesome;
+    	content: "\f2b5";
+    	line-height: 1.5rem;
+    	padding: 1rem .75rem;
+    	font-size: 1.5rem;
+		width: 2rem;
+	    height: 2rem;
+	    background-color: $success-color;
+	    position: absolute;
+	    top: -27px;
+	    left: 50%;
+	    border-radius: 50%;
+	    border: 1px solid $success-color;
+	    color: #fff;
+
+	}
+
+	// &:before {
+	// 	font-family: FontAwesome;
+ //    	content: "\f2b5";
+ //    	line-height: 1.6rem;
+ //    	padding: 1.1rem;
+	// 	width: 2.8rem;
+	//     height: 2.6rem;
+	//     background-color: #fff;
+	//     position: absolute;
+	//     top: -30px;
+	//     left: 49.32%;
+	//     border-radius: 50%;
+	//     border: 2px solid $success-color;
+	//     color: #fff;
+	// }
+}
+
