@@ -312,6 +312,10 @@
 	                                	<p>Jul 18, 2018</p>
 										<h6>Pre-op Consultation</h6>
 									</div>
+									<div class="columns medium-2">
+										<p class="clr-warning">Jul 18, 2018</p>
+										<p class="h6 clr-warning"> <strong>10:30 AM</strong></p>
+									</div>
 									<!-- <div class="columns center-content">
 										<button class="button tiny pull-right" data-open="exampleModal1">Details</button>
 									</div> -->
@@ -330,8 +334,9 @@
 	                                	<p>Jul 25, 2018</p>
 										<h6>Surgery</h6>
 									</div>
-									<div class="columns center-content">
-										skdbfkdfgkj
+									<div class="columns medium-2">
+										<p class="clr-alert">Jul 25, 2018</p>
+										<p class="h6 clr-alert"> <strong>9:00 AM</strong></p>
 									</div>
 									<!-- <div class="columns center-content">
 										<button class="button tiny success pull-right" data-open="exampleModal1">Details</button>
@@ -625,6 +630,366 @@
         	<a id="scheduleCall" class="button success"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp; Schedule A Call</a>
         </div>
         <a class="close-button" data-powertour-action="stop"><i class="fa fa-times-circle-o"></i></a>
+    </div>
+
+    <div id="chat-toggle">
+        <i class="fa fa-comment"></i>
+    </div>
+
+    <div id="chat-notification">
+        <div class="form-notification">
+            <div class="pl-1 pr-1 pt-1 pb-0-5 clr-black50 bg-black10 mb-1">
+                <span><strong>Pre surgery questions: </strong> 1 of 4</span>
+            </div>
+            <div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit data-auto-play="false">
+              <ul class="orbit-container pl-1 pr-1">
+                <li class="orbit-slide is-active">
+                  <div class="">
+                    <p>On a scale of 0 to 5, How much pain you felt after she left you?</p>
+                    <div class="row">
+                        <div class="columns">
+                            <ul class="list-style-type-none ml-0">
+                                <li name="scale"><input type="radio"><label>1</label></li>
+                                <li name="scale"><input type="radio"><label>2</label></li>
+                                <li name="scale"><input type="radio"><label>3</label></li>
+                                <li name="scale"><input type="radio"><label>4</label></li>
+                                <li name="scale"><input type="radio"><label>5</label></li>
+                            </ul> 
+                        </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="orbit-slide">
+                  <div class="">
+                    <p>Did you sleep well last saturday night after the party?</p>
+                    <div class="row">
+                        <div class="columns">
+                            <ul class="list-style-type-none ml-0">
+                                <li class="" name="scale"><input type="radio"><label>Yes</label></li>
+                                <li class="" name="scale"><input type="radio"><label>No</label></li>
+                            </ul> 
+                        </div>
+                    </div>
+                  </div>
+                </li>                
+                <li class="orbit-slide">
+                  <div class="">
+                    <p>I'm really sorry about this but will you tell me your name again.</p>
+                    <div class="row">
+                        <div class="columns">
+                            <input type="text" placeholder="your name" class=" mb-0">
+                        </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="orbit-slide">
+                  <div class="">
+                    <p>W/c of the following games you've finished playing?</p>
+                    <div class="row">
+                        <div class="columns">
+                            <ul class="list-style-type-none ml-0">
+                                <li class="" name="game"><input type="checkbox"><label>Super Mario Bros.</label></li>
+                                <li class="" name="game"><input type="checkbox"><label>Metal Gear Solid 5</label></li>
+                                <li class="" name="game"><input type="checkbox"><label>Horizon: Zero Dawn</label></li>
+                                <li class="" name="game"><input type="checkbox"><label>Devil May Cry</label></li>
+                                <li class="" name="game"><input type="checkbox"><label>Goat Simulator</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="orbit-controls bottom row  pl-1 pr-1 bg-black10 pt-1 pb-1">
+                <div class="columns center-content">
+                  <button class="orbit-previous button tiny expanded mb-0 pt-0-5 pb-0-5"><span class="">Previous</span></button>  
+                </div>
+                <div class="columns center-content">
+                  <button class="orbit-next button tiny expanded mb-0 pt-0-5 pb-0-5"><span class="">Next</span></button>  
+                </div>
+                  
+                  
+                </div>
+            </div>
+            
+        </div>
+        <div class="chat-header-container">
+            <div class="chat-header row shrinked active pb-1">
+                <div class="columns small-2 chat-header-action pl-0 pr-0">
+                    <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
+                    <img src="../img/middle-aged-lady-round.jpg" align="left" class="user-image circle tiny">
+                </div>
+                <div class="columns small-10 chat-header-user pr-0">
+                    <p class="mb-0 user-name"><b>Julie Kloster</b></p>
+                    <span class=" user-role">If you have questions, you can reach me anytime by sending me a secure message or schedule a call and we can go over it on the phone together.</span>
+                </div>
+                <div class="counter">3</div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="chat-container">
+
+        <div class="chat-video-container">            
+            <div id="videos">
+                <div id="subscriber"></div>
+                <div id="publisher"></div>
+            </div>
+            <div class="chat-video-control row align-center">
+                <div class="columns col-md-2 center-text">
+                    <button id="chat-video-compress" class="button large circle"><i class="fa fa-compress"></i></button>
+                </div>
+                <div class="columns col-md-2 center-text">
+                    <button id="chat-video-end-call" class="button alert large circle"><i class="fa fa-phone"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-header-intro">
+            <span class="h5 white-color">Messages</span>
+            <button data-open="exampleModal1" class="btn-new button clear circle large white"><i class="fa fa-phone large"></i></button>
+        </div>
+
+        <div class="chat-header-container">
+            <div class="chat-header row shrinked active">
+                <div class="columns small-2 chat-header-action pl-0 pr-0">
+                    <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
+                    
+                    <img src="https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602499.jpg" align="left" class="user-image circle tiny">
+
+                </div>
+                <div class="columns small-7 chat-header-user">
+                    <p class="mb-0 user-name"><b>John Robert</b></p>
+                    <span class=" user-role">Customer Support</span>
+                </div>
+                <div class="columns small-3 chat-header-video">
+                    <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
+                    <p class="timestamp mt-0-5 pull-right">12:32</p>
+                </div>
+                <div class="counter">4</div>
+            </div>
+        </div>
+        <div class="chat-header-container">
+            <div class="chat-header row shrinked active">
+                <div class="columns small-2 chat-header-action pl-0 pr-0">
+                    <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
+                    <img src="http://i.pravatar.cc/300" align="left" class="user-image circle tiny">
+                </div>
+                <div class="columns small-7 chat-header-user">
+                    <p class="mb-0 user-name"><b>John Robert</b></p>
+                    <span class=" user-role">Customer Support</span>
+                </div>
+                <div class="columns small-3 chat-header-video">
+                    <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
+                    <p class="timestamp mt-0-5 pull-right">12:32</p>
+                </div>
+                <div class="counter">4</div>
+            </div>
+        </div>
+        <div class="chat-header-container">
+            <div class="chat-header row shrinked active">
+                <div class="columns small-2 chat-header-action pl-0 pr-0">
+                    <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
+                    <img src="http://i.pravatar.cc/299" align="left" class="user-image circle tiny">
+                </div>
+                <div class="columns small-7 chat-header-user">
+                    <p class="mb-0 user-name"><b>John Robert</b></p>
+                    <span class=" user-role">Customer Support</span>
+                </div>
+                <div class="columns small-3 chat-header-video">
+                    <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
+                    <p class="timestamp mt-0-5 pull-right">12:32</p>
+                </div>
+                <div class="counter">4</div>
+            </div>
+        </div>
+        <div class="chat-header-container">
+            <div class="chat-header row shrinked">
+                <div class="columns small-2 chat-header-action pl-0 pr-0">
+                    <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
+                    <img src="http://i.pravatar.cc/298" align="left" class="user-image circle tiny">
+                </div>
+                <div class="columns small-7 chat-header-user">
+                    <p class="mb-0 user-name"><b>John Robert</b></p>
+                    <span class=" user-role">Customer Support</span>
+                </div>
+                <div class="columns small-3 chat-header-video">
+                    <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
+                    <p class="timestamp mt-0-5 pull-right">12:32</p>
+                </div>
+                <div class="counter">4</div>
+            </div>
+        </div>
+        <div class="chat-header-container">
+            <div class="chat-header row shrinked">
+                <div class="columns small-2 chat-header-action pl-0 pr-0">
+                    <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
+                    <img src="http://i.pravatar.cc/297" align="left" class="user-image circle tiny">
+                </div>
+                <div class="columns small-7 chat-header-user">
+                    <p class="mb-0 user-name"><b>John Robert</b></p>
+                    <span class=" user-role">Customer Support</span>
+                </div>
+                <div class="columns small-3 chat-header-video">
+                    <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
+                    <p class="timestamp mt-0-5 pull-right">12:32</p>
+                </div>
+                <div class="counter">4</div>
+            </div>
+        </div>
+        <div class="chat-header-container">
+            <div class="chat-header row shrinked">
+                <div class="columns small-2 chat-header-action pl-0 pr-0">
+                    <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
+                    <img src="http://i.pravatar.cc/296" align="left" class="user-image circle tiny">
+                </div>
+                <div class="columns small-7 chat-header-user">
+                    <p class="mb-0 user-name"><b>John Robert</b></p>
+                    <span class=" user-role">Customer Support</span>
+                </div>
+                <div class="columns small-3 chat-header-video">
+                    <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
+                    <p class="timestamp mt-0-5 pull-right">12:32</p>
+                </div>
+                <div class="counter">4</div>
+            </div>
+        </div>
+        <div class="chat-header-container">
+            <div class="chat-header row shrinked">
+                <div class="columns small-2 chat-header-action pl-0 pr-0">
+                    <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
+                    <img src="http://i.pravatar.cc/295" align="left" class="user-image circle tiny">
+                </div>
+                <div class="columns small-7 chat-header-user">
+                    <p class="mb-0 user-name"><b>John Robert</b></p>
+                    <span class=" user-role">Customer Support</span>
+                </div>
+                <div class="columns small-3 chat-header-video">
+                    <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
+                    <p class="timestamp mt-0-5 pull-right">12:32</p>
+                </div>
+                <div class="counter">4</div>
+            </div>
+        </div>
+        <div class="chat-header-container">
+            <div class="chat-header row shrinked">
+                <div class="columns small-2 chat-header-action pl-0 pr-0">
+                    <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
+                    <img src="http://i.pravatar.cc/294" align="left" class="user-image circle tiny">
+                </div>
+                <div class="columns small-7 chat-header-user">
+                    <p class="mb-0 user-name"><b>John Robert</b></p>
+                    <span class=" user-role">Customer Support</span>
+                </div>
+                <div class="columns small-3 chat-header-video">
+                    <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
+                    <p class="timestamp mt-0-5 pull-right">12:32</p>
+                </div>
+                <div class="counter">4</div>
+            </div>
+        </div>
+
+        <div class="chat-body-container hide">
+            <div class="chat-body">
+                <div class="wrapper">
+                    <div class="media-object" data-animate="slide-in-right slide-out-right">
+                        <div class="media-object-section">
+                            <img src="http://i.pravatar.cc/300" align="left" class="user-image circle small">
+                        </div>
+                        <div class="media-object-section middle">
+                            <div class="small talk-bubble border tri-right left-in">
+                                <div class="talktext">
+                                    <p>If you have questions, you can reach me anytime by sending me a secure message or schedule a call and we can go over it on the phone together.</p>
+                                </div>
+                            </div>
+                            <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper pull-right">
+                    <div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
+                        <div class="small white-bg talk-bubble border tri-right right-in">
+                            <div class="talktext">
+                                <p> you have questions, you can reach me anytime by sending me a secure message or schedule a call and we can go over it on the phon</p>
+                            </div>
+                        </div>
+                        <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="media-object" data-animate="slide-in-right slide-out-right">
+                        <div class="media-object-section">
+                            <img src="http://i.pravatar.cc/300" align="left" class="user-image circle small">
+                        </div>
+                        <div class="media-object-section middle">
+                            <div class="small talk-bubble border tri-right left-in">
+                                <div class="talktext">
+                                    <p>If you have questions, you can reach me anytime by sending me a secure message or schedule a call and we can go over it on the phone together.</p>
+                                </div>
+                            </div>
+                            <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chat-input-container hide">
+            <ul class="attachments inline-list">
+                <li class="image-attachment fa fa-file-o fa-lg">
+                    <a class="btn-close"><i class="fa fa-trash"></i></a>
+                    <span class="filename" data-tooltip tabindex="1" title="Screenshot_Screen_2018-19-823.jpg">Screenshot_Screen_2018-19-823.jpg</span>
+                </li>
+                <li class="image-attachment fa fa-file-image-o fa-lg">
+                    <a class="btn-close"><i class="fa fa-trash"></i></a>
+                    <span class="filename" data-tooltip tabindex="1" title="Screenshot_Screen_2018-19-823.jpg">Screenshot_Screen_2018-19-823.jpg</span>
+                </li>
+                <li class="image-attachment fa fa-file-excel-o fa-lg">
+                    <a class="btn-close"><i class="fa fa-trash"></i></a>
+                    <span class="filename" data-tooltip tabindex="1" title="Screenshot_Screen_2018-19-823.jpg">Filename.jpg</span>
+                </li>
+                <li class="image-attachment fa fa-file-word-o fa-lg">
+                    <a class="btn-close"><i class="fa fa-trash"></i></a>
+                    <span class="filename" data-tooltip tabindex="1" title="Screenshot_Screen_2018-19-823.jpg">Filename.jpg</span>
+                </li>
+                <li class="image-attachment fa fa-file-pdf-o fa-lg">
+                    <a class="btn-close"><i class="fa fa-trash"></i></a>
+                    <span class="filename" data-tooltip tabindex="1" title="Screenshot_Screen_2018-19-823.jpg">Filename.jpg</span>
+                </li>
+                <li class="image-attachment fa fa-file-archive-o fa-lg">
+                    <a class="btn-close"><i class="fa fa-trash"></i></a>
+                    <span class="filename" data-tooltip tabindex="1" title="Screenshot_Screen_2018-19-823.jpg">Filename.jpg</span>
+                </li>
+            </ul>
+            <div class="chat-input">                
+                <textarea name="" id="" placeholder="What's on your mind?"></textarea>
+                <button id="btnAttach" class="button secondary hollow large clear">
+                    <i class="fa fa-paperclip"></i>
+                </button>
+                <button id="btnSend" class="button hollow large clear success">
+                    <i class="fa fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="reveal align-center-middle text-center video-call" id="exampleModal1" data-reveal>
+        <div class="row video-call-caller mb-2">
+            <div class="columns col-md-12">
+                <p class="h2 white-color mb-4">Liam Neeson Calling...</p>
+                <img src="http://i.pravatar.cc/300" alt="" class="user-image circle">
+            </div>
+        </div>
+        <div class="row video-call-action">
+          <div class="columns col-md-2">
+            <button id="btn-call-reject" class="button clear large circle alert">
+                <i class="fa fa-times"></i>
+            </button>
+        </div>
+          <div class="columns col-md-2">
+              <button id="btn-call-answer" class="button clear large circle success" data-close aria-label="Close modal">
+                <i class="fa fa-phone"></i>
+            </button>
+          </div>
+      </div>
     </div>
 
 	<script src="../bower_components/jquery/dist/jquery.js"></script>

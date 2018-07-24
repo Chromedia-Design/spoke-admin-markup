@@ -804,8 +804,10 @@ $light-gray-hex:	#CBCFD3;
     right: 0;
     margin: auto;
     // Aspect ration of 16:9
-    height: 30vh;
-    width: 53vh;
+    // height: 30vh;
+    height: 100%;
+    // width: 53vh;
+    width: 40px;
     padding-bottom: 30vh;
     z-index: 10;
     > * {
@@ -930,7 +932,7 @@ $main-color: #1ebd44;
 			width: 100%;
 			position: absolute;
 			bottom: 10px;
-
+			z-index: 100;
 		}
 	}
 }
