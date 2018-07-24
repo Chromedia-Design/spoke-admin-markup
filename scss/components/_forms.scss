@@ -584,6 +584,9 @@ label.image-upload {
     		text-overflow: none;
     	}
 	}
+	&.selected {
+		background-color: #fafcff;
+	}
 }	
 
 .label-block {
@@ -874,3 +877,22 @@ input {
     display: block !important;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
