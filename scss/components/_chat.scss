@@ -940,7 +940,7 @@ $main-color: #1ebd44;
 
 
 #chat-container, #chat-notification {
-	z-index: 999;
+	z-index: 10;
 	position: fixed;
 	bottom: 6rem;
 	right: 1rem;
