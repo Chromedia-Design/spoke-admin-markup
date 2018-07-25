@@ -650,6 +650,36 @@
 			&:hover {
 				background: $white;
 			}
+			&.warning {
+				.fancy-checkbox {
+					input:after {
+						border-color: $warning-color;
+					}
+					input:checked {
+						&:after {
+							background-color: $warning-color;
+						}
+					}
+				}
+				.preamble {
+					color: $warning-color;
+				}
+			}
+			&.alert {
+				.fancy-checkbox {
+					input:after {
+						border-color: $alert-color;
+					}
+					input:checked {
+						&:after {
+							background-color: $alert-color;
+						}
+					}
+				}
+				.preamble {
+					color: $alert-color;
+				}
+			}
 		}
 		small {
 			font-size: rem-calc(12);
