@@ -584,6 +584,9 @@ label.image-upload {
     		text-overflow: none;
     	}
 	}
+	small {
+		font-size: rem-calc(12);
+	}
 	&.selected {
 		background-color: #fafcff;
 	}
@@ -797,12 +800,13 @@ input {
   	text-align: left;
   	cursor: pointer;
     input {
-    	margin: 0;
+    	margin: 0 0 0 3px;
     	width: 32px;
     	height: 32px;
       	position: relative;
       	cursor: pointer;
 	  	&:after {
+	  		margin-left: -3px;
 	  		border-radius: 50%;
 	    	width: 32px;
 	    	height: 32px;
