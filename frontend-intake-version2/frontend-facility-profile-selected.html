@@ -19,9 +19,9 @@
 
 	<link rel="stylesheet" href="../css/app.css">
 </head>
-<body class="frontend">
+<body class="">
 
-	<header class="top-bar">
+	<!-- <header class="top-bar">
         <div class="row">
             <div class="top-bar-title">
                 <span data-responsive-toggle="responsive-menu" data-hide-for="large">
@@ -30,11 +30,92 @@
                 <a href="#" class="logo">
                 	<img src="../img/logo.png" alt="Spoke">
             	</a>
-            </div>
-            <!-- <div id="responsive-menu">
-                <div class="top-bar-right">
+            </div>            
+        </div>
+    </header> -->
+
+    <header class="top-bar bordered">
+        <div class="row">
+            <div class="auto columns">
+                <div class="top-bar-title">
+                    <span data-responsive-toggle="responsive-menu" data-hide-for="large">
+                        <span class="menu-icon dark" data-toggle></span>
+                    </span>
+                    <a href="#" class="logo">
+                        <img src="../img/logo.png" alt="Spoke">
+                    </a>
                 </div>
-            </div> -->
+                <div id="responsive-menu">
+                    <div class="top-bar-right">
+                        <ul id="mainMenu" class="dropdown menu" data-dropdown-menu>
+                            <!-- <li>
+                                <a data-open="scheduleCalendar" class="button hollow success small"><i class="fa fa-calendar"></i>&nbsp; Schedule A Call</a>
+                            </li> -->
+                            <li>
+                                <a data-toggle="chatSupport">Messages</a>
+                            </li>
+                            <li class="drop-text">
+                                <a data-toggle="chatSupport"><i class="fa fa-envelope-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">24</span></a>
+                                <ul class="notifications menu vertical">
+                                    <li>
+                                        <ol>
+                                            <li class="heading">
+                                                <h6 class="text-center mb-0">Notifications</h6>
+                                            </li>   
+                                    <li class="active">
+                                        <span>You have a new email from <a href="#">John Doe</a>.</span>
+                                        <small class="subheader">12 months ago</small>
+                                    </li>
+                                    <li class="active">
+                                        <span>You have a missed call from <a href="#">Alex Quesada</a>.</span>
+                                        <small class="subheader">12 months ago</small>
+                                    </li>
+                                    <li>
+                                        <span>You have a new email from <a href="#">Janet Ellis</a>.</span>
+                                        <small class="subheader">12 months ago</small>
+                                    </li>
+                                    <li>
+                                        <span>You have a new email from <a href="#">Kathleen Jordan</a>.</span>
+                                        <small class="subheader">12 months ago</small>
+                                    </li>
+                                    <li>
+                                        <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+                                        <small class="subheader">12 months ago</small>
+                                    </li>
+                                    <li>
+                                        <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+                                        <small class="subheader">12 months ago</small>
+                                    </li>
+                                    <li>
+                                        <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+                                        <small class="subheader">12 months ago</small>
+                                    </li>
+                                    <li>
+                                        <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+                                        <small class="subheader">12 months ago</small>
+                                    </li>
+                                    <li>
+                                        <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+                                        <small class="subheader">12 months ago</small>
+                                    </li>
+                                    <!-- <li>
+                                        <a href="#" class="button info hollow tiny expanded">View All Notifications</a>
+                                    </li> -->
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">John Doe &nbsp;</a>
+                                <ul class="menu vertical">
+                                    <li><a href="frontend-edit.html"><i class="fa fa-user"></i>&nbsp; Account Details</a></li>
+                                    <li><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Sign Out</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -78,9 +159,9 @@
 						</div>
 					</div> -->
 
-					<div class="panel">
+					<div class="panel mt-2">
 						<div class="panel-heading">
-							<span class="h6">Doctors</span>
+							<span class="h6">My doctors</span>
 						</div>
 						<div class="panel-body">
 							<div class="media-object">
@@ -127,7 +208,7 @@
 								<div class="large-12 columns">
 									<ul class="fa-ul">
 									  	<li>Pre-op evaluation</li>
-									  	<li>Pre-op antibiotics as indicate</li>
+									  	<li>Pre-op antibiotics as indicated</li>
 									  	<li>Facility surgeon</li>
 									  	<li>Assistant surgeon</li>
 									  	<li>Anesthesia</li>
@@ -144,15 +225,11 @@
 
 			<div class="large-8 large-pull-4 columns">
 
-				<div class="media-object full-table">
-				  	<div class="media-object-section logo middle">
-				    	<div class="img-wrapper">
-				      		<img src= "../img/Milwaukee-Quality-Surgery-Center.png">
-				    	</div>
-				  	</div>
+				<div class="media-object full-table">				  	
 				  	<div class="media-object-section middle">
-				   		<span class="h4">Milwaukee Quality Surgery Center</span>
-				   		<p class="subheader"><small>Millennium Center, 6825 S. Galena Street, Suite 314, Centennial, CO, United States Of America</small></p>
+				   		<p class="subheader"><small>My Current Episode of Care</small></p>
+				   		<span class="h4">Total Knee Replacement</span>
+				   		
 				  	</div>
 				  	<div class="media-object-section middle">
 				   		<a href="#" class="button warning small pull-right"><i class="fa fa-print"></i></a>
@@ -170,8 +247,8 @@
 						<div class="row collapse label-block">
 							<div class="large-6 columns end">
 								<div class="label-group">
-									<p>Current Episode</p>
-									<h6><a href="advocate-employee-episode-v2.html">Total Knee Replacement</a></h6>
+									<p>Facility</p>
+									<h6>Milwaukee Quality Surgery Center</h6>
 								</div>
 							</div>
 							<!-- <div class="large-4 columns end">
@@ -202,7 +279,7 @@
                             	<div class="row">
                             		<div class="columns ">
 	                            		<p>Dec 1, 2018</p>
-										<h6>Pre-op Questionnaire</h6>
+										<h6>Answered Pre-operative Questionnaire</h6>
 									</div>
 									<!-- <div class="columns center-content">
 										<button class="button tiny primary pull-right" data-open="exampleModal1">Details</button>
@@ -220,7 +297,7 @@
                                 <div class="row">
                             		<div class="columns ">
 	                                	<p>Dec 8, 2018</p>
-										<h6>Pre-op Patient reported functional capacity survey</h6>
+										<h6>Answered Pre-op Patient reported functional capacity survey</h6>
 									</div>
 									<!-- <div class="columns center-content">
 										<button class="button tiny primary pull-right" data-open="exampleModal1">Details</button>
@@ -238,7 +315,7 @@
                                 <div class="row">
                             		<div class="columns ">
 	                                	<p>Dec 10, 2018</p>
-										<h6>Pre-op Evaluation and clearance</h6>
+										<h6>Passed pre-operative evaluation and clearance</h6>
 									</div>
 									<!-- <div class="columns center-content">
 										<button class="button tiny primary pull-right" data-open="exampleModal1">Details</button>
@@ -256,7 +333,7 @@
                                 <div class="row">
                             		<div class="columns ">
 	                                	<p>Dec 13, 2018</p>
-										<h6>Pre-op infection avoidance adherence</h6>
+										<h6>Did infection avoidance adherence</h6>
 									</div>
 									<!-- <div class="columns center-content">
 										<button class="button tiny primary pull-right" data-open="exampleModal1">Details</button>
@@ -274,7 +351,7 @@
                                 <div class="row">
                             		<div class="columns ">
 	                                	<p>Dec 15, 2018</p>
-										<h6>Pre-op antibiotics as indicated</h6>
+										<h6>Took pre-operative antibiotics as indicated</h6>
 									</div>
 									<!-- <div class="columns center-content">
 										<button class="button tiny primary pull-right" data-open="exampleModal1">Details</button>
@@ -292,7 +369,7 @@
                                 <div class="row">
                             		<div class="columns ">
 	                                	<p>Dec 18, 2018</p>
-										<h6>Pre-hab check in (one week before surgery)</h6>
+										<h6>Did pre-hab check in (one week before surgery)</h6>
 									</div>
 									<!-- <div class="columns center-content">
 										<button class="button tiny primary pull-right" data-open="exampleModal1">Details</button>
@@ -310,11 +387,11 @@
                                 <div class="row">
                             		<div class="columns ">
 	                                	<p>Jul 18, 2018</p>
-										<h6>Pre-op Consultation</h6>
+										<h6>Had pre-operative consultation</h6>
 									</div>
 									<div class="columns medium-2">
-										<p class="clr-warning">Jul 18, 2018</p>
-										<p class="h6 clr-warning"> <strong>10:30 AM</strong></p>
+										<p class="clr-alert">Jul 18, 2018</p>
+										<p class="h6 clr-alert"> <strong>10:30 AM</strong></p>
 									</div>
 									<!-- <div class="columns center-content">
 										<button class="button tiny pull-right" data-open="exampleModal1">Details</button>
@@ -332,7 +409,7 @@
                                 <div class="row">
                             		<div class="columns ">
 	                                	<p>Jul 25, 2018</p>
-										<h6>Surgery</h6>
+										<h6>Underwent surgery</h6>
 									</div>
 									<div class="columns medium-2">
 										<p class="clr-alert">Jul 25, 2018</p>
@@ -354,7 +431,7 @@
                                 <div class="row">
                             		<div class="columns ">
 	                                	<p>Dec 15, 2018</p>
-										<h6>Patient reported service experience survey</h6>
+										<h6>Answered Service Experience Survey</h6>
 									</div>
 									<!-- <div class="columns center-content">
 										<button class="button tiny primary pull-right" data-open="exampleModal1">Details</button>
@@ -372,7 +449,7 @@
                                 <div class="row">
                             		<div class="columns ">
 	                                	<p>Dec 22, 2018</p>
-										<h6>Post-Op visit scheduled</h6>
+										<h6>Had scheduled post-operative visit</h6>
 									</div>
 									<!-- <div class="columns center-content">
 										<button class="button tiny hollow pull-right" data-open="exampleModal1">Details</button>
@@ -390,7 +467,7 @@
                                 <div class="row">
                             		<div class="columns ">
 	                                	<p>Jan 6, 2018</p>
-										<h6>Compliance with Physical Therapy regimen (1 week post)</h6>	
+										<h6>Had 1-week post-operative physical therapy regimen</h6>	
 									</div>
 									<!-- <div class="columns center-content">
 										<button class="button tiny hollow pull-right" data-open="exampleModal1">Details</button>
@@ -408,7 +485,7 @@
                                 <div class="row">
                             		<div class="columns ">
 	                                	<p>Jan 10, 2018</p>
-										<h6>Compliance with Physical Therapy regimen (3 weeks post)</h6>	
+										<h6>Had 3-week post-operative physical therapy regimen</h6>	
 									</div>
 									<!-- <div class="columns center-content">
 										<button class="button tiny hollow pull-right" data-open="exampleModal1">Details</button>
@@ -426,7 +503,7 @@
                                 <div class="row">
                             		<div class="columns ">
 	                                	<p>Jan 10, 2018</p>
-										<h6>Compliance with Physical Therapy regimen (3 weeks post)</h6>	
+										<h6>Answered Service Experience Survey for physical therapy check in</h6>	
 									</div>
 									<!-- <div class="columns center-content">
 										<button class="button tiny hollow pull-right" data-open="exampleModal1">Details</button>
@@ -462,7 +539,7 @@
                                 <div class="row">
                             		<div class="columns ">
 	                                	<p>Jan 10, 2018</p>
-										<h6>Compliance with Physical Therapy regimen (5 weeks post)</h6>	
+										<h6>Had 5-week post-operative physical therapy regimen"</h6>	
 									</div>
 									<!-- <div class="columns center-content">
 										<button class="button tiny hollow pull-right" data-open="exampleModal1">Details</button>
@@ -480,7 +557,7 @@
                                 <div class="row">
                             		<div class="columns ">
 	                                	<p>Jan 10, 2018</p>
-										<h6>Patient reported functional capacity survey (6 weeks post)</h6>	
+										<h6>Answered Functional Capacity Survey</h6>	
 									</div>
 									<!-- <div class="columns center-content">
 										<button class="button tiny hollow pull-right" data-open="exampleModal1">Details</button>
@@ -498,7 +575,7 @@
                                 <div class="row">
                             		<div class="columns ">
 	                                	<p>Jan 10, 2018</p>
-										<h6>Compliance with Physical Therapy regimen (7 weeks post)</h6>	
+										<h6>Had 7-week post-operative physical therapy regimen</h6>	
 									</div>
 									<!-- <div class="columns center-content">
 										<button class="button tiny hollow pull-right" data-open="exampleModal1">Details</button>
@@ -516,7 +593,7 @@
                                 <div class="row">
                             		<div class="columns ">
 	                                	<p>Jan 10, 2018</p>
-										<h6>Patient reported service experience survey - Post Physical Therapy</h6>	
+										<h6>Answered post-physical therapy Service Experience Survey</h6>	
 									</div>
 									<!-- <div class="columns center-content">
 										<button class="button tiny hollow pull-right" data-open="exampleModal1">Details</button>
@@ -534,7 +611,7 @@
                                 <div class="row">
                             		<div class="columns ">
 	                                	<p>Jan 10, 2018</p>
-										<h6>Patient reported functional capacity survey (3 months post)</h6>	
+										<h6>Answered 3-month post-op Functional Capacity Survey</h6>	
 									</div>
 									<!-- <div class="columns center-content">
 										<button class="button tiny hollow pull-right" data-open="exampleModal1">Details</button>
@@ -552,7 +629,7 @@
                                 <div class="row">
                             		<div class="columns ">
 	                                	<p>Jan 10, 2018</p>
-										<h6>Patient reported functional capacity survey (6 months post)</h6>	
+										<h6>Answered 6-month post-op Functional Capacity Survey</h6>	
 									</div>
 									<!-- <div class="columns center-content">
 										<button class="button tiny hollow pull-right" data-open="exampleModal1">Details</button>
@@ -570,7 +647,7 @@
                                 <div class="row">
                             		<div class="columns ">
 	                                	<p>Jan 10, 2018</p>
-										<h6>Patient reported functional capacity survey (1 year post)</h6>	
+										<h6>Answered 12-month post-op Functional Capacity Survey</h6>	
 									</div>
 									<!-- <div class="columns center-content">
 										<button class="button tiny hollow pull-right" data-open="exampleModal1">Details</button>
@@ -638,78 +715,32 @@
 
     <div id="chat-notification">
         <div class="form-notification">
-            <div class="pl-1 pr-1 pt-1 pb-0-5 clr-black50 bg-black10 mb-1">
-                <span><strong>Pre surgery questions: </strong> 1 of 4</span>
-            </div>
-            <div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit data-auto-play="false">
-              <ul class="orbit-container pl-1 pr-1">
-                <li class="orbit-slide is-active">
-                  <div class="">
-                    <p>On a scale of 0 to 5, How much pain you felt after she left you?</p>
-                    <div class="row">
-                        <div class="columns">
-                            <ul class="list-style-type-none ml-0">
-                                <li name="scale"><input type="radio"><label>1</label></li>
-                                <li name="scale"><input type="radio"><label>2</label></li>
-                                <li name="scale"><input type="radio"><label>3</label></li>
-                                <li name="scale"><input type="radio"><label>4</label></li>
-                                <li name="scale"><input type="radio"><label>5</label></li>
-                            </ul> 
-                        </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="orbit-slide">
-                  <div class="">
-                    <p>Did you sleep well last saturday night after the party?</p>
-                    <div class="row">
-                        <div class="columns">
-                            <ul class="list-style-type-none ml-0">
-                                <li class="" name="scale"><input type="radio"><label>Yes</label></li>
-                                <li class="" name="scale"><input type="radio"><label>No</label></li>
-                            </ul> 
-                        </div>
-                    </div>
-                  </div>
-                </li>                
-                <li class="orbit-slide">
-                  <div class="">
-                    <p>I'm really sorry about this but will you tell me your name again.</p>
-                    <div class="row">
-                        <div class="columns">
-                            <input type="text" placeholder="your name" class=" mb-0">
-                        </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="orbit-slide">
-                  <div class="">
-                    <p>W/c of the following games you've finished playing?</p>
-                    <div class="row">
-                        <div class="columns">
-                            <ul class="list-style-type-none ml-0">
-                                <li class="" name="game"><input type="checkbox"><label>Super Mario Bros.</label></li>
-                                <li class="" name="game"><input type="checkbox"><label>Metal Gear Solid 5</label></li>
-                                <li class="" name="game"><input type="checkbox"><label>Horizon: Zero Dawn</label></li>
-                                <li class="" name="game"><input type="checkbox"><label>Devil May Cry</label></li>
-                                <li class="" name="game"><input type="checkbox"><label>Goat Simulator</label></li>
-                            </ul>
-                        </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-              <div class="orbit-controls bottom row  pl-1 pr-1 bg-black10 pt-1 pb-1">
-                <div class="columns center-content">
-                  <button class="orbit-previous button tiny expanded mb-0 pt-0-5 pb-0-5"><span class="">Previous</span></button>  
-                </div>
-                <div class="columns center-content">
-                  <button class="orbit-next button tiny expanded mb-0 pt-0-5 pb-0-5"><span class="">Next</span></button>  
-                </div>
-                  
-                  
-                </div>
-            </div>
+            
+
+            <div class="pad-1">
+	            <!-- <p>On a scale of 0 to 10, How much pain you felt after she left you?</p> -->
+	            <p>On a scale of 0 to 10, How would you rate your pain today?</p>
+	            <div class="row">
+	                <div class="columns shrink">
+	                    <ul class="list-style-type-none ml-0">
+	                        <li name="scale"><input type="radio"><label>0</label></li>
+	                        <li name="scale"><input type="radio"><label>1</label></li>
+	                        <li name="scale"><input type="radio"><label>2</label></li>
+	                        <li name="scale"><input type="radio"><label>3</label></li>
+	                        <li name="scale"><input type="radio"><label>4</label></li>
+	                        <li name="scale"><input type="radio"><label>5</label></li>
+	                        <li name="scale"><input type="radio"><label>6</label></li>
+	                        <li name="scale"><input type="radio"><label>7</label></li>
+	                        <li name="scale"><input type="radio"><label>8</label></li>
+	                        <li name="scale"><input type="radio"><label>9</label></li>
+	                        <li name="scale"><input type="radio"><label>10</label></li>
+	                    </ul> 
+	                </div>
+	                <div class="columns">
+	                	<img src="../img/pain-scale.svg" alt="">
+	                </div>
+	            </div>
+	        </div>
             
         </div>
         <div class="chat-header-container">

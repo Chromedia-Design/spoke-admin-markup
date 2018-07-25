@@ -253,21 +253,68 @@ $badge-font-size: 1rem;
 	    color: #fff;
 
 	}
-
-	// &:before {
-	// 	font-family: FontAwesome;
- //    	content: "\f2b5";
- //    	line-height: 1.6rem;
- //    	padding: 1.1rem;
-	// 	width: 2.8rem;
-	//     height: 2.6rem;
-	//     background-color: #fff;
-	//     position: absolute;
-	//     top: -30px;
-	//     left: 49.32%;
-	//     border-radius: 50%;
-	//     border: 2px solid $success-color;
-	//     color: #fff;
-	// }
 }
 
+.marker {
+	position: relative;
+	&.primary {
+		&:after {
+			border-radius: 10rem;
+		    content: " ";
+		    width: 1rem;
+		    height: 1rem;
+		    position: absolute;
+		    background-color: rgba($primary-color,.5);
+		    right: 1rem;
+		    top: 1.2rem;
+		}
+	}
+	&.secondary {
+		&:after {
+			border-radius: 10rem;
+		    content: " ";
+		    width: 1rem;
+		    height: 1rem;
+		    position: absolute;
+		    background-color: rgba($secondary-color,.5);
+		    right: 1rem;
+		    top: 1.2rem;
+		}
+	}
+	&.success {
+		&:after {
+			border-radius: 10rem;
+		    content: " ";
+		    width: 1rem;
+		    height: 1rem;
+		    position: absolute;
+		    background-color: rgba($success-color,.5);
+		    right: 1rem;
+		    top: 1.2rem;
+		}
+	}
+	&.warning {
+		&:after {
+			border-radius: 10rem;
+		    content: " ";
+		    width: 1rem;
+		    height: 1rem;
+		    position: absolute;
+		    background-color: rgba($warning-color,.5);
+		    right: 1rem;
+		    top: 1.2rem;
+		}
+	}
+	&.alert {
+		&:after {
+			border-radius: 10rem;
+		    content: " ";
+		    width: 1rem;
+		    height: 1rem;
+		    position: absolute;
+		    background-color: rgba($alert-color,.5);
+		    right: 1rem;
+		    top: 1.2rem;
+		}
+	}
+}
