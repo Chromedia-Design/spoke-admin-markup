@@ -300,11 +300,12 @@
 
 						<div class="page-lead row align-middle">
 							<div class="large-12 columns">
-								<span class="h5">Clinical Pathway</span>
+								<span class="h5">Clinical Pathway</span> 
+								<!-- <button class="button link clear hollow pull-right"><i class="fa fa-pencil"> Edit Pathway</i></button> -->
 							</div>
 						</div>						
 
-						<div class="row">
+						<div class="row show-edit-hover" onclick="openModal('#edit-clinical-pathway')">
 							<div class="columns medium-12">
 								<div class="row collapse label-block">
 									<div class="large-4 columns end">
@@ -328,17 +329,17 @@
 								</div>
 							</div>
 						</div>
-						<div class="row mb-1">
+						<div class="row mb-2">
 							<div class="columns medium-12">
 								<div class="row collapse label-block">
 									<div class="large-6 columns end">
-										<div class="label-group marker secondary">
+										<div class="label-group marker secondary marker-pos-top-right">
 											<p>Care Coordinator</p>
 											<h6>Julie Kloster</h6>
 										</div>
 									</div>
 									<div class="large-6 columns end">
-										<div class="label-group  marker warning">
+										<div class="label-group  marker warning marker-pos-top-right">
 											<p>Case Manager</p>
 											<h6>Chachi Gonzales</h6>
 										</div>
@@ -355,7 +356,7 @@
 		                            		<div class="h4"><i class="fa fa-check-circle clr-success"></i></div>
 		                            	</div>
 		                            </div>
-		                            <div class="columns label-group marker secondary">
+		                            <div class="columns label-group marker secondary marker-pos-top-right">
 		                            	<div class="row">
 		                            		<div class="columns ">
 			                            		<p>Jul 1, 2018</p>
@@ -373,7 +374,7 @@
 		                            		<div class="h4"><i class="fa fa-check-circle clr-success"></i></div>
 		                            	</div>
 		                            </div>
-		                            <div class="columns label-group marker secondary">
+		                            <div class="columns label-group marker secondary marker-pos-top-right">
 		                                <div class="row">
 		                            		<div class="columns ">
 			                                	<p>Jul 8, 2018</p>
@@ -391,7 +392,7 @@
 		                            		<div class="h4"><i class="fa fa-check-circle clr-success"></i></div>
 		                            	</div>
 		                            </div>
-		                            <div class="columns label-group marker secondary">
+		                            <div class="columns label-group marker secondary marker-pos-top-right">
 		                                <div class="row">
 		                            		<div class="columns ">
 			                                	<p>Jul 10, 2018</p>
@@ -409,7 +410,7 @@
 		                            		<div class="h4"><i class="fa fa-check-circle clr-success"></i></div>
 		                            	</div>
 		                            </div>
-		                            <div class="columns label-group marker secondary">
+		                            <div class="columns label-group marker secondary marker-pos-top-right">
 		                                <div class="row">
 		                            		<div class="columns ">
 			                                	<p>Jul 13, 2018</p>
@@ -427,7 +428,7 @@
 		                            		<div class="h4"><i class="fa fa-check-circle clr-success"></i></div>
 		                            	</div>
 		                            </div>
-		                            <div class="columns label-group marker secondary">
+		                            <div class="columns label-group marker secondary marker-pos-top-right">
 		                                <div class="row">
 		                            		<div class="columns ">
 			                                	<p>Jul 15, 2018</p>
@@ -445,7 +446,7 @@
 		                            		<div class="h4"><i class="fa fa-check-circle clr-success"></i></div>
 		                            	</div>
 		                            </div>
-		                            <div class="columns label-group marker secondary">
+		                            <div class="columns label-group marker secondary marker-pos-top-right">
 		                                <div class="row">
 		                            		<div class="columns ">
 			                                	<p>Jul 16, 2018</p>
@@ -463,11 +464,15 @@
 		                            		<div class="h4"><i class="fa fa-check-circle clr-success"></i></div>
 		                            	</div>
 		                            </div>
-		                            <div class="columns label-group selected marker secondary">
+		                            <div class="columns label-group selected marker secondary marker-pos-top-right">
 		                                <div class="row">
 		                            		<div class="columns ">
 			                                	<p>Jul 18, 2018</p>
 												<h6>Pre-op Consultation</h6>
+											</div>
+											<div class="columns medium-2">
+												<p class="clr-alert">Jul 18, 2018</p>
+												<p class="h6 clr-alert"> <strong>10:30 AM</strong></p>
 											</div>
 											<!-- <div class="columns center-content">
 												<button class="button tiny pull-right" data-open="exampleModal1">Details</button>
@@ -481,11 +486,15 @@
 		                            		<div class="h4"><i class="fa fa-check-circle clr-success"></i></div>
 		                            	</div>
 		                            </div>
-		                            <div class="columns label-group selected marker warning">
+		                            <div class="columns label-group selected marker warning marker-pos-top-right">
 		                                <div class="row">
 		                            		<div class="columns">
 			                                	<p>Jul 25, 2018</p>
 												<h6>Surgery</h6>
+											</div>
+											<div class="columns medium-2">
+												<p class="clr-alert">Jul 25, 2018</p>
+												<p class="h6 clr-alert"> <strong>9:00 AM</strong></p>
 											</div>
 											<!-- <div class="columns center-content">
 												<button class="button tiny pull-right" data-open="exampleModal1">Details</button>
@@ -499,7 +508,7 @@
 		                            		<div class="h4"><i class="fa fa-check-circle clr-success"></i></div>
 		                            	</div>
 		                            </div>
-		                            <div class="columns label-group marker warning">
+		                            <div class="columns label-group  marker warning marker-pos-top-right">
 		                                <div class="row">
 		                            		<div class="columns ">
 			                                	<p>Jul 27, 2018</p>
@@ -526,11 +535,15 @@
 		                            		<div class="h4"><i class="fa fa-circle clr-black20"></i></div>
 		                            	</div>
 		                            </div>
-		                            <div class="columns label-group selected marker warning">
+		                            <div class="columns label-group selected marker warning marker-pos-top-right">
 		                                <div class="row">
 		                            		<div class="columns ">
 			                                	<p>Jul 30, 2018</p>
 												<h6>Post-Op visit scheduled</h6>
+											</div>
+											<div class="columns medium-2">
+												<p class="clr-alert">Jul 30, 2018</p>
+												<p class="h6 clr-alert"> <strong>9:45 AM</strong></p>
 											</div>
 											<!-- <div class="columns center-content">
 												<button class="button tiny hollow pull-right" data-open="exampleModal1">Details</button>
@@ -544,7 +557,7 @@
 		                            		<div class="h4"><i class="fa fa-circle clr-black20"></i></div>
 		                            	</div>
 		                            </div>
-		                            <div class="columns label-group marker warning">
+		                            <div class="columns label-group  marker warning marker-pos-top-right">
 		                                <div class="row">
 		                            		<div class="columns ">
 			                                	<p>Aug 2, 2018</p>
@@ -562,7 +575,7 @@
 		                            		<div class="h4"><i class="fa fa-circle clr-black20"></i></div>
 		                            	</div>
 		                            </div>
-		                            <div class="columns label-group marker warning">
+		                            <div class="columns label-group  marker warning marker-pos-top-right">
 		                                <div class="row">
 		                            		<div class="columns ">
 			                                	<p>Jul 16, 2018</p>
@@ -580,7 +593,7 @@
 		                            		<div class="h4"><i class="fa fa-circle clr-black20"></i></div>
 		                            	</div>
 		                            </div>
-		                            <div class="columns label-group marker secondary">
+		                            <div class="columns label-group marker secondary marker-pos-top-right">
 		                                <div class="row">
 		                            		<div class="columns ">
 			                                	<p>Jul 17, 2018</p>
@@ -607,7 +620,7 @@
 		                            		<div class="h4"><i class="fa fa-circle clr-black20"></i></div>
 		                            	</div>
 		                            </div>
-		                            <div class="columns label-group marker warning">
+		                            <div class="columns label-group  marker warning marker-pos-top-right">
 		                                <div class="row">
 		                            		<div class="columns ">
 			                                	<p>Sep 1, 2018</p>
@@ -625,7 +638,7 @@
 		                            		<div class="h4"><i class="fa fa-circle clr-black20"></i></div>
 		                            	</div>
 		                            </div>
-		                            <div class="columns label-group marker warning">
+		                            <div class="columns label-group  marker warning marker-pos-top-right">
 		                                <div class="row">
 		                            		<div class="columns ">
 			                                	<p>Sep 8, 2018</p>
@@ -643,7 +656,7 @@
 		                            		<div class="h4"><i class="fa fa-circle clr-black20"></i></div>
 		                            	</div>
 		                            </div>
-		                            <div class="columns label-group marker warning">
+		                            <div class="columns label-group  marker warning marker-pos-top-right">
 		                                <div class="row">
 		                            		<div class="columns ">
 			                                	<p>Sep 15, 2018</p>
@@ -661,7 +674,7 @@
 		                            		<div class="h4"><i class="fa fa-circle clr-black20"></i></div>
 		                            	</div>
 		                            </div>
-		                            <div class="columns label-group marker secondary">
+		                            <div class="columns label-group marker secondary marker-pos-top-right">
 		                                <div class="row">
 		                            		<div class="columns ">
 			                                	<p>Sep 16, 2018</p>
@@ -688,7 +701,7 @@
 		                            		<div class="h4"><i class="fa fa-circle clr-black20"></i></div>
 		                            	</div>
 		                            </div>
-		                            <div class="columns label-group marker warning">
+		                            <div class="columns label-group  marker warning marker-pos-top-right">
 		                                <div class="row">
 		                            		<div class="columns ">
 			                                	<p>Sep 23, 2018</p>
@@ -706,7 +719,7 @@
 		                            		<div class="h4"><i class="fa fa-circle clr-black20"></i></div>
 		                            	</div>
 		                            </div>
-		                            <div class="columns label-group marker warning">
+		                            <div class="columns label-group  marker warning marker-pos-top-right">
 		                                <div class="row">
 		                            		<div class="columns ">
 			                                	<p>Dec 20, 2018</p>
@@ -724,7 +737,7 @@
 		                            		<div class="h4"><i class="fa fa-circle clr-black20"></i></div>
 		                            	</div>
 		                            </div>
-		                            <div class="columns label-group marker warning">
+		                            <div class="columns label-group  marker warning marker-pos-top-right">
 		                                <div class="row">
 		                            		<div class="columns ">
 			                                	<p>July 25, 2018</p>
@@ -755,41 +768,98 @@
 		</div>
 	</div>
 
-	<div class="reveal" id="exampleModal1" data-reveal>
-		<div class="reveal-heading">Pre-op Patient reported functional capacity survey</div>
+	<div class="reveal large" id="edit-clinical-pathway" data-reveal>
+		<div class="reveal-heading">
+			<p class="h5 mb-0">Total Knee Replacement</p>
+			<button class="close-button" data-close aria-label="Close modal" type="button">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		</div>
 		<div class="reveal-body">
-			<div>
-				<div class="mb-2">
-					<span class="subheader">Question 1/13</span>
-					<p class="h5">Did you sleep well last night?</p>
-					<span class="subheader">Answer</span>
-					<p class="h5">No</p>
-				</div>
-				<hr>
-
-				<div class="mb-2">
-					<span class="subheader">Question 2/13</span>
-					<p class="h5">Did you drink your medecine before going to sleep?</p>
-					<span class="subheader">Answer</span>
-					<p class="h5">Yes</p>
-				</div>
-				<hr>
-
-				<div class="mb-2">
-					<span class="subheader">Question 2/13</span>
-					<p class="h5">Did you drink your medecine before going to sleep?</p>
-					<span class="subheader">Answer</span>
-					<p class="h5">Yes</p>
-				</div>
-
-			</div>
 			
+			<div class="row mb-2">
+				<div class="columns">
+					<div>
+						<div>
+		              <button class="button success hollow clear expanded mb-0"><i class="fa fa-plus"></i> Add Before</button>
+		            </div>
+		            <!-- Content -->                  
+		            <div class="row ">
+		            	<div class="columns border">
+		            		<div class="pad1 pt-0-5 pb-0-5 mb-0  editor-content">
+				              <div class="mb-1">
+				                <div class="mb-0 subheader"><strong><small>Label or Something</small></strong></div>
+				                <strong><input type="text" value="Pre-op Questionnaire" class="editable borderless mb-0" placeholder="Write your question here"></strong>
+				              </div>
+				              <div>
+				              	<div class="mb-0-5 subheader"><strong><small>Actions/Trigger after employee feedback</small></strong></div>
+				              	<ul>
+				              		<li>Notify Advocate</li>
+				              		<li>Notify Admin</li>
+				              		<li>Check pathway</li>
+				              		<li>Check pathway</li>
+				              	</ul>
+				              </div>
+				            </div>
+		            	</div>
+		            	<div class="columns shrink">
+		            		<div class="">
+		            			<button class="button success hollow clear mb-0 pad05"><i class="fa fa-gear"></i></button>
+		            		</div>
+		            		<div class="">
+		            			<button class="button alert hollow clear mb-0 pad05"><i class="fa fa-trash"></i></button>
+		            		</div>
+		            	</div>
+		            </div>
+
+		            <!-- Add After -->
+		            <div>
+		              <button class="button success hollow clear expanded mb-0"><i class="fa fa-plus"></i> Add After</button>
+		            </div>	
+
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="columns">
+					<div>
+						<div>
+		              <button class="button success hollow clear expanded mb-0"><i class="fa fa-plus"></i> Add Before</button>
+		            </div>
+		            <!-- Content -->                  
+		            <div class="row ">
+		            	<div class="columns border">
+		            		<div class="pad1 pt-0-5 pb-0-5 mb-0  editor-content">
+				              <div>
+				                <div class="mb-0 subheader"><strong><small>Label or Something</small></strong></div>
+				                <strong><input type="text" value="Pre-op Patient reported functional capacity survey" class="editable borderless mb-0" placeholder="Write your question here"></strong>
+				              </div>
+				            </div>
+		            	</div>
+		            	<div class="columns shrink">
+		            		<div class="">
+		            			<button class="button success hollow clear mb-0 pad05"><i class="fa fa-gear"></i></button>
+		            		</div>
+		            		<div class="">
+		            			<button class="button alert hollow clear mb-0 pad05"><i class="fa fa-trash"></i></button>
+		            		</div>
+		            	</div>
+		            </div>
+
+		            <!-- Add After -->
+		            <div>
+		              <button class="button success hollow clear expanded mb-0"><i class="fa fa-plus"></i> Add After</button>
+		            </div>	
+
+					</div>
+				</div>
+			</div>
 
 		</div>
-		<div class="reveal-footer">
+		<!-- <div class="reveal-footer">
 			14
-		</div>
-		
+		</div> -->
 	</div>
 
 	<script src="bower_components/jquery/dist/jquery.js"></script>
