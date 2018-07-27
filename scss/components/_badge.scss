@@ -12,6 +12,9 @@
 	    padding: 0;
 	    vertical-align: middle;
 	}
+	&.large {		
+		font-size: 1.5rem;
+	}
 	&.rounded {
 		padding-left: 0.5rem;
 		padding-right: 0.5rem;

@@ -210,4 +210,8 @@ session.on('streamCreated', function(event) {
 });
 
 
+// Open a modal ------------------------------------------------------------
 
+function openModal(elem){
+  $(elem).foundation('open');
+}
