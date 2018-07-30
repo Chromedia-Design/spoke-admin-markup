@@ -115,6 +115,22 @@ $("#chat-container").children('.chat-header-container:first').siblings(".chat-he
 $("#chat-container").children('.chat-header-container:first').siblings(".chat-body-container, .chat-input-container").removeClass('hide')
 })
 
+// Message during video call
+$("#chat-video-message").on("click", function(){
+  
+  console.log( $("#chat-container").children('.chat-video-container').css('height') )
+
+  if ( $("#chat-container").children('.chat-video-container').css('height') == "90%" ) {
+    $("#chat-container").children('.chat-video-container').animate({'height': '100%'}, 400);
+    $("#chat-container").find('#videos').animate({'height': '600px'},400);    
+  }else {
+    $("#chat-container").children('.chat-video-container').animate({'height': '90%'}, 400);
+    $("#chat-container").find('#videos').animate({'height': '540px'},400);
+  }
+  $("#chat-container").find('.chat-input-container').slideToggle()
+  
+})
+
 // Opening a message by clicking a Notification
 function openNotification() {
 $("#chat-notification").slideUp()
