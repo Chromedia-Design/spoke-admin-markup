@@ -937,8 +937,6 @@ $main-color: #1ebd44;
 	}
 }
 
-
-
 #chat-container, #chat-notification {
 	z-index: 10;
 	position: fixed;
@@ -1069,6 +1067,7 @@ $main-color: #1ebd44;
 					text-align: center;
 					width: 1.5rem;
 					height: 1.5rem;
+					line-height: 1.2em;
 					border-radius: 50%;
 					background-color: $alert-color;
 					color: #fff;
@@ -1077,7 +1076,6 @@ $main-color: #1ebd44;
 					position: absolute;
 					right: -.3rem;
 					bottom: -5px;
-					
 				}
 			}
 			// States End

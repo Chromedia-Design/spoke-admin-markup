@@ -85,7 +85,10 @@
     text-align: center;
     background-color: transparent;
     img {
+    	margin: 0;
+    	padding: 0;
     	width: 100%;
+    	object-fit: cover;
     }
 	&.circle {
 		border-radius: 50%;
@@ -95,6 +98,9 @@
 	}
 	&.small {
 		width: rem-calc(102);
+	}
+	&.tiny {
+		width: rem-calc(39);
 	}
 	&.full {
 		width: 100%;

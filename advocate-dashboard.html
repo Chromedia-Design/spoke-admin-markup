@@ -53,14 +53,21 @@
 			<div class="content">
 
 				<div class="top-bar">
+					<div class="top-bar-left">
+						<div class="input-group rounded">
+							<input class="input-group-field" type="search" placeholder="Search employees">
+							<div class="input-group-button">
+								<input type="submit" class="button hollow plain info" value="Submit">
+							</div>
+						</div>
+				  	</div>
 				  	<div class="top-bar-right">
 				    	<ul class="dropdown menu" data-dropdown-menu>
-				    		<li class="drop-text">
-				        		<a href="#"><i class="fa fa-plus-square-o fa-lg"></i></a>
-				        		<ul class="menu vertical">
-				          			<li><a href="#"><i class="fa fa-calendar-plus-o"></i>&nbsp; Add Task</a></li>
-				          			<li><a href="#"><i class="fa fa-calendar-plus-o"></i>&nbsp; Add Calendar Event</a></li>
-				        		</ul>
+				    		<li class="warning-color">
+				        		<a class="vertical-block" href="#"><i class="fa fa-list-ol fa-lg"></i>&nbsp; Add Task</a>
+				      		</li>
+				    		<li class="success-color">
+				        		<a class="vertical-block" href="#"><i class="fa fa-calendar-plus-o fa-lg"></i></a>
 				      		</li>
 				    		<li class="drop-text">
                                 <a data-toggle="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">24</span></a>
@@ -111,7 +118,11 @@
                                 </ul>
                             </li>
 				      		<li>
-				        		<a href="#">Spoke Advocate &nbsp;</a>
+				        		<a class="vertical-block" href="#">
+				        			<div class="img-wrapper tiny circle">
+				        				<img src="img/specialist-1.png" alt="John Doe">
+				        			</div>
+				        		</a>
 				        		<ul class="menu vertical">
 				          			<li><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Sign Out</a></li>
 				        		</ul>

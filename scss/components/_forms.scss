@@ -336,7 +336,8 @@ textarea, .mce-tinymce {
 		}
 	}
 	&.rounded {
-		.input-group-label {
+		.input-group-label,
+		.input-group-field {
 			&:first-child {
 				padding-left: 1.5rem;
 				border-radius: 32px 0 0 32px;
@@ -365,6 +366,10 @@ textarea, .mce-tinymce {
 .input-group-field {
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
+	border-right: none;
+	&:focus {
+		border-right:none;
+	}
 }
 
 .is-dropdown-submenu {
