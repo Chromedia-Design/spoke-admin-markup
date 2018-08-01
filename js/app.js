@@ -179,6 +179,25 @@ $(".fb-item").on('click', '.editable', function(event) {
 // Form builder ------------------------------------------------------------
 
 
+// Open a modal ------------------------------------------------------------
+function openModal(elem){
+  $(elem).foundation('open');
+}
+
+// $(".show-edit-hover").on('click', function(){
+//   openModal("#edit-clinical-pathway")
+// })
+
+
+// Clinical Pathway ------------------------------------------------------------
+
+// Open Details
+$(".clinical-pathway-details").prev(".row").on("click",function(){  
+  $(this).siblings('.clinical-pathway-details').slideToggle()
+})
+
+
+
 // replace these values with those generated in your TokBox Account
 var apiKey = "45907482";
 var sessionId = "2_MX40NTkwNzQ4Mn5-MTQ5OTE1NzY3NTE1NX5Ob3BVZERRSmkwUHpwWFB1dDdlRW0vRG5-fg";
@@ -226,8 +245,6 @@ session.on('streamCreated', function(event) {
 });
 
 
-// Open a modal ------------------------------------------------------------
 
-function openModal(elem){
-  $(elem).foundation('open');
-}
+
+

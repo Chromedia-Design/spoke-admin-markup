@@ -2,9 +2,23 @@
 	background-color: $white;
 	padding: 1rem 0;
 	border-bottom: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	input {
+		margin: 0;
+		max-width: inherit;
+	}
 	.top-bar-right {
 		> .menu {
 			background-color: transparent;
+		}
+	}
+	.top-bar-left {
+		.input-group {
+			margin: 0;
+			padding: 0 1rem;
+			width: 66%;
 		}
 	}
 }

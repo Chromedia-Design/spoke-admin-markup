@@ -370,13 +370,6 @@
 .align-middle {
 	display: flex;
 	align-items: center;
-	&.flex {
-		align-items: stretch;
-		.label-group.middle {
-			display: flex;
-			align-items: center;
-		}
-	}
 }
 
 .align-bottom {

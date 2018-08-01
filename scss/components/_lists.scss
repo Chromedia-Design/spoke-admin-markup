@@ -644,11 +644,20 @@
 		> li {
 			margin: 0;
 			border: none;
+			font-size: rem-calc(14);
 			.list-wrap {
 				padding: 0 rem-calc(10);
 			}
 			&:hover {
 				background: $white;
+			}
+			.fancy-checkbox {
+				input {
+					margin: 0 0 0 5px;
+					&:after {
+						margin-left: -5px;
+					}
+				}
 			}
 			&.warning {
 				.fancy-checkbox {

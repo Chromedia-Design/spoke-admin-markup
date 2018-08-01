@@ -53,33 +53,76 @@
 			<div class="content">
 
 				<div class="top-bar">
-				  	<div class="top-bar-left">
-						<!-- <ul class="menu">
-				      		<li><input type="search" placeholder="Search"></li>
-				      		<li><button type="button" class="button">Search</button></li>
-			    		</ul> -->
+					<div class="top-bar-left">
+						<div class="input-group rounded">
+							<input class="input-group-field" type="search" placeholder="Search employees">
+							<div class="input-group-button">
+								<input type="submit" class="button hollow plain info" value="Submit">
+							</div>
+						</div>
 				  	</div>
 				  	<div class="top-bar-right">
 				    	<ul class="dropdown menu" data-dropdown-menu>
-				    		<li class="drop-text">
-				    			<a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">24</span></a>
-				    			<ul class="notifications menu vertical">
-				          			<li>
-				          				<span>Admin Admin recently made changes to <a href="#">Denver Vail Orthopedics</a>.</span>
-				          			</li>
-				          			<li>
-				          				<span>Admin Admin recently made changes to <a href="#">Denver Vail Orthopedics</a>.</span>
-				          			</li>
-				          			<li>
-				          				<a href="#" class="button info hollow tiny expanded">View All</a>
-				          			</li>
-				        		</ul>
-			    			</li>
-			    			<li>
-				        		<a data-toggle="chatSupport"><i class="fa fa-phone-square fa-lg"></i><span class="success badge" id="notifCount">1</span></a>
+				    		<li class="warning-color">
+				        		<a class="vertical-block" href="#"><i class="fa fa-list-ol fa-lg"></i>&nbsp; Add Task</a>
 				      		</li>
+				    		<li class="success-color">
+				        		<a class="vertical-block" href="#"><i class="fa fa-calendar-plus-o fa-lg"></i></a>
+				      		</li>
+				    		<li class="drop-text">
+                                <a data-toggle="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">24</span></a>
+                                <ul class="notifications menu vertical">
+                                    <li>
+                                        <ol>
+                                            <li class="heading">
+                                                <h6 class="text-center mb-0">Notifications</h6>
+                                            </li>   
+		                                    <li class="active">
+		                                        <span>You have a new email from <a href="#">John Doe</a>.</span>
+		                                        <small class="subheader">12 months ago</small>
+		                                    </li>
+		                                    <li class="active">
+		                                        <span>You have a missed call from <a href="#">Alex Quesada</a>.</span>
+		                                        <small class="subheader">12 months ago</small>
+		                                    </li>
+		                                    <li>
+		                                        <span>You have a new email from <a href="#">Janet Ellis</a>.</span>
+		                                        <small class="subheader">12 months ago</small>
+		                                    </li>
+		                                    <li>
+		                                        <span>You have a new email from <a href="#">Kathleen Jordan</a>.</span>
+		                                        <small class="subheader">12 months ago</small>
+		                                    </li>
+		                                    <li>
+		                                        <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+		                                        <small class="subheader">12 months ago</small>
+		                                    </li>
+		                                    <li>
+		                                        <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+		                                        <small class="subheader">12 months ago</small>
+		                                    </li>
+		                                    <li>
+		                                        <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+		                                        <small class="subheader">12 months ago</small>
+		                                    </li>
+		                                    <li>
+		                                        <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+		                                        <small class="subheader">12 months ago</small>
+		                                    </li>
+		                                    <li>
+		                                        <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+		                                        <small class="subheader">12 months ago</small>
+		                                    </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
 				      		<li>
-				        		<a href="#">Spoke Advocate &nbsp;</a>
+				        		<a class="vertical-block" href="#">
+				        			<div class="img-wrapper tiny circle">
+				        				<img src="img/specialist-1.png" alt="John Doe">
+				        			</div>
+				        		</a>
 				        		<ul class="menu vertical">
 				          			<li><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Sign Out</a></li>
 				        		</ul>
@@ -92,270 +135,139 @@
 
 					<div class="large-8 columns">
 
-						<div class="page-lead row align-middle">
-							<div class="columns">
-								<span class="h4">Hello, Human.</span>
-							</div>
-						</div>
-
 						<div class="row">
 							<div class="auto columns">
 								
-								<div class="row collapse label-block flex">
-									<div class="columns">
+								<div class="row collapse label-block mt-1">
+									<div class="medium-3 columns">
 										<div class="label-group">
-											<p>New Episodes</p>
-											<h3><a href="#"><b>6</b></a></h3>
+											<p>Awaiting Options</p>
+											<div class="row collapse align-middle">
+												<div class="medium-8 columns">
+													<h3><a href="#"><b>2</b></a></h3>
+												</div>
+												<div class="medium-4 columns">
+													<a href="#" class="button info tiny circle hollow pull-right mb-0"><i class="fa fa-angle-down"></i></a>
+												</div>
+											</div>
 										</div>
 									</div>
-									<div class="columns">
+									<div class="medium-3 columns">
 										<div class="label-group">
 											<p>Pending Invites</p>
-											<h3><a href="#"><b>24</b> <small class="alert-color"><b>/ 5 Overdue</b></small></a></h3>
+											<div class="row collapse align-middle">
+												<div class="medium-8 columns">
+													<h3><a href="#"><b>24</b></a></h3>
+													<small class="alert-color"><b>/ 5 Overdue</b></small>
+												</div>
+												<div class="medium-4 columns">
+													<a href="#" class="button info tiny circle hollow pull-right mb-0"><i class="fa fa-angle-down"></i></a>
+												</div>
+											</div>
 										</div>
 									</div>
-									<div class="columns">
+									<div class="medium-3 columns">
 										<div class="label-group">
-											<p>Pending Facility Selec...</p>
-											<h3><a href="#"><b>12</b></a></h3>
+											<p>Pending Facility Selection</p>
+											<div class="row collapse align-middle">
+												<div class="medium-8 columns">
+													<h3><a href="#"><b>12</b></a></h3>
+												</div>
+												<div class="medium-4 columns">
+													<a href="#" class="button info tiny circle hollow pull-right mb-0"><i class="fa fa-angle-down"></i></a>
+												</div>
+											</div>
 										</div>
 									</div>
+									<div class="medium-3 columns">
+										<div class="label-group is-active">
+											<p>Schedule Consultation</p>
+											<div class="row collapse align-middle">
+												<div class="medium-8 columns">
+													<h3><a href="#"><b>2</b></a></h3>
+												</div>
+												<div class="medium-4 columns">
+													<a href="#" class="button info tiny circle hollow pull-right mb-0"><i class="fa fa-angle-down"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="row collapse label-block flex collapsible">
 									<div class="columns">
-										<div class="label-group">
-											<p>Selected A Facility</p>
-											<h3><a href="#"><b>2</b></a></h3>
+										<div class="spoke-list">
+
+											<div class="spoke-list-heading row expanded align-middle">
+												<div class="medium-4 columns">
+													<a href="#">Employee</a>
+												</div>
+												<div class="medium-3 columns">
+													<a href="#">Episode</a>
+												</div>
+												<div class="medium-3 columns">
+													<a href="#"></a>
+												</div>
+												<div class="columns">
+												</div>
+											</div>
+
+											<div class="spoke-list-item row expanded align-middle" onclick="location.href='advocate-employee-profile-v2.html'">
+												<div class="medium-4 columns">
+													<div class="row collapse align-middle">
+														<div class="columns">
+															<p class="mb-0">John Doe</p>
+														</div>
+													</div>
+												</div>
+												<div class="medium-3 columns">
+													<p><a href="advocate-employee-episode-v2.html">Total Knee Replacement</a></p>
+												</div>
+												<div class="medium-3 columns">
+													<p class="subheader text-right">4 hours ago</p>
+												</div>
+												<div class="columns">
+													<ul class="dropdown menu pull-right" data-dropdown-menu>
+				                                        <li>
+				                                            <a></a>
+				                                            <ul class="menu vertical">
+				                                                <li><a href="#"><i class="fa fa-comment-o"></i>&nbsp; Chat</a></li>
+				                                                <li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</a></li>
+				                                            </ul>
+				                                        </li>
+				                                    </ul>
+												</div>
+											</div>
+											<div class="spoke-list-item row expanded align-middle" onclick="location.href='advocate-employee-profile-v2.html'">
+												<div class="medium-4 columns">
+													<div class="row collapse align-middle">
+														<div class="columns">
+															<p class="mb-0">Hugh Hannigan</p>
+														</div>
+													</div>
+												</div>
+												<div class="medium-3 columns">
+													<p><a href="advocate-employee-episode-v2.html">Total Knee Replacement</a></p>
+												</div>
+												<div class="medium-3 columns">
+													<p class="subheader text-right">4 hours ago</p>
+												</div>
+												<div class="columns">
+													<ul class="dropdown menu pull-right" data-dropdown-menu>
+				                                        <li>
+				                                            <a></a>
+				                                            <ul class="menu vertical">
+				                                                <li><a href="#"><i class="fa fa-comment-o"></i>&nbsp; Chat</a></li>
+				                                                <li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</a></li>
+				                                            </ul>
+				                                        </li>
+				                                    </ul>
+												</div>
+											</div>
+
 										</div>
 									</div>
 								</div>
-
-								<div class="page-lead row align-middle collapse">
-									<div class="shrink columns">
-										<span class="h6">Selected A Facility</span>
-									</div>
-									<div class="columns">
-										<div class="button-group tiny mb-0 pull-right">
-											<a href="#" class="button hollow"><i class="fa fa-angle-up"></i>&nbsp; Collapse</a>
-										</div>
-									</div>
-								</div>
-
-								<div class="spoke-list">
-
-									<div class="spoke-list-heading row expanded align-middle">
-										<div class="medium-4 columns">
-											<a href="#">Employee</a>
-										</div>
-										<div class="medium-3 columns">
-											<a href="#">Episode</a>
-										</div>
-										<div class="medium-3 columns">
-											<a href="#">Advocate</a>
-										</div>
-										<div class="columns">
-										</div>
-									</div>
-
-									<div class="spoke-list-item row expanded align-middle" onclick="location.href='advocate-employee-profile-v2.html'">
-										<div class="medium-4 columns">
-											<div class="row collapse align-middle">
-												<div class="columns">
-													<p class="h6 mb-0">John Doe</p>
-													<p class="subheader"><small><span class="badge success small"> </span> Selected A Facility</small></p>
-												</div>
-											</div>
-										</div>
-										<div class="medium-3 columns">
-											<p><a href="advocate-employee-episode-v2.html">Total Knee Replacement</a></p>
-											<!-- <a href="#" class="button success hollow rounded tiny">Create Episode</a> -->
-										</div>
-										<div class="medium-3 columns">
-											<div class="media-object full-table fixed mt-0 mb-0">
-											  	<div class="media-object-section logo tiny middle">
-											    	<div class="img-wrapper circle">
-											      		<img src= "img/specialist.png">
-											    	</div>
-											  	</div>
-											  	<div class="media-object-section middle">
-											   		<p>Johnny Kennedy</p>
-											  	</div>
-											</div>
-										</div>
-										<div class="columns">
-											<ul class="dropdown menu pull-right" data-dropdown-menu>
-		                                        <li>
-		                                            <a></a>
-		                                            <ul class="menu vertical">
-		                                                <li><a href="#"><i class="fa fa-edit"></i>&nbsp; Edit</a></li>
-		                                                <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Delete</a></li>
-		                                            </ul>
-		                                        </li>
-		                                    </ul>
-										</div>
-									</div>
-									<div class="spoke-list-item row expanded align-middle" onclick="location.href='advocate-employee-profile-v2.html'">
-										<div class="medium-4 columns">
-											<div class="row collapse align-middle">
-												<div class="columns">
-													<p class="h6 mb-0">Hugh Hannigan</p>
-													<p class="subheader"><small><span class="badge success small"> </span> Selected A Facility</small></p>
-												</div>
-											</div>
-										</div>
-										<div class="medium-3 columns">
-											<p><a href="advocate-employee-episode-v2.html">Total Knee Replacement</a></p>
-										</div>
-										<div class="medium-3 columns">
-											<div class="media-object full-table fixed mt-0 mb-0">
-											  	<div class="media-object-section logo tiny middle">
-											    	<div class="img-wrapper circle">
-											      		<img src= "img/specialist.png">
-											    	</div>
-											  	</div>
-											  	<div class="media-object-section middle">
-											   		<p>Johnny Kennedy</p>
-											  	</div>
-											</div>
-										</div>
-										<div class="columns">
-											<ul class="dropdown menu pull-right" data-dropdown-menu>
-		                                        <li>
-		                                            <a></a>
-		                                            <ul class="menu vertical">
-		                                                <li><a href="#"><i class="fa fa-edit"></i>&nbsp; Edit</a></li>
-		                                                <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Delete</a></li>
-		                                            </ul>
-		                                        </li>
-		                                    </ul>
-										</div>
-									</div>
-
-									<!-- <div class="spoke-list-item row expanded align-middle" onclick="location.href='advocate-employee-profile-v2.html'">
-										<div class="medium-4 columns">
-											<div class="row collapse align-middle">
-												<div class="columns">
-													<p class="h6 mb-0">Michelle Gonzalez</p>
-													<p class="subheader"><small><span class="badge alert small"> </span> No Active Episode</small></p>
-												</div>
-											</div>
-										</div>
-										<div class="medium-3 columns">
-											<a href="#" class="button success hollow rounded tiny">Create Episode</a>
-										</div>
-										<div class="medium-3 columns">
-											<div class="media-object full-table fixed mt-0 mb-0">
-											  	<div class="media-object-section logo tiny middle">
-											    	<div class="img-wrapper circle">
-											      		<img src= "img/specialist.png">
-											    	</div>
-											  	</div>
-											  	<div class="media-object-section middle">
-											   		<p>Christine Lambert skjf sdlkfjals klsdjfl;a sdlkfjls</p>
-											  	</div>
-											</div>
-										</div>
-										<div class="columns">
-											<ul class="dropdown menu" data-dropdown-menu>
-		                                        <li>
-		                                            <a></a>
-		                                            <ul class="menu vertical">
-		                                                <li><a href="#"><i class="fa fa-edit"></i>&nbsp; Edit</a></li>
-		                                                <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Delete</a></li>
-		                                            </ul>
-		                                        </li>
-		                                    </ul>
-										</div>
-									</div>
-
-									<div class="spoke-list-item row expanded align-middle" onclick="location.href='advocate-employee-profile-v2.html'">
-										<div class="medium-4 columns">
-											<div class="row collapse align-middle">
-												<div class="columns">
-													<p class="h6">Craig Wilson</p>
-													<a href="#" class="button hollow rounded tiny mt-0-5"><i class="fa fa-envelope-o"></i>&nbsp; Send Invite</a>
-												</div>
-											</div>
-										</div>
-										<div class="medium-3 columns">
-											<p><a href="advocate-employee-episode-v2.html">Dental Surgery</a></p>
-										</div>
-										<div class="medium-3 columns">
-											<div class="media-object full-table fixed mt-0 mb-0">
-											  	<div class="media-object-section logo tiny middle">
-											    	<div class="img-wrapper circle">
-											      		<img src= "img/specialist.png">
-											    	</div>
-											  	</div>
-											  	<div class="media-object-section middle">
-											   		<p>Cheryl Mitchell</p>
-											  	</div>
-											</div>
-											<p></p>
-										</div>
-										<div class="columns">
-											<ul class="dropdown menu" data-dropdown-menu>
-		                                        <li>
-		                                            <a></a>
-		                                            <ul class="menu vertical">
-		                                                <li><a href="#"><i class="fa fa-edit"></i>&nbsp; Edit</a></li>
-		                                                <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Delete</a></li>
-		                                            </ul>
-		                                        </li>
-		                                    </ul>
-										</div>
-									</div> -->
-
-								</div>
-
-								<!-- <div class="callout mt-1 mb-0 lo-padded warning">
-									<p class="subheader">You have employees that recently selected a facility.</p>
-									<table class="mt-1">
-										<tr>
-											<td><a href="#">Brendon Martin</a>&nbsp; <a data-open="quickNote-11" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-chevron-circle-right"></i></a></td>
-
-											<div class="dropdown-pane" id="quickNote-11" data-dropdown data-close-on-click="true">
-											  	<form>
-									    			<div class="row collapse">
-											      		<div class="medium-12 columns">
-											        		<label>
-											          			<textarea placeholder="Add a note..."></textarea>
-											        		</label>
-											      		</div>
-											    	</div>
-											    	<div class="row collapse">
-											      		<div class="medium-12 columns">
-											        		<button class="button expanded mb-0"><i class="fa fa-plus"></i>&nbsp; Add Note</button>
-											      		</div>
-											    	</div>
-											  	</form>
-											</div>
-											<td width="40%"><a href="#">Glendale North Surgery Center</a></td>
-											<td class="text-right">a few seconds ago</td>
-										</tr>
-
-										<tr>
-											<td><a href="#">Kate Newman</a>&nbsp; <span class="badge success small"></span>&nbsp; <a data-open="quickNote-12" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-chevron-circle-right"></i></a></td>
-
-											<div class="dropdown-pane" id="quickNote-12" data-dropdown data-close-on-click="true">
-											  	<form>
-									    			<div class="row collapse">
-											      		<div class="medium-12 columns">
-											        		<label>
-											          			<textarea placeholder="Add a note..."></textarea>
-											        		</label>
-											      		</div>
-											    	</div>
-											    	<div class="row collapse">
-											      		<div class="medium-12 columns">
-											        		<button class="button expanded mb-0"><i class="fa fa-plus"></i>&nbsp; Add Note</button>
-											      		</div>
-											    	</div>
-											  	</form>
-											</div>
-											<td width="40%"><a href="#">Milwaukee Quality Surgery Center</a></td>
-											<td class="text-right">a few days ago</td>
-										</tr>
-									</table>
-								</div> -->
 
 							</div>
 						</div>
@@ -434,10 +346,10 @@
 						</div>
 
 						<div class="page-lead row align-middle">
-							<div class="columns">
+							<div class="shrink columns">
 								<span class="h5">Checklist</span>
 							</div>
-							<div class="columns">
+							<!-- <div class="columns">
 								<div class="button-align small pull-right mb-0">
 								  	<select>
 									    <option value="" disabled selected>Today</option>
@@ -446,7 +358,7 @@
 									    <option value="hotdog">Six Months From Now</option>
 								  	</select>
 								</div>
-							</div>
+							</div> -->
 						</div>
 						<div class="row">
 							<div class="columns">
@@ -455,7 +367,7 @@
 										<li class="alert">
 											<div class="list-wrap">
 												<div class="row collapse align-middle">
-													<div class="shrink columns">
+													<div class="columns">
 														<div class="media-object">
 															<div class="media-object-section middle">
 																<div class="fancy-checkbox">
@@ -463,16 +375,28 @@
 																</div>
 															</div>
 															<div class="media-object-section middle">
-																<small class="preamble"><b>DOCUMENTATION - Late 3 Days</b></small>
-																<p class="h6 mb-0">Send all the documentation to Brendon Martin.</p>
-																<small class="subheader">Scheduled for July 23, 2018</small>
+																<small class="preamble"><b>CHAT</b></small>
+																<p class="mb-0">Brendon Martin</p>
 															</div>
 														</div>
 													</div>
 													<div class="columns">
-														<div class="button-align tiny mb-0 pull-right">
-															<a href="#" class="button info hollow">Assign To</a>
-														</div>
+														<p class="mb-0">Surgery Follow Up</p>
+													</div>
+													<div class="columns">
+														<small class="preamble"><b>July 23, 2018</b></small>
+													</div>
+													<div class="shrink columns">
+														<ul class="dropdown menu" data-dropdown-menu>
+				                                            <li>
+				                                                <a></a>
+				                                                <ul class="menu vertical">
+				                                                    <li><a href="#"><i class="fa fa-refresh"></i>&nbsp; Assign To</a></li>
+				                                                	<li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp; Set New Date</a></li>
+				                                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Archive</a></li>
+				                                                </ul>
+				                                            </li>
+				                                        </ul>
 													</div>
 												</div>
 											</div>
@@ -480,7 +404,7 @@
 										<li class="warning">
 											<div class="list-wrap">
 												<div class="row collapse align-middle">
-													<div class="shrink columns">
+													<div class="columns">
 														<div class="media-object">
 															<div class="media-object-section middle">
 																<div class="fancy-checkbox">
@@ -488,16 +412,28 @@
 																</div>
 															</div>
 															<div class="media-object-section middle">
-																<small class="preamble"><b>CALL - Upcoming in 2 Days</b></small>
-																<p class="h6 mb-0">Call Kate Newman to follow up on the surgery.</p>
-																<small class="subheader">Scheduled for July 27, 2018</small>
+																<small class="preamble"><b>CHAT</b></small>
+																<p class="mb-0">Kate Newman</p>
 															</div>
 														</div>
 													</div>
 													<div class="columns">
-														<div class="button-align tiny mb-0 pull-right">
-															<a href="#" class="button info hollow">Assign To</a>
-														</div>
+														<p class="mb-0">Surgery Follow Up</p>
+													</div>
+													<div class="columns">
+														<small class="preamble"><b>July 27, 2018</b></small>
+													</div>
+													<div class="shrink columns">
+														<ul class="dropdown menu" data-dropdown-menu>
+				                                            <li>
+				                                                <a></a>
+				                                                <ul class="menu vertical">
+				                                                    <li><a href="#"><i class="fa fa-refresh"></i>&nbsp; Assign To</a></li>
+				                                                	<li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp; Set New Date</a></li>
+				                                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Archive</a></li>
+				                                                </ul>
+				                                            </li>
+				                                        </ul>
 													</div>
 												</div>
 											</div>
@@ -505,7 +441,7 @@
 										<li>
 											<div class="list-wrap">
 												<div class="row collapse align-middle">
-													<div class="shrink columns">
+													<div class="columns">
 														<div class="media-object">
 															<div class="media-object-section middle">
 																<div class="fancy-checkbox">
@@ -513,16 +449,28 @@
 																</div>
 															</div>
 															<div class="media-object-section middle">
-																<small class="preamble"><b>CALL</b></small>
-																<p class="h6 mb-0">Call Brendon Martin to follow up on the surgery.</p>
-																<small class="subheader">Scheduled for Today</small>
+																<small class="preamble"><b>CHAT</b></small>
+																<p class="mb-0">Brendon Martin</p>
 															</div>
 														</div>
 													</div>
 													<div class="columns">
-														<div class="button-align tiny mb-0 pull-right">
-															<a href="#" class="button info hollow">Assign To</a>
-														</div>
+														<p class="mb-0">Surgery Follow Up</p>
+													</div>
+													<div class="columns">
+														<small class="preamble"><b>July 26, 2018</b></small>
+													</div>
+													<div class="shrink columns">
+														<ul class="dropdown menu" data-dropdown-menu>
+				                                            <li>
+				                                                <a></a>
+				                                                <ul class="menu vertical">
+				                                                    <li><a href="#"><i class="fa fa-refresh"></i>&nbsp; Assign To</a></li>
+				                                                	<li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp; Set New Date</a></li>
+				                                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Archive</a></li>
+				                                                </ul>
+				                                            </li>
+				                                        </ul>
 													</div>
 												</div>
 											</div>
@@ -534,7 +482,7 @@
 
 						<div class="page-lead row align-middle">
 							<div class="shrink columns">
-								<span class="h5">Recent Events</span>
+								<span class="h5">Recent Activity</span>
 							</div>
 							<div class="columns">
 								<div class="button-align tiny mb-0 pull-right">

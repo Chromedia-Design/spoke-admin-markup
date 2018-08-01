@@ -336,7 +336,8 @@ textarea, .mce-tinymce {
 		}
 	}
 	&.rounded {
-		.input-group-label {
+		.input-group-label,
+		.input-group-field {
 			&:first-child {
 				padding-left: 1.5rem;
 				border-radius: 32px 0 0 32px;
@@ -365,6 +366,10 @@ textarea, .mce-tinymce {
 .input-group-field {
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
+	border-right: none;
+	&:focus {
+		border-right:none;
+	}
 }
 
 .is-dropdown-submenu {
@@ -572,12 +577,13 @@ label.image-upload {
 	h6 {
 		margin: 0;
 		font-family: $body-font-family;
-		line-height: 1.5em;
+		line-height: 1.2em;
 		font-weight: $global-weight-normal;
 	    width: 100%;
     	overflow: hidden;
     	white-space: nowrap;
     	text-overflow: ellipsis;
+    	vertical-align: middle;
     	&.full {
     		overflow: visible;
     		white-space: normal;
@@ -587,8 +593,26 @@ label.image-upload {
 	small {
 		font-size: rem-calc(12);
 	}
+	&.middle {
+		display: flex;
+		align-items: center;
+	}
 	&.selected {
-		background-color: #fafcff;
+		background-color: $background-white;
+	}
+	&.is-active {
+		border-bottom: none !important;
+		background-color: $background-white;
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			a {
+				color: rgba($black, $B-subtext);
+			}
+		}
 	}
 }	
 
@@ -622,6 +646,12 @@ label.image-upload {
 			.label-group {
 				border-left: none;
 			}
+		}
+	}
+	&.collapsible {
+		margin: 0;
+		.spoke-list {
+			border-top: none;
 		}
 	}
 }
