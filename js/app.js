@@ -190,9 +190,13 @@ function openModal(elem){
 
 
 // Clinical Pathway ------------------------------------------------------------
+$('.clinical-pathway-details').slideUp()
 
 // Open Details
-$(".clinical-pathway-details").prev(".row").on("click",function(){  
+$(".clinical-pathway-basic-content").on("click",function(){
+  $('.clinical-pathway-details').slideUp()
+
+  $(this).parent().siblings().children('.clinical-pathway-details').slideUp()
   $(this).siblings('.clinical-pathway-details').slideToggle()
 })
 
