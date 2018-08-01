@@ -3,13 +3,19 @@
 	padding: 1rem 0;
 	border-bottom: none;
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
-	justify-content: center;
 	input {
 		margin: 0;
 		max-width: inherit;
 	}
+	.top-bar-right,
+	.top-bar-left {
+		max-width: 100%;
+		flex: 1 1 auto;
+	}
 	.top-bar-right {
+		flex: 0 1 auto;
 		> .menu {
 			background-color: transparent;
 		}

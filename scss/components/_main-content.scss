@@ -485,7 +485,7 @@ section {
 		border-bottom: 1px solid rgba($black, $B-dividers);
 		// Override the blue caret after the dropdown link in the topbar
 		.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
-			border-color: rgba($black, $B-text) transparent transparent;
+			border-color: rgba($black, $B-subtext) transparent transparent;
 		}
 		[type='submit'] {
 			margin-top: 0;
