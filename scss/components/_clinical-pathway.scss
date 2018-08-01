@@ -1,6 +1,7 @@
 .clinical-pathway {
 	.clinical-pathway-item{
 		transition: all .25s;
+		cursor: pointer;
 		&:hover {
 			// border: 1px solid red;
 
