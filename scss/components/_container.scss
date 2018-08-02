@@ -593,10 +593,27 @@ $card-user-profile-text-color: $text-black;
       background: $white;
     }
   }
-
   &.compact {
     .spoke-list-item {
       padding: .5rem;
+    }
+  }
+  &.warning {
+    border-top: 1px solid rgba($warning-color, $B-hinttext);
+    border-left: 1px solid rgba($warning-color, $B-hinttext);
+    border-right: 1px solid rgba($warning-color, $B-hinttext);
+    .spoke-list-heading {
+      background: rgba($warning-color, $B-hinttext);
+      a {
+        color: rgba($warning-color, $B-subtext);
+      }
+    }
+    .spoke-list-item {
+      background: rgba($warning-color, $B-dividers);
+      border-bottom: 1px solid rgba($warning-color, $B-hinttext);
+      &:hover {
+        background: $white;
+      }
     }
   }
 }

@@ -122,42 +122,42 @@ p {
 }
 
 .primary-color {
-	color: $primary-color;
+	color: $primary-color !important;
 	> * {
 		color: $primary-color;
 	}
 }
 
 .secondary-color {
-	color: $secondary-color;
+	color: $secondary-color !important;
 	> * {
 		color: $secondary-color;
 	}
 }
 
 .success-color {
-	color: $success-color;
+	color: $success-color !important;
 	> * {
 		color: $success-color;
 	}
 }
 
 .warning-color {
-	color: $warning-color;
+	color: $warning-color !important;
 	> * {
 		color: $warning-color;
 	}
 }
 
 .alert-color {
-	color: $alert-color;
+	color: $alert-color !important;
 	> * {
 		color: $alert-color;
 	}
 }
 
 .white-color {
-	color: $white;
+	color: $white !important;
 	> * {
 		color: $white;
 	}
