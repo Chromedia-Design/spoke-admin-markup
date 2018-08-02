@@ -194,10 +194,8 @@ $('.clinical-pathway-details').slideUp()
 
 // Open Details
 $(".clinical-pathway-basic-content").on("click",function(){
-  $('.clinical-pathway-details').slideUp()
-
-  $(this).parent().siblings().children('.clinical-pathway-details').slideUp()
-  $(this).siblings('.clinical-pathway-details').slideToggle()
+  $(this).parents(".clinical-pathway-item").siblings(".clinical-pathway-item").find(".clinical-pathway-details").slideUp()
+  $(this).siblings('.clinical-pathway-details').slideDown()
 })
 
 
