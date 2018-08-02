@@ -115,6 +115,22 @@ $("#chat-container").children('.chat-header-container:first').siblings(".chat-he
 $("#chat-container").children('.chat-header-container:first').siblings(".chat-body-container, .chat-input-container").removeClass('hide')
 })
 
+// Message during video call
+$("#chat-video-message").on("click", function(){
+  
+  console.log( $("#chat-container").children('.chat-video-container').css('height') )
+
+  if ( $("#chat-container").children('.chat-video-container').css('height') == "90%" ) {
+    $("#chat-container").children('.chat-video-container').animate({'height': '100%'}, 400);
+    $("#chat-container").find('#videos').animate({'height': '600px'},400);    
+  }else {
+    $("#chat-container").children('.chat-video-container').animate({'height': '90%'}, 400);
+    $("#chat-container").find('#videos').animate({'height': '540px'},400);
+  }
+  $("#chat-container").find('.chat-input-container').slideToggle()
+  
+})
+
 // Opening a message by clicking a Notification
 function openNotification() {
 $("#chat-notification").slideUp()
@@ -161,6 +177,27 @@ $(".fb-item").on('click', '.editable', function(event) {
   $(this).parents(".editor-content").children().first().nextAll().slideDown()
 });
 // Form builder ------------------------------------------------------------
+
+
+// Open a modal ------------------------------------------------------------
+function openModal(elem){
+  $(elem).foundation('open');
+}
+
+// $(".show-edit-hover").on('click', function(){
+//   openModal("#edit-clinical-pathway")
+// })
+
+
+// Clinical Pathway ------------------------------------------------------------
+$('.clinical-pathway-details').slideUp()
+
+// Open Details
+$(".clinical-pathway-basic-content").on("click",function(){
+  $(this).parents(".clinical-pathway-item").siblings(".clinical-pathway-item").find(".clinical-pathway-details").slideUp()
+  $(this).siblings('.clinical-pathway-details').slideDown()
+})
+
 
 
 // replace these values with those generated in your TokBox Account
@@ -210,8 +247,6 @@ session.on('streamCreated', function(event) {
 });
 
 
-// Open a modal ------------------------------------------------------------
 
-function openModal(elem){
-  $(elem).foundation('open');
-}
+
+
