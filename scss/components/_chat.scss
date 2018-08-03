@@ -795,6 +795,9 @@ $light-gray-hex: #CBCFD3;
   height: 30vh;
   margin: 0 auto;
   background-color: $text-black;
+  &.compact {
+    height: 600px !important;
+  }
 }
 
 #subscriber {
@@ -820,6 +823,9 @@ $light-gray-hex: #CBCFD3;
     bottom: 0;
     z-index: 0;
   }
+  &.compact {
+    height: 600px !important;
+  }
 }
 
 #publisher {
@@ -840,6 +846,11 @@ $light-gray-hex: #CBCFD3;
     right: 0;
     bottom: 0;
     z-index: 0;
+  }
+  &.compact {
+    // height: 600px !important;
+    top: 10px;
+    bottom: none;
   }
 }
 
