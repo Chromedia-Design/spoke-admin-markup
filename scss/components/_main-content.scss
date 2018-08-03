@@ -1,11 +1,11 @@
 body {
 	&.frontend {
+		.bordered {
+			border-bottom: 1px solid rgba($black, $B-dividers);
+		}
 		header {
 			border-right: none;
 			background: transparent;
-			&.bordered {
-				border-bottom: 1px solid rgba($black, $B-dividers);
-			}
 		}
 		h1,
 		h2,
