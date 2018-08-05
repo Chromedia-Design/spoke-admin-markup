@@ -34,90 +34,109 @@
         </div>
     </header> -->
 
-    <header class="top-bar bordered">
-        <div class="row">
-            <div class="auto columns">
-                <div class="top-bar-title">
-                    <span data-responsive-toggle="responsive-menu" data-hide-for="large">
-                        <span class="menu-icon dark" data-toggle></span>
+    <div class="container bordered">
+      <div class="row collapse">
+        <div class="columns">
+          <header class="top-bar">
+            <div class="top-bar-title">
+                    <span data-responsive-toggle="responsive-menu" data-hide-for="large" style="display: none;">
+                        <span class="menu-icon dark" data-toggle=""></span>
                     </span>
-                    <a href="#" class="logo">
-                        <img src="../img/logo.png" alt="Spoke">
-                    </a>
+              <a href="#" class="logo">
+                <!-- <img src="../img/logo.png" alt="Spoke"> -->
+                <img src="https://s3.amazonaws.com/assets.cobrands.spokehealth.com/skygen/img/skygen-logo.png" alt="SKYGEN USA">
+              </a>
+            </div>
+            <div id="responsive-menu">
+              <div class="top-bar-right">
+                <ul id="mainMenu" class="dropdown menu powertour-hook powertour-highlight" data-dropdown-menu="he9xfl-dropdown-menu" role="menubar">
+                  <!-- <li role="menuitem">
+                    <a data-open="scheduleCalendar" class="button hollow success small" tabindex="0" aria-controls="scheduleCalendar" aria-haspopup="true"><i class="fa fa-calendar"></i>&nbsp; Schedule A Call</a>
+                  </li> -->
+                  <li role="menuitem">
+                    <a data-toggle="chatSupport">Messages</a>
+                  </li>
+                  <li class="drop-text is-dropdown-submenu-parent opens-left" role="menuitem" aria-haspopup="true" aria-expanded="false" aria-label="24">
+                    <a data-toggle="chatSupport"><i class="fa fa-envelope-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">24</span></a>
+                    <ul class="notifications menu vertical submenu is-dropdown-submenu first-sub" data-submenu="" aria-hidden="true" role="menu">
+                      <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item">
+                        <ol>
+                          <li class="heading" role="menuitem">
+                            <h6 class="text-center mb-0">Notifications</h6>
+                          </li>
+                          <li class="active" role="menuitem">
+                            <span>You have a new email from <a href="#">John Doe</a>.</span>
+                            <small class="subheader">12 months ago</small>
+                          </li>
+                          <li class="active" role="menuitem">
+                            <span>You have a missed call from <a href="#">Alex Quesada</a>.</span>
+                            <small class="subheader">12 months ago</small>
+                          </li>
+                          <li role="menuitem">
+                            <span>You have a new email from <a href="#">Janet Ellis</a>.</span>
+                            <small class="subheader">12 months ago</small>
+                          </li>
+                          <li role="menuitem">
+                            <span>You have a new email from <a href="#">Kathleen Jordan</a>.</span>
+                            <small class="subheader">12 months ago</small>
+                          </li>
+                          <li role="menuitem">
+                            <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+                            <small class="subheader">12 months ago</small>
+                          </li>
+                          <li role="menuitem">
+                            <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+                            <small class="subheader">12 months ago</small>
+                          </li>
+                          <li role="menuitem">
+                            <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+                            <small class="subheader">12 months ago</small>
+                          </li>
+                          <li role="menuitem">
+                            <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+                            <small class="subheader">12 months ago</small>
+                          </li>
+                          <li role="menuitem">
+                            <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+                            <small class="subheader">12 months ago</small>
+                          </li>
+                          <!-- <li>
+                              <a href="#" class="button info hollow tiny expanded">View All Notifications</a>
+                          </li> -->
+                        </ol>
+                      </li>
+                    </ul>
+                  </li>
+                  <li role="menuitem" class="is-dropdown-submenu-parent opens-left" aria-haspopup="true" aria-expanded="false" aria-label="John Doe &nbsp;">
+                    <a href="#">Brendon Martin &nbsp;</a>
+                    <ul class="menu vertical submenu is-dropdown-submenu first-sub" data-submenu="" aria-hidden="true" role="menu">
+                      <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="frontend-edit.html"><i class="fa fa-user"></i>&nbsp; Account Details</a></li>
+                      <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Sign Out</a></li>
+                    </ul>
+                  </li>
+                <div class="powertour-step powertour-disable-cancel" data-powertour-tour="1" data-powertour-step="6" id="pw-1-6" tabindex="-1" role="dialog" aria-hidden="true" style="width: 580px; left: 50%; margin-left: -290px; bottom: -249px;"><div id="stepSix" class="tour-wrapper">
+        <div class="media-object">
+            <div class="media-object-section logo large">
+                <div class="img-wrapper circle">
+                    <img src="../img/Smiling-Middle-Aged-Lady-Arms-Square.png">
                 </div>
-                <div id="responsive-menu">
-                    <div class="top-bar-right">
-                        <ul id="mainMenu" class="dropdown menu" data-dropdown-menu>
-                            <!-- <li>
-                                <a data-open="scheduleCalendar" class="button hollow success small"><i class="fa fa-calendar"></i>&nbsp; Schedule A Call</a>
-                            </li> -->
-                            <li>
-                                <a data-toggle="chatSupport">Messages</a>
-                            </li>
-                            <li class="drop-text">
-                                <a data-toggle="chatSupport"><i class="fa fa-envelope-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">24</span></a>
-                                <ul class="notifications menu vertical">
-                                    <li>
-                                        <ol>
-                                            <li class="heading">
-                                                <h6 class="text-center mb-0">Notifications</h6>
-                                            </li>   
-                                    <li class="active">
-                                        <span>You have a new email from <a href="#">John Doe</a>.</span>
-                                        <small class="subheader">12 months ago</small>
-                                    </li>
-                                    <li class="active">
-                                        <span>You have a missed call from <a href="#">Alex Quesada</a>.</span>
-                                        <small class="subheader">12 months ago</small>
-                                    </li>
-                                    <li>
-                                        <span>You have a new email from <a href="#">Janet Ellis</a>.</span>
-                                        <small class="subheader">12 months ago</small>
-                                    </li>
-                                    <li>
-                                        <span>You have a new email from <a href="#">Kathleen Jordan</a>.</span>
-                                        <small class="subheader">12 months ago</small>
-                                    </li>
-                                    <li>
-                                        <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
-                                        <small class="subheader">12 months ago</small>
-                                    </li>
-                                    <li>
-                                        <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
-                                        <small class="subheader">12 months ago</small>
-                                    </li>
-                                    <li>
-                                        <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
-                                        <small class="subheader">12 months ago</small>
-                                    </li>
-                                    <li>
-                                        <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
-                                        <small class="subheader">12 months ago</small>
-                                    </li>
-                                    <li>
-                                        <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
-                                        <small class="subheader">12 months ago</small>
-                                    </li>
-                                    <!-- <li>
-                                        <a href="#" class="button info hollow tiny expanded">View All Notifications</a>
-                                    </li> -->
-                                        </ol>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">John Doe &nbsp;</a>
-                                <ul class="menu vertical">
-                                    <li><a href="frontend-edit.html"><i class="fa fa-user"></i>&nbsp; Account Details</a></li>
-                                    <li><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Sign Out</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+            </div>
+            <div class="media-object-section middle">
+                <div class="talk-bubble border tri-right left-in">
+                    <div class="talktext">
+                        <p>You may chat with me by clicking on the icon in the lower right of your screen anytime. Or send secure messages by clicking on the "Messages" tab at the top of the page and I'll get right back to you.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+        <a class="button success expanded" data-powertour-action="stop">That's it, Let's get started.</a>
+    </div></div></ul>
+              </div>
+            </div>
+          </header>
+        </div>
+      </div>
+    </div>
 
 	<section class="white-bg">
 		<!-- <div id="facilitySection" class="row" data-sticky-container>
@@ -167,34 +186,37 @@
 							<div class="media-object">
 							  	<div class="media-object-section logo middle">
 							    	<div class="img-wrapper circle">
-							      		<img src= "../img/specialist.png">
+							      		<!-- <img src= "../img/specialist.png"> -->
+							      		<img src="https://s3.amazonaws.com/assets.spokehealth.com/media/doctors/5b188c3b7bab461a6e8b4567.jpeg">
 							    	</div>
 							  	</div>
 							  	<div class="media-object-section middle">
-							   		<span class="h6">Dan Stevens</span>
-							   		<p><small class="subheader">Facility Surgeon</small></p>
+							   		<span class="h6">Hai Lan</span>
+							   		<p><small class="subheader">Surgeon</small></p>
 							  	</div>
 							</div>
 							<div class="media-object">
 							  	<div class="media-object-section logo middle">
 							    	<div class="img-wrapper circle">
-							      		<img src= "../img/specialist.png">
+							      		<!-- <img src= "../img/specialist.png"> -->
+							      		<img src="https://s3.amazonaws.com/assets.spokehealth.com/media/doctors/5b188c997bab46266e8b4567.png">
 							    	</div>
 							  	</div>
 							  	<div class="media-object-section middle">
-							   		<span class="h6">Catherine Carter</span>
-							   		<p><small class="subheader">Facility Surgeon</small></p>
+							   		<span class="h6">Ram Prasad</span>
+							   		<p><small class="subheader">Assistant Surgeon</small></p>
 							  	</div>
 							</div>
 							<div class="media-object">
 							  	<div class="media-object-section logo middle">
 							    	<div class="img-wrapper circle">
-							      		<img src= "../img/specialist.png">
+							      		<!-- <img src= "../img/specialist.png"> -->
+							      		<img src="https://s3.amazonaws.com/assets.spokehealth.com/media/doctors/5b188cea7bab46626e8b4567.jpeg">
 							    	</div>
 							  	</div>
 							  	<div class="media-object-section middle">
-							   		<span class="h6">Randy Moss</span>
-							   		<p><small class="subheader">Facility Surgeon</small></p>
+							   		<span class="h6">Phyllis Durward</span>
+							   		<p><small class="subheader">Anesthesiologist</small></p>
 							  	</div>
 							</div>
 						</div>
