@@ -796,7 +796,7 @@ $light-gray-hex: #CBCFD3;
   margin: 0 auto;
   background-color: $text-black;
   &.compact {
-    height: 600px !important;
+    height: 550px !important;
   }
 }
 
@@ -823,7 +823,7 @@ $light-gray-hex: #CBCFD3;
     z-index: 0;
   }
   &.compact {
-    height: 600px !important;
+    height: 550px !important;
   }
 }
 
@@ -978,7 +978,7 @@ $main-color: #1ebd44;
   display: none;
   background-color: #f5f7f9;
   box-shadow: 0 5px 40px rgba(0, 0, 0, .16) !important;
-  height: 600px;
+  height: 550px;
   max-height: 700px;
   overflow-y: scroll;
   .chat-header-container {
@@ -1153,7 +1153,7 @@ $main-color: #1ebd44;
   .chat-body-container {
     overflow: hidden;
     overflow-y: scroll;
-    height: 456px; //356px
+    height: 406px; //356px
     .chat-body {
       padding: 1rem;
     }
@@ -1168,6 +1168,7 @@ $main-color: #1ebd44;
       background: linear-gradient(#f5f7f9, #e9edf1);
       border-bottom: 0px solid #f5f7f9;
       overflow: auto;
+      border-top: 1px solid #eaeaea;
       // overflow-x: scroll;
       white-space: nowrap;
       .file-attachment {
