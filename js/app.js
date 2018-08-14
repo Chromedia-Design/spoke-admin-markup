@@ -82,12 +82,21 @@ $("#btnAttach").on("click", function () {
 })
 
 // Send Message
+<<<<<<< HEAD
+$("#btnSend").on("click", function(){
+console.log("Send Message")
+$(this).parents(".chat-input-container").animate({"height": "63px"}, 400)
+$(this).parent(".chat-input").prev(".attachments").slideUp()
+$(this).parents(".chat-input-container").siblings(".chat-body-container").slideDown()
+$(this).parents(".chat-input-container").siblings(".chat-body-container").animate({"height": "406px"}, 400)
+=======
 $("#btnSend").on("click", function () {
     console.log("Send Message")
     $(this).parents(".chat-input-container").animate({"height": "63px"}, 400)
     $(this).parent(".chat-input").prev(".attachments").slideUp()
     $(this).parents(".chat-input-container").siblings(".chat-body-container").slideDown()
     $(this).parents(".chat-input-container").siblings(".chat-body-container").animate({"height": "456px"}, 400)
+>>>>>>> e5ea3c478440e8b7fa841b620451ddc90cc9bf0f
 })
 
 // Answer Video Call
@@ -185,9 +194,9 @@ function openModal(elem) {
     $(elem).foundation('open');
 }
 
-// $(".show-edit-hover").on('click', function(){
-//   openModal("#edit-clinical-pathway")
-// })
+$(".show-edit-hover").on('click', function(){
+  openModal("#edit-clinical-pathway")
+})
 
 
 // Clinical Pathway ------------------------------------------------------------
