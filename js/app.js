@@ -87,7 +87,7 @@ console.log("Send Message")
 $(this).parents(".chat-input-container").animate({"height": "63px"}, 400)
 $(this).parent(".chat-input").prev(".attachments").slideUp()
 $(this).parents(".chat-input-container").siblings(".chat-body-container").slideDown()
-$(this).parents(".chat-input-container").siblings(".chat-body-container").animate({"height": "456px"}, 400)
+$(this).parents(".chat-input-container").siblings(".chat-body-container").animate({"height": "406px"}, 400)
 })
 
 // Answer Video Call
@@ -184,9 +184,9 @@ function openModal(elem){
   $(elem).foundation('open');
 }
 
-// $(".show-edit-hover").on('click', function(){
-//   openModal("#edit-clinical-pathway")
-// })
+$(".show-edit-hover").on('click', function(){
+  openModal("#edit-clinical-pathway")
+})
 
 
 // Clinical Pathway ------------------------------------------------------------
