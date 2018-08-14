@@ -182,13 +182,6 @@
   }
 }
 
-ul.attchments {
-  margin-bottom: .25rem;
-  .attachment {
-
-  }
-}
-
 .timestamp {
   display: block;
   text-align: left;
@@ -359,7 +352,6 @@ $light-gray-hex: #CBCFD3;
         border-right: 1px solid $light-gray-hex;
         border-top: 1px solid $light-gray-hex;
         border-bottom: 1px solid $light-gray-hex;
-        border-radius: 0 25px 25px 0;
         z-index: 1;
       }
       // Deep threads
@@ -788,7 +780,6 @@ $light-gray-hex: #CBCFD3;
 }
 
 // TokBox Defaults
-// This is deprecated; for new UI use the class with a -new name
 #videos {
   position: relative;
   width: auto;
@@ -853,64 +844,6 @@ $light-gray-hex: #CBCFD3;
   }
 }
 
-// #videos-new {
-//   position: absolute;
-//   width: auto;
-//   // height: 30vh;
-//   height: 600px;
-//   margin: 0 auto;
-//   background-color: $text-black;
-// }
-
-// #subscriber-new {
-//   position: relative;
-//   left: 0;
-//   top: 0;
-//   bottom: 0;
-//   right: 0;
-//   margin: auto;
-//   // Aspect ration of 16:9
-//   // height: 30vh;
-//   height: 100%;
-//   // width: 53vh;
-//   width: 40px;
-//   padding-bottom: 30vh;
-//   z-index: 10;
-//   > * {
-//     width: 100%;
-//     height: 100%;
-//     position: absolute !important;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     z-index: 0;
-//   }
-// }
-
-// #publisher-new {
-//   position: absolute;
-//   // width: 10%;
-//   width: 5rem;
-//   height: 5rem;
-//   padding-bottom: 10%;
-//   // bottom: 10px;
-//   top: 10px;
-//   left: 10px;
-//   z-index: 100;
-//   border: 1px solid white;
-//   > * {
-//     width: 100%;
-//     height: 100%;
-//     position: absolute !important;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     z-index: 0;
-//   }
-// }
-
 $main-color: #1ebd44;
 
 #chat-toggle {
@@ -974,26 +907,18 @@ $main-color: #1ebd44;
 }
 
 #chat-container {
+  display: flex;
+  flex-flow: column;
   user-select: none;
-  display: none;
   background-color: #f5f7f9;
   box-shadow: 0 5px 40px rgba(0, 0, 0, .16) !important;
-  height: 550px;
+  height: 600px;
   max-height: 700px;
-  overflow-y: scroll;
-  .chat-header-container {
-    .chat-header {
-
-    }
-  }
+  overflow-y: hidden;
   .chat-video-container {
     position: relative;
     height: 100%;
     display: none;
-    .chat-video-Header {
-    }
-    #videos {
-    }
     .chat-video-control {
       clear: both;
       width: 100%;
@@ -1054,8 +979,6 @@ $main-color: #1ebd44;
         }
       }
       // Columns Begin
-      .chat-header-action {
-      }
       .chat-header-user {
         margin-top: .5rem;
         img {
@@ -1086,8 +1009,9 @@ $main-color: #1ebd44;
         background-color: transparent;
         .chat-header-action {
           img {
-            display: inherit;
-            margin-top: .5rem;
+            display: block;
+            margin: 0.5rem auto 0;
+            float: none;
           }
           button {
             display: none;
@@ -1116,21 +1040,6 @@ $main-color: #1ebd44;
       &.active {
         background-color: #fff;
         position: relative;
-        // &:after {
-        // 	text-align: center;
-        // 	content:"99";
-        // 	position: absolute;
-        // 	right: .5rem;
-        // 	top: 3rem;
-        // 	background-color: $alert-color;
-        // 	background-color: red;
-        // 	color: #fff;
-        // 	font-size: .85rem;
-        // 	padding: .25rem;
-        // 	border-radius: 50%;
-        // 	width: 1.5rem;
-        // 	height: 1.5rem;
-        // }
         .counter {
           display: block;
           text-align: center;
@@ -1160,46 +1069,35 @@ $main-color: #1ebd44;
   }
   .chat-input-container {
     background-color: #fff;
-    height: 63px; //164px
+    border-top: 1px solid #eaeaea;
+    flex: 1 1 auto;
     .attachments {
-      display: none;
+      display: block;
       max-height: 456px;
-      padding: 0px .25rem;
-      background: linear-gradient(#f5f7f9, #e9edf1);
-      border-bottom: 0px solid #f5f7f9;
-      overflow: auto;
-      border-top: 1px solid #eaeaea;
-      // overflow-x: scroll;
+      padding: 0.25rem 1rem;
+      background: transparent;
+      border-bottom: 1px solid rgba($black, $B-dividers);
+      overflow-x: auto;
       white-space: nowrap;
       .file-attachment {
         margin: .25rem 1rem;
       }
     }
-    .chat-input {
-      padding: .25rem 1rem;
-      input, textarea {
-        width: 75%;
-        margin-bottom: 0px;
-        margin-right: .5rem;
-        border: 0px;
-        box-shadow: none;
-        font-size: .95rem;
-      }
-      textarea {
-        resize: none;
-        padding: 0px;
-        height: 1.25rem;
-        background-color: transparent;
-        margin: 0px !important;
-      }
-      button {
-        padding: .5rem .5rem;
-        margin-bottom: 0px;
-      }
-      button, input, textarea {
-        display: inline-block;
-        vertical-align: text-top;
-      }
+    [type='text'],
+    textarea {
+      width: 100%;
+      margin: 0.5rem 0 0;
+      padding: 0.3125rem 1rem;
+      border: 0px;
+      box-shadow: none;
+      font-size: rem-calc(14);
+      resize: none;
+      height: 3rem;
+      background-color: transparent;
+    }
+    button {
+      margin: 0.5rem 1rem;
+      padding: 0.5rem;
     }
   }
 }

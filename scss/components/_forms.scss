@@ -285,8 +285,9 @@ textarea, div, label, select {
   }
 }
 
-textarea, .mce-tinymce {
-  margin: 0 0 1rem !important;
+textarea,
+.mce-tinymce {
+  margin: 0 0 1rem;
   line-height: 1.5em;
 }
 

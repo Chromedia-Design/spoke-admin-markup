@@ -300,7 +300,7 @@
 				background-color: $primary-light;
 				// account for links after this list wrapper
 				> .wrapper {
-					display: block;
+					display: inherit;
 					width: 100%;
 				}
 				&:only-child,
