@@ -787,7 +787,16 @@ $light-gray-hex: #CBCFD3;
   margin: 0 auto;
   background-color: $text-black;
   &.compact {
-    height: 550px !important;
+    height: 100% !important;
+    #subscriber {
+      height: 100% !important;
+      width: 100%;
+    }
+    #publisher {
+      // height: 600px !important;
+      top: 10px;
+      bottom: 0;
+    }
   }
 }
 
@@ -813,9 +822,6 @@ $light-gray-hex: #CBCFD3;
     bottom: 0;
     z-index: 0;
   }
-  &.compact {
-    height: 550px !important;
-  }
 }
 
 #publisher {
@@ -836,11 +842,6 @@ $light-gray-hex: #CBCFD3;
     right: 0;
     bottom: 0;
     z-index: 0;
-  }
-  &.compact {
-    // height: 600px !important;
-    top: 10px;
-    bottom: none;
   }
 }
 
@@ -980,7 +981,6 @@ $main-color: #1ebd44;
       }
       // Columns Begin
       .chat-header-user {
-        margin-top: .5rem;
         img {
         }
         .user-name, .user-role {
@@ -1062,7 +1062,7 @@ $main-color: #1ebd44;
   .chat-body-container {
     overflow: hidden;
     overflow-y: scroll;
-    height: 406px; //356px
+    height: auto;
     .chat-body {
       padding: 1rem;
     }
