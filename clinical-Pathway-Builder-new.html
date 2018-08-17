@@ -72,7 +72,7 @@
 
 				<div class="page-lead row align-middle mb-2">
 					<div class="auto columns">
-						<input type="text" class="editable mb-0 h5" value="After Surgery Questionaire">
+						<input type="text" class="editable mb-0 h5" value="Total Knee Replacement">
 					</div>
 					<div class="columns medium-3">
 						<div class="button-align small pull-right mb-0">
@@ -91,7 +91,7 @@
 								<input type="text" value="Pre-op Questionnaire" class="editable">
 							</div>
 							<div class="columns shrink text-center">
-								<button class="button secondary hollow clear"><i class="fa fa-gear"></i></button>
+								<button class="button secondary hollow clear" data-open="ClinicalpathwayItemSetting"><i class="fa fa-gear"></i></button>
 								<button class="button alert hollow clear"><i class="fa fa-trash"></i></button>
 							</div>
 						</div>
@@ -104,7 +104,7 @@
 								<input type="text" value="Pre-op Patient reported functional capacity survey" class="editable">
 							</div>
 							<div class="columns shrink text-center">
-								<button class="button secondary hollow clear"><i class="fa fa-gear"></i></button>
+								<button class="button secondary hollow clear" data-open="ClinicalpathwayItemSetting"><i class="fa fa-gear"></i></button>
 								<button class="button alert hollow clear"><i class="fa fa-trash"></i></button>
 							</div>
 						</div>
@@ -117,7 +117,7 @@
 								<input type="text" value="Pre-op Evaluation and clearance" class="editable">
 							</div>
 							<div class="columns shrink text-center">
-								<button class="button secondary hollow clear"><i class="fa fa-gear"></i></button>
+								<button class="button secondary hollow clear" data-open="ClinicalpathwayItemSetting"><i class="fa fa-gear"></i></button>
 								<button class="button alert hollow clear"><i class="fa fa-trash"></i></button>
 							</div>
 						</div>
@@ -130,7 +130,7 @@
 								<input type="text" value="Pre-op infection avoidance adherence" class="editable">
 							</div>
 							<div class="columns shrink text-center">
-								<button class="button secondary hollow clear"><i class="fa fa-gear"></i></button>
+								<button class="button secondary hollow clear" data-open="ClinicalpathwayItemSetting"><i class="fa fa-gear"></i></button>
 								<button class="button alert hollow clear"><i class="fa fa-trash"></i></button>
 							</div>
 						</div>
@@ -143,7 +143,7 @@
 								<input type="text" value="Pre-op antibiotics as indicated" class="editable clr-warning">
 							</div>
 							<div class="columns shrink text-center">
-								<button class="button warning hollow clear"><i class="fa fa-gear"></i></button>
+								<button class="button secondary hollow clear" data-open="ClinicalpathwayItemSetting"><i class="fa fa-gear"></i></button>
 								<button class="button alert hollow clear"><i class="fa fa-trash"></i></button>
 							</div>
 						</div>
@@ -155,7 +155,7 @@
 								<input type="text" value=" " class="editable">
 							</div>
 							<div class="columns shrink text-center">
-								<button class="button clr-black20 hollow clear"><i class="fa fa-gear"></i></button>
+								<button class="button secondary hollow clear" data-open="ClinicalpathwayItemSetting"><i class="fa fa-gear"></i></button>
 								<button class="button alert hollow clear"><i class="fa fa-trash"></i></button>
 							</div>
 						</div>
@@ -167,6 +167,61 @@
 					</div>
 				</div>
 				
+			</div>
+		</div>
+	</div>
+
+	<div class="reveal" id="ClinicalpathwayItemSetting" data-reveal>
+		<div class="reveal-heading">
+			<strong>Pre-op Questionnaire</strong>
+			<button class="close-button" data-close aria-label="Close modal" type="button">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		<div class="reveal-body">
+			<div class="row panel pad-1">
+				<div class="column medium-12">
+					<strong><small class="subheader">Conditions for pathway activation</small></strong>
+					<ul>
+						<li>Date and Time</li>
+						<li>Clinical Status</li>
+						<li>Previous Pathway Status</li>
+					</ul>
+					<button class="button success small clear hollow mb-0"><i class="fa fa-plus mr-0-5"></i>ADD MORE</button>
+				</div>
+			</div>
+			<div class="row panel pad-1">
+				<div class="column medium-12">
+					<strong><small class="subheader">Tasks after pathway activation</small></strong>
+					<ul>
+						<li>Notify Admin</li>
+						<li>Notify assigned advocate</li>
+						<li>Notify patient</li>
+						<li>Send Poll Question</li>						
+					</ul>
+					<button class="button success small clear hollow mb-0"><i class="fa fa-plus mr-0-5"></i>ADD MORE</button>
+				</div>
+			</div>
+			<div class="row panel pad-1">
+				<div class="column medium-12">
+					<strong><small class="subheader">Follow up tasks after patient feedback</small></strong>
+					<ul>
+						<li>Notify Admin</li>
+						<li>Notify assigned advocate</li>
+						<li>Mark this pathway as finished</li>
+					</ul>
+					<button class="button success small clear hollow mb-0"><i class="fa fa-plus mr-0-5"></i>ADD MORE</button>
+				</div>
+			</div>
+		</div>
+		<div class="reveal-footer">
+			<div class="row">
+				<div class="columns auto">
+					<button class="button alert hollow expanded">Cancel</button>
+				</div>
+				<div class="columns auto">
+					<button class="button success expanded">Save</button>
+				</div>
 			</div>
 		</div>
 	</div>
