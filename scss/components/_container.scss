@@ -329,7 +329,7 @@
   margin-bottom: 2rem;
   border: 1px solid rgba($black, $B-dividers);
   border-radius: $global-radius;
-  overflow: hidden;
+  //overflow: hidden;
   table {
     margin-bottom: 0;
   }
@@ -500,8 +500,8 @@ $card-user-profile-text-color: $text-black;
     margin-bottom: 0;
   }
   a {
-    color: auto;
-    border-bottom: auto;
+    color: inherit;
+    border-bottom: inherit;
   }
   .fa-lg {
     line-height: 1.2em;

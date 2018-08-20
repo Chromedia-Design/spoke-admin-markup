@@ -589,6 +589,11 @@ $light-gray-hex: #CBCFD3;
       padding: 1rem;
       background-color: $white;
       border-top: 1px solid rgba($black, $B-dividers);
+      .help-text {
+        margin: 0.5rem 0;
+        font-size: rem-calc(10);
+        color: rgba($black, $B-hinttext);
+      }
       .input-group, .button {
         margin-bottom: 0;
       }
@@ -1071,6 +1076,11 @@ $main-color: #1ebd44;
     background-color: #fff;
     border-top: 1px solid #eaeaea;
     flex: 1 1 auto;
+    .help-text {
+      margin: 0.3125rem 1rem 1rem;
+      font-size: rem-calc(10);
+      color: rgba($black, $B-hinttext);
+    }
     .attachments {
       display: block;
       max-height: 456px;
@@ -1092,7 +1102,7 @@ $main-color: #1ebd44;
       box-shadow: none;
       font-size: rem-calc(14);
       resize: none;
-      height: 3rem;
+      height: 2rem;
       background-color: transparent;
     }
     button {
