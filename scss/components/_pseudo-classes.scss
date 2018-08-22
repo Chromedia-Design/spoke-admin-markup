@@ -96,6 +96,41 @@
 	    color: #fff;
 	    z-index: 999;
 	}
+
+	&.handoff-alert {
+		&:before {
+			background-color: $alert-color !important;
+	    	border: 1px solid $alert-color !important;
+		}
+	}
+
+	&.handoff-warning {
+		&:before {
+			background-color: $warning-color !important;
+	    	border: 1px solid $warning-color !important;
+		}
+	}
+
+	&.handoff-success {
+		&:before {
+			background-color: $success-color !important;
+	    	border: 1px solid $success-color !important;
+		}
+	}
+
+	&.handoff-secondary {
+		&:before {
+			background-color: $secondary-color !important;
+	    	border: 1px solid $secondary-color !important;
+		}
+	}
+
+	&.handoff-primary {
+		&:before {
+			background-color: $primary-color !important;
+	    	border: 1px solid $primary-color !important;
+		}
+	}
 }
 
 .show-edit-hover {
