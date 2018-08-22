@@ -570,8 +570,9 @@ $card-user-profile-text-color: $text-black;
     text-transform: uppercase;
     background: $background-white;
     padding: 0.5rem 0.3125rem;
-    &.transparent {
-      background-color: transparent !important;
+    &.blend {
+      background-color: #fbfbfb !important;
+      border-bottom: 1px solid rgba(10,16,35,0.12) !important;
     }
     a {
       color: rgba($black, $B-subtext);
