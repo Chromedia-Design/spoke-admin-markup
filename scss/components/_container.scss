@@ -586,10 +586,8 @@ $card-user-profile-text-color: $text-black;
       padding-top: 1rem !important;
       padding-bottom: 1rem !important;
     }
-    p, .button {
-      margin: 0;
-    }
     p {
+      margin-bottom: 0;
       width: 100%;
       white-space: nowrap;
       overflow: hidden;
@@ -604,7 +602,7 @@ $card-user-profile-text-color: $text-black;
   }
   &.compact {
     .spoke-list-item {
-      padding: .5rem;
+      padding: 0.5rem 1rem;
     }
   }
   &.warning {
