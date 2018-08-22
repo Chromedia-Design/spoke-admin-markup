@@ -653,7 +653,8 @@
 			}
 			.fancy-checkbox {
 				input {
-					margin: 0 0 0 5px;
+					margin: 0;
+					height: rem-calc(25);
 					&:after {
 						margin-left: -5px;
 					}

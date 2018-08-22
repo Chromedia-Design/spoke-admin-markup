@@ -9,44 +9,87 @@
 </head>
 <body class="frontend">
 
-	<header class="top-bar">
-        <div class="row">
+<div class="row collapse">
+    <div class="columns">
+        <header class="top-bar">
             <div class="top-bar-title">
-                <span data-responsive-toggle="responsive-menu" data-hide-for="large">
-                    <span class="menu-icon dark" data-toggle></span>
-                </span>
+                    <span data-responsive-toggle="responsive-menu" data-hide-for="large">
+                        <span class="menu-icon dark" data-toggle></span>
+                    </span>
                 <a href="#" class="logo">
                     <img src="../img/logo.png" alt="Spoke">
                 </a>
             </div>
             <div id="responsive-menu">
                 <div class="top-bar-right">
-                    <!-- <ul class="dropdown menu" data-dropdown-menu>
-                        <li><a href="#">Need Support?</a></li>
+                    <ul id="mainMenu" class="dropdown menu" data-dropdown-menu>
+                        <li>
+                            <a data-open="scheduleCalendar" class="button hollow success small"><i class="fa fa-calendar"></i>&nbsp; Schedule A Call</a>
+                        </li>
+                        <li class="drop-text">
+                            <a data-toggle="chatSupport"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">24</span></a>
+                            <ul class="notifications menu vertical">
+                                <li>
+                                    <ol>
+                                        <li class="heading">
+                                            <h6 class="text-center mb-0">Notifications</h6>
+                                        </li>
+                                        <li class="active">
+                                            <span>You have a new email from <a href="#">John Doe</a>.</span>
+                                            <small class="subheader">12 months ago</small>
+                                        </li>
+                                        <li class="active">
+                                            <span>You have a missed call from <a href="#">Alex Quesada</a>.</span>
+                                            <small class="subheader">12 months ago</small>
+                                        </li>
+                                        <li>
+                                            <span>You have a new email from <a href="#">Janet Ellis</a>.</span>
+                                            <small class="subheader">12 months ago</small>
+                                        </li>
+                                        <li>
+                                            <span>You have a new email from <a href="#">Kathleen Jordan</a>.</span>
+                                            <small class="subheader">12 months ago</small>
+                                        </li>
+                                        <li>
+                                            <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+                                            <small class="subheader">12 months ago</small>
+                                        </li>
+                                        <li>
+                                            <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+                                            <small class="subheader">12 months ago</small>
+                                        </li>
+                                        <li>
+                                            <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+                                            <small class="subheader">12 months ago</small>
+                                        </li>
+                                        <li>
+                                            <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+                                            <small class="subheader">12 months ago</small>
+                                        </li>
+                                        <li>
+                                            <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+                                            <small class="subheader">12 months ago</small>
+                                        </li>
+                                        <!-- <li>
+                                            <a href="#" class="button info hollow tiny expanded">View All Notifications</a>
+                                        </li> -->
+                                    </ol>
+                                </li>
+                            </ul>
+                        </li>
                         <li>
                             <a href="#">John Doe &nbsp;</a>
                             <ul class="menu vertical">
-                                <li><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Account Details</a></li>
+                                <li><a href="frontend-edit.html"><i class="fa fa-user"></i>&nbsp; Account Details</a></li>
                                 <li><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Sign Out</a></li>
                             </ul>
                         </li>
-                    </ul> -->
+                    </ul>
                 </div>
             </div>
-            <div class="top-bar-right">
-                <ul class="dropdown menu" data-dropdown-menu>
-                    <li>
-                        <a href="#">John Doe &nbsp;</a>
-                        <ul class="menu vertical">
-                            <li><a href="frontend-edit.html"><i class="fa fa-user"></i>&nbsp; Account Profile</a></li>
-                            <!-- <li><a href="frontend-edit-episode.html"><i class="fa fa-user"></i>&nbsp; Episode Information</a></li> -->
-                            <li><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Sign Out</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
+        </header>
+    </div>
+</div>
 
     <section>
     	<div class="container">
@@ -55,7 +98,7 @@
 
                     <nav aria-label="You are here:" role="navigation">
                         <ul class="breadcrumbs marginless">
-                            <li><a href="frontend-intake-step4.html">Dashboard</a></li>
+                            <li><a href="frontend-index.html">Dashboard</a></li>
                             <li>Edit Profile</li>
                         </ul>
                     </nav>
