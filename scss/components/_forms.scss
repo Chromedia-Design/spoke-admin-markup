@@ -111,6 +111,7 @@ fieldset {
 
 .checkbox-wrapper {
   display: flex;
+  margin-bottom: 1rem;
   [type='checkbox'],
   [type='radio'] {
     display: inline-block;
