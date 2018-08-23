@@ -1,0 +1,152 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spoke Admin Portal</title>
+  <link rel="stylesheet" href="js/trumbowyg/ui/trumbowyg.min.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+  <div class="row expanded">
+    <div class="column medium-12 pl-0 pr-0">
+      <div class="row align-middle expanded reveal-heading">
+        <div class="shrink columns">
+          <div class="button-align small mb-0">
+            <a class="button rounded hollow white" href="admin-facility-view.html"><i class="fa fa-close"></i></a>
+          </div>
+        </div>
+        <div class="columns">
+          <span class="h6">Add New Clinical Pathway</span>
+          <p class="subheader mb-0 white">
+            <!-- <small>Start by creating/selecting a treatment and a package under it. Some conditions must be met in order
+              for the package to be active.
+            </small> -->
+          </p>
+        </div>
+        <div class="shrink columns">
+          <div class="button-align small mb-0 pull-right">
+            <a href="#" class="button success">Save</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row expanded">
+    <div class="column medium-4 bg-black10 pt-1 pb-1 min-height">
+      
+      <div class="page-lead row align-middle mb-2">
+        <div class="auto columns">
+          <label>Clinical Pathway name
+            <input type="text" name="" value="Total Knee Replacement" class="editable">
+          </label>
+          <!-- <input type="text" class="mb-0 h5" value="Total Knee Replacement"> -->
+        </div>        
+      </div>
+
+      <div class="row ">
+        <div class="medium-12 columns">
+
+          <div class="row">
+            <div class="columns">
+              <!-- <button class="button expanded success hollow"><i class="fa fa-plus mr-0-5"></i> Add Entry</button> -->
+              <div class="input-group">
+                <!-- <span class="input-group-label">$</span> -->
+                <input class="input-group-field" type="text" placeholder="Add New Entry">
+                <div class="input-group-button">
+                  <button class="button success">Add Entry</button>
+                  <!-- <input type="submit" class="button" value="Add Entry"> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row align-middle mb-0-5">
+            <div class="column shrink align-middle">
+              <button class="button mb-0 secondary hollow clear" data-open="ClinicalpathwayItemSetting"><i class="fa fa-pencil"></i></button>
+              <button class="button mb-0 alert hollow clear"><i class="fa fa-trash"></i></button>
+            </div>
+            <div class="column align-middle">
+              <a href="#">Pre-op Questionnaire</a>
+            </div>
+          </div>
+
+          <div class="row align-middle mb-0-5">
+            <div class="column shrink align-middle">
+              <button class="button mb-0 secondary hollow clear" data-open="ClinicalpathwayItemSetting"><i class="fa fa-pencil"></i></button>
+              <button class="button mb-0 alert hollow clear"><i class="fa fa-trash"></i></button>
+            </div>
+            <div class="column align-middle">
+              <a href="#">Pre-op Patient reported functional capacity survey</a>
+            </div>
+          </div>
+
+          <div class="row align-middle mb-0-5">
+            <div class="column shrink align-middle">
+              <button class="button mb-0 secondary hollow clear" data-open="ClinicalpathwayItemSetting"><i class="fa fa-pencil"></i></button>
+              <button class="button mb-0 alert hollow clear"><i class="fa fa-trash"></i></button>
+            </div>
+            <div class="column align-middle">
+              <a href="#">Pre-op Evaluation and clearance</a>
+            </div>
+          </div>
+
+          <div class="row align-middle mb-0-5">
+            <div class="column shrink align-middle">
+              <button class="button mb-0 secondary hollow clear" data-open="ClinicalpathwayItemSetting"><i class="fa fa-pencil"></i></button>
+              <button class="button mb-0 alert hollow clear"><i class="fa fa-trash"></i></button>
+            </div>
+            <div class="column align-middle">
+              <a href="#">Pre-op infection avoidance adherence</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="column medium-8">
+      <div class="row expanded">
+        <div class="column medium-12">
+          <strong><small class="subheader">Conditions for pathway activation</small></strong>
+          <ul>
+            <li>Date and Time</li>            
+            <li>Status of Previous Pathway Entry</li>
+            <li>manually Activation</li>
+          </ul>
+          <button class="button success small clear hollow mb-0"><i class="fa fa-plus mr-0-5"></i>ADD MORE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/what-input/what-input.js"></script>
+  <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+  <script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+  <script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+  <script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+  <script src="js/trumbowyg/trumbowyg.min.js"></script>
+  <script src="js/app.js"></script>
+  <script type="text/javascript">
+      $(function () {
+          var timer;
+
+          $(window).resize(function () {
+              clearTimeout(timer);
+              timer = setTimeout(function () {
+                  $('.site-nav, .content').css("height", $(window).height());
+              }, 40);
+          }).resize();
+      });
+
+      $('.wysiwyg').trumbowyg();
+  </script>
+</body>
+
+</html>
