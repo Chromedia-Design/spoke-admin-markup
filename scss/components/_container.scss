@@ -559,6 +559,9 @@ $card-user-profile-text-color: $text-black;
   border-left: 1px solid rgba($black, $B-dividers);
   border-right: 1px solid rgba($black, $B-dividers);
   background: $white;
+  &.no-outline {
+    border: 0px !important;
+  }
   .spoke-list-heading {
     color: rgba($black, $B-subtext);
     font-size: rem-calc(12);
@@ -567,6 +570,10 @@ $card-user-profile-text-color: $text-black;
     text-transform: uppercase;
     background: $background-white;
     padding: 0.5rem 0.3125rem;
+    &.blend {
+      background-color: #fbfbfb !important;
+      border-bottom: 1px solid rgba(10,16,35,0.12) !important;
+    }
     a {
       color: rgba($black, $B-subtext);
     }
@@ -576,11 +583,12 @@ $card-user-profile-text-color: $text-black;
     cursor: pointer;
     padding: 1rem 0.5rem;
     border-bottom: 1px solid rgba($black, $B-dividers);
-    p,
-    .button {
-      margin: 0;
+    &.large {
+      padding-top: 1rem !important;
+      padding-bottom: 1rem !important;
     }
     p {
+      margin-bottom: 0;
       width: 100%;
       white-space: nowrap;
       overflow: hidden;
@@ -595,7 +603,7 @@ $card-user-profile-text-color: $text-black;
   }
   &.compact {
     .spoke-list-item {
-      padding: .5rem;
+      padding: 0.5rem 1rem;
     }
   }
   &.warning {
