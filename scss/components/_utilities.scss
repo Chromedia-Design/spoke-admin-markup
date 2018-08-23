@@ -57,7 +57,6 @@
 .mb-4 { margin-bottom: 4rem !important; }
 .mb-6 { margin-bottom: 6rem !important; }
 
-
 // Paddings ----------------------------------------
 .pad0 { padding: 0rem !important }
 .pad05 { padding: .5rem !important }
@@ -87,7 +86,6 @@
 .pt-0-25 { padding-top: 0.25rem !important; }
 .pt-0-5 { padding-top: 0.5rem !important; }
 .pt-0-7 { padding-top: 0.7rem !important; }
-
 
 // Border ----------------------------------------
 .b-notop-1 { 
@@ -134,7 +132,6 @@
 	}	
 }
 
-
 // Alignment ----------------------------------------
 .center-content { text-align: center; }
 .align-vertical-top { vertical-align: text-top; }
@@ -150,8 +147,6 @@
 	margin-left: auto !important;
 	margin-right: auto !important;
 }
-
-
 
 // Color ----------------------------------------
 // Background-color
@@ -182,12 +177,15 @@
 	list-style-type: none !important;
 }
 
+<<<<<<< HEAD
 .container-scroll {
 	// overflow: hidden;
 	overflow-y: scroll;
 }
 
 
+=======
+>>>>>>> 010b1fd391dc193b8c5bd3b40ff0a30dcc65d235
 // miscellaneous ----------------------------------------
 .remove {
 	cursor: pointer;

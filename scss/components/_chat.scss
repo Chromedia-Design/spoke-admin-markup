@@ -133,7 +133,6 @@
     border-radius: 1px;
     margin: 0;
     width: 100%;
-    // box-shadow: 2px 2px 10px 5px rgba($black, $B-dividers);
     &.tri-right.border.right-in:before {
       display: none;
     }
@@ -319,7 +318,8 @@ $light-gray-hex: #CBCFD3;
 
 // Main Chat Panels for the
 // Provider and the Client
-#chatSupport, #chatClient {
+#chatSupport,
+#chatClient {
   background-color: $white;
   //Chat wrappers CSS
   .wrapper {
