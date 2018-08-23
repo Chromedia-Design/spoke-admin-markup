@@ -48,7 +48,8 @@
                 <div class="row collapse align-middle">
                   <div class="auto columns">
                     <div class="button-align tiny pull-right mb-0">
-                      <a href="#" class="button info hollow"><i class="fa fa-map-signs"></i>&nbsp; Set As Dependent</a>
+                      <a data-open="dependenciesModal" class="button info hollow"><i class="fa fa-map-signs"></i>&nbsp; Set As Dependent</a>
+                      <a data-open="constraintsModal" class="button info hollow"><i class="fa fa-gear"></i>&nbsp; Constraints</a>
                       <a href="#" class="button alert hollow"><i class="fa fa-trash"></i></a>
                     </div>
                   </div>
@@ -65,7 +66,7 @@
                 </div>
                 <div class="row collapse align-middle">
                   <div class="auto columns">
-                    <input class="mb-0" type="text" placeholder="Answer goes here">
+                    <input type="text" placeholder="Answer goes here">
                   </div>
                 </div>
               </div>
@@ -73,6 +74,14 @@
                 <div class="editable help-text">
                   <textarea rows="6">Nulla vitae elit libero, a pharetra augue.</textarea>
                 </div>
+              </div>
+            </div>
+            <div class="row expanded">
+              <div class="auto columns">
+                <input class="mb-0" type="checkbox"><label class="subheader"><small>Required</small></label>
+                <input class="mb-0" type="checkbox"><label class="subheader"><small>Length Set</small></label>
+                <input class="mb-0" type="checkbox"><label class="subheader"><small>Email Format</small></label>
+                <input class="mb-0" type="checkbox"><label class="subheader"><small>Regex Set</small></label>
               </div>
             </div>
           </div>
@@ -93,8 +102,8 @@
                 <div class="row collapse align-middle">
                   <div class="auto columns">
                     <div class="button-align tiny pull-right mb-0">
-                      <a href="#" class="button info hollow"><i class="fa fa-map-signs"></i>&nbsp; Set As Dependent</a>
-                      <a href="#" class="button info hollow"><i class="fa fa-gear"></i>&nbsp; Set Constraints</a>
+                      <a data-open="dependenciesModal" class="button info hollow"><i class="fa fa-map-signs"></i>&nbsp; Set As Dependent</a>
+                      <a data-open="constraintsModal" class="button info hollow"><i class="fa fa-gear"></i>&nbsp; Constraints</a>
                       <a href="#" class="button alert hollow"><i class="fa fa-trash"></i></a>
                     </div>
                   </div>
@@ -111,7 +120,7 @@
                 </div>
                 <div class="row collapse align-middle">
                   <div class="auto columns">
-                    <textarea class="mb-0" rows="1"></textarea>
+                    <textarea rows="1"></textarea>
                   </div>
                 </div>
               </div>
@@ -119,6 +128,14 @@
                 <div class="editable help-text">
                   <textarea rows="6">Nulla vitae elit libero, a pharetra augue.</textarea>
                 </div>
+              </div>
+            </div>
+            <div class="row expanded">
+              <div class="auto columns">
+                <input class="mb-0" type="checkbox"><label class="subheader"><small>Required</small></label>
+                <input class="mb-0" type="checkbox"><label class="subheader"><small>Length Set</small></label>
+                <input class="mb-0" type="checkbox"><label class="subheader"><small>Email Format</small></label>
+                <input class="mb-0" type="checkbox"><label class="subheader"><small>Regex Set</small></label>
               </div>
             </div>
           </div>
@@ -139,7 +156,8 @@
                 <div class="row collapse align-middle">
                   <div class="auto columns">
                     <div class="button-align tiny pull-right mb-0">
-                      <a href="#" class="button info hollow"><i class="fa fa-map-signs"></i>&nbsp; Set As Dependent</a>
+                      <a data-open="dependenciesModal" class="button info hollow"><i class="fa fa-map-signs"></i>&nbsp; Set As Dependent</a>
+                      <a data-open="constraintsModal" class="button info hollow"><i class="fa fa-gear"></i>&nbsp; Constraints</a>
                       <a href="#" class="button alert hollow"><i class="fa fa-trash"></i></a>
                     </div>
                   </div>
@@ -160,19 +178,25 @@
                 <div class="row collapse align-middle">
                   <div class="auto columns">
                     <div class="checkbox-wrapper align-middle">
-                      <input type="radio" name="programs" value="" id="programs"><label for="programs"><input type="text" name="programs" placeholder="Enter a value" value="Male"></label>
+                      <input type="radio" name="programs" value="" id="programs">
+                      <label for="programs"><input type="text" name="programs" placeholder="Enter a value" value="Male"></label>
+                      <a href="#" class="button tiny circle hollow mb-0">×</a>
                     </div>
                     <div class="checkbox-wrapper align-middle">
-                      <input type="radio" name="programs" value="" id="programs"><label for="programs"><input type="text" name="programs" placeholder="Enter a value" value="Female"></label>
+                      <input type="radio" name="programs" value="" id="programs">
+                      <label for="programs"><input type="text" name="programs" placeholder="Enter a value" value="Female"></label>
+                      <a href="#" class="button tiny circle hollow mb-0">×</a>
                     </div>
                     <div class="checkbox-wrapper align-middle">
-                      <input type="radio" name="programs" value="" id="programs"><label for="programs"><input type="text" name="programs" placeholder="Enter a value" value="Prefer Not To Say"></label>
+                      <input type="radio" name="programs" value="" id="programs">
+                      <label for="programs"><input type="text" name="programs" placeholder="Enter a value" value="Prefer Not To Say"></label>
+                      <a href="#" class="button tiny circle hollow mb-0">×</a>
                     </div>
                   </div>
                 </div>
                 <div class="row collapse align-middle">
                   <div class="auto columns">
-                    <a href="#" class="button info tiny hollow mb-0"><i class="fa fa-plus"></i>&nbsp; Add More</a>
+                    <a href="#" class="button info tiny hollow"><i class="fa fa-plus"></i>&nbsp; Add More</a>
                   </div>
                 </div>
               </div>
@@ -180,6 +204,11 @@
                 <div class="editable help-text">
                   <textarea rows="6">Nulla vitae elit libero, a pharetra augue.</textarea>
                 </div>
+              </div>
+            </div>
+            <div class="row expanded">
+              <div class="auto columns">
+                <input class="mb-0" type="checkbox" checked><label class="subheader"><small>Required</small></label>
               </div>
             </div>
           </div>
@@ -200,7 +229,8 @@
                 <div class="row collapse align-middle">
                   <div class="auto columns">
                     <div class="button-align tiny pull-right mb-0">
-                      <a href="#" class="button info hollow"><i class="fa fa-map-signs"></i>&nbsp; Set As Dependent</a>
+                      <a data-open="dependenciesModal" class="button info hollow"><i class="fa fa-map-signs"></i>&nbsp; Set As Dependent</a>
+                      <a data-open="constraintsModal" class="button info hollow"><i class="fa fa-gear"></i>&nbsp; Constraints</a>
                       <a href="#" class="button alert hollow"><i class="fa fa-trash"></i></a>
                     </div>
                   </div>
@@ -219,18 +249,21 @@
                   <div class="auto columns">
                     <div class="checkbox-wrapper align-middle">
                       <input type="checkbox" name="programs" value="" id="programs"><label for="programs"><input type="text" name="programs" placeholder="Enter a value" value="Prior history of heart disease"></label>
+                      <a href="#" class="button tiny circle hollow mb-0">×</a>
                     </div>
                     <div class="checkbox-wrapper align-middle">
                       <input type="checkbox" name="programs" value="" id="programs"><label for="programs"><input type="text" name="programs" placeholder="Enter a value" value="Hypertension"></label>
+                      <a href="#" class="button tiny circle hollow mb-0">×</a>
                     </div>
                     <div class="checkbox-wrapper align-middle">
                       <input type="checkbox" name="programs" value="" id="programs"><label for="programs"><input type="text" name="programs" placeholder="Enter a value" value="Smoking History"></label>
+                      <a href="#" class="button tiny circle hollow mb-0">×</a>
                     </div>
                   </div>
                 </div>
                 <div class="row collapse align-middle">
                   <div class="auto columns">
-                    <a href="#" class="button info tiny hollow mb-0"><i class="fa fa-plus"></i>&nbsp; Add More</a>
+                    <a href="#" class="button info tiny hollow"><i class="fa fa-plus"></i>&nbsp; Add More</a>
                   </div>
                 </div>
               </div>
@@ -238,6 +271,11 @@
                 <div class="editable help-text">
                   <textarea rows="6">Nulla vitae elit libero, a pharetra augue.</textarea>
                 </div>
+              </div>
+            </div>
+            <div class="row expanded">
+              <div class="auto columns">
+                <input class="mb-0" type="checkbox" checked><label class="subheader"><small>Required</small></label>
               </div>
             </div>
           </div>
@@ -248,7 +286,320 @@
     </div>
   </div>
 
-  <div id="formElementDrawer" style="display: block;" class="offcanvas-area reveal" data-reveal data-animation-in="slide-in-right" data-animation-out="slide-out-right" data-options="showDelay:50; hideDelay:50">
+  <div id="constraintsModal" class="reveal large" data-reveal>
+    <h6 class="reveal-heading">Constraints - Where is your pain? (location)</h6>
+    <div class="reveal-body">
+      <div class="row label-block collapse">
+        <div class="medium-3 columns">
+          <div class="label-group">
+            <input type="checkbox" class="mb-0"><label class="mb-0" for="">Make Required</label>
+          </div>
+        </div>
+        <div class="auto columns">
+          <div class="label-group">
+            <div class="row collapse expanded">
+              <div class="columns">
+                <label for="">
+                  Error Message
+                  <input type="text" placeholder="Custom error message">
+                </label>
+              </div>
+            </div>
+            <div class="row collapse expanded">
+              <div class="columns">
+                <label for="">
+                  Payload
+                  <input type="text" placeholder="Custom payload">
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row label-block collapse">
+        <div class="medium-3 columns">
+          <div class="label-group">
+            <input type="checkbox" class="mb-0"><label class="mb-0" for="">Set Length</label>
+          </div>
+        </div>
+        <div class="auto columns">
+          <div class="label-group">
+            <div class="row expanded">
+              <div class="columns">
+                <label for="">
+                  Minimum Character
+                  <input type="text" placeholder="">
+                </label>
+              </div>
+              <div class="columns">
+                <label for="">
+                  Maximum Character
+                  <input type="text" placeholder="">
+                </label>
+              </div>
+            </div>
+            <div class="row collapse expanded">
+              <div class="columns">
+                <label for="">
+                  Charset
+                  <input type="text" placeholder="Custom payload">
+                </label>
+              </div>
+            </div>
+            <div class="row collapse expanded">
+              <div class="columns">
+                <label for="">
+                  Minimum Characters Error Message
+                  <input type="text" placeholder="Custom error message">
+                </label>
+              </div>
+            </div>
+            <div class="row collapse expanded">
+              <div class="columns">
+                <label for="">
+                  Maximum Characters Error Message
+                  <input type="text" placeholder="Custom error message">
+                </label>
+              </div>
+            </div>
+            <div class="row collapse expanded">
+              <div class="columns">
+                <label for="">
+                  Exact Message
+                  <input type="text" placeholder="Custom error message">
+                </label>
+              </div>
+            </div>
+            <div class="row collapse expanded">
+              <div class="columns">
+                <label for="">
+                  Payload
+                  <input type="text" placeholder="Custom payload">
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row label-block collapse">
+        <div class="medium-3 columns">
+          <div class="label-group">
+            <input type="checkbox" class="mb-0"><label class="mb-0" for="">Require Email Format</label>
+          </div>
+        </div>
+        <div class="auto columns">
+          <div class="label-group">
+            <div class="row collapse expanded">
+              <div class="columns">
+                <label for="">
+                  Custom Error Message
+                  <input type="text" placeholder="Custom error message">
+                </label>
+              </div>
+            </div>
+            <div class="row collapse expanded">
+              <div class="columns">
+                <label for="">
+                  Payload
+                  <input type="text" placeholder="Custom payload">
+                </label>
+              </div>
+            </div>
+            <div class="row collapse expanded">
+              <div class="columns">
+                <label for="">
+                  Strict
+                  <input type="text" placeholder="Custom error message">
+                </label>
+              </div>
+            </div>
+            <div class="row collapse expanded">
+              <div class="columns">
+                <label for="">
+                  Check MX
+                  <input type="text" placeholder="Custom payload">
+                </label>
+              </div>
+            </div>
+            <div class="row collapse expanded">
+              <div class="columns">
+                <label for="">
+                  Check Host
+                  <input type="text" placeholder="Custom error message">
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row label-block collapse">
+        <div class="medium-3 columns">
+          <div class="label-group">
+            <input type="checkbox" class="mb-0"><label class="mb-0" for="">Set Reqular Expression (Advanced)</label>
+          </div>
+        </div>
+        <div class="auto columns">
+          <div class="label-group">
+            <div class="row collapse expanded">
+              <div class="columns">
+                <label for="">
+                  Pattern
+                  <input type="text" placeholder="Custom pattern">
+                </label>
+              </div>
+            </div>
+            <div class="row collapse expanded">
+              <div class="columns">
+                <label for="">
+                  HTML Pattern
+                  <input type="text" placeholder="Custom pattern">
+                </label>
+              </div>
+            </div>
+            <div class="row collapse expanded">
+              <div class="columns">
+                <label for="">
+                  Match
+                  <input type="text" placeholder="">
+                </label>
+              </div>
+            </div>
+            <div class="row collapse expanded">
+              <div class="columns">
+                <label for="">
+                  Error Message
+                  <input type="text" placeholder="Custom error message">
+                </label>
+              </div>
+            </div>
+            <div class="row collapse expanded">
+              <div class="columns">
+                <label for="">
+                  Payload
+                  <input type="text" placeholder="Custom payload">
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal-footer">
+      <div class="button-align pull-right">
+        <a class="button link">Cancel</a>
+        <a type="submit" href="#" class="button success">Save Constraints</a>
+      </div>
+    </div>
+    <button class="close-button" data-close="" aria-label="Close modal" type="button">
+      <span aria-hidden="true">×</span>
+    </button>
+  </div>
+
+  <div id="dependenciesModal" class="reveal" data-reveal>
+    <h6 class="reveal-heading">Dependencies - Where is your pain? (location)</h6>
+    <div class="reveal-body">
+      <div class="row collapse align-middle mb-1">
+        <div class="medium-3 columns">
+          <select name="" id="" class="mb-0">
+            <option value="" selected>Show</option>
+            <option value="">Hide</option>
+          </select>
+        </div>
+        <div class="medium-9 columns">
+            <span class="h6 ml-1 mr-1">This Field If:</span>
+        </div>
+      </div>
+      <div class="row label-block collapse">
+        <div class="auto columns">
+          <div class="label-group">
+            <select name="" id="" class="mb-0">
+              <option value="" selected>Where is your pain?</option>
+            </select>
+          </div>
+        </div>
+        <div class="auto columns">
+          <div class="label-group">
+            <select name="" id="" class="mb-0">
+              <option value="">Is</option>
+              <option value="">Is Not</option>
+              <option value="">Empty</option>
+              <option value="">Not Empty</option>
+              <option value="" selected>Contains</option>
+              <option value="">Does Not Contain</option>
+              <option value="">Starts With</option>
+              <option value="">Ends With</option>
+              <option value="">Greater Than</option>
+              <option value="">Less Than</option>
+            </select>
+          </div>
+        </div>
+        <div class="auto columns">
+          <div class="label-group">
+            <input class="mb-0" type="text" value="Stomach">
+          </div>
+        </div>
+        <div class="shrink columns">
+          <div class="label-group middle">
+            <div class="button-align tiny mb-0 pull-right">
+              <a href="#" class="button selected">AND</a>
+              <a href="#" class="button hollow">OR</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row label-block collapse">
+        <div class="auto columns">
+          <div class="label-group">
+            <select name="" id="" class="mb-0">
+              <option value="" selected>What is your gender?</option>
+            </select>
+          </div>
+        </div>
+        <div class="auto columns">
+          <div class="label-group">
+            <select name="" id="" class="mb-0">
+              <option value="" selected>Is</option>
+              <option value="">Is Not</option>
+              <option value="">Empty</option>
+              <option value="">Not Empty</option>
+              <option value="">Contains</option>
+              <option value="">Does Not Contain</option>
+              <option value="">Starts With</option>
+              <option value="">Ends With</option>
+              <option value="">Greater Than</option>
+              <option value="">Less Than</option>
+            </select>
+          </div>
+        </div>
+        <div class="auto columns">
+          <div class="label-group">
+            <select name="" id="" class="mb-0">
+              <option value="" selected>Male</option>
+            </select>
+          </div>
+        </div>
+        <div class="shrink columns">
+          <div class="label-group middle">
+            <div class="button-align tiny mb-0 pull-right">
+              <a href="#" class="button hollow">AND</a>
+              <a href="#" class="button hollow">OR</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal-footer">
+      <div class="button-align pull-right">
+        <a class="button link">Cancel</a>
+        <a type="submit" href="#" class="button success">Save Dependencies</a>
+      </div>
+    </div>
+    <button class="close-button" data-close="" aria-label="Close modal" type="button">
+      <span aria-hidden="true">×</span>
+    </button>
+  </div>
+
+  <div id="formElementDrawer" class="offcanvas-area reveal" data-reveal data-animation-in="slide-in-right" data-animation-out="slide-out-right" data-options="showDelay:50; hideDelay:50">
     <div class="offcanvas-area-inner">
       <div class="offcanvas-header">
         <div class="page-lead row align-middle expanded">

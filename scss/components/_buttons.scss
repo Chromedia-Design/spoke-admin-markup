@@ -250,12 +250,22 @@
 
 .close-button {
 	position: absolute;
-	top: 1.25rem;
-	right: 1.5rem;
+	width: 2rem;
+	height: 2rem;
+	top: rem-calc(-8);
+	right: rem-calc(-8);
 	color: rgba($white, $W-dividers);
 	transition: all ease-in 0.2s;
+	background: rgba($white, $W-dividers);
+	border-radius: 50%;
+	border: 1px solid rgba($white, $W-dividers);
+	font-size: 1rem;
+	vertical-align: top;
+	line-height: 1em;
+	font-weight: bold;
 	&:hover {
 		color: $text-white;
+		background: $alert-color;
 	}
 }
 
