@@ -7,6 +7,10 @@
 	top: 2rem;
 }
 
+.bg-light {
+	background: #eef0f3 !important;
+}
+
 // Display ----------------------------------------
 .inline-child * { display:inline; }
 .inline-block { display:inline-block; }
@@ -57,6 +61,7 @@
 .pad0 { padding: 0rem !important }
 .pad05 { padding: .5rem !important }
 .pad1 { padding: 1rem; }
+.pad1-5 { padding: 1.5rem; }
 .pad2 { padding: 2rem; }
 
 .pl-0 { padding-left: 0rem !important; }
@@ -71,6 +76,7 @@
 .pad-1 { padding: 1rem !important; }
 .pb-0 { padding-bottom: 0rem !important; }
 .pb-1 { padding-bottom: 1rem !important; }
+.pb-1-5 { padding-bottom: 1.5rem !important; }
 .pb-2 { padding-bottom: 2rem !important; }
 .pb-0-5 { padding-bottom: 0.5rem !important; }
 .pb-0-25 { padding-bottom: 0.25rem !important; }
@@ -94,10 +100,11 @@
 .b-top-1 { border-top: solid 0.1rem $primary-light; }
 .b-bottom-1 { border-bottom: solid 1px red !important; }
 .b-all-1 { border: solid 0.1rem $primary-light; }
+.b-all-1-darker {border: 0.05rem solid rgba($black, $B-dividers);}
+.b-bottom-1-darker {border-bottom: 0.05rem solid rgba($black, $B-dividers);}
 .b-left-1 { border-left: solid 0.1rem $primary-light; }
 .b-right-1 { border-right: solid 0.1rem $primary-light !important; }
 .b-right-2 { border-right: solid 0.11rem $primary-light !important; }
-.b-all-1 { border: solid 0.1rem $primary-light; }
 .borderless { border: 0px !important; }
 
 .border {
