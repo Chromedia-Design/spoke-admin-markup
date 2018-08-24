@@ -1264,11 +1264,13 @@ ul.vertical-list {
 }
 
 .question-marker {
+  display: block;
   padding: 2.1rem 0;
 }
 
 .question-content {
   width: 100%;
+  display: block;
   .checkbox-wrapper {
     [type='checkbox'],
     [type='radio'] {
