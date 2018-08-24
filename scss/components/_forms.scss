@@ -110,6 +110,7 @@ fieldset {
 }
 
 .checkbox-wrapper {
+<<<<<<< HEAD
 	display: flex;
 	[type='checkbox'],
 	[type='radio'] {
@@ -127,6 +128,27 @@ fieldset {
 			margin: 0;
 		}
 	}
+=======
+  display: flex;
+  margin-bottom: 1rem;
+  [type='checkbox'],
+  [type='radio'],
+  select {
+    display: inline-block;
+    line-height: 1.5em;
+    margin: 0.5em 0 0 0;
+    + label {
+      margin-bottom: 0;
+    }
+  }
+  &.align-middle {
+    align-items: center;
+    [type='checkbox'],
+    [type='radio'] {
+      margin: 0;
+    }
+  }
+>>>>>>> a6a0cb377677ad0a5808d87dcf5f8b529b3f8417
 }
 
 label {
@@ -641,6 +663,7 @@ label.image-upload {
 }
 
 .label-block {
+<<<<<<< HEAD
 	margin-top: -1px;
 	.label-group {
 		padding: 0.5rem 1rem;
@@ -679,6 +702,45 @@ label.image-upload {
 			border-bottom: 1px solid rgba($black, $B-dividers);
 		}
 	}
+=======
+  margin-top: -1px;
+  .label-group {
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba($black, $B-dividers);
+    height: 100%;
+    [type='text'],
+    [type='password'],
+    [type='date'],
+    [type='datetime'],
+    [type='datetime-local'],
+    [type='month'],
+    [type='week'],
+    [type='email'],
+    [type='number'],
+    [type='search'],
+    [type='tel'],
+    [type='time'],
+    [type='url'],
+    [type='color'],
+    textarea,
+    select {
+    }
+  }
+  .columns {
+    &:not(:first-child) {
+      .label-group {
+        border-left: none;
+      }
+    }
+  }
+  &.collapsible {
+    margin: 0;
+    .spoke-list {
+      border-top: none;
+      border-bottom: 1px solid rgba($black, $B-dividers);
+    }
+  }
+>>>>>>> a6a0cb377677ad0a5808d87dcf5f8b529b3f8417
 }
 
 .menu-options {

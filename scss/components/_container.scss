@@ -478,7 +478,7 @@
     }
   }
   &.sub-heading {
-    margin: 0 0 0.5rem;
+    margin: 0;
   }
 }
 
@@ -553,78 +553,38 @@ $card-user-profile-text-color: $text-black;
   width: auto;
 }
 
-.spoke-list {
-  font-size: 0.875rem;
-  border-top: 1px solid rgba($black, $B-dividers);
-  border-left: 1px solid rgba($black, $B-dividers);
-  border-right: 1px solid rgba($black, $B-dividers);
-  background: $white;
-  &.no-outline {
-    border: 0px !important;
+#formElementDrawer {
+  .offcanvas-area-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /*align items in main axis*/
+    align-items: stretch; /* align items in Cross Axis */
+    align-content: stretch; /* Extra space in Cross Axis */
+    overflow-y: hidden;
+    height: 100vh;
   }
-  .spoke-list-heading {
-    color: rgba($black, $B-subtext);
-    font-size: rem-calc(12);
-    font-weight: bold;
-    text-align: left;
-    text-transform: uppercase;
-    background: $background-white;
-    padding: 0.5rem 0.3125rem;
-    &.blend {
-      background-color: #fbfbfb !important;
-      border-bottom: 1px solid rgba(10,16,35,0.12) !important;
-    }
-    a {
-      color: rgba($black, $B-subtext);
+  .offcanvas-header {
+    .page-lead {
+      margin: 0;
     }
   }
-  .spoke-list-item {
-    background: $primary-light;
-    cursor: pointer;
-    padding: 1rem 0.5rem;
-    border-bottom: 1px solid rgba($black, $B-dividers);
-    &.large {
-      padding-top: 1rem !important;
-      padding-bottom: 1rem !important;
-    }
-    p {
-      margin-bottom: 0;
-      width: 100%;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      a {
-        color: $secondary-color;
-      }
-    }
-    &:hover {
-      background: $white;
-    }
-  }
-  &.compact {
-    .spoke-list-item {
-      padding: 0.5rem 1rem;
-    }
-  }
-  &.warning {
-    border-top: 1px solid rgba($warning-color, $B-hinttext);
-    border-left: 1px solid rgba($warning-color, $B-hinttext);
-    border-right: 1px solid rgba($warning-color, $B-hinttext);
-    .spoke-list-heading {
-      background: rgba($warning-color, $B-hinttext);
-      a {
-        color: rgba($warning-color, $B-subtext);
-      }
-    }
-    .spoke-list-item {
-      background: rgba($warning-color, $B-dividers);
-      border-bottom: 1px solid rgba($warning-color, $B-hinttext);
-      &:hover {
-        background: $white;
-      }
+  .offcanvas-body {
+    display: flex;
+    .inner {
+      flex: 1 1 auto;
+      padding: 1rem 0;
+      overflow-y: scroll;
+      overflow-x: hidden;
+       &::-webkit-scrollbar {
+       	display: none;
+       }
+       &::-moz-scrollbar {
+       	display: none;
+       }
     }
   }
 }
+
 
 
 
