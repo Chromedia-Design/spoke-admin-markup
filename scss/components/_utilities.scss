@@ -1,3 +1,8 @@
+.stick-to-top {
+	position: sticky;
+	top: 0px;
+}
+
 .stick-to-top1 {
 	position: sticky;
 	top: 1rem;
@@ -93,6 +98,8 @@
 .b-bottom-1 { border-bottom: solid 1px red !important; }
 .b-all-1 { border: solid 0.1rem $primary-light; }
 .b-left-1 { border-left: solid 0.1rem $primary-light; }
+.b-left-2 { border-left: solid 0.2rem $primary-color; }
+.b-left-3 { border-left: solid 0.3rem $primary-color; }
 .b-right-1 { border-right: solid 0.1rem $primary-light !important; }
 .b-right-2 { border-right: solid 0.11rem $primary-light !important; }
 .b-all-1 { border: solid 0.1rem $primary-light; }
@@ -144,6 +151,7 @@
 // Color ----------------------------------------
 // Background-color
 .bg-primary { background-color: $primary-color !important }
+.bg-primary-light { background-color: $primary-light !important}
 .bg-secondary { background-color: $secondary-color !important }
 .bg-success { background-color: $success-color !important }
 .bg-warning { background-color: $warning-color !important }
@@ -169,6 +177,11 @@
 	list-style-type: none !important;
 }
 
+.container-scroll {
+	// overflow: hidden;
+	overflow-y: scroll;
+}
+
 // miscellaneous ----------------------------------------
 .remove {
 	cursor: pointer;
@@ -178,6 +191,12 @@
 
 .full { width: 100%; }
 .min-height { height: 93vh; }
+.full-height { 
+	height: 100vh !important;
+	min-height: 100vh !important;
+	max-height: 100vh !important;
+	overflow-y: scroll !important;
+}
 
 .box-shadow	{ box-shadow: 0px 0px 10px rgba(50,50,50,.2) }
 
@@ -221,6 +240,21 @@
 	z-index: 9999;
 }
 
+// Hide buttons in row and show when hovered
+.hide-show-button-on-hover {
+	button {
+		opacity: 0;
+		transition: all .25s;
+	}
+	&:hover {
+		button {
+			opacity: 1 !important;
+			transition: all .25s;
+		}
+	}
+}
 
-
+.pointer-on-hover {
+	cursor: pointer;
+}
 

@@ -1,3 +1,4 @@
+// Advocate Backend
 .clinical-pathway {
 	.clinical-pathway-item{
 		transition: all .25s;
@@ -22,3 +23,72 @@
 		
 	}
 }
+
+
+#ui-add-new-clinical-pathway {
+	.clinical-pathway-controls {
+		padding: 1rem 0;
+		// border-right: 1px solid #e1e1e1;
+
+	}
+	.clinical-pathway-settings {
+		// background-color: red !important;
+		padding-top: 2rem;
+		min-height: 94vh;
+		max-height: 94vh;
+		overflow-y: scroll;
+	}	
+}
+
+// Add New Pathway Page
+ .clinical-pathway-new-entry-list {
+ 	max-height: 76vh;
+ 	overflow-y: scroll;
+ 	.clinical-pathway-new-entry {
+ 		// padding-top: .75rem;
+ 		// padding-bottom: .75rem;
+ 		padding-top: 1rem;
+ 		padding-bottom: 1rem;
+ 		cursor: pointer;
+ 		font-size: .875rem;
+ 		border-bottom: 1px solid darken(#fff,8%);
+ 		position: relative;
+ 		// @extend .hide-show-button-on-hover;
+ 		@extend .align-middle;
+ 		&.active {
+	 		// background-color: $primary-light;
+	 		@extend .bg-black10;
+	 		border-left: 5px solid $success-color;
+	 		color: $success-color;
+	 		font-weight: bold;
+	 		&:hover {
+	 			.new-entry-action {		 		
+	 				@extend .bg-black10;
+			 		// background-color: $primary-light !important;
+			 		// background-color: #fff !importnat;
+			 	}	
+	 		}
+	 	}
+
+	 	.new-entry-title {
+
+	 	}
+	 	.new-entry-action {
+	 		position: absolute;
+	 		right: 0px;
+	 		opacity: 0;
+	 		transition: all .25s;
+	 		height: 100%;
+	 		// @extend .bg-black10;
+	 		background-color: $primary-light !important;
+	 	}
+	 	&:hover {
+	 		.new-entry-action {		 		
+		 		opacity: 1;
+		 		transition: all .25s;
+		 		// background-color: #fff !importnat;
+		 	}	
+	 	}
+ 	}
+	 	
+ }
