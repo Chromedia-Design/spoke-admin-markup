@@ -847,7 +847,6 @@ input {
 }
 
 .fancy-checkbox {
-<<<<<<< HEAD
   display: block;
   position: relative;
   margin: 0;
@@ -894,43 +893,6 @@ input {
       }
     }
   }
-=======
-	display: block;
-	position: relative;
-	margin: 0;
-	width: 100%;
-	text-align: left;
-	cursor: pointer;
-	input {
-		margin: 0 0 0 3px;
-		width: 32px;
-		height: 32px;
-		position: relative;
-		cursor: pointer;
-		&:after {
-			margin-left: -3px;
-			border-radius: 50%;
-			width: 32px;
-			height: 32px;
-			content: '';
-			border: 2px solid $light-gray;
-			background-color: $white;
-			background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
-			background-repeat: no-repeat;
-			background-position: 2px 3px;
-			z-index: 2;
-			position: absolute;
-			cursor: pointer;
-			transition: all 0.2s ease-in;
-		}
-		&:checked {
-			&:after {
-				background-color: $success-color;
-				border-color: $success-color;
-			}
-		}
-	}
->>>>>>> c1fbb184f50443a044a96486a244322b92aaaef6
 }
 
 .dropdown-checkbox {
