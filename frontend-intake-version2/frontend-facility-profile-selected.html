@@ -1,1163 +1,1361 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Spoke</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spoke</title>
 
-	<!-- Important Owl stylesheet -->
-	<link rel="stylesheet" href="../js/owl-carousel/owl.carousel.css">
+  <!-- Important Owl stylesheet -->
+  <link rel="stylesheet" href="../js/owl-carousel/owl.carousel.css">
 
-	<!-- Default Theme -->
-	<link rel="stylesheet" href="../js/owl-carousel/owl.theme.css">
+  <!-- Default Theme -->
+  <link rel="stylesheet" href="../js/owl-carousel/owl.theme.css">
 
-	<link rel="stylesheet" href="../js/powertour/css/powertour.min.3.2.0.css" />
-    <link rel="stylesheet" href="../js/powertour/css/powertour-style-clean.min.css" />
-    <link rel="stylesheet" href="../js/powertour/css/powertour-connectors.min.css" />
-    <link rel="stylesheet" href="../js/powertour/css/animate.min.css" />
+  <link rel="stylesheet" href="../js/fullcalendar/fullcalendar.min.css">
+  <link rel="stylesheet" href="../js/fullcalendar/fullcalendar.print.min.css" media="print">
 
-	<link rel="stylesheet" href="../css/app.css">
+  <link rel="stylesheet" href="../css/app.css">
 </head>
-<body class="">
+<body class="frontend">
 
-	<!-- <header class="top-bar">
-        <div class="row">
-            <div class="top-bar-title">
-                <span data-responsive-toggle="responsive-menu" data-hide-for="large">
-                    <span class="menu-icon dark" data-toggle></span>
-                </span>
-                <a href="#" class="logo">
-                	<img src="../img/logo.png" alt="Spoke">
-            	</a>
-            </div>            
+<div class="container bordered">
+  <div class="row collapse">
+    <div class="columns">
+      <header class="top-bar">
+        <div class="top-bar-title">
+          <span data-responsive-toggle="responsive-menu" data-hide-for="large">
+              <span class="menu-icon dark" data-toggle></span>
+          </span>
+          <a href="#" class="logo">
+            <img src="../img/logo.png" alt="Spoke">
+          </a>
         </div>
-    </header> -->
-
-    <div class="container bordered">
-      <div class="row collapse">
-        <div class="columns">
-          <header class="top-bar">
-            <div class="top-bar-title">
-                    <span data-responsive-toggle="responsive-menu" data-hide-for="large" style="display: none;">
-                        <span class="menu-icon dark" data-toggle=""></span>
-                    </span>
-              <a href="#" class="logo">
-                <!-- <img src="../img/logo.png" alt="Spoke"> -->
-                <img src="https://s3.amazonaws.com/assets.cobrands.spokehealth.com/skygen/img/skygen-logo.png" alt="SKYGEN USA">
-              </a>
-            </div>
-            <div id="responsive-menu">
-              <div class="top-bar-right">
-                <ul id="mainMenu" class="dropdown menu powertour-hook powertour-highlight" data-dropdown-menu="he9xfl-dropdown-menu" role="menubar">
-                  <!-- <li role="menuitem">
-                    <a data-open="scheduleCalendar" class="button hollow success small" tabindex="0" aria-controls="scheduleCalendar" aria-haspopup="true"><i class="fa fa-calendar"></i>&nbsp; Schedule A Call</a>
-                  </li> -->
-                  <li role="menuitem">
-                    <a data-toggle="chatSupport">Messages</a>
+        <div id="responsive-menu">
+          <div class="top-bar-right">
+            <ul id="mainMenu" class="dropdown menu" data-dropdown-menu>
+              <li>
+                <a data-open="scheduleCalendar" class="button hollow success small"><i class="fa fa-calendar"></i>&nbsp;
+                  Schedule A Call</a>
+              </li>
+              <li class="drop-text">
+                <a data-toggle="chatSupport"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span
+                  class="alert badge" id="notifCount">24</span></a>
+                <ul class="notifications menu vertical">
+                  <li>
+                    <ol>
+                      <li class="heading">
+                        <h6 class="text-center mb-0">Notifications</h6>
+                      </li>
+                      <li class="active">
+                        <span>You have a new email from <a href="#">John Doe</a>.</span>
+                        <small class="subheader">12 months ago</small>
+                      </li>
+                      <li class="active">
+                        <span>You have a missed call from <a href="#">Alex Quesada</a>.</span>
+                        <small class="subheader">12 months ago</small>
+                      </li>
+                      <li>
+                        <span>You have a new email from <a href="#">Janet Ellis</a>.</span>
+                        <small class="subheader">12 months ago</small>
+                      </li>
+                      <li>
+                        <span>You have a new email from <a href="#">Kathleen Jordan</a>.</span>
+                        <small class="subheader">12 months ago</small>
+                      </li>
+                      <li>
+                        <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+                        <small class="subheader">12 months ago</small>
+                      </li>
+                      <li>
+                        <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+                        <small class="subheader">12 months ago</small>
+                      </li>
+                      <li>
+                        <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+                        <small class="subheader">12 months ago</small>
+                      </li>
+                      <li>
+                        <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+                        <small class="subheader">12 months ago</small>
+                      </li>
+                      <li>
+                        <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+                        <small class="subheader">12 months ago</small>
+                      </li>
+                      <!-- <li>
+                          <a href="#" class="button info hollow tiny expanded">View All Notifications</a>
+                      </li> -->
+                    </ol>
                   </li>
-                  <li class="drop-text is-dropdown-submenu-parent opens-left" role="menuitem" aria-haspopup="true" aria-expanded="false" aria-label="24">
-                    <a data-toggle="chatSupport"><i class="fa fa-envelope-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">24</span></a>
-                    <ul class="notifications menu vertical submenu is-dropdown-submenu first-sub" data-submenu="" aria-hidden="true" role="menu">
-                      <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item">
-                        <ol>
-                          <li class="heading" role="menuitem">
-                            <h6 class="text-center mb-0">Notifications</h6>
-                          </li>
-                          <li class="active" role="menuitem">
-                            <span>You have a new email from <a href="#">John Doe</a>.</span>
-                            <small class="subheader">12 months ago</small>
-                          </li>
-                          <li class="active" role="menuitem">
-                            <span>You have a missed call from <a href="#">Alex Quesada</a>.</span>
-                            <small class="subheader">12 months ago</small>
-                          </li>
-                          <li role="menuitem">
-                            <span>You have a new email from <a href="#">Janet Ellis</a>.</span>
-                            <small class="subheader">12 months ago</small>
-                          </li>
-                          <li role="menuitem">
-                            <span>You have a new email from <a href="#">Kathleen Jordan</a>.</span>
-                            <small class="subheader">12 months ago</small>
-                          </li>
-                          <li role="menuitem">
-                            <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
-                            <small class="subheader">12 months ago</small>
-                          </li>
-                          <li role="menuitem">
-                            <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
-                            <small class="subheader">12 months ago</small>
-                          </li>
-                          <li role="menuitem">
-                            <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
-                            <small class="subheader">12 months ago</small>
-                          </li>
-                          <li role="menuitem">
-                            <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
-                            <small class="subheader">12 months ago</small>
-                          </li>
-                          <li role="menuitem">
-                            <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
-                            <small class="subheader">12 months ago</small>
-                          </li>
-                          <!-- <li>
-                              <a href="#" class="button info hollow tiny expanded">View All Notifications</a>
-                          </li> -->
-                        </ol>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Brendon Martin &nbsp;</a>
+                <ul class="menu vertical">
+                  <li><a href="frontend-edit.html"><i class="fa fa-user"></i>&nbsp; Account Details</a></li>
+                  <li><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Sign Out</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+    </div>
+  </div>
+</div>
+
+<section class="white-bg">
+
+  <div class="row">
+    <div class="auto columns">
+      <ul class="tabs" data-tabs id="example-tabs">
+        <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">My Dashboard</a></li>
+        <li class="tabs-title"><a href="#panel2">Surgery Facility Details</a></li>
+        <li class="tabs-title"><a href="#panel3">My Forms</a></li>
+      </ul>
+
+      <div class="tabs-content" data-tabs-content="example-tabs">
+        <div class="tabs-panel is-active" id="panel1">
+
+          <div class="row">
+            <div class="large-4 large-push-8 columns">
+
+              <div id="eventCalendar" class="mt-1 mb-0-5"></div>
+
+              <div id="eventScheduler" class="mt-1 mb-0-5"></div>
+
+            </div>
+
+            <div class="large-8 large-pull-4 columns">
+
+              <a class="img-card" href="#">
+                <div class="img-card-body">
+                  <div class="img-card-body-section">
+                    <div class="media-object full-table fixed">
+                      <div class="media-object-section logo small middle">
+                        <div class="img-wrapper">
+                          <img src= "../img/logo-Saint-Joseph-Hospital.png">
+                        </div>
+                      </div>
+                      <div class="media-object-section middle">
+                        <h6>Precision Spine Center</h6>
+                        <p class="subheader"><small>DENVER &nbsp; <small>2.1 miles</small></small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="img-card-body-section">
+                    <div class="row align-middle collapse">
+                      <div class="small-12 columns">
+                        <p><small class="subheader mr-1">YOUR BONUS</small><strong class="success-color pull-right">$5,500</strong></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="img-card-body-section">
+                    <div class="row">
+                      <div class="small-12 columns">
+                        <div class="media-object full-table fixed">
+                          <div class="media-object-section small logo middle">
+                            <div class="img-wrapper circle">
+                              <img src= "../img/specialist.png">
+                            </div>
+                          </div>
+                          <div class="media-object-section middle">
+                            <span><small><strong>Randy Moss</strong></small></span>
+                          </div>
+                          <div class="media-object-section middle">
+                            <span class="pull-right subheader"><small>Surgeon</small></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="small-12 columns">
+                        <div class="media-object full-table fixed">
+                          <div class="media-object-section small logo middle">
+                            <div class="img-wrapper circle">
+                              <img src= "../img/specialist.png">
+                            </div>
+                          </div>
+                          <div class="media-object-section middle">
+                            <span><small><strong>Gabriel Santos</strong></small></span>
+                          </div>
+                          <div class="media-object-section middle">
+                            <span class="subheader pull-right"><small>Assitant Surgeon</small></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="small-12 columns">
+                        <div class="media-object full-table fixed">
+                          <div class="media-object-section small logo middle">
+                            <div class="img-wrapper circle">
+                              <img src= "../img/specialist.png">
+                            </div>
+                          </div>
+                          <div class="media-object-section middle">
+                            <span><small><strong>Dan Stevens</strong></small></span>
+                          </div>
+                          <div class="media-object-section middle">
+                            <span class="subheader pull-right"><small>Anaesthesiologist</small></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="img-card-body-section">
+                    <div class="row collapse">
+                      <div class="small-12 columns">
+                        <p class="h6 subheader"><small>What's Included:</small></p>
+                        <ul class="inline-list">
+                          <li><i class="fa fa-check"></i>&nbsp;Pre-op evaluation</li>
+                          <li><i class="fa fa-check"></i>&nbsp;Pre-op antibiotics as indicate</li>
+                          <li><i class="fa fa-check"></i>&nbsp;Facility surgeon</li>
+                          <li><i class="fa fa-check"></i>&nbsp;Assistant surgeon</li>
+                          <li><i class="fa fa-check"></i>&nbsp;Anesthesia</li>
+                          <li><i class="fa fa-check"></i>&nbsp;Rehabilitation/physical therapy regimen</li>
+                          <li><i class="fa fa-check"></i>&nbsp;Post-op follow-up</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <div class="page-lead row align-middle">
+                <div class="shrink columns">
+                  <span class="h5">My To-Do's</span>
+                </div>
+                <!-- <div class="columns">
+                    <div class="button-align small pull-right mb-0">
+                          <select>
+                            <option value="" disabled selected>Today</option>
+                            <option value="">One Week From Now</option>
+                            <option value="starbuck">One Month From Now</option>
+                            <option value="hotdog">Six Months From Now</option>
+                          </select>
+                    </div>
+                </div> -->
+              </div>
+              <div class="row">
+                <div class="columns">
+                  <div class="callout lo-padded">
+                    <ul class="tasks-list well-list">
+                      <li class="alert">
+                        <div class="list-wrap">
+                          <div class="row collapse align-middle">
+                            <div class="auto columns">
+                              <div class="media-object">
+                                <div class="media-object-section middle">
+                                  <div class="fancy-checkbox">
+                                    <input type="checkbox">
+                                  </div>
+                                </div>
+                                <div class="media-object-section middle">
+                                  <small class="preamble"><b>OVERDUE</b></small>
+                                  <p class="mb-0"><a href="#"><i class="fa fa-file-text-o fa-fw"></i>&nbsp; Pre-Operation Evaluation and Clearance Form</a></p>
+                                  <a href="#" class="button tiny info hollow mt-0-25 mb-0">Fill This Form</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="shrink columns">
+                              <small class="preamble"><b>4 days ago</b></small>
+                            </div>
+                            <div class="shrink columns">
+                              <ul class="dropdown menu" data-dropdown-menu>
+                                <li>
+                                  <a></a>
+                                  <ul class="menu vertical">
+                                    <li><a href="#"><i class="fa fa-refresh"></i>&nbsp;
+                                      Assign To</a></li>
+                                    <li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp;
+                                      Set New Date</a></li>
+                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp;
+                                      Archive</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="alert">
+                        <div class="list-wrap">
+                          <div class="row collapse align-middle">
+                            <div class="auto columns">
+                              <div class="media-object">
+                                <div class="media-object-section middle">
+                                  <div class="fancy-checkbox">
+                                    <input type="checkbox">
+                                  </div>
+                                </div>
+                                <div class="media-object-section middle">
+                                  <small class="preamble"><b>OVERDUE</b></small>
+                                  <p class="mb-0">Pre-Operation Infection Avoidance Adherence</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="shrink columns">
+                              <small class="preamble"><b>4 days ago</b></small>
+                            </div>
+                            <div class="shrink columns">
+                              <ul class="dropdown menu" data-dropdown-menu>
+                                <li>
+                                  <a></a>
+                                  <ul class="menu vertical">
+                                    <li><a href="#"><i class="fa fa-refresh"></i>&nbsp;
+                                      Assign To</a></li>
+                                    <li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp;
+                                      Set New Date</a></li>
+                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp;
+                                      Archive</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="warning">
+                        <div class="list-wrap">
+                          <div class="row collapse align-middle">
+                            <div class="auto columns">
+                              <div class="media-object">
+                                <div class="media-object-section middle">
+                                  <div class="fancy-checkbox">
+                                    <input type="checkbox">
+                                  </div>
+                                </div>
+                                <div class="media-object-section middle">
+                                  <small class="preamble"><b>UPCOMING</b></small>
+                                  <p class="mb-0"><a href="#"><i class="fa fa-file-text-o fa-fw"></i>&nbsp; Service Experience Survey</a></p>
+                                  <a href="#" class="button tiny info hollow mt-0-25 mb-0">Fill This Form</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="shrink columns">
+                              <small class="preamble"><b>30 Aug, 2018</b></small>
+                            </div>
+                            <div class="shrink columns">
+                              <ul class="dropdown menu" data-dropdown-menu>
+                                <li>
+                                  <a></a>
+                                  <ul class="menu vertical">
+                                    <li><a href="#"><i class="fa fa-refresh"></i>&nbsp;
+                                      Assign To</a></li>
+                                    <li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp;
+                                      Set New Date</a></li>
+                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp;
+                                      Archive</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="warning">
+                        <div class="list-wrap">
+                          <div class="row collapse align-middle">
+                            <div class="auto columns">
+                              <div class="media-object">
+                                <div class="media-object-section middle">
+                                  <div class="fancy-checkbox">
+                                    <input type="checkbox" checked>
+                                  </div>
+                                </div>
+                                <div class="media-object-section middle">
+                                  <small class="preamble"><b>UPCOMING</b></small>
+                                  <p class="mb-0">Second Consultation With Facility</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="shrink columns">
+                              <small class="preamble"><b>30 Aug, 2018</b></small>
+                            </div>
+                            <div class="shrink columns">
+                              <ul class="dropdown menu" data-dropdown-menu>
+                                <li>
+                                  <a></a>
+                                  <ul class="menu vertical">
+                                    <li><a href="#"><i class="fa fa-refresh"></i>&nbsp;
+                                      Assign To</a></li>
+                                    <li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp;
+                                      Set New Date</a></li>
+                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp;
+                                      Archive</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="list-wrap">
+                          <div class="row collapse align-middle">
+                            <div class="auto columns">
+                              <div class="media-object">
+                                <div class="media-object-section middle">
+                                  <div class="fancy-checkbox">
+                                    <input type="checkbox">
+                                  </div>
+                                </div>
+                                <div class="media-object-section middle">
+                                  <!--<small class="preamble"><b>UPCOMING</b></small>-->
+                                  <p class="mb-0">Scheduled Total Knee Replacement Surgery</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="shrink columns">
+                              <small class="preamble"><b>4 Sept, 2018</b></small>
+                            </div>
+                            <div class="shrink columns">
+                              <ul class="dropdown menu" data-dropdown-menu>
+                                <li>
+                                  <a></a>
+                                  <ul class="menu vertical">
+                                    <li><a href="#"><i class="fa fa-refresh"></i>&nbsp;
+                                      Assign To</a></li>
+                                    <li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp;
+                                      Set New Date</a></li>
+                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp;
+                                      Archive</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="list-wrap">
+                          <div class="row collapse align-middle">
+                            <div class="auto columns">
+                              <div class="media-object">
+                                <div class="media-object-section middle">
+                                  <div class="fancy-checkbox">
+                                    <input type="checkbox">
+                                  </div>
+                                </div>
+                                <div class="media-object-section middle">
+                                  <!--<small class="preamble"><b>UPCOMING</b></small>-->
+                                  <p class="mb-0"><a href="#"><i class="fa fa-file-text-o fa-fw"></i>&nbsp; Functional Capacity Survey</a></p>
+                                  <a href="#" class="button tiny info hollow mt-0-25 mb-0">Fill This Form</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="shrink columns">
+                              <small class="preamble"><b>8 Sept, 2018</b></small>
+                            </div>
+                            <div class="shrink columns">
+                              <ul class="dropdown menu" data-dropdown-menu>
+                                <li>
+                                  <a></a>
+                                  <ul class="menu vertical">
+                                    <li><a href="#"><i class="fa fa-refresh"></i>&nbsp;
+                                      Assign To</a></li>
+                                    <li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp;
+                                      Set New Date</a></li>
+                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp;
+                                      Archive</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="list-wrap">
+                          <div class="row collapse align-middle">
+                            <div class="auto columns">
+                              <div class="media-object">
+                                <div class="media-object-section middle">
+                                  <div class="fancy-checkbox">
+                                    <input type="checkbox">
+                                  </div>
+                                </div>
+                                <div class="media-object-section middle">
+                                  <!--<small class="preamble"><b>UPCOMING</b></small>-->
+                                  <p class="mb-0"><a href="#"><i class="fa fa-file-text-o fa-fw"></i>&nbsp; 3-month Post-Op Functional Capacity Survey</a></p>
+                                  <a href="#" class="button tiny info hollow mt-0-25 mb-0">Fill This Form</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="shrink columns">
+                              <small class="preamble"><b>2 Nov, 2018</b></small>
+                            </div>
+                            <div class="shrink columns">
+                              <ul class="dropdown menu" data-dropdown-menu>
+                                <li>
+                                  <a></a>
+                                  <ul class="menu vertical">
+                                    <li><a href="#"><i class="fa fa-refresh"></i>&nbsp;
+                                      Assign To</a></li>
+                                    <li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp;
+                                      Set New Date</a></li>
+                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp;
+                                      Archive</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
                       </li>
                     </ul>
-                  </li>
-                  <li role="menuitem" class="is-dropdown-submenu-parent opens-left" aria-haspopup="true" aria-expanded="false" aria-label="John Doe &nbsp;">
-                    <a href="#">Brendon Martin &nbsp;</a>
-                    <ul class="menu vertical submenu is-dropdown-submenu first-sub" data-submenu="" aria-hidden="true" role="menu">
-                      <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="frontend-edit.html"><i class="fa fa-user"></i>&nbsp; Account Details</a></li>
-                      <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Sign Out</a></li>
-                    </ul>
-                  </li>
-                <div class="powertour-step powertour-disable-cancel" data-powertour-tour="1" data-powertour-step="6" id="pw-1-6" tabindex="-1" role="dialog" aria-hidden="true" style="width: 580px; left: 50%; margin-left: -290px; bottom: -249px;"><div id="stepSix" class="tour-wrapper">
-        <div class="media-object">
-            <div class="media-object-section logo large">
-                <div class="img-wrapper circle">
-                    <img src="../img/Smiling-Middle-Aged-Lady-Arms-Square.png">
+                  </div>
                 </div>
+              </div>
+
             </div>
-            <div class="media-object-section middle">
-                <div class="talk-bubble border tri-right left-in">
-                    <div class="talktext">
-                        <p>You may chat with me by clicking on the icon in the lower right of your screen anytime. Or send secure messages by clicking on the "Messages" tab at the top of the page and I'll get right back to you.</p>
-                    </div>
-                </div>
-            </div>
+          </div>
+
         </div>
-        <a class="button success expanded" data-powertour-action="stop">That's it, Let's get started.</a>
-    </div></div></ul>
+        <!--Start of Facility Profile-->
+        <div class="tabs-panel" id="panel2">
+
+          <div class="row">
+            <div class="large-12 columns">
+              <div id="facilityImages" class="owl-carousel">
+                <div>
+                  <img src="../img/slide-precision-spine-center-1.jpg" alt="">
+                </div>
+                <div>
+                  <img src="../img/slide-precision-spine-center-2.jpg" alt="">
+                </div>
+                <div>
+                  <img src="../img/slide-precision-spine-center-3.png" alt="">
+                </div>
+                <div>
+                  <img src="../img/slide-precision-spine-center-4.png" alt="">
+                </div>
+                <div>
+                  <img src="../img/slide-precision-spine-center-1.jpg" alt="">
+                </div>
+                <div>
+                  <img src="../img/slide-precision-spine-center-2.jpg" alt="">
+                </div>
               </div>
             </div>
-          </header>
-        </div>
-      </div>
-    </div>
+          </div>
 
-	<section class="white-bg">
-		<!-- <div id="facilitySection" class="row" data-sticky-container>
-			<div class="large-12 columns" data-sticky data-top-anchor="facilitySection:top">
-				<nav aria-label="You are here:" role="navigation">
-				  	<ul class="breadcrumbs mb-1">
-				    	<li><a href="frontend-index.html">See All Provider Options</a></li>
-				    	<li>Precision Spine Center</li>
-				  	</ul>
-				</nav>
-			</div>
-		</div> -->
+          <div class="row">
+            <div class="large-4 large-push-8 columns">
 
+              <div id="facilitySidebar" data-sticky-container>
 
-		<div class="row">
-			<div class="large-4 large-push-8 columns">
-
-				<div id="facilitySidebar" data-sticky-container>
-
-					<!-- <a id="interestTrigger" data-sticky data-top-anchor="facilitySidebar:top" class="button success large plain mt-1"><b>I'm interested. Explore this option.</b></a> -->
-
-<!-- 					<div class="callout">
-						
-						<div class="row">
-							<div class="large-12 columns">
-								<p class="subheader"><small><b class="drop-cap"><i class="fa fa-shield"></i></b>Precision Spine Center has a score of 590 for a Total Knee Replacement.</small></p>
-								<div class="mpirica-graph">
-									<div class="progress" role="progressbar" tabindex="0" aria-valuenow="50" aria-valuemin="0" aria-valuetext="50 percent" aria-valuemax="100">
-									  	<div class="progress-meter" style="width: 80%">
-									  		<div class="mpirica-wrapper">
-									      		<span class="rating">590</span>
-									      		<img src= "../img/mpirica.png">
-									    	</div>	
-									  	</div>
-									</div>
-								</div>
-								<p class="mt-1 mb-0 pull-right"><small><a href="https://www.mpirica.com/quality-score">More about MPIRICA Scores &nbsp;<i class="fa fa-angle-right"></i></a></small></p>
-							</div>
-						</div>
-					</div> -->
-
-					<div class="panel mt-2">
-						<div class="panel-heading">
-							<span class="h6">My doctors</span>
-						</div>
-						<div class="panel-body">
-							<div class="media-object">
-							  	<div class="media-object-section logo middle">
-							    	<div class="img-wrapper circle">
-							      		<!-- <img src= "../img/specialist.png"> -->
-							      		<img src="https://s3.amazonaws.com/assets.spokehealth.com/media/doctors/5b188c3b7bab461a6e8b4567.jpeg">
-							    	</div>
-							  	</div>
-							  	<div class="media-object-section middle">
-							   		<span class="h6">Hai Lan</span>
-							   		<p><small class="subheader">Surgeon</small></p>
-							  	</div>
-							</div>
-							<div class="media-object">
-							  	<div class="media-object-section logo middle">
-							    	<div class="img-wrapper circle">
-							      		<!-- <img src= "../img/specialist.png"> -->
-							      		<img src="https://s3.amazonaws.com/assets.spokehealth.com/media/doctors/5b188c997bab46266e8b4567.png">
-							    	</div>
-							  	</div>
-							  	<div class="media-object-section middle">
-							   		<span class="h6">Ram Prasad</span>
-							   		<p><small class="subheader">Assistant Surgeon</small></p>
-							  	</div>
-							</div>
-							<div class="media-object">
-							  	<div class="media-object-section logo middle">
-							    	<div class="img-wrapper circle">
-							      		<!-- <img src= "../img/specialist.png"> -->
-							      		<img src="https://s3.amazonaws.com/assets.spokehealth.com/media/doctors/5b188cea7bab46626e8b4567.jpeg">
-							    	</div>
-							  	</div>
-							  	<div class="media-object-section middle">
-							   		<span class="h6">Phyllis Durward</span>
-							   		<p><small class="subheader">Anesthesiologist</small></p>
-							  	</div>
-							</div>
-						</div>
-					</div>
-					<div class="panel">
-						<div class="panel-heading">
-							<span class="h6"><i class="fa fa-medkit fa-border success-color"></i>&nbsp; What's Included</span>
-						</div>
-						<div class="panel-body">
-							<div class="grouped-listing row collapse">
-								<div class="large-12 columns">
-									<ul class="fa-ul">
-									  	<li>Pre-op evaluation</li>
-									  	<li>Pre-op antibiotics as indicated</li>
-									  	<li>Facility surgeon</li>
-									  	<li>Assistant surgeon</li>
-									  	<li>Anesthesia</li>
-									  	<li>Rehabilitation/physical therapy regimen</li>
-									  	<li>Post-op follow-up</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-			</div>
-
-			<div class="large-8 large-pull-4 columns">
-
-				<div class="media-object full-table">				  	
-				  	<div class="media-object-section middle">
-				   		<p class="subheader"><small>My Current Episode of Care</small></p>
-				   		<span class="h4">Total Knee Replacement</span>
-				   		
-				  	</div>
-				  	<div class="media-object-section middle">
-				   		<a href="#" class="button warning small pull-right"><i class="fa fa-print"></i></a>
-				  	</div>
-				</div>
-				
-				<!-- <div class="page-lead row align-middle">
-					<div class="large-12 columns">
-						<span class="h5">Episodes</span>
-					</div>
-				</div> -->						
-
-				<div class="row mb-1 mt-2">
-					<div class="columns medium-12">
-						<div class="row collapse label-block">
-							<div class="large-6 columns end">
-								<div class="label-group">
-									<p>Facility</p>
-									<h6>Milwaukee Quality Surgery Center</h6>
-								</div>
-							</div>
-							<!-- <div class="large-4 columns end">
-								<div class="label-group">
-									<p>Facility</p>
-									<h6>THE Facility</h6>
-								</div>
-							</div> -->
-							<div class="large-6 columns end">
-								<div class="label-group">
-									<p>Date of surgery</p>
-									<h6 class="clr-success">Jul 25, 2018</h6>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="auto columns">
-						<div class="row label-block collapse align-middle flex">
-                            <div class="columns shrink">
-                            	<div class="label-group">
-                            		<div class="h4"><i class="fa fa-check-circle clr-success"></i></div>
-                            	</div>
-                            </div>
-                            <div class="columns label-group">
-                            	<div class="row">
-                            		<div class="columns ">
-	                            		<p>Dec 1, 2018</p>
-										<h6>Answered Pre-operative Questionnaire</h6>
-									</div>
-									<!-- <div class="columns center-content">
-										<button class="button tiny primary pull-right" data-open="exampleModal1">Details</button>
-									</div> -->
-                            	</div>
-                            </div>
+                <div class="panel">
+                  <div class="panel-heading">
+                    <span class="h6">Doctors</span>
+                  </div>
+                  <div class="panel-body">
+                    <div class="media-object">
+                      <div class="media-object-section logo middle">
+                        <div class="img-wrapper circle">
+                          <img src="../img/specialist.png">
                         </div>
-                        <div class="row label-block collapse align-middle flex">
-                            <div class="columns shrink">
-                            	<div class="label-group">
-                            		<div class="h4"><i class="fa fa-check-circle clr-success"></i></div>
-                            	</div>
-                            </div>
-                            <div class="columns label-group">
-                                <div class="row">
-                            		<div class="columns ">
-	                                	<p>Dec 8, 2018</p>
-										<h6>Answered Pre-op Patient reported functional capacity survey</h6>
-									</div>
-									<!-- <div class="columns center-content">
-										<button class="button tiny primary pull-right" data-open="exampleModal1">Details</button>
-									</div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row label-block collapse align-middle flex">
-                            <div class="columns shrink">
-                            	<div class="label-group">
-                            		<div class="h4"><i class="fa fa-check-circle clr-success"></i></div>
-                            	</div>
-                            </div>
-                            <div class="columns label-group">
-                                <div class="row">
-                            		<div class="columns ">
-	                                	<p>Dec 10, 2018</p>
-										<h6>Passed pre-operative evaluation and clearance</h6>
-									</div>
-									<!-- <div class="columns center-content">
-										<button class="button tiny primary pull-right" data-open="exampleModal1">Details</button>
-									</div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row label-block collapse align-middle flex">
-                            <div class="columns shrink">
-                            	<div class="label-group">
-                            		<div class="h4"><i class="fa fa-check-circle clr-success"></i></div>
-                            	</div>
-                            </div>
-                            <div class="columns label-group">
-                                <div class="row">
-                            		<div class="columns ">
-	                                	<p>Dec 13, 2018</p>
-										<h6>Did infection avoidance adherence</h6>
-									</div>
-									<!-- <div class="columns center-content">
-										<button class="button tiny primary pull-right" data-open="exampleModal1">Details</button>
-									</div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row label-block collapse align-middle flex">
-                            <div class="columns shrink">
-                            	<div class="label-group">
-                            		<div class="h4"><i class="fa fa-check-circle clr-success"></i></div>
-                            	</div>
-                            </div>
-                            <div class="columns label-group">
-                                <div class="row">
-                            		<div class="columns ">
-	                                	<p>Dec 15, 2018</p>
-										<h6>Took pre-operative antibiotics as indicated</h6>
-									</div>
-									<!-- <div class="columns center-content">
-										<button class="button tiny primary pull-right" data-open="exampleModal1">Details</button>
-									</div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row label-block collapse align-middle flex">
-                            <div class="columns shrink">
-                            	<div class="label-group">
-                            		<div class="h4"><i class="fa fa-check-circle clr-success"></i></div>
-                            	</div>
-                            </div>
-                            <div class="columns label-group">
-                                <div class="row">
-                            		<div class="columns ">
-	                                	<p>Dec 18, 2018</p>
-										<h6>Did pre-hab check in (one week before surgery)</h6>
-									</div>
-									<!-- <div class="columns center-content">
-										<button class="button tiny primary pull-right" data-open="exampleModal1">Details</button>
-									</div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row label-block collapse align-middle flex">
-                            <div class="columns shrink">
-                            	<div class="label-group selected">
-                            		<div class="h4"><i class="fa fa-check-circle clr-success"></i></div>
-                            	</div>
-                            </div>
-                            <div class="columns label-group selected">
-                                <div class="row">
-                            		<div class="columns ">
-	                                	<p>Jul 18, 2018</p>
-										<h6>Had pre-operative consultation</h6>
-									</div>
-									<div class="columns medium-2">
-										<p class="clr-alert">Jul 18, 2018</p>
-										<p class="h6 clr-alert"> <strong>10:30 AM</strong></p>
-									</div>
-									<!-- <div class="columns center-content">
-										<button class="button tiny pull-right" data-open="exampleModal1">Details</button>
-									</div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row label-block collapse align-middle flex">
-                            <div class="columns shrink">
-                            	<div class="label-group selected">
-                            		<div class="h4"><i class="fa fa-check-circle clr-success"></i></div>
-                            	</div>
-                            </div>
-                            <div class="columns label-group selected">
-                                <div class="row">
-                            		<div class="columns ">
-	                                	<p>Jul 25, 2018</p>
-										<h6>Underwent surgery</h6>
-									</div>
-									<div class="columns medium-2">
-										<p class="clr-alert">Jul 25, 2018</p>
-										<p class="h6 clr-alert"> <strong>9:00 AM</strong></p>
-									</div>
-									<!-- <div class="columns center-content">
-										<button class="button tiny success pull-right" data-open="exampleModal1">Details</button>
-									</div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row label-block collapse align-middle flex">
-                            <div class="columns shrink">
-                            	<div class="label-group ">
-                            		<div class="h4"><i class="fa fa-check-circle clr-success"></i></div>
-                            	</div>
-                            </div>
-                            <div class="columns label-group">
-                                <div class="row">
-                            		<div class="columns ">
-	                                	<p>Dec 15, 2018</p>
-										<h6>Answered Service Experience Survey</h6>
-									</div>
-									<!-- <div class="columns center-content">
-										<button class="button tiny primary pull-right" data-open="exampleModal1">Details</button>
-									</div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row label-block collapse align-middle flex">
-                            <div class="columns shrink">
-                            	<div class="label-group">
-                            		<div class="h4"><i class="fa fa-circle clr-black20"></i></div>
-                            	</div>
-                            </div>
-                            <div class="columns label-group">
-                                <div class="row">
-                            		<div class="columns ">
-	                                	<p>Dec 22, 2018</p>
-										<h6>Had scheduled post-operative visit</h6>
-									</div>
-									<!-- <div class="columns center-content">
-										<button class="button tiny hollow pull-right" data-open="exampleModal1">Details</button>
-									</div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row label-block collapse align-middle flex">
-                            <div class="columns shrink">
-                            	<div class="label-group">
-                            		<div class="h4"><i class="fa fa-circle clr-black20"></i></div>
-                            	</div>
-                            </div>
-                            <div class="columns label-group">
-                                <div class="row">
-                            		<div class="columns ">
-	                                	<p>Jan 6, 2018</p>
-										<h6>Had 1-week post-operative physical therapy regimen</h6>	
-									</div>
-									<!-- <div class="columns center-content">
-										<button class="button tiny hollow pull-right" data-open="exampleModal1">Details</button>
-									</div> -->	                                	
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row label-block collapse align-middle flex">
-                            <div class="columns shrink">
-                            	<div class="label-group">
-                            		<div class="h4"><i class="fa fa-circle clr-black20"></i></div>
-                            	</div>
-                            </div>
-                            <div class="columns label-group">
-                                <div class="row">
-                            		<div class="columns ">
-	                                	<p>Jan 10, 2018</p>
-										<h6>Had 3-week post-operative physical therapy regimen</h6>	
-									</div>
-									<!-- <div class="columns center-content">
-										<button class="button tiny hollow pull-right" data-open="exampleModal1">Details</button>
-									</div> -->	                                	
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row label-block collapse align-middle flex">
-                            <div class="columns shrink">
-                            	<div class="label-group">
-                            		<div class="h4"><i class="fa fa-circle clr-black20"></i></div>
-                            	</div>
-                            </div>
-                            <div class="columns label-group">
-                                <div class="row">
-                            		<div class="columns ">
-	                                	<p>Jan 10, 2018</p>
-										<h6>Answered Service Experience Survey for physical therapy check in</h6>	
-									</div>
-									<!-- <div class="columns center-content">
-										<button class="button tiny hollow pull-right" data-open="exampleModal1">Details</button>
-									</div> -->	                                	
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row label-block collapse align-middle flex">
-                            <div class="columns shrink">
-                            	<div class="label-group">
-                            		<div class="h4"><i class="fa fa-circle clr-black20"></i></div>
-                            	</div>
-                            </div>
-                            <div class="columns label-group">
-                                <div class="row">
-                            		<div class="columns ">
-	                                	<p>Jan 10, 2018</p>
-										<h6>Patient reported service experience survey - Physical Therapy Check in</h6>	
-									</div>
-									<!-- <div class="columns center-content">
-										<button class="button tiny hollow pull-right" data-open="exampleModal1">Details</button>
-									</div> -->	                                	
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row label-block collapse align-middle flex">
-                            <div class="columns shrink">
-                            	<div class="label-group">
-                            		<div class="h4"><i class="fa fa-circle clr-black20"></i></div>
-                            	</div>
-                            </div>
-                            <div class="columns label-group">
-                                <div class="row">
-                            		<div class="columns ">
-	                                	<p>Jan 10, 2018</p>
-										<h6>Had 5-week post-operative physical therapy regimen"</h6>	
-									</div>
-									<!-- <div class="columns center-content">
-										<button class="button tiny hollow pull-right" data-open="exampleModal1">Details</button>
-									</div> -->	                                	
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row label-block collapse align-middle flex">
-                            <div class="columns shrink">
-                            	<div class="label-group">
-                            		<div class="h4"><i class="fa fa-circle clr-black20"></i></div>
-                            	</div>
-                            </div>
-                            <div class="columns label-group">
-                                <div class="row">
-                            		<div class="columns ">
-	                                	<p>Jan 10, 2018</p>
-										<h6>Answered Functional Capacity Survey</h6>	
-									</div>
-									<!-- <div class="columns center-content">
-										<button class="button tiny hollow pull-right" data-open="exampleModal1">Details</button>
-									</div> -->	                                	
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row label-block collapse align-middle flex">
-                            <div class="columns shrink">
-                            	<div class="label-group">
-                            		<div class="h4"><i class="fa fa-circle clr-black20"></i></div>
-                            	</div>
-                            </div>
-                            <div class="columns label-group">
-                                <div class="row">
-                            		<div class="columns ">
-	                                	<p>Jan 10, 2018</p>
-										<h6>Had 7-week post-operative physical therapy regimen</h6>	
-									</div>
-									<!-- <div class="columns center-content">
-										<button class="button tiny hollow pull-right" data-open="exampleModal1">Details</button>
-									</div> -->	                                	
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row label-block collapse align-middle flex">
-                            <div class="columns shrink">
-                            	<div class="label-group">
-                            		<div class="h4"><i class="fa fa-circle clr-black20"></i></div>
-                            	</div>
-                            </div>
-                            <div class="columns label-group">
-                                <div class="row">
-                            		<div class="columns ">
-	                                	<p>Jan 10, 2018</p>
-										<h6>Answered post-physical therapy Service Experience Survey</h6>	
-									</div>
-									<!-- <div class="columns center-content">
-										<button class="button tiny hollow pull-right" data-open="exampleModal1">Details</button>
-									</div> -->	                                	
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row label-block collapse align-middle flex">
-                            <div class="columns shrink">
-                            	<div class="label-group">
-                            		<div class="h4"><i class="fa fa-circle clr-black20"></i></div>
-                            	</div>
-                            </div>
-                            <div class="columns label-group">
-                                <div class="row">
-                            		<div class="columns ">
-	                                	<p>Jan 10, 2018</p>
-										<h6>Answered 3-month post-op Functional Capacity Survey</h6>	
-									</div>
-									<!-- <div class="columns center-content">
-										<button class="button tiny hollow pull-right" data-open="exampleModal1">Details</button>
-									</div> -->	                                	
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row label-block collapse align-middle flex">
-                            <div class="columns shrink">
-                            	<div class="label-group">
-                            		<div class="h4"><i class="fa fa-circle clr-black20"></i></div>
-                            	</div>
-                            </div>
-                            <div class="columns label-group">
-                                <div class="row">
-                            		<div class="columns ">
-	                                	<p>Jan 10, 2018</p>
-										<h6>Answered 6-month post-op Functional Capacity Survey</h6>	
-									</div>
-									<!-- <div class="columns center-content">
-										<button class="button tiny hollow pull-right" data-open="exampleModal1">Details</button>
-									</div> -->	                                	
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row label-block collapse align-middle flex">
-                            <div class="columns shrink">
-                            	<div class="label-group">
-                            		<div class="h4"><i class="fa fa-circle clr-black20"></i></div>
-                            	</div>
-                            </div>
-                            <div class="columns label-group">
-                                <div class="row">
-                            		<div class="columns ">
-	                                	<p>Jan 10, 2018</p>
-										<h6>Answered 12-month post-op Functional Capacity Survey</h6>	
-									</div>
-									<!-- <div class="columns center-content">
-										<button class="button tiny hollow pull-right" data-open="exampleModal1">Details</button>
-									</div> -->
-                                </div>
-                            </div>
-                        </div>
-						<hr>
-                      
-					</div>
-				</div>
-
-			</div>
-		</div>
-
-	</section>
-
-	<div id="scheduleCalendar" class="reveal" data-reveal>
-        <div class="row collapse">
-            <div class="large-12 columns">
-                <h5 class="reveal-heading">Schedule A Call</h5>
-                <button class="close-button" data-close aria-label="Close modal" type="button">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-        </div>
-        <div class="row collapse">
-            <div class="large-12 columns">
-                <div class="reveal-body">
-                    <iframe src="https://richard-youradvocate.youcanbook.me/?noframe=true&skipHeaderFooter=true" id="ycbmiframerichard-youradvocate" style="width:100%;height:1000px;border:0px;background-color:transparent;" frameborder="0" allowtransparency="true"></iframe><script>window.addEventListener && window.addEventListener("message", function(event){if (event.origin === "https://richard-youradvocate.youcanbook.me"){document.getElementById("ycbmiframerichard-youradvocate").style.height = event.data + "px";}}, false);</script>
-                </div>
-            </div>
-        </div>
-    </div>
-
-	<!-- Power Tour -->
-    <div id="interestModal" class="tour-wrapper">
-        <div class="page-lead">
-            <div class="media-object mb-1">
-                <div class="media-object-section logo large">
-                    <div class="img-wrapper circle">
-                        <img src= "../img/Smiling-Middle-Aged-Lady-Arms-Square.png">
+                      </div>
+                      <div class="media-object-section middle">
+                        <span class="h6">Dan Stevens</span>
+                        <p>
+                          <small class="subheader">Facility Surgeon</small>
+                        </p>
+                        <!-- <div class="mpirica-graph compacted small">
+                       <div class="progress" role="progressbar" tabindex="0" aria-valuenow="50" aria-valuemin="0" aria-valuetext="50 percent" aria-valuemax="100">
+                       <div class="progress-meter" style="width: 80%"></div>
+                       </div>
+                       <span class="label-text subheader">MPIRICA Score</span>
+                       <span class="label-text pull-right">470</span>
+                     </div> -->
+                      </div>
                     </div>
+                    <div class="media-object">
+                      <div class="media-object-section logo middle">
+                        <div class="img-wrapper circle">
+                          <img src="../img/specialist.png">
+                        </div>
+                      </div>
+                      <div class="media-object-section middle">
+                        <span class="h6">Catherine Carter</span>
+                        <p>
+                          <small class="subheader">Facility Surgeon</small>
+                        </p>
+                        <!-- <div class="mpirica-graph compacted small">
+                       <div class="progress" role="progressbar" tabindex="0" aria-valuenow="50" aria-valuemin="0" aria-valuetext="50 percent" aria-valuemax="100">
+                       <div class="progress-meter" style="width: 80%"></div>
+                       </div>
+                       <span class="label-text subheader">MPIRICA Score</span>
+                       <span class="label-text pull-right">470</span>
+                     </div> -->
+                      </div>
+                    </div>
+                    <div class="media-object">
+                      <div class="media-object-section logo middle">
+                        <div class="img-wrapper circle">
+                          <img src="../img/specialist.png">
+                        </div>
+                      </div>
+                      <div class="media-object-section middle">
+                        <span class="h6">Randy Moss</span>
+                        <p>
+                          <small class="subheader">Facility Surgeon</small>
+                        </p>
+                        <!-- <div class="mpirica-graph compacted small">
+                       <div class="progress" role="progressbar" tabindex="0" aria-valuenow="50" aria-valuemin="0" aria-valuetext="50 percent" aria-valuemax="100">
+                       <div class="progress-meter" style="width: 80%"></div>
+                       </div>
+                       <span class="label-text subheader">MPIRICA Score</span>
+                       <span class="label-text pull-right">470</span>
+                     </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel">
+                  <div class="panel-heading">
+                    <span class="h6"><i class="fa fa-medkit fa-border success-color"></i>&nbsp; What's Included</span>
+                  </div>
+                  <div class="panel-body">
+                    <div class="grouped-listing row collapse">
+                      <div class="large-12 columns">
+                        <ul class="fa-ul">
+                          <li>Pre-op evaluation</li>
+                          <li>Pre-op antibiotics as indicate</li>
+                          <li>Facility surgeon</li>
+                          <li>Assistant surgeon</li>
+                          <li>Anesthesia</li>
+                          <li>Rehabilitation/physical therapy regimen</li>
+                          <li>Post-op follow-up</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="large-8 large-pull-4 columns">
+
+              <div class="media-object full-table">
+                <div class="media-object-section logo middle">
+                  <div class="img-wrapper">
+                    <img src="../img/logo-Precision-Spine-Center.png">
+                  </div>
                 </div>
                 <div class="media-object-section middle">
-                    <div class="talk-bubble border tri-right left-in">
-                        <div class="talktext">
-                            <p class="h5 full">Fantastic!</p>
-                            <p class="subheader">I will reach out to Denver Vail Orthopedics and let them know you're interested. If you'd like, you can return to look at the facilities I've found for you, or you can schedule a call with me to discuss the next steps.</p>
-                        </div>
+                  <span class="h4">Precision Spine Center</span>
+                  <p class="subheader">
+                    <small>Millennium Center, 6825 S. Galena Street, Suite 314, Centennial, CO, United States Of America</small>
+                  </p>
+                </div>
+                <div class="media-object-section middle">
+                  <a href="#" class="button warning small pull-right"><i class="fa fa-print"></i></a>
+                </div>
+              </div>
+
+              <div class="callout mt-2">
+                <div class="spk-gain-graph row">
+                  <div class="small-9 columns">
+                    <div class="progress mt-0-5" role="progressbar" tabindex="0" aria-valuenow="0" aria-valuemin="0"
+                         aria-valuetext="100 percent" aria-valuemax="100">
+                      <div class="progress-meter deductible" style="width: 45%;">
+                        <p class="progress-meter-text">$2,500</p>
+                        <p class="deductible-label">Your Deductible</p>
+                      </div>
+                      <div class="progress-meter bonus" style="width: 10%;">
+                        <p class="progress-meter-text">$500</p>
+                      </div>
                     </div>
+                  </div>
+                  <div class="small-3 columns">
+                    <div class="brick small link text-center expanded">$3,000</div>
+                  </div>
                 </div>
-            </div>
-        </div>
-        <div class="button-group pull-right">
-        	<a class="button success hollow" href="frontend-index.html">Return To Provider Options</a>
-        	<a id="scheduleCall" class="button success"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp; Schedule A Call</a>
-        </div>
-        <a class="close-button" data-powertour-action="stop"><i class="fa fa-times-circle-o"></i></a>
-    </div>
+              </div>
 
-    <div id="chat-toggle">
-        <i class="fa fa-comment"></i>
-    </div>
+              <hr>
+              <div class="row align-bottom">
+                <div class="medium-4 columns">
+                  <small class="success-color">Total Value</small>
+                  <h3 class="mb-0">$3,000</h3>
+                </div>
+                <div class="medium-4 columns">
+                  <h5 class="mb-0">$2,500</h5>
+                  <small class="subheader">Out-Of-Pocket Expenses Saved</small>
+                </div>
+                <div class="medium-4 columns">
+                  <h5 class="mb-0">$500</h5>
+                  <small class="subheader">Allowance Gained</small>
+                </div>
+              </div>
+              <hr>
 
-    <div id="chat-notification">
-        <div class="form-notification">
-            
+              <!-- <p class="h6 subheader"><small><i class="fa fa-info-circle fa-border"></i>&nbsp; You can save $2,500 in OOP and receive a $500 Allowance. That is $3,000 in total value.</small></p> -->
 
-            <div class="pad-1">
-	            <!-- <p>On a scale of 0 to 10, How much pain you felt after she left you?</p> -->
-	            <p>On a scale of 0 to 10, How would you rate your pain today?</p>
-	            <div class="row">
-	                <div class="columns shrink">
-	                    <ul class="list-style-type-none ml-0">
-	                        <li name="scale"><input type="radio"><label>0</label></li>
-	                        <li name="scale"><input type="radio"><label>1</label></li>
-	                        <li name="scale"><input type="radio"><label>2</label></li>
-	                        <li name="scale"><input type="radio"><label>3</label></li>
-	                        <li name="scale"><input type="radio"><label>4</label></li>
-	                        <li name="scale"><input type="radio"><label>5</label></li>
-	                        <li name="scale"><input type="radio"><label>6</label></li>
-	                        <li name="scale"><input type="radio"><label>7</label></li>
-	                        <li name="scale"><input type="radio"><label>8</label></li>
-	                        <li name="scale"><input type="radio"><label>9</label></li>
-	                        <li name="scale"><input type="radio"><label>10</label></li>
-	                    </ul> 
-	                </div>
-	                <div class="columns">
-	                	<img src="../img/pain-scale.svg" alt="">
-	                </div>
-	            </div>
-	        </div>
-            
-        </div>
-        <div class="chat-header-container">
-            <div class="chat-header row shrinked active pb-1">
-                <div class="columns small-2 chat-header-action pl-0 pr-0">
-                    <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
-                    <img src="../img/middle-aged-lady-round.jpg" align="left" class="user-image circle tiny">
-                </div>
-                <div class="columns small-10 chat-header-user pr-0">
-                    <p class="mb-0 user-name"><b>Julie Kloster</b></p>
-                    <span class=" user-role">If you have questions, you can reach me anytime by sending me a secure message or schedule a call and we can go over it on the phone together.</span>
-                </div>
-                <div class="counter">3</div>
-            </div>
-        </div>
-    </div>
-    
-    <div id="chat-container">
+              <div class="section-heading mt-2 mb-1">
+                <h6 class="subheader"><i class="fa fa-medkit fa-border primary-color"></i> &nbsp;OVERVIEW</h6>
+              </div>
+              <p>Welcome to Precision Spine Center, a multidisciplinary treatment center of excellence serving Denver and the
+                Rocky Mountain region. We are pioneers in the use of advanced 3D navigation during surgery to precisely
+                target—and effectively treat— a wide variety of spinal disorders.</p>
+              <p>Our center is one of a select few centers in the U.S. to consistently use advanced 3D technology to address
+                spine pathology with laser-guided precision.</p>
+              <p><b>Our Philosophy</b></p>
+              <p>At Precision Spine Center, surgery is not always the answer to our patient’s spinal issues. Our
+                multi-disciplinary approach allows us to explore a variety of treatment options, depending upon the severity of
+                the patient’s problems and pain.</p>
+              <p>We believe that open and timely communication with our patients and our referring physicians is critical in
+                having an efficient and effective patient care model. In order to understand, we must communicate.</p>
+              <p><b>About Our Practice</b></p>
+              <p>The professionals at Precision Spine Center represent a multidisciplinary team of spine care experts with an
+                excellent track record of success in treating a wide variety of spinal disorders. We are one of a very few
+                centers in the United States to consistently use 3D navigation during surgery, as well as computer-assisted
+                spine surgery. This advanced technology allows us to accurately treat the affected area without damaging healthy
+                bone, tissue or nerves, and enables the precise placement of implanted devices to achieve optimal outcomes.</p>
+              <p>Precision Spine Center takes a truly patient-centric approach to healthcare. Our Physicians take the time to
+                discuss the details of your medical condition and the various treatment/surgical options that are available.
+                Precision Spine Center is a place where Physicians listen.</p>
+              <p>Spine care is our specialty, our sole focus, our passion. If you’re seeking long-term relief and/or optimum
+                spine health, we invite you to consult with us.</p>
+              <p>When surgical intervention is the best option for your condition, you can be confident that our spine surgeons
+                are among the region’s most skilled and capable. We employ the latest neurosurgical techniques.</p>
 
-        <div class="chat-video-container">            
-            <div id="videos">
-                <div id="subscriber"></div>
-                <div id="publisher"></div>
-            </div>
-            <div class="chat-video-control row align-center">
-                <div class="columns col-md-2 center-text">
-                    <button id="chat-video-compress" class="button large circle"><i class="fa fa-compress"></i></button>
-                </div>
-                <div class="columns col-md-2 center-text">
-                    <button id="chat-video-end-call" class="button alert large circle"><i class="fa fa-phone"></i></button>
-                </div>
-            </div>
-        </div>
-
-        <div class="chat-header-intro">
-            <span class="h5 white-color">Messages</span>
-            <button data-open="exampleModal1" class="btn-new button clear circle large white"><i class="fa fa-phone large"></i></button>
-        </div>
-
-        <div class="chat-header-container">
-            <div class="chat-header row shrinked active">
-                <div class="columns small-2 chat-header-action pl-0 pr-0">
-                    <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
-                    
-                    <img src="https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602499.jpg" align="left" class="user-image circle tiny">
-
-                </div>
-                <div class="columns small-7 chat-header-user">
-                    <p class="mb-0 user-name"><b>John Robert</b></p>
-                    <span class=" user-role">Customer Support</span>
-                </div>
-                <div class="columns small-3 chat-header-video">
-                    <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
-                    <p class="timestamp mt-0-5 pull-right">12:32</p>
-                </div>
-                <div class="counter">4</div>
-            </div>
-        </div>
-        <div class="chat-header-container">
-            <div class="chat-header row shrinked active">
-                <div class="columns small-2 chat-header-action pl-0 pr-0">
-                    <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
-                    <img src="http://i.pravatar.cc/300" align="left" class="user-image circle tiny">
-                </div>
-                <div class="columns small-7 chat-header-user">
-                    <p class="mb-0 user-name"><b>John Robert</b></p>
-                    <span class=" user-role">Customer Support</span>
-                </div>
-                <div class="columns small-3 chat-header-video">
-                    <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
-                    <p class="timestamp mt-0-5 pull-right">12:32</p>
-                </div>
-                <div class="counter">4</div>
-            </div>
-        </div>
-        <div class="chat-header-container">
-            <div class="chat-header row shrinked active">
-                <div class="columns small-2 chat-header-action pl-0 pr-0">
-                    <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
-                    <img src="http://i.pravatar.cc/299" align="left" class="user-image circle tiny">
-                </div>
-                <div class="columns small-7 chat-header-user">
-                    <p class="mb-0 user-name"><b>John Robert</b></p>
-                    <span class=" user-role">Customer Support</span>
-                </div>
-                <div class="columns small-3 chat-header-video">
-                    <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
-                    <p class="timestamp mt-0-5 pull-right">12:32</p>
-                </div>
-                <div class="counter">4</div>
-            </div>
-        </div>
-        <div class="chat-header-container">
-            <div class="chat-header row shrinked">
-                <div class="columns small-2 chat-header-action pl-0 pr-0">
-                    <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
-                    <img src="http://i.pravatar.cc/298" align="left" class="user-image circle tiny">
-                </div>
-                <div class="columns small-7 chat-header-user">
-                    <p class="mb-0 user-name"><b>John Robert</b></p>
-                    <span class=" user-role">Customer Support</span>
-                </div>
-                <div class="columns small-3 chat-header-video">
-                    <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
-                    <p class="timestamp mt-0-5 pull-right">12:32</p>
-                </div>
-                <div class="counter">4</div>
-            </div>
-        </div>
-        <div class="chat-header-container">
-            <div class="chat-header row shrinked">
-                <div class="columns small-2 chat-header-action pl-0 pr-0">
-                    <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
-                    <img src="http://i.pravatar.cc/297" align="left" class="user-image circle tiny">
-                </div>
-                <div class="columns small-7 chat-header-user">
-                    <p class="mb-0 user-name"><b>John Robert</b></p>
-                    <span class=" user-role">Customer Support</span>
-                </div>
-                <div class="columns small-3 chat-header-video">
-                    <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
-                    <p class="timestamp mt-0-5 pull-right">12:32</p>
-                </div>
-                <div class="counter">4</div>
-            </div>
-        </div>
-        <div class="chat-header-container">
-            <div class="chat-header row shrinked">
-                <div class="columns small-2 chat-header-action pl-0 pr-0">
-                    <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
-                    <img src="http://i.pravatar.cc/296" align="left" class="user-image circle tiny">
-                </div>
-                <div class="columns small-7 chat-header-user">
-                    <p class="mb-0 user-name"><b>John Robert</b></p>
-                    <span class=" user-role">Customer Support</span>
-                </div>
-                <div class="columns small-3 chat-header-video">
-                    <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
-                    <p class="timestamp mt-0-5 pull-right">12:32</p>
-                </div>
-                <div class="counter">4</div>
-            </div>
-        </div>
-        <div class="chat-header-container">
-            <div class="chat-header row shrinked">
-                <div class="columns small-2 chat-header-action pl-0 pr-0">
-                    <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
-                    <img src="http://i.pravatar.cc/295" align="left" class="user-image circle tiny">
-                </div>
-                <div class="columns small-7 chat-header-user">
-                    <p class="mb-0 user-name"><b>John Robert</b></p>
-                    <span class=" user-role">Customer Support</span>
-                </div>
-                <div class="columns small-3 chat-header-video">
-                    <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
-                    <p class="timestamp mt-0-5 pull-right">12:32</p>
-                </div>
-                <div class="counter">4</div>
-            </div>
-        </div>
-        <div class="chat-header-container">
-            <div class="chat-header row shrinked">
-                <div class="columns small-2 chat-header-action pl-0 pr-0">
-                    <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
-                    <img src="http://i.pravatar.cc/294" align="left" class="user-image circle tiny">
-                </div>
-                <div class="columns small-7 chat-header-user">
-                    <p class="mb-0 user-name"><b>John Robert</b></p>
-                    <span class=" user-role">Customer Support</span>
-                </div>
-                <div class="columns small-3 chat-header-video">
-                    <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
-                    <p class="timestamp mt-0-5 pull-right">12:32</p>
-                </div>
-                <div class="counter">4</div>
-            </div>
-        </div>
-
-        <div class="chat-body-container hide">
-            <div class="chat-body">
-                <div class="wrapper">
-                    <div class="media-object" data-animate="slide-in-right slide-out-right">
-                        <div class="media-object-section">
-                            <img src="http://i.pravatar.cc/300" align="left" class="user-image circle small">
-                        </div>
-                        <div class="media-object-section middle">
-                            <div class="small talk-bubble border tri-right left-in">
-                                <div class="talktext">
-                                    <p>If you have questions, you can reach me anytime by sending me a secure message or schedule a call and we can go over it on the phone together.</p>
-                                </div>
+              <div class="row">
+                <div class="grouped-listing">
+                  <div class="large-4 columns">
+                    <h6 class="subheader"><i class="fa fa-trophy fa-border primary-color"></i> AWARDS & ACCREDITATIONS</h6>
+                  </div>
+                  <div class="large-8 columns">
+                    <ul>
+                      <li>
+                        <div class="media-object">
+                          <div class="media-object-section logo middle">
+                            <div class="img-wrapper">
+                              <img src="../img/logo-Precision-Spine-Center.png">
                             </div>
-                            <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+                          </div>
+                          <div class="media-object-section middle">
+                            <p class="h6">Medical Tourism Association (MTA) Member</p>
+                          </div>
                         </div>
-                    </div>
-                </div>
-                <div class="wrapper pull-right">
-                    <div class="media-object pull-right" data-animate="slide-in-right slide-out-right">
-                        <div class="small white-bg talk-bubble border tri-right right-in">
-                            <div class="talktext">
-                                <p> you have questions, you can reach me anytime by sending me a secure message or schedule a call and we can go over it on the phon</p>
+                      </li>
+                      <li>
+                        <div class="media-object">
+                          <div class="media-object-section logo middle">
+                            <div class="img-wrapper">
+                              <img src="../img/logo-Precision-Spine-Center.png">
                             </div>
+                          </div>
+                          <div class="media-object-section middle">
+                            <p class="h6">JCI Accredited since 1950</p>
+                          </div>
                         </div>
-                        <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
-                    </div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="wrapper">
-                    <div class="media-object" data-animate="slide-in-right slide-out-right">
-                        <div class="media-object-section">
-                            <img src="http://i.pravatar.cc/300" align="left" class="user-image circle small">
-                        </div>
-                        <div class="media-object-section middle">
-                            <div class="small talk-bubble border tri-right left-in">
-                                <div class="talktext">
-                                    <p>If you have questions, you can reach me anytime by sending me a secure message or schedule a call and we can go over it on the phone together.</p>
-                                </div>
-                            </div>
-                            <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="chat-input-container hide">
-            <ul class="attachments inline-list">
-                <li class="image-attachment fa fa-file-o fa-lg">
-                    <a class="btn-close"><i class="fa fa-trash"></i></a>
-                    <span class="filename" data-tooltip tabindex="1" title="Screenshot_Screen_2018-19-823.jpg">Screenshot_Screen_2018-19-823.jpg</span>
-                </li>
-                <li class="image-attachment fa fa-file-image-o fa-lg">
-                    <a class="btn-close"><i class="fa fa-trash"></i></a>
-                    <span class="filename" data-tooltip tabindex="1" title="Screenshot_Screen_2018-19-823.jpg">Screenshot_Screen_2018-19-823.jpg</span>
-                </li>
-                <li class="image-attachment fa fa-file-excel-o fa-lg">
-                    <a class="btn-close"><i class="fa fa-trash"></i></a>
-                    <span class="filename" data-tooltip tabindex="1" title="Screenshot_Screen_2018-19-823.jpg">Filename.jpg</span>
-                </li>
-                <li class="image-attachment fa fa-file-word-o fa-lg">
-                    <a class="btn-close"><i class="fa fa-trash"></i></a>
-                    <span class="filename" data-tooltip tabindex="1" title="Screenshot_Screen_2018-19-823.jpg">Filename.jpg</span>
-                </li>
-                <li class="image-attachment fa fa-file-pdf-o fa-lg">
-                    <a class="btn-close"><i class="fa fa-trash"></i></a>
-                    <span class="filename" data-tooltip tabindex="1" title="Screenshot_Screen_2018-19-823.jpg">Filename.jpg</span>
-                </li>
-                <li class="image-attachment fa fa-file-archive-o fa-lg">
-                    <a class="btn-close"><i class="fa fa-trash"></i></a>
-                    <span class="filename" data-tooltip tabindex="1" title="Screenshot_Screen_2018-19-823.jpg">Filename.jpg</span>
-                </li>
-            </ul>
-            <div class="chat-input">                
-                <textarea name="" id="" placeholder="What's on your mind?"></textarea>
-                <button id="btnAttach" class="button secondary hollow large clear">
-                    <i class="fa fa-paperclip"></i>
-                </button>
-                <button id="btnSend" class="button hollow large clear success">
-                    <i class="fa fa-paper-plane"></i>
-                </button>
-            </div>
-        </div>
-    </div>
+              </div>
 
-    <div class="reveal align-center-middle text-center video-call" id="exampleModal1" data-reveal>
-        <div class="row video-call-caller mb-2">
-            <div class="columns col-md-12">
-                <p class="h2 white-color mb-4">Liam Neeson Calling...</p>
-                <img src="http://i.pravatar.cc/300" alt="" class="user-image circle">
+              <div class="row">
+                <div class="grouped-listing">
+                  <div class="large-4 columns">
+                    <h6 class="subheader"><i class="fa fa-gear fa-border success-color"></i> ANCILLARY SERVICES</h6>
+                  </div>
+                  <div class="large-8 columns">
+                    <ul class="fa-ul">
+                      <li><i class="fa-li fa fa-credit-card"></i>Billing & Insurance Assistance</li>
+                      <li><i class="fa-li fa fa-tty"></i>Online and Telephone Support</li>
+                      <li><i class="fa-li fa fa-briefcase"></i>Travel and Accomodation Arrangements</li>
+                      <li><i class="fa-li fa fa-cutlery"></i>Patient and Visitor Amenities</li>
+                      <li><i class="fa-li fa fa-hand-spock-o"></i>Language Assistance / Interpreter Services</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
             </div>
-        </div>
-        <div class="row video-call-action">
-          <div class="columns col-md-2">
-            <button id="btn-call-reject" class="button clear large circle alert">
-                <i class="fa fa-times"></i>
-            </button>
-        </div>
-          <div class="columns col-md-2">
-              <button id="btn-call-answer" class="button clear large circle success" data-close aria-label="Close modal">
-                <i class="fa fa-phone"></i>
-            </button>
           </div>
+
+        </div>
+        <!--End of Facility Profile-->
+
+        <!--Start of Forms Panel-->
+        <div class="tabs-panel" id="panel3">
+          <div class="row expanded">
+            <div class="auto columns">
+              <div class="spoke-list mb-1">
+
+                <div class="spoke-list-heading row expanded align-middle">
+                  <div class="medium-7 columns">
+                    <!--<input type="checkbox" class="mb-0 mr-1" name="">&nbsp-->
+                    <a href="#">Form Name <i class="fa fa-caret-up fa-fw"></i></a>
+                  </div>
+                  <div class="medium-2 columns">
+                    <a href="#">Date Created <i class="fa fa-caret-up fa-fw"></i></a>
+                  </div>
+                  <div class="medium-2 columns">
+                    <a href="#">Last Update <i class="fa fa-caret-up fa-fw"></i></a>
+                  </div>
+                  <div class="shrink columns">
+                  </div>
+                </div>
+
+                <div class="spoke-list-item row expanded align-middle" onclick="">
+                  <div class="medium-7 columns">
+                    <div class="row collapse align-middle">
+                      <!--<div class="shrink columns">-->
+                        <!--<input type="checkbox" class="mb-0 mr-1" name="">-->
+                      <!--</div>-->
+                      <div class="columns">
+                        <p class="h6 mb-0"><i class="fa fa-file-text-o fa-fw"></i>&nbsp; Pre-Op Evaluation and Clearance</p>
+                        <!--<p class="subheader"><small><span class="badge success small"> </span> Account Created</small></p>-->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="medium-2 columns">
+                    24 Aug, 2018
+                  </div>
+                  <div class="medium-2 columns">
+                    -
+                  </div>
+                  <div class="shrink columns">
+                    <ul class="dropdown menu" data-dropdown-menu>
+                      <li>
+                        <a></a>
+                        <ul class="menu vertical">
+                          <li><a href="#"><i class="fa fa-edit"></i>&nbsp; Edit</a></li>
+                          <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Delete</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="spoke-list-item row expanded align-middle" onclick="">
+                  <div class="medium-7 columns">
+                    <div class="row collapse align-middle">
+                      <!--<div class="shrink columns">-->
+                      <!--<input type="checkbox" class="mb-0 mr-1" name="">-->
+                      <!--</div>-->
+                      <div class="columns">
+                        <p class="h6 mb-0"><i class="fa fa-file-text-o fa-fw"></i>&nbsp; Service Experience Survey</p>
+                        <!--<p class="subheader"><small><span class="badge success small"> </span> Account Created</small></p>-->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="medium-2 columns">
+                    24 Aug, 2018
+                  </div>
+                  <div class="medium-2 columns">
+                    -
+                  </div>
+                  <div class="shrink columns">
+                    <ul class="dropdown menu" data-dropdown-menu>
+                      <li>
+                        <a></a>
+                        <ul class="menu vertical">
+                          <li><a href="#"><i class="fa fa-edit"></i>&nbsp; Edit</a></li>
+                          <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Delete</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End of Forms Panel-->
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<div id="scheduleCalendar" class="reveal" data-reveal>
+  <div class="row collapse">
+    <div class="large-12 columns">
+      <h5 class="reveal-heading">Schedule A Call</h5>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </div>
+  <div class="row collapse">
+    <div class="large-12 columns">
+      <div class="reveal-body">
+        <iframe src="https://richard-youradvocate.youcanbook.me/?noframe=true&skipHeaderFooter=true"
+                id="ycbmiframerichard-youradvocate"
+                style="width:100%;height:1000px;border:0px;background-color:transparent;" frameborder="0"
+                allowtransparency="true"></iframe>
+        <script>window.addEventListener && window.addEventListener("message", function (event) {
+            if (event.origin === "https://richard-youradvocate.youcanbook.me") {
+                document.getElementById("ycbmiframerichard-youradvocate").style.height = event.data + "px";
+            }
+        }, false);</script>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHat Component -->
+<div id="chat-toggle">
+  <i class="fa fa-comment"></i>
+</div>
+
+<div id="chat-notification">
+  <div class="form-notification">
+    <div class="pl-1 pr-1 pt-1 pb-0-5 clr-black50 bg-black10 mb-1">
+      <span><strong>Medical Follow Up: </strong> 1 of 4</span>
+    </div>
+    <div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit data-auto-play="false">
+      <ul class="orbit-container pl-1 pr-1">
+        <li class="orbit-slide is-active">
+          <div class="">
+            <p>On a scale of 0 to 5, How much pain you felt after she left you?</p>
+            <div class="row">
+              <div class="columns">
+                <ul class="list-style-type-none ml-0">
+                  <li name="scale"><input type="radio"><label>1</label></li>
+                  <li name="scale"><input type="radio"><label>2</label></li>
+                  <li name="scale"><input type="radio"><label>3</label></li>
+                  <li name="scale"><input type="radio"><label>4</label></li>
+                  <li name="scale"><input type="radio"><label>5</label></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="orbit-slide">
+          <div class="">
+            <p>Did you sleep well last saturday night after the party?</p>
+            <div class="row">
+              <div class="columns">
+                <ul class="list-style-type-none ml-0">
+                  <li class="" name="scale"><input type="radio"><label>Yes</label></li>
+                  <li class="" name="scale"><input type="radio"><label>No</label></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="orbit-slide">
+          <div class="">
+            <p>I'm really sorry about this but will you tell me your name again.</p>
+            <div class="row">
+              <div class="columns">
+                <input type="text" placeholder="your name" class=" mb-0">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="orbit-slide">
+          <div class="">
+            <p>W/c of the following games you've finished playing?</p>
+            <div class="row">
+              <div class="columns">
+                <ul class="list-style-type-none ml-0">
+                  <li class="" name="game"><input type="checkbox"><label>Super Mario Bros.</label></li>
+                  <li class="" name="game"><input type="checkbox"><label>Metal Gear Solid 5</label></li>
+                  <li class="" name="game"><input type="checkbox"><label>Horizon: Zero Dawn</label></li>
+                  <li class="" name="game"><input type="checkbox"><label>Devil May Cry</label></li>
+                  <li class="" name="game"><input type="checkbox"><label>Goat Simulator</label></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="orbit-controls bottom row  pl-1 pr-1 bg-black10 pt-1 pb-1">
+        <div class="columns center-content">
+          <button class="orbit-previous button tiny expanded mb-0 pt-0-5 pb-0-5"><span class="">Previous</span></button>
+        </div>
+        <div class="columns center-content">
+          <button class="orbit-next button tiny expanded mb-0 pt-0-5 pb-0-5"><span class="">Next</span></button>
+        </div>
+
+
       </div>
     </div>
 
-	<script src="../bower_components/jquery/dist/jquery.js"></script>
-	<script src="../bower_components/what-input/what-input.js"></script>
-	<script src="../bower_components/foundation-sites/dist/foundation.js"></script>
-	<script src="../bower_components/foundation-sites/js/foundation.toggler.js"></script>
-	<script src="../bower_components/foundation-sites/js/foundation.util.motion.js"></script>
-	<script src="../bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
- 	<script src="../js/powertour/js/powertour.3.2.0.min.js"></script>
-	
-	<script src="../js/owl-carousel/owl.carousel.js"></script>
+  </div>
+  <div class="chat-header-container">
+    <div class="chat-header row shrinked active pb-1">
+      <div class="columns small-2 chat-header-action pl-0 pr-0">
+        <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i
+          class="fa fa-chevron-left"></i></button>
+        <img src="http://i.pravatar.cc/300" align="left" class="user-image circle tiny">
+      </div>
+      <div class="columns small-10 chat-header-user pr-0">
+        <p class="mb-0 user-name"><b>John Robert</b></p>
+        <span class=" user-role">You have to drink your medicine three times a day or you will have to do the surgery next week. Remember that it's cheaper and drinking the medicine.</span>
+      </div>
+      <div class="counter">3</div>
+    </div>
+  </div>
+</div>
 
-	<script src="../js/app.js"></script>
+<div id="chat-container" style="display: none;">
 
-	<script type="text/javascript">
+  <div class="chat-video-container">
+    <div id="videos" class="compact">
+      <div id="subscriber" class="compact"></div>
+      <div id="publisher" class="compact"></div>
+    </div>
+    <div class="chat-video-control row align-center">
+      <div class="columns col-md-2 center-text pr-0">
+        <button id="chat-video-compress" class="button large circle"><i class="fa fa-compress"></i></button>
+      </div>
+      <div class="columns col-md-2 center-text pad0">
+        <button id="chat-video-message" class="button success large circle mb-0"><i class="fa fa-comment"></i></button>
+      </div>
+      <div class="columns col-md-2 center-text pl-0">
+        <button id="chat-video-end-call" class="button alert large circle"><i class="fa fa-phone"></i></button>
+      </div>
+    </div>
+  </div>
 
-        $(document).ready(function() {
- 
-		  	$("#facilityImages").owlCarousel({
-		  		items: 2,
-		  		nav: true,
-		  		loop: true
-		  		// itemsScaleUp: true
-		  	});
+  <div class="chat-header-intro">
+    <span class="h5 white-color">Messages</span>
+    <button data-open="exampleModal1" class="btn-new button clear circle large white"><i class="fa fa-phone large"></i>
+    </button>
+  </div>
 
-		  	$("#facilityList").owlCarousel({
-		  		items: 3,
-		  		padding: 30,
-		  		nav: true,
-		  		loop: false
-		  		// itemsScaleUp: true
-		  	});
+  <div class="chat-header-container">
+    <div class="chat-header row shrinked active align-middle">
+      <!--<div class="columns small-2 chat-header-action pl-0 pr-0">-->
+      <!--<button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>-->
+      <!---->
+      <!--<img src="https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602499.jpg" align="left" class="user-image circle tiny">-->
 
-		  	
+      <!--</div>-->
+      <div class="columns small-7 chat-header-user">
+        <p class="mb-0 user-name"><b>John Robert</b></p>
+        <!--<span class=" user-role">Customer Support</span>-->
+      </div>
+      <div class="columns auto chat-header-video">
+        <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large pull-right"><i
+          class="fa fa-video-camera"></i></button>
+        <p class="timestamp mt-0-5 pull-right">12:32</p>
+      </div>
+      <div class="counter">4</div>
+    </div>
+  </div>
+  <div class="chat-header-container">
+    <div class="chat-header row shrinked active">
+      <div class="columns small-2 chat-header-action pl-0 pr-0">
+        <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i
+          class="fa fa-chevron-left"></i></button>
+        <img src="http://i.pravatar.cc/300" align="left" class="user-image circle tiny">
+      </div>
+      <div class="columns small-7 chat-header-user">
+        <p class="mb-0 user-name"><b>John Robert</b></p>
+        <span class=" user-role">Customer Support</span>
+      </div>
+      <div class="columns small-3 chat-header-video">
+        <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i
+          class="fa fa-video-camera"></i></button>
+        <p class="timestamp mt-0-5 pull-right">12:32</p>
+      </div>
+      <div class="counter">4</div>
+    </div>
+  </div>
+  <div class="chat-header-container">
+    <div class="chat-header row shrinked active">
+      <div class="columns small-2 chat-header-action pl-0 pr-0">
+        <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i
+          class="fa fa-chevron-left"></i></button>
+        <img src="http://i.pravatar.cc/299" align="left" class="user-image circle tiny">
+      </div>
+      <div class="columns small-7 chat-header-user">
+        <p class="mb-0 user-name"><b>John Robert</b></p>
+        <span class=" user-role">Customer Support</span>
+      </div>
+      <div class="columns small-3 chat-header-video">
+        <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i
+          class="fa fa-video-camera"></i></button>
+        <p class="timestamp mt-0-5 pull-right">12:32</p>
+      </div>
+      <div class="counter">4</div>
+    </div>
+  </div>
+  <div class="chat-header-container">
+    <div class="chat-header row shrinked">
+      <div class="columns small-2 chat-header-action pl-0 pr-0">
+        <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i
+          class="fa fa-chevron-left"></i></button>
+        <img src="http://i.pravatar.cc/298" align="left" class="user-image circle tiny">
+      </div>
+      <div class="columns small-7 chat-header-user">
+        <p class="mb-0 user-name"><b>John Robert</b></p>
+        <span class=" user-role">Customer Support</span>
+      </div>
+      <div class="columns small-3 chat-header-video">
+        <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i
+          class="fa fa-video-camera"></i></button>
+        <p class="timestamp mt-0-5 pull-right">12:32</p>
+      </div>
+      <div class="counter">4</div>
+    </div>
+  </div>
+  <div class="chat-header-container">
+    <div class="chat-header row shrinked">
+      <div class="columns small-2 chat-header-action pl-0 pr-0">
+        <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i
+          class="fa fa-chevron-left"></i></button>
+        <img src="http://i.pravatar.cc/297" align="left" class="user-image circle tiny">
+      </div>
+      <div class="columns small-7 chat-header-user">
+        <p class="mb-0 user-name"><b>John Robert</b></p>
+        <span class=" user-role">Customer Support</span>
+      </div>
+      <div class="columns small-3 chat-header-video">
+        <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i
+          class="fa fa-video-camera"></i></button>
+        <p class="timestamp mt-0-5 pull-right">12:32</p>
+      </div>
+      <div class="counter">4</div>
+    </div>
+  </div>
+  <div class="chat-header-container">
+    <div class="chat-header row shrinked">
+      <div class="columns small-2 chat-header-action pl-0 pr-0">
+        <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i
+          class="fa fa-chevron-left"></i></button>
+        <img src="http://i.pravatar.cc/296" align="left" class="user-image circle tiny">
+      </div>
+      <div class="columns small-7 chat-header-user">
+        <p class="mb-0 user-name"><b>John Robert</b></p>
+        <span class=" user-role">Customer Support</span>
+      </div>
+      <div class="columns small-3 chat-header-video">
+        <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i
+          class="fa fa-video-camera"></i></button>
+        <p class="timestamp mt-0-5 pull-right">12:32</p>
+      </div>
+      <div class="counter">4</div>
+    </div>
+  </div>
+  <div class="chat-header-container">
+    <div class="chat-header row shrinked">
+      <div class="columns small-2 chat-header-action pl-0 pr-0">
+        <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i
+          class="fa fa-chevron-left"></i></button>
+        <img src="http://i.pravatar.cc/295" align="left" class="user-image circle tiny">
+      </div>
+      <div class="columns small-7 chat-header-user">
+        <p class="mb-0 user-name"><b>John Robert</b></p>
+        <span class=" user-role">Customer Support</span>
+      </div>
+      <div class="columns small-3 chat-header-video">
+        <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i
+          class="fa fa-video-camera"></i></button>
+        <p class="timestamp mt-0-5 pull-right">12:32</p>
+      </div>
+      <div class="counter">4</div>
+    </div>
+  </div>
+  <div class="chat-header-container">
+    <div class="chat-header row shrinked">
+      <div class="columns small-2 chat-header-action pl-0 pr-0">
+        <button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i
+          class="fa fa-chevron-left"></i></button>
+        <img src="http://i.pravatar.cc/294" align="left" class="user-image circle tiny">
+      </div>
+      <div class="columns small-7 chat-header-user">
+        <p class="mb-0 user-name"><b>John Robert</b></p>
+        <span class=" user-role">Customer Support</span>
+      </div>
+      <div class="columns small-3 chat-header-video">
+        <button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i
+          class="fa fa-video-camera"></i></button>
+        <p class="timestamp mt-0-5 pull-right">12:32</p>
+      </div>
+      <div class="counter">4</div>
+    </div>
+  </div>
 
-		  	$.powerTour({
-                tours : [
-                    {
-                        trigger            : '#interestTrigger',
-                        startWith          : 1,
-                        easyCancel         : false,
-                        escKeyCancel       : true,
-                        scrollHorizontal   : false,
-                        keyboardNavigation : true,
-                        loopTour           : false,
-                        highlightStartSpeed : 200,// new 2.5.0
-                        highlightEndSpeed  : 200,// new 2.3.0
-                        onStartTour        : function(ui){ },
-                        onEndTour          : function(ui){ },   
-                        onProgress         : function(ui){ },
-                        steps : [
-                              {
-                                  hookTo          : '#modalOne',
-                                  content         : '#interestModal',
-                                  width           : 700,
-                                  position        : 'sc',
-                                  offsetY         : 0,
-                                  offsetX         : 0,
-                                  fxIn            : 'fadeIn',
-                                  fxOut           : 'fadeOut',
-                                  showStepDelay   : 0,
-                                  center          : 'step',
-                                  scrollSpeed     : 400,
-                                  scrollEasing    : 'swing',
-                                  scrollDelay     : 0,
-                                  timer           : false,
-                                  highlight       : true,
-                                  keepHighlighted : true,
-                                  keepVisible     : false,// new 2.2.0
-                                  onShowStep      : function(ui){},
-                                  onHideStep      : function(ui){ }
-                              }
-                        ],
-                        stepDefaults : [
-                            {
-                                width           : 300,
-                                position        : 'sc',
-                                offsetY         : 0,
-                                offsetX         : 0,
-                                fxIn            : 'fadeIn',
-                                fxOut           : 'fadeOut',
-                                showStepDelay   : 0,
-                                center          : 'step',
-                                scrollSpeed     : 400,
-                                scrollEasing    : 'swing',
-                                scrollDelay     : 0,
-                                timer           : '00:00',
-                                highlight       : true,
-                                keepHighlighted : false,
-                                keepVisible     : false,// new 2.2.0
-                                onShowStep      : function(ui){ },
-                                onHideStep      : function(ui){ }
-                            }
-                         ]
-                    }
-                ]
-            });
+  <div class="chat-body-container hide">
+    <div class="chat-body">
+      <div class="wrapper">
+        <div class="media-object" data-animate="slide-in-right slide-out-right">
+          <div class="media-object-section">
+            <img src="http://i.pravatar.cc/300" align="left" class="user-image circle small">
+          </div>
+          <div class="media-object-section middle">
+            <div class="small talk-bubble border tri-right left-in">
+              <div class="talktext">
+                <p>If you have questions, you can reach me anytime by sending me a secure message or schedule a call and
+                  we can go over it on the phone together.</p>
+              </div>
+            </div>
+            <span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="chat-input-container hide">
+    <div class="collapse row align-middle">
+      <div class="auto columns">
+        <textarea name="" id="" placeholder="What's on your mind?"></textarea>
+      </div>
+      <div class="shrink columns">
+        <button id="btnAttach" class="button secondary hollow large clear pull-left">
+          <i class="fa fa-paperclip"></i>
+        </button>
+        <button id="btnSend" class="button success hollow large clear pull-right">
+          <i class="fa fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+    <div class="row collapse">
+      <div class="columns">
+        <p class="help-text">* Acceptable file formats are .pdf, .rtf, .doc, .docx, .xls, .xlsx. Total size limit of all
+          attachments in one upload instance: 25 mb</p>
+      </div>
+    </div>
 
-            $('#scheduleCall').click(function (e) {
-	  			$('.powertour-step').css('display', 'none');
-	  			$('#powertour-mask').css('display', 'none');
+    <ul class="attachments inline-list" style="display: none;">
+      <li class="image-attachment fa fa-file-o fa-lg">
+        <a class="btn-close"><i class="fa fa-trash"></i></a>
+        <span class="filename" data-tooltip tabindex="1" title="Screenshot_Screen_2018-19-823.jpg">Screenshot_Screen_2018-19-823.jpg</span>
+      </li>
+      <li class="image-attachment fa fa-file-image-o fa-lg">
+        <a class="btn-close"><i class="fa fa-trash"></i></a>
+        <span class="filename" data-tooltip tabindex="1" title="Screenshot_Screen_2018-19-823.jpg">Screenshot_Screen_2018-19-823.jpg</span>
+      </li>
+      <li class="image-attachment fa fa-file-excel-o fa-lg">
+        <a class="btn-close"><i class="fa fa-trash"></i></a>
+        <span class="filename" data-tooltip tabindex="1" title="Screenshot_Screen_2018-19-823.jpg">Filename.jpg</span>
+      </li>
+      <li class="image-attachment fa fa-file-word-o fa-lg">
+        <a class="btn-close"><i class="fa fa-trash"></i></a>
+        <span class="filename" data-tooltip tabindex="1" title="Screenshot_Screen_2018-19-823.jpg">Filename.jpg</span>
+      </li>
+      <li class="image-attachment fa fa-file-pdf-o fa-lg">
+        <a class="btn-close"><i class="fa fa-trash"></i></a>
+        <span class="filename" data-tooltip tabindex="1" title="Screenshot_Screen_2018-19-823.jpg">Filename.jpg</span>
+      </li>
+      <li class="image-attachment fa fa-file-archive-o fa-lg">
+        <a class="btn-close"><i class="fa fa-trash"></i></a>
+        <span class="filename" data-tooltip tabindex="1" title="Screenshot_Screen_2018-19-823.jpg">Filename.jpg</span>
+      </li>
+    </ul>
+  </div>
+</div>
 
-	  			$("#scheduleCalendar").foundation('open');
-	  			e.preventDefault();
-		  	});
+<div class="reveal align-center-middle text-center video-call" id="exampleModal1" data-reveal>
+  <div class="row video-call-caller mb-2">
+    <div class="columns col-md-12">
+      <p class="h2 white-color mb-4">Liam Neeson Calling...</p>
+      <img src="http://i.pravatar.cc/300" alt="" class="user-image circle">
+    </div>
+  </div>
+  <div class="row video-call-action">
+    <div class="columns col-md-2">
+      <button id="btn-call-reject" class="button clear large circle alert">
+        <i class="fa fa-times"></i>
+      </button>
+    </div>
+    <div class="columns col-md-2">
+      <button id="btn-call-answer" class="button clear large circle success" data-close aria-label="Close modal">
+        <i class="fa fa-phone"></i>
+      </button>
+    </div>
+  </div>
+</div>
 
-		  	$('#interestTrigger').click(function(e) {
-		  		$('.powertour-step, .powertour-step .close-button').css('display','block');
-	  			$('.powertour-step').css('z-index','9001');
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/what-input/what-input.js"></script>
+<script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+<script src="../bower_components/foundation-sites/js/foundation.toggler.js"></script>
+<script src="../bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+<script src="../bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
 
-	  			e.preventDefault();
-		  	});
-		 
-		});
-    </script>
+<script src="../js/owl-carousel/owl.carousel.js"></script>
+<script src='../js/fullcalendar/lib/moment.min.js'></script>
+<script src='../js/fullcalendar/fullcalendar.min.js'></script>
+
+<script src="../js/app.js"></script>
+
+<script type="text/javascript">
+
+    var sampleEvents = {
+        "events": [
+            {
+                title: 'Scheduled Call with Kate Newman',
+                start: '2017-09-25T13:00:00'
+            },
+            {
+                title: 'Scheduled Call with Amy Thompson',
+                start: '2017-09-25T15:00:00',
+                end: '2017-09-25T16:00:00'
+            },
+            {
+                title: 'Scheduled Call with Brendon Martin',
+                start: '14:00:00',
+                end: '15:00:00',
+                dow: [1, 2, 3, 4, 5, 6, 7]
+            }
+        ]
+    };
+
+    $('#eventCalendar').fullCalendar({
+        header: {
+            left: 'prev',
+            center: 'title',
+            right: 'next'
+        },
+        aspectRatio: 1,
+        height: 'auto',
+        fixedWeekCount: false,
+        events: sampleEvents
+    });
+
+    $('#eventScheduler').fullCalendar({
+        defaultView: 'agendaDay',
+        header: {
+            left: 'title',
+            center: '',
+            right: 'today prev,next'
+        },
+        allDayText: 'All-Day',
+        slotLabelFormat: 'h(:mm) A',
+        minTime: '07:00:00',
+        maxTime: '20:00:00',
+        height: 'auto',
+        editable: true,
+        eventLimit: true, // allow "more" link when too many events
+        titleFormat: 'MMM D',
+        events: sampleEvents
+    });
+
+    $(document).ready(function () {
+
+        $("#facilityImages").owlCarousel({
+            items: 2,
+            nav: true,
+            loop: true
+            // itemsScaleUp: true
+        });
+
+        $("#facilityList").owlCarousel({
+            items: 3,
+            padding: 30,
+            nav: true,
+            loop: false
+            // itemsScaleUp: true
+        });
+
+    });
+</script>
 
 </body>
 </html>

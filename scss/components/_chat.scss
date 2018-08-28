@@ -592,7 +592,7 @@ $light-gray-hex: #CBCFD3;
       .help-text {
         margin: 0.5rem 0;
         font-size: rem-calc(10);
-        color: rgba($black, $B-hinttext);
+        color: rgba($black, $B-text);
       }
       .input-group, .button {
         margin-bottom: 0;
@@ -1078,7 +1078,7 @@ $main-color: #1ebd44;
     .help-text {
       margin: 0.3125rem 1rem 1rem;
       font-size: rem-calc(10);
-      color: rgba($black, $B-hinttext);
+      color: rgba($black, $B-text);
     }
     .attachments {
       display: block;
