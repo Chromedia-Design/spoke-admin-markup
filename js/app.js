@@ -207,6 +207,19 @@ $(".clinical-pathway-basic-content").on("click", function () {
     $(this).siblings('.clinical-pathway-details').slideDown()
 })
 
+// toggle second child through first child
+$(".toggle-sibling").children().first().on('click', function(event) {
+  // event.preventDefault();
+  // $(this).siblings().slideToggle()
+});
+
+$(".clinical-pathway-new-entry-list").on('click', '.clinical-pathway-new-entry', function(event) {
+  event.preventDefault();
+  $(this).siblings().removeClass('active')
+  $(this).addClass('active')
+});
+
+
 
 // replace these values with those generated in your TokBox Account
 var apiKey = "45907482";

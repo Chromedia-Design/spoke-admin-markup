@@ -53,6 +53,7 @@
  		font-size: .875rem;
  		border-bottom: 1px solid darken(#fff,8%);
  		position: relative;
+ 		margin-left: 1rem !important;
  		// @extend .hide-show-button-on-hover;
  		@extend .align-middle;
  		&.active {
@@ -71,7 +72,7 @@
 	 	}
 
 	 	.new-entry-title {
-
+	 		user-select: none;
 	 	}
 	 	.new-entry-action {
 	 		position: absolute;

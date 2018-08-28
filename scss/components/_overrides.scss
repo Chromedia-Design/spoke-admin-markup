@@ -147,3 +147,16 @@
 	@extend .reveal;
 	display: block !important;
 }
+
+
+//------- MOBILE OVERRIDES -------- //	
+
+
+.mobile {
+	.tabs {
+		li {
+			text-align: center;
+			width: 30.33% !important;
+		}
+	}
+}
