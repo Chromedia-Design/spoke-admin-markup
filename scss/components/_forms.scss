@@ -110,7 +110,6 @@ fieldset {
 }
 
 .checkbox-wrapper {
-<<<<<<< HEAD
 	display: flex;
 	[type='checkbox'],
 	[type='radio'] {
@@ -128,7 +127,6 @@ fieldset {
 			margin: 0;
 		}
 	}
-=======
   display: flex;
   margin-bottom: 1rem;
   [type='checkbox'],
@@ -148,7 +146,6 @@ fieldset {
       margin: 0;
     }
   }
->>>>>>> a6a0cb377677ad0a5808d87dcf5f8b529b3f8417
 }
 
 label {
@@ -663,7 +660,6 @@ label.image-upload {
 }
 
 .label-block {
-<<<<<<< HEAD
 	margin-top: -1px;
 	.label-group {
 		padding: 0.5rem 1rem;
@@ -702,7 +698,6 @@ label.image-upload {
 			border-bottom: 1px solid rgba($black, $B-dividers);
 		}
 	}
-=======
   margin-top: -1px;
   .label-group {
     padding: 0.5rem 1rem;
@@ -740,7 +735,6 @@ label.image-upload {
       border-bottom: 1px solid rgba($black, $B-dividers);
     }
   }
->>>>>>> a6a0cb377677ad0a5808d87dcf5f8b529b3f8417
 }
 
 .menu-options {
@@ -910,7 +904,6 @@ input {
 }
 
 .fancy-checkbox {
-<<<<<<< HEAD
   display: block;
   position: relative;
   margin: 0;
@@ -957,7 +950,6 @@ input {
       }
     }
   }
-=======
 	display: block;
 	position: relative;
 	margin: 0;
@@ -993,7 +985,6 @@ input {
 			}
 		}
 	}
->>>>>>> c1fbb184f50443a044a96486a244322b92aaaef6
 }
 
 .dropdown-checkbox {
