@@ -127,6 +127,28 @@ fieldset {
 			margin: 0;
 		}
 	}
+<<<<<<< HEAD
+  display: flex;
+  margin-bottom: 1rem;
+  [type='checkbox'],
+  [type='radio'],
+  select {
+    display: inline-block;
+    line-height: 1.5em;
+    margin: 0.5em 0 0 0;
+    + label {
+      margin-bottom: 0;
+    }
+  }
+  &.align-middle {
+    align-items: center;
+    [type='checkbox'],
+    [type='radio'] {
+      margin: 0;
+    }
+  }
+=======
+>>>>>>> 4e9c6de88ba91c5d1930770b2a3acdca1c69261b
 }
 
 label {
@@ -642,6 +664,47 @@ label.image-upload {
 }
 
 .label-block {
+<<<<<<< HEAD
+	margin-top: -1px;
+	.label-group {
+		padding: 0.5rem 1rem;
+		border: 1px solid rgba($black, $B-dividers);
+		height: 100%;
+		[type='text'],
+		[type='password'],
+		[type='date'],
+		[type='datetime'],
+		[type='datetime-local'],
+		[type='month'],
+		[type='week'],
+		[type='email'],
+		[type='number'],
+		[type='search'],
+		[type='tel'],
+		[type='time'],
+		[type='url'],
+		[type='color'],
+		textarea,
+		select {
+			margin-bottom: 0;
+		}
+	}
+	.columns {
+		&:not(:first-child) {
+			.label-group {
+				border-left: none;
+			}
+		}
+	}
+	&.collapsible {
+		margin: 0;
+		.spoke-list {
+			border-top: none;
+			border-bottom: 1px solid rgba($black, $B-dividers);
+		}
+	}
+=======
+>>>>>>> 4e9c6de88ba91c5d1930770b2a3acdca1c69261b
   margin-top: -1px;
   .label-group {
     padding: 0.5rem 1rem;
@@ -894,6 +957,44 @@ input {
       }
     }
   }
+<<<<<<< HEAD
+	display: block;
+	position: relative;
+	margin: 0;
+	width: 100%;
+	text-align: left;
+	cursor: pointer;
+	input {
+		margin: 0 0 0 3px;
+		width: 32px;
+		height: 32px;
+		position: relative;
+		cursor: pointer;
+		&:after {
+			margin-left: -3px;
+			border-radius: 50%;
+			width: 32px;
+			height: 32px;
+			content: '';
+			border: 2px solid $light-gray;
+			background-color: $white;
+			background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
+			background-repeat: no-repeat;
+			background-position: 2px 3px;
+			z-index: 2;
+			position: absolute;
+			cursor: pointer;
+			transition: all 0.2s ease-in;
+		}
+		&:checked {
+			&:after {
+				background-color: $success-color;
+				border-color: $success-color;
+			}
+		}
+	}
+=======
+>>>>>>> 4e9c6de88ba91c5d1930770b2a3acdca1c69261b
 }
 
 .dropdown-checkbox {
