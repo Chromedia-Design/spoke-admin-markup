@@ -125,15 +125,15 @@
               <ul class="nested vertical menu">
                 <li>
                   <a href="#">
-                    <i class="fa fa-check-circle alert-color"></i>&nbsp; Molar Root Canal
+                    <i class="fa fa-exclamation-circle alert-color"></i>&nbsp; Molar Root Canal
                     <p class="subheader mb-0">
-                      <small>3 Categories</small>
+                      <small>3 Incomplete Categories</small>
                     </p>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i class="fa fa-exclamation-circle warning-color"></i>&nbsp; Front Teeth Canal
+                    <i class="fa fa-exclamation-circle alert-color"></i>&nbsp; Front Teeth Canal
                     <p class="subheader mb-0">
                       <small>3 Incomplete Categories</small>
                     </p>
@@ -897,7 +897,7 @@
           $(window).resize(function () {
               clearTimeout(timer);
               timer = setTimeout(function () {
-                  $('.site-nav, .content').css("height", $(window).height());
+                  $('.site-nav, .content, #packageBuilder').css("height", $(window).height());
               }, 40);
           }).resize();
       });

@@ -514,6 +514,12 @@ section {
 // Package builder: requires row class
 #packageBuilder {
 	font-size: rem-calc(14);
+	> .columns {
+		overflow-y: scroll;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
 	table {
 		font-size: rem-calc(14);
 	}
@@ -586,6 +592,7 @@ section {
 					color: $text-black;
 					background: transparent;
 					border-bottom: 1px solid rgba($black, $B-dividers);
+					border-right: 8px solid rgba($success-color, $B-hinttext);
 				}
 				&:before {
 					border-bottom: 1px solid $text-black;

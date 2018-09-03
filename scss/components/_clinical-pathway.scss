@@ -42,8 +42,9 @@
 
 // Add New Pathway Page
  .clinical-pathway-new-entry-list {
- 	max-height: 76vh;
+ 	max-height: 80vh;
  	overflow-y: scroll;
+
  	.clinical-pathway-new-entry {
  		// padding-top: .75rem;
  		// padding-bottom: .75rem;
@@ -51,7 +52,8 @@
  		padding-bottom: 1rem;
  		cursor: pointer;
  		font-size: .875rem;
- 		border-bottom: 1px solid darken(#fff,8%);
+ 		// border-right: 1px solid #ebebeb;
+ 		// border-bottom: 1px solid darken(#fff,8%);
  		position: relative;
  		margin-left: 1rem !important;
  		// @extend .hide-show-button-on-hover;
@@ -62,6 +64,23 @@
 	 		border-left: 5px solid $success-color;
 	 		color: $success-color;
 	 		font-weight: bold;
+	 		// border-right: 0px;
+	 		border-top: 1px solid #ebebeb;
+    		border-bottom: 1px solid #ebebeb;
+	 		&:hover {
+	 			.new-entry-action {		 		
+	 				@extend .bg-black10;
+			 		// background-color: $primary-light !important;
+			 		// background-color: #fff !importnat;
+			 	}	
+	 		}
+	 	}
+	 	&:hover {
+	 		// background-color: $primary-light;
+	 		@extend .bg-black10;
+	 		// border-left: 5px solid $success-color;
+	 		color: $primary-color;
+	 		// font-weight: bold;
 	 		&:hover {
 	 			.new-entry-action {		 		
 	 				@extend .bg-black10;

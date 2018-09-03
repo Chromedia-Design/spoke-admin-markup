@@ -208,10 +208,14 @@ $(".clinical-pathway-basic-content").on("click", function () {
 })
 
 // toggle second child through first child
-$(".toggle-sibling").children().first().on('click', function(event) {
+$(".toggle-sibling").children(":nth-child(1)").on('click', function(event) {
   // event.preventDefault();
-  // $(this).siblings().slideToggle()
+  $(this).siblings().slideToggle()
 });
+
+$(".toggle-sibling").children(":nth-child(2)").toggle();
+
+$(".clinical-pathway-new-entry-list").children('selector')
 
 $(".clinical-pathway-new-entry-list").on('click', '.clinical-pathway-new-entry', function(event) {
   event.preventDefault();
