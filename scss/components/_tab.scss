@@ -239,6 +239,14 @@
 	.breadcrumbs {
 		margin-top: 0;
 	}
+
+	.mobile-orbit {
+		.next, .prev {
+			position: relative !important;
+			margin-top: -50% !important;
+			background: rgba(40,61,75,0.75) !important;
+		}
+	}
 }
 
 div.overview {
