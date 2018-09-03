@@ -592,6 +592,7 @@ section {
 					color: $text-black;
 					background: transparent;
 					border-bottom: 1px solid rgba($black, $B-dividers);
+					border-right: 8px solid rgba($success-color, $B-hinttext);
 				}
 				&:before {
 					border-bottom: 1px solid $text-black;
