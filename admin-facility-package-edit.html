@@ -897,7 +897,7 @@
           $(window).resize(function () {
               clearTimeout(timer);
               timer = setTimeout(function () {
-                  $('.site-nav, .content').css("height", $(window).height());
+                  $('.site-nav, .content, #packageBuilder').css("height", $(window).height());
               }, 40);
           }).resize();
       });

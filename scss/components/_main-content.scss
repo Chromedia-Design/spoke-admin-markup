@@ -514,6 +514,12 @@ section {
 // Package builder: requires row class
 #packageBuilder {
 	font-size: rem-calc(14);
+	> .columns {
+		overflow-y: scroll;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
 	table {
 		font-size: rem-calc(14);
 	}
