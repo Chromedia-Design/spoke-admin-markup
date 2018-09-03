@@ -127,28 +127,6 @@ fieldset {
 			margin: 0;
 		}
 	}
-<<<<<<< HEAD
-  display: flex;
-  margin-bottom: 1rem;
-  [type='checkbox'],
-  [type='radio'],
-  select {
-    display: inline-block;
-    line-height: 1.5em;
-    margin: 0.5em 0 0 0;
-    + label {
-      margin-bottom: 0;
-    }
-  }
-  &.align-middle {
-    align-items: center;
-    [type='checkbox'],
-    [type='radio'] {
-      margin: 0;
-    }
-  }
-=======
->>>>>>> 4e9c6de88ba91c5d1930770b2a3acdca1c69261b
 }
 
 label {
@@ -180,6 +158,7 @@ legend {
 
 .help-text {
 	margin-top: 0;
+	margin-bottom: 1rem;
 	font-size: 0.8125rem;
 	font-style: normal;
 	color: rgba($black, $B-subtext);
@@ -663,6 +642,7 @@ label.image-upload {
 }
 
 .label-block {
+<<<<<<< HEAD
 	margin-top: -1px;
 	.label-group {
 		padding: 0.5rem 1rem;
@@ -701,6 +681,8 @@ label.image-upload {
 			border-bottom: 1px solid rgba($black, $B-dividers);
 		}
 	}
+=======
+>>>>>>> 92c5944f0dcf9dfe90fcba23a99b55f0f4863fb9
   margin-top: -1px;
   .label-group {
     padding: 0.5rem 1rem;
@@ -953,6 +935,7 @@ input {
       }
     }
   }
+<<<<<<< HEAD
 	display: block;
 	position: relative;
 	margin: 0;
@@ -988,6 +971,8 @@ input {
 			}
 		}
 	}
+=======
+>>>>>>> 92c5944f0dcf9dfe90fcba23a99b55f0f4863fb9
 }
 
 .dropdown-checkbox {
