@@ -21,18 +21,18 @@
         </div>
       </div>
       <div class="columns">
-        <span class="h6">Edit Packages</span>
+        <span class="h6">Florida Hospital - Orlando Packages</span>
         <p class="subheader mb-0 white">
           <small>Start by creating/selecting a treatment and a package under it. Some conditions must be met in order
             for the package to be active.
           </small>
         </p>
       </div>
-      <div class="shrink columns">
-        <div class="button-align small mb-0 pull-right">
-          <a href="#" class="button success">Save Changes</a>
-        </div>
-      </div>
+      <!--<div class="shrink columns">-->
+        <!--<div class="button-align small mb-0 pull-right">-->
+          <!--<a href="#" class="button success">Save Changes</a>-->
+        <!--</div>-->
+      <!--</div>-->
     </div>
     <div class="reveal-body">
 
@@ -100,7 +100,7 @@
 
           <ul class="menu vertical" data-accordion-menu>
             <li class="is-active">
-              <a href="#">Root Canal Treatment</a>
+              <a href="#">Root Canal Treatment <span class="mr-2 pull-right"><i class="fa fa-trash"></i></span></a>
               <ul class="nested vertical menu">
                 <li class="is-active">
                   <a href="#">
@@ -891,16 +891,16 @@
   <script src="js/trumbowyg/trumbowyg.min.js"></script>
   <script src="js/app.js"></script>
   <script type="text/javascript">
-      $(function () {
-          var timer;
-
-          $(window).resize(function () {
-              clearTimeout(timer);
-              timer = setTimeout(function () {
-                  $('.site-nav, .content, #packageBuilder').css("height", $(window).height());
-              }, 40);
-          }).resize();
-      });
+      // $(function () {
+      //     var timer;
+      //
+      //     $(window).resize(function () {
+      //         clearTimeout(timer);
+      //         timer = setTimeout(function () {
+      //             $('.site-nav, .content, #packageBuilder').css("height", ($(window).height()) - 150);
+      //         }, 40);
+      //     }).resize();
+      // });
 
       $('.wysiwyg').trumbowyg();
   </script>
