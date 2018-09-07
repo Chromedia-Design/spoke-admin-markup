@@ -244,7 +244,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="row collapse">
+										<div class="row collapse expanded">
 											<div class="columns">
 												<p>
 													At the Florida Hospital Orlando, our primary goal is to cure every patient's cancer. Since we know that in many cases advanced stage cancers cannot be cured, our next goal is to make cancer a chronic disease, with which our patients can live and lead relatively normal lives.
@@ -254,7 +254,7 @@
 												</p>
 											</div>
 										</div>
-										<div class="row collapse label-block">
+										<div class="row collapse label-block expanded">
 											<div class="large-4 columns end">
 												<div class="label-group">
 													<p>Phone Number</p>
@@ -278,7 +278,7 @@
 
 									<!-- START OF PROFILE HIGHLIGHTS -->
 									<div class="block">
-										<div class="block-heading row align-middle collapse">
+										<div class="block-heading row align-middle collapse expanded">
 											<div class="columns">
 												<span class="h6">Profile Highlights</span>
 											</div>
@@ -314,7 +314,9 @@
 														<td>
 															<p class="truncate">With a 94% approval rating from patients, HIAE is the first institution outside the U.S. to be accredited by Joint Commission International in 1999</p>
 														</td>
-														<td class="text-right"></td>
+														<td class="text-right">
+															<a href="#" class="button tiny alert hollow circle"><i class="fa fa-trash"></i></a>
+														</td>
 													</tr>
 												</tbody>
 											</table>
@@ -323,7 +325,7 @@
 									</div>
 									<!-- START OF AWARDS AND ACCREDITATIONS -->
 									<div class="block">
-										<div class="block-heading row align-middle collapse">
+										<div class="block-heading row align-middle collapse expanded">
 											<div class="columns">
 												<span class="h6">Awards & Accreditations</span>
 											</div>
@@ -351,6 +353,7 @@
 															<span>2015</span>
 														</td>
 														<td class="text-right">
+															<a href="#" class="button tiny alert hollow circle"><i class="fa fa-trash"></i></a>
 														</td>
 													</tr>
 												</tbody>
@@ -413,12 +416,12 @@
 												<div class="spoke-list-item row expanded align-middle"  onclick="location.href='admin-facility-package-edit.html'">
 													<div class="medium-4 columns">
 														<div class="row align-middle">
-															<div class="shrink columns">
+															<div class="medium-2 columns">
 																<div class="fancy-checkbox">
 															    	<input id="option1" name="option1" type="checkbox" checked="true" />
 															  	</div>
 															</div>
-															<div class="columns">
+															<div class="medium-10 columns">
 																<p class="h6 mb-0">Molar Root Canal</p>
 																<p class="subheader"><small>Complete</small></p>
 															</div>
@@ -452,12 +455,12 @@
 												<div class="spoke-list-item row expanded align-middle"  onclick="location.href='admin-facility-package-edit.html'">
 													<div class="medium-4 columns">
 														<div class="row align-middle">
-															<div class="shrink columns">
+															<div class="medium-2 columns">
 																<div class="fancy-checkbox">
 															    	<input id="option1" name="option1" type="checkbox" />
 															  	</div>
 															</div>
-															<div class="columns">
+															<div class="medium-10 columns">
 																<p class="h6 mb-0">Front Teeth Canal</p>
 																<p class="subheader"><small>Incomplete</small></p>
 															</div>
@@ -491,12 +494,12 @@
 												<div class="spoke-list-item row expanded align-middle"  onclick="location.href='admin-facility-package-edit.html'">
 													<div class="medium-4 columns">
 														<div class="row align-middle">
-															<div class="shrink columns">
+															<div class="medium-2 columns">
 																<div class="fancy-checkbox">
 															    	<input id="option1" name="option1" type="checkbox" />
 															  	</div>
 															</div>
-															<div class="columns">
+															<div class="medium-10 columns">
 																<p class="h6 mb-0">Front Teeth Canal</p>
 																<p class="subheader"><small>Incomplete</small></p>
 															</div>
@@ -530,12 +533,12 @@
 												<div class="spoke-list-item row expanded align-middle"  onclick="location.href='admin-facility-package-edit.html'">
 													<div class="medium-4 columns">
 														<div class="row align-middle">
-															<div class="shrink columns">
+															<div class="medium-2 columns">
 																<div class="fancy-checkbox">
 															    	<input id="option1" name="option1" type="checkbox" />
 															  	</div>
 															</div>
-															<div class="columns">
+															<div class="medium-10 columns">
 																<p class="h6 mb-0">Front Teeth Canal</p>
 																<p class="subheader"><small>Incomplete</small></p>
 															</div>
@@ -1089,18 +1092,49 @@
 
 								<div class="tabs-panel" id="Media">
 									<div class="block">
-										<div class="block-heading row align-middle collapse">
+										<div class="block-heading row align-middle collapse expanded">
 											<div class="columns">
 												<span class="h6">Photo Gallery</span>
 											</div>
 											<div class="shrink columns">
 												<div class="button-align mb-0 small pull-right">
-													<a href="#" class="button hollow rounded"><i class="fa fa-plus"></i>&nbsp; Add</a>
+													<a data-open="addPhoto" class="button hollow rounded"><i class="fa fa-plus"></i>&nbsp; Add</a>
+
+													<div class="reveal" id="addPhoto" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+														<div class="row collapse">
+															<div class="large-12 columns">
+																<h5 class="reveal-heading">Add Photo</h5>
+															</div>
+														</div>
+														<div class="row collapse">
+															<div class="large-12 columns">
+																<div class="reveal-body">
+																	<div class="row">
+																		<div class="medium-12 columns end">
+																			<label>
+																				JPG, GIF or PNG. Image must be at least 400x300 in size.
+																				<div class="input-group">
+																					<input class="input-group-field" type="file">
+																					<div class="input-group-button">
+																						<input type="submit" class="button success" value="Upload">
+																					</div>
+																				</div>
+																			</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<button class="close-button" data-close aria-label="Close modal" type="button">
+															<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
+
 												</div>
 											</div>
 										</div>
 											<div class="block-container">
-												<div class="row">
+												<div class="row expanded">
 													<div class="medium-3 columns end">
 														<div class="gallery-item">
 															<div class="image">
@@ -1112,18 +1146,49 @@
 											</div>
 										</div>
 										<div class="block">
-											<div class="block-heading row align-middle collapse">
+											<div class="block-heading row align-middle collapse expanded">
 												<div class="columns">
 													<span class="h6">Videos</span>
 												</div>
 												<div class="shrink columns">
 													<div class="button-align mb-0 small pull-right">
-														<a href="#" class="button hollow rounded"><i class="fa fa-plus"></i>&nbsp; Add</a>
+														<a data-open="addVideo" class="button hollow rounded"><i class="fa fa-plus"></i>&nbsp; Add</a>
+
+														<div class="reveal" id="addVideo" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+															<div class="row collapse">
+																<div class="large-12 columns">
+																	<h5 class="reveal-heading">Add Video</h5>
+																</div>
+															</div>
+															<div class="row collapse">
+																<div class="large-12 columns">
+																	<div class="reveal-body">
+																		<div class="row">
+																			<div class="large-12 columns">
+																				<label>
+																					Add URL
+																					<div class="input-group">
+																						<input type="text" class="input-group-field" placeholder="Enter URL here">
+																						<div class="input-group-button">
+																							<a href="#" class="button success">Add</a>
+																						</div>
+																					</div>
+																				</label>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<button class="close-button" data-close aria-label="Close modal" type="button">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+
 													</div>
 												</div>
 											</div>
 											<div class="block-container">
-												<div class="row">
+												<div class="row expanded">
 													<div class="medium-4 columns end">
 														<iframe src="https://www.youtube.com/embed/WFoWdI9x5oQ" frameborder="0" allowfullscreen></iframe>
 													</div>
@@ -1140,7 +1205,7 @@
 								</div>
 								<div class="tabs-panel" id="Staff">
 									<div class="block">
-										<div class="block-heading row align-middle collapse">
+										<div class="block-heading row align-middle collapse expanded">
 											<div class="columns">
 												<span class="h6">Medical Staff</span>
 											</div>
@@ -1152,7 +1217,7 @@
 										</div>
 										<div class="block-container">
 											<!-- Admin Items -->
-											<div class="row">
+											<div class="row expanded">
 												<div class="columns medium-4 end">
 													<div class="card card-person">
 														<div class="media-object">

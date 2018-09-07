@@ -21,18 +21,18 @@
         </div>
       </div>
       <div class="columns">
-        <span class="h6">Edit Packages</span>
+        <span class="h6">Florida Hospital - Orlando Packages</span>
         <p class="subheader mb-0 white">
           <small>Start by creating/selecting a treatment and a package under it. Some conditions must be met in order
             for the package to be active.
           </small>
         </p>
       </div>
-      <div class="shrink columns">
-        <div class="button-align small mb-0 pull-right">
-          <a href="#" class="button success">Save Changes</a>
-        </div>
-      </div>
+      <!--<div class="shrink columns">-->
+        <!--<div class="button-align small mb-0 pull-right">-->
+          <!--<a href="#" class="button success">Save Changes</a>-->
+        <!--</div>-->
+      <!--</div>-->
     </div>
     <div class="reveal-body">
 
@@ -100,43 +100,89 @@
 
           <ul class="menu vertical" data-accordion-menu>
             <li class="is-active">
-              <a href="#">Root Canal Treatment</a>
+              <a href="#">
+                <div class="row collapse expanded align-middle">
+                  <div class="auto columns">
+                    <p class="mb-0">Root Canal Treatment</p>
+                  </div>
+                  <div class="shrink columns">
+                     <span class="button tiny alert hollow mb-0 circle pull-right mr-1-5"><i class="fa fa-trash"></i></span>
+                  </div>
+                </div>
+              </a>
               <ul class="nested vertical menu">
                 <li class="is-active">
                   <a href="#">
-                    <i class="fa fa-check-circle success-color"></i>&nbsp; Molar Root Canal
-                    <p class="subheader mb-0">
-                      <small>3 Categories</small>
-                    </p>
+                    <div class="row collapse expanded align-middle">
+                      <div class="auto columns">
+                        <p class="mb-0"><i class="fa fa-check-circle success-color"></i>&nbsp; Molar Root Canal</p>
+                        <p class="subheader mb-0">
+                          <small>3 Categories</small>
+                        </p>
+                      </div>
+                      <div class="shrink columns">
+                        <span class="button tiny alert hollow mb-0 circle pull-right"><i class="fa fa-trash"></i></span>
+                      </div>
+                    </div>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i class="fa fa-exclamation-circle alert-color"></i>&nbsp; Front Teeth Canal
-                    <p class="subheader mb-0">
-                      <small>3 Incomplete Categories</small>
-                    </p>
+                    <div class="row collapse expanded align-middle">
+                      <div class="auto columns">
+                        <p class="mb-0"><i class="fa fa-exclamation-circle alert-color"></i>&nbsp; Front Teeth Canal</p>
+                        <p class="subheader mb-0">
+                          <small>3 Incomplete Categories</small>
+                        </p>
+                      </div>
+                      <div class="shrink columns">
+                        <span class="button tiny alert hollow mb-0 circle pull-right"><i class="fa fa-trash"></i></span>
+                      </div>
+                    </div>
                   </a>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="#">Total Knee Replacement</a>
+              <a href="#">
+                <div class="row collapse expanded align-middle">
+                  <div class="auto columns">
+                    <p class="mb-0">Knee Surgery</p>
+                  </div>
+                  <div class="shrink columns">
+                    <span class="button tiny alert hollow mb-0 circle pull-right mr-1-5"><i class="fa fa-trash"></i></span>
+                  </div>
+                </div>
+              </a>
               <ul class="nested vertical menu">
                 <li>
                   <a href="#">
-                    <i class="fa fa-exclamation-circle alert-color"></i>&nbsp; Molar Root Canal
-                    <p class="subheader mb-0">
-                      <small>3 Incomplete Categories</small>
-                    </p>
+                    <div class="row collapse expanded align-middle">
+                      <div class="auto columns">
+                        <p class="mb-0"><i class="fa fa-check-circle success-color"></i>&nbsp; Total Knee Replacement</p>
+                        <p class="subheader mb-0">
+                          <small>3 Categories</small>
+                        </p>
+                      </div>
+                      <div class="shrink columns">
+                        <span class="button tiny alert hollow mb-0 circle pull-right"><i class="fa fa-trash"></i></span>
+                      </div>
+                    </div>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i class="fa fa-exclamation-circle alert-color"></i>&nbsp; Front Teeth Canal
-                    <p class="subheader mb-0">
-                      <small>3 Incomplete Categories</small>
-                    </p>
+                    <div class="row collapse expanded align-middle">
+                      <div class="auto columns">
+                        <p class="mb-0"><i class="fa fa-exclamation-circle alert-color"></i>&nbsp; Hip Surgery</p>
+                        <p class="subheader mb-0">
+                          <small>3 Incomplete Categories</small>
+                        </p>
+                      </div>
+                      <div class="shrink columns">
+                        <span class="button tiny alert hollow mb-0 circle pull-right"><i class="fa fa-trash"></i></span>
+                      </div>
+                    </div>
                   </a>
                 </li>
               </ul>
@@ -215,11 +261,56 @@
 
         <div class="medium-6 columns">
           <div class="page-lead row align-middle">
-            <div class="auto columns">
+            <div class="medium-9 columns">
               <h6 class="mb-0">Package Categories</h6>
               <p class="subheader mb-0">
                 <small>1/12 Completed Categories</small>
               </p>
+            </div>
+            <div class="medium-3 columns">
+              <div class="button-group pull-right tiny mb-0">
+                <a data-open="addCategory" class="button success rounded">Add</a>
+
+                <div class="reveal" id="addCategory" data-reveal data-animation-in="fade-in"
+                     data-animation-out="fade-out">
+                  <div class="row collapse">
+                    <div class="large-12 columns">
+                      <h5 class="reveal-heading">Add Category</h5>
+                    </div>
+                  </div>
+                  <form>
+                    <div class="row collapse">
+                      <div class="auto columns">
+                        <div class="reveal-body">
+                          <div class="row">
+                            <div class="large-12 columns">
+                              <label>
+                                Category Name
+                                <input type="text" value="Molar Root Canal">
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row collapse">
+                      <div class="large-12 columns">
+                        <div class="reveal-footer">
+                          <div class="submit button-group pull-right">
+                            <a class="button link" data-close>Cancel</a>
+                            <button type="submit" class="button primary">Add Category</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  <button class="close-button" data-close aria-label="Close modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+
+              </div>
             </div>
           </div>
           <ul class="tabs" data-tabs id="example-tabs">
@@ -891,16 +982,16 @@
   <script src="js/trumbowyg/trumbowyg.min.js"></script>
   <script src="js/app.js"></script>
   <script type="text/javascript">
-      $(function () {
-          var timer;
-
-          $(window).resize(function () {
-              clearTimeout(timer);
-              timer = setTimeout(function () {
-                  $('.site-nav, .content, #packageBuilder').css("height", $(window).height());
-              }, 40);
-          }).resize();
-      });
+      // $(function () {
+      //     var timer;
+      //
+      //     $(window).resize(function () {
+      //         clearTimeout(timer);
+      //         timer = setTimeout(function () {
+      //             $('.site-nav, .content, #packageBuilder').css("height", ($(window).height()) - 150);
+      //         }, 40);
+      //     }).resize();
+      // });
 
       $('.wysiwyg').trumbowyg();
   </script>
