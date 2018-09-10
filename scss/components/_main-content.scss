@@ -514,6 +514,12 @@ section {
 // Package builder: requires row class
 #packageBuilder {
 	font-size: rem-calc(14);
+	> .columns {
+		overflow-y: scroll;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
 	table {
 		font-size: rem-calc(14);
 	}
@@ -535,7 +541,7 @@ section {
 			> a {
 				color: rgba($black, $B-subtext);
 				line-height: 1.5em;
-				// desriptions
+				// descriptions
 				.subheader {
 					font-weight: normal;
 				}
@@ -584,8 +590,9 @@ section {
 				> a {
 					font-weight: bold;
 					color: $text-black;
-					background: transparent;
+					background: rgba($success-color, $B-dividers);
 					border-bottom: 1px solid rgba($black, $B-dividers);
+					border-right: 8px solid rgba($success-color, $B-subtext);
 				}
 				&:before {
 					border-bottom: 1px solid $text-black;

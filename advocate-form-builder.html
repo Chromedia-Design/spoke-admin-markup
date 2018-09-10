@@ -19,7 +19,7 @@
         </div>
       </div>
       <div class="medium-6 columns">
-        <span class="h5">Pre-Surgery Questionnaire</span>&nbsp; <a href="#" class="link white-color ml-1 mb-0"><i class="fa fa-edit"></i></a>
+        <span class="h5">Total Knee Replacement - Pre-Surgery Questionnaire</span>&nbsp; <a href="#" class="link white-color ml-1 mb-0"><i class="fa fa-edit"></i></a>
         <!--<input type="text" class="editable h5 mb-0" value="Pre-Surgery Questionnaire">-->
         <p class="subheader mb-0 white">
           <small>Last Update 22 Aug, 2018</small>
@@ -197,7 +197,101 @@
                 <div class="row collapse align-middle">
                   <div class="auto columns">
                     <div class="button-align tiny pull-right mb-0">
-                      <a data-open="dependenciesModal" class="button info hollow"><i class="fa fa-map-signs"></i>&nbsp; Set As Dependent</a>
+                      <div class="custom-dropdown">
+                        <a class="button info hollow"><i class="fa fa-map-signs"></i>&nbsp; Set As Dependent</a>
+
+                        <div id="dependencyPanel" class="custom-dropdown-pane open-right">
+                          <ul class="constraints-list">
+                            <li>
+                              <div class="row collapse align-middle">
+                                <div class="auto columns">
+                                  <select class="mb-0">
+                                    <option value="" selected>Show</option>
+                                    <option value="">Hide</option>
+                                  </select>
+                                </div>
+                                <div class="auto columns">
+                                  <small class="ml-1 mr-1">This Field If:</small>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row collapse align-middle">
+                                <div class="medium-4 columns">
+                                  <select class="mb-0">
+                                    <option value="" selected>Where is your pain?</option>
+                                  </select>
+                                </div>
+                                <div class="medium-2 columns">
+                                  <select class="mb-0">
+                                    <option value="">Is</option>
+                                    <option value="">Is Not</option>
+                                    <option value="">Empty</option>
+                                    <option value="">Not Empty</option>
+                                    <option value="" selected>Contains</option>
+                                    <option value="">Does Not Contain</option>
+                                    <option value="">Starts With</option>
+                                    <option value="">Ends With</option>
+                                    <option value="">Greater Than</option>
+                                    <option value="">Less Than</option>
+                                  </select>
+                                </div>
+                                <div class="medium-3 columns">
+                                  <input class="mb-0" type="text" value="Stomach">
+                                </div>
+                                <div class="medium-3 columns">
+                                  <div class="button-align tiny mb-0 pull-right">
+                                    <a href="#" class="button selected">AND</a>
+                                    <a href="#" class="button hollow">OR</a>
+                                    <a href="#" class="button alert hollow circle">×</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row collapse align-middle">
+                                <div class="medium-4 columns">
+                                  <select class="mb-0">
+                                    <option value="" disabled selected>Select A Question</option>
+                                    <option value="">Where is your pain?</option>
+                                  </select>
+                                </div>
+                                <div class="medium-2 columns">
+                                  <select class="mb-0">
+                                    <option value="" selected>Is</option>
+                                    <option value="">Is Not</option>
+                                    <option value="">Empty</option>
+                                    <option value="">Not Empty</option>
+                                    <option value="">Contains</option>
+                                    <option value="">Does Not Contain</option>
+                                    <option value="">Starts With</option>
+                                    <option value="">Ends With</option>
+                                    <option value="">Greater Than</option>
+                                    <option value="">Less Than</option>
+                                  </select>
+                                </div>
+                                <div class="medium-3 columns">
+                                  <input class="mb-0" type="text" value="">
+                                </div>
+                                <div class="medium-3 columns">
+                                  <div class="button-align tiny mb-0 pull-right">
+                                    <a href="#" class="button selected">AND</a>
+                                    <a href="#" class="button hollow">OR</a>
+                                    <a href="#" class="button alert hollow circle">×</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row collapse align-middle">
+                                <div class="auto columns">
+                                  <a href="#" class="button info tiny hollow"><i class="fa fa-plus"></i>&nbsp; Add More</a>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                       <a data-open="constraintsModal" class="button info hollow"><i class="fa fa-gear"></i>&nbsp; Constraints</a>
                       <a href="#" class="button alert hollow"><i class="fa fa-trash"></i></a>
                     </div>
@@ -251,7 +345,101 @@
                 <div class="row collapse align-middle">
                   <div class="auto columns">
                     <div class="button-align tiny pull-right mb-0">
-                      <a data-open="dependenciesModal" class="button info hollow"><i class="fa fa-map-signs"></i>&nbsp; Set As Dependent</a>
+                      <div class="custom-dropdown">
+                        <a class="button info hollow"><i class="fa fa-map-signs"></i>&nbsp; Set As Dependent</a>
+
+                        <div id="dependencyPanel" class="custom-dropdown-pane open-right">
+                          <ul class="constraints-list">
+                            <li>
+                              <div class="row collapse align-middle">
+                                <div class="auto columns">
+                                  <select class="mb-0">
+                                    <option value="" selected>Show</option>
+                                    <option value="">Hide</option>
+                                  </select>
+                                </div>
+                                <div class="auto columns">
+                                  <small class="ml-1 mr-1">This Field If:</small>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row collapse align-middle">
+                                <div class="medium-4 columns">
+                                  <select class="mb-0">
+                                    <option value="" selected>Where is your pain?</option>
+                                  </select>
+                                </div>
+                                <div class="medium-2 columns">
+                                  <select class="mb-0">
+                                    <option value="">Is</option>
+                                    <option value="">Is Not</option>
+                                    <option value="">Empty</option>
+                                    <option value="">Not Empty</option>
+                                    <option value="" selected>Contains</option>
+                                    <option value="">Does Not Contain</option>
+                                    <option value="">Starts With</option>
+                                    <option value="">Ends With</option>
+                                    <option value="">Greater Than</option>
+                                    <option value="">Less Than</option>
+                                  </select>
+                                </div>
+                                <div class="medium-3 columns">
+                                  <input class="mb-0" type="text" value="Stomach">
+                                </div>
+                                <div class="medium-3 columns">
+                                  <div class="button-align tiny mb-0 pull-right">
+                                    <a href="#" class="button selected">AND</a>
+                                    <a href="#" class="button hollow">OR</a>
+                                    <a href="#" class="button alert hollow circle">×</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row collapse align-middle">
+                                <div class="medium-4 columns">
+                                  <select class="mb-0">
+                                    <option value="" disabled selected>Select A Question</option>
+                                    <option value="">Where is your pain?</option>
+                                  </select>
+                                </div>
+                                <div class="medium-2 columns">
+                                  <select class="mb-0">
+                                    <option value="" selected>Is</option>
+                                    <option value="">Is Not</option>
+                                    <option value="">Empty</option>
+                                    <option value="">Not Empty</option>
+                                    <option value="">Contains</option>
+                                    <option value="">Does Not Contain</option>
+                                    <option value="">Starts With</option>
+                                    <option value="">Ends With</option>
+                                    <option value="">Greater Than</option>
+                                    <option value="">Less Than</option>
+                                  </select>
+                                </div>
+                                <div class="medium-3 columns">
+                                  <input class="mb-0" type="text" value="">
+                                </div>
+                                <div class="medium-3 columns">
+                                  <div class="button-align tiny mb-0 pull-right">
+                                    <a href="#" class="button selected">AND</a>
+                                    <a href="#" class="button hollow">OR</a>
+                                    <a href="#" class="button alert hollow circle">×</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row collapse align-middle">
+                                <div class="auto columns">
+                                  <a href="#" class="button info tiny hollow"><i class="fa fa-plus"></i>&nbsp; Add More</a>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                       <a data-open="constraintsModal" class="button info hollow"><i class="fa fa-gear"></i>&nbsp; Constraints</a>
                       <a href="#" class="button alert hollow"><i class="fa fa-trash"></i></a>
                     </div>
@@ -324,7 +512,101 @@
                 <div class="row collapse align-middle">
                   <div class="auto columns">
                     <div class="button-align tiny pull-right mb-0">
-                      <a data-open="dependenciesModal" class="button info hollow"><i class="fa fa-map-signs"></i>&nbsp; Set As Dependent</a>
+                      <div class="custom-dropdown">
+                        <a class="button info hollow"><i class="fa fa-map-signs"></i>&nbsp; Set As Dependent</a>
+
+                        <div id="dependencyPanel" class="custom-dropdown-pane open-right">
+                          <ul class="constraints-list">
+                            <li>
+                              <div class="row collapse align-middle">
+                                <div class="auto columns">
+                                  <select class="mb-0">
+                                    <option value="" selected>Show</option>
+                                    <option value="">Hide</option>
+                                  </select>
+                                </div>
+                                <div class="auto columns">
+                                  <small class="ml-1 mr-1">This Field If:</small>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row collapse align-middle">
+                                <div class="medium-4 columns">
+                                  <select class="mb-0">
+                                    <option value="" selected>Where is your pain?</option>
+                                  </select>
+                                </div>
+                                <div class="medium-2 columns">
+                                  <select class="mb-0">
+                                    <option value="">Is</option>
+                                    <option value="">Is Not</option>
+                                    <option value="">Empty</option>
+                                    <option value="">Not Empty</option>
+                                    <option value="" selected>Contains</option>
+                                    <option value="">Does Not Contain</option>
+                                    <option value="">Starts With</option>
+                                    <option value="">Ends With</option>
+                                    <option value="">Greater Than</option>
+                                    <option value="">Less Than</option>
+                                  </select>
+                                </div>
+                                <div class="medium-3 columns">
+                                  <input class="mb-0" type="text" value="Stomach">
+                                </div>
+                                <div class="medium-3 columns">
+                                  <div class="button-align tiny mb-0 pull-right">
+                                    <a href="#" class="button selected">AND</a>
+                                    <a href="#" class="button hollow">OR</a>
+                                    <a href="#" class="button alert hollow circle">×</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row collapse align-middle">
+                                <div class="medium-4 columns">
+                                  <select class="mb-0">
+                                    <option value="" disabled selected>Select A Question</option>
+                                    <option value="">Where is your pain?</option>
+                                  </select>
+                                </div>
+                                <div class="medium-2 columns">
+                                  <select class="mb-0">
+                                    <option value="" selected>Is</option>
+                                    <option value="">Is Not</option>
+                                    <option value="">Empty</option>
+                                    <option value="">Not Empty</option>
+                                    <option value="">Contains</option>
+                                    <option value="">Does Not Contain</option>
+                                    <option value="">Starts With</option>
+                                    <option value="">Ends With</option>
+                                    <option value="">Greater Than</option>
+                                    <option value="">Less Than</option>
+                                  </select>
+                                </div>
+                                <div class="medium-3 columns">
+                                  <input class="mb-0" type="text" value="">
+                                </div>
+                                <div class="medium-3 columns">
+                                  <div class="button-align tiny mb-0 pull-right">
+                                    <a href="#" class="button selected">AND</a>
+                                    <a href="#" class="button hollow">OR</a>
+                                    <a href="#" class="button alert hollow circle">×</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row collapse align-middle">
+                                <div class="auto columns">
+                                  <a href="#" class="button info tiny hollow"><i class="fa fa-plus"></i>&nbsp; Add More</a>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                       <a data-open="constraintsModal" class="button info hollow"><i class="fa fa-gear"></i>&nbsp; Constraints</a>
                       <a href="#" class="button alert hollow"><i class="fa fa-trash"></i></a>
                     </div>

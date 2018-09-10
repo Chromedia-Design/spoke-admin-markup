@@ -149,14 +149,75 @@
 }
 
 
-//------- MOBILE OVERRIDES -------- //	
+//------- MOBILE OVERRIDES -------- //
 
 
+// - Variables
+$heading-color: rgba(42, 42, 42, 0.87);
+$sub-heading: rgba(42, 42, 42, 0.54);
+$main-bg-color: #FBFBFB;
+$border-color: rgba(42, 42, 42, 0.12);
+$bg-light: #eef0f3;
+$txt-white: #fff;
+$txt-black: #323232;
+$bg-instruction: #17659B;
+
+
+// - TABS & LI OVERRIDE
 .mobile {
 	.tabs {
 		li {
 			text-align: center;
-			width: 30.33% !important;
+			margin: 0 auto !important;
 		}
 	}
 }
+
+
+
+// - GRAPH
+$graph-radius: 10px;
+$oop-bg: #283D4B;
+$allowance-bg: #81A714;
+
+.c-oop {
+	color: $oop-bg;
+}
+.c-allowance {
+	color: $allowance-bg;
+}
+
+//.spk-gain-graph {
+//	background-color: rgba(42, 42, 42, 0.12);
+//	border-radius: $graph-radius;
+//	display: flex;
+//	div {
+//		padding: .3em 1em;
+//		color: #fff;
+//		min-height: 1em;
+//	}
+//	.oop{
+//		border-radius: $graph-radius 0 0 $graph-radius;
+//		width: 32%;
+//	}
+//	.allowance{
+//		border-radius: 0 $graph-radius $graph-radius 0;
+//		width: 46%;
+//	}
+//}
+
+
+// - READ MORE 
+.read-more-content-container {
+	.read-more-content{
+		overflow: hidden;
+		.content-hide{
+			display: none;
+		}
+		&.content-show{
+			display: inline-block;
+		}
+	}	
+}
+
+//------- MOBILE OVERRIDES ENDS HERE -------- //	
