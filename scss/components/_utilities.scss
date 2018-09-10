@@ -105,12 +105,16 @@
 .b-all-1 { border: solid 0.1rem $primary-light; }
 .b-all-1-darker {border: 0.05rem solid rgba($black, $B-dividers);}
 .b-bottom-1-darker {border-bottom: 0.05rem solid rgba($black, $B-dividers);}
-.b-left-1 { border-left: solid 0.1rem $primary-light; }
+.b-left-1 { border-left: solid 0.1rem darken(#fff, 8%); }
 .b-left-2 { border-left: solid 0.2rem $primary-color; }
 .b-left-3 { border-left: solid 0.3rem $primary-color; }
 .b-right-1 { border-right: solid 0.1rem $primary-light !important; }
 .b-right-2 { border-right: solid 0.11rem $primary-light !important; }
 .borderless { border: 0px !important; }
+
+.border-radius-none {
+	border-radius: 0px !important;
+}
 
 .border {
 	&.p1 {
@@ -136,7 +140,10 @@
 	}
 	&.alert {
 		border-color: $alert-color !important;
-	}	
+	}
+	&.rad1 {
+		border-radius: 5px;
+	}
 }
 
 // Alignment ----------------------------------------
@@ -165,6 +172,7 @@
 .bg-alert { background-color: $alert-color !important }
 .bg-white { background-color: #fff !important }
 .bg-black10 { background-color: darken(#fff, 3%) !important }
+.bg-black20 { background-color: darken(#fff, 8%) !important }
 // Text color
 .clr-white { color: $white !important }
 .clr-black { color: $black !important }
