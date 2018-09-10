@@ -23,11 +23,9 @@
           </div>
           <div class="columns">
             <!-- <span class="h6">Add New Clinical Pathway</span> -->
-            <input type="text" class="editable clr-white" value="Total Knee Replacement">
+            <input type="text" class="editable clr-white mb-0" value="Total Knee Replacement">
             <p class="subheader mb-0 white">
-              <!-- <small>Start by creating/selecting a treatment and a package under it. Some conditions must be met in order
-                for the package to be active.
-              </small> -->
+              <small>Pathway Description</small>
             </p>
           </div>
           <div class="shrink columns">
@@ -41,36 +39,17 @@
 
     <div class="row expanded" id="ui-add-new-clinical-pathway">
 
-      <div class="clinical-pathway-controls columns medium-4">
-        <!-- <div class="page-lead row align-middle mb-2 mr-1">
-          <div class="auto columns">
-            <label>Clinical Pathway name
-              <input type="text" name="" value="Total Knee Replacement" class="editable" placeholder="Clinical Pathway name">
-            </label>
-          </div>        
-        </div> -->
+      <div class="clinical-pathway-controls columns medium-3 bg-black10">
 
         <div class="row ">
           <div class="medium-12 columns pr-0 pl-0">
 
-            <div class="row pr-1 mb-1">
+            <div class="row pr-1 mb-1 mt-1 align-middle">
               <div class="columns">
-                <div class="input-group">
-                  <!-- <span class="input-group-label">$</span> -->
-                  <input class="input-group-field" type="text" placeholder="New Entry Name">
-                  <div class="input-group-button">
-                    <button class="button success">Add Entry</button>
-                    <!-- <input type="submit" class="button" value="Add Entry"> -->
-                  </div>
-                </div>
+                <h5>Pathway Events</h5>
               </div>
-            </div>
-
-            <div class="row mb-0-5">
-              <div class="columns auto">
-                <span class="subheader">
-                  <strong>Clinical Pathway Entries</strong>
-                </span>
+              <div class="columns">
+                <button class="button hollow success tiny pull-right">Add Event <i class="fa fa-plus"></i></button>
               </div>
             </div>
 
@@ -80,9 +59,13 @@
                 <div class="column align-middle new-entry-title new-entry-title">
                   <span>Pre-op Questionnaire</span>
                 </div>
-                <div class="column shrink new-entry-action">
-                  <button class="button mb-0 secondary hollow clear" data-open="ClinicalpathwayItemSetting"><i class="fa fa-pencil"></i></button>
-                  <button class="button mb-0 alert hollow clear"><i class="fa fa-trash"></i></button>
+                <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
                 </div>
               </div>
 
@@ -90,9 +73,13 @@
                 <div class="column align-middle new-entry-title">
                   <span>Pre-op Patient reported functional capacity survey</span>
                 </div>
-                <div class="column shrink align-middle new-entry-action">
-                  <button class="button mb-0 secondary hollow clear" data-open="ClinicalpathwayItemSetting"><i class="fa fa-pencil"></i></button>
-                  <button class="button mb-0 alert hollow clear"><i class="fa fa-trash"></i></button>
+                <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
                 </div>
               </div>
 
@@ -100,9 +87,13 @@
                 <div class="column align-middle new-entry-title">
                   <span>Pre-op Evaluation and clearance</span>
                 </div>
-                <div class="column shrink align-middle new-entry-action">
-                  <button class="button mb-0 secondary hollow clear" data-open="ClinicalpathwayItemSetting"><i class="fa fa-pencil"></i></button>
-                  <button class="button mb-0 alert hollow clear"><i class="fa fa-trash"></i></button>
+                <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
                 </div>
               </div>
 
@@ -110,9 +101,13 @@
                 <div class="column align-middle new-entry-title">
                   <span>Pre-op infection avoidance adherence</span>
                 </div>
-                <div class="column shrink align-middle new-entry-action">
-                  <button class="button mb-0 secondary hollow clear" data-open="ClinicalpathwayItemSetting"><i class="fa fa-pencil"></i></button>
-                  <button class="button mb-0 alert hollow clear"><i class="fa fa-trash"></i></button>
+                <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
                 </div>
               </div>
 
@@ -120,9 +115,13 @@
                 <div class="column align-middle new-entry-title">
                   <span>Pre-op antibiotics as indicated</span>
                 </div>
-                <div class="column shrink align-middle new-entry-action">
-                  <button class="button mb-0 secondary hollow clear" data-open="ClinicalpathwayItemSetting"><i class="fa fa-pencil"></i></button>
-                  <button class="button mb-0 alert hollow clear"><i class="fa fa-trash"></i></button>
+                <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
                 </div>
               </div>
 
@@ -130,9 +129,13 @@
                 <div class="column align-middle new-entry-title">
                   <span>Pre-hab check in (one week before surgery)</span>
                 </div>
-                <div class="column shrink align-middle new-entry-action">
-                  <button class="button mb-0 secondary hollow clear" data-open="ClinicalpathwayItemSetting"><i class="fa fa-pencil"></i></button>
-                  <button class="button mb-0 alert hollow clear"><i class="fa fa-trash"></i></button>
+                <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
                 </div>
               </div>
 
@@ -140,9 +143,13 @@
                 <div class="column align-middle new-entry-title">
                   <span>Pre-op Consultation</span>
                 </div>
-                <div class="column shrink align-middle new-entry-action">
-                  <button class="button mb-0 secondary hollow clear" data-open="ClinicalpathwayItemSetting"><i class="fa fa-pencil"></i></button>
-                  <button class="button mb-0 alert hollow clear"><i class="fa fa-trash"></i></button>
+                <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
                 </div>
               </div>
 
@@ -150,9 +157,13 @@
                 <div class="column align-middle new-entry-title">
                   <span>Surgery</span>
                 </div>
-                <div class="column shrink align-middle new-entry-action">
-                  <button class="button mb-0 secondary hollow clear" data-open="ClinicalpathwayItemSetting"><i class="fa fa-pencil"></i></button>
-                  <button class="button mb-0 alert hollow clear"><i class="fa fa-trash"></i></button>
+                <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
                 </div>
               </div>
 
@@ -160,9 +171,13 @@
                 <div class="column align-middle new-entry-title">
                   <span>Patient Reported Pain Survey</span>
                 </div>
-                <div class="column shrink align-middle new-entry-action">
-                  <button class="button mb-0 secondary hollow clear" data-open="ClinicalpathwayItemSetting"><i class="fa fa-pencil"></i></button>
-                  <button class="button mb-0 alert hollow clear"><i class="fa fa-trash"></i></button>
+                <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
                 </div>
               </div>
 
@@ -170,9 +185,13 @@
                 <div class="column align-middle new-entry-title">
                   <span>Post-Op visit scheduled</span>
                 </div>
-                <div class="column shrink align-middle new-entry-action">
-                  <button class="button mb-0 secondary hollow clear" data-open="ClinicalpathwayItemSetting"><i class="fa fa-pencil"></i></button>
-                  <button class="button mb-0 alert hollow clear"><i class="fa fa-trash"></i></button>
+                <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
                 </div>
               </div>
 
@@ -180,9 +199,13 @@
                 <div class="column align-middle new-entry-title">
                   <span>Compliance with Physical Therapy regimen (1 week post)</span>
                 </div>
-                <div class="column shrink align-middle new-entry-action">
-                  <button class="button mb-0 secondary hollow clear" data-open="ClinicalpathwayItemSetting"><i class="fa fa-pencil"></i></button>
-                  <button class="button mb-0 alert hollow clear"><i class="fa fa-trash"></i></button>
+                <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
                 </div>
               </div>
 
@@ -190,9 +213,13 @@
                 <div class="column align-middle new-entry-title">
                   <span>Compliance with Physical Therapy regimen (3 weeks post)</span>
                 </div>
-                <div class="column shrink align-middle new-entry-action">
-                  <button class="button mb-0 secondary hollow clear" data-open="ClinicalpathwayItemSetting"><i class="fa fa-pencil"></i></button>
-                  <button class="button mb-0 alert hollow clear"><i class="fa fa-trash"></i></button>
+                <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
                 </div>
               </div>
 
@@ -200,9 +227,13 @@
                 <div class="column align-middle new-entry-title">
                   <span>Patient reported service experience survey - Physical Therapy Check in</span>
                 </div>
-                <div class="column shrink align-middle new-entry-action">
-                  <button class="button mb-0 secondary hollow clear" data-open="ClinicalpathwayItemSetting"><i class="fa fa-pencil"></i></button>
-                  <button class="button mb-0 alert hollow clear"><i class="fa fa-trash"></i></button>
+                <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
                 </div>
               </div>
 
@@ -210,9 +241,13 @@
                 <div class="column align-middle new-entry-title">
                   <span>Compliance with Physical Therapy regimen (5 weeks post)</span>
                 </div>
-                <div class="column shrink align-middle new-entry-action">
-                  <button class="button mb-0 secondary hollow clear" data-open="ClinicalpathwayItemSetting"><i class="fa fa-pencil"></i></button>
-                  <button class="button mb-0 alert hollow clear"><i class="fa fa-trash"></i></button>
+                <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
                 </div>
               </div>
 
@@ -220,9 +255,13 @@
                 <div class="column align-middle new-entry-title">
                   <span>Patient reported functional capacity survey (6 weeks post)</span>
                 </div>
-                <div class="column shrink align-middle new-entry-action">
-                  <button class="button mb-0 secondary hollow clear" data-open="ClinicalpathwayItemSetting"><i class="fa fa-pencil"></i></button>
-                  <button class="button mb-0 alert hollow clear"><i class="fa fa-trash"></i></button>
+                <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
                 </div>
               </div>
 
@@ -230,9 +269,13 @@
                 <div class="column align-middle new-entry-title">
                   <span>Compliance with Physical Therapy regimen (7 weeks post)</span>
                 </div>
-                <div class="column shrink align-middle new-entry-action">
-                  <button class="button mb-0 secondary hollow clear" data-open="ClinicalpathwayItemSetting"><i class="fa fa-pencil"></i></button>
-                  <button class="button mb-0 alert hollow clear"><i class="fa fa-trash"></i></button>
+                <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
                 </div>
               </div>
 
@@ -240,9 +283,13 @@
                 <div class="column align-middle new-entry-title">
                   <span>Patient reported service experience survey - Post Physical Therapy</span>
                 </div>
-                <div class="column shrink align-middle new-entry-action">
-                  <button class="button mb-0 secondary hollow clear" data-open="ClinicalpathwayItemSetting"><i class="fa fa-pencil"></i></button>
-                  <button class="button mb-0 alert hollow clear"><i class="fa fa-trash"></i></button>
+                <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
                 </div>
               </div>
 
@@ -250,9 +297,13 @@
                 <div class="column align-middle new-entry-title">
                   <span>Patient reported functional capacity survey (3 months post)</span>
                 </div>
-                <div class="column shrink align-middle new-entry-action">
-                  <button class="button mb-0 secondary hollow clear" data-open="ClinicalpathwayItemSetting"><i class="fa fa-pencil"></i></button>
-                  <button class="button mb-0 alert hollow clear"><i class="fa fa-trash"></i></button>
+                <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
                 </div>
               </div>
 
@@ -260,9 +311,13 @@
                 <div class="column align-middle new-entry-title">
                   <span>Patient reported functional capacity survey (6 months post)</span>
                 </div>
-                <div class="column shrink align-middle new-entry-action">
-                  <button class="button mb-0 secondary hollow clear" data-open="ClinicalpathwayItemSetting"><i class="fa fa-pencil"></i></button>
-                  <button class="button mb-0 alert hollow clear"><i class="fa fa-trash"></i></button>
+                <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
                 </div>
               </div>
 
@@ -270,913 +325,571 @@
                 <div class="column align-middle new-entry-title">
                   <span>Patient reported functional capacity survey (1 year post)</span>
                 </div>
-                <div class="column shrink align-middle new-entry-action">
-                  <button class="button mb-0 secondary hollow clear" data-open="ClinicalpathwayItemSetting"><i class="fa fa-pencil"></i></button>
-                  <button class="button mb-0 alert hollow clear"><i class="fa fa-trash"></i></button>
+                <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
                 </div>
               </div>
-
             </div>
 
           </div>
         </div>
       </div>
 
-      <div class="clinical-pathway-settings columns medium-8 bg-black10">
+      <div class="clinical-pathway-settings columns">
 
-        <!-- <ul class="tabs" data-tabs id="example-tabs">
-              <li class="tabs-title is-active"><a href="#panel0" aria-selected="true">GENERAL</a></li>
-              <li class="tabs-title"><a data-tabs-target="panel1" href="#panel1" >TRIGGERS</a></li>
-              <li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">TASKS</a></li>
-              <li class="tabs-title"><a data-tabs-target="panel3" href="#panel3">TASKS AFTER PATIENT FEEDBACK</a></li>
+        <div class="row  mb-2 panel pad-1 ">
+          <div class="columns">
+            <p class="mb-0 subheader"><strong>Event Description</strong></p>
+            <!-- <span class="h5">Pre-op antibiotics as indicated</span> -->
+            <input type="text" class="editable" value="Patient reported service experience survey - Physical Therapy Check in">
+            <!-- <button class="button hollow clear success mb-0"><i class="fa fa-edit"></i></button> -->
+          </div>          
+        </div>
+
+        <div class="row  mb-2 panel pad-1 ">
+          <div class="columns">
+            
+            <div>
+              <p class="subheader mb-1"><strong>Advocate assigned to this entry</strong></p>
+            </div>
+            <div>
+              <fieldset class="ml-1">                  
+                <p class="fancy-checkbox small align-middle">
+                  <input id="spcp1" type="checkbox" class="mr-0">
+                  <label class="h6 subheader" for="checkbox1">Care Coordinator</label>
+                </p>
+                <p class="fancy-checkbox small align-middle">
+                  <input id="spcp1" type="checkbox" class="mr-0">
+                  <label class="h6 subheader" for="checkbox1">Case manager</label>
+                </p>                    
+              </fieldset>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="columns pr-0 pl-0">
+            <ul class="tabs combinational " data-tabs id="example-tabs">
+                  <li class="tabs-title is-active"><a data-tabs-target="panel1" href="#panel1" >TRIGGERS</a></li>
+                  <li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">TASKS</a></li>
+                  <li class="tabs-title"><a data-tabs-target="panel3" href="#panel3">NOTIFICATIONS</a></li>
             </ul>
 
-            <div class="tabs-content" data-tabs-content="example-tabs">
+            <div class="tabs-content " data-tabs-content="example-tabs">
               
-              <div class="tabs-panel pad-1 is-active" id="panel0">
-                <div class="row expanded mb-2">
-                  <div class="columns medium-12">
+              <div class="tabs-panel pad-1 is-active" id="panel1">
 
-                    <div class="row expanded mb-1">
-                      <div class="columns medium-12 medium-centered auto">
-                        <span class="subheader"><strong>ADVOCATE ASSIGNED TO THIS ENTRY</strong></span>
-                      </div>
-                    </div>
-
-                    <div class="row expanded">
-                      <div class="columns medium-11 toggle-sibling">
-
-                        <fieldset class="ml-1">                  
-                          <p class="fancy-checkbox small align-middle">
-                            <input id="spcp1" type="checkbox" class="mr-0">
-                            <label class="h6 subheader" for="checkbox1">Care Coordinator</label>
-                          </p>
-                          <p class="fancy-checkbox small align-middle">
-                            <input id="spcp1" type="checkbox" class="mr-0">
-                            <label class="h6 subheader" for="checkbox1">Case manager</label>
-                          </p>                    
-                        </fieldset>
-
-                      </div>
-                    </div>
-
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="tabs-panel pad-1" id="panel1">
-                <div class="row expanded">
-                  <div class="columns medium-11 toggle-sibling">
-
-                    <div class="row expanded mb-0-5">
-                      <div class="columns shrink">
-                        <span class="switch tiny">
-                          <input class="switch-input" id="dat" type="checkbox" name="dat"> 
-                          <label class="switch-paddle" for="dat">
-                            <span class="show-for-sr">Date and Time</span>
-                          </label>
-                        </span>
-                      </div>
-                      <div class="columns expand pl-0">
-                        <span class="h5"><strong>Date and Time</strong></span>
-                      </div>
-                    </div>
-                    <div class="row mb-1">
-                      <div class="columns medium-11">
-                        <div class="row">
-                          <div class="columns auto">
-                            <input type="Date" class="editable subheader">
-                          </div>
-                          <div class="columns auto">
-                            <input type="time" class="editable subheader">
-                          </div>
+                <div class="row">
+                  <div class="columns">                      
+                      <div class="dropdown">
+                        <button class="dropbtn button pull-right hollow clear small success mb-0 pull-right"><i class="fa fa-plus"></i> Add Trigger</button>
+                        <div class="dropdown-content">                          
+                          <ul class="ml-0 mb-1 mt-1">
+                            <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>TRIGGERS</strong></small></span></li>
+                            <li class="list-style-type-none"><a href="">Date and Time/Manual</a></li>
+                            <li class="list-style-type-none"><a href="">Previous Event</a></li>                            
+                          </ul>                          
                         </div>
+                      </div>
+                  </div>
+                </div>
+                    
+
+                <div class="panel mb-1 pt-1 toggler">
+                  <div class="row expanded mb-1 toggler-handler">
+                    <div class="columns">
+                      <p class="mb-0"><strong>4 Day(s) after Surgery</strong></p>
+                      <p class="subheader">Date</p>
+                    </div>
+                    <div class="columns">
+                      <div class="pull-right">
+                        <button class="button secondary small">AND</button>
+                        <button class="button hollow secondary small">OR</button>
+                        <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                        <button class="button hollow clear"><i class="fa fa-chevron-down"></i></button>
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="row expanded">
-                  <div class="columns medium-11 toggle-sibling">
-
-                    <div class="row expanded mb-0-5">
-                      <div class="columns shrink">
-                        <span class="switch tiny">
-                          <input class="switch-input" id="spcp" type="checkbox" name="spcp"> 
-                          <label class="switch-paddle" for="spcp">
-                            <span class="show-for-sr">Status of previous clinical pathways entry</span>
-                          </label>
-                        </span>
-                      </div>
-                      <div class="columns expand pl-0">
-                        <span class="h5"><strong>Status of previous clinical pathways entry</strong></span>
-                      </div>
+                  <div class="row bg-black10 pt-1 toggler-target">
+                    <div class="columns">
+                      <p class="subheader">Select Event</p>                          
+                      <select name="" id="">
+                        <option value="">Surgery</option>
+                        <option value="">Patient Reported Pain Survey</option>
+                        <option value="">Post-Op visit scheduled</option>
+                      </select>
                     </div>
-                    <div class="row mb-1">
-                      <div class="columns medium-11">
-                        <div class="row">
-                          <div class="columns auto">
-                            <fieldset class="ml-1">
-                              <p class="fancy-checkbox small align-middle">
-                                <input id="spcp1" type="checkbox" class="mr-0">
-                                <label class="h6 subheader" for="checkbox1">Pre-op Questionnaire</label>
-                              </p>
-                              <p class="fancy-checkbox small align-middle">
-                                <input id="spcp1" type="checkbox" class="mr-0">
-                                <label class="h6 subheader" for="checkbox1">Pre-op Patient reported functional capacity survey</label>
-                              </p>
-                              <p class="fancy-checkbox small align-middle">
-                                <input id="spcp1" type="checkbox" class="mr-0">
-                                <label class="h6 subheader" for="checkbox1">Pre-op Evaluation and clearance</label>
-                              </p>
-                              <p class="fancy-checkbox small align-middle">
-                                <input id="spcp1" type="checkbox" class="mr-0">
-                                <label class="h6 subheader" for="checkbox1">Pre-op infection avoidance adherence</label>
-                              </p>
-                            </fieldset>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="row expanded">
-                  <div class="columns medium-11 toggle-sibling">
-
-                    <div class="row expanded mb-0-5">
-                      <div class="columns shrink">
-                        <span class="switch tiny">
-                          <input class="switch-input" id="oma" type="checkbox" name="oma"> 
-                          <label class="switch-paddle" for="oma">
-                            <span class="show-for-sr">Override/Manual Activation</span>
-                          </label>
-                        </span>
-                      </div>
-                      <div class="columns expand pl-0">
-                        <span class="h5"><strong>Override/Manual Activation</strong></span>
-                      </div>
-                    </div>
-                    <div class="row mb-1">
-                      <div class="columns medium-11">
-                        <div class="row expanded">
-                          <div class="columns auto">
-                            <fieldset class="ml-1">
-                              <p class="fancy-checkbox small align-middle">
-                                <input id="spcp1" type="checkbox" class="mr-0">
-                                <label class="h6 subheader" for="checkbox1">Administrator</label>
-                              </p>
-                              <p class="fancy-checkbox small align-middle">
-                                <input id="spcp1" type="checkbox" class="mr-0">
-                                <label class="h6 subheader" for="checkbox1">Care Coordinator</label>
-                              </p>
-                              <p class="fancy-checkbox small align-middle">
-                                <input id="spcp1" type="checkbox" class="mr-0">
-                                <label class="h6 subheader" for="checkbox1">Case manager</label>
-                              </p>                    
-                            </fieldset>
-                          </div>
-                        </div>
-                      </div>
+                    <div class="columns">
+                      <p class="subheader">Duration</p>
+                      <input type="text" value="4 Days">
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="tabs-panel pad-1 pad-1" id="panel2">
-                <div class="row expanded">
-                  <div class="columns medium-11 toggle-sibling">
+              <div class="tabs-panel pad-1" id="panel2">
 
-                    <div class="row expanded mb-0-5">
-                      <div class="columns shrink">
-                        <span class="switch tiny">
-                          <input class="switch-input" id="survey" type="checkbox" name="survey"> 
-                          <label class="switch-paddle" for="survey">
-                            <span class="show-for-sr">Forms/Survey</span>
-                          </label>
-                        </span>
+                <div class="row">
+                  <div class="columns">                      
+                      <div class="dropdown">
+                        <button class="dropbtn button pull-right hollow clear small success mb-0 pull-right"><i class="fa fa-plus"></i> Add task</button>
+                        <div class="dropdown-content">                          
+                          <ul class="ml-0 mb-1 mt-1">
+                            <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
+                            <li class="list-style-type-none"><a href="">Assign Task</a></li>
+                            <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                          </ul>
+                          <ul class="ml-0 mb-1 mt-1">
+                            <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>PATIENT</strong></small></span></li>
+                            <li class="list-style-type-none"><a href="">Send Form</a></li>
+                            <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                          </ul>
+                        </div>
                       </div>
-                      <div class="columns expand pl-0">
-                        <span class="h5"><strong>Forms/Survey</strong></span>
+                  </div>
+                </div>
+                
+                <div class="panel mb-1 pt-1 toggler">
+                      
+                  <div class="row expanded mb-1">
+                    <div class="columns toggler-handler">
+                      <p class="mb-0"><strong>Pre-op Evaluation and clearance Form</strong></p>
+                      <p class="subheader">Patient</p>
+                    </div>
+                    <div class="columns">
+                      <div class="pull-right">                            
+                        <!-- <button class="button hollow secondary clear"><i class="fa fa-gear"></i> Manage</button> -->
+                        <button class="button hollow success small clear" data-open="subtask"><i class="fa fa-plus"></i> Subtask</button>
+                        <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                        <button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
                       </div>
                     </div>
-                    <div class="row mb-1">
-                      <div class="columns medium-11">
-                        <div class="row">
-                          <div class="columns auto">
-                            <label>
-                              <select>
-                                <option value="husker">Choose</option>
-                                <option value="starbuck">The</option>
-                                <option value="hotdog">Form</option>
-                                <option value="apollo">You</option>
-                                <option value="apollo">Like</option>
-                                <option value="apollo">To</option>
-                                <option value="apollo">Send</option>
-                                <option value="apollo">To</option>
-                                <option value="apollo">The</option>
-                                <option value="apollo">Patient</option>
-                              </select>
-                            </label>
-                          </div>
+                  </div>
+                  <div class="row bg-black10 pt-1 toggler-target">
+                    <div class="columns">
+                      <div class="row mb-1">
+                        <div class="columns medium-6">
+                          <p class="subheader">Select a Form</p>
+                          <input type="text" value="Pre-op Evaluation and clearance Form">
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div class="row expanded">
-                  <div class="columns medium-11 toggle-sibling">
-
-                    <div class="row expanded mb-0-5">
-                      <div class="columns shrink">
-                        <span class="switch tiny">
-                          <input class="switch-input" id="spcp" type="checkbox" name="spcp"> 
-                          <label class="switch-paddle" for="spcp">
-                            <span class="show-for-sr">Chat/Message</span>
-                          </label>
-                        </span>
-                      </div>
-                      <div class="columns expand pl-0">
-                        <span class="h5"><strong>Chat/Message</strong></span>
-                      </div>
+                <div class="panel mb-1 pt-1 toggler">
+                  
+                  <div class="row expanded mb-1 toggler-handler">
+                    <div class="columns">
+                      <p class="mb-0"><strong>Feed the Cats</strong></p>
+                      <p class="subheader">Task for Sarah Burbon</p>
                     </div>
-                    <div class="row mb-1">
-                      <div class="columns medium-11">
-                        <div class="row">
-                          <div class="columns auto">
-                            <input type="text" placeholder="Select a Message">                        
-                          </div>
-                        </div>
+                    <div class="columns">
+                      <div class="pull-right">                            
+                        <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                        <button class="button hollow clear"><i class="fa fa-chevron-down"></i></button>
                       </div>
                     </div>
                   </div>
-                </div>
-
-                <div class="row expanded">
-                  <div class="columns medium-11 toggle-sibling">
-
-                    <div class="row expanded mb-0-5">
-                      <div class="columns shrink">
-                        <span class="switch tiny">
-                          <input class="switch-input" id="oma" type="checkbox" name="oma"> 
-                          <label class="switch-paddle" for="oma">
-                            <span class="show-for-sr">Set a To-do</span>
-                          </label>
-                        </span>
-                      </div>
-                      <div class="columns expand pl-0">
-                        <span class="h5"><strong>Set a To-do</strong></span>
-                      </div>
-                    </div>
-                    <div class="row mb-1">
-                      <div class="columns medium-11">
-                        <div class="row expanded">
-                          <div class="columns auto">
-                            <input type="text" placeholder="To-do">                        
-                          </div>
+                  <div class="row bg-black10 pt-1 toggler-target">
+                    <div class="columns">
+                      <div class="row mb-1">
+                        <div class="columns medium-6">
+                          <p class="subheader">Task</p>
+                          <!-- <input type="text" value="Pathway Event"> -->
+                          <select name="" id="">
+                            <option value="">Feed the Cats</option>
+                            <option value="">Feed the Dogs</option>
+                            <option value="">Feed the Cats to the Dogs</option>
+                          </select>
                         </div>
                       </div>
+                      <div class="row mb-1">
+                        <div class="columns">
+                          <p class="subheader">Select Advocate</p>
+                          <!-- <input type="text" value="Pain Intensity Survey"> -->
+                          <select name="" id="">
+                            <option value="">Sarah Burbon</option>
+                            <option value="">Chachi Gonzales</option>
+                          </select>
+                        </div>                            
+                      </div>                          
                     </div>
                   </div>
-                </div>
-
-                <div class="row expanded">
-                  <div class="columns medium-11 toggle-sibling">
-
-                    <div class="row expanded mb-0-5">
-                      <div class="columns shrink">
-                        <span class="switch tiny">
-                          <input class="switch-input" id="oma" type="checkbox" name="oma"> 
-                          <label class="switch-paddle" for="oma">
-                            <span class="show-for-sr">Notify</span>
-                          </label>
-                        </span>
-                      </div>
-                      <div class="columns expand pl-0">
-                        <span class="h5"><strong>Notify</strong></span>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="columns medium-11">
-                        <div class="row expanded">
-                          <div class="columns auto">
-                            <input type="text" placeholder="To-do">                        
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                </div>                
               </div>
 
               <div class="tabs-panel pad-1" id="panel3">
-                <div class="row expanded">
-                  <div class="columns medium-11 toggle-sibling">
-
-                    <div class="row expanded mb-0-5">
-                      <div class="columns shrink">
-                        <span class="switch tiny">
-                          <input class="switch-input" id="dat" type="checkbox" name="dat"> 
-                          <label class="switch-paddle" for="dat">
-                            <span class="show-for-sr">Forms/Survey</span>
-                          </label>
-                        </span>
-                      </div>
-                      <div class="columns expand pl-0">
-                        <span class="h5"><strong>Forms/Survey</strong></span>
-                      </div>
-                    </div>
-                    <div class="row mb-1">
-                      <div class="columns medium-11">
-                        <div class="row">
-                          <div class="columns auto">
-                            <input type="text" placeholder="Select a Form">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row expanded">
-                  <div class="columns medium-11 toggle-sibling">
-
-                    <div class="row expanded mb-0-5">
-                      <div class="columns shrink">
-                        <span class="switch tiny">
-                          <input class="switch-input" id="spcp" type="checkbox" name="spcp"> 
-                          <label class="switch-paddle" for="spcp">
-                            <span class="show-for-sr">Chat/Message</span>
-                          </label>
-                        </span>
-                      </div>
-                      <div class="columns expand pl-0">
-                        <span class="h5"><strong>Chat/Message</strong></span>
-                      </div>
-                    </div>
-                    <div class="row mb-1">
-                      <div class="columns medium-11">
-                        <div class="row">
-                          <div class="columns auto">
-                            <input type="text" placeholder="Select a Message">                        
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="row expanded">
-                  <div class="columns medium-11 toggle-sibling">
-
-                    <div class="row expanded mb-0-5">
-                      <div class="columns shrink">
-                        <span class="switch tiny">
-                          <input class="switch-input" id="oma" type="checkbox" name="oma"> 
-                          <label class="switch-paddle" for="oma">
-                            <span class="show-for-sr">Set a To-do</span>
-                          </label>
-                        </span>
-                      </div>
-                      <div class="columns expand pl-0">
-                        <span class="h5"><strong>Set a To-do</strong></span>
-                      </div>
-                    </div>
-                    <div class="row mb-1">
-                      <div class="columns medium-11">
-                        <div class="row expanded">
-                          <div class="columns auto">
-                            <input type="text" placeholder="To-do">                        
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row expanded">
-                  <div class="columns medium-11 toggle-sibling">
-
-                    <div class="row expanded mb-0-5">
-                      <div class="columns shrink">
-                        <span class="switch tiny">
-                          <input class="switch-input" id="spcp" type="checkbox" name="spcp"> 
-                          <label class="switch-paddle" for="spcp">
-                            <span class="show-for-sr">Chat/Message</span>
-                          </label>
-                        </span>
-                      </div>
-                      <div class="columns expand pl-0">
-                        <span class="h5"><strong>Chat/Message</strong></span>
-                      </div>
-                    </div>
-                    <div class="row mb-1">
-                      <div class="columns medium-11">
-                        <div class="row">
-                          <div class="columns auto">
-                            <input type="text" placeholder="Select a Message">                        
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-
-            </div> -->
-
-        <div class="row expanded mb-2">
-          <div class="columns medium-12">            
-
-            <div class="row expanded mb-1">
-              <div class="columns medium-12 medium-centered auto">
-                <span class="subheader"><strong>TRIGGERS</strong></span>
-              </div>
-            </div>
-
-            <div class="row expanded">
-              <div class="columns medium-11 toggle-sibling">
-
-                <div class="row expanded mb-0-5">
-                  <div class="columns shrink">
-                    <span class="switch tiny">
-                      <input class="switch-input" id="dat" type="checkbox" name="dat"> 
-                      <label class="switch-paddle" for="dat">
-                        <span class="show-for-sr">Date and Time</span>
-                      </label>
-                    </span>
-                  </div>
-                  <div class="columns expand pl-0">
-                    <span class="h5"><strong>Date and Time</strong></span>
-                  </div>
-                </div>
-                <div class="row mb-1">
-                  <div class="columns medium-11">
-                    <div class="row">
-                      <div class="columns auto">
-                        <input type="Date" class="editable subheader">
-                      </div>
-                      <div class="columns auto">
-                        <input type="time" class="editable subheader">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row expanded">
-              <div class="columns medium-11 toggle-sibling">
-
-                <div class="row expanded mb-0-5">
-                  <div class="columns shrink">
-                    <span class="switch tiny">
-                      <input class="switch-input" id="spcp" type="checkbox" name="spcp"> 
-                      <label class="switch-paddle" for="spcp">
-                        <span class="show-for-sr">Status of previous clinical pathways entry</span>
-                      </label>
-                    </span>
-                  </div>
-                  <div class="columns expand pl-0">
-                    <span class="h5"><strong>Status of previous clinical pathways entry</strong></span>
-                  </div>
-                </div>
-                <div class="row mb-1">
-                  <div class="columns medium-11">
-                    <div class="row">
-                      <div class="columns auto">
-                        <fieldset class="ml-1">
-                          <p class="fancy-checkbox small align-middle">
-                            <input id="spcp1" type="checkbox" class="mr-0">
-                            <label class="h6 subheader" for="checkbox1">Pre-op Questionnaire</label>
-                          </p>
-                          <p class="fancy-checkbox small align-middle">
-                            <input id="spcp1" type="checkbox" class="mr-0">
-                            <label class="h6 subheader" for="checkbox1">Pre-op Patient reported functional capacity survey</label>
-                          </p>
-                          <p class="fancy-checkbox small align-middle">
-                            <input id="spcp1" type="checkbox" class="mr-0">
-                            <label class="h6 subheader" for="checkbox1">Pre-op Evaluation and clearance</label>
-                          </p>
-                          <p class="fancy-checkbox small align-middle">
-                            <input id="spcp1" type="checkbox" class="mr-0">
-                            <label class="h6 subheader" for="checkbox1">Pre-op infection avoidance adherence</label>
-                          </p>
-                        </fieldset>
-
-                        <fieldset class="ml-1">
-                          <p class="fancy-checkbox small align-middle">
-                            <input id="spcp1" type="checkbox" class="mr-0">
-                            <label class="h6 subheader" for="checkbox1">immediately</label>
-                          </p>
-                          <p class="fancy-checkbox small align-middle">
-                            <input id="spcp1" type="checkbox" class="mr-0">
-                            <label class="h6 subheader" for="checkbox1">After a number of days or weeks</label>
-                          </p>
-                        </fieldset>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="row expanded">
-              <div class="columns medium-11 toggle-sibling">
-
-                <div class="row expanded mb-0-5">
-                  <div class="columns shrink">
-                    <span class="switch tiny">
-                      <input class="switch-input" id="oma" type="checkbox" name="oma"> 
-                      <label class="switch-paddle" for="oma">
-                        <span class="show-for-sr">Override/Manual Activation</span>
-                      </label>
-                    </span>
-                  </div>
-                  <div class="columns expand pl-0">
-                    <span class="h5"><strong>Override/Manual Activation</strong></span>
-                  </div>
-                </div>
-                <div class="row mb-1">
-                  <div class="columns medium-11">
-                    <div class="row expanded">
-                      <div class="columns auto">
-                        <fieldset class="ml-1">
-                          <p class="fancy-checkbox small align-middle">
-                            <input id="spcp1" type="checkbox" class="mr-0">
-                            <label class="h6 subheader" for="checkbox1">Administrator</label>
-                          </p>
-                          <p class="fancy-checkbox small align-middle">
-                            <input id="spcp1" type="checkbox" class="mr-0">
-                            <label class="h6 subheader" for="checkbox1">Care Coordinator</label>
-                          </p>
-                          <p class="fancy-checkbox small align-middle">
-                            <input id="spcp1" type="checkbox" class="mr-0">
-                            <label class="h6 subheader" for="checkbox1">Case manager</label>
-                          </p>                    
-                        </fieldset>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="row expanded mb-2">
-          <div class="columns medium-12">
-
-            <div class="row expanded mb-1">
-              <div class="columns medium-12 medium-centered auto">
-                <span class="subheader"><strong>TASKS</strong></span>
-              </div>
-            </div>
-
-            <div class="row expanded">
-              <div class="columns medium-11 toggle-sibling">
-
-                <div class="row expanded mb-0-5">
-                  <div class="columns shrink">
-                    <span class="switch tiny">
-                      <input class="switch-input" id="survey" type="checkbox" name="survey"> 
-                      <label class="switch-paddle" for="survey">
-                        <span class="show-for-sr">Forms/Survey</span>
-                      </label>
-                    </span>
-                  </div>
-                  <div class="columns expand pl-0">
-                    <span class="h5"><strong>Forms/Survey</strong></span>
-                  </div>
-                </div>
-                <div class="row mb-1">
-                  <div class="columns medium-11">
-                    <div class="row">
-                      <div class="columns auto">
-                        <label>
-                          <select>
-                            <option value="husker">Choose</option>
-                            <option value="starbuck">The</option>
-                            <option value="hotdog">Form</option>
-                            <option value="apollo">You</option>
-                            <option value="apollo">Like</option>
-                            <option value="apollo">To</option>
-                            <option value="apollo">Send</option>
-                            <option value="apollo">To</option>
-                            <option value="apollo">The</option>
-                            <option value="apollo">Patient</option>
-                          </select>
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row expanded">
-              <div class="columns medium-11 toggle-sibling">
-
-                <div class="row expanded mb-0-5">
-                  <div class="columns shrink">
-                    <span class="switch tiny">
-                      <input class="switch-input" id="spcp" type="checkbox" name="spcp"> 
-                      <label class="switch-paddle" for="spcp">
-                        <span class="show-for-sr">Chat/Message</span>
-                      </label>
-                    </span>
-                  </div>
-                  <div class="columns expand pl-0">
-                    <span class="h5"><strong>Chat/Message</strong></span>
-                  </div>
-                </div>
-                <div class="row mb-1">
-                  <div class="columns medium-11">
-                    <div class="row">
-                      <div class="columns auto">
-                        <input type="text" placeholder="Select a Message">                        
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row expanded">
-              <div class="columns medium-11 toggle-sibling">
-
-                <div class="row expanded mb-0-5">
-                  <div class="columns shrink">
-                    <span class="switch tiny">
-                      <input class="switch-input" id="oma" type="checkbox" name="oma"> 
-                      <label class="switch-paddle" for="oma">
-                        <span class="show-for-sr">Set a To-do</span>
-                      </label>
-                    </span>
-                  </div>
-                  <div class="columns expand pl-0">
-                    <span class="h5"><strong>Set a To-do</strong></span>
-                  </div>
-                </div>
-                <div class="row mb-1">
-                  <div class="columns medium-11">
-                    <div class="row expanded">
-                      <div class="columns auto">
-                        <input type="text" placeholder="To-do">                        
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row expanded">
-              <div class="columns medium-11 toggle-sibling">
-
-                <div class="row expanded mb-0-5">
-                  <div class="columns shrink">
-                    <span class="switch tiny">
-                      <input class="switch-input" id="oma" type="checkbox" name="oma"> 
-                      <label class="switch-paddle" for="oma">
-                        <span class="show-for-sr">Notify</span>
-                      </label>
-                    </span>
-                  </div>
-                  <div class="columns expand pl-0">
-                    <span class="h5"><strong>Notify</strong></span>
-                  </div>
-                </div>
                 <div class="row">
-                  <div class="columns medium-11">
-                    <div class="row expanded">
-                      <div class="columns auto">
-                        <input type="text" placeholder="To-do">                        
+                  <div class="columns">
+                      <!-- <button class="button pull-right hollow clear small success"><i class="fa fa-plus"></i> Add Event Notification</button> -->
+                    <div class="dropdown">
+                      <button class="dropbtn button pull-right hollow clear small success mb-0 pull-right"><i class="fa fa-plus"></i> Add Event Notification</button>
+                      <div class="dropdown-content">                          
+                        <ul class="ml-0 mb-1 mt-1">
+                          <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>TRIGGERS</strong></small></span></li>
+                          <li class="list-style-type-none"><a href="">Date and Time/Manual</a></li>
+                          <li class="list-style-type-none"><a href="">Previous Event</a></li>                            
+                        </ul>                          
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
 
+            </div>
           </div>
         </div>
 
-        <div class="row expanded mb-2">
-          <div class="columns medium-12">
+            
 
-            <div class="row expanded mb-1">
-              <div class="columns medium-12 medium-centered auto">
-                <span class="subheader"><strong>TASKS AFTER PATIENT FEEDBACK</strong></span>
-              </div>
-            </div>
-
-            <div class="row expanded">
-              <div class="columns medium-11 toggle-sibling">
-
-                <div class="row expanded mb-0-5">
-                  <div class="columns shrink">
-                    <span class="switch tiny">
-                      <input class="switch-input" id="dat" type="checkbox" name="dat"> 
-                      <label class="switch-paddle" for="dat">
-                        <span class="show-for-sr">Forms/Survey</span>
-                      </label>
-                    </span>
-                  </div>
-                  <div class="columns expand pl-0">
-                    <span class="h5"><strong>Forms/Survey</strong></span>
-                  </div>
-                </div>
-                <div class="row mb-1">
-                  <div class="columns medium-11">
-                    <div class="row">
-                      <div class="columns auto">
-                        <input type="text" placeholder="Select a Form">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row expanded">
-              <div class="columns medium-11 toggle-sibling">
-
-                <div class="row expanded mb-0-5">
-                  <div class="columns shrink">
-                    <span class="switch tiny">
-                      <input class="switch-input" id="spcp" type="checkbox" name="spcp"> 
-                      <label class="switch-paddle" for="spcp">
-                        <span class="show-for-sr">Chat/Message</span>
-                      </label>
-                    </span>
-                  </div>
-                  <div class="columns expand pl-0">
-                    <span class="h5"><strong>Chat/Message</strong></span>
-                  </div>
-                </div>
-                <div class="row mb-1">
-                  <div class="columns medium-11">
-                    <div class="row">
-                      <div class="columns auto">
-                        <input type="text" placeholder="Select a Message">                        
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="row expanded">
-              <div class="columns medium-11 toggle-sibling">
-
-                <div class="row expanded mb-0-5">
-                  <div class="columns shrink">
-                    <span class="switch tiny">
-                      <input class="switch-input" id="oma" type="checkbox" name="oma"> 
-                      <label class="switch-paddle" for="oma">
-                        <span class="show-for-sr">Set a To-do</span>
-                      </label>
-                    </span>
-                  </div>
-                  <div class="columns expand pl-0">
-                    <span class="h5"><strong>Set a To-do</strong></span>
-                  </div>
-                </div>
-                <div class="row mb-1">
-                  <div class="columns medium-11">
-                    <div class="row expanded">
-                      <div class="columns auto">
-                        <input type="text" placeholder="To-do">                        
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row expanded">
-              <div class="columns medium-11 toggle-sibling">
-
-                <div class="row expanded mb-0-5">
-                  <div class="columns shrink">
-                    <span class="switch tiny">
-                      <input class="switch-input" id="spcp" type="checkbox" name="spcp"> 
-                      <label class="switch-paddle" for="spcp">
-                        <span class="show-for-sr">Chat/Message</span>
-                      </label>
-                    </span>
-                  </div>
-                  <div class="columns expand pl-0">
-                    <span class="h5"><strong>Chat/Message</strong></span>
-                  </div>
-                </div>
-                <div class="row mb-1">
-                  <div class="columns medium-11">
-                    <div class="row">
-                      <div class="columns auto">
-                        <input type="text" placeholder="Select a Message">                        
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="row expanded mb-2">
-          <div class="columns medium-12">
-
-            <div class="row expanded mb-1">
-              <div class="columns medium-12 medium-centered auto">
-                <span class="subheader"><strong>ADVOCATE ASSIGNED TO THIS ENTRY</strong></span>
-              </div>
-            </div>
-
-            <div class="row expanded">
-              <div class="columns medium-11 toggle-sibling">
-
-                <fieldset class="ml-1">                  
-                  <p class="fancy-checkbox small align-middle">
-                    <input id="spcp1" type="checkbox" class="mr-0">
-                    <label class="h6 subheader" for="checkbox1">Care Coordinator</label>
-                  </p>
-                  <p class="fancy-checkbox small align-middle">
-                    <input id="spcp1" type="checkbox" class="mr-0">
-                    <label class="h6 subheader" for="checkbox1">Case manager</label>
-                  </p>                    
-                </fieldset>
-
-              </div>
-            </div>
-
-          </div>
-
-        </div>
       </div>
     </div>
   </div>
-  <div class="reveal" id="exampleModal1" data-reveal>
+  <div class="reveal large" id="subtask" data-reveal>
     <div class="reveal-heading">
-      Add Trigger
+      Form Subtask
     </div>
     <div class="reveal-body">
       <div class="row">
-        <div class="columns medium-12">
-          <label>Select Trigger
-            <select>
-              <option value="husker">Date and Time</option>
-              <option value="starbuck">Status of previous clinical pathways</option>
-              <option value="hotdog">Override/Manual Activation</option>              
-            </select>
-          </label>
+        <div class="columns">
+          
+          <div>
+            <fieldset class="fieldset border toggler">
+              <legend class=""><strong>QUESTION 1.0</strong></legend>
+              <div class="row mb-2">
+                <div class="columns">
+                  <p class="subheader"><strong>Main Question</strong></p>
+                  <p class="clr-primary toggler-handler"><strong>Did you sleep with your new pillow last night?</strong></p>
+                </div>
+                <div class="columns shrink align-middle">
+                  <button class="button hollow clear large clr-black50 toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                </div>
+              </div>
+
+              <div class="toggler-target">
+                <p class="subheader"><small><strong>ANSWER OPTION</strong></small></p>
+
+                <div class="ml-1">
+                  <div class="dropdown align-middle">
+                    <span class="h5">Yes</span>
+                    <button class="dropbtn button hollow clear tiny success mb-0"><i class="fa fa-plus"></i> Add</button>
+                    
+                    <div class="dropdown-content">                          
+                      <ul class="ml-0 mb-1 mt-1">
+                        <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
+                        <li class="list-style-type-none"><a href="">Assign Task</a></li>
+                        <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                      </ul>
+                      <ul class="ml-0 mb-1 mt-1">
+                        <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>PATIENT</strong></small></span></li>
+                        <li class="list-style-type-none"><a href="">Send Form</a></li>
+                        <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                      </ul>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="mb-1 toggler b-left-1 pl-1">
+                  
+                      <div class="row expanded mb-1">
+                        <div class="columns toggler-handler">
+                          <p class="mb-0"><strong>Awesome, but make sure to remove your fallen hair from it.</strong></p>
+                          <p class="subheader">Reminder</p>
+                        </div>
+                        <div class="columns toggler-handler">
+                          <div class="pull-right">                            
+                            <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                            <button class="button hollow clear"><i class="fa fa-chevron-down"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row bg-black10 pt-1 toggler-target" style="display: none;">
+                        <div class="columns">
+                          <div class="row mb-1">
+                            <div class="columns medium-6">
+                              <p class="subheader">Task</p>
+                              <!-- <input type="text" value="Pathway Event"> -->
+                              <select name="" id="">
+                                <option value="">Feed the Cats</option>
+                                <option value="">Feed the Dogs</option>
+                                <option value="">Feed the Cats to the Dogs</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="row mb-1">
+                            <div class="columns">
+                              <p class="subheader">Select Advocate</p>
+                              <!-- <input type="text" value="Pain Intensity Survey"> -->
+                              <select name="" id="">
+                                <option value="">Sarah Burbon</option>
+                                <option value="">Chachi Gonzales</option>
+                              </select>
+                            </div>                            
+                          </div>                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>              
+
+                <div class="ml-1">
+                  <div class="dropdown align-middle">
+                    <span class="h5">No</span>
+                    <button class="dropbtn button hollow clear tiny success mb-0"><i class="fa fa-plus"></i> Add</button>
+                    
+                    <div class="dropdown-content">                          
+                      <ul class="ml-0 mb-1 mt-1">
+                        <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
+                        <li class="list-style-type-none"><a href="">Assign Task</a></li>
+                        <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                      </ul>
+                      <ul class="ml-0 mb-1 mt-1">
+                        <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>PATIENT</strong></small></span></li>
+                        <li class="list-style-type-none"><a href="">Send Form</a></li>
+                        <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                      </ul>
+                    </div>
+                  </div>
+                  <div>
+                    
+                    <div class="mb-1 toggler b-left-1 pl-1">
+                      
+                      <div class="row expanded mb-1">
+                        <div class="columns toggler-handler">
+                          <p class="mb-0"><strong>Remind the patient to use the new pillow.</strong></p>
+                          <p class="subheader">Task for Sarah Burbon</p>
+                        </div>
+                        <div class="columns">
+                          <div class="pull-right">                                                        
+                            <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                            <button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row bg-black10 pt-1 toggler-target" style="display: flex;">
+                        <div class="columns">
+                          <div class="row mb-1">
+                            <div class="columns medium-6">
+                              <p class="subheader">Select a Form</p>
+                              <input type="text" value="Pre-op Evaluation and clearance Form">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="mb-1 toggler b-left-1 pl-1">
+                  
+                      <div class="row expanded mb-1">
+                        <div class="columns toggler-handler">
+                          <p class="mb-0"><strong>Please dont forget to use it later tonight.</strong></p>
+                          <p class="subheader">Reminder</p>
+                        </div>
+                        <div class="columns toggler-handler">
+                          <div class="pull-right">                            
+                            <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                            <button class="button hollow clear"><i class="fa fa-chevron-down"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row bg-black10 pt-1 toggler-target" style="display: none;">
+                        <div class="columns">
+                          <div class="row mb-1">
+                            <div class="columns medium-6">
+                              <p class="subheader">Task</p>
+                              <!-- <input type="text" value="Pathway Event"> -->
+                              <select name="" id="">
+                                <option value="">Feed the Cats</option>
+                                <option value="">Feed the Dogs</option>
+                                <option value="">Feed the Cats to the Dogs</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="row mb-1">
+                            <div class="columns">
+                              <p class="subheader">Select Advocate</p>
+                              <!-- <input type="text" value="Pain Intensity Survey"> -->
+                              <select name="" id="">
+                                <option value="">Sarah Burbon</option>
+                                <option value="">Chachi Gonzales</option>
+                              </select>
+                            </div>                            
+                          </div>                          
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </fieldset>
+          </div>
+
+          <!-- <div>
+            <fieldset class="fieldset border  toggler">
+              <legend class=""><strong>QUESTION 1.1</strong></legend>
+              <div class="mb-2">
+                <p class="subheader"><strong>Question 1.0 answer: Yes</strong></p>
+                <p class="clr-primary toggler-handler"><strong>Noice!</strong></p>
+              </div>
+
+              <div class="toggler-target">
+                <p class="subheader"><small><strong>ANSWER OPTION</strong></small></p>
+
+                  <div class="ml-1">
+                    <div class="dropdown align-middle">
+                      <span class="h5">Answer 1</span>
+                      <button class="dropbtn button hollow clear tiny success mb-0"><i class="fa fa-plus"></i> Add</button>
+                      
+                      <div class="dropdown-content">                          
+                        <ul class="ml-0 mb-1 mt-1">
+                          <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
+                          <li class="list-style-type-none"><a href="">Assign Task</a></li>
+                          <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                        </ul>
+                        <ul class="ml-0 mb-1 mt-1">
+                          <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>PATIENT</strong></small></span></li>
+                          <li class="list-style-type-none"><a href="">Send Form</a></li>
+                          <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                        </ul>
+                      </div>
+                    </div>
+                  </div>              
+
+                  <div class="ml-1">
+                    <div class="dropdown align-middle">
+                      <span class="h5">Answer 2</span>
+                      <button class="dropbtn button hollow clear tiny success mb-0"><i class="fa fa-plus"></i> Add</button>
+                      
+                      <div class="dropdown-content">                          
+                        <ul class="ml-0 mb-1 mt-1">
+                          <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
+                          <li class="list-style-type-none"><a href="">Assign Task</a></li>
+                          <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                        </ul>
+                        <ul class="ml-0 mb-1 mt-1">
+                          <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>PATIENT</strong></small></span></li>
+                          <li class="list-style-type-none"><a href="">Send Form</a></li>
+                          <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="ml-1">
+                    <div class="dropdown align-middle">
+                      <span class="h5">Answer 2</span>
+                      <button class="dropbtn button hollow clear tiny success mb-0"><i class="fa fa-plus"></i> Add</button>
+                      
+                      <div class="dropdown-content">                          
+                        <ul class="ml-0 mb-1 mt-1">
+                          <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
+                          <li class="list-style-type-none"><a href="">Assign Task</a></li>
+                          <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                        </ul>
+                        <ul class="ml-0 mb-1 mt-1">
+                          <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>PATIENT</strong></small></span></li>
+                          <li class="list-style-type-none"><a href="">Send Form</a></li>
+                          <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </fieldset>
+          </div> -->
+
+          <div>
+            <fieldset class="fieldset border toggler">
+              <legend class=""><strong>QUESTION 1.1</strong></legend>
+              <div class="row mb-2">
+                <div class="columns">
+                  <p class="subheader"><strong>Question 1.0 answer: No</strong></p>
+                  <p class="clr-primary toggler-handler"><strong>Did you drink your medicine after dinner?</strong></p>
+                </div>
+                <div class="columns shrink align-middle">
+                  <button class="button hollow clear large clr-black50 toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                </div>
+              </div>
+
+              <div class="toggler-target">
+                <p class="subheader"><small><strong>ANSWER OPTION</strong></small></p>
+
+                  <div class="ml-1">
+                    <div class="dropdown align-middle">
+                      <span class="h5">Answer 1</span>
+                      <button class="dropbtn button hollow clear tiny success mb-0"><i class="fa fa-plus"></i> Add</button>
+                      
+                      <div class="dropdown-content">                          
+                        <ul class="ml-0 mb-1 mt-1">
+                          <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
+                          <li class="list-style-type-none"><a href="">Assign Task</a></li>
+                          <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                        </ul>
+                        <ul class="ml-0 mb-1 mt-1">
+                          <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>PATIENT</strong></small></span></li>
+                          <li class="list-style-type-none"><a href="">Send Form</a></li>
+                          <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                        </ul>
+                      </div>
+                    </div>
+                  </div>              
+
+                  <div class="ml-1">
+                    <div class="dropdown align-middle">
+                      <span class="h5">Answer 2</span>
+                      <button class="dropbtn button hollow clear tiny success mb-0"><i class="fa fa-plus"></i> Add</button>
+                      
+                      <div class="dropdown-content">                          
+                        <ul class="ml-0 mb-1 mt-1">
+                          <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
+                          <li class="list-style-type-none"><a href="">Assign Task</a></li>
+                          <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                        </ul>
+                        <ul class="ml-0 mb-1 mt-1">
+                          <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>PATIENT</strong></small></span></li>
+                          <li class="list-style-type-none"><a href="">Send Form</a></li>
+                          <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="ml-1">
+                    <div class="dropdown align-middle">
+                      <span class="h5">Answer 2</span>
+                      <button class="dropbtn button hollow clear tiny success mb-0"><i class="fa fa-plus"></i> Add</button>
+                      
+                      <div class="dropdown-content">                          
+                        <ul class="ml-0 mb-1 mt-1">
+                          <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
+                          <li class="list-style-type-none"><a href="">Assign Task</a></li>
+                          <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                        </ul>
+                        <ul class="ml-0 mb-1 mt-1">
+                          <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>PATIENT</strong></small></span></li>
+                          <li class="list-style-type-none"><a href="">Send Form</a></li>
+                          <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </fieldset>
+          </div>
+
         </div>
       </div>
 
-      <div class="row">
-        <div class="columns medium-6">
-          <label>Date
-            <input type="date">
-          </label>
-        </div>
-        <div class="columns medium-6">
-          <label>Time
-            <input type="time">
-          </label>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="columns medium-12">
-          <fieldset>
-            <legend>Check these out</legend>
-            <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-            <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
-          </fieldset>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="columns auto">
-          <fieldset>
-            <legend>Check these out</legend>
-            <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-            <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
-          </fieldset>
-        </div>
-      </div>
+      
 
     </div>
     <div class="reveal-footer bg-primary-light">

@@ -24,6 +24,17 @@ window.onclick = function (event) {
 }
 // dropdown ------------------------------------------------------------
 
+$(".dropdown").on('click', '.dropbtn', function(event) {
+  event.preventDefault();
+  $(this).siblings(".dropdown-content").addClass("show");
+});
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    $(".dropdown-content").removeClass('show')
+  }
+}
+
 
 // BEGIN Employee Chat Component ------------------------------------------------------------
 $("#chat-toggle").on("click", function () {
@@ -207,13 +218,6 @@ $(".clinical-pathway-basic-content").on("click", function () {
     $(this).siblings('.clinical-pathway-details').slideDown()
 })
 
-// toggle second child through first child
-$(".toggle-sibling").children(":nth-child(1)").on('click', function(event) {
-  // event.preventDefault();
-  $(this).siblings().slideToggle()
-});
-
-$(".toggle-sibling").children(":nth-child(2)").toggle();
 
 $(".clinical-pathway-new-entry-list").children('selector')
 
@@ -223,6 +227,29 @@ $(".clinical-pathway-new-entry-list").on('click', '.clinical-pathway-new-entry',
   $(this).addClass('active')
 });
 
+
+
+// TO BE REMOVED ------------------------------------------------------------
+$(".toggle-sibling").children(":nth-child(1)").on('click', function(event) {
+  event.preventDefault();
+  $(this).siblings().slideToggle()
+});
+$(".toggle-sibling").children(":nth-child(2)").slideToggle();
+// TO BE REMOVED ------------------------------------------------------------
+
+
+
+// TOGGLER, toggle second child by clicking the first child
+$(".toggler").find(".toggler-target").slideUp()
+
+// toggle target
+$(".toggler").on('click', '.toggler-handler', function(event) {
+  event.stopPropagation()
+  event.preventDefault();
+  /* Act on the event */  
+  $(this).closest(".toggler").children(".toggler-target").slideToggle()
+  console.log(event.target.nodeName)
+});
 
 
 // replace these values with those generated in your TokBox Account
