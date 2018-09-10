@@ -1,0 +1,9 @@
+// SPOKE MOBILE MEDIA QUERIES
+
+@media only screen and (max-width : 320px) 
+{ 
+	.message-container {
+		height: 17em !important;
+		// Remove main vertical scroll on screen
+	}
+}
