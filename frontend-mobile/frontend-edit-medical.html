@@ -1,184 +1,160 @@
-
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
-    <link rel="stylesheet" href="css/app.css">
-  </head>
-  <body>
-    
-    <div class="off-canvas-wrapper">
-      <div class="off-canvas position-left bg-light padding-top" id="offCanvas" data-off-canvas data-transition="overlap">
-        <!-- Your menu or Off-canvas content goes here -->
-        <ul class="vertical menu margin-top">
-          <li><a href="#"><i class="fa fa-envelope padding-right"></i> Messages</a></li>
-          <li><a href="#"><i class="fa fa-user padding-right"></i> Account Details</a></li>
-          <li><a href="#"><i class="fa fa-sign-out padding-right"></i> Logout</a></li> 
-        </ul>
-      </div>
+<head>
+	  <meta charset="utf-8">
+	  <meta http-equiv="x-ua-compatible" content="ie=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <title>Foundation for Sites</title>
+	  <link rel="stylesheet" href="../css/app.css">
+</head>
+<body class="mobile">
+	<div class="row">
+		<div class="small-12">
+			<div class="title-bar padding-vertical border-bottom sticky" data-responsive-toggle="main-menu" data-hide-for="large">
+				<div class="title-bar-left">
+					<a href="frontend-landing.html" type="button" ><i class="fa fa-chevron-left"></i> BACK</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
-      <div class="off-canvas-content" data-off-canvas-content>
-        <!-- Your page content lives here -->
-        <div class="title-bar padding-vertical border-bottom sticky" data-responsive-toggle="main-menu" data-hide-for="large">
-          <div class="title-bar-left">
-            <a href="frontend-landing.html" type="button" ><i class="fa fa-chevron-left"></i> BACK</a>
-          </div>
-          <div class="title-bar-right">                    
-            <!-- <a href="frontend-schedule.html" class="button success hollow clear no-margin"> <i class="fa fa-calendar"></i></a> -->
-            <!-- <button class="button primary hollow clear no-margin"> <i class="fa fa-envelope"></i></button> -->
-            <!-- <a class="button primary hollow clear no-margin"> <i class="fa fa-user"></i></a> -->
-          </div>
-        </div>
-        
-        <div class="margin-bottom bg-white padding-top shadow">
-          <div class="expanded button-group">
+	<div class="row bg-white padding-top shadow collapse">
+		<div class="columns small-12">
+			<ul class="tabs center-content v-align-center mb-0 icon" data-tabs id="example-tabs">
+				<li class="tabs-title">
+					<a href="#panel1">
+						<h1 class="marginless"><i class="fa fa-user"></i></h1>
+					</a>
+				</li>
+				<li class="tabs-title is-active" aria-selected="true">
+					<a href="#panel2">
+				  		<h1 class="marginless"><i class="fa fa-sliders"></i></h1>
+					</a>
+				</li>
+				<li class="tabs-title">
+					<a href="#panel3">
+				  		<h1 class="marginless"><i class="fa fa-key"></i></h1>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="row  pt-2 pb-1">
+		<div class="columns small-12">
+			<!-- <div class="mb-1 mt-0-5 txt-dark"><strong>CONTACT INFORMATION</strong></div> -->
+			<div class="card margin pad1 box-shadow">
+				<div class="row">
+					<div class="columns small-12">
+				  		<label>When were you thinking of having your surgery?</label>
+					</div>
+					<div class="columns small-12">
+						<select>
+							<option value="0">As soon as possible</option>
+							<option value="1">2 - 4 Weeks</option>
+							<option value="2">4 - 8 Weeks</option>
+							<option value="3">2 - 4 Months</option>
+							<option value="4">4 - 6 Months</option>
+							<option value="5">6+ months</option>
+						 </select>
+					</div>
+				</div>
+			</div>
 
-            <a href="frontend-edit.html" class="no-margin button clear no-border no-padding">
-              <h1 class="no-margin"><i class="fa fa-user"></i></h1>
-              <!-- <p class="smaller no-margin">Profile</p> -->
-            </a>
-            <a href="frontend-edit-medical.html" class="no-margin button clear no-border is-active no-padding">
-              <h1 class="no-margin"><i class="fa fa-sliders"></i></h1>
-              <!-- <p class="smaller no-margin">Medical Preferences</p> -->
-            </a>
-            <a href="frontend-edit-password.html" class="no-margin button clear no-border no-padding">
-              <h1 class="no-margin"><i class="fa fa-key"></i></h1>
-              <!-- <p class="smaller no-margin">Security</p> -->
-            </a>
-          </div>
-        </div>
+		
+			<!-- <div class="mb-1 mt-0-5 txt-dark"><strong>BASIC INFORMATION</strong></div> -->
+			<div class="card margin pad1 box-shadow">	
+				<label>Are you willing to be flexible on the schedule if we were able to secure a larger bonus?</label>
+				<input type="radio" id="q1" class="marginless" name="form1" checked>
+				<label for="q1" class="block">Yes</label>
+				<input type="radio" id="q2" class="marginless" name="form1">
+				<label for="q2">No</label>
 
+				<!-- <label>Zip Code
+					<input type="text" name="" value=""  placeholder="Zip Code">
+				</label> -->
+			 </div>
 
-        <div class="grid-container bg-none">
-          <div class="grid-x grid-padding-y">
-            <div class="cell auto">
+		
+			<div class="card margin pad1 box-shadow">
+				
+				<label>Are you willing to travel outside your local area (Colorado) if a larger bonus were available?</label>
+				<div class="disp-block">
+					<input type="radio" id="q3" class="marginless" name="form2" checked>
+					<label for="q3">No, I want only local providers.</label>
+				</div>
+				<div class="disp-block">
+					<input type="radio" id="q4" class="marginless" name="form2">
+					<label for="q4">Yes, I'm willing to travel outside my immediate area.</label>
+				</div>
+				<div class="disp-block">
+					<input type="radio" id="q5" class="marginless" name="form2">
+					<label for="q5">I'm interested in seeing options throughout the USA.</label>
+				</div>
+				<div class="disp-block">
+					<input type="radio" id="q6" class="marginless" name="form2">
+					<label for="q6">If the bonus was big enough, I'd consider travelling to another country.</label>
+				</div>
+			   </div>
 
-              <div class="card padding">
-                <div class="margin-bottom">
-                  <p class="sub-header">When were you thinking of having your surgery?</p>
-                  <select>
-                    <option value="0">As soon as possible</option>
-                    <option value="1">2 - 4 Weeks</option>
-                    <option value="2">4 - 8 Weeks</option>
-                    <option value="3">2 - 4 Months</option>
-                    <option value="4">4 - 6 Months</option>
-                    <option value="5">6+ months</option>
-                  </select>
-                </div>
-              </div>
-                
-              <div class="card padding">
-                <div class="margin-bottom">
-                  <p class="sub-header">Are you willing to be flexible on the schedule if we were able to secure a larger bonus?</p>
-                  <div>
-                    <p>
-                      <input type="radio" id="bonus1" name="bonus" checked>
-                      <label for="bonus1">Yes</label>
-                    </p>
-                    <p>
-                      <input type="radio" id="bonus2" name="bonus">
-                      <label for="bonus2">No</label>
-                    </p>  
-                  </div>
-                  
-                </div>
-              </div>
-              
-              <div class="card padding">
-                <div class="margin-bottom">
-                  <p class="sub-header">Are you willing to travel outside your local area (Colorado) if a larger bonus were available?</p>
-                  <div>
-                    <p>
-                      <input type="radio" id="abroad1" name="other" checked>
-                      <label for="abroad1">No, I want only local providers.</label>
-                    </p>
-                    <p>
-                      <input type="radio" id="abroad2" name="abroad">
-                      <label for="abroad2">Yes, I'm willing to travel outside my immediate area.</label>
-                    </p>
-                    <p>
-                      <input type="radio" id="abroad3" name="abroad" >
-                      <label for="abroad3">I'm interested in seeing options throughout the USA.</label>
-                    </p>
-                    <p>
-                      <input type="radio" id="abroad4" name="abroad">
-                      <label for="abroad4">If the bonus was big enough, I'd consider travelling to another country.</label>
-                    </p> 
-                  </div>      
-                </div>
-              </div>
+		
+			<div class="card margin pad1 box-shadow">
+				<label>Select the countries that you'd entertain travelling to:</label>
+				<div class="disp-block">
+					<input type="checkbox" id="Brazil" class="marginless" checked>
+					<label for="Brazil">Brazil</label>
+				</div>
+				<div class="disp-block">
+					<input type="checkbox" id="Japan" class="marginless" >
+					<label for="Japan">Japan</label>
+				</div>
+				<div class="disp-block">
+					<input type="checkbox" id="Apple" class="marginless" >
+					<label for="Apple">Apple</label>
+				</div>
+			   </div>
 
-              <div class="card padding">
-                <div class="margin-bottom">            
-                  <p class="sub-header">Select the countries that you'd entertain travelling to:</p>
-                  <div>
-                    <p>
-                      <input type="checkbox" id="Brazil" checked>
-                      <label for="Brazil">Brazil</label>
-                    </p>
-                    <p>
-                      <input type="checkbox" id="Japan" >
-                      <label for="Japan">Japan</label>
-                    </p>
-                    <p>
-                      <input type="checkbox" id="Thailand" >
-                      <label for="Thailand">Apple</label>
-                    </p>
-                  </div>           
-                </div>
-              </div>
-              
-              <div class="card padding">
-                <div class="margin-bottom">            
-                  <p class="sub-header">Are you using any other health benefit programs?</p>
-                  <div>
-                    <p>
-                      <input type="checkbox" id="Tele-Medicine" checked>
-                      <label for="Tele-Medicine">Tele-Medicine</label>
-                    </p>
-                    <p>
-                      <input type="checkbox" id="Wellness" >
-                      <label for="Wellness">Wellness Programs</label>
-                    </p>
-                    <p>
-                      <input type="checkbox" id="Prescription" >
-                      <label for="Prescription">Prescription Drug Programs</label>
-                    </p>
-                    <p>
-                      <input type="checkbox" id="Gym" >
-                      <label for="Gym">Gym and Fitness Programs</label>
-                    </p>
-                    <p>
-                      <input type="checkbox" id="Other" >
-                      <label for="Other">Other:</label>
-                    </p>
-                    <p><input type="text" class=""></p>
-                  </div>
-                </div>
-              </div>
+		
+			<div class="card margin pad1 box-shadow">
+				<label>Are you using any other health benefit programs?</label>
+				<div class="disp-block">
+					<input type="checkbox" id="tele" class="marginless" checked>
+					<label for="tele">Tele-Medicine</label>
+				</div>
+				<div class="disp-block">
+					<input type="checkbox" id="wellness" class="marginless" >
+					<label for="wellness">Wellness Programs</label>
+				</div>
+				<div class="disp-block">
+					<input type="checkbox" id="pres" class="marginless" >
+					<label for="pres">Prescription Drug Programs</label>
+				</div>
+				<div class="disp-block">
+					<input type="checkbox" id="gym" class="marginless" >
+					<label for="gym">Gym and Fitness Programs</label>
+				</div>
+				<div class="disp-block">
+					<input type="checkbox" id="other" class="marginless" >
+					<label for="other">Other:</label>
+					<input type="text" name="" value=""  placeholder="">
+				</div>
+			   </div>
+		</div>
+	</div>
+	
+	<div class="row pad1 mb-1">
+		  <div class="columns small-6">
+			<a href="" class="round button primary expanded txt-white">SAVE CHANGES</a>
 
-            </div>
-          </div>
-        </div>
-        
-        <div class="grid-x padding grid-margin-x">
-          <div class="cell small-6"><a href="" class="button success expanded">SAVE CHANGES</a></div>
-          <div class="cell small-6"><a href="" class="button hollow expanded">CANCEL</a></div>
-        </div>
-        
-
-
-       
-      </div>
-    </div>
-      
-
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/what-input/dist/what-input.js"></script>
-    <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+		  </div>
+		  <div class="columns small-6">
+		  	<a href="" class="button hollow expanded">CANCEL</a>
+		  </div>
+	</div>
+	  
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/what-input/dist/what-input.js"></script>
+	<script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
+	<script src="js/app.js"></script>
+</body>
 </html>
