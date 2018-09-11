@@ -19,9 +19,9 @@
 // Display ----------------------------------------
 .inline-child * { display:inline; }
 .inline-block { display:inline-block; }
-.disp-block { display: block }
-.disp-inline { display: inline }
-.disp-inline-block { display: inline-block }
+.disp-block { display: block !important;}
+.disp-inline { display: inline; }
+.disp-inline-block { display: inline-block; }
 .hidden { display:none; }
 
 
