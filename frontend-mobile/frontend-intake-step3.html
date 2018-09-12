@@ -17,148 +17,125 @@
   </div>
 </header>
 
-<div class="row">
-  <div class="columns auto">
-    <div class="instruction">
-      <div class="img">
-        <img src="assets/img/sarah-face.png" alt="" class="circle bg-white b-all-1-darker mr-1">
-        <span class="step">STEP 3 OF 3</span>
-      </div>
-      <div class="content">
-        <p class="head">Great! Just a few more questions about when and where you would be comfortable getting your
-          surgery.</p>
+<section class="white-bg">
+  <div class="row">
+    <div class="columns auto">
+      <div class="instruction">
+        <div class="img">
+          <img src="assets/img/sarah-face.png" alt="" class="circle bg-white b-all-1-darker mr-1">
+          <span class="step">STEP 3 OF 3</span>
+        </div>
+        <div class="content">
+          <p class="head">Great! Just a few more questions about when and where you would be comfortable getting your
+            surgery.</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="row">
-  <div class="columns small-12">
-
-    <div class="card pad1">
-      <div class="margin-bottom">
-        <p>When were you thinking of having your surgery?</p>
-        <select class="txt-dark">
-          <option value="0">As soon as possible</option>
-          <option value="1">2 - 4 Weeks</option>
-          <option value="2">4 - 8 Weeks</option>
-          <option value="3">2 - 4 Months</option>
-          <option value="4">4 - 6 Months</option>
-          <option value="5">6+ months</option>
+  <div class="row">
+    <div class="large-6 columns">
+      <label>
+        When were you thinking of having your surgery?
+        <select>
+          <option>As soon as possible</option>
+          <option>2 - 4 Weeks</option>
+          <option>4 - 8 Weeks</option>
+          <option>2 - 4 Months</option>
+          <option>4 - 6 Months</option>
+          <option>6+ months</option>
         </select>
-      </div>
+      </label>
     </div>
-
-    <div class="card  pad1">
-      <div class="margin-bottom">
-        <p>Are you willing to be flexible on the schedule if we were able to secure a larger bonus?</p>
-        <div>
-          <p>
-            <input type="radio" id="bonus1" name="bonus" checked>
-            <label for="bonus1">Yes</label>
-          </p>
-          <p>
-            <input type="radio" id="bonus2" name="bonus">
-            <label for="bonus2">No</label>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="card  pad1">
-      <div class="margin-bottom">
-        <p>Are you willing to travel outside your local area (Colorado) if a larger bonus were available?</p>
-        <div>
-          <p>
-            <input type="radio" id="abroad1" name="other" checked>
-            <label for="abroad1">No, I want only local providers.</label>
-          </p>
-          <p>
-            <input type="radio" id="abroad2" name="abroad">
-            <label for="abroad2">Yes, I'm willing to travel outside my immediate area.</label>
-          </p>
-          <p>
-            <input type="radio" id="abroad3" name="abroad">
-            <label for="abroad3">I'm interested in seeing options throughout the USA.</label>
-          </p>
-          <p>
-            <input type="radio" id="abroad4" name="abroad">
-            <label for="abroad4">If the bonus was big enough, I'd consider travelling to another country.</label>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="card  pad1">
-      <div class="margin-bottom">
-        <p>Select the countries that you'd entertain travelling to:</p>
-        <div>
-          <p>
-            <input type="checkbox" id="Brazil" checked>
-            <label for="Brazil">Brazil</label>
-          </p>
-          <p>
-            <input type="checkbox" id="Japan">
-            <label for="Japan">Japan</label>
-          </p>
-          <p>
-            <input type="checkbox" id="Thailand">
-            <label for="Thailand">Apple</label>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="card  pad1">
-      <div class="margin-bottom">
-        <p>Are you using any other health benefit programs?</p>
-        <div>
-          <p>
-            <input type="checkbox" id="Tele-Medicine" checked>
-            <label for="Tele-Medicine">Tele-Medicine</label>
-          </p>
-          <p>
-            <input type="checkbox" id="Wellness">
-            <label for="Wellness">Wellness Programs</label>
-          </p>
-          <p>
-            <input type="checkbox" id="Prescription">
-            <label for="Prescription">Prescription Drug Programs</label>
-          </p>
-          <p>
-            <input type="checkbox" id="Gym">
-            <label for="Gym">Gym and Fitness Programs</label>
-          </p>
-          <p>
-            <input type="checkbox" id="Other">
-            <label for="Other">Other:</label>
-          </p>
-          <p><input type="text" class=""></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="card  pad1">
-      <div>
-        <p>
-          <input type="checkbox" id="agree1">
-          <label for="agree1">By submitting this form, you authorize us to retrieve your insurance and deductible
-            information, as well as share this information with any provider you indicate an interest in, so they can
-            better serve you.
-            You also authorize us to share your health information with any provider you indicate an interest in, so
-            they can better serve you.</label>
-        </p>
-        <p>
-          <input type="checkbox" id="agree2">
-          <label for="agree2">By submitting this form, you agree to Spoke Health's Privacy Policy and Terms of
-            Service.</label>
-        </p>
-      </div>
-    </div>
-
-    <a href="frontend-instruction.html" class="margin-top round button secondary expanded large txt-white">CONTINUE</a>
   </div>
-</div>
+  <div class="row">
+    <div class="large-9 columns end">
+      <fieldset>
+        <legend>Are you willing to be flexible on the schedule if we were able to secure a larger bonus?</legend>
+        <div class="checkbox-wrapper">
+          <input type="radio" name="flex" value="yes" id="flex" checked=""><label for="flex">Yes</label>
+        </div>
+        <div class="checkbox-wrapper">
+          <input type="radio" name="flex" value="no" id="flex"><label for="flex">No</label>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-9 columns end">
+      <fieldset>
+        <legend>Are you willing to travel outside your local area if a larger bonus were available?</legend>
+        <div class="checkbox-wrapper">
+          <input type="radio" name="location" value="" id="location"><label for="location">No, I want only local facilities.</label>
+        </div>
+        <div class="checkbox-wrapper">
+          <input type="radio" name="location" value="" id="location"><label for="location">Yes, I'm willing to travel outside my immediate area.</label>
+        </div>
+        <div class="checkbox-wrapper">
+          <input type="radio" name="location" value="" id="location"><label for="location">I'm interested in seeing options throughout the USA.</label>
+        </div>
+        <div class="checkbox-wrapper">
+          <input type="radio" name="location" value="" id="location" checked=""><label for="location">If the bonus was big enough, I'd consider travelling to another country.</label>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns end">
+      <fieldset>
+        <legend>Select the countries that you'd entertain travelling to:</legend>
+        <div class="row">
+          <div class="large-3 columns end">
+            <div class="checkbox-wrapper">
+              <input class="mb-0"  type="checkbox" name="country" value="" id="country" checked=""><label class="mb-0" for="country">Costa Rica</label>
+            </div>
+          </div>
+          <div class="large-3 columns end">
+            <div class="checkbox-wrapper">
+              <input class="mb-0" type="checkbox" name="country" value="" id="country"><label class="mb-0" for="country">Mexico</label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-9 columns end">
+      <fieldset>
+        <legend>Are you using any other health benefit programs?</legend>
+        <div class="checkbox-wrapper">
+          <input type="checkbox" name="programs" value="" id="programs" checked=""><label for="programs">Tele-Medicine</label>
+        </div>
+        <div class="checkbox-wrapper">
+          <input type="checkbox" name="programs" value="" id="programs"><label for="programs">Wellness Programs</label>
+        </div>
+        <div class="checkbox-wrapper">
+          <input type="checkbox" name="programs" value="" id="programs"><label for="programs">Prescription Drug Programs</label>
+        </div>
+        <div class="checkbox-wrapper">
+          <input type="checkbox" name="programs" value="" id="programs"><label for="programs">Gym and Fitness Programs</label>
+        </div>
+        <div class="checkbox-wrapper">
+          <input type="checkbox" name="programs" value="" id="programs"><label for="programs">Other: <input type="text" name="programs" value=""></label>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns end">
+      <div class="checkbox-wrapper">
+        <input type="checkbox" name="authorize" value="" id="authorize" checked><label class="help-text subheader">By submitting this form, you authorize us to retrieve your insurance and deductible information, so we can provide customized results for you.<br>You also authorize us to share your health information with any facility you indicate an interest in, so they can better serve you.</label>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns end">
+      <a href="frontend-index.html" class="submit button primary expanded">Continue &nbsp;<i class="fa fa-long-arrow-right"></i></a>
+    </div>
+  </div>
+
+</section>
 
 
 <script src="bower_components/jquery/dist/jquery.js"></script>
