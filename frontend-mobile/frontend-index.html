@@ -1,62 +1,122 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-	<meta charset="utf-8">
- 	<meta http-equiv="x-ua-compatible" content="ie=edge">
- 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
- 	<title>Foundation for Sites</title>
- 	<link rel="stylesheet" href="../css/app.css">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation for Sites</title>
+  <link rel="stylesheet" href="../css/app.css">
 </head>
 <body>
-    	<div class="row mb-1 pb-1">
-		<div class="columns auto"></div>
-		<div class="columns shrink ">
-			<img src="assets/img/logo.png" alt="" id="logo">
-		</div>
-		<div class="columns auto"></div>
-    	</div>
 
-    	<div class="row">
-		<div class="columns small-6">
-			<img src="assets/img/sarah.png" alt="">
-		</div>
-		<div class="columns small-6 pt-1">
-			<div class="pt-1">
-			  	<h1 class="heading pt-1">
-			  		<strong>Hi, Alison.</strong>
-			  	</h1>
-			  	<h4 class="mb-1 heading">
-			  		<strong>This is Sarah from Spoke Health.</strong>
-			  	</h4>
-			</div>
-		</div>
-    	</div>
+<header class="top-bar">
+  <div class="top-bar-title">
+    <a href="#" class="logo">
+      <img src="../img/logo.png" alt="Spoke">
+    </a>
+  </div>
+  <div id="responsive-menu">
+    <div class="top-bar-right">
+      <ul id="mainMenu" class="dropdown menu" data-dropdown-menu>
+        <li>
+          <a><i class="fa fa-calendar"></i></a>
+        </li>
+        <li class="drop-text">
+          <a><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">24</span></a>
+        </li>
+        <li>
+          <a href="#">John Doe &nbsp;</a>
+          <ul class="menu vertical">
+            <li><a href="frontend-edit.html"><i class="fa fa-user"></i>&nbsp; Account Details</a></li>
+            <li><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Sign Out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
 
-    	<div class="row panel pad2 bg-light">
-		<div class="columns">
-			<p class="sub-header">
-				I’m thrilled you're interested in seeing the providers we've found specifically for you.
-			</p>
-			<p class="sub-header">
-				Before we can get to the providers though, there are a few steps to complete. This process shouldn’t take very long.
-			</p>
-			<p class="sub-header mb-0">
-				As I mentioned in my email, if you would like any assistance with this process, or have any questions, please feel free to schedule a call or chat with me and I will be happy to help. My job is to support you, so let me know if you need anything.
-			</p>
-		</div>
-    	</div>
+<div class="row collapse mobile">
+  <div class="columns small-12">
+    <div class="row bg-white padding-top shadow collapse">
+      <div class="columns">
+        <ul class="tabs center-content v-align-center mb-0" data-tabs id="example-tabs">
+          <li class="tabs-title is-active" aria-selected="true"><a href="#panel1">LOCAL</a></li>
+          <li class="tabs-title"><a href="#panel2">NATIONAL</a></li>
+          <li class="tabs-title"><a href="#panel3">INTERNATIONAL</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
-    	<div class="row pad2">
-		<div class="columns small-10 small-centered text-center">
-			<h3 class="heading padding-top">Get big savings in 3 easy steps.</h3>
-			<p class="sub-header pb-1-5">As a reminder, you are eligible for a bonus of up to $6,700.</p>
-			<a href="frontend-intake-step1.html" class="margin-top round button secondary large txt-white">LETS GET STARTED</a>
-		</div>  
-    	</div>
+<div class="row pt-2 pb-1">
+  <div class="columns auto pl-1">
+    <span class="txt-dark"><strong>PROVIDERS OPTION</strong></span>
+  </div>
+  <div class="columns auto pr-1">
+    <a href="frontend-instruction.html" class="clear no-padding float-right no-margin"><strong>Whats this?</strong></a>
+  </div>
+</div>
 
-  	<script src="bower_components/jquery/dist/jquery.js"></script>
-  	<script src="bower_components/what-input/dist/what-input.js"></script>
-  	<script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
-  	<script src="js/app.js"></script>
+<!-- NEW SLIDE WITHOUT JS -->
+<div class="row">
+  <div class="columns small-12">
+    <ul class="tabs-panel is-active marginless">
+      <li class="list-style-type-none">
+        <div class="block box-shadow">
+          <div class="block-heading bg-primary white-color">
+            <span class="small"><strong>TOP 20%</strong> QUALITY PROVIDER</span>
+          </div>
+          <div class="provider-img">
+            <img class="orbit-image" src="https://placeimg.com/400/300/arch" alt="Space">
+          </div>
+
+
+          <div class="mobile-orbit">
+            <a href="" class="pad1 pull-left prev">
+              <span class="fa-arrow-left fa white-color"></span>
+            </a>
+            <a href="" class="pad1 pull-right next">
+              <span class="fa-arrow-right fa white-color"></span>
+            </a>
+          </div>
+
+          <div class="block-container">
+            <div class="row">
+              <div class="columns small-3">
+                <div class="logo">
+                  <img src="http://placehold.it/50x50/323232?text=Slide-2" alt="Space">
+                </div>
+              </div>
+              <div class="columns small-9">
+                <div class="provider-name">
+                  <p class="small marginless txt-dark"><strong>Center for Spine and spinach</strong></p>
+                  <p class="marginless small subheader">DENVER 2.1 Miles</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block-container">
+            <div class="row">
+              <div class="columns small-7">
+                <h2 class="marginless success-color">$5,500</h2>
+                <p class="small no-margin subheader">YOUR BONUS</p>
+              </div>
+              <div class="columns small-5">
+                <a href="frontend-facility-profile.html" class="button hollow expanded">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/what-input/dist/what-input.js"></script>
+<script src="../bower_components/foundation-sites/dist/js/foundation.js"></script>
+<script src="../js/app.js"></script>
 </body>
 </html>

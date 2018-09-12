@@ -19,9 +19,9 @@
 // Display ----------------------------------------
 .inline-child * { display:inline; }
 .inline-block { display:inline-block; }
-.disp-block { display: block }
-.disp-inline { display: inline }
-.disp-inline-block { display: inline-block }
+.disp-block { display: block !important;}
+.disp-inline { display: inline; }
+.disp-inline-block { display: inline-block; }
 .hidden { display:none; }
 
 
@@ -228,7 +228,7 @@
 	overflow-y: scroll !important;
 }
 
-.box-shadow	{ box-shadow: 0px 0px 10px rgba(50,50,50,.2) }
+.box-shadow	{ box-shadow: 0px 0px 10px rgba(50,50,50,.2) !important; }
 
 .circle { 
 	border-radius: 100rem; 
