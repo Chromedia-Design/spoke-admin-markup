@@ -939,7 +939,8 @@ $main-color: #1ebd44;
   position: fixed;
   bottom: 6rem;
   right: 1rem;
-  width: 376px;
+  max-width: 376px;
+  width: 100%;
   border-radius: 8px !important;
   // overflow: hidden;
   .chat-header-intro {

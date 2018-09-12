@@ -1,5 +1,21 @@
 // SPOKE MOBILE MEDIA QUERIES
 
+@media only screen and (max-width : 390px) 
+{ 
+	#chat-container, #chat-notification {
+		  max-width: 350px;
+		  width: 100%;
+	}
+}
+
+@media only screen and (max-width : 350px) 
+{ 
+	#chat-container, #chat-notification {
+		  max-width: 320px;
+		  width: 100%;
+	}
+}
+
 @media only screen and (max-width : 320px) 
 { 
 	.message-container {
