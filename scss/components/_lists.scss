@@ -1288,3 +1288,49 @@ ul.vertical-list {
     }
   }
 }
+
+.ul-tree {
+  list-style-type: none;
+  li {
+    list-style-type: none;
+    position: relative;
+    white-space: nowrap;
+    // overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 1rem;
+    margin-left: .5rem;
+
+    border-left: 1px solid #323232;
+    &:before {
+      content: "";
+      width: 10px;
+      height: 1px;
+      background-color: #323232;
+      position: absolute;
+      top: .75rem;
+      left: 0px;
+    }
+
+    &.ul-tree-parent, &.ul-tree-sub-parent {
+      border-left: 0px;
+      padding-left: 0px;
+      margin-left: 0px;
+      &:before {
+        content: "";
+        background-color: transparent;
+      }
+    }
+
+    &.ul-tree-sub-parent {
+      &:before {
+        border-radius: 10rem;
+        overflow: hidden;
+        background-color: #323232;
+        width: 8px;
+        height: 8px;
+        left: -.85rem;
+        top: .5rem;
+      }
+    }
+  }
+}
