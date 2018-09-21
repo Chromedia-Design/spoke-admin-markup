@@ -1,264 +1,521 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Foundation for Sites</title>
-	<link rel="stylesheet" href="../css/app.css">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spoke</title>
+
+  <!-- Important Owl stylesheet -->
+  <link rel="stylesheet" href="../js/owl-carousel/owl.carousel.css">
+
+  <!-- Default Theme -->
+  <link rel="stylesheet" href="../js/owl-carousel/owl.theme.css">
+
+  <link rel="stylesheet" href="../js/powertour/css/powertour.min.3.2.0.css"/>
+  <link rel="stylesheet" href="../js/powertour/css/powertour-style-clean.min.css"/>
+  <link rel="stylesheet" href="../js/powertour/css/powertour-connectors.min.css"/>
+  <link rel="stylesheet" href="../js/powertour/css/animate.min.css"/>
+
+  <link rel="stylesheet" href="../css/app.css">
 </head>
-<body>
-	<div class="row">
-		<div class="small-12">
-			<div class="title-bar padding-vertical border-bottom sticky" data-responsive-toggle="main-menu" data-hide-for="large">
-				<div class="title-bar-left">
-					<a href="frontend-landing.html" type="button" ><i class="fa fa-chevron-left"></i> BACK</a>
-				</div>
-			</div>
-		</div>
+<body class="frontend">
+
+<header class="top-bar">
+  <div class="row">
+	<div class="top-bar-title">
+		<span data-responsive-toggle="responsive-menu" data-hide-for="large">
+			<span class="menu-icon dark" data-toggle></span>
+		</span>
+		<a href="#" class="logo">
+			<img src="../img/logo.png" alt="Spoke">
+		</a>
 	</div>
-	
-
-<!-- 	<div class="orbit margin-bottom" role="region" aria-label="Favorite Space Pictures" data-orbit data-auto-play="false">
-		<div class="orbit-wrapper">
-			<ul class="orbit-container">
-				<li class="is-active orbit-slide">
-					<div class="orbit-slide-content-container">	 
-						<img class="orbit-image" src="https://placeimg.com/375/410/arch" alt="Space">
-					</div>	 
+	<div id="responsive-menu">
+		  <div class="top-bar-right">
+			<!-- <ul class="menu">
+			  	<li>
+					<a class="button link info" href="#">My Account</a>
 				</li>
-
-				<li class="is-active orbit-slide">
-					<div class="orbit-slide-content-container ">
-						<figure class="orbit-figure">
-							<img class="orbit-image" src="https://placeimg.com/376/411/arch" alt="Space">
-						</figure>	
-					</div>
+				<li>
+					<ul class="dropdown menu" data-dropdown-menu>
+				<li>
+				 <a class="button hollow rounded" href="#">Denver</a>
+				 <ul class="menu vertical">
+						  <li><a href="#">Alabama</a></li>
+						  <li><a href="#">Minnesota</a></li>
+						  <li><a href="#">Detroit</a></li>
+					  </ul>
+					</li>
+				</ul>
 				</li>
-
-				<li class="is-active orbit-slide">
-					<div class="orbit-slide-content-container ">	 
-						<figure class="orbit-figure">
-							<img class="orbit-image" src="https://placeimg.com/376/410/arch" alt="Space">
-						</figure>
-					</div>	 
-				</li>
-
-				<li class="is-active orbit-slide">
-					<div class="orbit-slide-content-container ">	 
-						<figure class="orbit-figure">
-							<img class="orbit-image" src="https://placeimg.com/375/411/arch" alt="Space">
-						</figure>	
-					</div>	
-				</li>
-			</ul>
-		</div>
-		<nav class="orbit-bullets sticky-bottom sticky-center-horizontal">
-			<button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
-			<button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-			<button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
-			<button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
-		</nav>
-	</div> --> <!-- OLD ORBIT -->
-
-	<div class="row pt-2 pb-1 pad-1">
-		<div class="columns small-3">
-			<img class="circle" src="http://placehold.it/100x100/323232?text=Slide-3" alt="Space">
-		</div>
-		<div class="columns small-9">
-			<h2 class="no-margin txt-dark"><strong>Precision Spine Center</strong></h2>
-			<p class="smaller no-margin txt-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit!</p>
-		</div>
-
-		<div class="columns small-12">
-			<a href="" class="button success expanded large">IM INTERESTED</a>
-		</div>
+			</ul> -->
+		  </div>
 	</div>
+  </div>
+</header>
 
-	<div class="row">
-		<div class="columns small-12 bg-light  ">
-			<div class="pad-1">
-				<div class="margin-top pb-1">	
-					<h1 class="marginless">$5,500</h1>
-					<p class="small subheader">Your Deductible</p>	
+<section class="white-bg">
+	  <div id="facilitySection" class="row" data-sticky-container>
+		<div class="large-12 columns" data-sticky data-top-anchor="facilitySection:top">
+			  <nav aria-label="You are here:" role="navigation">
+				<ul class="breadcrumbs mb-1">
+					  <li><a href="frontend-index.html">See All Provider Options</a></li>
+					  <li>Precision Spine Center</li>
+				</ul>
+			  </nav>
+		</div>
+	  </div>
+
+	  <div class="row">
+		<div class="large-12 columns">
+			  <div id="facilityImages" class="owl-carousel">
+				<div>
+				  	<img src="../img/slide-precision-spine-center-1.jpg" alt="">
 				</div>
-				<div class="spk-gain-graph">
-					<div class="oop bg-primary" width="50%"></div>
-					<div class="allowance bg-success" width="200px"></div>
+				<div>
+				  	<img src="../img/slide-precision-spine-center-2.jpg" alt="">
 				</div>
-				<div class="margin-horizontal row">
-					<div class="columns small-4">
-						<p class="primary-color"><i class="fa fa-circle mr-1"></i>$2,500</p>
-					</div>
-					<div class="columns small-4">
-						<p class="success-color"><i class="fa fa-circle mr-1"></i>$3,000</p>
-					</div>
+				<div>
+				  	<img src="../img/slide-precision-spine-center-3.png" alt="">
+				</div>
+				<div>
+				  	<img src="../img/slide-precision-spine-center-4.png" alt="">
+				</div>
+				<div>
+				  	<img src="../img/slide-precision-spine-center-1.jpg" alt="">
+				</div>
+				<div>
+				  	<img src="../img/slide-precision-spine-center-2.jpg" alt="">
+				</div>
+			  </div>
+		</div>
+	  </div>
+
+	  <div class="row">
+		<div class="large-4 large-push-8 columns">
+			  <div id="facilitySidebar">
+				<a id="interestTrigger" data-sticky data-top-anchor="facilitySidebar:top" class="button success large plain mt-1">
+					<b>I'm interested. Explore this option.</b>
+				</a>
+
+				<div class="callout">
+					  <div class="row">
+						<div class="large-12 columns">
+							  <p class="subheader">
+								<small>
+									<b class="drop-cap"><i class="fa fa-shield"></i></b>
+									Precision Spine Center has a score of 590 for a Total Knee Replacement.
+								</small>
+							  </p>
+							  <div class="mpirica-graph">
+								<div class="progress" role="progressbar" tabindex="0" aria-valuenow="50" aria-valuemin="0" aria-valuetext="50 percent" aria-valuemax="100">
+									  <div class="progress-meter" style="width: 80%">
+										<div class="mpirica-wrapper">
+										  	<span class="rating">590</span>
+										  	<img src="../img/mpirica.png">
+										</div>
+									  </div>
+								</div>
+							  </div>
+							  <p class="mt-1 mb-0 pull-right">
+								<small><a href="https://www.mpirica.com/quality-score">More about MPIRICA Scores &nbsp;
+									<i class="fa fa-angle-right"></i></a>
+								</small>
+							  </p>
+						</div>
+					  </div>
 				</div>
 
-				<small class="subheader">You can save $2,500 in OOP and receive a $3,000 Allowance. That is $5,500 in total value.</small>
-			</div>
+				<div class="panel">
+					  <div class="panel-heading">
+						<span class="h6">Doctors</span>
+					  </div>
+					  <div class="panel-body">
+						<div class="media-object">
+							  <div class="media-object-section logo middle">
+								<div class="img-wrapper circle">
+								  	<img src="../img/specialist.png">
+								</div>
+							  </div>
+							  <div class="media-object-section middle">
+								<span class="h6">Dan Stevens</span>
+								<p>
+								  	<small class="subheader">Facility Surgeon</small>
+								</p>
+							  </div>
+						</div>
+						<div class="media-object">
+							  <div class="media-object-section logo middle">
+								<div class="img-wrapper circle">
+								  	<img src="../img/specialist.png">
+								</div>
+							  </div>
+							  <div class="media-object-section middle">
+								<span class="h6">Catherine Carter</span>
+								<p>
+								  	<small class="subheader">Facility Surgeon</small>
+								</p>
+							  </div>
+						</div>
+						<div class="media-object">
+							  <div class="media-object-section logo middle">
+								<div class="img-wrapper circle">
+								  	<img src="../img/specialist.png">
+								</div>
+							  </div>
+							  <div class="media-object-section middle">
+								<span class="h6">Randy Moss</span>
+								<p>
+								  	<small class="subheader">Facility Surgeon</small>
+								</p>
+							  </div>
+						</div>
+					  </div>
+				</div>
+
+				<div class="panel">
+					  <div class="panel-heading">
+						<span class="h6"><i class="fa fa-medkit fa-border success-color"></i>&nbsp; What's Included</span>
+					  </div>
+					  <div class="panel-body">
+						<div class="grouped-listing row collapse">
+							  <div class="large-12 columns">
+								<ul class="fa-ul">
+									  <li>Pre-op evaluation</li>
+									  <li>Pre-op antibiotics as indicate</li>
+									  <li>Facility surgeon</li>
+									  <li>Assistant surgeon</li>
+									  <li>Anesthesia</li>
+									  <li>Rehabilitation/physical therapy regimen</li>
+									  <li>Post-op follow-up</li>
+								</ul>
+							  </div>
+						</div>
+					  </div>
+				</div>
+
+			  </div>
 		</div>
 
-		<div class="columns small-12 pad-1 mb-0-5 mt-0-5">
-			<div class="mb-2">
-				<h3>OVERVIEW</h3>
-				<div class="read-more-content-container">
-					<div class="read-more-content" id="read-more-content">
-						<p class="smaller txt-light">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, laudantium ducimus perferendis assumenda similique provident quia? Id natus nulla minima quae atque earum quaerat ut. Iste blanditiis eum, numquam iure facilis ipsum!
-						</p>
-						<p class="smaller txt-light content-hide"  id="par1" data-toggler data-animate="fade-in fade-out">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, officiis accusantium, enim recusandae repellat nam tempora facilis ratione dolorem harum odit iusto.
-							<br /> <br />
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque autem ex officiis vero eos aspernatur eligendi architecto quod placeat molestiae!
-						</p>
+		<div class="large-8 large-pull-4 columns">
+			  <div class="media-object full-table pad1">
+				<div class="media-object-section logo middle">
+				  <div class="img-wrapper">
+					<img src="../img/logo-Precision-Spine-Center.png">
+				  </div>
+				</div>
+				<div class="media-object-section middle">
+				  <span class="h4">Precision Spine Center</span>
+				  <p class="subheader">
+					<small>Millennium Center, 6825 S. Galena Street, Suite 314, Centennial, CO, United States Of America</small>
+				  </p>
+				</div>
+				<div class="media-object-section middle">
+				  <a href="#" class="button warning small pull-right"><i class="fa fa-print"></i></a>
+				</div>
+			  </div>
+
+			  <div class="callout mt-2">
+				<div class="spk-gain-graph row">
+				  <div class="small-9 columns">
+					<div class="progress mt-0-5" role="progressbar" tabindex="0" aria-valuenow="0" aria-valuemin="0"
+						 aria-valuetext="100 percent" aria-valuemax="100">
+					  <div class="progress-meter deductible" style="width: 45%;">
+						<p class="progress-meter-text">$2,500</p>
+						<p class="deductible-label">Your Deductible</p>
+					  </div>
+					  <div class="progress-meter bonus" style="width: 10%;">
+						<p class="progress-meter-text">$500</p>
+					  </div>
 					</div>
+				  </div>
+				  <div class="small-3 columns">
+					<div class="brick small link text-center expanded">$3,000</div>
+				  </div>
 				</div>
-					
-				<a class="clear primary" data-toggle="par1" id="redMoreBtn">Read more</a>
+			  </div>
+
+			  <hr>
+			  <div class="row align-bottom pad1">
+				<div class="medium-4 columns">
+				  <small class="success-color">Total Value</small>
+				  <h3 class="mb-0">$3,000</h3>
+				</div>
+				<div class="medium-4 columns">
+				  <h5 class="mb-0">$2,500</h5>
+				  <small class="subheader">Out-Of-Pocket Expenses Saved</small>
+				</div>
+				<div class="medium-4 columns">
+				  <h5 class="mb-0">$500</h5>
+				  <small class="subheader">Allowance Gained</small>
+				</div>
+			  </div>
+			  <hr>
+			<div class="row">
+				<div class="columns small-12 pr-1 pl-1">
+					  <div class="section-heading mt-2 mb-1">
+						<h6 class="subheader"><i class="fa fa-medkit fa-border primary-color"></i> &nbsp;OVERVIEW</h6>
+					  </div>
+					  <p>Welcome to Precision Spine Center, a multidisciplinary treatment center of excellence serving Denver and the
+						Rocky Mountain region. We are pioneers in the use of advanced 3D navigation during surgery to precisely
+						target—and effectively treat— a wide variety of spinal disorders.</p>
+					  <p>Our center is one of a select few centers in the U.S. to consistently use advanced 3D technology to address
+						spine pathology with laser-guided precision.</p>
+					  <p><b>Our Philosophy</b></p>
+					  <p>At Precision Spine Center, surgery is not always the answer to our patient’s spinal issues. Our
+						multi-disciplinary approach allows us to explore a variety of treatment options, depending upon the severity of
+						the patient’s problems and pain.</p>
+					  <p>We believe that open and timely communication with our patients and our referring physicians is critical in
+						having an efficient and effective patient care model. In order to understand, we must communicate.</p>
+					  <p><b>About Our Practice</b></p>
+					  <p>The professionals at Precision Spine Center represent a multidisciplinary team of spine care experts with an
+						excellent track record of success in treating a wide variety of spinal disorders. We are one of a very few
+						centers in the United States to consistently use 3D navigation during surgery, as well as computer-assisted
+						spine surgery. This advanced technology allows us to accurately treat the affected area without damaging healthy
+						bone, tissue or nerves, and enables the precise placement of implanted devices to achieve optimal outcomes.</p>
+					  <p>Precision Spine Center takes a truly patient-centric approach to healthcare. Our Physicians take the time to
+						discuss the details of your medical condition and the various treatment/surgical options that are available.
+						Precision Spine Center is a place where Physicians listen.</p>
+					  <p>Spine care is our specialty, our sole focus, our passion. If you’re seeking long-term relief and/or optimum
+						spine health, we invite you to consult with us.</p>
+					  <p>When surgical intervention is the best option for your condition, you can be confident that our spine surgeons
+						are among the region’s most skilled and capable. We employ the latest neurosurgical techniques.</p>
+				</div>
 			</div>
 
-
-			<div class="mb-2">
-				<h3>OUR PHILOSOPY</h3>
-				<div class="read-more-content-container">
-					<div class="read-more-content" id="read-more-content">
-						<p class="smaller txt-light">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, laudantium ducimus perferendis assumenda similique provident quia? Id natus nulla minima quae atque earum quaerat ut. Iste blanditiis eum, numquam iure facilis ipsum!
-						</p>
-						<p class="smaller txt-light content-hide"  id="par2" data-toggler data-animate="fade-in fade-out">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, officiis accusantium, enim recusandae repellat nam tempora facilis ratione dolorem harum odit iusto.
-							<br /> <br />
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque autem ex officiis vero eos aspernatur eligendi architecto quod placeat molestiae!
-						</p>
-					</div>
+			  <div class="row pl-1 pr-1">
+				<div class="grouped-listing">
+				  <div class="large-4 columns">
+					<h6 class="subheader"><i class="fa fa-trophy fa-border primary-color"></i> AWARDS & ACCREDITATIONS</h6>
+				  </div>
+				  <div class="large-8 columns">
+					<ul>
+					  <li>
+						<div class="media-object">
+						  <div class="media-object-section logo middle">
+							<div class="img-wrapper">
+							  <img src="../img/logo-Precision-Spine-Center.png">
+							</div>
+						  </div>
+						  <div class="media-object-section middle">
+							<p class="h6">Medical Tourism Association (MTA) Member</p>
+						  </div>
+						</div>
+					  </li>
+					  <li>
+						<div class="media-object">
+						  <div class="media-object-section logo middle">
+							<div class="img-wrapper">
+							  <img src="../img/logo-Precision-Spine-Center.png">
+							</div>
+						  </div>
+						  <div class="media-object-section middle">
+							<p class="h6">JCI Accredited since 1950</p>
+						  </div>
+						</div>
+					  </li>
+					</ul>
+				  </div>
 				</div>
-					
-				<a class="clear primary" data-toggle="par2" id="redMoreBtn">Read more</a>
-			</div>
+		 	 </div>
 
-
-			<div class="mb-2">
-				<h3>ABOUT OUR PRACTICE</h3>
-				<div class="read-more-content-container">
-					<div class="read-more-content" id="read-more-content">
-						<p class="smaller txt-light">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, laudantium ducimus perferendis assumenda similique provident quia? Id natus nulla minima quae atque earum quaerat ut. Iste blanditiis eum, numquam iure facilis ipsum!
-						</p>
-						<p class="smaller txt-light content-hide"  id="par3" data-toggler data-animate="fade-in fade-out">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, officiis accusantium, enim recusandae repellat nam tempora facilis ratione dolorem harum odit iusto.
-							<br /> <br />
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque autem ex officiis vero eos aspernatur eligendi architecto quod placeat molestiae!
-						</p>
-					</div>
+			  <div class="row pr-1 pl-1">
+				<div class="grouped-listing">
+				  <div class="large-4 columns">
+					<h6 class="subheader">
+						<i class="fa fa-gear fa-border success-color"></i> ANCILLARY SERVICES
+					</h6>
+				  </div>
+					  <div class="large-8 columns">
+						<ul class="fa-ul">
+							  <li><i class="fa-li fa fa-credit-card"></i>Billing & Insurance Assistance</li>
+							  <li><i class="fa-li fa fa-tty"></i>Online and Telephone Support</li>
+							  <li><i class="fa-li fa fa-briefcase"></i>Travel and Accomodation Arrangements</li>
+							  <li><i class="fa-li fa fa-cutlery"></i>Patient and Visitor Amenities</li>
+							  <li><i class="fa-li fa fa-hand-spock-o"></i>Language Assistance / Interpreter Services</li>
+						</ul>
+					  </div>
 				</div>
-					
-				<a class="clear primary" data-toggle="par3" id="redMoreBtn">Read more</a>
-			</div>
+			  </div>
+
 		</div>
-			
-		<div class="columns small-12 bg-white">
-			<div class="pad-1  mb-0-5 mt-0-5">
-				<p class="small margin-top"><i class="fa fa-shield margin-right"></i><span>Precision Spine Center has a score of 590 for a Total Knee Replacement.</span></p>
-				<!-- <img class="margin-bottom" src="http://placehold.it/1024x300/323232?text=MPRICA SCORE" alt="Space">-->
-				<img src="assets/img/mprica.png" alt="" class="center-content">
-				<p class="margin-bottom center-content"><a href="#">More About MPRICA Scores</a></p>
-			</div>
-		</div>
-		
-		<div class="columns small-12 pad-1  mb-0-5 mt-0-5">
-			<h3>DOCTORS</h3>
-			<div class="row pb-1 pt-1 b-bottom-1-darker pr-1 pl-1">
-				<div class="columns small-3 v-align-center">
-					<img class="circle" src="http://placehold.it/100x100/323232?text=Doctor" alt="Space">	
-				</div>
-				<div class="columns auto">
-					<p class="marginless txt-dark"><strong>Donald Duck</strong></p>
-					<small class="subheader"><span class="mr-1">MPIRICA Scores</span> <span>470</span></small>
-				</div>	
-			</div>
-			<div class="row pb-1 pt-1 b-bottom-1-darker pr-1 pl-1">
-				<div class="columns small-3 v-align-center">
-					<img class="circle" src="http://placehold.it/100x100/323232?text=Doctor" alt="Space">	
-				</div>
-				<div class="columns auto">
-					<p class="marginless txt-dark"><strong>Donald Duck</strong></p>
-					<small class="subheader"><span class="mr-1">MPIRICA Scores</span> <span>470</span></small>
-				</div>	
-			</div>
-			<div class="row pb-1 pt-1 b-bottom-1-darker mb-3 pr-1 pl-1">
-				<div class="columns small-3 v-align-center">
-					<img class="circle" src="http://placehold.it/100x100/323232?text=Doctor" alt="Space">	
-				</div>
-				<div class="columns auto">
-					<p class="marginless txt-dark"><strong>Donald Duck</strong></p>
-					<small class="subheader"><span class="mr-1">MPIRICA Scores</span> <span>470</span></small>
-				</div>	
-			</div>
+	  </div>
+</section>
 
-			<div class="mb-2">
-				<h3>ANCILLARY SERVICES</h3>
-				<small class="marginless subheader"><i class="fa fa-gear margin-right"></i> Medical Tourism Association(MTA) MEMBER</small>
-				<small class="marginless subheader"><i class="fa fa-phone margin-right"></i> Online and Telephone Support</small>
-				<small class="marginless subheader"><i class="fa fa-car margin-right"></i> Travel and Accomodation Arrangements</small>
-				<small class="marginless subheader"><i class="fa fa-cube margin-right"></i> Patient and Visitor Amenties</small>
-				<small class="marginless subheader"><i class="fa fa-desktop margin-right"></i> Language Assistance/Interpreter Services</small>
-			</div>
-
-			
-			<h3>AWARDS & ACCREDITATIONS</h3>
-			<div class="row pb-1 pt-1 b-bottom-1-darker pr-1 pl-1">
-				<div class="columns small-3 v-align-center">
-					<img src="http://placehold.it/100x100/323232?text=Award" alt="Space">	
-				</div>
-				<div class="columns auto v-align-center">
-					<p class="no-margin txt-dark txt-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				</div>
-			</div>
-
-			<div class="row pb-1 pt-1 b-bottom-1-darker pr-1 pl-1">
-				<div class="columns small-3 v-align-center">
-					<img src="http://placehold.it/100x100/323232?text=Award" alt="Space">	
-				</div>
-				<div class="columns auto v-align-center">
-					<p class="no-margin txt-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam.</p>
-				</div>	
-			</div>
-			
-			<div class="row pb-1 pt-1 pr-1 pl-1">
-				<div class="columns small-3 v-align-center">
-					<img src="http://placehold.it/100x100/323232?text=Award" alt="Space">	
-				</div>
-				<div class="columns auto v-align-center">
-					<p class="no-margin txt-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, suscipit.</p>
-				</div>	
-			</div>
-			
-		</div>
+<div id="scheduleCalendar" class="reveal" data-reveal>
+  <div class="row collapse">
+	<div class="large-12 columns">
+	  <h5 class="reveal-heading">Schedule A Call</h5>
+	  <button class="close-button" data-close aria-label="Close modal" type="button">
+		<span aria-hidden="true">&times;</span>
+	  </button>
 	</div>
+  </div>
+  <div class="row collapse">
+	<div class="large-12 columns">
+	  <div class="reveal-body">
+		<iframe src="https://richard-youradvocate.youcanbook.me/?noframe=true&skipHeaderFooter=true"
+				id="ycbmiframerichard-youradvocate"
+				style="width:100%;height:1000px;border:0px;background-color:transparent;" frameborder="0"
+				allowtransparency="true"></iframe>
+		<script>window.addEventListener && window.addEventListener("message", function (event) {
+			if (event.origin === "https://richard-youradvocate.youcanbook.me") {
+				document.getElementById("ycbmiframerichard-youradvocate").style.height = event.data + "px";
+			}
+		}, false);</script>
+	  </div>
+	</div>
+  </div>
+</div>
 
+<!-- Power Tour -->
+<div id="interestModal" class="tour-wrapper">
+  <div class="page-lead">
+	<div class="media-object mb-1">
+	  <div class="media-object-section logo large">
+		<div class="img-wrapper circle">
+		  <img src="../img/Smiling-Middle-Aged-Lady-Arms-Square.png">
+		</div>
+	  </div>
+	  <div class="media-object-section middle">
+		<div class="talk-bubble border tri-right left-in">
+		  <div class="talktext">
+			<p class="h5 full">Fantastic!</p>
+			<p class="subheader">I will reach out to Denver Vail Orthopedics and let them know you're interested. If
+			  you'd like, you can return to look at the facilities I've found for you, or you can schedule a call with
+			  me to discuss the next steps.</p>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+  <div class="button-group pull-right">
+	<a class="button success hollow" href="frontend-index.html">Return To Provider Options</a>
+	<a id="scheduleCall" class="button success"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp; Schedule A Call</a>
+  </div>
+  <a class="close-button" data-powertour-action="stop"><i class="fa fa-times-circle-o"></i></a>
+</div>
 
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/what-input/what-input.js"></script>
+<script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+<script src="../bower_components/foundation-sites/js/foundation.toggler.js"></script>
+<script src="../bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+<script src="../bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+<script src="../js/powertour/js/powertour.3.2.0.min.js"></script>
 
-	
-		
+<script src="../js/owl-carousel/owl.carousel.js"></script>
 
-	<script src="../bower_components/jquery/dist/jquery.js"></script>
-	<script src="../bower_components/what-input/what-input.js"></script>
-	<script src="../bower_components/foundation-sites/dist/foundation.js"></script>
-	<script src="../js/app.js"></script>
+<script src="../js/app.js"></script>
 
-	<!-- READ MORE BUTTON TEXT -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			  $("#redMoreBtn").click(function() {
-				    var elem = $("#redMoreBtn").text();
-				    if (elem == "Read Less") {
-				      	$("#redMoreBtn").text("Read More");
-				    } else {
-				     	 $("#redMoreBtn").text("Read Less");
-				    }
-			  });
+<script type="text/javascript">
+
+	$(document).ready(function () {
+
+		$("#facilityImages").owlCarousel({
+			items: 2,
+			nav: true,
+			loop: true
+			// itemsScaleUp: true
 		});
-	</script>
-	</body>
+
+		$("#facilityList").owlCarousel({
+			items: 3,
+			padding: 30,
+			nav: true,
+			loop: false
+			// itemsScaleUp: true
+		});
+
+
+		$.powerTour({
+			tours: [
+				{
+					trigger: '#interestTrigger',
+					startWith: 1,
+					easyCancel: false,
+					escKeyCancel: true,
+					scrollHorizontal: false,
+					keyboardNavigation: true,
+					loopTour: false,
+					highlightStartSpeed: 200,// new 2.5.0
+					highlightEndSpeed: 200,// new 2.3.0
+					onStartTour: function (ui) {
+					},
+					onEndTour: function (ui) {
+					},
+					onProgress: function (ui) {
+					},
+					steps: [
+						{
+							hookTo: '#modalOne',
+							content: '#interestModal',
+							width: 700,
+							position: 'sc',
+							offsetY: 0,
+							offsetX: 0,
+							fxIn: 'fadeIn',
+							fxOut: 'fadeOut',
+							showStepDelay: 0,
+							center: 'step',
+							scrollSpeed: 400,
+							scrollEasing: 'swing',
+							scrollDelay: 0,
+							timer: false,
+							highlight: true,
+							keepHighlighted: true,
+							keepVisible: false,// new 2.2.0
+							onShowStep: function (ui) {
+							},
+							onHideStep: function (ui) {
+							}
+						}
+					],
+					stepDefaults: [
+						{
+							width: 300,
+							position: 'sc',
+							offsetY: 0,
+							offsetX: 0,
+							fxIn: 'fadeIn',
+							fxOut: 'fadeOut',
+							showStepDelay: 0,
+							center: 'step',
+							scrollSpeed: 400,
+							scrollEasing: 'swing',
+							scrollDelay: 0,
+							timer: '00:00',
+							highlight: true,
+							keepHighlighted: false,
+							keepVisible: false,// new 2.2.0
+							onShowStep: function (ui) {
+							},
+							onHideStep: function (ui) {
+							}
+						}
+					]
+				}
+			]
+		});
+
+		$('#scheduleCall').click(function (e) {
+			$('.powertour-step').css('display', 'none');
+			$('#powertour-mask').css('display', 'none');
+
+			$("#scheduleCalendar").foundation('open');
+			e.preventDefault();
+		});
+
+		$('#interestTrigger').click(function (e) {
+			$('.powertour-step, .powertour-step .close-button').css('display', 'block');
+			$('.powertour-step').css('z-index', '9001');
+
+			e.preventDefault();
+		});
+
+	});
+</script>
+
+</body>
 </html>
