@@ -1323,13 +1323,30 @@ ul.vertical-list {
 
     &.ul-tree-sub-parent {
       &:before {
-        border-radius: 10rem;
-        overflow: hidden;
+        // border-radius: 10rem;
+        // overflow: hidden;
+        // background-color: #323232;
+        // width: 8px;
+        // height: 8px;
+        // left: -.85rem;
+        // top: .5rem;
+
+        content: "";
+        width: 10px;
+        height: 1px;
         background-color: #323232;
-        width: 8px;
-        height: 8px;
+        position: absolute;
+        top: .75rem;
         left: -.85rem;
-        top: .5rem;
+      }
+      &:after {
+        content: "";
+        width: 1px;
+        height: 13px;
+        background-color: #323232;
+        position: absolute;
+        top: 0rem;
+        left: -.85rem;
       }
     }
   }
