@@ -49,7 +49,22 @@
                 <h5>Pathway Events</h5>
               </div>
               <div class="columns">
-                <button class="button hollow success tiny pull-right">Add Event <i class="fa fa-plus"></i></button>
+                <!-- <button class="button hollow success tiny pull-right">Add Event <i class="fa fa-plus"></i></button> -->
+                <div class="dropdown pull-right">
+                  <button class="dropbtn button pull-right hollow clear small success mb-0 pull-right"><i class="fa fa-plus"></i> Add task</button>
+                  <div class="dropdown-content">                          
+                    <ul class="ml-0 mb-1 mt-1">
+                      <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
+                      <li class="list-style-type-none"><a href="">Assign Task</a></li>
+                      <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                    </ul>
+                    <ul class="ml-0 mb-1 mt-1">
+                      <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>PATIENT</strong></small></span></li>
+                      <li class="list-style-type-none"><a href="">Send Form</a></li>
+                      <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -342,8 +357,8 @@
 
       <div class="clinical-pathway-settings columns">
 
-        <div class="row  mb-2 panel pad-1 ">
-          <div class="columns">
+        <div class="row mb-2">
+          <div class="columns bg-black20 pad-1">
             <p class="mb-0 subheader"><strong>Event Description</strong></p>
             <!-- <span class="h5">Pre-op antibiotics as indicated</span> -->
             <input type="text" class="editable" value="Patient reported service experience survey - Physical Therapy Check in">
@@ -351,49 +366,73 @@
           </div>          
         </div>
 
-        <div class="row  mb-2 panel pad-1 ">
-          <div class="columns">
-            
-            <div>
-              <p class="subheader mb-1"><strong>Advocate assigned to this entry</strong></p>
+        <div class="row mb-2">
+          <div class="columns bg-black20 pad-1">
+            <div class="mb-1">
+              <div>
+                <p class="subheader mb-1"><strong>Advocate assigned to this entry</strong></p>
+              </div>
+              <div>
+                <fieldset>
+                  <p class="fancy-checkbox small align-middle">
+                    <input id="spcp1" type="checkbox" class="mr-0">
+                    <label class="h6 subheader" for="checkbox1">Care Coordinator</label>
+                  </p>
+                  <p class="fancy-checkbox small align-middle">
+                    <input id="spcp1" type="checkbox" class="mr-0">
+                    <label class="h6 subheader" for="checkbox1">Case manager</label>
+                  </p>                    
+                </fieldset>
+              </div>
             </div>
-            <div>
-              <fieldset class="ml-1">                  
-                <p class="fancy-checkbox small align-middle">
-                  <input id="spcp1" type="checkbox" class="mr-0">
-                  <label class="h6 subheader" for="checkbox1">Care Coordinator</label>
-                </p>
-                <p class="fancy-checkbox small align-middle">
-                  <input id="spcp1" type="checkbox" class="mr-0">
-                  <label class="h6 subheader" for="checkbox1">Case manager</label>
-                </p>                    
-              </fieldset>
+            
+          </div>
+          <div class="columns bg-black20 border-radius-sm pad-1">
+            <div class="mb-1">
+              <div>
+                <p class="subheader mb-1"><strong>Deadline?/Duration?</strong></p>
+              </div>
+              <div>
+                <fieldset>
+                  <!-- <div class="input-group">
+                    <span class="input-group-label">Day(s)</span>
+                    <input class="input-group-field" type="number">                    
+                  </div> -->
+                  <select name="" id="">
+                    <option value="1">1 Day(s)</option>
+                    <option value="2">2 Day(s)</option>
+                    <option value="3">3 Day(s)</option>
+                    <option value="4">4 Day(s)</option>
+                    <option value="5">5 Day(s)</option>
+                  </select>
+                </fieldset>
+              </div>
             </div>
             
           </div>
         </div>
 
-        <div class="row">
+        <div class="row mb-2 ">
           <div class="columns pr-0 pl-0">
-            <ul class="tabs combinational " data-tabs id="example-tabs">
+            <ul class="tabs tabs-inverse " data-tabs id="example-tabs">
                   <li class="tabs-title is-active"><a data-tabs-target="panel1" href="#panel1" >TRIGGERS</a></li>
                   <li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">TASKS</a></li>
-                  <li class="tabs-title"><a data-tabs-target="panel3" href="#panel3">NOTIFICATIONS</a></li>
+                  <li class="tabs-title"><a data-tabs-target="panel3" href="#panel3">ESCALATION?</a></li>
             </ul>
 
-            <div class="tabs-content " data-tabs-content="example-tabs">
+            <div class="tabs-content bg-black20" data-tabs-content="example-tabs">
               
-              <div class="tabs-panel pad-1 is-active" id="panel1">
+              <div class="tabs-panel pad-1 bg-black20 is-active" id="panel1">
 
                 <div class="row">
                   <div class="columns">                      
-                      <div class="dropdown">
+                      <div class="dropdown pull-right">
                         <button class="dropbtn button pull-right hollow clear small success mb-0 pull-right"><i class="fa fa-plus"></i> Add Trigger</button>
                         <div class="dropdown-content">                          
                           <ul class="ml-0 mb-1 mt-1">
                             <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>TRIGGERS</strong></small></span></li>
-                            <li class="list-style-type-none"><a href="">Date and Time/Manual</a></li>
-                            <li class="list-style-type-none"><a href="">Previous Event</a></li>                            
+                            <li class="list-style-type-none"><a href="">Date and Time</a></li>
+                            <li class="list-style-type-none"><a href="">Event</a></li><li class="list-style-type-none"><a href="">Manual Activation</a></li>
                           </ul>                          
                         </div>
                       </div>
@@ -418,7 +457,7 @@
                   </div>
 
                   <div class="row bg-black10 pt-1 toggler-target">
-                    <div class="columns">
+                    <div class="columns medium-6">
                       <p class="subheader">Select Event</p>                          
                       <select name="" id="">
                         <option value="">Surgery</option>
@@ -427,30 +466,40 @@
                       </select>
                     </div>
                     <div class="columns">
-                      <p class="subheader">Duration</p>
-                      <input type="text" value="4 Days">
+                      <p class="subheader">Time Period</p>
+                      <input type="number" value="5">
+                    </div>
+                    <div class="columns">
+                      <p class="subheader">&nbsp;</p>
+                      <select name="" id="">
+                        <option value="">Hour(s)</option>
+                        <option value="">Day(s)</option>
+                        <option value="">Month(s)</option>
+                        <option value="">Year(s)</option>
+                      </select>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="tabs-panel pad-1" id="panel2">
+              <div class="tabs-panel pad-1 bg-black20" id="panel2">
 
                 <div class="row">
                   <div class="columns">                      
-                      <div class="dropdown">
+                      <div class="dropdown pull-right">
                         <button class="dropbtn button pull-right hollow clear small success mb-0 pull-right"><i class="fa fa-plus"></i> Add task</button>
                         <div class="dropdown-content">                          
                           <ul class="ml-0 mb-1 mt-1">
-                            <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
-                            <li class="list-style-type-none"><a href="">Assign Task</a></li>
+                            <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>PATIENT</strong></small></span></li>
+                            <li class="list-style-type-none"><a href="">Set to-do</a></li>
                             <li class="list-style-type-none"><a href="">Reminder</a></li>                            
                           </ul>
                           <ul class="ml-0 mb-1 mt-1">
-                            <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>PATIENT</strong></small></span></li>
-                            <li class="list-style-type-none"><a href="">Send Form</a></li>
-                            <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                            <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
+                            <li class="list-style-type-none"><a href="">Set to-do</a></li>
+                            <!-- <li class="list-style-type-none"><a href="">Reminder</a></li>                       -->
                           </ul>
+                          
                         </div>
                       </div>
                   </div>
@@ -526,20 +575,287 @@
                 </div>                
               </div>
 
-              <div class="tabs-panel pad-1" id="panel3">
+              <div class="tabs-panel pad-1 bg-black20" id="panel3">
+                <div class="row">
+                  <div class="columns medium-6">
+                    <div>
+                      <p class="subheader mb-1"><strong>Priority Level</strong></p>
+                    </div>
+                    <div>
+                      <select name="" id="" class="">
+                        <option value="1">Critical</option>
+                        <option value="2">Important</option>
+                        <option value="3">Normal</option>
+                        <option value="4" selected>Low</option>
+                        <!-- <option value="1">Critical - 4 Hours</option>
+                        <option value="2">Important - 24 Hours</option>
+                        <option value="3">Normal - 3 Days</option>
+                        <option value="4" selected>Low - 5 Days</option> -->
+                      </select>
+                    </div>
+                    
+                  </div>
+                  <div class="column">
+                    <div>
+                      <small class="subheader">
+                        <strong>crit·i·cal</strong> - expressing or involving an analysis of the merits and faults of a work of literature, music, or art.
+                        <br>
+                        "she never won the critical acclaim she sought"
+                        <br>
+                        <br>
+                        <strong>synonyms:</strong> evaluative, analytical, interpretative, expository, explanatory "a critical essay"
+                      </small>
+                    </div>
+                  </div>
+                </div>
                 <div class="row">
                   <div class="columns">
-                      <!-- <button class="button pull-right hollow clear small success"><i class="fa fa-plus"></i> Add Event Notification</button> -->
-                    <div class="dropdown">
-                      <button class="dropbtn button pull-right hollow clear small success mb-0 pull-right"><i class="fa fa-plus"></i> Add Event Notification</button>
-                      <div class="dropdown-content">                          
-                        <ul class="ml-0 mb-1 mt-1">
-                          <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>TRIGGERS</strong></small></span></li>
-                          <li class="list-style-type-none"><a href="">Date and Time/Manual</a></li>
-                          <li class="list-style-type-none"><a href="">Previous Event</a></li>                            
-                        </ul>                          
+
+                    <div class="ml-1">
+                      <div class="dropdown align-middle">
+                        <span class="h5">Day 1</span>
+                        <button class="dropbtn button hollow clear tiny success mb-0"><i class="fa fa-plus"></i> Add</button>
+                        
+                        <div class="dropdown-content">                          
+                          <ul class="ml-0 mb-1 mt-1">
+                            <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
+                            <li class="list-style-type-none"><a href="">Assign Task</a></li>
+                            <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                          </ul>
+                          <ul class="ml-0 mb-1 mt-1">
+                            <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>PATIENT</strong></small></span></li>
+                            <li class="list-style-type-none"><a href="">Send Form</a></li>
+                            <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                          </ul>
+                        </div>
+                      </div>
+                      <div>
+                        
+                        <div class="mb-1 toggler">
+                          
+                          <div class="row expanded bg-white pt-1 border-radius-sm">
+                            <div class="columns toggler-handler">
+                              <p class="mb-0"><strong>Remind the patient to fill up the form.</strong></p>
+                              <p class="subheader">Task for Sarah Burbon</p>
+                            </div>
+                            <div class="columns shrink">
+                              <div class="pull-right">                                                        
+                                <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                                <button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row pt-1 toggler-target b-left-1 b-bottom-1 b-right-1" style="display: none;">
+                            <div class="columns">
+                              <div class="row mb-1">
+                                <div class="columns medium-6">
+                                  <p class="subheader">Select a Form</p>
+                                  <input type="text" value="Pre-op Evaluation and clearance Form">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>                        
+
                       </div>
                     </div>
+
+                    <div class="ml-1">
+                      <div class="dropdown align-middle">
+                        <span class="h5">Day 2</span>
+                        <button class="dropbtn button hollow clear tiny success mb-0"><i class="fa fa-plus"></i> Add</button>
+                        
+                        <div class="dropdown-content">                          
+                          <ul class="ml-0 mb-1 mt-1">
+                            <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
+                            <li class="list-style-type-none"><a href="">Assign Task</a></li>
+                            <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                          </ul>
+                          <ul class="ml-0 mb-1 mt-1">
+                            <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>PATIENT</strong></small></span></li>
+                            <li class="list-style-type-none"><a href="">Send Form</a></li>
+                            <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                          </ul>
+                        </div>
+                      </div>
+                      <div>
+                        
+                        <div class="mb-1 toggler">
+                          
+                          <div class="row expanded bg-white pt-1 border-radius-sm">
+                            <div class="columns toggler-handler">
+                              <p class="mb-0"><strong>Please call the patient and remind him/her about the form.</strong></p>
+                              <p class="subheader">Task for Sarah Burbon</p>
+                            </div>
+                            <div class="columns shrink">
+                              <div class="pull-right">                                                        
+                                <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                                <button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row pt-1 toggler-target b-left-1 b-bottom-1 b-right-1" style="display: none;">
+                            <div class="columns">
+                              <div class="row mb-1">
+                                <div class="columns medium-6">
+                                  <p class="subheader">Select a Form</p>
+                                  <input type="text" value="Pre-op Evaluation and clearance Form">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="ml-1">
+                      <div class="dropdown align-middle">
+                        <span class="h5">Day 3</span>
+                        <button class="dropbtn button hollow clear tiny success mb-0"><i class="fa fa-plus"></i> Add</button>
+                        
+                        <div class="dropdown-content">                          
+                          <ul class="ml-0 mb-1 mt-1">
+                            <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
+                            <li class="list-style-type-none"><a href="">Assign Task</a></li>
+                            <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                          </ul>
+                          <ul class="ml-0 mb-1 mt-1">
+                            <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>PATIENT</strong></small></span></li>
+                            <li class="list-style-type-none"><a href="">Send Form</a></li>
+                            <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                          </ul>
+                        </div>
+                      </div>
+                      <div>
+                        
+                        <div class="mb-1 toggler">
+                          
+                          <div class="row expanded bg-white pt-1 border-radius-sm">
+                            <div class="columns toggler-handler">
+                              <p class="mb-0"><strong>Ok, that patient did not fill up the form, you know what to do.</strong></p>
+                              <p class="subheader">Task for Sarah Burbon</p>
+                            </div>
+                            <div class="columns shrink">
+                              <div class="pull-right">                                                        
+                                <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                                <button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row pt-1 toggler-target b-left-1 b-bottom-1 b-right-1" style="display: none;">
+                            <div class="columns">
+                              <div class="row mb-1">
+                                <div class="columns medium-6">
+                                  <p class="subheader">Select a Form</p>
+                                  <input type="text" value="Pre-op Evaluation and clearance Form">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="ml-1">
+                      <div class="dropdown align-middle">
+                        <span class="h5">Day 4</span>
+                        <button class="dropbtn button hollow clear tiny success mb-0"><i class="fa fa-plus"></i> Add</button>
+                        
+                        <div class="dropdown-content">                          
+                          <ul class="ml-0 mb-1 mt-1">
+                            <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
+                            <li class="list-style-type-none"><a href="">Assign Task</a></li>
+                            <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                          </ul>
+                          <ul class="ml-0 mb-1 mt-1">
+                            <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>PATIENT</strong></small></span></li>
+                            <li class="list-style-type-none"><a href="">Send Form</a></li>
+                            <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                          </ul>
+                        </div>
+                      </div>
+                      <div>
+                        
+                        <div class="mb-1 toggler">
+                          
+                          <div class="row expanded bg-white pt-0-5 border-radius-sm">
+                            <div class="columns toggler-handler">
+                              <p class="mb-0"><strong>I think it's time to bring out the big gun.</strong></p>
+                              <p class="subheader">Task for Sarah Burbon</p>
+                            </div>
+                            <div class="columns shrink">
+                              <div class="pull-right">                                                        
+                                <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                                <button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row pt-1 toggler-target b-left-1 b-bottom-1 b-right-1" style="display: none;">
+                            <div class="columns">
+                              <div class="row mb-1">
+                                <div class="columns medium-6">
+                                  <p class="subheader">Select a Form</p>
+                                  <input type="text" value="Pre-op Evaluation and clearance Form">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="ml-1">
+                      <div class="dropdown align-middle">
+                        <span class="h5">Day 5</span>
+                        <button class="dropbtn button hollow clear tiny success mb-0"><i class="fa fa-plus"></i> Add</button>
+                        
+                        <div class="dropdown-content">                          
+                          <ul class="ml-0 mb-1 mt-1">
+                            <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
+                            <li class="list-style-type-none"><a href="">Assign Task</a></li>
+                            <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                          </ul>
+                          <ul class="ml-0 mb-1 mt-1">
+                            <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>PATIENT</strong></small></span></li>
+                            <li class="list-style-type-none"><a href="">Send Form</a></li>
+                            <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                          </ul>
+                        </div>
+                      </div>
+                      <div>
+                        
+                        <div class="mb-1 toggler">
+                          
+                          <div class="row expanded bg-white pt-0-5 border-radius-sm">
+                            <div class="columns toggler-handler">
+                              <p class="mb-0"><strong>OK, THAT'S IT, I"LL GIVE THAT PATIENT A VISIT..</strong></p>
+                              <p class="subheader">THE BOSS</p>
+                            </div>
+                            <div class="columns shrink">
+                              <div class="pull-right">                                                        
+                                <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                                <button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row pt-1 toggler-target b-left-1 b-bottom-1 b-right-1" style="display: none;">
+                            <div class="columns">
+                              <div class="row mb-1">
+                                <div class="columns medium-6">
+                                  <p class="subheader">Select a Form</p>
+                                  <input type="text" value="Pre-op Evaluation and clearance Form">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
                   </div>
                 </div>
               </div>
@@ -562,7 +878,7 @@
         <div class="columns">
           
           <div>
-            <fieldset class="fieldset border toggler">
+            <fieldset class="fieldset border border-color-light toggler pb-0">
               <legend class=""><strong>QUESTION 1.0</strong></legend>
               <div class="row">
                 <div class="columns">
@@ -598,7 +914,7 @@
                   <div>
                     <div class="mb-1 toggler pl-1">
                   
-                      <div class="row expanded bg-black10 pt-1">
+                      <div class="row expanded bg-black20 pt-1 border-radius-sm">
                         <div class="columns toggler-handler">
                           <p class="mb-0"><strong>Awesome, but make sure to remove your fallen hair from it.</strong></p>
                           <p class="subheader">Reminder</p>
@@ -646,7 +962,7 @@
                     
                     <div class="mb-1 toggler pl-1">
                       
-                      <div class="row expanded bg-black10 pt-1">
+                      <div class="row expanded bg-black20 pt-1 border-radius-sm">
                         <div class="columns toggler-handler">
                           <p class="mb-0"><strong>Remind the patient to use the new pillow.</strong></p>
                           <p class="subheader">Task for Sarah Burbon</p>
@@ -672,7 +988,7 @@
 
                     <div class="mb-1 toggler pl-1">
                   
-                      <div class="row expanded bg-black10 pt-1">
+                      <div class="row expanded bg-black20 pt-1 border-radius-sm">
                         <div class="columns toggler-handler">
                           <p class="mb-0"><strong>Please dont forget to use it later tonight.</strong></p>
                           <p class="subheader">Reminder</p>
@@ -719,7 +1035,7 @@
           </div>
 
           <div class="ml-1">
-            <fieldset class="fieldset border toggler">
+            <fieldset class="fieldset border border-color-light toggler pb-0">
               <legend class=""><strong>QUESTION 1.1</strong></legend>
               <div class="row">
                 <div class="columns">
@@ -798,7 +1114,7 @@
           </div>
 
           <div>
-            <fieldset class="fieldset border toggler">
+            <fieldset class="fieldset border border-color-light toggler pb-0">
               <legend class=""><strong>QUESTION 2.0</strong></legend>
               <div class="row">
                 <div class="columns">
@@ -832,9 +1148,9 @@
                     </div>
                   </div>
                   <div>
-                    <div class="mb-1 toggler b-left-1 pl-1">
+                    <div class="mb-1 toggler pl-1">
                   
-                      <div class="row expanded mb-1">
+                      <div class="row expanded bg-black20 pt-1 border-radius-sm">
                         <div class="columns toggler-handler">
                           <p class="mb-0"><strong>Awesome, give me a call and let's talk about it.</strong></p>
                           <p class="subheader">Reminder</p>
@@ -846,7 +1162,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="row bg-black10 pt-1 toggler-target" style="display: none;">
+                      <div class="row pt-1 toggler-target b-left-1 b-bottom-1 b-right-1" style="display: none;">
                         <div class="columns">
                           <div class="row mb-1">
                             <div class="columns medium-6">
@@ -895,9 +1211,9 @@
                   </div>
                   <div>
                     
-                    <div class="mb-1 toggler b-left-1 pl-1">
+                    <div class="mb-1 toggler pl-1">
                       
-                      <div class="row expanded mb-1">
+                      <div class="row expanded bg-black20 pt-1 border-radius-sm">
                         <div class="columns toggler-handler">
                           <p class="mb-0"><strong>Remind this virgin to take his medicine.</strong></p>
                           <p class="subheader">Task for Sarah Burbon</p>
@@ -909,7 +1225,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="row bg-black10 pt-1 toggler-target" style="display: flex;">
+                      <div class="row pt-1 toggler-target b-left-1 b-bottom-1 b-right-1" style="display: flex;">
                         <div class="columns">
                           <div class="row mb-1">
                             <div class="columns medium-6">
