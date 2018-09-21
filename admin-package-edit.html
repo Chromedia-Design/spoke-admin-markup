@@ -221,8 +221,7 @@
             <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Package Components</a></li>
             <li class="tabs-title"><a href="#panel2">Indicator Triggers</a></li>
             <li class="tabs-title"><a href="#panel3">Baseline Prices</a></li>
-            <li class="tabs-title"><a href="#panel4">Pre-Surgery Questionnaire</a></li>
-            <li class="tabs-title"><a href="#panel5">Pathways</a></li>
+            <li class="tabs-title"><a href="#panel4">Clinical Pathways</a></li>
           </ul>
 
           <div class="tabs-content" data-tabs-content="example-tabs">
@@ -1554,46 +1553,101 @@
 
             </div> <!-- End of tab panel 3 -->
 
-          </div>  <!-- End of tabs content		 -->
+            <div class="tabs-panel" id="panel4">
 
+              <div class="page-lead row expanded collapse align-middle">
+                <div class="auto columns">
+                  <span class="h5">Pathway Events</span>
+                </div>
+                <div class="shrink columns">
+                  <div class="button-align small pull-right mb-0">
+                    <a class="button success rounded" href="clinical-pathway-builder-new2.html"><i class="fa fa-edit"></i>&nbsp; Edit Pathway</a>
+                  </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="row expanded collapse">
+                <div class="columns">
+                  <div class=" clinical-pathway-new-entry-list">
+
+                    <div class="row clinical-pathway-new-entry expanded">
+                      <div class="column align-middle new-entry-title new-entry-title">
+                        <b>Pre-Surgery Questionnaire</b>
+                      </div>
+                      <div class="column align-middle">
+                        <span>Related Forms:&nbsp; </span> <a href="#"><i class="fa fa-file-text-o fa-fw"></i> Pre-Surgery Questionnaire</a>
+                      </div>
+                      <div class="column shrink align-middle new-entry-action">
+                        <span class="switch tiny mb-0">
+                          <input class="switch-input" id="dat" type="checkbox" name="dat">
+                          <label class="switch-paddle" for="dat">
+                            <span class="show-for-sr">Date and Time</span>
+                          </label>
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="row clinical-pathway-new-entry expanded">
+                      <div class="column align-middle new-entry-title">
+                        <b>Functional Capacity Survey</b>
+                      </div>
+                      <div class="column align-middle">
+                        <span>Related Forms:&nbsp; </span> <a href="#"><i class="fa fa-file-text-o fa-fw"></i> Functional Capacity Survey</a>
+                      </div>
+                      <div class="column shrink align-middle new-entry-action">
+                        <span class="switch tiny mb-0">
+                          <input class="switch-input" id="dat" type="checkbox" name="dat">
+                          <label class="switch-paddle" for="dat">
+                            <span class="show-for-sr">Date and Time</span>
+                          </label>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- End of tab panel 4 -->
+
+            </div>  <!-- End of tabs content		 -->
+
+          </div>
         </div>
+
+
       </div>
-
-
     </div>
   </div>
-</div>
 
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/what-input/what-input.js"></script>
-<script src="bower_components/foundation-sites/dist/foundation.js"></script>
-<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
-<script src="bower_components/foundation-sites/js/foundation.dropdown.js"></script>
-<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
-<script src="bower_components/foundation-sites/js/foundation.util.keyboard.js"></script>
-<script src="bower_components/foundation-sites/js/foundation.util.box.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/what-input/what-input.js"></script>
+  <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+  <script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+  <script src="bower_components/foundation-sites/js/foundation.dropdown.js"></script>
+  <script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+  <script src="bower_components/foundation-sites/js/foundation.util.keyboard.js"></script>
+  <script src="bower_components/foundation-sites/js/foundation.util.box.js"></script>
 
-<script src="js/select2/js/select2.min.js"></script>
-<script src="js/app.js"></script>
+  <script src="js/select2/js/select2.min.js"></script>
+  <script src="js/app.js"></script>
 
-<script type="text/javascript">
+  <script type="text/javascript">
 
-    $(function () {
-        var timer;
+      $(function () {
+          var timer;
 
-        $(window).resize(function () {
-            clearTimeout(timer);
-            timer = setTimeout(function () {
-                $('.site-nav, .content').css("height", $(window).height());
-            }, 40);
-        }).resize();
-    });
+          $(window).resize(function () {
+              clearTimeout(timer);
+              timer = setTimeout(function () {
+                  $('.site-nav, .content').css("height", $(window).height());
+              }, 40);
+          }).resize();
+      });
 
-    $(document).ready(function () {
-        $('.select2').select2();
-    });
+      $(document).ready(function () {
+          $('.select2').select2();
+      });
 
-</script>
+  </script>
 
 </body>
 </html>
