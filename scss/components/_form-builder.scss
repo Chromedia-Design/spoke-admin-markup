@@ -63,12 +63,12 @@
   width: 100%;
   color: $text-black;
   font-weight: bold;
-  padding-left: 0;
+  padding-left: .25rem;
   padding-right: 0;
   &:focus {
     border: none;
     border-bottom: 1px solid $success-color;
-    background: $white;
+    background: transparent !important;
   }
   &.by-line {
     font-size: rem-calc(12);

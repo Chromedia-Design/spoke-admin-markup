@@ -126,6 +126,10 @@
 	border-radius: 0px !important;
 }
 
+
+.border-radius-sm {
+	border-radius: 4px;
+}
 .border-top-radius-sm {
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
@@ -156,6 +160,9 @@
 	&.alert {
 		border-color: $alert-color !important;
 	}
+	&.border-color-light {
+		border-color: darken(#fff, 6%);
+	}
 	&.rad1 {
 		border-radius: 5px;
 	}
@@ -179,6 +186,7 @@
 
 // Color ----------------------------------------
 // Background-color
+.bg-none { background-color: transparent !important }
 .bg-primary { background-color: $primary-color !important }
 .bg-primary-light { background-color: $primary-light !important}
 .bg-secondary { background-color: $secondary-color !important }
@@ -187,7 +195,7 @@
 .bg-alert { background-color: $alert-color !important }
 .bg-white { background-color: #fff !important }
 .bg-black10 { background-color: darken(#fff, 3%) !important }
-.bg-black20 { background-color: darken(#fff, 8%) !important }
+.bg-black20 { background-color: darken(#fff, 6%) !important }
 // Text color
 .clr-white { color: $white !important }
 .clr-black { color: $black !important }
