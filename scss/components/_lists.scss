@@ -1292,24 +1292,30 @@ ul.vertical-list {
 .ul-tree {
   list-style-type: none;
   li {
+    font-size: .875rem;
     list-style-type: none;
     position: relative;
     white-space: nowrap;
     // overflow: hidden;
     text-overflow: ellipsis;
-    padding-left: 1rem;
+    padding-left: .63rem;
     margin-left: .5rem;
+    // font-weight: bold;
+    // color: #e1e1e1;
 
-    border-left: 1px solid #323232;
+    border-left: 1px solid #c1c1c1;
+    i {
+      color: #c1c1c1;
+    }
     &:last-child {
       border-left: 0px;
       &:after {
         content: "";
         width: 1px;
-        height: 12px;
-        background-color: #323232;
+        height: 20px;
+        background-color: #c1c1c1;
         position: absolute;
-        top: 0rem;
+        top: -8px;
         left: 0px;
       } 
     }
@@ -1317,7 +1323,7 @@ ul.vertical-list {
       content: "";
       width: 10px;
       height: 1px;
-      background-color: #323232;
+      background-color: #c1c1c1;
       position: absolute;
       top: .75rem;
       left: 0px;
@@ -1347,6 +1353,8 @@ ul.vertical-list {
       border-left: 0px;
       padding-left: 0px;
       margin-left: 0px;
+      cursor: pointer;
+      color: #323232;
       &:before {
         content: "";
         background-color: transparent;
@@ -1355,29 +1363,21 @@ ul.vertical-list {
 
     &.ul-tree-sub-parent {
       &:before {
-        // border-radius: 10rem;
-        // overflow: hidden;
-        // background-color: #323232;
-        // width: 8px;
-        // height: 8px;
-        // left: -.85rem;
-        // top: .5rem;
-
         content: "";
-        width: 10px;
+        width: 14px;
         height: 1px;
-        background-color: #323232;
+        background-color: #c1c1c1;
         position: absolute;
-        top: .75rem;
+        top: 13px;
         left: -.85rem;
       }
       &:after {
         content: "";
         width: 1px;
-        height: 13px;
-        background-color: #323232;
+        height: 19px;
+        background-color: #c1c1c1;
         position: absolute;
-        top: 0rem;
+        top: -5px;
         left: -.85rem;
       }
     }
