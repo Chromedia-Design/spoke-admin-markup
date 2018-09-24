@@ -44,19 +44,22 @@
 
 // Add New Pathway Page
  .clinical-pathway-new-entry-list {
- 	max-height: 80vh;
  	overflow-y: scroll;
- 	margin-right: 1rem;
+	 &::-webkit-scrollbar {
+		 display: none;
+	 }
+	 &::-moz-scrollbar {
+		 display: none;
+	 }
  	.clinical-pathway-new-entry {
  		padding-top: 1rem;
  		padding-bottom: 1rem;
  		cursor: pointer;
  		font-size: .875rem;
  		position: relative;
- 		margin-left: 1rem !important;
  		border: 1px solid #ebebeb;
 	    margin-bottom: .5rem;
-	    border-radius: 4px;
+	    border-radius: $global-radius;
  		// @extend .hide-show-button-on-hover;
  		@extend .align-middle;
  		&.active {

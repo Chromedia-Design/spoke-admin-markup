@@ -78,8 +78,8 @@
               </ul>
             </li>
             <li>
-              <a data-toggle="chatSupport"><i class="fa fa-phone-square fa-lg success-color"></i>&nbsp; <span
-                class="success label" id="notifCount">3:02</span></a>
+              <a data-toggle="chatSupport"><i class="fa fa-phone-square fa-lg"></i><span class="success badge"
+                                                                                         id="notifCount">1</span></a>
             </li>
             <li>
               <a href="#">Spoke Advocate &nbsp;</a>
@@ -112,18 +112,18 @@
 
                   <div class="card-user-profile-actions text-center">
                     <div class="button-align">
-                      <a href="#" class="button circle success"><i class="fa fa-phone fa-fw"></i></a>
-                      <a href="#" class="button circle success"><i class="fa fa-video-camera fa-fw"></i></a>
-                      <a href="#" class="button circle success"><i class="fa fa-comments fa-fw"></i></a>
+                      <a href="#" class="button circle success"><i class="fa fa-phone"></i></a>
+                      <a href="#" class="button circle success"><i class="fa fa-video-camera"></i></a>
+                      <a href="#" class="button circle success"><i class="fa fa-comments"></i></a>
                     </div>
                   </div>
                 </div>
               </li>
-              <li class="is-active">
+              <li>
                 <a href="advocate-employee-profile-v2.html"><i class="fa fa-address-book-o"></i> &nbsp;Overview</a>
               </li>
-              <li>
-                <a href="advocate-employee-episodes-list-v2.html"><i class="fa fa-stethoscope"></i> &nbsp;Episodes</a>
+              <li class="is-active">
+                <a href="advocate-employee-episode-v2.html"><i class="fa fa-stethoscope"></i> &nbsp;Episode Details</a>
               </li>
               <li>
                 <a href="advocate-employee-notes-v2.html"><i class="fa fa-sticky-note-o"></i> &nbsp;Notes</a>
@@ -140,183 +140,161 @@
 
         <div id="profileContent" class="large-9 columns">
 
-          <div class="page-lead row align-middle">
-            <div class="auto columns">
-              <span class="h5">General Information</span>
-            </div>
-            <div class="auto columns">
-              <div class="button-align small pull-right">
-                <a href="admin-employee-edit.html" class="button hollow info"><i class="fa fa-edit fa-fw"></i>&nbsp;
-                  Edit</a>
-              </div>
+          <div class="row">
+            <div class="medium-12 columns">
+              <nav aria-label="You are here:" role="navigation">
+                <ul class="breadcrumbs">
+                  <li><a href="advocate-employee-episode-v2.html">Episode Details</a></li>
+                  <li>Pre-Surgery Questionnaire</li>
+                </ul>
+              </nav>
             </div>
           </div>
+
           <div class="row">
             <div class="large-12 columns">
 
-              <div class="row collapse">
-                <div class="large-12 columns end">
-                  <small class="subheader">General Note</small>
-                  <div class="small warning-bg talk-bubble full mb-1">
-                    <div class="talktext">
+              <div class="page-lead row collapse expanded align-middle">
+                <div class="auto columns">
+                  <span class="h5 mb-0">Pre-surgery Questionnaire</span>
+                  <p class="subheader">
+                    <small>7 of 10 Answered</small>
+                  </p>
+                </div>
+                <div class="shrink columns">
+                  <div class="button-align small mb-0 pull-right">
+                    <a class="button info hollow"><i class="fa fa-edit"></i>&nbsp; Edit Form</a>
+                  </div>
+                </div>
+              </div>
 
-                      <div id="generalNote">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident deleniti, odit!
-                          Reprehenderit ipsam, porro officiis voluptatibus? Cum vero ipsa voluptate eos, officiis
-                          nesciunt exercitationem reiciendis ex, quaerat! Enim, cupiditate, eligendi.</p>
-                        <div class="row collapse">
-                          <div class="columns">
-                            <a class="button small primary hollow pull-right mb-0" data-toggle="generalNoteEdit"><i
-                              class="fa fa-edit"></i></a>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div id="generalNoteEdit" style="display: none;">
-                        <textarea>Add a note...</textarea>
-                        <div class="row collapse">
-                          <div class="columns">
-                            <a class="button small primary hollow pull-right mb-0" data-toggle="generalNote"><i
-                              class="fa fa-save"></i></a>
-                          </div>
-                        </div>
-                      </div>
+              <div class="row label-block collapse">
+                <div class="shrink columns">
+                  <div class="label-group">
+                    <span for="" class="badge success mb-0-5">1</span>
+                  </div>
+                </div>
+                <div class="columns">
+                  <div class="label-group">
+                    <label>
+                      When were you thinking of having your surgery?
+                      <select>
+                        <option value=""></option>
+                        <option>As soon as possible</option>
+                        <option selected>2 - 4 Weeks</option>
+                        <option>4 - 8 Weeks</option>
+                        <option>2 - 4 Months</option>
+                        <option>4 - 6 Months</option>
+                        <option>6+ months</option>
+                      </select>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row label-block collapse">
+                <div class="shrink columns">
+                  <div class="label-group">
+                    <span for="" class="badge alert mb-0-5">2</span>
+                  </div>
+                </div>
+                <div class="columns">
+                  <div class="label-group">
+                    <label>
+                      Are you willing to be flexible on the schedule if we were able to secure a larger bonus?
+                      <select>
+                        <option value=""></option>
+                        <option>Yes</option>
+                        <option>No</option>
+                      </select>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row label-block collapse">
+                <div class="shrink columns">
+                  <div class="label-group">
+                    <span for="" class="badge success mb-0-5">3</span>
+                  </div>
+                </div>
+                <div class="columns">
+                  <div class="label-group">
+                    <label>
+                      Are you willing to travel outside your local area if a larger bonus were available?
+                      <select>
+                        <option value=""></option>
+                        <option>No, I want only local facilities.</option>
+                        <option>Yes, I'm willing to travel outside my immediate area.</option>
+                        <option selected>I'm interested in seeing options throughout the USA.</option>
+                        <option>If the bonus was big enough, I'd consider travelling to another country.</option>
+                      </select>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row label-block collapse">
+                <div class="shrink columns">
+                  <div class="label-group">
+                    <span for="" class="badge success mb-0-5">4</span>
+                  </div>
+                </div>
+                <div class="columns">
+                  <div class="label-group">
+                    <legend>Select the countries that you'd entertain travelling to:</legend>
+                    <div class="checkbox-wrapper">
+                      <input class="mb-0" type="checkbox" name="country" value="" id="country" checked=""><label
+                      class="mb-0" for="country">Costa Rica</label>
+                    </div>
+                    <div class="checkbox-wrapper">
+                      <input class="mb-0" type="checkbox" name="country" value="" id="country" checked=""><label
+                      class="mb-0" for="country">Mexico</label>
+                    </div>
+                    <div class="checkbox-wrapper">
+                      <input class="mb-0" type="checkbox" name="country" value="" id="country" checked=""><label
+                      class="mb-0" for="country">Brazil</label>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <div class="row collapse label-block">
-                <div class="large-4 columns end">
+              <div class="row label-block collapse">
+                <div class="shrink columns">
                   <div class="label-group">
-                    <p>Company</p>
-                    <h6>Excel Energy</h6>
+                    <span for="" class="badge success mb-0-5">5</span>
                   </div>
                 </div>
-                <div class="large-4 columns end">
+                <div class="columns">
                   <div class="label-group">
-                    <p>Email Address</p>
-                    <h6>r.peterson@domain.com</h6>
+                    <legend>Are you using any other health benefit programs?</legend>
+                    <div class="checkbox-wrapper">
+                      <input type="checkbox" name="programs" value="" id="programs" checked=""><label for="programs">Tele-Medicine</label>
+                    </div>
+                    <div class="checkbox-wrapper">
+                      <input type="checkbox" name="programs" value="" id="programs"><label for="programs">Wellness
+                      Programs</label>
+                    </div>
+                    <div class="checkbox-wrapper">
+                      <input type="checkbox" name="programs" value="" id="programs"><label for="programs">Prescription
+                      Drug Programs</label>
+                    </div>
+                    <div class="checkbox-wrapper">
+                      <input type="checkbox" name="programs" value="" id="programs"><label for="programs">Gym and
+                      Fitness Programs</label>
+                    </div>
+                    <div class="checkbox-wrapper">
+                      <input type="checkbox" name="programs" value="" id="programs"><label for="programs">Other: <input
+                      type="text" name="programs" value=""></label>
+                    </div>
                   </div>
                 </div>
-                <div class="large-4 columns end">
-                  <div class="label-group">
-                    <p>Phone Number</p>
-                    <h6>123-456-7890</h6>
+              </div>
+              <hr>
+              <div class="row collapse">
+                <div class="columns">
+                  <div class="button-align small">
+                    <a href="#" class="button rounded">Save Changes</a>
                   </div>
                 </div>
               </div>
 
-              <div class="row collapse label-block">
-                <div class="large-12 columns end">
-                  <div class="label-group">
-                    <p>Address</p>
-                    <h6>336 1st Dr, El Paso, NJ, USA 23654</h6>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row collapse label-block">
-                <div class="large-12 columns end">
-                  <div class="label-group">
-                    <p>Current Episode</p>
-                    <h6><a href="advocate-employee-episode-v2.html">Total Knee Replacement</a><a
-                      href="advocate-employee-episode-edit.html"
-                      class="button success hollow rounded tiny mb-0 pull-right">Create New Episode</a></h6>
-
-                  </div>
-                </div>
-              </div>
-
-              <div class="row collapse label-block">
-                <div class="large-4 columns end">
-                  <div class="label-group">
-                    <p>Policy #</p>
-                    <h6>123-4567-890</h6>
-                  </div>
-                </div>
-                <div class="large-4 columns end">
-                  <div class="label-group">
-                    <p>Gender</p>
-                    <h6>Male</h6>
-                  </div>
-                </div>
-                <div class="large-4 columns end">
-                  <div class="label-group">
-                    <p>Birthdate</p>
-                    <h6>March 17, 1976</h6>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row collapse label-block">
-                <div class="large-4 columns end">
-                  <div class="label-group">
-                    <p>
-                      <small>FIRST CONTACT</small>
-                    </p>
-                    <h6>Jan 12, 8:00 AM -</h6>
-                  </div>
-                </div>
-                <div class="large-4 columns end">
-                  <div class="label-group">
-                    <p>
-                      <small>LAST CONTACT</small>
-                    </p>
-                    <h6>Jan 23, 8:00 AM
-                      <small>23 days ago</small>
-                    </h6>
-                  </div>
-                </div>
-                <div class="large-4 columns end">
-                  <div class="label-group">
-                    <p>
-                      <small>LAST ATTEMPT</small>
-                    </p>
-                    <h6>Jan 26, 8:00 AM -</h6>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="page-lead row align-middle">
-            <div class="large-12 columns">
-              <span class="h5">Episode Milestones</span>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="columns">
-              <div class="callout">
-                <ul class="stepbars">
-                  <li class="active">
-                    Email Invite <br>
-                    <small class="subheader">Emman C, Mar-3 8:00am</small>
-                    <br>
-                    <a href="advocate-employee-onboard-edit.html" class="button primary small mt-0-5"><i
-                      class="fa fa-envelope-o"></i>&nbsp; Send Link</a>
-                  </li>
-                  <li class="active">
-                    Email Opened <br>
-                    <small class="subheader">Mar-3 8:00am</small>
-                    <br>
-                  </li>
-                  <li>
-                    Link Followed
-                  </li>
-                  <li>
-                    Account Created
-                  </li>
-                  <li>
-                    Viewed Results Page
-                  </li>
-                  <li>
-                    Selected Facility
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
 
@@ -350,16 +328,6 @@
                 $('.site-nav.secondary, #profileContent, #chatClient .chat-wrapper').css("height", $(window).height() - topBarHeight);
             }, 40);
         }).resize();
-    });
-
-    $('#generalNote .button').click(function () {
-        $('#generalNote').css("display", "none");
-        $('#generalNoteEdit').css("display", "block");
-    });
-
-    $('#generalNoteEdit .button').click(function () {
-        $('#generalNote').css("display", "block");
-        $('#generalNoteEdit').css("display", "none");
     });
 
 </script>

@@ -23,15 +23,16 @@
           </div>
           <div class="columns">
             <!-- <span class="h6">Add New Clinical Pathway</span> -->
-            <input type="text" class="editable clr-white mb-0" value="Total Knee Replacement">
-            <p class="subheader mb-0 white">
+            <!-- <input type="text" class="editable clr-white mb-0" value="Total Knee Replacement"> -->
+            <span class="h5">Total Knee Replacement</span>&nbsp; <a href="#" class="link white-color ml-1 mb-0"><i class="fa fa-edit"></i></a>
+            <!-- <p class="subheader mb-0 white">
               <small>Pathway Description</small>
-            </p>
+            </p> -->
           </div>
           <div class="shrink columns">
-            <div class="button-align small mb-0 pull-right">
+            <!-- <div class="button-align small mb-0 pull-right">
               <a href="#" class="button success">Save</a>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -46,12 +47,12 @@
 
             <div class="row pr-1 mb-1 mt-1 align-middle">
               <div class="columns">
-                <h5>Pathway Events</h5>
+                <h5 class="mb-0-5">Pathway Events</h5>
               </div>
-              <div class="columns">
+              <div class="columns shrink">
                 <!-- <button class="button hollow success tiny pull-right">Add Event <i class="fa fa-plus"></i></button> -->
                 <div class="dropdown pull-right">
-                  <button class="dropbtn button pull-right hollow clear small success mb-0 pull-right"><i class="fa fa-plus"></i> Add task</button>
+                  <button class="dropbtn button pull-right hollow clear small success mb-0 pull-right"><i class="fa fa-plus"></i> Add Event</button>
                   <div class="dropdown-content">                          
                     <ul class="ml-0 mb-1 mt-1">
                       <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
@@ -357,6 +358,12 @@
 
       <div class="clinical-pathway-settings columns">
 
+        <div class="row mb-1">
+          <div class="columns">
+            <a href="#" class="button success pull-right"> Save Changes</a>
+          </div>
+        </div>
+
         <div class="row mb-2">
           <div class="columns bg-black20 pad-1">
             <p class="mb-0 subheader"><strong>Event Description</strong></p>
@@ -417,7 +424,7 @@
             <ul class="tabs tabs-inverse " data-tabs id="example-tabs">
                   <li class="tabs-title is-active"><a data-tabs-target="panel1" href="#panel1" >TRIGGERS</a></li>
                   <li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">TASKS</a></li>
-                  <li class="tabs-title"><a data-tabs-target="panel3" href="#panel3">ESCALATION?</a></li>
+                  <li class="tabs-title"><a data-tabs-target="panel3" href="#panel3">NOTIFICATION</a></li>
             </ul>
 
             <div class="tabs-content bg-black20" data-tabs-content="example-tabs">
