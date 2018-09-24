@@ -1,19 +1,121 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
-    <link rel="stylesheet" href="css/app.css">
-  </head>
-  <body>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Foundation for Sites</title>
+		<link rel="stylesheet" href="../css/app.css">
+	</head>
+	<body>
 
-      
+<header class="top-bar">
+	<div class="row">
+		<div class="top-bar-title">
+			<span data-responsive-toggle="responsive-menu" data-hide-for="large">
+				<span class="menu-icon dark" data-toggle></span>
+			</span>
+			<a href="#" class="logo">
+				<img src="../img/logo.png" alt="Spoke">
+			</a>
+		</div>
+		<div id="responsive-menu">
+			<div class="top-bar-right">
+				<ul class="menu">
+					<li></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
 
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/what-input/dist/what-input.js"></script>
-    <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+
+	<section>
+	    	<div class="container">
+	            <div class="row">
+	                <div class="medium-12 columns">
+
+	                    	<nav aria-label="You are here:" role="navigation">
+		                      <ul class="breadcrumbs">
+		                            <li><a href="frontend-intake-step4.html">Recommended Facilities</a></li>
+		                            <li><a href="frontend-edit.html">Edit Profile</a></li>
+		                            <li>Edit Episode</li>
+		                      </ul>
+	                    	</nav>
+
+	                   	 <div class="page-lead">
+	                        	<span class="h5">Episode #</span>
+	                   	 </div>
+	                    
+	                      <div class="callout">
+		                      <div class="row">
+		                            <div class="large-4 columns ">
+		                                <label class="">Are you the patient</label>
+		                            </div>
+		                            <div class="large-6 columns end">
+		                                <input type="radio" name="" value="" id="" checked=""><label for="">Yes</label>
+		                                <input type="radio" name="" value="" id=""><label for="">No</label>
+		                            </div>
+		                      </div>
+		                      <div class="row">
+		                            <div class="columns small-12">
+		                                <label class="middle mb-0">Which of your dependents is the patient?</label>
+			                                <select>
+			                                    <option>Kevin McHale</option>
+			                                </select>
+		                              </label>
+		                            </div>
+
+
+		                            <div class="columns small-12">
+		                                <label class="middle mb-0">Surgical Procedure</label>
+			                                <select>
+			                                    <option>Total Knee Replacement</option>
+			                                </select>
+		                              </label>
+		                            </div>
+
+
+		                            <div class="columns small-12">
+		                                <label class="middle mb-0">Estimated Remaining Deductible</label>
+		                                	<input type="text" name="" value="654512">
+		                              </label>
+		                            </div>
+
+
+		                            <div class="columns small-12">
+		                                <label class="middle mb-0">When would you be getting treatment?</label>
+		                                	<select>
+			                                    <option>As soon as possible</option>
+			                                    <option>2 - 4 Weeks</option>
+			                                    <option>4 - 8 Weeks</option>
+			                                    <option>2 - 4 Months</option>
+			                                    <option>4 - 6 Months</option>
+			                                    <option>6+ months</option>
+			                                </select>
+		                              </label>
+		                            </div>
+
+
+		                            <div class="columns small-12 center-content">
+		                                	<div class="button-group submit ">
+			                             		<a href="#" class="button primary">Save Changes</a>
+								<a href="#" class="info button link">Cancel</a>
+			                         	</div>
+		                            </div>
+		                      </div>
+	                    	</div>
+
+	                </div>
+	            </div>
+	        </div>
+    	</section>
+
+			
+
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="bower_components/what-input/dist/what-input.js"></script>
+		<script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
+		<script src="js/app.js"></script>
+	</body>
 </html>
