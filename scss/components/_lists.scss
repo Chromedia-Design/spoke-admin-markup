@@ -1296,13 +1296,9 @@ ul.vertical-list {
     list-style-type: none;
     position: relative;
     white-space: nowrap;
-    // overflow: hidden;
     text-overflow: ellipsis;
     padding-left: .63rem;
     margin-left: .5rem;
-    // font-weight: bold;
-    // color: #e1e1e1;
-
     border-left: 1px solid #c1c1c1;
     i {
       color: #c1c1c1;
@@ -1313,7 +1309,7 @@ ul.vertical-list {
       &:after {
         content: "";
         width: 1px;
-        height: 18px;
+        height: 17px;
         background-color: #c1c1c1;
         position: absolute;
         top: -7px;
