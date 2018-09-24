@@ -1307,15 +1307,16 @@ ul.vertical-list {
     i {
       color: #c1c1c1;
     }
+
     &:last-child {
       border-left: 0px;
       &:after {
         content: "";
         width: 1px;
-        height: 20px;
+        height: 18px;
         background-color: #c1c1c1;
         position: absolute;
-        top: -8px;
+        top: -7px;
         left: 0px;
       } 
     }
@@ -1325,7 +1326,7 @@ ul.vertical-list {
       height: 1px;
       background-color: #c1c1c1;
       position: absolute;
-      top: .75rem;
+      top: .6rem;
       left: 0px;
     }
     // &:after {
@@ -1368,17 +1369,17 @@ ul.vertical-list {
         height: 1px;
         background-color: #c1c1c1;
         position: absolute;
-        top: 13px;
-        left: -.85rem;
+        top: 11px;
+        left: -.88rem;
       }
       &:after {
         content: "";
         width: 1px;
-        height: 19px;
+        height: 17px;
         background-color: #c1c1c1;
         position: absolute;
         top: -5px;
-        left: -.85rem;
+        left: -.95rem;
       }
     }
   }
