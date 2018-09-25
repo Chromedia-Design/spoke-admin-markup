@@ -270,8 +270,14 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 	vertical-align: middle;
+	height: 1.5em;
 	* {
 		margin-bottom: 0;
+		white-space: nowrap;
+		overflow: hidden;
+		height: 1.5em;
+		width: 100%;
+		text-overflow: ellipsis;
 	}
 }
 
