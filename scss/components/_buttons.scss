@@ -150,6 +150,12 @@
 			margin-right: 0;
 		}
 	}
+	select {
+		max-width: 20%;
+		&:only-child {
+			max-width: initial;
+		}
+	}
 	&.small {
 		select {
 			font-size: 0.875rem;
