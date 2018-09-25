@@ -1292,6 +1292,7 @@ ul.vertical-list {
 .ul-tree {
   list-style-type: none;
   li {
+    user-select: none;
     font-size: .875rem;
     list-style-type: none;
     position: relative;
@@ -1302,6 +1303,36 @@ ul.vertical-list {
     border-left: 1px solid #c1c1c1;
     i {
       color: #c1c1c1;
+    }
+
+    &.ul-tree-child {
+      padding-bottom: .25rem;
+    }
+
+    span {
+      padding: .25rem .5rem;
+      border-radius: 4px;
+      overflow: hidden;
+      &:hover {
+        // border-radius: 4px;
+        // overflow: hidden;
+        cursor: pointer;
+        // color: lighten(#323232,25%);
+        background-color: #e1e1e1;
+      }
+    }
+
+    &.selected {
+      // @extend .clr-success;
+      & > span {
+        color: red;
+        @extend .clr-success;
+        font-weight: bold;
+        &:hover {
+          background-color: transparent;
+        }
+      }
+        
     }
 
     &:last-child {
@@ -1325,26 +1356,6 @@ ul.vertical-list {
       top: .6rem;
       left: 0px;
     }
-    // &:after {
-    //   content: "";
-    //   width: 1px;
-    //   height: 25px;
-    //   background-color: #323232;
-    //   position: absolute;
-    //   top: 0rem;
-    //   left: 0px;
-    // }
-    // &:last-child {
-    //   &:after {
-    //     content: "";
-    //     width: 1px;
-    //     height: 25px;
-    //     background-color: #323232;
-    //     position: absolute;
-    //     top: 0rem;
-    //     left: 0px;
-    //   } 
-    // }
 
     &.ul-tree-parent, &.ul-tree-sub-parent {
       border-left: 0px;
@@ -1359,6 +1370,8 @@ ul.vertical-list {
     }
 
     &.ul-tree-sub-parent {
+      padding-top: .25rem;
+      // padding-bottom: .25rem;
       &:before {
         content: "";
         width: 14px;
