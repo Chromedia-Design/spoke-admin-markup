@@ -28,3 +28,35 @@
 	padding: 0.4rem 0.5rem 0.333rem;
 	margin: -3px 0 0;
 }
+
+.tag-cloud {
+	margin: 0;
+	list-style: none;
+	.tag-cloud-individual-tag {
+		@include label;
+		border-radius: 500px;
+		background: transparent;
+		display: inline-block;
+		color: $primary-color;
+		margin: 3px 1px;
+		font-weight: bold;
+		border: 1px solid $primary-color;
+		.fa {
+			margin: 0 3px;
+			color: $primary-color;
+		}
+		&:hover {
+			background: darken($primary-color, 25%);
+			transition: background-color .2s ease-in;
+		}
+	}
+	&.white {
+		.tag-cloud-individual-tag {
+			color: $white;
+			border: 1px solid $white;
+			.fa {
+				color: $white;
+			}
+		}
+	}
+}
