@@ -999,7 +999,7 @@ ul.vertical-list {
     border-radius: $global-radius;
     border-spacing: 0 3px;
     li.table-list-item {
-      box-shadow: 0 0 1px rgba($black, $B-dividers);
+      box-shadow: 0 0 0 1px rgba($black, $B-dividers);
       border-radius: $global-radius;
       .table-list-cell {
         vertical-align: middle;
@@ -1056,7 +1056,7 @@ ul.vertical-list {
       &:before {
         content: ' ';
         position: absolute;
-        left: 14px;
+        left: 16px;
         bottom: 30px;
         width: 23px;
         height: 2px;
@@ -1068,7 +1068,7 @@ ul.vertical-list {
   &.compact {
     .listing-title {
       margin-top: 5px;
-      font-weight: normal;
+      font-size: rem-calc(12);
     }
     .table-list {
       margin: 6px 0 0;

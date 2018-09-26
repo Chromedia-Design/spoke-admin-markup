@@ -151,7 +151,7 @@
 		}
 	}
 	select {
-		max-width: 20%;
+		max-width: rem-calc(100);
 		&:only-child {
 			max-width: initial;
 		}
