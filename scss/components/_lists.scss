@@ -1320,6 +1320,8 @@ ul.vertical-list {
 }
 
 .ul-tree {
+  $treeline-color: #c1c1c1;
+
   list-style-type: none;
   li {
     user-select: none;
@@ -1328,14 +1330,13 @@ ul.vertical-list {
     position: relative;    
     padding-left: .63rem;
     margin-left: .5rem;
-    border-left: 1px solid #c1c1c1;
+    border-left: 1px solid $treeline-color;
     i {
       color: #c1c1c1;
     }
 
     &.ul-tree-child {
       padding-bottom: .25rem;
-      // display: list-item;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -1347,16 +1348,12 @@ ul.vertical-list {
       border-radius: 4px;
       overflow: hidden;
       &:hover {
-        // border-radius: 4px;
-        // overflow: hidden;
         cursor: pointer;
-        // color: lighten(#323232,25%);
         background-color: #e1e1e1;
       }
     }
 
     &.selected {
-      // @extend .clr-success;
       & > span {
         
         
@@ -1364,7 +1361,6 @@ ul.vertical-list {
         font-weight: bold;
         background-color: #e1e1e1;
         &:hover {
-          // background-color: transparent;
           @extend .clr-success;
         }
       }
@@ -1377,7 +1373,7 @@ ul.vertical-list {
         content: "";
         width: 1px;
         height: 17px;
-        background-color: #c1c1c1;
+        background-color: $treeline-color;
         position: absolute;
         top: -7px;
         left: 0px;
@@ -1387,7 +1383,7 @@ ul.vertical-list {
       content: "";
       width: 10px;
       height: 1px;
-      background-color: #c1c1c1;
+      background-color: $treeline-color;
       position: absolute;
       top: .6rem;
       left: 0px;
@@ -1411,12 +1407,11 @@ ul.vertical-list {
 
     &.ul-tree-sub-parent {
       padding-top: .25rem;
-      // padding-bottom: .25rem;
       &:before {
         content: "";
         width: 14px;
         height: 1px;
-        background-color: #c1c1c1;
+        background-color: $treeline-color;
         position: absolute;
         top: 14px;
         left: -.88rem;
@@ -1425,7 +1420,7 @@ ul.vertical-list {
         content: "";
         width: 1px;
         height: 20px;
-        background-color: #c1c1c1;
+        background-color: $treeline-color;
         position: absolute;
         top: -5px;
         left: -.95rem;
