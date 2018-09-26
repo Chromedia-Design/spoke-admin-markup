@@ -279,9 +279,7 @@
     .logo {
       width: 25%;
       height: auto;
-    }
-    .description {
-      width: 55%;
+      flex: 0 1 auto;
     }
   }
 }
