@@ -1325,11 +1325,14 @@ ul.vertical-list {
     &.selected {
       // @extend .clr-success;
       & > span {
-        color: red;
-        @extend .clr-success;
+        
+        
+        @extend .clr-primary;
         font-weight: bold;
+        background-color: #e1e1e1;
         &:hover {
-          background-color: transparent;
+          // background-color: transparent;
+          @extend .clr-success;
         }
       }
         
