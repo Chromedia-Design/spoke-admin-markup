@@ -1295,11 +1295,7 @@ ul.vertical-list {
     user-select: none;
     font-size: .875rem;
     list-style-type: none;
-    position: relative;
-    display: list-item;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    position: relative;    
     padding-left: .63rem;
     margin-left: .5rem;
     border-left: 1px solid #c1c1c1;
@@ -1309,6 +1305,11 @@ ul.vertical-list {
 
     &.ul-tree-child {
       padding-bottom: .25rem;
+      // display: list-item;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+
     }
 
     span {
@@ -1363,6 +1364,10 @@ ul.vertical-list {
     }
 
     &.ul-tree-parent, &.ul-tree-sub-parent {
+      display: list-item;
+      // overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
       border-left: 0px;
       padding-left: 0px;
       margin-left: 0px;
@@ -1383,13 +1388,13 @@ ul.vertical-list {
         height: 1px;
         background-color: #c1c1c1;
         position: absolute;
-        top: 11px;
+        top: 14px;
         left: -.88rem;
       }
       &:after {
         content: "";
         width: 1px;
-        height: 17px;
+        height: 20px;
         background-color: #c1c1c1;
         position: absolute;
         top: -5px;
