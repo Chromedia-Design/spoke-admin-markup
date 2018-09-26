@@ -1296,6 +1296,8 @@ ul.vertical-list {
     font-size: .875rem;
     list-style-type: none;
     position: relative;
+    display: list-item;
+    overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     padding-left: .63rem;
