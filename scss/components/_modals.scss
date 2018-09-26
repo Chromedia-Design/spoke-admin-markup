@@ -1,9 +1,8 @@
 .reveal {
 	padding: 0;
-	border: none;
+	border: 1px solid rgba($black, $B-dividers);
 	background: transparent;
 	overflow-y: visible;
-
 	&.reveal-body-scrollable {
 		.reveal-body {
 			overflow-y: scroll;
