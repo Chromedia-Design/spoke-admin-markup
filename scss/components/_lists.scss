@@ -936,7 +936,7 @@ ul.vertical-list {
 }
 
 .table-list {
-  display: table;
+  display: block;
   width: 100%;
   table-layout: fixed;
 }
@@ -999,7 +999,7 @@ ul.vertical-list {
     border-radius: $global-radius;
     border-spacing: 0 3px;
     li.table-list-item {
-      box-shadow: 0 0 1px rgba($black, $B-dividers);
+      box-shadow: 0 0 0 1px rgba($black, $B-dividers);
       border-radius: $global-radius;
       .table-list-cell {
         vertical-align: middle;
@@ -1048,6 +1048,36 @@ ul.vertical-list {
           color: $white;
           .subheader {
             color: $white !important;
+          }
+        }
+      }
+    }
+    &:last-child {
+      &:before {
+        content: ' ';
+        position: absolute;
+        left: 16px;
+        bottom: 30px;
+        width: 23px;
+        height: 2px;
+        margin: auto 0;
+        background: rgba($black, $B-dividers);
+      }
+    }
+  }
+  &.compact {
+    .listing-title {
+      margin-top: 5px;
+      font-size: rem-calc(12);
+    }
+    .table-list {
+      margin: 6px 0 0;
+      li.table-list-item {
+        .table-list-cell {
+          padding: 4px 5px;
+          p {
+            font-size: rem-calc(12);
+            margin-bottom: 0;
           }
         }
       }
