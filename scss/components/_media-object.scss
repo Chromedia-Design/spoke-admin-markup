@@ -1,9 +1,10 @@
 .media-object {
 	margin: 1rem 0;
 	&.full-table {
-		display: table;
+		display: flex;
 		width: 100%;
 		.media-object-section {
+			flex: 1;
 			.button {
 				white-space: nowrap;
 			}
@@ -31,9 +32,12 @@
 					// }
 				}
 			}
+			&.shrink {
+				flex: 0 1 auto;
+			}
 		}
-		&.fixed {
-			table-layout: fixed;
+		&.align-middle {
+			align-items: center;
 		}
 	}
 }
