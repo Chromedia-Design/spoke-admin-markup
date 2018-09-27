@@ -1,5 +1,11 @@
 #full-page {
   display: grid;
+<<<<<<< HEAD
+=======
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: repeat(12,1fr);
+  grid-gap: 1rem;
+>>>>>>> 8e0fb73918fcdaf80cc2a9ae6b311665f18d6649
   height: 100vh !important;
   max-height: 100vh !important;
 
