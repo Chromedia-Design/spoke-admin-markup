@@ -1,13 +1,15 @@
 #full-page {
+  display: grid;
   height: 100vh !important;
-  min-height: 100vh !important;
   max-height: 100vh !important;
-  overflow-y: scroll !important;
+
+  grid-template-rows: 83px auto;
 
   .full-page-header {}
-  .full-page-sidebar {}
-  .full-page-content {}
-  .full-page-footer {}
+  .full-page-body {
+    overflow: hidden;
+    overflow-y: scroll;
+  }
 }
 
 
