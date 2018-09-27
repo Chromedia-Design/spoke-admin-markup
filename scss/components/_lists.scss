@@ -1320,7 +1320,9 @@ ul.vertical-list {
 }
 
 .ul-tree {
+  // ul-tree Variables
   $treeline-color: #c1c1c1;
+  // ul-tree Variables
 
   list-style-type: none;
   li {
@@ -1340,6 +1342,11 @@ ul.vertical-list {
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
+      &.active {
+        > i.fa-circle {
+          @extend .clr-success;
+        }
+      }
 
     }
 
@@ -1355,13 +1362,12 @@ ul.vertical-list {
 
     &.selected {
       & > span {
-        
-        
-        // @extend .clr-primary;
+        @extend .clr-primary;
         color: #fff;
+        // border-radius: 4px;
         font-weight: bold;
-        // background-color: #e1e1e1;
-        @extend .bg-success;
+        background-color: #e1e1e1;
+        // @extend .bg-success;
         transition: all .5s;
         &:hover {
           // @extend .clr-success;
