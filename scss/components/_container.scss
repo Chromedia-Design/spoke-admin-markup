@@ -1,17 +1,44 @@
+// Apply to full page ----------
 #full-page {
   display: grid;
+<<<<<<< HEAD
   grid-template-columns: repeat(12,1fr);
   grid-template-rows: repeat(12,1fr);
   grid-gap: 1rem;
+=======
+  // grid-gap: 1rem;
+>>>>>>> ed6619f7d07e320ed58d4e9bcd28fc28be3dc542
   height: 100vh !important;
   max-height: 100vh !important;
   grid-template-rows: 83px auto;
+<<<<<<< HEAD
   .full-page-header {}
+=======
+
+  .full-page-header {
+    margin: 0px !important;
+  }
+>>>>>>> ed6619f7d07e320ed58d4e9bcd28fc28be3dc542
   .full-page-body {
+    margin: 0px !important;
     overflow: hidden;
     overflow-y: scroll;
+    
+    .full-page-body-sidebar {
+      height: 100%;
+      overflow: hidden;
+      overflow-y: scroll;
+    }
+    .full-page-body-content {
+      height: 100%;
+      overflow: hidden;
+      overflow-y: scroll;
+
+      padding-top: 2rem;
+    }
   }
 }
+// Apply to full page ----------
 
 .card {
   display: inline-block;
