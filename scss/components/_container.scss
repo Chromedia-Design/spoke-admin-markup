@@ -1,21 +1,5 @@
 // Apply to full page ----------
 #full-page {
-<<<<<<< HEAD
-	display: grid;
-	grid-template-columns: repeat(12,1fr);
-	grid-template-rows: repeat(12,1fr);
-	grid-gap: 1rem;
-	height: 100vh !important;
-	max-height: 100vh !important;
-
-	grid-template-rows: 83px auto;
-
-	.full-page-header {}
-	.full-page-body {
-		overflow: hidden;
-		overflow-y: scroll;
-	}
-=======
   display: grid;
   // grid-gap: 1rem;
   height: 100vh !important;
@@ -46,7 +30,6 @@
       padding-top: 2rem;
     }
   }
->>>>>>> 46a2ec919b8e7a134f46c0da0ed2f9c3186fbe69
 }
 // Apply to full page ----------
 
