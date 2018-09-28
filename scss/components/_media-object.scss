@@ -5,6 +5,7 @@
 		width: 100%;
 		.media-object-section {
 			flex: 1;
+			min-width: 0;
 			.button {
 				white-space: nowrap;
 			}
