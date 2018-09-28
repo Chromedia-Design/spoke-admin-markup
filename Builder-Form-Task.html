@@ -12,17 +12,21 @@
 
 <body>
 
-  <div class="full-height">
+<<<<<<< HEAD
+  <div class="full-height" id="">
+=======
+  <div class="full-height" id="full-page">
+>>>>>>> 8e0fb73918fcdaf80cc2a9ae6b311665f18d6649
     <div class="row expanded">
       <div class="column medium-12 pl-0 pr-0">
         <div class="row align-middle expanded reveal-heading">
           <div class="shrink columns">
             <div class="button-align small mb-0">
-              <a class="button rounded hollow white" href="admin-facility-view.html"><i class="fa fa-close"></i></a>
+              <a class="button rounded hollow white" href="clinical-pathway-builder.html"><i class="fa fa-arrow-left"></i></a>
             </div>
           </div>
           <div class="columns">
-            <!-- <span class="h6">Add New Clinical Pathway</span> -->
+            <span class="h6">Pain Threshold</span>
             <!-- <input type="text" class="editable clr-white mb-0" value="Total Knee Replacement">
             <p class="subheader mb-0 white">
               <small>Pathway Description</small>
@@ -46,25 +50,7 @@
 
             <div class="row pr-1 mb-1 mt-1 align-middle">
               <div class="columns">
-                <h5 class="mb-0-5">BUILDER TITLE OVER HERE</h5>
-              </div>
-              <div class="columns shrink">
-                <!-- <button class="button hollow success tiny pull-right">Add Event <i class="fa fa-plus"></i></button> -->
-                <div class="dropdown pull-right">
-                  <button class="dropbtn button pull-right hollow clear small success mb-0 pull-right"><i class="fa fa-plus"></i> Add Event</button>
-                  <div class="dropdown-content">                          
-                    <ul class="ml-0 mb-1 mt-1">
-                      <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
-                      <li class="list-style-type-none"><a href="">Assign Task</a></li>
-                      <li class="list-style-type-none"><a href="">Reminder</a></li>                            
-                    </ul>
-                    <ul class="ml-0 mb-1 mt-1">
-                      <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>PATIENT</strong></small></span></li>
-                      <li class="list-style-type-none"><a href="">Send Form</a></li>
-                      <li class="list-style-type-none"><a href="">Reminder</a></li>                            
-                    </ul>
-                  </div>
-                </div>
+                <h6 class="mb-0-5">TASK BUILDER?</h6>
               </div>
             </div>
 
@@ -73,66 +59,30 @@
               <div class="row">
                 <div class="columns">
                   <ul class="ul-tree">
-                    <li class="ul-tree-parent"><strong><i class="fa mr-1 fa-lg fa-question-circle clr-warning"></i> You find it difficult to introduce yourself to</strong></li>
-                    <li class="ul-tree-child"><i class="fa mr-1 fa-circle"></i> Agree <!-- <a href="" class="button clear hollow tiny success mb-0"><i class="fa fa-plus"></i> Add</a> -->
+                    <li class="ul-tree-parent toggler-handler">
+                      <i class="fa mr-1 fa-lg fa-question-circle clr-warning"></i>
+                      <strong> How is your pain today?</strong>
+                    </li>
+                    <li class="toggler-target ul-tree-child"><i class="fa mr-0-5 fa-circle"></i><span>1</span></li>
+                    <li class="toggler-target ul-tree-child"><i class="fa mr-0-5 fa-circle"></i><span>2</span></li>
+                    <li class="toggler-target ul-tree-child"><i class="fa mr-0-5 fa-circle"></i><span>3</span></li>
+                    <li class="toggler-target ul-tree-child"><i class="fa mr-0-5 fa-circle"></i><span>4</span></li>
+                    <li class="toggler-target ul-tree-child active"><i class="fa mr-0-5 fa-circle"></i><span>5</span></li>
+                    <li class="toggler-target ul-tree-child"><i class="fa mr-0-5 fa-circle"></i><span>6</span></li>
+                    <li class="toggler-target ul-tree-child"><i class="fa mr-0-5 fa-circle"></i><span>7</span></li>
+                    <li class="toggler-target ul-tree-child"><i class="fa mr-0-5 fa-circle"></i><span>8</span></li>
+                    <li class="toggler-target ul-tree-child"><i class="fa mr-0-5 fa-circle"></i><span>9</span></li>
+                    <li class="toggler-target ul-tree-child active selected"><i class="fa mr-0-5 fa-circle"></i><span>10</span>
                       <ul class="toggler">
-                        <li class="ul-tree-sub-parent toggler-handler"><strong><i class="fa mr-1 fa-lg fa-question-circle clr-warning"></i> You often get so lost in thoughts that you ...</strong></li>
-                        <li class="toggler-target"><i class="fa fa-sm mr-1 fa-circle fa-sm"></i> Agree</li>
-                        <li class="toggler-target"><i class="fa fa-sm mr-1 fa-circle fa-sm"></i> Disagree
-                          <ul class="toggler">
-                            <li class="ul-tree-sub-parent toggler-handler"><strong><i class="fa mr-1 fa-lg fa-question-circle clr-warning"></i> You try to respond to your e-mails as ...</strong></li>
-                            <li class="toggler-target"><i class="fa fa-sm mr-1 fa-circle fa-sm"></i> Agree
-                              <ul class="">
-                                <li class="ul-tree-sub-parent"><strong><i class="fa mr-1 fa-lg fa-question-circle clr-warning"></i> You find it easy to stay relaxed ...</strong></li>
-                                <li><i class="fa fa-sm mr-1 fa-circle fa-sm"></i> Agree</li>
-                                <li><i class="fa fa-sm mr-1 fa-circle fa-sm"></i> Disagree</li>
-                              </ul> 
-                            </li>
-                            <li class="toggler-target"><i class="fa fa-sm mr-1 fa-circle fa-sm"></i> Disagee
-                              <ul class="">
-                                <li class="ul-tree-sub-parent"><strong><i class="fa mr-1 fa-lg fa-question-circle clr-warning"></i> You do not usually initiate ...</strong></li>
-                                <li><i class="fa mr-1 fa-circle"></i> Agree</li>
-                                <li><i class="fa mr-1 fa-circle"></i> Disagree</li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="toggler-target"><i class="fa mr-1 fa-circle fa-sm"></i> Agree</li>
+                        <li class="ul-tree-sub-parent toggler-handler"><strong><i class="fa mr-1 fa-lg fa-chevron-circle-down clr-warning"></i> Did you drink your medicine last night?</strong></li>
+                        <li class="toggler-target ul-tree-child"><i class="fa mr-0-5 fa-circle"></i><span>Yes</span></li>
+                        <li class="toggler-target ul-tree-child active"><i class="fa mr-0-5 fa-circle"></i><span>No</span></li>
                       </ul>
                     </li>
-                    <li><i class="fa mr-1 fa-circle fa-sm"></i> Disagree
-                      <ul class="">
-                        <li class="ul-tree-sub-parent"><strong><i class="fa mr-1 fa-lg fa-question-circle clr-warning"></i> You rarely do something just out of ...</strong></li>
-                        <li><i class="fa mr-1 fa-circle fa-sm"></i> Agree
-                          <ul class="list-style-type-none">
-                            <li class="ul-tree-sub-parent"><strong><i class="fa mr-1 fa-lg fa-question-circle clr-warning"></i> You are usually highly motivated ...</strong></li>
-                            <li><i class="fa mr-1 fa-circle fa-sm"></i> Agree</li>
-                            <li><i class="fa mr-1 fa-circle fa-sm"></i> Disagree</li>
-                          </ul> 
-                        </li>
-                        <li><i class="fa mr-1 fa-circle fa-sm"></i> Disagree</li>                       
-                      </ul> 
-                    </li>
-                    <li><i class="fa mr-1 fa-circle fa-sm"></i> maybe
-                      <ul class="">
-                        <li class="ul-tree-sub-parent"><strong><i class="fa mr-1 fa-lg fa-question-circle clr-warning"></i> You rarely do something just out of ...</strong></li>
-                        <li><i class="fa mr-1 fa-circle fa-sm"></i> Agree
-                          <ul class="list-style-type-none">
-                            <li class="ul-tree-sub-parent"><strong><i class="fa mr-1 fa-lg fa-question-circle clr-warning"></i> You are usually highly motivated ...</strong></li>
-                            <li><i class="fa mr-1 fa-circle fa-sm"></i> Agree</li>
-                            <li><i class="fa mr-1 fa-circle fa-sm"></i> Disagree</li>
-                          </ul> 
-                        </li>
-                        <li><i class="fa mr-1 fa-circle fa-sm"></i> Disagree</li>                       
-                      </ul>
-                    </li>
+
                   </ul>
                 </div>
               </div>
-
-              
-
-              
 
             </div>
 
@@ -142,88 +92,121 @@
 
       <div class="clinical-pathway-settings columns">
 
-        <div class="row mb-2">
-          <div class="columns medium-6 bg-black20 pad-1">
-            <p class="mb-0-5 subheader"><strong>Type</strong></p>
-            <select name="" id="">
-              <option value="">Radio Button</option>
-              <option value="">Checkbox</option>
-              <!-- <option value="">Right</option>
-              <option value="">Here</option> -->
-
-            </select>
-          </div>          
-        </div>
-
-        <div class="row mb-2">
-          <div class="columns bg-black20 pad-1">
-            <p class="mb-0 subheader"><strong>Question</strong></p>
-            <input type="text" class="editable" value="In which continent are you from?">
-          </div>          
-        </div>
-
-        <div class="row mb-2 bg-black20">
-          <div class="column">
-            <div class="row">
-              <div class="columns pad-1">
-                <p class="mb-0 subheader">
-                  <strong>Answer Options</strong>
-                  <button class="button clear hollow success mb-0"><i class="fa fa-plus"></i> Add</button>
-                </p>
-              </div>
-              <div class="columns shrink pad-1">
-                <!-- <button class="button clear hollow success pull-right mb-0"><i class="fa fa-plus"></i> Add</button> -->
-              </div>
+        <div class="row pl-1 pr-1 pt-0 mb-1">
+          <div class="columns bg-black20 pt-1 border-radius-sm">
+            <div>
+              <p class="subheader"><strong>QUESTION</strong></p>
+              <h4>How is your pain today?</h4>
             </div>
-            <div class="row">
-              <div class="columns">
-                <ul class="list-style-type-none ml-0">
-                  <li class="mb-0-5 align-middle">
-                    <button class="button clear hollow mb-0 alert"><i class="fa fa-times"></i></button>
-                    <button class="button clear hollow mb-0 secondary"><i class="fa fa-pencil"></i></button> 
-                    Africa
-                  </li>
-                  <li class="mb-0-5 align-middle">
-                    <button class="button clear hollow mb-0 alert"><i class="fa fa-times"></i></button> 
-                    <button class="button clear hollow mb-0 secondary"><i class="fa fa-pencil"></i></button> 
-                    Antartica
-                  </li>
-                  <li class="mb-0-5 align-middle">
-                    <button class="button clear hollow mb-0 alert"><i class="fa fa-times"></i></button> 
-                    <button class="button clear hollow mb-0 secondary"><i class="fa fa-pencil"></i></button> 
-                    Asia
-                  </li>
-                  <li class="mb-0-5 align-middle">
-                    <button class="button clear hollow mb-0 alert"><i class="fa fa-times"></i></button> 
-                    <button class="button clear hollow mb-0 secondary"><i class="fa fa-pencil"></i></button> 
-                    Australia
-                  </li>
-                  <li class="mb-0-5 align-middle">
-                    <button class="button clear hollow mb-0 alert"><i class="fa fa-times"></i></button> 
-                    <button class="button clear hollow mb-0 secondary"><i class="fa fa-pencil"></i></button> 
-                    Europe
-                  </li>
-                  <li class="mb-0-5 align-middle">
-                    <button class="button clear hollow mb-0 alert"><i class="fa fa-times"></i></button> 
-                    <button class="button clear hollow mb-0 secondary"><i class="fa fa-pencil"></i></button> 
-                    North America
-                  </li>
-                  <li class="mb-0-5 align-middle">
-                    <button class="button clear hollow mb-0 alert"><i class="fa fa-times"></i></button> 
-                    <button class="button clear hollow mb-0 secondary"><i class="fa fa-pencil"></i></button> 
-                    South America
-                  </li>
-                </ul>
-              </div>
+            <div>
+              <p class="subheader"><strong>ANSWER SELECTED</strong></p>
+              <h4>10</h4>
             </div>
           </div>
         </div>
+
+        <div class="row mb-2">
+          <div class="columns ml-0 mr-0">
+
+                <div class="dropdown">
+                  <button class="dropbtn button hollow clear small success mb-0"><i class="fa fa-plus"></i> Add task</button>
+                  <div class="dropdown-content">                          
+                    <ul class="ml-0 mb-1 mt-1">
+                      <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>PATIENT</strong></small></span></li>
+                      <li class="list-style-type-none"><a href="">Set to-do</a></li>
+                      <li class="list-style-type-none"><a href="">Reminder</a></li>
+                    </ul>
+                    <ul class="ml-0 mb-1 mt-1">
+                      <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
+                      <li class="list-style-type-none"><a href="">Set to-do</a></li>
+                    </ul>
+                    <ul class="ml-0 mb-1 mt-1">
+                      <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>PATHWAY</strong></small></span></li>
+                      <li class="list-style-type-none"><a href="">Add events to pathway</a></li>
+                    </ul>
+                    
+                  </div>
+                </div>
+            
+            <div>
+                    
+              <div class="mb-1 toggler">
+                <div class="row expanded bg-black20 pt-1 border-radius-sm">
+                  <div class="columns toggler-handler">
+                    <p class="mb-0"><strong>Call Dr. Strange and schedule an appointment for a follow up check up.</strong></p>
+                    <p class="subheader">To-do for Sarah Burbon</p>
+                  </div>
+                  <div class="columns shrink toggler-handler">
+                    <div class="pull-right">                            
+                      <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                      <button class="button hollow clear"><i class="fa fa-chevron-down"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row pt-1 toggler-target b-left-1 b-bottom-1 b-right-1" style="display: none;">
+                  <div class="columns">
+                    <div class="row mb-1">
+                      <div class="columns medium-6">
+                        <p class="subheader">Task</p>
+                        <!-- <input type="text" value="Pathway Event"> -->
+                        <select name="" id="">
+                          <option value="">Feed the Cats</option>
+                          <option value="">Feed the Dogs</option>
+                          <option value="">Feed the Cats to the Dogs</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row mb-1">
+                      <div class="columns">
+                        <p class="subheader">Select Advocate</p>
+                        <!-- <input type="text" value="Pain Intensity Survey"> -->
+                        <select name="" id="">
+                          <option value="">Sarah Burbon</option>
+                          <option value="">Chachi Gonzales</option>
+                        </select>
+                      </div>                            
+                    </div>                          
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-1 toggler">
+                <div class="row expanded bg-black20 pt-1 border-radius-sm">
+                  <div class="columns toggler-handler">
+                    <p class="mb-0"><strong>Sarah Burbon will schedule you a check up with Dr. Strange.</strong></p>
+                    <p class="subheader">Reminder for Patient</p>
+                  </div>
+                  <div class="columns shrink">
+                    <div class="pull-right">                                                        
+                      <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                      <button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row pt-1 toggler-target b-left-1 b-bottom-1 b-right-1" style="display: none;">
+                  <div class="columns">
+                    <div class="row mb-1">
+                      <div class="columns medium-6">
+                        <p class="subheader">Select a Form</p>
+                        <input type="text" value="Pre-op Evaluation and clearance Form">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>          
+        </div>
+
+
             
 
       </div>
     </div>
   </div>
-  <div class="reveal large" id="subtask" data-reveal>
+<!--   <div class="reveal large" id="subtask" data-reveal>
     <div class="reveal-heading">
       And this my friend is where we add subtasks to forms.
     </div>
@@ -359,7 +342,6 @@
                           <div class="row mb-1">
                             <div class="columns medium-6">
                               <p class="subheader">Task</p>
-                              <!-- <input type="text" value="Pathway Event"> -->
                               <select name="" id="">
                                 <option value="">Feed the Cats</option>
                                 <option value="">Feed the Dogs</option>
@@ -370,7 +352,6 @@
                           <div class="row mb-1">
                             <div class="columns">
                               <p class="subheader">Select Advocate</p>
-                              <!-- <input type="text" value="Pain Intensity Survey"> -->
                               <select name="" id="">
                                 <option value="">Sarah Burbon</option>
                                 <option value="">Chachi Gonzales</option>
@@ -521,7 +502,6 @@
                           <div class="row mb-1">
                             <div class="columns medium-6">
                               <p class="subheader">Task</p>
-                              <!-- <input type="text" value="Pathway Event"> -->
                               <select name="" id="">
                                 <option value="">Feed the Cats</option>
                                 <option value="">Feed the Dogs</option>
@@ -532,7 +512,6 @@
                           <div class="row mb-1">
                             <div class="columns">
                               <p class="subheader">Select Advocate</p>
-                              <!-- <input type="text" value="Pain Intensity Survey"> -->
                               <select name="" id="">
                                 <option value="">Sarah Burbon</option>
                                 <option value="">Chachi Gonzales</option>
@@ -611,7 +590,7 @@
     <button class="close-button" data-close aria-label="Close modal" type="button">
       <span aria-hidden="true">&times;</span>
     </button>
-  </div>
+  </div> -->
 
 
 

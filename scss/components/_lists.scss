@@ -936,7 +936,7 @@ ul.vertical-list {
 }
 
 .table-list {
-  display: table;
+  display: block;
   width: 100%;
   table-layout: fixed;
 }
@@ -999,7 +999,7 @@ ul.vertical-list {
     border-radius: $global-radius;
     border-spacing: 0 3px;
     li.table-list-item {
-      box-shadow: 0 0 1px rgba($black, $B-dividers);
+      box-shadow: 0 0 0 1px rgba($black, $B-dividers);
       border-radius: $global-radius;
       .table-list-cell {
         vertical-align: middle;
@@ -1048,6 +1048,36 @@ ul.vertical-list {
           color: $white;
           .subheader {
             color: $white !important;
+          }
+        }
+      }
+    }
+    &:last-child {
+      &:before {
+        content: ' ';
+        position: absolute;
+        left: 16px;
+        bottom: 30px;
+        width: 23px;
+        height: 2px;
+        margin: auto 0;
+        background: rgba($black, $B-dividers);
+      }
+    }
+  }
+  &.compact {
+    .listing-title {
+      margin-top: 5px;
+      font-size: rem-calc(12);
+    }
+    .table-list {
+      margin: 6px 0 0;
+      li.table-list-item {
+        .table-list-cell {
+          padding: 4px 5px;
+          p {
+            font-size: rem-calc(12);
+            margin-bottom: 0;
           }
         }
       }
@@ -1290,22 +1320,62 @@ ul.vertical-list {
 }
 
 .ul-tree {
+  // ul-tree Variables
+  $treeline-color: #c1c1c1;
+  // ul-tree Variables
+
   list-style-type: none;
   li {
+    user-select: none;
     font-size: .875rem;
     list-style-type: none;
-    position: relative;
-    white-space: nowrap;
-    // overflow: hidden;
-    text-overflow: ellipsis;
+    position: relative;    
     padding-left: .63rem;
     margin-left: .5rem;
-    // font-weight: bold;
-    // color: #e1e1e1;
-
-    border-left: 1px solid #c1c1c1;
+    border-left: 1px solid $treeline-color;
     i {
       color: #c1c1c1;
+    }
+
+    &.ul-tree-child {
+      padding-bottom: .25rem;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      &.active {
+        > i.fa-circle {
+          @extend .clr-success;
+        }
+      }
+
+    }
+
+    span {
+      padding: .25rem .5rem;
+      // border-radius: 4px;
+      overflow: hidden;
+      &:hover {
+        cursor: pointer;
+        background-color: #e1e1e1;
+      }
+    }
+
+    &.selected {
+      & > span {
+        @extend .clr-primary;
+        color: #fff;
+        // border-radius: 4px;
+        font-weight: bold;
+        background-color: #e1e1e1;
+        // @extend .bg-success;
+        transition: all .5s;
+        &:hover {
+          // @extend .clr-success;
+          color: darken(#fff, 10%);
+          transition: all .5s;
+        }
+      }
+        
     }
 
     &:last-child {
@@ -1313,8 +1383,8 @@ ul.vertical-list {
       &:after {
         content: "";
         width: 1px;
-        height: 18px;
-        background-color: #c1c1c1;
+        height: 17px;
+        background-color: $treeline-color;
         position: absolute;
         top: -7px;
         left: 0px;
@@ -1324,33 +1394,17 @@ ul.vertical-list {
       content: "";
       width: 10px;
       height: 1px;
-      background-color: #c1c1c1;
+      background-color: $treeline-color;
       position: absolute;
       top: .6rem;
       left: 0px;
     }
-    // &:after {
-    //   content: "";
-    //   width: 1px;
-    //   height: 25px;
-    //   background-color: #323232;
-    //   position: absolute;
-    //   top: 0rem;
-    //   left: 0px;
-    // }
-    // &:last-child {
-    //   &:after {
-    //     content: "";
-    //     width: 1px;
-    //     height: 25px;
-    //     background-color: #323232;
-    //     position: absolute;
-    //     top: 0rem;
-    //     left: 0px;
-    //   } 
-    // }
 
     &.ul-tree-parent, &.ul-tree-sub-parent {
+      display: list-item;
+      // overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
       border-left: 0px;
       padding-left: 0px;
       margin-left: 0px;
@@ -1363,20 +1417,21 @@ ul.vertical-list {
     }
 
     &.ul-tree-sub-parent {
+      padding-top: .25rem;
       &:before {
         content: "";
         width: 14px;
         height: 1px;
-        background-color: #c1c1c1;
+        background-color: $treeline-color;
         position: absolute;
-        top: 11px;
+        top: 14px;
         left: -.88rem;
       }
       &:after {
         content: "";
         width: 1px;
-        height: 17px;
-        background-color: #c1c1c1;
+        height: 20px;
+        background-color: $treeline-color;
         position: absolute;
         top: -5px;
         left: -.95rem;
