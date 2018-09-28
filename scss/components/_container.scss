@@ -13,7 +13,10 @@
   .full-page-body {
     margin: 0px !important;
     overflow: hidden;
-    overflow-y: scroll;
+    
+    &.full-page-body-scrollable {
+      overflow-y: scroll;
+    }
     
     .full-page-body-sidebar {
       height: 100%;
