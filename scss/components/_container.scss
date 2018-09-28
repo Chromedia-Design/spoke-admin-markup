@@ -1,22 +1,35 @@
+// Apply to full page ----------
 #full-page {
   display: grid;
-<<<<<<< HEAD
-=======
-  grid-template-columns: repeat(12,1fr);
-  grid-template-rows: repeat(12,1fr);
-  grid-gap: 1rem;
->>>>>>> 8e0fb73918fcdaf80cc2a9ae6b311665f18d6649
+  // grid-gap: 1rem;
   height: 100vh !important;
   max-height: 100vh !important;
 
   grid-template-rows: 83px auto;
 
-  .full-page-header {}
+  .full-page-header {
+    margin: 0px !important;
+  }
   .full-page-body {
+    margin: 0px !important;
     overflow: hidden;
     overflow-y: scroll;
+    
+    .full-page-body-sidebar {
+      height: 100%;
+      overflow: hidden;
+      overflow-y: scroll;
+    }
+    .full-page-body-content {
+      height: 100%;
+      overflow: hidden;
+      overflow-y: scroll;
+
+      padding-top: 2rem;
+    }
   }
 }
+// Apply to full page ----------
 
 
 .card {
