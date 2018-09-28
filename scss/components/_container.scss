@@ -1,4 +1,6 @@
+// Apply to full page ----------
 #full-page {
+<<<<<<< HEAD
 	display: grid;
 	grid-template-columns: repeat(12,1fr);
 	grid-template-rows: repeat(12,1fr);
@@ -13,8 +15,40 @@
 		overflow: hidden;
 		overflow-y: scroll;
 	}
-}
+=======
+  display: grid;
+  // grid-gap: 1rem;
+  height: 100vh !important;
+  max-height: 100vh !important;
+  grid-template-rows: 83px auto;
 
+  .full-page-header {
+    margin: 0px !important;
+  }
+  .full-page-body {
+    margin: 0px !important;
+    overflow: hidden;
+    
+    &.full-page-body-scrollable {
+      overflow-y: scroll;
+    }
+    
+    .full-page-body-sidebar {
+      height: 100%;
+      overflow: hidden;
+      overflow-y: scroll;
+    }
+    .full-page-body-content {
+      height: 100%;
+      overflow: hidden;
+      overflow-y: scroll;
+
+      padding-top: 2rem;
+    }
+  }
+>>>>>>> 46a2ec919b8e7a134f46c0da0ed2f9c3186fbe69
+}
+// Apply to full page ----------
 
 .card {
 	display: inline-block;
@@ -46,6 +80,7 @@
 }
 
 .img-card {
+<<<<<<< HEAD
 	@extend .card;
 	height: auto;
 	position: relative;
@@ -249,6 +284,212 @@
 	&.large {
 		height: 32rem;
 	}
+=======
+  @extend .card;
+  height: auto;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  &.empty {
+    background-color: transparent;
+    border-radius: $global-radius;
+    border: 1px dashed rgba($black, $B-dividers);
+    .img-card-head {
+      padding: 53%;
+      background-color: transparent;
+      > .text-placeholder {
+        position: absolute;
+        z-index: 1;
+        top: 45%;
+        left: 0;
+        width: 95%;
+        text-align: center;
+        color: rgba($black, $B-hinttext);
+        font-weight: $global-weight-bold;
+      }
+    }
+  }
+  &:hover {
+    position: relative;
+    // transform: translate(-1px, -1px);
+    box-shadow: 2px 2px 10px 2px rgba($black, $B-dividers);
+  }
+  .img-card-head {
+    position: relative;
+    // height: 55%;
+    padding-bottom: 75%;
+    background-color: $text-black;
+    border-top-left-radius: $global-radius;
+    border-top-right-radius: $global-radius;
+    > img {
+      position: absolute;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      object-fit: cover;
+    }
+    .header, .footer {
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      padding: 0.5rem;
+      background-color: rgba($black, $B-hinttext);
+      .button {
+        margin: 0;
+      }
+
+    }
+    .header {
+      top: 0;
+      background-color: transparent;
+    }
+    .footer {
+      bottom: 0;
+      .label-text {
+        color: $white;
+        font-size: 0.875rem;
+        font-weight: $global-weight-bold;
+        text-transform: uppercase;
+      }
+    }
+    .story-card {
+      position: absolute;
+      left: 0;
+      margin-left: -10px;
+      padding: 0.5rem 1rem;
+      background-color: $secondary-color;
+      display: inline-block;
+      font-family: $body-font-family;
+      &:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: -15px;
+        width: 15px;
+        height: 100%;
+        border-top: 50px solid $secondary-color;
+        border-right: 15px solid transparent;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        font-family: $body-font-family;
+        font-size: 87%;
+        margin: 0;
+        color: $white;
+      }
+      p small {
+        font-size: 60%;
+        line-height: 1em;
+      }
+    }
+    .mpirica-graph {
+      border: none;
+      padding: 55px 15px 15px;
+    }
+  }
+  .img-card-body {
+    position: relative;
+    .img-card-body-section {
+      padding: 0.25rem 0.875rem;
+      border-bottom: 1px solid rgba($black, $B-dividers);
+      &:first-child {
+        padding-top: 0.65rem;
+      }
+      &:last-child {
+        padding-bottom: 0.65rem;
+        border-bottom: none;
+      }
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $text-black;
+      font-family: $body-font-family;
+      margin-bottom: 0;
+    }
+    p,
+    span,
+    small {
+      color: $text-black;
+      margin-bottom: 0;
+      > small {
+        color: inherit;
+        font-size: 0.875rem;
+      }
+      &.subheader {
+        margin: 0;
+        color: rgba($black, $B-subtext);
+      }
+    }
+    span.h6 {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: $text-black;
+    }
+    .button {
+      margin: 0;
+    }
+    a {
+      color: $text-black;
+    }
+    .media-object {
+      position: relative;
+      margin: 0;
+      padding: 0.25rem 0;
+      .media-object-section {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          line-height: 1.5em;
+          margin-bottom: 0;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          width: 100%;
+          > small {
+            font-size: 0.875rem;
+          }
+        }
+        &.logo {
+          flex: 0 1 auto;
+          width: 20%;
+          &.tiny {
+            width: 10%;
+          }
+        }
+      }
+    }
+    .inline-list {
+      > li {
+        display: inline-block;
+        position: relative;
+        color: $text-black;
+        padding: 0;
+        font-size: 12px;
+        border-radius: 10px;
+        padding: 0 8px;
+        border: 1px solid rgba($black, $B-dividers);
+      }
+    }
+  }
+  &.large {
+    height: 32rem;
+  }
+>>>>>>> 46a2ec919b8e7a134f46c0da0ed2f9c3186fbe69
 }
 
 .card-person {
