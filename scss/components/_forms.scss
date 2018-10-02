@@ -887,6 +887,50 @@ input {
 	}
 }
 
+.fancy-input-tag {
+	border-radius: 3px;
+	padding: .5rem;
+	border: 0px;
+	background-color: darken(#fff, 11%) !important;
+	.tag {	
+		display: inline-block;
+		background-color: darken(#fff, 8%) !important;
+		border-radius: 3px;
+		padding-left: .25rem;
+		padding-right: 1.75rem;
+		position: relative;
+		margin-right: .5rem;
+		&:after {
+			position: absolute;
+			right: .4rem;
+			top: 0px;
+			// width: 10px;
+			// height: 10px;
+			content: "\00D7";
+			// background-color: red;
+			border-radius: 10px;
+			overflow: hidden;
+			&:hover {
+				font-weight: bold;
+				cursor: pointer;
+			}
+		}
+	}
+	input {
+		display: inline-block;
+		background-color: transparent;
+		border: 0px;
+		// border-bottom: 1px solid;
+		padding: .25rem 1rem;
+	}
+	// [contenteditable] {
+	// 	display: inline-block;
+	// 	background-color: none;
+	// 	border-bottom: 1px solid;
+	// 	padding: .25rem 1rem;
+	// }
+}
+
 .fancy-input {
 	border-radius: 3px;
 	padding-left: 1rem;
