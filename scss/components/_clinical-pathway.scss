@@ -1,100 +1,100 @@
-// // Advocate Backend
-// .clinical-pathway {
-//   .clinical-pathway-item {
-//     transition: all .25s;
-//     cursor: pointer;
-//     &:hover {
-//       // border: 1px solid red;
+// Advocate Backend
+.clinical-pathway {
+  .clinical-pathway-item {
+    transition: all .25s;
+    cursor: pointer;
+    &:hover {
+      // border: 1px solid red;
 
-//       box-shadow: 0px 0px 20px #ccd1d6;
-//       z-index: 999;
-//       transition: all .5s;
-//     }
-//     .clinical-pathway-main-content {
-//       .clinical-pathway-basic-content {
+      box-shadow: 0px 0px 20px #ccd1d6;
+      z-index: 999;
+      transition: all .5s;
+    }
+    .clinical-pathway-main-content {
+      .clinical-pathway-basic-content {
 
-//       }
-//       .clinical-pathway-details {
-//         user-select: none;
-//       }
-//     }
+      }
+      .clinical-pathway-details {
+        user-select: none;
+      }
+    }
 
-//   }
-// }
+  }
+}
 
-// #ui-add-new-clinical-pathway {
-//   .clinical-pathway-controls {
-//     padding: 1rem 0;
-//     // border-right: 1px solid #e1e1e1;
+#ui-add-new-clinical-pathway {
+  .clinical-pathway-controls {
+    padding: 1rem 0;
+    // border-right: 1px solid #e1e1e1;
 
-//   }
-//   .clinical-pathway-settings {
-//     // background-color: red !important;
-//     padding-top: 2rem;
-//     min-height: 94vh;
-//     max-height: 94vh;
-//     overflow-y: scroll;
+  }
+  .clinical-pathway-settings {
+    // background-color: red !important;
+    padding-top: 2rem;
+    min-height: 94vh;
+    max-height: 94vh;
+    overflow-y: scroll;
 
-//   }
-// }
+  }
+}
 
-// // Add New Pathway Page
-// .clinical-pathway-new-entry-list {
-//   overflow-y: scroll;
-//   &::-webkit-scrollbar {
-//     display: none;
-//   }
-//   &::-moz-scrollbar {
-//     display: none;
-//   }
-//   .clinical-pathway-new-entry {
-//     padding-top: 1rem;
-//     padding-bottom: 1rem;
-//     cursor: pointer;
-//     font-size: .875rem;
-//     position: relative;
-//     border-bottom: 1px solid #ebebeb;
-//     // margin-bottom: .5rem;
-//     border-radius: $global-radius;
-//     // @extend .hide-show-button-on-hover;
-//     @extend .align-middle;
-//     &.active {
-//       @extend .bg-black20;
-//       border-left: 5px solid $success-color;
-//       // color: $success-color;
-//       // font-weight: bold;
-//       // border-top: 1px solid #ebebeb;
-//       border-bottom: 1px solid #ebebeb;
-//       &:hover {
-//         .new-entry-action {
-//           @extend .bg-black10;
-//         }
-//       }
-//       .new-entry-action {
-//         @extend .bg-black20;
-//       }
-//     }
-//     &:hover {
-//       @extend .bg-black20;
-//       color: $primary-color;
-//       &:hover {
-//         .new-entry-action {
-//           @extend .bg-black20;
-//         }
-//       }
-//     }
+// Add New Pathway Page
+.clinical-pathway-new-entry-list {
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  &::-moz-scrollbar {
+    display: none;
+  }
+  .clinical-pathway-new-entry {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+    font-size: .875rem;
+    position: relative;
+    border-bottom: 1px solid #ebebeb;
+    // margin-bottom: .5rem;
+    border-radius: $global-radius;
+    // @extend .hide-show-button-on-hover;
+    @extend .align-middle;
+    &.active {
+      @extend .bg-black20;
+      border-left: 5px solid $success-color;
+      // color: $success-color;
+      // font-weight: bold;
+      // border-top: 1px solid #ebebeb;
+      border-bottom: 1px solid #ebebeb;
+      &:hover {
+        .new-entry-action {
+          @extend .bg-black10;
+        }
+      }
+      .new-entry-action {
+        @extend .bg-black20;
+      }
+    }
+    &:hover {
+      @extend .bg-black20;
+      color: $primary-color;
+      &:hover {
+        .new-entry-action {
+          @extend .bg-black20;
+        }
+      }
+    }
 
-//     .new-entry-title {
-//       user-select: none;
-//     }
-//     .new-entry-action {
-//       height: 100%;
-//     }
-//     &:hover {
-//       .new-entry-action {
-//         opacity: 1;
-//       }
-//     }
-//   }
+    .new-entry-title {
+      user-select: none;
+    }
+    .new-entry-action {
+      height: 100%;
+    }
+    &:hover {
+      .new-entry-action {
+        opacity: 1;
+      }
+    }
+  }
 
-// }
+}
