@@ -1299,7 +1299,7 @@ ul.vertical-list {
 
 .question-marker {
   display: block;
-  padding: 2.1rem 0;
+  padding: 0 1rem 0 0;
 }
 
 .question-content {
@@ -1329,7 +1329,7 @@ ul.vertical-list {
     user-select: none;
     font-size: .875rem;
     list-style-type: none;
-    position: relative;    
+    position: relative;
     padding-left: .63rem;
     margin-left: .5rem;
     border-left: 1px solid $treeline-color;
@@ -1384,7 +1384,7 @@ ul.vertical-list {
           transition: all .5s;
         }
       }
-        
+
     }
 
     &:last-child {
@@ -1397,7 +1397,7 @@ ul.vertical-list {
         position: absolute;
         top: -7px;
         left: 0px;
-      } 
+      }
     }
     &:before {
       content: "";

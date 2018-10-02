@@ -1561,9 +1561,9 @@
                 </div>
                 <div class="shrink columns">
                   <div class="button-align small pull-right mb-0">
-                    <a class="button success rounded" href="clinical-pathway-builder-new2.html"><i class="fa fa-edit"></i>&nbsp; Edit Pathway</a>
+                    <a class="button success rounded" href="clinical-pathway-builder-new2.html"><i
+                      class="fa fa-edit"></i>&nbsp; Edit Pathway</a>
                   </div>
-                </div>
                 </div>
               </div>
 
@@ -1573,10 +1573,157 @@
 
                     <div class="row clinical-pathway-new-entry expanded">
                       <div class="column align-middle new-entry-title new-entry-title">
-                        <b>Pre-Surgery Questionnaire</b>
+                        <b>Patient Answers Pre-Surgery Questionnaire</b>
                       </div>
                       <div class="column align-middle">
-                        <span>Related Forms:&nbsp; </span> <a href="#"><i class="fa fa-file-text-o fa-fw"></i> Pre-Surgery Questionnaire</a>
+                        <span>Related Forms:&nbsp; </span> <a data-open="viewForm"><i class="fa fa-file-text-o fa-fw"></i>
+                        Pre-Surgery Questionnaire</a>
+
+                        <div class="reveal large" id="viewForm" data-reveal data-animation-in="fade-in"
+                             data-animation-out="fade-out">
+                          <div class="row collapse">
+                            <div class="large-12 columns">
+                              <h6 class="reveal-heading">
+                                Pre-surgery Questionnaire
+                              </h6>
+                            </div>
+                          </div>
+                          <form>
+                            <div class="row collapse">
+                              <div class="auto columns">
+                                <div class="reveal-body">
+
+                                  <div class="row collapse">
+                                    <div class="auto columns">
+
+                                      <!--Input Text-->
+                                      <div class="questions-list-entry">
+                                        <div class="question-marker">
+                                          <span class="h6">1.</span>
+                                        </div>
+                                        <div class="question-content">
+                                          <div class="row expanded">
+                                            <div class="medium-9 columns">
+                                              <div class="row collapse align-middle">
+                                                <div class="auto columns">
+                                                  <label for="">What is your name?</label>
+                                                </div>
+                                              </div>
+                                              <div class="row collapse align-middle">
+                                                <div class="auto columns">
+                                                  <input class="mb-0" type="text" placeholder="Answer goes here">
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="medium-3 columns">
+                                              <div class="editable help-text">
+                                                <p class="subheader">Nulla vitae elit libero, a pharetra augue.</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row expanded">
+                                            <div class="auto columns">
+                                              <ul class="tag-cloud compact">
+                                                <li class="tag-cloud-individual-tag">
+                                                  Company
+                                                </li>
+                                              </ul>
+                                            </div>
+                                          </div>
+                                          <div class="row expanded">
+                                            <div class="auto columns">
+                                              <input class="mb-0" type="checkbox"><label class="subheader"><small>Required</small></label>
+                                              <input class="mb-0" type="checkbox"><label class="subheader"><small>Length Set</small></label>
+                                              <input class="mb-0" type="checkbox"><label class="subheader"><small>Email Format</small></label>
+                                              <input class="mb-0" type="checkbox"><label class="subheader"><small>Regex Set</small></label>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="question-options align-middle">
+                                          <a href="#" class="button circle alert hollow">×</a>
+                                        </div>
+                                      </div>
+                                      <!--End of Input Text-->
+                                      <!--Radio Element-->
+                                      <div class="questions-list-entry">
+                                        <div class="question-marker">
+                                          <span class="h6">2.</span>
+                                        </div>
+                                        <div class="question-content">
+                                          <div class="row expanded">
+                                            <div class="medium-9 columns">
+                                              <div class="row collapse align-middle">
+                                                <div class="auto columns">
+                                                  <label for="">How is your pain?</label>
+                                                </div>
+                                              </div>
+                                              <div class="row collapse align-middle">
+                                                <div class="auto columns">
+                                                  <input class="mb-0" type="radio"><label class="">1</label>
+                                                  <input class="mb-0" type="radio"><label class="">2</label>
+                                                  <input class="mb-0" type="radio"><label class="">3</label>
+                                                  <input class="mb-0" type="radio"><label class="">4</label>
+                                                  <input class="mb-0" type="radio"><label class="">5</label>
+                                                  <input class="mb-0" type="radio"><label class="">6</label>
+                                                  <input class="mb-0" type="radio"><label class="">7</label>
+                                                  <input class="mb-0" type="radio"><label class="">8</label>
+                                                  <input class="mb-0" type="radio"><label class="">9</label>
+                                                  <input class="mb-0" type="radio"><label class="">10</label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="medium-3 columns">
+                                              <div class="editable help-text">
+                                                <p class="subheader mb-0">Nulla vitae elit libero, a pharetra augue.</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row expanded">
+                                            <div class="auto columns">
+                                              <ul class="tag-cloud compact">
+                                                <li class="tag-cloud-individual-tag">
+                                                  Company
+                                                </li>
+                                              </ul>
+                                            </div>
+                                          </div>
+                                          <div class="row expanded">
+                                            <div class="auto columns">
+                                              <input class="mb-0" type="checkbox" checked><label class="subheader">
+                                              <small>Required</small>
+                                            </label>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="question-options align-middle">
+                                          <a href="#" class="button circle alert hollow">×</a>
+                                        </div>
+                                      </div>
+                                      <!--End of Radio Element-->
+
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="row collapse">
+                              <div class="large-12 columns">
+                                <div class="reveal-footer">
+                                  <div class="button-group pull-right">
+                                    <a class="button link" data-close>Cancel</a>
+                                    <button type="submit" class="button primary">Save Changes</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                          <button class="close-button" data-close aria-label="Close modal" type="button">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+
                       </div>
                       <div class="column shrink align-middle new-entry-action">
                         <span class="switch tiny mb-0">
@@ -1590,10 +1737,11 @@
 
                     <div class="row clinical-pathway-new-entry expanded">
                       <div class="column align-middle new-entry-title">
-                        <b>Functional Capacity Survey</b>
+                        <b>Patient Answers Functional Capacity Survey</b>
                       </div>
                       <div class="column align-middle">
-                        <span>Related Forms:&nbsp; </span> <a href="#"><i class="fa fa-file-text-o fa-fw"></i> Functional Capacity Survey</a>
+                        <span>Related Forms:&nbsp; </span> <a href="#"><i class="fa fa-file-text-o fa-fw"></i>
+                        Functional Capacity Survey</a>
                       </div>
                       <div class="column shrink align-middle new-entry-action">
                         <span class="switch tiny mb-0">
