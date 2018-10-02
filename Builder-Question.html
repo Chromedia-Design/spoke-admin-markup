@@ -94,21 +94,66 @@
 				<div class="row pl-1 pr-1 pt-0 mb-2">
 					<div class="columns bg-black20 pt-1 border-radius-sm">
 						<div>
-							<p class="subheader"><strong>QUESTION</strong></p>
-							<input type="text" class="editable" value="How is your pain today?">
+							<!-- <p class="subheader"><strong>QUESTION</strong></p> -->
+							<input type="text" class="fancy-input" value="How is your pain today?" placeholder="Question">
 						</div>
 						<div class="row align-middle mb-1">
 							<div class="columns medium-6 	pl-0">
-								<select name="" id="" class="mb-0">
+								<select name="" id="" class="fancy-input mb-0 pr-2">
+									<option value="" disabled="true" selected="true">Select input type</option>
 									<option value="">Text</option>
-									<option value="">Number</option>									
+									<option value="">Number</option>
+									<option value="">E-mail</option>									
 									<option value="">Checkbox(multiple)</option>
 									<option value="">Radio Button</option>
 									<option value="">Dropdown</option>
-									<option value="" selected>Scale</option>
+									<option value="">Scale</option>
+									<option value="">Date</option>
+									<option value="">Time</option>
+									<option value="">Date and Time</option>
 								</select>
+							</div>
+							<div class="columns">
+								<span class="fancy-checkbox small align-middle">
+				                    <input id="spcp1" type="checkbox" class="mr-0" checked="true">
+				                    <label class="subheader" for="checkbox1">Required</label>
+				                  </span>
 							</div>							
 						</div>
+						<!-- <div class="row mb-1">
+							<div class="columns">
+								<fieldset>
+				                  <span class="fancy-checkbox small align-middle">
+				                    <input id="spcp1" type="checkbox" class="mr-0">
+				                    <label class="subheader" for="checkbox1">Set</label>
+				                  </span>
+				                  <span class="fancy-checkbox small align-middle">
+				                    <input id="spcp1" type="checkbox" class="mr-0">
+				                    <label class="subheader" for="checkbox1">Of</label>
+				                  </span>
+				                  <span class="fancy-checkbox small align-middle">
+				                    <input id="spcp1" type="checkbox" class="mr-0">
+				                    <label class="subheader" for="checkbox1">Rules</label>
+				                  </span>
+				                  <span class="fancy-checkbox small align-middle">
+				                    <input id="spcp1" type="checkbox" class="mr-0">
+				                    <label class="subheader" for="checkbox1">For</label>
+				                  </span>
+				                  <span class="fancy-checkbox small align-middle">
+				                    <input id="spcp1" type="checkbox" class="mr-0">
+				                    <label class="subheader" for="checkbox1">selected</label>
+				                  </span>
+				                  <span class="fancy-checkbox small align-middle">
+				                    <input id="spcp1" type="checkbox" class="mr-0">
+				                    <label class="subheader" for="checkbox1">input</label>
+				                  </span>
+				                  <span class="fancy-checkbox small align-middle">
+				                    <input id="spcp1" type="checkbox" class="mr-0">
+				                    <label class="subheader" for="checkbox1">type</label>
+				                  </span>
+				                </fieldset>
+							</div>
+						</div> -->
 					</div>
 				</div>
 
@@ -122,7 +167,7 @@
 						<div class="mb-1">
 							<div class="row expanded bg-black20 pt-0-5 pb-0-5 border-radius-sm align-middle">
 								<div class="columns">
-									<input type="text" class="editable mb-0 bg-white border-radius-sm borderless">
+									<input type="text" class="fancy-input mb-0" placeholder="New Answer Option">
 								</div>
 								<div class="columns shrink">
 									<div class="pull-right">                            
@@ -144,6 +189,7 @@
 								<div class="columns shrink">
 									<div class="pull-right">                            
 										<button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+										<button class="button hollow primary clear mb-0"><i class="fa fa-pencil"></i></button>
 										<button class="button hollow clear success mb-0"><i class="fa fa-plus"></i></button>
 									</div>
 								</div>
@@ -158,6 +204,7 @@
 								<div class="columns shrink">
 									<div class="pull-right">                                                        
 										<button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+										<button class="button hollow primary clear mb-0"><i class="fa fa-pencil"></i></button>
 										<button class="button hollow clear success mb-0"><i class="fa fa-plus"></i></button>
 									</div>
 								</div>
@@ -172,6 +219,7 @@
 								<div class="columns shrink">
 									<div class="pull-right">                                                        
 										<button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+										<button class="button hollow primary clear mb-0"><i class="fa fa-pencil"></i></button>
 										<button class="button hollow clear success mb-0"><i class="fa fa-plus"></i></button>
 									</div>
 								</div>
@@ -186,6 +234,7 @@
 								<div class="columns shrink">
 									<div class="pull-right">                                                        
 										<button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+										<button class="button hollow primary clear mb-0"><i class="fa fa-pencil"></i></button>
 										<button class="button hollow clear success mb-0"><i class="fa fa-plus"></i></button>
 									</div>
 								</div>
@@ -200,6 +249,7 @@
 								<div class="columns shrink">
 									<div class="pull-right">                                                        
 										<button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+										<button class="button hollow primary clear mb-0"><i class="fa fa-pencil"></i></button>
 										<button class="button hollow clear success mb-0"><i class="fa fa-plus"></i></button>
 									</div>
 								</div>
@@ -214,6 +264,7 @@
 								<div class="columns shrink">
 									<div class="pull-right">                                                        
 										<button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+										<button class="button hollow primary clear mb-0"><i class="fa fa-pencil"></i></button>
 										<button class="button hollow clear success mb-0"><i class="fa fa-plus"></i></button>
 									</div>
 								</div>
@@ -228,6 +279,7 @@
 								<div class="columns shrink">
 									<div class="pull-right">                                                        
 										<button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+										<button class="button hollow primary clear mb-0"><i class="fa fa-pencil"></i></button>
 										<button class="button hollow clear success mb-0"><i class="fa fa-plus"></i></button>
 									</div>
 								</div>
@@ -242,6 +294,7 @@
 								<div class="columns shrink">
 									<div class="pull-right">                                                        
 										<button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+										<button class="button hollow primary clear mb-0"><i class="fa fa-pencil"></i></button>
 										<button class="button hollow clear success mb-0"><i class="fa fa-plus"></i></button>
 									</div>
 								</div>
@@ -256,6 +309,7 @@
 								<div class="columns shrink">
 									<div class="pull-right">                                                        
 										<button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+										<button class="button hollow primary clear mb-0"><i class="fa fa-pencil"></i></button>
 										<button class="button hollow clear success mb-0"><i class="fa fa-plus"></i></button>
 									</div>
 								</div>
@@ -270,6 +324,7 @@
 								<div class="columns shrink">
 									<div class="pull-right">                                                        
 										<button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+										<button class="button hollow primary clear mb-0"><i class="fa fa-pencil"></i></button>
 										<button class="button hollow clear success mb-0"><i class="fa fa-plus"></i></button>
 									</div>
 								</div>
