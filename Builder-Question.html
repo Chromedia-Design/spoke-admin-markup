@@ -22,7 +22,10 @@
           </div>
         </div>
         <div class="columns">
-          <span class="h6">Pain Threshold</span>
+          <span class="h5">Pain Threshold</span>
+          &nbsp;
+          <a href="#" class="link white-color ml-1 mb-0"><i class="fa fa-edit"></i></a>
+          <!-- <span class="h6">Pain Threshold</span> -->
           <!-- <input type="text" class="editable clr-white mb-0" value="Total Knee Replacement">
           <p class="subheader mb-0 white">
             <small>Pathway Description</small>
@@ -47,11 +50,15 @@
 
           <div class="row pr-1 mb-1 mt-1 align-middle">
             <div class="columns">
-              <h6 class="mb-0-5">TASK BUILDER?</h6>
+              <!-- <h6 class="mb-0-5">TASK BUILDER?</h6> -->
+              <ul class="tabs" data-tabs id="example-tabs">
+                <li class="tabs-title"><a href="#panel1" aria-selected="true">Question Builder</a></li>
+                <li class="tabs-title is-active"><a data-tabs-target="panel2" href="#panel2">Task Builder</a></li>
+              </ul>
             </div>
           </div>
 
-          <div class="clinical-pathway-new-entry-list">
+          <div class=" clinical-pathway-new-entry-list">
 
             <div class="row">
               <div class="columns">
@@ -60,7 +67,7 @@
                     <i class="fa mr-1 fa-lg fa-question-circle clr-warning"></i>
                     <strong> How is your pain today?</strong>
                   </li>
-                  <li class="toggler-target ul-tree-child"><i class="fa mr-0-5 fa-circle"></i><span>1</span></li>
+                  <li class="toggler-target ul-tree-child"><i class="fa mr-0-5 fa-circle"></i><i class="fa mr-0-5 fa-plus clr-success"></i><span>1</span></li>
                   <li class="toggler-target ul-tree-child"><i class="fa mr-0-5 fa-circle"></i><span>2</span></li>
                   <li class="toggler-target ul-tree-child"><i class="fa mr-0-5 fa-circle"></i><span>3</span></li>
                   <li class="toggler-target ul-tree-child"><i class="fa mr-0-5 fa-circle"></i><span>4</span></li>
@@ -69,17 +76,14 @@
                   <li class="toggler-target ul-tree-child"><i class="fa mr-0-5 fa-circle"></i><span>7</span></li>
                   <li class="toggler-target ul-tree-child"><i class="fa mr-0-5 fa-circle"></i><span>8</span></li>
                   <li class="toggler-target ul-tree-child"><i class="fa mr-0-5 fa-circle"></i><span>9</span></li>
-                  <li class="toggler-target ul-tree-child active selected"><i
-                    class="fa mr-0-5 fa-circle"></i><span>10</span>
+                  <li class="toggler-target ul-tree-child active selected"><i class="fa mr-0-5 fa-circle"></i><span>10</span>
                     <ul class="toggler">
-                      <li class="ul-tree-sub-parent toggler-handler"><strong><i
-                        class="fa mr-1 fa-lg fa-chevron-circle-down clr-warning"></i> Did you drink your medicine last
-                        night?</strong></li>
+                      <li class="ul-tree-sub-parent toggler-handler"><strong><i class="fa mr-1 fa-lg fa-chevron-circle-down clr-warning"></i> Did you drink your medicine last night?</strong></li>
                       <li class="toggler-target ul-tree-child"><i class="fa mr-0-5 fa-circle"></i><span>Yes</span></li>
-                      <li class="toggler-target ul-tree-child active"><i class="fa mr-0-5 fa-circle"></i><span>No</span>
-                      </li>
+                      <li class="toggler-target ul-tree-child active"><i class="fa mr-0-5 fa-circle"></i><span>No</span></li>
                     </ul>
                   </li>
+
                 </ul>
               </div>
             </div>
@@ -98,20 +102,86 @@
         <div class="columns bg-black20 pt-1 border-radius-sm">
           <div>
             <p class="subheader"><strong>QUESTION</strong></p>
-            <input type="text" class="editable" value="How is your pain today?">
+            <input type="text" class="fancy-input" value="How is your pain today?" placeholder="Enter new Question">
           </div>
           <div class="row align-middle mb-1">
-            <div class="columns medium-6 	pl-0">
-              <select name="" id="" class="mb-0">
+            <div class="columns medium-6 pl-0">
+              <p class="subheader"><strong>CATEGORY</strong></p>
+              <select name="" id="" class="fancy-input mb-0 pr-2">
+                <option value="" disabled="true" selected="true">Select Category</option>
+                <option value="">List</option>
+                <option value="">Of</option>
+                <option value="">Treatments</option>
+                <option value="">And</option>
+                <option value="">Company</option>
+              </select>
+            </div>
+            <div class="columns">
+              <!-- <span class="fancy-checkbox small align-middle mt-2">
+                          <input id="spcp1" type="checkbox" class="mr-0" checked="true">
+                          <label class="subheader" for="checkbox1">Required</label>
+                        </span> -->
+            </div>
+          </div>
+          <div class="row align-middle mb-1">
+            <div class="columns medium-6 pl-0">
+              <p class="subheader"><strong>INPUT TYPE</strong></p>
+              <select name="" id="" class="fancy-input mb-0 pr-2">
+                <option value="" disabled="true" selected="true">Select input type</option>
                 <option value="">Text</option>
                 <option value="">Number</option>
+                <option value="">E-mail</option>
                 <option value="">Checkbox(multiple)</option>
                 <option value="">Radio Button</option>
                 <option value="">Dropdown</option>
-                <option value="" selected>Scale</option>
+                <option value="">Scale</option>
+                <option value="">Date</option>
+                <option value="">Time</option>
+                <option value="">Date and Time</option>
               </select>
             </div>
+            <div class="columns">
+								<span class="fancy-checkbox small align-middle mt-2">
+				                    <input id="spcp1" type="checkbox" class="mr-0" checked="true">
+				                    <label class="subheader" for="checkbox1">Required</label>
+				                  </span>
+            </div>
           </div>
+
+          <!-- <div class="row mb-1">
+            <div class="columns">
+              <fieldset>
+                        <span class="fancy-checkbox small align-middle">
+                          <input id="spcp1" type="checkbox" class="mr-0">
+                          <label class="subheader" for="checkbox1">Set</label>
+                        </span>
+                        <span class="fancy-checkbox small align-middle">
+                          <input id="spcp1" type="checkbox" class="mr-0">
+                          <label class="subheader" for="checkbox1">Of</label>
+                        </span>
+                        <span class="fancy-checkbox small align-middle">
+                          <input id="spcp1" type="checkbox" class="mr-0">
+                          <label class="subheader" for="checkbox1">Rules</label>
+                        </span>
+                        <span class="fancy-checkbox small align-middle">
+                          <input id="spcp1" type="checkbox" class="mr-0">
+                          <label class="subheader" for="checkbox1">For</label>
+                        </span>
+                        <span class="fancy-checkbox small align-middle">
+                          <input id="spcp1" type="checkbox" class="mr-0">
+                          <label class="subheader" for="checkbox1">selected</label>
+                        </span>
+                        <span class="fancy-checkbox small align-middle">
+                          <input id="spcp1" type="checkbox" class="mr-0">
+                          <label class="subheader" for="checkbox1">input</label>
+                        </span>
+                        <span class="fancy-checkbox small align-middle">
+                          <input id="spcp1" type="checkbox" class="mr-0">
+                          <label class="subheader" for="checkbox1">type</label>
+                        </span>
+                      </fieldset>
+            </div>
+          </div> -->
         </div>
       </div>
 
@@ -125,7 +195,7 @@
           <div class="mb-1">
             <div class="row expanded bg-black20 pt-0-5 pb-0-5 border-radius-sm align-middle">
               <div class="columns">
-                <input type="text" class="editable mb-0 bg-white border-radius-sm borderless">
+                <input type="text" class="fancy-input mb-0" placeholder="New Answer Option">
               </div>
               <div class="columns shrink">
                 <div class="pull-right">
@@ -147,6 +217,7 @@
               <div class="columns shrink">
                 <div class="pull-right">
                   <button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+                  <button class="button hollow primary clear mb-0"><i class="fa fa-pencil"></i></button>
                   <button class="button hollow clear success mb-0"><i class="fa fa-plus"></i></button>
                 </div>
               </div>
@@ -161,6 +232,7 @@
               <div class="columns shrink">
                 <div class="pull-right">
                   <button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+                  <button class="button hollow primary clear mb-0"><i class="fa fa-pencil"></i></button>
                   <button class="button hollow clear success mb-0"><i class="fa fa-plus"></i></button>
                 </div>
               </div>
@@ -175,6 +247,7 @@
               <div class="columns shrink">
                 <div class="pull-right">
                   <button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+                  <button class="button hollow primary clear mb-0"><i class="fa fa-pencil"></i></button>
                   <button class="button hollow clear success mb-0"><i class="fa fa-plus"></i></button>
                 </div>
               </div>
@@ -189,6 +262,7 @@
               <div class="columns shrink">
                 <div class="pull-right">
                   <button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+                  <button class="button hollow primary clear mb-0"><i class="fa fa-pencil"></i></button>
                   <button class="button hollow clear success mb-0"><i class="fa fa-plus"></i></button>
                 </div>
               </div>
@@ -203,6 +277,7 @@
               <div class="columns shrink">
                 <div class="pull-right">
                   <button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+                  <button class="button hollow primary clear mb-0"><i class="fa fa-pencil"></i></button>
                   <button class="button hollow clear success mb-0"><i class="fa fa-plus"></i></button>
                 </div>
               </div>
@@ -217,6 +292,7 @@
               <div class="columns shrink">
                 <div class="pull-right">
                   <button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+                  <button class="button hollow primary clear mb-0"><i class="fa fa-pencil"></i></button>
                   <button class="button hollow clear success mb-0"><i class="fa fa-plus"></i></button>
                 </div>
               </div>
@@ -231,6 +307,7 @@
               <div class="columns shrink">
                 <div class="pull-right">
                   <button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+                  <button class="button hollow primary clear mb-0"><i class="fa fa-pencil"></i></button>
                   <button class="button hollow clear success mb-0"><i class="fa fa-plus"></i></button>
                 </div>
               </div>
@@ -245,6 +322,7 @@
               <div class="columns shrink">
                 <div class="pull-right">
                   <button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+                  <button class="button hollow primary clear mb-0"><i class="fa fa-pencil"></i></button>
                   <button class="button hollow clear success mb-0"><i class="fa fa-plus"></i></button>
                 </div>
               </div>
@@ -259,6 +337,7 @@
               <div class="columns shrink">
                 <div class="pull-right">
                   <button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+                  <button class="button hollow primary clear mb-0"><i class="fa fa-pencil"></i></button>
                   <button class="button hollow clear success mb-0"><i class="fa fa-plus"></i></button>
                 </div>
               </div>
@@ -273,6 +352,7 @@
               <div class="columns shrink">
                 <div class="pull-right">
                   <button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+                  <button class="button hollow primary clear mb-0"><i class="fa fa-pencil"></i></button>
                   <button class="button hollow clear success mb-0"><i class="fa fa-plus"></i></button>
                 </div>
               </div>
