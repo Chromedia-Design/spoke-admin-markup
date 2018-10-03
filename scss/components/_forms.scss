@@ -270,7 +270,7 @@ textarea, div, label, select {
 		font-family: $body-font-family;
 		flex: 1 0 auto;
 		color: $text-black;
-		margin-bottom: 0.5rem;
+		margin: 0.125rem .5rem;
 		> [type='text'] {
 			display: inline-block;
 			margin-bottom: 0;
