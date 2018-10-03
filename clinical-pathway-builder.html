@@ -361,9 +361,9 @@
 
         <div class="row mb-2">
           <div class="columns bg-black20 pad-1">
-            <p class="mb-0 subheader"><strong><small>Event Description</small></strong></p>
+            <p class="subheader"><strong><small>Title</small></strong></p>
             <!-- <span class="h5">Pre-op antibiotics as indicated</span> -->
-            <input type="text" class="editable" value="Patient reported service experience survey - Physical Therapy Check in">
+            <input type="text" class="fancy-input" value="Patient reported service experience survey - Physical Therapy Check in">
             <!-- <button class="button hollow clear success mb-0"><i class="fa fa-edit"></i></button> -->
           </div>          
         </div>
@@ -396,7 +396,7 @@
               </div>
               <div>
                 <fieldset>
-                  <select name="" id="">
+                  <select name="" id="" class="fancy-input">
                     <option value="1">1 Day(s)</option>
                     <option value="2">2 Day(s)</option>
                     <option value="3">3 Day(s)</option>
@@ -457,7 +457,7 @@
                   <div class="row bg-black10 pt-1 toggler-target">
                     <div class="columns medium-6">
                       <p class="subheader">Select Event</p>                          
-                      <select name="" id="">
+                      <select name="" id="" class="fancy-input">
                         <option value="">Surgery</option>
                         <option value="">Patient Reported Pain Survey</option>
                         <option value="">Post-Op visit scheduled</option>
@@ -465,13 +465,13 @@
                     </div>
                     <div class="columns">
                       <p class="subheader">Time Period</p>
-                      <input type="number" value="5">
+                      <input type="number" value="4" class="fancy-input">
                     </div>
                     <div class="columns">
                       <p class="subheader">&nbsp;</p>
-                      <select name="" id="">
+                      <select name="" id="" class="fancy-input">
                         <option value="">Hour(s)</option>
-                        <option value="">Day(s)</option>
+                        <option value="" selected="">Day(s)</option>
                         <option value="">Month(s)</option>
                         <option value="">Year(s)</option>
                       </select>
@@ -508,8 +508,11 @@
                 <div class="mb-1 toggler">
                       
                   <div class="row expanded bg-white pt-1 border-radius-sm">
+                    <div class="columns shrink toggler-handler">
+                      <i class="fa fa-lg fa-list-ul mt-0-5 clr-secondary"></i>
+                    </div>
                     <div class="columns toggler-handler">
-                      <p class="mb-0"><strong>Pre-op Evaluation and clearance Form</strong></p>
+                      <p class="mb-0"><strong>Pain Threshold</strong></p>
                       <p class="subheader">To-do for Patient</p>
                     </div>
                     <div class="columns shrink">
@@ -526,7 +529,7 @@
                       <div class="row mb-1">
                         <div class="columns medium-6">
                           <p class="subheader">Select a Form</p>
-                          <input type="text" value="Pre-op Evaluation and clearance Form">
+                          <input type="text" value="Pain Threshold"  class="fancy-input">
                         </div>
                       </div>
                     </div>
@@ -536,7 +539,10 @@
                 <div class="mb-1 toggler">
                   
                   <div class="row expanded bg-white pt-1 border-radius-sm">
-                    <div class="columns">
+                    <div class="columns shrink toggler-handler">
+                      <i class="fa fa-lg fa-envelope mt-0-5 clr-secondary"></i>
+                    </div>
+                    <div class="columns toggler-handler">
                       <p class="mb-0"><strong>Feed the Cats</strong></p>
                       <p class="subheader">To-do for Sarah Burbon</p>
                     </div>
@@ -551,9 +557,8 @@
                     <div class="columns">
                       <div class="row mb-1">
                         <div class="columns">
-                          <p class="subheader">Task</p>
-                          <!-- <input type="text" value="Pathway Event"> -->
-                          <select name="" id="">
+                          <p class="subheader">Task</p>                          
+                          <select name="" id="" class="fancy-input">
                             <option value="">Feed the Cats</option>
                             <option value="">Feed the Dogs</option>
                             <option value="">Feed the Cats to the Dogs</option>
@@ -562,9 +567,8 @@
                       </div>
                       <div class="row mb-1">
                         <div class="columns medium-6">
-                          <p class="subheader">Select Advocate</p>
-                          <!-- <input type="text" value="Pain Intensity Survey"> -->
-                          <select name="" id="">
+                          <p class="subheader">Select Advocate</p>                          
+                          <select name="" id="" class="fancy-input">
                             <option value="">Sarah Burbon</option>
                             <option value="">Chachi Gonzales</option>
                           </select>
@@ -583,7 +587,7 @@
                       <p class="subheader mb-1"><strong>Priority Level</strong></p>
                     </div>
                     <div>
-                      <select name="" id="" class="">
+                      <select name="" id=""class="fancy-input">
                         <option value="1">Critical</option>
                         <option value="2">Important</option>
                         <option value="3">Normal</option>
@@ -635,6 +639,9 @@
                         <div class="mb-1 toggler">
                           
                           <div class="row expanded bg-white pt-1 border-radius-sm">
+                            <div class="columns shrink toggler-handler">
+                              <i class="fa fa-lg fa-comment mt-0-5 clr-secondary"></i>
+                            </div>
                             <div class="columns toggler-handler">
                               <p class="mb-0"><strong>Remind the patient to fill up the form.</strong></p>
                               <p class="subheader">To-do for Sarah Burbon</p>
@@ -699,6 +706,9 @@
                         <div class="mb-1 toggler">
                           
                           <div class="row expanded bg-white pt-1 border-radius-sm">
+                            <div class="columns shrink toggler-handler">
+                              <i class="fa fa-lg fa-question-circle mt-0-5 clr-secondary"></i>
+                            </div>
                             <div class="columns toggler-handler">
                               <p class="mb-0"><strong>Please call the patient and remind him/her about the form.</strong></p>
                               <p class="subheader">To-do for Sarah Burbon</p>
@@ -762,6 +772,9 @@
                         <div class="mb-1 toggler">
                           
                           <div class="row expanded bg-white pt-1 border-radius-sm">
+                            <div class="columns shrink toggler-handler">
+                              <i class="fa fa-lg fa-question mt-0-5 clr-secondary"></i>
+                            </div>
                             <div class="columns toggler-handler">
                               <p class="mb-0"><strong>Ok, that patient did not fill up the form, you know what to do.</strong></p>
                               <p class="subheader">To-do for Sarah Burbon</p>
@@ -825,6 +838,9 @@
                         <div class="mb-1 toggler">
                           
                           <div class="row expanded bg-white pt-0-5 border-radius-sm">
+                            <div class="columns shrink toggler-handler">
+                              <i class="fa fa-lg fa-list-ol mt-0-5 clr-secondary"></i>
+                            </div>
                             <div class="columns toggler-handler">
                               <p class="mb-0"><strong>I think it's time to bring out the big gun.</strong></p>
                               <p class="subheader">To-do for Sarah Burbon</p>
@@ -888,6 +904,9 @@
                         <div class="mb-1 toggler">
                           
                           <div class="row expanded bg-white pt-0-5 border-radius-sm">
+                            <div class="columns shrink toggler-handler">
+                              <i class="fa fa-lg fa-list-ul mt-0-5 clr-secondary"></i>
+                            </div>
                             <div class="columns toggler-handler">
                               <p class="mb-0"><strong>OK, THAT'S IT, I"LL GIVE THAT PATIENT A VISIT..</strong></p>
                               <p class="subheader">To-do for THE BOSS</p>
