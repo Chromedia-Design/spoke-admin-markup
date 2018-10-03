@@ -1335,11 +1335,11 @@ ul.vertical-list {
   list-style-type: none;
   li {
     user-select: none;
-    font-size: .875rem;
+    font-size: rem-calc(12);
     list-style-type: none;
     position: relative;
-    padding-left: .63rem;
-    margin-left: .5rem;
+    padding-left: 0.63rem;
+    margin-left: 0.5rem;
     border-left: 1px solid $treeline-color;
     i {
       color: #c1c1c1;
