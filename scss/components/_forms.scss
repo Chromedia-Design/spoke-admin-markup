@@ -268,19 +268,15 @@ textarea, div, label, select {
 	display: inline-block;
 	+ label {
 		font-family: $body-font-family;
-		display: inline;
+		flex: 1 0 auto;
 		color: $text-black;
 		margin-bottom: 0.5rem;
 		> [type='text'] {
 			display: inline-block;
-			margin: 0;
-			width: auto;
-			border-top: none;
-			border-left: none;
-			border-right: none;
+			margin-bottom: 0;
+			width: 100%;
 			line-height: 1.5em;
 			height: 1.75rem;
-			padding: 0 1rem 0.5rem;
 			background-color: transparent;
 		}
 	}
