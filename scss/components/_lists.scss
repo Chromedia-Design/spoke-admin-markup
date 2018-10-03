@@ -1263,15 +1263,8 @@ ul.vertical-list {
 
 .questions-list-entry {
   position: relative;
-  display: flex;
-  padding: 1rem;
-  border-top: 1px dashed rgba($black, $B-dividers);
-  border-left: 1px dashed rgba($black, $B-dividers);
-  border-right: 1px dashed rgba($black, $B-dividers);
   transition: all ease-in-out 0.2s;
-  &:last-child {
-    border-bottom: 1px dashed rgba($black, $B-dividers);
-  }
+  border-top: 1px dashed rgba($black, $B-dividers);
   &:hover {
     background: rgba($secondary-color, 0.06);
   }
@@ -1295,11 +1288,24 @@ ul.vertical-list {
     bottom: rem-calc(-14);
     left: rem-calc(-14);
   }
+  //Child Questions
+  .questions-list-entry {
+    padding-left: 1rem;
+    border-top: none;
+  }
+}
+
+.question-wrapper {
+  display: flex;
+  padding: 1rem;
+  border-bottom: 1px dashed rgba($black, $B-dividers);
+  border-left: 1px dashed rgba($black, $B-dividers);
+  border-right: 1px dashed rgba($black, $B-dividers);
 }
 
 .question-marker {
   display: block;
-  padding: 0 1rem 0 0;
+  white-space: nowrap;
 }
 
 .question-content {
@@ -1323,7 +1329,8 @@ ul.vertical-list {
   // ul-tree Variables
   $treeline-color: #c1c1c1;
   // ul-tree Variables
-
+  margin: 0;
+  padding: 0;
   list-style-type: none;
   li {
     user-select: none;

@@ -1,0 +1,266 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spoke Admin Portal</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<div class="expanded row medium-collapse">
+  <div class="medium-2 columns">
+    <div class="site-nav">
+      <header>
+        <a href="#" class="logo text-center">
+          <img src="img/logo.png" title="Spoke">
+        </a>
+      </header>
+      <ul class="menu vertical" data-accordion-menu>
+        <li>
+          <a href="#">Dashboard</a>
+        </li>
+        <li class="is-active">
+          <a href="#">Patients</a>
+          <ul class="nested vertical menu is-active">
+            <li class="is-active">
+              <a href="#">All Patients</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="medium-10 columns">
+    <div class="content">
+
+      <div class="top-bar">
+        <div class="top-bar-left">
+          <!-- <ul class="menu">
+                <li><input type="search" placeholder="Search"></li>
+                <li><button type="button" class="button">Search</button></li>
+            </ul> -->
+        </div>
+        <div class="top-bar-right">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li>
+              <a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge"
+                                                                                                id="notifCount">6</span></a>
+            </li>
+            <li>
+              <a href="#">Administrator</a>
+              <ul class="menu vertical">
+                <li><a href="#">One</a></li>
+                <li><a href="#">Two</a></li>
+                <li><a href="#">Three</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row expanded">
+        <div class="medium-9 columns medium-centered">
+
+          <nav aria-label="You are here:" role="navigation">
+            <ul class="breadcrumbs">
+              <li><a href="admin-employees.html">Employees</a></li>
+              <li><a href="admin-employee-profile.html">William Pinkerton</a></li>
+              <li>Edit Employee Profile</li>
+            </ul>
+          </nav>
+
+          <div class="page-lead row align-middle collapse">
+            <div class="columns">
+              <span class="h5">Edit Employee Profile</span>
+            </div>
+          </div>
+
+          <div class="callout lo-padded">
+
+            <form>
+              <div class="row">
+                <div class="columns">
+                  <label>First Name
+                    <input type="text" name="" value="William">
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="columns">
+                  <label>Last Name
+                    <input type="text" name="" value="" placeholder="e.g. Jones">
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="columns">
+                  <label>Company Name
+                    <select>
+                      <option value="" disabled>Select a company</option>
+                      <option value="" disabled selected>ACME, Inc.</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="columns">
+                  <label>Policy Number
+                    <input type="text" name="" value="123-4567-7890">
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="columns">
+                  <legend>Gender</legend>
+                  <input type="radio" name="gender" value="male" id="gender" checked=""><label for="gender">Male</label>
+                  <input type="radio" name="gender" value="female" id="gender"><label for="gender">Female</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="columns">
+                  <label>Email Address
+                    <input type="text" name="" value="william.pinkerton@domain.com">
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="medium-6 columns">
+                  <label>Contact Numbers <span class="required">*</span></label>
+                  <div class="row collapse align-middle">
+                    <div class="auto columns">
+                      <div class="checkbox-wrapper align-middle mb-0-5">
+                        <input type="checkbox" checked name="programs" value="" id="programs"><label for="programs"><input type="text" name="programs" placeholder="Enter a value" value="1234567890"></label>
+                        <a href="#" class="button tiny circle hollow mb-0">×</a>
+                      </div>
+                      <div class="checkbox-wrapper align-middle mb-0-5">
+                        <input type="checkbox" name="programs" value="" id="programs"><label for="programs"><input type="text" name="programs" placeholder="Enter a value" value="1234567890"></label>
+                        <a href="#" class="button tiny circle hollow mb-0">×</a>
+                      </div>
+                      <div class="checkbox-wrapper align-middle mb-0-5">
+                        <input type="checkbox" name="programs" value="" id="programs"><label for="programs"><input type="text" name="programs" placeholder="Enter a value" value="1234567890"></label>
+                        <a href="#" class="button tiny circle hollow mb-0">×</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row collapse align-middle">
+                    <div class="auto columns">
+                      <a href="#" class="button info tiny hollow mt-0-5"><i class="fa fa-plus"></i>&nbsp; Add More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="columns">
+                  <div class="row multi-part-input">
+                    <legend class="labelize">Birthdate</legend>
+                    <div class="large-4 columns end">
+                      <select>
+                        <option>March</option>
+                      </select>
+                    </div>
+                    <div class="large-4 columns end">
+                      <select>
+                        <option>17</option>
+                      </select>
+                    </div>
+                    <div class="large-4 columns end">
+                      <select>
+                        <option>1976</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="columns">
+                  <label>Street Address
+                    <input type="text" name="" value="46 Platte St.">
+                    <input type="text" name="" value="">
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-4 columns">
+                  <label>Country
+                    <select>
+                      <option>United States of America</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="large-4 columns">
+                  <label>State
+                    <select>
+                      <option>Denver</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="large-4 columns">
+                  <label>City
+                    <select>
+                      <option>Denver</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-4 columns">
+                  <label>Postal Code
+                    <input type="text" name="" value="654512">
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="columns">
+                  <label>General Note
+                    <textarea></textarea>
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="columns">
+                  <div class="button-group submit">
+                    <a href="admin-employee-profile.html" class="submit button link">Cancel</a>
+                    <a href="#" class="submit button success">Save Changes</a>
+                  </div>
+                </div>
+              </div>
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/what-input/what-input.js"></script>
+<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+
+<script src="js/app.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        var timer;
+
+        $(window).resize(function () {
+            clearTimeout(timer);
+            timer = setTimeout(function () {
+                $('.site-nav, .content').css("height", $(window).height());
+            }, 40);
+        }).resize();
+    });
+
+
+</script>
+
+</body>
+</html>
