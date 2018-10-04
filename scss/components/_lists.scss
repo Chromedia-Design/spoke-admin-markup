@@ -1264,6 +1264,7 @@ ul.vertical-list {
 .questions-list-entry {
   position: relative;
   transition: all ease-in-out 0.2s;
+  margin-bottom: 2px;
   border-top: 1px dashed rgba($black, $B-dividers);
   &:hover {
     background: rgba($secondary-color, 0.06);
@@ -1298,9 +1299,9 @@ ul.vertical-list {
 .question-wrapper {
   display: flex;
   padding: 1rem;
-  border-bottom: 1px dashed rgba($black, $B-dividers);
   border-left: 1px dashed rgba($black, $B-dividers);
   border-right: 1px dashed rgba($black, $B-dividers);
+  border-bottom: 1px dashed rgba($black, $B-dividers);
 }
 
 .question-marker {
@@ -1334,11 +1335,11 @@ ul.vertical-list {
   list-style-type: none;
   li {
     user-select: none;
-    font-size: .875rem;
+    font-size: rem-calc(12);
     list-style-type: none;
     position: relative;
-    padding-left: .63rem;
-    margin-left: .5rem;
+    padding-left: 0.63rem;
+    margin-left: 0.5rem;
     border-left: 1px solid $treeline-color;
     i {
       color: #c1c1c1;

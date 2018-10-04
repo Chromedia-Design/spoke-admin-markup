@@ -118,6 +118,9 @@ fieldset {
 		margin: 0.5em 0 0 0;
 		+ label {
 			margin-bottom: 0;
+			select {
+				display: inline-block;
+			}
 		}
 	}
 	&.align-middle {
