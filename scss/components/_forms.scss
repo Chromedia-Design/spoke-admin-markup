@@ -958,6 +958,9 @@ input {
 	padding-right: 2rem;
 	border: 0px;
 	background-color: darken(#fff, 11%) !important;
+	&.light {
+		background-color: #fff !important;
+	}
 }
 
 .fancy-checkbox {

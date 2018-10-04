@@ -1,42 +1,42 @@
-// Advocate Backend
-.clinical-pathway {
-  .clinical-pathway-item {
-    transition: all .25s;
-    cursor: pointer;
-    &:hover {
-      // border: 1px solid red;
+// // Advocate Backend
+// .clinical-pathway {
+//   .clinical-pathway-item {
+//     transition: all .25s;
+//     cursor: pointer;
+//     &:hover {
+//       // border: 1px solid red;
 
-      box-shadow: 0px 0px 20px #ccd1d6;
-      z-index: 999;
-      transition: all .5s;
-    }
-    .clinical-pathway-main-content {
-      .clinical-pathway-basic-content {
+//       box-shadow: 0px 0px 20px #ccd1d6;
+//       z-index: 999;
+//       transition: all .5s;
+//     }
+//     .clinical-pathway-main-content {
+//       .clinical-pathway-basic-content {
 
-      }
-      .clinical-pathway-details {
-        user-select: none;
-      }
-    }
+//       }
+//       .clinical-pathway-details {
+//         user-select: none;
+//       }
+//     }
 
-  }
-}
+//   }
+// }
 
-#ui-add-new-clinical-pathway {
-  .clinical-pathway-controls {
-    padding: 1rem 0;
-    // border-right: 1px solid #e1e1e1;
+// #ui-add-new-clinical-pathway {
+//   .clinical-pathway-controls {
+//     padding: 1rem 0;
+//     // border-right: 1px solid #e1e1e1;
 
-  }
-  .clinical-pathway-settings {
-    // background-color: red !important;
-    padding-top: 2rem;
-    min-height: 94vh;
-    max-height: 94vh;
-    overflow-y: scroll;
+//   }
+//   .clinical-pathway-settings {
+//     // background-color: red !important;
+//     padding-top: 2rem;
+//     min-height: 94vh;
+//     max-height: 94vh;
+//     overflow-y: scroll;
 
-  }
-}
+//   }
+// }
 
 // Add New Pathway Page
 .clinical-pathway-new-entry-list {
