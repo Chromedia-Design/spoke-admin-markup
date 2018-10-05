@@ -263,9 +263,9 @@ function selectOnClick(target,targetTree, selectionClass){
 
 
 
-selectOnClick(".ul-tree-child",".ul-tree","selected")
+selectOnClick(".ul-tree-child",".ul-tree, .ul-tree-only-child-selectable","selected")
 
-selectOnClick(".ul-tree-parent, .ul-tree-sub-parent",".ul-tree","selected")
+// selectOnClick(".ul-tree-parent, .ul-tree-sub-parent",".ul-tree","selected")
 
 // replace these values with those generated in your TokBox Account
 var apiKey = "45907482";
