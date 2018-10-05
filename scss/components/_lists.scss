@@ -1274,7 +1274,7 @@ ul.vertical-list {
     position: absolute;
     width: rem-calc(28);
     height: rem-calc(28);
-    line-height: 21px;
+    line-height: rem-calc(27);
     font-weight: bold;
     text-align: center;
     color: $white;
@@ -1393,6 +1393,11 @@ ul.vertical-list {
         }
       }
 
+    }
+
+    &.disabled {
+      cursor: default;
+      opacity: 1;
     }
 
     &:last-child {
