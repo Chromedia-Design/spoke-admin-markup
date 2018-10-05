@@ -147,7 +147,6 @@ $("#chat-video-message").on("click", function () {
         $("#chat-container").find('#videos').animate({'height': '540px'}, 400);
     }
     $("#chat-container").find('.chat-input-container').slideToggle()
-
 })
 
 // Opening a message by clicking a Notification
@@ -251,18 +250,22 @@ $(".toggler").on('click', '.toggler-handler', function(event) {
   console.log(event.target.nodeName)
 });
 
+// QUESTION TREE ------------------------------------------------------------
 function selectOnClick(target,targetTree, selectionClass){
     $(target).on('click', function(event) {
+        // event.stopPropagation()
         event.preventDefault();
         /* Act on the event */
         $(this).parents(targetTree).find(target).removeClass(selectionClass)
         $(this).addClass(selectionClass)
-        
-        // $(this).siblings(target).removeClass(selectionClass)
     });
 }
 
+
+
 selectOnClick(".ul-tree-child",".ul-tree","selected")
+
+selectOnClick(".ul-tree-parent, .ul-tree-sub-parent",".ul-tree","selected")
 
 // replace these values with those generated in your TokBox Account
 var apiKey = "45907482";
