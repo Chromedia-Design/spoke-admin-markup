@@ -1333,6 +1333,14 @@ ul.vertical-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  &.ul-tree-only-parent-selectable {
+
+  }
+
+  &.ul-tree-only-child-selectable {
+    
+  }
   li {
     user-select: none;
     font-size: rem-calc(12);
@@ -1347,7 +1355,7 @@ ul.vertical-list {
 
     &.ul-tree-child {
       padding-bottom: .25rem;
-      overflow: hidden;
+      // overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
       // display: table;
@@ -1363,6 +1371,22 @@ ul.vertical-list {
         }
       }
 
+      &.selected {
+        & > span {
+          @extend .clr-primary;
+          color: #fff;
+          // border-radius: 4px;
+          font-weight: bold;
+          background-color: #e1e1e1;
+          // @extend .bg-success;
+          transition: all .5s;
+          &:hover {
+            // @extend .clr-success;
+            color: darken(#fff, 10%);
+            transition: all .5s;
+          }
+        }
+      }
     }
 
     span {
@@ -1392,7 +1416,6 @@ ul.vertical-list {
           transition: all .5s;
         }
       }
-
     }
 
     &.disabled {

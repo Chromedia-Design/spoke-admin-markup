@@ -73,7 +73,7 @@
 
 							<div class="row">
 								<div class="columns">
-									<ul class="ul-tree">
+									<ul class="ul-tree ul-tree-only-child-selectable">
 										<li class="ul-tree-parent toggler-handler">
 											<i class="fa mr-1 fa-lg fa-question-circle clr-warning"></i>
 											<strong> How is your pain today?</strong>
@@ -145,72 +145,84 @@
 								</div>
 						
 						<div>
+
+              <div class="mb-1 toggler">
+                      
+                <div class="row expanded bg-black20 pt-1 border-radius-sm">
+                  <div class="columns shrink toggler-handler">
+                    <i class="fa fa-lg fa-list-ol mt-0-5 clr-secondary"></i>
+                  </div>
+                  <div class="columns toggler-handler">
+                    <p class="mb-0"><strong>Call Dr. Strange and schedule an appointment for a follow up check up.</strong></p>
+                    <p class="subheader">Advocate</p>
+                  </div>
+                  <div class="columns shrink">
+                    <div class="pull-right">                            
+                      <!-- <button class="button hollow secondary clear"><i class="fa fa-gear"></i> Manage</button> -->
+                      <!-- <a href="Builder-Form-Task.html" class="button hollow success small clear" data-open="subtask">Subtask</a> -->
+                      <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                      <button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row pt-1 toggler-target bg-black10">
+                  <div class="columns">
+                    <div class="row mb-1">
+                      <div class="columns">
+                        <p class="subheader">Select a Form</p>
+                        <input type="text" value="Pain Threshold"  class="fancy-input">
+                      </div>
+                    </div>
+                    <div class="row mb-1">
+                      <div class="columns medium-6">
+                        <p class="subheader">Select Assignee</p>
+                        <select name="" id="" class="fancy-input">
+                          <option value="">Patient</option>
+                          <option value="">Advocate</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-1 toggler">
+                      
+                <div class="row expanded bg-black20 pt-1 border-radius-sm">
+                  <div class="columns shrink toggler-handler">
+                    <i class="fa fa-lg fa-envelope mt-0-5 clr-secondary"></i>
+                  </div>
+                  <div class="columns toggler-handler">
+                    <p class="mb-0"><strong>Sarah Burbon will schedule you a check up with Dr. Strange.</strong></p>
+                    <p class="subheader">Patient</p>
+                  </div>
+                  <div class="columns shrink">
+                    <div class="pull-right">                            
+                      <!-- <button class="button hollow secondary clear"><i class="fa fa-gear"></i> Manage</button> -->
+                      <!-- <a href="Builder-Form-Task.html" class="button hollow success small clear" data-open="subtask">Subtask</a> -->
+                      <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                      <button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row pt-1 toggler-target bg-black10">
+                  <div class="columns">
+                    <div class="row mb-1">
+                      <div class="columns medium-6">
+                        <p class="subheader">Title</p>
+                        <input type="text" value="Check up Schedule"  class="fancy-input">
+                      </div>
+                    </div>
+                    <div class="row mb-1">
+                      <div class="columns">
+                        <p class="subheader">Select Assignee</p>
+                        <textarea name="" id="" cols="30" rows="5" class="fancy-input">Sarah Burbon will schedule you a check up with Dr. Strange.</textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 										
-							<div class="mb-1 toggler">
-								<div class="row expanded bg-black20 pt-1 border-radius-sm">
-									<div class="columns toggler-handler">
-										<p class="mb-0"><strong>Call Dr. Strange and schedule an appointment for a follow up check up.</strong></p>
-										<p class="subheader">To-do for Sarah Burbon</p>
-									</div>
-									<div class="columns shrink toggler-handler">
-										<div class="pull-right">                            
-											<button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
-											<button class="button hollow clear"><i class="fa fa-chevron-down"></i></button>
-										</div>
-									</div>
-								</div>
-								<div class="row pt-1 toggler-target b-left-1 b-bottom-1 b-right-1" style="display: none;">
-									<div class="columns">
-										<div class="row mb-1">
-											<div class="columns medium-6">
-												<p class="subheader">Task</p>
-												<!-- <input type="text" value="Pathway Event"> -->
-												<select name="" id="">
-													<option value="">Feed the Cats</option>
-													<option value="">Feed the Dogs</option>
-													<option value="">Feed the Cats to the Dogs</option>
-												</select>
-											</div>
-										</div>
-										<div class="row mb-1">
-											<div class="columns">
-												<p class="subheader">Select Advocate</p>
-												<!-- <input type="text" value="Pain Intensity Survey"> -->
-												<select name="" id="">
-													<option value="">Sarah Burbon</option>
-													<option value="">Chachi Gonzales</option>
-												</select>
-											</div>                            
-										</div>                          
-									</div>
-								</div>
-							</div>
-
-							<div class="mb-1 toggler">
-								<div class="row expanded bg-black20 pt-1 border-radius-sm">
-									<div class="columns toggler-handler">
-										<p class="mb-0"><strong>Sarah Burbon will schedule you a check up with Dr. Strange.</strong></p>
-										<p class="subheader">Reminder for Patient</p>
-									</div>
-									<div class="columns shrink">
-										<div class="pull-right">                                                        
-											<button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
-											<button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
-										</div>
-									</div>
-								</div>
-								<div class="row pt-1 toggler-target b-left-1 b-bottom-1 b-right-1" style="display: none;">
-									<div class="columns">
-										<div class="row mb-1">
-											<div class="columns medium-6">
-												<p class="subheader">Select a Form</p>
-												<input type="text" value="Pre-op Evaluation and clearance Form">
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
 						</div>
 
 					</div>          

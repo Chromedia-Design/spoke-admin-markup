@@ -64,24 +64,27 @@
 			        	<div class="row">
 			              	<div class="columns">
 			                	<ul class="ul-tree">
-			                  		<li class="ul-tree-parent toggler-handler">
-			                    		<i class="fa mr-1 fa-lg fa-question-circle clr-warning"></i>
-			                    		<strong> How is your pain today?</strong>
+			                  		<li class="ul-tree-parent toggler-handler selected">
+			                    		<i class="fa fa-lg fa-question-circle clr-warning"></i>
+			                    		<span><strong> How is your pain today?</strong></span>
 			                  		</li>
 									<li class="toggler-target ul-tree-child"><i class="fa mr-0-5 fa-circle"></i><!-- <i class="fa mr-0-5 fa-plus clr-success"></i> --><span>1</span></li>
 									<li class="toggler-target ul-tree-child"><i class="fa mr-0-5 fa-circle"></i><span>2</span></li>
 									<li class="toggler-target ul-tree-child"><i class="fa mr-0-5 fa-circle"></i><span>3</span></li>
 									<li class="toggler-target ul-tree-child"><i class="fa mr-0-5 fa-circle"></i><span>4</span></li>
-									<li class="toggler-target ul-tree-child active"><i class="fa mr-0-5 fa-circle"></i><span>5</span></li>
+									<li class="toggler-target ul-tree-child"><i class="fa mr-0-5 fa-circle"></i><span>5</span></li>
 									<li class="toggler-target ul-tree-child"><i class="fa mr-0-5 fa-circle"></i><span>6</span></li>
 									<li class="toggler-target ul-tree-child"><i class="fa mr-0-5 fa-circle"></i><span>7</span></li>
 									<li class="toggler-target ul-tree-child"><i class="fa mr-0-5 fa-circle"></i><span>8</span></li>
 									<li class="toggler-target ul-tree-child"><i class="fa mr-0-5 fa-circle"></i><span>9</span></li>
-									<li class="toggler-target ul-tree-child active selected"><i class="fa mr-0-5 fa-circle"></i><span>10</span>
+									<li class="toggler-target ul-tree-child"><i class="fa mr-0-5 fa-circle"></i><span>10</span>
 										<ul class="toggler">
-											<li class="ul-tree-sub-parent toggler-handler"><strong><i class="fa mr-1 fa-lg fa-chevron-circle-down clr-warning"></i> Did you drink your medicine last night?</strong></li>
+											<li class="ul-tree-sub-parent toggler-handler">
+												<i class="fa fa-lg fa-question-circle clr-warning"></i>
+												<span><strong>Did you drink your medicine last night?</strong></span>
+											</li>
 											<li class="toggler-target ul-tree-child"><i class="fa mr-0-5 fa-circle"></i><span>Yes</span></li>
-											<li class="toggler-target ul-tree-child active"><i class="fa mr-0-5 fa-circle"></i><span>No</span></li>
+											<li class="toggler-target ul-tree-child"><i class="fa mr-0-5 fa-circle"></i><span>No</span></li>
 										</ul>
 									</li>
 
@@ -122,28 +125,19 @@
 			            <div class="columns">
 							<span class="fancy-checkbox small align-middle mt-2">
 			                    <input id="spcp1" type="checkbox" class="mr-0" checked="true">
-			                    <label class="subheader" for="checkbox1">Required</label>
+			                    <label class="subheader" for="checkbox1">Answer Required</label>
 			                  </span>
 						</div>							
 					</div>
 
 					<div class="row align-middle mb-1">
 						<div class="columns pl-0">
-							<p class="subheader"><strong><small>CATEGORY</small></strong></p>
-							<div class="fancy-input-tag">
-								<div class="tag">Treatment name</div>
-								<div class="tag">Conmpany name</div>
-								<div class="tag">Another treatment name</div>
-								<input placeholder="write something" data-placeholder="write-something">									
-							</div>
-							<!-- <select name="" id="" class="fancy-input mb-0 pr-2">
-								<option value="" disabled="true" selected="true">Select Category</option>
-								<option value="">List</option>
-								<option value="">Of</option>
-								<option value="">Treatments</option>
-								<option value="">And</option>
-								<option value="">Company</option>
-							</select> -->
+							<p class="subheader"><strong><small>SUB LABEL</small></strong></p>
+							<textarea name="" id="" cols="30" rows="3" class="fancy-input" placeholder="Sub-label"></textarea>
+						</div>
+						<div class="columns pr-0">
+							<p class="subheader"><strong><small>HELPER TEXT</small></strong></p>
+							<textarea name="" id="" cols="30" rows="3" class="fancy-input" placeholder="Helper text"></textarea>
 						</div>
 					</div>
 							
@@ -165,10 +159,8 @@
 							<div class="columns shrink">
 								<div class="pull-right">                            
 									<button class="button hollow success clear mb-0">
-										<!-- <i class="fa fa-save"></i> -->
-										SAVE
+										Save Option
 									</button>
-									<!-- <button class="button hollow clear success mb-0"><i class="fa fa-plus"></i></button> -->
 								</div>
 							</div>
 						</div>
