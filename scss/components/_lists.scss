@@ -1333,13 +1333,10 @@ ul.vertical-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-
-  &.ul-tree-only-parent-selectable {
-
-  }
-
-  &.ul-tree-only-child-selectable {
-    
+  &.ul-tree-hide-action {
+    .fa-plus {
+      display: none;
+    }
   }
   li {
     user-select: none;
@@ -1349,15 +1346,19 @@ ul.vertical-list {
     padding-left: 0.63rem;
     margin-left: 0.5rem;
     border-left: 1px solid $treeline-color;
-    i {
+    .fa-circle {
       color: #c1c1c1;
+    }
+    .fa-plus {
+      padding-bottom: 0px !important;
+      padding-top: 0px !important;
     }
 
     &.ul-tree-child {
       padding-bottom: .25rem;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
+      // overflow: hidden;
+      // white-space: nowrap;
+      // text-overflow: ellipsis;
       // display: table;
       i,span {
         display: inline-block;
