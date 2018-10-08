@@ -147,7 +147,6 @@ $("#chat-video-message").on("click", function () {
         $("#chat-container").find('#videos').animate({'height': '540px'}, 400);
     }
     $("#chat-container").find('.chat-input-container').slideToggle()
-
 })
 
 // Opening a message by clicking a Notification
@@ -230,16 +229,16 @@ $(".clinical-pathway-new-entry-list").on('click', '.clinical-pathway-new-entry',
 
 
 // TO BE REMOVED ------------------------------------------------------------
-$(".toggle-sibling").children(":nth-child(1)").on('click', function(event) {
-  event.preventDefault();
-  $(this).siblings().slideToggle()
-});
-$(".toggle-sibling").children(":nth-child(2)").slideToggle();
+// $(".toggle-sibling").children(":nth-child(1)").on('click', function(event) {
+//   event.preventDefault();
+//   $(this).siblings().slideToggle()
+// });
+// $(".toggle-sibling").children(":nth-child(2)").slideToggle();
 // TO BE REMOVED ------------------------------------------------------------
 
 
 
-// TOGGLER, toggle second child by clicking the first child
+// TOGGLER: toggle "toggler-target" by clicking "toggler-handler"
 $(".toggler").find(".toggler-target").slideUp()
 
 // toggle target
@@ -251,6 +250,22 @@ $(".toggler").on('click', '.toggler-handler', function(event) {
   console.log(event.target.nodeName)
 });
 
+// QUESTION TREE ------------------------------------------------------------
+function selectOnClick(target,targetTree, selectionClass){
+    $(target).on('click', function(event) {
+        // event.stopPropagation()
+        event.preventDefault();
+        /* Act on the event */
+        $(this).parents(targetTree).find(target).removeClass(selectionClass)
+        $(this).addClass(selectionClass)
+    });
+}
+
+
+
+selectOnClick(".ul-tree-child",".ul-tree, .ul-tree-only-child-selectable","selected")
+
+// selectOnClick(".ul-tree-parent, .ul-tree-sub-parent",".ul-tree","selected")
 
 // replace these values with those generated in your TokBox Account
 var apiKey = "45907482";

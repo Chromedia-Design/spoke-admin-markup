@@ -1263,15 +1263,9 @@ ul.vertical-list {
 
 .questions-list-entry {
   position: relative;
-  display: flex;
-  padding: 1rem;
-  border-top: 1px dashed rgba($black, $B-dividers);
-  border-left: 1px dashed rgba($black, $B-dividers);
-  border-right: 1px dashed rgba($black, $B-dividers);
   transition: all ease-in-out 0.2s;
-  &:last-child {
-    border-bottom: 1px dashed rgba($black, $B-dividers);
-  }
+  margin-bottom: 2px;
+  border-top: 1px dashed rgba($black, $B-dividers);
   &:hover {
     background: rgba($secondary-color, 0.06);
   }
@@ -1280,7 +1274,7 @@ ul.vertical-list {
     position: absolute;
     width: rem-calc(28);
     height: rem-calc(28);
-    line-height: 21px;
+    line-height: rem-calc(27);
     font-weight: bold;
     text-align: center;
     color: $white;
@@ -1295,11 +1289,24 @@ ul.vertical-list {
     bottom: rem-calc(-14);
     left: rem-calc(-14);
   }
+  //Child Questions
+  .questions-list-entry {
+    padding-left: 1rem;
+    border-top: none;
+  }
+}
+
+.question-wrapper {
+  display: flex;
+  padding: 1rem;
+  border-left: 1px dashed rgba($black, $B-dividers);
+  border-right: 1px dashed rgba($black, $B-dividers);
+  border-bottom: 1px dashed rgba($black, $B-dividers);
 }
 
 .question-marker {
   display: block;
-  padding: 2.1rem 0;
+  white-space: nowrap;
 }
 
 .question-content {
@@ -1323,38 +1330,74 @@ ul.vertical-list {
   // ul-tree Variables
   $treeline-color: #c1c1c1;
   // ul-tree Variables
-
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+  &.ul-tree-hide-action {
+    .fa-plus {
+      display: none;
+    }
+  }
   li {
     user-select: none;
-    font-size: .875rem;
+    font-size: rem-calc(12);
     list-style-type: none;
-    position: relative;    
-    padding-left: .63rem;
-    margin-left: .5rem;
+    position: relative;
+    padding-left: 0.63rem;
+    margin-left: 0.5rem;
     border-left: 1px solid $treeline-color;
-    i {
+    .fa-circle {
       color: #c1c1c1;
+    }
+    .fa-plus {
+      padding-bottom: 0px !important;
+      padding-top: 0px !important;
     }
 
     &.ul-tree-child {
       padding-bottom: .25rem;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
+      // overflow: hidden;
+      // white-space: nowrap;
+      // text-overflow: ellipsis;
+      // display: table;
+      i,span {
+        display: inline-block;
+      }
+      span {
+        width: 100%;
+      }
       &.active {
-        > i.fa-circle {
-          @extend .clr-success;
+        > div {
+            .fa-circle {
+              @extend .clr-success;
+          }
         }
       }
-
+      &.selected {
+        & > div div:nth-child(2) {
+          @extend .clr-primary;
+          color: #fff;
+          // border-radius: 4px;
+          font-weight: bold;
+          background-color: #e1e1e1;
+          // @extend .bg-success;
+          transition: all .5s;
+          &:hover {
+            // @extend .clr-success;
+            color: darken(#fff, 10%);
+            transition: all .5s;
+          }
+        }
+      }
     }
 
     span {
-      padding: .25rem .5rem;
-      // border-radius: 4px;
-      overflow: hidden;
+      padding: 0rem .5rem;
+      border-radius: 4px;
+      // overflow: hidden;
+      transition: all .5s;
       &:hover {
+        transition: all .5s;
         cursor: pointer;
         background-color: #e1e1e1;
       }
@@ -1375,7 +1418,11 @@ ul.vertical-list {
           transition: all .5s;
         }
       }
-        
+    }
+
+    &.disabled {
+      cursor: default;
+      opacity: 1;
     }
 
     &:last-child {
@@ -1388,7 +1435,7 @@ ul.vertical-list {
         position: absolute;
         top: -7px;
         left: 0px;
-      } 
+      }
     }
     &:before {
       content: "";
