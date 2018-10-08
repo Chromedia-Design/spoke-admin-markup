@@ -18,6 +18,7 @@
     border-radius: $global-radius;
     // @extend .hide-show-button-on-hover;
     @extend .align-middle;
+    @extend .bg-black10;
     &.active {
       @extend .bg-black20;
       border-left: 5px solid $success-color;
