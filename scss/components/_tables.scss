@@ -104,6 +104,25 @@ table {
 			}
 		}
 	}
+	&.quad-spacing {
+		thead, tbody {
+			th,
+			td {
+				&:first-child {
+					width: 40%;
+				}
+				&:nth-child(2) {
+					width: 20%;
+				}
+				&:nth-child(3) {
+					width: 15%;
+				}
+				&:nth-child(4) {
+					width: 15%;
+				}
+			}
+		}
+	}
 	.media-object-section {
 		p,
 		a,
