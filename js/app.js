@@ -240,6 +240,7 @@ $(".clinical-pathway-new-entry-list").on('click', '.clinical-pathway-new-entry',
 
 // TOGGLER: toggle "toggler-target" by clicking "toggler-handler"
 $(".toggler").find(".toggler-target").slideUp()
+$(".toggler.ul-tree-expanded").find(".toggler-target").slideDown()
 
 // toggle target
 $(".toggler").on('click', '.toggler-handler', function(event) {

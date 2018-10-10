@@ -25,15 +25,9 @@
             <span class="h5">Pain Threshold</span>
             &nbsp; 
             <a href="#" class="link white-color ml-1 mb-0"><i class="fa fa-edit"></i></a>
-						<!-- <span class="h6">Pain Threshold</span> -->
-						<!-- <input type="text" class="editable clr-white mb-0" value="Total Knee Replacement">
-						<p class="subheader mb-0 white">
-							<small>Pathway Description</small>
-						</p> -->
 					</div>
 					<div class="shrink columns">
 						<div class="button-align small mb-0 pull-right">
-							<!-- <a href="#" class="button success"><i class="fa fa-save"></i> Save</a> -->
 							<a class="button success hollow"><i class="fa fa-save fa-fw"></i> Save</a>
 						</div>
 					</div>
@@ -50,35 +44,23 @@
 
 						<div class="row pr-1 mb-1 mt-1">
 							<div class="columns">
-                <!-- <strong>Question Builder</strong> -->
                 <ul class="tabs" data-tabs id="example-tabs">
                   <li class="tabs-title"><a href="#panel1" aria-selected="true">Question Builder</a></li>
                   <li class="tabs-title is-active"><a data-tabs-target="panel2" href="#panel2">Task Builder</a></li>
                 </ul>
 							</div>
-              <!-- <div class="columns shrink">
-                <div class="switch">
-                  <input class="switch-input" id="exampleSwitch" type="checkbox" name="exampleSwitch">
-                  <label class="switch-paddle" for="exampleSwitch">
-                    <span class="show-for-sr">Download Kittens</span>
-                  </label>
-                </div>
-              </div>
-              <div class="columns shrink">
-                <strong>Task Builder</strong>
-              </div> -->
 						</div>
 
 						<div class=" clinical-pathway-new-entry-list">              
 
 							<div class="row">
 								<div class="columns">
-									<ul class="ul-tree ul-tree-hide-action">
-				                  		<li class="ul-tree-parent toggler-handler selected">
-				                    		<i class="fa fa-lg fa-question-circle clr-warning"></i>
-				                    		<span><strong> How is your pain today?</strong></span>
-				                  		</li>
-				                  		<li class="toggler-target ul-tree-child">
+									<ul class="toggler ul-tree ul-tree-expanded ul-tree-hide-action">
+                		<li class="ul-tree-parent toggler-handler">
+                  		<i class="fa fa-lg fa-question-circle clr-warning"></i>
+                  		<span><strong> How is your pain today?</strong></span>
+                		</li>
+                		<li class="toggler-target ul-tree-child">
 											<div class="row">
 												<div class="columns shrink pl-0 pr-0">
 													<i class="fa mr-0-5 fa-circle"></i>
@@ -213,7 +195,7 @@
 												</div>
 											</div>
 										</li>
-										<li class="toggler-target ul-tree-child active">
+										<li class="toggler-target ul-tree-child active selected">
 											<div class="row">
 												<div class="columns shrink pl-0 pr-0">
 													<i class="fa mr-0-5 fa-circle"></i>
@@ -247,7 +229,7 @@
 														</div>
 													</div>
 												</li>
-												<li class="toggler-target ul-tree-child">
+												<li class="toggler-target ul-tree-child active">
 													<div class="row">
 														<div class="columns shrink pl-0 pr-0">
 															<i class="fa mr-0-5 fa-circle"></i>
@@ -264,72 +246,103 @@
 												</li>
 											</ul>
 										</li>
-
-				                	</ul>
+                	</ul>
 								</div>
 							</div>
-
 						</div>
 
 					</div>
 				</div>
-
 			</div>      
 
 			<div class="columns full-page-body-content">
-
 				<div class="row pl-1 pr-1 pt-0 mb-1">
 					<div class="columns bg-black20 pt-1 border-radius-sm">
 						<div>
               <p class="subheader"><strong><small>QUESTION</small></strong></p>
               <h4>How is your pain today?</h4>
             </div>
-            <div>
-              <p class="subheader"><strong><small>ANSWER SELECTED</small></strong></p>
-              <h4>10</h4>
-            </div>
+      			<div>
+      				<p class="subheader"><strong><small>ANSWER SELECTED</small></strong></p>
+      				<h4>10</h4>
+      			</div>
 					</div>
 				</div>
 
 				<div class="row mb-2">
 					<div class="columns ml-0 mr-0">
-
-								<div class="dropdown">
-									<button class="dropbtn button hollow clear small success mb-0"><i class="fa fa-plus"></i> Add task</button>
-									<div class="dropdown-content">                          
-                    <ul class="ml-0 mb-1 mt-1">
-                      <li class="list-style-type-none"><a href="">Add to-do</a></li>
-                      <li class="list-style-type-none"><a href="">Add Message</a></li>
-                      <li class="list-style-type-none"><a href="">Add Question</a></li>
-                    </ul>                          
-                  </div>
-                  <!-- <div class="dropdown-content">
-										<ul class="ml-0 mb-1 mt-1">
-											<li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>PATIENT</strong></small></span></li>
-											<li class="list-style-type-none"><a href="">Set to-do</a></li>
-											<li class="list-style-type-none"><a href="">Reminder</a></li>
-										</ul>
-										<ul class="ml-0 mb-1 mt-1">
-											<li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
-											<li class="list-style-type-none"><a href="">Set to-do</a></li>
-										</ul>
-										<ul class="ml-0 mb-1 mt-1">
-											<li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>PATHWAY</strong></small></span></li>
-											<li class="list-style-type-none"><a href="">Add events to pathway</a></li>
-										</ul>
-									</div> -->
-								</div>
-						
-						<div>
-
-              <div class="mb-1 toggler">
-                      
+						<div class="dropdown">
+							<button class="dropbtn button hollow clear small success mb-0"><i class="fa fa-plus"></i> Add task</button>
+						  <div class="dropdown-content">                          
+                <ul class="ml-0 mb-1 mt-1">
+                  <li class="list-style-type-none"><a href="">Add to-do</a></li>
+                  <li class="list-style-type-none"><a href="">Add Message</a></li>
+                  <li class="list-style-type-none"><a href="">Add Question</a></li>
+                </ul>                          
+            	</div>
+    				</div>
+            <div>
+        			<div class="mb-1 toggler">
                 <div class="row expanded bg-black20 pt-1 border-radius-sm">
                   <div class="columns shrink toggler-handler">
                     <i class="fa fa-lg fa-list-ol mt-0-5 clr-secondary"></i>
                   </div>
                   <div class="columns toggler-handler">
                     <p class="mb-0"><strong>Call Dr. Strange and schedule an appointment for a follow up check up.</strong></p>
+                    <p class="subheader">Patient</p>
+                  </div>
+                  <div class="columns shrink">
+                    <div class="pull-right">                            
+                      <!-- <button class="button hollow secondary clear"><i class="fa fa-gear"></i> Manage</button> -->
+                      <!-- <a href="Builder-Form-Task.html" class="button hollow success small clear" data-open="subtask">Subtask</a> -->
+                      <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                      <button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row pt-1 toggler-target bg-black10">
+                  <div class="columns">
+                    <div class="row mb-1">
+                      <div class="columns">
+                        <p class="subheader"><strong><small>To-do</small></strong></p>
+                        <textarea name="" id="" cols="30" rows="2" placeholder="What do you want to do?" class="fancy-input"></textarea>
+                      </div>
+                    </div>
+                    <div class="row mb-1">
+                      <div class="columns medium-6">
+                        <p class="subheader"><strong><small>Assign to</small></strong></p>
+                        <select name="" id="" class="fancy-input">
+                          <option value="">Patient</option>
+                          <option value="">Advocate</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row mb-1">
+                      <div class="columns">
+        					     <p class="subheader"><strong><small>Mark as overdue if not completed by</small></strong></p>
+        					     <input type="text" class="fancy-input" placeholder="Overdue">
+        		          </div>
+        		          <div class="columns">
+          							<p class="subheader"><strong><small>Once overdue, escalate notices as</small></strong></p>
+          							<select name="" id="" class="fancy-input">
+          								<option value="">Low</option>
+          								<option value="">Medium</option>
+          								<option value="">High</option>
+          								<option value="">Critical</option>
+          							</select>
+          						</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-1 toggler">
+                <div class="row expanded bg-black20 pt-1 border-radius-sm">
+                  <div class="columns shrink toggler-handler">
+                    <i class="fa fa-lg fa-list-ol mt-0-5 clr-secondary"></i>
+                  </div>
+                  <div class="columns toggler-handler">
+                    <p class="mb-0"><strong>Call Dr. Strange and cancel the patients appointment. *evil laugh*</strong></p>
                     <p class="subheader">Advocate</p>
                   </div>
                   <div class="columns shrink">
@@ -345,83 +358,78 @@
                   <div class="columns">
                     <div class="row mb-1">
                       <div class="columns">
-                        <p class="subheader">To-do</p>
+                        <p class="subheader"><strong><small>To-do</small></strong></p>
                         <textarea name="" id="" cols="30" rows="2" placeholder="What do you want to do?" class="fancy-input"></textarea>
                       </div>
                     </div>
                     <div class="row mb-1">
                       <div class="columns medium-6">
-                        <p class="subheader">Select Assignee</p>
+                        <p class="subheader"><strong><small>Assign to</small></strong></p>
                         <select name="" id="" class="fancy-input">
                           <option value="">Patient</option>
-                          <option value="" selected>Advocate</option>
+                          <option value="" selected="">Advocate</option>
                         </select>
                       </div>
                     </div>
                     <div class="row mb-1">
-                      <div class="columns">
-							<p class="subheader"><strong><small>OVERDUE</small></strong></p>
-							<input type="text" class="fancy-input" placeholder="Overdue">
-						</div>
-						<div class="columns">
-							<p class="subheader"><strong><small>PRIORITY LEVEL</small></strong></p>
-							<select name="" id="" class="fancy-input">
-								<option value="">Low</option>
-								<option value="">Medium</option>
-								<option value="">High</option>
-								<option value="">Critical</option>
-							</select>
-						</div>
+                      <div class="columns medium-6">
+                       <p class="subheader"><strong><small>Mark as overdue if not completed by</small></strong></p>
+                       <input type="text" class="fancy-input" placeholder="Overdue">
+                      </div>
+                      <!-- <div class="columns">
+                        <p class="subheader"><strong><small>Once overdue, escalate notices as</small></strong></p>
+                        <select name="" id="" class="fancy-input">
+                          <option value="">Low</option>
+                          <option value="">Medium</option>
+                          <option value="">High</option>
+                          <option value="">Critical</option>
+                        </select>
+                      </div> -->
                     </div>
                   </div>
                 </div>
               </div>
 
               <div class="mb-1 toggler">
-                      
+                    
                 <div class="row expanded bg-black20 pt-1 border-radius-sm">
-                  <div class="columns shrink toggler-handler">
-                    <i class="fa fa-lg fa-envelope mt-0-5 clr-secondary"></i>
+                <div class="columns shrink toggler-handler">
+                  <i class="fa fa-lg fa-envelope mt-0-5 clr-secondary"></i>
+                </div>
+                <div class="columns toggler-handler">
+                  <p class="mb-0"><strong>Sarah Burbon will schedule you for a check up with Dr. Strange.</strong></p>
+                  <p class="subheader">Patient</p>
+                </div>
+                <div class="columns shrink">
+                  <div class="pull-right">                            
+                    <!-- <button class="button hollow secondary clear"><i class="fa fa-gear"></i> Manage</button> -->
+                    <!-- <a href="Builder-Form-Task.html" class="button hollow success small clear" data-open="subtask">Subtask</a> -->
+                    <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                    <button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
                   </div>
-                  <div class="columns toggler-handler">
-                    <p class="mb-0"><strong>Sarah Burbon will schedule you for a check up with Dr. Strange.</strong></p>
-                    <p class="subheader">Patient</p>
-                  </div>
-                  <div class="columns shrink">
-                    <div class="pull-right">                            
-                      <!-- <button class="button hollow secondary clear"><i class="fa fa-gear"></i> Manage</button> -->
-                      <!-- <a href="Builder-Form-Task.html" class="button hollow success small clear" data-open="subtask">Subtask</a> -->
-                      <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
-                      <button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
-                    </div>
-                  </div>
+                </div>
                 </div>
                 <div class="row pt-1 toggler-target bg-black10">
                   <div class="columns">
                     <div class="row mb-1">
                       <div class="columns medium-6">
-                        <p class="subheader">Title</p>
+                        <p class="subheader"><strong><small>Title</small></strong></p>
                         <input type="text" value="Check up Schedule"  class="fancy-input">
                       </div>
                     </div>
                     <div class="row mb-1">
                       <div class="columns">
-                        <p class="subheader">Select Assignee</p>
+                        <p class="subheader"><strong><small>Select Assignee</small></strong></p>
                         <textarea name="" id="" cols="30" rows="5" class="fancy-input">Sarah Burbon will schedule you for a check up with Dr. Strange.</textarea>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-										
-						</div>
-
-					</div>          
-				</div>
-
+              </div>									
+      		  </div>
+          </div>          
+        </div>
 			</div>
-
-
 		</div>
 	</div>
 
