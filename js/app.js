@@ -228,6 +228,7 @@ $(".clinical-pathway-new-entry-list").on('click', '.clinical-pathway-new-entry',
 
 
 
+
 // TO BE REMOVED ------------------------------------------------------------
 // $(".toggle-sibling").children(":nth-child(1)").on('click', function(event) {
 //   event.preventDefault();
@@ -237,6 +238,24 @@ $(".clinical-pathway-new-entry-list").on('click', '.clinical-pathway-new-entry',
 // TO BE REMOVED ------------------------------------------------------------
 
 
+// HOVERER:
+$(".show-on-hover").find(".hover-target").hide()
+
+$(".show-on-hover").on('mouseover', function(event) {
+  event.stopPropagation()
+  event.preventDefault();
+  /* Act on the event */  
+  $(this).find(".hover-target").show()
+  console.log(event.target.nodeName)
+});
+
+$(".show-on-hover").on('mouseout', function(event) {
+  event.stopPropagation()
+  event.preventDefault();
+  /* Act on the event */  
+  $(this).find(".hover-target").hide()
+  console.log(event.target.nodeName)
+});
 
 // TOGGLER: toggle "toggler-target" by clicking "toggler-handler"
 $(".toggler").find(".toggler-target").slideUp()

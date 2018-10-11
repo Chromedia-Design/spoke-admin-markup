@@ -913,7 +913,16 @@ input {
 			cursor: pointer;
 		}
 	}
+	&.small {
+		font-size: .765rem;
 	}
+	&.no-action {
+		padding-right: .5rem;
+		&:after {
+			content: none;
+		}
+	}
+}
 
 .fancy-input-tag {
 	border-radius: 3px;

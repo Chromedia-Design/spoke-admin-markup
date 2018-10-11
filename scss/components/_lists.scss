@@ -1195,6 +1195,17 @@ ul.vertical-list {
   border-left: 1px solid rgba($black, $B-dividers);
   border-right: 1px solid rgba($black, $B-dividers);
   background: $white;
+  &.bg-alternate-items {
+    .spoke-list-item {
+      border-bottom: 0px;      
+      &:nth-child(odd) {
+        background: darken($primary-light,3%);
+        &:hover {
+          background: darken($primary-light,7%);
+        }
+      }
+    }
+  }
   &.no-outline {
     border: 0px !important;
   }
@@ -1218,6 +1229,10 @@ ul.vertical-list {
     cursor: pointer;
     padding: 1rem 0.5rem;
     border-bottom: 1px solid rgba($black, $B-dividers);
+    z-index: 1;
+    &:last-child {
+      border-bottom: 1px solid rgba($black, $B-dividers) !important;
+    }
     &.large {
       padding-top: 1rem !important;
       padding-bottom: 1rem !important;
