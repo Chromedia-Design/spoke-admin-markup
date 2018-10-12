@@ -40,17 +40,19 @@
 		background: transparent;
 		float: left;
 		color: $primary-color;
+		background: #fff;
 		margin: 3px 1px;
 		font-weight: bold;
-		border: 1px solid $primary-color;
+		// border: 1px solid $primary-color;
 		.fa {
 			margin: 0 3px;
 			color: $primary-color;
 		}
 		&:hover {
 			color: $white;
-			background: darken($primary-color, 5%);
+			// background: darken($primary-color, 5%);
 			transition: background-color .2s ease-in;
+			background: darken(#fff, 8%) !important ;
 		}
 	}
 	&.white {
