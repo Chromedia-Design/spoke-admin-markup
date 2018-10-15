@@ -412,16 +412,23 @@
               <div>
                 <p class="subheader mb-1"><strong><small>Deadline/Duration</small></strong></p>
               </div>
-              <div>
-                <fieldset>
-                  <select name="" id="" class="fancy-input">
-                    <option value="1">1 Day(s)</option>
-                    <option value="2">2 Day(s)</option>
-                    <option value="3">3 Day(s)</option>
-                    <option value="4">4 Day(s)</option>
-                    <option value="5">5 Day(s)</option>
-                  </select>
-                </fieldset>
+              <div class="row">
+                <div class="columns pl-0 pr-0-5">
+                  <fieldset>
+                    <input type="text" class="fancy-input" value="1">
+                  </fieldset>
+                </div>
+                <div class="columns pr-0 pl-0-5">
+                  <fieldset>
+                    <select name="" id="" class="fancy-input">
+                      <option value="1">Day(s)</option>
+                      <option value="2">Week(s)</option>
+                      <option value="3">Month(s)</option>
+                      <option value="4">Year(s)</option>
+                    </select>
+                  </fieldset>
+                </div>
+                  
               </div>
             </div>
             
@@ -497,7 +504,13 @@
               <div class="tabs-panel pad-1 bg-black20 is-active" id="panel1">
 
                 <div class="row">
-                  <div class="columns">                      
+                  <div class="columns pl-0 shrink">
+                    <span class="h5">Condition: </span>
+                    <button class="button secondary tiny hollow">AND</button>
+                    <button class="button secondary tiny">OR</button>
+                    
+                  </div>
+                  <div class="columns pr-0">                      
                       <div class="dropdown pull-right">
                         <button class="dropbtn button pull-right hollow clear small success mb-0 pull-right"><i class="fa fa-plus"></i> Add Trigger</button>
                         <!-- <div class="dropdown-content">                          
@@ -514,14 +527,18 @@
 
                 <div class="mb-1 toggler">
                   <div class="row expanded bg-white pt-1 border-radius-sm toggler-handler">
-                    <div class="columns">
-                      <!-- <p class="mb-0"><strong>4 Day(s) after Surgery</strong></p> -->
+                    <div class="columns pl-0 pr-0">
                       <div class="row expanded">
                         <div class="columns">
                           <input type="text" class="fancy-input" value="4">
                         </div>
                         <div class="columns">
-                          <input type="text" class="fancy-input" value="Days">
+                          <select name="" id="" class="fancy-input">
+                            <option value="">Days</option>
+                            <option value="">Weeks</option>
+                            <option value="">Month</option>
+                            <option value="">Year</option>
+                          </select>
                         </div>
                         <div class="columns shrink pt-0-5">
                           After
@@ -535,7 +552,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="columns shrink">
+                    <div class="columns pl-0 shrink">
                       <div class="pull-right">
                         <!-- <button class="button secondary small">AND</button> -->
                         <!-- <button class="button hollow secondary small">OR</button> -->
@@ -572,13 +589,48 @@
 
                 <div class="mb-1 toggler">
                   <div class="row expanded bg-white pt-1 border-radius-sm toggler-handler">
+                    <div class="columns pl-0 pr-0">
+                      <div class="row expanded">
+                        <div class="columns">
+                          <input type="text" class="fancy-input" value="6">
+                        </div>
+                        <div class="columns">
+                          <select name="" id="" class="fancy-input">
+                            <option value="">Days</option>
+                            <option value="">Weeks</option>
+                            <option value="">Month</option>
+                            <option value="">Year</option>
+                          </select>
+                        </div>
+                        <div class="columns shrink pt-0-5">
+                          After
+                        </div>
+                        <div class="columns medium-6">
+                          <select name="" id="" class="fancy-input">
+                            <option value="">Pre-op Consultation</option>
+                            <option value="">Surgery</option>
+                            <option value="">Patient Reported Pain Survey</option>
+                            <option value="">Post-Op visit scheduled</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="columns pl-0 shrink">
+                      <div class="pull-right">
+                        <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- <div class="mb-1 toggler">
+                  <div class="row expanded bg-white pt-1 border-radius-sm toggler-handler">
                     <div class="columns">
                       <p class="mb-0"><strong>2nd trigger</strong></p>
                     </div>
                     <div class="columns">
-                      <div class="pull-right">
-                        <button class="button secondary small">AND</button>
-                        <button class="button hollow secondary small">OR</button>
+                      <div class="pull-right">                        
                         <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
                         <button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
                       </div>
@@ -608,7 +660,7 @@
                       </select>
                     </div>
                   </div>
-                </div>
+                </div> -->
 
 
 
