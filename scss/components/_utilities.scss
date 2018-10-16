@@ -274,7 +274,15 @@
 	text-overflow: ellipsis;
 	vertical-align: middle;
 	height: 1.5em;
-	* {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	span,
+	small {
 		margin-bottom: 0;
 		white-space: nowrap;
 		overflow: hidden;
