@@ -31,6 +31,7 @@
 .marginless { margin: 0 !important; }
 .mar-0-auto {margin: 0 auto !important;}
 .mar1 { margin: 1rem !important; }
+.mar-0-5 { margin: .5rem !important; }
 .mar2 { margin: 2rem !important;}
 
 .mr-0-5 {margin-right: 0.5rem !important;}
@@ -273,7 +274,15 @@
 	text-overflow: ellipsis;
 	vertical-align: middle;
 	height: 1.5em;
-	* {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	span,
+	small {
 		margin-bottom: 0;
 		white-space: nowrap;
 		overflow: hidden;

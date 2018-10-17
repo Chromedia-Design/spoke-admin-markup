@@ -1,27 +1,27 @@
 $(document).foundation();
 
 // dropdown ------------------------------------------------------------
-$(".dropdown-checkbox").on('click', '.dropbtn, .fa', function (event) {
-    // event.preventDefault();
-    // $(this).parents(".dropdown-checkbox").find('.dropdown-content').slideDown();
-    $(this).parents(".dropdown-checkbox").find('.dropdown-content').toggleClass('show');
-});
+// $(".dropdown-checkbox").on('click', '.dropbtn, .fa', function (event) {
+//     // event.preventDefault();
+//     // $(this).parents(".dropdown-checkbox").find('.dropdown-content').slideDown();
+//     $(this).parents(".dropdown-checkbox").find('.dropdown-content').toggleClass('show');
+// });
 
 // Close the dropdown menu if the user clicks outside of it
-window.onclick = function (event) {
-    if (!event.target.matches('.dropbtn') && !event.target.matches('select, select option')) {
+// window.onclick = function (event) {
+//     if (!event.target.matches('.dropbtn') && !event.target.matches('select, select option')) {
 
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                // openDropdown.classList.contains('show').slideUp();
-                openDropdown.classList.remove('show');
-            }
-        }
-    }
-}
+//         var dropdowns = document.getElementsByClassName("dropdown-content");
+//         var i;
+//         for (i = 0; i < dropdowns.length; i++) {
+//             var openDropdown = dropdowns[i];
+//             if (openDropdown.classList.contains('show')) {
+//                 // openDropdown.classList.contains('show').slideUp();
+//                 openDropdown.classList.remove('show');
+//             }
+//         }
+//     }
+// }
 // dropdown ------------------------------------------------------------
 
 $(".dropdown").on('click', '.dropbtn', function(event) {
@@ -30,7 +30,7 @@ $(".dropdown").on('click', '.dropbtn', function(event) {
 });
 
 window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+  if ( !event.target.matches('.dropbtn') && !event.target.matches('.dropdown-content *') ) {
     $(".dropdown-content").removeClass('show')
   }
 }
