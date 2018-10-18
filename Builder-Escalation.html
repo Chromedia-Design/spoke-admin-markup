@@ -22,7 +22,7 @@
             </div>
           </div>
           <div class="shrink columns">
-           <span class="h5">Escalation Level</span>
+           <span class="h5">Escalation Policies</span>
 
             <!-- <div class="button-align small mb-0">
               <a class="button rounded hollow white" href="admin-facility-view.html"><i class="fa fa-close"></i></a>
@@ -49,7 +49,7 @@
 
             <div class="row mt-2">
               <div class="columns">
-                <button class="dropbtn button hollow clear small success mb-0"><i class="fa fa-plus"></i> Add Escalation Level</button>
+                <button class="dropbtn button hollow clear small success mb-0"><i class="fa fa-plus"></i> Add Escalation</button>
               </div>
             </div>
 
@@ -69,7 +69,7 @@
                 </div>
               </div>
 
-              <div class="row clinical-pathway-new-entry">
+              <div class="row clinical-pathway-new-entry active">
                 <div class="column new-entry-title">
                   <!-- <div class="subheader mb-0 clr-black20"><small><strong>COMPANY</strong></small></div> -->
                   <span>Important</span>
@@ -113,71 +113,417 @@
       <div class="full-page-body-content bg-white columns">
 
         <div class="row mb-2">
-          <div class="columns bg-black20 pad-1">
+          <div class="columns pt-1 pb-1 pl-0 pr-0">
             <p class="subheader"><strong><small>Title</small></strong></p>
             <input type="text" class="fancy-input" value="Important">
 
             <p class="subheader"><strong><small>Description</small></strong></p>
             <!-- <input type="text" class="fancy-input" value="Important"> -->
-            <textarea name="" id="" cols="30" rows="3" class="fancy-input" placeholder="Description about this escalation level"></textarea>
+            <textarea name="" id="" cols="30" rows="3" class="fancy-input" placeholder="Description about this escalation level">No time to explain get in the car</textarea>
           </div>          
         </div>
 
         <div class="row mb-2">
           <div class="columns bg-black20 pad-1">
             
-            <p class="subheader"><strong>15 Minutes</strong></p>
-            <div class="mb-1 toggler">
-              <div class="row expanded bg-white pt-1 border-radius-sm">
-                  <div class="columns shrink toggler-handler">
-                    <i class="fa fa-lg fa-list-ol mt-0-5 clr-secondary"></i>
-                  </div>
-                  <div class="columns toggler-handler">
-                    <p class="mb-0"><strong>Call Dr. Strange and schedule an appointment for a follow up check up.</strong></p>
-                    <p class="subheader">Patient</p>
-                  </div>
-                  <div class="columns shrink">
-                    <div class="pull-right">                                                            
-                      <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
-                      <button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
-                    </div>
-                  </div>
+            <div class="row mb-1">
+              <div class="columns pl-0">
+                <p class="subheader h5"><strong>ESCALATION RULES</strong></p>
               </div>
-              <div class="row pt-1 toggler-target bg-black10">
-                  <div class="columns">
-                    <div class="row mb-1">
-                        <div class="columns">
-                          <p class="subheader"><strong><small>To-do</small></strong></p>
-                          <textarea name="" id="" cols="30" rows="2" placeholder="What do you want to do?" class="fancy-input"></textarea>
-                        </div>
-                    </div>
-                    <div class="row mb-1">
-                        <div class="columns medium-6">
-                          <p class="subheader"><strong><small>Assign to</small></strong></p>
-                          <select name="" id="" class="fancy-input">
-                              <option value="">Patient</option>
-                              <option value="">Advocate</option>
-                          </select>
-                        </div>
-                    </div>
-                    <div class="row mb-1">
-                        <div class="columns">
-                    <p class="subheader"><strong><small>Mark as overdue if not completed by</small></strong></p>
-                    <input type="text" class="fancy-input" placeholder="Overdue">
-                      </div>
-                      <div class="columns">
-                    <p class="subheader"><strong><small>Once overdue, escalate notices as</small></strong></p>
-                    <select name="" id="" class="fancy-input">
-                      <option value="">Low</option>
-                      <option value="">Medium</option>
-                      <option value="">High</option>
-                      <option value="">Critical</option>
-                    </select>
-                  </div>
-                    </div>
-                  </div>
+              <div class="columns shrink">
+                <button class="button clear hollow success mb-0">
+                  <i class="fa fa-plus"></i> NEW RULE
+                </button>
               </div>
             </div>
+
+            <div class="row mb-2">
+              <div class="columns pl-0 pr-0">
+                
+                <div class="row">
+                  <div class="columns pl-0">
+                    <p class="subheader mb-0"><strong>15 Minutes after creation</strong></p>
+                  </div>
+                  <div class="columns shrink pull right">
+                    <button class="button clear hollow small secondary mb-0"><i class="fa fa-pencil"></i> Edit</button>
+                    <button class="button clear hollow small alert mb-0"><i class="fa fa-trash"></i> Remove</button>
+                    <!-- <button class="button clear hollow success mb-0"><i class="fa fa-plus"></i> </button> -->
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="columns pl-0 pr-0">
+                    
+                    <div class="mb-1 toggler">
+                      <div class="row expanded bg-white pt-0 border-radius-sm align-middle">
+                          <div class="columns shrink toggler-handler">
+                            <i class="fa fa-lg fa-list-ol mt-0-5 clr-secondary"></i>
+                          </div>
+                          <div class="columns toggler-handler">
+                            <p class="mb-0"><strong>To-do</strong></p>
+                            <!-- <p class="subheader">Patient</p> -->
+                          </div>
+                          <div class="columns shrink">
+                            <div class="pull-right">
+                              <button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+                              <button class="button hollow clear mb-0 toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="row pt-1 toggler-target bg-black10">
+                          <div class="columns">
+                            <div class="row mb-1">
+                                <div class="columns">
+                                  <p class="subheader"><strong><small>To-do</small></strong></p>
+                                  <textarea name="" id="" cols="30" rows="2" placeholder="What do you want to do?" class="fancy-input"></textarea>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="columns medium-6">
+                                  <p class="subheader"><strong><small>Assign to</small></strong></p>
+                                  <select name="" id="" class="fancy-input">
+                                      <option value="">Patient</option>
+                                      <option value="">Advocate</option>
+                                  </select>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="columns">
+                            <p class="subheader"><strong><small>Mark as overdue if not completed by</small></strong></p>
+                            <input type="text" class="fancy-input" placeholder="Overdue">
+                              </div>
+                              <div class="columns">
+                            <p class="subheader"><strong><small>Once overdue, escalate notices as</small></strong></p>
+                            <select name="" id="" class="fancy-input">
+                              <option value="">Low</option>
+                              <option value="">Medium</option>
+                              <option value="">High</option>
+                              <option value="">Critical</option>
+                            </select>
+                          </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="mb-1 toggler">
+                      <div class="row expanded bg-white pt-0 border-radius-sm align-middle">
+                          <div class="columns shrink toggler-handler">
+                            <i class="fa fa-lg fa-list-ol mt-0-5 clr-secondary"></i>
+                          </div>
+                          <div class="columns toggler-handler">
+                            <p class="mb-0"><strong>To-do</strong></p>
+                            <!-- <p class="subheader">Patient</p> -->
+                          </div>
+                          <div class="columns shrink">
+                            <div class="pull-right">
+                              <button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+                              <button class="button hollow clear mb-0 toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="row pt-1 toggler-target bg-black10">
+                          <div class="columns">
+                            <div class="row mb-1">
+                                <div class="columns">
+                                  <p class="subheader"><strong><small>To-do</small></strong></p>
+                                  <textarea name="" id="" cols="30" rows="2" placeholder="What do you want to do?" class="fancy-input"></textarea>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="columns medium-6">
+                                  <p class="subheader"><strong><small>Assign to</small></strong></p>
+                                  <select name="" id="" class="fancy-input">
+                                      <option value="">Patient</option>
+                                      <option value="">Advocate</option>
+                                  </select>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="columns">
+                            <p class="subheader"><strong><small>Mark as overdue if not completed by</small></strong></p>
+                            <input type="text" class="fancy-input" placeholder="Overdue">
+                              </div>
+                              <div class="columns">
+                            <p class="subheader"><strong><small>Once overdue, escalate notices as</small></strong></p>
+                            <select name="" id="" class="fancy-input">
+                              <option value="">Low</option>
+                              <option value="">Medium</option>
+                              <option value="">High</option>
+                              <option value="">Critical</option>
+                            </select>
+                          </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <!-- <div class="mb-0-5 toggler">
+                      <div class="row expanded bg-white pt-0-5 border-radius-sm">
+                          <div class="columns shrink toggler-handler">
+                            <i class="fa fa-lg fa-list-ol mt-0-5 clr-secondary"></i>
+                          </div>
+                          <div class="columns toggler-handler">
+                            <p class="mb-0"><strong>To-do</strong></p>
+                          </div>
+                          <div class="columns shrink">
+                            <div class="pull-right">                                                            
+                              <button class="button hollow alert clear mb-0-5"><i class="fa fa-trash"></i></button>
+                              <button class="button hollow clear mb-0-5 toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="row pt-1 toggler-target bg-black10">
+                          <div class="columns">
+                            <div class="row mb-1">
+                                <div class="columns">
+                                  <p class="subheader"><strong><small>To-do</small></strong></p>
+                                  <textarea name="" id="" cols="30" rows="2" placeholder="What do you want to do?" class="fancy-input"></textarea>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="columns medium-6">
+                                  <p class="subheader"><strong><small>Assign to</small></strong></p>
+                                  <select name="" id="" class="fancy-input">
+                                      <option value="">Patient</option>
+                                      <option value="">Advocate</option>
+                                  </select>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="columns">
+                            <p class="subheader"><strong><small>Mark as overdue if not completed by</small></strong></p>
+                            <input type="text" class="fancy-input" placeholder="Overdue">
+                              </div>
+                              <div class="columns">
+                            <p class="subheader"><strong><small>Once overdue, escalate notices as</small></strong></p>
+                            <select name="" id="" class="fancy-input">
+                              <option value="">Low</option>
+                              <option value="">Medium</option>
+                              <option value="">High</option>
+                              <option value="">Critical</option>
+                            </select>
+                          </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div> -->
+
+                    <div>
+                      <button class="button clear hollow success mb-0"><i class="fa fa-plus"></i> ADD TASK</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-1">
+              <div class="columns pl-0 pr-0">
+                
+                <div class="row">
+                  <div class="columns pl-0">
+                    <p class="subheader mb-0"><strong>30 Minutes after creation</strong></p>
+                  </div>
+                  <div class="columns shrink pull right">
+                    <button class="button clear hollow small secondary mb-0"><i class="fa fa-pencil"></i> Edit</button>
+                    <button class="button clear hollow small alert mb-0"><i class="fa fa-trash"></i> Remove</button>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="columns pl-0 pr-0">
+                    
+                    <div class="mb-1 toggler">
+                      <div class="row expanded bg-white pt-0 border-radius-sm align-middle">
+                          <div class="columns shrink toggler-handler">
+                            <i class="fa fa-lg fa-list-ol mt-0-5 clr-secondary"></i>
+                          </div>
+                          <div class="columns toggler-handler">
+                            <p class="mb-0"><strong>To-do</strong></p>
+                            <!-- <p class="subheader">Patient</p> -->
+                          </div>
+                          <div class="columns shrink">
+                            <div class="pull-right">
+                              <button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+                              <button class="button hollow clear mb-0 toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="row pt-1 toggler-target bg-black10">
+                          <div class="columns">
+                            <div class="row mb-1">
+                                <div class="columns">
+                                  <p class="subheader"><strong><small>To-do</small></strong></p>
+                                  <textarea name="" id="" cols="30" rows="2" placeholder="What do you want to do?" class="fancy-input"></textarea>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="columns medium-6">
+                                  <p class="subheader"><strong><small>Assign to</small></strong></p>
+                                  <select name="" id="" class="fancy-input">
+                                      <option value="">Patient</option>
+                                      <option value="">Advocate</option>
+                                  </select>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="columns">
+                            <p class="subheader"><strong><small>Mark as overdue if not completed by</small></strong></p>
+                            <input type="text" class="fancy-input" placeholder="Overdue">
+                              </div>
+                              <div class="columns">
+                            <p class="subheader"><strong><small>Once overdue, escalate notices as</small></strong></p>
+                            <select name="" id="" class="fancy-input">
+                              <option value="">Low</option>
+                              <option value="">Medium</option>
+                              <option value="">High</option>
+                              <option value="">Critical</option>
+                            </select>
+                          </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <button class="button clear hollow success mb-0"><i class="fa fa-plus"></i> ADD TASK</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-1">
+              <div class="columns pl-0 pr-0">
+                
+                <div class="row">
+                  <div class="columns pl-0">
+                    <p class="subheader mb-0"><strong>1 Hour after creation</strong></p>
+                  </div>
+                  <div class="columns shrink pull right">
+                    <button class="button clear hollow small secondary mb-0"><i class="fa fa-pencil"></i> Edit</button>
+                    <button class="button clear hollow small alert mb-0"><i class="fa fa-trash"></i> Remove</button>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="columns pl-0 pr-0">
+                    
+                    <div class="mb-1 toggler">
+                      <div class="row expanded bg-white pt-0 border-radius-sm align-middle">
+                          <div class="columns shrink toggler-handler">
+                            <i class="fa fa-lg fa-list-ol mt-0-5 clr-secondary"></i>
+                          </div>
+                          <div class="columns toggler-handler">
+                            <p class="mb-0"><strong>To-do</strong></p>
+                            <!-- <p class="subheader">Patient</p> -->
+                          </div>
+                          <div class="columns shrink">
+                            <div class="pull-right">
+                              <button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+                              <button class="button hollow clear mb-0 toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="row pt-1 toggler-target bg-black10">
+                          <div class="columns">
+                            <div class="row mb-1">
+                                <div class="columns">
+                                  <p class="subheader"><strong><small>To-do</small></strong></p>
+                                  <textarea name="" id="" cols="30" rows="2" placeholder="What do you want to do?" class="fancy-input"></textarea>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="columns medium-6">
+                                  <p class="subheader"><strong><small>Assign to</small></strong></p>
+                                  <select name="" id="" class="fancy-input">
+                                      <option value="">Patient</option>
+                                      <option value="">Advocate</option>
+                                  </select>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="columns">
+                            <p class="subheader"><strong><small>Mark as overdue if not completed by</small></strong></p>
+                            <input type="text" class="fancy-input" placeholder="Overdue">
+                              </div>
+                              <div class="columns">
+                            <p class="subheader"><strong><small>Once overdue, escalate notices as</small></strong></p>
+                            <select name="" id="" class="fancy-input">
+                              <option value="">Low</option>
+                              <option value="">Medium</option>
+                              <option value="">High</option>
+                              <option value="">Critical</option>
+                            </select>
+                          </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="mb-1 toggler">
+                      <div class="row expanded bg-white pt-0 border-radius-sm align-middle">
+                          <div class="columns shrink toggler-handler">
+                            <i class="fa fa-lg fa-list-ol mt-0-5 clr-secondary"></i>
+                          </div>
+                          <div class="columns toggler-handler">
+                            <p class="mb-0"><strong>To-do</strong></p>
+                            <!-- <p class="subheader">Patient</p> -->
+                          </div>
+                          <div class="columns shrink">
+                            <div class="pull-right">
+                              <button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+                              <button class="button hollow clear mb-0 toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="row pt-1 toggler-target bg-black10">
+                          <div class="columns">
+                            <div class="row mb-1">
+                                <div class="columns">
+                                  <p class="subheader"><strong><small>To-do</small></strong></p>
+                                  <textarea name="" id="" cols="30" rows="2" placeholder="What do you want to do?" class="fancy-input"></textarea>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="columns medium-6">
+                                  <p class="subheader"><strong><small>Assign to</small></strong></p>
+                                  <select name="" id="" class="fancy-input">
+                                      <option value="">Patient</option>
+                                      <option value="">Advocate</option>
+                                  </select>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="columns">
+                            <p class="subheader"><strong><small>Mark as overdue if not completed by</small></strong></p>
+                            <input type="text" class="fancy-input" placeholder="Overdue">
+                              </div>
+                              <div class="columns">
+                            <p class="subheader"><strong><small>Once overdue, escalate notices as</small></strong></p>
+                            <select name="" id="" class="fancy-input">
+                              <option value="">Low</option>
+                              <option value="">Medium</option>
+                              <option value="">High</option>
+                              <option value="">Critical</option>
+                            </select>
+                          </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <button class="button clear hollow success mb-0"><i class="fa fa-plus"></i> ADD TASK</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+                    
 
           </div>
         </div>

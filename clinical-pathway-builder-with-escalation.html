@@ -441,7 +441,7 @@
                   <!-- <li class="tabs-title"><a data-tabs-target="panel0" href="#panel0" >Event</a></li> -->
                   <li class="tabs-title is-active"><a data-tabs-target="panel1" href="#panel1" >Triggers</a></li>
                   <li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">tasks</a></li>
-                  <!-- <li class="tabs-title"><a data-tabs-target="panel3" href="#panel3">Escalation</a></li> -->
+                  <li class="tabs-title"><a data-tabs-target="panel3" href="#panel3">Escalation</a></li>
             </ul>
 
             <div class="tabs-content bg-black20" data-tabs-content="example-tabs">
@@ -514,11 +514,11 @@
                     
                   </div>
                   <div class="columns pr-0">                      
-                      <!-- <div class="dropdown pull-right">
+                      <div class="dropdown pull-right">
                         <button class="dropbtn button pull-right hollow clear small success mb-0 pull-right">
                           <i class="fa fa-plus"></i> Add Trigger
                         </button>
-                      </div> -->
+                      </div>
                   </div>
                 </div>
                     
@@ -674,11 +674,11 @@
                   <div class="columns">                      
                       <div class="dropdown pull-right">
                         <button class="dropbtn button pull-right hollow clear small success mb-0 pull-right"><i class="fa fa-plus"></i> Add task</button>
-                        <div class="dropdown-content dock-right pl-0 pr-0 pb-0">                          
-                          <ul class="ml-0 ">
-                            <li class="list-style-type-none"><a class="pl-0-5 pr-0-5">Add to-do</a></li>
-                            <li class="list-style-type-none"><a class="pl-0-5 pr-0-5">Add Message</a></li>
-                            <li class="list-style-type-none"><a class="pl-0-5 pr-0-5">Add Question</a></li>
+                        <div class="dropdown-content">                          
+                          <ul class="ml-0 mb-1 mt-1">
+                            <li class="list-style-type-none"><a href="">Add to-do</a></li>
+                            <li class="list-style-type-none"><a href="">Add Message</a></li>
+                            <li class="list-style-type-none"><a href="">Add Question</a></li>
                           </ul>                          
                         </div>
                       </div>
@@ -821,9 +821,10 @@
                     </div>
                   </div>
                 </div>
+
               </div>
 
-              <!-- <div class="tabs-panel pad-1 bg-black20" id="panel3">
+              <div class="tabs-panel pad-1 bg-black20" id="panel3">
                 <div class="row">
                   <div class="columns medium-6">
                     <div>
@@ -834,9 +835,14 @@
                         <option value="1">Critical</option>
                         <option value="2">Important</option>
                         <option value="3">Normal</option>
-                        <option value="4" selected>Low</option>                      
+                        <option value="4" selected>Low</option>
+                        <!-- <option value="1">Critical - 4 Hours</option>
+                        <option value="2">Important - 24 Hours</option>
+                        <option value="3">Normal - 3 Days</option>
+                        <option value="4" selected>Low - 5 Days</option> -->
                       </select>
                     </div>
+                    
                   </div>
                   <div class="column">
                     <div>
@@ -856,7 +862,9 @@
 
                     <div>
                       <div class="dropdown align-middle">
-                        <span class="h5">Day 1</span>                        
+                        <span class="h5">Day 1</span>
+                        <!-- <button class="dropbtn button hollow clear tiny success mb-0"><i class="fa fa-plus"></i> Add</button> -->
+                        
                         <div class="dropdown-content">                          
                           <ul class="ml-0 mb-1 mt-1">
                             <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
@@ -873,6 +881,7 @@
                       <div>
                         
                         <div class="mb-1 toggler">
+                          
                           <div class="row expanded bg-white pt-1 border-radius-sm">
                             <div class="columns shrink toggler-handler">
                               <i class="fa fa-lg fa-list-ol mt-0-5 clr-secondary"></i>
@@ -880,8 +889,38 @@
                             <div class="columns toggler-handler">
                               <p class="mb-0"><strong>Remind the patient to fill up the form.</strong></p>
                               <p class="subheader">Advocate</p>
-                            </div>                            
+                            </div>
+                            <div class="columns shrink">
+                              <!-- <div class="pull-right">                                                        
+                                <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                                <button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                              </div> -->
+                            </div>
                           </div>
+                          <!-- <div class="row pt-1 toggler-target bg-black10">
+                            <div class="columns">
+                              <div class="row mb-1">
+                                <div class="columns">
+                                  <p class="subheader">Task</p>
+                                  <select name="" id="">
+                                    <option value="">Remind the patient to fill up the form</option>
+                                    <option value="">Feed the Cats</option>
+                                    <option value="">Feed the Dogs</option>
+                                    <option value="">Feed the Cats to the Dogs</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="row mb-1">
+                                <div class="columns medium-6">
+                                  <p class="subheader">Select Advocate</p>
+                                  <select name="" id="">
+                                    <option value="">Sarah Burbon</option>
+                                    <option value="">Chachi Gonzales</option>
+                                  </select>
+                                </div>                            
+                              </div>                          
+                            </div>
+                          </div> -->
                         </div>
 
                       </div>
@@ -890,6 +929,8 @@
                     <div>
                       <div class="dropdown align-middle">
                         <span class="h5">Day 2</span>
+                        <!-- <button class="dropbtn button hollow clear tiny success mb-0"><i class="fa fa-plus"></i> Add</button> -->
+                        
                         <div class="dropdown-content">                          
                           <ul class="ml-0 mb-1 mt-1">
                             <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
@@ -916,8 +957,36 @@
                               <p class="subheader">Advocate</p>
                             </div>
                             <div class="columns shrink">
+                              <!-- <div class="pull-right">                                                        
+                                <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                                <button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                              </div> -->
                             </div>
                           </div>
+                          <!-- <div class="row pt-1 toggler-target bg-black10">
+                            <div class="columns">
+                              <div class="row mb-1">
+                                <div class="columns">
+                                  <p class="subheader">Task</p>
+                                  <select name="" id="">
+                                    <option value="">Please call the patient and remind him/her about the form</option>
+                                    <option value="">Feed the Cats</option>
+                                    <option value="">Feed the Dogs</option>
+                                    <option value="">Feed the Cats to the Dogs</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="row mb-1">
+                                <div class="columns medium-6">
+                                  <p class="subheader">Select Advocate</p>
+                                  <select name="" id="">
+                                    <option value="">Sarah Burbon</option>
+                                    <option value="">Chachi Gonzales</option>
+                                  </select>
+                                </div>                            
+                              </div>                          
+                            </div>
+                          </div> -->
                         </div>
 
                       </div>
@@ -926,6 +995,8 @@
                     <div>
                       <div class="dropdown align-middle">
                         <span class="h5">Day 3</span>
+                        <!-- <button class="dropbtn button hollow clear tiny success mb-0"><i class="fa fa-plus"></i> Add</button> -->
+                        
                         <div class="dropdown-content">                          
                           <ul class="ml-0 mb-1 mt-1">
                             <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
@@ -951,7 +1022,37 @@
                               <p class="mb-0"><strong>Ok, that patient did not fill up the form, you know what to do.</strong></p>
                               <p class="subheader">Advocate</p>
                             </div>
+                            <div class="columns shrink">
+                              <!-- <div class="pull-right">                                                        
+                                <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                                <button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                              </div> -->
+                            </div>
                           </div>
+                          <!-- <div class="row pt-1 toggler-target bg-black10">
+                            <div class="columns">
+                              <div class="row mb-1">
+                                <div class="columns">
+                                  <p class="subheader">Task</p>
+                                  <select name="" id="">
+                                    <option value="">Ok, that patient did not fill up the form, you know what to do</option>
+                                    <option value="">Feed the Cats</option>
+                                    <option value="">Feed the Dogs</option>
+                                    <option value="">Feed the Cats to the Dogs</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="row mb-1">
+                                <div class="columns medium-6">
+                                  <p class="subheader">Select Advocate</p>
+                                  <select name="" id="">
+                                    <option value="">Sarah Burbon</option>
+                                    <option value="">Chachi Gonzales</option>
+                                  </select>
+                                </div>                            
+                              </div>                          
+                            </div>
+                          </div> -->
                         </div>
 
                       </div>
@@ -960,6 +1061,8 @@
                     <div>
                       <div class="dropdown align-middle">
                         <span class="h5">Day 4</span>
+                        <!-- <button class="dropbtn button hollow clear tiny success mb-0"><i class="fa fa-plus"></i> Add</button> -->
+                        
                         <div class="dropdown-content">                          
                           <ul class="ml-0 mb-1 mt-1">
                             <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
@@ -985,7 +1088,37 @@
                               <p class="mb-0"><strong>I think it's time to bring out the big gun.</strong></p>
                               <p class="subheader">Advocate</p>
                             </div>
+                            <div class="columns shrink">
+                              <!-- <div class="pull-right">                                                        
+                                <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                                <button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                              </div> -->
+                            </div>
                           </div>
+                          <!-- <div class="row pt-1 toggler-target bg-black10">
+                            <div class="columns">
+                              <div class="row mb-1">
+                                <div class="columns">
+                                  <p class="subheader">Task</p>
+                                  <select name="" id="">
+                                    <option value="">I think it's time to bring out the big gun</option>
+                                    <option value="">Feed the Cats</option>
+                                    <option value="">Feed the Dogs</option>
+                                    <option value="">Feed the Cats to the Dogs</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="row mb-1">
+                                <div class="columns medium-6">
+                                  <p class="subheader">Select Advocate</p>
+                                  <select name="" id="">
+                                    <option value="">Sarah Burbon</option>
+                                    <option value="">Chachi Gonzales</option>
+                                  </select>
+                                </div>                            
+                              </div>                          
+                            </div>
+                          </div> -->
                         </div>
 
                       </div>
@@ -994,6 +1127,8 @@
                     <div>
                       <div class="dropdown align-middle">
                         <span class="h5">Day 5</span>
+                        <!-- <button class="dropbtn button hollow clear tiny success mb-0"><i class="fa fa-plus"></i> Add</button> -->
+                        
                         <div class="dropdown-content">                          
                           <ul class="ml-0 mb-1 mt-1">
                             <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
@@ -1019,7 +1154,37 @@
                               <p class="mb-0"><strong>OK, THAT'S IT, I"LL GIVE THAT PATIENT A VISIT..</strong></p>
                               <p class="subheader">THE BOSS</p>
                             </div>
+                            <div class="columns shrink">
+                              <!-- <div class="pull-right">                                                        
+                                <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                                <button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                              </div> -->
+                            </div>
                           </div>
+                          <!-- <div class="row pt-1 toggler-target bg-black10">
+                            <div class="columns">
+                              <div class="row mb-1">
+                                <div class="columns">
+                                  <p class="subheader">Task</p>
+                                  <select name="" id="">
+                                    <option value="">OK, THAT'S IT, I"LL GIVE THAT PATIENT A VISIT..</option>
+                                    <option value="">Feed the Cats</option>
+                                    <option value="">Feed the Dogs</option>
+                                    <option value="">Feed the Cats to the Dogs</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="row mb-1">
+                                <div class="columns medium-6">
+                                  <p class="subheader">Select Advocate</p>
+                                  <select name="" id="">
+                                    <option value="">Sarah Burbon</option>
+                                    <option value="">Chachi Gonzales</option>
+                                  </select>
+                                </div>                            
+                              </div>                          
+                            </div>
+                          </div> -->
                         </div>
 
                       </div>
@@ -1027,7 +1192,7 @@
 
                   </div>
                 </div>
-              </div> -->
+              </div>
 
             </div>
           </div>
