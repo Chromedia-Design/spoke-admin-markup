@@ -394,13 +394,13 @@
               </div>
               <div>
                 <fieldset>
-                  <p class="fancy-checkbox small align-middle">
-                    <input id="spcp1" type="checkbox" class="mr-0">
-                    <label class="h6 subheader" for="checkbox1">Care Coordinator</label>
+                  <p class="fancy-radio small">
+                    <input id="adv1" type="radio" name="adv" class="mr-0">
+                    <label class="h6 subheader" for="adv1">Care Coordinator</label>
                   </p>
-                  <p class="fancy-checkbox small align-middle">
-                    <input id="spcp1" type="checkbox" class="mr-0">
-                    <label class="h6 subheader" for="checkbox1">Case manager</label>
+                  <p class="fancy-checkbox small">
+                    <input id="adv1" type="radio" name="adv" class="mr-0">
+                    <label class="h6 subheader" for="adv2">Case manager</label>
                   </p>                    
                 </fieldset>
               </div>
@@ -503,49 +503,53 @@
 
               <div class="tabs-panel pad-1 bg-black20 is-active" id="panel1">
 
-                <div class="row">
+<!--                 <div class="row">
                   <div class="columns pl-0 shrink">
-                    <!-- <span class="h5">Condition: </span> -->
-                    <!-- <select name="" id="" class="fancy-input">
+                    <span class="h5">Condition: </span>
+                    <select name="" id="" class="fancy-input">
                       <option value="">Select Condition</option>
                       <option value="">Match All of the Criteria</option>
                       <option value="" selected>Match Any of the Criteria</option>
-                    </select> -->
+                    </select>
                     
                   </div>
                   <div class="columns pr-0">                      
-                      <!-- <div class="dropdown pull-right">
+                      <div class="dropdown pull-right">
                         <button class="dropbtn button pull-right hollow clear small success mb-0 pull-right">
                           <i class="fa fa-plus"></i> Add Trigger
                         </button>
-                      </div> -->
+                      </div>
                   </div>
-                </div>
+                </div> -->
                     
 
                 <div class="mb-1 toggler">
-                  <div class="row expanded bg-white pt-1 border-radius-sm toggler-handler">
-                    <div class="columns pl-0 pr-0">
+                  <div class="fancy-checkbox small mb-1">
+                    <input name="custname1" id="custname" type="checkbox" class="mr-0">
+                    <label class="h6" for="custname">CUSTOM DATE</label>
+                  </div>
+                  <div class="row expanded bg-white pt-0-5 pb-0-5 border-radius-sm toggler-handler">
+                    <div class="columns pl-0 pr-0">                      
                       <div class="row expanded">
-                        <div class="columns">
-                          <input type="text" class="fancy-input" value="4">
+                        <div class="columns pl-0-5 pr-0-5">
+                          <input type="text" class="fancy-input mb-0" value="4">
                         </div>
-                        <div class="columns">
-                          <select name="" id="" class="fancy-input">
+                        <div class="columns pl-0-5 pr-0-5">
+                          <select name="" id="" class="fancy-input mb-0">
                             <option value="">Days</option>
                             <option value="">Weeks</option>
                             <option value="">Month</option>
                             <option value="">Year</option>
                           </select>
                         </div>
-                        <div class="columns shrink">
-                          <select name="" id="" class="fancy-input">
+                        <div class="columns pl-0-5 pr-0-5 shrink">
+                          <select name="" id="" class="fancy-input mb-0">
                             <option value="">After</option>
                             <option value="">Before</option>
                           </select>
                         </div>
-                        <div class="columns medium-6">
-                          <select name="" id="" class="fancy-input">
+                        <div class="columns pl-0-5 pr-0-5 medium-6">
+                          <select name="" id="" class="fancy-input mb-0">
                             <option value="">Surgery</option>
                             <option value="">Patient Reported Pain Survey</option>
                             <option value="">Post-Op visit scheduled</option>
@@ -553,9 +557,9 @@
                         </div>
                       </div>
                     </div>
-                    <div class="columns pl-0 shrink">
+                    <div class="columns pl-0 pr-0-5 shrink">
                       <div class="pull-right">
-                        <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                        <button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
                       </div>
                     </div>
                   </div>
@@ -687,7 +691,7 @@
                 
                 <div class="mb-1 toggler">
                       
-                  <div class="row expanded bg-white pt-1 border-radius-sm">
+                  <div class="row expanded bg-white pt-0-5 border-radius-sm">
                     <div class="columns shrink toggler-handler">
                       <i class="fa fa-lg fa-envelope mt-0-5 clr-secondary"></i>
                     </div>
@@ -697,8 +701,8 @@
                     </div>
                     <div class="columns shrink">
                       <div class="pull-right">                            
-                        <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
-                        <button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                        <button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+                        <button class="button hollow clear toggler-handler mb-0"><i class="fa fa-chevron-down"></i></button>
                       </div>
                     </div>
                   </div>
@@ -722,7 +726,7 @@
 
                 <div class="mb-1 toggler">
                   
-                  <div class="row expanded bg-white pt-1 border-radius-sm">
+                  <div class="row expanded bg-white pt-0-5 border-radius-sm">
                     <div class="columns shrink toggler-handler">
                       <i class="fa fa-lg fa-list-ol mt-0-5 clr-secondary"></i>
                     </div>
@@ -732,8 +736,8 @@
                     </div>
                     <div class="columns shrink">
                       <div class="pull-right">                            
-                        <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
-                        <button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                        <button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+                        <button class="button hollow clear toggler-handler mb-0"><i class="fa fa-chevron-down"></i></button>
                       </div>
                     </div>
                   </div>
@@ -780,7 +784,7 @@
 
                 <div class="mb-1 toggler">
                   
-                  <div class="row expanded bg-white pt-1 border-radius-sm">
+                  <div class="row expanded bg-white pt-0-5 border-radius-sm">
                     <div class="columns shrink toggler-handler">
                       <i class="fa fa-lg fa-question-circle mt-0-5 clr-secondary"></i>
                     </div>
@@ -790,9 +794,9 @@
                     </div>
                     <div class="columns shrink">
                       <div class="pull-right">
-                        <a href="Builder-Form-Task.html" class="button hollow success small clear" data-open="subtask">Subtask</a>
-                        <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
-                        <button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                        <a href="Builder-Form-Task.html" class="button hollow success small clear mb-0" data-open="subtask">Subtask</a>
+                        <button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+                        <button class="button hollow clear toggler-handler mb-0"><i class="fa fa-chevron-down"></i></button>
                       </div>
                     </div>
                   </div>
@@ -873,7 +877,7 @@
                       <div>
                         
                         <div class="mb-1 toggler">
-                          <div class="row expanded bg-white pt-1 border-radius-sm">
+                          <div class="row expanded bg-white pt-0-5 border-radius-sm">
                             <div class="columns shrink toggler-handler">
                               <i class="fa fa-lg fa-list-ol mt-0-5 clr-secondary"></i>
                             </div>
@@ -907,7 +911,7 @@
                         
                         <div class="mb-1 toggler">
                           
-                          <div class="row expanded bg-white pt-1 border-radius-sm">
+                          <div class="row expanded bg-white pt-0-5 border-radius-sm">
                             <div class="columns shrink toggler-handler">
                               <i class="fa fa-lg fa-list-ol mt-0-5 clr-secondary"></i>
                             </div>
@@ -943,7 +947,7 @@
                         
                         <div class="mb-1 toggler">
                           
-                          <div class="row expanded bg-white pt-1 border-radius-sm">
+                          <div class="row expanded bg-white pt-0-5 border-radius-sm">
                             <div class="columns shrink toggler-handler">
                               <i class="fa fa-lg fa-list-ol mt-0-5 clr-secondary"></i>
                             </div>
