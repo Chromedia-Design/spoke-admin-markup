@@ -8,16 +8,14 @@
     display: none;
   }
   .clinical-pathway-new-entry {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     cursor: pointer;
     font-size: .875rem;
-    position: relative;
+    // position: relative;
     border-bottom: 1px solid #ebebeb;
     // margin-bottom: .5rem;
     border-radius: $global-radius;
     // @extend .hide-show-button-on-hover;
-    @extend .align-middle;
+    // @extend .align-middle;
     @extend .bg-black10;
     &.active {
       @extend .bg-black20;
