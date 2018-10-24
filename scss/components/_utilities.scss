@@ -19,8 +19,8 @@
 
 
 // Display ----------------------------------------
-.inline-child * { display:inline; }
-.inline-block { display:inline-block; }
+.inline-child * { display: inline; }
+.inline-block { display: inline-block; }
 .disp-block { display: block !important;}
 .disp-inline { display: inline; }
 .disp-inline-block { display: inline-block; }
@@ -171,6 +171,14 @@
 		border-radius: 5px;
 	}
 }
+
+// Columns ----------------------------------------
+.auto-columns-2 { column-count: 2 }
+.auto-columns-3 { column-count: 3 }
+
+// Text Alignment ----------------------------------------
+.text-align-left { text-align: left }
+.text-align-right { text-align: right }
 
 // Alignment ----------------------------------------
 .center-content { text-align: center; }
