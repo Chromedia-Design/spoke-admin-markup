@@ -1343,10 +1343,21 @@ $bg-instruction: #17659B;
 }
 
 
-
-
-
-
+.input-group {
+	&.extended {
+		.input-group-button {
+			.button {
+				&:first-child {
+					border-radius: 0px;
+					// background-color: transparent;
+					// @extend .clr-primary;
+					// border-top: 1px solid #FBFBFB !important;
+					// border-bottom: 1px solid #FBFBFB !important;
+				}
+			}
+		}
+	}
+}
 
 
 
