@@ -34,4 +34,3 @@ Use this command to automatically compile the SASS files:
 ```bash
 foundation watch
 ```
-
