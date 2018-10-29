@@ -1476,6 +1476,9 @@ ul.vertical-list {
         content: "";
         background-color: transparent;
       }
+      .selected {
+        background-color: red;
+      }
     }
 
     &.ul-tree-sub-parent {
@@ -1497,7 +1500,7 @@ ul.vertical-list {
         position: absolute;
         top: -5px;
         left: -.95rem;
-      }
+      }      
     }
   }
 }
