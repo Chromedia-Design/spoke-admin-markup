@@ -1357,7 +1357,9 @@ ul.vertical-list {
     user-select: none;
     font-size: rem-calc(12);
     list-style-type: none;
+    
     position: relative;
+    
     padding-left: 0.63rem;
     margin-left: 0.5rem;
     border-left: 1px solid $treeline-color;
@@ -1370,11 +1372,7 @@ ul.vertical-list {
     }
 
     &.ul-tree-child {
-      padding-bottom: .25rem;
-      // overflow: hidden;
-      // white-space: nowrap;
-      // text-overflow: ellipsis;
-      // display: table;
+      padding-bottom: .25rem;      
       i,span {
         display: inline-block;
       }
@@ -1395,10 +1393,8 @@ ul.vertical-list {
           // border-radius: 4px;
           font-weight: bold;
           background-color: #e1e1e1;
-          // @extend .bg-success;
           transition: all .5s;
           &:hover {
-            // @extend .clr-success;
             color: darken(#fff, 10%);
             transition: all .5s;
           }
@@ -1425,10 +1421,8 @@ ul.vertical-list {
         // border-radius: 4px;
         font-weight: bold;
         background-color: #e1e1e1;
-        // @extend .bg-success;
         transition: all .5s;
         &:hover {
-          // @extend .clr-success;
           color: darken(#fff, 10%);
           transition: all .5s;
         }
@@ -1444,9 +1438,12 @@ ul.vertical-list {
       border-left: 0px;
       &:after {
         content: "";
+        
         width: 1px;
         height: 17px;
+        
         background-color: $treeline-color;
+        
         position: absolute;
         top: -7px;
         left: 0px;
@@ -1454,9 +1451,12 @@ ul.vertical-list {
     }
     &:before {
       content: "";
+      
       width: 10px;
       height: 1px;
+      
       background-color: $treeline-color;
+      
       position: absolute;
       top: .6rem;
       left: 0px;
@@ -1467,17 +1467,23 @@ ul.vertical-list {
       // overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
+      cursor: pointer;
+
       border-left: 0px;
       padding-left: 0px;
       margin-left: 0px;
-      cursor: pointer;
+
       color: #323232;
       &:before {
         content: "";
         background-color: transparent;
-      }
-      .selected {
-        background-color: red;
+      }      
+    }
+    &.ul-tree-parent {
+      &:empty {
+        &:after {
+          content:none;
+        }
       }
     }
 
@@ -1485,22 +1491,42 @@ ul.vertical-list {
       padding-top: .25rem;
       &:before {
         content: "";
+        
         width: 14px;
         height: 1px;
+        
         background-color: $treeline-color;
+        
         position: absolute;
         top: 14px;
         left: -.88rem;
       }
       &:after {
         content: "";
+        
         width: 1px;
         height: 20px;
+        
         background-color: $treeline-color;
+        
         position: absolute;
         top: -5px;
         left: -.95rem;
-      }      
+      }
+      &.selected {
+        & > div div:nth-child(2) {
+          @extend .clr-primary;
+          color: #fff;
+          // border-radius: 4px;
+          font-weight: bold;
+          background-color: #e1e1e1;
+          transition: all .5s;
+          &:hover {
+            color: darken(#fff, 10%);
+            transition: all .5s;
+          }
+        }
+      }
     }
   }
 }

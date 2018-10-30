@@ -273,15 +273,11 @@ $(".toggler").on('click', '.toggler-handler', function(event) {
 // QUESTION TREE ------------------------------------------------------------
 function selectOnClick(target,targetTree, selectionClass){
     $(target).on('click', function(event) {
-        // event.stopPropagation()
         event.preventDefault();
-        /* Act on the event */
         $(this).parents(targetTree).find(target).removeClass(selectionClass)
         $(this).addClass(selectionClass)
     });
 }
-
-
 
 selectOnClick(".ul-tree-child",".ul-tree, .ul-tree-only-child-selectable","selected")
 
