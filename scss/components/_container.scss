@@ -431,6 +431,11 @@
   align-items: center;
 }
 
+.align-top {
+  display: flex;
+  align-items: baseline;
+}
+
 .align-bottom {
   display: flex;
   align-items: flex-end;

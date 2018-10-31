@@ -26,7 +26,8 @@ $(document).foundation();
 
 $(".dropdown").on('click', '.dropbtn', function(event) {
   event.preventDefault();
-  $(this).siblings(".dropdown-content").addClass("show");
+  // $(this).siblings(".dropdown-content").addClass("show");
+  $(this).parents(".dropdown").find(".dropdown-content").addClass("show");
 });
 
 window.onclick = function(event) {
