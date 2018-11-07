@@ -1012,6 +1012,10 @@ input {
 	&.round-corner {
 		border-radius: 5rem !important;
 	}
+	&.outlined {
+		background-color: #fff !important;
+		border: 1px solid #e1e1e1;
+	}
 	&.light {
 		background-color: #fff !important;
 	}
