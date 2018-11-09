@@ -1,0 +1,485 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spoke Sales Portal</title>
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+	
+	<div class="expanded row medium-collapse">
+		<div class="medium-2 columns">
+			<div class="site-nav">
+				<header>
+					<a href="#" class="logo text-center">
+						<img src="img/logo.png" title="Spoke">
+					</a>
+				</header>
+				<ul class="menu vertical" data-accordion-menu>
+					<li class="">
+						<a href="/admin/">Dashboard</a>
+					</li>
+					<li class="is-active">
+						<a href="#">Medical Procedures</a>
+						<!-- <ul class="nested vertical menu ">
+							<li class="is-active">
+								<a href="/admin/specializations">Specializations</a>
+							</li>
+
+							<li class="">
+								<a href="/admin/sub-specializations">Subspecializations</a>
+							</li>
+							<li class="">
+								<a href="/admin/treatments">Treatments</a>
+							</li>
+							<li class="">
+								<a href="/admin/packages/index">Treatment Packages</a>
+							</li>
+							<li class="">
+								<a href="/admin/categories">Categories</a>
+							</li>
+						</ul> -->
+					</li>
+					<li>
+						<a href="#">Facilities</a>
+						<ul class="nested vertical menu ">
+							<li class="">
+								<a href="/admin/facilities">All Facilities</a>
+							</li>
+							<li class="">
+								<a href="/admin/facility-services">Ancillary Services</a>
+							</li>
+							<li class="">
+								<a href="/admin/awards">Awards</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Doctors</a>
+						<ul class="nested vertical menu ">
+							<li class="">
+								<a href="/admin/doctors">All Doctors</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Companies</a>
+						<ul class="nested vertical menu ">
+							<li class="">
+								<a href="/admin/clients">All Companies</a>
+							</li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="#">Content</a>
+						<ul class="nested vertical menu">
+							<li>
+								<a href="#">Geo Data</a>
+								<ul class="geo-nav nested vertical menu ">
+									<li class="regions">
+										<a href="/admin/regions">World Regions</a>
+									</li>
+
+									<li class="countries">
+										<a href="/admin/countries">Countries</a>
+									</li>
+
+									<li class="us-states">
+										<a href="/admin/states">US States</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Migrations</a>
+								
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Users</a>
+						<ul class="nested vertical menu ">
+							<li class="">
+								<a href="/admin/users">Users</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="medium-10 columns">
+			<div class="content">
+				<div class="top-bar">
+				  	<div class="top-bar-left">
+						<!-- <ul class="menu">
+				      		<li><input type="search" placeholder="Search"></li>
+				      		<li><button type="button" class="button">Search</button></li>
+			    		</ul> -->
+				  	</div>
+				  	<div class="top-bar-right pull-right ">
+				    	<ul class="dropdown menu" data-dropdown-menu>
+				    		<li>
+				    			<a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">6</span></a>
+			    			</li>
+				      		<li>
+				        		<a href="#">Sales Agent</a>
+				        		<ul class="menu vertical">
+				          			<li><a href="#">Account</a></li>
+				          			<li><a href="#">Sign Out</a></li>
+				        		</ul>
+				      		</li>
+				    	</ul>
+				  	</div>
+				</div>
+				
+				<div class="row expanded mt-1">
+					<div class="large-12 columns">
+
+						<div class="row expanded mb-1">
+		            		<div class="large-6 columns pl-0">
+		            			<input type="text" class="fancy-input round-corner outlined" value="" placeholder="Search...">
+		            		</div>
+		            	</div>
+		            	<!-- <div class="row">
+		            		<div class="columns">
+		            			<div class="input-group">
+									<input class="input-group-field" type="number">
+									<div class="input-group-button">
+										<input type="submit" class="button" value="Submit">
+									</div>
+								</div>
+		            		</div>
+		            	</div> -->
+
+		            	<div class="row expanded mb-1">
+		            		<div class="column pl-0">
+		            			<nav aria-label="You are here:" role="navigation">
+						            <ul class="breadcrumbs">
+						              <li><a href="#">Specializations</a></li>
+						              <li><a href="#">Orthopedic</a></li>
+						              <li>Orthopedic Surgery</li>						              
+						              <!-- <li><a href="#">Subspecialization</a></li> -->
+						              <!-- <li><a href="admin-packages.html">Teeth Surgery</a></li> -->
+						              <!-- <li>Molar Root Canal</li> -->
+						            </ul>
+						          </nav>
+		            		</div>
+		            	</div>
+
+		            	<div class="page-lead row align-middle expanded">
+					        <div class="medium-9 columns">
+					          <span class="h5"><strong>Orthopedic Surgery</strong></span>
+					          <p class="subheader">
+					            <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit quia voluptates iste a sunt, nulla nihil. Asperiores in laboriosam excepturi distinctio iusto, dicta, nostrum perferendis optio ducimus, odio quo! Porro veritatis, autem?
+					            </small>
+					          </p>
+					        </div>
+					        <div class="columns">
+					          <div class="button-group small pull-right">
+					            <a href="#" class="button info rounded" data-open="edit"><i class="fa fa-edit"></i>&nbsp; Edit</a>
+					          </div>
+					        </div>
+						</div>
+
+						<ul class="tabs" data-tabs id="medicalProcedures">
+							<li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Treatment</a></li>
+							<li class="tabs-title"><a href="#panel2">Pre-Surgery Questionnaire</a></li>
+							<li class="tabs-title"><a href="#panel3">pathway Events</a></li>							
+						</ul>
+
+						<div class="tabs-content" data-tabs-content="medicalProcedures">
+
+							<div class="tabs-panel is-active" id="panel1">
+								<div class="row expanded">
+					            	<div class="columns pl-0">
+					            		<a data-open="exampleModal1" class="button success small rounded pull-right">+ Add New Sub-specialization</a>
+					            	</div>
+					            </div>
+
+								<div class="row expanded border-radius-sm bg-black10 auto-columns-3 pad1">
+									<div class="linked-list columns medium-4 align-top mb-0">
+										<span class="">
+											<a class="button link small"><i class="fa fa-trash"></i></a>
+										</span>
+										<a class="list-item" href="#">Therapeutic ultrasound</a>
+									</div>
+									<div class="linked-list columns medium-4 align-top mb-0">
+										<span class="">
+											<a class="button link small"><i class="fa fa-trash"></i></a>
+										</span>
+										<a class="list-item" href="#">Phonophoresis</a>
+									</div>
+									<div class="linked-list columns medium-4 align-top mb-0">
+										<span class="">
+											<a class="button link small"><i class="fa fa-trash"></i></a>
+										</span>
+										<a class="list-item" href="#">Biopsy</a>
+									</div>
+									<div class="linked-list columns medium-4 align-top mb-0">
+										<span class="">
+											<a class="button link small"><i class="fa fa-trash"></i></a>
+										</span>
+										<a class="list-item" href="#">High-intensity focused ultrasound</a>
+									</div>
+									<div class="linked-list columns medium-4 align-top mb-0">
+										<span class="">
+											<a class="button link small"><i class="fa fa-trash"></i></a>
+										</span>
+										<a class="list-item" href="#">Diathermy</a>
+									</div>
+									<div class="linked-list columns medium-4 align-top mb-0">
+										<span class="">
+											<a class="button link small"><i class="fa fa-trash"></i></a>
+										</span>
+										<a class="list-item" href="#">Knee Surgery</a>
+									</div>
+									
+								</div>
+							</div>
+
+							<div class="tabs-panel" id="panel2">
+								<div class="row expanded">
+					            	<div class="columns pl-0">
+					            		<a data-open="exampleModal1" class="button info small rounded pull-right"><i class="fa fa-edit"></i> Edit Pre-Surgery Questionnaire</a>
+					            	</div>
+					            </div>
+					            <div class="row expanded">
+					            	<div class="columns pl-0 pr-0">
+					            		<div class="row expanded pl-1 pr-1 pt-0 mb-1">
+											<div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+						          				<h6 class="mb-0">What is your gender?</h6>
+											</div>
+										</div>
+
+										<div class="row expanded pl-1 pr-1 pt-0 mb-1">
+											<div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+						          				<h6 class="mb-0">What medical or diagnostic test/s have you had in the past two years?</h6>
+											</div>
+										</div>
+
+										<div class="row expanded pl-1 pr-1 pt-0 mb-1">
+											<div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+						          				<h6 class="mb-0">When was your last complete physical examination?</h6>
+											</div>
+										</div>
+
+										<div class="row expanded pl-1 pr-1 pt-0 mb-1">
+											<div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+						          				<h6 class="mb-0">Are you currently taking any medications?</h6>
+											</div>
+										</div>
+
+										<div class="row expanded pl-1 pr-1 pt-0 mb-1">
+											<div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+						          				<h6 class="mb-0">Have you had any of the following medical conditions?</h6>
+											</div>
+										</div>
+
+					            	</div>
+					            </div>
+							</div>
+
+							<div class="tabs-panel" id="panel3">
+								<div class="row expanded">
+					            	<div class="columns pl-0">
+					            		<a href="#" class="button success small rounded pull-right">+ Add New Pathway Event</a>
+					            	</div>
+					            </div>
+								<div class="spoke-list bg-alternate-items compact">
+						            <div class="spoke-list-item row expanded collapse show-on-hover">
+						              <div class="columns auto">
+						                <div class="row expanded">
+						                  <div class="columns medium-12 mb-0-5">
+						                    <a href=""><p class="h6 mb-0">General Surgery Pathway Event 1</p></a>
+						                  </div>
+						                </div>
+						              </div>
+						              <div class="columns shrink hover-target align-middle" style="display: none;">
+						                <a href="" class="button clear hollow secondary mb-0 pt-0-5 pb-0-5"><i class="fa fa-pencil"></i></a>
+						                <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-trash"></i></a>
+						              </div>
+						            </div>
+
+						            <div class="spoke-list-item row expanded collapse show-on-hover">
+						              <div class="columns auto">
+						                <div class="row expanded">
+						                  <div class="columns medium-12 mb-0-5">
+						                    <a href=""><p class="h6 mb-0">General Surgery Pathway Event 2</p></a>
+						                  </div>
+						                </div>
+						              </div>
+						              <div class="columns shrink hover-target align-middle" style="display: none;">
+						                <a href="" class="button clear hollow secondary mb-0 pt-0-5 pb-0-5"><i class="fa fa-pencil"></i></a>
+						                <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-trash"></i></a>
+						              </div>
+						            </div>
+
+						            <div class="spoke-list-item row expanded collapse show-on-hover">
+						              <div class="columns auto">
+						                <div class="row expanded">
+						                  <div class="columns medium-12 mb-0-5">
+						                    <a href=""><p class="h6 mb-0">General Surgery Pathway Event 3</p></a>
+						                  </div>
+						                </div>
+						              </div>
+						              <div class="columns shrink hover-target align-middle" style="display: flex;">
+						                <a href="" class="button clear hollow secondary mb-0 pt-0-5 pb-0-5"><i class="fa fa-pencil"></i></a>
+						                <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-trash"></i></a>
+						              </div>
+						            </div>
+						            
+						            <div class="spoke-list-item row expanded collapse show-on-hover">
+						              <div class="columns auto">
+						                <div class="row expanded">
+						                  <div class="columns medium-12 mb-0-5">
+						                    <a href=""><p class="h6 mb-0">General Surgery Pathway Event 4</p></a>
+						                  </div>
+						                </div>
+						              </div>
+						              <div class="columns shrink hover-target align-middle" style="display: none;">
+						                <a href="" class="button clear hollow secondary mb-0 pt-0-5 pb-0-5"><i class="fa fa-pencil"></i></a>
+						                <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-trash"></i></a>
+						              </div>
+						            </div>
+
+						            <div class="spoke-list-item row expanded collapse show-on-hover">
+						              <div class="columns auto">
+						                <div class="row expanded">
+						                  <div class="columns medium-12 mb-0-5">
+						                    <a href=""><p class="h6 mb-0">General Surgery Pathway Event 5</p></a>
+						                  </div>
+						                </div>
+						              </div>
+						              <div class="columns shrink hover-target align-middle" style="display: none;">
+						                <a href="" class="button clear hollow secondary mb-0 pt-0-5 pb-0-5"><i class="fa fa-pencil"></i></a>
+						                <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-trash"></i></a>
+						              </div>
+						            </div>
+
+						          </div>
+							</div>
+						</div>
+
+					            
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="reveal" id="exampleModal1" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+		<div class="row collapse">
+			<div class="large-12 columns">
+				<h5 class="reveal-heading">Add New Sub-specialization</h5>
+			</div>
+		</div>
+		<div class="row collapse">
+			<div class="large-12 columns">
+				<div class="reveal-body">
+					<div class="row">
+						<div class="large-12 columns">
+							<label for="">
+								Sub-specialization Name
+								<input type="text">
+							</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="large-12 columns">
+							<label>
+								Description
+								<textarea name="" id="" cols="30" rows="5"></textarea>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row collapse">
+			<div class="large-12 columns">
+				<div class="reveal-footer">
+					<div class="button-group pull-right">
+						<a class="button link" data-close>Cancel</a>
+						<a href="#" data-open="exampleModal2" class="button success">Save</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	  	<!-- <button class="close-button" data-close aria-label="Close modal" type="button">
+	    	<span aria-hidden="true">&times;</span>
+	  	</button> -->
+	</div>
+
+	<div class="reveal" id="edit" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+        <div class="row collapse">
+          <div class="large-12 columns">
+            <h5 class="reveal-heading">Edit Specialization</h5>
+          </div>
+        </div>
+        <form>
+          <div class="row collapse">
+            <div class="auto columns">
+              <div class="reveal-body">
+                <div class="row">
+                  <div class="large-12 columns">
+                    <label>
+                      Specialization Name
+                      <input type="text" value="General Surgery">
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-12 columns">
+                    <label>
+                      Description
+                      <textarea rows="5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos vitae iure, magni dolorem quis aliquam, quam ipsum natus quod magnam laudantium. Asperiores saepe illo tempore qui commodi, assumenda minus sapiente nam. Rerum, repudiandae, architecto!</textarea>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row collapse">
+            <div class="large-12 columns">
+              <div class="reveal-footer">
+                <div class="submit button-group pull-right">
+                  <a class="button link" data-close>Cancel</a>
+                  <button type="submit" class="button primary">Save Changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <!-- <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button> -->
+      </div>
+
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/what-input/what-input.js"></script>
+	<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+	
+	<script src="js/app.js"></script>
+
+	<script type="text/javascript">
+        $(function () {
+            var timer;
+
+            $(window).resize(function() {
+                clearTimeout(timer);
+                timer = setTimeout(function() {
+                  $('.site-nav, .content').css("height", $(window).height());
+                }, 40); 
+            }).resize();
+        });
+    </script>
+
+</body>
+</html>

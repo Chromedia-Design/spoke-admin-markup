@@ -1,0 +1,248 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spoke Admin Portal</title>
+  <link rel="stylesheet" href="js/trumbowyg/ui/trumbowyg.min.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+  <div class="full-height" id="full-page">
+    <div class="row expanded full-page-header">
+      <div class="column medium-12 pl-0 pr-0">
+        <div class="row align-middle expanded reveal-heading">
+          <div class="shrink columns">
+            <div class="button-align small mb-0">
+              <a class="button rounded hollow white" href="admin-facility-view.html"><i class="fa fa-close"></i></a>
+            </div>
+          </div>
+          <div class="columns">   
+            <span class="h5">Total Knee Replacement</span>
+          </div>
+          <div class="shrink columns">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row expanded full-page-body" >
+
+      <div class="full-page-body-content bg-white columns">
+
+        <div class="row mb-2">
+          <div class="columns bg-black20 pad-1">
+            <p class="subheader"><strong><small>Title</small></strong></p>
+            <input type="text" class="fancy-input" value="Patient reported service experience survey - Physical Therapy Check in">
+          </div>          
+        </div>
+
+        <div class="row mb-2 border-radius-sm">
+          <div class="columns bg-black20 pad-1">
+            <div class="mb-1">
+              <div>
+                <p class="subheader mb-1"><strong><small>Advocate assigned to this event</small></strong></p>
+              </div>
+              <div>
+                <fieldset>
+                  <p class="fancy-radio small">
+                    <input id="adv1" type="radio" name="adv" class="mr-0">
+                    <label class="h6 subheader" for="adv1">Care Coordinator</label>
+                  </p>
+                  <p class="fancy-checkbox small">
+                    <input id="adv1" type="radio" name="adv" class="mr-0">
+                    <label class="h6 subheader" for="adv2">Case manager</label>
+                  </p>                    
+                </fieldset>
+              </div>
+            </div>
+            
+          </div>
+          <div class="columns bg-black20 pad-1">
+          </div>
+        </div>
+
+        <div class="row mb-2 ">
+          <div class="columns pr-0 pl-0">
+            <ul class="tabs tabs-inverse " data-tabs id="example-tabs">
+                  <!-- <li class="tabs-title is-active"><a data-tabs-target="panel1" href="#panel1" >Triggers</a></li> -->
+                  <li class="tabs-title is-active"><a data-tabs-target="panel2" href="#panel2">tasks</a></li>
+            </ul>
+
+            <div class="tabs-content bg-black20" data-tabs-content="example-tabs">
+              
+              <div class="tabs-panel pad-1 bg-black20 is-active" id="panel2">
+
+                <div class="row">
+                  <div class="columns">                      
+                      <div class="dropdown pull-right">
+                        <button class="dropbtn button pull-right hollow clear small success mb-0 pull-right"><i class="fa fa-plus"></i> Add task</button>
+                        <div class="dropdown-content dock-right pl-0 pr-0 pb-0">                          
+                          <ul class="ml-0 ">
+                            <li class="list-style-type-none"><a class="pl-0-5 pr-0-5">Add to-do</a></li>
+                            <li class="list-style-type-none"><a class="pl-0-5 pr-0-5">Add Message</a></li>
+                            <li class="list-style-type-none"><a class="pl-0-5 pr-0-5">Add Question</a></li>
+                          </ul>                          
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                
+                <div class="mb-1 toggler">
+                      
+                  <div class="row expanded bg-white pt-0-5 border-radius-sm">
+                    <div class="columns shrink toggler-handler">
+                      <i class="fa fa-lg fa-envelope mt-0-5 clr-secondary"></i>
+                    </div>
+                    <div class="columns toggler-handler">
+                      <p class="mb-0"><strong>This is a message y'll</strong></p>
+                      <p class="subheader">Patient</p>
+                    </div>
+                    <div class="columns shrink">
+                      <div class="pull-right">                            
+                        <button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+                        <button class="button hollow clear toggler-handler mb-0"><i class="fa fa-chevron-down"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row pt-1 toggler-target bg-black10">
+                    <div class="columns">
+                      <div class="row mb-1">
+                        <div class="columns medium-6">
+                          <p class="subheader">Title</p>
+                          <input type="text" value="THE Title"  class="fancy-input">
+                        </div>
+                      </div>
+                      <div class="row mb-1">
+                        <div class="columns">
+                          <textarea name="" id="" cols="30" rows="3" class="fancy-input">This is a message y'll</textarea>                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="mb-1 toggler">
+                  
+                  <div class="row expanded bg-white pt-0-5 border-radius-sm">
+                    <div class="columns shrink toggler-handler">
+                      <i class="fa fa-lg fa-list-ol mt-0-5 clr-secondary"></i>
+                    </div>
+                    <div class="columns toggler-handler">
+                      <p class="mb-0"><strong>Feed the Cats</strong></p>
+                      <p class="subheader">Advocate</p>
+                    </div>
+                    <div class="columns shrink">
+                      <div class="pull-right">                            
+                        <button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+                        <button class="button hollow clear toggler-handler mb-0"><i class="fa fa-chevron-down"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row pt-1 toggler-target bg-black10">
+                    <div class="columns">
+                      <div class="row mb-1">
+                        <div class="columns">
+                          <p class="subheader">Task</p>             
+                          <input type="text" class="fancy-input" value="Feed the Cats">
+                        </div>
+                      </div>
+                      <div class="row mb-1">
+                        <div class="columns medium-6">
+                          <p class="subheader">Select Assignee</p>                          
+                          <select name="" id="" class="fancy-input">
+                            <option value="">Patient</option>
+                            <option value="" selected="">Advocate</option>
+                          </select>
+                        </div>                            
+                      </div>
+                      <div class="row mb-1">
+                        <div class="columns">
+                          <p class="subheader"><strong><small>Mark as overdue if not completed by</small></strong></p>
+                          <input type="text" class="fancy-input" placeholder="Overdue">
+                        </div>
+                        <div class="columns">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-1 toggler">
+                  
+                  <div class="row expanded bg-white pt-0-5 border-radius-sm">
+                    <div class="columns shrink toggler-handler">
+                      <i class="fa fa-lg fa-question-circle mt-0-5 clr-secondary"></i>
+                    </div>
+                    <div class="columns toggler-handler">
+                      <p class="mb-0"><strong>How is it going?</strong></p>
+                      <p class="subheader">Patient</p>
+                    </div>
+                    <div class="columns shrink">
+                      <div class="pull-right">
+                        <a href="Builder-Form-Task.html" class="button hollow success small clear mb-0" data-open="subtask">Subtask</a>
+                        <button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+                        <button class="button hollow clear toggler-handler mb-0"><i class="fa fa-chevron-down"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row pt-1 toggler-target bg-black10">
+                    <div class="columns">
+                      <div class="row mb-1">
+                        <div class="columns">
+                          <p class="subheader">Task</p> 
+                          <input type="text" class="fancy-input" value="How is it going?">
+        
+                        </div>
+                      </div>
+                            
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="columns">
+            <a href="#" class="button success pull-right"> Save Changes</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/what-input/what-input.js"></script>
+  <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+  <script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+  <script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+  <script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+  <script src="js/trumbowyg/trumbowyg.min.js"></script>
+  <script src="js/app.js"></script>
+  <script type="text/javascript">
+      $(function () {
+          var timer;
+
+          $(window).resize(function () {
+              clearTimeout(timer);
+              timer = setTimeout(function () {
+                  $('.site-nav, .content').css("height", $(window).height());
+              }, 40);
+          }).resize();
+      });
+
+      $('.wysiwyg').trumbowyg();
+  </script>
+</body>
+
+</html>
