@@ -987,6 +987,10 @@ input {
 			cursor: pointer;
 		}
 	}
+	&.oulined {
+		border: .05rem solid #e1e1e1;
+		background-color: transparent !important;
+	}
 	&.small {
 		font-size: .765rem;
 		padding-bottom: .15rem;
