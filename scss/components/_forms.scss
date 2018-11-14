@@ -897,35 +897,6 @@ input {
 	border-radius: 3px;
 	padding: .5rem;
 	border: 0px;
-	// background-color: darken(#fff, 11%) !important;
-	// .tag {
-	//     display: inline-block;
-	//     background-color: #e3e3e3 !important;
-	//     border-radius: 16px;
-	//     padding-left: .5rem;
-	//     padding-right: 2rem;
-	//     padding-top: .25rem;
-	//     padding-bottom: .25rem;
-	//     position: relative;
-	//     margin-right: .5rem;
-	//     margin-bottom: .5rem;
-	//     -webkit-user-select: none;
-	//     -moz-user-select: none;
-	//     -ms-user-select: none;
-	//     user-select: none;
-	// 	&:after {
-	// 		position: absolute;
-	// 	    right: .65rem;
-	// 	    top: .25rem;
-	// 	    content: "\00D7";
-	// 	    border-radius: 10px;
-	// 	    overflow: hidden;
-	// 		&:hover {
-	// 			font-weight: bold;
-	// 			cursor: pointer;
-	// 		}
-	// 	}
-	// }
 	input {
 		display: inline-block;
 		background-color: transparent;
@@ -1163,80 +1134,6 @@ input {
 	}
 }
 
-// .fancy-radio {
-// 	display: block;
-// 	position: relative;
-// 	margin: 0;
-// 	width: 100%;
-// 	text-align: left;
-// 	cursor: pointer;
-// 	@extend .align-middle;
-// 	&.fancy-hover {
-// 		label {
-// 			transition: all .25s;
-// 			padding: .25rem 1rem;
-// 			border-radius: 50rem;
-// 		}	
-// 		&:hover {
-// 			label {
-// 				transition: all .25s;
-// 				background-color: #e1e1e1 !important;				
-// 			}
-// 		}
-// 		input {
-// 			&:checked {
-
-// 			}
-// 		}
-// 	}
-// 	&.small {
-// 		input {
-// 			width: 0px !important;
-// 			height: 0px !important;
-// 			margin-bottom: 15px !important;
-// 			margin-right: 15px !important;
-// 			&:after {
-// 				width: 25px !important;
-// 				height: 25px !important;
-// 				background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 25 25' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
-// 				background-repeat: no-repeat;
-// 				background-position: 1px 1px;
-// 			}
-// 		}  
-// 	}
-// 	input {
-// 		margin: 0 0 0 3px;
-// 		width: 0px !important;
-// 		height: 0px !important;
-// 		margin-bottom: 20px !important;
-// 		margin-right: 42px !important;
-// 		position: relative;
-// 		cursor: pointer;
-// 		&:after {
-// 			margin-left: -4px;
-// 			margin-top: -5px;
-// 			border-radius: 50%;
-// 			width: 32px;
-// 			height: 32px;
-// 			content: '';
-// 			border: 2px solid $light-gray;
-// 			background-color: $white;
-// 			background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
-// 			background-repeat: no-repeat;
-// 			background-position: 2px 3px;
-// 			z-index: 2;
-// 			position: absolute;
-// 			cursor: pointer;
-// 			transition: all 0.2s ease-in;
-// 		}
-// 		&:checked {
-// 			&:after {
-// 				background-color: $success-color;
-// 				border-color: $success-color;
-// 			}
-// 		}
-// 	}
-// }
 
 .dropdown {
 	position: relative;
