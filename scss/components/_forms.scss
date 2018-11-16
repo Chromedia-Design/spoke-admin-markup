@@ -1193,6 +1193,9 @@ input {
 		&.large {
 			min-width: 300px;
 		}
+		&.expanded {
+			width: max-content;
+		}
 
 		// a {
 		//   color: black;
