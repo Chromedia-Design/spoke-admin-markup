@@ -93,24 +93,24 @@
 
       <div class="row expanded collapse">
 
-        <div class="large-3 columns">
-          <div class="secondary site-nav">
+        <div class="shrink columns">
+          <div class="secondary site-nav nav-collapsed">
             <ul class="menu vertical" data-accordion-menu>
               <li>
                 <a href="advocate-employees.html">
-                  <small><i class="fa fa-long-arrow-left"></i>&nbsp; Back To All Employees</small>
+                  <small><i class="fa fa-long-arrow-left"></i>&nbsp; <span class="hide-on-collapsed">Back To All Employees</span></small>
                 </a>
               </li>
-              <li>
+              <li class="hide-on-collapsed">
                 <div class="card-user-profile">
                   <div class="card-user-profile-content card-section">
                     <div class="card-user-profile-avatar">
                       <span class="h5">R</span>
                     </div>
-                    <p class="card-user-profile-name">Raymond Peterson</p>
+                    <p class="card-user-profile-name hide-on-collapsed">Raymond Peterson</p>
                   </div>
 
-                  <div class="card-user-profile-actions text-center">
+                  <div class="card-user-profile-actions text-center hide-on-collapsed">
                     <div class="button-align">
                       <a href="#" class="button circle success"><i class="fa fa-phone fa-fw"></i></a>
                       <a href="#" class="button circle success"><i class="fa fa-video-camera fa-fw"></i></a>
@@ -120,25 +120,31 @@
                 </div>
               </li>
               <li class="is-active">
-                <a href="advocate-employee-profile-v2.html"><i class="fa fa-address-book-o"></i> &nbsp;Overview</a>
+                <a href="advocate-employee-profile-v2.html" ><i class="fa fa-address-book-o"></i> <span class="hide-on-collapsed">&nbsp;Overview</span></a>
               </li>
               <li>
-                <a href="advocate-employee-episodes-list-v2.html"><i class="fa fa-stethoscope"></i> &nbsp;Episodes</a>
+                <a href="advocate-employee-episodes-list-v2.html" ><i class="fa fa-stethoscope"></i> <span class="hide-on-collapsed">&nbsp;Episodes</span></a>
               </li>
               <li>
-                <a href="advocate-employee-notes-v2.html"><i class="fa fa-sticky-note-o"></i> &nbsp;Notes</a>
+                <a href="advocate-employee-notes-v2.html" ><i class="fa fa-sticky-note-o"></i> <span class="hide-on-collapsed">&nbsp;Notes</span></a>
               </li>
               <li>
-                <a href="advocate-employee-activity-v2.html"><i class="fa fa-exchange"></i> &nbsp;Activity</a>
+                <a href="advocate-employee-activity-v2.html" ><i class="fa fa-exchange"></i> <span class="hide-on-collapsed">&nbsp;Activity</span></a>
+              </li>
+              <li class="hide-on-expand">
+                <a href="#" class="clr-success "><i class="fa fa-phone fa-fw"></i></a>
+              </li>
+              <li class="hide-on-expand">
+                <a href="#" class="clr-success "><i class="fa fa-video-camera fa-fw"></i></a>
               </li>
               <li>
-                <a href="advocate-employee-inbox-v2.html"><i class="fa fa-comment-o"></i> &nbsp;Inbox</a>
+                <a href="advocate-employee-inbox-v2.html" class="clr-success"><i class="fa fa-comment-o"></i> <span class="hide-on-collapsed">&nbsp;Inbox</span></a>
               </li>
             </ul>
           </div>
         </div>
 
-        <div id="profileContent" class="large-9 columns">
+        <div id="profileContent" class="large-11 columns">
 
           <div class="page-lead row align-middle">
             <div class="auto columns">
