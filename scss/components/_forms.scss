@@ -1074,7 +1074,9 @@ input {
 		input {
 			&:checked {
 				+ label {
-					background-color: darken(#e1e1e1,5%) !important;
+					// background-color: darken(#e1e1e1,5%) !important;
+					@extend .bg-success;
+					@extend .clr-white;
 				}
 			}
 		}
