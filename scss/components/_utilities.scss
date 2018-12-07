@@ -138,6 +138,12 @@
 .border-radius-sm {
 	border-radius: 4px;
 }
+.border-radius-md {
+	border-radius: 7px;
+}
+.border-radius-lg {
+	border-radius: 10px;
+}
 .border-top-radius-sm {
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
@@ -237,6 +243,10 @@
 }
 
 // miscellaneous ----------------------------------------
+
+.hide-overflow {
+	overflow: hidden !important;
+}
 .remove {
 	cursor: pointer;
 	margin-left: .5rem;
