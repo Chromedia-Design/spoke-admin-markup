@@ -64,7 +64,36 @@
         <div class="top-bar-right">
           <ul class="dropdown menu" data-dropdown-menu>
             <li class="warning-color">
-              <a class="vertical-block" href="#"><i class="fa fa-list-ol fa-lg"></i>&nbsp; <b>New Task</b></a>
+              <button class="vertical-block" data-open="exampleModal1"><i class="fa fa-list-ol fa-lg"></i>&nbsp; <b>New Task</b></button>
+              <div class="reveal" id="exampleModal1" data-reveal>
+                <div class="reveal-heading">
+                  <strong>NEW TASK</strong>
+                </div>
+                <div class="reveal-body">
+                  <div>
+                    <label for=""><strong>Assignee</strong></label>
+                    <input type="text" placeholder="Assignee" class="fancy-input">
+                  </div>
+                  <div>
+                    <label for=""><strong>Task</strong></label>
+                    <input type="text" placeholder="Feed the Cats" class="fancy-input">  
+                  </div>
+                  <!-- <div>
+                    <label for=""><strong>THE Task</strong></label>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="THE Task" class="mb-0 fancy-input"></textarea>
+                  </div> -->
+                    
+
+                  
+                    
+                </div>
+                <div class="reveal-footer">
+                  <button class="button success">Create</button>
+                </div>
+                <button class="close-button" data-close aria-label="Close modal" type="button">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
             </li>
             <li class="success-color">
               <a class="vertical-block" href="#"><i class="fa fa-calendar-plus-o fa-lg"></i></a>
