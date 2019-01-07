@@ -49,19 +49,18 @@
 			<div class="row ">
 			    <div class="medium-12 columns pr-0 pl-0">
 
-			  		<div class="row pr-1 mb-1 mt-1 align-middle">
+			  		<!-- <div class="row pr-1 mb-1 mt-1 align-middle">
 			        	<div class="columns">
-			              <!-- <h6 class="mb-0-5">TASK BUILDER?</h6> -->
 			              <ul class="tabs" data-tabs id="example-tabs">
 			                <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Question Builder</a></li>
 			                <li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">Task Builder</a></li>
 			              </ul>
 			        	</div>
-			      	</div>
+			      	</div> -->
 
 			  		<div>
 
-			        	<div class="row">
+			        	<div class="row mt-1">
 			              	<div class="columns">
 			                	<ul class="ul-tree ul-tree-expanded">
 			                  		<li class="ul-tree-parent toggler-handler selected">
@@ -218,12 +217,49 @@
 											<div class="columns pl-0 pr-0">
 												<span>10</span>
 											</div>
-											<!-- <div class="columns shrink pr-0">
-												<button class="button hollow clear success small mb-0 pt-0 pb-0">
-													<i class="fa fa-plus"></i>
-												</button>
-											</div> -->
 										</div>
+										<ul>
+											<li class="ul-tree-sub-parent">												
+												<div class="row">
+													<div class="columns shrink pl-0 pr-0">
+														<i class="fa fa-lg fa-envelope clr-secondary"></i>
+													</div>
+													<div class="columns pl-0 pr-0">
+														<span><strong>Task</strong></span>
+													</div>
+												</div>
+											</li>
+											<li class="ul-tree-sub-parent">												
+												<div class="row">
+													<div class="columns shrink pl-0 pr-0">
+														<i class="fa fa-lg fa-list-ol clr-secondary"></i>
+													</div>
+													<div class="columns pl-0 pr-0">
+														<span><strong>Taask</strong></span>
+													</div>
+												</div>
+											</li>
+											<li class="ul-tree-sub-parent">												
+												<div class="row">
+													<div class="columns shrink pl-0 pr-0">
+														<i class="fa fa-lg fa-envelope clr-secondary"></i>
+													</div>
+													<div class="columns pl-0 pr-0">
+														<span><strong>Taaask</strong></span>
+													</div>
+												</div>
+											</li>
+											<li class="ul-tree-sub-parent">												
+												<div class="row">
+													<div class="columns shrink pl-0 pr-0">
+														<i class="fa fa-lg fa-list-ol clr-secondary"></i>
+													</div>
+													<div class="columns pl-0 pr-0">
+														<span><strong>Taaaask</strong></span>
+													</div>
+												</div>
+											</li>
+										</ul>
 										<ul class="toggler">
 											<li class="ul-tree-sub-parent toggler-handler">												
 												<div class="row">
@@ -383,10 +419,20 @@
 								<p class="mb-0"><strong>1</strong></p>
 							</div>
 							<div class="columns shrink">
-								<div class="pull-right">                            
+								<div class="pull-right align-middle">
+									<ul class="dropdown menu" data-dropdown-menu>
+									  <li class="is-dropdown-submenu-parent">
+									    <a href="#" class="button small success hollow clear"><i class="fa fa-plus"></i> ADD</a>
+									    <ul class="menu">
+									      <li><a href="#">Dependant</a></li>
+									      <li><a href="#">Task</a></li>
+									    </ul>
+									  </li>
+									</ul>
+									<!-- <button class="button hollow clear success small mb-0"><i class="fa fa-plus"></i> Dependant</button>
+									<button class="button hollow clear success small mb-0"><i class="fa fa-plus"></i> Task</button> -->
 									<button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
 									<button class="button hollow primary clear mb-0"><i class="fa fa-pencil"></i></button>
-									<button class="button hollow clear success small mb-0"><i class="fa fa-plus"></i> Dependant</button>
 								</div>
 							</div>
 						</div>
@@ -399,9 +445,10 @@
 							</div>
 							<div class="columns shrink">
 								<div class="pull-right">                                                        
+									<button class="button hollow clear success small mb-0"><i class="fa fa-plus"></i> Dependant</button>
+									<button class="button hollow clear success small mb-0"><i class="fa fa-plus"></i> Task</button>
 									<button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
 									<button class="button hollow primary clear mb-0"><i class="fa fa-pencil"></i></button>
-									<button class="button hollow clear success small mb-0"><i class="fa fa-plus"></i> Dependant</button>
 								</div>
 							</div>
 						</div>
@@ -414,9 +461,10 @@
 							</div>
 							<div class="columns shrink">
 								<div class="pull-right">                                                        
+									<button class="button hollow clear success small mb-0"><i class="fa fa-plus"></i> Dependant</button>
+									<button class="button hollow clear success small mb-0"><i class="fa fa-plus"></i> Task</button>
 									<button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
 									<button class="button hollow primary clear mb-0"><i class="fa fa-pencil"></i></button>
-									<button class="button hollow clear success small mb-0"><i class="fa fa-plus"></i> Dependant</button>
 								</div>
 							</div>
 						</div>
@@ -429,9 +477,10 @@
 							</div>
 							<div class="columns shrink">
 								<div class="pull-right">                                                        
+									<button class="button hollow clear success small mb-0"><i class="fa fa-plus"></i> Dependant</button>
+									<button class="button hollow clear success small mb-0"><i class="fa fa-plus"></i> Task</button>
 									<button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
 									<button class="button hollow primary clear mb-0"><i class="fa fa-pencil"></i></button>
-									<button class="button hollow clear success small mb-0"><i class="fa fa-plus"></i> Dependant</button>
 								</div>
 							</div>
 						</div>
@@ -444,9 +493,10 @@
 							</div>
 							<div class="columns shrink">
 								<div class="pull-right">                                                        
+									<button class="button hollow clear success small mb-0"><i class="fa fa-plus"></i> Dependant</button>
+									<button class="button hollow clear success small mb-0"><i class="fa fa-plus"></i> Task</button>
 									<button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
 									<button class="button hollow primary clear mb-0"><i class="fa fa-pencil"></i></button>
-									<button class="button hollow clear success small mb-0"><i class="fa fa-plus"></i> Dependant</button>
 								</div>
 							</div>
 						</div>
@@ -459,9 +509,10 @@
 							</div>
 							<div class="columns shrink">
 								<div class="pull-right">                                                        
+									<button class="button hollow clear success small mb-0"><i class="fa fa-plus"></i> Dependant</button>
+									<button class="button hollow clear success small mb-0"><i class="fa fa-plus"></i> Task</button>
 									<button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
 									<button class="button hollow primary clear mb-0"><i class="fa fa-pencil"></i></button>
-									<button class="button hollow clear success small mb-0"><i class="fa fa-plus"></i> Dependant</button>
 								</div>
 							</div>
 						</div>
@@ -474,9 +525,10 @@
 							</div>
 							<div class="columns shrink">
 								<div class="pull-right">                                                        
+									<button class="button hollow clear success small mb-0"><i class="fa fa-plus"></i> Dependant</button>
+									<button class="button hollow clear success small mb-0"><i class="fa fa-plus"></i> Task</button>
 									<button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
 									<button class="button hollow primary clear mb-0"><i class="fa fa-pencil"></i></button>
-									<button class="button hollow clear success small mb-0"><i class="fa fa-plus"></i> Dependant</button>
 								</div>
 							</div>
 						</div>
@@ -489,9 +541,10 @@
 							</div>
 							<div class="columns shrink">
 								<div class="pull-right">                                                        
+									<button class="button hollow clear success small mb-0"><i class="fa fa-plus"></i> Dependant</button>
+									<button class="button hollow clear success small mb-0"><i class="fa fa-plus"></i> Task</button>
 									<button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
 									<button class="button hollow primary clear mb-0"><i class="fa fa-pencil"></i></button>
-									<button class="button hollow clear success small mb-0"><i class="fa fa-plus"></i> Dependant</button>
 								</div>
 							</div>
 						</div>
@@ -504,9 +557,10 @@
 							</div>
 							<div class="columns shrink">
 								<div class="pull-right">                                                        
+									<button class="button hollow clear success small mb-0"><i class="fa fa-plus"></i> Dependant</button>
+									<button class="button hollow clear success small mb-0"><i class="fa fa-plus"></i> Task</button>
 									<button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
 									<button class="button hollow primary clear mb-0"><i class="fa fa-pencil"></i></button>
-									<button class="button hollow clear success small mb-0"><i class="fa fa-plus"></i> Dependant</button>
 								</div>
 							</div>
 						</div>
@@ -519,9 +573,10 @@
 							</div>
 							<div class="columns shrink">
 								<div class="pull-right">                                                        
+									<button class="button hollow clear success small mb-0"><i class="fa fa-plus"></i> Dependant</button>
+									<button class="button hollow clear success small mb-0"><i class="fa fa-plus"></i> Task</button>
 									<button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
 									<button class="button hollow primary clear mb-0"><i class="fa fa-pencil"></i></button>
-									<button class="button hollow clear success small mb-0"><i class="fa fa-plus"></i> Dependant</button>
 								</div>
 							</div>
 						</div>
