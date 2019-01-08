@@ -1469,7 +1469,28 @@
     
     <div id="chat-container" style="display: none;">
 
-        <div class="chat-video-container">            
+        <div class="chat-video-incoming align-center-middle text-center pt-2">
+            <div class="row video-call-caller mb-2">
+                <div class="columns col-md-12">
+                    <p class="h4 white-color mb-4">Liam Neeson Calling...</p>
+                    <img src="http://i.pravatar.cc/200" alt="" class="user-image circle">
+                </div>
+            </div>
+            <div class="row video-call-action">
+              <div class="columns col-md-2">
+                <button id="btn-call-reject" class="button clear large circle alert">
+                    <i class="fa fa-times"></i>
+                </button>
+            </div>
+              <div class="columns col-md-2">
+                  <button id="btn-call-answer" class="button clear large circle success" data-close="" aria-label="Close modal">
+                    <i class="fa fa-phone"></i>
+                </button>
+              </div>
+          </div>
+        </div>
+
+        <div class="chat-video-container">
             <div id="videos" class="compact">
                 <div id="subscriber" class="compact"></div>
                 <div id="publisher" class="compact"></div>
@@ -1479,7 +1500,7 @@
                     <button id="chat-video-compress" class="button large circle"><i class="fa fa-compress"></i></button>
                 </div>
                 <div class="columns col-md-2 center-text pad0">
-                    <button id="chat-video-message" class="button success large circle mb-0"><i class="fa fa-comment"></i></button>
+                    <button id="chat-video-message" class="button success large circle mb-0"><i class="fa fa-sticky-note"></i></button>
                 </div>
                 <div class="columns col-md-2 center-text pl-0">
                     <button id="chat-video-end-call" class="button alert large circle"><i class="fa fa-phone"></i></button>
