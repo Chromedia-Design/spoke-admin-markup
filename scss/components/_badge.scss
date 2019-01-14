@@ -1,80 +1,80 @@
 .badge {
-  line-height: 1.5em;
-  &.alert {
-    background-color: $alert-color;
-    color: $white;
-    border: none;
-  }
-  &.small {
-    width: 0.5rem;
-    height: 0.5rem;
-    min-width: 0.5rem;
-    padding: 0;
-    vertical-align: middle;
-  }
-  &.large {
-    font-size: 1.5rem;
-  }
-  &.rounded {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    border-radius: 50%;
-  }
+	line-height: 1.5em;
+	&.alert {
+		background-color: $alert-color;
+		color: $white;
+		border: none;
+	}
+	&.small {
+	    width: 0.5rem;
+	    height: 0.5rem;
+	    min-width: 0.5rem;
+	    padding: 0;
+	    vertical-align: middle;
+	}
+	&.large {		
+		font-size: 1.5rem;
+	}
+	&.rounded {
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+		border-radius: 50%;
+	}
 }
 
 .label {
-  vertical-align: middle;
-  border-radius: 2px;
-  padding: 0.4rem 0.5rem 0.333rem;
-  margin: -3px 0 0;
+	vertical-align: middle;
+	border-radius: 2px;
+	padding: 0.4rem 0.5rem 0.333rem;
+	margin: -3px 0 0;
 }
 
 .tag-cloud {
-  margin: 5px 0 0;
-  list-style: none;
-  display: inline-block;
-  .tag-cloud-individual-tag {
-    @include label;
-    display: inline-block;
-    border-radius: 500px;
-    float: left;
-    color: $primary-color;
-    background: $white;
-    margin: 3px 1px;
-    font-weight: bold;
-    border: 1px solid $primary-color;
-    .fa {
-      margin: 0 3px;
-      color: $primary-color;
-    }
-    &:hover {
-      color: $white;
-      background: darken($primary-color, 5%);
-      transition: background-color .2s ease-in;
-      background: darken($primary-color, 8%);
-    }
-  }
-  &.white {
-    .tag-cloud-individual-tag {
-      color: $white;
-      border: 1px solid $white;
-      background-color: $light-gray;
-      .fa {
-        color: $white;
-      }
-      &:hover {
-        color: $white;
-        background: darken($primary-color, 25%);
-        transition: background-color .2s ease-in;
-      }
-    }
-  }
-  &.compact {
-    .tag-cloud-individual-tag {
-      font-size: rem-calc(12);
-      font-weight: bold;
-      margin: 1px;
-      padding: 3px 5px;
-    }
-  }
+	margin: 5px 0 0;
+	list-style: none;
+	display: inline-block;
+	.tag-cloud-individual-tag {
+		@include label;
+		display: inline-block;
+		border-radius: 500px;
+		background: transparent;
+		float: left;
+		color: $primary-color;
+		background: #fff;
+		margin: 3px 1px;
+		font-weight: bold;
+		// border: 1fpx solid $primary-color;
+		.fa {
+			margin: 0 3px;
+			color: $primary-color;
+		}
+		&:hover {
+			color: $white;
+			// background: darken($primary-color, 5%);
+			transition: background-color .2s ease-in;
+			background: darken(#fff, 8%) !important ;
+		}
+	}
+	&.white {
+		.tag-cloud-individual-tag {
+			color: $white;
+			border: 1px solid $white;
+			.fa {
+				color: $white;
+			}
+			&:hover {
+				color: $white;
+				background: darken($primary-color, 25%);
+				transition: background-color .2s ease-in;
+			}
+		}
+	}
+	&.compact {
+		.tag-cloud-individual-tag {
+			font-size: 9px;
+			font-weight: normal;
+			margin: 1px;
+			padding: 2px 5px;
+		}
+	}
 }
