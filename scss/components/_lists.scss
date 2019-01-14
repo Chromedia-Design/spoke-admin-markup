@@ -1534,12 +1534,12 @@ ul.vertical-list {
         content: "";
         
         width: 1px;
-        height: 20px;
+        height: 24px;
         
         background-color: $treeline-color;
         
         position: absolute;
-        top: -5px;
+        top: -9px;
         left: -.95rem;
       }
       &.selected {

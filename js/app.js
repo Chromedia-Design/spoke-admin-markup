@@ -147,7 +147,9 @@ $("#chat-video-message").on("click", function () {
         $("#chat-container").children('.chat-video-container').animate({'height': '90%'}, 400);
         $("#chat-container").find('#videos').animate({'height': '540px'}, 400);
     }
-    $("#chat-container").find('.chat-input-container').slideToggle()
+    $("#chat-container").find('.chat-input-container').slideToggle();
+
+    // $(".chat-input-container").toggleClass('hide');
 })
 
 // Opening a message by clicking a Notification

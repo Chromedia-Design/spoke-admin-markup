@@ -22,7 +22,7 @@
             </div>
           </div>
           <div class="columns">   
-            <span class="h5">Total Knee Replacement</span>
+            <!-- <span class="h5">Total Knee Replacement</span> -->
             <!-- <a href="#" class="link white-color ml-1 mb-0"><i class="fa fa-edit"></i></a> -->
             <!-- <span class="h6">Add New Clinical Pathway</span> -->
             <!-- <input type="text" class="editable clr-white mb-0" value="Total Knee Replacement">
@@ -53,7 +53,7 @@
               <div class="columns shrink">
                 <!-- <button class="button hollow success tiny pull-right">Add Event <i class="fa fa-plus"></i></button> -->
                 <div class="dropdown pull-right">
-                  <button class="dropbtn button pull-right hollow clear small success mb-0 pull-right"><i class="fa fa-plus"></i> Add Event</button>
+                  <!-- <button class="dropbtn button pull-right hollow clear small success mb-0 pull-right"><i class="fa fa-plus"></i> Add Event</button> -->
                   <div class="dropdown-content">                          
                     <ul class="ml-0 mb-1 mt-1">
                       <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
@@ -183,10 +183,14 @@
           <div class="columns bg-black20 pad-1">
             <p class="subheader"><strong><small>Title</small></strong></p>
             <input type="text" class="fancy-input" value="Patient reported service experience survey - Physical Therapy Check in">
+            <p class="fancy-checkbox small">
+              <input id="enab" type="checkbox" name="enab" class="mr-0">
+              <label class="h6 subheader" for="enab">Enabled</label>
+            </p>                    
           </div>          
         </div>
 
-        <div class="row mb-2 border-radius-sm">
+        <!-- <div class="row mb-2 border-radius-sm">
           <div class="columns bg-black20 pad-1">
             <div class="mb-1">
               <div>
@@ -198,7 +202,7 @@
                     <input id="adv1" type="radio" name="adv" class="mr-0">
                     <label class="h6 subheader" for="adv1">Care Coordinator</label>
                   </p>
-                  <p class="fancy-checkbox small">
+                  <p class="fancy-radio small">
                     <input id="adv1" type="radio" name="adv" class="mr-0">
                     <label class="h6 subheader" for="adv2">Case manager</label>
                   </p>                    
@@ -207,33 +211,7 @@
             </div>
             
           </div>
-          <div class="columns bg-black20 pad-1">
-            <!-- <div class="mb-1">
-              <div>
-                <p class="subheader mb-1"><strong><small>Deadline/Duration</small></strong></p>
-              </div>
-              <div class="row">
-                <div class="columns pl-0 pr-0-5">
-                  <fieldset>
-                    <input type="text" class="fancy-input" value="1">
-                  </fieldset>
-                </div>
-                <div class="columns pr-0 pl-0-5">
-                  <fieldset>
-                    <select name="" id="" class="fancy-input">
-                      <option value="1">Day(s)</option>
-                      <option value="2">Week(s)</option>
-                      <option value="3">Month(s)</option>
-                      <option value="4">Year(s)</option>
-                    </select>
-                  </fieldset>
-                </div>
-                  
-              </div>
-            </div> -->
-            
-          </div>
-        </div>
+        </div> -->
 
         <div class="row mb-2 ">
           <div class="columns pr-0 pl-0">
@@ -332,7 +310,7 @@
                     <div class="columns pl-0 pr-0">                      
                       <div class="row expanded">
                         <div class="columns pl-0-5 pr-0-5">
-                          <input type="text" class="fancy-input mb-0" value="4">
+                          <input type="number" class="fancy-input mb-0" value="4">
                         </div>
                         <div class="columns pl-0-5 pr-0-5">
                           <select name="" id="" class="fancy-input mb-0">
@@ -556,7 +534,7 @@
                       </div>
                       <div class="row mb-1">
                         <div class="columns medium-6">
-                          <p class="subheader">Select Assignee</p>                          
+                          <p class="subheader">Assigned for follow up</p>                          
                           <select name="" id="" class="fancy-input">
                             <option value="">Patient</option>
                             <option value="" selected="">Advocate</option>
@@ -566,7 +544,7 @@
                       <div class="row mb-1">
                         <div class="columns">
                           <p class="subheader"><strong><small>Mark as overdue if not completed by</small></strong></p>
-                          <input type="text" class="fancy-input" placeholder="Overdue">
+                          <input type="date" class="fancy-input" placeholder="Overdue">
                         </div>
                         <div class="columns">
                           <!-- <p class="subheader"><strong><small>Once overdue, escalate notices as</small></strong></p>
@@ -613,15 +591,16 @@
                           </select> -->
                         </div>
                       </div>
-                      <!-- <div class="row mb-1">
+                      <div class="row mb-1">
                         <div class="columns medium-6">
-                          <p class="subheader">Select Assignee</p>                          
+                          <p class="subheader">Assigned for follow up</p>                          
                           <select name="" id="" class="fancy-input">
-                            <option value="">Patient</option>
-                            <option value="">Advocate</option>
+                            <option value="">care coordinator</option>
+                            <option value="">case manager</option>
                           </select>
                         </div>                            
-                      </div> -->                          
+                      </div>
+                      
                     </div>
                   </div>
                 </div>

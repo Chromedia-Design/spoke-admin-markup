@@ -1,0 +1,1226 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spoke Admin Portal</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<div class="expanded row medium-collapse">
+  <div class="medium-2 columns">
+    <div class="site-nav">
+      <header>
+        <a href="#" class="logo text-center">
+          <img src="img/logo.png" title="Spoke">
+        </a>
+      </header>
+      <ul class="menu vertical" data-accordion-menu>
+        <li>
+          <a href="advocate-dashboard.html">Dashboard</a>
+        </li>
+        <li class="is-active">
+          <a href="advocate-employees.html">Employees</a>
+        </li>
+        <li>
+          <a href="advocate-communications.html">Inbox</a>
+        </li>
+        <li>
+          <a href="#">Doctors</a>
+        </li>
+        <li>
+          <a href="advocate-facilities.html">Facilities</a>
+        </li>
+        <li>
+          <a href="#">Activity Logs</a>
+        </li>
+        <li>
+          <a href="advocate-profile.html">Profile</a>
+          <ul class="nested vertical menu">
+            <li>
+              <a href="advocate-profile.html">User Information</a>
+            </li>
+            <li>
+              <a href="advocate-password.html">Change My Password</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="medium-10 columns">
+    <div class="content">
+
+      <div class="top-bar">
+        <div class="top-bar-left">
+          <!-- <ul class="menu">
+                <li><input type="search" placeholder="Search"></li>
+                <li><button type="button" class="button">Search</button></li>
+          </ul> -->
+        </div>
+        <div class="top-bar-right">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li class="drop-text">
+              <a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span
+                class="alert badge" id="notifCount">24</span></a>
+              <ul class="notifications menu vertical">
+                <li>
+                  <span>Admin Admin recently made changes to <a href="#">Denver Vail Orthopedics</a>.</span>
+                </li>
+                <li>
+                  <span>Admin Admin recently made changes to <a href="#">Denver Vail Orthopedics</a>.</span>
+                </li>
+                <li>
+                  <a href="#" class="button info hollow tiny expanded">View All</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a data-toggle="chatSupport"><i class="fa fa-phone-square fa-lg"></i><span
+                class="success badge" id="notifCount2">1</span></a>
+            </li>
+            <li>
+              <a href="#">Spoke Advocate &nbsp;</a>
+              <ul class="menu vertical">
+                <li><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Sign Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row expanded collapse">
+
+        <div class="shrink columns">
+          <div class="secondary site-nav "> <!-- nav-collapsed -->
+            <ul class="menu vertical" data-accordion-menu>
+              <li>
+                <a href="#">
+                  <!-- <small><i class="fa fa-long-arrow-left"></i>&nbsp; <span class="hide-on-collapsed">Back To All Employees</span></small> -->
+                  <small><i class="fa fa-expand"></i>&nbsp; </small>
+                </a>
+              </li>
+              <li class="hide-on-collapsed">
+                <div class="card-user-profile">
+                  <div class="card-user-profile-content card-section">
+                    <div class="card-user-profile-avatar">
+                      <span class="h5">R</span>
+                    </div>
+                    <p class="card-user-profile-name hide-on-collapsed">Raymond Peterson</p>
+                  </div>
+
+                  <div class="card-user-profile-actions text-center hide-on-collapsed">
+                    <div class="button-align">
+                      <a href="#" class="button circle success"><i class="fa fa-phone fa-fw"></i></a>
+                      <a href="#" class="button circle success"><i class="fa fa-video-camera fa-fw"></i></a>
+                      <a href="#" class="button circle success"><i class="fa fa-comments fa-fw"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="is-active">
+                <a href="advocate-employee-profile-v2.html" ><i class="fa fa-address-book-o"></i> <span class="hide-on-collapsed">&nbsp;Overview</span></a>
+              </li>
+              <li>
+                <a href="advocate-employee-episodes-list-v2.html" ><i class="fa fa-stethoscope"></i> <span class="hide-on-collapsed">&nbsp;Episodes</span></a>
+              </li>
+              <li>
+                <a href="advocate-employee-notes-v2.html" ><i class="fa fa-sticky-note-o"></i> <span class="hide-on-collapsed">&nbsp;Notes</span></a>
+              </li>
+              <li>
+                <a href="advocate-employee-activity-v2.html" ><i class="fa fa-exchange"></i> <span class="hide-on-collapsed">&nbsp;Activity</span></a>
+              </li>
+              <li class="hide">
+                <a href="#"><i class="fa fa-phone fa-fw"></i></a>
+              </li>
+              <li class="hide">
+                <a href="#"><i class="fa fa-video-camera fa-fw"></i></a>
+              </li>
+              <li>
+                <a href="advocate-employee-inbox-v2.html"><i class="fa fa-comment-o"></i> <span class="hide-on-collapsed">&nbsp;Inbox</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="profileContent" class="columns">
+
+          <div class="row expanded">
+            <div class="medium-12 columns">
+              <nav aria-label="You are here:" role="navigation">
+                <ul class="breadcrumbs">
+                  <li><a href="advocate-employee-episodes-list-v2.html">Episodes</a></li>
+                  <li>Episode Details</li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="row expanded">
+            <div class="large-12 columns">
+
+              <div class="page-lead row collapse align-middle">
+                <div class="shrink columns">
+                  <span class="h5 mb-0">Total Knee Replacement</span>
+                  <p class="subheader mb-0">
+                    <small>Episode #: 2134567</small>
+                  </p>
+                </div>
+                <div class="auto columns">
+                  <div class="button-align small pull-right">
+                    <span class="brick link"><span class="subheader">Last Edit:</span> Mar-3 8:00am</span>
+                    <a href="advocate-employee-episode-edit.html" class="button info hollow"><i
+                      class="fa fa-edit fa-fw"></i>&nbsp; Edit</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="columns">
+                  <ul class="tabs" data-tabs id="episodeTabs">
+                    <li class="tabs-title is-active">
+                      <a href="#panel1">Episode Details</a>
+                    </li>
+                    <li class="tabs-title">
+                      <a href="#panel3">Health Risk Assessment</a>
+                    </li>
+                    <li class="tabs-title">
+                      <a href="#panel2">Facility Finder</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+                  
+
+              <div class="tabs-content" data-tabs-content="episodeTabs">
+
+                <div class="tabs-panel is-active" id="panel1">
+
+                  <div class="row collapse label-block">
+                    <div class="large-3 columns end">
+                      <div class="label-group">
+                        <p>Total Deductible</p>
+                        <h6>10,000.00
+                          <small>USD</small>
+                        </h6>
+                        <p class="subheader">
+                          <small>From PoKitDoc Jan-12 8:00am</small>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="large-3 columns end">
+                      <div class="label-group">
+                        <p>Remaining Deductible</p>
+                        <h6>10,000.00
+                          <small>USD</small>
+                        </h6>
+                        <p class="subheader">
+                          <small>Edited by Emman C. Jan-12 8:00am</small>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="large-3 columns end">
+                      <div class="label-group">
+                        <p>Co-insurance %</p>
+                        <h6>10,000.00
+                          <small>USD</small>
+                        </h6>
+                        <p class="subheader">
+                          <small>From PoKitDoc Jan-12 8:00am</small>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="large-3 columns end">
+                      <div class="label-group">
+                        <p>Out-of-Pocket Maximum</p>
+                        <h6>10,000.00
+                          <small>USD</small>
+                        </h6>
+                        <p class="subheader">
+                          <small>From PoKitDoc Jan-12 8:00am</small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row collapse label-block">
+                    <div class="columns end">
+                      <div class="label-group">
+                        <p>Email Address</p>
+                        <h6>jerry.russell@domain.com</h6>
+                      </div>
+                    </div>
+                    <div class="columns end">
+                      <div class="label-group">
+                        <p>Phone Number</p>
+                        <h6>123-456-7890</h6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row collapse label-block mb-3">
+                    <div class="large-12 columns end">
+                      <div class="label-group">
+                        <p>Address</p>
+                        <h6 class="">336 1st Dr, El Paso, NJ, USA 23654</h6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="page-lead row align-middle collapse">
+                    <div class="auto columns">
+                      <span class="h5">Clinical Pathway</span>
+                    </div>
+                    <!-- <div class="shrink columns">
+                      <div class="button-align small mb-0 pull-right">
+                        <a class="button info hollow"><i class="fa fa-edit"></i>&nbsp; Edit Pathway</a>
+                      </div>
+                    </div> -->
+                  </div>
+
+                  <div class="row collapse">
+                    <div class="columns auto">
+                      <div class="row collapse label-block">
+                        <div class="auto columns end">
+                          <div class="label-group">
+                            <p>Facility</p>
+                            <h6>National Hospital California</h6>
+                          </div>
+                        </div>
+                        <div class="auto columns end">
+                          <div class="label-group">
+                            <p>Date of surgery</p>
+                            <h6 class="clr-success">Jul 25, 2018</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row collapse mb-1">
+                    <div class="columns auto">
+                      <div class="row collapse label-block">
+                        <div class="large-6 columns end">
+                          <div class="label-group marker secondary marker-pos-top-left">
+                            <p>Care Coordinator</p>
+                            <h6>Julie Kloster</h6>
+                          </div>
+                        </div>
+                        <div class="large-6 columns end">
+                          <div class="label-group  marker warning marker-pos-top-left">
+                            <p>Care Manager</p>
+                            <h6>Chachi Gonzales</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row collapse">
+                    <div class="auto columns clinical-pathway mb-2">
+
+                      <div class="label-block box-shadow mb-0-5 bg-white border-radius-sm toggler">
+                        <div class="row align-middle collapse toggler-handler">
+                          <div class="columns shrink">
+                            <div class="label-group borderless middle marker secondary marker-pos-top-left border-radius-sm hide-overflow">
+                              <div class="h4"><i class="fa fa-check-circle clr-success"></i></div>
+                            </div>
+                          </div>
+                          <div class="columns border-radius-sm">
+                            <div class="label-group borderless">
+                              <div class="row collapse expanded">
+                                <div class="auto columns ">
+                                  <h6>Pre-Surgery Questionnaire</h6>
+                                  <p class="mb-0"><strong>Jul 1, 2018</strong></p>
+                                </div>
+                                <div class="shrink columns pr-1">
+                                  <span class="fa-stack" style="vertical-align: top;">
+                                    <i class="fa fa-circle fa-stack-2x clr-secondary"></i>
+                                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                  </span>
+                                  <span class="fa-stack" style="vertical-align: top;">
+                                    <i class="fa fa-circle fa-stack-2x clr-secondary"></i>
+                                    <i class="fa fa-check fa-stack-1x fa-inverse"></i>
+                                  </span>
+                                  <!-- <span class="fa-stack" style="vertical-align: top;">
+                                    <i class="fa fa-circle fa-stack-2x clr-secondary"></i>
+                                    <i class="fa fa-question fa-stack-1x fa-inverse"></i>
+                                  </span> -->
+                                </div>
+                                <div class="shrink columns pl-1">
+                                  <button class="button clear hollow clr-black20 mb-0">
+                                    <i class="fa fa-times"></i>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row toggler-target">
+                          <div class="columns">
+                            <p>On a scale from 1 to 10 how would you rate your pain</p>
+                            <p>8</p>
+                            <p>Severe</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="label-block box-shadow mb-0-5 bg-white border-radius-sm toggler">
+                        <div class="row align-middle collapse toggler-handler">
+                          <div class="columns shrink">
+                            <div class="label-group borderless middle marker secondary marker-pos-top-left border-radius-sm hide-overflow">
+                              <div class="h4"><i class="fa fa-check-circle clr-success"></i></div>
+                            </div>
+                          </div>
+                          <div class="columns border-radius-sm">
+                            <div class="label-group borderless">
+                              <div class="row collapse expanded">
+                                <div class="auto columns ">
+                                  <h6>Functional capacity survey</h6>
+                                  <p class="mb-0"><strong>Jul 8, 2018</strong></p>
+                                </div>
+                                <div class="shrink columns pr-1">
+                                  <span class="fa-stack" style="vertical-align: top;">
+                                    <i class="fa fa-circle fa-stack-2x clr-secondary"></i>
+                                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                  </span>
+                                  <span class="fa-stack" style="vertical-align: top;">
+                                    <i class="fa fa-circle fa-stack-2x clr-secondary"></i>
+                                    <i class="fa fa-check fa-stack-1x fa-inverse"></i>
+                                  </span>
+                                  <span class="fa-stack" style="vertical-align: top;">
+                                    <i class="fa fa-circle fa-stack-2x clr-secondary"></i>
+                                    <i class="fa fa-question fa-stack-1x fa-inverse"></i>
+                                  </span>
+                                </div>
+                                <div class="shrink columns pl-1">
+                                  <button class="button clear hollow clr-black20 mb-0">
+                                    <i class="fa fa-times"></i>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row toggler-target">
+                          <div class="columns">
+                            <p>On a scale from 1 to 10 how would you rate your pain</p>
+                            <p>8</p>
+                            <p>Severe</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="label-block box-shadow mb-0-5 bg-white border-radius-sm toggler">
+                        <div class="row align-middle collapse toggler-handler">
+                          <div class="columns shrink">
+                            <div class="label-group borderless middle marker secondary marker-pos-top-left border-radius-sm hide-overflow">
+                              <div class="h4"><i class="fa fa-check-circle clr-success"></i></div>
+                            </div>
+                          </div>
+                          <div class="columns border-radius-sm">
+                            <div class="label-group borderless">
+                              <div class="row collapse expanded">
+                                <div class="auto columns ">
+                                  <h6>Pre-op Evaluation and clearance</h6>
+                                  <p class="mb-0"><strong>Jul 10, 2018</strong></p>
+                                </div>
+                                <div class="shrink columns pr-1">
+                                  <!-- <span class="fa-stack" style="vertical-align: top;">
+                                    <i class="fa fa-circle fa-stack-2x clr-secondary"></i>
+                                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                  </span> -->
+                                  <span class="fa-stack" style="vertical-align: top;">
+                                    <i class="fa fa-circle fa-stack-2x clr-secondary"></i>
+                                    <i class="fa fa-check fa-stack-1x fa-inverse"></i>
+                                  </span>
+                                  <span class="fa-stack" style="vertical-align: top;">
+                                    <i class="fa fa-circle fa-stack-2x clr-secondary"></i>
+                                    <i class="fa fa-question fa-stack-1x fa-inverse"></i>
+                                  </span>
+                                </div>
+                                <div class="shrink columns pl-1">
+                                  <button class="button clear hollow clr-black20 mb-0">
+                                    <i class="fa fa-times"></i>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row toggler-target">
+                          <div class="columns">
+                            <p>On a scale from 1 to 10 how would you rate your pain</p>
+                            <p>8</p>
+                            <p>Severe</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="label-block box-shadow mb-0-5 bg-white border-radius-sm toggler">
+                        <div class="row align-middle collapse toggler-handler">
+                          <div class="columns shrink">
+                            <div class="label-group borderless middle marker secondary marker-pos-top-left border-radius-sm hide-overflow">
+                              <div class="h4"><i class="fa fa-check-circle clr-success"></i></div>
+                            </div>
+                          </div>
+                          <div class="columns border-radius-sm">
+                            <div class="label-group borderless">
+                              <div class="row collapse expanded">
+                                <div class="auto columns ">
+                                  <h6>Pre-hab check in (one week before surgery)</h6>
+                                  <p class="mb-0"><strong>Jul 16, 2018</strong></p>
+                                </div>
+                                <div class="shrink columns pr-1">
+                                  <span class="fa-stack" style="vertical-align: top;">
+                                    <i class="fa fa-circle fa-stack-2x clr-secondary"></i>
+                                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                  </span>
+                                  <!-- <span class="fa-stack" style="vertical-align: top;">
+                                    <i class="fa fa-circle fa-stack-2x clr-secondary"></i>
+                                    <i class="fa fa-check fa-stack-1x fa-inverse"></i>
+                                  </span>
+                                  <span class="fa-stack" style="vertical-align: top;">
+                                    <i class="fa fa-circle fa-stack-2x clr-secondary"></i>
+                                    <i class="fa fa-question fa-stack-1x fa-inverse"></i>
+                                  </span> -->
+                                </div>
+                                <div class="shrink columns pl-1">
+                                  <button class="button clear hollow clr-black20 mb-0">
+                                    <i class="fa fa-times"></i>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row toggler-target">
+                          <div class="columns">
+                            <p>On a scale from 1 to 10 how would you rate your pain</p>
+                            <p>8</p>
+                            <p>Severe</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="label-block box-shadow mb-0-5 bg-white border-radius-sm toggler">
+                        <div class="row align-middle collapse toggler-handler">
+                          <div class="columns shrink">
+                            <div class="label-group borderless middle marker secondary marker-pos-top-left border-radius-sm hide-overflow">
+                              <div class="h4"><i class="fa fa-check-circle clr-success"></i></div>
+                            </div>
+                          </div>
+                          <div class="columns border-radius-sm">
+                            <div class="label-group borderless">
+                              <div class="row collapse expanded">
+                                <div class="auto columns ">
+                                  <h6>Pre-op Consultation</h6>
+                                  <p class="mb-0"><strong>Jul 24, 2018</strong></p>
+                                </div>
+                                <div class="shrink columns pr-1">
+                                  <span class="fa-stack" style="vertical-align: top;">
+                                    <i class="fa fa-circle fa-stack-2x clr-secondary"></i>
+                                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                  </span>
+                                  <span class="fa-stack" style="vertical-align: top;">
+                                    <i class="fa fa-circle fa-stack-2x clr-secondary"></i>
+                                    <i class="fa fa-check fa-stack-1x fa-inverse"></i>
+                                  </span>
+                                  <span class="fa-stack" style="vertical-align: top;">
+                                    <i class="fa fa-circle fa-stack-2x clr-secondary"></i>
+                                    <i class="fa fa-question fa-stack-1x fa-inverse"></i>
+                                  </span>
+                                </div>
+                                <div class="shrink columns pl-1">
+                                  <button class="button clear hollow clr-black20 mb-0">
+                                    <i class="fa fa-times"></i>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row toggler-target">
+                          <div class="columns pb-1">
+                            <div class="activity-listing compact">
+                              <div class="listing-title">Sept 26, 2018</div>
+                              <ol class="table-list">
+                                <li class="table-list-item">
+                                  <div class="table-list-cell activity-icon">
+                                    <p><i class="fa fa-check-circle fa-fw"></i></p>
+                                  </div>
+                                  <div class="table-list-cell activity-name">
+                                    <p>Sent notification message to John Doe.</p>
+                                  </div>
+                                  <div class="table-list-cell activity-time">
+                                    <p class="pull-right subheader">8:00AM</p>
+                                  </div>
+                                </li>
+                              </ol>
+                              <div class="listing-title">Jul 8, 2018</div>
+                              <ol class="table-list">
+                                <li class="table-list-item">
+                                  <div class="table-list-cell activity-icon">
+                                    <p><i class="fa fa-check-circle fa-fw"></i></p>
+                                  </div>
+                                  <div class="table-list-cell activity-name">
+                                    <p>John Doe opened and clicked notification message.</p>
+                                  </div>
+                                  <div class="table-list-cell activity-time">
+                                    <p class="pull-right subheader">a few seconds ago</p>
+                                  </div>
+                                </li>
+                                <li class="table-list-item">
+                                  <div class="table-list-cell activity-icon">
+                                    <p><i class="fa fa-check-circle fa-fw"></i></p>
+                                  </div>
+                                  <div class="table-list-cell activity-name">
+                                    <p>Sent notification message to John Doe.</p>
+                                  </div>
+                                  <div class="table-list-cell activity-time">
+                                    <p class="pull-right subheader">an hour ago</p>
+                                  </div>
+                                </li>
+                              </ol>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="label-block box-shadow mb-0-5 bg-white border-radius-sm toggler">
+                        <div class="row align-middle collapse handoff toggler-handler">
+                          <div class="columns shrink">
+                            <div class="label-group borderless middle marker warning marker-pos-top-left border-radius-sm hide-overflow">
+                              <div class="h4"><i class="fa fa-check-circle clr-success"></i></div>
+                            </div>
+                          </div>
+                          <div class="columns border-radius-sm">
+                            <div class="label-group borderless">
+                              <div class="row collapse expanded">
+                                <div class="auto columns ">
+                                  <h6>Surgery</h6>
+                                  <p class="mb-0"><strong>Jul 25, 2018</strong></p>
+                                </div>
+                                <div class="shrink columns pr-1">
+                                  <span class="fa-stack" style="vertical-align: top;">
+                                    <i class="fa fa-circle fa-stack-2x clr-secondary"></i>
+                                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                  </span>
+                                  <!-- <span class="fa-stack" style="vertical-align: top;">
+                                    <i class="fa fa-circle fa-stack-2x clr-secondary"></i>
+                                    <i class="fa fa-check fa-stack-1x fa-inverse"></i>
+                                  </span> -->
+                                  <span class="fa-stack" style="vertical-align: top;">
+                                    <i class="fa fa-circle fa-stack-2x clr-secondary"></i>
+                                    <i class="fa fa-question fa-stack-1x fa-inverse"></i>
+                                  </span>
+                                </div>
+                                <div class="shrink columns pl-1">
+                                  <button class="button clear hollow clr-black20 mb-0">
+                                    <i class="fa fa-times"></i>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row toggler-target">
+                          <div class="columns">
+                            <p>On a scale from 1 to 10 how would you rate your pain</p>
+                            <p>8</p>
+                            <p>Severe</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="label-block box-shadow mb-0-5 bg-white border-radius-sm toggler">
+                        <div class="row align-middle collapse toggler-handler">
+                          <div class="columns shrink">
+                            <div class="label-group borderless middle marker warning marker-pos-top-left border-radius-sm hide-overflow">
+                              <div class="h4"><i class="fa fa-check-circle clr-success"></i></div>
+                            </div>
+                          </div>
+                          <div class="columns border-radius-sm">
+                            <div class="label-group borderless">
+                              <div class="row collapse expanded">
+                                <div class="auto columns ">
+                                  <h6>Pain Survey</h6>
+                                  <p class="mb-0"><strong>Jul 27, 2018</strong></p>
+                                </div>
+                                <div class="shrink columns pr-1">
+                                  <span class="fa-stack" style="vertical-align: top;">
+                                    <i class="fa fa-circle fa-stack-2x clr-secondary"></i>
+                                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                  </span>
+                                  <span class="fa-stack" style="vertical-align: top;">
+                                    <i class="fa fa-circle fa-stack-2x clr-secondary"></i>
+                                    <i class="fa fa-check fa-stack-1x fa-inverse"></i>
+                                  </span>
+                                  <!-- <span class="fa-stack" style="vertical-align: top;">
+                                    <i class="fa fa-circle fa-stack-2x clr-secondary"></i>
+                                    <i class="fa fa-question fa-stack-1x fa-inverse"></i>
+                                  </span> -->
+                                </div>
+                                <div class="shrink columns pl-1">
+                                  <button class="button clear hollow clr-black20 mb-0">
+                                    <i class="fa fa-times"></i>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row toggler-target">
+                          <div class="columns">
+                            <p>On a scale from 1 to 10 how would you rate your pain</p>
+                            <p>8</p>
+                            <p>Severe</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="label-block box-shadow mb-0-5 bg-white border-radius-sm toggler">
+                        <div class="row align-middle collapse toggler-handler">
+                          <div class="columns shrink">
+                            <div class="label-group borderless middle marker warning marker-pos-top-left border-radius-sm hide-overflow">
+                              <div class="h4"><i class="fa fa-circle clr-warning"></i></div>
+                            </div>
+                          </div>
+                          <div class="columns border-radius-sm">
+                            <div class="label-group borderless">
+                              <div class="row collapse expanded">
+                                <div class="auto columns ">
+                                  <h6>Post-Op visit scheduled</h6>
+                                  <p class="mb-0"><strong>Jul 30, 2018</strong></p>
+                                </div>
+                                <div class="shrink columns pr-1">
+                                  <!-- <span class="fa-stack" style="vertical-align: top;">
+                                    <i class="fa fa-circle fa-stack-2x clr-secondary"></i>
+                                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                  </span> -->
+                                  <span class="fa-stack" style="vertical-align: top;">
+                                    <i class="fa fa-circle fa-stack-2x clr-secondary"></i>
+                                    <i class="fa fa-check fa-stack-1x fa-inverse"></i>
+                                  </span>
+                                  <!-- <span class="fa-stack" style="vertical-align: top;">
+                                    <i class="fa fa-circle fa-stack-2x clr-secondary"></i>
+                                    <i class="fa fa-question fa-stack-1x fa-inverse"></i>
+                                  </span> -->
+                                </div>
+                                <div class="shrink columns pl-1">
+                                  <button class="button clear hollow clr-black20 mb-0">
+                                    <i class="fa fa-times"></i>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row toggler-target">
+                          <div class="columns">
+                            <p>On a scale from 1 to 10 how would you rate your pain</p>
+                            <p>8</p>
+                            <p>Severe</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="label-block box-shadow mb-0-5 bg-white border-radius-sm toggler">
+                        <div class="row align-middle collapse toggler-handler">
+                          <div class="columns shrink">
+                            <div class="label-group borderless middle marker warning marker-pos-top-left border-radius-sm hide-overflow">
+                              <div class="h4"><i class="fa fa-circle clr-black20"></i></div>
+                            </div>
+                          </div>
+                          <div class="columns border-radius-sm">
+                            <div class="label-group borderless">
+                              <div class="row collapse expanded">
+                                <div class="auto columns ">
+                                  <h6>Compliance with Physical Therapy regimen (1 week post)</h6>
+                                  <p class="mb-0"><strong>Aug 2, 2018</strong></p>
+                                </div>
+                                <div class="shrink columns pr-1">
+                                  <span class="fa-stack" style="vertical-align: top;">
+                                    <i class="fa fa-circle fa-stack-2x clr-secondary"></i>
+                                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                  </span>
+                                  <span class="fa-stack" style="vertical-align: top;">
+                                    <i class="fa fa-circle fa-stack-2x clr-secondary"></i>
+                                    <i class="fa fa-check fa-stack-1x fa-inverse"></i>
+                                  </span>
+                                  <span class="fa-stack" style="vertical-align: top;">
+                                    <i class="fa fa-circle fa-stack-2x clr-secondary"></i>
+                                    <i class="fa fa-question fa-stack-1x fa-inverse"></i>
+                                  </span>
+                                </div>
+                                <div class="shrink columns pl-1">
+                                  <button class="button clear hollow clr-black20 mb-0">
+                                    <i class="fa fa-times"></i>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row toggler-target">
+                          <div class="columns">
+                            <p>On a scale from 1 to 10 how would you rate your pain</p>
+                            <p>8</p>
+                            <p>Severe</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="label-block box-shadow mb-0-5 bg-white border-radius-sm toggler">
+                        <div class="row align-middle collapse toggler-handler">
+                          <div class="columns shrink">
+                            <div class="label-group borderless middle marker warning marker-pos-top-left border-radius-sm hide-overflow">
+                              <div class="h4"><i class="fa fa-circle clr-black20"></i></div>
+                            </div>
+                          </div>
+                          <div class="columns border-radius-sm">
+                            <div class="label-group borderless">
+                              <div class="row collapse expanded">
+                                <div class="auto columns ">
+                                  <h6>Compliance with Physical Therapy regimen (3 week post)</h6>
+                                  <p class="mb-0"><strong>Jul 16, 2018</strong></p>
+                                </div>
+                                <div class="shrink columns pr-1">
+                                  <span class="fa-stack" style="vertical-align: top;">
+                                    <i class="fa fa-circle fa-stack-2x clr-secondary"></i>
+                                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                  </span>
+                                  <span class="fa-stack" style="vertical-align: top;">
+                                    <i class="fa fa-circle fa-stack-2x clr-secondary"></i>
+                                    <i class="fa fa-check fa-stack-1x fa-inverse"></i>
+                                  </span>
+                                  <span class="fa-stack" style="vertical-align: top;">
+                                    <i class="fa fa-circle fa-stack-2x clr-secondary"></i>
+                                    <i class="fa fa-question fa-stack-1x fa-inverse"></i>
+                                  </span>
+                                </div>
+                                <div class="shrink columns pl-1">
+                                  <button class="button clear hollow clr-black20 mb-0">
+                                    <i class="fa fa-times"></i>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row toggler-target">
+                          <div class="columns">
+                            <p>On a scale from 1 to 10 how would you rate your pain</p>
+                            <p>8</p>
+                            <p>Severe</p>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="tabs-panel" id="panel2">
+
+                  <div class="page-lead row collapse align-middle">
+                    <div class="shrink columns">
+                      <p class="subheader">
+                        <small>To click 'Send Link', activate this episode first.</small>
+                      </p>
+                    </div>
+                    <div class="auto columns">
+                      <div class="button-align pull-right small">
+                        <!--<span class="brick link"><span class="subheader">Last Changes:</span> Mar-3 8:00am</span>-->
+                        <a href="#" class="button success hollow rounded" data-tooltip
+                           title="To click 'Send Link', activate this episode first."><i
+                          class="fa fa-edit"></i>&nbsp; Edit Facility Bundle</a>
+                        <a href="#" class="button success rounded" data-tooltip
+                           title="To click 'Send Link', activate this episode first."><i
+                          class="fa fa-envelope-o"></i>&nbsp; Send Link</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row collapse expanded">
+                    <div class="auto columns">
+                      <div class="search-result">
+
+                        <a href="admin-facility-view.html" class="facility-card">
+                          <div class="row align-middle">
+                            <div class="columns medium-6">
+                              <div class="media-object">
+                                <!--<div class="media-object-section middle">-->
+                                <!--<input type="checkbox" class="mt-0 mb-0" checked>-->
+                                <!--</div>-->
+                                <div class="media-object-section logo small middle">
+                                  <div class="img-wrapper">
+                                    <img src="http://placehold.it/100x100">
+                                  </div>
+                                </div>
+                                <div class="media-object-section middle">
+                                  <small class="name"><b>National Hospital
+                                    California</b></small>
+                                  <p class="address mb-0"><i
+                                    class="fa fa-map-marker fa-fw"></i>&nbsp;
+                                    Denver, CO</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="columns medium-3">
+                              <div class="package-count">
+                                <small class="name"><b>2</b></small>
+                                <p class="subheader">Packages</p>
+                              </div>
+                            </div>
+                            <div class="columns medium-3">
+                              <div class="button-group tiny mb-0 pull-right">
+                                <span href="#" class="button hollow success">Select As Final</span>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+
+                        <a href="admin-facility-view.html" class="facility-card">
+                          <div class="row align-middle">
+                            <div class="columns medium-6">
+                              <div class="media-object">
+                                <!--<div class="media-object-section middle">-->
+                                <!--<input type="checkbox" class="mt-0 mb-0" checked>-->
+                                <!--</div>-->
+                                <div class="media-object-section logo small middle">
+                                  <div class="img-wrapper">
+                                    <img src="http://placehold.it/100x100">
+                                  </div>
+                                </div>
+                                <div class="media-object-section middle">
+                                  <small class="name"><b>Denver Vail Orthopedics</b></small>
+                                  <p class="address mb-0"><i
+                                    class="fa fa-map-marker fa-fw"></i>&nbsp;
+                                    Denver, CO</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="columns medium-3">
+                              <div class="package-count">
+                                <small class="name"><b>2</b></small>
+                                <p class="subheader">Packages</p>
+                              </div>
+                            </div>
+                            <div class="columns medium-3">
+                              <div class="button-group tiny mb-0 pull-right">
+                                <span href="#" class="button hollow success">Select As Final</span>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="tabs-panel" id="panel3">
+
+                  <div class="ml-1 mr-1">
+                    
+                    <div class="row pl-1 pr-1 pt-0 mb-2">
+                      <div class="columns bg-white pl-0 pr-0 pb-1 border-radius-sm hide-overflow box-shadow">
+                        <div class="mb-1 pad1 bg-primary">
+                                <div class="row">
+                                  <div class="columns pl-0">
+                                    <h5 class="clr-white mb-0-5">How is your pain today?</h5>
+                                  </div>
+                                  <div class="columns shrink">
+                                    <span data-tooltip tabindex="1" title="Fancy word for a beetle."><i class="fa fa-question clr-white"></i></span>
+                                  </div>
+                                </div>
+                                
+                                <span class="subheader clr-white"><small><strong>How is your pain today? (Temporary placeholder)</strong></small></span>
+                            </div>
+                          <div class="pl-1 pr-1">
+                              <p class="subheader"><strong><small>ANSWER OPTIONS</small></strong></p>
+                              <!-- <p class="subheader"><span><strong><small>ANSWER SELECTED</small></strong></span></p> -->
+                              <!-- <h5>10</h5> -->
+                              <div class="fancy-radio fancy-hover small mb-0">
+                                  <input name="qopt1" id="qopt1.1" type="radio" class="mr-0">
+                                  <label class="h6" for="qopt1.1">1</label>
+                              </div>
+                              <div class="fancy-radio fancy-hover small mb-0">
+                                  <input name="qopt1" id="qopt1.2" type="radio" class="mr-0">
+                                  <label class="h6" for="qopt1.2">2</label>
+                              </div>
+                              <div class="fancy-radio fancy-hover small mb-0">
+                                  <input name="qopt1" id="qopt1.3" type="radio" class="mr-0">
+                                  <label class="h6" for="qopt1.3">3</label>
+                              </div>
+                              <div class="fancy-radio fancy-hover small mb-0">
+                                  <input name="qopt1" id="qopt1.4" type="radio" class="mr-0">
+                                  <label class="h6" for="qopt1.4">4</label>
+                              </div>
+                              <div class="fancy-radio fancy-hover small mb-0">
+                                  <input name="qopt1" id="qopt1.5" type="radio" class="mr-0">
+                                  <label class="h6" for="qopt1.5">5</label>
+                              </div>
+                              <div class="fancy-radio fancy-hover small mb-0">
+                                  <input name="qopt1" id="qopt1.6" type="radio" class="mr-0">
+                                  <label class="h6" for="qopt1.6">6</label>
+                              </div>
+                              <div class="fancy-radio fancy-hover small mb-0">
+                                  <input name="qopt1" id="qopt1.7" type="radio" class="mr-0">
+                                  <label class="h6" for="qopt1.7">7</label>
+                              </div>
+                              <div class="fancy-radio fancy-hover small mb-0">
+                                  <input name="qopt1" id="qopt1.8" type="radio" class="mr-0">
+                                  <label class="h6" for="qopt1.8">8</label>
+                              </div>
+                              <div class="fancy-radio fancy-hover small mb-0">
+                                  <input name="qopt1" id="qopt1.9" type="radio" class="mr-0">
+                                  <label class="h6" for="qopt1.9">9</label>
+                              </div>
+                              <div class="fancy-radio fancy-hover small mb-0">
+                                  <input name="qopt1" id="qopt1.10" type="radio" class="mr-0" checked>
+                                  <label class="h6" for="qopt1.10">10</label>
+                              </div>
+                              
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="row pl-1 pr-1 pt-0 mb-2">
+                      <div class="columns bg-white pl-0 pr-0 pb-1 border-radius-sm hide-overflow box-shadow">
+                        <div class="mb-1 pad1 bg-primary">
+                                <!-- <p class="subheader clr-white"><strong><small>QUESTION #2</small></strong></p> -->
+                                <div class="row">
+                                  <div class="columns pl-0">
+                                    <h5 class="clr-white mb-0-5">Did you drink your medicine last night?</h5>
+                                  </div>
+                                  <div class="columns shrink">
+                                    <span data-tooltip tabindex="1" title="Fancy word for a beetle."><i class="fa fa-question clr-white"></i></span>
+                                  </div>
+                                </div>
+                                <span class="subheader clr-white"><small><strong>Did you drink your medicine last night? (Temporary placeholder)</strong></small></span>
+                            </div>
+                          <div class="pl-1 pr-1">
+                              <p class="subheader"><strong><small>ANSWER OPTIONS</small></strong></p>
+                              <!-- <h6>10</h6> -->
+                              <div class="fancy-radio fancy-hover small align-middle">
+                                  <input name="qopt2" id="qopt2.1" type="radio" class="mr-0">
+                                  <label class="h6" for="qopt2.1">Yes</label>
+                              </div>
+                              <div class="fancy-radio fancy-hover small align-middle">
+                                  <input name="qopt2" id="qopt2.2" type="radio" class="mr-0">
+                                  <label class="h6" for="qopt2.2">No</label>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="row pl-1 pr-1 pt-0 mb-2">
+                      <div class="columns bg-white pl-0 pr-0 pb-1 border-radius-sm hide-overflow box-shadow">
+                        <div class="mb-1 pad1 bg-primary">
+                                <!-- <p class="subheader clr-white"><strong><small>QUESTION #3</small></strong></p> -->
+                                <div class="row">
+                                  <div class="columns pl-0">
+                                    <h5 class="clr-white mb-0-5">Please Enter a number</h5>
+                                  </div>
+                                  <div class="columns shrink">
+                                    <span data-tooltip tabindex="1" title="Fancy word for a beetle."><i class="fa fa-question clr-white"></i></span>
+                                  </div>
+                                </div>
+                                <span class="subheader clr-white"><small><strong>Please Enter a number (Temporary placeholder)</strong></small></span>
+                            </div>
+                          <div class="pl-1 pr-1">
+                              <p class="subheader"><strong><small>ANSWER</small></strong></p>
+                              <input type="text" class="fancy-input" placeholder="Number Only (Temporary placeholder)">
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="row pl-1 pr-1 pt-0 mb-2">
+                      <div class="columns bg-white pl-0 pr-0 pb-1 border-radius-sm hide-overflow box-shadow">
+                        <div class="mb-1 pad1 bg-primary">
+                                <!-- <p class="subheader clr-white"><strong><small>QUESTION #4</small></strong></p> -->
+                                <div class="row">
+                                  <div class="columns pl-0">
+                                    <h5 class="clr-white mb-0-5">Please Enter an email</h5>
+                                  </div>
+                                  <div class="columns shrink">
+                                    <span data-tooltip tabindex="1" title="Fancy word for a beetle."><i class="fa fa-question clr-white"></i></span>
+                                  </div>
+                                </div>
+                                <span class="subheader clr-white"><small><strong>Please Enter an email (Temporary placeholder)</strong></small></span>
+                            </div>
+                          <div class="pl-1 pr-1">
+                              <p class="subheader"><strong><small>ANSWER</small></strong></p>
+                              <input type="text" class="fancy-input" placeholder="Email Only (Temporary placeholder)">
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="row pl-1 pr-1 pt-0 mb-2">
+                      <div class="columns bg-white pl-0 pr-0 pb-1 border-radius-sm hide-overflow box-shadow">
+                        <div class="mb-1 pad1 bg-primary">
+                                <!-- <p class="subheader clr-white"><strong><small>QUESTION #5</small></strong></p> -->
+                                <div class="row">
+                                  <div class="columns pl-0">
+                                    <h5 class="clr-white mb-0-5">Please Enter any text</h5>
+                                  </div>
+                                  <div class="columns shrink">
+                                    <span data-tooltip tabindex="1" title="Fancy word for a beetle."><i class="fa fa-question clr-white"></i></span>
+                                  </div>
+                                </div>
+                                <span class="subheader clr-white"><small><strong>Please Enter any text (Temporary placeholder)</strong></small></span>
+                            </div>
+                          <div class="pl-1 pr-1">
+                              <p class="subheader"><strong><small>ANSWER</small></strong></p>
+                              <textarea name="" id="" cols="30" rows="2" class="fancy-input" placeholder="Any Characters. Limit characters? (Temporary placeholder)"></textarea>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="row pl-1 pr-1 pt-0 mb-2">
+                      <div class="columns bg-white pl-0 pr-0 pb-1 border-radius-sm hide-overflow box-shadow">
+                        <div class="mb-1 pad1 bg-primary">
+                                <!-- <p class="subheader clr-white"><strong><small>QUESTION #6</small></strong></p> -->
+                                <div class="row">
+                                  <div class="columns pl-0">
+                                    <h5 class="clr-white mb-0-5">Choose Answer from Dropdown</h5>
+                                  </div>
+                                  <div class="columns shrink">
+                                    <span data-tooltip tabindex="1" title="Fancy word for a beetle."><i class="fa fa-question clr-white"></i></span>
+                                  </div>
+                                </div>
+                                <span class="subheader clr-white"><small><strong>Choose Answer from Dropdown (Temporary placeholder)</strong></small></span>
+                            </div>
+                          <div class="pl-1 pr-1">
+                              <p class="subheader"><strong><small>ANSWER</small></strong></p>
+                              <select name="" id="" class="fancy-input">
+                                <option name="" id="">Answer 1</option>
+                                <option name="" id="">Answer 2</option>
+                                <option name="" id="">Answer 3</option>
+
+                              </select>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="row pl-1 pr-1 pt-0 mb-2">
+                      <div class="columns bg-white pl-0 pr-0 pb-1 border-radius-sm hide-overflow box-shadow">
+                        <div class="mb-1 pad1 bg-primary">
+                                <!-- <p class="subheader clr-white"><strong><small>QUESTION #7</small></strong></p> -->
+                                <div class="row">
+                                  <div class="columns pl-0">
+                                    <h5 class="clr-white mb-0-5">Enter Date</h5>
+                                  </div>
+                                  <div class="columns shrink">
+                                    <span data-tooltip tabindex="1" title="Fancy word for a beetle."><i class="fa fa-question clr-white"></i></span>
+                                  </div>
+                                </div>
+                                <span class="subheader clr-white"><small><strong>Enter Date(Temporary placeholder)</strong></small></span>
+                            </div>
+                          <div class="pl-1 pr-1">
+                              <p class="subheader"><strong><small>ANSWER</small></strong></p>
+                              <input type="date" class="fancy-input">
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="row pl-1 pr-1 pt-0 mb-2">
+                      <div class="columns bg-white pl-0 pr-0 pb-1 border-radius-sm hide-overflow box-shadow">
+                        <div class="mb-1 pad1 bg-primary">
+                                <!-- <p class="subheader clr-white"><strong><small>QUESTION #8</small></strong></p> -->
+                                <div class="row">
+                                  <div class="columns pl-0">
+                                    <h5 class="clr-white mb-0-5">Enter Time</h5>
+                                  </div>
+                                  <div class="columns shrink">
+                                    <span data-tooltip tabindex="1" title="Fancy word for a beetle."><i class="fa fa-question clr-white"></i></span>
+                                  </div>
+                                </div>
+                                <span class="subheader clr-white"><small><strong>Enter Time(Temporary placeholder)</strong></small></span>
+                            </div>
+                          <div class="pl-1 pr-1">
+                              <p class="subheader"><strong><small>ANSWER</small></strong></p>
+                              <input type="time" class="fancy-input">
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="row pl-1 pr-1 pt-0 mb-2">
+                      <div class="columns bg-white pl-0 pr-0 pb-1 border-radius-sm hide-overflow box-shadow">
+                        <div class="mb-1 pad1 bg-primary">
+                                <!-- <p class="subheader clr-white"><strong><small>QUESTION #9</small></strong></p> -->
+                                <div class="row">
+                                  <div class="columns pl-0">
+                                    <h5 class="clr-white mb-0-5">Contact Number</h5>
+                                  </div>
+                                  <div class="columns shrink">
+                                    <span data-tooltip tabindex="1" title="Fancy word for a beetle."><i class="fa fa-question clr-white"></i></span>
+                                  </div>
+                                </div>
+                                <span class="subheader clr-white"><small><strong>Enter Contact Number(Temporary placeholder)</strong></small></span>
+                            </div>
+                          <div class="pl-1 pr-1">
+                              <p class="subheader"><strong><small>ANSWER</small></strong></p>
+                              <div class="row">
+                                <div class="columns medium-4">
+                                  <select name="" id="" class="fancy-input">
+                                    <option value="">CA/US - 1</option>
+                                    <option value="">KZ - 7</option>
+                                    <option value="">EG - 20</option>
+                                    <option value="">ZA - 27</option>
+                                  </select>
+                                </div>
+                                <div class="columns">
+                                  <input type="number" class="fancy-input" placeholder="Enter 10-digit number">
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+  
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+
+    <script src="js/app.js"></script>
+
+    <script type="text/javascript">
+
+        var topBarHeight = $('.top-bar').outerHeight(true);
+
+        $(function () {
+            var timer;
+            $(window).resize(function () {
+                clearTimeout(timer);
+                timer = setTimeout(function () {
+                    $('#chatSupport, #chatSupport .offcanvas-area-inner, .site-nav, .content').css("height", $(window).height());
+                    $('.site-nav.secondary, #profileContent, #chatClient .chat-wrapper').css("height", $(window).height() - topBarHeight);
+                }, 40);
+            }).resize();
+        });
+
+    </script>
+
+</body>
+</html>
