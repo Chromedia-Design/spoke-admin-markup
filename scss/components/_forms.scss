@@ -998,7 +998,7 @@ input {
 
 .fancy-checkbox {
 	&.small {
-		input {
+		input[type='checkbox'] {
 			width: 0px !important;
 			height: 0px !important;
 			margin-bottom: 15px !important;
@@ -1013,7 +1013,7 @@ input {
 			}			
 		}  
 	}
-	input {
+	input[type='checkbox'] {
 		margin: 0 0 0 3px;
 		width: 0px !important;
 		height: 0px !important;
