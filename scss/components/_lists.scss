@@ -1562,9 +1562,9 @@ ul.vertical-list {
   $treeline-color: #c1c1c1;
   // ul-tree Variables
   margin: 0;
-  padding: 0;
+  padding: 0 3px;
   list-style-type: none;
-
+  border-radiu: $global-radius;
   &.ul-tree-hide-action {
     // .fa-plus, .fa-minus {
     //   display: none;
@@ -1576,6 +1576,10 @@ ul.vertical-list {
         }
       }
     }
+  }
+
+  &.is-active {
+    background-color: rgba($success-color, 0.05);
   }
 
   li {
