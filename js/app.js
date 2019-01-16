@@ -44,6 +44,12 @@ $("#chat-toggle").on("click", function () {
     $(this).children('.fa').toggleClass('fa-comment fa-times');
 })
 
+// SEARCH Employee Chat Component ------------------------------------------------------------
+$("#add-search-employees").on("click", function () {
+    $("#chat-container").style.height = "900px !important";
+    $(this).siblings('#employee-search').slideToggle(1000)
+})
+
 
 $("#chat-container .chat-header-container").on("click", function (event) {
 

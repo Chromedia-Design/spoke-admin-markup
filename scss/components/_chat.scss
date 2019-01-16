@@ -933,6 +933,10 @@ $main-color: #1ebd44;
 			z-index: 100;
 		}
 	}
+
+	.chat-body-scroll {
+		height: 425px;
+	}
 	.chat-video-incoming {
 		position: absolute;
 		top: 0;
