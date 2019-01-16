@@ -1582,7 +1582,7 @@ ul.vertical-list {
     background-color: rgba($success-color, 0.05);
   }
 
-  li {
+  > li {
     user-select: none;
     font-size: rem-calc(12);
     list-style-type: none;
@@ -1607,7 +1607,7 @@ ul.vertical-list {
         color: $text-black;
       }
       small {
-        color: rgba($black, $B-hinttext);
+        color: rgba($black, $B-subtext);
         font-size: rem-calc(9);
       }
       &:before {
