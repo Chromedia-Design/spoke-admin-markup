@@ -8,22 +8,22 @@
     display: none;
   }
   .clinical-pathway-new-entry {
+    position: relative;
+    margin-left: 1rem;
     cursor: pointer;
     font-size: .875rem;
-    // position: relative;
-    border-bottom: 1px solid #ebebeb;
-    // margin-bottom: .5rem;
-    border-radius: $global-radius;
-    // @extend .hide-show-button-on-hover;
-    // @extend .align-middle;
     @extend .bg-black10;
-    &.active {
+    small {
+      color: rgba($black, $B-subtext);
+      font-size: rem-calc(9);
+    }
+    + .clinical-pathway-new-entry {
+      margin-top: rem-calc(6);
+      margin-bottom: rem-calc(6);
+    }
+    &.is-active {
       @extend .bg-black20;
       border-left: 5px solid $success-color;
-      // color: $success-color;
-      // font-weight: bold;
-      // border-top: 1px solid #ebebeb;
-      border-bottom: 1px solid #ebebeb;
       &:hover {
         .new-entry-action {
           @extend .bg-black10;
@@ -41,19 +41,15 @@
           @extend .bg-black20;
         }
       }
+      .new-entry-action {
+        opacity: 1;
+      }
     }
-
     .new-entry-title {
       user-select: none;
     }
     .new-entry-action {
       height: 100%;
     }
-    &:hover {
-      .new-entry-action {
-        opacity: 1;
-      }
-    }
   }
-
 }
