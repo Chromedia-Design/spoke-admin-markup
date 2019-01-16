@@ -188,7 +188,7 @@
 
           <ul class="tabs" data-tabs id="medicalProcedures">
             <li class="tabs-title"><a href="#panel1" aria-selected="true">Surgery Bundle</a></li>
-            <li class="tabs-title"><a href="#panel2">Pre-Surgery Questionnaire</a></li>
+            <li class="tabs-title"><a href="#panel2">Health Risk Assessment</a></li>
             <li class="tabs-title is-active"><a href="#panel3 ">Pathway Events</a></li>
           </ul>
 
@@ -467,7 +467,7 @@
                                 <div class="row collapse align-middle">
                                   <div class="auto columns">
                                     <div class="subheader mb-0 clr-black20">
-                                      <small>2 Days After Surgery</small>
+                                      <small>1 Hour After Facility is Selected</small>
                                     </div>
                                   </div>
                                   <div class="shrink columns">
@@ -526,7 +526,7 @@
                                 <div class="row collapse align-middle">
                                   <div class="auto columns">
                                     <div class="subheader mb-0 clr-black20">
-                                      <small>2 Days After Surgery</small>
+                                      <small>1 Hour After Facility is Selected</small>
                                     </div>
                                   </div>
                                   <div class="shrink columns">
@@ -539,6 +539,21 @@
                                 </div>
                               </a>
                             </div>
+                          </div>
+                        </li>
+                        <li class="toggler-target ul-tree-child">
+                          <div class="row collapse">
+                            <div class="columns shrink">
+                              <i class="fa fa-lg fa-question-circle clr-secondary"></i>
+                            </div>
+                            <div class="medium-11 columns">
+                              <span class="truncate">Send Pre-op Evaluation and Clearance</span>
+                            </div>
+                            <!-- <div class="columns shrink pr-0">
+                              <button class="button hollow clear success small mb-0 pt-0 pb-0">
+                                <i class="fa fa-plus"></i>
+                              </button>
+                            </div> -->
                           </div>
                         </li>
                         <li class="toggler-target ul-tree-child">
@@ -570,7 +585,7 @@
                                 <div class="row collapse align-middle">
                                   <div class="auto columns">
                                     <div class="subheader mb-0 clr-black20">
-                                      <small>2 Days After Surgery</small>
+                                      <small>1 Hour After Facility is Selected</small>
                                     </div>
                                   </div>
                                   <div class="shrink columns">
@@ -583,6 +598,21 @@
                                 </div>
                               </a>
                             </div>
+                          </div>
+                        </li>
+                        <li class="toggler-target ul-tree-child">
+                          <div class="row collapse">
+                            <div class="columns shrink">
+                              <i class="fa fa-lg fa-question-circle clr-secondary"></i>
+                            </div>
+                            <div class="medium-11 columns">
+                              <span class="truncate">Send Pre-op Infection Avoidance</span>
+                            </div>
+                            <!-- <div class="columns shrink pr-0">
+                              <button class="button hollow clear success small mb-0 pt-0 pb-0">
+                                <i class="fa fa-plus"></i>
+                              </button>
+                            </div> -->
                           </div>
                         </li>
                         <li class="toggler-target ul-tree-child">
@@ -614,7 +644,7 @@
                                 <div class="row collapse align-middle">
                                   <div class="auto columns">
                                     <div class="subheader mb-0 clr-black20">
-                                      <small>2 Days After Surgery</small>
+                                      <small>1 Hour After Facility is Selected</small>
                                     </div>
                                   </div>
                                   <div class="shrink columns">
@@ -635,7 +665,7 @@
                               <i class="fa fa-lg fa-question-circle clr-secondary"></i>
                             </div>
                             <div class="medium-11 columns">
-                              <span class="truncate">Please answer me?</span>
+                              <span class="truncate">Send Pre-op Antibiotics</span>
                             </div>
                             <!-- <div class="columns shrink pr-0">
                               <button class="button hollow clear success small mb-0 pt-0 pb-0">
@@ -683,14 +713,14 @@
 
                   <div class="row mb-2 ">
                     <div class="columns pr-0 pl-0">
-                      <ul class="tabs tabs-inverse " data-tabs="z94uyg-tabs" id="example-tabs">
+                      <ul class="tabs tabs-inverse " data-tabs id="example-tabs">
                         <!-- <li class="tabs-title"><a data-tabs-target="panel0" href="#panel0" >Event</a></li> -->
-                        <li class="tabs-title is-active" role="presentation"><a data-tabs-target="panel1" href="#panel1"
-                                                                                role="tab" aria-controls="panel1"
-                                                                                 aria-selected="true" id="panel1-label">Triggers</a>
+                        <li class="tabs-title is-active" role="presentation"><a href="#panel3_1"
+                                                                                role="tab" aria-controls="panel3_1"
+                                                                                aria-selected="true" id="panel1-label">Triggers</a>
                         </li>
-                        <li class="tabs-title" role="presentation"><a data-tabs-target="panel2" href="#panel2"
-                                                                      role="tab" aria-controls="panel2"
+                        <li class="tabs-title" role="presentation"><a href="#panel3_2"
+                                                                      role="tab" aria-controls="panel3_2"
                                                                       aria-selected="false" id="panel2-label">tasks</a>
                         </li>
                         <!-- <li class="tabs-title"><a data-tabs-target="panel3" href="#panel3">Escalation</a></li> -->
@@ -699,7 +729,7 @@
                       <div class="tabs-content bg-black20" data-tabs-content="example-tabs">
 
 
-                        <div class="tabs-panel pad-1 bg-black20 is-active" id="panel1" role="tabpanel"
+                        <div class="tabs-panel pad-1 bg-black20 is-active" id="panel3_1" role="tabpanel"
                              aria-hidden="false" aria-labelledby="panel1-label">
 
                           <div class="mb-1 toggler">
@@ -711,10 +741,11 @@
                               <div class="columns pl-0 pr-0">
                                 <div class="row expanded">
                                   <div class="columns pl-0-5 pr-0-5">
-                                    <input type="number" class="fancy-input mb-0" value="4">
+                                    <input type="number" class="fancy-input mb-0" value="1">
                                   </div>
                                   <div class="columns pl-0-5 pr-0-5">
                                     <select name="" id="" class="fancy-input mb-0">
+                                      <option value="">Hour</option>
                                       <option value="">Days</option>
                                       <option value="">Weeks</option>
                                       <option value="">Month</option>
@@ -729,6 +760,7 @@
                                   </div>
                                   <div class="columns pl-0-5 pr-0-5 medium-6">
                                     <select name="" id="" class="fancy-input mb-0">
+                                      <option value="">Facility Is Selected</option>
                                       <option value="">Surgery</option>
                                       <option value="">Patient Reported Pain Survey</option>
                                       <option value="">Post-Op visit scheduled</option>
@@ -746,7 +778,7 @@
 
                         </div>
 
-                        <div class="tabs-panel pad-1 bg-black20" id="panel2" role="tabpanel" aria-hidden="true"
+                        <div class="tabs-panel pad-1 bg-black20" id="panel3_2" role="tabpanel" aria-hidden="true"
                              aria-labelledby="panel2-label">
 
                           <div class="row">
@@ -770,14 +802,16 @@
 
                             <div class="row expanded bg-white pt-0-5 border-radius-sm">
                               <div class="columns shrink toggler-handler">
-                                <i class="fa fa-lg fa-envelope mt-0-5 clr-secondary"></i>
+                                <i class="fa fa-lg fa-question-circle mt-0-5 clr-secondary"></i>
                               </div>
                               <div class="columns toggler-handler">
-                                <p class="mb-0"><strong>This is a message y'll</strong></p>
+                                <p class="mb-0"><strong>Pre-op Antibiotics</strong></p>
                                 <p class="subheader">Patient</p>
                               </div>
                               <div class="columns shrink">
                                 <div class="pull-right">
+                                  <a href="Builder-Form-Task.html" class="button hollow success small clear mb-0"
+                                     data-open="subtask">Subtask</a>
                                   <button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
                                   <button class="button hollow clear toggler-handler mb-0"><i
                                     class="fa fa-chevron-down"></i></button>
@@ -787,19 +821,23 @@
                             <div class="row pt-1 toggler-target bg-black10" style="display: none;">
                               <div class="columns">
                                 <div class="row mb-1">
-                                  <div class="columns medium-6">
-                                    <p class="subheader">Title</p>
-                                    <input type="text" value="THE Title" class="fancy-input">
+                                  <div class="columns">
+                                    <p class="subheader">Question</p>
+                                    <input type="text" class="fancy-input" value="Pre-op Antibiotics">
+
                                   </div>
                                 </div>
                                 <div class="row mb-1">
-                                  <div class="columns">
-                                    <textarea name="" id="" cols="30" rows="3" class="fancy-input">This is a message y'll</textarea>
+                                  <div class="columns medium-6">
+                                    <p class="subheader">Assign To</p>
+                                    <select name="" id="" class="fancy-input">
+                                      <option value="">Patient</option>
+                                    </select>
                                   </div>
                                 </div>
+
                               </div>
                             </div>
-
                           </div>
 
                           <div class="mb-1 toggler">
@@ -809,7 +847,7 @@
                                 <i class="fa fa-lg fa-list-ol mt-0-5 clr-secondary"></i>
                               </div>
                               <div class="columns toggler-handler">
-                                <p class="mb-0"><strong>Feed the Cats</strong></p>
+                                <p class="mb-0"><strong>Remind patient to answer the questionnaire.</strong></p>
                                 <p class="subheader">Advocate</p>
                               </div>
                               <div class="columns shrink">
@@ -825,13 +863,14 @@
                                 <div class="row mb-1">
                                   <div class="columns">
                                     <p class="subheader">Task</p>
-                                    <input type="text" class="fancy-input" value="Feed the Cats">
+                                    <input type="text" class="fancy-input"
+                                           value="Remind patient to answer the questionnaire.">
 
                                   </div>
                                 </div>
                                 <div class="row mb-1">
                                   <div class="columns medium-6">
-                                    <p class="subheader">Assigned for follow up</p>
+                                    <p class="subheader">Assigned To</p>
                                     <select name="" id="" class="fancy-input">
                                       <option value="">Patient</option>
                                       <option value="" selected="">Advocate</option>
@@ -853,48 +892,6 @@
                             </div>
                           </div>
 
-                          <div class="mb-1 toggler">
-
-                            <div class="row expanded bg-white pt-0-5 border-radius-sm">
-                              <div class="columns shrink toggler-handler">
-                                <i class="fa fa-lg fa-question-circle mt-0-5 clr-secondary"></i>
-                              </div>
-                              <div class="columns toggler-handler">
-                                <p class="mb-0"><strong>How is it going?</strong></p>
-                                <p class="subheader">Patient</p>
-                              </div>
-                              <div class="columns shrink">
-                                <div class="pull-right">
-                                  <a href="Builder-Form-Task.html" class="button hollow success small clear mb-0"
-                                     data-open="subtask">Subtask</a>
-                                  <button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
-                                  <button class="button hollow clear toggler-handler mb-0"><i
-                                    class="fa fa-chevron-down"></i></button>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="row pt-1 toggler-target bg-black10" style="display: none;">
-                              <div class="columns">
-                                <div class="row mb-1">
-                                  <div class="columns">
-                                    <p class="subheader">Task</p>
-                                    <input type="text" class="fancy-input" value="How is it going?">
-
-                                  </div>
-                                </div>
-                                <div class="row mb-1">
-                                  <div class="columns medium-6">
-                                    <p class="subheader">Assigned for follow up</p>
-                                    <select name="" id="" class="fancy-input">
-                                      <option value="">care coordinator</option>
-                                      <option value="">case manager</option>
-                                    </select>
-                                  </div>
-                                </div>
-
-                              </div>
-                            </div>
-                          </div>
                         </div>
 
 
