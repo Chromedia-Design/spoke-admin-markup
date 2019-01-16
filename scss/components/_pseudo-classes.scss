@@ -159,3 +159,30 @@
 		}
 	}	
 }
+
+.show-close-hover {
+	position: relative;
+	&:after {
+		opacity: 0;
+		font-family: FontAwesome;
+		// content: "Edit pathway";
+		content: "\f044";
+		padding: .25rem .5rem;
+		position: absolute;
+		width: fit-content;
+		height: 1.5rem;
+		background-color: $success-color;
+		color: #fff;
+		top: .75rem;
+		right: -1rem;
+		cursor: pointer;
+		border-radius: 5rem;
+		transition: all .5s;
+	}
+	&:hover {
+		&:after {
+			transition: all .5s;
+			opacity: 1;
+		}
+	}	
+}

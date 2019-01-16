@@ -6,12 +6,15 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
   .media-object {
     padding: 0.875rem 1rem;
+
     &:hover {
       background-color: rgba($light-gray, $B-hinttext);
     }
   }
+
   // Wells listed under the main list
   .well-list {
     > li {
@@ -21,21 +24,26 @@
       border-bottom: 1px solid rgba($white, $W-hinttext);
       border-radius: $global-radius;
       margin-bottom: 0;
+
       .list-wrap {
         padding: 0.5rem 1rem;
         background: transparent;
       }
+
       .list-panel {
         background-color: darken($primary-light, 3%);
       }
+
       .list-item-name {
         label {
           font-size: 0.875rem;
         }
       }
+
       .list-detail {
         width: 20%;
       }
+
       &.list-core {
         .list-wrap {
           background-color: rgba($primary-color, $B-dividers);
@@ -43,6 +51,7 @@
       }
     }
   }
+
   > li {
     position: relative;
     font-family: $body-font-family;
@@ -51,6 +60,7 @@
     border-radius: $global-radius;
     margin-bottom: 1rem;
     background: $white;
+
     [type='text'],
     [type='password'],
     [type='date'],
@@ -67,17 +77,21 @@
     [type='color'] {
       margin-bottom: 0;
     }
+
     .input-group, .button-group, .button-align {
       margin-bottom: 0;
     }
+
     [type='radio'],
     [type='checkbox'] {
       display: inline-block;
       height: 1.325em;
     }
+
     .list-wrap {
       background-color: $white;
       padding: 0.65rem 0.875rem;
+
       &.stack-for-small {
         .list-item-image, .list-item-name, .list-detail {
           @media only screen and (max-width: 40em) {
@@ -87,9 +101,11 @@
         }
       }
     }
+
     .list-panel {
       position: relative;
       padding: 0 1rem;
+
       .callout {
         margin: 0;
         background-color: rgba($dark-gray, $B-dividers);
@@ -97,40 +113,48 @@
         border-radius: 0;
       }
     }
+
     .list-item-icon {
       width: 3%;
       margin-right: 1rem;
       position: relative;
       display: inline-block;
       vertical-align: middle;
+
       &.align-top {
         vertical-align: top;
       }
+
       span {
         vertical-align: middle;
         color: rgba($black, $B-hinttext);
         line-height: 1.5rem;
       }
+
       p {
         margin: 0;
         color: rgba($black, $B-hinttext);
       }
     }
+
     .list-item-image {
       width: 7%;
       position: relative;
       display: inline-block;
       vertical-align: middle;
       float: left;
+
       p {
         margin: 0;
         color: rgba($black, $B-hinttext);
       }
+
       .img-wrapper {
         position: relative;
         overflow: hidden;
         width: 44px;
         height: 44px;
+
         > img {
           position: absolute;
           z-index: 1;
@@ -142,20 +166,24 @@
           bottom: 0;
         }
       }
+
       &.align-top {
         vertical-align: top;
         float: none;
       }
+
       &.align-middle {
         vertical-align: middle;
         float: none;
       }
     }
+
     .list-item-name {
       width: 44%;
       position: relative;
       display: inline-block;
       vertical-align: top;
+
       > a,
       span,
       label {
@@ -169,35 +197,43 @@
         overflow: hidden;
         text-overflow: ellipsis;
       }
+
       > p {
         margin-bottom: 0;
       }
     }
+
     .list-detail {
       width: 40%;
       display: inline-block;
       color: rgba($black, $B-subtext);
       vertical-align: middle;
+
       label {
         margin-bottom: 0;
         font-family: $body-font-family;
         font-size: 0.875rem;
       }
+
       .subheader {
         margin: 0;
       }
     }
+
     .list-note {
       color: $text-black;
       display: inline-block;
       width: 20%;
       vertical-align: middle;
+
       &.align-top {
         vertical-align: top;
       }
+
       span {
         vertical-align: middle;
         line-height: 1.75rem;
+
         &.badge {
           display: block;
           padding: 0.5em;
@@ -207,27 +243,33 @@
           font-weight: $global-weight-bold;
         }
       }
+
       .subheader {
         margin: 0;
       }
     }
+
     &.primary {
       > .list-wrap {
         background: lighten($primary-color, 69%);
       }
     }
+
     &.is-active {
       border: 1px solid $secondary-color;
     }
+
     &.call {
       > .list-wrap {
         background-color: $background-white;
+
         .list-item-icon {
           p {
             height: 2rem;
             width: 2rem;
             background-color: $success-color;
             border-radius: 50%;
+
             > i {
               color: $white;
               line-height: 2rem;
@@ -235,6 +277,7 @@
           }
         }
       }
+
       &.success {
         > .list-wrap {
           .list-item-icon {
@@ -244,6 +287,7 @@
           }
         }
       }
+
       &.missed {
         > .list-wrap {
           .list-item-icon {
@@ -254,6 +298,7 @@
         }
       }
     }
+
     // Heading radius
     &:first-child {
       .list-wrap {
@@ -261,6 +306,7 @@
         border-top-right-radius: $global-radius;
       }
     }
+
     &:last-child {
       .list-wrap {
         border-bottom-left-radius: $global-radius;
@@ -268,19 +314,23 @@
       }
     }
   }
+
   // Notifications list
   &.notifications {
     > li {
       .list-wrap {
         padding: 0.75rem;
         display: block;
+
         > * {
           font-size: 0.875rem;
         }
+
         .button {
           margin-bottom: 0;
         }
       }
+
       &:nth-child(even) {
         .list-wrap {
           background-color: rgba($light-gray, $B-dividers);
@@ -288,11 +338,13 @@
       }
     }
   }
+
   // Message list
   &.message-preview {
     > li {
       margin-bottom: 0;
       border: none;
+
       .list-wrap {
         display: flex;
         align-items: center;
@@ -303,23 +355,29 @@
           flex: 1 1 auto;
           min-width: 1%;
         }
+
         &:only-child,
         &:last-child {
           border-bottom: 1px solid rgba($black, $B-dividers);
         }
+
         &:hover {
           cursor: pointer;
         }
+
         + .list-wrap {
           padding-top: 0;
         }
       }
+
       .list-item-image {
         margin-right: 0.8175rem;
+
         > .img-wrapper {
           margin: 0;
           border: 1px solid rgba($black, $B-hinttext);
           background-color: $off-white;
+
           span.h5 {
             font-weight: normal;
             color: rgba($black, $B-hinttext);
@@ -327,42 +385,53 @@
           }
         }
       }
+
       .list-detail {
         width: 70%;
+
         > span {
           &:first-child {
             color: $text-black;
           }
         }
       }
+
       .attachments {
         margin-left: 8%;
+
         > li {
           margin: 0 1rem 2rem 0;
         }
       }
+
       // Button styles
       .pull-right {
         .button {
           margin: 0.5rem 0;
+
           &.pin {
             color: $medium-gray;
+
             &:hover {
               color: $alert-color;
               background: transparent;
             }
           }
+
           &.pinned {
             color: $alert-color;
           }
         }
       }
+
       &.unread {
         .list-wrap {
           background-color: $white;
+
           .list-detail {
             font-weight: $global-weight-bold;
             color: $primary-color;
+
             small {
               font-weight: normal;
               color: rgba($black, $B-subtext);
@@ -370,11 +439,13 @@
           }
         }
       }
+
       &.selected {
         .list-wrap {
           position: relative;
           background-color: $white;
           border-radius: 0;
+
           &:after {
             position: absolute;
             content: '';
@@ -388,6 +459,7 @@
             bottom: 0;
             background-color: transparent;
           }
+
           &:before {
             position: absolute;
             content: '';
@@ -402,23 +474,27 @@
             background-color: transparent;
           }
         }
+
         .pull-right {
           .dropdown.menu {
             margin-right: 2rem;
           }
         }
       }
+
       &:hover {
         .list-wrap {
           background-color: $white;
         }
       }
+
       &:last-child {
         .list-wrap {
           border-bottom: none;
         }
       }
     }
+
     .menu {
       &.dropdown {
         > li {
@@ -427,6 +503,7 @@
             vertical-align: bottom;
             width: 100%;
             color: $text-black;
+
             img,
             i,
             svg {
@@ -435,12 +512,14 @@
               }
             }
           }
+
           &.opens-left,
           &.opens-right {
             > .is-dropdown-submenu {
               > li {
                 a {
                   text-decoration: none;
+
                   &:hover {
                     background-color: rgba($medium-gray, $B-dividers);
                   }
@@ -452,19 +531,23 @@
       }
     }
   }
+
   // Small version of the default well list
   &.small {
     .h6 {
       font-size: 0.875rem;
     }
+
     > li {
       .list-wrap {
         padding: 9px 15px;
         overflow: hidden;
       }
+
       .list-item-name {
         position: relative;
         float: left;
+
         > a,
         span,
         label {
@@ -476,19 +559,23 @@
           text-overflow: ellipsis;
         }
       }
+
       .list-detail {
         width: 30%;
         display: inline-block;
       }
     }
+
     // Wells listed under the main small list
     .well-list {
       .action-link {
         line-height: 1.5rem;
       }
+
       .list-wrap {
         padding-left: 30px;
       }
+
       > li {
         .list-item-name {
           label {
@@ -496,21 +583,26 @@
           }
         }
       }
+
       // Third tier of wells
       .well-list {
         .action-link {
           line-height: 1.5rem;
         }
+
         .list-wrap {
           padding-left: 85px;
         }
+
         > li {
           font-size: 0.75rem;
+
           .list-item-name {
             label {
               font-size: 0.75rem;
             }
           }
+
           .list-detail {
             width: 30%;
           }
@@ -518,6 +610,7 @@
       }
     }
   }
+
   // a well list with inputs
   &.with-input {
     [type='text'],
@@ -536,16 +629,19 @@
     [type='color'] {
       margin-bottom: 0;
     }
+
     > li {
       > .list-wrap {
         > .pull-left, > .list-item-name, > .list-detail {
           margin-top: 0.5rem;
         }
       }
+
       .list-group {
         position: relative;
         width: 20%;
         line-height: 1em;
+
         > [type='text'],
         [type='password'],
         [type='date'],
@@ -565,12 +661,14 @@
           width: 80%;
           margin-right: 1rem;
         }
+
         .close-btn {
           display: inline-block;
           vertical-align: top;
           margin-top: 1rem;
         }
       }
+
       // Wells listed under the main  list
       .well-list {
         &.with-input {
@@ -582,6 +680,7 @@
             }
           }
         }
+
         // Third tier of wells
         .well-list {
           > li {
@@ -595,6 +694,7 @@
       }
     }
   }
+
   &.striped {
     > li {
       &:nth-child(even) {
@@ -604,103 +704,128 @@
       }
     }
   }
+
   // Will be used on facilities (listed style)
   &.highlights-list {
     .list-wrap {
       display: flex;
       align-items: center;
     }
+
     .list-item-image, .list-item-name, .list-detail {
       margin-right: 1rem;
     }
+
     &.gain {
       border-top: 1px solid rgba($black, $B-dividers);
       border-bottom: 1px solid rgba($black, $B-dividers);
+
       .list-item-image {
         width: 15%;
         margin-right: 2rem;
       }
+
       .list-item-name {
         width: 40%;
+
         > * {
           margin-bottom: 0;
         }
       }
+
       .list-detail {
         width: 40%;
       }
     }
   }
+
   &.awards-list {
     .list-wrap {
       display: flex;
       align-items: center;
     }
+
     .list-item-image, .list-item-name, .list-detail {
       margin-right: 1rem;
     }
   }
+
   &.tasks-list {
     margin-bottom: 0.5rem;
+
     > li {
       margin: 0;
       border: none;
       font-size: rem-calc(14);
+
       .list-wrap {
         padding: 0 rem-calc(10);
+
         > .row {
           min-height: rem-calc(69);
         }
       }
+
       &:hover {
         background: $white;
       }
+
       .fancy-checkbox {
         input {
           margin: 0;
           height: rem-calc(25);
+
           &:after {
             margin-left: -5px;
           }
         }
       }
+
       &.warning {
         .fancy-checkbox {
           input:after {
             border-color: $warning-color;
           }
+
           input:checked {
             &:after {
               background-color: $warning-color;
             }
           }
         }
+
         .preamble {
           color: $warning-color;
         }
       }
+
       &.alert {
         .fancy-checkbox {
           input:after {
             border-color: $alert-color;
           }
+
           input:checked {
             &:after {
               background-color: $alert-color;
             }
           }
         }
+
         .preamble {
           color: $alert-color;
         }
       }
     }
+
     small {
       font-size: rem-calc(12);
     }
+
     .media-object {
       padding: 0;
       margin: 0.5rem 0;
+
       &:hover {
         background: $white;
       }
@@ -712,11 +837,13 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
   > li {
     border: 1px solid rgba($black, $B-dividers);
     border-radius: 2px;
     padding: 0.8125rem 1rem;
     margin-bottom: 0.3125rem;
+
     h1,
     h2,
     h3,
@@ -729,14 +856,17 @@
       margin-bottom: 0;
       line-height: 1.5em;
     }
+
     .button,
     .button-align,
     .button-group {
       margin-bottom: 0;
     }
+
     a {
       color: rgba($black, $B-text);
     }
+
     &.list-heading {
       padding: 0 1rem 0.3125rem;
       background: transparent;
@@ -744,10 +874,12 @@
       color: rgba($black, $B-subtext);
       text-transform: uppercase;
       font-size: 0.75rem;
+
       &:hover {
         background-color: transparent;
       }
     }
+
     &:hover {
       background-color: $primary-light;
     }
@@ -759,7 +891,8 @@
   overflow: hidden;
   border-radius: 2px;
   margin: 0 0 1rem;
-  .list-item {  
+
+  .list-item {
     padding: 0.3rem 0.5rem;
     display: inline-block;
     font-family: $body-font-family;
@@ -769,9 +902,11 @@
     // text-overflow: ellipsis;
     color: rgba($black, $B-text);
   }
+
   .button {
     margin: 0.15rem 0;
   }
+
   &:hover {
     background-color: rgba($black, $B-dividers);
   }
@@ -781,25 +916,31 @@
 .grouped-listing {
   margin: 2rem 0;
   overflow: hidden;
+
   ul, ol {
     margin: 0;
     padding: 0;
     list-style: none;
+
     > li {
       margin-bottom: 1rem;
+
       &:first-child {
         .media-object {
           margin-top: 0;
         }
       }
     }
+
     &.fa-ul {
       padding-left: 1.875rem;
     }
   }
+
   .subheader {
     font-size: 0.875rem;
     line-height: 1.5em;
+
     i.fa {
       float: left;
       margin: 0 1rem 2rem 0;
@@ -811,9 +952,11 @@
 .stacked-list {
   margin: 0;
   padding: 0;
+
   > li {
     list-style: none;
     padding: 0.325rem 0;
+
     .media-object-section {
       &:first-child {
         padding-right: 2rem;
@@ -822,6 +965,7 @@
 
     .no-decoration {
       text-decoration: none;
+
       &:hover {
         text-decoration: none;
       }
@@ -838,14 +982,17 @@
 .inline-list {
   margin: 0;
   padding: 0;
+
   > li {
     padding: 0 0.9375rem;
     list-style: none;
     display: inline-block;
   }
+
   .button {
     margin: 0;
   }
+
   &.attachments {
     > li {
       position: relative;
@@ -855,6 +1002,7 @@
       margin: 1rem 1rem 2rem 0;
       color: rgba($black, $B-subtext);
       background-color: $white;
+
       .btn-close,
       .btn-dl {
         position: absolute;
@@ -875,11 +1023,13 @@
         transition: all ease-in 0.2s;
         opacity: 0;
       }
+
       .btn-dl {
         color: $success-color;
         background-color: $white;
         border: 1px solid $success-color;
       }
+
       .filename {
         position: absolute;
         color: rgba($black, $B-text);
@@ -894,6 +1044,7 @@
         white-space: nowrap;
         text-overflow: ellipsis;
       }
+
       &:hover {
         .btn-close,
         .btn-dl {
@@ -909,8 +1060,10 @@ ul.custom-list {
   margin: 0;
   padding: 0 1rem;
   list-style: none;
+
   li {
     padding: 0.5rem 0;
+
     &:before {
       content: "";
       border-color: transparent $warning-color;
@@ -929,6 +1082,7 @@ ul.custom-list {
 // see activity log filter section for example
 ul.vertical-list {
   margin-left: 0px;
+
   li {
     display: inline-block;
     margin-right: 2.5rem;
@@ -956,6 +1110,7 @@ ul.vertical-list {
 .activity-listing {
   position: relative;
   padding-left: 39px;
+
   &:before {
     position: absolute;
     top: 0;
@@ -966,12 +1121,14 @@ ul.vertical-list {
     content: "";
     background-color: rgba($black, $B-dividers);
   }
+
   .listing-title {
     position: relative;
     margin-top: 15px;
     color: $success-color;
     font-size: rem-calc(14);
     font-weight: $global-weight-bold;
+
     &:before {
       position: absolute;
       top: 0;
@@ -982,6 +1139,7 @@ ul.vertical-list {
       border-radius: 50%;
       background-color: $light-gray;
     }
+
     &:after {
       position: absolute;
       top: 4px;
@@ -993,37 +1151,47 @@ ul.vertical-list {
       background-color: $white;
     }
   }
+
   .table-list {
     margin: 12px 0 0;
     padding: 0;
     border-radius: $global-radius;
     border-spacing: 0 3px;
+
     li.table-list-item {
       box-shadow: 0 0 0 1px rgba($black, $B-dividers);
       border-radius: $global-radius;
+
       .table-list-cell {
         vertical-align: middle;
         padding: 8px 10px;
+
         p {
           font-size: rem-calc(14);
           margin-bottom: 0;
         }
+
         &.activity-icon {
           width: 3%;
           color: rgba($black, $B-hinttext);
         }
+
         &.activity-time {
           width: 25%;
         }
+
         &.activity-desc {
           width: 45%;
         }
+
         &.activity-name {
           display: block;
+
           .show-ip {
             color: rgba($black, $B-hinttext);
             font-size: .7rem;
           }
+
           .activity-action {
             .action-taken {
               border-width: 0px 0px 0px 0px;
@@ -1040,18 +1208,22 @@ ul.vertical-list {
           }
         }
       }
+
       &.subtle {
         box-shadow: none;
         border: none;
         background: $success-color;
+
         .table-list-cell {
           color: $white;
+
           .subheader {
             color: $white !important;
           }
         }
       }
     }
+
     &:last-child {
       &:before {
         content: ' ';
@@ -1065,16 +1237,20 @@ ul.vertical-list {
       }
     }
   }
+
   &.compact {
     .listing-title {
       margin-top: 5px;
       font-size: rem-calc(12);
     }
+
     .table-list {
       margin: 6px 0 0;
+
       li.table-list-item {
         .table-list-cell {
           padding: 4px 5px;
+
           p {
             font-size: rem-calc(12);
             margin-bottom: 0;
@@ -1088,9 +1264,11 @@ ul.vertical-list {
 .step-bullets {
   margin: 0;
   text-align: left;
+
   button {
 
   }
+
   > button {
     position: relative;
     padding: 1rem 1rem 1rem 4rem;
@@ -1101,6 +1279,7 @@ ul.vertical-list {
     background-color: $white;
     border-radius: 0;
     transition: all 0.2s ease-in-out;
+
     h1,
     h2,
     h3,
@@ -1109,13 +1288,16 @@ ul.vertical-list {
     h6 {
       margin-bottom: rem-calc(12);
     }
+
     p {
       color: rgba($black, $B-subtext);
       margin-bottom: 0;
     }
+
     &.is-active {
       background: $primary-light;
       box-shadow: 2px 0 0 0 $success-color;
+
       h1,
       h2,
       h3,
@@ -1124,9 +1306,11 @@ ul.vertical-list {
       h6 {
         color: darken($success-color, 10%);
       }
+
       p {
         color: $text-black;
       }
+
       &:before {
         height: 2rem;
         color: $white;
@@ -1134,9 +1318,11 @@ ul.vertical-list {
         border-color: $success-color;
       }
     }
+
     &:hover {
       background: $primary-light;
     }
+
     &:before {
       position: absolute;
       top: 0.875rem;
@@ -1165,6 +1351,7 @@ ul.vertical-list {
     // border-bottom: 1px solid #eaeaea;
     resize: horizontal;
     display: block;
+
     input {
       background-color: transparent;
       display: inline-block;
@@ -1180,6 +1367,7 @@ ul.vertical-list {
       padding: 0rem .5rem;
       // font-weight: 600;
       color: lighten(#000, 50%);
+
       &:focus {
         color: #323232;
         border-color: #323232;
@@ -1195,20 +1383,25 @@ ul.vertical-list {
   border-left: 1px solid rgba($black, $B-dividers);
   border-right: 1px solid rgba($black, $B-dividers);
   background: $white;
+
   &.bg-alternate-items {
     .spoke-list-item {
-      border-bottom: 0px;      
+      border-bottom: 0px;
+
       &:nth-child(odd) {
-        background: darken($primary-light,3%);
+        background: darken($primary-light, 3%);
+
         &:hover {
-          background: darken($primary-light,7%);
+          background: darken($primary-light, 7%);
         }
       }
     }
   }
+
   &.no-outline {
     border: 0px !important;
   }
+
   .spoke-list-heading {
     color: rgba($black, $B-subtext);
     font-size: rem-calc(12);
@@ -1217,58 +1410,72 @@ ul.vertical-list {
     text-transform: uppercase;
     background: $background-white;
     padding: 0.5rem 0.3125rem;
+
     &.transparent {
       background-color: transparent !important;
     }
+
     a {
       color: rgba($black, $B-subtext);
     }
   }
+
   .spoke-list-item {
     background: $primary-light;
     cursor: pointer;
     padding: 1rem 0.5rem;
     border-bottom: 1px solid rgba($black, $B-dividers);
     z-index: 1;
+
     &:last-child {
       border-bottom: 1px solid rgba($black, $B-dividers) !important;
     }
+
     &.large {
       padding-top: 1rem !important;
       padding-bottom: 1rem !important;
     }
+
     p {
       margin-bottom: 0;
       width: 100%;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+
       a {
         color: $secondary-color;
       }
     }
+
     &:hover {
       background: $white;
     }
   }
+
   &.compact {
     .spoke-list-item {
       padding: 0.5rem 1rem;
     }
   }
+
   &.warning {
     border-top: 1px solid rgba($warning-color, $B-hinttext);
     border-left: 1px solid rgba($warning-color, $B-hinttext);
     border-right: 1px solid rgba($warning-color, $B-hinttext);
+
     .spoke-list-heading {
       background: rgba($warning-color, $B-hinttext);
+
       a {
         color: rgba($warning-color, $B-subtext);
       }
     }
+
     .spoke-list-item {
       background: rgba($warning-color, $B-dividers);
       border-bottom: 1px solid rgba($warning-color, $B-hinttext);
+
       &:hover {
         background: $white;
       }
@@ -1281,9 +1488,11 @@ ul.vertical-list {
   transition: all ease-in-out 0.2s;
   margin-bottom: 2px;
   border-top: 1px dashed rgba($black, $B-dividers);
+
   &:hover {
     background: rgba($secondary-color, 0.06);
   }
+
   .top-add-button,
   .bottom-add-button {
     position: absolute;
@@ -1296,14 +1505,17 @@ ul.vertical-list {
     border-radius: 50%;
     background-color: $success-color;
   }
+
   .top-add-button {
     top: rem-calc(-14);
     left: rem-calc(-14);
   }
+
   .bottom-add-button {
     bottom: rem-calc(-14);
     left: rem-calc(-14);
   }
+
   //Child Questions
   .questions-list-entry {
     padding-left: 1rem;
@@ -1327,13 +1539,17 @@ ul.vertical-list {
 .question-content {
   width: 100%;
   display: block;
+
   .checkbox-wrapper {
     margin: 0.5rem 0;
+
     [type='checkbox'],
     [type='radio'] {
     }
+
     label {
       width: 100%;
+
       [type='text'] {
         width: 100%;
       }
@@ -1346,8 +1562,9 @@ ul.vertical-list {
   $treeline-color: #c1c1c1;
   // ul-tree Variables
   margin: 0;
-  padding: 0;
+  padding: 0 3px;
   list-style-type: none;
+  border-radiu: $global-radius;
   &.ul-tree-hide-action {
     // .fa-plus, .fa-minus {
     //   display: none;
@@ -1360,13 +1577,16 @@ ul.vertical-list {
       }
     }
   }
+
+  &.is-active {
+    background-color: rgba($success-color, 0.05);
+  }
+
   li {
     user-select: none;
     font-size: rem-calc(12);
     list-style-type: none;
-    
     position: relative;
-    
     padding-left: 0.63rem;
     margin-left: 0.5rem;
     border-left: 1px solid $treeline-color;
@@ -1377,10 +1597,35 @@ ul.vertical-list {
       padding-bottom: 0px !important;
       padding-top: 0px !important;
     }
-
+    .tree-wrapper {
+      position: relative;
+      display: inline-block;
+      border-radius: $global-radius;
+      width: 100%;
+      p {
+        font-size: rem-calc(14);
+        color: $text-black;
+      }
+      small {
+        color: rgba($black, $B-hinttext);
+        font-size: rem-calc(9);
+      }
+      &:before {
+        position: absolute;
+        content: '';
+        left: -7px;
+        bottom: -7px;
+        width: 1px;
+        height: 1rem;
+        background-color: #c1c1c1;
+      }
+      &:hover {
+        background-color: #e1e1e1;
+      }
+    }
     &.ul-tree-child {
-      padding-bottom: .25rem;      
-      i,span {
+      padding-bottom: .25rem;
+      i, span {
         display: inline-block;
       }
       span {
@@ -1388,8 +1633,8 @@ ul.vertical-list {
       }
       &.active {
         > div {
-            .fa-circle {
-              @extend .clr-success;
+          .fa-circle {
+            @extend .clr-success;
           }
         }
       }
@@ -1401,6 +1646,7 @@ ul.vertical-list {
           font-weight: bold;
           background-color: #e1e1e1;
           transition: all .5s;
+
           &:hover {
             color: darken(#fff, 10%);
             transition: all .5s;
@@ -1413,16 +1659,6 @@ ul.vertical-list {
             margin-top: .25rem;
           }
         }
-        // .ul-tree-sub-parent {
-        //   &:first-child {
-        //     div {
-        //       &:first-child {
-        //         // background-color: red;
-        //         margin-top: .25rem;
-        //       }
-        //     }
-        //   }
-        // }
       }
     }
 
@@ -1431,6 +1667,7 @@ ul.vertical-list {
       border-radius: 4px;
       // overflow: hidden;
       transition: all .5s;
+
       &:hover {
         transition: all .5s;
         cursor: pointer;
@@ -1446,6 +1683,7 @@ ul.vertical-list {
         font-weight: bold;
         background-color: #e1e1e1;
         transition: all .5s;
+
         &:hover {
           color: darken(#fff, 10%);
           transition: all .5s;
@@ -1460,27 +1698,29 @@ ul.vertical-list {
 
     &:last-child {
       border-left: 0px;
+
       &:after {
         content: "";
-        
+
         width: 1px;
         height: 17px;
-        
+
         background-color: $treeline-color;
-        
+
         position: absolute;
         top: -7px;
         left: 0px;
       }
     }
+
     &:before {
       content: "";
-      
+
       width: 10px;
       height: 1px;
-      
+
       background-color: $treeline-color;
-      
+
       position: absolute;
       top: .6rem;
       left: 0px;
@@ -1498,50 +1738,56 @@ ul.vertical-list {
       margin-left: 0px;
 
       color: #323232;
+
       &:before {
         content: "";
         background-color: transparent;
       }
+
       .ul-tree-child {
         &:first-child {
           padding-top: .25rem !important;
         }
       }
     }
+
     &.ul-tree-parent {
       &:empty {
         &:after {
-          content:none;
+          content: none;
         }
       }
     }
 
-    &.ul-tree-sub-parent {      
-      padding-top: .25rem;      
+    &.ul-tree-sub-parent {
+      padding-top: .25rem;
+
       &:before {
         content: "";
-        
+
         width: 14px;
         height: 1px;
-        
+
         background-color: $treeline-color;
-        
+
         position: absolute;
         top: 14px;
         left: -.88rem;
       }
+
       &:after {
         content: "";
-        
+
         width: 1px;
         height: 24px;
-        
+
         background-color: $treeline-color;
-        
+
         position: absolute;
         top: -9px;
         left: -.95rem;
       }
+
       &.selected {
         & > div div:nth-child(2) {
           @extend .clr-primary;
@@ -1550,6 +1796,7 @@ ul.vertical-list {
           font-weight: bold;
           background-color: #e1e1e1;
           transition: all .5s;
+
           &:hover {
             color: darken(#fff, 10%);
             transition: all .5s;
