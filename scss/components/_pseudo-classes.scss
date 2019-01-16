@@ -166,15 +166,18 @@
 		opacity: 0;
 		font-family: FontAwesome;
 		// content: "Edit pathway";
-		content: "\f044";
-		padding: .25rem .5rem;
+		content: "\f00d";
+		// padding: .25rem .25rem;
+		padding-left: .3rem;
 		position: absolute;
 		width: fit-content;
 		height: 1.5rem;
-		background-color: $success-color;
+		width: 1.5rem;
+		
+		background-color: lighten($alert-color, 25%);
 		color: #fff;
 		top: .75rem;
-		right: -1rem;
+		right: -.8rem;
 		cursor: pointer;
 		border-radius: 5rem;
 		transition: all .5s;
