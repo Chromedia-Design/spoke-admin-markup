@@ -623,45 +623,83 @@
 
 
 	                <!-- <p class="mb-0 subheader clr-white"><strong><small>Member</small></strong></p> -->
-	                <p class="marginless"><a href="#" class="clr-white"><strong>Liam Neeson</strong></a></p>
-	                <p class="marginless mb-0-5"><small><a href="#" class="clr-white">Chromedia</a></small></p>
+	                <p class="marginless"><a href="#" class="clr-white"><strong>303-555-0118</strong></a></p>
+	                <p class="marginless mb-0-5" id="add-search-employees"><small><a href="#" class="clr-white"><i class="fa fa-plus"></i> Search Patient</a></small></p>
             </div>
         </div>
-        <div class="row mb-0-5">
-            <div class="columns col-md-12">
-                <p class="mb-0 subheader"><strong><small>Active Episode</small></strong></p>
-                <p class="mb-0"><a href="#"><strong>Total Head Replacement</strong></a></p>
-            </div>
-        </div>
-        <div class="row mb-0-5">
-          <div class="columns">
-            <p class="mb-0 subheader"><strong><small>Reason for calling</small></strong></p>
-            <select name="" id="" class="fancy-input">
-              <option value="general question">general question</option>
-              <option value="inventive questions">inventive questions</option>
-              <option value="schedule consultation with surgeon">schedule consultation with surgeon</option>
-              <option value="Just saying Hi">Just saying Hi</option>
-            </select>
+
+        <!-- Vertical Scroll Start -->
+        <div class="container-scroll chat-body-scroll">
+	        <div class="row mb-0-5"  id="employee-search">
+	            <div class="columns col-md-12">
+	               <p class="mb-0 subheader pull-left"><strong><small>Employee Name </small></strong></p>
+	              	<p class="mb-0 subheader pull-right"><i class="fa-times fa"></i></p>
+	                <input type="text" class="fancy-input mb-0" placeholder="Enter Employee Name" name="SearchEmployeeName">
+	                <div class="panel small pad05">
+				<ul class="marginless pb-0-5 b-bottom-1 mb-0-5">
+					<li class="list-style-type-none"><small><strong>Rey Angelo Cucio</strong></small></li>
+					<li class="list-style-type-none">
+						<small>303-555-0118</small>
+            					<small class="pull-right pr-1">
+            						<button id="btn-call-answer" class="button clear expanded small success" data-close="" aria-label="Close modal">
+            							<i class="fa fa-phone"></i> Assign
+					            	</button>
+            					</small>
+					</li>
+					<li class="list-style-type-none"><small>Total Knee Replacement</small></li>
+				</ul>
+				<ul class="marginless pb-0-5 b-bottom-1 mb-0-5">
+					<li class="list-style-type-none"><small><strong>Rey Angelo Cucio</strong></small></li>
+					<li class="list-style-type-none">
+						<small>303-555-0118</small>
+						<small class="pull-right pr-1">
+            						<button id="btn-call-answer" class="button clear expanded small success" data-close="" aria-label="Close modal">
+            							<i class="fa fa-phone"></i> Assign
+					            	</button>
+            					</small>
+					</li>
+					<li class="list-style-type-none"><small>Total Knee Replacement</small></li>
+				</ul>
+			</div>
+	            </div>
+	        </div>
+	        <div class="row mb-0-5">
+	            <div class="columns col-md-12">
+	                <p class="mb-0 subheader"><strong><small>Active Episode</small></strong></p>
+	                <p class="mb-0"><a href="#"><strong>Total Head Replacement</strong></a></p>
+	            </div>
+	        </div>
+	        <div class="row mb-0-5">
+	          <div class="columns">
+	            <p class="mb-0 subheader"><strong><small>Reason for calling</small></strong></p>
+	            <select name="" id="" class="fancy-input">
+	              <option value="general question">general question</option>
+	              <option value="inventive questions">inventive questions</option>
+	              <option value="schedule consultation with surgeon">schedule consultation with surgeon</option>
+	              <option value="Just saying Hi">Just saying Hi</option>
+	            </select>
+	          </div>
+	        </div>
+	        <div class="row mb-0-5">
+	          <div class="columns">
+	            <p class="mb-0 subheader"><strong><small>Notes</small></strong></p>
+	            <textarea name="" id="" cols="30" rows="4" class="fancy-input"></textarea>
+	          </div>
+	        </div>
+	        <div class="row video-call-action pb-2">
+	          <div class="columns col-md-2">
+	            <button id="btn-call-reject" class="button clear expanded small warning">
+	                <i class="fa fa-volume-off"></i> Mute
+	            </button>
+	          </div>
+	          <div class="columns col-md-2">
+	              <button id="btn-call-answer" class="button clear expanded small alert" data-close="" aria-label="Close modal">
+	                <i class="fa fa-phone"></i> End
+	            </button>
+	          </div>
+	          </div>
           </div>
-        </div>
-        <div class="row mb-0-5">
-          <div class="columns">
-            <p class="mb-0 subheader"><strong><small>Notes</small></strong></p>
-            <textarea name="" id="" cols="30" rows="4" class="fancy-input"></textarea>
-          </div>
-        </div>
-        <div class="row video-call-action">
-          <div class="columns col-md-2">
-            <button id="btn-call-reject" class="button clear expanded small warning">
-                <i class="fa fa-volume-off"></i> Mute
-            </button>
-          </div>
-          <div class="columns col-md-2">
-              <button id="btn-call-answer" class="button clear expanded small alert" data-close="" aria-label="Close modal">
-                <i class="fa fa-phone"></i> End
-            </button>
-          </div>
-          </div>
+          <!-- Vertical Scroll End -->
       </div>
 
   </div>
