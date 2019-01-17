@@ -229,6 +229,7 @@
 .clr-warning { color: $warning-color !important }
 .clr-alert { color: $alert-color !important }
 
+.clr-black10 { color: darken(#fff, 10%) !important }
 .clr-black20 { color: darken(#fff, 20%) !important }
 .clr-black50 { color: darken(#fff, 50%) !important }
 
@@ -340,6 +341,6 @@
 }
 
 .tiny {
-	font-size: 0.8125rem !important;
+	font-size: 0.6875rem !important;
 }
 
