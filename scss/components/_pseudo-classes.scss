@@ -134,50 +134,38 @@
 }
 
 .show-edit-hover {
-	position: relative;
 	&:after {
-		opacity: 0;
-		font-family: FontAwesome;
-		// content: "Edit pathway";
 		content: "\f044";
-		padding: .25rem .5rem;
-		position: absolute;
-		width: fit-content;
-		height: 1.5rem;
-		background-color: $success-color;
-		color: #fff;
-		top: .75rem;
-		right: -1rem;
-		cursor: pointer;
-		border-radius: 5rem;
-		transition: all .5s;
-	}
-	&:hover {
-		&:after {
-			transition: all .5s;
-			opacity: 1;
-		}
 	}	
 }
 
 .show-close-hover {
+	&:after {
+		content: "\f00d";
+	}
+}
+
+.show-remove-hover {
+	&:after {
+		content: "\f068";
+	}
+}
+
+.show-edit-hover, .show-close-hover, .show-remove-hover {
 	position: relative;
 	&:after {
 		opacity: 0;
 		font-family: FontAwesome;
-		// content: "Edit pathway";
-		content: "\f00d";
-		// padding: .25rem .25rem;
 		padding-left: .3rem;
 		position: absolute;
 		width: fit-content;
-		height: 1.5rem;
-		width: 1.5rem;
+		height: 1.4rem;
+		width: 1.35rem;
 		
 		background-color: lighten($alert-color, 25%);
 		color: #fff;
 		top: .75rem;
-		right: -.8rem;
+		right: -.9rem;
 		cursor: pointer;
 		border-radius: 5rem;
 		transition: all .5s;
@@ -188,4 +176,6 @@
 			opacity: 1;
 		}
 	}	
+
 }
+

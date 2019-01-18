@@ -255,7 +255,7 @@ $(".show-on-hover").on('mouseover', function(event) {
   event.preventDefault();
   /* Act on the event */  
   $(this).find(".hover-target").show()
-  console.log(event.target.nodeName)
+  // console.log(event.target.nodeName)
 });
 
 $(".show-on-hover").on('mouseout', function(event) {
@@ -263,7 +263,7 @@ $(".show-on-hover").on('mouseout', function(event) {
   event.preventDefault();
   /* Act on the event */  
   $(this).find(".hover-target").hide()
-  console.log(event.target.nodeName)
+  // console.log(event.target.nodeName)
 });
 
 // TOGGLER: toggle "toggler-target" by clicking "toggler-handler"
@@ -272,11 +272,11 @@ $(".toggler.ul-tree-expanded").find(".toggler-target").slideDown()
 
 // toggle target
 $(".toggler").on('click', '.toggler-handler', function(event) {
-  event.stopPropagation()
-  event.preventDefault();
+  // event.stopPropagation()
+  // event.preventDefault();
   /* Act on the event */  
   $(this).closest(".toggler").children(".toggler-target").slideToggle()
-  console.log(event.target.nodeName)
+  // console.log(event.target.nodeName)
 });
 
 // QUESTION TREE ------------------------------------------------------------
