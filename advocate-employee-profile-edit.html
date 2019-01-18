@@ -77,160 +77,331 @@
             </div>
           </div>
 
-          <div class="callout lo-padded">
-
             <form>
-              <div class="row">
-                <div class="columns">
-                  <label>First Name
-                    <input type="text" name="" value="William">
-                  </label>
+
+              <div class="panel">
+                <div class="panel-heading">
+                  <span class="h6">Primary Information</span>
+                </div>
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="columns">
+                      <label>First Name
+                        <input type="text" name="" value="William">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="columns">
+                      <label>Last Name
+                        <input type="text" name="" value="" placeholder="e.g. Jones">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="columns">
+                      <label>Company Name
+                        <select>
+                          <option value="" disabled>Select a company</option>
+                          <option value="" disabled selected>ACME, Inc.</option>
+                        </select>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="columns">
+                      <label>Policy Number
+                        <input type="text" name="" value="123-4567-7890">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="columns">
+                      <legend>Gender</legend>
+                      <input type="radio" name="gender" value="male" id="gender" checked=""><label for="gender">Male</label>
+                      <input type="radio" name="gender" value="female" id="gender"><label for="gender">Female</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="columns">
+                      <label>Email Address
+                        <input type="text" name="" value="william.pinkerton@domain.com">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="medium-9 columns">
+                      <label>Contact Numbers <span class="required">*</span></label>
+                      <div class="row collapse align-middle">
+                        <div class="auto columns">
+                          <div class="checkbox-wrapper align-middle mb-0-5">
+                            <input type="checkbox" checked name="programs" value="" id="programs"><label
+                            for="programs"><input type="text" name="programs" placeholder="Enter a value" value="1234567890"
+                                                  disabled></label>
+                            <a href="#" class="button tiny circle hollow mb-0">×</a>
+                          </div>
+                          <div class="checkbox-wrapper align-middle mb-0-5">
+                            <input type="checkbox" name="programs" value="" id="programs"><label for="programs"><input
+                            type="text" name="programs" placeholder="Enter a value" value="1234567890" disabled></label>
+                            <a href="#" class="button tiny circle hollow mb-0">×</a>
+                          </div>
+                          <div class="checkbox-wrapper align-middle mb-0-5">
+                            <input type="checkbox" name="programs" value="" id="programs">
+                            <label for="programs">
+                              <div class="row expanded">
+                                <div class="medium-4 columns">
+                                  <select name="" class="mb-0">
+                                    <option value="">PH - 63</option>
+                                    <option value="">Pitcairn Islands</option>
+                                  </select>
+                                </div>
+                                <div class="auto columns">
+                                  <input class="mb-0" type="number" placeholder="Enter a value" value="1234567890">
+                                </div>
+                              </div>
+                            </label>
+                            <a href="#" class="button tiny circle hollow mb-0">×</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row collapse align-middle">
+                        <div class="auto columns">
+                          <a href="#" class="button info tiny hollow mt-0-5"><i class="fa fa-plus"></i>&nbsp; Add More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="columns">
+                      <div class="row multi-part-input">
+                        <legend class="labelize">Birthdate</legend>
+                        <div class="large-4 columns end">
+                          <select>
+                            <option>March</option>
+                          </select>
+                        </div>
+                        <div class="large-4 columns end">
+                          <select>
+                            <option>17</option>
+                          </select>
+                        </div>
+                        <div class="large-4 columns end">
+                          <select>
+                            <option>1976</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="columns">
+                      <label>Street Address
+                        <input type="text" name="" value="46 Platte St.">
+                        <input type="text" name="" value="">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="large-4 columns">
+                      <label>Country
+                        <select>
+                          <option>United States of America</option>
+                        </select>
+                      </label>
+                    </div>
+                    <div class="large-4 columns">
+                      <label>State
+                        <select>
+                          <option>Denver</option>
+                        </select>
+                      </label>
+                    </div>
+                    <div class="large-4 columns">
+                      <label>City
+                        <select>
+                          <option>Denver</option>
+                        </select>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="large-4 columns">
+                      <label>Postal Code
+                        <input type="text" name="" value="654512">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="columns">
+                      <label>General Note
+                        <textarea name="" id="" cols="10" rows="10"></textarea>
+                      </label>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="columns">
-                  <label>Last Name
-                    <input type="text" name="" value="" placeholder="e.g. Jones">
-                  </label>
+
+              <div class="panel">
+                <div class="panel-heading">
+                  <span class="h6">Linked Profiles</span>
                 </div>
-              </div>
-              <div class="row">
-                <div class="columns">
-                  <label>Company Name
-                    <select>
-                      <option value="" disabled>Select a company</option>
-                      <option value="" disabled selected>ACME, Inc.</option>
-                    </select>
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="columns">
-                  <label>Policy Number
-                    <input type="text" name="" value="123-4567-7890">
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="columns">
-                  <legend>Gender</legend>
-                  <input type="radio" name="gender" value="male" id="gender" checked=""><label for="gender">Male</label>
-                  <input type="radio" name="gender" value="female" id="gender"><label for="gender">Female</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="columns">
-                  <label>Email Address
-                    <input type="text" name="" value="william.pinkerton@domain.com">
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="medium-9 columns">
-                  <label>Contact Numbers <span class="required">*</span></label>
-                  <div class="row collapse align-middle">
+                <div class="panel-body">
+                  <div class="row collapse">
                     <div class="auto columns">
-                      <div class="checkbox-wrapper align-middle mb-0-5">
-                        <input type="checkbox" checked name="programs" value="" id="programs"><label for="programs"><input type="text" name="programs" placeholder="Enter a value" value="1234567890" disabled></label>
-                        <a href="#" class="button tiny circle hollow mb-0">×</a>
-                      </div>
-                      <div class="checkbox-wrapper align-middle mb-0-5">
-                        <input type="checkbox" name="programs" value="" id="programs"><label for="programs"><input type="text" name="programs" placeholder="Enter a value" value="1234567890" disabled></label>
-                        <a href="#" class="button tiny circle hollow mb-0">×</a>
-                      </div>
-                      <div class="checkbox-wrapper align-middle mb-0-5">
-                        <input type="checkbox" name="programs" value="" id="programs">
-                        <label for="programs">
-                          <div class="row expanded">
-                            <div class="medium-4 columns">
-                              <select name="" class="mb-0">
-                                <option value="">PH - 63</option>
-                                <option value="">Pitcairn Islands</option>
-                              </select>
+                      <div class="row collapse align-middle">
+
+                        <div class="spoke-list">
+
+                          <div class="spoke-list-item row expanded align-middle">
+                            <div class="medium-6 columns">
+                              <p class="h6 mb-0">John Doe</p>
+                              <p class="subheader"><small><span class="badge success small"> </span> Account Created</small></p>
                             </div>
                             <div class="auto columns">
-                              <input class="mb-0" type="number" placeholder="Enter a value" value="1234567890">
+                              <p>Adult</p>
+                            </div>
+                            <div class="auto columns">
+                              <p>Total Knee Replacement</p>
+                            </div>
+                            <div class="shrink columns">
+                              <ul class="dropdown menu" data-dropdown-menu>
+                                <li>
+                                  <a></a>
+                                  <ul class="menu vertical">
+                                    <li><a href="#"><i class="fa fa-close"></i>&nbsp; Remove</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
                             </div>
                           </div>
-                        </label>
-                        <a href="#" class="button tiny circle hollow mb-0">×</a>
+
+                          <div class="spoke-list-item row expanded align-middle">
+                            <div class="medium-6 columns">
+                              <p class="h6 mb-0">gemma.thompson@domain.com</p>
+                              <a href="#" class="button hollow rounded tiny mt-0-5 mb-0"><i class="fa fa-envelope-o"></i>&nbsp; Resend Invite</a>
+                            </div>
+                            <div class="auto columns">
+                              <p>Adult</p>
+                            </div>
+                            <div class="auto columns">
+                              <p></p>
+                            </div>
+                            <div class="shrink columns">
+                              <ul class="dropdown menu" data-dropdown-menu>
+                                <li>
+                                  <a></a>
+                                  <ul class="menu vertical">
+                                    <li><a href="#"><i class="fa fa-edit"></i>&nbsp; Remove</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <div class="spoke-list-item row expanded align-middle">
+                            <div class="medium-6 columns">
+                              <p class="h6 mb-0">Nancy Aberdeen</p>
+                              <p class="subheader"><small>Age: 15</small></p>
+                            </div>
+                            <div class="auto columns">
+                              <p>Underage</p>
+                            </div>
+                            <div class="auto columns">
+                              <p></p>
+                            </div>
+                            <div class="shrink columns">
+                              <ul class="dropdown menu" data-dropdown-menu>
+                                <li>
+                                  <a></a>
+                                  <ul class="menu vertical">
+                                    <li><a href="#"><i class="fa fa-edit"></i>&nbsp; Remove</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <div class="spoke-list-item row expanded collapse align-middle">
+                            <div class="auto columns">
+                              <div class="row align-middle">
+                                <div class="shrink columns">
+                                  <div class="fancy-checkbox">
+                                    <input id="usertype" name="usertype" type="radio" checked="true">
+                                    <label class="" for="usertype">Adult</label>
+                                  </div>
+                                </div>
+                                <div class="shrink columns">
+                                  <div class="fancy-checkbox">
+                                    <input id="usertype" name="usertype" type="radio">
+                                    <label class="" for="usertype">Underage</label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row align-middle">
+                                <div class="auto columns">
+                                  <label for="">Email Address
+                                    <input type="text" placeholder="Enter a value" value="dan.mall@domain.com">
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="row align-middle">
+                                <div class="auto columns">
+                                  <label for="">First Name
+                                    <input type="text" placeholder="Enter a value" value="">
+                                  </label>
+                                </div>
+                                <div class="auto columns">
+                                  <label for="">Last Name
+                                    <input type="text" placeholder="Enter a value" value="">
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="row align-middle">
+                                <div class="columns">
+                                  <div class="row multi-part-input">
+                                    <legend class="labelize">Birthdate</legend>
+                                    <div class="large-4 columns end">
+                                      <select>
+                                        <option>March</option>
+                                      </select>
+                                    </div>
+                                    <div class="large-4 columns end">
+                                      <select>
+                                        <option>17</option>
+                                      </select>
+                                    </div>
+                                    <div class="large-4 columns end">
+                                      <select>
+                                        <option>1976</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row align-middle">
+                                <div class="shrink columns">
+                                  <div class="button-align mb-0 pull-right">
+                                    <a href="#" class="button circle success"><i class="fa fa-envelope-o"></i></a>
+                                    <a href="#" class="button circle hollow">×</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+
+                      </div>
+                      <div class="row collapse align-middle">
+                        <div class="auto columns">
+                          <a href="#" class="button info tiny hollow mt-0-5 mb-0"><i class="fa fa-plus"></i>&nbsp; Add More</a>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="row collapse align-middle">
-                    <div class="auto columns">
-                      <a href="#" class="button info tiny hollow mt-0-5"><i class="fa fa-plus"></i>&nbsp; Add More</a>
-                    </div>
-                  </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="columns">
-                  <div class="row multi-part-input">
-                    <legend class="labelize">Birthdate</legend>
-                    <div class="large-4 columns end">
-                      <select>
-                        <option>March</option>
-                      </select>
-                    </div>
-                    <div class="large-4 columns end">
-                      <select>
-                        <option>17</option>
-                      </select>
-                    </div>
-                    <div class="large-4 columns end">
-                      <select>
-                        <option>1976</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="columns">
-                  <label>Street Address
-                    <input type="text" name="" value="46 Platte St.">
-                    <input type="text" name="" value="">
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-4 columns">
-                  <label>Country
-                    <select>
-                      <option>United States of America</option>
-                    </select>
-                  </label>
-                </div>
-                <div class="large-4 columns">
-                  <label>State
-                    <select>
-                      <option>Denver</option>
-                    </select>
-                  </label>
-                </div>
-                <div class="large-4 columns">
-                  <label>City
-                    <select>
-                      <option>Denver</option>
-                    </select>
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-4 columns">
-                  <label>Postal Code
-                    <input type="text" name="" value="654512">
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="columns">
-                  <label>General Note
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                  </label>
-                </div>
-              </div>
+
               <div class="row">
                 <div class="columns">
                   <div class="button-group submit">
@@ -239,9 +410,9 @@
                   </div>
                 </div>
               </div>
-            </form>
 
-          </div>
+
+            </form>
 
         </div>
       </div>
