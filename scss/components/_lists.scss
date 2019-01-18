@@ -1565,7 +1565,6 @@ ul.vertical-list {
   padding: 0 3px;
   list-style-type: none;
   border-radius: $global-radius;
-<<<<<<< HEAD
   // &.ul-tree-hide-action {
   //   .ul-tree-child {
   //     .row {
@@ -1575,7 +1574,6 @@ ul.vertical-list {
   //     }
   //   }
   // }
-=======
 
   &.ul-tree-hide-action {
     .ul-tree-child {
@@ -1587,7 +1585,6 @@ ul.vertical-list {
     }
   }
 
->>>>>>> 0bcf072ef41631bc6fe38d7791c4ad2017f501f7
   &.is-active {
     background-color: rgba($success-color, 0.05);
   }
@@ -1684,7 +1681,6 @@ ul.vertical-list {
           }
         }
       }
-<<<<<<< HEAD
       &.multi-child-type {
         ul {
           &.inner-child {
@@ -1703,9 +1699,7 @@ ul.vertical-list {
           }
         }
       }
-=======
 
->>>>>>> 0bcf072ef41631bc6fe38d7791c4ad2017f501f7
       ul {
         .ul-tree-child {
           &:nth-child(2) {
@@ -1803,7 +1797,6 @@ ul.vertical-list {
 
     &.ul-tree-sub-parent {
       padding-top: .25rem;
-<<<<<<< HEAD
       &.floating {
         // margin-left: .5rem !important;
         &:before {
@@ -1822,9 +1815,7 @@ ul.vertical-list {
           }
         }
       }
-=======
 
->>>>>>> 0bcf072ef41631bc6fe38d7791c4ad2017f501f7
       &:before {
         content: "";
         width: 14px;
