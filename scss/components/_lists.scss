@@ -1081,7 +1081,7 @@ ul.custom-list {
 
 // see activity log filter section for example
 ul.vertical-list {
-  margin-left: 0px;
+  margin-left: 0;
 
   li {
     display: inline-block;
@@ -1194,7 +1194,7 @@ ul.vertical-list {
 
           .activity-action {
             .action-taken {
-              border-width: 0px 0px 0px 0px;
+              border-width: 0;
               border-color: #283D4B;
               border-style: solid;
               background-color: #d1f1de;
@@ -1345,8 +1345,8 @@ ul.vertical-list {
 
 .input-list {
   li {
-    padding: 0px;
-    border: 0px;
+    padding: 0;
+    border: none;
     margin-bottom: .5rem;
     // border-bottom: 1px solid #eaeaea;
     resize: horizontal;
@@ -1357,14 +1357,14 @@ ul.vertical-list {
       display: inline-block;
       resize: horizontal;
       // width: 94%;
-      margin-bottom: 0px;
-      border-top: 0px;
-      border-left: 0px;
-      border-right: 0px;
-      border: 0px;
+      margin-bottom: 0;
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+      border: none;
       // color: #797979;
       font-size: .875rem;
-      padding: 0rem .5rem;
+      padding: 0 .5rem;
       // font-weight: 600;
       color: lighten(#000, 50%);
 
@@ -1386,7 +1386,7 @@ ul.vertical-list {
 
   &.bg-alternate-items {
     .spoke-list-item {
-      border-bottom: 0px;
+      border-bottom: 0;
 
       &:nth-child(odd) {
         background: darken($primary-light, 3%);
@@ -1399,7 +1399,7 @@ ul.vertical-list {
   }
 
   &.no-outline {
-    border: 0px !important;
+    border: none !important;
   }
 
   .spoke-list-heading {
@@ -1565,6 +1565,7 @@ ul.vertical-list {
   padding: 0 3px;
   list-style-type: none;
   border-radius: $global-radius;
+
   &.ul-tree-hide-action {
     .ul-tree-child {
       .row {
@@ -1574,16 +1575,20 @@ ul.vertical-list {
       }
     }
   }
+
   &.is-active {
     background-color: rgba($success-color, 0.05);
   }
+
   .fa-circle {
     color: #c1c1c1;
   }
+
   .fa-plus {
     padding-bottom: 0 !important;
     padding-top: 0 !important;
   }
+
   ul.tag-cloud {
     li.tag-cloud-individual-tag {
       &:before,
@@ -1592,19 +1597,23 @@ ul.vertical-list {
       }
     }
   }
+
   .tree-wrapper {
     position: relative;
     display: inline-block;
     border-radius: $global-radius;
     width: 100%;
+
     p {
       font-size: rem-calc(14);
       color: $text-black;
     }
+
     small {
       color: rgba($black, $B-subtext);
       font-size: rem-calc(9);
     }
+
     &:before {
       position: absolute;
       content: '';
@@ -1614,10 +1623,12 @@ ul.vertical-list {
       height: 1rem;
       background-color: #c1c1c1;
     }
+
     &:hover {
       background-color: #e1e1e1;
     }
   }
+
   li {
     user-select: none;
     font-size: rem-calc(12);
@@ -1626,14 +1637,18 @@ ul.vertical-list {
     padding-left: 0.63rem;
     margin-left: 0.5rem;
     border-left: 1px solid $treeline-color;
+
     &.ul-tree-child {
       padding-bottom: .25rem;
+
       i, span {
         display: inline-block;
       }
+
       span {
         width: 100%;
       }
+
       &.active {
         > div {
           .fa-circle {
@@ -1641,6 +1656,7 @@ ul.vertical-list {
           }
         }
       }
+
       &.selected {
         & > div div:nth-child(2) {
           @extend .clr-primary;
@@ -1656,6 +1672,7 @@ ul.vertical-list {
           }
         }
       }
+
       ul {
         .ul-tree-child {
           &:nth-child(2) {
@@ -1664,10 +1681,12 @@ ul.vertical-list {
         }
       }
     }
+
     span {
       padding: 0 .5rem;
       border-radius: 4px;
       transition: all .5s;
+
       &:hover {
         transition: all .5s;
         cursor: pointer;
@@ -1682,16 +1701,19 @@ ul.vertical-list {
         font-weight: bold;
         background-color: #e1e1e1;
         transition: all .5s;
+
         &:hover {
           color: darken(#fff, 10%);
           transition: all .5s;
         }
       }
     }
+
     &.disabled {
       cursor: default;
       opacity: 1;
     }
+
     &:last-child {
       border-left: 0;
 
@@ -1725,16 +1747,19 @@ ul.vertical-list {
       padding-left: 0;
       margin-left: 0;
       color: #323232;
+
       &:before {
         content: "";
         background-color: transparent;
       }
+
       .ul-tree-child {
         &:first-child {
           padding-top: .25rem !important;
         }
       }
     }
+
     &.ul-tree-parent {
       &:empty {
         &:after {
@@ -1742,8 +1767,10 @@ ul.vertical-list {
         }
       }
     }
+
     &.ul-tree-sub-parent {
       padding-top: .25rem;
+
       &:before {
         content: "";
         width: 14px;
@@ -1772,6 +1799,7 @@ ul.vertical-list {
           font-weight: bold;
           background-color: #e1e1e1;
           transition: all .5s;
+
           &:hover {
             color: darken(#fff, 10%);
             transition: all .5s;
