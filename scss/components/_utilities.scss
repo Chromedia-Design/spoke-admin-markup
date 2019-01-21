@@ -456,7 +456,7 @@
 }
 
 .align-vertical-center {
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 .v-align-center {
@@ -472,86 +472,84 @@
 // Color ----------------------------------------
 // Background-color
 .bg-none {
-  background-color: transparent !important
+  background-color: transparent !important;
 }
 
 .bg-primary {
-  background-color: $primary-color !important
+  background-color: $primary-color !important;
 }
 
 .bg-primary-light {
-  background-color: $primary-light !important
+  background-color: $primary-light !important;
 }
 
 .bg-secondary {
-  background-color: $secondary-color !important
+  background-color: $secondary-color !important;
 }
 
 .bg-success {
-  background-color: $success-color !important
+  background-color: $success-color !important;
 }
 
 .bg-warning {
-  background-color: $warning-color !important
+  background-color: $warning-color !important;
 }
 
 .bg-alert {
-  background-color: $alert-color !important
+  background-color: $alert-color !important;
 }
 
 .bg-white {
-  background-color: #fff !important
+  background-color: #fff !important;
 }
 
 .bg-black10 {
-  background-color: darken(#fff, 3%) !important
+  background-color: darken(#fff, 3%) !important;
 }
 
 .bg-black20 {
-  background-color: darken(#fff, 6%) !important
+  background-color: darken(#fff, 6%) !important;
 }
 
 // Text color
 .clr-white {
-  color: $white !important
+  color: $white !important;
 }
 
 .clr-black {
-  color: $black !important
+  color: $black !important;
 }
 
-.clr-black10 { color: darken(#fff, 10%) !important }
-.clr-black20 { color: darken(#fff, 20%) !important }
-.clr-black50 { color: darken(#fff, 50%) !important }
+.clr-black10 { color: darken(#fff, 10%) !important ;}
+.clr-black20 { color: darken(#fff, 20%) !important ;}
+.clr-black50 { color: darken(#fff, 50%) !important ;}
 .clr-primary {
-  color: $primary-color !important
+  color: $primary-color !important;
 }
 
 .clr-secondary {
-  color: $secondary-color !important
+  color: $secondary-color !important;
 }
 
 .clr-success {
-  color: $success-color !important
+  color: $success-color !important;
 }
 
 .clr-warning {
-  color: $warning-color !important
+  color: $warning-color !important;
 }
 
 .clr-alert {
-  color: $alert-color !important
+  color: $alert-color !important;
 }
 
 .clr-black20 {
-  color: darken(#fff, 20%) !important
+  color: darken(#fff, 20%) !important;
 }
 
 .clr-black50 {
-  color: darken(#fff, 50%) !important
+  color: darken(#fff, 50%) !important;
 }
->>>>>>> 0bcf072ef41631bc6fe38d7791c4ad2017f501f7
-
 
 // List
 .list-style-type-none {
