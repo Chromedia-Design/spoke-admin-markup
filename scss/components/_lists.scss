@@ -782,14 +782,17 @@
       }
 
       &.warning {
-        .fancy-checkbox {
+        .fancy-checkbox,
+        .fancy-radio {
           input:after {
             border-color: $warning-color;
           }
 
           input:checked {
             &:after {
+              border-color: $warning-color;
               background-color: $warning-color;
+              box-shadow: 0 0 0 2px $warning-color;
             }
           }
         }
@@ -800,14 +803,17 @@
       }
 
       &.alert {
-        .fancy-checkbox {
+        .fancy-checkbox,
+        .fancy-radio {
           input:after {
             border-color: $alert-color;
           }
 
           input:checked {
             &:after {
+              border-color: $alert-color;
               background-color: $alert-color;
+              box-shadow: 0 0 0 2px $alert-color;
             }
           }
         }
