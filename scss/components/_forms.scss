@@ -1124,7 +1124,7 @@ input {
     width: 0px !important;
     height: 0px !important;
     margin-bottom: 20px !important;
-    margin-right: 42px !important;
+    margin-right: 28px !important;
     position: relative;
     cursor: pointer;
 
@@ -1169,53 +1169,12 @@ input {
   cursor: pointer;
   @extend .align-middle;
 
-  &.fancy-hover {
-    label {
-      transition: all .25s;
-      padding: .25rem 1rem;
-      border-radius: 50rem;
-      width: 100%;
-    }
-
-    &:hover {
-      label {
-        transition: all .25s;
-        background-color: #e1e1e1 !important;
-      }
-    }
-
-    input {
-      &:checked {
-        + label {
-          // background-color: darken(#e1e1e1,5%) !important;
-          @extend .bg-success;
-          @extend .clr-white;
-        }
-      }
-    }
-  }
-
-  &.small {
-    input {
-      width: 0px !important;
-      height: 0px !important;
-      margin-bottom: 15px !important;
-      margin-right: 20px !important;
-
-      &:after {
-        width: 20px !important;
-        height: 20px !important;
-        margin-top: -3px;
-      }
-    }
-  }
-
   input {
     margin: 0 0 0 3px;
     width: 0 !important;
     height: 0 !important;
     margin-bottom: 20px !important;
-    margin-right: 42px !important;
+    margin-right: 28px !important;
     position: relative;
     cursor: pointer;
     visibility: hidden;
@@ -1246,6 +1205,46 @@ input {
         box-shadow: 0 0 0 2px $success-color;
       }
 
+    }
+  }
+
+  &.fancy-hover {
+    label {
+      transition: all .25s;
+      padding: .25rem 1rem;
+      border-radius: 50rem;
+      width: 100%;
+    }
+
+    &:hover {
+      label {
+        transition: all .25s;
+        background-color: #e1e1e1 !important;
+      }
+    }
+
+    input {
+      &:checked {
+        + label {
+          @extend .bg-success;
+          @extend .clr-white;
+        }
+      }
+    }
+  }
+
+  &.small {
+    input {
+      width: 0px !important;
+      height: 0px !important;
+      margin-bottom: 15px !important;
+      margin-right: 20px !important;
+
+      &:after {
+        width: 20px !important;
+        height: 20px !important;
+        margin-top: -3px;
+      }
     }
   }
 }
