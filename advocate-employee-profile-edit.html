@@ -394,7 +394,7 @@
                           </div>
 				
 				<!-- ADD NEW LINKED PROFILE START HERE -->
-				<div class="add-new-profile">
+				<div id="add-new-profile" data-toggler data-animate="fade-in fade-out">
 	                          	<div class="spoke-list-item row expanded collapse align-middle">
 		                            	<div class="auto columns">
 			                              <div class="row align-middle">
@@ -505,7 +505,7 @@
                       </div>
                       <div class="row collapse align-middle">
 	                        <div class="auto columns">
-	                         	 <a href="#" class="button info tiny hollow mt-0-5 mb-0"><!-- <i class="fa fa-plus"></i> -->Save Profile</a>
+	                         	 <a href="#" id="send-link-profile" class="button info tiny hollow mt-0-5 mb-0" data-toggle="add-new-profile"><!-- <i class="fa fa-plus"></i> -->Save New Profile</a>
 	                        </div>
                       </div>
                     </div>
@@ -553,6 +553,12 @@
             }, 40);
         }).resize();
     });
+
+$('#send-link-profile').click(function() {
+	$(this).text(function(i, v){
+		return v === 'Save New Profile' ? 'Add New Profile' : 'Save New Profile'
+	});
+});
 
 
 </script>
