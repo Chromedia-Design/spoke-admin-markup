@@ -1,181 +1,214 @@
 .marker {
-	position: relative;
-	&.primary, &.secondary, &.success, &.warning, &.alert {
-		&:after {
-			border-radius: 10rem;
-		    content: " ";
-		    width: 1rem;
-		    height: 1rem;
-		    position: absolute;
-		    right: .5rem;
-		    top: 1.2rem;
-		    // left: -.5rem;
-		}
-	}
+  position: relative;
 
-	&.marker-pos-top-right {
-		&:after {
-			right: 0rem;
-		    top: 0rem;
-		    border-top: 7px solid;
-		    border-right: 7px solid;
-		    border-bottom: 7px solid transparent !important;
-		    border-left: 7px solid transparent !important;
-		}
-	}
+  &.primary, &.secondary, &.success, &.warning, &.alert {
+    &:after {
+      border-radius: 10rem;
+      content: " ";
+      width: 1rem;
+      height: 1rem;
+      position: absolute;
+      right: .5rem;
+      top: 1.2rem;
+      // left: -.5rem;
+    }
+  }
 
-	&.marker-pos-top-left {
-		&:after {
-			left: 0rem;
-		    top: 0rem;
-		    border-top: 7px solid;
-		    border-left: 7px solid;
-		    border-bottom: 7px solid transparent !important;
-		    border-right: 7px solid transparent !important;
-		}
-	}
+  &.marker-pos-top-right {
+    &:after {
+      right: 0rem;
+      top: 0rem;
+      border-top: 7px solid;
+      border-right: 7px solid;
+      border-bottom: 7px solid transparent !important;
+      border-left: 7px solid transparent !important;
+    }
+  }
 
-	&.marker-pos-top-right, &.marker-pos-top-left {
-		&:after {
-			width: 0px !important;
-		    height: 0px !important;
-		    background-color: transparent !important;
-		    border-radius: 0px;
-		}
-		&.primary {
-			&:after { border-color: rgba($primary-color,.5); }
-		}
-		&.secondary {
-			&:after { border-color: rgba($secondary-color,.5); }
-		}
-		&.success {
-			&:after { border-color: rgba($success-color,.5); }
-		}
-		&.warning {
-			&:after { border-color: rgba($warning-color,.5); }
-		}
-		&.alert {
-			&:after { border-color: rgba($alert-color,.5); }
-		}
-	}
+  &.marker-pos-top-left {
+    &:after {
+      left: 0rem;
+      top: 0rem;
+      border-top: 7px solid;
+      border-left: 7px solid;
+      border-bottom: 7px solid transparent !important;
+      border-right: 7px solid transparent !important;
+    }
+  }
 
-	
-	&.primary {
-		&:after { background-color: rgba($primary-color,.5); }
-	}
-	&.secondary {
-		&:after { background-color: rgba($secondary-color,.5); }
-	}
-	&.success {
-		&:after { background-color: rgba($success-color,.5); }
-	}
-	&.warning {
-		&:after { background-color: rgba($warning-color,.5); }
-	}
-	&.alert {
-		&:after { background-color: rgba($alert-color,.5); }
-	}
+  &.marker-pos-top-right, &.marker-pos-top-left {
+    &:after {
+      width: 0px !important;
+      height: 0px !important;
+      background-color: transparent !important;
+      border-radius: 0px;
+    }
+
+    &.primary {
+      &:after {
+        border-color: rgba($primary-color, .5);
+      }
+    }
+
+    &.secondary {
+      &:after {
+        border-color: rgba($secondary-color, .5);
+      }
+    }
+
+    &.success {
+      &:after {
+        border-color: rgba($success-color, .5);
+      }
+    }
+
+    &.warning {
+      &:after {
+        border-color: rgba($warning-color, .5);
+      }
+    }
+
+    &.alert {
+      &:after {
+        border-color: rgba($alert-color, .5);
+      }
+    }
+  }
+
+
+  &.primary {
+    &:after {
+      background-color: rgba($primary-color, .5);
+    }
+  }
+
+  &.secondary {
+    &:after {
+      background-color: rgba($secondary-color, .5);
+    }
+  }
+
+  &.success {
+    &:after {
+      background-color: rgba($success-color, .5);
+    }
+  }
+
+  &.warning {
+    &:after {
+      background-color: rgba($warning-color, .5);
+    }
+  }
+
+  &.alert {
+    &:after {
+      background-color: rgba($alert-color, .5);
+    }
+  }
 }
 
 .handoff {
-	position: relative !important;
-	&:before {
-		font-family: FontAwesome;
-    	content: "\f2b5";
-    	line-height: 1.23rem;
-    	padding: .5rem .25rem;
-    	font-size: 1.25rem;
-		width: 2rem;
-	    height: 2rem;
-	    background-color: $success-color;
-	    position: absolute;
-	    top: -20px;
-	    left: 50%;
-	    border-radius: 50%;
-	    border: 1px solid $success-color;
-	    color: #fff;
-	    z-index: 999;
-	}
+  position: relative !important;
 
-	&.handoff-alert {
-		&:before {
-			background-color: $alert-color !important;
-	    	border: 1px solid $alert-color !important;
-		}
-	}
+  &:before {
+    font-family: FontAwesome;
+    content: "\f2b5";
+    line-height: 1.23rem;
+    padding: .5rem .25rem;
+    font-size: 1.25rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: $success-color;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    border-radius: 50%;
+    border: 1px solid $success-color;
+    color: #fff;
+    z-index: 999;
+  }
 
-	&.handoff-warning {
-		&:before {
-			background-color: $warning-color !important;
-	    	border: 1px solid $warning-color !important;
-		}
-	}
+  &.handoff-alert {
+    &:before {
+      background-color: $alert-color !important;
+      border: 1px solid $alert-color !important;
+    }
+  }
 
-	&.handoff-success {
-		&:before {
-			background-color: $success-color !important;
-	    	border: 1px solid $success-color !important;
-		}
-	}
+  &.handoff-warning {
+    &:before {
+      background-color: $warning-color !important;
+      border: 1px solid $warning-color !important;
+    }
+  }
 
-	&.handoff-secondary {
-		&:before {
-			background-color: $secondary-color !important;
-	    	border: 1px solid $secondary-color !important;
-		}
-	}
+  &.handoff-success {
+    &:before {
+      background-color: $success-color !important;
+      border: 1px solid $success-color !important;
+    }
+  }
 
-	&.handoff-primary {
-		&:before {
-			background-color: $primary-color !important;
-	    	border: 1px solid $primary-color !important;
-		}
-	}
+  &.handoff-secondary {
+    &:before {
+      background-color: $secondary-color !important;
+      border: 1px solid $secondary-color !important;
+    }
+  }
+
+  &.handoff-primary {
+    &:before {
+      background-color: $primary-color !important;
+      border: 1px solid $primary-color !important;
+    }
+  }
 }
 
 .show-edit-hover {
-	&:after {
-		content: "\f044";
-	}	
+  &:after {
+    content: "\f044";
+  }
 }
 
 .show-close-hover {
-	&:after {
-		content: "\f00d";
-	}
+  &:after {
+    content: "\f00d";
+  }
 }
 
 .show-remove-hover {
-	&:after {
-		content: "\f068";
-	}
+  &:after {
+    content: "\f068";
+  }
 }
 
 .show-edit-hover, .show-close-hover, .show-remove-hover {
-	position: relative;
-	&:after {
-		opacity: 0;
-		font-family: FontAwesome;
-		padding-left: .3rem;
-		position: absolute;
-		width: fit-content;
-		height: 1.4rem;
-		width: 1.35rem;
-		
-		background-color: lighten($alert-color, 25%);
-		color: #fff;
-		top: .75rem;
-		right: -.9rem;
-		cursor: pointer;
-		border-radius: 5rem;
-		transition: all .5s;
-	}
-	&:hover {
-		&:after {
-			transition: all .5s;
-			opacity: 1;
-		}
-	}	
+  position: relative;
+
+  &:after {
+    opacity: 0;
+    font-family: FontAwesome;
+    padding-left: .3rem;
+    position: absolute;
+    width: fit-content;
+    height: 1.4rem;
+    width: 1.35rem;
+
+    background-color: lighten($alert-color, 25%);
+    color: #fff;
+    top: .75rem;
+    right: -.9rem;
+    cursor: pointer;
+    border-radius: 5rem;
+    transition: all .5s;
+  }
+
+  &:hover {
+    &:after {
+      transition: all .5s;
+      opacity: 1;
+    }
+  }
 
 }
 
