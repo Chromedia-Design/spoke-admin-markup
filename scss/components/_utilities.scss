@@ -682,3 +682,25 @@
   cursor: pointer;
 }
 
+.pain-intensity {
+	@extend .bg-black20;
+	.pain-meter {
+		
+		&.pain1{ //0-2
+			background-image: linear-gradient(to right, #229a22);
+		}
+		&.pain2{ //3-4
+			background-image: linear-gradient(to right, #229a22, #03c03c);
+		}
+		&.pain3{ //5-6
+			background-image: linear-gradient(to right, #229a22, #03c03c, #feff1b);
+		}
+		&.pain4{ //7-8
+			background-image: linear-gradient(to right, #229a22, #03c03c, #feff1b, #f29100);
+		}
+		&.pain5{ //9-10
+			background-image: linear-gradient(to right, #229a22, #03c03c, #feff1b, #f29100, #890400);
+		}
+	}
+}
+
