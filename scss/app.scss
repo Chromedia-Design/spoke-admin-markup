@@ -52,7 +52,6 @@
 // Custom Styles
 // Vendor
 @import 'vendor/font-awesome/font-awesome';
-
 // React Components Override
 @import 'components/react-components-override/_react-select';
 
@@ -88,7 +87,6 @@
 @import 'components/_offcanvas';
 @import 'components/_chat';
 @import 'components/_calendar';
-@import 'components/_reveal';
 @import 'components/_form-builder';
 @import 'components/_orbit';
 @import 'components/_clinical-pathway';
@@ -97,9 +95,9 @@
 @import 'components/_message';
 @import 'components/_media-queries';
 
-
 .Select-menu-outer {
   position: relative !important;
+  z-index: 100;
 }
 
 .alertify, .alertify-logs {

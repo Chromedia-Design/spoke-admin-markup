@@ -363,7 +363,7 @@
                                 <li>
                                   <a></a>
                                   <ul class="menu vertical">
-                                    <li><a href="#"><i class="fa fa-edit"></i>&nbsp; Remove</a></li>
+                                    <li><a href="#"><i class="fa fa-times"></i>&nbsp; Remove</a></li>
                                   </ul>
                                 </li>
                               </ul>
@@ -386,7 +386,8 @@
                                 <li>
                                   <a></a>
                                   <ul class="menu vertical">
-                                    <li><a href="#"><i class="fa fa-edit"></i>&nbsp; Remove</a></li>
+                                    <li><a href="#"><i class="fa fa-user"></i>&nbsp; Swtich to this Profile</a></li>
+                                    <li><a href="#"><i class="fa fa-times"></i>&nbsp; Remove</a></li>
                                   </ul>
                                 </li>
                               </ul>
@@ -394,7 +395,7 @@
                           </div>
 				
 				<!-- ADD NEW LINKED PROFILE START HERE -->
-				<div id="add-new-profile" data-toggler data-animate="fade-in fade-out">
+				<div id="add-new-profile" data-toggler data-animate="fade-in fade-out" style="display:none;">
 	                          	<div class="spoke-list-item row expanded collapse align-middle">
 		                            	<div class="auto columns">
 			                              <div class="row align-middle">
@@ -505,7 +506,7 @@
                       </div>
                       <div class="row collapse align-middle">
 	                        <div class="auto columns">
-	                         	 <a href="#" id="send-link-profile" class="button info tiny hollow mt-0-5 mb-0" data-toggle="add-new-profile"><!-- <i class="fa fa-plus"></i> -->Save New Profile</a>
+	                         	 <a href="#" id="send-link-profile" class="button info tiny hollow mt-0-5 mb-0" data-toggle="add-new-profile"><!-- <i class="fa fa-plus"></i> -->Add New Profile</a>
 	                        </div>
                       </div>
                     </div>
@@ -556,7 +557,7 @@
 
 $('#send-link-profile').click(function() {
 	$(this).text(function(i, v){
-		return v === 'Save New Profile' ? 'Add New Profile' : 'Save New Profile'
+		return v === 'Add New Profile' ? 'Cancel' : 'Add New Profile'
 	});
 });
 
