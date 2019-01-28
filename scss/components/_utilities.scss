@@ -475,29 +475,45 @@
   background-color: transparent !important;
 }
 
-.bg-primary {
-  background-color: $primary-color !important;
-}
 
-.bg-primary-light {
-  background-color: $primary-light !important;
-}
+.bg-primary { background-color: $primary-color !important; }
+.bg-primary-lighten { background-color: lighten($primary-color, 50%) !important; }
 
-.bg-secondary {
-  background-color: $secondary-color !important;
-}
+.bg-secondary { background-color: $secondary-color !important; }
+.bg-secondary-lighten { background-color: lighten($secondary-color, 50%) !important; }
 
-.bg-success {
-  background-color: $success-color !important;
-}
+.bg-success { background-color: $success-color !important; }
+.bg-success-lighten { background-color: lighten($success-color, 50%) !important; }
 
-.bg-warning {
-  background-color: $warning-color !important;
-}
+.bg-warning { background-color: $warning-color !important; }
+.bg-warning-lighten { background-color: lighten($warning-color, 50%) !important; }
 
-.bg-alert {
-  background-color: $alert-color !important;
-}
+.bg-alert { background-color: $alert-color !important; }
+.bg-alert-lighten { background-color: lighten($alert-color, 50%) !important; }
+
+// .bg-primary {
+//   background-color: $primary-color !important;
+// }
+
+// .bg-primary-light {
+//   background-color: $primary-light !important;
+// }
+
+// .bg-secondary {
+//   background-color: $secondary-color !important;
+// }
+
+// .bg-success {
+//   background-color: $success-color !important;
+// }
+
+// .bg-warning {
+//   background-color: $warning-color !important;
+// }
+
+// .bg-alert {
+//   background-color: $alert-color !important;
+// }
 
 .bg-white {
   background-color: #fff !important;
@@ -523,33 +539,22 @@
 .clr-black10 { color: darken(#fff, 10%) !important ;}
 .clr-black20 { color: darken(#fff, 20%) !important ;}
 .clr-black50 { color: darken(#fff, 50%) !important ;}
-.clr-primary {
-  color: $primary-color !important;
-}
 
-.clr-secondary {
-  color: $secondary-color !important;
-}
+.clr-primary { color: $primary-color !important; }
+.clr-primary-lighten { color: lighten($primary-color, 50%) !important; }
 
-.clr-success {
-  color: $success-color !important;
-}
+.clr-secondary { color: $secondary-color !important; }
+.clr-secondary-lighten { color: lighten($secondary-color, 50%) !important; }
 
-.clr-warning {
-  color: $warning-color !important;
-}
+.clr-success { color: $success-color !important; }
+.clr-success-lighten { color: lighten($success-color, 50%) !important; }
 
-.clr-alert {
-  color: $alert-color !important;
-}
+.clr-warning { color: $warning-color !important; }
+.clr-warning-lighten { color: lighten($warning-color, 50%) !important; }
 
-.clr-black20 {
-  color: darken(#fff, 20%) !important;
-}
+.clr-alert { color: $alert-color !important; }
+.clr-alert-lighten { color: lighten($alert-color, 50%) !important; }
 
-.clr-black50 {
-  color: darken(#fff, 50%) !important;
-}
 
 // List
 .list-style-type-none {

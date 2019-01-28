@@ -210,6 +210,30 @@
 .pain-intensity-compact {
 	position: relative;
 	overflow: visible;
+	&.top-left {
+		&:after {
+			top: -.25rem;
+			left: -.25rem;
+		}
+	}
+	&.top-right {
+		&:after {
+			top: -.25rem;
+			right: -.25rem;
+		}
+	}
+	&.bottom-left {
+		&:after {
+			bottom: -.25rem;
+			left: -.25rem;
+		}
+	}
+	&.bottom-right {
+		&:after {
+			bottom: -25rem;
+			right: .25rem;
+		}
+	}
 	&:after {
 		position: absolute;
 		bottom: -.25rem;

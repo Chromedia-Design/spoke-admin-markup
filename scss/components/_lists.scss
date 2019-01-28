@@ -822,6 +822,26 @@
           color: $alert-color;
         }
       }
+      &.disabled {
+        .fancy-checkbox,
+        .fancy-radio {
+          input:after {
+            border-color: $light-gray;
+          }
+
+          input:checked {
+            &:after {
+              border-color: $light-gray;
+              background-color: $light-gray;
+              box-shadow: 0 0 0 2px $light-gray;
+            }
+          }
+        }
+
+        .preamble {
+          color: $light-gray;
+        }
+      }
     }
 
     small {

@@ -659,6 +659,11 @@ label.image-upload {
 .label-group {
   background: $white;
 
+  &.label-group-light {
+    background-color: transparent !important;
+    border: 1px solid rgb(241, 241, 241) !important;
+  }
+
   p {
     margin-bottom: 0;
     font-size: rem-calc(12);
@@ -1055,6 +1060,28 @@ input {
     }
   }
 
+  &.primary {
+    background-color: $primary-color !important;
+    color: white;
+  }
+  &.secondary {
+    background-color: $secondary-color !important;
+    color: white;
+  }
+  &.success {
+    background-color: $success-color !important;
+    color: white;
+  }
+  &.warning {
+    background-color: $warning-color !important;
+    color: white;
+  }
+  &.alert {
+    background-color: $alert-color !important;
+    color: white;
+  }
+
+
   &.oulined {
     border: .05rem solid #e1e1e1;
     background-color: transparent !important;
@@ -1062,8 +1089,20 @@ input {
 
   &.small {
     font-size: .765rem;
-    padding-bottom: .15rem;
+    line-height: .85rem;
+
+    padding-bottom: .1rem;
     padding-top: .15rem;
+
+    &:after {
+      top: .15rem !important;
+    }
+  }
+  &.tiny {
+    font-size: .55rem;
+    line-height: .85rem;
+
+    padding: .1rem .25rem !important;
 
     &:after {
       top: .15rem !important;
