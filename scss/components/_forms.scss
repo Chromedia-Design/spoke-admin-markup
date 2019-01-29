@@ -1085,6 +1085,31 @@ input {
   &.oulined {
     border: .05rem solid #e1e1e1;
     background-color: transparent !important;
+    &.primary {
+      color: $primary-color !important;
+      border-color: $primary-color !important;
+      
+    }
+    &.secondary {
+      color: $secondary-color !important;
+      border-color: $secondary-color !important;
+      
+    }
+    &.success {
+      color: $success-color !important;
+      border-color: $success-color !important;
+      
+    }
+    &.warning {
+      color: $warning-color !important;
+      border-color: $warning-color !important;
+      
+    }
+    &.alert {
+      color: $alert-color !important;
+      border-color: $alert-color !important;
+      
+    }
   }
 
   &.small {

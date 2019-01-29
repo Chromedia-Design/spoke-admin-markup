@@ -1,29 +1,5 @@
 $(document).foundation();
 
-// dropdown ------------------------------------------------------------
-// $(".dropdown-checkbox").on('click', '.dropbtn, .fa', function (event) {
-//     // event.preventDefault();
-//     // $(this).parents(".dropdown-checkbox").find('.dropdown-content').slideDown();
-//     $(this).parents(".dropdown-checkbox").find('.dropdown-content').toggleClass('show');
-// });
-
-// Close the dropdown menu if the user clicks outside of it
-// window.onclick = function (event) {
-//     if (!event.target.matches('.dropbtn') && !event.target.matches('select, select option')) {
-
-//         var dropdowns = document.getElementsByClassName("dropdown-content");
-//         var i;
-//         for (i = 0; i < dropdowns.length; i++) {
-//             var openDropdown = dropdowns[i];
-//             if (openDropdown.classList.contains('show')) {
-//                 // openDropdown.classList.contains('show').slideUp();
-//                 openDropdown.classList.remove('show');
-//             }
-//         }
-//     }
-// }
-// dropdown ------------------------------------------------------------
-
 $(".dropdown").on('click', '.dropbtn', function(event) {
   event.preventDefault();
   // $(this).siblings(".dropdown-content").addClass("show");
@@ -238,15 +214,6 @@ $(".clinical-pathway-new-entry-list").on('click', '.clinical-pathway-new-entry',
 
 
 
-// TO BE REMOVED ------------------------------------------------------------
-// $(".toggle-sibling").children(":nth-child(1)").on('click', function(event) {
-//   event.preventDefault();
-//   $(this).siblings().slideToggle()
-// });
-// $(".toggle-sibling").children(":nth-child(2)").slideToggle();
-// TO BE REMOVED ------------------------------------------------------------
-
-
 // HOVERER:
 $(".show-on-hover").find(".hover-target").hide()
 
@@ -290,7 +257,26 @@ function selectOnClick(target,targetTree, selectionClass){
 
 selectOnClick(".ul-tree-child",".ul-tree, .ul-tree-only-child-selectable","selected")
 
-// selectOnClick(".ul-tree-parent, .ul-tree-sub-parent",".ul-tree","selected")
+// Repositioning Element using data attribute
+$(".repositioned").each(function(index, el) {
+    $(this).hide();
+    if ($(this).data('position-top')) {
+        $(this).children('.repositioned-container').css('top', $(this).data('position-top'));
+    }
+    if ($(this).data('position-right')) {
+        $(this).children('.repositioned-container').css('right', $(this).data('position-right'));
+    }
+        
+    $(this).children('.repositioned-container').css('display', 'block');
+    $(this).show();
+});
+
+
+
+
+
+
+
 
 // replace these values with those generated in your TokBox Account
 var apiKey = "45907482";

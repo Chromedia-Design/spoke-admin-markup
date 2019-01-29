@@ -822,7 +822,7 @@
           color: $alert-color;
         }
       }
-      &.disabled {
+      &.complete {
         .fancy-checkbox,
         .fancy-radio {
           input:after {

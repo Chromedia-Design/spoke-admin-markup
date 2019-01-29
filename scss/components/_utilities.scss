@@ -13,35 +13,16 @@
   top: 2rem;
 }
 
-.bg-light {
-  background: #eef0f3 !important;
-}
+
 
 
 // Display ----------------------------------------
-.inline-child * {
-  display: inline;
-}
-
-.inline-block {
-  display: inline-block;
-}
-
-.disp-block {
-  display: block !important;
-}
-
-.disp-inline {
-  display: inline;
-}
-
-.disp-inline-block {
-  display: inline-block;
-}
-
-.hidden {
-  display: none;
-}
+.inline-child * { display: inline; }
+.inline-block { display: inline-block; }
+.disp-block { display: block !important; }
+.disp-inline { display: inline; }
+.disp-inline-block { display: inline-block; }
+.hidden { display: none;}
 
 
 // Margins ----------------------------------------
@@ -161,6 +142,10 @@
   margin-bottom: 1rem !important;
 }
 
+.mb-0-25 {
+  margin-bottom: 0.5rem !important;
+}
+
 .mb-0-5 {
   margin-bottom: 0.5rem !important;
 }
@@ -214,9 +199,8 @@
   padding-left: 1rem !important;
 }
 
-.pl-0-5 {
-  padding-left: .5rem !important;
-}
+.pl-0-25 { padding-left: .5rem !important;}
+.pl-0-5 { padding-left: .5rem !important; }
 
 .pl-1-5 {
   padding-left: 1.5rem !important;
@@ -326,7 +310,7 @@
 
 
 .b-bottom-1 {
-  border-bottom: solid 1px darken(#fff, 8%) !important;
+  border-bottom: solid 1px #0000000f !important;
 }
 
 .b-bottom-1-darker {
@@ -424,7 +408,7 @@
   }
 }
 
-// Columns ----------------------------------------
+// Columns for content----------------------------------------
 .auto-columns-2 {
   column-count: 2;
 }
@@ -470,11 +454,11 @@
 }
 
 // Color ----------------------------------------
-// Background-color
-.bg-none {
-  background-color: transparent !important;
-}
 
+// Background-color
+.bg-light { background: #eef0f3 !important; }
+
+.bg-none { background-color: transparent !important; }
 
 .bg-primary { background-color: $primary-color !important; }
 .bg-primary-lighten { background-color: lighten($primary-color, 50%) !important; }
@@ -491,50 +475,21 @@
 .bg-alert { background-color: $alert-color !important; }
 .bg-alert-lighten { background-color: lighten($alert-color, 50%) !important; }
 
-// .bg-primary {
-//   background-color: $primary-color !important;
-// }
+.bg-white { background-color: #fff !important; }
 
-// .bg-primary-light {
-//   background-color: $primary-light !important;
-// }
+.bg-black10 { background-color: darken(#fff, 3%) !important; }
+.bg-black20 { background-color: darken(#fff, 6%) !important; }
 
-// .bg-secondary {
-//   background-color: $secondary-color !important;
-// }
+// status color
+.bg-note { background-color: #FFFFA5; }
 
-// .bg-success {
-//   background-color: $success-color !important;
-// }
-
-// .bg-warning {
-//   background-color: $warning-color !important;
-// }
-
-// .bg-alert {
-//   background-color: $alert-color !important;
-// }
-
-.bg-white {
-  background-color: #fff !important;
-}
-
-.bg-black10 {
-  background-color: darken(#fff, 3%) !important;
-}
-
-.bg-black20 {
-  background-color: darken(#fff, 6%) !important;
-}
 
 // Text color
-.clr-white {
-  color: $white !important;
-}
+.clr-note { color: #FFFFA5; }
 
-.clr-black {
-  color: $black !important;
-}
+.clr-white { color: $white !important; }
+
+.clr-black { color: $black !important; }
 
 .clr-black10 { color: darken(#fff, 10%) !important ;}
 .clr-black20 { color: darken(#fff, 20%) !important ;}
@@ -568,9 +523,7 @@
 
 // miscellaneous ----------------------------------------
 
-.hide-overflow {
-  overflow: hidden !important;
-}
+.hide-overflow { overflow: hidden !important; }
 
 .remove {
   cursor: pointer;
@@ -578,13 +531,8 @@
   padding: .5rem;
 }
 
-.full {
-  width: 100%;
-}
-
-.min-height {
-  height: 93vh;
-}
+.full { width: 100%; }
+.min-height { height: 93vh; }
 
 .full-height {
   height: 100vh !important;
@@ -593,17 +541,9 @@
   overflow-y: scroll !important;
 }
 
-.box-shadow {
-  box-shadow: 0 0 10px rgba(50, 50, 50, .2) !important;
-}
-
-.box-shadow-sm {
-  box-shadow: 0 0 25px rgba(50, 50, 50, .10) !important;
-}
-
-.box-shadow-lg {
-  box-shadow: 0 0 15px rgba(50, 50, 50, .25) !important;
-}
+.box-shadow { box-shadow: 0 0 10px rgba(50, 50, 50, .2) !important; }
+.box-shadow-sm { box-shadow: 0 0 25px rgba(50, 50, 50, .10) !important; }
+.box-shadow-lg { box-shadow: 0 0 15px rgba(50, 50, 50, .25) !important; }
 
 .circle {
   border-radius: 100rem;
@@ -711,6 +651,20 @@ $pain5: #890400;
 		&.pain5{ //9-10
 			background-image: linear-gradient(to right, $pain1, $pain2, $pain3, $pain4, $pain5);
 		}
+	}
+}
+
+
+
+
+
+
+
+.repositioned {
+	position: relative;
+	.repositioned-container {
+		position: absolute;
+		display: none;
 	}
 }
 
