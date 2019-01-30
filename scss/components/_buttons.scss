@@ -110,6 +110,9 @@
 		border-width: 1px;
 		font-weight: normal;
 	}
+	&.tiny {
+		font-size: 0.6rem !important;
+	}
 }
 
 @keyframes bounce {
