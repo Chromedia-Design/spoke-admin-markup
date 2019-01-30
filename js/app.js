@@ -1,5 +1,7 @@
 $(document).foundation();
 
+// window.FontAwesomeConfig = { searchPseudoElements: true }
+
 $(".dropdown").on('click', '.dropbtn', function(event) {
   event.preventDefault();
   // $(this).siblings(".dropdown-content").addClass("show");
@@ -11,6 +13,29 @@ window.onclick = function(event) {
     $(".dropdown-content").removeClass('show')
   }
 }
+
+$(document).ready(function(){
+  $(window).scroll(function(){
+    console.log($('#profileContent').scrollTop())
+  });
+});
+$(window).scroll(function() {
+    console.log($(window).scrollTop())
+});
+
+
+$(window).scroll(function() {
+    console.log($(window).scrollTop())
+    var $height = $(window).scrollTop();
+    if($height > 50) {
+        console.log(">50");
+        $('.stick-to-top1-5').addClass('disabled');
+    } else {
+        console.log("<50");
+        $('.stick-to-top1-5').removeClass('disabled');
+    }
+});
+
 
 
 // BEGIN Employee Chat Component ------------------------------------------------------------

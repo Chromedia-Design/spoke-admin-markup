@@ -8,6 +8,11 @@
   top: 1rem;
 }
 
+.stick-to-top1-5 {
+  position: sticky;
+  top: 1.5rem;
+}
+
 .stick-to-top2 {
   position: sticky;
   top: 2rem;
@@ -461,19 +466,19 @@
 .bg-none { background-color: transparent !important; }
 
 .bg-primary { background-color: $primary-color !important; }
-.bg-primary-lighten { background-color: lighten($primary-color, 50%) !important; }
+.bg-primary-lighten { background-color: lighten($primary-color, 25%) !important; }
 
 .bg-secondary { background-color: $secondary-color !important; }
-.bg-secondary-lighten { background-color: lighten($secondary-color, 50%) !important; }
+.bg-secondary-lighten { background-color: lighten($secondary-color, 25%) !important; }
 
 .bg-success { background-color: $success-color !important; }
-.bg-success-lighten { background-color: lighten($success-color, 50%) !important; }
+.bg-success-lighten { background-color: lighten($success-color, 25%) !important; }
 
 .bg-warning { background-color: $warning-color !important; }
-.bg-warning-lighten { background-color: lighten($warning-color, 50%) !important; }
+.bg-warning-lighten { background-color: lighten($warning-color, 25%) !important; }
 
 .bg-alert { background-color: $alert-color !important; }
-.bg-alert-lighten { background-color: lighten($alert-color, 50%) !important; }
+.bg-alert-lighten { background-color: lighten($alert-color, 25%) !important; }
 
 .bg-white { background-color: #fff !important; }
 
@@ -562,6 +567,10 @@
   &.c2 {
     width: 2rem;
     height: 2rem;
+  }
+  &.c2-5 {
+    width: 2.5rem;
+    height: 2.5rem;
   }
   &.c3 {
     width: 3rem;

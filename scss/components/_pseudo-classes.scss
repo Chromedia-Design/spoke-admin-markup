@@ -35,6 +35,16 @@
       border-right: 7px solid transparent !important;
     }
   }
+  &.marker-both {
+  	&:after {
+      left: 0rem;
+      top: 0rem;
+      border-top: 7px solid rgba($warning-color, .5);
+      border-left: 7px solid rgba($warning-color, .5);
+      border-bottom: 7px solid rgba($secondary-color, .5) !important;
+      border-right: 7px solid rgba($secondary-color, .5) !important;
+    }
+  }
 
   &.marker-pos-top-right, &.marker-pos-top-left {
     &:after {
@@ -110,8 +120,8 @@
 .handoff {
   position: relative !important;
 
-  &:before {
-    font-family: FontAwesome;
+  &::before {
+    font-family: "Font Awesome 5 free";
     content: "\f2b5";
     line-height: 1.23rem;
     padding: .5rem .25rem;
