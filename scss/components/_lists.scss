@@ -754,12 +754,13 @@
     margin-bottom: 0.5rem;
 
     > li {
-      margin: 0;
+      margin: 0.5rem 0;
       border: none;
       font-size: rem-calc(14);
 
       .list-wrap {
-        padding: 0 rem-calc(10);
+        border-radius: $global-radius;
+        padding: 0 rem-calc(16);
 
         > .row {
           min-height: rem-calc(69);
@@ -803,6 +804,12 @@
       }
 
       &.alert {
+
+        .list-wrap {
+          border: 1px solid rgba($alert-color, $B-dividers);
+          background-color: rgba($alert-color, $B-dividers);
+        }
+
         .fancy-checkbox,
         .fancy-radio {
           input:after {
@@ -854,7 +861,7 @@
       margin: 0.5rem 0;
 
       &:hover {
-        background: $white;
+        background-color: inherit;
       }
     }
   }
