@@ -14,28 +14,6 @@ window.onclick = function(event) {
   }
 }
 
-$(document).ready(function(){
-  $(window).scroll(function(){
-    console.log($('#profileContent').scrollTop())
-  });
-});
-$(window).scroll(function() {
-    console.log($(window).scrollTop())
-});
-
-
-$(window).scroll(function() {
-    console.log($(window).scrollTop())
-    var $height = $(window).scrollTop();
-    if($height > 50) {
-        console.log(">50");
-        $('.stick-to-top1-5').addClass('disabled');
-    } else {
-        console.log("<50");
-        $('.stick-to-top1-5').removeClass('disabled');
-    }
-});
-
 
 
 // BEGIN Employee Chat Component ------------------------------------------------------------
@@ -298,6 +276,38 @@ $(".repositioned").each(function(index, el) {
 
 
 
+function remCalc(rem) {
+    return rem * 16;
+}
+
+// Episode of care Member header Card
+$('#profileContent').on('scroll', function() {
+    var $height = $('#profileContent').scrollTop();
+    if($height > remCalc(1.5)) {
+        $(this).find("[data-transition]").animate({'padding-top': "1.5rem"}, 100)
+        $(this).find("[data-transition]").css('background-image', 'linear-gradient(#FBFBFB, rgba(255,0,0,0) )');
+        $(this).find("[data-transition]").children().removeClass('mb-2')
+        $(this).find("[data-transition]").children().addClass('mb-1')
+        $(this).find("[data-transition]").find('.make-transition-hide').slideUp('fast')
+    } else {
+        console.log("down")
+        $(this).find("[data-transition]").children().addClass('mb-2')
+        $(this).find("[data-transition]").children().removeClass('mb-1')
+        $(this).find("[data-transition]").animate({'padding-top': "0"}, 50)
+        $(this).find("[data-transition]").find('.make-transition-hide').slideDown('fast')
+    }
+});
+
+$('#profileContent').on('scroll', function() {
+    $('.make-transition').each(function(index, el) {
+        
+    });
+});
+
+
+
+
+
 
 
 
@@ -309,45 +319,45 @@ var sessionId = "2_MX40NTkwNzQ4Mn5-MTQ5OTE1NzY3NTE1NX5Ob3BVZERRSmkwUHpwWFB1dDdlR
 var token = "T1==cGFydG5lcl9pZD00NTkwNzQ4MiZzaWc9YmZkYmUxNWY1ZThlZDBhYWM0ODlmZGM3MjQ3OThjN2UyYjMwOGZiMzpzZXNzaW9uX2lkPTJfTVg0ME5Ua3dOelE0TW41LU1UUTVPVEUxTnpZM05URTFOWDVPYjNCVlpFUlJTbWt3VUhwd1dGQjFkRGRsUlcwdlJHNS1mZyZjcmVhdGVfdGltZT0xNDk5MTU3Njk2Jm5vbmNlPTAuODIyNDM1MDIxMzcwOTg1NyZyb2xlPXN1YnNjcmliZXImZXhwaXJlX3RpbWU9MTQ5OTE2MTI5NQ==";
 
 // (optional) add server code here
-initializeSession();
+// initializeSession();
 
-// Handling all of our errors here by alerting them
-function handleError(error) {
-    if (error) {
-        alert(error.message);
-    }
-}
+// // Handling all of our errors here by alerting them
+// function handleError(error) {
+//     if (error) {
+//         alert(error.message);
+//     }
+// }
 
-function initializeSession() {
-    var session = OT.initSession(apiKey, sessionId);
+// function initializeSession() {
+//     var session = OT.initSession(apiKey, sessionId);
 
-    // Subscribe to a newly created stream
+//     // Subscribe to a newly created stream
 
-    // Create a publisher
-    var publisher = OT.initPublisher('publisher', {
-        insertMode: 'append',
-        width: '100%',
-        height: '100%'
-    }, handleError);
+//     // Create a publisher
+//     var publisher = OT.initPublisher('publisher', {
+//         insertMode: 'append',
+//         width: '100%',
+//         height: '100%'
+//     }, handleError);
 
-    // Connect to the session
-    session.connect(token, function (error) {
-        // If the connection is successful, publish to the session
-        if (error) {
-            handleError(error);
-        } else {
-            session.publish(publisher, handleError);
-        }
-    });
-}
+//     // Connect to the session
+//     session.connect(token, function (error) {
+//         // If the connection is successful, publish to the session
+//         if (error) {
+//             handleError(error);
+//         } else {
+//             session.publish(publisher, handleError);
+//         }
+//     });
+// }
 
-session.on('streamCreated', function (event) {
-    session.subscribe(event.stream, 'subscriber', {
-        insertMode: 'append',
-        width: '100%',
-        height: '100%'
-    }, handleError);
-});
+// session.on('streamCreated', function (event) {
+//     session.subscribe(event.stream, 'subscriber', {
+//         insertMode: 'append',
+//         width: '100%',
+//         height: '100%'
+//     }, handleError);
+// });
 
 
 

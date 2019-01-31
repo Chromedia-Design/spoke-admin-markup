@@ -822,6 +822,7 @@
           color: $alert-color;
         }
       }
+
       &.complete {
         .fancy-checkbox,
         .fancy-radio {
@@ -1586,20 +1587,11 @@ ul.vertical-list {
 .ul-tree {
   // ul-tree Variables
   $treeline-color: #c1c1c1;
-  // ul-tree Variables
+
   margin: 0;
   padding: 0 3px;
   list-style-type: none;
   border-radius: $global-radius;
-  // &.ul-tree-hide-action {
-  //   .ul-tree-child {
-  //     .row {
-  //       div:last-child {
-  //         display: none;
-  //       }
-  //     }
-  //   }
-  // }
 
   &.ul-tree-hide-action {
     .ul-tree-child {
@@ -1649,15 +1641,15 @@ ul.vertical-list {
       font-size: rem-calc(9);
     }
 
-    &:before {
-      position: absolute;
-      content: '';
-      left: -7px;
-      bottom: -7px;
-      width: 1px;
-      height: 1rem;
-      background-color: #c1c1c1;
-    }
+    //&:before {
+    //  position: absolute;
+    //  content: '';
+    //  left: -7px;
+    //  bottom: -7px;
+    //  width: 1px;
+    //  height: 1rem;
+    //  background-color: #c1c1c1;
+    //}
 
     &:hover {
       background-color: #e1e1e1;
@@ -1669,12 +1661,65 @@ ul.vertical-list {
     font-size: rem-calc(12);
     list-style-type: none;
     position: relative;
-    padding-left: 0.63rem;
+    padding-left: 0.5rem;
     margin-left: 0.5rem;
-    border-left: 1px solid $treeline-color;
+    box-shadow: -1px 0 0 0 $treeline-color;
+
+    span {
+      padding: 0 .5rem;
+      border-radius: 4px;
+      transition: all .5s;
+      &:hover {
+        transition: all .5s;
+        cursor: pointer;
+        background-color: #e1e1e1;
+      }
+    }
+
+    &:last-child {
+      box-shadow: none;
+    }
+
+    &:after {
+      content: "";
+      width: 1px;
+      height: 17px;
+      background-color: $treeline-color;
+      position: absolute;
+      top: -7px;
+      left: -1px;
+    }
+
+    &:before {
+      content: "";
+      width: 10px;
+      height: 1px;
+      background-color: $treeline-color;
+      position: absolute;
+      top: .6rem;
+      left: -1px;
+    }
+
+    &.ul-tree-parent,
+    &.ul-tree-sub-parent {
+      display: list-item;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      cursor: pointer;
+      border-left: 0;
+      padding-left: 0;
+      margin-left: 0;
+      color: $text-black;
+      box-shadow: none;
+
+      &:before,
+      &:after {
+        content: "";
+        background-color: transparent;
+      }
+    }
 
     &.ul-tree-child {
-      padding-bottom: .25rem;
 
       i, span {
         display: inline-block;
@@ -1707,12 +1752,14 @@ ul.vertical-list {
           }
         }
       }
+
       &.multi-child-type {
         ul {
           &.inner-child {
-            border-left: 1px solid $treeline-color;
-            padding-left: 1.25rem;
-            margin-left: .3rem;
+            margin-left: 0.5rem;
+            padding-left: 0.5rem;
+            box-shadow: -1px 0 0 0 $treeline-color;
+
             &:before {
               content: "";
               width: 1px;
@@ -1726,7 +1773,9 @@ ul.vertical-list {
         }
       }
 
-      ul {
+      ul.ul-tree {
+        margin-left: 0.5rem;
+        padding-left: 0.5rem;
         .ul-tree-child {
           &:nth-child(2) {
             margin-top: .25rem;
@@ -1735,15 +1784,65 @@ ul.vertical-list {
       }
     }
 
-    span {
-      padding: 0 .5rem;
-      border-radius: 4px;
-      transition: all .5s;
+    &.ul-tree-parent {
+      &:empty {
+        &:after {
+          content: none;
+        }
+      }
+    }
 
-      &:hover {
-        transition: all .5s;
-        cursor: pointer;
-        background-color: #e1e1e1;
+    &.ul-tree-sub-parent {
+
+      &.floating {
+        &:before {
+          content: "" !important;
+          width: 0 !important;
+          height: 0 !important;
+          left: -.5rem;
+          border-radius: 1rem !important;
+        }
+
+        &:after {
+          height: 0 !important;
+        }
+
+      }
+
+      &:after {
+        content: "";
+        width: 1px;
+        height: 20px;
+        background-color: $treeline-color;
+        position: absolute;
+        top: -10px;
+        left: -9px;
+      }
+
+      &:before {
+        content: "";
+        width: 10px;
+        height: 1px;
+        background-color: $treeline-color;
+        position: absolute;
+        top: 0.6rem;
+        left: -9px;
+      }
+
+      &.selected {
+        & > div div:nth-child(2) {
+          @extend .clr-primary;
+          color: #fff;
+          border-radius: 4px;
+          font-weight: bold;
+          background-color: #e1e1e1;
+          transition: all .5s;
+
+          &:hover {
+            color: darken(#fff, 10%);
+            transition: all .5s;
+          }
+        }
       }
     }
 
@@ -1765,118 +1864,6 @@ ul.vertical-list {
     &.disabled {
       cursor: default;
       opacity: 1;
-    }
-
-    &:last-child {
-      border-left: 0;
-
-      &:after {
-        content: "";
-        width: 1px;
-        height: 17px;
-        background-color: $treeline-color;
-        position: absolute;
-        top: -7px;
-        left: 0;
-      }
-    }
-
-    &:before {
-      content: "";
-      width: 10px;
-      height: 1px;
-      background-color: $treeline-color;
-      position: absolute;
-      top: .6rem;
-      left: 0;
-    }
-
-    &.ul-tree-parent, &.ul-tree-sub-parent {
-      display: list-item;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      cursor: pointer;
-      border-left: 0;
-      padding-left: 0;
-      margin-left: 0;
-      color: #323232;
-
-      &:before {
-        content: "";
-        background-color: transparent;
-      }
-
-      .ul-tree-child {
-        &:first-child {
-          padding-top: .25rem !important;
-        }
-      }
-    }
-
-    &.ul-tree-parent {
-      &:empty {
-        &:after {
-          content: none;
-        }
-      }
-    }
-
-    &.ul-tree-sub-parent {
-      padding-top: .25rem;
-      &.floating {
-        // margin-left: .5rem !important;
-        &:before {
-          content: "" !important;
-          width: 0px !important;
-          height: 0px !important;
-          left: -.5rem;
-          border-radius: 1rem !important;
-        }
-        &:after {
-          height: 0px !important;  
-        }
-        &:last-child {
-          &:after {
-            
-          }
-        }
-      }
-
-      &:before {
-        content: "";
-        width: 14px;
-        height: 1px;
-        background-color: $treeline-color;
-        position: absolute;
-        top: 14px;
-        left: -.88rem;
-      }
-
-      &:after {
-        content: "";
-        width: 1px;
-        height: 24px;
-        background-color: $treeline-color;
-        position: absolute;
-        top: -9px;
-        left: -.95rem;
-      }
-
-      &.selected {
-        & > div div:nth-child(2) {
-          @extend .clr-primary;
-          color: #fff;
-          border-radius: 4px;
-          font-weight: bold;
-          background-color: #e1e1e1;
-          transition: all .5s;
-
-          &:hover {
-            color: darken(#fff, 10%);
-            transition: all .5s;
-          }
-        }
-      }
     }
   }
 }

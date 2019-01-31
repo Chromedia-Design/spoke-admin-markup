@@ -459,7 +459,6 @@
 }
 
 // Color ----------------------------------------
-
 // Background-color
 .bg-light { background: #eef0f3 !important; }
 
@@ -467,6 +466,8 @@
 
 .bg-primary { background-color: $primary-color !important; }
 .bg-primary-lighten { background-color: lighten($primary-color, 25%) !important; }
+
+.bg-primary-light { background-color: $primary-light !important; }
 
 .bg-secondary { background-color: $secondary-color !important; }
 .bg-secondary-lighten { background-color: lighten($secondary-color, 25%) !important; }
@@ -671,11 +672,9 @@ $pain5: #890400;
 	}
 }
 
-
-
-
-
-
+.pull-right {
+  float: right;
+}
 
 .repositioned {
 	position: relative;

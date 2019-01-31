@@ -121,6 +121,12 @@ p {
 	}
 }
 
+p, span {
+	.tiny {
+		font-size: 0.6875rem !important;
+	}
+}
+
 .primary-color {
 	color: $primary-color !important;
 	> * {

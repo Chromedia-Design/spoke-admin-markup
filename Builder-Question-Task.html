@@ -2,975 +2,1001 @@
 <html class="no-js" lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Spoke Admin Portal</title>
-	<link rel="stylesheet" href="js/trumbowyg/ui/trumbowyg.min.css">
-	<link rel="stylesheet" href="css/app.css">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spoke Admin Portal</title>
+  <link rel="stylesheet" href="js/trumbowyg/ui/trumbowyg.min.css">
+  <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
-	<!-- <div class="full-height" id=""> -->
-	<div class="" id="full-page">
-		<div class="row expanded full-page-header">
-			<div class="column medium-12 pl-0 pr-0">
-				<div class="row align-middle expanded reveal-heading">
-					<div class="shrink columns">
-						<div class="button-align small mb-0">
-							<a class="button rounded hollow white" href="clinical-pathway-builder.html"><i class="fa fa-arrow-left"></i></a>
-						</div>
-					</div>
-					<div class="columns">
-			            <span class="h5">Pain Threshold</span>
-			            &nbsp; 
-			            <a href="#" class="link white-color ml-1 mb-0"><i class="fa fa-edit"></i></a>
-					</div>
-					<div class="shrink columns">
-						<div class="button-align small mb-0 pull-right">
-							<a class="button success hollow"><!-- <i class="fa fa-save fa-fw"></i> --> Preview</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+<!-- <div class="full-height" id=""> -->
+<div class="" id="full-page">
+  <div class="row expanded full-page-header">
+    <div class="column medium-12 pl-0 pr-0">
+      <div class="row align-middle expanded reveal-heading">
+        <div class="shrink columns">
+          <div class="button-align small mb-0">
+            <a class="button rounded hollow white" href="clinical-pathway-builder.html"><i class="fa fa-arrow-left"></i></a>
+          </div>
+        </div>
+        <div class="columns">
+          <span class="h5">Pain Threshold</span>
+          &nbsp;
+          <a href="#" class="link white-color ml-1 mb-0"><i class="fa fa-edit"></i></a>
+        </div>
+        <div class="shrink columns">
+          <div class="button-align small mb-0 pull-right">
+            <a class="button success hollow"><!-- <i class="fa fa-save fa-fw"></i> --> Preview</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-		<div class="row expanded full-page-body" id="ui-add-new-clinical-pathway">
+  <div class="row expanded full-page-body" id="ui-add-new-clinical-pathway">
 
-			<div class="columns medium-4 full-page-body-sidebar bg-black10">
+    <div class="columns medium-4 full-page-body-sidebar bg-black10">
 
-				<div class="row ">
-					<div class="medium-12 columns pr-0 pl-0">
+      <div class="row ">
+        <div class="medium-12 columns pr-0 pl-0">
 
-						<!-- <div class="row pr-1 mb-1 mt-1">
-							<div class="columns">
-				                <ul class="tabs" data-tabs id="example-tabs">
-				                  <li class="tabs-title"><a href="#panel1" aria-selected="true">Question Builder</a></li>
-				                  <li class="tabs-title is-active"><a data-tabs-target="panel2" href="#panel2">Task Builder</a></li>
-				                </ul>
-							</div>
-						</div> -->
+          <!-- <div class="row pr-1 mb-1 mt-1">
+            <div class="columns">
+                      <ul class="tabs" data-tabs id="example-tabs">
+                        <li class="tabs-title"><a href="#panel1" aria-selected="true">Question Builder</a></li>
+                        <li class="tabs-title is-active"><a data-tabs-target="panel2" href="#panel2">Task Builder</a></li>
+                      </ul>
+            </div>
+          </div> -->
 
-						<div class=" clinical-pathway-new-entry-list">              
+          <div class=" clinical-pathway-new-entry-list">
 
-							<div class="row mt-1">
-								<div class="columns">
-									<!-- <ul class=" ul-tree ul-tree-expanded ul-tree-hide-action">
-				                		<li class="ul-tree-parent toggler-handler">
-				                  			<div class="row">
-												<div class="columns shrink pl-0 pr-0">
-													<i class="fa fa-lg fa-question-circle clr-warning"></i>
-												</div>
-												<div class="columns pl-0 pr-0">
-													<span><strong> How is your pain today?</strong></span>
-												</div>
-											</div>
-				                		</li>
-				                		<li class="toggler-target ul-tree-child">
-											<div class="row">
-												<div class="columns shrink pl-0 pr-0">
-													<i class="fa mr-0-5 fa-circle"></i>
-												</div>
-												<div class="columns pl-0 pr-0">
-													<span>1</span>
-												</div>
-												<div class="columns shrink pr-0">
-													<button class="button hollow clear success small mb-0 pt-0 pb-0">
-														<i class="fa fa-plus"></i>
-													</button>
-												</div>
-											</div>
-										</li>
-										<li class="toggler-target ul-tree-child">
-											<div class="row">
-												<div class="columns shrink pl-0 pr-0">
-													<i class="fa mr-0-5 fa-circle"></i>
-												</div>
-												<div class="columns pl-0 pr-0">
-													<span>2</span>
-												</div>
-												<div class="columns shrink pr-0">
-													<button class="button hollow clear success small mb-0 pt-0 pb-0">
-														<i class="fa fa-plus"></i>
-													</button>
-												</div>
-											</div>
-										</li>
-										<li class="toggler-target ul-tree-child">
-											<div class="row">
-												<div class="columns shrink pl-0 pr-0">
-													<i class="fa mr-0-5 fa-circle"></i>
-												</div>
-												<div class="columns pl-0 pr-0">
-													<span>3</span>
-												</div>
-												<div class="columns shrink pr-0">
-													<button class="button hollow clear success small mb-0 pt-0 pb-0">
-														<i class="fa fa-plus"></i>
-													</button>
-												</div>
-											</div>
-										</li>
-										<li class="toggler-target ul-tree-child">
-											<div class="row">
-												<div class="columns shrink pl-0 pr-0">
-													<i class="fa mr-0-5 fa-circle"></i>
-												</div>
-												<div class="columns pl-0 pr-0">
-													<span>4</span>
-												</div>
-												<div class="columns shrink pr-0">
-													<button class="button hollow clear success small mb-0 pt-0 pb-0">
-														<i class="fa fa-plus"></i>
-													</button>
-												</div>
-											</div>
-										</li>
-										<li class="toggler-target ul-tree-child active">
-											<div class="row">
-												<div class="columns shrink pl-0 pr-0">
-													<i class="fa mr-0-5 fa-circle"></i>
-												</div>
-												<div class="columns pl-0 pr-0">
-													<span>5</span>
-												</div>
-												<div class="columns shrink pr-0">
-													<button class="button hollow clear success small mb-0 pt-0 pb-0">
-														<i class="fa fa-plus"></i>
-													</button>
-												</div>
-											</div>
-										</li>
-										<li class="toggler-target ul-tree-child">
-											<div class="row">
-												<div class="columns shrink pl-0 pr-0">
-													<i class="fa mr-0-5 fa-circle"></i>
-												</div>
-												<div class="columns pl-0 pr-0">
-													<span>6</span>
-												</div>
-												<div class="columns shrink pr-0">
-													<button class="button hollow clear success small mb-0 pt-0 pb-0">
-														<i class="fa fa-plus"></i>
-													</button>
-												</div>
-											</div>
-										</li>
-										<li class="toggler-target ul-tree-child">
-											<div class="row">
-												<div class="columns shrink pl-0 pr-0">
-													<i class="fa mr-0-5 fa-circle"></i>
-												</div>
-												<div class="columns pl-0 pr-0">
-													<span>7</span>
-												</div>
-												<div class="columns shrink pr-0">
-													<button class="button hollow clear success small mb-0 pt-0 pb-0">
-														<i class="fa fa-plus"></i>
-													</button>
-												</div>
-											</div>
-										</li>
-										<li class="toggler-target ul-tree-child">
-											<div class="row">
-												<div class="columns shrink pl-0 pr-0">
-													<i class="fa mr-0-5 fa-circle"></i>
-												</div>
-												<div class="columns pl-0 pr-0">
-													<span>8</span>
-												</div>
-												<div class="columns shrink pr-0">
-													<button class="button hollow clear success small mb-0 pt-0 pb-0">
-														<i class="fa fa-plus"></i>
-													</button>
-												</div>
-											</div>
-										</li>
-										<li class="toggler-target ul-tree-child">
-											<div class="row">
-												<div class="columns shrink pl-0 pr-0">
-													<i class="fa mr-0-5 fa-circle"></i>
-												</div>
-												<div class="columns pl-0 pr-0">
-													<span>9</span>
-												</div>
-												<div class="columns shrink pr-0">
-													<button class="button hollow clear success small mb-0 pt-0 pb-0">
-														<i class="fa fa-plus"></i>
-													</button>
-												</div>
-											</div>
-										</li>
-										<li class="toggler-target ul-tree-child active selected">
-											<div class="row">
-												<div class="columns shrink pl-0 pr-0">
-													<i class="fa mr-0-5 fa-circle"></i>
-												</div>
-												<div class="columns pl-0 pr-0">
-													<span>10</span>
-												</div>
-												<div class="columns shrink pr-0">
-													<button class="button hollow clear success small mb-0 pt-0 pb-0">
-														<i class="fa fa-plus"></i>
-													</button>
-												</div>
-											</div>
-											<ul>
-												<li class="ul-tree-sub-parent">												
-													<div class="row">
-														<div class="columns shrink pl-0 pr-0">
-															<i class="fa fa-lg fa-envelope clr-secondary"></i>
-														</div>
-														<div class="columns pl-0 pr-0">
-															<span><strong>Task</strong></span>
-														</div>
-													</div>
-												</li>
-												<li class="ul-tree-sub-parent">												
-													<div class="row">
-														<div class="columns shrink pl-0 pr-0">
-															<i class="fa fa-lg fa-list-ol clr-secondary"></i>
-														</div>
-														<div class="columns pl-0 pr-0">
-															<span><strong>Taask</strong></span>
-														</div>
-													</div>
-												</li>
-												<li class="ul-tree-sub-parent">												
-													<div class="row">
-														<div class="columns shrink pl-0 pr-0">
-															<i class="fa fa-lg fa-envelope clr-secondary"></i>
-														</div>
-														<div class="columns pl-0 pr-0">
-															<span><strong>Taaask</strong></span>
-														</div>
-													</div>
-												</li>
-												<li class="ul-tree-sub-parent">												
-													<div class="row">
-														<div class="columns shrink pl-0 pr-0">
-															<i class="fa fa-lg fa-list-ol clr-secondary"></i>
-														</div>
-														<div class="columns pl-0 pr-0">
-															<span><strong>Taaaask</strong></span>
-														</div>
-													</div>
-												</li>
-											</ul>
-											<ul class="">
-												<li class="ul-tree-sub-parent toggler-handler selected">
-													<div class="row">
-														<div class="columns shrink pl-0 pr-0-5">
-															<i class="fa fa-lg fa-question-circle clr-warning"></i>
-														</div>
-														<div class="columns pl-0 pr-0">
-															<span><strong>Did you drink your medicine last night?</strong></span>
-														</div>
-														<div class="columns shrink pr-0">
-															<button class="button hollow clear alert small mb-0 pt-0 pb-0">
-																<i class="fa fa-minus"></i>
-															</button>
-														</div>
-													</div>
-												</li>
-												<li class="toggler-target ul-tree-child selected">
-													<div class="row">
-														<div class="columns shrink pl-0 pr-0">
-															<i class="fa mr-0-5 fa-circle"></i>
-														</div>
-														<div class="columns pl-0 pr-0">
-															<span>Yes</span>
-														</div>
-														<div class="columns shrink pr-0">
-															<button class="button hollow clear success small mb-0 pt-0 pb-0">
-																<i class="fa fa-plus"></i>
-															</button>
-														</div>
-													</div>
-												</li>
-												<li class="toggler-target ul-tree-child active">
-													<div class="row">
-														<div class="columns shrink pl-0 pr-0">
-															<i class="fa mr-0-5 fa-circle"></i>
-														</div>
-														<div class="columns pl-0 pr-0">
-															<span>No</span>
-														</div>
-														<div class="columns shrink pr-0">
-															<button class="button hollow clear success small mb-0 pt-0 pb-0">
-																<i class="fa fa-plus"></i>
-															</button>
-														</div>
-													</div>
-												</li>
-											</ul>
-										</li>
-									</ul> -->
+            <div class="row mt-1">
+              <div class="columns">
+                <!-- <ul class=" ul-tree ul-tree-expanded ul-tree-hide-action">
+                          <li class="ul-tree-parent toggler-handler">
+                              <div class="row">
+                      <div class="columns shrink pl-0 pr-0">
+                        <i class="fa fa-lg fa-question-circle clr-warning"></i>
+                      </div>
+                      <div class="columns pl-0 pr-0">
+                        <span><strong> How is your pain today?</strong></span>
+                      </div>
+                    </div>
+                          </li>
+                          <li class="toggler-target ul-tree-child">
+                    <div class="row">
+                      <div class="columns shrink pl-0 pr-0">
+                        <i class="fa mr-0-5 fa-circle"></i>
+                      </div>
+                      <div class="columns pl-0 pr-0">
+                        <span>1</span>
+                      </div>
+                      <div class="columns shrink pr-0">
+                        <button class="button hollow clear success small mb-0 pt-0 pb-0">
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="toggler-target ul-tree-child">
+                    <div class="row">
+                      <div class="columns shrink pl-0 pr-0">
+                        <i class="fa mr-0-5 fa-circle"></i>
+                      </div>
+                      <div class="columns pl-0 pr-0">
+                        <span>2</span>
+                      </div>
+                      <div class="columns shrink pr-0">
+                        <button class="button hollow clear success small mb-0 pt-0 pb-0">
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="toggler-target ul-tree-child">
+                    <div class="row">
+                      <div class="columns shrink pl-0 pr-0">
+                        <i class="fa mr-0-5 fa-circle"></i>
+                      </div>
+                      <div class="columns pl-0 pr-0">
+                        <span>3</span>
+                      </div>
+                      <div class="columns shrink pr-0">
+                        <button class="button hollow clear success small mb-0 pt-0 pb-0">
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="toggler-target ul-tree-child">
+                    <div class="row">
+                      <div class="columns shrink pl-0 pr-0">
+                        <i class="fa mr-0-5 fa-circle"></i>
+                      </div>
+                      <div class="columns pl-0 pr-0">
+                        <span>4</span>
+                      </div>
+                      <div class="columns shrink pr-0">
+                        <button class="button hollow clear success small mb-0 pt-0 pb-0">
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="toggler-target ul-tree-child active">
+                    <div class="row">
+                      <div class="columns shrink pl-0 pr-0">
+                        <i class="fa mr-0-5 fa-circle"></i>
+                      </div>
+                      <div class="columns pl-0 pr-0">
+                        <span>5</span>
+                      </div>
+                      <div class="columns shrink pr-0">
+                        <button class="button hollow clear success small mb-0 pt-0 pb-0">
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="toggler-target ul-tree-child">
+                    <div class="row">
+                      <div class="columns shrink pl-0 pr-0">
+                        <i class="fa mr-0-5 fa-circle"></i>
+                      </div>
+                      <div class="columns pl-0 pr-0">
+                        <span>6</span>
+                      </div>
+                      <div class="columns shrink pr-0">
+                        <button class="button hollow clear success small mb-0 pt-0 pb-0">
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="toggler-target ul-tree-child">
+                    <div class="row">
+                      <div class="columns shrink pl-0 pr-0">
+                        <i class="fa mr-0-5 fa-circle"></i>
+                      </div>
+                      <div class="columns pl-0 pr-0">
+                        <span>7</span>
+                      </div>
+                      <div class="columns shrink pr-0">
+                        <button class="button hollow clear success small mb-0 pt-0 pb-0">
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="toggler-target ul-tree-child">
+                    <div class="row">
+                      <div class="columns shrink pl-0 pr-0">
+                        <i class="fa mr-0-5 fa-circle"></i>
+                      </div>
+                      <div class="columns pl-0 pr-0">
+                        <span>8</span>
+                      </div>
+                      <div class="columns shrink pr-0">
+                        <button class="button hollow clear success small mb-0 pt-0 pb-0">
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="toggler-target ul-tree-child">
+                    <div class="row">
+                      <div class="columns shrink pl-0 pr-0">
+                        <i class="fa mr-0-5 fa-circle"></i>
+                      </div>
+                      <div class="columns pl-0 pr-0">
+                        <span>9</span>
+                      </div>
+                      <div class="columns shrink pr-0">
+                        <button class="button hollow clear success small mb-0 pt-0 pb-0">
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="toggler-target ul-tree-child active selected">
+                    <div class="row">
+                      <div class="columns shrink pl-0 pr-0">
+                        <i class="fa mr-0-5 fa-circle"></i>
+                      </div>
+                      <div class="columns pl-0 pr-0">
+                        <span>10</span>
+                      </div>
+                      <div class="columns shrink pr-0">
+                        <button class="button hollow clear success small mb-0 pt-0 pb-0">
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <ul>
+                      <li class="ul-tree-sub-parent">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0">
+                            <i class="fa fa-lg fa-envelope clr-secondary"></i>
+                          </div>
+                          <div class="columns pl-0 pr-0">
+                            <span><strong>Task</strong></span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="ul-tree-sub-parent">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0">
+                            <i class="fa fa-lg fa-list-ol clr-secondary"></i>
+                          </div>
+                          <div class="columns pl-0 pr-0">
+                            <span><strong>Taask</strong></span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="ul-tree-sub-parent">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0">
+                            <i class="fa fa-lg fa-envelope clr-secondary"></i>
+                          </div>
+                          <div class="columns pl-0 pr-0">
+                            <span><strong>Taaask</strong></span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="ul-tree-sub-parent">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0">
+                            <i class="fa fa-lg fa-list-ol clr-secondary"></i>
+                          </div>
+                          <div class="columns pl-0 pr-0">
+                            <span><strong>Taaaask</strong></span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <ul class="">
+                      <li class="ul-tree-sub-parent toggler-handler selected">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0-5">
+                            <i class="fa fa-lg fa-question-circle clr-warning"></i>
+                          </div>
+                          <div class="columns pl-0 pr-0">
+                            <span><strong>Did you drink your medicine last night?</strong></span>
+                          </div>
+                          <div class="columns shrink pr-0">
+                            <button class="button hollow clear alert small mb-0 pt-0 pb-0">
+                              <i class="fa fa-minus"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="toggler-target ul-tree-child selected">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0">
+                            <i class="fa mr-0-5 fa-circle"></i>
+                          </div>
+                          <div class="columns pl-0 pr-0">
+                            <span>Yes</span>
+                          </div>
+                          <div class="columns shrink pr-0">
+                            <button class="button hollow clear success small mb-0 pt-0 pb-0">
+                              <i class="fa fa-plus"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="toggler-target ul-tree-child active">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0">
+                            <i class="fa mr-0-5 fa-circle"></i>
+                          </div>
+                          <div class="columns pl-0 pr-0">
+                            <span>No</span>
+                          </div>
+                          <div class="columns shrink pr-0">
+                            <button class="button hollow clear success small mb-0 pt-0 pb-0">
+                              <i class="fa fa-plus"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul> -->
 
-								<ul class="ul-tree ul-tree-expanded">
-			                  		<li class="ul-tree-parent toggler-handler selected">
-			                    		<div class="row">
-											<div class="columns shrink pl-0 pr-0">
-												<i class="fa fa-lg fa-question-circle clr-warning"></i>
-											</div>
-											<div class="columns pl-0 pr-0">
-												<span><strong> How is your pain today?</strong></span>
-											</div>
-										</div>
-			                  		</li>
-			                  		<li class="toggler-target ul-tree-child">
-										<div class="row">
-											<div class="columns shrink pl-0 pr-0">
-												<i class="fa mr-0-5 fa-circle"></i>
-											</div>
-											<div class="columns pl-0 pr-0">
-												<span>1</span>
-											</div>
-											<!-- <div class="columns shrink pr-0">
-												<button class="button hollow clear success small mb-0 pt-0 pb-0">
-													<i class="fa fa-plus"></i>
-												</button>
-											</div> -->
-										</div>
-										<ul>
-											<li class="ul-tree-sub-parent">												
-												<div class="row">
-													<div class="columns shrink pl-0 pr-0">
-														<i class="fa fa-lg fa-envelope clr-secondary"></i>
-													</div>
-													<div class="columns medium-11 pl-0 pr-0">
-														<span class="truncate"><strong>Send message to Member</strong></span>
-													</div>
-												</div>
-											</li>
-										</ul>
-									</li>
+                <ul class="ul-tree ul-tree-expanded">
+                  <li class="ul-tree-parent toggler-handler selected">
+                    <div class="row">
+                      <div class="columns shrink pl-0 pr-0">
+                        <i class="fa fa-lg fa-question-circle clr-warning"></i>
+                      </div>
+                      <div class="columns pl-0 pr-0">
+                        <span><strong> How is your pain today?</strong></span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="toggler-target ul-tree-child">
+                    <div class="row">
+                      <div class="columns shrink pl-0 pr-0">
+                        <i class="fa mr-0-5 fa-circle"></i>
+                      </div>
+                      <div class="columns pl-0 pr-0">
+                        <span>1</span>
+                      </div>
+                      <!-- <div class="columns shrink pr-0">
+                        <button class="button hollow clear success small mb-0 pt-0 pb-0">
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </div> -->
+                    </div>
+                    <ul class="ul-tree">
+                      <li class="ul-tree-sub-parent">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0">
+                            <i class="fa fa-lg fa-envelope clr-secondary"></i>
+                          </div>
+                          <div class="columns medium-11 pl-0 pr-0">
+                            <span class="truncate"><strong>Send message to Member</strong></span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
 
-									<li class="toggler-target ul-tree-child">
-										<div class="row">
-											<div class="columns shrink pl-0 pr-0">
-												<i class="fa mr-0-5 fa-circle"></i>
-											</div>
-											<div class="columns pl-0 pr-0">
-												<span>2</span>
-											</div>
-											<!-- <div class="columns shrink pr-0">
-												<button class="button hollow clear success small mb-0 pt-0 pb-0">
-													<i class="fa fa-plus"></i>
-												</button>
-											</div> -->
-										</div>
-										<ul>
-											<li class="ul-tree-sub-parent">												
-												<div class="row">
-													<div class="columns shrink pl-0 pr-0">
-														<i class="fa fa-lg fa-envelope clr-secondary"></i>
-													</div>
-													<div class="columns medium-11 pl-0 pr-0">
-														<span class="truncate"><strong>Send message to Member</strong></span>
-													</div>
-												</div>
-											</li>
-										</ul>
-									</li>
-									<li class="toggler-target ul-tree-child">
-										<div class="row">
-											<div class="columns shrink pl-0 pr-0">
-												<i class="fa mr-0-5 fa-circle"></i>
-											</div>
-											<div class="columns pl-0 pr-0">
-												<span>3</span>
-											</div>
-											<!-- <div class="columns shrink pr-0">
-												<button class="button hollow clear success small mb-0 pt-0 pb-0">
-													<i class="fa fa-plus"></i>
-												</button>
-											</div> -->
-										</div>
-										<ul>
-											<li class="ul-tree-sub-parent">												
-												<div class="row">
-													<div class="columns shrink pl-0 pr-0">
-														<i class="fa fa-lg fa-envelope clr-secondary"></i>
-													</div>
-													<div class="columns medium-11 pl-0 pr-0">
-														<span class="truncate"><strong>Send message to Member</strong></span>
-													</div>
-												</div>
-											</li>
-										</ul>
-									</li>
-									<li class="toggler-target ul-tree-child">
-										<div class="row">
-											<div class="columns shrink pl-0 pr-0">
-												<i class="fa mr-0-5 fa-circle"></i>
-											</div>
-											<div class="columns pl-0 pr-0">
-												<span>4</span>
-											</div>
-											<!-- <div class="columns shrink pr-0">
-												<button class="button hollow clear success small mb-0 pt-0 pb-0">
-													<i class="fa fa-plus"></i>
-												</button>
-											</div> -->
-										</div>
-										<ul>
-											<li class="ul-tree-sub-parent">												
-												<div class="row">
-													<div class="columns shrink pl-0 pr-0">
-														<i class="fa fa-lg fa-envelope clr-secondary"></i>
-													</div>
-													<div class="columns medium-11 pl-0 pr-0">
-														<span class="truncate"><strong>Send message to Member</strong></span>
-													</div>
-												</div>
-											</li>
-										</ul>
-									</li>
-									<li class="toggler-target ul-tree-child">
-										<div class="row">
-											<div class="columns shrink pl-0 pr-0">
-												<i class="fa mr-0-5 fa-circle"></i>
-											</div>
-											<div class="columns pl-0 pr-0">
-												<span>5</span>
-											</div>
-											<!-- <div class="columns shrink pr-0">
-												<button class="button hollow clear success small mb-0 pt-0 pb-0">
-													<i class="fa fa-plus"></i>
-												</button>
-											</div> -->
-										</div>
-										<ul>
-											<li class="ul-tree-sub-parent">												
-												<div class="row">
-													<div class="columns shrink pl-0 pr-0">
-														<i class="fa fa-lg fa-envelope clr-secondary"></i>
-													</div>
-													<div class="columns medium-11 pl-0 pr-0">
-														<span class="truncate"><strong>Send message to Member</strong></span>
-													</div>
-												</div>
-											</li>
-											<li class="ul-tree-sub-parent">												
-												<div class="row">
-													<div class="columns shrink pl-0 pr-0">
-														<i class="fa fa-lg fa-check clr-secondary"></i>
-													</div>
-													<div class="columns medium-11 pl-0 pr-0">
-														<span class="truncate"><strong>Remind Care Coordinator to call Member</strong></span>
-													</div>
-												</div>
-											</li>
-										</ul>
-									</li>
-									<li class="toggler-target ul-tree-child">
-										<div class="row">
-											<div class="columns shrink pl-0 pr-0">
-												<i class="fa mr-0-5 fa-circle"></i>
-											</div>
-											<div class="columns pl-0 pr-0">
-												<span>6</span>
-											</div>
-											<!-- <div class="columns shrink pr-0">
-												<button class="button hollow clear success small mb-0 pt-0 pb-0">
-													<i class="fa fa-plus"></i>
-												</button>
-											</div> -->
-										</div>
-										<ul>
-											<li class="ul-tree-sub-parent">												
-												<div class="row">
-													<div class="columns shrink pl-0 pr-0">
-														<i class="fa fa-lg fa-envelope clr-secondary"></i>
-													</div>
-													<div class="columns medium-11 pl-0 pr-0">
-														<span class="truncate"><strong>Send message to Member</strong></span>
-													</div>
-												</div>
-											</li>
-											<li class="ul-tree-sub-parent">												
-												<div class="row">
-													<div class="columns shrink pl-0 pr-0">
-														<i class="fa fa-lg fa-check clr-secondary"></i>
-													</div>
-													<div class="columns medium-11 pl-0 pr-0">
-														<span class="truncate"><strong>Remind Care Coordinator to call Member</strong></span>
-													</div>
-												</div>
-											</li>
-										</ul>
-									</li>
-									<li class="toggler-target ul-tree-child">
-										<div class="row">
-											<div class="columns shrink pl-0 pr-0">
-												<i class="fa mr-0-5 fa-circle"></i>
-											</div>
-											<div class="columns pl-0 pr-0">
-												<span>7</span>
-											</div>
-											<!-- <div class="columns shrink pr-0">
-												<button class="button hollow clear success small mb-0 pt-0 pb-0">
-													<i class="fa fa-plus"></i>
-												</button>
-											</div> -->
-										</div>
-										<ul>
-											<li class="ul-tree-sub-parent">												
-												<div class="row">
-													<div class="columns shrink pl-0 pr-0">
-														<i class="fa fa-lg fa-envelope clr-secondary"></i>
-													</div>
-													<div class="columns medium-11 pl-0 pr-0">
-														<span class="truncate"><strong>Send message to Member</strong></span>
-													</div>
-												</div>
-											</li>
-											<li class="ul-tree-sub-parent">												
-												<div class="row">
-													<div class="columns shrink pl-0 pr-0">
-														<i class="fa fa-lg fa-check clr-secondary"></i>
-													</div>
-													<div class="columns medium-11 pl-0 pr-0">
-														<span class="truncate"><strong>Remind Care Coordinator to call Member</strong></span>
-													</div>
-												</div>
-											</li>
-											<li class="ul-tree-sub-parent">												
-												<div class="row">
-													<div class="columns shrink pl-0 pr-0">
-														<i class="fa fa-lg fa-check clr-secondary"></i>
-													</div>
-													<div class="columns medium-11 pl-0 pr-0">
-														<span class="truncate"><strong>Add additional Pain Threshold events to Pathway</strong></span>
-													</div>
-												</div>
-											</li>
-										</ul>
-									</li>
-									<li class="toggler-target ul-tree-child">
-										<div class="row">
-											<div class="columns shrink pl-0 pr-0">
-												<i class="fa mr-0-5 fa-circle"></i>
-											</div>
-											<div class="columns pl-0 pr-0">
-												<span>8</span>
-											</div>
-											<!-- <div class="columns shrink pr-0">
-												<button class="button hollow clear success small mb-0 pt-0 pb-0">
-													<i class="fa fa-plus"></i>
-												</button>
-											</div> -->
-										</div>
-										<ul>
-											<li class="ul-tree-sub-parent">												
-												<div class="row">
-													<div class="columns shrink pl-0 pr-0">
-														<i class="fa fa-lg fa-envelope clr-secondary"></i>
-													</div>
-													<div class="columns medium-11 pl-0 pr-0">
-														<span class="truncate"><strong>Send message to Member</strong></span>
-													</div>
-												</div>
-											</li>
-											<li class="ul-tree-sub-parent">												
-												<div class="row">
-													<div class="columns shrink pl-0 pr-0">
-														<i class="fa fa-lg fa-check clr-secondary"></i>
-													</div>
-													<div class="columns medium-11 pl-0 pr-0">
-														<span class="truncate"><strong>Remind Care Coordinator to call Member</strong></span>
-													</div>
-												</div>
-											</li>
-											<li class="ul-tree-sub-parent">												
-												<div class="row">
-													<div class="columns shrink pl-0 pr-0">
-														<i class="fa fa-lg fa-check clr-secondary"></i>
-													</div>
-													<div class="columns medium-11 pl-0 pr-0">
-														<span class="truncate"><strong>Add additional Pain Threshold events to Pathway</strong></span>
-													</div>
-												</div>
-											</li>
-										</ul>
-									</li>
-									<li class="toggler-target ul-tree-child">
-										<div class="row">
-											<div class="columns shrink pl-0 pr-0">
-												<i class="fa mr-0-5 fa-circle"></i>
-											</div>
-											<div class="columns pl-0 pr-0">
-												<span>9</span>
-											</div>
-											<!-- <div class="columns shrink pr-0">
-												<button class="button hollow clear success small mb-0 pt-0 pb-0">
-													<i class="fa fa-plus"></i>
-												</button>
-											</div> -->
-										</div>
-										<ul>
-											<li class="ul-tree-sub-parent">												
-												<div class="row">
-													<div class="columns shrink pl-0 pr-0">
-														<i class="fa fa-lg fa-envelope clr-secondary"></i>
-													</div>
-													<div class="columns medium-11 pl-0 pr-0">
-														<span class="truncate"><strong>Send message to Member</strong></span>
-													</div>
-												</div>
-											</li>
-											<li class="ul-tree-sub-parent">												
-												<div class="row">
-													<div class="columns shrink pl-0 pr-0">
-														<i class="fa fa-lg fa-check clr-secondary"></i>
-													</div>
-													<div class="columns medium-11 pl-0 pr-0">
-														<span class="truncate"><strong>Remind Care Coordinator to call Member</strong></span>
-													</div>
-												</div>
-											</li>
-											<li class="ul-tree-sub-parent">												
-												<div class="row">
-													<div class="columns shrink pl-0 pr-0">
-														<i class="fa fa-lg fa-envelope clr-secondary"></i>
-													</div>
-													<div class="columns medium-11 pl-0 pr-0">
-														<span class="truncate"><strong>Send message to Surgeon</strong></span>
-													</div>
-												</div>
-											</li>
-											<li class="ul-tree-sub-parent">												
-												<div class="row">
-													<div class="columns shrink pl-0 pr-0">
-														<i class="fa fa-lg fa-check clr-secondary"></i>
-													</div>
-													<div class="columns medium-11 pl-0 pr-0">
-														<span class="truncate"><strong>Add additional Pain Threshold events to Pathway</strong></span>
-													</div>
-												</div>
-											</li>
-										</ul>
-									</li>
-									<li class="toggler-target ul-tree-child">
-										<div class="row">
-											<div class="columns shrink pl-0 pr-0">
-												<i class="fa mr-0-5 fa-circle"></i>
-											</div>
-											<div class="columns pl-0 pr-0">
-												<span>10</span>
-											</div>
-										</div>
-										<ul>
-											<li class="ul-tree-sub-parent">												
-												<div class="row">
-													<div class="columns shrink pl-0 pr-0">
-														<i class="fa fa-lg fa-envelope clr-secondary"></i>
-													</div>
-													<div class="columns medium-11 pl-0 pr-0">
-														<span class="truncate"><strong>Send message to Member</strong></span>
-													</div>
-												</div>
-											</li>
-											<li class="ul-tree-sub-parent">												
-												<div class="row">
-													<div class="columns shrink pl-0 pr-0">
-														<i class="fa fa-lg fa-envelope clr-secondary"></i>
-													</div>
-													<div class="columns medium-11 pl-0 pr-0">
-														<span class="truncate"><strong>Send message to Member</strong></span>
-													</div>
-												</div>
-											</li>
-											<li class="ul-tree-sub-parent">												
-												<div class="row">
-													<div class="columns shrink pl-0 pr-0">
-														<i class="fa fa-lg fa-envelope clr-secondary"></i>
-													</div>
-													<div class="columns medium-11 pl-0 pr-0">
-														<span class="truncate"><strong>Send message to Surgeon</strong></span>
-													</div>
-												</div>
-											</li>
-											<li class="ul-tree-sub-parent">												
-												<div class="row">
-													<div class="columns shrink pl-0 pr-0">
-														<i class="fa fa-lg fa-check clr-secondary"></i>
-													</div>
-													<div class="columns medium-11 pl-0 pr-0">
-														<span class="truncate"><strong>Add additional Pain Threshold events to Pathway</strong></span>
-													</div>
-												</div>
-											</li>
-										</ul>
-										<ul class="">
-											<li class="ul-tree-sub-parent">						
-												<div class="row">
-													<div class="columns shrink pl-0 pr-0">
-														<i class="fa fa-lg fa-question-circle clr-warning"></i>
-													</div>
-													<div class="columns pl-0 pr-0">
-														<span><strong>Did you call 911?</strong></span>
-													</div>
-													<!-- <div class="columns shrink pr-0">
-														<button class="button hollow clear alert small mb-0 pt-0 pb-0">
-															<i class="fa fa-minus"></i>
-														</button>
-													</div> -->
-												</div>
-											</li>
-											<li class="ul-tree-child">
-												<div class="row">
-													<div class="columns shrink pl-0 pr-0">
-														<i class="fa mr-0-5 fa-circle"></i>
-													</div>
-													<div class="columns pl-0 pr-0">
-														<span>Yes</span>
-													</div>
-													<!-- <div class="columns shrink pr-0">
-														<button class="button hollow clear success small mb-0 pt-0 pb-0">
-															<i class="fa fa-plus"></i>
-														</button>
-													</div> -->
-												</div>
-											</li>
-											<li class="toggler-target ul-tree-child">
-												<div class="row">
-													<div class="columns shrink pl-0 pr-0">
-														<i class="fa mr-0-5 fa-circle"></i>
-													</div>
-													<div class="columns pl-0 pr-0">
-														<span>No</span>
-													</div>
-													<!-- <div class="columns shrink pr-0">
-														<button class="button hollow clear success small mb-0 pt-0 pb-0">
-															<i class="fa fa-plus"></i>
-														</button>
-													</div> -->
-												</div>
-											</li>
-										</ul>
-									</li>
-			                	</ul>
-
-
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>      
-
-			<div class="columns full-page-body-content bg-white">
-				<div class="row pl-1 pr-1 pt-0 mb-1">
-					<div class="columns bg-black20 pt-1 border-radius-sm">
-						<div>
-              				<p class="subheader"><strong><small>QUESTION</small></strong></p>
-              				<h5>How is your pain today?</h5>
-            			</div>
-      					<div>
-		      				<p class="subheader"><strong><small>ANSWER SELECTED</small></strong></p>
-		      				<h5>10</h5>
-      					</div>
-					</div>
-				</div>
-
-				<div class="row mb-2">
-					<div class="columns ml-0 mr-0">
-						<div class="dropdown">
-							<button class="dropbtn button hollow clear small success mb-0"><i class="fa fa-plus"></i> Add task</button>
-							<div class="dropdown-content">                          
-		            			<ul class="ml-0 mb-0">
-				                	<li class="list-style-type-none"><a href="" class="pl-0-5 pr-0-5">Add To-Do</a></li>
-				                	<li class="list-style-type-none"><a href="" class="pl-0-5 pr-0-5">Add Message</a></li>
-				                	<!-- <li class="list-style-type-none"><a href="">Add Question</a></li> -->
-				                </ul>
-	            			</div>
-    					</div>
-            			<div>
-        					<div class="mb-1 toggler">
-                				<div class="row expanded bg-black20 pt-0-5 pb-0-5 border-radius-sm">
-                  					<div class="columns shrink toggler-handler">
-                    					<i class="fa fa-lg fa-envelope mt-0-5 clr-secondary"></i>
-                  					</div>
-                  					<div class="columns toggler-handler">
-					                    <p class="mb-0"><strong>Send message to Member</strong></p>
-					                    <p class="subheader mb-0">Member</p>
-                  					</div>
-                  					<div class="columns shrink">
-                    					<div class="pull-right">                            					                      
-						                    <button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
-						                    <button class="button hollow clear mb-0 toggler-handler"><i class="fa fa-chevron-down"></i></button>
-                    					</div>
-                  					</div>
-                				</div>
-                				<div class="row pt-1 toggler-target bg-black10">
-				                    <div class="columns">
-				                      <div class="row mb-1">
-				                        <div class="columns medium-6">
-				                          <p class="subheader">Title</p>
-				                          <input type="text" value="Send message to Member"  class="fancy-input">
-				                        </div>
-				                      </div>
-				                      <div class="row mb-1">
-				                        <div class="columns">
-				                          <textarea name="" id="" cols="30" rows="3" class="fancy-input"></textarea>                          
-				                        </div>
-				                      </div>
-				                    </div>
-				                  </div>
-              				</div>
-
-				          	<div class="mb-1 toggler">
-				                <div class="row expanded bg-black20 pt-0-5 pb-0-5 border-radius-sm">
-					              	<div class="columns shrink toggler-handler">
-					            	    <i class="fa fa-lg fa-check mt-0-5 clr-secondary"></i>
-                  					</div>
-                  					<div class="columns toggler-handler">
-					                    <p class="mb-0"><strong>Remind Care Coordinator to call Member</strong></p>
-					                    <p class="subheader mb-0">Care Coordinator</p>
-					              	</div>
-					              	<div class="columns shrink">
-					                    <div class="pull-right">                                                  
-					                  		<button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
-						                    <button class="button hollow clear mb-0 toggler-handler"><i class="fa fa-chevron-down"></i></button>
-					                    </div>
-                  					</div>
-                				</div>
-				                <div class="row pt-1 toggler-target bg-black10">
-				        	  		<div class="columns">
-				                    	<div class="row mb-1">
-				                  			<div class="columns">
-				                        		<p class="subheader"><strong><small>To-Do</small></strong></p>
-				                        		<textarea name="" id="" cols="30" rows="2" placeholder="What do you want to do?" class="fancy-input"></textarea>
-				                      		</div>
-				                    	</div>
-				        				<div class="row mb-1">
-				                      		<div class="columns medium-6">
-						                        <p class="subheader"><strong><small>Assign to</small></strong></p>
-						                        <select name="" id="" class="fancy-input">
-						                          <option value="">Member</option>
-						                          <option value="" selected="">Care Coordinator</option>
-						                        </select>
-				                      		</div>
-				                		</div>
-				                    	<div class="row mb-1">
-				                      		<div class="columns medium-6">
-				                       			<p class="subheader"><strong><small>Mark as overdue if not completed by</small></strong></p>
-				                       			<input type="text" class="fancy-input" placeholder="Overdue">
-				                      		</div>  
-				                		</div>
-				              		</div>
-				                </div>
-              				</div>
-
-				          	<div class="mb-1 toggler">
-				                <div class="row expanded bg-black20 pt-0-5 pb-0-5 border-radius-sm">
-					                <div class="columns shrink toggler-handler">
-					          			<i class="fa fa-lg fa-envelope mt-0-5 clr-secondary"></i>
-					                </div>
-					                <div class="columns toggler-handler">
-					              		<p class="mb-0"><strong>Send message to Surgeon</strong></p>
-					              		<p class="subheader mb-0">Surgeon</p>
-					                </div>
-				            		<div class="columns shrink">
-				                  		<div class="pull-right">                            
-						                    <button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
-						                    <button class="button hollow clear mb-0 toggler-handler"><i class="fa fa-chevron-down"></i></button>
-				            		  </div>
-				                	</div>
-				                </div>
-				                <div class="row pt-1 toggler-target bg-black10">
-				              		<div class="columns">
-				                    	<div class="row mb-1">
-				                      		<div class="columns medium-6">
-				                        		<p class="subheader"><strong><small>Title</small></strong></p>
-				                        		<input type="text" value="Check up Schedule"  class="fancy-input">
-				                      		</div>
-				                    	</div>
-				                    	<div class="row mb-1">
-				                      		<div class="columns">
-				                        		<p class="subheader"><strong><small>Message</small></strong></p>
-				                        		<textarea name="" id="" cols="30" rows="5" class="fancy-input">Sarah Burbon will schedule you for a check up with Dr. Strange.</textarea>
-				                      		</div>
-				                    	</div>
-				                  	</div>
-				                </div>
-				          	</div>
-
-				          	<div class="mb-1 toggler">
-				                <div class="row expanded bg-black20 pt-0-5 pb-0-5 border-radius-sm">
-					              	<div class="columns shrink toggler-handler">
-					            	    <i class="fa fa-lg fa-check mt-0-5 clr-secondary"></i>
-                  					</div>
-                  					<div class="columns toggler-handler">
-					                    <p class="mb-0"><strong>Add additional Pain Threshold events to Pathway</strong></p>
-					                    <p class="subheader mb-0">Care Coordinator</p>
-					              	</div>
-					              	<div class="columns shrink">
-					                    <div class="pull-right">                                                  
-					                  		<button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
-						                    <button class="button hollow clear mb-0 toggler-handler"><i class="fa fa-chevron-down"></i></button>
-					                    </div>
-                  					</div>
-                				</div>
-				                <div class="row pt-1 toggler-target bg-black10">
-				        	  		<div class="columns">
-				                    	<div class="row mb-1">
-				                  			<div class="columns">
-				                        		<p class="subheader"><strong><small>To-Do</small></strong></p>
-				                        		<textarea name="" id="" cols="30" rows="2" placeholder="What do you want to do?" class="fancy-input">Add additional Pain Threshold events to Pathway</textarea>
-				                      		</div>
-				                    	</div>
-				        				<div class="row mb-1">
-				                      		<div class="columns medium-6">
-						                        <p class="subheader"><strong><small>Assign to</small></strong></p>
-						                        <select name="" id="" class="fancy-input">
-						                          <option value="">Member</option>
-						                          <option value="" selected="">Care Coordinator</option>
-						                        </select>
-				                      		</div>
-				                		</div>
-				                    	<div class="row mb-1">
-				                      		<div class="columns medium-6">
-				                       			<p class="subheader"><strong><small>Mark as overdue if not completed by</small></strong></p>
-				                       			<input type="text" class="fancy-input" placeholder="Overdue">
-				                      		</div>  
-				                		</div>
-				              		</div>
-				                </div>
-              				</div>
-      		  			</div>
-          			</div>
-        		</div>
-			</div>
-		</div>
-	</div>
+                  <li class="toggler-target ul-tree-child">
+                    <div class="row">
+                      <div class="columns shrink pl-0 pr-0">
+                        <i class="fa mr-0-5 fa-circle"></i>
+                      </div>
+                      <div class="columns pl-0 pr-0">
+                        <span>2</span>
+                      </div>
+                      <!-- <div class="columns shrink pr-0">
+                        <button class="button hollow clear success small mb-0 pt-0 pb-0">
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </div> -->
+                    </div>
+                    <ul class="ul-tree">
+                      <li class="ul-tree-sub-parent">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0">
+                            <i class="fa fa-lg fa-envelope clr-secondary"></i>
+                          </div>
+                          <div class="columns medium-11 pl-0 pr-0">
+                            <span class="truncate"><strong>Send message to Member</strong></span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="toggler-target ul-tree-child">
+                    <div class="row">
+                      <div class="columns shrink pl-0 pr-0">
+                        <i class="fa mr-0-5 fa-circle"></i>
+                      </div>
+                      <div class="columns pl-0 pr-0">
+                        <span>3</span>
+                      </div>
+                      <!-- <div class="columns shrink pr-0">
+                        <button class="button hollow clear success small mb-0 pt-0 pb-0">
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </div> -->
+                    </div>
+                    <ul class="ul-tree">
+                      <li class="ul-tree-sub-parent">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0">
+                            <i class="fa fa-lg fa-envelope clr-secondary"></i>
+                          </div>
+                          <div class="columns medium-11 pl-0 pr-0">
+                            <span class="truncate"><strong>Send message to Member</strong></span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="toggler-target ul-tree-child">
+                    <div class="row">
+                      <div class="columns shrink pl-0 pr-0">
+                        <i class="fa mr-0-5 fa-circle"></i>
+                      </div>
+                      <div class="columns pl-0 pr-0">
+                        <span>4</span>
+                      </div>
+                      <!-- <div class="columns shrink pr-0">
+                        <button class="button hollow clear success small mb-0 pt-0 pb-0">
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </div> -->
+                    </div>
+                    <ul class="ul-tree">
+                      <li class="ul-tree-sub-parent">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0">
+                            <i class="fa fa-lg fa-envelope clr-secondary"></i>
+                          </div>
+                          <div class="columns medium-11 pl-0 pr-0">
+                            <span class="truncate"><strong>Send message to Member</strong></span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="toggler-target ul-tree-child">
+                    <div class="row">
+                      <div class="columns shrink pl-0 pr-0">
+                        <i class="fa mr-0-5 fa-circle"></i>
+                      </div>
+                      <div class="columns pl-0 pr-0">
+                        <span>5</span>
+                      </div>
+                      <!-- <div class="columns shrink pr-0">
+                        <button class="button hollow clear success small mb-0 pt-0 pb-0">
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </div> -->
+                    </div>
+                    <ul class="ul-tree">
+                      <li class="ul-tree-sub-parent">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0">
+                            <i class="fa fa-lg fa-envelope clr-secondary"></i>
+                          </div>
+                          <div class="columns medium-11 pl-0 pr-0">
+                            <span class="truncate"><strong>Send message to Member</strong></span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="ul-tree-sub-parent">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0">
+                            <i class="fa fa-lg fa-check clr-secondary"></i>
+                          </div>
+                          <div class="columns medium-11 pl-0 pr-0">
+                            <span class="truncate"><strong>Remind Care Coordinator to call Member</strong></span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="toggler-target ul-tree-child">
+                    <div class="row">
+                      <div class="columns shrink pl-0 pr-0">
+                        <i class="fa mr-0-5 fa-circle"></i>
+                      </div>
+                      <div class="columns pl-0 pr-0">
+                        <span>6</span>
+                      </div>
+                      <!-- <div class="columns shrink pr-0">
+                        <button class="button hollow clear success small mb-0 pt-0 pb-0">
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </div> -->
+                    </div>
+                    <ul class="ul-tree">
+                      <li class="ul-tree-sub-parent">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0">
+                            <i class="fa fa-lg fa-envelope clr-secondary"></i>
+                          </div>
+                          <div class="columns medium-11 pl-0 pr-0">
+                            <span class="truncate"><strong>Send message to Member</strong></span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="ul-tree-sub-parent">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0">
+                            <i class="fa fa-lg fa-check clr-secondary"></i>
+                          </div>
+                          <div class="columns medium-11 pl-0 pr-0">
+                            <span class="truncate"><strong>Remind Care Coordinator to call Member</strong></span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="toggler-target ul-tree-child">
+                    <div class="row">
+                      <div class="columns shrink pl-0 pr-0">
+                        <i class="fa mr-0-5 fa-circle"></i>
+                      </div>
+                      <div class="columns pl-0 pr-0">
+                        <span>7</span>
+                      </div>
+                      <!-- <div class="columns shrink pr-0">
+                        <button class="button hollow clear success small mb-0 pt-0 pb-0">
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </div> -->
+                    </div>
+                    <ul class="ul-tree">
+                      <li class="ul-tree-sub-parent">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0">
+                            <i class="fa fa-lg fa-envelope clr-secondary"></i>
+                          </div>
+                          <div class="columns medium-11 pl-0 pr-0">
+                            <span class="truncate"><strong>Send message to Member</strong></span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="ul-tree-sub-parent">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0">
+                            <i class="fa fa-lg fa-check clr-secondary"></i>
+                          </div>
+                          <div class="columns medium-11 pl-0 pr-0">
+                            <span class="truncate"><strong>Remind Care Coordinator to call Member</strong></span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="ul-tree-sub-parent">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0">
+                            <i class="fa fa-lg fa-check clr-secondary"></i>
+                          </div>
+                          <div class="columns medium-11 pl-0 pr-0">
+                            <span
+                              class="truncate"><strong>Add additional Pain Threshold events to Pathway</strong></span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="toggler-target ul-tree-child">
+                    <div class="row">
+                      <div class="columns shrink pl-0 pr-0">
+                        <i class="fa mr-0-5 fa-circle"></i>
+                      </div>
+                      <div class="columns pl-0 pr-0">
+                        <span>8</span>
+                      </div>
+                      <!-- <div class="columns shrink pr-0">
+                        <button class="button hollow clear success small mb-0 pt-0 pb-0">
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </div> -->
+                    </div>
+                    <ul class="ul-tree">
+                      <li class="ul-tree-sub-parent">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0">
+                            <i class="fa fa-lg fa-envelope clr-secondary"></i>
+                          </div>
+                          <div class="columns medium-11 pl-0 pr-0">
+                            <span class="truncate"><strong>Send message to Member</strong></span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="ul-tree-sub-parent">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0">
+                            <i class="fa fa-lg fa-check clr-secondary"></i>
+                          </div>
+                          <div class="columns medium-11 pl-0 pr-0">
+                            <span class="truncate"><strong>Remind Care Coordinator to call Member</strong></span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="ul-tree-sub-parent">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0">
+                            <i class="fa fa-lg fa-check clr-secondary"></i>
+                          </div>
+                          <div class="columns medium-11 pl-0 pr-0">
+                            <span
+                              class="truncate"><strong>Add additional Pain Threshold events to Pathway</strong></span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="toggler-target ul-tree-child">
+                    <div class="row">
+                      <div class="columns shrink pl-0 pr-0">
+                        <i class="fa mr-0-5 fa-circle"></i>
+                      </div>
+                      <div class="columns pl-0 pr-0">
+                        <span>9</span>
+                      </div>
+                      <!-- <div class="columns shrink pr-0">
+                        <button class="button hollow clear success small mb-0 pt-0 pb-0">
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </div> -->
+                    </div>
+                    <ul class="ul-tree">
+                      <li class="ul-tree-sub-parent">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0">
+                            <i class="fa fa-lg fa-envelope clr-secondary"></i>
+                          </div>
+                          <div class="columns medium-11 pl-0 pr-0">
+                            <span class="truncate"><strong>Send message to Member</strong></span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="ul-tree-sub-parent">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0">
+                            <i class="fa fa-lg fa-check clr-secondary"></i>
+                          </div>
+                          <div class="columns medium-11 pl-0 pr-0">
+                            <span class="truncate"><strong>Remind Care Coordinator to call Member</strong></span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="ul-tree-sub-parent">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0">
+                            <i class="fa fa-lg fa-envelope clr-secondary"></i>
+                          </div>
+                          <div class="columns medium-11 pl-0 pr-0">
+                            <span class="truncate"><strong>Send message to Surgeon</strong></span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="ul-tree-sub-parent">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0">
+                            <i class="fa fa-lg fa-check clr-secondary"></i>
+                          </div>
+                          <div class="columns medium-11 pl-0 pr-0">
+                            <span
+                              class="truncate"><strong>Add additional Pain Threshold events to Pathway</strong></span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="toggler-target ul-tree-child">
+                    <div class="row">
+                      <div class="columns shrink pl-0 pr-0">
+                        <i class="fa mr-0-5 fa-circle"></i>
+                      </div>
+                      <div class="columns pl-0 pr-0">
+                        <span>10</span>
+                      </div>
+                    </div>
+                    <ul class="ul-tree">
+                      <li class="ul-tree-sub-parent">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0">
+                            <i class="fa fa-lg fa-envelope clr-secondary"></i>
+                          </div>
+                          <div class="columns medium-11 pl-0 pr-0">
+                            <span class="truncate"><strong>Send message to Member</strong></span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="ul-tree-sub-parent">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0">
+                            <i class="fa fa-lg fa-envelope clr-secondary"></i>
+                          </div>
+                          <div class="columns medium-11 pl-0 pr-0">
+                            <span class="truncate"><strong>Send message to Member</strong></span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="ul-tree-sub-parent">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0">
+                            <i class="fa fa-lg fa-envelope clr-secondary"></i>
+                          </div>
+                          <div class="columns medium-11 pl-0 pr-0">
+                            <span class="truncate"><strong>Send message to Surgeon</strong></span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="ul-tree-sub-parent">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0">
+                            <i class="fa fa-lg fa-check clr-secondary"></i>
+                          </div>
+                          <div class="columns medium-11 pl-0 pr-0">
+                            <span
+                              class="truncate"><strong>Add additional Pain Threshold events to Pathway</strong></span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <ul class="ul-tree">
+                      <li class="ul-tree-sub-parent">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0">
+                            <i class="fa fa-lg fa-question-circle clr-warning"></i>
+                          </div>
+                          <div class="columns pl-0 pr-0">
+                            <span><strong>Did you call 911?</strong></span>
+                          </div>
+                          <!-- <div class="columns shrink pr-0">
+                            <button class="button hollow clear alert small mb-0 pt-0 pb-0">
+                              <i class="fa fa-minus"></i>
+                            </button>
+                          </div> -->
+                        </div>
+                      </li>
+                      <li class="ul-tree-child">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0">
+                            <i class="fa mr-0-5 fa-circle"></i>
+                          </div>
+                          <div class="columns pl-0 pr-0">
+                            <span>Yes</span>
+                          </div>
+                          <!-- <div class="columns shrink pr-0">
+                            <button class="button hollow clear success small mb-0 pt-0 pb-0">
+                              <i class="fa fa-plus"></i>
+                            </button>
+                          </div> -->
+                        </div>
+                      </li>
+                      <li class="toggler-target ul-tree-child">
+                        <div class="row">
+                          <div class="columns shrink pl-0 pr-0">
+                            <i class="fa mr-0-5 fa-circle"></i>
+                          </div>
+                          <div class="columns pl-0 pr-0">
+                            <span>No</span>
+                          </div>
+                          <!-- <div class="columns shrink pr-0">
+                            <button class="button hollow clear success small mb-0 pt-0 pb-0">
+                              <i class="fa fa-plus"></i>
+                            </button>
+                          </div> -->
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
 
 
-	<script src="bower_components/jquery/dist/jquery.js"></script>
-	<script src="bower_components/what-input/what-input.js"></script>
-	<script src="bower_components/foundation-sites/dist/foundation.js"></script>
-	<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
-	<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
-	<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
-	<script src="js/trumbowyg/trumbowyg.min.js"></script>
-	<script src="js/app.js"></script>
-	<script type="text/javascript">
-			$(function () {
-					var timer;
+              </div>
+            </div>
+          </div>
 
-					$(window).resize(function () {
-							clearTimeout(timer);
-							timer = setTimeout(function () {
-									$('.site-nav, .content').css("height", $(window).height());
-							}, 40);
-					}).resize();
-			});
+        </div>
+      </div>
+    </div>
 
-			$('.wysiwyg').trumbowyg();
-	</script>
+    <div class="columns full-page-body-content bg-white">
+      <div class="row pl-1 pr-1 pt-0 mb-1">
+        <div class="columns bg-black20 pt-1 border-radius-sm">
+          <div>
+            <p class="subheader"><strong>
+              <small>QUESTION</small>
+            </strong></p>
+            <h5>How is your pain today?</h5>
+          </div>
+          <div>
+            <p class="subheader"><strong>
+              <small>ANSWER SELECTED</small>
+            </strong></p>
+            <h5>10</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="columns ml-0 mr-0">
+          <div class="dropdown">
+            <button class="dropbtn button hollow clear small success mb-0"><i class="fa fa-plus"></i> Add task</button>
+            <div class="dropdown-content">
+              <ul class="ml-0 mb-0">
+                <li class="list-style-type-none"><a href="" class="pl-0-5 pr-0-5">Add To-Do</a></li>
+                <li class="list-style-type-none"><a href="" class="pl-0-5 pr-0-5">Add Message</a></li>
+                <!-- <li class="list-style-type-none"><a href="">Add Question</a></li> -->
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="mb-1 toggler">
+              <div class="row expanded bg-black20 pt-0-5 pb-0-5 border-radius-sm">
+                <div class="columns shrink toggler-handler">
+                  <i class="fa fa-lg fa-envelope mt-0-5 clr-secondary"></i>
+                </div>
+                <div class="columns toggler-handler">
+                  <p class="mb-0"><strong>Send message to Member</strong></p>
+                  <p class="subheader mb-0">Member</p>
+                </div>
+                <div class="columns shrink">
+                  <div class="pull-right">
+                    <button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+                    <button class="button hollow clear mb-0 toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-1 toggler-target bg-black10">
+                <div class="columns">
+                  <div class="row mb-1">
+                    <div class="columns medium-6">
+                      <p class="subheader">Title</p>
+                      <input type="text" value="Send message to Member" class="fancy-input">
+                    </div>
+                  </div>
+                  <div class="row mb-1">
+                    <div class="columns">
+                      <textarea name="" id="" cols="30" rows="3" class="fancy-input"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-1 toggler">
+              <div class="row expanded bg-black20 pt-0-5 pb-0-5 border-radius-sm">
+                <div class="columns shrink toggler-handler">
+                  <i class="fa fa-lg fa-check mt-0-5 clr-secondary"></i>
+                </div>
+                <div class="columns toggler-handler">
+                  <p class="mb-0"><strong>Remind Care Coordinator to call Member</strong></p>
+                  <p class="subheader mb-0">Care Coordinator</p>
+                </div>
+                <div class="columns shrink">
+                  <div class="pull-right">
+                    <button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+                    <button class="button hollow clear mb-0 toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-1 toggler-target bg-black10">
+                <div class="columns">
+                  <div class="row mb-1">
+                    <div class="columns">
+                      <p class="subheader"><strong>
+                        <small>To-Do</small>
+                      </strong></p>
+                      <textarea name="" id="" cols="30" rows="2" placeholder="What do you want to do?"
+                                class="fancy-input"></textarea>
+                    </div>
+                  </div>
+                  <div class="row mb-1">
+                    <div class="columns medium-6">
+                      <p class="subheader"><strong>
+                        <small>Assign to</small>
+                      </strong></p>
+                      <select name="" id="" class="fancy-input">
+                        <option value="">Member</option>
+                        <option value="" selected="">Care Coordinator</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row mb-1">
+                    <div class="columns medium-6">
+                      <p class="subheader"><strong>
+                        <small>Mark as overdue if not completed by</small>
+                      </strong></p>
+                      <input type="text" class="fancy-input" placeholder="Overdue">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-1 toggler">
+              <div class="row expanded bg-black20 pt-0-5 pb-0-5 border-radius-sm">
+                <div class="columns shrink toggler-handler">
+                  <i class="fa fa-lg fa-envelope mt-0-5 clr-secondary"></i>
+                </div>
+                <div class="columns toggler-handler">
+                  <p class="mb-0"><strong>Send message to Surgeon</strong></p>
+                  <p class="subheader mb-0">Surgeon</p>
+                </div>
+                <div class="columns shrink">
+                  <div class="pull-right">
+                    <button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+                    <button class="button hollow clear mb-0 toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-1 toggler-target bg-black10">
+                <div class="columns">
+                  <div class="row mb-1">
+                    <div class="columns medium-6">
+                      <p class="subheader"><strong>
+                        <small>Title</small>
+                      </strong></p>
+                      <input type="text" value="Check up Schedule" class="fancy-input">
+                    </div>
+                  </div>
+                  <div class="row mb-1">
+                    <div class="columns">
+                      <p class="subheader"><strong>
+                        <small>Message</small>
+                      </strong></p>
+                      <textarea name="" id="" cols="30" rows="5" class="fancy-input">Sarah Burbon will schedule you for a check up with Dr. Strange.</textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-1 toggler">
+              <div class="row expanded bg-black20 pt-0-5 pb-0-5 border-radius-sm">
+                <div class="columns shrink toggler-handler">
+                  <i class="fa fa-lg fa-check mt-0-5 clr-secondary"></i>
+                </div>
+                <div class="columns toggler-handler">
+                  <p class="mb-0"><strong>Add additional Pain Threshold events to Pathway</strong></p>
+                  <p class="subheader mb-0">Care Coordinator</p>
+                </div>
+                <div class="columns shrink">
+                  <div class="pull-right">
+                    <button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+                    <button class="button hollow clear mb-0 toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-1 toggler-target bg-black10">
+                <div class="columns">
+                  <div class="row mb-1">
+                    <div class="columns">
+                      <p class="subheader"><strong>
+                        <small>To-Do</small>
+                      </strong></p>
+                      <textarea name="" id="" cols="30" rows="2" placeholder="What do you want to do?"
+                                class="fancy-input">Add additional Pain Threshold events to Pathway</textarea>
+                    </div>
+                  </div>
+                  <div class="row mb-1">
+                    <div class="columns medium-6">
+                      <p class="subheader"><strong>
+                        <small>Assign to</small>
+                      </strong></p>
+                      <select name="" id="" class="fancy-input">
+                        <option value="">Member</option>
+                        <option value="" selected="">Care Coordinator</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row mb-1">
+                    <div class="columns medium-6">
+                      <p class="subheader"><strong>
+                        <small>Mark as overdue if not completed by</small>
+                      </strong></p>
+                      <input type="text" class="fancy-input" placeholder="Overdue">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/what-input/what-input.js"></script>
+<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+<script src="js/trumbowyg/trumbowyg.min.js"></script>
+<script src="js/app.js"></script>
+<script type="text/javascript">
+  $(function () {
+    var timer;
+
+    $(window).resize(function () {
+      clearTimeout(timer);
+      timer = setTimeout(function () {
+        $('.site-nav, .content').css("height", $(window).height());
+      }, 40);
+    }).resize();
+  });
+
+  $('.wysiwyg').trumbowyg();
+</script>
 </body>
 
 </html>
