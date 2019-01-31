@@ -284,17 +284,15 @@ function remCalc(rem) {
 $('#profileContent').on('scroll', function() {
     var $height = $('#profileContent').scrollTop();
     if($height > remCalc(1.5)) {
-        $(this).find("[data-transition]").animate({'padding-top': "1.5rem"}, 100)
-        $(this).find("[data-transition]").css('background-image', 'linear-gradient(#FBFBFB, rgba(255,0,0,0) )');
-        $(this).find("[data-transition]").children().removeClass('mb-2')
-        $(this).find("[data-transition]").children().addClass('mb-1')
-        $(this).find("[data-transition]").find('.make-transition-hide').slideUp('fast')
+        console.log($height," up")
+        $(this).find("[data-transition]").find('.make-transition-hide').hide()
+        $(this).find("[data-transition]").css('padding-top', '1.5rem');
+        $(this).find("[data-transition]").addClass('pb-0-5')
     } else {
-        console.log("down")
-        $(this).find("[data-transition]").children().addClass('mb-2')
-        $(this).find("[data-transition]").children().removeClass('mb-1')
-        $(this).find("[data-transition]").animate({'padding-top': "0"}, 50)
-        $(this).find("[data-transition]").find('.make-transition-hide').slideDown('fast')
+        console.log($height, "down")
+        $(this).find("[data-transition]").find('.make-transition-hide').show()
+        $(this).find("[data-transition]").css('padding-top', '0rem');
+        $(this).find("[data-transition]").removeClass('pb-0-5')
     }
 });
 
