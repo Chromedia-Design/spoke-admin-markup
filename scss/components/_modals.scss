@@ -88,11 +88,8 @@
 }
 
 .reveal-overlay {
-	background-color: rgba(10, 16, 35, 0.8) !important;
-}
-
-.reveal-overlay {
-	background-color: rgba($black, $B-subtext);
+	//background-color: rgba($black, $B-subtext);
+	background-color: rgba(10, 16, 35, 0.8);
 	overflow: scroll;
 	&::-webkit-scrollbar {
 		display: none;
@@ -100,6 +97,10 @@
 	&::-moz-scrollbar {
 		display: none;
 	}
+}
+
+.reveal-extend {
+	width: 100%;
 }
 
 #cardLabelsModal {
