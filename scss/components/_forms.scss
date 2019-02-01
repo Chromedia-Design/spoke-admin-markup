@@ -1162,6 +1162,11 @@ input {
   &.light {
     background-color: #fff !important;
   }
+
+  &.small {
+    font-size: 0.6875rem;
+  }
+  .inline-edit {}
 }
 
 .fancy-checkbox {
