@@ -19,10 +19,10 @@
       </header>
       <ul class="menu vertical" data-accordion-menu>
         <li>
-          <a href="advocate-dashboard.html">Dashboard</a>
+          <a href="advocate-dashboard.html"><i class="material-icons"></i>Dashboard</a>
         </li>
         <li class="is-active">
-          <a href="advocate-employees.html">Employees</a>
+          <a href="advocate-employees.html"><i class="material-icons"></i>Employees</a>
         </li>
         <li>
           <a href="advocate-communications.html">Inbox</a>
@@ -37,7 +37,7 @@
           <a href="#">Activity Logs</a>
         </li>
         <li>
-          <a href="advocate-profile.html">Profile</a>
+          <a href="advocate-profile.html"><i class="material-icons"></i>Profile</a>
           <ul class="nested vertical menu">
             <li>
               <a href="advocate-profile.html">User Information</a>
@@ -78,8 +78,7 @@
               </ul>
             </li>
             <li>
-              <a data-toggle="chatSupport"><i class="fa fa-phone-square fa-lg success-color"></i>&nbsp; <span
-                class="success label" id="notifCount">3:02</span></a>
+              <a data-toggle="chatSupport"><i class="fa fa-phone-square fa-lg"></i><span class="success badge" id="notifCount">1</span></a>
             </li>
             <li>
               <a href="#">Spoke Advocate &nbsp;</a>
@@ -94,16 +93,16 @@
       <div class="row expanded collapse">
 
         <div class="shrink columns">
-          <div class="secondary site-nav nav-collapsed">
-            <ul class="menu vertical" data-accordion-menu>
-              <li class="is-active">
-                <a href="advocate-employee-profile-v2.html" ><i class="fa fa-address-book"></i> <span class="hide-on-collapsed">&nbsp;Overview</span></a>
+          <div class="secondary site-nav nav-collapsed" style="height: 1099px;">
+            <ul class="menu vertical" data-accordion-menu="j3huci-accordion-menu" role="menu" aria-multiselectable="true">
+              <li role="menuitem" aria-hidden="false" style="">
+                <a href="advocate-employee-profile-v2.html" tabindex="0"><i class="fa fa-address-book"></i> <span class="hide-on-collapsed">&nbsp;Overview</span></a>
               </li>
-              <li>
-                <a href="advocate-employee-episodes-list-v2.html" ><i class="fa fa-stethoscope"></i> <span class="hide-on-collapsed">&nbsp;Episodes</span></a>
+              <li role="menuitem">
+                <a href="advocate-employee-episodes-list-v2.html"><i class="fa fa-stethoscope"></i> <span class="hide-on-collapsed">&nbsp;Episodes</span></a>
               </li>
-              <li>
-                <a href="advocate-employee-activity-v2.html" ><i class="fa fa-exchange-alt"></i> <span class="hide-on-collapsed">&nbsp;Activity</span></a>
+              <li class="is-active" role="menuitem">
+                <a href="advocate-employee-activity-v2.html"><i class="fa fa-exchange-alt"></i> <span class="hide-on-collapsed">&nbsp;Activity</span></a>
               </li>
             </ul>
           </div>
@@ -111,10 +110,8 @@
 
         <div id="profileContent" class="columns">
 
-          
           <div class="row expanded">
-            <div class="large-12 columns">
-
+            <div class="columns">
 
               <div class="page-lead mt-2 row collapse pb-1 stick-to-top always-on-top" style="background-image: linear-gradient(#FBFBFB 75%, rgba(255,0,0,0) 25%)" data-transition>
                 <div class="columns pt-1 box-shadow-sm border-radius-sm bg-white pb-0-5">
@@ -228,158 +225,142 @@
                 </div>
               </div>
 
+
               <div class="row">
-                <div class="auto columns">
-                  <span class="h5 clr-secondary">General Information</span>
-                </div>
-                <div class="columns"></div>
-                <div class="columns shrink">
-                  <small>
-                    <span class="subheader link">Last Edit:</span> Mar 3, 2018 8:00am
-                  </small>
-                  <a href="advocate-employee-episode-edit.html" class="button tiny clear success hollow mb-0">
-                    <i class="fa fa-edit fa-fw"></i>&nbsp; Edit
-                  </a>
-                </div>
-              </div>
-
-              <div class="row collapse label-block">
-                <div class="large-4 columns end">
-                  <div class="label-group">
-                    <p>Company</p>
-                    <h6>Excel Energy</h6>
-                  </div>
-                </div>
-                <div class="large-4 columns end">
-                  <div class="label-group">
-                    <p>Email Address</p>
-                    <h6>r.peterson@domain.com</h6>
-                  </div>
-                </div>
-                <div class="large-4 columns end">
-                  <div class="label-group">
-                    <p>Phone Number</p>
-                    <h6>123-456-7890</h6>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row collapse label-block">
-                <div class="large-12 columns end">
-                  <div class="label-group">
-                    <p>Address</p>
-                    <h6>336 1st Dr, El Paso, NJ, USA 23654</h6>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row collapse label-block">
-                <div class="large-12 columns end">
-                  <div class="label-group">
-                    <p>Current Episode</p>
-                    <h6><a href="advocate-employee-episode-v2.html">Total Knee Replacement</a><a
-                      href="advocate-employee-episode-edit.html"
-                      class="button success hollow rounded tiny mb-0 pull-right">Create New Episode</a></h6>
-
-                  </div>
-                </div>
-              </div>
-
-              <div class="row collapse label-block">
-                <div class="large-4 columns end">
-                  <div class="label-group">
-                    <p>Policy #</p>
-                    <h6>123-4567-890</h6>
-                  </div>
-                </div>
-                <div class="large-4 columns end">
-                  <div class="label-group">
-                    <p>Gender</p>
-                    <h6>Male</h6>
-                  </div>
-                </div>
-                <div class="large-4 columns end">
-                  <div class="label-group">
-                    <p>Birthdate</p>
-                    <h6>March 17, 1976</h6>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row collapse label-block">
-                <div class="large-4 columns end">
-                  <div class="label-group">
-                    <p>
-                      <small>FIRST CONTACT</small>
-                    </p>
-                    <h6>Jan 12, 8:00 AM -</h6>
-                  </div>
-                </div>
-                <div class="large-4 columns end">
-                  <div class="label-group">
-                    <p>
-                      <small>LAST CONTACT</small>
-                    </p>
-                    <h6>Jan 23, 8:00 AM
-                      <small>23 days ago</small>
-                    </h6>
-                  </div>
-                </div>
-                <div class="large-4 columns end">
-                  <div class="label-group">
-                    <p>
-                      <small>LAST ATTEMPT</small>
-                    </p>
-                    <h6>Jan 26, 8:00 AM -</h6>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          
-
-          <div class="row expanded">
-            <div class="columns">
-              <div class="row">
-                <div class="columns pl-0 pr-0">
-                  <div class="page-lead row expanded align-middle">
-                    <div class="large-12 columns">
-                      <span class="h5">Episode Milestones</span>
+                <div class="columns">
+                  <div class="page-lead">
+                    <div class="row collapse">
+                      <div class="large-4 columns">
+                        <span class="h5">Recent Activity</span>
+                      </div>
                     </div>
                   </div>
-                  <div class="callout">
-                    <ul class="stepbars">
-                      <li class="active">
-                        Email Invite <br>
-                        <small class="subheader">Emman C, Mar-3 8:00am</small>
-                        <br>
-                        <a href="advocate-employee-onboard-edit.html" class="button primary small mt-0-5"><i
-                          class="fa fa-envelope-o"></i>&nbsp; Send Link</a>
+
+                  <div class="activity-listing">
+                    <div class="listing-title">Oct 2, 2017</div>
+                    <ol class="table-list">
+                      <li class="table-list-item">
+                        <div class="table-list-cell activity-icon">
+                          <p><i class="fa fa-sign-out fa-fw"></i></p>
+                        </div>
+                        <div class="table-list-cell activity-name">
+                          <p>John Doe logged out.</p>
+                        </div>
+                        <div class="table-list-cell activity-time">
+                          <p class="pull-right subheader">a few seconds ago</p>
+                        </div>
                       </li>
-                      <li class="active">
-                        Email Opened <br>
-                        <small class="subheader">Mar-3 8:00am</small>
-                        <br>
+                      <li class="table-list-item">
+                        <div class="table-list-cell activity-icon">
+                          <p><i class="fa fa-check-circle fa-fw"></i></p>
+                        </div>
+                        <div class="table-list-cell activity-name">
+                          <p>John Doe selected Denver Vail Orthopedics.</p>
+                        </div>
+                        <div class="table-list-cell activity-time">
+                          <p class="pull-right subheader">an hour ago</p>
+                        </div>
                       </li>
-                      <li>
-                        Link Followed
+                    </ol>
+                    <div class="listing-title">Oct 1, 2017</div>
+                    <ol class="table-list">
+                      <li class="table-list-item">
+                        <div class="table-list-cell activity-icon">
+                          <p><i class="fa fa-eye fa-fw"></i></p>
+                        </div>
+                        <div class="table-list-cell activity-name">
+                          <p>John Doe viewed his results page.</p>
+                        </div>
+                        <div class="table-list-cell activity-time">
+                          <p class="pull-right subheader">8:00AM</p>
+                        </div>
                       </li>
-                      <li>
-                        Account Created
+                      <li class="table-list-item">
+                        <div class="table-list-cell activity-icon">
+                          <p><i class="fa fa-check-circle fa-fw"></i></p>
+                        </div>
+                        <div class="table-list-cell activity-name">
+                          <p>John Doe successfully created his account.</p>
+                        </div>
+                        <div class="table-list-cell activity-time">
+                          <p class="pull-right subheader">8:00AM</p>
+                        </div>
                       </li>
-                      <li>
-                        Viewed Results Page
+                      <li class="table-list-item">
+                        <div class="table-list-cell activity-icon">
+                          <p><i class="fa fa-check-circle fa-fw"></i></p>
+                        </div>
+                        <div class="table-list-cell activity-name">
+                          <p>John Doe followed transactional email link.</p>
+                        </div>
+                        <div class="table-list-cell activity-time">
+                          <p class="pull-right subheader">8:00AM</p>
+                        </div>
                       </li>
-                      <li>
-                        Selected Facility
+                    </ol>
+                    <div class="listing-title">Sep 30, 2017</div>
+                    <ol class="table-list">
+                      <li class="table-list-item">
+                        <div class="table-list-cell activity-icon">
+                          <p><i class="fa fa-eye fa-fw"></i></p>
+                        </div>
+                        <div class="table-list-cell activity-name">
+                          <p>John Doe opened his transactional email.</p>
+                        </div>
+                        <div class="table-list-cell activity-time">
+                          <p class="pull-right subheader">8:00AM</p>
+                        </div>
                       </li>
-                    </ul>
+                      <li class="table-list-item">
+                        <div class="table-list-cell activity-icon">
+                          <p><i class="fa fa-eye fa-fw"></i></p>
+                        </div>
+                        <div class="table-list-cell activity-name">
+                          <p>John Doe opened his transactional email.</p>
+                        </div>
+                        <div class="table-list-cell activity-time">
+                          <p class="pull-right subheader">8:00AM</p>
+                        </div>
+                      </li>
+                      <li class="table-list-item">
+                        <div class="table-list-cell activity-icon">
+                          <p><i class="fa fa-eye fa-fw"></i></p>
+                        </div>
+                        <div class="table-list-cell activity-name">
+                          <p>John Doe opened his transactional email.</p>
+                        </div>
+                        <div class="table-list-cell activity-time">
+                          <p class="pull-right subheader">8:00AM</p>
+                        </div>
+                      </li>
+                      <li class="table-list-item">
+                        <div class="table-list-cell activity-icon">
+                          <p><i class="fa fa-eye fa-fw"></i></p>
+                        </div>
+                        <div class="table-list-cell activity-name">
+                          <p>John Doe opened his transactional email.</p>
+                        </div>
+                        <div class="table-list-cell activity-time">
+                          <p class="pull-right subheader">8:00AM</p>
+                        </div>
+                      </li>
+                      <li class="table-list-item">
+                        <div class="table-list-cell activity-icon">
+                          <p><i class="fa fa-eye fa-fw"></i></p>
+                        </div>
+                        <div class="table-list-cell activity-name">
+                          <p>John Doe opened his transactional email.</p>
+                        </div>
+                        <div class="table-list-cell activity-time">
+                          <p class="pull-right subheader">8:00AM</p>
+                        </div>
+                      </li>
+                    </ol>
+                    <div class="listing-title"><a href="#" class="button primary small">View More</a></div>
                   </div>
                 </div>
               </div>
-                  
+
             </div>
           </div>
 
@@ -413,16 +394,6 @@
                 $('.site-nav.secondary, #profileContent, #chatClient .chat-wrapper').css("height", $(window).height() - topBarHeight);
             }, 40);
         }).resize();
-    });
-
-    $('#generalNote .button').click(function () {
-        $('#generalNote').css("display", "none");
-        $('#generalNoteEdit').css("display", "block");
-    });
-
-    $('#generalNoteEdit .button').click(function () {
-        $('#generalNote').css("display", "block");
-        $('#generalNoteEdit').css("display", "none");
     });
 
 </script>
