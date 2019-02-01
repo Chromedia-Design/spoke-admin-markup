@@ -37,10 +37,6 @@
 
       <div class="top-bar">
         <div class="top-bar-left">
-          <!-- <ul class="menu">
-                <li><input type="search" placeholder="Search"></li>
-                <li><button type="button" class="button">Search</button></li>
-            </ul> -->
         </div>
         <div class="top-bar-right">
           <ul class="dropdown menu" data-dropdown-menu>
@@ -67,168 +63,338 @@
             <ul class="breadcrumbs">
               <li><a href="admin-employees.html">Members</a></li>
               <li><a href="admin-employee-profile.html">Joe Ortho</a></li>
-              <li>Nancy Aberdeen</li>
+              <!-- <li><a href="admin-employee-profile.html">Add New Dependent</a></li> -->
+              <li>Add New Dependent</li>
             </ul>
           </nav>
 
           <div class="page-lead row align-middle collapse">
             <div class="columns">
-              <span class="h5">Nancy Aberdeen</span>
+              <span class="h5">Add New Dependent</span>
             </div>
           </div>
 
             <form>
 
-              <div class="panel">
-                <div class="panel-heading">
-                  <span class="h6">Primary Information</span>
-                </div>
-                <div class="panel-body">
-                  <div class="row">
-                    <div class="columns">
-                      <label>First Name
-                        <input type="text" name="" value="Nancy">
-                      </label>
+            <div class="panel">
+              <div class="panel-heading">
+                <span class="h6">Dependent Information</span>
+
+                    <div class="row align-middle pull-right">
+                    <div class="shrink columns-collapse">
+                          <small id="ageTag" class="subheader mb-0">ADULT</small>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="columns">
-                      <label>Last Name
-                        <input type="text" name="" value="" placeholder="e.g. Eberdeen">
-                      </label>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="columns">
-                      <legend>Gender</legend>
-                      <input type="radio" name="gender" value="male" id="gender" checked=""><label for="gender">Male</label>
-                      <input type="radio" name="gender" value="female" id="gender"><label for="gender">Female</label>
+                      <div class="shrink columns">
+                        <div class="switch tiny mb-0">
+                          <input class="switch-input" id="tinySwitch1" type="checkbox" name="exampleSwitch" checked="true" data-toggle="adult-info-form">
+                          <label class="switch-paddle" for="tinySwitch1">
+                            <!-- <span class="show-for-sr">TEST</span> -->
+                          </label>
+                        </div>
                     </div>
                   </div>
 
-                  <div class="row">
-                    <div class="columns">
-                      <div class="row multi-part-input">
-                        <legend class="labelize">Birthdate</legend>
-                        <div class="large-4 columns end">
-                          <select>
-                            <option>March</option>
-                          </select>
-                        </div>
-                        <div class="large-4 columns end">
-                          <select>
-                            <option>06</option>
-                          </select>
-                        </div>
-                        <div class="large-4 columns end">
-                          <select>
-                            <option>1972</option>
-                          </select>
-                        </div>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="columns">
+                    <label>First Name
+                      <input type="text" name="" value="Nancy">
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="columns">
+                    <label>Last Name
+                      <input type="text" name="" value="" placeholder="e.g. Eberdeen">
+                    </label>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="columns">
+                    <legend>Gender</legend>
+                    <input type="radio" name="gender" value="male" id="gender" checked=""><label
+                    for="gender">Male</label>
+                    <input type="radio" name="gender" value="female" id="gender"><label for="gender">Female</label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="columns">
+                    <div class="row multi-part-input">
+                      <legend class="labelize">Birthdate</legend>
+                      <div class="large-4 columns end">
+                        <select>
+                          <option>March</option>
+                        </select>
+                      </div>
+                      <div class="large-4 columns end">
+                        <select>
+                          <option>06</option>
+                        </select>
+                      </div>
+                      <div class="large-4 columns end">
+                        <select>
+                          <option>1972</option>
+                        </select>
                       </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="columns">
-                      <label>Street Address
-                        <input type="text" name="" value="123 Main Street, Milwaukee, WI.">
-                        <input type="text" name="" value="">
-                      </label>
-                    </div>
+                </div>
+                <div class="row">
+                  <div class="columns">
+                    <label>Street Address
+                      <input type="text" name="" value="123 Main Street, Milwaukee, WI.">
+                      <input type="text" name="" value="">
+                    </label>
                   </div>
-                  <div class="row">
-                    <div class="large-4 columns">
-                      <label>Country
-                        <select>
-                          <option>United States of America</option>
-                        </select>
-                      </label>
-                    </div>
-                    <div class="large-4 columns">
-                      <label>State
-                        <select>
-                          <option>Denver</option>
-                        </select>
-                      </label>
-                    </div>
-                    <div class="large-4 columns">
-                      <label>City
-                        <select>
-                          <option>Denver</option>
-                        </select>
-                      </label>
-                    </div>
+                </div>
+                <div class="row">
+                  <div class="large-4 columns">
+                    <label>Country
+                      <select>
+                        <option>United States of America</option>
+                      </select>
+                    </label>
                   </div>
-                  <div class="row">
-                    <div class="large-4 columns">
-                      <label>Postal Code
-                        <input type="text" name="" value="53219">
-                      </label>
-                    </div>
+                  <div class="large-4 columns">
+                    <label>State
+                      <select>
+                        <option>Denver</option>
+                      </select>
+                    </label>
                   </div>
+                  <div class="large-4 columns">
+                    <label>City
+                      <select>
+                        <option>Denver</option>
+                      </select>
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-4 columns">
+                    <label>Postal Code
+                      <input type="text" name="" value="53219">
+                    </label>
+                  </div>
+                </div>
 
-                  <div class="row">
-                    <div class="columns">
-                      <label>General Note
-                        <textarea name="" id="" cols="3" rows="3"></textarea>
-                      </label>
+                <div class="row">
+                  <div class="columns medium-7">
+                    <label>Email Address
+                      <input type="text" name="" value="joe.ortho@goodworkers.com">
+                    </label>
+                  </div>
+                  <div class="columns medium-5">
+                    <label>Subscriber ID
+                      <input type="text" name="" value="LKBEJ00023545">
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="medium-9 columns">
+                    <label>Contact Numbers <span class="required">*</span></label>
+                    <div class="row collapse align-middle">
+                      <div class="auto columns">
+                        <div class="checkbox-wrapper align-middle mb-0-5">
+                          <input type="checkbox" checked name="programs" value="" id="programs"><label
+                          for="programs"><input type="text" name="programs" placeholder="Enter a value"
+                                                value="13036680123" disabled></label>
+                          <a href="#" class="button tiny circle hollow mb-0">×</a>
+                        </div>
+                        <div class="checkbox-wrapper align-middle mb-0-5">
+                          <input type="checkbox" name="programs" value="" id="programs"><label for="programs"><input
+                          type="text" name="programs" placeholder="Enter a value" value="13036680123" disabled></label>
+                          <a href="#" class="button tiny circle hollow mb-0">×</a>
+                        </div>
+                        <div class="checkbox-wrapper align-middle mb-0-5">
+                          <input type="checkbox" name="programs" value="" id="programs">
+                          <label for="programs">
+                            <div class="row expanded">
+                              <div class="medium-4 columns">
+                                <select name="" class="mb-0">
+                                  <option value="">PH - 63</option>
+                                  <option value="">Pitcairn Islands</option>
+                                </select>
+                              </div>
+                              <div class="auto columns">
+                                <input class="mb-0" type="number" placeholder="Enter a value" value="13036680123">
+                              </div>
+                            </div>
+                          </label>
+                          <a href="#" class="button tiny circle hollow mb-0">×</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row collapse align-middle">
+                      <div class="auto columns">
+                        <a href="#" class="button info tiny hollow mt-0-5"><i class="fa fa-plus"></i>&nbsp; Add More</a>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="panel">
-                <div class="panel-heading">
-                  <span class="h6">Linked Profiles</span>
-                </div>
-                <div class="panel-body">
-                  <div class="row collapse">
-                    <div class="auto columns">
-                      <div class="row collapse align-middle">
+                <div id="adult-info-form"  data-toggler data-animate="fade-in fade-out">
+                      <div class="row">
+                        <div class="columns">
+                          <label>Company Name
+                            <select>
+                              <option value="" disabled>Select a company</option>
+                              <option value="" disabled selected>Good Workers, Inc.</option>
+                            </select>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="columns">
+                          <label>Policy Number
+                            <input type="text" name="" value="123-123-4567">
+                          </label>
+                        </div>
+                      </div>
+                      
+                      <div class="row">
+                        <div class="columns medium-3">
+                          <label>Benefit Plan
+                            <select>
+                              <option value="">Platinum</option>
+                              <option value="">Gold</option>
+                              <option value="">Silver</option>
+                              <option value="">Standard</option>
+                            </select>
+                          </label>
+                        </div>
+                        <div class="columns medium-3">
+                          <label>Benefit Status
+                            <select>
+                              <option value="">Active</option>
+                              <option value="">Inactive</option>
+                            </select>
+                          </label>
+                        </div>
+                      </div>
 
-                        <div class="spoke-list">
-
-                          <div class="spoke-list-item row expanded align-middle">
-                            <div class="medium-6 columns">
-                              <p class="h6 mb-0">Joe Ortho</p>
-                              <p class="subheader"><small><span class="badge success small"> </span> Father (Main Account)</small></p>
+                      <div class="row">
+                        <div class="columns">
+                          <div class="row multi-part-input">
+                            <legend class="labelize">Benefit Plan Effective Date</legend>
+                            <div class="large-4 columns end">
+                              <select>
+                                <option>March</option>
+                              </select>
                             </div>
-                            <div class="auto columns">
-                              <p>Adult</p>
+                            <div class="large-4 columns end">
+                              <select>
+                                <option>06</option>
+                              </select>
                             </div>
-                            <div class="auto columns">
-                              <p>Total Knee Replacement</p>
-                            </div>
-                            <div class="shrink columns">
-                              <ul class="dropdown menu" data-dropdown-menu>
-                                <li>
-                                  <a></a>
-                                  <ul class="menu vertical">
-                                    <li><a href="#"><i class="fa fa-user"></i>&nbsp; Swtich to Main Account</a></li>
-                                    <!-- <li><a href="#"><i class="fa fa-times"></i>&nbsp; Remove</a></li> -->
-                                  </ul>
-                                </li>
-                              </ul>
+                            <div class="large-4 columns end">
+                              <select>
+                                <option>1972</option>
+                              </select>
                             </div>
                           </div>
-	               </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="columns">
+                          <div class="row multi-part-input">
+                            <legend class="labelize">Benefit Plan Termenation Date</legend>
+                            <div class="large-4 columns end">
+                              <select>
+                                <option>March</option>
+                              </select>
+                            </div>
+                            <div class="large-4 columns end">
+                              <select>
+                                <option>06</option>
+                              </select>
+                            </div>
+                            <div class="large-4 columns end">
+                              <select>
+                                <option>1972</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="columns">
+                          <label>General Note
+                            <textarea name="" id="" cols="3" rows="3"></textarea>
+                          </label>
+                        </div>
+                      </div>
+                </div>
+
+
+                  <div class="row">
+                    <div class="columns">
+                      <div class="button-group submit mb-1 pt-1 pull-right">
+                        <a href="advocate-employee-profile-v2.html" class="submit button link">Cancel</a>
+                        <a href="#" class="submit button success">Save Changes</a>
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="panel-heading">
+                <span class="h6">Linked Profiles</span>
+              </div>
+              <div class="panel-body">
+                <div class="row collapse">
+                  <div class="auto columns">
+                    <div class="row collapse align-middle">
+
+                      <div class="spoke-list">
+
+                        <div class="spoke-list-item row expanded align-middle">
+                          <div class="medium-6 columns">
+                            <p class="h6 mb-0">Joe Ortho</p>
+                            <p class="subheader">
+                              <small>Primary Profile</small>
+                            </p>
+                          </div>
+                          <div class="auto columns">
+                            <p>Adult</p>
+                          </div>
+                          <div class="auto columns">
+                            
+                          </div>
+                          <div class="shrink columns">
+                            <!-- <ul class="dropdown menu" data-dropdown-menu>
+                              <li>
+                                <a></a>
+                                <ul class="menu vertical">
+                                  <li><a href="#"><i class="fa fa-close"></i>&nbsp; Remove</a></li>
+                                </ul>
+                              </li>
+                            </ul> -->
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="row collapse align-middle">
+                      <div class="auto columns">
+                        <!-- <a href="#" id="send-link-profile" class="button info tiny hollow mt-0-5 mb-0"
+                           data-toggle="add-new-profile">Add New Dependent</a> -->
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
+           <!-- LINKED PROFILE ENDS HERE -->
 
-              <div class="row">
-                <div class="columns">
-                  <div class="button-group submit mb-1">
-                    <a href="advocate-employee-profile-v2.html" class="submit button link">Cancel</a>
-                    <a href="#" class="submit button success">Save Changes</a>
-                  </div>
-                </div>
-              </div>
-
-
-            </form>
+          </form>
 
         </div>
       </div>
@@ -259,11 +425,11 @@
         }).resize();
     });
 
-$('#send-link-profile').click(function() {
-	$(this).text(function(i, v){
-		return v === 'Save New Profile' ? 'Add New Profile' : 'Save New Profile'
-	});
-});
+  $('#tinySwitch1').click(function () {
+    $("#ageTag").text(function (i, v) {
+      return v === 'ADULT' ? 'MINOR' : 'ADULT'
+    });
+  });
 
 
 </script>

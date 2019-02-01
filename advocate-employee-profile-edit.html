@@ -312,6 +312,16 @@
                     </label>
                   </div>
                 </div>
+
+                  <div class="row">
+                    <div class="columns">
+                      <div class="button-group submit mb-1 pt-1 pull-right">
+                        <a href="advocate-employee-profile-v2.html" class="submit button link">Cancel</a>
+                        <a href="#" class="submit button success">Save Changes</a>
+                      </div>
+                    </div>
+                  </div>
+
               </div>
             </div>
 
@@ -330,14 +340,14 @@
                           <div class="medium-6 columns">
                             <p class="h6 mb-0">John Doe</p>
                             <p class="subheader">
-                              <small><span class="badge success small"> </span> Brother-in-law</small>
+                              <small><!-- <span class="badge success small"> </span> --> Brother-in-law</small>
                             </p>
                           </div>
                           <div class="auto columns">
                             <p>Adult</p>
                           </div>
                           <div class="auto columns">
-                            <p>Total Knee Replacement</p>
+                            <!-- <p>Total Knee Replacement</p> -->
                           </div>
                           <div class="shrink columns">
                             <ul class="dropdown menu" data-dropdown-menu>
@@ -351,7 +361,7 @@
                           </div>
                         </div>
 
-                       <!--  <div class="spoke-list-item row expanded align-middle">
+                        <!-- <div class="spoke-list-item row expanded align-middle">
                           <div class="medium-6 columns">
                             <p class="h6 mb-0">gemma.thompson@domain.com</p>
                             <a href="#" class="button hollow rounded tiny mt-0-5 mb-0"><i class="fa fa-envelope-o"></i>&nbsp;
@@ -379,8 +389,7 @@
                           <div class="medium-6 columns">
                             <p class="h6 mb-0">Nancy Aberdeen</p>
                             <p class="subheader">
-                              <!-- <small>Age: 15</small> -->
-                              <small><span class="badge success small"> </span> Daughter</small>
+                              <small><!-- <span class="badge success small"> </span> --> Daughter</small>
 
                             </p>
                           </div>
@@ -395,7 +404,6 @@
                               <li>
                                 <a></a>
                                 <ul class="menu vertical">
-                                  <!-- <li><a href="#"><i class="fa fa-user"></i>&nbsp; Swtich to this Profile</a></li> -->
                                   <li><a href="#"><i class="fa fa-times"></i>&nbsp; Remove</a></li>
                                 </ul>
                               </li>
@@ -404,7 +412,7 @@
                         </div>
 
                         <!-- ADD NEW LINKED PROFILE START HERE -->
-                        <div id="add-new-profile" data-toggler data-animate="fade-in fade-out" style="display:none;">
+                        <!-- <div id="add-new-profile" data-toggler data-animate="fade-in fade-out" style="display:none;">
                           <div class="spoke-list-item row expanded collapse align-middle">
                             <div class="auto columns">
                               <div class="row">
@@ -413,8 +421,7 @@
                                 </div>
                               </div>
 
-                              <!-- MINOR / ADULT OPTIONS -->
-                              <!-- <div class="row align-middle">
+                              <div class="row align-middle">
                                 <div class="shrink columns">
                                   <div class="fancy-checkbox">
                                     <input id="usertype" name="usertype" type="radio" checked="true">
@@ -427,7 +434,7 @@
                                     <label class="" for="usertype">Minor</label>
                                   </div>
                                 </div>
-                              </div> -->
+                              </div>
 
 
                               <div class="row align-middle">
@@ -517,36 +524,25 @@
                                   <div class="button-align small mb-0">
                                     <a href="#" class="button"><i class="fa fa-save"></i> Save Dependent</a>
                                   </div>
-                       <!-- <a href="#" class="button tiny mt-0-5 mb-0"><i class="fa fa-envelope"></i>Save New Dependent</a> -->
 
                                 </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <!-- LINKED PROFILE ENDS HERE -->
+                        </div> -->
                       </div>
                     </div>
                     <div class="row collapse align-middle">
                       <div class="auto columns">
                         <a href="#" id="send-link-profile" class="button info tiny hollow mt-0-5 mb-0"
-                           data-toggle="add-new-profile"><!-- <i class="fa fa-plus"></i> -->Add New Dependent</a>
+                           data-toggle="add-new-profile">Add New Dependent</a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
-            <div class="row">
-              <div class="columns">
-                <div class="button-group submit mb-1">
-                  <a href="advocate-employee-profile-v2.html" class="submit button link">Cancel</a>
-                  <a href="#" class="submit button success">Save Changes</a>
-                </div>
-              </div>
-            </div>
-
+           <!-- LINKED PROFILE ENDS HERE -->
 
           </form>
 
@@ -579,11 +575,11 @@
     }).resize();
   });
 
-  $('#send-link-profile').click(function () {
-    $(this).text(function (i, v) {
-      return v === 'Add New Dependent' ? 'Cancel' : 'Add New Dependent'
-    });
-  });
+  // $('#send-link-profile').click(function () {
+  //   $(this).text(function (i, v) {
+  //     return v === 'Add New Dependent' ? 'Cancel' : 'Add New Dependent'
+  //   });
+  // });
 
 
 </script>
