@@ -219,7 +219,7 @@
   padding-right: 0 !important;
 }
 
-.pr-0-25 { padding-right: .5rem !important;}
+.pr-0-25 { padding-right: .25rem !important;}
 
 .pr-1 {
   padding-right: 1rem !important;
@@ -504,19 +504,19 @@
 .clr-black50 { color: darken(#fff, 50%) !important ;}
 
 .clr-primary { color: $primary-color !important; }
-.clr-primary-lighten { color: lighten($primary-color, 50%) !important; }
+.clr-primary-lighten { color: rgba($primary-color, .5) !important; }
 
 .clr-secondary { color: $secondary-color !important; }
-.clr-secondary-lighten { color: lighten($secondary-color, 50%) !important; }
+.clr-secondary-lighten { color: rgba($secondary-color, .5) !important; }
 
 .clr-success { color: $success-color !important; }
-.clr-success-lighten { color: lighten($success-color, 50%) !important; }
+.clr-success-lighten { color: rgba($success-color, .5) !important; }
 
 .clr-warning { color: $warning-color !important; }
-.clr-warning-lighten { color: lighten($warning-color, 50%) !important; }
+.clr-warning-lighten { color: rgba($warning-color, .5) !important; }
 
 .clr-alert { color: $alert-color !important; }
-.clr-alert-lighten { color: lighten($alert-color, 50%) !important; }
+.clr-alert-lighten { color: rgba($alert-color, .5) !important; }
 
 
 // List
@@ -549,8 +549,9 @@
   overflow-y: scroll !important;
 }
 
+.box-shadow-xsm { box-shadow: 0 0 2px rgba(50, 50, 50, .10) !important; }
+.box-shadow-sm { box-shadow: 0 0 5px rgba(50, 50, 50, .10) !important; }
 .box-shadow { box-shadow: 0 0 10px rgba(50, 50, 50, .2) !important; }
-.box-shadow-sm { box-shadow: 0 0 25px rgba(50, 50, 50, .10) !important; }
 .box-shadow-lg { box-shadow: 0 0 15px rgba(50, 50, 50, .25) !important; }
 
 .circle {
