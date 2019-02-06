@@ -21,7 +21,7 @@
 
 
 
-// Display ----------------------------------------
+// Display --------------------------------------------------------------------------------
 .inline-child * { display: inline; }
 .inline-block { display: inline-block; }
 .disp-block { display: block !important; }
@@ -30,7 +30,7 @@
 .hidden { display: none;}
 
 
-// Margins ----------------------------------------
+// Margins --------------------------------------------------------------------------------
 .marginless {
   margin: 0 !important;
 }
@@ -171,7 +171,7 @@
   margin-bottom: 6rem !important;
 }
 
-// Paddings ----------------------------------------
+// Paddings --------------------------------------------------------------------------------
 .pad0 {
   padding: 0rem !important;
 }
@@ -293,7 +293,7 @@
   padding-top: 0.7rem !important;
 }
 
-// Border ----------------------------------------
+// Border --------------------------------------------------------------------------------
 .b-notop-1 {
   border: solid 0.1rem $primary-light;
   border-top: 0;
@@ -415,7 +415,7 @@
   }
 }
 
-// Columns for content----------------------------------------
+// Columns for content --------------------------------------------------------------------------------
 .auto-columns-2 {
   column-count: 2;
 }
@@ -424,7 +424,7 @@
   column-count: 3;
 }
 
-// Text Alignment ----------------------------------------
+// Text Alignment --------------------------------------------------------------------------------
 .text-align-left {
   text-align: left;
 }
@@ -433,7 +433,7 @@
   text-align: right;
 }
 
-// Alignment ----------------------------------------
+// Alignment --------------------------------------------------------------------------------
 .center-content {
   text-align: center;
 }
@@ -529,7 +529,7 @@
   overflow-y: scroll;
 }
 
-// miscellaneous ----------------------------------------
+// miscellaneous --------------------------------------------------------------------------------
 
 .hide-overflow { overflow: hidden !important; }
 
