@@ -897,9 +897,6 @@ label.image-upload {
     display: none;
   }
 
-  &::-moz-scrollbar {
-    display: none;
-  }
 }
 
 //This is the note editor.
@@ -1064,18 +1061,22 @@ input {
     background-color: $primary-color !important;
     color: white;
   }
+
   &.secondary {
     background-color: $secondary-color !important;
     color: white;
   }
+
   &.success {
     background-color: $success-color !important;
     color: white;
   }
+
   &.warning {
     background-color: $warning-color !important;
     color: white;
   }
+
   &.alert {
     background-color: $alert-color !important;
     color: white;
@@ -1085,30 +1086,35 @@ input {
   &.outlined {
     border: .05rem solid #e1e1e1;
     background-color: transparent !important;
+
     &.primary {
       color: $primary-color !important;
       border-color: $primary-color !important;
-      
+
     }
+
     &.secondary {
       color: $secondary-color !important;
       border-color: $secondary-color !important;
-      
+
     }
+
     &.success {
       color: $success-color !important;
       border-color: $success-color !important;
-      
+
     }
+
     &.warning {
       color: $warning-color !important;
       border-color: $warning-color !important;
-      
+
     }
+
     &.alert {
       color: $alert-color !important;
       border-color: $alert-color !important;
-      
+
     }
   }
 
@@ -1123,6 +1129,7 @@ input {
       top: .15rem !important;
     }
   }
+
   &.tiny {
     font-size: .55rem;
     line-height: .85rem;
@@ -1166,7 +1173,9 @@ input {
   &.small {
     font-size: 0.6875rem;
   }
-  .inline-edit {}
+
+  .inline-edit {
+  }
 }
 
 .fancy-checkbox {
