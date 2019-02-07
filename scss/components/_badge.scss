@@ -1,81 +1,158 @@
 .badge {
-	line-height: 1.5em;
-	&.alert {
-		background-color: $alert-color;
-		color: $white;
-		border: none;
-	}
-	&.small {
-	    width: 0.5rem;
-	    height: 0.5rem;
-	    min-width: 0.5rem;
-	    padding: 0;
-	    vertical-align: middle;
-	}
-	&.large {		
-		font-size: 1.5rem;
-	}
-	&.rounded {
-		padding-left: 0.5rem;
-		padding-right: 0.5rem;
-		border-radius: 50%;
-	}
+  line-height: 1.5em;
+
+  &.alert {
+    background-color: $alert-color;
+    color: $white;
+    border: none;
+  }
+
+  &.small {
+    width: 0.5rem;
+    height: 0.5rem;
+    min-width: 0.5rem;
+    padding: 0;
+    vertical-align: middle;
+  }
+
+  &.large {
+    font-size: 1.5rem;
+  }
+
+  &.rounded {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 50%;
+  }
 }
 
 .label {
-	vertical-align: middle;
-	border-radius: 2px;
-	padding: 0.4rem 0.5rem 0.333rem;
-	margin: -3px 0 0;
+  vertical-align: middle;
+  border-radius: 2px;
+  padding: 0.4rem 0.5rem 0.333rem;
+  margin: -3px 0 0;
 }
 
 .tag-cloud {
-	display: inline-block;
-	padding: 0;
-	margin: 5px 0 0;
-	list-style: none;
-	.tag-cloud-individual-tag {
-		@include label;
-		display: inline-block;
-		border-radius: 500px;
-		background: transparent;
-		float: left;
-		color: $primary-color;
-		background: #fff;
-		margin: 3px 1px;
-		font-weight: bold;
-		// border: 1fpx solid $primary-color;
-		.fa {
-			margin: 0 3px;
-			color: $primary-color;
-		}
-		&:hover {
-			color: $white;
-			// background: darken($primary-color, 5%);
-			transition: background-color .2s ease-in;
-			background: darken(#fff, 8%) !important ;
-		}
-	}
-	&.white {
-		.tag-cloud-individual-tag {
-			color: $white;
-			border: 1px solid $white;
-			.fa {
-				color: $white;
-			}
-			&:hover {
-				color: $white;
-				background: darken($primary-color, 25%);
-				transition: background-color .2s ease-in;
-			}
-		}
-	}
-	&.compact {
-		.tag-cloud-individual-tag {
-			font-size: 9px;
-			font-weight: normal;
-			margin: 1px;
-			padding: 2px 5px;
-		}
-	}
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  .tag-cloud-individual-tag {
+    @include label;
+    display: inline-block;
+    border-radius: 500px;
+    margin: 0 3px;
+    font-weight: bold;
+    color: $white;
+    line-height: 1.2em;
+    background: lighten($secondary-color, 15%);
+    border: 1px solid lighten($secondary-color, 15%);
+    transition: all .2s ease-in-out;
+
+    .fa {
+      margin: 0 3px;
+      color: $white;
+    }
+
+    &.success {
+      background: lighten($success-color, 15%);
+      border: 1px solid lighten($success-color, 15%);
+    }
+
+    &.warning {
+      background: lighten($warning-color, 15%);
+      border: 1px solid lighten($warning-color, 15%);
+    }
+
+    &.alert {
+      background: lighten($alert-color, 15%);
+      border: 1px solid lighten($alert-color, 15%);
+    }
+
+    //Upon Hover Classes
+    &:hover {
+      background: $secondary-color;
+
+      &.success {
+        background: $success-color;
+        border-color: $success-color;
+
+        .fa {
+          color: $success-color;
+        }
+      }
+
+      &.warning {
+        background: $warning-color;
+        border-color: $warning-color;
+
+        .fa {
+          color: $warning-color;
+        }
+      }
+
+      &.alert {
+        background: $alert-color;
+        border-color: $alert-color;
+
+        .fa {
+          color: $alert-color;
+        }
+      }
+    }
+
+    //Hollow Versions
+    &.hollow {
+      color: $secondary-color;
+      background: transparent;
+
+      &.success {
+        color: $success-color;
+
+        &:hover {
+          color: $white;
+        }
+      }
+
+      &.warning {
+        color: $warning-color;
+
+        &:hover {
+          color: $white;
+        }
+      }
+
+      &.alert {
+        color: $alert-color;
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &.white {
+    .tag-cloud-individual-tag {
+
+      .fa {
+        color: $white;
+      }
+
+      &:hover {
+        color: $white;
+        background: darken($secondary-color, 15%);
+      }
+    }
+  }
+
+  &.compact {
+    .tag-cloud-individual-tag {
+      font-size: rem-calc(9);
+      padding: 6px 12px;
+      text-transform: uppercase;
+    }
+  }
 }

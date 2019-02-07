@@ -881,6 +881,7 @@ label.image-upload {
 }
 
 .rdw-editor-main {
+<<<<<<< HEAD
 	border: 1px solid rgba($black, $B-dividers);
 	padding: 0.5rem;
 	border-top: none;
@@ -900,6 +901,24 @@ label.image-upload {
 	&::-moz-scrollbar {
 		display: none;
 	}
+=======
+  border: 1px solid rgba($black, $B-dividers);
+  padding: 0.5rem;
+  border-top: none;
+  margin-bottom: 1rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  height: 15vh !important;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+>>>>>>> 03b6f553f997478412dfb7d4a8e75a3690cc31e6
 }
 
 //This is the note editor.
@@ -988,6 +1007,7 @@ input {
 }
 
 .fancy-input-tag {
+<<<<<<< HEAD
 	border-radius: 3px;
 	padding: .5rem;
 	border: 0px;
@@ -1167,6 +1187,196 @@ input {
 		font-size: 0.6875rem;
 	}
 	.inline-edit {}
+=======
+  border-radius: 3px;
+  padding: .5rem;
+  border: 0px;
+
+  input {
+    display: inline-block;
+    background-color: transparent;
+    border: 0;
+    // border-bottom: 1px solid;
+    padding: .25rem 1rem;
+    outline: none;
+    position: relative;
+    max-width: 30%;
+
+    &:after {
+      position: absolute;
+      right: .4rem;
+      top: 0;
+      // width: 10px;
+      // height: 10px;
+      content: "\00D7";
+      // background-color: red;
+      border-radius: 10px;
+      overflow: hidden;
+
+      &:hover {
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+
+    &:focus {
+      background-color: darken(#fff, 10%) !important;
+      border-radius: 3px;
+    }
+
+  }
+}
+
+.tag { // used inside .fancy-input-tag and can also be used independently
+  display: inline-block;
+  background-color: #e3e3e3 !important;
+  border-radius: 16px;
+  padding-left: .5rem;
+  padding-right: 2rem;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  position: relative;
+  margin-right: .5rem;
+  margin-bottom: .5rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  &:after {
+    position: absolute;
+    right: .65rem;
+    top: .25rem;
+    content: "\00D7";
+    border-radius: 10px;
+    overflow: hidden;
+
+    &:hover {
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+
+  &.primary {
+    background-color: $primary-color !important;
+    color: white;
+  }
+
+  &.secondary {
+    background-color: $secondary-color !important;
+    color: white;
+  }
+
+  &.success {
+    background-color: $success-color !important;
+    color: white;
+  }
+
+  &.warning {
+    background-color: $warning-color !important;
+    color: white;
+  }
+
+  &.alert {
+    background-color: $alert-color !important;
+    color: white;
+  }
+
+
+  &.outlined {
+    border: .05rem solid #e1e1e1;
+    background-color: transparent !important;
+
+    &.primary {
+      color: $primary-color !important;
+      border-color: $primary-color !important;
+
+    }
+
+    &.secondary {
+      color: $secondary-color !important;
+      border-color: $secondary-color !important;
+
+    }
+
+    &.success {
+      color: $success-color !important;
+      border-color: $success-color !important;
+
+    }
+
+    &.warning {
+      color: $warning-color !important;
+      border-color: $warning-color !important;
+
+    }
+
+    &.alert {
+      color: $alert-color !important;
+      border-color: $alert-color !important;
+
+    }
+  }
+
+  &.small {
+    font-size: .765rem;
+    line-height: .85rem;
+
+    padding-bottom: .1rem;
+    padding-top: .15rem;
+
+    &:after {
+      top: .15rem !important;
+    }
+  }
+
+  &.tiny {
+    font-size: .55rem;
+    line-height: .85rem;
+
+    padding: .1rem .25rem !important;
+
+    &:after {
+      top: .15rem !important;
+    }
+  }
+
+  &.no-action {
+    padding-right: .5rem;
+
+    &:after {
+      content: none;
+    }
+  }
+}
+
+.fancy-input {
+  border-radius: 3px;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  border: 0px;
+  background-color: darken(#fff, 11%) !important;
+
+  &.round-corner {
+    border-radius: 5rem !important;
+  }
+
+  &.outlined {
+    background-color: #fff !important;
+    border: 1px solid #e1e1e1;
+  }
+
+  &.light {
+    background-color: #fff !important;
+  }
+
+  &.small {
+    font-size: 0.6875rem;
+  }
+
+  .inline-edit {
+  }
+>>>>>>> 03b6f553f997478412dfb7d4a8e75a3690cc31e6
 }
 
 .fancy-checkbox {

@@ -34,10 +34,10 @@
         <div id="responsive-menu">
           <div class="top-bar-right">
             <ul id="mainMenu" class="dropdown menu" data-dropdown-menu>
-              <li>
-                <a data-open="scheduleCalendar" class="button hollow success small"><i class="fa fa-calendar"></i>&nbsp;
-                  Schedule A Call</a>
-              </li>
+              <!--<li>-->
+              <!--<a data-open="scheduleCalendar" class="button hollow success small"><i class="fa fa-calendar"></i>&nbsp;-->
+              <!--Schedule A Call</a>-->
+              <!--</li>-->
               <li class="drop-text">
                 <a data-toggle="chatSupport"><i class="fa fa-bell fa-lg" aria-describedby="notifCount"></i><span
                   class="alert badge" id="notifCount">24</span></a>
@@ -105,14 +105,45 @@
   </div>
 </div>
 
-<section class="white-bg">
+<section>
+
+  <div class="row">
+    <div class="auto columns">
+      <div class="callout mt-1 mb-0">
+        <div class="row collapse align-middle">
+          <div class="auto columns">
+            <span class="h4">Brendon Martin</span>
+            <p class="subheader mb-0">
+              <small>Primary Phone Number: (+63)123-456</small>
+            </p>
+            <span>Dependents: </span>
+            <ul class="inline-list">
+              <li>Moe</li>
+            </ul>
+          </div>
+          <div class="auto columns">
+            <ul class="tag-cloud">
+              <li class="tag-cloud-individual-tag">Obese</li>
+              <li class="tag-cloud-individual-tag">Diabetic</li>
+              <li class="tag-cloud-individual-tag">Nut Allergy</li>
+            </ul>
+          </div>
+          <div class="shrink columns">
+            <div class="small button-align pull-right mb-0">
+              <a href="#" class="button hollow circle"><i class="fa fa-pencil-alt"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="row">
     <div class="auto columns">
       <ul class="tabs" data-tabs id="example-tabs">
-        <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">My Dashboard</a></li>
-        <!--<li class="tabs-title"><a href="#panel2">Surgery Facility Details</a></li>-->
-        <li class="tabs-title"><a href="#panel3">My Forms</a></li>
+        <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Dashboard</a></li>
+        <li class="tabs-title"><a href="#panel2">Questionnaires</a></li>
+        <li class="tabs-title"><a href="#panel3">Documents</a></li>
       </ul>
 
       <div class="tabs-content" data-tabs-content="example-tabs">
@@ -120,708 +151,447 @@
         <div class="tabs-panel is-active" id="panel1">
 
           <div class="row">
-            <div class="large-4 large-push-8 columns">
+            <div class="medium-6 columns">
 
-              <div class="page-lead row align-middle">
-                <div class="auto columns">
-                  <span class="h5 mb-0">Total Knee Replacement</span>
-                  <p class="subheader">
-                    <small>Current Episode</small>
-                  </p>
-                </div>
-              </div>
-
-              <a class="img-card" href="#">
-                <div class="img-card-body">
-                  <div class="img-card-body-section">
-                    <div class="media-object full-table fixed">
-                      <div class="media-object-section logo small middle">
-                        <div class="img-wrapper">
-                          <img src="../img/logo-Saint-Joseph-Hospital.png">
+              <div class="block">
+                <div class="block-heading">
+                  <div class="row collapse align-middle">
+                    <div class="auto columns">
+                      <span class="h6 mb-0">Checklist</span>
+                      <p class="subheader mb-0">
+                        <small>2 of 5 Completed</small>
+                      </p>
+                    </div>
+                    <div class="shrink columns">
+                      <div class="button-align small pull-right mb-0">
+                        <select>
+                          <option value="" disabled selected>All Members</option>
+                        </select>
+                        <select>
+                          <option value="" disabled selected>This Week</option>
+                          <option value="">One Week From Now</option>
+                          <option value="starbuck">One Month From Now</option>
+                          <option value="hotdog">Six Months From Now</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row collapse align-middle">
+                    <div class="spk-gain-graph auto columns">
+                      <div class="small progress mt-0-5 mb-0" role="progressbar" tabindex="0" aria-valuenow="0"
+                           aria-valuemin="0" aria-valuetext="100 percent" aria-valuemax="100">
+                        <div class="progress-meter bonus" style="width: 45%;">
                         </div>
                       </div>
-                      <div class="media-object-section middle">
-                        <h6>Precision Spine Center</h6>
-                        <p class="subheader">
-                          <small>DENVER &nbsp;
-                            <small>2.1 miles</small>
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="img-card-body-section">
-                    <div class="row align-middle collapse">
-                      <div class="small-12 columns">
-                        <p>
-                          <small class="subheader mr-1">YOUR BONUS</small>
-                          <strong class="success-color pull-right">$5,500</strong></p>
-                      </div>
-                    </div>
-                  </div>
-                  <!--<div class="img-card-body-section">-->
-                  <!--<div class="row">-->
-                  <!--<div class="small-12 columns">-->
-                  <!--<div class="media-object full-table fixed">-->
-                  <!--<div class="media-object-section small logo middle">-->
-                  <!--<div class="img-wrapper circle">-->
-                  <!--<img src="../img/specialist.png">-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--<div class="media-object-section middle">-->
-                  <!--<span><small><strong>Randy Moss</strong></small></span>-->
-                  <!--</div>-->
-                  <!--<div class="media-object-section middle">-->
-                  <!--<span class="pull-right subheader"><small>Surgeon</small></span>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--<div class="row">-->
-                  <!--<div class="small-12 columns">-->
-                  <!--<div class="media-object full-table fixed">-->
-                  <!--<div class="media-object-section small logo middle">-->
-                  <!--<div class="img-wrapper circle">-->
-                  <!--<img src="../img/specialist.png">-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--<div class="media-object-section middle">-->
-                  <!--<span><small><strong>Gabriel Santos</strong></small></span>-->
-                  <!--</div>-->
-                  <!--<div class="media-object-section middle">-->
-                  <!--<span class="subheader pull-right"><small>Assitant Surgeon</small></span>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--<div class="row">-->
-                  <!--<div class="small-12 columns">-->
-                  <!--<div class="media-object full-table fixed">-->
-                  <!--<div class="media-object-section small logo middle">-->
-                  <!--<div class="img-wrapper circle">-->
-                  <!--<img src="../img/specialist.png">-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--<div class="media-object-section middle">-->
-                  <!--<span><small><strong>Dan Stevens</strong></small></span>-->
-                  <!--</div>-->
-                  <!--<div class="media-object-section middle">-->
-                  <!--<span class="subheader pull-right"><small>Anaesthesiologist</small></span>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <div class="img-card-body-section">
-                    <div class="row collapse">
-                      <div class="small-12 columns">
-                        <p class="h6 subheader">
-                          <small>What's Included:</small>
-                        </p>
-                        <ul class="inline-list">
-                          <li><i class="fa fa-check"></i>&nbsp;Pre-op evaluation</li>
-                          <li><i class="fa fa-check"></i>&nbsp;Pre-op antibiotics as indicate</li>
-                          <li><i class="fa fa-check"></i>&nbsp;Facility surgeon</li>
-                          <li><i class="fa fa-check"></i>&nbsp;Assistant surgeon</li>
-                          <li><i class="fa fa-check"></i>&nbsp;Anesthesia</li>
-                          <li><i class="fa fa-check"></i>&nbsp;Rehabilitation/physical therapy regimen</li>
-                          <li><i class="fa fa-check"></i>&nbsp;Post-op follow-up</li>
-                        </ul>
-                      </div>
                     </div>
                   </div>
                 </div>
-              </a>
-
-              <div class="panel">
-                <div class="panel-heading">
-                  <span class="h6">Dependents</span>
-                </div>
-                <div class="panel-body">
-                  <div class="media-object">
-                    <div class="media-object-section logo">
-                      <div class="img-wrapper circle">
-                        <img src="../img/avatar_placeholder.png">
+                <div class="block-container">
+                  <ul class="tasks-list well-list">
+                    <li class="alert">
+                      <div class="list-wrap">
+                        <div class="row collapse align-middle">
+                          <div class="auto columns">
+                            <div class="media-object">
+                              <div class="media-object-section middle">
+                                <div class="fancy-checkbox">
+                                  <input type="checkbox">
+                                </div>
+                              </div>
+                              <div class="media-object-section middle">
+                                <small class="preamble"><b>OVERDUE</b></small>
+                                <p class="h6 mb-0"><a href="#"><i class="fa fa-file-alt fa-fw"></i>&nbsp;
+                                  Pre-Operation Evaluation and Clearance Form</a></p>
+                                <p class="subheader mb-0">
+                                  <small>Total Knee Replacement - Brendon Martin</small>
+                                </p>
+                                <a href="#" class="button tiny info hollow mt-0-25 mb-0">Fill This Form</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="shrink columns">
+                            <small class="preamble">4 days ago</small>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="media-object-section middle">
-                      <span class="h6">Kevin McCallister</span>
-                      <p>
-                        <small class="subheader">Current Episode: -</small>
-                      </p>
-                      <p>
-                        <a href="#" class="button tiny hollow rounded mb-0">Switch to this Account</a>
-                      </p>
-                    </div>
-                  </div>
+                    </li>
+                    <li class="alert">
+                      <div class="list-wrap">
+                        <div class="row collapse align-middle">
+                          <div class="auto columns">
+                            <div class="media-object">
+                              <div class="media-object-section middle">
+                                <div class="fancy-checkbox">
+                                  <input type="checkbox">
+                                </div>
+                              </div>
+                              <div class="media-object-section middle">
+                                <small class="preamble"><b>OVERDUE</b></small>
+                                <p class="h6 mb-0">Pre-Operation Infection Avoidance Adherence</p>
+                                <p class="subheader mb-0">
+                                  <small>Total Knee Replacement - Brendon Martin</small>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="shrink columns">
+                            <small class="preamble">4 days ago</small>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="warning">
+                      <div class="list-wrap">
+                        <div class="row collapse align-middle">
+                          <div class="auto columns">
+                            <div class="media-object">
+                              <div class="media-object-section middle">
+                                <div class="fancy-checkbox">
+                                  <input type="checkbox">
+                                </div>
+                              </div>
+                              <div class="media-object-section middle">
+                                <small class="preamble"><b>UPCOMING</b></small>
+                                <p class="h6 mb-0"><a href="#"><i class="fa fa-file-alt fa-fw"></i>&nbsp; Service
+                                  Experience Survey</a></p>
+                                <p class="subheader mb-0">
+                                  <small>Total Knee Replacement - Brendon Martin</small>
+                                </p>
+                                <a href="#" class="button tiny info hollow mt-0-25 mb-0">Fill This Form</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="shrink columns">
+                            <small class="preamble">30 Aug, 2018</small>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="warning">
+                      <div class="list-wrap">
+                        <div class="row collapse align-middle">
+                          <div class="auto columns">
+                            <div class="media-object">
+                              <div class="media-object-section middle">
+                                <div class="fancy-checkbox">
+                                  <input type="checkbox" checked>
+                                </div>
+                              </div>
+                              <div class="media-object-section middle">
+                                <small class="preamble"><b>UPCOMING</b></small>
+                                <p class="h6 mb-0">Second Consultation With Facility</p>
+                                <p class="subheader mb-0">
+                                  <small>Total Knee Replacement - Brendon Martin</small>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="shrink columns">
+                            <small class="preamble">30 Aug, 2018</small>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="list-wrap">
+                        <div class="row collapse align-middle">
+                          <div class="auto columns">
+                            <div class="media-object">
+                              <div class="media-object-section middle">
+                                <div class="fancy-checkbox">
+                                  <input type="checkbox">
+                                </div>
+                              </div>
+                              <div class="media-object-section middle">
+                                <!--<small class="preamble"><b>UPCOMING</b></small>-->
+                                <p class="h6 mb-0">Scheduled Total Knee Replacement Surgery</p>
+                                <p class="subheader mb-0">
+                                  <small>Total Knee Replacement - Brendon Martin</small>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="shrink columns">
+                            <small class="preamble">4 Sept, 2018</small>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="list-wrap">
+                        <div class="row collapse align-middle">
+                          <div class="auto columns">
+                            <div class="media-object">
+                              <div class="media-object-section middle">
+                                <div class="fancy-checkbox">
+                                  <input type="checkbox">
+                                </div>
+                              </div>
+                              <div class="media-object-section middle">
+                                <!--<small class="preamble"><b>UPCOMING</b></small>-->
+                                <p class="h6 mb-0"><a href="#"><i class="fa fa-file-alt fa-fw"></i>&nbsp; Functional
+                                  Capacity Survey</a></p>
+                                <p class="subheader mb-0">
+                                  <small>Total Knee Replacement - Brendon Martin</small>
+                                </p>
+                                <a href="#" class="button tiny info hollow mt-0-25 mb-0">Fill This Form</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="shrink columns">
+                            <small class="preamble">8 Sept, 2018</small>
+                          </div>
+                          <div class="shrink columns">
+                            <ul class="dropdown menu" data-dropdown-menu>
+                              <li>
+                                <a></a>
+                                <ul class="menu vertical">
+                                  <li><a href="#"><i class="fa fa-sync"></i>&nbsp;
+                                    Assign To</a></li>
+                                  <li><a href="#"><i class="fa fa-sticky-note"></i>&nbsp;
+                                    Set New Date</a></li>
+                                  <li><a href="#"><i class="fa fa-trash"></i>&nbsp;
+                                    Archive</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="list-wrap">
+                        <div class="row collapse align-middle">
+                          <div class="auto columns">
+                            <div class="media-object">
+                              <div class="media-object-section middle">
+                                <div class="fancy-checkbox">
+                                  <input type="checkbox">
+                                </div>
+                              </div>
+                              <div class="media-object-section middle">
+                                <!--<small class="preamble"><b>UPCOMING</b></small>-->
+                                <p class="h6 mb-0"><a href="#"><i class="fa fa-file-alt fa-fw"></i>&nbsp; 3-month
+                                  Post-Op Functional Capacity Survey</a></p>
+                                <p class="subheader mb-0">
+                                  <small>Total Knee Replacement - Brendon Martin</small>
+                                </p>
+                                <a href="#" class="button tiny info hollow mt-0-25 mb-0">Fill This Form</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="shrink columns">
+                            <small class="preamble">2 Nov, 2018</small>
+                          </div>
+                          <div class="shrink columns">
+                            <ul class="dropdown menu" data-dropdown-menu>
+                              <li>
+                                <a></a>
+                                <ul class="menu vertical">
+                                  <li><a href="#"><i class="fa fa-sync"></i>&nbsp;
+                                    Assign To</a></li>
+                                  <li><a href="#"><i class="fa fa-sticky-note"></i>&nbsp;
+                                    Set New Date</a></li>
+                                  <li><a href="#"><i class="fa fa-trash"></i>&nbsp;
+                                    Archive</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
               </div>
 
             </div>
+            <div class="medium-6 columns">
 
-            <div class="large-8 large-pull-4 columns">
-
-
-              <div class="page-lead row align-middle">
-                <div class="shrink columns">
-                  <span class="h5">My To-Do's</span>
-                </div>
-                <div class="columns">
-                  <div class="button-align small pull-right mb-0">
-                    <select>
-                      <option value="" disabled selected>This Week</option>
-                      <option value="">One Week From Now</option>
-                      <option value="starbuck">One Month From Now</option>
-                      <option value="hotdog">Six Months From Now</option>
-                    </select>
+              <div class="callout lo-padded">
+                <div class="row align-middle">
+                  <div class="auto columns">
+                    <div class="media-object mt-0 mb-0">
+                      <div class="media-object-section logo middle">
+                        <i class="fa fa-user fa-border subheader fa-2x"></i>
+                      </div>
+                      <div class="media-object-section middle">
+                        <span class="h6 mb-0">Total Knee Replacement</span>
+                        <ul class="tag-cloud compact">
+                          <li class="tag-cloud-individual-tag success">Surgery Set</li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="columns">
-                  <div class="callout lo-padded">
-                    <ul class="tasks-list well-list">
-                      <li class="alert">
-                        <div class="list-wrap">
-                          <div class="row collapse align-middle">
-                            <div class="auto columns">
-                              <div class="media-object">
-                                <div class="media-object-section middle">
-                                  <div class="fancy-checkbox">
-                                    <input type="checkbox">
-                                  </div>
-                                </div>
-                                <div class="media-object-section middle">
-                                  <small class="preamble"><b>OVERDUE</b></small>
-                                  <p class="mb-0"><a href="#"><i class="fa fa-file-alt fa-fw"></i>&nbsp;
-                                    Pre-Operation Evaluation and Clearance Form</a></p>
-                                  <a href="#" class="button tiny info hollow mt-0-25 mb-0">Fill This Form</a>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="shrink columns">
-                              <small class="preamble">4 days ago</small>
-                            </div>
-                            <div class="shrink columns">
-                              <ul class="dropdown menu" data-dropdown-menu>
-                                <li>
-                                  <a></a>
-                                  <ul class="menu vertical">
-                                    <li><a href="#"><i class="fa fa-sync"></i>&nbsp;
-                                      Assign To</a></li>
-                                    <li><a href="#"><i class="fa fa-sticky-note"></i>&nbsp;
-                                      Set New Date</a></li>
-                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp;
-                                      Archive</a></li>
-                                  </ul>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="alert">
-                        <div class="list-wrap">
-                          <div class="row collapse align-middle">
-                            <div class="auto columns">
-                              <div class="media-object">
-                                <div class="media-object-section middle">
-                                  <div class="fancy-checkbox">
-                                    <input type="checkbox">
-                                  </div>
-                                </div>
-                                <div class="media-object-section middle">
-                                  <small class="preamble"><b>OVERDUE</b></small>
-                                  <p class="mb-0">Pre-Operation Infection Avoidance Adherence</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="shrink columns">
-                              <small class="preamble">4 days ago</small>
-                            </div>
-                            <div class="shrink columns">
-                              <ul class="dropdown menu" data-dropdown-menu>
-                                <li>
-                                  <a></a>
-                                  <ul class="menu vertical">
-                                    <li><a href="#"><i class="fa fa-sync"></i>&nbsp;
-                                      Assign To</a></li>
-                                    <li><a href="#"><i class="fa fa-sticky-note"></i>&nbsp;
-                                      Set New Date</a></li>
-                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp;
-                                      Archive</a></li>
-                                  </ul>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="warning">
-                        <div class="list-wrap">
-                          <div class="row collapse align-middle">
-                            <div class="auto columns">
-                              <div class="media-object">
-                                <div class="media-object-section middle">
-                                  <div class="fancy-checkbox">
-                                    <input type="checkbox">
-                                  </div>
-                                </div>
-                                <div class="media-object-section middle">
-                                  <small class="preamble"><b>UPCOMING</b></small>
-                                  <p class="mb-0"><a href="#"><i class="fa fa-file-alt fa-fw"></i>&nbsp; Service
-                                    Experience Survey</a></p>
-                                  <a href="#" class="button tiny info hollow mt-0-25 mb-0">Fill This Form</a>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="shrink columns">
-                              <small class="preamble">30 Aug, 2018</small>
-                            </div>
-                            <div class="shrink columns">
-                              <ul class="dropdown menu" data-dropdown-menu>
-                                <li>
-                                  <a></a>
-                                  <ul class="menu vertical">
-                                    <li><a href="#"><i class="fa fa-sync"></i>&nbsp;
-                                      Assign To</a></li>
-                                    <li><a href="#"><i class="fa fa-sticky-note"></i>&nbsp;
-                                      Set New Date</a></li>
-                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp;
-                                      Archive</a></li>
-                                  </ul>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="warning">
-                        <div class="list-wrap">
-                          <div class="row collapse align-middle">
-                            <div class="auto columns">
-                              <div class="media-object">
-                                <div class="media-object-section middle">
-                                  <div class="fancy-checkbox">
-                                    <input type="checkbox" checked>
-                                  </div>
-                                </div>
-                                <div class="media-object-section middle">
-                                  <small class="preamble"><b>UPCOMING</b></small>
-                                  <p class="mb-0">Second Consultation With Facility</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="shrink columns">
-                              <small class="preamble">30 Aug, 2018</small>
-                            </div>
-                            <div class="shrink columns">
-                              <ul class="dropdown menu" data-dropdown-menu>
-                                <li>
-                                  <a></a>
-                                  <ul class="menu vertical">
-                                    <li><a href="#"><i class="fa fa-sync"></i>&nbsp;
-                                      Assign To</a></li>
-                                    <li><a href="#"><i class="fa fa-sticky-note"></i>&nbsp;
-                                      Set New Date</a></li>
-                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp;
-                                      Archive</a></li>
-                                  </ul>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="list-wrap">
-                          <div class="row collapse align-middle">
-                            <div class="auto columns">
-                              <div class="media-object">
-                                <div class="media-object-section middle">
-                                  <div class="fancy-checkbox">
-                                    <input type="checkbox">
-                                  </div>
-                                </div>
-                                <div class="media-object-section middle">
-                                  <!--<small class="preamble"><b>UPCOMING</b></small>-->
-                                  <p class="mb-0">Scheduled Total Knee Replacement Surgery</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="shrink columns">
-                              <small class="preamble">4 Sept, 2018</small>
-                            </div>
-                            <div class="shrink columns">
-                              <ul class="dropdown menu" data-dropdown-menu>
-                                <li>
-                                  <a></a>
-                                  <ul class="menu vertical">
-                                    <li><a href="#"><i class="fa fa-sync"></i>&nbsp;
-                                      Assign To</a></li>
-                                    <li><a href="#"><i class="fa fa-sticky-note"></i>&nbsp;
-                                      Set New Date</a></li>
-                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp;
-                                      Archive</a></li>
-                                  </ul>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="list-wrap">
-                          <div class="row collapse align-middle">
-                            <div class="auto columns">
-                              <div class="media-object">
-                                <div class="media-object-section middle">
-                                  <div class="fancy-checkbox">
-                                    <input type="checkbox">
-                                  </div>
-                                </div>
-                                <div class="media-object-section middle">
-                                  <!--<small class="preamble"><b>UPCOMING</b></small>-->
-                                  <p class="mb-0"><a href="#"><i class="fa fa-file-alt fa-fw"></i>&nbsp; Functional
-                                    Capacity Survey</a></p>
-                                  <a href="#" class="button tiny info hollow mt-0-25 mb-0">Fill This Form</a>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="shrink columns">
-                              <small class="preamble">8 Sept, 2018</small>
-                            </div>
-                            <div class="shrink columns">
-                              <ul class="dropdown menu" data-dropdown-menu>
-                                <li>
-                                  <a></a>
-                                  <ul class="menu vertical">
-                                    <li><a href="#"><i class="fa fa-sync"></i>&nbsp;
-                                      Assign To</a></li>
-                                    <li><a href="#"><i class="fa fa-sticky-note"></i>&nbsp;
-                                      Set New Date</a></li>
-                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp;
-                                      Archive</a></li>
-                                  </ul>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="list-wrap">
-                          <div class="row collapse align-middle">
-                            <div class="auto columns">
-                              <div class="media-object">
-                                <div class="media-object-section middle">
-                                  <div class="fancy-checkbox">
-                                    <input type="checkbox">
-                                  </div>
-                                </div>
-                                <div class="media-object-section middle">
-                                  <!--<small class="preamble"><b>UPCOMING</b></small>-->
-                                  <p class="mb-0"><a href="#"><i class="fa fa-file-alt fa-fw"></i>&nbsp; 3-month
-                                    Post-Op Functional Capacity Survey</a></p>
-                                  <a href="#" class="button tiny info hollow mt-0-25 mb-0">Fill This Form</a>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="shrink columns">
-                              <small class="preamble">2 Nov, 2018</small>
-                            </div>
-                            <div class="shrink columns">
-                              <ul class="dropdown menu" data-dropdown-menu>
-                                <li>
-                                  <a></a>
-                                  <ul class="menu vertical">
-                                    <li><a href="#"><i class="fa fa-sync"></i>&nbsp;
-                                      Assign To</a></li>
-                                    <li><a href="#"><i class="fa fa-sticky-note"></i>&nbsp;
-                                      Set New Date</a></li>
-                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp;
-                                      Archive</a></li>
-                                  </ul>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
+                  <div class="shrink columns">
+                    <div class="tiny button-align pull-right mb-0">
+                      <a href="#" class="button info hollow rounded">View Facility Profile</a>
+                    </div>
                   </div>
                 </div>
               </div>
 
+              <div class="callout lo-padded">
+                <div class="row align-middle">
+                  <div class="auto columns">
+                    <div class="media-object mt-0 mb-0">
+                      <div class="media-object-section logo middle">
+                        <i class="fa fa-user fa-border subheader fa-2x"></i>
+                      </div>
+                      <div class="media-object-section middle">
+                        <span class="h6 mb-0">Cranial Lobotomy</span>
+                        <ul class="tag-cloud compact">
+                          <li class="tag-cloud-individual-tag hollow success">Awaiting Facility Selection</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="shrink columns">
+                    <div class="tiny button-align pull-right mb-0">
+                      <a href="#" class="button info hollow rounded">View Facilities</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="callout lo-padded">
+                <div class="row align-middle">
+                  <div class="auto columns">
+                    <div class="media-object mt-0 mb-0">
+                      <div class="media-object-section logo middle">
+                        <i class="fa fa-users fa-border subheader fa-2x"></i>
+                      </div>
+                      <div class="media-object-section middle">
+                        <span class="h6 mb-0">Kidney Transplant</span>
+                        <ul class="tag-cloud compact">
+                          <li class="tag-cloud-individual-tag hollow success">Awaiting Consultation</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="shrink columns">
+                    <div class="tiny button-align pull-right mb-0">
+                      <a href="#" class="button info hollow rounded">View Facilities</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="block">
+                <div class="block-heading">
+                  <div class="row collapse align-middle">
+                    <div class="auto columns">
+                      <span class="h6 mb-0">Schedule</span>
+                    </div>
+                    <div class="shrink columns">
+                      <div class="button-align small pull-right mb-0">
+                        <select>
+                          <option value="" disabled selected>This Week</option>
+                          <option value="">One Week From Now</option>
+                          <option value="starbuck">One Month From Now</option>
+                          <option value="hotdog">Six Months From Now</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-container">
+                  <ul class="calls-list well-list">
+                    <li>
+                      <a href="#">
+                        <div class="row align-middle">
+                          <div class="auto columns">
+                            <a href="#" class="button hollow success expanded">+ Schedule A Call</a>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="is-active">
+                      <div class="list-wrap">
+                        <a href="#">
+                          <div class="row align-middle">
+                            <div class="shrink columns">
+                              <p class="subheader border text-center mb-0"><b> 3:00PM </b><br>
+                                <small>Sept 4</small>
+                              </p>
+                            </div>
+                            <div class="medium-8 columns">
+                              <span class="h6 mb-0 truncate">Pre-Op Consultation</span>
+                              <p class="subheader mb-0 truncate">
+                                <small>Total Knee Replacement</small>
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="list-wrap">
+                        <a href="#">
+                          <div class="row align-middle">
+                            <div class="shrink columns">
+                              <p class="subheader border text-center mb-0"><b> 9:45AM </b><br>
+                                <small>Sept 5</small>
+                              </p>
+                            </div>
+                            <div class="medium-8 columns">
+                              <span class="h6 mb-0 truncate">Scheduled Surgery</span>
+                              <p class="subheader mb-0 truncate">
+                                <small>Total Knee Replacement</small>
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="list-wrap">
+                        <a href="#">
+                          <div class="row align-middle">
+                            <div class="shrink columns">
+                              <p class="subheader border text-center mb-0"><b> 10:45AM </b><br>
+                                <small>Sept 6</small>
+                              </p>
+                            </div>
+                            <div class="medium-8 columns">
+                              <span class="h6 mb-0 truncate"><i class="fa fa-phone fa-border success-color"></i>&nbsp; Scheduled Call</span>
+                              <p class="subheader mb-0 truncate">
+                                <small>Total Knee Replacement</small>
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="list-wrap">
+                        <a href="#">
+                          <div class="row align-middle">
+                            <div class="shrink columns">
+                              <p class="subheader border text-center mb-0"><b> 9:00AM </b><br>
+                                <small>Sept 7</small>
+                              </p>
+                            </div>
+                            <div class="medium-8 columns">
+                              <span class="h6 mb-0 truncate">Post-Op Visit</span>
+                              <p class="subheader mb-0 truncate">
+                                <small>Total Knee Replacement</small>
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
 
         </div>
 
-        <!--Start of Facility Profile-->
-        <!--<div class="tabs-panel" id="panel2">-->
-
-        <!--<div class="row">-->
-        <!--<div class="large-12 columns">-->
-        <!--<div id="facilityImages" class="owl-carousel">-->
-        <!--<div>-->
-        <!--<img src="../img/slide-precision-spine-center-1.jpg" alt="">-->
-        <!--</div>-->
-        <!--<div>-->
-        <!--<img src="../img/slide-precision-spine-center-2.jpg" alt="">-->
-        <!--</div>-->
-        <!--<div>-->
-        <!--<img src="../img/slide-precision-spine-center-3.png" alt="">-->
-        <!--</div>-->
-        <!--<div>-->
-        <!--<img src="../img/slide-precision-spine-center-4.png" alt="">-->
-        <!--</div>-->
-        <!--<div>-->
-        <!--<img src="../img/slide-precision-spine-center-1.jpg" alt="">-->
-        <!--</div>-->
-        <!--<div>-->
-        <!--<img src="../img/slide-precision-spine-center-2.jpg" alt="">-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-
-        <!--<div class="row">-->
-        <!--<div class="large-4 large-push-8 columns">-->
-
-        <!--<div id="facilitySidebar" data-sticky-container>-->
-
-        <!--<div class="panel">-->
-        <!--<div class="panel-heading">-->
-        <!--<span class="h6">Doctors</span>-->
-        <!--</div>-->
-        <!--<div class="panel-body">-->
-        <!--<div class="media-object">-->
-        <!--<div class="media-object-section logo middle">-->
-        <!--<div class="img-wrapper circle">-->
-        <!--<img src="../img/specialist.png">-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div class="media-object-section middle">-->
-        <!--<span class="h6">Dan Stevens</span>-->
-        <!--<p>-->
-        <!--<small class="subheader">Facility Surgeon</small>-->
-        <!--</p>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div class="media-object">-->
-        <!--<div class="media-object-section logo middle">-->
-        <!--<div class="img-wrapper circle">-->
-        <!--<img src="../img/specialist.png">-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div class="media-object-section middle">-->
-        <!--<span class="h6">Catherine Carter</span>-->
-        <!--<p>-->
-        <!--<small class="subheader">Facility Surgeon</small>-->
-        <!--</p>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div class="media-object">-->
-        <!--<div class="media-object-section logo middle">-->
-        <!--<div class="img-wrapper circle">-->
-        <!--<img src="../img/specialist.png">-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div class="media-object-section middle">-->
-        <!--<span class="h6">Randy Moss</span>-->
-        <!--<p>-->
-        <!--<small class="subheader">Facility Surgeon</small>-->
-        <!--</p>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div class="panel">-->
-        <!--<div class="panel-heading">-->
-        <!--<span class="h6"><i class="fa fa-medkit fa-border success-color"></i>&nbsp; What's Included</span>-->
-        <!--</div>-->
-        <!--<div class="panel-body">-->
-        <!--<div class="grouped-listing row collapse">-->
-        <!--<div class="large-12 columns">-->
-        <!--<ul class="fa-ul">-->
-        <!--<li>Pre-op evaluation</li>-->
-        <!--<li>Pre-op antibiotics as indicate</li>-->
-        <!--<li>Facility surgeon</li>-->
-        <!--<li>Assistant surgeon</li>-->
-        <!--<li>Anesthesia</li>-->
-        <!--<li>Rehabilitation/physical therapy regimen</li>-->
-        <!--<li>Post-op follow-up</li>-->
-        <!--</ul>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-
-        <!--</div>-->
-
-        <!--<div class="large-8 large-pull-4 columns">-->
-
-        <!--<div class="media-object full-table">-->
-        <!--<div class="media-object-section logo middle">-->
-        <!--<div class="img-wrapper">-->
-        <!--<img src="../img/logo-Precision-Spine-Center.png">-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div class="media-object-section middle">-->
-        <!--<span class="h4">Precision Spine Center</span>-->
-        <!--<p class="subheader">-->
-        <!--<small>Millennium Center, 6825 S. Galena Street, Suite 314, Centennial, CO, United States Of-->
-        <!--America-->
-        <!--</small>-->
-        <!--</p>-->
-        <!--</div>-->
-        <!--<div class="media-object-section middle">-->
-        <!--<a href="#" class="button warning small pull-right"><i class="fa fa-print"></i></a>-->
-        <!--</div>-->
-        <!--</div>-->
-
-        <!--<div class="callout mt-2">-->
-        <!--<div class="spk-gain-graph row">-->
-        <!--<div class="small-9 columns">-->
-        <!--<div class="progress mt-0-5" role="progressbar" tabindex="0" aria-valuenow="0" aria-valuemin="0"-->
-        <!--aria-valuetext="100 percent" aria-valuemax="100">-->
-        <!--<div class="progress-meter deductible" style="width: 45%;">-->
-        <!--<p class="progress-meter-text">$2,500</p>-->
-        <!--<p class="deductible-label">Your Deductible</p>-->
-        <!--</div>-->
-        <!--<div class="progress-meter bonus" style="width: 10%;">-->
-        <!--<p class="progress-meter-text">$500</p>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div class="small-3 columns">-->
-        <!--<div class="brick small link text-center expanded">$3,000</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-
-        <!--<hr>-->
-        <!--<div class="row align-bottom">-->
-        <!--<div class="medium-4 columns">-->
-        <!--<small class="success-color">Total Value</small>-->
-        <!--<h3 class="mb-0">$3,000</h3>-->
-        <!--</div>-->
-        <!--<div class="medium-4 columns">-->
-        <!--<h5 class="mb-0">$2,500</h5>-->
-        <!--<small class="subheader">Out-Of-Pocket Expenses Saved</small>-->
-        <!--</div>-->
-        <!--<div class="medium-4 columns">-->
-        <!--<h5 class="mb-0">$500</h5>-->
-        <!--<small class="subheader">Allowance Gained</small>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<hr>-->
-
-        <!--<div class="section-heading mt-2 mb-1">-->
-        <!--<h6 class="subheader"><i class="fa fa-medkit fa-border primary-color"></i> &nbsp;OVERVIEW</h6>-->
-        <!--</div>-->
-        <!--<p>Welcome to Precision Spine Center, a multidisciplinary treatment center of excellence serving Denver-->
-        <!--and the-->
-        <!--Rocky Mountain region. We are pioneers in the use of advanced 3D navigation during surgery to precisely-->
-        <!--target—and effectively treat— a wide variety of spinal disorders.</p>-->
-        <!--<p>Our center is one of a select few centers in the U.S. to consistently use advanced 3D technology to-->
-        <!--address-->
-        <!--spine pathology with laser-guided precision.</p>-->
-        <!--<p><b>Our Philosophy</b></p>-->
-        <!--<p>At Precision Spine Center, surgery is not always the answer to our patient’s spinal issues. Our-->
-        <!--multi-disciplinary approach allows us to explore a variety of treatment options, depending upon the-->
-        <!--severity of-->
-        <!--the patient’s problems and pain.</p>-->
-        <!--<p>We believe that open and timely communication with our patients and our referring physicians is-->
-        <!--critical in-->
-        <!--having an efficient and effective patient care model. In order to understand, we must communicate.</p>-->
-        <!--<p><b>About Our Practice</b></p>-->
-        <!--<p>The professionals at Precision Spine Center represent a multidisciplinary team of spine care experts-->
-        <!--with an-->
-        <!--excellent track record of success in treating a wide variety of spinal disorders. We are one of a very-->
-        <!--few-->
-        <!--centers in the United States to consistently use 3D navigation during surgery, as well as-->
-        <!--computer-assisted-->
-        <!--spine surgery. This advanced technology allows us to accurately treat the affected area without damaging-->
-        <!--healthy-->
-        <!--bone, tissue or nerves, and enables the precise placement of implanted devices to achieve optimal-->
-        <!--outcomes.</p>-->
-        <!--<p>Precision Spine Center takes a truly patient-centric approach to healthcare. Our Physicians take the-->
-        <!--time to-->
-        <!--discuss the details of your medical condition and the various treatment/surgical options that are-->
-        <!--available.-->
-        <!--Precision Spine Center is a place where Physicians listen.</p>-->
-        <!--<p>Spine care is our specialty, our sole focus, our passion. If you’re seeking long-term relief and/or-->
-        <!--optimum-->
-        <!--spine health, we invite you to consult with us.</p>-->
-        <!--<p>When surgical intervention is the best option for your condition, you can be confident that our spine-->
-        <!--surgeons-->
-        <!--are among the region’s most skilled and capable. We employ the latest neurosurgical techniques.</p>-->
-
-        <!--<div class="row">-->
-        <!--<div class="grouped-listing">-->
-        <!--<div class="large-4 columns">-->
-        <!--<h6 class="subheader"><i class="fa fa-trophy fa-border primary-color"></i> AWARDS & ACCREDITATIONS-->
-        <!--</h6>-->
-        <!--</div>-->
-        <!--<div class="large-8 columns">-->
-        <!--<ul>-->
-        <!--<li>-->
-        <!--<div class="media-object">-->
-        <!--<div class="media-object-section logo middle">-->
-        <!--<div class="img-wrapper">-->
-        <!--<img src="../img/logo-Precision-Spine-Center.png">-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div class="media-object-section middle">-->
-        <!--<p class="h6">Medical Tourism Association (MTA) Member</p>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</li>-->
-        <!--<li>-->
-        <!--<div class="media-object">-->
-        <!--<div class="media-object-section logo middle">-->
-        <!--<div class="img-wrapper">-->
-        <!--<img src="../img/logo-Precision-Spine-Center.png">-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div class="media-object-section middle">-->
-        <!--<p class="h6">JCI Accredited since 1950</p>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</li>-->
-        <!--</ul>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-
-        <!--<div class="row">-->
-        <!--<div class="grouped-listing">-->
-        <!--<div class="large-4 columns">-->
-        <!--<h6 class="subheader"><i class="fa fa-gear fa-border success-color"></i> ANCILLARY SERVICES</h6>-->
-        <!--</div>-->
-        <!--<div class="large-8 columns">-->
-        <!--<ul class="fa-ul">-->
-        <!--<li><i class="fa-li fa fa-credit-card"></i>Billing & Insurance Assistance</li>-->
-        <!--<li><i class="fa-li fa fa-tty"></i>Online and Telephone Support</li>-->
-        <!--<li><i class="fa-li fa fa-briefcase"></i>Travel and Accomodation Arrangements</li>-->
-        <!--<li><i class="fa-li fa fa-cutlery"></i>Patient and Visitor Amenities</li>-->
-        <!--<li><i class="fa-li fa fa-hand-spock-o"></i>Language Assistance / Interpreter Services</li>-->
-        <!--</ul>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-
-        <!--</div>-->
-        <!--</div>-->
-
-        <!--</div>-->
-        <!--End of Facility Profile-->
-
         <!--Start of Forms Panel-->
-        <div class="tabs-panel" id="panel3">
+        <div class="tabs-panel" id="panel2">
           <div class="row expanded">
             <div class="auto columns">
               <div class="spoke-list mb-1">
@@ -909,6 +679,120 @@
           </div>
         </div>
         <!--End of Forms Panel-->
+
+        <div class="tabs-panel" id="panel3">
+
+          <div class="page-lead row align-middle">
+            <div class="auto columns">
+              <div class="button-align">
+                <a href="#" class="button success"><i class="fa fa-paperclip"></i>&nbsp; Choose File/s</a>
+              </div>
+            </div>
+          </div>
+          <div class="row align-middle">
+            <div class="auto columns">
+              <div class="callout">
+                <div class="collapse row">
+                  <div class="columns">
+                    <ul class="attachments inline-list">
+                      <li class="file-attachment fa fa-file fa-lg">
+                        <a class="btn-close"><i class="fa fa-trash"></i></a>
+                        <span class="filename has-tip" data-tooltip="svpxo3-tooltip" tabindex="1"
+                              title="Filename goes here." aria-describedby="absade-tooltip"
+                              data-yeti-box="absade-tooltip" data-toggle="absade-tooltip" data-resize="absade-tooltip">Screenshot_Screen_2018-19-823.jpg</span>
+                      </li>
+                      <li class="file-attachment fa fa-file-image fa-lg">
+                        <a class="btn-close"><i class="fa fa-trash"></i></a>
+                        <span class="filename has-tip" data-tooltip="nsq59t-tooltip" tabindex="1"
+                              title="Filename goes here." aria-describedby="qt3lrd-tooltip"
+                              data-yeti-box="qt3lrd-tooltip" data-toggle="qt3lrd-tooltip" data-resize="qt3lrd-tooltip">Screenshot_Screen_2018-19-823.jpg</span>
+                      </li>
+                      <li class="image-attachment fa fa-file-excel fa-lg">
+                        <a class="btn-close"><i class="fa fa-trash"></i></a>
+                        <span class="filename has-tip" data-tooltip="03lazh-tooltip" tabindex="1"
+                              title="Filename goes here." aria-describedby="0mtfkg-tooltip"
+                              data-yeti-box="0mtfkg-tooltip" data-toggle="0mtfkg-tooltip" data-resize="0mtfkg-tooltip">Filename.jpg</span>
+                      </li>
+                      <li class="image-attachment fa fa-file-word fa-lg">
+                        <a class="btn-close"><i class="fa fa-trash"></i></a>
+                        <span class="filename has-tip" data-tooltip="k2h5v6-tooltip" tabindex="1"
+                              title="Filename goes here." aria-describedby="k5z8w5-tooltip"
+                              data-yeti-box="k5z8w5-tooltip" data-toggle="k5z8w5-tooltip" data-resize="k5z8w5-tooltip">Filename.jpg</span>
+                      </li>
+                      <li class="image-attachment fa fa-file-pdf fa-lg">
+                        <a class="btn-close"><i class="fa fa-trash"></i></a>
+                        <span class="filename has-tip" data-tooltip="0g0urd-tooltip" tabindex="1"
+                              title="Filename goes here." aria-describedby="8p147o-tooltip"
+                              data-yeti-box="8p147o-tooltip" data-toggle="8p147o-tooltip" data-resize="8p147o-tooltip">Filename.jpg</span>
+                      </li>
+                      <li class="image-attachment fa fa-file-archive fa-lg">
+                        <a class="btn-close"><i class="fa fa-trash"></i></a>
+                        <span class="filename has-tip" data-tooltip="2buwzs-tooltip" tabindex="1"
+                              title="Filename goes here." aria-describedby="03n569-tooltip"
+                              data-yeti-box="03n569-tooltip" data-toggle="03n569-tooltip" data-resize="03n569-tooltip">Filename.jpg</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="collapse row">
+                  <div class="auto columns">
+                    <div class="submit button-align small mb-0">
+                      <a href="" class="button hollow success">Start Upload</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row expanded">
+            <div class="auto columns">
+              <div class="spoke-list mb-1">
+
+                <div class="spoke-list-heading row expanded align-middle">
+                  <div class="medium-9 columns">
+                    <!--<input type="checkbox" class="mb-0 mr-1" name="">&nbsp-->
+                    <a href="#">Document Name <i class="fa fa-caret-up fa-fw"></i></a>
+                  </div>
+                  <div class="medium-2 columns">
+                    <a href="#">Date Created <i class="fa fa-caret-up fa-fw"></i></a>
+                  </div>
+                  <div class="shrink columns">
+                  </div>
+                </div>
+
+                <div class="spoke-list-item row expanded align-middle" onclick="">
+                  <div class="medium-9 columns">
+                    <div class="row collapse align-middle">
+                      <!--<div class="shrink columns">-->
+                      <!--<input type="checkbox" class="mb-0 mr-1" name="">-->
+                      <!--</div>-->
+                      <div class="columns">
+                        <p class="h6 mb-0"><i class="fa fa-file fa-fw"></i>&nbsp; Original Birth Certificate
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="medium-2 columns">
+                    24 Aug, 2018
+                  </div>
+                  <div class="shrink columns">
+                    <ul class="dropdown menu" data-dropdown-menu>
+                      <li>
+                        <a></a>
+                        <ul class="menu vertical">
+                          <li><a href="#"><i class="fa fa-edit"></i>&nbsp; Edit</a></li>
+                          <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Delete</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
