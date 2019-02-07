@@ -992,7 +992,7 @@ input {
   input {
     display: inline-block;
     background-color: transparent;
-    border: 0px;
+    border: 0;
     // border-bottom: 1px solid;
     padding: .25rem 1rem;
     outline: none;
@@ -1002,7 +1002,7 @@ input {
     &:after {
       position: absolute;
       right: .4rem;
-      top: 0px;
+      top: 0;
       // width: 10px;
       // height: 10px;
       content: "\00D7";
@@ -1020,10 +1020,7 @@ input {
       background-color: darken(#fff, 10%) !important;
       border-radius: 3px;
     }
-
-    &.light {
-
-    }
+    
   }
 }
 

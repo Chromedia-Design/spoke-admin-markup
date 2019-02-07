@@ -875,6 +875,11 @@
       .list-wrap {
         border: none;
       }
+      .border {
+        border: 1px solid rgba($black, $B-dividers);
+        padding: 1rem;
+        border-radius: $global-radius;
+      }
       &.is-active {
         .list-wrap {
           border-radius: $global-radius;
@@ -883,6 +888,9 @@
           .subheader {
             color: $white;
           }
+        }
+        .border {
+          border-color: $white;
         }
       }
     }
