@@ -102,6 +102,26 @@
 	&.full {
 		width: 100%;
 	}
+	&.secondary {
+		border: 1px solid lighten($secondary-color, 25%) !important;
+		background-color: lighten($secondary-color, 25%) !important;
+		color: $white;
+	}
+	&.success {
+		border: 1px solid lighten($success-color, 25%) !important;
+		background-color: lighten($success-color, 25%) !important;
+		color: $white;
+	}
+	&.alert {
+		border: 1px solid lighten($alert-color, 25%) !important;
+		background-color: lighten($alert-color, 25%) !important;
+		color: $white;
+	}
+	&.warning {
+		border: 1px solid lighten($warning-color, 25%) !important;
+		background-color: lighten($warning-color, 25%) !important;
+		color: $white;
+	}
 	// This wrapper is primarily used in the landing page of the employee portal
 	&.landing {
 		background-color: transparent;

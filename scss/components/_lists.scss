@@ -770,6 +770,23 @@
         border: none;
       }
 
+      .img-wrapper {
+        margin: rem-calc(5) rem-calc(5) rem-calc(5) 0;
+        height: 10rem;
+        display: inline-flex;
+        border: 1px solid lighten($secondary-color, 25%);
+        background-color: lighten($secondary-color, 25%);
+        color: $white;
+        font-weight: bold;
+        &.tiny {
+          width: rem-calc(27);
+          height: rem-calc(27);
+          span {
+            font-size: rem-calc(10);
+          }
+        }
+      }
+
       &:hover {
         background: $white;
       }
@@ -809,8 +826,8 @@
       &.alert {
 
         .list-wrap {
-          border: 1px solid rgba($alert-color, $B-dividers);
-          background-color: rgba($alert-color, $B-dividers);
+          border: 1px solid rgba(10,16,35,0.12);
+          background-color: #f9d9dc;
         }
 
         .fancy-checkbox,
