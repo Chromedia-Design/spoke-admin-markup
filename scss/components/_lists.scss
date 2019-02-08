@@ -56,7 +56,6 @@
     position: relative;
     font-family: $body-font-family;
     font-weight: 400;
-    border: 1px solid rgba($black, $B-dividers);
     border-radius: $global-radius;
     margin-bottom: 1rem;
     background: $white;
@@ -88,9 +87,14 @@
       height: 1.325em;
     }
 
+    a {
+      color: $text-black;
+    }
+
     .list-wrap {
       background-color: $white;
       padding: 0.65rem 0.875rem;
+      border: 1px solid rgba($black, $B-dividers);
 
       &.stack-for-small {
         .list-item-image, .list-item-name, .list-detail {
@@ -256,7 +260,9 @@
     }
 
     &.is-active {
-      border: 1px solid $secondary-color;
+      > .list-wrap {
+        border: 1px solid $secondary-color;
+      }
     }
 
     &.call {
@@ -308,6 +314,7 @@
     }
 
     &:last-child {
+      margin-bottom: 0;
       .list-wrap {
         border-bottom-left-radius: $global-radius;
         border-bottom-right-radius: $global-radius;
@@ -755,16 +762,12 @@
 
     > li {
       margin: 0.5rem 0;
-      border: none;
       font-size: rem-calc(14);
 
       .list-wrap {
         border-radius: $global-radius;
-        padding: 0 rem-calc(16);
-
-        > .row {
-          min-height: rem-calc(69);
-        }
+        padding: rem-calc(6) rem-calc(16);
+        border: none;
       }
 
       &:hover {
@@ -862,6 +865,25 @@
 
       &:hover {
         background-color: inherit;
+      }
+    }
+  }
+
+  &.calls-list {
+    > li {
+      margin: 0;
+      .list-wrap {
+        border: none;
+      }
+      &.is-active {
+        .list-wrap {
+          border-radius: $global-radius;
+          background-color: $success-color;
+          > *,
+          .subheader {
+            color: $white;
+          }
+        }
       }
     }
   }
