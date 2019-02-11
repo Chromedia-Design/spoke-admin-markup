@@ -21,7 +21,7 @@
 
 
 
-// Display ----------------------------------------
+// Display --------------------------------------------------------------------------------
 .inline-child * { display: inline; }
 .inline-block { display: inline-block; }
 .disp-block { display: block !important; }
@@ -30,7 +30,7 @@
 .hidden { display: none;}
 
 
-// Margins ----------------------------------------
+// Margins --------------------------------------------------------------------------------
 .marginless {
   margin: 0 !important;
 }
@@ -171,7 +171,7 @@
   margin-bottom: 6rem !important;
 }
 
-// Paddings ----------------------------------------
+// Paddings --------------------------------------------------------------------------------
 .pad0 {
   padding: 0rem !important;
 }
@@ -293,7 +293,7 @@
   padding-top: 0.7rem !important;
 }
 
-// Border ----------------------------------------
+// Border --------------------------------------------------------------------------------
 .b-notop-1 {
   border: solid 0.1rem $primary-light;
   border-top: 0;
@@ -317,7 +317,7 @@
 
 
 .b-bottom-1 {
-  border-bottom: solid 1px #000000 !important;
+  border-bottom: solid .06rem rgba(0,0,0,.06) !important;
 }
 
 .b-bottom-1-darker {
@@ -415,7 +415,7 @@
   }
 }
 
-// Columns for content----------------------------------------
+// Columns for content --------------------------------------------------------------------------------
 .auto-columns-2 {
   column-count: 2;
 }
@@ -424,7 +424,7 @@
   column-count: 3;
 }
 
-// Text Alignment ----------------------------------------
+// Text Alignment --------------------------------------------------------------------------------
 .text-align-left {
   text-align: left;
 }
@@ -433,7 +433,7 @@
   text-align: right;
 }
 
-// Alignment ----------------------------------------
+// Alignment --------------------------------------------------------------------------------
 .center-content {
   text-align: center;
 }
@@ -529,7 +529,7 @@
   overflow-y: scroll;
 }
 
-// miscellaneous ----------------------------------------
+// miscellaneous --------------------------------------------------------------------------------
 
 .hide-overflow { overflow: hidden !important; }
 
@@ -621,7 +621,7 @@
 }
 
 .always-on-top {
-  z-index: 999;
+  z-index: 998;
 }
 
 // Hide buttons in row and show when hovered
@@ -645,34 +645,7 @@
 
 .tiny {
 	font-size: 0.6875rem !important;
-  cursor: pointer;
-}
-
-$pain1: #229a22;
-$pain2: #03c03c;
-$pain3: #feff1b;
-$pain4: #f29100;
-$pain5: #890400;
-.pain-intensity {
-	@extend .bg-black20;
-	.pain-meter {
-		
-		&.pain1{ //0-2
-			background-image: linear-gradient(to right, $pain1);
-		}
-		&.pain2{ //3-4
-			background-image: linear-gradient(to right, $pain1, $pain2);
-		}
-		&.pain3{ //5-6
-			background-image: linear-gradient(to right, $pain1, $pain2, $pain3);
-		}
-		&.pain4{ //7-8
-			background-image: linear-gradient(to right, $pain1, $pain2, $pain3, $pain4);
-		}
-		&.pain5{ //9-10
-			background-image: linear-gradient(to right, $pain1, $pain2, $pain3, $pain4, $pain5);
-		}
-	}
+	cursor: pointer;
 }
 
 .pull-right {
