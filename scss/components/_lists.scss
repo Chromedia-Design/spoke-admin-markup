@@ -1952,22 +1952,41 @@ ul.vertical-list {
       }
     }
 
-    .timeline-hidden-content > div {
-      padding-left: 0px;
-      margin-left: 1.55rem;
-      border-left: $line-size solid $success-color;
-      position: relative;
-      &:after {
-        content: "";
-        background-color: $success-color;
-        
-        position: absolute;
-        bottom: -3px;
-        left: -2px;
+    .timeline-hidden-content {
+      & > div {
+        padding-left: 0px;
+        margin-left: 1.55rem;
+        border-left: $line-size solid $success-color;
+        position: relative;
+        &:after {
+          content: "";
+          background-color: $success-color;
+          
+          position: absolute;
+          bottom: -3px;
+          left: -2px;
 
-        width: $line-size;
-        height: 10px;
+          width: $line-size;
+          height: 10px;
+        }
+      }
+      .timeline-hidden-item {
+        .timeline-hidden-item-head {
+          position: relative;
+          &:before {
+            content:" ";
+            background-color: $success-color;
+            border-radius: 5rem;
+            overflow: hidden;
 
+            position: absolute;
+            left: -1.87rem;
+            top: .45rem;
+
+            width: 12px;
+            height: 12px;
+          }
+        }
       }
     }
 
@@ -1976,10 +1995,19 @@ ul.vertical-list {
       &:before, &:after {
         background-color: $warning-color;
       }
-      .timeline-hidden-content > div {
-        border-left: $line-size solid $warning-color;
-        &:after {
-          background-color: $warning-color;
+      .timeline-hidden-content { 
+        & > div {
+          border-left: $line-size solid $warning-color;
+          &:after {
+            background-color: $warning-color;
+          }
+        }
+        .timeline-hidden-item {
+          .timeline-hidden-item-head {
+            &:before {
+              background-color: $warning-color;
+            }
+          }
         }
       }
     }
@@ -1987,10 +2015,19 @@ ul.vertical-list {
       &:before, &:after {
         background-color: darken(#fff, 20%);
       }
-      .timeline-hidden-content > div {
-        border-left: $line-size solid darken(#fff, 20%);
-        &:after {
-          background-color: darken(#fff, 20%);
+      .timeline-hidden-content {
+        & > div {
+          border-left: $line-size solid darken(#fff, 20%);
+          &:after {
+            background-color: darken(#fff, 20%);
+          }
+        }
+        .timeline-hidden-item {
+          .timeline-hidden-item-head {
+            &:before {
+              background-color: darken(#fff, 20%);
+            }
+          }
         }
       }
     }
