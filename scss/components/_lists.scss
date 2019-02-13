@@ -1808,22 +1808,24 @@ ul.vertical-list {
       box-shadow: none;
     }
 
-    &:after {
+    &:before, &:after {
       content: "";
-      width: 1px;
-      height: 17px;
       background-color: $treeline-color;
       position: absolute;
+    }
+
+    &:after {
+      width: 1px;
+      height: 17px;
+      
       top: -7px;
       left: -1px;
     }
 
     &:before {
-      content: "";
       width: 10px;
       height: 1px;
-      background-color: $treeline-color;
-      position: absolute;
+
       top: .6rem;
       left: -1px;
     }
@@ -1934,7 +1936,6 @@ ul.vertical-list {
         &:after {
           height: 0 !important;
         }
-
       }
 
       &:after {
@@ -1995,3 +1996,142 @@ ul.vertical-list {
     }
   }
 }
+
+
+.timeline {
+  $line-size: 2px;
+  .timeline-connector {
+    position: relative;
+    &:before, &:after {
+      content:" ";
+      background-color: $success-color;
+
+      position: absolute;
+      left: 30px;
+
+      width: $line-size;
+    }
+    &:before {
+      top: 0px;
+      height: 15px;
+    }
+    &:after {
+      top: 37px;
+      height: 18px;
+    }
+
+    &:first-child {
+      &:before {
+        content: none;
+      }
+    }
+
+    .timeline-hidden-content {
+      & > div {
+        padding-left: 0px;
+        margin-left: 1.85rem;
+        border-left: $line-size solid $success-color;
+        position: relative;
+        &:after {
+          content: "";
+          background-color: $success-color;
+          
+          position: absolute;
+          bottom: -3px;
+          left: -2px;
+
+          width: $line-size;
+          height: 10px;
+        }
+      }
+      .timeline-hidden-item {
+        padding-left: 1.5rem !important;
+        .timeline-hidden-item-head {
+          position: relative;
+          &:before {
+            content:" ";
+            background-color: $success-color;
+            border-radius: 5rem;
+            overflow: hidden;
+
+            position: absolute;
+            left: -2.85rem;
+            top: .45rem;
+
+            width: 12px;
+            height: 12px;
+          }
+          &:after {
+            content:" ";
+            background-color: $success-color;
+
+            position: absolute;
+            left: -2.1rem;
+            top: .8rem;
+
+            width: 1rem;
+            height: 2px;
+          }
+        }
+      }
+    }
+
+
+    &.timeline-ongoing {
+      &:before, &:after {
+        background-color: $warning-color;
+      }
+      .timeline-hidden-content { 
+        & > div {
+          border-left: $line-size solid $warning-color;
+          &:after {
+            background-color: $warning-color;
+          }
+        }
+        .timeline-hidden-item {
+          .timeline-hidden-item-head {
+            &:before, &:after {
+              background-color: $warning-color;
+            }
+          }
+        }
+      }
+    }
+    &.timeline-waiting {
+      &:before, &:after {
+        background-color: darken(#fff, 20%);
+      }
+      .timeline-hidden-content {
+        & > div {
+          border-left: $line-size solid darken(#fff, 20%);
+          &:after {
+            background-color: darken(#fff, 20%);
+          }
+        }
+        .timeline-hidden-item {
+          .timeline-hidden-item-head {
+            &:before, &:after {
+              background-color: darken(#fff, 20%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

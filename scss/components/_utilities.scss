@@ -1,3 +1,5 @@
+
+
 .stick-to-top {
   position: sticky;
   top: 0;
@@ -462,6 +464,9 @@
 
 // Color ----------------------------------------
 // Background-color
+.bg-note { background-color: $note !important; }
+.bg-note-darken { background-color: darken($note, 40%) !important; }
+
 .bg-light { background: #eef0f3 !important; }
 
 .bg-none { background-color: transparent !important; }
@@ -488,12 +493,10 @@
 .bg-black10 { background-color: darken(#fff, 3%) !important; }
 .bg-black20 { background-color: darken(#fff, 6%) !important; }
 
-// status color
-.bg-note { background-color: #FFFFA5; }
-
 
 // Text color
-.clr-note { color: #FFFFA5; }
+.clr-note { color: $note !important; }
+.clr-note-darken { color: darken($note, 40%) !important; }
 
 .clr-white { color: $white !important; }
 
@@ -660,5 +663,11 @@
 	}
 }
 
+
+.striped {
+	> :nth-child(even) {
+		background-color: darken(#fff, 3%) !important;
+	}
+}
 
 
