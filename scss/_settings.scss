@@ -66,6 +66,8 @@ $off-white:        #F4F4F4;
 $background-white: #F1F4F5;
 $primary-light:    #FBFBFB;
 
+$note:             #FFFFA5;
+
 // * Opacity change/add per project requirements | these defaults help with many elements on the project
 // * Text Opacity refers to the opacity of Black or White text in the project.
 // Black
@@ -85,12 +87,12 @@ $text-black:        rgba($black, $B-text) !default;
 // * Element Opacity refers to the opacity of Black or White elements in the project
 // * these variables need to be changed/added per project, since they are relative to context
 // Black
-$B-dividers:        0.12 !default;
+$B-dividers:        0.03125 !default;
 $B-disabled:        0.26 !default;
 $B-icons:           0.54 !default;
 
 // White
-$W-dividers:        0.12 !default;
+$W-dividers:        0.03125 !default;
 $W-disabled:        0.30 !default;
 $W-icons:           1.00 !default;
 

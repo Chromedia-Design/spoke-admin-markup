@@ -17,7 +17,7 @@
 	&.small {
 		margin: 0 0 0 0rem;
 		padding: 0.5rem .75rem;
-		border-radius: 8px;
+		border-radius: 8px 0 8px 8px;
 		min-width: rem-calc(224);
 		.talktext {
 			> * {
@@ -36,18 +36,18 @@
 		// 	border: 8px solid;
 		// 	border-color: $secondary-color $secondary-color transparent transparent;
 		// }
-		// &.tri-right.border.right-in:before {
-		// 	right: -20px;
-		// 	top: 15px;
-		// 	border: 10px solid;
-		// 	border-color: $secondary-color transparent transparent $secondary-color;
-		// }
-		// &.tri-right.right-in:after {
-		// 	right: -15px;
-		// 	top: 17px;
-		// 	border: 8px solid;
-		// 	border-color: $secondary-color transparent transparent $secondary-color;
-		// }
+		 &.tri-right.border.right-in:before {
+		 	right: -20px;
+		 	top: -2px;
+		 	border: 10px solid;
+		 	border-color: $secondary-color transparent transparent $secondary-color;
+		 }
+		 &.tri-right.right-in:after {
+		 	right: -15px;
+		 	top: 0;
+		 	border: 8px solid;
+		 	border-color: $secondary-color transparent transparent $secondary-color;
+		 }
 	}
 	// This is for the owner's dialog box
 	&.white-bg {
@@ -55,13 +55,13 @@
 		border: 1px solid $light-gray;
 		&.tri-right.border.right-in:before {
 			right: -20px;
-			top: 15px;
+			top: -1px;
 			border: 10px solid;
 			border-color: $light-gray transparent transparent $light-gray;
 		}
 		&.tri-right.right-in:after {
 			right: -17px;
-			top: 16px;
+			top: 0;
 			border: 9px solid;
 			border-color: $white transparent transparent $white;
 		}
@@ -90,13 +90,13 @@
 		border: 1px solid $success-color;
 		&.tri-right.border.right-in:before {
 			right: -20px;
-			top: 15px;
+			top: -1px;
 			border: 10px solid;
 			border-color: $success-color transparent transparent $success-color;
 		}
 		&.tri-right.right-in:after {
 			right: -17px;
-			top: 16px;
+			top: 0;
 			border: 9px solid;
 			border-color: $success-color transparent transparent $success-color;
 		}
@@ -115,13 +115,13 @@
 		border: 1px solid $alert-color;
 		&.tri-right.border.right-in:before {
 			right: -20px;
-			top: 15px;
+			top: -1px;
 			border: 10px solid;
 			border-color: $alert-color transparent transparent $alert-color;
 		}
 		&.tri-right.right-in:after {
 			right: -17px;
-			top: 16px;
+			top: 0;
 			border: 9px solid;
 			border-color: $alert-color transparent transparent $alert-color;
 		}
@@ -284,30 +284,30 @@
 // }
 
 /* Right triangle, right side slightly down*/
-// .tri-right.border.right-in:before {
-// 	content: ' ';
-// 	position: absolute;
-// 	width: 0;
-// 	height: 0;
-//     left: auto;
-// 	right: -2.5rem;
-//     top: 20px;
-// 	bottom: auto;
-// 	border: 20px solid;
-// 	border-color: $secondary-color transparent transparent $secondary-color;
-// }
-// .tri-right.right-in:after{
-// 	content: ' ';
-// 	position: absolute;
-// 	width: 0;
-// 	height: 0;
-//     left: auto;
-// 	right: -35px;
-//     top: 22px;
-// 	bottom: auto;
-// 	border: 20px solid;
-// 	border-color: $secondary-color transparent transparent $secondary-color;
-// }
+ .tri-right.border.right-in:before {
+ 	content: ' ';
+ 	position: absolute;
+ 	width: 0;
+ 	height: 0;
+     left: auto;
+ 	right: -2.5rem;
+     top: -2px;
+ 	bottom: auto;
+ 	border: 20px solid;
+ 	border-color: $secondary-color transparent transparent $secondary-color;
+ }
+ .tri-right.right-in:after{
+ 	content: ' ';
+ 	position: absolute;
+ 	width: 0;
+ 	height: 0;
+     left: auto;
+ 	right: -35px;
+     top: 0;
+ 	bottom: auto;
+ 	border: 20px solid;
+ 	border-color: $secondary-color transparent transparent $secondary-color;
+ }
 
 #chat-tabs {
 	margin-bottom: 0;
