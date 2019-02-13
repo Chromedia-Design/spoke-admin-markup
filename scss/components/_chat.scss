@@ -1127,6 +1127,16 @@ $main-color: #1ebd44;
 	}
 }
 
+#chat-sidebar {
+	position: fixed;
+	width: 280px;
+	height: 4rem;
+	max-width: 280px;
+	bottom: 45px;
+	right: 5rem;
+	z-index: 9;
+	// background-color: red;
+}
 
 
 
