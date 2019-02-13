@@ -1933,7 +1933,7 @@ ul.vertical-list {
       background-color: $success-color;
 
       position: absolute;
-      left: 25px;
+      left: 30px;
 
       width: $line-size;
     }
@@ -1942,8 +1942,8 @@ ul.vertical-list {
       height: 15px;
     }
     &:after {
-      top: 32px;
-      height: 17px;
+      top: 37px;
+      height: 18px;
     }
 
     &:first-child {
@@ -1955,7 +1955,7 @@ ul.vertical-list {
     .timeline-hidden-content {
       & > div {
         padding-left: 0px;
-        margin-left: 1.55rem;
+        margin-left: 1.85rem;
         border-left: $line-size solid $success-color;
         position: relative;
         &:after {
@@ -1971,6 +1971,7 @@ ul.vertical-list {
         }
       }
       .timeline-hidden-item {
+        padding-left: 1.5rem !important;
         .timeline-hidden-item-head {
           position: relative;
           &:before {
@@ -1980,7 +1981,7 @@ ul.vertical-list {
             overflow: hidden;
 
             position: absolute;
-            left: -1.87rem;
+            left: -2.85rem;
             top: .45rem;
 
             width: 12px;
@@ -1991,7 +1992,7 @@ ul.vertical-list {
             background-color: $success-color;
 
             position: absolute;
-            left: -1.5rem;
+            left: -2.1rem;
             top: .8rem;
 
             width: 1rem;
