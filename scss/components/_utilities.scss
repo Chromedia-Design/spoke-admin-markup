@@ -670,4 +670,10 @@
 	}
 }
 
+.striped-light {
+  > :nth-child(even) {
+    background-color: #fff !important;
+  }
+}
+
 

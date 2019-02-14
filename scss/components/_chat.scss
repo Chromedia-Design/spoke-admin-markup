@@ -991,10 +991,10 @@ $main-color: #1ebd44;
 
 #chat-question-preview {
 	bottom: 1.5rem;
-	right: 6rem;
+	right: 5.5rem;
 	width: 3rem;
 	height: 3rem;
-	// border: 1px solid #323232;
+	z-index: 998;
 	background: $primary-color !important;
 	i {
 		font-size: 1.5rem;
