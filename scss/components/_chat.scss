@@ -956,32 +956,49 @@ $light-gray-hex: #CBCFD3;
 
 $main-color: #1ebd44;
 
+#chat-toggle, #chat-question-preview {
+	position: fixed;
+	border-radius: 50%;
+	box-shadow: 0 5px 40px rgba(0, 0, 0, .16) !important;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 999;
+
+	text-align: center;
+	background: $success-color; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, $success-color 0%, #30de59 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, $success-color 0%, #30de59 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, $success-color 0%, #30de59 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	// filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$success-color', endColorstr='#30de59', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+
+	i {
+		font-size: 2rem;
+		margin-top: 0;
+		color: $white;
+		transition: all ease-in-out 0.2s;
+	}
+}
+
 #chat-toggle {
-  position: fixed;
   bottom: 1rem;
   right: 1rem;
   width: 4rem;
   height: 4rem;
   // border: 1px solid #323232;
-  border-radius: 50%;
-  box-shadow: 0 5px 40px rgba(0, 0, 0, .16) !important;
-  text-align: center;
-  background: #1ebd44; /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #1ebd44 0%, #30de59 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #1ebd44 0%, #30de59 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #1ebd44 0%, #30de59 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1ebd44', endColorstr='#30de59', GradientType=1); /* IE6-9 fallback on horizontal gradient */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
+}
 
-  i {
-    font-size: 2rem;
-    margin-top: 0;
-    color: $white;
-    transition: all ease-in-out 0.2s;
-  }
+#chat-question-preview {
+	bottom: 1.5rem;
+	right: 6rem;
+	width: 3rem;
+	height: 3rem;
+	// border: 1px solid #323232;
+	background: $primary-color !important;
+	i {
+		font-size: 1.5rem;
+	}
 }
 
 #chat-notification {
@@ -1279,16 +1296,7 @@ $main-color: #1ebd44;
   }
 }
 
-#chat-sidebar {
-	position: fixed;
-	width: 280px;
-	height: 4rem;
-	max-width: 280px;
-	bottom: 45px;
-	right: 5rem;
-	z-index: 9;
-	// background-color: red;
-}
+
 
 
 
