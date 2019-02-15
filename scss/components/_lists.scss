@@ -2124,6 +2124,8 @@ ul.vertical-list {
     }
 
     &.timeline-ongoing {
+      @extend .bg-black20;
+      // background-color: lighten($primary-color, 65%);
       &:before {
         background-color: $warning-color;
         // background-image: linear-gradient($success-color, $warning-color);
