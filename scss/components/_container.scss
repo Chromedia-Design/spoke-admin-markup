@@ -390,6 +390,10 @@
   display: block !important;
   border-radius: $global-radius;
 
+  &.favorite {
+    border: 1px solid $success-color !important;
+  }
+
   .name {
     font-family: $body-font-family;
     margin-bottom: 0;
