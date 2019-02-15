@@ -2060,28 +2060,60 @@ ul.vertical-list {
         .timeline-hidden-item-head {
           position: relative;
           &:before {
-            content:" ";
-            background-color: $success-color;
+            // content:" ";
+            // background-color: $success-color;
+            // border-radius: 5rem;
+            // overflow: hidden;
+
+            // position: absolute;
+            // left: -2.85rem;
+            // top: .45rem;
+
+            // width: 12px;
+            // height: 12px;
+
+            content: "\f0f3";
+            background-color: #ffffff;
             border-radius: 5rem;
             overflow: hidden;
-
             position: absolute;
-            left: -2.85rem;
-            top: .45rem;
-
-            width: 12px;
-            height: 12px;
+            left: -3.3rem;
+            top: 0rem;
+            width: 27px;
+            height: 27px;
+            font-family: "Font Awesome 5 Free";
+            padding-left: .3rem;
+            border: 2px solid $success-color;
+            color: $success-color;
           }
           &:after {
             content:" ";
             background-color: $success-color;
 
             position: absolute;
-            left: -2.1rem;
+            // left: -2.1rem;
+            left: -1.6rem;
             top: .8rem;
 
             width: 1rem;
             height: $line-size;
+          }
+
+          &.item-tasks {
+            &:before {
+              content: "\f0ae" !important;
+              font-size: .85rem !important;
+              padding-top: .1rem !important;
+            }
+          }
+          &.item-message {}
+          &.item-todo {}
+          &.item-question {
+            &:before {
+              content: "\f46d" !important;
+              // padding-top: .1rem !important;
+              padding-left: .36rem !important;
+            }
           }
         }
 
@@ -2113,7 +2145,11 @@ ul.vertical-list {
         }
         .timeline-hidden-item {
           .timeline-hidden-item-head {
-            &:before, &:after {
+            &:before {
+              border: $line-size solid $warning-color;
+              color: $warning-color;
+            }
+            &:after {
               background-color: $warning-color;
             }
           }
@@ -2139,7 +2175,14 @@ ul.vertical-list {
         }
         .timeline-hidden-item {
           .timeline-hidden-item-head {
-            &:before, &:after {
+            // &:before, &:after {
+            //   background-color: darken(#fff, 20%);
+            // }
+            &:before {
+              border: $line-size solid darken(#fff, 20%);
+              color: darken(#fff, 20%);
+            }
+            &:after {
               background-color: darken(#fff, 20%);
             }
           }
