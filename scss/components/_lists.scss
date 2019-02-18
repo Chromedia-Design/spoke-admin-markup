@@ -802,6 +802,10 @@
         }
       }
 
+      .preamble {
+        margin: 0;
+      }
+
       &.warning {
         .fancy-checkbox,
         .fancy-radio {
@@ -1190,7 +1194,7 @@ ul.vertical-list {
 
 .activity-listing {
   position: relative;
-  padding-left: 39px;
+  padding-left: rem-calc(39);
 
   &:before {
     position: absolute;
@@ -1315,6 +1319,76 @@ ul.vertical-list {
         height: 2px;
         margin: auto 0;
         background: rgba($black, $B-dividers);
+      }
+    }
+  }
+
+  &.custom-marked {
+    &:before {
+      display: none;
+    }
+    .listing-title {
+      position: relative;
+      color: $text-black;
+      font-weight: normal;
+      &:before {
+        display: none;
+      }
+      &:after {
+        display: none;
+      }
+      .badge {
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: rem-calc(33);
+        width: rem-calc(33);
+        margin: auto 0;
+        top: 0;
+        bottom: 0;
+        left: rem-calc(-40);
+        vertical-align: middle;
+        text-align: center;
+        font-weight: bold;
+        color: $primary-color;
+        background: lighten($primary-color, 57%);
+        &.secondary {
+          color: $secondary-color;
+          background: lighten($secondary-color, 57%);
+        }
+        &.success {
+          color: $success-color;
+          background: lighten($success-color, 57%);
+        }
+        &.warning {
+          color: $warning-color;
+          background: lighten($warning-color, 57%);
+        }
+        &.alert {
+          color: $alert-color;
+          background: lighten($alert-color, 45%);
+        }
+      }
+    }
+    .well-list {
+      position: relative;
+      &:before {
+        position: absolute;
+        top: rem-calc(-25);
+        bottom: rem-calc(-25);
+        left: rem-calc(-25);
+        display: block;
+        width: 2px;
+        content: "";
+        background-color: rgba($black, $B-dividers);
+        z-index: 0;
+      }
+      &:last-child {
+        &:before {
+          display: none;
+        }
       }
     }
   }
@@ -1926,36 +2000,47 @@ ul.vertical-list {
 
 .timeline {
   $line-size: 2px;
-  .timeline-connector {
+  $line-pos-x: 30px;
+  .timeline-item {
     position: relative;
     &:before, &:after {
       content:" ";
       background-color: $success-color;
 
       position: absolute;
-      left: 30px;
+      left: $line-pos-x;
 
       width: $line-size;
     }
     &:before {
       top: 0px;
-      height: 15px;
+      height: 13px;
     }
     &:after {
       top: 37px;
       height: 18px;
     }
-
     &:first-child {
       &:before {
         content: none;
       }
     }
 
+    .timeline-content {
+      padding-left: 1rem;
+      &:before {
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900;
+        font-size: 2rem; 
+        content: "\f058";
+        color: $success-color;
+      }
+    }
+
     .timeline-hidden-content {
       & > div {
         padding-left: 0px;
-        margin-left: 1.85rem;
+        margin-left: $line-pos-x;
         border-left: $line-size solid $success-color;
         position: relative;
         &:after {
@@ -1964,7 +2049,7 @@ ul.vertical-list {
           
           position: absolute;
           bottom: -3px;
-          left: -2px;
+          left: $line-pos-x - $line-pos-x - 2px;
 
           width: $line-size;
           height: 10px;
@@ -1975,37 +2060,83 @@ ul.vertical-list {
         .timeline-hidden-item-head {
           position: relative;
           &:before {
-            content:" ";
-            background-color: $success-color;
+            // content:" ";
+            // background-color: $success-color;
+            // border-radius: 5rem;
+            // overflow: hidden;
+
+            // position: absolute;
+            // left: -2.85rem;
+            // top: .45rem;
+
+            // width: 12px;
+            // height: 12px;
+
+            content: "\f0f3";
+            background-color: #ffffff;
             border-radius: 5rem;
             overflow: hidden;
-
             position: absolute;
-            left: -2.85rem;
-            top: .45rem;
-
-            width: 12px;
-            height: 12px;
+            left: -3.3rem;
+            top: 0rem;
+            width: 27px;
+            height: 27px;
+            font-family: "Font Awesome 5 Free";
+            padding-left: .3rem;
+            border: 2px solid $success-color;
+            color: $success-color;
           }
           &:after {
             content:" ";
             background-color: $success-color;
 
             position: absolute;
-            left: -2.1rem;
+            // left: -2.1rem;
+            left: -1.6rem;
             top: .8rem;
 
             width: 1rem;
-            height: 2px;
+            height: $line-size;
           }
+
+          &.item-tasks {
+            &:before {
+              content: "\f0ae" !important;
+              font-size: .85rem !important;
+              padding-top: .1rem !important;
+            }
+          }
+          &.item-message {}
+          &.item-todo {}
+          &.item-question {
+            &:before {
+              content: "\f46d" !important;
+              // padding-top: .1rem !important;
+              padding-left: .36rem !important;
+            }
+          }
+        }
+
+        &:last-child {
+          background-color: red;
         }
       }
     }
 
-
     &.timeline-ongoing {
-      &:before, &:after {
+      @extend .bg-black20;
+      // background-color: lighten($primary-color, 65%);
+      &:before {
         background-color: $warning-color;
+        // background-image: linear-gradient($success-color, $warning-color);
+      }
+      &:after {
+        background-color: $warning-color;
+      }
+      .timeline-content {
+        &:before {
+          color: $warning-color;
+        }
       }
       .timeline-hidden-content { 
         & > div {
@@ -2016,16 +2147,26 @@ ul.vertical-list {
         }
         .timeline-hidden-item {
           .timeline-hidden-item-head {
-            &:before, &:after {
+            &:before {
+              border: $line-size solid $warning-color;
+              color: $warning-color;
+            }
+            &:after {
               background-color: $warning-color;
             }
           }
         }
       }
     }
+
     &.timeline-waiting {
       &:before, &:after {
         background-color: darken(#fff, 20%);
+      }
+      .timeline-content {
+        &:before {
+          color: darken(#fff, 20%);
+        }
       }
       .timeline-hidden-content {
         & > div {
@@ -2036,13 +2177,64 @@ ul.vertical-list {
         }
         .timeline-hidden-item {
           .timeline-hidden-item-head {
-            &:before, &:after {
+            // &:before, &:after {
+            //   background-color: darken(#fff, 20%);
+            // }
+            &:before {
+              border: $line-size solid darken(#fff, 20%);
+              color: darken(#fff, 20%);
+            }
+            &:after {
               background-color: darken(#fff, 20%);
             }
           }
         }
       }
     }
+
+    &:last-child {
+      .timeline-hidden-content {
+        & > div {
+          border-left: 0px !important;
+          &:before {
+            content:" ";
+            background-color: $success-color;
+
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            width: $line-size;
+            height: 30px;
+          }
+          &:after {
+            content: none !important;
+          }
+        }
+      }
+      &.timeline-ongoing {
+
+        .timeline-hidden-content {
+          & > div {
+            &:before {
+              background-color: $warning-color;
+            }
+          }
+        }
+      }
+
+      &.timeline-waiting {
+        
+        .timeline-hidden-content {
+          & > div {
+            &:before {
+              background-color: darken(#fff, 20%);
+            }
+          }
+        }
+      }
+    }
+
   }
 }
 

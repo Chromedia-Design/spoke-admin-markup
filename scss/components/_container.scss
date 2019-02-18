@@ -6,48 +6,47 @@
   max-height: 100vh !important;
 
   grid-template-rows: 83px auto;
+
   .full-page-header {
-    margin: 0px !important;
+    margin: 0 !important;
   }
+
   .full-page-body {
-    margin: 0px !important;
+    margin: 0 !important;
     overflow: hidden;
-    
+
     &.full-page-body-scrollable {
       overflow-y: scroll;
+
       &::-webkit-scrollbar {
         display: none;
       }
-      &::-moz-scrollbar {
-        display: none;
-      }
     }
+
     .full-page-body-sidebar {
       padding: 1rem;
       height: 100%;
       overflow: hidden;
       overflow-y: scroll;
+
       &::-webkit-scrollbar {
-        display: none;
-      }
-      &::-moz-scrollbar {
         display: none;
       }
     }
+
     .full-page-body-content {
-      padding:1rem;
+      padding: 1rem;
       height: 100%;
       overflow: hidden;
       overflow-y: scroll;
+
       &::-webkit-scrollbar {
-        display: none;
-      }
-      &::-moz-scrollbar {
         display: none;
       }
     }
   }
 }
+
 // Apply to full page ----------
 
 .card {
@@ -84,13 +83,16 @@
   height: auto;
   position: relative;
   transition: all 0.2s ease-in-out;
+
   &.empty {
     background-color: transparent;
     border-radius: $global-radius;
     border: 1px dashed rgba($black, $B-dividers);
+
     .img-card-head {
       padding: 53%;
       background-color: transparent;
+
       > .text-placeholder {
         position: absolute;
         z-index: 1;
@@ -103,11 +105,13 @@
       }
     }
   }
+
   &:hover {
     position: relative;
     // transform: translate(-1px, -1px);
     box-shadow: 2px 2px 10px 2px rgba($black, $B-dividers);
   }
+
   .img-card-head {
     position: relative;
     // height: 55%;
@@ -115,6 +119,7 @@
     background-color: $text-black;
     border-top-left-radius: $global-radius;
     border-top-right-radius: $global-radius;
+
     > img {
       position: absolute;
       z-index: 0;
@@ -126,23 +131,28 @@
       bottom: 0;
       object-fit: cover;
     }
+
     .header, .footer {
       position: absolute;
       z-index: 2;
       width: 100%;
       padding: 0.5rem;
       background-color: rgba($black, $B-hinttext);
+
       .button {
         margin: 0;
       }
 
     }
+
     .header {
       top: 0;
       background-color: transparent;
     }
+
     .footer {
       bottom: 0;
+
       .label-text {
         color: $white;
         font-size: 0.875rem;
@@ -150,6 +160,7 @@
         text-transform: uppercase;
       }
     }
+
     .story-card {
       position: absolute;
       left: 0;
@@ -158,6 +169,7 @@
       background-color: $secondary-color;
       display: inline-block;
       font-family: $body-font-family;
+
       &:after {
         position: absolute;
         content: "";
@@ -168,6 +180,7 @@
         border-top: 50px solid $secondary-color;
         border-right: 15px solid transparent;
       }
+
       h1,
       h2,
       h3,
@@ -180,29 +193,36 @@
         margin: 0;
         color: $white;
       }
+
       p small {
         font-size: 60%;
         line-height: 1em;
       }
     }
+
     .mpirica-graph {
       border: none;
       padding: 55px 15px 15px;
     }
   }
+
   .img-card-body {
     position: relative;
+
     .img-card-body-section {
       padding: 0.25rem 0.875rem;
       border-bottom: 1px solid rgba($black, $B-dividers);
+
       &:first-child {
         padding-top: 0.65rem;
       }
+
       &:last-child {
         padding-bottom: 0.65rem;
         border-bottom: none;
       }
     }
+
     h1,
     h2,
     h3,
@@ -213,35 +233,43 @@
       font-family: $body-font-family;
       margin-bottom: 0;
     }
+
     p,
     span,
     small {
       color: $text-black;
       margin-bottom: 0;
+
       > small {
         color: inherit;
         font-size: 0.875rem;
       }
+
       &.subheader {
         margin: 0;
         color: rgba($black, $B-subtext);
       }
     }
+
     span.h6 {
       display: inline-block;
       margin-top: 0.5rem;
       color: $text-black;
     }
+
     .button {
       margin: 0;
     }
+
     a {
       color: $text-black;
     }
+
     .media-object {
       position: relative;
       margin: 0;
       padding: 0.25rem 0;
+
       .media-object-section {
         h1,
         h2,
@@ -255,19 +283,23 @@
           white-space: nowrap;
           text-overflow: ellipsis;
           width: 100%;
+
           > small {
             font-size: 0.875rem;
           }
         }
+
         &.logo {
           flex: 0 1 auto;
           width: 20%;
+
           &.tiny {
             width: 10%;
           }
         }
       }
     }
+
     .inline-list {
       > li {
         display: inline-block;
@@ -281,6 +313,7 @@
       }
     }
   }
+
   &.large {
     height: 32rem;
   }
@@ -290,6 +323,7 @@
   @extend .card;
   margin: 0.5rem 0;
   padding: rem-calc(12px);
+
   .img-wrapper {
     position: relative;
     display: flex;
@@ -298,12 +332,14 @@
     height: 80px;
     border-radius: 50%;
     overflow: hidden;
+
     > img {
       width: 100%;
       height: auto;
       display: inline-block;
     }
   }
+
   .person-info {
     .info-name, .info-position, .info-email, .info-phone {
       width: 100%;
@@ -312,22 +348,27 @@
       text-overflow: ellipsis;
       margin-bottom: 0;
     }
+
     .info-name {
       font-family: $body-font-family;
     }
+
     .info-email, .info-phone {
       color: $primary-color;
       font-size: 0.75rem;
     }
+
     .info-position {
       font-size: 0.75rem;
     }
   }
+
   .person-action {
     .button {
       margin-bottom: 0;
     }
   }
+
   &.media-object.full-table {
     //Section widths
     .logo {
@@ -336,6 +377,7 @@
       flex: 0 1 auto;
     }
   }
+
   .media-object {
     margin: 0;
   }
@@ -347,12 +389,18 @@
   margin: 0 0 5px;
   display: block !important;
   border-radius: $global-radius;
+
+  &.favorite {
+    border: 1px solid $success-color !important;
+  }
+
   .name {
     font-family: $body-font-family;
     margin-bottom: 0;
     color: $text-black;
     word-break: break-word;
   }
+
   .contact,
   .address {
     font-family: $body-font-family;
@@ -360,19 +408,23 @@
     color: rgba($black, $B-subtext);
     margin-bottom: 0;
   }
+
   .package-count {
     p {
       font-size: 0.75rem;
       margin-bottom: 0;
     }
   }
+
   .button {
     margin-bottom: 0;
   }
+
   &:hover {
     box-shadow: 0 4px 25px rgba($black, $B-dividers);
     transition: all 0.5s ease;
   }
+
   &.selected {
     background: rgba($success-color, $B-dividers);
     border-color: rgba($success-color, $B-hinttext);
@@ -408,6 +460,7 @@
   padding: 1rem;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+
   .h1,
   .h2,
   .h3,
@@ -417,9 +470,11 @@
     font-family: $body-font-family;
     margin-right: 1rem;
   }
+
   > label {
     color: rgba($white, $W-text) !important;
   }
+
   input {
     border: 1px solid rgba($black, $B-dividers) !important;
   }
@@ -438,6 +493,7 @@
 .align-bottom {
   display: flex;
   align-items: flex-end;
+
   .column,
   .columns {
     flex: 1 1 0px;
@@ -448,12 +504,15 @@
   margin: 0.5rem auto;
   min-height: 2rem;
   vertical-align: middle;
+
   &.tall {
     margin: 3rem 0;
+
     &.sub-heading {
       margin: 0 0 1rem;
     }
   }
+
   .h1,
   .h2,
   .h3,
@@ -467,29 +526,37 @@
     color: $secondary-color;
     line-height: 1.5em;
     font-weight: normal;
+
     span {
       font-size: 1rem;
       line-height: 1.2rem;
     }
+
     &.primary-color {
       color: $primary-color;
     }
+
     &.secondary-color {
       color: $secondary-color;
     }
+
     &.success-color {
       color: $success-color;
     }
+
     &.subheader {
       color: rgba($black, $B-subtext);
     }
+
     .action-link {
       margin-left: 1rem;
       margin-bottom: 0;
     }
+
     &.full {
       width: 100%;
     }
+
     + .h1,
     .h2,
     .h3,
@@ -500,22 +567,27 @@
       margin-bottom: 0;
     }
   }
+
   small {
     font-weight: normal;
   }
+
   .button,
   .button-group,
   .button-align {
     margin-bottom: 0;
   }
+
   .menu {
     display: inline-block;
     vertical-align: middle;
   }
+
   > .button {
     margin-bottom: 0;
     vertical-align: middle;
   }
+
   &.short-label {
     .h1,
     .h2,
@@ -526,6 +598,7 @@
       width: 30%;
     }
   }
+
   &.long-label {
     .h1,
     .h2,
@@ -536,6 +609,7 @@
       width: 60%;
     }
   }
+
   &.sub-heading {
     margin: 0;
   }
@@ -558,10 +632,12 @@ $card-user-profile-text-color: $text-black;
   .button-group {
     margin-bottom: 0;
   }
+
   a {
     color: inherit;
     border-bottom: inherit;
   }
+
   .fa-lg {
     line-height: 1.2em;
     width: 1.2rem;
@@ -583,9 +659,11 @@ $card-user-profile-text-color: $text-black;
   border: 1px solid rgba($black, $B-dividers);
   background-color: #fff;
   border-radius: 50%;
+
   img {
     width: 100%;
   }
+
   span.h5 {
     font-weight: normal;
     color: rgba($black, $B-hinttext);
@@ -617,30 +695,65 @@ $card-user-profile-text-color: $text-black;
   .offcanvas-area-inner {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /*align items in main axis*/
+    justify-content: flex-start; /* align items in main axis*/
     align-items: stretch; /* align items in Cross Axis */
     align-content: stretch; /* Extra space in Cross Axis */
     overflow-y: hidden;
     height: 100vh;
   }
+
   .offcanvas-header {
     .page-lead {
       margin: 0;
     }
   }
+
   .offcanvas-body {
     display: flex;
+
     .inner {
       flex: 1 1 auto;
       padding: 1rem 0;
       overflow-y: scroll;
       overflow-x: hidden;
-       &::-webkit-scrollbar {
+
+      &::-webkit-scrollbar {
         display: none;
-       }
-       &::-moz-scrollbar {
-        display: none;
-       }
+      }
+    }
+  }
+}
+
+#patientDashboard {
+  #main-content {
+    height: 100vh;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  #sidebar {
+    height: 100vh;
+    overflow-y: scroll;
+    border-left: 1px solid rgba($black, $B-dividers);
+    box-shadow: 0 10px 20px 0 rgba($black, $B-dividers);
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .graph-wrapper {
+      margin: 0;
+      padding: 0.5rem;
+      border-radius: $global-radius;
+      .media-object {
+        margin: 0;
+      }
+      &:hover {
+        box-shadow: 0 0 1px 0 $success-color;
+      }
     }
   }
 }

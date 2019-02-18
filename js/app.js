@@ -23,6 +23,15 @@ $("#chat-toggle").on("click", function () {
     $(this).children('.fa').toggleClass('fa-comment fa-times');
 })
 
+$("#chat-question-preview").on("click", function () {
+    $("#chat-notification").children('.chat-header-container').slideUp()
+    $("#chat-notification").children('.form-notification').slideDown()
+    $("#chat-notification").slideDown()
+
+    $(this).siblings('#chat-container').slideUp()
+    // $(this).children('.fa').toggleClass('fa-comment fa-times');
+})
+
 // SEARCH Employee Chat Component ------------------------------------------------------------
 $("#add-search-employees").on("click", function () {
     $("#chat-container").style.height = "900px !important";
