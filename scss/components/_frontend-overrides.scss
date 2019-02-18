@@ -1,0 +1,70 @@
+$spk-prim: #273A4E;
+$spk-sec: #AFC64D;
+$spk-gray-dark: #42494A;
+$spk-gray-light: #42494A;
+$spk-white: #f9f9f9;
+$spk-nav: #061A27;
+
+
+body.spoke-frontend {
+	background: $spk-white;
+	div.header-nav{
+		background-color: rgba($spk-nav, 0.9);
+		z-index: 2 !important;
+		position: relative;
+		ul {
+			li {
+				list-style-type: none !important;
+				display: inline;
+				padding: 2em;
+			}
+		}
+
+		a.logo {
+			img {
+				width: 100%;
+				max-width: 133px;
+			}
+		}
+	}
+
+
+	section.banner {
+		z-index: 1 !important;
+		position: relative;
+		background: url('../img/spk-sec-container1.jpg');
+		background-size: cover;
+		height: 100%;
+		margin-top: -5em !important;
+		padding-top: 10em !important;
+
+		h1,h2,h3,h4,h5,h6,p {
+			text-shadow: 1px 2px 4px rgba(0,0,0,0.15);
+		}
+
+		button.cta-banner {
+			background: $spk-sec;
+		}
+
+		.full-content {
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center 
+		}
+	}
+
+	// FOUNDATION CLASSES OVERRRIDES
+	.title-bar{ 
+		background: transparent;
+		height: 73px;
+
+		div.title-bar-right {
+			justify-content: right;
+		}
+		div.title-bar-left {
+			justify-content: left;
+
+		}
+	}
+}
