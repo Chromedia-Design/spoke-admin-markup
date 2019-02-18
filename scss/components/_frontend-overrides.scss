@@ -4,19 +4,34 @@ $spk-gray-dark: #42494A;
 $spk-gray-light: #42494A;
 $spk-white: #f9f9f9;
 $spk-nav: #061A27;
+$transition-all: all 0.3s ease-in-out;
 
-
+html {
+	scroll-behavior: smooth !important;
+}
 body.spoke-frontend {
 	background: $spk-white;
+	
+	p { color: $spk-gray-dark;}
+	.sub-header {color: $spk-prim;}
 	div.header-nav{
 		background-color: rgba($spk-nav, 0.9);
 		z-index: 2 !important;
 		position: relative;
+		transition: $transition-all;
+
 		ul {
 			li {
 				list-style-type: none !important;
 				display: inline;
-				padding: 2em;
+				padding: 1.75em;
+				&.active {
+					border-bottom: 3px $spk-sec solid;
+				}
+				&:hover {
+					background-color: rgba($spk-prim,0.2);
+					transition: $transition-all;
+				}
 			}
 		}
 
@@ -29,32 +44,36 @@ body.spoke-frontend {
 	}
 
 
-	section.banner {
-		z-index: 1 !important;
-		position: relative;
-		background: url('../img/spk-sec-container1.jpg');
-		background-size: cover;
-		height: 100%;
-		margin-top: -5em !important;
-		padding-top: 10em !important;
+	section {
+		padding-top: 5em;
+		padding-bottom: 5em;
 
-		h1,h2,h3,h4,h5,h6,p {
-			text-shadow: 1px 2px 4px rgba(0,0,0,0.15);
-		}
-
-		button.cta-banner {
-			background: $spk-sec;
-		}
-
-		.full-content {
+		&.banner {
+			background-image: url('../img/employer-section-2.png'), url('../img/spk-sec-container1.jpg');
+			background-size: cover;
 			height: 100%;
-			display: flex;
-			align-items: center;
-			justify-content: center 
+			margin-top: -5em !important;
+			padding-top: 10em !important;
+
+			h1,h2,h3,h4,h5,h6,p {
+				text-shadow: 1px 2px 4px rgba(0,0,0,0.15);
+			}
+
+			button.cta-banner {
+				background: $spk-sec;
+			}
+
+			.full-content-center{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
 		}
 	}
 
 	// FOUNDATION CLASSES OVERRRIDES
+	//Navigation Bar
 	.title-bar{ 
 		background: transparent;
 		height: 73px;

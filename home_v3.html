@@ -10,6 +10,9 @@
 	<title>Spoke Health | Providing a platform to empower employees to be informed healthcare shoppers</title>
 	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i,700,700i" rel="stylesheet">
 	<link rel="stylesheet" href="css/app.css">
+
+
+
 </head>
 <body class="frontend spoke-frontend">
 	<div class="row expanded header-nav">
@@ -22,8 +25,8 @@
 						</a>
 					</div>
 					<div class="title-bar-right">
-						<ul class="marginless">
-							<a href=""><li>Home</li></a>
+						<ul class="marginless white-color">
+							<a href=""><li class="active">Home</li></a>
 							<a href=""><li>About</li></a>
 							<a href=""><li>Products</li></a>
 							<a href=""><li>Contact Us</li></a>
@@ -37,19 +40,19 @@
 	<section class="banner">
 		<div class="row">
 			<div class="medium-6 columns medium-centered">
-				<div class="text-center white-color full-content">
+				<div class="text-center white-color full-content-center">
 						<h1 class="mb-0">
 							You Spoke.
 						</h1>
-						<p class="subheader h5  white-color">
+						<p class="subheader h5	white-color">
 							Take the hassle out of the Healthcare.
 						</p>
 
-						<h1 class="mb-0">
+						<h1 class="mb-0 mt-3">
 							We Listened.
 						</h1>
-						<p class="subheader h5  white-color">
-							Digital technology platform from a connected healthcare experience.
+						<p class="subheader h5	white-color">
+							Digital technology platform from a connected healthcare <br />experience.
 						</p>
 						<button class="cta-banner pad1 pl-2 pr-2 white-color mt-3">
 							Explore More
@@ -58,5 +61,162 @@
 			</div>
 		</div>
 	</section>
+
+	<section>
+		<div class="row">
+			<!-- <div class="medium-12 columns">
+				<div class="disp-inline">
+					<img src="img/drawback-icon.png" alt="">
+				</div>
+
+				<div class="disp-inline">
+					<h5 class="disp-inline ml-1">The Drawback</h5>
+					<p class="pt-1">Despite their promises, value-based programs are inefficient to administer and slow to deliver result</p>
+				</div>
+			</div> -->
+
+			<div class="medium-1 columns">
+				<img src="img/drawback-icon.png" alt="">
+			</div>
+
+			<div class="medium-11 columns">
+				<h5 class="disp-inline">The Drawback</h5>
+				<p class="pt-1">Despite their promises, value-based programs are inefficient to administer and slow to deliver result</p>
+			</div>
+		</div>
+	</section>
+
+
+
+	<script>
+		// function handle(delta) {
+		// 	var animationInterval = 20;
+		// 	var scrollSpeed = 20;
+
+		// 	if (end == null) {
+		// 		end = $(window).scrollTop();
+		// 	}
+		// 	end -= 20 * delta;
+		// 	goUp = delta > 0;
+
+		// 	if (interval == null) {
+		// 		interval = setInterval(function () {
+		// 		var scrollTop = $(window).scrollTop();
+		// 		var step = Math.round((end - scrollTop) / scrollSpeed);
+		// 		if (scrollTop <= 0 || 
+		// 		scrollTop >= $(window).prop("scrollHeight") - $(window).height() ||
+		// 		goUp && step > -1 || 
+		// 		!goUp && step < 1 ) 
+		// 		{
+		// 			clearInterval(interval);
+		// 			interval = null;
+		// 			end = null;
+		// 		}
+		// 		$(window).scrollTop(scrollTop + step );
+		// 		}, animationInterval);
+		// 	}
+		// }
+
+
+			$(document).ready(function(){
+				// $fn.scrollSpeed(step, speed, easing);
+				jQuery.scrollSpeed(200, 800);
+	});
+
+	// Custom scrolling speed with jQuery
+	// Source: github.com/ByNathan/jQuery.scrollSpeed
+	// Version: 1.0.2
+
+	(function($) {
+	    
+	    jQuery.scrollSpeed = function(step, speed, easing) {
+	        
+	        var $document = $(document),
+	            $window = $(window),
+	            $body = $('html, body'),
+	            option = easing || 'default',
+	            root = 0,
+	            scroll = false,
+	            scrollY,
+	            scrollX,
+	            view;
+	            
+	        if (window.navigator.msPointerEnabled)
+	            return false;
+	            
+	        $window.on('mousewheel DOMMouseScroll', function(e) {
+	            
+	            var deltaY = e.originalEvent.wheelDeltaY,
+	                detail = e.originalEvent.detail;
+	                scrollY = $document.height() > $window.height();
+	                scrollX = $document.width() > $window.width();
+	                scroll = true;
+	            
+	            if (scrollY) {
+	                
+	                view = $window.height();
+	                    
+	                if (deltaY < 0 || detail > 0)
+	            
+	                    root = (root + view) >= $document.height() ? root : root += step;
+	                
+	                if (deltaY > 0 || detail < 0)
+	            
+	                    root = root <= 0 ? 0 : root -= step;
+	                
+	                $body.stop().animate({
+	            
+	                    scrollTop: root
+	                
+	                }, speed, option, function() {
+	            
+	                    scroll = false;
+	                
+	                });
+	            }
+            
+	            if (scrollX) {
+	                
+	                view = $window.width();
+	                    
+	                if (deltaY < 0 || detail > 0)
+	            
+	                    root = (root + view) >= $document.width() ? root : root += step;
+	                
+	                if (deltaY > 0 || detail < 0)
+	            
+	                    root = root <= 0 ? 0 : root -= step;
+	                
+	                $body.stop().animate({
+	            
+	                    scrollLeft: root
+	                
+	                }, speed, option, function() {
+	            
+	                    scroll = false;
+	                
+	                });
+	            }
+	            
+	            return false;
+            
+		    }).on('scroll', function() {
+		            
+		            if (scrollY && !scroll) root = $window.scrollTop();
+		            if (scrollX && !scroll) root = $window.scrollLeft();
+		            
+		        }).on('resize', function() {
+		            
+		            if (scrollY && !scroll) view = $window.height();
+		            if (scrollX && !scroll) view = $window.width();
+		            
+		        });       
+		    };
+    
+	    	jQuery.easing.default = function (x,t,b,c,d) {
+	    	return -c * ((t=t/d-1)*t*t*t - 1) + b;
+	    	};
+    	})(jQuery);
+	</script>
 </body>
 </html>
