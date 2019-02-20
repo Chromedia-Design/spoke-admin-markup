@@ -256,9 +256,9 @@ $circle-width: 0.08em;
 $circle-width-hover: 0.04em;
 
 // colors default
-$primary-color: #307bbb;
-$secondary-color: #ccc;
-$bg-color: #f5f5f5;
+$primary-color-graph: #307bbb;
+$secondary-color-graph: #ccc;
+$bg-color-graph: #f5f5f5;
 
 $primary-color-green: #4db53c;
 $primary-color-orange: #dd9d22;
@@ -279,7 +279,7 @@ $primary-color-orange-dark: #e08833;
 
 .pie {
   position: absolute;
-  border: $circle-width solid $primary-color;
+  border: $circle-width solid $primary-color-graph;
   width: 1 - (2 * $circle-width);
   height: 1 - (2 * $circle-width);
   clip: rect(0em, 0.5em, 1em, 0em);
@@ -308,7 +308,7 @@ $primary-color-orange-dark: #e08833;
   border-radius: 50%;
   float: left;
   margin: 0;
-  background-color: $secondary-color;
+  background-color: $secondary-color-graph;
 
   // center circle to its parent
   &.center {
@@ -336,7 +336,7 @@ $primary-color-orange-dark: #e08833;
     width: 5em;
     line-height: 5em;
     font-size: 0.2em;
-    color: $secondary-color;
+    color: $secondary-color-graph;
     display: block;
     text-align: center;
     white-space: nowrap;
@@ -351,7 +351,7 @@ $primary-color-orange-dark: #e08833;
     display: block;
     content: " ";
     border-radius: 50%;
-    background-color: $bg-color;
+    background-color: $bg-color-graph;
     width: 1 - (2 * $circle-width);
     height: 1 - (2 * $circle-width);
     transition: all ease-in-out 0.2s;
@@ -408,7 +408,7 @@ $primary-color-orange-dark: #e08833;
       width: 3.33em;
       line-height: 3.33em;
       font-size: 0.3em;
-      color: $primary-color;
+      color: $primary-color-graph;
     }
 
     &:after {
