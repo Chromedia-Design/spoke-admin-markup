@@ -1,0 +1,153 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spoke Admin Portal</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="frontend">
+
+<section class="whitepaper home success-bg">
+  <div class="row expanded collapse">
+    <div class="main-content medium-6 columns">
+
+      <header class="top-bar">
+        <div class="top-bar-title">
+          <span data-responsive-toggle="responsive-menu" data-hide-for="large">
+              <span class="menu-icon dark" data-toggle></span>
+          </span>
+          <a href="#" class="logo">
+            <img src="https://s3.amazonaws.com/assets.spokehealth.com/static/skygen-logo.svg" alt="">
+          </a>
+        </div>
+      </header>
+
+      <div class="left-body">
+
+       <div class="row expanded">
+         <div class="auto columns">
+           <div class="call-to-action">
+             <h1>Welcome to the SkyGen Portal</h1>
+             <p class="h5">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+           </div>
+         </div>
+       </div>
+
+        <section class="section lo-padded">
+          <div class="row expanded">
+            <div class="auto columns">
+              <div class="section-heading">
+                <h4>Cras mattis consectetur purus sit amet fermentum.</h4>
+                <hr class="marker center">
+              </div>
+              <p>Spoke has developed a program and the required technology that allows us to serve the needs
+                of all constituents. All supported by technology that is generations ahead of the current market.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section lo-padded">
+          <div class="row expanded">
+            <div class="auto columns">
+              <div class="section-heading">
+                <h4>Cras mattis consectetur purus sit amet fermentum.</h4>
+                <hr class="marker center">
+              </div>
+              <p>Spoke has developed a program and the required technology that allows us to serve the needs
+                of all constituents. All supported by technology that is generations ahead of the current market.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section lo-padded">
+          <div class="row expanded">
+            <div class="auto columns">
+              <div class="section-heading">
+                <h4>Cras mattis consectetur purus sit amet fermentum.</h4>
+                <hr class="marker center">
+              </div>
+              <p>Spoke has developed a program and the required technology that allows us to serve the needs
+                of all constituents. All supported by technology that is generations ahead of the current market.</p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+    </div>
+    <div class="side-content medium-6 columns">
+      <header class="top-bar">
+        <div class="top-bar-right">
+          <ul class="menu">
+            <li>
+              <a class="button link" href="#">Resources</a>
+            </li>
+            <li>
+              <a class="button link" href="#">+123 456 7890</a>
+            </li>
+            <li>
+              <a class="button hollow" href="#">Talk To Concierge</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="right-body">
+        <div class="login">
+          <div class="login-inner">
+            <div class="login-wrap">
+              <form action="">
+                <!--<div class="callout alert">-->
+                  <!--<p><small>You are automatically logged out due to inactivity.</small></p>-->
+                <!--</div>-->
+                <label>
+                  Username/Email
+                  <input type="text">
+                </label>
+                <label>
+                  Password
+                  <input type="text">
+                </label>
+                <p class="help-text"><a href="admin-login-setEmail.html">Forgot Password?</a></p>
+                <button type="submit" class="button success large expanded">Sign In</button>
+                <!-- <button type="submit" class="button large expanded"><i class="fa fa-refresh fa-spin"></i></button> -->
+              </form>
+            </div>
+          </div>
+          <div class="login-banner">
+            <div class="login-banner-wrap text-center">
+              <p>Access to the Administration Portal at Spoke Health, Inc. is restricted. By logging in you acknowledge you have seen, and follow, these policies (<a href="#">https://policy.spokehealth.com</a>) and have completed this training (<a href="#">https://training.spokehealth.com</a>). Please contact us if you have problems with this - <a mailto="privacy@spokehealth.com">privacy@spokehealth.com</a>. Access to protected data is strictly enforced. Any unauthorized access to protected data or use by unauthorized individuals is prohibited.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/what-input/what-input.js"></script>
+<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+
+<script src="js/app.js"></script>
+
+<script type="text/javascript">
+  $(function () {
+    var timer;
+
+    $(window).resize(function () {
+      clearTimeout(timer);
+      timer = setTimeout(function () {
+        $('.site-nav').css("height", $(window).height());
+      }, 40);
+    }).resize();
+  });
+</script>
+
+</body>
+</html>
