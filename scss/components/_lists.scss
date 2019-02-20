@@ -58,7 +58,12 @@
     font-weight: 400;
     border-radius: $global-radius;
     margin-bottom: 1rem;
-    background: $white;
+    border-bottom: 1px solid rgba(10,16,35,0.06125);
+    // background: $white;
+
+    &:last-child {
+      margin-bottom: 0 !important;
+    }
 
     [type='text'],
     [type='password'],
@@ -92,7 +97,7 @@
     }
 
     .list-wrap {
-      background-color: $white;
+      // background-color: $white;
       padding: 0.65rem 0.875rem;
       border: 1px solid rgba($black, $B-dividers);
 
@@ -357,6 +362,9 @@
         align-items: center;
         transition: all 0.2s;
         background-color: $primary-light;
+        &.transparent {
+          background-color: transparent !important;
+        }
         // account for links after this list wrapper
         > .wrapper {
           flex: 1 1 auto;
@@ -432,6 +440,16 @@
       }
 
       &.unread {
+        &.transparent {
+            background-color: transparent !important;
+            .list-wrap {
+              background-color: transparent !important;
+              border: 0px;
+              border-bottom: 1px solid rgba($black, $B-dividers);
+              &:last-child  {
+              }
+            }
+          }
         .list-wrap {
           background-color: $white;
 
