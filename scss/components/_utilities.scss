@@ -384,6 +384,10 @@
     border-width: 1px;
   }
 
+  &.p05 {
+    border-width: 0.5px;
+  }
+
   &.style-dashed {
     border-style: dashed !important;
   }
@@ -414,6 +418,10 @@
 
   &.border-color-light {
     border-color: darken(#fff, 6%);
+  }
+
+  &.border-color-light-1 {
+    border-color: darken(#fff, 1%);
   }
 
   &.rad1 {
