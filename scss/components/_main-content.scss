@@ -509,7 +509,7 @@ section {
   .side-content {
     display: flex;
     flex-direction: column;
-    background: rgba($white, $W-subtext);
+    background: rgba($primary-color, $W-subtext);
     .top-bar {
       display: inline-block;
       flex: 0 1 auto;
