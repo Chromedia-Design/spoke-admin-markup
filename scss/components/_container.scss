@@ -755,5 +755,16 @@ $card-user-profile-text-color: $text-black;
         box-shadow: 0 0 1px 0 $success-color;
       }
     }
+
+    .custom-marked {
+      .well-list {
+        li {
+          background: transparent;
+        }
+        .list-wrap {
+          background: transparent;
+        }
+      }
+    }
   }
 }

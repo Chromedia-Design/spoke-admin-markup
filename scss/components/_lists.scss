@@ -1360,7 +1360,7 @@ ul.vertical-list {
         }
         &.success {
           color: $success-color;
-          background: lighten($success-color, 57%);
+          background: lighten($success-color, 45%);
         }
         &.warning {
           color: $warning-color;
