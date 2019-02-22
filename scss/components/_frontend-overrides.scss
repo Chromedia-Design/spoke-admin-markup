@@ -11,6 +11,19 @@ html {
 }
 body.spoke-frontend {
 	background: $spk-white;
+	/*background: #fff;*/
+	.spk-prim {color: $spk-prim;}
+	.spk-sec {color: $spk-sec;}
+	.spk-gray-dark {color: $spk-gray-dark;}
+	.spk-gray-light {color: $spk-gray-light;}
+	.spk-white {color: $spk-white;}
+
+	a.logo {
+		img {
+			width: 100%;
+			max-width: 133px;
+		}
+	}
 	
 	p { color: $spk-gray-dark;}
 	.sub-header {color: $spk-prim;}
@@ -32,13 +45,6 @@ body.spoke-frontend {
 					background-color: rgba($spk-prim,0.2);
 					transition: $transition-all;
 				}
-			}
-		}
-
-		a.logo {
-			img {
-				width: 100%;
-				max-width: 133px;
 			}
 		}
 	}
@@ -70,6 +76,37 @@ body.spoke-frontend {
 				transform: translate(-50%, -50%);
 			}
 		}
+
+		.bg-head1 {
+			/*background-color: rgba($spk-sec, 0.2);*/
+		}
+	}
+
+
+	footer{
+		background: $spk-prim;
+		
+		div.input-group-button {
+			input {
+				background: rgba($spk-sec, 0.8);
+				&:hover {
+					background: $spk-sec;
+				};
+			}
+		}
+
+		img.linked-in {
+			/*display: none !important;*/
+			/*transform: scale(0.5) !important;*/
+		}
+
+		div.border-color-light {
+			border-top: 1px rgba(255, 255, 255, .05) solid !important;
+		}
+
+		.creds {
+			opacity: 0.5;
+		}
 	}
 
 	// FOUNDATION CLASSES OVERRRIDES
@@ -80,6 +117,8 @@ body.spoke-frontend {
 
 		div.title-bar-right {
 			justify-content: right;
+			position: absolute;
+			right: 15%;
 		}
 		div.title-bar-left {
 			justify-content: left;
