@@ -1461,11 +1461,111 @@ $bg-instruction: #17659B;
 }
 
 
+.Select.is-open {
+  .Select-menu-outer {
+    // background-color: green !important;
+    // border: 5px solid green !important;
+    position: absolute !important;
+    top: 0px !important;
+    left: 0px  !important;
+  }
+}
 
 
-
-
-
-
+.question-item {
+  padding: 0 .5rem;
+  margin-bottom: 1rem;
+  @extend .box-shadow-sm;
+  @extend .border-radius-md;
+  > div {
+    padding-left: 0;
+    padding-right: 0;
+    @extend .border-radius-md;
+    .item-question {
+      padding: 1rem;
+      font-weight: bold;
+    }
+    .item-answer-option {
+      padding: 0 1rem;
+    }
+  }
+  &.preview-only {
+    // background-color: red;
+    margin-bottom: 0;
+    border-radius: 0;
+    padding: 0 .5rem;
+    box-shadow: none !important;
+    border: 1px solid rgba($black, $B-dividers);
+    .item-question {
+      // strong {
+      //   font-weight: 300 !important;
+      // }
+      padding-bottom: .5rem;
+      margin-bottom: 0;
+      font-weight: regular;
+      font-size: .875rem;
+      @extend .subheader;
+      span {
+        display: none;
+      }
+    }
+    .item-answer-option {
+      padding: 0;
+      input[type="checkbox"],
+      input[type="radio"] {
+        // cursor: not-allowed;
+        display:none;
+        & + label {
+          display:none;
+        }
+      }
+      input[type="checkbox"][checked="checked"],
+      input[type="radio"][checked="checked"] {
+          // display: inline-block;
+          margin: 0;
+          & + label {
+            // display: inline-block;
+            // // padding: .5rem 1rem;
+            // padding: 0;
+            // margin: 0;
+            // border-radius: 3px;
+            // // @extend .bg-black20;
+            // background-color: #e3e3e3 !important;
+            background-color: transparent !important;
+            color: black !important;
+            // font-weight: normal;
+            all: unset;
+            font-weight: bold;
+          }
+      }
+      select,
+      [type='text'],
+      [type='password'],
+      [type='date'],
+      [type='datetime'],
+      [type='datetime-local'],
+      [type='month'],
+      [type='week'],
+      [type='email'],
+      [type='number'],
+      [type='search'],
+      [type='tel'],
+      [type='time'],
+      [type='url'],
+      [type='color'] {
+        display: inline-block;
+        // padding: 0;
+        // margin: 0;
+        // border-radius: 3px;
+        background-color: transparent !important;
+        // color: black !important;
+        // font-weight: normal;
+        // line-height: 1.3rem;
+        all: unset;
+        font-weight: bold;
+      }
+    }
+  }
+}
 
 

@@ -120,7 +120,7 @@
 .handoff {
   position: relative !important;
 
-  &::before {
+  &::after {
     font-family: "Font Awesome 5 free";
     content: "\f2b5";
     line-height: 1.23rem;
@@ -130,7 +130,7 @@
     height: 2rem;
     background-color: $success-color;
     position: absolute;
-    top: -25px;
+    top: -19px;
     left: 50%;
     border-radius: 50%;
     border: 1px solid $success-color;
