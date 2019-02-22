@@ -10,8 +10,13 @@ html {
 	scroll-behavior: smooth !important;
 }
 body.spoke-frontend {
-	/*background: $spk-white;*/
-	background: #fff;
+	background: $spk-white;
+	/*background: #fff;*/
+	.spk-prim {color: $spk-prim;}
+	.spk-sec {color: $spk-sec;}
+	.spk-gray-dark {color: $spk-gray-dark;}
+	.spk-gray-light {color: $spk-gray-light;}
+	.spk-white {color: $spk-white;}
 
 	a.logo {
 		img {
@@ -73,7 +78,7 @@ body.spoke-frontend {
 		}
 
 		.bg-head1 {
-			background-color: rgba($spk-sec, 0.2);
+			/*background-color: rgba($spk-sec, 0.2);*/
 		}
 	}
 
@@ -97,6 +102,10 @@ body.spoke-frontend {
 
 		div.border-color-light {
 			border-top: 1px rgba(255, 255, 255, .05) solid !important;
+		}
+
+		.creds {
+			opacity: 0.5;
 		}
 	}
 
