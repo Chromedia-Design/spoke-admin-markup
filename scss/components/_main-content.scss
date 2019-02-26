@@ -512,6 +512,9 @@ section {
     &.hi-padded {
       padding: 2rem;
     }
+    &.paddingless {
+      padding: 0;
+    }
   }
   &.medium-up-2,
   &.small-up-2,
