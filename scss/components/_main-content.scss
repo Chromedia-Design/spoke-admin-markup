@@ -507,6 +507,16 @@ section {
   min-height: rem-calc(500);
   height: 100vh;
 
+  header {
+    a.logo {
+      img,
+      svg {
+        height: 2rem;
+        width: auto;
+      }
+    }
+  }
+
   .main-content,
   .side-content {
     height: 100vh;
