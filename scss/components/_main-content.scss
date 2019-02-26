@@ -1,3 +1,5 @@
+$novant-primary-color: #512d6d;
+
 body {
   &.frontend {
     .bordered {
@@ -252,6 +254,12 @@ section {
     background: transparent url('https://s3.amazonaws.com/assets.spoke.com/images/breather.jpg') center center no-repeat;
     background-size: cover;
 
+    &.whitepaper {
+      position: relative;
+      background: $novant-primary-color url('https://s3.amazonaws.com/assets.spoke.com/images/breather-novant.jpg') center center no-repeat;
+      background-size: cover;
+    }
+
     header {
       background: transparent;
       border: none;
@@ -498,30 +506,44 @@ section {
 .whitepaper {
   min-height: rem-calc(500);
   height: 100vh;
+
   .main-content,
   .side-content {
     height: 100vh;
     overflow-y: scroll;
+
     &::-webkit-scrollbar {
       display: none;
     }
   }
+
   .side-content {
     display: flex;
     flex-direction: column;
-    background: rgba($primary-color, $W-subtext);
+    background: rgba($novant-primary-color, $W-subtext);
+
     .top-bar {
       display: inline-block;
       flex: 0 1 auto;
     }
+
     .left-body,
     .right-body {
       height: auto;
       display: block;
       flex: 1 0 auto;
     }
+
+    .button.success, .success.brick {
+      background: $novant-primary-color;
+    }
+
     .login .login-inner .login-wrap form {
       margin-top: 0;
+    }
+
+    .login .login-banner .login-banner-wrap {
+      background: $novant-primary-color;
     }
   }
 }
