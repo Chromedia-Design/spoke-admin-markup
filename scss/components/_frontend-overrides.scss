@@ -7,122 +7,148 @@ $spk-nav: #061A27;
 $transition-all: all 0.3s ease-in-out;
 
 html {
-	scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
 }
+
 body.spoke-frontend {
-	background: $spk-white;
-	/*background: #fff;*/
-	.spk-prim {color: $spk-prim;}
-	.spk-sec {color: $spk-sec;}
-	.spk-gray-dark {color: $spk-gray-dark;}
-	.spk-gray-light {color: $spk-gray-light;}
-	.spk-white {color: $spk-white;}
+  background: $spk-white;
+  /*background: #fff;*/
+  .spk-prim {
+    color: $spk-prim;
+  }
 
-	a.logo {
-		img {
-			width: 100%;
-			max-width: 133px;
-		}
-	}
-	
-	p { color: $spk-gray-dark;}
-	.sub-header {color: $spk-prim;}
-	div.header-nav{
-		background-color: rgba($spk-nav, 0.9);
-		z-index: 2 !important;
-		position: relative;
-		transition: $transition-all;
+  .spk-sec {
+    color: $spk-sec;
+  }
 
-		ul {
-			li {
-				list-style-type: none !important;
-				display: inline;
-				padding: 1.75em;
-				&.active {
-					border-bottom: 3px $spk-sec solid;
-				}
-				&:hover {
-					background-color: rgba($spk-prim,0.2);
-					transition: $transition-all;
-				}
-			}
-		}
-	}
+  .spk-gray-dark {
+    color: $spk-gray-dark;
+  }
 
+  .spk-gray-light {
+    color: $spk-gray-light;
+  }
 
-	section {
-		padding-top: 5em;
-		padding-bottom: 5em;
+  .spk-white {
+    color: $spk-white;
+  }
 
-		&.banner {
-			background-image: url('../img/employer-section-2.png'), url('../img/spk-sec-container1.jpg');
-			background-size: cover;
-			height: 100%;
-			margin-top: -5em !important;
-			padding-top: 10em !important;
+  a.logo {
+    img {
+      width: 100%;
+      max-width: 133px;
+    }
+  }
 
-			h1,h2,h3,h4,h5,h6,p {
-				text-shadow: 1px 2px 4px rgba(0,0,0,0.15);
-			}
+  p {
+    color: $spk-gray-dark;
+  }
 
-			button.cta-banner {
-				background: $spk-sec;
-			}
+  .sub-header {
+    color: $spk-prim;
+  }
 
-			.full-content-center{
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-			}
-		}
+  div.header-nav {
+    background-color: rgba($spk-nav, 0.9);
+    z-index: 2 !important;
+    position: relative;
+    transition: $transition-all;
 
-		.bg-head1 {
-			/*background-color: rgba($spk-sec, 0.2);*/
-		}
-	}
+    ul {
+      li {
+        list-style-type: none !important;
+        display: inline;
+        padding: 1.75em;
+
+        &.active {
+          border-bottom: 3px $spk-sec solid;
+        }
+
+        &:hover {
+          background-color: rgba($spk-prim, 0.2);
+          transition: $transition-all;
+        }
+      }
+    }
+  }
 
 
-	footer{
-		background: $spk-prim;
-		
-		div.input-group-button {
-			input {
-				background: rgba($spk-sec, 0.8);
-				&:hover {
-					background: $spk-sec;
-				};
-			}
-		}
+  section {
+    padding-top: 5em;
+    padding-bottom: 5em;
 
-		img.linked-in {
-			/*display: none !important;*/
-			/*transform: scale(0.5) !important;*/
-		}
+    &.banner {
+      background-image: url('../img/employer-section-2.png'), url('../img/spk-sec-container1.jpg');
+      background-size: cover;
+      //height: 100%;
+      //margin-top: -5em !important;
+      //padding-top: 10em !important;
 
-		div.border-color-light {
-			border-top: 1px rgba(255, 255, 255, .05) solid !important;
-		}
+      h1, h2, h3, h4, h5, h6, p {
+        text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
+      }
 
-		.creds {
-			opacity: 0.5;
-		}
-	}
+      button.cta-banner {
+        background: $spk-sec;
+      }
 
-	// FOUNDATION CLASSES OVERRRIDES
-	//Navigation Bar
-	.title-bar{ 
-		background: transparent;
-		height: 73px;
+      .full-content-center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
 
-		div.title-bar-right {
-			justify-content: right;
-			position: absolute;
-			right: 15%;
-		}
-		div.title-bar-left {
-			justify-content: left;
+    .bg-head1 {
+      /*background-color: rgba($spk-sec, 0.2);*/
+    }
+  }
 
-		}
-	}
+
+  footer {
+    background: $spk-prim;
+
+    div.input-group-button {
+      input {
+        background: rgba($spk-sec, 0.8);
+
+        &:hover {
+          background: $spk-sec;
+        }
+      ;
+      }
+    }
+
+    img.linked-in {
+      /*display: none !important;*/
+      /*transform: scale(0.5) !important;*/
+    }
+
+    div.border-color-light {
+      border-top: 1px rgba(255, 255, 255, .05) solid !important;
+    }
+
+    .creds {
+      opacity: 0.5;
+    }
+  }
+
+  // FOUNDATION CLASSES OVERRRIDES
+  //Navigation Bar
+  .title-bar {
+    background: transparent;
+    height: 73px;
+
+    div.title-bar-right {
+      justify-content: right;
+      position: absolute;
+      right: 15%;
+    }
+
+    div.title-bar-left {
+      justify-content: left;
+
+    }
+  }
 }

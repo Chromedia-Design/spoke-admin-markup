@@ -1,3 +1,5 @@
+$novant-primary-color: #512d6d;
+
 body {
   &.frontend {
     .bordered {
@@ -252,6 +254,12 @@ section {
     background: transparent url('https://s3.amazonaws.com/assets.spoke.com/images/breather.jpg') center center no-repeat;
     background-size: cover;
 
+    &.whitepaper {
+      position: relative;
+      background: $novant-primary-color url('https://s3.amazonaws.com/assets.cobrands.spokehealth.com/novant/breather-novant.jpg') center center no-repeat;
+      background-size: cover;
+    }
+
     header {
       background: transparent;
       border: none;
@@ -495,33 +503,83 @@ section {
   }
 }
 
+.row.table-grid {
+  border-top: 1px solid rgba($black, $B-dividers);
+  > .columns,
+  > .column {
+    padding: 1rem;
+    border: 1px solid rgba($black, $B-dividers);
+    &.hi-padded {
+      padding: 2rem;
+    }
+    &.paddingless {
+      padding: 0;
+    }
+  }
+  &.medium-up-2,
+  &.small-up-2,
+  &.large-up-2 {
+    > .columns,
+    > .column {
+      border-top: none;
+      &:nth-child(odd) {
+        border-right: none;
+      }
+    }
+  }
+}
+
 .whitepaper {
   min-height: rem-calc(500);
   height: 100vh;
+
+  header {
+    a.logo {
+      img,
+      svg {
+        height: 2rem;
+        width: auto;
+      }
+    }
+  }
+
   .main-content,
   .side-content {
     height: 100vh;
     overflow-y: scroll;
+
     &::-webkit-scrollbar {
       display: none;
     }
   }
+
   .side-content {
     display: flex;
     flex-direction: column;
-    background: rgba($primary-color, $W-subtext);
+    background: rgba($novant-primary-color, $W-subtext);
+
     .top-bar {
       display: inline-block;
       flex: 0 1 auto;
     }
+
     .left-body,
     .right-body {
       height: auto;
       display: block;
       flex: 1 0 auto;
     }
+
+    .button.success, .success.brick {
+      background: $novant-primary-color;
+    }
+
     .login .login-inner .login-wrap form {
       margin-top: 0;
+    }
+
+    .login .login-banner .login-banner-wrap {
+      background: $novant-primary-color;
     }
   }
 }
