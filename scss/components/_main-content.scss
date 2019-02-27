@@ -547,6 +547,7 @@ section {
   .side-content {
     height: 100vh;
     overflow-y: scroll;
+    scrollbar-width: none;
 
     &::-webkit-scrollbar {
       display: none;
