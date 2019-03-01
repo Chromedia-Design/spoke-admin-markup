@@ -1403,11 +1403,11 @@ ul.vertical-list {
         background-color: rgba($black, $B-dividers);
         z-index: 0;
       }
-      //&:last-child {
-      //  &:before {
-      //    display: none;
-      //  }
-      //}
+      &:last-child {
+        &:before {
+          display: none;
+        }
+      }
     }
   }
 
