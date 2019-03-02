@@ -781,11 +781,11 @@
     > li {
       margin: 0.5rem 0;
       font-size: rem-calc(14);
+      border-bottom: none;
 
       .list-wrap {
         border-radius: $global-radius;
         padding: rem-calc(6) rem-calc(16);
-        border: none;
       }
 
       .img-wrapper {
@@ -1403,11 +1403,11 @@ ul.vertical-list {
         background-color: rgba($black, $B-dividers);
         z-index: 0;
       }
-      //&:last-child {
-      //  &:before {
-      //    display: none;
-      //  }
-      //}
+      &:last-child {
+        &:before {
+          display: none;
+        }
+      }
     }
   }
 
