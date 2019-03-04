@@ -22,6 +22,13 @@
     border-radius: 8px 0 8px 8px;
     min-width: rem-calc(224);
 
+    &.media {
+      padding: 0px !important;
+      border: 0px !important;
+      border-radius: 8px;
+      overflow: hidden !important;
+    }
+
     .talktext {
       > * {
         font-size: 0.875rem;
@@ -426,6 +433,7 @@ $light-gray-hex: #CBCFD3;
         .media-object-section {
           .talk-bubble {
             float: right;
+            border: 5px solid red !important;
             // margin: 0 1rem 0 0;
             &.warning-bg {
               margin: 0;
@@ -478,6 +486,9 @@ $light-gray-hex: #CBCFD3;
         .talk-bubble {
           * {
             text-align: left;
+          }
+          &.media {
+            padding: 0px !important;
           }
         }
 
@@ -1057,6 +1068,10 @@ $main-color: #1ebd44;
   overflow-y: hidden;
   position: relative;
 
+  .chat-body-scroll {
+    height: 425px;
+  }
+
   .chat-video-container {
     position: relative;
     height: 100%;
@@ -1069,10 +1084,6 @@ $main-color: #1ebd44;
       bottom: 10px;
       z-index: 100;
     }
-  }
-
-  .chat-body-scroll {
-    height: 425px;
   }
 
   .chat-video-incoming {

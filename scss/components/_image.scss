@@ -87,6 +87,10 @@
     	width: 100%;
     	object-fit: cover;
     }
+    &.auto {
+    	width: 100%;
+    }
+
 	&.circle {
 		border-radius: 50%;
 	}
