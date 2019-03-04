@@ -1179,6 +1179,10 @@ input {
     background-color: #fff !important;
   }
 
+  &.dark {
+    background-color: darken(#fff, 20%) !important;
+  }
+
   &.small {
     font-size: 0.6875rem;
   }

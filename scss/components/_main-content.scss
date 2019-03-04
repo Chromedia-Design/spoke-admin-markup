@@ -558,6 +558,7 @@ section {
     display: flex;
     flex-direction: column;
     background: rgba($novant-primary-color, $W-subtext);
+    // background: rgba(255,255,255, .9);
 
     .top-bar {
       display: inline-block;
@@ -569,6 +570,15 @@ section {
       height: auto;
       display: block;
       flex: 1 0 auto;
+    }
+
+    .fancy-input {
+      // background-color: $novant-primary-color !important;
+      // color: #fff;
+      ::placeholder {
+        color: #fff;
+        font-size: 1.5em;
+      }
     }
 
     .button.success, .success.brick {
@@ -593,6 +603,7 @@ section {
   table-layout: fixed;
 
   .login-inner {
+    padding-top: 2rem;
     display: table-cell;
     vertical-align: middle;
 
@@ -617,7 +628,7 @@ section {
     .login-banner-wrap {
       display: table-cell;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 1rem 2rem;
       width: 100%;
       border-top: 1px solid rgba($black, $B-dividers);
       border-bottom: 1px solid rgba($black, $B-dividers);
