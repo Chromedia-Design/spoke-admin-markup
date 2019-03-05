@@ -557,8 +557,8 @@ section {
   .side-content {
     display: flex;
     flex-direction: column;
-    // background: rgba($novant-primary-color, $W-subtext);
-    background: rgba(255,255,255, .9);
+    background: rgba($novant-primary-color, $W-subtext);
+    // background: rgba(255,255,255, .9);
 
     .top-bar {
       display: inline-block;
@@ -604,8 +604,8 @@ section {
 
   .login-inner {
     padding-top: 2rem;
-    // display: table-cell;
-    // vertical-align: middle;
+    display: table-cell;
+    vertical-align: middle;
 
     .login-wrap {
       margin: 0 auto;
