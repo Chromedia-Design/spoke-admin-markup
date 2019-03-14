@@ -93,7 +93,7 @@
 
       <div class="row expanded collapse">
 
-        <div class="large-3 columns">
+        <!-- <div class="large-3 columns">
           <div class="secondary site-nav">
             <ul class="menu vertical" data-accordion-menu>
               <li>
@@ -138,10 +138,31 @@
               </li>
             </ul>
           </div>
+        </div> -->
+
+        <div class="columns shrink">
+          <div class="secondary site-nav nav-collapsed"> 
+            <ul class="menu vertical" data-accordion-menu>
+              <li class="hide-on-collapsed">
+                <div class="card-user-profile">
+                </div>
+              </li>
+              <li>
+                <a href="advocate-employee-profile-v3.html" ><i class="fa fa-address-book"></i> <span class="hide-on-collapsed">&nbsp;Overview</span></a>
+              </li>
+              <li class="is-active">
+                <a href="advocate-employee-episodes-list-v2.html" ><i class="fa fa-stethoscope"></i> <span class="hide-on-collapsed">&nbsp;Episodes</span></a>
+              </li>
+              <li>
+                <a href="advocate-employee-activity-v3.html" ><i class="fa fa-exchange-alt"></i> <span class="hide-on-collapsed">&nbsp;Activity</span></a>
+              </li>
+    
+            </ul>
+          </div>
         </div>
 
-        <div id="profileContent" class="large-9 columns">
-          <div class="row">
+        <div id="profileContent" class="columns">
+          <div class="row expanded">
             <div class="large-12 columns">
               <div class="page-lead row collapse expanded align-middle">
                 <div class="large-4 columns"><span class="h5">List of Episodes</span></div>
@@ -158,15 +179,25 @@
                   <th><a href="#">Surgery Package <i class="fa fa-caret-up fa-fw"></i></a></th>
                   <th><a href="#">Date Created <i
                     class="fa fa-caret-up fa-fw"></i></a></th>
-                  <th>Assigned To</th>
+                  <!-- <th>Assigned To</th> -->
+                  <th>Status</th>
                   <th></th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                  <td><a href="advocate-employee-episode-v4.html">Total Knee Replacement</a></td>
+                  <td>
+                    <a href="advocate-employee-episode-v4.html"><strong>Total Knee Replacement</strong></a>
+                    <p class="mb-0"><span class="clr-black20">Assigned: </span> Diane Cortes</p>
+                  </td>
                   <td>Aug 24, 2018</td>
-                  <td>Diane Cortes</td>
+                  <td>
+                    <select name="" id="" class="fancy-input mb-0">
+                      <option value="Preliminary">Preliminary</option>
+                      <option value="Confirmned">Confirmed</option>
+                      <option value="Completed">Completed</option>
+                    </select>
+                  </td>
                   <td class="text-right">
                     <a class="button link info small" href="#"><i class="fa fa-eye fa-fw"></i></a>
                     <a class="button link info small" href="#"><i class="fa fa-edit fa-fw"></i></a></td>
