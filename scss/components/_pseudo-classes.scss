@@ -180,17 +180,18 @@
 
   &:after {
     opacity: 0;
-    font-family: FontAwesome;
-    padding-left: .3rem;
+    font-family: "Font Awesome 5 free";
+    // padding-left: .3rem;
     position: absolute;
     width: fit-content;
     height: 1.4rem;
-    width: 1.35rem;
+    width: 1.4rem;
 
     background-color: lighten($alert-color, 25%);
     color: #fff;
     top: .75rem;
-    right: -.9rem;
+    right: -.5rem;
+    text-align: center;
     cursor: pointer;
     border-radius: 5rem;
     transition: all .5s;
@@ -214,7 +215,7 @@
 }
 
 .show-remove-hover {
-  &:after { content: "\f272"; }
+  &:after { content: "\f068"; }
 }
 
 // .pain-intensity-compact {
