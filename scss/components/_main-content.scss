@@ -610,7 +610,8 @@ section {
     .login-wrap {
       margin: 0 auto;
       padding: 2rem;
-      width: rem-calc(480);
+      width: 90%;
+      max-width: rem-calc(480);
       background: $white;
       border: 1px solid rgba($black, $B-dividers);
       border-radius: 2px;

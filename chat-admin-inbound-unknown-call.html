@@ -631,73 +631,81 @@
         <!-- Vertical Scroll Start -->
         <div class="container-scroll chat-body-scroll">
 	        <div class="row mb-0-5"  id="employee-search">
-	            <div class="columns col-md-12">
-	               <p class="mb-0 subheader pull-left"><strong><small>Member Name </small></strong></p>
-	              	<p class="mb-0 subheader pull-right"><i class="fa-search fa"></i></p>
-	                <input type="text" class="fancy-input mb-0" placeholder="Enter Member Name" name="SearchMemberName">
-	                <div class="panel small pad05">
-				<ul class="marginless pb-0-5 b-bottom-1 mb-0-5 list-style-type-none">
-					<li class="list-style-type-none"><small><strong>Joe Ortho</strong></small></li>
-					<li class="list-style-type-none">
-						<small>130-3668-0123</small>
-            					<small class="pull-right pr-1">
-            						<button id="btn-call-answer" class="button clear expanded small success" data-close="" aria-label="Close modal">
-            							<i class=""></i> Assign
-					            	</button>
-            					</small>
-					</li>
-					<li class="list-style-type-none"><small>Total Knee Replacement</small></li>
-				</ul>
-				<ul class="marginless pb-0-5 b-bottom-1 mb-0-5">
-					<li class="list-style-type-none"><small><strong>John Doe</strong></small></li>
-					<li class="list-style-type-none">
-						<small>126-3185-0188</small>
-						<small class="pull-right pr-1 center-content">
-            						<button id="btn-call-answer" class="button clear expanded small mb-0 callout" data-close="" aria-label="Close modal" disabled>
-            							<i class=""></i> Done
-					            	</button>
-            					</small>
-					</li>
-					<li class="list-style-type-none"><small>Total Knee Replacement</small></li>
-					<li class="list-style-type-none center-content subheader"><small><i>***New contact assigned to this member***</i></small></li>
-				</ul>
-			</div>
-	            </div>
-	        </div>
-	        <div class="row mb-0-5">
+            <div class="columns col-md-12">
+              <p class="mb-0 subheader pull-left"><strong><small>Member Name </small></strong></p>
+              	<p class="mb-0 subheader pull-right"><i class="fa-search fa"></i></p>
+                <input type="text" class="fancy-input mb-0" placeholder="Enter Member Name" name="SearchMemberName">
+                <div class="panel small pad05">
+                  <div class="row">
+                    <div class="column">
+                      <p class="mb-0"><small><strong>Joe Ortho</strong></small></p>
+                      <p><small>Total Knee Replacement</small></p>
+                    </div>
+                    <div class="column shrink pt-0-5">
+                      <button id="btn-call-answer" class="button clear small success pull-right pr-1"><i class=""></i> Assign</button>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="column">
+                      <p class="mb-0"><small><strong>Joe Doe</strong></small></p>
+                      <p class="mb-0"><small>Total Knee Replacement</small></p>
+                      <p class="text-center"><small><i>New contact assigned to this member</i></small></p>
+                    </div>
+                    <div class="column shrink pt-0-5">
+                      <span class="clr-black20 small"> Done</span>
+                    </div>
+                  </div>
+                    
+			            
+          		    <!-- <ul class="marginless pb-0-5 b-bottom-1 mb-0-5">
+          					<li class="list-style-type-none"><small><strong>John Doe</strong></small></li>
+          					<li class="list-style-type-none">
+					            <small>126-3185-0188</small>
+					            <small class="pull-right pr-1 center-content">
+          						  <button id="btn-call-answer" class="button clear expanded small mb-0 callout" data-close="" aria-label="Close modal" disabled><i class=""></i> Done</button>
+                      </small>
+                    </li>
+                    <li class="list-style-type-none"><small>Total Knee Replacement</small></li>
+                    <li class="list-style-type-none center-content subheader"><small><i>***New contact assigned to this member***</i></small></li>
+			            </ul> -->
+                </div>
+              </div>
+            </div>
+            <div class="row mb-0-5">
 	            <div class="columns col-md-12">
 	                <p class="mb-0 subheader"><strong><small>Active Episode</small></strong></p>
 	                <p class="mb-0"><a href="#"><strong>Total Knee Replacement</strong></a></p>
 	            </div>
-	        </div>
-	        <div class="row mb-0-5">
-	          <div class="columns">
-	            <p class="mb-0 subheader"><strong><small>Reason for calling</small></strong></p>
-	            <select name="" id="" class="fancy-input">
-                    <option value="general question">General question</option>
-                    <option value="inventive questions">Inventive questions</option>
-                    <option value="schedule consultation with surgeon">Schedule consultation with surgeon</option>
-                    <option value="Just saying Hi">Just saying Hi</option>
-                  </select>
-	          </div>
-	        </div>
-	        <div class="row mb-0-5">
-	          <div class="columns">
-	            <p class="mb-0 subheader"><strong><small>Notes</small></strong></p>
-	            <textarea name="" id="" cols="30" rows="4" class="fancy-input"></textarea>
-	          </div>
-	        </div>
-	        <div class="row video-call-action pb-2">
-	          <div class="columns col-md-2">
-	            <button id="btn-call-reject" class="button clear expanded small warning">
-	                <i class="fa fa-volume-off"></i> Mute
-	            </button>
-	          </div>
-	          <div class="columns col-md-2">
-	              <button id="btn-call-answer" class="button clear expanded small alert" data-close="" aria-label="Close modal">
-                        <i class="fa fa-phone"></i> End
-	             </button>
-	          </div>
+            </div>
+  	        <div class="row mb-0-5">
+  	          <div class="columns">
+  	            <p class="mb-0 subheader"><strong><small>Reason for calling</small></strong></p>
+  	            <select name="" id="" class="fancy-input">
+                      <option value="general question">General question</option>
+                      <option value="inventive questions">Inventive questions</option>
+                      <option value="schedule consultation with surgeon">Schedule consultation with surgeon</option>
+                      <option value="Just saying Hi">Just saying Hi</option>
+                    </select>
+  	          </div>
+  	        </div>
+  	        <div class="row mb-0-5">
+  	          <div class="columns">
+  	            <p class="mb-0 subheader"><strong><small>Notes</small></strong></p>
+  	            <textarea name="" id="" cols="30" rows="4" class="fancy-input"></textarea>
+  	          </div>
+  	        </div>
+  	        <div class="row video-call-action pb-2">
+  	          <div class="columns col-md-2">
+  	            <button id="btn-call-reject" class="button clear expanded small warning">
+  	                <i class="fa fa-volume-off"></i> Mute
+  	            </button>
+  	          </div>
+  	          <div class="columns col-md-2">
+  	              <button id="btn-call-answer" class="button clear expanded small alert" data-close="" aria-label="Close modal">
+                          <i class="fa fa-phone"></i> End
+  	             </button>
+  	          </div>
 	          </div>
           </div>
           <!-- Vertical Scroll End -->
