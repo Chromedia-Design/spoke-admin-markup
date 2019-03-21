@@ -692,4 +692,26 @@
   }
 }
 
+.contains-floating-button {
+  .floating-button {
+    position: absolute;
+    right: -.75rem;
+    top: .5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: $alert-color;
+    border-radius: 5rem;
+    overflow: hidden;
+    color: #fff;
+    opacity: 0;
+    transition: all .5s;
+  }
+  &:hover {
+    .floating-button {
+      opacity: 1;
+      transition: all .5s;
+    }
+  }
+}
+
 

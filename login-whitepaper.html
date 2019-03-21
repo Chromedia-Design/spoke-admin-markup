@@ -11,13 +11,14 @@
 
 <section class="whitepaper home success-bg">
   <div class="row expanded collapse">
-    <div class="main-content medium-6 columns">
+    
+    <div class="main-content small-12 large-6 columns hide-for-small-only hide-for-medium-only">
 
-      <header class="top-bar">
+      <header class="top-bar hide-for-small-only">
         <div class="top-bar-title">
-          <span data-responsive-toggle="responsive-menu" data-hide-for="large">
+          <!-- <span data-responsive-toggle="responsive-menu" data-hide-for="large">
               <span class="menu-icon dark" data-toggle></span>
-          </span>
+          </span> -->
           <a href="#" class="logo">
             <img src="https://s3.amazonaws.com/assets.cobrands.spokehealth.com/novant/nh-logo-color-white.png" alt="">
           </a>
@@ -30,7 +31,6 @@
          <div class="medium-9 columns medium-centered">
            <div class="call-to-action">
              <h1>Welcome to the Novant Health Portal</h1>
-             <!-- <p class="h5">Nullam id dolor id nibh ultricies vehicula ut id elit.</p> -->
            </div>
          </div>
        </div>
@@ -48,54 +48,22 @@
           </div>
         </section>
 
-        <!-- <section class="section lo-padded">
-          <div class="row expanded">
-            <div class="medium-9 columns medium-centered">
-              <div class="section-heading">
-                <h4>Cras mattis consectetur purus sit amet fermentum.</h4>
-                <hr class="marker center">
-              </div>
-              <p>Spoke has developed a program and the required technology that allows us to serve the needs
-                of all constituents. All supported by technology that is generations ahead of the current market.</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="section lo-padded">
-          <div class="row expanded">
-            <div class="medium-9 columns medium-centered">
-              <div class="section-heading">
-                <h4>Cras mattis consectetur purus sit amet fermentum.</h4>
-                <hr class="marker center">
-              </div>
-              <p>Spoke has developed a program and the required technology that allows us to serve the needs
-                of all constituents. All supported by technology that is generations ahead of the current market.</p>
-            </div>
-          </div>
-        </section> -->
-
       </div>
-
     </div>
-    <div class="side-content medium-6 columns">
-      <!-- <header class="top-bar">
-        <div class="top-bar-right">
-          <ul class="menu">
-            <li>
-              <a class="button link white" href="#">Resources</a>
-            </li>
-            <li>
-              <a class="button link white" href="#">1-888-408-0558</a>
-            </li>
-            <li>
-              <a class="button hollow white" href="#">Talk To Concierge</a>
-            </li>
-          </ul>
+
+    <div class="side-content small-12 large-6 columns">
+      <header class="top-bar hide-for-large pb-0 pt-0">
+        <div class="top-bar-title">
+          <a href="#" class="logo">
+            <img src="https://s3.amazonaws.com/assets.cobrands.spokehealth.com/novant/nh-logo-color-white.png" alt="">
+          </a>
         </div>
-      </header> -->
+      </header>
+
       <div class="right-body">
-        <div class="login pt-2">
-          <div class="login-inner">
+        <div class="login">
+
+          <div class="login-inner hide-for-small-only">
             <div class="row mb-2">
               <div class="columns shrink centered text-center">
                 <span class="h5">To get started </span>
@@ -122,17 +90,47 @@
                 <!-- <button type="submit" class="button large expanded"><i class="fa fa-refresh fa-spin"></i></button> -->
               </form>
             </div>
+           
+          </div>
+
+          <div class="login-inner show-for-small-only">
+            <p class="show-for-small-only text-center"><strong>Welcome to the Novant Health Portal</strong></p>
+            <div class="row mb-2">
+              <div class="columns shrink centered text-center">
+                <span class="">To get started </span>
+                <br>
+                <span class="">call us at <span class="clr-warning">888-408-0558</span></span>
+              </div>
+            </div>
+
+            <div class="bg-white ml-0-5 mr-0-5 pad-1 border-radius-sm">
+              <form action="">
+                <!-- <div class="callout alert">
+                  <p><small>You are automatically logged out due to inactivity.</small></p>
+                </div> -->
+                <label>
+                  <input type="text" placeholder="Username/Email" class="fancy-input round-corner">
+                </label>
+                <label>
+                  <input type="text" placeholder="Password" class="fancy-input round-corner">
+                </label>
+                <p class="help-text text-center"><a href="admin-login-setEmail.html">Forgot Password?</a></p>
+                <button type="submit" class="button success small expanded">Sign In</button>
+                <button class="button alert hollow clear expanded mb-0">Not registered yet?</button>
+                <!-- <button type="submit" class="button large expanded"><i class="fa fa-refresh fa-spin"></i></button> -->
+              </form>
+            </div>
           </div>
 
           <div class="login-banner">
-            <div class="login-banner-wrap text-center borderless bg-none">
-              <p>copyright 2019, Novant Health, Access to protected data is strictly enforced. Any unauthorized access to protected data or use by unauthorized individuals is prohibited</p>
+            <div class="login-banner-wrap text-center borderless bg-none pl-0-5 pr-0-5">
+              <p class="tiny">copyright 2019, Novant Health, Access to protected data is strictly enforced. Any unauthorized access to protected data or use by unauthorized individuals is prohibited</p>
             </div>
           </div>
         </div>
       </div>
-
     </div>
+
   </div>
 </section>
 
