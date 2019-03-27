@@ -50,3 +50,43 @@
 		}
 	}
 }
+
+#eventCalendar {
+	.fc-toolbar {
+		.fc-left, .fc-right {
+			button {
+				background-image: none !important;
+				background-color: transparent !important;
+				box-shadow: none !important;
+				border: none !important;
+			}
+		}
+		.fc-left {}
+		.fc-center {}
+		.fc-right {}
+	}
+}
+
+#eventScheduler {
+	.fc-toolbar {
+		.fc-left {}
+		.fc-right {
+			button.fc-today-button {
+				background-image: none !important;
+				background-color: transparent !important;
+				box-shadow: none !important;
+				border: none !important;
+				font-weight: bold;
+				color: $primary-color !important;
+			} 
+			.fc-button-group {
+				button {
+					background-image: none !important;
+					background-color: transparent !important;
+					box-shadow: none !important;
+					border: none !important;
+				}
+			}
+		}
+	}
+}

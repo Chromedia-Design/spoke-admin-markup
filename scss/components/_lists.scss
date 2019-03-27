@@ -99,7 +99,7 @@
     .list-wrap {
       // background-color: $white;
       padding: 0.65rem 0.875rem;
-      border: 1px solid rgba($black, $B-dividers);
+      // border: 1px solid rgba($black, $B-dividers);
 
       &.stack-for-small {
         .list-item-image, .list-item-name, .list-detail {
@@ -806,7 +806,7 @@
       }
 
       &:hover {
-        background: $white;
+        // background: $white;
       }
 
       .fancy-checkbox {
@@ -848,8 +848,8 @@
       &.alert {
 
         .list-wrap {
-          border: 1px solid rgba(10,16,35,0.12);
-            background-color: #FBE8EA;
+          // border: 1px solid rgba(10,16,35,0.12);
+          // background-color: #FBE8EA;
         }
 
         .fancy-checkbox,
@@ -1601,7 +1601,7 @@ ul.vertical-list {
     z-index: 1;
 
     &:last-child {
-      border-bottom: 1px solid rgba($black, $B-dividers) !important;
+      // border-bottom: 1px solid rgba($black, $B-dividers) !important;
     }
 
     &.large {
@@ -2124,7 +2124,13 @@ ul.vertical-list {
               padding-top: .1rem !important;
             }
           }
-          &.item-message {}
+          &.item-message {
+            &:before {
+              content: "\f0e0" !important;
+              // padding-top: .1rem !important;
+              padding-left: .27rem !important;
+            }
+          }
           &.item-todo {}
           &.item-question {
             &:before {

@@ -310,11 +310,11 @@
 }
 
 .b-all-1 {
-  border: solid 0.1rem $primary-light;
+  border: solid 1px $primary-light !important;
 }
 
 .b-all-1-darker {
-  border: 0.05rem solid rgba($black, $B-dividers);
+  border: 1px solid rgba($black, $B-dividers);
 }
 
 .b-top-1-darker {
