@@ -12,7 +12,7 @@ html {
 
 body.spoke-frontend {
   background: $spk-white;
-  /*background: #fff;*/
+
   .spk-prim {
     color: $spk-prim;
   }
@@ -76,9 +76,8 @@ body.spoke-frontend {
     border-right: 1px solid #1EBE44;
     height: 1em;
     max-width: 100em;
-    width:50%;
+    width: 50%;
   }
-
 
   section {
     padding-top: 5em;
@@ -87,9 +86,6 @@ body.spoke-frontend {
     &.banner {
       background-image: url('../img/employer-section-2.png'), url('../img/spk-sec-container1.jpg');
       background-size: cover;
-      //height: 100%;
-      //margin-top: -5em !important;
-      //padding-top: 10em !important;
 
       h1, h2, h3, h4, h5, h6, p {
         text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
@@ -106,10 +102,6 @@ body.spoke-frontend {
         transform: translate(-50%, -50%);
       }
     }
-
-    .bg-head1 {
-      /*background-color: rgba($spk-sec, 0.2);*/
-    }
   }
 
 
@@ -125,11 +117,6 @@ body.spoke-frontend {
         }
       ;
       }
-    }
-
-    img.linked-in {
-      /*display: none !important;*/
-      /*transform: scale(0.5) !important;*/
     }
 
     div.border-color-light {
