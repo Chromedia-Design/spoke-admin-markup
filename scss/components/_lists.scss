@@ -2095,7 +2095,7 @@ ul.vertical-list {
             border-radius: 5rem;
             overflow: hidden;
             position: absolute;
-            left: -3.3rem;
+            left: -3.4rem;
             top: 0rem;
             width: 27px;
             height: 27px;
@@ -2110,7 +2110,7 @@ ul.vertical-list {
 
             position: absolute;
             // left: -2.1rem;
-            left: -1.6rem;
+            left: -1.7rem;
             top: .8rem;
 
             width: 1rem;
@@ -2126,17 +2126,45 @@ ul.vertical-list {
           }
           &.item-message {
             &:before {
-              content: "\f0e0" !important;
+              content: "\f075" !important;
               // padding-top: .1rem !important;
               padding-left: .27rem !important;
             }
           }
-          &.item-todo {}
+          &.item-email {
+            &:before {
+              content: "\f0e0" !important;
+              // padding-top: .1rem !important;
+              padding-left: .27rem !important;
+              font-size: .9rem !important;
+            }
+          }
+          &.item-todo {
+            &:before {
+              content: "\f0ae" !important;
+              font-size: .85rem !important;
+              padding-top: .1rem !important;
+            }
+          }
           &.item-question {
             &:before {
               content: "\f46d" !important;
               // padding-top: .1rem !important;
               padding-left: .36rem !important;
+              font-size: .95rem !important;
+            }
+          }
+          &.item-reminder {
+            &:before {
+              content: "\f0f3" !important;
+              color: #fff;
+              border-color: $secondary-color;
+              background-color: $secondary-color;
+              // padding-top: .1rem !important;
+              // padding-left: .36rem !important;
+            }
+            &:after {
+              background-color: $secondary-color;
             }
           }
         }

@@ -48,11 +48,15 @@
 		tbody tr:nth-child(even) {
 			background: transparent;
 		}
+		td {
+			border-color: rgba(10,16,35,0.06125) !important;
+		}
 	}
 }
 
 #eventCalendar {
 	.fc-toolbar {
+		margin-bottom: .55em !important;
 		.fc-left, .fc-right {
 			button {
 				background-image: none !important;
@@ -64,6 +68,10 @@
 		.fc-left {}
 		.fc-center {}
 		.fc-right {}
+	}
+	.fc-view-container {
+		// border-radius: 5px !important;
+		// overflow: hidden !important;
 	}
 }
 
