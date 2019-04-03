@@ -1075,7 +1075,7 @@ $main-color: #1ebd44;
   box-shadow: 0 5px 40px rgba(0, 0, 0, .16) !important;
   height: 450px;
   max-height: 700px;
-  overflow-y: hidden;
+  overflow-y: scroll;
   position: relative;
 
   .chat-body-scroll {
