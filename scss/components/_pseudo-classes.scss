@@ -174,7 +174,11 @@
   }
 }
 
-.hover-me { background-color: rgba(255,255,255,.35) !important }
+.hover-me { 
+  &:hover {
+    background-color: rgba(255,255,255,.35) !important 
+  }
+}
 
 
 .show-edit-hover, .show-close-hover, .show-remove-hover {
