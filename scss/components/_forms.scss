@@ -1480,7 +1480,7 @@ $bg-instruction: #17659B;
 .question-item {
   padding: 0 .5rem;
   margin-bottom: 1rem;
-  @extend .box-shadow-sm;
+  // @extend .box-shadow-sm;
   @extend .border-radius-md;
   > div {
     padding-left: 0;
@@ -1496,11 +1496,11 @@ $bg-instruction: #17659B;
   }
   &.preview-only {
     // background-color: red;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     border-radius: 0;
     padding: 0 .5rem;
     box-shadow: none !important;
-    border: 1px solid rgba($black, $B-dividers);
+    // border: 1px solid rgba($black, $B-dividers);
     .item-question {
       // strong {
       //   font-weight: 300 !important;
@@ -1516,6 +1516,15 @@ $bg-instruction: #17659B;
     }
     .item-answer-option {
       padding: 0;
+      margin-left: 1rem;
+      input {
+        background-color: transparent !important;
+        color: black !important;
+        // font-weight: normal;
+        all: unset;
+        font-weight: bold;
+
+      }
       input[type="checkbox"],
       input[type="radio"] {
         // cursor: not-allowed;
@@ -1523,10 +1532,7 @@ $bg-instruction: #17659B;
         & + label {
           display:none;
         }
-      }
-      input[type="checkbox"][checked="checked"],
-      input[type="radio"][checked="checked"] {
-          // display: inline-block;
+        &:checked {
           margin: 0;
           & + label {
             // display: inline-block;
@@ -1542,7 +1548,27 @@ $bg-instruction: #17659B;
             all: unset;
             font-weight: bold;
           }
+        }
       }
+      // input[type="checkbox"][checked],
+      // input[type="radio"][checked] {
+      //     // display: inline-block;
+      //     margin: 0;
+      //     & + label {
+      //       // display: inline-block;
+      //       // // padding: .5rem 1rem;
+      //       // padding: 0;
+      //       // margin: 0;
+      //       // border-radius: 3px;
+      //       // // @extend .bg-black20;
+      //       // background-color: #e3e3e3 !important;
+      //       background-color: transparent !important;
+      //       color: black !important;
+      //       // font-weight: normal;
+      //       all: unset;
+      //       font-weight: bold;
+      //     }
+      // }
       select,
       [type='text'],
       [type='password'],
