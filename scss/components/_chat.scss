@@ -1010,6 +1010,35 @@ $main-color: #1ebd44;
 	i {
 		font-size: 1.5rem;
 	}
+  .counter {
+    display: block;
+    position: absolute;
+    // top: 0;
+    // left: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+
+    background-color: $alert-color;
+    overflow: hidden;
+
+
+    text-align: center;
+    
+    line-height: 1.2em;
+    border-radius: 50%;
+    color: #fff;
+    font-size: .85rem;
+    padding: .25rem;
+    position: absolute;
+    left: -4px;
+    top: -7px;
+  }
+}
+
+#form-question-container {
+  .chat-header-intro {
+    background-color: $primary-color;
+  }
 }
 
 #chat-notification {
