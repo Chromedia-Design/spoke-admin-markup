@@ -1107,6 +1107,10 @@ $main-color: #1ebd44;
   overflow-y: scroll;
   position: relative;
 
+  &.non-scrollable {
+    overflow-y: hidden !important;
+  }
+
   .chat-body-scroll {
     height: 425px;
   }
