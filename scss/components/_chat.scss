@@ -1044,6 +1044,19 @@ $main-color: #1ebd44;
 #chat-notification {
   user-select: none;
 
+  #form-question-container {
+    .chat-header-intro {
+      background-color: $primary-color !important;
+    }
+    .chat-header-container {
+      &:hover {
+        .chat-header {
+          background-color: $primary-color !important;
+        }
+      }
+    }
+  }
+
   .chat-header-container {
     .chat-header {
       background-color: #fff !important;
@@ -1057,7 +1070,6 @@ $main-color: #1ebd44;
 
         .user-role {
           // white-space: nowrap;
-          //    overflow: hidden;
           //    text-overflow: ellipsis;
           overflow: hidden;
           display: -webkit-box;
@@ -1349,9 +1361,3 @@ $main-color: #1ebd44;
     }
   }
 }
-
-
-
-
-
-

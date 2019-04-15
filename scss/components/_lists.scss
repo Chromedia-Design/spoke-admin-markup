@@ -2105,7 +2105,7 @@ ul.vertical-list {
             color: $success-color;
           }
           &:after {
-            content:" ";
+            // content:" ";
             background-color: $success-color;
 
             position: absolute;
@@ -2115,6 +2115,12 @@ ul.vertical-list {
 
             width: 1rem;
             height: $line-size;
+          }
+
+          .sub-item-title {
+            padding: .25rem .5rem;
+            background-color: #fff;
+            color: $primary-color;
           }
 
           &.item-tasks {
@@ -2206,6 +2212,7 @@ ul.vertical-list {
             &:after {
               background-color: $warning-color;
             }
+
           }
         }
       }
