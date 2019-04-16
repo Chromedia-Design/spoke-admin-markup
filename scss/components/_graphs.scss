@@ -22,6 +22,15 @@
           color: rgba($black, $B-dividers);
         }
 
+        .progress-meter-text {
+          &.detach {
+            position: absolute;
+            top: -1rem;
+            color: $primary-color;
+            left: 1.5rem;
+          }
+        }
+
         .deductible-label {
           position: absolute;
           margin: 0;
@@ -31,6 +40,7 @@
           font-size: 0.875rem;
           color: rgba($black, $B-subtext);
           text-align: right;
+          white-space: nowrap;
         }
       }
 
@@ -43,6 +53,15 @@
         background-color: $success-color;
         border-top-right-radius: 8px;
         border-bottom-right-radius: 8px;
+
+        .progress-meter-text {
+          &.detach {
+            position: absolute;
+            top: -1rem;
+            color: $primary-color;
+            right: 1.5rem;
+          }
+        }
 
         .bonus-label {
           position: absolute;
