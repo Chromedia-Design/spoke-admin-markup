@@ -639,6 +639,14 @@
   }
 }
 
+.text-lowercase { text-transform: lowercase !important; }
+.text-uppercase { text-transform: uppercase !important; }
+.text-capitalize { text-transform: capitalize !important; }
+
+.rotate45 {
+  transform: rotate(-45deg) !important;
+}
+
 .always-on-top {
   z-index: 998;
 }
