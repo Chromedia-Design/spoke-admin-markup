@@ -506,8 +506,12 @@
 
 .bg-white { background-color: #fff !important; }
 
-.bg-black10 { background-color: darken(#fff, 3%) !important; }
-.bg-black20 { background-color: darken(#fff, 6%) !important; }
+.bg-black10 { background-color: darken(#f7f7f7, 3%) !important; }
+.bg-black20 { background-color: darken(#f7f7f7, 6%) !important; }
+
+.bg-cloud { background-color: #eef3f7 !important; }
+
+
 
 
 // Text color
@@ -518,9 +522,9 @@
 
 .clr-black { color: $black !important; }
 
-.clr-black10 { color: darken(#fff, 10%) !important ;}
-.clr-black20 { color: darken(#fff, 20%) !important ;}
-.clr-black50 { color: darken(#fff, 50%) !important ;}
+.clr-black10 { color: darken(#f7f7f7, 10%) !important ;}
+.clr-black20 { color: darken(#f7f7f7, 20%) !important ;}
+.clr-black50 { color: darken(#f7f7f7, 50%) !important ;}
 
 .clr-primary { color: $primary-color !important; }
 .clr-primary-lighten { color: rgba($primary-color, .5) !important; }
@@ -690,8 +694,11 @@
 
 .striped {
 	> :nth-child(even) {
-		background-color: darken(#fff, 3%) !important;
+		background-color: darken(#fff, 4%) !important;
 	}
+  > :nth-child(odd) {
+    background-color: darken(#fff, 2%) !important;
+  }
 }
 
 .striped-light {
