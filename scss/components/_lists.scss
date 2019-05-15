@@ -805,21 +805,6 @@
         }
       }
 
-      &:hover {
-        // background: $white;
-      }
-
-      .fancy-checkbox {
-        input {
-          margin: 0;
-          height: rem-calc(25);
-
-          &:after {
-            margin-left: -5px;
-          }
-        }
-      }
-
       .preamble {
         margin: 0;
       }
@@ -827,15 +812,23 @@
       &.warning {
         .fancy-checkbox,
         .fancy-radio {
-          input:after {
-            border-color: $warning-color;
-          }
-
-          input:checked {
-            &:after {
-              border-color: $warning-color;
-              background-color: $warning-color;
-              box-shadow: 0 0 0 2px $warning-color;
+          [type='checkbox'],
+          [type='radio'] {
+            + label,
+            + span {
+              &:after {
+                border-color: $warning-color;
+              }
+            }
+            &:checked {
+              + label,
+              + span {
+                &:after {
+                  border-color: $warning-color;
+                  background-color: $warning-color;
+                  box-shadow: 0 0 0 2px $warning-color;
+                }
+              }
             }
           }
         }
@@ -847,22 +840,25 @@
 
       &.alert {
 
-        .list-wrap {
-          // border: 1px solid rgba(10,16,35,0.12);
-          // background-color: #FBE8EA;
-        }
-
         .fancy-checkbox,
         .fancy-radio {
-          input:after {
-            border-color: $alert-color;
-          }
-
-          input:checked {
-            &:after {
-              border-color: $alert-color;
-              background-color: $alert-color;
-              box-shadow: 0 0 0 2px $alert-color;
+          [type='checkbox'],
+          [type='radio'] {
+            + label,
+            + span {
+              &:after {
+                border-color: $alert-color;
+              }
+            }
+            &:checked {
+              + label,
+              + span {
+                &:after {
+                  border-color: $alert-color;
+                  background-color: $alert-color;
+                  box-shadow: 0 0 0 2px $alert-color;
+                }
+              }
             }
           }
         }
@@ -875,15 +871,23 @@
       &.complete {
         .fancy-checkbox,
         .fancy-radio {
-          input:after {
-            border-color: $light-gray;
-          }
-
-          input:checked {
-            &:after {
-              border-color: $light-gray;
-              background-color: $light-gray;
-              box-shadow: 0 0 0 2px $light-gray;
+          [type='checkbox'],
+          [type='radio'] {
+            + label,
+            + span {
+              &:after {
+                border-color: $light-gray;
+              }
+            }
+            &:checked {
+              + label,
+              + span {
+                &:after {
+                  border-color: $light-gray;
+                  background-color: $light-gray;
+                  box-shadow: 0 0 0 2px $light-gray;
+                }
+              }
             }
           }
         }
