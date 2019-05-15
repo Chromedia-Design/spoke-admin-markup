@@ -1,109 +1,125 @@
 .media-object {
-	margin: 1rem 0;
-	&.full-table {
-		display: flex;
-		width: 100%;
-		.media-object-section {
-			flex: 1;
-			min-width: 0;
-			.button {
-				white-space: nowrap;
-			}
-			&.logo {
-				width: 5.3125rem;
-				&.tiny {
-					width: 2.375rem;
-					// .img-wrapper { 
-					// 	width: 1.375rem;
-					// 	height: 1.375rem;
-					// }
-				}
-				&.small {
-					width: 3.75rem;
-					// .img-wrapper { 
-					// 	width: 2.75rem;
-					// 	height: 2.75rem;
-					// }
-				}
-				&.large {
-					width: 9.625rem;
-					// .img-wrapper {
-					// 	width: 8.625rem;
-					// 	height: 8.625rem;
-					// }
-				}
-			}
-			&.shrink {
-				flex: 0 1 auto;
-			}
-		}
-		&.align-middle {
-			align-items: center;
-		}
-	}
+  margin: 1rem 0;
+
+  &.full-flex {
+    display: flex;
+    width: 100%;
+
+    .media-object-section {
+      flex: 1;
+      min-width: 0;
+
+      .button {
+        white-space: nowrap;
+      }
+
+      &.logo {
+        width: 5.3125rem;
+
+        &.tiny {
+          width: 2.375rem;
+        }
+
+        &.small {
+          width: 3.75rem;
+        }
+
+        &.large {
+          width: 9.625rem;
+        }
+      }
+
+      &.shrink {
+        flex: 0 1 auto;
+      }
+    }
+
+    &.align-middle {
+      align-items: center;
+    }
+  }
+
+  &.full-table {
+    display: table;
+    width: 100%;
+
+    &.fixed {
+      table-layout: fixed;
+    }
+  }
 }
 
 .media-object-section {
-	a {
-		color: inherit;
-	}
-	.badge {
-		width: 0.5rem;
-		height: 0.5rem;
-		min-width: 0.5rem;
-		padding: 0;
-		vertical-align: middle;
-		&.info {
-			background-color: $light-gray;
-		}
-	}
-	.button {
-		white-space: nowrap;
-	}
-	&.logo,
-	&.cover {
-		.img-wrapper {
-			overflow: hidden;
-			width: 4.3125rem;
-			height: 4.3125rem;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			text-align: center;
-			border: 1px solid rgba($black, $B-dividers);
-			background-color: $white;
-			img {
-				width: 100%;
-			}
-			span.h5 {
-				font-weight: normal;
-				color: rgba($black, $B-hinttext);
-			}
-		}
-		&.tiny {
-			.img-wrapper { 
-				width: 1.375rem;
-				height: 1.375rem;
-			}
-		}
-		&.small {
-			.img-wrapper { 
-				width: 2.75rem;
-				height: 2.75rem;
-			}
-		}
-		&.large {
-			.img-wrapper {
-				width: 8.625rem;
-				height: 8.625rem;
-			}
-		}
-	}
-	&.cover {
-		.img-wrapper {
-			width: 12.9375rem;
-			height: 18rem;
-			align-items: bottom;
-		}
-	}
+  a {
+    color: inherit;
+  }
+
+  .badge {
+    width: 0.5rem;
+    height: 0.5rem;
+    min-width: 0.5rem;
+    padding: 0;
+    vertical-align: middle;
+
+    &.info {
+      background-color: $light-gray;
+    }
+  }
+
+  .button {
+    white-space: nowrap;
+  }
+
+  &.logo,
+  &.cover {
+    .img-wrapper {
+      overflow: hidden;
+      width: 4.3125rem;
+      height: 4.3125rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border: 1px solid rgba($black, $B-dividers);
+      background-color: $white;
+
+      img {
+        width: 100%;
+      }
+
+      span.h5 {
+        font-weight: normal;
+        color: rgba($black, $B-hinttext);
+      }
+    }
+
+    &.tiny {
+      .img-wrapper {
+        width: 1.375rem;
+        height: 1.375rem;
+      }
+    }
+
+    &.small {
+      .img-wrapper {
+        width: 2.75rem;
+        height: 2.75rem;
+      }
+    }
+
+    &.large {
+      .img-wrapper {
+        width: 8.625rem;
+        height: 8.625rem;
+      }
+    }
+  }
+
+  &.cover {
+    .img-wrapper {
+      width: 12.9375rem;
+      height: 18rem;
+      align-items: baseline;
+    }
+  }
 }
