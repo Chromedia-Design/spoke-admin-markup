@@ -1194,21 +1194,23 @@ input {
 
 .fancy-checkbox,
 .fancy-radio {
-  display: block;
+  display: table;
   position: relative;
-  margin: 0 0 1rem 0;
+  margin: 0 0 0.5rem 0;
   width: 100%;
   height: auto;
   text-align: left;
   cursor: pointer;
 
-  $fancy-checkbox-normal-size: 32px;
-  $fancy-checkbox-small-size:  20px;
+  $fancy-checkbox-normal-size: rem-calc(32);
+  $fancy-checkbox-small-size:  rem-calc(20);
 
   [type='checkbox'],
   [type='radio'] {
     position: relative;
+    display: table-cell;
     z-index: 1;
+    margin: 0;
     width: $fancy-checkbox-normal-size !important;
     height: $fancy-checkbox-normal-size !important;
     cursor: pointer;
@@ -1218,22 +1220,15 @@ input {
 
     + label,
     + span {
-      position: absolute;
-      z-index: 0;
-      content: '';
-      top: 0;
-      left: 0;
-      cursor: pointer;
-      width: $fancy-checkbox-normal-size;
-      height: $fancy-checkbox-normal-size;
+      display: inline-block;
       margin: 0;
-      text-indent: -999999px;
 
       &:after {
         display: block;
         position: absolute;
         content: '';
         top: 0;
+        bottom: 0;
         left: 0;
         cursor: pointer;
         width: $fancy-checkbox-normal-size;
@@ -1269,9 +1264,8 @@ input {
 
       + label,
       + span {
-        width: $fancy-checkbox-small-size;
-        height: $fancy-checkbox-small-size;
         &:after {
+          top: 3px;
           width: $fancy-checkbox-small-size;
           height: $fancy-checkbox-small-size;
           background-size: 1rem;
