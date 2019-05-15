@@ -663,7 +663,7 @@ section {
 
 // Primarily used for the sidebar menu
 .content {
-  overflow-y: scroll;
+  // overflow-y: scroll;
 
   .top-bar {
     border-bottom: 1px solid rgba($black, $B-dividers);
@@ -688,15 +688,33 @@ section {
 }
 
 #profileContent {
-  overflow-y: scroll;
+  // overflow-y: scroll;
 
   &::-webkit-scrollbar {
-    display: none;
+    // display: none;
   }
 
   &::-moz-scrollbar {
-    display: none;
+    // display: none;
   }
+
+  &::-webkit-scrollbar {
+    // -webkit-appearance: none;
+  }
+
+  // &::-webkit-scrollbar:vertical {
+  //   width: 11px;
+  // }
+
+  // &::-webkit-scrollbar:horizontal {
+  //   height: 11px;
+  // }
+
+  // &::-webkit-scrollbar-thumb {
+  //   border-radius: 8px;
+  //   border: 2px solid red; /* should match background, can't be transparent */
+  //   background-color: rgba(0, 0, 0, .5);
+  // }
 }
 
 // Package builder: requires row class

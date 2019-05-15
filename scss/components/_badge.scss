@@ -1,6 +1,13 @@
 .badge {
   line-height: 1.45em;
 
+  &.indicator {
+    width: .775rem !important;
+    height: .775rem !important;
+    padding: 0 !important;
+    min-width: 0;
+  }
+
   &.alert {
     background-color: $alert-color;
     color: $white;
