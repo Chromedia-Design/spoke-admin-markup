@@ -1217,6 +1217,7 @@ input {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
+    background: transparent !important;
 
     + label,
     + span {
@@ -1265,7 +1266,7 @@ input {
       + label,
       + span {
         &:after {
-          top: 5px;
+          top: 2px;
           width: $fancy-checkbox-small-size;
           height: $fancy-checkbox-small-size;
           background-size: 1rem;
