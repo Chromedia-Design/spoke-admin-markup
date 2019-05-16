@@ -52,15 +52,9 @@
     </div>
   </div>
   <div class="medium-10 columns">
-    <div class="content">
+    <div class="main-content">
 
       <div class="top-bar">
-        <div class="top-bar-left">
-          <!-- <ul class="menu">
-                <li><input type="search" placeholder="Search"></li>
-                <li><button type="button" class="button">Search</button></li>
-            </ul> -->
-        </div>
         <div class="top-bar-right">
           <ul class="dropdown menu" data-dropdown-menu>
             <li class="drop-text">
@@ -157,7 +151,8 @@
                 <a href="advocate-employee-profile-v2.html"><i class="fa fa-address-book-o"></i> &nbsp;Overview</a>
               </li>
               <li>
-                <a href="advocate-employee-episodes-list-v2.html"><i class="fa fa-stethoscope"></i> &nbsp;Episode Details</a>
+                <a href="advocate-employee-episodes-list-v2.html"><i class="fa fa-stethoscope"></i> &nbsp;Episode
+                  Details</a>
               </li>
               <li>
                 <a href="advocate-employee-notes-v2.html"><i class="fa fa-sticky-note-o"></i> &nbsp;Notes</a>
@@ -172,12 +167,12 @@
           </div>
         </div>
 
-        <div id="profileContent" class="large-9 columns">
+        <div class="large-9 columns">
 
-          <div id="chatClient" class="chat">
+          <div id="chatClient" class="chat" style="height: 800px;">
             <div class="chat-wrapper">
 
-              <div class="chat-header mt-0-5">
+              <div class="chat-header">
                 <div class="plain button-align ml-0-5 mr-0-5">
                   <a href="advocate-communications.html" class="plain button info link"><i class="fa fa-angle-left"></i>&nbsp;
                     All Messages</a>
@@ -665,7 +660,6 @@
                       </div>
 
                     </div>
-
 
                     <div class="wrapper text-center">
                       <div class="media-object" data-animate="slide-in-right slide-out-right">
@@ -1287,6 +1281,7 @@
                         </div>
                       </div>
                     </div>
+
                   </div>
 
                 </div>
@@ -1394,22 +1389,22 @@
 
 <script type="text/javascript">
 
-    var topBarHeight = $('.top-bar').outerHeight();
+  var topBarHeight = $('.top-bar').outerHeight();
 
-    $(function () {
-        var timer;
-        $(window).resize(function () {
-            clearTimeout(timer);
-            timer = setTimeout(function () {
-                $('#chatSupport, #chatSupport .offcanvas-area-inner, .site-nav, .content').css("height", $(window).height());
-                $('.site-nav.secondary, #profileContent, #chatClient .chat-wrapper').css("height", $(window).height() - topBarHeight);
-            }, 40);
-        }).resize();
-    });
+  $(function () {
+    var timer;
+    $(window).resize(function () {
+      clearTimeout(timer);
+      timer = setTimeout(function () {
+        $('#chatSupport, #chatSupport .offcanvas-area-inner, .site-nav, .content').css("height", $(window).height());
+        $('.site-nav.secondary, #profileContent, #chatClient .chat-wrapper').css("height", $(window).height() - topBarHeight);
+      }, 40);
+    }).resize();
+  });
 
-    $('.wysiwyg').trumbowyg({
-        btns: [['bold', 'italic'], ['link']]
-    });
+  $('.wysiwyg').trumbowyg({
+    btns: [['bold', 'italic'], ['link']]
+  });
 
 </script>
 
