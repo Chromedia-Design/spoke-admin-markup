@@ -637,6 +637,7 @@ $light-gray-hex: #CBCFD3;
     // min-height: 570px;
     flex: 1 1 auto; /*grows*/
     display: flex;
+    height: 100%;
     flex-direction: row;
     justify-content: flex-start; /*align items in main axis*/
     align-items: stretch; /* align items in Cross Axis */
@@ -839,8 +840,10 @@ $light-gray-hex: #CBCFD3;
 // Set Client chat window styles
 #chatClient {
   width: 100%;
+  height: 100%;
 
   .chat-wrapper {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /*align items in main axis*/
