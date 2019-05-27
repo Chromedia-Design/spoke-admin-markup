@@ -1208,29 +1208,33 @@ input {
   [type='checkbox'],
   [type='radio'] {
     position: relative;
-    display: table-cell;
+    display: table-cell !important;
     z-index: 1;
     margin: 0;
     width: $fancy-checkbox-normal-size !important;
     height: $fancy-checkbox-normal-size !important;
     cursor: pointer;
     appearance: none;
+    opacity: 0;
     -webkit-appearance: none;
     -moz-appearance: none;
     background: transparent !important;
 
     + label,
     + span {
+      position: relative;
       display: inline-block;
       margin: 0 0 0 0.875rem;
 
       &:after {
         display: block;
         position: absolute;
+        z-index: 0;
         content: '';
         top: 0;
         bottom: 0;
-        left: 0;
+        margin: auto 0;
+        left: -2rem;
         cursor: pointer;
         width: $fancy-checkbox-normal-size;
         height: $fancy-checkbox-normal-size;

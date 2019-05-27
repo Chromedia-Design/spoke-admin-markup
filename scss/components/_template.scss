@@ -1,67 +1,81 @@
 #master-container {
 	display: grid;
+	height: 99vh;
 	min-height: 100vh;
-	&.header-sidebar-body {		
-		grid-template-columns: repeat(12,1fr);
-		grid-template-rows: 100px auto;		
+
+	&.header-sidebar-body {
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: 100px auto;
 
 		.header {
 			grid-column: 1/13;
 			grid-area: 1/1/2/13
 		}
+
 		.sidebar-left {
 			grid-column: 1/2;
 		}
+
 		.main-content {
 			grid-area: 2/2/3/13;
 		}
 	}
-	
+
 	&.sidebar-body {
-		grid-template-columns: minmax(max-content, 250px) auto;
+		grid-template-columns: 220px auto;
 		@include breakpoint(medium only) {
-			grid-template-columns: minmax(max-content, 180px) auto;
+			grid-template-columns: 180px auto;
 		}
 		@include breakpoint(large up) {
-			grid-template-columns: minmax(max-content, 300px) auto;
+			grid-template-columns: 200px auto;
 		}
+
 		.sidebar {
 			grid-area: 1/1/1/1;
 		}
+
 		.main-content {
 			grid-area: 1/2/1/2;
-			// padding-bottom: 5.5rem;
+
 			&.scrollable {
 				height: 100vh;
 				overflow-y: scroll;
 			}
 		}
+
 		&.sidebar-sticky {
 			max-height: 100vh;
 			overflow: hidden;
+
 			.main-content {
 				&::-webkit-scrollbar {
 					width: 0px;
 				}
+
 				&::-webkit-scrollbar-thumb {
 					background: #FF0000;
 				}
+
 				overflow-y: scroll;
 				height: 100vh;
 			}
+
 			.sidebar {
 				overflow-x: hidden;
 				display: grid;
 				grid-template-rows: 8vh 50px auto;
+
 				.tabs-content {
-					// margin: .5rem 0;
 					max-height: 85vh;
+
 					&::-webkit-scrollbar {
 						width: 0px;
 					}
+
 					&::-webkit-scrollbar-thumb {
 						background: #FF0000;
 					}
+
 					overflow-y: scroll;
 				}
 			}
@@ -69,10 +83,11 @@
 	}
 
 	&.header-body-sidebar { // ALRTERNATIVE ALRTERNATIVE ALRTERNATIVE ALRTERNATIVE
-		grid-template-columns: auto 400px ;
+		grid-template-columns: auto 400px;
 		grid-template-rows: minmax(8vh, 8vh) auto;
 		max-height: 100vh;
 		overflow: hidden;
+
 		.header {
 			grid-area: 1/1/2/3 !important;
 			padding: 1rem .5rem;
@@ -81,45 +96,77 @@
 			z-index: 999;
 			background-color: #fff;
 		}
+
 		.main-content {
 			padding: .5rem .5rem 2rem .5rem;
 			grid-area: 2/1/2/2 !important;
+
 			&::-webkit-scrollbar {
 				width: 0px;
 			}
+
 			&::-webkit-scrollbar-thumb {
 				background: #FF0000;
 			}
+
 			overflow-y: scroll;
 			height: 92vh;
-			
+
 		}
+
 		.sidebar {
 			grid-area: 2/2/3/2 !important;
 			overflow-x: hidden;
 			display: grid;
 			grid-template-rows: 50px auto;
+
 			.tabs-content {
-				// margin: .5rem 0;
 				max-height: 85vh;
+
 				&::-webkit-scrollbar {
-					width: 0px;
+					width: 0;
 				}
+
 				&::-webkit-scrollbar-thumb {
 					background: #FF0000;
 				}
+
 				overflow-y: scroll;
 			}
 		}
 	}
 }
 
-
-// Used by admin in Member Page
+// Used for admin in Member Page
 #inner-container {
 	display: flex;
+	//min-height: 99vh;
+
 	.inner-sidebar {
-		width: 20%;
+		background-color: lighten($primary-color, 15%);
+		width: 15%;
 	}
-	.inner-content {}
+
+	.inner-content {
+		width: 85%;
+		//Must be equal to root container
+		height: 93.99vh;
+	}
+
+	@include breakpoint(1500px down) {
+		.inner-sidebar {
+			width: 20%;
+		}
+		.inner-content {
+			width: 80%;
+		}
+	}
+	@include breakpoint(1300px down) {
+		.inner-sidebar {
+			width: 25%;
+		}
+		.inner-content {
+			width: 85%;
+		}
+	}
 }
