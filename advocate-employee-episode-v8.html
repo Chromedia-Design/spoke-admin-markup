@@ -10,98 +10,50 @@
   <body>
 
     <!-- <div class="expanded row medium-collapse"> -->
-    <div id="master-container" class="sidebar-body">
+    <div id="master-container" class="header-body">
 
       <!-- SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR  -->
-      <div class="site-nav sidebar">
-        <header>
-          <a href="#" class="logo text-center">
-            <img src="img/logo.png" title="Spoke">
-          </a>
-        </header>
-        <ul class="menu vertical" data-accordion-menu>
-          <li>
-            <a href="advocate-dashboard.html">Dashboard</a>
-          </li>
-          <li class="is-active">
-            <a href="advocate-employees.html">Employees</a>
-          </li>
-          <li>
-            <a href="advocate-communications.html">Inbox</a>
-          </li>
-          <li>
-            <a href="#">Doctors</a>
-          </li>
-          <li>
-            <a href="advocate-facilities.html">Facilities</a>
-          </li>
-          <li>
-            <a href="#">Activity Logs</a>
-          </li>
-          <li>
-            <a href="advocate-profile.html">Profile</a>
-            <ul class="nested vertical menu">
-              <li>
-                <a href="advocate-profile.html">User Information</a>
-              </li>
-              <li>
-                <a href="advocate-password.html">Change My Password</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <!-- MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT  -->
-      <div class="content main-content pb-0">
-
-        <div class="top-bar">
-          <div class="top-bar-left">
-            <div class="input-group rounded">
-              <input class="input-group-field" type="search" placeholder="Search employees">
-              <div class="input-group-button">
-                <input type="submit" class="button hollow plain info" value="Submit">
-              </div>
+      <div class="header stick-to-top bg-white">
+        <div class="row expanded pt-1 pb-1 align-middle">
+          <div class="columns shrink">
+            <a href="#" class="logo text-center">
+              <img src="img/logo.png" title="Spoke">
+            </a>
+          </div>
+          <div class="columns shrink">
+            <div class="input-group rounded mb-0">
+              <button class="button clear hollow mb-0"><i class="fa fa-search"></i></button>
             </div>
           </div>
-          <div class="top-bar-right">
+          <div class="columns">
             <ul class="dropdown menu" data-dropdown-menu>
-              <li class="warning-color">
-                <button class="vertical-block" data-open="exampleModal1"><i class="fa fa-list-ol fa-lg"></i>&nbsp; <b>New
-                  Task</b></button>
-                <div class="reveal" id="exampleModal1" data-reveal>
-                  <div class="reveal-heading">
-                    <strong>NEW TASK</strong>
-                  </div>
-                  <div class="reveal-body">
-                    <div>
-                      <label for=""><strong>Assignee</strong></label>
-                      <input type="text" placeholder="Assignee" class="fancy-input">
-                    </div>
-                    <div>
-                      <label for=""><strong>Task</strong></label>
-                      <input type="text" placeholder="Feed the Cats" class="fancy-input">
-                    </div>
-                    <!-- <div>
-                      <label for=""><strong>THE Task</strong></label>
-                      <textarea name="" id="" cols="30" rows="10" placeholder="THE Task" class="mb-0 fancy-input"></textarea>
-                    </div> -->
-
-
-                  </div>
-                  <div class="reveal-footer">
-                    <button class="button success">Create</button>
-                  </div>
-                  <button class="close-button" data-close aria-label="Close modal" type="button">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
+              <li><a href="#" class="clr-black50"><strong>Dashboard</strong></a></li>
+              <li>
+                <a href="#" class="clr-black50"><strong>Content</strong></a>
+                <ul class="menu">
+                  <li><a href="#" class="align-middle">Member</a></li>
+                  <li><a href="#">Company</a></li>
+                  <li><a href="#">Facility</a></li>
+                  <li><a href="#">Doctor</a></li>
+                  <li class="pl-1 pr-1"><hr class="mb-0-5 mt-0-5"></li>
+                  <li><a href="#">Geo data</a></li>
+                  <li><a href="#">User</a></li>
+                  <li><a href="#">Activity Logs</a></li>
+                </ul>
               </li>
-              <li class="success-color">
-                <a class="vertical-block" href="#"><i class="fa fa-calendar-plus-o fa-lg"></i></a>
+            </ul>
+          </div>
+          <div class="columns shrink">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li class="clr-primary">
+                <button class="vertical-block" data-open="exampleModal1"><i class="fa fa-plus"></i></button>
+                <ul class="menu">
+                  <li><a href="#">Task</a></li>
+                  <li><a href="#">Scedule</a></li>
+                </ul>
               </li>
               <li class="drop-text">
-                <a data-toggle="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span
+                <a data-toggle="#"><i class="fa fa-bell" aria-describedby="notifCount"></i><span
                   class="alert badge" id="notifCount">24</span></a>
                 <ul class="notifications menu vertical">
                   <li>
@@ -162,6 +114,10 @@
             </ul>
           </div>
         </div>
+      </div>
+
+      <!-- MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT  -->
+      <div class="content main-content pb-0">
 
         <div class="row expanded collapse">
 
@@ -188,14 +144,16 @@
 
           <div id="profileContent" class="columns">
 
-            <div class="row expanded">
-              <div class="columns">
-                <nav aria-label="You are here:" role="navigation">
-                  <ul class="breadcrumbs">
-                    <li><a href="advocate-employee-episodes-list-v2.html">Episodes</a></li>
-                    <li>Episode Details</li>
-                  </ul>
-                </nav>
+            <div class="row columns expanded">
+              <div class="row">
+                <div class="columns">
+                  <nav aria-label="You are here:" role="navigation">
+                    <ul class="breadcrumbs">
+                      <li><a href="advocate-employee-episodes-list-v2.html">Episodes</a></li>
+                      <li>Episode Details</li>
+                    </ul>
+                  </nav>
+                </div>
               </div>
             </div>
 
@@ -205,7 +163,7 @@
                 
 
 
-                <div class="page-lead row collapse stick-to-top always-on-top bg-white"  data-transition> <!-- style="background-image: linear-gradient(#FBFBFB 75%, rgba(255,0,0,0) 25%)" -->
+                <div class="page-lead row collapse pb-1 stick-to-top always-on-top bg-white"  data-transition> <!-- style="background-image: linear-gradient(#FBFBFB 75%, rgba(255,0,0,0) 25%)" -->
                   <div class="columns pt-1 box-shadow border-radius-sm bg-white pb-0-5">
                     <div class="repositioned" data-position-top="-2rem" data-position-right=".75rem">
                       <span class="repositioned-container">
@@ -235,9 +193,6 @@
                         </p>
                           
                       </div>
-                      <!-- <div class="columns shrink pr-0">
-                        <h2>W</h2>
-                      </div> -->
                       <div class="columns medium-8">
                         <div class="mb-0 pb-0-5">
                           <span class="mb-0 mt-0 clr-secondary">Total Knee Replacement</span>
@@ -491,32 +446,67 @@
                       </div>
                     </div>
 
+                    <!-- <div class="row collapse">
+                      <div class="columns">
+                        <div class="timeline2">
+                          <div class="timeline-item">
+                            <div class="timeline-content">
+                              <div class="timeline-content-col1">
+                                <small>12:12 PM 12/12/2012</small> <button>Button</button>
+                              </div>
+                              <div class="timeline-content-col2">
+                                Functional capacity survey
+                              </div>
+                              <div class="timeline-content-col3">
+                                <i class="fa fa-clipboard-list  clr-secondary-lighten pr-1"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="timeline-item">
+                            <div class="timeline-content">
+                              <div class="timeline-content-col1">
+                                <small>12:12 PM 12/12/2012</small> <button>Button</button>
+                              </div>
+                              <div class="timeline-content-col2">
+                                Pre-op Consultation
+                              </div>
+                              <div class="timeline-content-col3">
+                                #
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div> -->
+
                     <div class="row collapse">
-                      <div class="auto columns clinical-pathway mb-2 timeline"> <!-- striped -->
+                      <div class="auto columns clinical-pathway mb-2  timeline"> <!-- striped -->
 
 
-                        <div class="toggler timeline-item contains-floating-button">
-                          <div class="row toggler-handler timeline-content">
-                            <div class="columns medium-4">
+                        <div class="label-block toggler timeline-item contains-floating-button ">
+                          <div class="row align-middle collapse toggler-handler timeline-content">
+                            <div class="columns medium-2">
                               <div class="pt-0-5 pb-0-5 pl-1 pr-1 borderless middle border-radius-sm hide-overflow">
                                 <p class="mb-0 clr-black20 small align-middle">
                                   <small>Jan 8, 2019</small>
                                 </p>
                               </div>
                             </div>
-                            <div class="auto columns pr-1 pt-1 pb-1">
-                              
-                              <span class="clr-black20">
-                                Functional capacity
-                              </span>
-                              <p class="mb-0">
-                                <small>
-                                  <i class="fa fa-tasks clr-black20 pr-1"></i>
-                                  <i class="fa fa-comment clr-black20 pr-1"></i>
-                                </small>
-                              </p>
+                            <div class="columns border-radius-sm">
+                              <div class="pt-0-5 pb-0-5 pr-1 borderless pl-0">
+                                <div class="row collapse expanded">
+                                  <div class="auto columns">
+                                    <span class="clr-black20 truncate"> </i></a> 
+                                      Functional capacity survey
+                                    </span>
+                                  </div>
+                                  <div class="shrink columns pr-1 v-align-center">
+                                    <i class="fa fa-clipboard-list  clr-secondary-lighten pr-1"></i>
+                                  </div>
+                                </div>
+                              </div>
+                              <button class="floating-button"><i class="fa fa-minus"></i></button>
                             </div>
-                            <button class="floating-button"><i class="fa fa-minus"></i></button>
                           </div>
                           <div class="row toggler-target timeline-hidden-content">
                             <div class="columns pr-0">
@@ -628,9 +618,9 @@
                           </div>
                         </div>
 
-                        <div class="toggler timeline-item">
-                          <div class="row toggler-handler timeline-content">
-                            <div class="columns medium-4">
+                        <div class="label-block toggler timeline-item">
+                          <div class="row align-middle collapse toggler-handler timeline-content">
+                            <div class="columns medium-2">
                               <div class="pt-0-5 pb-0-5 pl-1 pr-1 borderless middle border-radius-sm hide-overflow">
                                 <p class="mb-0 clr-black20 small align-middle">
                                   <button data-open="eventDate">
@@ -639,18 +629,21 @@
                                 </p>
                               </div>
                             </div>
-                            <div class="auto columns pr-1 pt-1 pb-1">
-                              <span class="clr-black20">
-                                Pre-op Consultation
-                              </span>
-                              <p class="mb-0">
-                                <small>
-                                  <i class="fa fa-envelope clr-black20 pr-1"></i>
-                                  <i class="fa fa-tasks clr-black20 pr-1"></i>
-                                  <i class="fa fa-clipboard-list clr-black20 pr-1"></i>
-                                </small>
-                              </p>
-                              
+                            <div class="columns border-radius-sm">
+                              <div class="pt-0-5 pb-0-5 pr-1 borderless pl-0">
+                                <div class="row collapse expanded">
+                                  <div class="auto columns">
+                                    <span class="clr-black20 truncate"> </i></a> 
+                                      Pre-op Consultation
+                                    </span>
+                                  </div>
+                                  <div class="shrink columns pr-1 v-align-center">
+                                    <i class="fa fa-envelope clr-black20 pr-1"></i>
+                                    <i class="fa fa-check clr-secondary-lighten pr-1"></i>
+                                    <i class="fa fa-clipboard-list clr-warning-lighten pr-1"></i>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                           <div class="row toggler-target timeline-hidden-content">
@@ -730,24 +723,28 @@
                           </div>
                         </div>
 
-                        <div class="toggler timeline-item">
-                          <div class="row toggler-handler timeline-content handoff">
-                            <div class="columns medium-4">
+                        <div class="label-block toggler timeline-item">
+                          <div class="row align-middle collapse toggler-handler timeline-content handoff">
+                            <div class="columns medium-2">
                               <div class="pt-0-5 pb-0-5 pl-1 pr-1 borderless middle border-radius-sm hide-overflow">
                                 <p class="mb-0 clr-black20 small align-middle">
                                   <small>Jan 10, 2019</small></p>   
                               </div>
                             </div>
-                            <div class="auto columns pr-1 pt-1 pb-1">
-                              <span class="clr-black20">
-                                Pre-op Infection Avoidance
-                              </span>
-                              <p class="mb-0 pt-0-5">
-                                <small>
-                                  <i class="fa fa-envelope clr-black20 pr-1"></i>
-                                  <span class="tag no-action small mb-0 warning outlined mr-1">Physical Therapy, YES</span>
-                                </small>
-                              </p>
+                            <div class="columns border-radius-sm">
+                              <div class="pt-0-5 pb-0-5 pr-1 borderless pl-0">
+                                <div class="row collapse expanded">
+                                  <div class="auto columns">
+                                    <span class="clr-black20 truncate"> </i></a> 
+                                      Pre-op Infection Avoidance
+                                    </span>
+                                  </div>
+                                  <div class="shrink columns pr-1 v-align-center">
+                                    <span class="tag no-action small mb-0 outlined success mr-1">Physical Therapy, YES</span>
+                                    <i class="fa fa-envelope clr-warning-lighten pr-1"></i>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                           <div class="row toggler-target timeline-hidden-content">
@@ -794,24 +791,28 @@
                           </div>
                         </div>
 
-                        <div class="toggler timeline-item">
-                          <div class="row toggler-handler timeline-content">
-                            <div class="columns medium-4">
+                        <div class="label-block toggler timeline-item">
+                          <div class="row align-middle collapse toggler-handler timeline-content">
+                            <div class="columns medium-2">
                               <div class="pt-0-5 pb-0-5 pl-1 pr-1 borderless middle border-radius-sm hide-overflow">
                                 <p class="mb-0 clr-black20 small align-middle">
                                   <small>Jan 10, 2019</small></p>
                               </div>
                             </div>
-                            <div class="auto columns pr-1 pt-1 pb-1">
-                              <span class="clr-black20">
-                                Pre-op Antibiotics
-                              </span>
-                              <p class="mb-0 pt-0-5">
-                                <small>
-                                  <i class="fa fa-envelope clr-black20 pr-1"></i>
-                                  <span class="tag no-action small mb-0 warning outlined mr-1">Antibiotic Clearance, YES</span>
-                                </small>
-                              </p>
+                            <div class="columns border-radius-sm">
+                              <div class="pt-0-5 pb-0-5 pr-1 borderless pl-0">
+                                <div class="row collapse expanded">
+                                  <div class="auto columns">
+                                    <span class="clr-black20 truncate"> </i></a> 
+                                      Pre-op Antibiotics
+                                    </span>
+                                  </div>
+                                  <div class="shrink columns pr-1 v-align-center">
+                                    <span class="tag no-action small mb-0 outlined success mr-1">Antibiotic Clearance, YES</span>
+                                    <i class="fa fa-envelope clr-warning-lighten pr-1"></i>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                           <div class="row toggler-target timeline-hidden-content">
@@ -858,26 +859,30 @@
                           </div>
                         </div>
 
-                        <div class="toggler timeline-item">
-                          <div class="row toggler-handler timeline-content">
-                            <div class="columns medium-4">
+                        <div class="label-block toggler timeline-item">
+                          <div class="row align-middle collapse toggler-handler timeline-content">
+                            <div class="columns medium-2">
                               <div class="pt-0-5 pb-0-5 pl-1 pr-1 borderless middle marker-pos-top-left border-radius-sm hide-overflow">
                                 <p class="mb-0 clr-black20 small align-middle">
                                   <small>Jan 11, 2019</small>
                                 </p>
                               </div>
                             </div>
-                            <div class="auto columns pr-1 pt-1 pb-1">
-                              <span class="clr-black20">
-                                Pre-op Evaluation and clearance
-                              </span>
-                              <p class="mb-0 pt-0-5">
-                                <small>
-                                  <i class="fa fa-tasks clr-black20 pr-1"></i>
-                                  <i class="fa fa-clipboard-list clr-black20"></i>
-                                  <span class="tag no-action small mb-0 outlined warning">Medication, YES</span>
-                                </small>
-                              </p>
+                            <div class="columns border-radius-sm">
+                              <div class="pt-0-5 pb-0-5 pr-1 borderless pl-0">
+                                <div class="row collapse expanded">
+                                  <div class="auto columns">
+                                    <span class="clr-black20 truncate"> </i></a> 
+                                      Pre-op Evaluation and clearance
+                                    </span>
+                                  </div>
+                                  <div class="shrink columns pr-1 v-align-center">
+                                    <span class="tag no-action small mb-0 outlined success mr-1">Medication, YES</span>
+                                    <i class="fa fa-check clr-warning-lighten pr-1"></i>
+                                    <i class="fa fa-clipboard-list clr-warning-lighten pr-1"></i>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                           <div class="row toggler-target timeline-hidden-content">
@@ -924,23 +929,27 @@
                           </div>
                         </div>
 
-                        <div class="toggler timeline-item">
-                          <div class="row toggler-handler timeline-content">
-                            <div class="columns medium-4">
+                        <div class="label-block toggler timeline-item">
+                          <div class="row align-middle collapse toggler-handler timeline-content">
+                            <div class="columns medium-2">
                               <div class="pt-0-5 pb-0-5 pl-1 pr-1 borderless middle border-radius-sm hide-overflow">
                                 <p class="mb-0 clr-black20 small align-middle">
                                   <small>Jan 12, 2019</small></p>
                               </div>
                             </div>
-                            <div class="auto columns pr-1 pt-1 pb-1">
-                              <span class="clr-black20">
-                                Pre-hab check in (one week before surgery)
-                              </span>
-                              <p class="mb-0">
-                                <small>
-                                  <i class="fa fa-envelope clr-black20 pr-1"></i>
-                                </small>
-                              </p>
+                            <div class="columns border-radius-sm">
+                              <div class="pt-0-5 pb-0-5 pr-1 borderless pl-0">
+                                <div class="row collapse expanded">
+                                  <div class="auto columns">
+                                    <span class="clr-black20 truncate"> </i></a> 
+                                      Pre-hab check in (one week before surgery)
+                                    </span>
+                                  </div>
+                                  <div class="shrink columns pr-1 v-align-center">
+                                    <i class="fa fa-envelope clr-black20 pr-1"></i>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                           <div class="row toggler-target timeline-hidden-content">
@@ -987,9 +996,9 @@
                           </div>
                         </div>
 
-                        <div class="toggler timeline-item">
-                          <div class="row toggler-handler timeline-content">
-                            <div class="columns medium-4">
+                        <div class="label-block toggler timeline-item">
+                          <div class="row align-middle collapse toggler-handler timeline-content">
+                            <div class="columns medium-2">
                               <div class="pt-0-5 pb-0-5 pl-1 pr-1 borderless middle border-radius-sm hide-overflow">
                                 <p class="mb-0 clr-black20 small align-middle">
                                   <button data-open="eventDate">
@@ -998,16 +1007,20 @@
                                 </p>
                               </div>
                             </div>
-                            <div class="auto columns pr-1 pt-1 pb-1">
-                              <span class="clr-black20">
-                                Surgery
-                              </span>
-                              <p class="mb-0">
-                                <small>
-                                  <i class="fa fa-tasks clr-black20 pr-1"></i>
-                                </small>
+                            <div class="columns border-radius-sm">
+                              <div class="pt-0-5 pb-0-5 pr-1 borderless pl-0">
+                                <div class="row collapse expanded">
+                                  <div class="auto columns">
+                                    <span class="clr-black20 truncate"> </i></a> 
+                                      Surgery
+                                    </span>
+                                  </div>
+                                  <div class="shrink columns pr-1 v-align-center">
+                                    <i class="fa fa-check clr-warning-lighten pr-1"></i>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
-
                           </div>
                           <div class="row toggler-target timeline-hidden-content">
                             <div class="columns pr-0">
@@ -1053,791 +1066,45 @@
                           </div>
                         </div>
 
-                        <div class="toggler timeline-item">
-                          <div class="row toggler-handler timeline-content">
-                            <div class="columns medium-4">
+                        <div class="label-block toggler timeline-item">
+                          <div class="row align-middle collapse toggler-handler timeline-content">
+                            <div class="columns medium-2">
                               <div class="pt-0-5 pb-0-5 pl-1 pr-1 borderless middle border-radius-sm hide-overflow">
                                 <p class="mb-0 clr-black20 small align-middle">
                                   <small>Jan 20, 2019</small></p>
                               </div>
                             </div>
-                            <div class="auto columns pr-1 pt-1 pb-1">
-                              <span class="clr-black20">
-                                Pain Survey
-                              </span>
-                              <p class="mb-0">
-                                <small>
-                                  <i class="fa fa-tasks clr-black20 pr-1"></i>
-                                  <i class="fa fa-clipboard-list clr-black20 pr-1"></i>
-                                  <span class="tag no-action small mb-0 mr-0 outlined warning mr-1">Pain, 7</span>
-                                </small>
-                              </p>
+                            <div class="columns border-radius-sm">
+                              <div class="pt-0-5 pb-0-5 pr-1 borderless pl-0">
+                                <div class="row collapse expanded">
+                                  <div class="auto columns">
+                                    <span class="clr-black20 truncate"> </i></a> 
+                                      Pain Survey
+                                    </span>
+
+                                  </div>
+                                  <div class="shrink columns pr-1 v-align-center">
+                                    <span class="tag no-action small mb-0 mr-0 outlined warning mr-1">Pain, 7</span>
+                                    <i class="fa fa-check clr-warning-lighten pr-1"></i>
+                                    <i class="fa fa-clipboard-list clr-warning-lighten pr-1"></i>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                           <div class="row toggler-target timeline-hidden-content">
                             <div class="columns pr-0">
 
-                              <div class="pl-0-25 mb-1 pt-1 timeline-hidden-item">
-                                <div class="row">
-                                  <div class="columns toggler">
-                                    <div class="timeline-hidden-item-head item-email">
-                                        <span class="sub-item-title"><strong><small>Email</small></strong></span>
-                                    </div>
-
-                                    <!-- Task Content -->
-                                    <div class="row bg-cloud border-radius-sm pt-0-5 pb-0-5">
-                                      <div class="columns">
-                                        <div class="row collapse">
-                                          <div class="columns">
-                                            <p class="mb-0-5 tiny">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur esse provident voluptas, autem ullam, dolorem voluptatum natus! Sapiente ratione molestias quasi autem eius nemo quo, ducimus eligendi, maxime quas quam fugiat dicta omnis animi eaque delectus unde facere rerum ut, placeat iusto, consequuntur. Labore velit quos mollitia id, perferendis cum placeat. Totam, dolore, in.</p>
-                                          </div>
-                                        </div>
-                                        <div class="row collapse">
-                                          <div class="columns"></div>
-                                          <div class="columns shrink">
-                                            <a href="" class="button clear hollow tiny mb-0 pl-0"><i class="fa fa-plus clr-note-darken tiny"> Note</i></a> 
-                                          </div>
-                                        </div>
-                                        <div class="row columns mt-0-5 pl-1 pr-1" style="">
-                                          <div class="row collapse pt-0-5">
-                                            <div class="columns">
-                                              <span class="clr-black50 ml-1 tiny"><strong>ATTACHMENTS</strong></span>
-                                            </div>
-                                            <div class="columns shrink">
-                                              <button class="button clear hollow tiny mb-0"><i class="fa fa-download"></i> Download All</button>
-                                            </div>
-                                          </div>
-                                          <div class="row pt-0-5 align-middle">
-                                            <div class="columns shrink">
-                                              <i class="fa fa-file-pdf tiny"></i>
-                                            </div>
-                                            <div class="columns tiny">
-                                              Lorem ipsum dolor sit.
-                                            </div>
-                                            <div class="columns shrink">
-                                              <button class="buttom clear hollow small">
-                                                <i class="fa fa-download tiny"></i>
-                                              </button>
-                                            </div>
-                                          </div>
-
-                                          <div class="row pt-0-5 align-middle">
-                                            <div class="columns shrink">
-                                              <i class="fa fa-file-video tiny"></i>
-                                            </div>
-                                            <div class="columns tiny">
-                                              Lorem ipsum dolor sit amet.
-                                            </div>
-                                            <div class="columns shrink">
-                                              <button class="buttom clear hollow small">
-                                                <i class="fa fa-download tiny"></i>
-                                              </button>
-                                            </div>
-                                          </div>
-
-                                          <div class="row pt-0-5 align-middle">
-                                            <div class="columns shrink">
-                                              <i class="fa fa-file-word tiny"></i>
-                                            </div>
-                                            <div class="columns tiny">
-                                              Lorem ipsum dolor sit amet, consectetur adipisicing.
-                                            </div>
-                                            <div class="columns shrink">
-                                              <button class="buttom clear hollow small">
-                                                <i class="fa fa-download tiny"></i>
-                                              </button>
-                                            </div>
-                                          </div>
-
-                                          <div class="row pt-0-5 align-middle">
-                                            <div class="columns shrink">
-                                              <i class="fa fa-file-image tiny"></i>
-                                            </div>
-                                            <div class="columns tiny">
-                                              Lorem ipsum.
-                                            </div>
-                                            <div class="columns shrink">
-                                              <button class="buttom clear hollow small">
-                                                <i class="fa fa-download tiny"></i>
-                                              </button>
-                                            </div>
-                                          </div>
-
-                                          <div class="row pt-0-5 align-middle">
-                                            <div class="columns shrink">
-                                              <i class="fa fa-file-prescription tiny"></i>
-                                            </div>
-                                            <div class="columns tiny">
-                                              Lorem ipsum dolor sit.
-                                            </div>
-                                            <div class="columns shrink">
-                                              <button class="buttom clear hollow small">
-                                                <i class="fa fa-download tiny"></i>
-                                              </button>
-                                            </div>
-                                          </div>
-
-                                      </div>
-
-                                        
-                                      </div>
-                                    </div>
-
-                                    <div class="row mb-1">
-                                      <div class="columns pl-0">
-                                        <div class="row align-middle">
-                                          <div class="columns shrink">
-                                            <span class="tiny"><small>10:37 AM</small></span>
-                                          </div>
-                                          <div class="columns">
-                                            <span class="tiny"><small>Open</small></span>
-                                          </div>
-                                          <div class="columns medium-1"></div>
-                                        </div>
-
-                                        <div class="row align-middle">
-                                          <div class="columns shrink">
-                                            <span class="tiny"><small>10:37 AM</small></span>
-                                          </div>
-                                          <div class="columns">
-                                            <span class="tiny"><small>Clicked</small></span>
-                                          </div>
-                                          <div class="columns medium-1"></div>
-                                        </div>
-                                       
-                                      </div>
-                                    </div>
-
-
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="pl-0-25 mb-1 pt-1 timeline-hidden-item">
-                                <div class="row">
-                                  <div class="columns">
-                                    <div class="timeline-hidden-item-head item-message">
-                                        <span class="sub-item-title"><strong><small>Message</small></strong></span>
-                                    </div>
-
-                                    <!-- Task Content -->
-                                    <div class="row bg-cloud border-radius-sm pt-0-5 pb-0-5">
-                                      <div class="columns">
-                                        <div class="row collapse">
-                                          <div class="columns">
-                                            
-                                            <p class="mb-0-5 tiny"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nemo beatae quia, sed earum! Quos fugiat beatae consequatur fuga quasi. Eligendi vel, id!?</p>                                          
-                                          </div>
-                                        </div>
-                                        <div class="row collapse">
-                                          <div class="columns"></div>
-                                          <div class="columns shrink">
-                                            <a href="" class="button clear hollow tiny mb-0 pl-0"><i class="fa fa-plus clr-note-darken tiny"> Note</i></a> 
-                                          </div>
-                                        </div>
-
-                                        
-                                      </div>
-                                    </div>
-
-                                    <div class="row">
-                                      <div class="columns shrink">                                        
-                                        <span class="tiny"><small>May 3, 2019 10:37 AM</small></span>
-                                      </div>
-                                      <div class="columns">
-                                        <span class="tiny"><small>Joe Ortho read the message</small></span>
-                                      </div>
-                                    </div>
-
-
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="pl-0-25 mb-1 pt-1 timeline-hidden-item">
-                                <div class="row">
-                                  <div class="columns toggler">
-                                    <div class="timeline-hidden-item-head item-todo">
-                                        <span class="sub-item-title"><strong><small>Todo or not to do</small></strong></span>
-                                        <!-- <button class="button tiny clear hollow success mb-0 pb-0-25 pt-0-25 pull-right">Mark as completed</button> -->
-                                        <span class="subheader ml-1 tiny">Assigned for follow up: Julie Kloster</span>
-                                    </div>
-
-                                    <div class="row bg-cloud border-radius-sm pt-0-5 pb-0-5">
-                                      <div class="columns">
-                                        <div class="row collapse">
-                                          <div class="columns">
-                                            <p class="mb-0-5 tiny">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis fuga maiores fugit consectetur suscipit, nesciunt quo, sit id, sed incidunt iste officia possimus. Recusandae.</p>                                          
-                                          </div>
-                                        </div>
-                                        <div class="row collapse">
-                                          <div class="columns"></div>
-                                          <div class="columns shrink">
-                                            <a href="" class="button clear hollow tiny mb-0 pl-0"><i class="fa fa-plus clr-note-darken tiny"> Note</i></a> 
-                                          </div>
-                                        </div>
-
-                                        
-                                      </div>
-                                    </div>
-
-                                    <div class="row mb-1">
-                                      <div class="columns pl-0">
-                                        <div class="row align-middle">
-                                          <div class="columns shrink">
-                                            <span class="tiny"><small>May 3, 2019 10:37 AM</small></span>
-                                          </div>
-                                          <div class="columns">
-                                            <span class="tiny"><small>Joe Ortho completed a To-Do Task</small></span>
-                                          </div>
-                                          <div class="columns medium-1"></div>
-                                        </div>
-                                       
-                                      </div>
-                                    </div>
-
-
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="pl-0-25 mb-1 pt-1 timeline-hidden-item">
-                                <div class="row">
-                                  <div class="columns">
-
-                                    <div class="timeline-hidden-item-head item-question">
-                                        <span class="sub-item-title"><strong><small>Pain Threshold</small></strong></span>
-                                    </div>
-
-                                    <!-- Task Content -->
-                                    <div class="row bg-cloud border-radius-sm pt-0-5 pb-0-5">
-                                      <div class="columns">
-                                        <div class="row collapse mb-1">
-                                          <div class="columns">
-                                            
-                                            <p class="mb-0-5 tiny"><strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nemo beatae quia, sed earum! Quos fugiat beatae consequatur fuga quasi. Eligendi vel, id!?</strong></p>
-                                            <p class="mb-0 tiny">
-                                              Lorem ipsum dolor.
-                                            </p>
-                                            <div class="row mb-0-5">
-                                              <div class="pl-0 columns shrink">
-                                                <span class="tiny subheader">11:32 AM</span>
-                                              </div>
-                                              <div class="columns">
-                                                <span class="mb-0 tiny subheader">Joe Ortho submitted their answer</span>
-                                              </div>
-                                            </div>
-                                            <div class="row bg-note">
-                                              <div class="small warning-bg talk-bubble pt-0-25 pb-0-25 borderless">
-                                                <div class="talktext row collapse">
-                                                  <div class="columns">
-                                                    <span class="tiny">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora accusantium odio, perferendis nesciunt odit iure itaque maiores ex voluptate!</span>
-                                                  </div>
-                                                  <div class="columns shrink tiny"></div>
-                                                    <p class="tiny mb-0">
-                                                    <small>3/25/19</small>&nbsp;
-                                                    <button href="#" class="button link mb-0 pt-0-25 pb-0-25"><span><i class="fa fa-thumbtack tiny"></i>&nbsp</span></button>
-                                                  </p>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="row collapse">
-                                              <div class="columns"></div>
-                                              <div class="columns shrink">
-                                                <a href="" class="button clear hollow tiny mb-0 pl-0"><i class="fa fa-plus clr-note-darken tiny"> Note</i></a> 
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                        <div class="row collapse mb-1">
-                                          <div class="columns">
-                                            <p class="mb-0-5 tiny"><strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit.?</strong></p>
-                                            <p class="mb-0 tiny">
-                                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium cum dolore explicabo.
-                                            </p>
-                                            <div class="row mb-0-5">
-                                              <div class="pl-0 columns shrink">
-                                                <span class="tiny subheader">11:32 AM</span>
-                                              </div>
-                                              <div class="columns">
-                                                <span class="mb-0 tiny subheader">Chachi Gonzales submitted Joe Ortho's answer</span>
-                                              </div>
-                                            </div>
-                                            <div class="row collapse">
-                                              <div class="columns"></div>
-                                              <div class="columns shrink">
-                                                <a href="" class="button clear hollow tiny mb-0 pl-0"><i class="fa fa-plus clr-note-darken tiny"> Note</i></a> 
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                        <div class="row collapse mb-1">
-                                          <div class="columns">
-                                            <p class="mb-0-5 tiny"><strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit.?</strong></p>
-                                            <p class="mb-0 tiny">
-                                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium cum dolore explicabo.
-                                            </p>
-                                            <div class="row mb-0-5">
-                                              <div class="pl-0 columns shrink">
-                                                <span class="tiny subheader">11:32 AM</span>
-                                              </div>
-                                              <div class="columns">
-                                                <span class="mb-0 tiny subheader">Chachi Gonzales submitted Joe Ortho's answer</span>
-                                              </div>
-                                            </div>
-                                            <div class="row collapse">
-                                              <div class="columns"></div>
-                                              <div class="columns shrink">
-                                                <a href="" class="button clear hollow tiny mb-0 pl-0"><i class="fa fa-plus clr-note-darken tiny"> Note</i></a> 
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                      </div>
-                                    </div>
-
-                                  </div>
-                                </div>
-                              </div>
-
-
-                              <div class="pull-right disp-inline clr-black20 pl-0-5 pr-0-5 pb-0-25">
-                                <small>Bucket</small>
-                              </div>
-
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="toggler timeline-item timeline-ongoing">
-                          <div class="row toggler-handler timeline-content">
-                            <div class="columns medium-4">
-                              <div class="pt-0-5 pb-0-5 pl-1 pr-1 borderless middle border-radius-sm hide-overflow">
-                                <p class="mb-0 clr-black20 small align-middle">
-                                  <small>Jan 20, 2019</small></p>
-                              </div>
-                            </div>
-                            <div class="auto columns pr-1 pt-1 pb-1">
-                              <span class="clr-black20">
-                                Pain Survey
-                              </span>
-                              <p class="mb-0">
-                                <small>
-                                  <i class="fa fa-tasks clr-black20 pr-1"></i>
-                                  <i class="fa fa-clipboard-list clr-black20 pr-1"></i>
-                                </small>
-                              </p>
-                            </div>
-
-                          </div>
-                          <div class="row toggler-target timeline-hidden-content">
-                            <div class="columns pr-0">
-
-                              <div class="pl-0-25 mb-1 pt-1 timeline-hidden-item">
-                                <div class="row">
-                                  <div class="columns toggler">
-                                    
-                                    <div class="timeline-hidden-item-head item-message completed">
-                                        <span class="sub-item-title"><strong><small>Regarding your Diet</small></strong></span>
-                                        <button class="button tiny clear hollow success mb-0 pb-0-25 pt-0-25 pull-right">Read over the phone</button>
-                                    </div>
-
-                                    <!-- Task Content -->
-                                    <div class="row bg-cloud border-radius-sm pt-0-5 pb-0-5">
-                                      <div class="columns">
-                                        <div class="row collapse">
-                                          <div class="columns">
-                                            <p class="mb-0-5 tiny">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur esse provident voluptas, autem ullam, dolorem voluptatum natus! Sapiente ratione molestias quasi autem eius nemo quo, ducimus eligendi, maxime quas quam fugiat dicta omnis animi eaque delectus unde facere rerum ut, placeat iusto, consequuntur. Labore velit quos mollitia id, perferendis cum placeat. Totam, dolore, in.</p>
-                                          </div>
-                                        </div>
-                                        <div class="row collapse">
-                                          <div class="columns"></div>
-                                          <div class="columns shrink">
-                                            <a href="" class="button clear hollow tiny mb-0 pl-0"><i class="fa fa-plus clr-note-darken tiny"> Note</i></a> 
-                                          </div>
-                                        </div>
-                                        
-                                      </div>
-                                    </div>
-
-                                  </div>
-                                </div>                              
-                              </div>
-
-                              <div class="pl-0-25 mb-1 pt-1 timeline-hidden-item">
-                                <div class="row">
-                                  <div class="columns toggler">
-                                    
-                                    <div class="timeline-hidden-item-head item-todo">
-                                        <span class="sub-item-title"><strong><small>Drink Medecine</small></strong></span>
-                                        <button class="button tiny clear hollow success mb-0 pb-0-25 pt-0-25 pull-right">Mark as completed</button>
-                                    </div>
-
-                                    <!-- Task Content -->
-                                    <div class="row bg-cloud border-radius-sm pt-0-5 pb-0-5">
-                                      <div class="columns">
-                                        <div class="row collapse">
-                                          <div class="columns">
-                                            <p class="mb-0-5 tiny">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis fuga maiores fugit consectetur suscipit, nesciunt quo, sit id, sed incidunt iste officia possimus. Recusandae.</p>                                          
-                                          </div>
-                                        </div>
-                                        <div class="row collapse">
-                                          <div class="columns"></div>
-                                          <div class="columns shrink">
-                                            <a href="" class="button clear hollow tiny mb-0 pl-0"><i class="fa fa-plus clr-note-darken tiny"> Note</i></a> 
-                                          </div>
-                                        </div>
-
-                                        
-                                      </div>
-                                    </div>
-
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="pl-0-25 mb-1 pt-1 timeline-hidden-item">
-                                <div class="row">
-                                  <div class="columns">
-
-                                    <div class="timeline-hidden-item-head item-question">
-                                        <span class="sub-item-title"><strong><small>Pain Threshold</small></strong></span>
-                                    </div>
-
-                                    <!-- Task Content -->
-                                    <div class="row bg-cloud border-radius-sm pt-0-5 pb-0-5">
-                                      <div class="columns">
-                                        
-                                        <div class="row question-item">
-                                          <div class="columns hide-overflow">
-                                            <div class="item-question">
-                                              <div class="row">
-                                                <div class="columns pl-0">
-                                                  <p class="mb-0"><strong><small>Do you use tobacco products?</small></strong></p>
-                                                  <span class="subheader tiny">Do you use tobacco products? (Temporary placeholder)</span>
-                                                </div>
-                                                <div class="columns shrink">
-                                                  <span data-tooltip="olvico-tooltip" tabindex="1" title="" aria-describedby="75beg0-tooltip" data-yeti-box="75beg0-tooltip" data-toggle="75beg0-tooltip" data-resize="75beg0-tooltip" class="has-tip"><i class="fa fa-question-circle clr-success"></i></span>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            
-                                            <div class="item-answer-option">
-                                              <div class="fancy-radio fancy-hover small align-middle">
-                                                  <input name="qopt2" id="qopt2.1" type="radio" class="mr-0" checked=""> 
-                                                  <label for="qopt2.1 " class="mb-0 mt-0"><strong>Yes</strong></label>
-                                              </div>
-                                              <div class="fancy-radio fancy-hover small align-middle">
-                                                  <input name="qopt2" id="qopt2.2" type="radio" class="mr-0">
-                                                  <label for="qopt2.2 " class="mb-0 mt-0"><strong>No</strong></label>
-                                              </div>
-                                            </div>
-
-                                          </div>
-                                        </div>
-
-                                        <div class="row question-item">
-                                          <div class="columns hide-overflow">
-                                            <div class="item-question">
-                                              <div class="row">
-                                                <div class="columns pl-0">
-                                                  <p class="mb-0"><strong><small>Do you engage in recreational drugs?</small></strong></p>
-                                                  <span class="subheader tiny">Do you engage in recreational drugs? (Temporary placeholder)</span>
-                                                </div>
-                                                <div class="columns shrink">
-                                                  <span data-tooltip="olvico-tooltip" tabindex="1" title="" aria-describedby="75beg0-tooltip" data-yeti-box="75beg0-tooltip" data-toggle="75beg0-tooltip" data-resize="75beg0-tooltip" class="has-tip"><i class="fa fa-question-circle clr-success"></i></span>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            
-                                            <div class="item-answer-option">
-                                              <div class="fancy-radio fancy-hover small align-middle">
-                                                  <input name="qopt2" id="qopt2.1" type="radio" class="mr-0" checked=""> 
-                                                  <label for="qopt2.1 " class="mb-0 mt-0"><strong>Yes</strong></label>
-                                              </div>
-                                              <div class="fancy-radio fancy-hover small align-middle">
-                                                  <input name="qopt2" id="qopt2.2" type="radio" class="mr-0">
-                                                  <label for="qopt2.2 " class="mb-0 mt-0"><strong>No</strong></label>
-                                              </div>
-                                            </div>
-
-                                          </div>
-                                        </div>
-
-                                      </div>
-                                    </div>
-
-
-                                  </div>
-                                </div>
-                              </div>
-
-
-                              <div class="pull-right disp-inline clr-black20 pl-0-5 pr-0-5 pb-0-25">
-                                <small>Bucket</small>
-                              </div>
-
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="toggler timeline-item timeline-ongoing">
-                          <div class="row toggler-handler timeline-content">
-                            <div class="columns medium-4">
-                              <div class="pt-0-5 pb-0-5 pl-1 pr-1 borderless middle border-radius-sm hide-overflow">
-                                <p class="mb-0 small align-middle">
-                                  <button data-open="eventDate">
-                                    <small><strong>
-                                      Jan 25, 2019 
-                                      <i class="fa fa-pencil-alt"></i>
-                                    </strong></small> 
-                                  </button>
-                                </p>
-                              </div>
-                            </div>
-                            <div class="auto columns pr-1 pt-1 pb-1">
-                              <span class="clr-black20">
-                                <strong>Post-Op visit scheduled</strong>
-                              </span>
-                              <p class="mb-0 pt-0-5">
-                                <i class="fa fa-tasks clr-black20 pr-1"></i>
-                              </p>
-                            </div>
-                          </div>
-                          <div class="row toggler-target timeline-hidden-content">
-                            <div class="columns pr-0">
-
-                              <div class="pl-0-25 mb-1 pt-1 timeline-hidden-item">
-                                <div class="row">
-                                  <div class="columns">
-                                    <p class="mb-0 clr-primary timeline-hidden-item-head item-todo"><small><a href="">Chachi Gonzales - Follow up with doctor</a></small></p>
-                                  </div>
-                                  <div class="columns medium-1"></div>
-                                </div>
-
-                              </div>
-
-                              <div class="pull-right disp-inline clr-black20 pl-0-5 pr-0-5 pb-0-25">
-                                <small>Bucket</small>
-                              </div>
-
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="toggler timeline-item timeline-waiting">
-                          <div class="row toggler-handler timeline-content">
-                            <div class="columns medium-4">
-                              <div class="pt-0-5 pb-0-5 pl-1 pr-1 borderless middle border-radius-sm hide-overflow">
-                                <p class="mb-0 small align-middle">
-                                <small>Jan 26, 2019</small></p>
-                              </div>
-                            </div>
-                            <div class="auto columns pr-1 pt-1 pb-1">
-                              <span class="clr-black20">
-                                Compliance with Physical Therapy regimen (1 week post)
-                              </span>
-                              <p class="mb-0">
-                                <small>
-                                  <i class="fa fa-envelope clr-black20 pr-1"></i>
-                                  <i class="fa fa-tasks clr-black20 pr-1"></i>
-                                  <i class="fa fa-clipboard-list clr-black20 pr-1"></i>
-                                </small>
-                              </p>
-                            </div>
-
-                          </div>
-                          <div class="row toggler-target timeline-hidden-content">
-                            <div class="columns pr-0">
-
-                              <div class="row mb-1 mt-1">
+                              <!-- <div class="row">
                                 <div class="columns shrink">
                                   <button class="button hollow alert tiny mb-0 ml-1"><i class="fa fa-trash"></i> Remove this event</button>
-                                  <button class="button hollow success tiny mb-0 ml-1"><i class="fa fa-play"></i> Manually Send</button>
                                 </div>
                                 <div class="columns"></div>
-                              </div>
-
-                              <div class="pl-0-25 mb-1 pt-1 timeline-hidden-item">
-                                <div class="row">
-                                  <div class="columns toggler">
-                                    
-                                    <div class="timeline-hidden-item-head item-todo">
-                                        <span class="sub-item-title"><strong><small>Joe Ortho - Go to 1 week post-op physical therapy session</small></strong></span>
-                                        <button class="button tiny clear hollow success mb-0 pb-0-25 pt-0-25 pull-right">Mark as Completed</button>
-                                    </div>
-
-                                    <!-- Task Content -->
-                                    <div class="row bg-cloud border-radius-sm pt-0-5 pb-0-5">
-                                      <div class="columns">
-                                        <div class="row collapse">
-                                          <div class="columns">
-                                            <p class="mb-0-5 tiny">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur esse provident voluptas, autem ullam, dolorem voluptatum natus! Sapiente ratione molestias quasi autem eius nemo quo, ducimus eligendi, maxime quas quam fugiat dicta omnis animi eaque delectus unde facere rerum ut, placeat iusto, consequuntur. Labore velit quos mollitia id, perferendis cum placeat. Totam, dolore, in.</p>
-                                          </div>
-                                        </div>
-                                        <div class="row collapse">
-                                          <div class="columns"></div>
-                                          <div class="columns shrink">
-                                            <a href="" class="button clear hollow tiny mb-0 pl-0"><i class="fa fa-plus clr-note-darken tiny"> Note</i></a> 
-                                          </div>
-                                        </div>
-                                        
-                                      </div>
-                                    </div>
-
-                                  </div>
-                                </div>                              
-                              </div>
-
-                              <div class="pull-right disp-inline clr-black20 pl-0-5 pr-0-5 pb-0-25">
-                                <small>Bucket</small>
-                              </div>
-                              
-                            </div>
-
-
-                          </div>
-                        </div>
-
-                        <div class="toggler timeline-item timeline-waiting">
-                          <div class="row toggler-handler timeline-content">
-                            <div class="columns medium-4">
-                              <div class="pt-0-5 pb-0-5 pl-1 pr-1 borderless middle border-radius-sm hide-overflow">
-                                <p class="mb-0 small align-middle">
-                                  <small>Feb 3, 2019</small></p>
-                              </div>
-                            </div>
-                            <div class="auto columns pr-1 pt-1 pb-1">
-                              <span class="clr-black20">
-                                Pain Survey
-                              </span>
-                              <p class="mb-0">
-                                <small>
-                                  <i class="fa fa-envelope clr-black20 pr-1"></i>
-                                  <i class="fa fa-tasks clr-black20 pr-1"></i>
-                                </small>
-                              </p>
-                            </div>
-                          </div>
-                          <div class="row toggler-target timeline-hidden-content">
-                            <div class="columns pr-0">
-
-                              <div class="pl-0-25 pt-1 timeline-hidden-item">
-                                <div class="row">
-                                  <div class="columns">
-                                    <p class="mb-0 clr-primary timeline-hidden-item-head item-question"><small><a href="">Pain Threshold</a></small></p>
-                                  </div>
-                                  <div class="columns medium-1"></div>
+                                <div class="columns shrink">
+                                  <button class="button hollow success tiny mb-0 ml-1"><i class="fa fa-play"></i> Manually Send</button>
                                 </div>
-                              </div>
+                              </div> -->
 
-                              <div class="pull-right disp-inline clr-black20 pl-0-5 pr-0-5 pb-0-25">
-                                <small>Bucket</small>
-                              </div>
-
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="toggler timeline-item timeline-waiting">
-                          <div class="row toggler-handler timeline-content">
-                            <div class="columns medium-4">
-                              <div class="pt-0-5 pb-0-5 pl-1 pr-1 borderless middle border-radius-sm hide-overflow">
-                                <p class="mb-0 small align-middle">
-                                  <small>Feb 9, 2019</small></p>
-                              </div>
-                            </div>
-                            <div class="auto columns pr-1 pt-1 pb-1">
-                              <span class="clr-black20">
-                                Compliance with Physical Therapy regimen (3 week post)
-                              </span>
-                              <p class="mb-0">
-                                <small>
-                                  <i class="fa fa-envelope clr-black20 pr-1"></i>
-                                  <i class="fa fa-tasks clr-black20 pr-1"></i>
-                                  <i class="fa fa-clipboard-list clr-black20 pr-1"></i>
-                                </small>
-                              </p>
-                            </div>
-                          </div>
-                          <div class="row toggler-target timeline-hidden-content">
-                            <div class="columns pr-0">
-
-                              <div class="pl-0-25 mb-1 pt-1 timeline-hidden-item">
-                                <div class="row">
-                                  <div class="columns">
-                                    <p class="mb-0 clr-primary timeline-hidden-item-head item-todo"><small>3 Weeks after Surgery</small></p>
-                                  </div>
-                                  <div class="columns medium-1"></div>
-                                </div>
-
-                                <div class="row mb-1">
-                                  <div class="columns">
-                                    <div class="row align-middle">
-                                      <div class="columns shrink">
-                                        <small><i class="fa fa-check clr-secondary tiny"></i></small>
-                                      </div>
-                                      <div class="columns">
-                                        <span class="tiny"><small>Joe Ortho - Go to 1 week post-op physical therapy session</small></span>
-                                      </div>
-                                      <div class="columns medium-1"></div>
-                                    </div>
-                                    <div class="row align-middle">
-                                      <div class="columns shrink">
-                                        <small><i class="fa fa-envelope clr-secondary tiny"></i></small>
-                                      </div>
-                                      <div class="columns">
-                                        <span class="tiny"><small>Physical Therapy appointment reminder</small></span>
-                                      </div>
-                                      <div class="columns medium-1"></div>
-                                    </div>
-                                    <div class="row align-middle">
-                                      <div class="columns shrink">
-                                        <small><i class="fa fa-clipboard-list clr-secondary tiny"></i></small>
-                                      </div>
-                                      <div class="columns">
-                                        <span class="tiny"><small>Send Pain Threshold</small></span>
-                                      </div>
-                                      <div class="columns medium-1"></div>
-                                    </div>
-                                  </div>
-                                </div>
-                                
-                              </div>
-
-                              <div class="pull-right disp-inline clr-black20 pl-0-5 pr-0-5 pb-0-25">
-                                <small>Bucket</small>
-                              </div>
-                              
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="toggler timeline-item timeline-waiting">  <!-- show-remove-hover -->
-                          <div class="row toggler-handler timeline-content">
-                            <div class="columns medium-4">
-                              <div class="pt-0-5 pb-0-5 pl-1 pr-1 borderless middle border-radius-sm hide-overflow">
-                                <p class="mb-0 small align-middle">
-                                  <small>Feb 12, 2019</small></p>
-                              </div>
-                            </div>
-                            <div class="auto columns pr-1 pt-1 pb-1">
-                              <span class="clr-black20">
-                                Custom Event created by CC
-                              </span>
-                              <p class="mb-0">
-                                <small>
-                                  <i class="fa fa-tasks clr-black20 pr-1"></i>
-                                  <i class="fa fa-clipboard-list clr-secondary-lighten pr-1"></i>
-                                </small>
-                              </p>
-                            </div>
-                          </div>
-                          <div class="row toggler-target timeline-hidden-content">
-                            <div class="columns pr-0">
 
                               <div class="pl-0-25 mb-1 pt-1 timeline-hidden-item">
                                 <div class="row">
@@ -2180,6 +1447,575 @@
                                 <small>Bucket</small>
                               </div>
 
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="label-block toggler timeline-item timeline-ongoing">
+                          <div class="row align-middle collapse toggler-handler timeline-content">
+                            <div class="columns medium-2">
+                              <div class="pt-0-5 pb-0-5 pl-1 pr-1 borderless middle border-radius-sm hide-overflow">
+                                <p class="mb-0 clr-black20 small align-middle">
+                                  <small>Jan 20, 2019</small></p>
+                              </div>
+                            </div>
+                            <div class="columns border-radius-sm">
+                              <div class="pt-0-5 pb-0-5 pr-1 borderless pl-0">
+                                <div class="row collapse expanded">
+                                  <div class="auto columns">
+                                    <span class="clr-black20 truncate"> </i></a> 
+                                      Pain Survey
+                                    </span>
+
+                                  </div>
+                                  <div class="shrink columns pr-1 v-align-center">
+                                    <!-- <span class="tag no-action small mb-0 mr-0 outlined warning mr-1">Pain, 7</span> -->
+                                    <i class="fa fa-check clr-warning-lighten pr-1"></i>
+                                    <i class="fa fa-clipboard-list clr-warning-lighten pr-1"></i>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row toggler-target timeline-hidden-content">
+                            <div class="columns pr-0">
+
+                              <!-- <div class="row">
+                                <div class="columns shrink">
+                                  <button class="button hollow alert tiny mb-0 ml-1"><i class="fa fa-trash"></i> Remove this event</button>
+                                </div>
+                                <div class="columns"></div>
+                                <div class="columns shrink">
+                                  <button class="button hollow success tiny mb-0 ml-1"><i class="fa fa-play"></i> Manually Send</button>
+                                </div>
+                              </div> -->
+
+
+                              <div class="pl-0-25 mb-1 pt-1 timeline-hidden-item">
+                                <div class="row">
+                                  <div class="columns toggler">
+                                    
+                                    <div class="timeline-hidden-item-head item-message completed">
+                                        <span class="sub-item-title"><strong><small>Regarding your Diet</small></strong></span>
+                                        <button class="button tiny clear hollow success mb-0 pb-0-25 pt-0-25 pull-right">Read over the phone</button>
+                                    </div>
+
+                                    <!-- Task Content -->
+                                    <div class="row bg-cloud border-radius-sm pt-0-5 pb-0-5">
+                                      <div class="columns">
+                                        <div class="row collapse">
+                                          <div class="columns">
+                                            <p class="mb-0-5 tiny">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur esse provident voluptas, autem ullam, dolorem voluptatum natus! Sapiente ratione molestias quasi autem eius nemo quo, ducimus eligendi, maxime quas quam fugiat dicta omnis animi eaque delectus unde facere rerum ut, placeat iusto, consequuntur. Labore velit quos mollitia id, perferendis cum placeat. Totam, dolore, in.</p>
+                                          </div>
+                                        </div>
+                                        <div class="row collapse">
+                                          <div class="columns"></div>
+                                          <div class="columns shrink">
+                                            <a href="" class="button clear hollow tiny mb-0 pl-0"><i class="fa fa-plus clr-note-darken tiny"> Note</i></a> 
+                                          </div>
+                                        </div>
+                                        
+                                      </div>
+                                    </div>
+
+                                  </div>
+                                </div>                              
+                              </div>
+
+                              <div class="pl-0-25 mb-1 pt-1 timeline-hidden-item">
+                                <div class="row">
+                                  <div class="columns toggler">
+                                    
+                                    <div class="timeline-hidden-item-head item-todo">
+                                        <span class="sub-item-title"><strong><small>Drink Medecine</small></strong></span>
+                                        <button class="button tiny clear hollow success mb-0 pb-0-25 pt-0-25 pull-right">Mark as completed</button>
+                                    </div>
+
+                                    <!-- Task Content -->
+                                    <div class="row bg-cloud border-radius-sm pt-0-5 pb-0-5">
+                                      <div class="columns">
+                                        <div class="row collapse">
+                                          <div class="columns">
+                                            <p class="mb-0-5 tiny">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis fuga maiores fugit consectetur suscipit, nesciunt quo, sit id, sed incidunt iste officia possimus. Recusandae.</p>                                          
+                                          </div>
+                                        </div>
+                                        <div class="row collapse">
+                                          <div class="columns"></div>
+                                          <div class="columns shrink">
+                                            <a href="" class="button clear hollow tiny mb-0 pl-0"><i class="fa fa-plus clr-note-darken tiny"> Note</i></a> 
+                                          </div>
+                                        </div>
+
+                                        
+                                      </div>
+                                    </div>
+
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="pl-0-25 mb-1 pt-1 timeline-hidden-item">
+                                <div class="row">
+                                  <div class="columns">
+
+                                    <div class="timeline-hidden-item-head item-question">
+                                        <span class="sub-item-title"><strong><small>Pain Threshold</small></strong></span>
+                                    </div>
+
+                                    <!-- Task Content -->
+                                    <div class="row bg-cloud border-radius-sm pt-0-5 pb-0-5">
+                                      <div class="columns">
+                                        
+                                        <div class="row question-item">
+                                          <div class="columns hide-overflow">
+                                            <div class="item-question">
+                                              <div class="row">
+                                                <div class="columns pl-0">
+                                                  <p class="mb-0"><strong><small>Do you use tobacco products?</small></strong></p>
+                                                  <span class="subheader tiny">Do you use tobacco products? (Temporary placeholder)</span>
+                                                </div>
+                                                <div class="columns shrink">
+                                                  <span data-tooltip="olvico-tooltip" tabindex="1" title="" aria-describedby="75beg0-tooltip" data-yeti-box="75beg0-tooltip" data-toggle="75beg0-tooltip" data-resize="75beg0-tooltip" class="has-tip"><i class="fa fa-question-circle clr-success"></i></span>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            
+                                            <div class="item-answer-option">
+                                              <div class="fancy-radio fancy-hover small align-middle">
+                                                  <input name="qopt2" id="qopt2.1" type="radio" class="mr-0" checked=""> 
+                                                  <label for="qopt2.1 " class="mb-0 mt-0"><strong>Yes</strong></label>
+                                              </div>
+                                              <div class="fancy-radio fancy-hover small align-middle">
+                                                  <input name="qopt2" id="qopt2.2" type="radio" class="mr-0">
+                                                  <label for="qopt2.2 " class="mb-0 mt-0"><strong>No</strong></label>
+                                              </div>
+                                            </div>
+
+                                          </div>
+                                        </div>
+
+                                        <div class="row question-item">
+                                          <div class="columns hide-overflow">
+                                            <div class="item-question">
+                                              <div class="row">
+                                                <div class="columns pl-0">
+                                                  <p class="mb-0"><strong><small>Do you engage in recreational drugs?</small></strong></p>
+                                                  <span class="subheader tiny">Do you engage in recreational drugs? (Temporary placeholder)</span>
+                                                </div>
+                                                <div class="columns shrink">
+                                                  <span data-tooltip="olvico-tooltip" tabindex="1" title="" aria-describedby="75beg0-tooltip" data-yeti-box="75beg0-tooltip" data-toggle="75beg0-tooltip" data-resize="75beg0-tooltip" class="has-tip"><i class="fa fa-question-circle clr-success"></i></span>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            
+                                            <div class="item-answer-option">
+                                              <div class="fancy-radio fancy-hover small align-middle">
+                                                  <input name="qopt2" id="qopt2.1" type="radio" class="mr-0" checked=""> 
+                                                  <label for="qopt2.1 " class="mb-0 mt-0"><strong>Yes</strong></label>
+                                              </div>
+                                              <div class="fancy-radio fancy-hover small align-middle">
+                                                  <input name="qopt2" id="qopt2.2" type="radio" class="mr-0">
+                                                  <label for="qopt2.2 " class="mb-0 mt-0"><strong>No</strong></label>
+                                              </div>
+                                            </div>
+
+                                          </div>
+                                        </div>
+
+                                      </div>
+                                    </div>
+
+
+                                  </div>
+                                </div>
+                              </div>
+
+
+                              <div class="pull-right disp-inline clr-black20 pl-0-5 pr-0-5 pb-0-25">
+                                <small>Bucket</small>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="label-block toggler timeline-item timeline-ongoing">
+                          <div class="row align-middle collapse toggler-handler timeline-content">
+                            <div class="columns medium-2">
+                              <div class="pt-0-5 pb-0-5 pl-1 pr-1 borderless middle border-radius-sm hide-overflow">
+                                <p class="mb-0 small align-middle">
+                                  <button data-open="eventDate">
+                                    <small><strong>
+                                      Jan 25, 2019 
+                                      <i class="fa fa-pencil-alt"></i>
+                                    </strong></small> 
+                                    
+                                  </button>
+                                </p>
+                              </div>
+                            </div>
+                            <div class="columns border-radius-sm">
+                              <div class="pt-0-5 pb-0-5 pr-1 borderless pl-0">
+                                <div class="row collapse expanded">
+                                  <div class="auto columns">
+                                    <span class="truncate">
+                                      <strong>Post-Op visit scheduled</strong>
+                                    </span>
+                                  </div>
+                                  <div class="shrink columns pr-1 v-align-center">
+                                    <i class="fa fa-check clr-warning-lighten pr-1"></i>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row toggler-target timeline-hidden-content">
+                            <div class="columns pr-0">
+
+                              <div class="pl-0-25 mb-1 pt-1 timeline-hidden-item">
+                                <div class="row">
+                                  <div class="columns">
+                                    <p class="mb-0 clr-primary timeline-hidden-item-head item-todo"><small><a href="">Chachi Gonzales - Follow up with doctor</a></small></p>
+                                  </div>
+                                  <div class="columns medium-1"></div>
+                                </div>
+
+                                <!-- <div class="row mb-1">
+                                  <div class="columns">
+                                    <div class="row align-middle">
+                                      <div class="columns shrink">
+                                        <small><i class="fa fa-check clr-secondary tiny"></i></small>
+                                      </div>
+                                      <div class="columns">
+                                        <span class="tiny"><small>Chachi Gonzales - Follow up with doctor</small></span>
+                                      </div>
+                                      <div class="columns medium-1"></div>
+                                    </div>
+                                  </div>
+                                </div> -->
+                                
+                              </div>
+
+                              <div class="pull-right disp-inline clr-black20 pl-0-5 pr-0-5 pb-0-25">
+                                <small>Bucket</small>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="label-block toggler timeline-item timeline-waiting">
+                          <div class="row align-middle collapse toggler-handler timeline-content">
+                            <div class="columns medium-2">
+                              <div class="pt-0-5 pb-0-5 pl-1 pr-1 borderless middle border-radius-sm hide-overflow">
+                                <p class="mb-0 small align-middle">
+                                <small>Jan 26, 2019</small></p>
+                              </div>
+                            </div>
+                            <div class="columns border-radius-sm">
+                              <div class="pt-0-5 pb-0-5 pr-1 borderless pl-0">
+                                <div class="row collapse expanded">
+                                  <div class="auto columns">
+                                    <span class="truncate">
+                                      Compliance with Physical Therapy regimen (1 week post)
+                                    </span>
+                                  </div>
+                                  <div class="shrink columns pr-1 v-align-center">
+                                    <i class="fa fa-envelope clr-black20 pr-1"></i>
+                                    <i class="fa fa-check clr-warning-lighten pr-1"></i>
+                                    <i class="fa fa-clipboard-list clr-warning-lighten pr-1"></i>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row toggler-target timeline-hidden-content">
+                            <div class="columns pr-0">
+
+                              <div class="row mb-1 mt-1">
+                                <div class="columns shrink">
+                                  <button class="button hollow alert tiny mb-0 ml-1"><i class="fa fa-trash"></i> Remove this event</button>
+                                  <button class="button hollow success tiny mb-0 ml-1"><i class="fa fa-play"></i> Manually Send</button>
+                                </div>
+                                <div class="columns"></div>
+                                <!-- <div class="columns shrink">
+                                  <button class="button hollow alert tiny mb-0 ml-1"><i class="fa fa-trash"></i> Remove this event</button>
+                                  <button class="button hollow success tiny mb-0 ml-1"><i class="fa fa-play"></i> Manually Send</button>
+                                </div> -->
+                              </div>
+
+                              <div class="pl-0-25 mb-1 pt-1 timeline-hidden-item">
+                                <div class="row">
+                                  <div class="columns toggler">
+                                    
+                                    <div class="timeline-hidden-item-head item-todo">
+                                        <span class="sub-item-title"><strong><small>Joe Ortho - Go to 1 week post-op physical therapy session</small></strong></span>
+                                        <button class="button tiny clear hollow success mb-0 pb-0-25 pt-0-25 pull-right">Mark as Completed</button>
+                                    </div>
+
+                                    <!-- Task Content -->
+                                    <div class="row bg-cloud border-radius-sm pt-0-5 pb-0-5">
+                                      <div class="columns">
+                                        <div class="row collapse">
+                                          <div class="columns">
+                                            <p class="mb-0-5 tiny">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur esse provident voluptas, autem ullam, dolorem voluptatum natus! Sapiente ratione molestias quasi autem eius nemo quo, ducimus eligendi, maxime quas quam fugiat dicta omnis animi eaque delectus unde facere rerum ut, placeat iusto, consequuntur. Labore velit quos mollitia id, perferendis cum placeat. Totam, dolore, in.</p>
+                                          </div>
+                                        </div>
+                                        <div class="row collapse">
+                                          <div class="columns"></div>
+                                          <div class="columns shrink">
+                                            <a href="" class="button clear hollow tiny mb-0 pl-0"><i class="fa fa-plus clr-note-darken tiny"> Note</i></a> 
+                                          </div>
+                                        </div>
+                                        
+                                      </div>
+                                    </div>
+
+                                  </div>
+                                </div>                              
+                              </div>
+
+                              <!-- <div class="pl-0-25 pt-1 timeline-hidden-item">
+                                <div class="row">
+                                  <div class="columns">
+                                    <p class="mb-0 clr-primary timeline-hidden-item-head item-todo"><small><a href="">Joe Ortho - Go to 1 week post-op physical therapy session</a></small></p>
+                                  </div>
+                                  <div class="columns medium-1"></div>
+                                </div>
+                              </div> -->
+
+                              <!-- <div class="pl-0-25 pt-1 timeline-hidden-item">
+                                <div class="row">
+                                  <div class="columns">
+                                    <p class="mb-0 clr-primary timeline-hidden-item-head item-todo"><small><a href="">Physical Therapy appointment reminder</a></small></p>
+                                  </div>
+                                  <div class="columns medium-1"></div>
+                                </div>
+                              </div>
+
+                              <div class="pl-0-25 pt-1 timeline-hidden-item">
+                                <div class="row">
+                                  <div class="columns">
+                                    <p class="mb-0 clr-primary timeline-hidden-item-head item-question"><small><a href="">Pain Threshold</a></small></p>
+                                  </div>
+                                  <div class="columns medium-1"></div>
+                                </div>
+                              </div> -->
+
+                              <div class="pull-right disp-inline clr-black20 pl-0-5 pr-0-5 pb-0-25">
+                                <small>Bucket</small>
+                              </div>
+                              
+                            </div>
+
+
+                          </div>
+                        </div>
+
+                        <div class="label-block toggler timeline-item timeline-waiting">
+                          <div class="row align-middle collapse toggler-handler timeline-content">
+                            <div class="columns medium-2">
+                              <div class="pt-0-5 pb-0-5 pl-1 pr-1 borderless middle border-radius-sm hide-overflow">
+                                <p class="mb-0 small align-middle">
+                                  <small>Feb 3, 2019</small></p>
+                              </div>
+                            </div>
+                            <div class="columns border-radius-sm">
+                              <div class="pt-0-5 pb-0-5 pr-1 borderless pl-0">
+                                <div class="row collapse expanded">
+                                  <div class="auto columns">
+                                    <span class="truncate">
+                                      Pain Survey
+                                    </span>
+                                  </div>
+                                  <div class="shrink columns pr-1 v-align-center">
+                                    <i class="fa fa-envelope clr-black20 pr-1"></i>
+                                    <i class="fa fa-check clr-warning-lighten pr-1"></i>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row toggler-target timeline-hidden-content">
+                            <div class="columns pr-0">
+
+                              <div class="pl-0-25 pt-1 timeline-hidden-item">
+                                <div class="row">
+                                  <div class="columns">
+                                    <p class="mb-0 clr-primary timeline-hidden-item-head item-question"><small><a href="">Pain Threshold</a></small></p>
+                                  </div>
+                                  <div class="columns medium-1"></div>
+                                </div>
+                              </div>
+
+                              <!-- <div class="pl-0-25 pt-1 timeline-hidden-item">
+                                <div class="row">
+                                  <div class="columns">
+                                    <p class="mb-0 clr-primary timeline-hidden-item-head item-todo"><small>Remind member to answer Pain Threshold</small></p>
+                                  </div>
+                                  <div class="columns medium-1"></div>
+                                </div>
+                              </div> -->
+
+
+                              <div class="pull-right disp-inline clr-black20 pl-0-5 pr-0-5 pb-0-25">
+                                <small>Bucket</small>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="label-block toggler timeline-item timeline-waiting">
+                          <div class="row align-middle collapse toggler-handler timeline-content">
+                            <div class="columns medium-2">
+                              <div class="pt-0-5 pb-0-5 pl-1 pr-1 borderless middle border-radius-sm hide-overflow">
+                                <p class="mb-0 small align-middle">
+                                  <small>Feb 9, 2019</small></p>
+                              </div>
+                            </div>
+                            <div class="columns border-radius-sm">
+                              <div class="pt-0-5 pb-0-5 pr-1 borderless pl-0">
+                                <div class="row collapse expanded">
+                                  <div class="auto columns">
+                                    <span class="truncate">
+                                      Compliance with Physical Therapy regimen (3 week post)
+                                    </span>
+                                  </div>
+                                  <div class="shrink columns pr-1 v-align-center">
+                                    <i class="fa fa-envelope clr-black20 pr-1"></i>
+                                    <i class="fa fa-check clr-warning-lighten pr-1"></i>
+                                    <i class="fa fa-clipboard-list clr-warning-lighten pr-1"></i>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row toggler-target timeline-hidden-content">
+                            <div class="columns pr-0">
+
+                              <div class="pl-0-25 mb-1 pt-1 timeline-hidden-item">
+                                <div class="row">
+                                  <div class="columns">
+                                    <p class="mb-0 clr-primary timeline-hidden-item-head item-todo"><small>3 Weeks after Surgery</small></p>
+                                  </div>
+                                  <div class="columns medium-1"></div>
+                                </div>
+
+                                <div class="row mb-1">
+                                  <div class="columns">
+                                    <div class="row align-middle">
+                                      <div class="columns shrink">
+                                        <small><i class="fa fa-check clr-secondary tiny"></i></small>
+                                      </div>
+                                      <div class="columns">
+                                        <span class="tiny"><small>Joe Ortho - Go to 1 week post-op physical therapy session</small></span>
+                                      </div>
+                                      <div class="columns medium-1"></div>
+                                    </div>
+                                    <div class="row align-middle">
+                                      <div class="columns shrink">
+                                        <small><i class="fa fa-envelope clr-secondary tiny"></i></small>
+                                      </div>
+                                      <div class="columns">
+                                        <span class="tiny"><small>Physical Therapy appointment reminder</small></span>
+                                      </div>
+                                      <div class="columns medium-1"></div>
+                                    </div>
+                                    <div class="row align-middle">
+                                      <div class="columns shrink">
+                                        <small><i class="fa fa-clipboard-list clr-secondary tiny"></i></small>
+                                      </div>
+                                      <div class="columns">
+                                        <span class="tiny"><small>Send Pain Threshold</small></span>
+                                      </div>
+                                      <div class="columns medium-1"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                              </div>
+
+                              <div class="pull-right disp-inline clr-black20 pl-0-5 pr-0-5 pb-0-25">
+                                <small>Bucket</small>
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="label-block toggler timeline-item timeline-waiting">  <!-- show-remove-hover -->
+                          <div class="row align-middle collapse toggler-handler timeline-content">
+                            <div class="columns medium-2">
+                              <div class="pt-0-5 pb-0-5 pl-1 pr-1 borderless middle border-radius-sm hide-overflow">
+                                <p class="mb-0 small align-middle">
+                                  <small>Feb 12, 2019</small></p>
+                              </div>
+                            </div>
+                            <div class="columns border-radius-sm">
+                              <div class="pt-0-5 pb-0-5 pr-1 borderless pl-0">
+                                <div class="row collapse expanded">
+                                  <div class="auto columns">
+                                    <span class="truncate">
+                                      Custom Event created by CC
+                                    </span>
+                                  </div>
+                                  <div class="shrink columns pr-1 v-align-center">
+                                    <i class="fa fa-check clr-warning-lighten pr-1"></i>
+                                    <i class="fa fa-clipboard-list clr-secondary-lighten pr-1"></i>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row toggler-target timeline-hidden-content">
+                            <div class="columns pr-0">
+
+                              <div class="pl-0-25 mb-1 pt-1 timeline-hidden-item">
+                                <div class="row">
+                                  <div class="columns">
+                                    <p class="mb-0 clr-primary timeline-hidden-item-head item-todo"><small>3 Days after Compliance with Physical Therapy regimen (3 week post)</small></p>
+                                  </div>
+                                  <div class="columns medium-1"></div>
+                                </div>
+                                
+                                <div class="row mb-1">
+                                  <div class="columns">
+                                    <div class="row align-middle">
+                                      <div class="columns shrink">
+                                        <small><i class="fa fa-check clr-secondary tiny"></i></small>
+                                      </div>
+                                      <div class="columns">
+                                        <span class="tiny"><small>Joe Ortho - Go to 1 week post-op physical therapy session</small></span>
+                                      </div>
+                                      <div class="columns medium-1"></div>
+                                    </div>
+                                    <div class="row align-middle">
+                                      <div class="columns shrink">
+                                        <small><i class="fa fa-envelope clr-secondary tiny"></i></small>
+                                      </div>
+                                      <div class="columns">
+                                        <span class="tiny"><small>Physical Therapy appointment reminder</small></span>
+                                      </div>
+                                      <div class="columns medium-1"></div>
+                                    </div>
+                                    <div class="row align-middle">
+                                      <div class="columns shrink">
+                                        <small><i class="fa fa-clipboard-list clr-secondary tiny"></i></small>
+                                      </div>
+                                      <div class="columns">
+                                        <span class="tiny"><small>Send Pain Threshold</small></span>
+                                      </div>
+                                      <div class="columns medium-1"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="pull-right disp-inline clr-black20 pl-0-5 pr-0-5 pb-0-25">
+                                <small>Bucket</small>
+                              </div>
+                              
                             </div>
                           </div>
                         </div>
@@ -2760,7 +2596,7 @@
 
     <script src="js/app.js"></script>
 
-    <script type="text/javascript">
+<!--     <script type="text/javascript">
 
         var topBarHeight = $('.top-bar').outerHeight(true);
 
@@ -2775,7 +2611,7 @@
             }).resize();
         });
 
-    </script>
+    </script> -->
 
     
 
