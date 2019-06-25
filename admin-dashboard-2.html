@@ -12,139 +12,54 @@
   <body>
   
 
-    <div id="master-container" class="sidebar-body">
+    <div id="master-container" class="header-body">
         
       <!-- SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR  -->
-      <div class="site-nav sidebar">
-        <header>
-          <a href="#" class="logo text-center">
-            <img src="img/logo.png" title="Spoke">
-          </a>
-        </header>
-        <ul class="menu vertical" data-accordion-menu>
-          <li class="is-active">
-            <a href="advocate-dashboard.html">My Dashboard</a>
-          </li>
-          <li>
-            <a href="advocate-employees.html">Employees</a>
-          </li>
-          <li>
-            <a href="#">Doctors</a>
-          </li>
-          <li>
-            <a href="advocate-facilities.html">Facilities</a>
-          </li>
-          <li>
-            <a href="#">Activity Logs</a>
-          </li>
-          <li>
-            <a href="advocate-profile.html">Profile</a>
-            <ul class="nested vertical menu">
-              <li>
-                <a href="advocate-profile.html">User Information</a>
-              </li>
-              <li>
-                <a href="advocate-password.html">Change My Password</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <div class="nav-bottom">
-          <ul class="menu vertical" data-accordion-menu>
-            <li class="fancy-button toggler">
-              <ul class="nested vertical menu toggler-target">
-                <li>
-                  <a href="advocate-profile.html"><i class="fa fa-search"></i> Search our knowledge base</a>
-                </li>
-                <li>
-                  <a href="advocate-password.html"><i class="fa fa-flag "></i> Submit a support ticket</a>
-                </li>
-                <li>
-                  <a href="advocate-password.html"><i class="fa fa-envelope"></i> Send an email to XXXX</a>
-                </li>
-                <li>
-                  <a href="advocate-password.html"><i class="fa fa-comments"></i> Live chat</a>
-                </li>
-                <li>
-                  <a href="advocate-password.html"><i class="fa fa-phone"></i> Call us at 1-855-766-6979</a>
-                </li>
-              </ul>
-              <a href="advocate-profile.html toggler-handler"><i class="fa fa-question"></i> Help</a>
-              <!-- <ul class="nested vertical menu">
-                <li>
-                  <a href="advocate-profile.html"><i class="fa fa-search"></i> Search our knowledge base</a>
-                </li>
-                <li>
-                  <a href="advocate-password.html"><i class="fa fa-flag "></i> Submit a support ticket</a>
-                </li>
-                <li>
-                  <a href="advocate-password.html"><i class="fa fa-envelope"></i> Send an email to XXXX</a>
-                </li>
-                <li>
-                  <a href="advocate-password.html"><i class="fa fa-comments"></i> Live chat</a>
-                </li>
-                <li>
-                  <a href="advocate-password.html"><i class="fa fa-phone"></i> Call us at 1-855-766-6979</a>
-                </li>
-              </ul> -->
-            </li>
-          </ul>
-        </div>
-      </div>
 
-      <!-- MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT  -->
-      <div class="content main-content">
-        <!-- <div class="bg-alert text-center stick-to-top always-on-top">
-          <p class="mb-0 clr-white"><strong>DEMO</strong></p>
-        </div> -->
-
-        <div class="top-bar">
-          <div class="top-bar-left">
-            <div class="input-group rounded">
-              <input class="input-group-field" type="search" placeholder="Search employees">
-              <div class="input-group-button">
-                <input type="submit" class="button hollow plain info" value="Submit">
-              </div>
+      <div class="header stick-to-top bg-white">
+        <div class="row expanded pt-1 pb-1 align-middle">
+          <div class="columns shrink">
+            <a href="#" class="logo text-center">
+              <img src="img/logo.png" title="Spoke">
+            </a>
+          </div>
+          <div class="columns shrink">
+            <div class="input-group rounded mb-0">
+              <button class="button clear hollow mb-0"><i class="fa fa-search"></i></button>
             </div>
           </div>
-          <div class="top-bar-right">
+          <div class="columns">
             <ul class="dropdown menu" data-dropdown-menu>
-              <li class="warning-color">
-                <button class="vertical-block" data-open="exampleModal1"><i class="fa fa-list-ol fa-lg"></i>&nbsp; <b>New
-                  Task</b></button>
-                <div class="reveal" id="exampleModal1" data-reveal>
-                  <div class="reveal-heading">
-                    <strong>NEW TASK</strong>
-                  </div>
-                  <div class="reveal-body">
-                    <div>
-                      <label for=""><strong>Assignee</strong></label>
-                      <input type="text" placeholder="Assignee" class="fancy-input">
-                    </div>
-                    <div>
-                      <label for=""><strong>Task</strong></label>
-                      <input type="text" placeholder="Feed the Cats" class="fancy-input">
-                    </div>
-                    <!-- <div>
-                      <label for=""><strong>THE Task</strong></label>
-                      <textarea name="" id="" cols="30" rows="10" placeholder="THE Task" class="mb-0 fancy-input"></textarea>
-                    </div> -->
-
-
-                  </div>
-                  <div class="reveal-footer">
-                    <button class="button success">Create</button>
-                  </div>
-                  <button class="close-button" data-close aria-label="Close modal" type="button">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
+              <li><a href="#" class="clr-black50"><strong>Dashboard</strong></a></li>
+              <li>
+                <a href="#" class="clr-black50"><strong>Content</strong></a>
+                <ul class="menu">
+                  <li><a href="#" class="align-middle">Member</a></li>
+                  <li><a href="#">Company</a></li>
+                  <li><a href="#">Facility</a></li>
+                  <li><a href="#">Doctor</a></li>
+                  <li class="pl-1 pr-1"><hr class="mb-0-5 mt-0-5"></li>
+                  <li><a href="#">Geo data</a></li>
+                  <li><a href="#">User</a></li>
+                  <li><a href="#">Activity Logs</a></li>
+                </ul>
               </li>
-              <li class="success-color">
-                <a class="vertical-block" href="#"><i class="fa fa-calendar-plus-o fa-lg"></i></a>
+            </ul>
+          </div>
+          <div class="columns shrink">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li class="clr-primary">
+                <button class="vertical-block" data-open="exampleModal1"><i class="fa fa-plus"></i></button>
+                <ul class="menu">
+                  <li><a href="#">Task</a></li>
+                  <li><a href="#">Scedule</a></li>
+                </ul>
               </li>
+              <!-- <li class="success-color">
+                <a class="vertical-block" href="#"><i class="fa fa-calendar-plus"></i></a>
+              </li> -->
               <li class="drop-text">
-                <a data-toggle="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span
+                <a data-toggle="#"><i class="fa fa-bell" aria-describedby="notifCount"></i><span
                   class="alert badge" id="notifCount">24</span></a>
                 <ul class="notifications menu vertical">
                   <li>
@@ -205,13 +120,22 @@
             </ul>
           </div>
         </div>
+      </div>
+
+      <!-- MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT  -->
+      <div class="content main-content">
+        <!-- <div class="bg-alert text-center stick-to-top always-on-top">
+          <p class="mb-0 clr-white"><strong>DEMO</strong></p>
+        </div> -->
+
+        
 
 
 
         <div class="row expanded">
           <div class="columns">
 
-            <div class="page-lead row  collapse toggler align-middle border-radius-sm b-all-1-darker mb-2">
+            <div class="page-lead row collapse toggler align-middle border-radius-sm b-all-1-darker mb-2 mt-2">
               <div class="columns">
 
                 <div class="row collapse">
@@ -428,12 +352,12 @@
                         <div class="columns">
                             Brendon Martin
                         </div>
-                        <div class="columns">
+                        <!-- <div class="columns">
                           <p class="tiny subheader mb-0">
                             Apr-24, 1 day ago
                           </p>
                           <small>Episode Title</small>
-                        </div>
+                        </div> -->
                         <!-- <div class="columns">
                             <small>Apr-24, 1 day ago</small>
                         </div> -->
@@ -448,9 +372,11 @@
                         </div>
                       </div>
                       
-                      <div class="row toggler-target bg-black10 ml-1 mr-1 mb-1"> <!-- b-all-1-darker -->
+                      <div class="row toggler-target ml-1 mr-1 mb-1"> <!-- b-all-1-darker -->
                         <div class="columns">
+
                           <div class="row b-bottom-1 pb-0-5 pt-0-5">
+                            <div class="columns shrink clr-alert"><i class="fa fa-comment"></i></div>
                             <div class="columns">
                               <p class="mb-0 clr-alert"><strong><small>Task title</small></strong></p>
                               <span class="tiny clr-black20"><strong>Episode Title</strong></span>
@@ -460,6 +386,7 @@
                             </div>
                           </div>
                           <div class="row b-bottom-1 pb-0-5 pt-0-5">
+                            <div class="columns shrink clr-alert"><i class="fa fa-envelope"></i></div>
                             <div class="columns">
                               <p class="mb-0 clr-alert"><strong><small>Task title</small></strong></p>
                               <span class="tiny clr-black20"><strong>Episode Title</strong></span>
@@ -469,8 +396,9 @@
                             </div>
                           </div>
                           <div class="row b-bottom-1 pb-0-5 pt-0-5">
+                            <div class="columns shrink"><i class="fa fa-list"></i></div>
                             <div class="columns">
-                              <p class="mb-0"><strong>Task title</strong></p>
+                              <p class="mb-0"><strong><small>Task title</small></strong></p>
                               <span class="tiny clr-black20"><strong>Episode Title</strong></span>
                             </div>
                             <div class="columns shrink">
@@ -478,8 +406,9 @@
                             </div>
                           </div>
                           <div class="row pb-0-5 pt-0-5">
+                            <div class="columns shrink"><i class="fa fa-clipboard"></i></div>
                             <div class="columns">
-                              <p class="mb-0"><strong>Task title</strong></p>
+                              <p class="mb-0"><strong><small>Task title</small></strong></p>
                               <span class="tiny clr-black20"><strong>Episode Title</strong></span>
                             </div>
                             <div class="columns shrink">
@@ -491,68 +420,7 @@
 
                     </div>
 
-                    <div class="toggler pt-0-5 pb-0-5">
-                      <div class="row align-middle toggler-handler mb-0-5">
-                        <div class="columns">
-                            Brendon Martin
-                        </div>
-                        <div class="columns">
-                            <p class="tiny subheader mb-0">
-                            Apr-24, 1 day ago
-                          </p>
-                          <small>Episode Title</small>
-                        </div>
-                        <div class="columns shrink">
-                          <span class="badge warning small">7</span>
-                          <span class="badge alert small">3</span>
-                        </div>
-                        <div class="columns shrink">
-                          <button class="button clear hollow tiny mb-0">
-                            <i class="fa fa-caret-down"></i>
-                          </button>
-                        </div>
-                      </div>
-                      <div class="row toggler-target bg-black10 ml-1 mr-1 mb-1"> <!-- b-all-1-darker -->
-                        <div class="columns">
-                          <div class="row b-bottom-1 pb-0-5 pt-0-5">
-                            <div class="columns">
-                              <p class="mb-0 clr-alert"><strong><small>Task title</small></strong></p>
-                              <span class="tiny clr-black20"><strong>Episode Title</strong></span>
-                            </div>
-                            <div class="columns shrink">
-                              <span class="clr-alert"><small>due date</small></span>
-                            </div>
-                          </div>
-                          <div class="row b-bottom-1 pb-0-5 pt-0-5">
-                            <div class="columns">
-                              <p class="mb-0 clr-alert"><strong><small>Task title</small></strong></p>
-                              <span class="tiny clr-black20"><strong>Episode Title</strong></span>
-                            </div>
-                            <div class="columns shrink">
-                              <span class="clr-alert"><small>due date</small></span>
-                            </div>
-                          </div>
-                          <div class="row b-bottom-1 pb-0-5 pt-0-5">
-                            <div class="columns">
-                              <p class="mb-0"><strong>Task title</strong></p>
-                              <span class="tiny clr-black20"><strong>Episode Title</strong></span>
-                            </div>
-                            <div class="columns shrink">
-                              <small>due date</small>
-                            </div>
-                          </div>
-                          <div class="row pb-0-5 pt-0-5">
-                            <div class="columns">
-                              <p class="mb-0"><strong>Task title</strong></p>
-                              <span class="tiny clr-black20"><strong>Episode Title</strong></span>
-                            </div>
-                            <div class="columns shrink">
-                              <small>due date</small>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    
 
                     <div class="toggler pt-0-5 pb-0-5">
 
@@ -560,12 +428,12 @@
                         <div class="columns">
                             Kate Newman
                         </div>
-                        <div class="columns">
+                        <!-- <div class="columns">
                             <p class="tiny subheader mb-0">
                             Apr-24, 1 day ago
                           </p>
                           <small>Episode Title</small>
-                        </div>
+                        </div> -->
                         <div class="columns shrink">
                           <span class="badge warning small">2</span>
                           <span class="badge alert small">2</span>
@@ -576,9 +444,10 @@
                           </button>
                         </div>
                       </div>
-                      <div class="row toggler-target bg-black10 ml-1 mr-1 mb-1"> <!-- b-all-1-darker -->
+                      <div class="row toggler-target ml-1 mr-1 mb-1"> <!-- b-all-1-darker -->
                         <div class="columns">
                           <div class="row b-bottom-1 pb-0-5 pt-0-5">
+                            <div class="columns shrink"><i class="fa fa-bell"></i></div>
                             <div class="columns">
                               <p class="mb-0 clr-alert"><strong><small>Task title</small></strong></p>
                               <span class="tiny clr-black20"><strong>Episode Title</strong></span>
@@ -588,6 +457,7 @@
                             </div>
                           </div>
                           <div class="row b-bottom-1 pb-0-5 pt-0-5">
+                            <div class="columns shrink"><i class="fa fa-bell"></i></div>
                             <div class="columns">
                               <p class="mb-0 clr-alert"><strong><small>Task title</small></strong></p>
                               <span class="tiny clr-black20"><strong>Episode Title</strong></span>
@@ -597,8 +467,9 @@
                             </div>
                           </div>
                           <div class="row b-bottom-1 pb-0-5 pt-0-5">
+                            <div class="columns shrink"><i class="fa fa-bell"></i></div>
                             <div class="columns">
-                              <p class="mb-0"><strong>Task title</strong></p>
+                              <p class="mb-0"><strong><small>Task title</small></strong></p>
                               <span class="tiny clr-black20"><strong>Episode Title</strong></span>
                             </div>
                             <div class="columns shrink">
@@ -606,8 +477,9 @@
                             </div>
                           </div>
                           <div class="row pb-0-5 pt-0-5">
+                            <div class="columns shrink"><i class="fa fa-bell"></i></div>
                             <div class="columns">
-                              <p class="mb-0"><strong>Task title</strong></p>
+                              <p class="mb-0"><strong><small>Task title</small></strong></p>
                               <span class="tiny clr-black20"><strong>Episode Title</strong></span>
                             </div>
                             <div class="columns shrink">
@@ -616,7 +488,6 @@
                           </div>
                         </div>
                       </div>
-
                     </div>
 
                     <div class="toggler pt-0-5 pb-0-5">
@@ -625,12 +496,12 @@
                         <div class="columns">
                             Harry Yap
                         </div>
-                        <div class="columns">
+                        <!-- <div class="columns">
                           <p class="tiny subheader mb-0">
                             Apr-24, 1 day ago
                           </p>
                           <small>Episode Title</small>
-                        </div>
+                        </div> -->
                         <div class="columns shrink">
                           <span class="badge warning small">9</span>
                           <span class="badge alert small">2</span>
@@ -641,9 +512,10 @@
                           </button>
                         </div>
                       </div>
-                      <div class="row toggler-target bg-black10 ml-1 mr-1 mb-1"> <!-- b-all-1-darker -->
+                      <div class="row toggler-target ml-1 mr-1 mb-1"> <!-- b-all-1-darker -->
                         <div class="columns">
                           <div class="row b-bottom-1 pb-0-5 pt-0-5">
+                            <div class="columns shrink"><i class="fa fa-bell"></i></div>
                             <div class="columns">
                               <p class="mb-0 clr-alert"><strong><small>Task title</small></strong></p>
                               <span class="tiny clr-black20"><strong>Episode Title</strong></span>
@@ -653,6 +525,7 @@
                             </div>
                           </div>
                           <div class="row b-bottom-1 pb-0-5 pt-0-5">
+                            <div class="columns shrink"><i class="fa fa-bell"></i></div>
                             <div class="columns">
                               <p class="mb-0 clr-alert"><strong><small>Task title</small></strong></p>
                               <span class="tiny clr-black20"><strong>Episode Title</strong></span>
@@ -662,8 +535,9 @@
                             </div>
                           </div>
                           <div class="row b-bottom-1 pb-0-5 pt-0-5">
+                            <div class="columns shrink"><i class="fa fa-bell"></i></div>
                             <div class="columns">
-                              <p class="mb-0"><strong>Task title</strong></p>
+                              <p class="mb-0"><strong><small>Task title</small></strong></p>
                               <span class="tiny clr-black20"><strong>Episode Title</strong></span>
                             </div>
                             <div class="columns shrink">
@@ -671,8 +545,9 @@
                             </div>
                           </div>
                           <div class="row pb-0-5 pt-0-5">
+                            <div class="columns shrink"><i class="fa fa-bell"></i></div>
                             <div class="columns">
-                              <p class="mb-0"><strong>Task title</strong></p>
+                              <p class="mb-0"><strong><small>Task title</small></strong></p>
                               <span class="tiny clr-black20"><strong>Episode Title</strong></span>
                             </div>
                             <div class="columns shrink">
@@ -681,7 +556,6 @@
                           </div>
                         </div>
                       </div>
-
                     </div>
 
                     <div class="toggler pt-0-5 pb-0-5">
@@ -690,12 +564,12 @@
                         <div class="columns">
                             Sandra Lee
                         </div>
-                        <div class="columns">
+                        <!-- <div class="columns">
                           <p class="tiny subheader mb-0">
                             Apr-24, 1 day ago
                           </p>
                           <small>Episode Title</small>
-                        </div>
+                        </div> -->
                         <div class="columns shrink">
                           <span class="badge warning small">6</span>
                           <span class="badge alert small">1</span>
@@ -706,9 +580,10 @@
                           </button>
                         </div>
                       </div>
-                      <div class="row toggler-target bg-black10 ml-1 mr-1 mb-1"> <!-- b-all-1-darker -->
+                      <div class="row toggler-target ml-1 mr-1 mb-1"> <!-- b-all-1-darker -->
                         <div class="columns">
                           <div class="row b-bottom-1 pb-0-5 pt-0-5">
+                            <div class="columns shrink"><i class="fa fa-bell"></i></div>
                             <div class="columns">
                               <p class="mb-0 clr-alert"><strong><small>Task title</small></strong></p>
                               <span class="tiny clr-black20"><strong>Episode Title</strong></span>
@@ -718,6 +593,7 @@
                             </div>
                           </div>
                           <div class="row b-bottom-1 pb-0-5 pt-0-5">
+                            <div class="columns shrink"><i class="fa fa-bell"></i></div>
                             <div class="columns">
                               <p class="mb-0 clr-alert"><strong><small>Task title</small></strong></p>
                               <span class="tiny clr-black20"><strong>Episode Title</strong></span>
@@ -727,8 +603,9 @@
                             </div>
                           </div>
                           <div class="row b-bottom-1 pb-0-5 pt-0-5">
+                            <div class="columns shrink"><i class="fa fa-bell"></i></div>
                             <div class="columns">
-                              <p class="mb-0"><strong>Task title</strong></p>
+                              <p class="mb-0"><strong><small>Task title</small></strong></p>
                               <span class="tiny clr-black20"><strong>Episode Title</strong></span>
                             </div>
                             <div class="columns shrink">
@@ -736,8 +613,9 @@
                             </div>
                           </div>
                           <div class="row pb-0-5 pt-0-5">
+                            <div class="columns shrink"><i class="fa fa-bell"></i></div>
                             <div class="columns">
-                              <p class="mb-0"><strong>Task title</strong></p>
+                              <p class="mb-0"><strong><small>Task title</small></strong></p>
                               <span class="tiny clr-black20"><strong>Episode Title</strong></span>
                             </div>
                             <div class="columns shrink">
@@ -746,7 +624,6 @@
                           </div>
                         </div>
                       </div>
-
                     </div>
                       
                   </div>
@@ -1111,6 +988,28 @@
       </div>
 
     </div>
+
+    <div class="reveal" id="exampleModal1" data-reveal>
+      <div class="reveal-heading">
+        <strong>NEW TASK</strong>
+      </div>
+      <div class="reveal-body">
+        <div>
+          <label for=""><strong>Assignee</strong></label>
+          <input type="text" placeholder="Assignee" class="fancy-input">
+        </div>
+        <div>
+          <label for=""><strong>Task</strong></label>
+          <input type="text" placeholder="Feed the Cats" class="fancy-input">
+        </div>
+      </div>
+      <div class="reveal-footer">
+        <button class="button success">Create</button>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
     
     <!-- CHat Component -->
     <div id="chat-toggle">
@@ -1315,16 +1214,16 @@
             events: sampleEvents
         });
 
-        $(function () {
-            var timer;
+        // $(function () {
+        //     var timer;
 
-            $(window).resize(function () {
-                clearTimeout(timer);
-                timer = setTimeout(function () {
-                    $('.site-nav, .content').css("height", $(window).height());
-                }, 40);
-            }).resize();
-        });
+        //     $(window).resize(function () {
+        //         clearTimeout(timer);
+        //         timer = setTimeout(function () {
+        //             $('.site-nav, .content').css("height", $(window).height());
+        //         }, 40);
+        //     }).resize();
+        // });
 
     </script>
 

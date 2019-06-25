@@ -135,6 +135,19 @@
 			}
 		}
 	}
+
+	&.header-body {
+		grid-template-columns: auto;
+		grid-template-rows: 5rem auto;
+		max-height: 100vh;
+		overflow-y: scroll;
+
+		.header {
+			grid-area: 1/1/2/2 !important;
+			z-index: 1001;
+			// background-color: #f2f3f4 !important;
+		}
+	}
 }
 
 // Used for admin in Member Page

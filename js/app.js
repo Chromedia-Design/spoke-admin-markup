@@ -311,6 +311,13 @@ $('#profileContent').on('scroll', function() {
     });
 });
 
+// $('.timeline').children('.timeline-item').each(function(index) {
+
+//     // $(this).attr('data-lineHeight', $(this).height() );
+//     $(this).attr('data-line-height', $(this).children('.timeline-content').height() );
+
+// });
+
 
 
 

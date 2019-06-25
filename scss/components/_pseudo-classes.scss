@@ -124,16 +124,16 @@
     font-family: "Font Awesome 5 free";
     content: "\f2b5";
     line-height: 1.23rem;
-    padding: .5rem .25rem;
-    font-size: 1.25rem;
-    width: 2rem;
-    height: 2rem;
-    background-color: $success-color;
+    padding: .35rem .25rem;
+    font-size: 1rem;
+    // width: 2rem;
+    // height: 2rem;
+    background-color: $secondary-color;
     position: absolute;
-    top: -19px;
-    left: 50%;
+    top: 47px;
+    left: 6px;
     border-radius: 50%;
-    border: 1px solid $success-color;
+    // border: 1px solid $success-color;
     color: #fff;
     z-index: 997;
   }
