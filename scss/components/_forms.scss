@@ -1562,18 +1562,14 @@ $bg-instruction: #17659B;
     }
   }
 }
-.q-builder-form {
+
+.form-func-text {
   input[type='text'], textarea {
     margin-bottom: 0px !important;
   }
 
-  div {
-    &.err-validate {
-      background: $alert-color !important;
-      width:100%;
-      padding: 0.33333rem 0.5rem 0.5rem;
-      font-size: 0.66667rem;
-    }
+  span {
+    padding: 0.3rem 0.5rem;
   }
   
   margin-bottom: 16px;
