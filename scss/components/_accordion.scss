@@ -23,3 +23,37 @@
 		color: $text-black;
 	}
 }
+
+
+/*ACCORDION STYLE RESERVED*/
+.accord-logs {
+	ul.accordion {
+		ul {
+			list-style-type: none !important;
+			margin: 0px;
+		}
+
+		a, div.accordion-content {
+			padding: 0.5em 0.8em;
+		}
+	}
+
+	/*border: 1px solid rgba($black, $B-dividers) !important;*/
+
+
+	/*.row {
+		border-bottom: 1px solid rgba($black, $B-dividers) !important;
+
+		&:last-child {
+			border-bottom: 0px !important;
+		}
+	}*/
+
+	&.parent {
+		padding-left: 1.5rem !important;
+	}
+
+	&.child {
+		margin-left: -0.9rem !important;
+	}
+}
