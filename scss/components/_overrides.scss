@@ -1,156 +1,170 @@
 #jsd-widget { //Jira Widget button
-	right: 5rem !important;
-	bottom: .15rem !important;
+  right: 5rem !important;
+  bottom: .15rem !important;
 }
 
 .chat-support, .chat-area {
-	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.21);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.21);
 }
 
 .message-status {
-	> ul {
-		margin: 0;
-		padding: 0 24%;
-		text-transform: uppercase;
-	}
+  > ul {
+    margin: 0;
+    padding: 0 24%;
+    text-transform: uppercase;
+  }
 }
 
 // COMMUNICATION //
 .inbound, .outbound {
-	img {
-		max-width: 2.62rem;
-		width: 100%;
-	}
-	small {
-		font-size: 0.7rem;
-	}
-	.panel {
-		border-color: transparent;
-	}
+  img {
+    max-width: 2.62rem;
+    width: 100%;
+  }
+
+  small {
+    font-size: 0.7rem;
+  }
+
+  .panel {
+    border-color: transparent;
+  }
 }
 
 // Power Tour Overrides
 .tour-wrapper {
-	padding: 0 1rem;
-	border-radius: 4px;
-	// background-color: rgba($white, $W-dividers);
-	// border: 1px solid rgba($white, $W-hinttext);
+  padding: 0 1rem;
+  border-radius: 4px;
+  // background-color: rgba($white, $W-dividers);
+  // border: 1px solid rgba($white, $W-hinttext);
 }
 
 #powertour-mask {
-	// background-color: rgba(10,16,35,0.54);
-	background-color: $white;
-	opacity: 0.87;
+  // background-color: rgba(10,16,35,0.54);
+  background-color: $white;
+  opacity: 0.87;
 }
 
 .powertour-step {
-	z-index: 2;
-	.close-button {
-		display: none;
-		position: absolute;
-		top: -1rem;
-		right: -1rem;
-		color: rgba($black, $B-hinttext);
-		&:hover {
-			color: rgba($black, $B-subtext);
-		}
-	}
-	&.powertour-activestep {
-		.close-button {
-			display: inline-block;
-		}
-	}
+  z-index: 2;
+
+  .close-button {
+    display: none;
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    color: rgba($black, $B-hinttext);
+
+    &:hover {
+      color: rgba($black, $B-subtext);
+    }
+  }
+
+  &.powertour-activestep {
+    .close-button {
+      display: inline-block;
+    }
+  }
 }
 
 .connectordot-tl {
-	height: 135px;
-	top: -75px;
-	background-color: $warning-color;
-	&:before {
-		background-color: $white;
-		border: 2px solid $warning-color;
-	}
+  height: 135px;
+  top: -75px;
+  background-color: $warning-color;
+
+  &:before {
+    background-color: $white;
+    border: 2px solid $warning-color;
+  }
 }
 
 .connectordot-lt {
-	width: 300px;
-	left: -255px;
-	background-color: $warning-color;
-	&:before {
-		background-color: $white;
-		border: 2px solid $warning-color;
-	}
+  width: 300px;
+  left: -255px;
+  background-color: $warning-color;
+
+  &:before {
+    background-color: $white;
+    border: 2px solid $warning-color;
+  }
 }
 
 #stepTwo {
-	.connectordot-lm {
-		width: 280px;
-		left: -255px;
-		background-color: $warning-color;
-		&:before {
-			background-color: $white;
-			border: 2px solid $warning-color;
-		}
-	}
+  .connectordot-lm {
+    width: 280px;
+    left: -255px;
+    background-color: $warning-color;
+
+    &:before {
+      background-color: $white;
+      border: 2px solid $warning-color;
+    }
+  }
 }
 
 #stepThree {
-	.connectordot-lm {
-		width: 165px;
-		left: -142px;
-		background-color: $warning-color;
-		&:before {
-			background-color: $white;
-			border: 2px solid $warning-color;
-		}
-	}
+  .connectordot-lm {
+    width: 165px;
+    left: -142px;
+    background-color: $warning-color;
+
+    &:before {
+      background-color: $white;
+      border: 2px solid $warning-color;
+    }
+  }
 }
 
 #stepFour {
-	.connectordot-lm {
-		width: 65px;
-		left: -42px;
-		background-color: $warning-color;
-		&:before {
-			background-color: $white;
-			border: 2px solid $warning-color;
-		}
-	}
+  .connectordot-lm {
+    width: 65px;
+    left: -42px;
+    background-color: $warning-color;
+
+    &:before {
+      background-color: $white;
+      border: 2px solid $warning-color;
+    }
+  }
 }
 
 #stepFive {
-	.connectordot-lm {
-		background-color: $warning-color;
-		&:before {
-			background-color: $white;
-			border: 2px solid $warning-color;
-		}
-	}
+  .connectordot-lm {
+    background-color: $warning-color;
+
+    &:before {
+      background-color: $white;
+      border: 2px solid $warning-color;
+    }
+  }
 }
 
 .connectordot-bl {
-	height: 30px;
-	bottom: -30px;
-	background-color: $warning-color;
-	&:before {
-		background-color: $white;
-		border: 2px solid $warning-color;
-	}
+  height: 30px;
+  bottom: -30px;
+  background-color: $warning-color;
+
+  &:before {
+    background-color: $white;
+    border: 2px solid $warning-color;
+  }
 }
 
 .sticky {
-	position: relative;
-	&.is-anchored {
-		position: relative;
-	}
-	&.is-stuck {
-		margin-top: 0 !important;
-	}
+  position: relative;
+
+  &.is-anchored {
+    position: relative;
+  }
+
+  &.is-stuck {
+    margin-top: 0 !important;
+  }
 }
 
 .modal-tour {
-	@extend .reveal;
-	display: block !important;
+  @extend .reveal;
+  display: block !important;
 }
 
 
@@ -170,26 +184,26 @@ $bg-instruction: #17659B;
 
 // - TABS & LI OVERRIDE
 .mobile {
-	.tabs {
-		li {
-			text-align: center;
-			margin: 0 auto !important;
-		}
+  .tabs {
+    li {
+      text-align: center;
+      margin: 0 auto !important;
+    }
 
-		&.icon {
-			li {
-				width: 33.33% !important;
-				&.is-active:after {
-					width: 100% !important;
-					left: 0% !important;
-				}
-			} 
-		}
-	}
+    &.icon {
+      li {
+        width: 33.33% !important;
 
-	
+        &.is-active:after {
+          width: 100% !important;
+          left: 0 !important;
+        }
+      }
+    }
+  }
+
+
 }
-
 
 
 // - GRAPH
@@ -198,27 +212,55 @@ $oop-bg: #283D4B;
 $allowance-bg: #81A714;
 
 .c-oop {
-	color: $oop-bg;
+  color: $oop-bg;
 }
+
 .c-allowance {
-	color: $allowance-bg;
+  color: $allowance-bg;
 }
 
 
 // - READ MORE 
 .read-more-content-container {
-	.read-more-content{
-		overflow: hidden;
-		.content-hide{
-			display: none;
-		}
-		&.content-show{
-			display: inline-block;
-		}
-	}	
+  .read-more-content {
+    overflow: hidden;
+
+    .content-hide {
+      display: none;
+    }
+
+    &.content-show {
+      display: inline-block;
+    }
+  }
 }
 
 //------- MOBILE OVERRIDES ENDS HERE -------- //
 
 /* Fixes Safari layout issue on blog & archive pages */
-.row::before, .row::after { content: none; }
+.row::before, .row::after {
+  content: none;
+}
+
+
+/* Fixes Autogenerated HTML In Questionnaire*/
+.timeline {
+  .orbit-slide {
+    font-size: 87% !important;
+    line-height: 1.5em !important;
+
+    p, select, option, label {
+      font-size: 87% !important;
+      line-height: 1.5em !important;
+    }
+
+    select {
+      margin-bottom: 0px !important;
+    }
+
+    .row, div, p {
+      padding: unset !important;
+      margin: unset !important;
+    }
+  }
+}
