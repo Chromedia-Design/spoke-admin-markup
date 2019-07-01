@@ -118,9 +118,6 @@ header {
 	&::-webkit-scrollbar {
 		display: none;
 	}
-	&::-moz-scrollbar {
-		display: none;
-	}
 	// Override the blue caret that appears after the dropdown side menu
 	.is-accordion-submenu-parent > a::after {
 		border-color: $white transparent transparent;
