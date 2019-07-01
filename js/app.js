@@ -2,137 +2,124 @@ $(document).foundation();
 
 // window.FontAwesomeConfig = { searchPseudoElements: true }
 
-$(".dropdown").on('click', '.dropbtn', function(event) {
-  event.preventDefault();
+$(".dropdown").on('click', '.dropbtn', function(e) {
+  e.preventDefault();
   // $(this).siblings(".dropdown-content").addClass("show");
   $(this).parents(".dropdown").find(".dropdown-content").addClass("show");
 });
 
-window.onclick = function(event) {
-  if ( !event.target.matches('.dropbtn') && !event.target.matches('.dropdown-content *') ) {
-    $(".dropdown-content").removeClass('show')
+window.onclick = function(e) {
+  if ( !e.target.matches('.dropbtn') && !e.target.matches('.dropdown-content *') ) {
+    $(".dropdown-content").removeClass('show');
   }
 }
 
-
-
 // BEGIN Employee Chat Component ------------------------------------------------------------
 $("#chat-toggle").on("click", function () {
-    $("#chat-notification").slideUp()
-    $(this).siblings('#chat-container').slideToggle()
+    $("#chat-notification").slideUp();
+    $(this).siblings('#chat-container').slideToggle();
     $(this).children('.fa').toggleClass('fa-comment fa-times');
-})
+});
 
 $("#chat-question-preview").on("click", function () {
-    $("#chat-notification").children('.chat-header-container').slideUp()
-    $("#chat-notification").children('.form-notification').slideDown()
-    $("#chat-notification").slideDown()
+    $("#chat-notification").children('.chat-header-container').slideUp();
+    $("#chat-notification").children('.form-notification').slideDown();
+    $("#chat-notification").slideDown();
 
-    $(this).siblings('#chat-container').slideUp()
-    // $(this).children('.fa').toggleClass('fa-comment fa-times');
-})
+    $(this).siblings('#chat-container').slideUp();
+});
 
 // SEARCH Employee Chat Component ------------------------------------------------------------
 $("#add-search-employees").on("click", function () {
     $("#chat-container").style.height = "900px !important";
-    $(this).siblings('#employee-search').slideToggle(1000)
-})
+    $(this).siblings('#employee-search').slideToggle(1000);
+});
 
 
-$("#chat-container .chat-header-container").on("click", function (event) {
+$("#chat-container .chat-header-container").on("click", function (e) {
 
 // Back To Notification List / Close Message
-    if (($(event.target).hasClass('btnBack')) || ($(event.target).hasClass('fa fa-chevron-left'))) {
-        console.log("Back To Notification List / Close Message")
-        // $(this).children('.chat-header').addClass('shrinked')
-        $("#chat-container").children(".chat-header-container").children(".chat-header").addClass('shrinked')
-        $(this).prevAll('.chat-header-container').slideToggle()
-        $(this).nextAll('.chat-header-container').slideToggle()
-        $(this).siblings('.chat-header-intro').slideToggle()
-        $(this).siblings('.chat-body-container, .chat-input-container').slideUp()
-        $(this).siblings('.chat-body-container, .chat-input-container').hide()
+    if (($(e.target).hasClass('btnBack')) || ($(e.target).hasClass('fa fa-chevron-left'))) {
+        console.log("Back To Notification List / Close Message");
+        $("#chat-container").children(".chat-header-container").children(".chat-header").addClass('shrinked');
+        $(this).prevAll('.chat-header-container').slideToggle();
+        $(this).nextAll('.chat-header-container').slideToggle();
+        $(this).siblings('.chat-header-intro').slideToggle();
+        $(this).siblings('.chat-body-container, .chat-input-container').slideUp();
+        $(this).siblings('.chat-body-container, .chat-input-container').hide();
         return;
     }
 
 // Open ongoing videocall
-    if (($(event.target).hasClass('btn-video')) || ($(event.target).hasClass('fa fa-video-camera'))) {
-        console.log("oops")
-        $("#chat-container").children('.chat-video-container').slideDown()
-        $("#chat-container").children('.chat-video-container').siblings().slideUp()
-        $("#chat-container").children(".chat-body-container").slideUp()
+    if (($(e.target).hasClass('btn-video')) || ($(e.target).hasClass('fa fa-video-camera'))) {
+        console.log("oops");
+        $("#chat-container").children('.chat-video-container').slideDown();
+        $("#chat-container").children('.chat-video-container').siblings().slideUp();
+        $("#chat-container").children(".chat-body-container").slideUp();
         return;
     }
 
 // Open Message
-    console.log("Open Message")
-    $(this).siblings('.chat-header-container').slideUp()
-    $(this).siblings('.chat-body-container, .chat-input-container').removeClass('hide')
-    $(this).siblings('.chat-body-container, .chat-input-container').slideDown()
-    $(this).children('.chat-header').removeClass('shrinked active')
-    $(this).siblings('.chat-header-intro').slideUp()
-})
+    console.log("Open Message");
+    $(this).siblings('.chat-header-container').slideUp();
+    $(this).siblings('.chat-body-container, .chat-input-container').removeClass('hide');
+    $(this).siblings('.chat-body-container, .chat-input-container').slideDown();
+    $(this).children('.chat-header').removeClass('shrinked active');
+    $(this).siblings('.chat-header-intro').slideUp();
+});
 
 // Open Message
-$("#chat-notification").on("click", ".chat-header-container", function (event) {
-    console.log("Open Message")
-    openNotification()
-})
+$("#chat-notification").on("click", ".chat-header-container", function (e) {
+    console.log("Open Message");
+    openNotification();
+});
 
 // Attach File
 $("#btnAttach").on("click", function () {
-    console.log("Attach File")
-    // $(this).parents(".chat-input-container").animate({"height": "164px"}, 400)
-    $(".attachments").slideToggle()
-    // $(this).parents(".chat-input-container").siblings(".chat-body-container").animate({"height": "306px"}, 400)
-    // $(this).parents(".chat-input-container").siblings(".chat-body-container").slideUp()
-})
+    console.log("Attach File");
+    $(".attachments").slideToggle();
+});
 
 // Send Message
 $("#btnSend").on("click", function(){
-  console.log("Send Message")
-  $(this).parents(".chat-input-container").animate({"height": "63px"}, 400)
-  $(this).parent(".chat-input").prev(".attachments").slideUp()
-  $(this).parents(".chat-input-container").siblings(".chat-body-container").slideDown()
-  $(this).parents(".chat-input-container").siblings(".chat-body-container").animate({"height": "406px"}, 400)
-})
+  console.log("Send Message");
+  $(this).parents(".chat-input-container").animate({"height": "63px"}, 400);
+  $(this).parent(".chat-input").prev(".attachments").slideUp();
+  $(this).parents(".chat-input-container").siblings(".chat-body-container").slideDown();
+  $(this).parents(".chat-input-container").siblings(".chat-body-container").animate({"height": "406px"}, 400);
+});
 
 $("#btnSend").on("click", function () {
-    console.log("Send Message")
-    $(this).parents(".chat-input-container").animate({"height": "63px"}, 400)
-    $(this).parent(".chat-input").prev(".attachments").slideUp()
-    $(this).parents(".chat-input-container").siblings(".chat-body-container").slideDown()
-    $(this).parents(".chat-input-container").siblings(".chat-body-container").animate({"height": "456px"}, 400)
-})
+    console.log("Send Message");
+    $(this).parents(".chat-input-container").animate({"height": "63px"}, 400);
+    $(this).parent(".chat-input").prev(".attachments").slideUp();
+    $(this).parents(".chat-input-container").siblings(".chat-body-container").slideDown();
+    $(this).parents(".chat-input-container").siblings(".chat-body-container").animate({"height": "456px"}, 400);
+});
 
 // Answer Video Call
 $("#btn-call-answer").on("click", function () {
-    console.log("Answer Video Call")
+    console.log("Answer Video Call");
     $("#chat-container").slideDown();
-    $("#chat-container").children('.chat-video-container').slideDown()
-    $("#chat-container").children('.chat-video-container').siblings().slideUp()
-})
-
-
-$(".btn-video").on("click", function (event) {
-
-
-})
+    $("#chat-container").children('.chat-video-container').slideDown();
+    $("#chat-container").children('.chat-video-container').siblings().slideUp();
+});
 
 // Collapse Video Call / Go to Message
 $("#chat-video-compress").on("click", function () {
-    console.log()
-    $("#chat-container").children('.chat-video-container').slideUp()
-    $("#chat-container").children('.chat-video-container').siblings().slideDown()
-    $("#chat-container").children('.chat-header-intro').hide()
-    $("#chat-container").children('.chat-header-container:first').children(".chat-header").removeClass('shrinked active')
-    $("#chat-container").children('.chat-header-container:first').siblings(".chat-header-container").hide()
-    $("#chat-container").children('.chat-header-container:first').siblings(".chat-body-container, .chat-input-container").removeClass('hide')
-})
+    console.log('Clicked.')
+    $("#chat-container").children('.chat-video-container').slideUp();
+    $("#chat-container").children('.chat-video-container').siblings().slideDown();
+    $("#chat-container").children('.chat-header-intro').hide();
+    $("#chat-container").children('.chat-header-container:first').children(".chat-header").removeClass('shrinked active');
+    $("#chat-container").children('.chat-header-container:first').siblings(".chat-header-container").hide();
+    $("#chat-container").children('.chat-header-container:first').siblings(".chat-body-container, .chat-input-container").removeClass('hide');
+});
 
 // Message during video call
 $("#chat-video-message").on("click", function () {
 
-    console.log($("#chat-container").children('.chat-video-container').css('height'))
+    console.log($("#chat-container").children('.chat-video-container').css('height'));
 
     if ($("#chat-container").children('.chat-video-container').css('height') == "90%") {
         $("#chat-container").children('.chat-video-container').animate({'height': '100%'}, 400);
@@ -144,16 +131,16 @@ $("#chat-video-message").on("click", function () {
     $("#chat-container").find('.chat-input-container').slideToggle();
 
     // $(".chat-input-container").toggleClass('hide');
-})
+});
 
 // Opening a message by clicking a Notification
 function openNotification() {
-    $("#chat-notification").slideUp()
-    $("#chat-container").slideToggle()
-    $("#chat-container").children('.chat-header-intro').hide()
-    $("#chat-container").children('.chat-header-container:first').children(".chat-header").removeClass('shrinked active')
-    $("#chat-container").children('.chat-header-container:first').siblings(".chat-header-container").hide()
-    $("#chat-container").children('.chat-header-container:first').siblings(".chat-body-container, .chat-input-container").removeClass('hide')
+    $("#chat-notification").slideUp();
+    $("#chat-container").slideToggle();
+    $("#chat-container").children('.chat-header-intro').hide();
+    $("#chat-container").children('.chat-header-container:first').children(".chat-header").removeClass('shrinked active');
+    $("#chat-container").children('.chat-header-container:first').siblings(".chat-header-container").hide();
+    $("#chat-container").children('.chat-header-container:first').siblings(".chat-body-container, .chat-input-container").removeClass('hide');
 }
 
 // END Employee Chat Component ------------------------------------------------------------
@@ -163,34 +150,33 @@ function openNotification() {
 // Close Form Item
 
 // $('.editor-content').children('div:first-child').nextAll().slideToggle()
-$('.editor-content').removeClass('box-shadow')
+$('.editor-content').removeClass('box-shadow');
 
 // Add Choice
-$(".editor-content").on('click', '.input-group-button .button', function (event) {
-    event.preventDefault();
-    val = $(this).parent(".input-group-button").siblings('.input-group-field')
+$(".editor-content").on('click', '.input-group-button .button', function (e) {
+    e.preventDefault();
+    val = $(this).parent(".input-group-button").siblings('.input-group-field');
     if (!val.val()) {
         return;
     }
-    $(this).parents(".input-group").siblings('ul').append('<li><div class="input-group bg-black10 mb-0"><input class="input-group-field" type="text" value="' + val.val() + '"><div class="input-group-button"><button class="button success borderless hollow clear alert remove"><i class="fa fa-times"></i></button></div></div></li>')
-    val.val("")
+    $(this).parents(".input-group").siblings('ul').append('<li><div class="input-group bg-black10 mb-0"><input class="input-group-field" type="text" value="' + val.val() + '"><div class="input-group-button"><button class="button success borderless hollow clear alert remove"><i class="fa fa-times"></i></button></div></div></li>');
+    val.val("");
     val.focus();
-    // $(this).insertAfter($(this).parent());
 });
 
 // Remove Choice
-$(".editor-content").on('click', '.remove', function (event) {
-    event.preventDefault();
+$(".editor-content").on('click', '.remove', function (e) {
+    e.preventDefault();
     $(this).parents("li").remove();
 });
 
-$(".fb-item").on('click', '.editable', function (event) {
+$(".fb-item").on('click', '.editable', function (e) {
     // event.preventDefault();
     /* Act on the event */
-    $(this).parents(".editor-content").addClass('box-shadow')
-    $(this).parents(".fb-item").siblings('.fb-item').find(".editor-content").removeClass('box-shadow')
-    $(this).parents(".fb-item").siblings('.fb-item').find(".editor-content").children("div:first-child").nextAll().slideUp()
-    $(this).parents(".editor-content").children().first().nextAll().slideDown()
+    $(this).parents(".editor-content").addClass('box-shadow');
+    $(this).parents(".fb-item").siblings('.fb-item').find(".editor-content").removeClass('box-shadow');
+    $(this).parents(".fb-item").siblings('.fb-item').find(".editor-content").children("div:first-child").nextAll().slideUp();
+    $(this).parents(".editor-content").children().first().nextAll().slideDown();
 });
 // Form builder ------------------------------------------------------------
 
@@ -198,72 +184,69 @@ $(".fb-item").on('click', '.editable', function (event) {
 // Open a modal ------------------------------------------------------------
 function openModal(elem) {
     $(elem).foundation('open');
-}
+};
 
 $(".show-edit-hover").on('click', function(){
-  openModal("#edit-clinical-pathway")
-})
+  openModal("#edit-clinical-pathway");
+});
 
 
 // Clinical Pathway ------------------------------------------------------------
-$('.clinical-pathway-details').slideUp()
+$('.clinical-pathway-details').slideUp();
 
 // Open Details
 $(".clinical-pathway-basic-content").on("click", function () {
-    $(this).parents(".clinical-pathway-item").siblings(".clinical-pathway-item").find(".clinical-pathway-details").slideUp()
-    $(this).siblings('.clinical-pathway-details').slideDown()
-})
-
-
-$(".clinical-pathway-new-entry-list").children('selector')
-
-$(".clinical-pathway-new-entry-list").on('click', '.clinical-pathway-new-entry', function(event) {
-  event.preventDefault();
-  $(this).siblings().removeClass('active')
-  $(this).addClass('active')
+    $(this).parents(".clinical-pathway-item").siblings(".clinical-pathway-item").find(".clinical-pathway-details").slideUp();
+    $(this).siblings('.clinical-pathway-details').slideDown();
 });
 
 
+$(".clinical-pathway-new-entry-list").children('selector');
 
+$(".clinical-pathway-new-entry-list").on('click', '.clinical-pathway-new-entry', function(e) {
+  e.preventDefault();
+  $(this).siblings().removeClass('active');
+  $(this).addClass('active');
+});
 
 // HOVERER:
-$(".show-on-hover").find(".hover-target").hide()
+$(".show-on-hover").find(".hover-target").hide();
 
-$(".show-on-hover").on('mouseover', function(event) {
-  event.stopPropagation()
-  event.preventDefault();
+$(".show-on-hover").on('mouseover', function(e) {
+  e.stopPropagation();
+  e.preventDefault();
   /* Act on the event */  
-  $(this).find(".hover-target").show()
+  $(this).find(".hover-target").show();
   // console.log(event.target.nodeName)
 });
 
-$(".show-on-hover").on('mouseout', function(event) {
-  event.stopPropagation()
-  event.preventDefault();
+$(".show-on-hover").on('mouseout', function(e) {
+  e.stopPropagation();
+  e.preventDefault();
   /* Act on the event */  
-  $(this).find(".hover-target").hide()
+  $(this).find(".hover-target").hide();
   // console.log(event.target.nodeName)
 });
 
 // TOGGLER: toggle "toggler-target" by clicking "toggler-handler"
-$(".toggler").find(".toggler-target").slideUp()
-$(".toggler.ul-tree-expanded").find(".toggler-target").slideDown()
+$(".toggler").find(".toggler-target").slideUp();
+$(".toggler.ul-tree-expanded").find(".toggler-target").slideDown();
 
 // toggle target
-$(".toggler").on('click', '.toggler-handler', function(event) {
+$(".toggler").on('click', '.toggler-handler', function(e) {
   // event.stopPropagation()
   // event.preventDefault();
   /* Act on the event */  
-  $(this).closest(".toggler").children(".toggler-target").slideToggle()
+  $(this).closest(".toggler").children(".toggler-target").slideToggle();
   // console.log(event.target.nodeName)
 });
 
 // QUESTION TREE ------------------------------------------------------------
 function selectOnClick(target,targetTree, selectionClass){
-    $(target).on('click', function(event) {
-        event.preventDefault();
-        $(this).parents(targetTree).find(target).removeClass(selectionClass)
-        $(this).addClass(selectionClass)
+    $(target).on('click', function(e) {
+        e.preventDefault();
+        $(this).parents(targetTree).find(target).removeClass(selectionClass);
+        $(this).addClass(selectionClass);
     });
 }
 
@@ -310,24 +293,6 @@ $('#profileContent').on('scroll', function() {
         
     });
 });
-
-// $('.timeline').children('.timeline-item').each(function(index) {
-
-//     // $(this).attr('data-lineHeight', $(this).height() );
-//     $(this).attr('data-line-height', $(this).children('.timeline-content').height() );
-
-// });
-
-
-
-
-
-
-
-
-
-
-
 
 // replace these values with those generated in your TokBox Account
 var apiKey = "45907482";

@@ -1462,7 +1462,6 @@ $bg-instruction: #17659B;
       }
       input[type="checkbox"],
       input[type="radio"] {
-        // cursor: not-allowed;
         display:none;
         & + label {
           display:none;
