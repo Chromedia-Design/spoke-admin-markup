@@ -1,5 +1,5 @@
 .dropdown-pane {
-	z-index: 9999 !important;
+  z-index: 9999 !important;
 }
 
 .dropdown-content {
@@ -8,6 +8,7 @@
     padding: 12px 1.5rem;
     text-decoration: none;
     display: block;
+
     &:hover {
       background-color: #ddd;
     }

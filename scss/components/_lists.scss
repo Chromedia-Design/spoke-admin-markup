@@ -58,7 +58,7 @@
     font-weight: 400;
     border-radius: $global-radius;
     margin-bottom: 1rem;
-    border-bottom: 1px solid rgba(10,16,35,0.06125);
+    border-bottom: 1px solid rgba(10, 16, 35, 0.06125);
     // background: $white;
 
     &:last-child {
@@ -320,6 +320,7 @@
 
     &:last-child {
       margin-bottom: 0;
+
       .list-wrap {
         border-bottom-left-radius: $global-radius;
         border-bottom-right-radius: $global-radius;
@@ -362,9 +363,11 @@
         align-items: center;
         transition: all 0.2s;
         background-color: $primary-light;
+
         &.transparent {
           background-color: transparent !important;
         }
+
         // account for links after this list wrapper
         > .wrapper {
           flex: 1 1 auto;
@@ -441,15 +444,18 @@
 
       &.unread {
         &.transparent {
+          background-color: transparent !important;
+
+          .list-wrap {
             background-color: transparent !important;
-            .list-wrap {
-              background-color: transparent !important;
-              border: 0px;
-              border-bottom: 1px solid rgba($black, $B-dividers);
-              &:last-child  {
-              }
+            border: 0px;
+            border-bottom: 1px solid rgba($black, $B-dividers);
+
+            &:last-child {
             }
           }
+        }
+
         .list-wrap {
           background-color: $white;
 
@@ -796,9 +802,11 @@
         background-color: lighten($secondary-color, 25%);
         color: $white;
         font-weight: bold;
+
         &.tiny {
           width: rem-calc(27);
           height: rem-calc(27);
+
           span {
             font-size: rem-calc(10);
           }
@@ -820,6 +828,7 @@
                 border-color: $warning-color;
               }
             }
+
             &:checked {
               + label,
               + span {
@@ -850,6 +859,7 @@
                 border-color: $alert-color;
               }
             }
+
             &:checked {
               + label,
               + span {
@@ -879,6 +889,7 @@
                 border-color: $light-gray;
               }
             }
+
             &:checked {
               + label,
               + span {
@@ -915,23 +926,28 @@
   &.calls-list {
     > li {
       margin: 0;
+
       .list-wrap {
         border: none;
       }
+
       .border {
         border: 1px solid rgba($black, $B-dividers);
         padding: 1rem;
         border-radius: $global-radius;
       }
+
       &.is-active {
         .list-wrap {
           border-radius: $global-radius;
           background-color: $success-color;
+
           > *,
           .subheader {
             color: $white;
           }
         }
+
         .border {
           border-color: $white;
         }
@@ -1349,16 +1365,20 @@ ul.vertical-list {
     &:before {
       display: none;
     }
+
     .listing-title {
       position: relative;
       color: $text-black;
       font-weight: normal;
+
       &:before {
         display: none;
       }
+
       &:after {
         display: none;
       }
+
       .badge {
         position: absolute;
         z-index: 1;
@@ -1377,26 +1397,32 @@ ul.vertical-list {
         font-weight: bold;
         color: $primary-color;
         background: lighten($primary-color, 57%);
+
         &.secondary {
           color: $secondary-color;
           background: lighten($secondary-color, 57%);
         }
+
         &.success {
           color: $success-color;
           background: lighten($success-color, 45%);
         }
+
         &.warning {
           color: $warning-color;
           background: lighten($warning-color, 57%);
         }
+
         &.alert {
           color: $alert-color;
           background: lighten($alert-color, 45%);
         }
       }
     }
+
     .well-list {
       position: relative;
+
       &:before {
         position: absolute;
         top: rem-calc(-25);
@@ -1408,6 +1434,7 @@ ul.vertical-list {
         background-color: rgba($black, $B-dividers);
         z-index: 0;
       }
+
       &:last-child {
         &:before {
           display: none;
@@ -1820,6 +1847,7 @@ ul.vertical-list {
       padding: 0 .5rem;
       border-radius: 4px;
       transition: all .5s;
+
       &:hover {
         transition: all .5s;
         cursor: pointer;
@@ -1840,7 +1868,7 @@ ul.vertical-list {
     &:after {
       width: 1px;
       height: 17px;
-      
+
       top: -7px;
       left: -1px;
     }
@@ -1929,6 +1957,7 @@ ul.vertical-list {
       ul.ul-tree {
         margin-left: 0.5rem;
         padding-left: 0.5rem;
+
         .ul-tree-child {
           &:nth-child(2) {
             margin-top: .25rem;

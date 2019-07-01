@@ -748,9 +748,11 @@ $card-user-profile-text-color: $text-black;
       margin: 0;
       padding: 0.5rem;
       border-radius: $global-radius;
+
       .media-object {
         margin: 0;
       }
+
       &:hover {
         box-shadow: 0 0 1px 0 $success-color;
       }
@@ -761,6 +763,7 @@ $card-user-profile-text-color: $text-black;
         li {
           background: transparent;
         }
+
         .list-wrap {
           background: transparent;
           border: none;

@@ -254,7 +254,7 @@ textarea, select, .bold-div {
 [type='date'],
 [type="time"] {
   &.compact {
-    padding: 0rem .5rem !important;
+    padding: 0 .5rem !important;
     border-radius: 4px !important;
     font-size: .75rem;
     // border: 0px;
@@ -999,13 +999,12 @@ input {
 .fancy-input-tag {
   border-radius: 3px;
   padding: .5rem;
-  border: 0px;
+  border: none;
 
   input {
     display: inline-block;
     background-color: transparent;
     border: 0;
-    // border-bottom: 1px solid;
     padding: .25rem 1rem;
     outline: none;
     position: relative;
@@ -1015,10 +1014,7 @@ input {
       position: absolute;
       right: .4rem;
       top: 0;
-      // width: 10px;
-      // height: 10px;
       content: "\00D7";
-      // background-color: red;
       border-radius: 10px;
       overflow: hidden;
 
@@ -1401,11 +1397,7 @@ $bg-instruction: #17659B;
     .input-group-button {
       .button {
         &:first-child {
-          border-radius: 0px;
-          // background-color: transparent;
-          // @extend .clr-primary;
-          // border-top: 1px solid #FBFBFB !important;
-          // border-bottom: 1px solid #FBFBFB !important;
+          border-radius: 0;
         }
       }
     }
@@ -1419,11 +1411,9 @@ $bg-instruction: #17659B;
 
 .Select.is-open {
   .Select-menu-outer {
-    // background-color: green !important;
-    // border: 5px solid green !important;
     position: absolute !important;
     top: 2.5rem !important;
-    left: 0px  !important;
+    left: 0 !important;
   }
 }
 
@@ -1446,16 +1436,11 @@ $bg-instruction: #17659B;
     }
   }
   &.preview-only {
-    // background-color: red;
     margin-bottom: 1rem;
     border-radius: 0;
     padding: 0 .5rem;
     box-shadow: none !important;
-    // border: 1px solid rgba($black, $B-dividers);
     .item-question {
-      // strong {
-      //   font-weight: 300 !important;
-      // }
       padding-bottom: .5rem;
       margin-bottom: 0;
       font-weight: normal;
@@ -1471,7 +1456,6 @@ $bg-instruction: #17659B;
       input {
         background-color: transparent !important;
         color: black !important;
-        // font-weight: normal;
         all: unset;
         font-weight: bold;
 
@@ -1486,40 +1470,13 @@ $bg-instruction: #17659B;
         &:checked {
           margin: 0;
           & + label {
-            // display: inline-block;
-            // // padding: .5rem 1rem;
-            // padding: 0;
-            // margin: 0;
-            // border-radius: 3px;
-            // // @extend .bg-black20;
-            // background-color: #e3e3e3 !important;
             background-color: transparent !important;
             color: black !important;
-            // font-weight: normal;
             all: unset;
             font-weight: bold;
           }
         }
       }
-      // input[type="checkbox"][checked],
-      // input[type="radio"][checked] {
-      //     // display: inline-block;
-      //     margin: 0;
-      //     & + label {
-      //       // display: inline-block;
-      //       // // padding: .5rem 1rem;
-      //       // padding: 0;
-      //       // margin: 0;
-      //       // border-radius: 3px;
-      //       // // @extend .bg-black20;
-      //       // background-color: #e3e3e3 !important;
-      //       background-color: transparent !important;
-      //       color: black !important;
-      //       // font-weight: normal;
-      //       all: unset;
-      //       font-weight: bold;
-      //     }
-      // }
       select,
       [type='text'],
       [type='password'],
@@ -1536,13 +1493,7 @@ $bg-instruction: #17659B;
       [type='url'],
       [type='color'] {
         display: inline-block;
-        // padding: 0;
-        // margin: 0;
-        // border-radius: 3px;
         background-color: transparent !important;
-        // color: black !important;
-        // font-weight: normal;
-        // line-height: 1.3rem;
         all: unset;
         font-weight: bold;
       }
@@ -1551,8 +1502,9 @@ $bg-instruction: #17659B;
 }
 
 .form-func-text {
-  input[type='text'], textarea {
-    margin-bottom: 0px !important;
+  input[type='text'],
+  textarea {
+    margin-bottom: 0 !important;
   }
 
   span {

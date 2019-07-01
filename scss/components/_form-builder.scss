@@ -7,15 +7,18 @@
   .fb-components-container {
     .component-group {
       padding: 1rem;
+
       .component-group-title {
         margin: 0;
         margin-left: 1rem;
         color: #8c8c8c;
       }
+
       .components {
         margin-left: 0;
         list-style-type: none !important;
         margin-bottom: 0;
+
         a {
           li {
             transition: all .25s;
@@ -24,15 +27,18 @@
             padding-left: 1.5rem;
             font-size: 1.05rem;
             color: #323232;
+
             .fa {
               margin-right: .5rem;
               color: #3b77a5;
             }
           }
+
           &:hover {
             li {
               transition: all .25s;
               background-color: lighten(#4981ab, 48%);
+
               .fa {
                 color: darken(#3b77a5, 10%);
               }
@@ -42,6 +48,7 @@
       }
     }
   }
+
   .fb-container {
     .fb-editor {
       background-color: #fff;
@@ -65,23 +72,28 @@
   font-weight: bold;
   padding-left: .25rem;
   padding-right: 0;
+
   &:focus {
     border: none;
     border-bottom: 1px solid $success-color;
     background: transparent !important;
   }
+
   &.by-line {
     font-size: rem-calc(12);
     border: none;
     color: rgba($black, $B-subtext);
     font-weight: normal;
+
     &:focus {
       padding: 0.5rem 0;
     }
   }
+
   &.help-text {
     position: relative;
     border: none;
+
     textarea {
       font-size: rem-calc(12);
       position: relative;
@@ -93,6 +105,7 @@
       border-radius: $global-radius;
       margin: 0;
     }
+
     &:before {
       position: absolute;
       z-index: 3;
@@ -120,9 +133,11 @@
   a {
     li {
       padding: .5rem .5rem;
+
       button {
         visibility: hidden;
       }
+
       &:hover {
         button {
           visibility: visible;
@@ -151,6 +166,7 @@
   z-index: 10;
   left: 0;
   box-shadow: 2px 2px 10px 2px rgba($black, $B-dividers);
+
   &.open-right {
     left: auto;
     right: 5px;
@@ -161,6 +177,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
   [type='text'],
   [type='password'],
   [type='date'],
@@ -182,6 +199,7 @@
     width: 99% !important;
     height: 2.5em;
   }
+
   > li {
     padding: 5px 0;
   }

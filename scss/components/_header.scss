@@ -1,369 +1,433 @@
 .menu {
-	> li {
-		> a {
-			white-space: nowrap;
-			// for header elements not using padding on top and bottom
-			&.vertical-block {
-				padding-top: 0;
-				padding-bottom: 0;
-			}
-			img,
-			i,
-			svg {
-				margin-right: 0;
-			}
-		}
-	}
+  > li {
+    > a {
+      white-space: nowrap;
+      // for header elements not using padding on top and bottom
+      &.vertical-block {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
+      img,
+      i,
+      svg {
+        margin-right: 0;
+      }
+    }
+  }
 }
 
 header {
-	padding: 1rem;
-	background-color: $white;
-	a.logo {
-		display: inline-block;
-		padding: 0.5rem 1rem;
-		img,
-		svg {
-			height: 1.5rem;
-			width: auto;
-		}
-		&.training-logo {
-			img, svg { height: auto; }
-		}
-	}
-	.menu {
-		> li {
-			color: rgba($black, $B-text);
-			@include headerMenu();
-			// ReactJS Handlers
-			> [data-reactroot] {
-				@include headerMenu();
-			}
-			&.menu-text {
-				font-weight: $global-weight-bold;
-				color: rgba($black, $B-subtext);
-			}
-			a {
-				img,
-				i,
-				svg {
-					margin: 0;
-				}
-			}
-		}
-		&.submenu {
-			> li {
-				a {
-					&:hover {
-						background-color: rgba($secondary-color, $B-dividers);
-					}
-				}
-			}
-		}
-	}
+  padding: 1rem;
+  background-color: $white;
+
+  a.logo {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+
+    img,
+    svg {
+      height: 1.5rem;
+      width: auto;
+    }
+
+    &.training-logo {
+      img, svg {
+        height: auto;
+      }
+    }
+  }
+
+  .menu {
+    > li {
+      color: rgba($black, $B-text);
+      @include headerMenu();
+      // ReactJS Handlers
+      > [data-reactroot] {
+        @include headerMenu();
+      }
+
+      &.menu-text {
+        font-weight: $global-weight-bold;
+        color: rgba($black, $B-subtext);
+      }
+
+      a {
+        img,
+        i,
+        svg {
+          margin: 0;
+        }
+      }
+    }
+
+    &.submenu {
+      > li {
+        a {
+          &:hover {
+            background-color: rgba($secondary-color, $B-dividers);
+          }
+        }
+      }
+    }
+  }
 }
 
 .top-bar {
-	position: relative;
-	background-color: $white;
-	padding: 1rem 0;
-	border-bottom: none;
-	.top-bar-right {
-		> .menu {
-			background-color: transparent;
-			> li {
-				position: relative;
-				a {
-					.badge,
-					.label {
-						position: absolute;
-						top: 0;
-						right: 12px;
-						min-height: 2.1em;
-						line-height: 1.5em;
-						font-weight: $global-weight-bold;
-					}
-					.label {
-						right: -6px;
-						font-size: rem-calc(11);
-						line-height: 1;
-					}
-				}
-			}
-		}
-	}
+  position: relative;
+  background-color: $white;
+  padding: 1rem 0;
+  border-bottom: none;
+
+  .top-bar-right {
+    > .menu {
+      background-color: transparent;
+
+      > li {
+        position: relative;
+
+        a {
+          .badge,
+          .label {
+            position: absolute;
+            top: 0;
+            right: 12px;
+            min-height: 2.1em;
+            line-height: 1.5em;
+            font-weight: $global-weight-bold;
+          }
+
+          .label {
+            right: -6px;
+            font-size: rem-calc(11);
+            line-height: 1;
+          }
+        }
+      }
+    }
+  }
 }
 
 .menu-text {
-	font-weight: normal;
+  font-weight: normal;
 }
 
 .menu-icon {
-	margin-left: 0.5rem;
-	&.dark {
-		&:after {
-			background: rgba($black, $B-hinttext);
-			box-shadow: 0 7px 0 rgba($black, $B-hinttext), 0 14px 0 rgba($black, $B-hinttext);
-		}
-	}
+  margin-left: 0.5rem;
+
+  &.dark {
+    &:after {
+      background: rgba($black, $B-hinttext);
+      box-shadow: 0 7px 0 rgba($black, $B-hinttext), 0 14px 0 rgba($black, $B-hinttext);
+    }
+  }
 }
 
 // This is for the sidebar navigation on the left
 .site-nav {
-	position: relative;
-	z-index: 3;
-	background-color: $primary-color;
-	overflow-y: auto;
-	box-shadow: 0 3px 15px rgba($black, $B-hinttext);
-	&::-webkit-scrollbar {
-		display: none;
-	}
-	// Override the blue caret that appears after the dropdown side menu
-	.is-accordion-submenu-parent > a::after {
-		border-color: $white transparent transparent;
-	}
-	> ul.menu {
-		padding: 2rem 0;
-		> li {
-			transition: all ease-in 0.2s;
-			> a {
-				font-family: $body-font-family;
-				color: $text-white;
-				font-weight: $global-weight-bold;
-				border-bottom: 1px solid rgba($white, $W-dividers);
-				font-size: 0.875rem;
-			}
-			&.is-accordion-submenu-parent {
-				border-bottom: 1px solid rgba($white, $W-dividers);
-				a {
-					border-bottom: none;
-				}
-			}
-			&.is-active {
-				background-color: $off-white;
-				a {
-					color: rgba($black, $B-text);
-				}
-				ul.nested {
-					> li {
-						a {
-							color: $text-black;
-						}
-					}
-				}
-				&.is-accordion-submenu-parent {
-					> a::after {
-						border-color: $text-black transparent transparent;
-					}
-				}
-				&:hover {
-					background-color: rgba($white, $W-subtext);
-				}
-			}
-			&:hover {
-				background-color: rgba($white, $W-dividers);
-			}
-			ul.nested {
-				margin-left: 0;
-				> li {
-					a {
-						color: $text-white;
-						padding-left: 2.5rem;
-						font-size: 0.75rem;
-						font-weight: normal;
-					}
-					&.is-active {
-						background-color: rgba($white, $W-subtext);
-						color: rgba($black, $B-text);
-						a {
-							color: rgba($black, $B-text);
-						}
-						&:hover {
-							background-color: rgba($white, $W-subtext);
-						}
-					}
-					&:hover {
-						background-color: rgba($white, $W-dividers);
-					}
-				}
-			}
-		}
-	}
-	&.secondary {
-		position: relative;
-		z-index: 2;
-		background-color: lighten($primary-color, 15%);
-		box-shadow: 0 3px 15px rgba($black, $B-hinttext);
-		> ul.menu {
-			padding: 1rem 0;
-			> li {
-				> a {
-					font-size: rem-calc(12);
-					text-transform: uppercase;
-					border-bottom: 1px solid rgba($black, $B-dividers);
-				}
-				.card-user-profile {
-					position: relative;
-					z-index: 0;
-					border-bottom: 1px solid rgba($black, $B-dividers);
-					background: $white;
-				}
-				&.is-active {
-					background-color: $white;
-					a {
-						color: rgba($black, $B-text);
-						border: none;
-					}
-					&.is-accordion-submenu-parent {
-						> a::after {
-							border-color: $white transparent transparent;
-						}
-					}
-					&:hover {
-						background-color: rgba($white, $W-subtext);
-					}
-				}
-			}
-		}
-	}
+  position: relative;
+  z-index: 3;
+  background-color: $primary-color;
+  overflow-y: auto;
+  box-shadow: 0 3px 15px rgba($black, $B-hinttext);
 
-	&.nav-expanded {
-		.hide-on-expand {
-			display: none !important;
-		}
-	}
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
-	&.nav-collapsed {
-		.hide-on-collapsed {
-			display: none !important;
-		}
-		a {
-			i {
-				font-size: 1.25rem;
-			}
-		}
-		
-		.card-user-profile {
-			// margin: 2rem .5rem;
-			margin: 0 !important;
-			padding: 2rem .25rem;
-			background-color: transparent !important;
-			.card-user-profile-content {
-				.card-user-profile-avatar {
-					margin: 0px !important;
-					width: 2.25rem;
-					height: 2.25rem;
-				}
-			}
-			.card-user-profile-actions {
-				.button-align {
-					.button {
-						display: block !important;
-					}
-				}
-			}
-		}
-		.menu {
-			li {
-				a {
-					padding: 1rem .5rem 1rem 0.75rem;
-					border: 0px !important;
-				}
-			}
-		}
-	}
-	.nav-bottom {
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		> ul.menu {
-			// padding: 2rem 0;
-			.fancy-button {
-				> a {
-					background-color: rgba(255,255,255,.10) !important;	
-					overflow: hidden;
-					margin: .5rem 1rem .5rem .5rem;
-					border-radius: 1rem;
-					// color: #000;
-					&:after {
-						content: none !important;
-					}
-				}
-				&:hover {
-					a {
-						background-color: transparent;
-					}
-				}
-			}
-			> li {
-				transition: all ease-in 0.2s;
+  // Override the blue caret that appears after the dropdown side menu
+  .is-accordion-submenu-parent > a::after {
+    border-color: $white transparent transparent;
+  }
 
-				> a {
-					font-family: $body-font-family;
-					color: $text-white;
-					font-weight: $global-weight-bold;
-					border-bottom: 1px solid rgba($white, $W-dividers);
-					font-size: 0.875rem;
-				}
-				&.is-accordion-submenu-parent {
-					border-bottom: 1px solid rgba($white, $W-dividers);
-					a {
-						border-bottom: none;
-					}
-				}
-				&.is-active {
-					background-color: $off-white;
-					a {
-						color: rgba($black, $B-text);
-					}
-					ul.nested {
-						> li {
-							a {
-								color: $text-black;
-							}
-						}
-					}
-					&.is-accordion-submenu-parent {
-						> a::after {
-							border-color: $text-black transparent transparent;
-						}
-					}
-					&:hover {
-						background-color: rgba($white, $W-subtext);
-					}
-				}
-				&:hover {
-					a {
-						background-color: rgba($white, $W-dividers);
-					}
-				}
-				ul.nested {
-					margin-left: 0;
-					> li {
-						a {
-							color: $text-white;
-							padding-left: 1.5rem;
-							font-size: 0.75rem;
-							font-weight: normal;
-						}
-						&.is-active {
-							background-color: rgba($white, $W-subtext);
-							color: rgba($black, $B-text);
-							a {
-								color: rgba($black, $B-text);
-							}
-							&:hover {
-								background-color: rgba($white, $W-subtext);
-							}
-						}
-						&:hover {
-							background-color: rgba($white, $W-dividers);
-						}
-					}
-				}
-			}
-		}
-	}
+  > ul.menu {
+    padding: 2rem 0;
+
+    > li {
+      transition: all ease-in 0.2s;
+
+      > a {
+        font-family: $body-font-family;
+        color: $text-white;
+        font-weight: $global-weight-bold;
+        border-bottom: 1px solid rgba($white, $W-dividers);
+        font-size: 0.875rem;
+      }
+
+      &.is-accordion-submenu-parent {
+        border-bottom: 1px solid rgba($white, $W-dividers);
+
+        a {
+          border-bottom: none;
+        }
+      }
+
+      &.is-active {
+        background-color: $off-white;
+
+        a {
+          color: rgba($black, $B-text);
+        }
+
+        ul.nested {
+          > li {
+            a {
+              color: $text-black;
+            }
+          }
+        }
+
+        &.is-accordion-submenu-parent {
+          > a::after {
+            border-color: $text-black transparent transparent;
+          }
+        }
+
+        &:hover {
+          background-color: rgba($white, $W-subtext);
+        }
+      }
+
+      &:hover {
+        background-color: rgba($white, $W-dividers);
+      }
+
+      ul.nested {
+        margin-left: 0;
+
+        > li {
+          a {
+            color: $text-white;
+            padding-left: 2.5rem;
+            font-size: 0.75rem;
+            font-weight: normal;
+          }
+
+          &.is-active {
+            background-color: rgba($white, $W-subtext);
+            color: rgba($black, $B-text);
+
+            a {
+              color: rgba($black, $B-text);
+            }
+
+            &:hover {
+              background-color: rgba($white, $W-subtext);
+            }
+          }
+
+          &:hover {
+            background-color: rgba($white, $W-dividers);
+          }
+        }
+      }
+    }
+  }
+
+  &.secondary {
+    position: relative;
+    z-index: 2;
+    background-color: lighten($primary-color, 15%);
+    box-shadow: 0 3px 15px rgba($black, $B-hinttext);
+
+    > ul.menu {
+      padding: 1rem 0;
+
+      > li {
+        > a {
+          font-size: rem-calc(12);
+          text-transform: uppercase;
+          border-bottom: 1px solid rgba($black, $B-dividers);
+        }
+
+        .card-user-profile {
+          position: relative;
+          z-index: 0;
+          border-bottom: 1px solid rgba($black, $B-dividers);
+          background: $white;
+        }
+
+        &.is-active {
+          background-color: $white;
+
+          a {
+            color: rgba($black, $B-text);
+            border: none;
+          }
+
+          &.is-accordion-submenu-parent {
+            > a::after {
+              border-color: $white transparent transparent;
+            }
+          }
+
+          &:hover {
+            background-color: rgba($white, $W-subtext);
+          }
+        }
+      }
+    }
+  }
+
+  &.nav-expanded {
+    .hide-on-expand {
+      display: none !important;
+    }
+  }
+
+  &.nav-collapsed {
+    .hide-on-collapsed {
+      display: none !important;
+    }
+
+    a {
+      i {
+        font-size: 1.25rem;
+      }
+    }
+
+    .card-user-profile {
+      // margin: 2rem .5rem;
+      margin: 0 !important;
+      padding: 2rem .25rem;
+      background-color: transparent !important;
+
+      .card-user-profile-content {
+        .card-user-profile-avatar {
+          margin: 0px !important;
+          width: 2.25rem;
+          height: 2.25rem;
+        }
+      }
+
+      .card-user-profile-actions {
+        .button-align {
+          .button {
+            display: block !important;
+          }
+        }
+      }
+    }
+
+    .menu {
+      li {
+        a {
+          padding: 1rem .5rem 1rem 0.75rem;
+          border: 0px !important;
+        }
+      }
+    }
+  }
+
+  .nav-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    > ul.menu {
+      // padding: 2rem 0;
+      .fancy-button {
+        > a {
+          background-color: rgba(255, 255, 255, .10) !important;
+          overflow: hidden;
+          margin: .5rem 1rem .5rem .5rem;
+          border-radius: 1rem;
+          // color: #000;
+          &:after {
+            content: none !important;
+          }
+        }
+
+        &:hover {
+          a {
+            background-color: transparent;
+          }
+        }
+      }
+
+      > li {
+        transition: all ease-in 0.2s;
+
+        > a {
+          font-family: $body-font-family;
+          color: $text-white;
+          font-weight: $global-weight-bold;
+          border-bottom: 1px solid rgba($white, $W-dividers);
+          font-size: 0.875rem;
+        }
+
+        &.is-accordion-submenu-parent {
+          border-bottom: 1px solid rgba($white, $W-dividers);
+
+          a {
+            border-bottom: none;
+          }
+        }
+
+        &.is-active {
+          background-color: $off-white;
+
+          a {
+            color: rgba($black, $B-text);
+          }
+
+          ul.nested {
+            > li {
+              a {
+                color: $text-black;
+              }
+            }
+          }
+
+          &.is-accordion-submenu-parent {
+            > a::after {
+              border-color: $text-black transparent transparent;
+            }
+          }
+
+          &:hover {
+            background-color: rgba($white, $W-subtext);
+          }
+        }
+
+        &:hover {
+          a {
+            background-color: rgba($white, $W-dividers);
+          }
+        }
+
+        ul.nested {
+          margin-left: 0;
+
+          > li {
+            a {
+              color: $text-white;
+              padding-left: 1.5rem;
+              font-size: 0.75rem;
+              font-weight: normal;
+            }
+
+            &.is-active {
+              background-color: rgba($white, $W-subtext);
+              color: rgba($black, $B-text);
+
+              a {
+                color: rgba($black, $B-text);
+              }
+
+              &:hover {
+                background-color: rgba($white, $W-subtext);
+              }
+            }
+
+            &:hover {
+              background-color: rgba($white, $W-dividers);
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 

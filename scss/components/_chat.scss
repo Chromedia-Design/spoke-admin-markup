@@ -17,14 +17,14 @@
   }
 
   &.small {
-    margin: 0 0 0 0rem;
+    margin: 0;
     padding: 0.5rem .75rem;
     border-radius: 8px 0 8px 8px;
     min-width: rem-calc(224);
 
     &.media {
-      padding: 0px !important;
-      border: 0px !important;
+      padding: 0 !important;
+      border: 0 !important;
       border-radius: 8px;
       overflow: hidden !important;
     }
@@ -487,6 +487,7 @@ $light-gray-hex: #CBCFD3;
           * {
             text-align: left;
           }
+
           &.media {
             padding: 0px !important;
           }
@@ -966,28 +967,28 @@ $light-gray-hex: #CBCFD3;
 $main-color: #1ebd44;
 
 #chat-toggle, #chat-question-preview {
-	position: fixed;
-	border-radius: 50%;
-	box-shadow: 0 5px 40px rgba(0, 0, 0, .16) !important;
+  position: fixed;
+  border-radius: 50%;
+  box-shadow: 0 5px 40px rgba(0, 0, 0, .16) !important;
 
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
 
-	text-align: center;
-	background: $success-color; /* Old browsers */
-	background: -moz-linear-gradient(-45deg, $success-color 0%, #30de59 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg, $success-color 0%, #30de59 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(135deg, $success-color 0%, #30de59 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	// filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$success-color', endColorstr='#30de59', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+  text-align: center;
+  background: $success-color; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, $success-color 0%, #30de59 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, $success-color 0%, #30de59 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, $success-color 0%, #30de59 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$success-color', endColorstr='#30de59', GradientType=1); /* IE6-9 fallback on horizontal gradient */
 
-	i {
-		font-size: 2rem;
-		margin-top: 0;
-		color: $white;
-		transition: all ease-in-out 0.2s;
-	}
+  i {
+    font-size: 2rem;
+    margin-top: 0;
+    color: $white;
+    transition: all ease-in-out 0.2s;
+  }
 }
 
 #chat-toggle {
@@ -999,15 +1000,17 @@ $main-color: #1ebd44;
 }
 
 #chat-question-preview {
-	bottom: 1.5rem;
-	right: 5.5rem;
-	width: 3rem;
-	height: 3rem;
-	z-index: 998;
-	background: $primary-color !important;
-	i {
-		font-size: 1.5rem;
-	}
+  bottom: 1.5rem;
+  right: 5.5rem;
+  width: 3rem;
+  height: 3rem;
+  z-index: 998;
+  background: $primary-color !important;
+
+  i {
+    font-size: 1.5rem;
+  }
+
   .counter {
     display: block;
     position: absolute;
@@ -1042,6 +1045,7 @@ $main-color: #1ebd44;
     .chat-header-intro {
       background-color: $primary-color !important;
     }
+
     .chat-header-container {
       &:hover {
         .chat-header {
@@ -1160,7 +1164,7 @@ $main-color: #1ebd44;
     padding: 1rem;
     background-color: $main-color;
     position: sticky;
-    top: 0px;
+    top: 0;
     margin-bottom: 1.5rem;
     z-index: 999;
 
@@ -1168,7 +1172,7 @@ $main-color: #1ebd44;
       position: absolute;
       right: 1rem;
       bottom: -2.8rem;
-      box-shadow: 0px 4px 10px #b2bbc1c4;
+      box-shadow: 0 4px 10px #b2bbc1c4;
     }
   }
 
