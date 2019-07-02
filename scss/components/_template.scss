@@ -1,185 +1,186 @@
 #master-container {
-	display: grid;
-	height: 99vh;
-	min-height: 100vh;
+  display: grid;
+  height: 100vh;
 
-	&.header-sidebar-body {
-		grid-template-columns: repeat(12, 1fr);
-		grid-template-rows: 100px auto;
+  &.header-sidebar-body {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px auto;
 
-		.header {
-			grid-column: 1/13;
-			grid-area: 1/1/2/13
-		}
+    .header {
+      grid-column: 1/13;
+      grid-area: 1/1/2/13
+    }
 
-		.sidebar-left {
-			grid-column: 1/2;
-		}
+    .sidebar-left {
+      grid-column: 1/2;
+    }
 
-		.main-content {
-			grid-area: 2/2/3/13;
-		}
-	}
+    .main-content {
+      grid-area: 2/2/3/13;
+    }
+  }
 
-	&.sidebar-body {
-		grid-template-columns: 220px auto;
-		@include breakpoint(medium only) {
-			grid-template-columns: 180px auto;
-		}
-		@include breakpoint(large up) {
-			grid-template-columns: 200px auto;
-		}
+  &.sidebar-body {
+    grid-template-columns: 220px auto;
+    @include breakpoint(medium only) {
+      grid-template-columns: 180px auto;
+    }
+    @include breakpoint(large up) {
+      grid-template-columns: 200px auto;
+    }
 
-		.sidebar {
-			grid-area: 1/1/1/1;
-		}
+    .sidebar {
+      grid-area: 1/1/1/1;
+    }
 
-		.main-content {
-			grid-area: 1/2/1/2;
+    .main-content {
+      grid-area: 1/2/1/2;
+      display: grid;
+      grid-template-rows: 72px auto;
+      height: 100%;
+      overflow: hidden;
 
-			&.scrollable {
-				height: 100vh;
-				overflow-y: scroll;
-			}
-		}
+      &.scrollable {
+        height: 100vh;
+        overflow-y: scroll;
+      }
+    }
 
-		&.sidebar-sticky {
-			max-height: 100vh;
-			overflow: hidden;
+    &.sidebar-sticky {
+      max-height: 100vh;
+      overflow: hidden;
 
-			.main-content {
-				&::-webkit-scrollbar {
-					width: 0px;
-				}
+      .main-content {
+        &::-webkit-scrollbar {
+          width: 0;
+        }
 
-				&::-webkit-scrollbar-thumb {
-					background: #FF0000;
-				}
+        &::-webkit-scrollbar-thumb {
+          background: #FF0000;
+        }
 
-				overflow-y: scroll;
-				height: 100vh;
-			}
+        overflow-y: scroll;
+        height: 100vh;
+      }
 
-			.sidebar {
-				overflow-x: hidden;
-				display: grid;
-				grid-template-rows: 8vh 50px auto;
+      .sidebar {
+        overflow-x: hidden;
+        display: grid;
+        grid-template-rows: 8vh 50px auto;
 
-				.tabs-content {
-					max-height: 85vh;
+        .tabs-content {
+          max-height: 85vh;
 
-					&::-webkit-scrollbar {
-						width: 0px;
-					}
+          &::-webkit-scrollbar {
+            width: 0;
+          }
 
-					&::-webkit-scrollbar-thumb {
-						background: #FF0000;
-					}
+          &::-webkit-scrollbar-thumb {
+            background: #FF0000;
+          }
 
-					overflow-y: scroll;
-				}
-			}
-		}
-	}
+          overflow-y: scroll;
+        }
+      }
+    }
+  }
 
-	&.header-body-sidebar { // ALRTERNATIVE ALRTERNATIVE ALRTERNATIVE ALRTERNATIVE
-		grid-template-columns: auto 400px;
-		grid-template-rows: minmax(8vh, 8vh) auto;
-		max-height: 100vh;
-		overflow: hidden;
+  &.header-body-sidebar { // ALRTERNATIVE ALRTERNATIVE ALRTERNATIVE ALRTERNATIVE
+    grid-template-columns: auto 400px;
+    grid-template-rows: minmax(8vh, 8vh) auto;
+    max-height: 100vh;
+    overflow: hidden;
 
-		.header {
-			grid-area: 1/1/2/3 !important;
-			padding: 1rem .5rem;
-			position: sticky;
-			top: 0;
-			z-index: 999;
-			background-color: #fff;
-		}
+    .header {
+      grid-area: 1/1/2/3 !important;
+      padding: 1rem .5rem;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background-color: #fff;
+    }
 
-		.main-content {
-			padding: .5rem .5rem 2rem .5rem;
-			grid-area: 2/1/2/2 !important;
+    .main-content {
+      padding: .5rem .5rem 2rem .5rem;
+      grid-area: 2/1/2/2 !important;
+      overflow-y: scroll;
+      height: 92vh;
 
-			&::-webkit-scrollbar {
-				width: 0px;
-			}
+      &::-webkit-scrollbar {
+        width: 0;
+      }
 
-			&::-webkit-scrollbar-thumb {
-				background: #FF0000;
-			}
+      &::-webkit-scrollbar-thumb {
+        background: #FF0000;
+      }
 
-			overflow-y: scroll;
-			height: 92vh;
+    }
 
-		}
+    .sidebar {
+      grid-area: 2/2/3/2 !important;
+      overflow-x: hidden;
+      display: grid;
+      grid-template-rows: 50px auto;
 
-		.sidebar {
-			grid-area: 2/2/3/2 !important;
-			overflow-x: hidden;
-			display: grid;
-			grid-template-rows: 50px auto;
+      .tabs-content {
+        max-height: 85vh;
 
-			.tabs-content {
-				max-height: 85vh;
+        &::-webkit-scrollbar {
+          width: 0;
+        }
 
-				&::-webkit-scrollbar {
-					width: 0;
-				}
+        &::-webkit-scrollbar-thumb {
+          background: #FF0000;
+        }
 
-				&::-webkit-scrollbar-thumb {
-					background: #FF0000;
-				}
+        overflow-y: scroll;
+      }
+    }
+  }
 
-				overflow-y: scroll;
-			}
-		}
-	}
+  &.header-body {
+    grid-template-columns: auto;
+    grid-template-rows: 5rem auto;
+    max-height: 100vh;
+    overflow-y: scroll;
 
-	&.header-body {
-		grid-template-columns: auto;
-		grid-template-rows: 5rem auto;
-		max-height: 100vh;
-		overflow-y: scroll;
-
-		.header {
-			grid-area: 1/1/2/2 !important;
-			z-index: 1001;
-			// background-color: #f2f3f4 !important;
-		}
-	}
+    .header {
+      grid-area: 1/1/2/2 !important;
+      z-index: 1001;
+      // background-color: #f2f3f4 !important;
+    }
+  }
 }
 
 // Used for admin in Member Page
 #inner-container {
-	display: flex;
-	//min-height: 99vh;
+  display: flex;
+  height: 100%;
 
-	.inner-sidebar {
-		background-color: lighten($primary-color, 15%);
-		width: 15%;
-	}
+  .inner-sidebar {
+    background-color: lighten($primary-color, 15%);
+    width: 15%;
+  }
 
-	.inner-content {
-		width: 85%;
-		//Must be equal to root container
-		height: 93.99vh;
-	}
+  .inner-content {
+    width: 85%;
+  }
 
-	@include breakpoint(1500px down) {
-		.inner-sidebar {
-			width: 20%;
-		}
-		.inner-content {
-			width: 80%;
-		}
-	}
-	@include breakpoint(1300px down) {
-		.inner-sidebar {
-			width: 25%;
-		}
-		.inner-content {
-			width: 85%;
-		}
-	}
+  @include breakpoint(1500px down) {
+    .inner-sidebar {
+      width: 20%;
+    }
+    .inner-content {
+      width: 80%;
+    }
+  }
+
+  @include breakpoint(1300px down) {
+    .inner-sidebar {
+      width: 25%;
+    }
+    .inner-content {
+      width: 85%;
+    }
+  }
 }
