@@ -3,15 +3,16 @@
   $color-done: $success-color;
   $color-ongoing: #ecaf00;
   $color-waiting: darken(#fff, 20%);
-  
+
   $line-size: 2px;
   $line-pos-x: 19px;
 
   .timeline-item {
     position: relative;
     border-bottom: solid 0.06rem #f6f6f6 !important;
+
     &:before, &:after {
-      content:" ";
+      content: " ";
       background-color: $color-done;
 
       position: absolute;
@@ -21,14 +22,17 @@
 
       z-index: 1;
     }
+
     &:before {
       top: 0px;
       height: 13px;
     }
+
     &:after {
       top: 34px;
       height: 100%;
     }
+
     &:first-child {
       &:before {
         content: none;
@@ -38,10 +42,11 @@
     .timeline-content {
       padding-left: 1rem;
       position: relative;
+
       &:before {
-        font-family: "Font Awesome 5 Free"; 
+        font-family: "Font Awesome 5 Free";
         font-weight: 900;
-        font-size: 1.15rem; 
+        font-size: 1.15rem;
         content: "\f00c";
         color: #fff;
         background-color: $color-done;
@@ -61,10 +66,11 @@
         margin-left: $line-pos-x;
         border-left: $line-size solid $color-done;
         position: relative;
+
         &:after {
           content: "";
           background-color: $color-done;
-          
+
           position: absolute;
           bottom: -3px;
           left: $line-pos-x - $line-pos-x - 2px;
@@ -73,10 +79,13 @@
           height: 10px;
         }
       }
+
       .timeline-hidden-item {
         padding-left: 1.5rem !important;
+
         .timeline-hidden-item-head {
           position: relative;
+
           &:before {
             content: "\f0f3";
             background-color: #ffffff;
@@ -93,6 +102,7 @@
             color: $color-done;
             z-index: 2;
           }
+
           &:after {
             background-color: $color-done;
 
@@ -103,6 +113,7 @@
             width: 1rem;
             height: $line-size;
           }
+
           &.completed {
             &:before {
               color: $color-done !important;
@@ -123,12 +134,14 @@
               padding-top: .1rem !important;
             }
           }
+
           &.item-message {
             &:before {
               content: "\f075" !important;
               padding-left: .27rem !important;
             }
           }
+
           &.item-email {
             &:before {
               content: "\f0e0" !important;
@@ -136,6 +149,7 @@
               font-size: .9rem !important;
             }
           }
+
           &.item-todo {
             &:before {
               content: "\f0ae" !important;
@@ -143,6 +157,7 @@
               padding-top: .1rem !important;
             }
           }
+
           &.item-question {
             &:before {
               content: "\f46d" !important;
@@ -150,6 +165,7 @@
               font-size: .95rem !important;
             }
           }
+
           &.item-reminder {
             &:before {
               content: "\f0f3" !important;
@@ -157,6 +173,7 @@
               border-color: $secondary-color;
               background-color: $secondary-color;
             }
+
             &:after {
               background-color: $secondary-color;
             }
@@ -170,28 +187,34 @@
       &:before {
         background-color: $color-ongoing;
       }
+
       &:after {
         background-color: $color-ongoing;
       }
+
       .timeline-content {
         &:before {
           color: #fff;
           background-color: $color-ongoing;
         }
       }
-      .timeline-hidden-content { 
+
+      .timeline-hidden-content {
         & > div {
           border-left: $line-size solid $color-ongoing;
+
           &:after {
             background-color: $color-ongoing;
           }
         }
+
         .timeline-hidden-item {
           .timeline-hidden-item-head {
             &:before {
               border: $line-size solid $color-ongoing;
               color: $color-ongoing;
             }
+
             &:after {
               background-color: $color-ongoing;
             }
@@ -205,25 +228,30 @@
       &:before, &:after {
         background-color: darken(#fff, 20%);
       }
+
       .timeline-content {
         &:before {
           color: #fff;
           background-color: darken(#fff, 20%) !important;
         }
       }
+
       .timeline-hidden-content {
         & > div {
           border-left: $line-size solid darken(#fff, 20%);
+
           &:after {
             background-color: darken(#fff, 20%);
           }
         }
+
         .timeline-hidden-item {
           .timeline-hidden-item-head {
             &:before {
               border: $line-size solid darken(#fff, 20%);
               color: darken(#fff, 20%);
             }
+
             &:after {
               background-color: darken(#fff, 20%);
             }
@@ -236,7 +264,7 @@
       .timeline-hidden-content {
         & > div {
           &:before {
-            content:" ";
+            content: " ";
             background-color: $color-done;
 
             position: absolute;
@@ -248,6 +276,7 @@
           }
         }
       }
+
       &.timeline-ongoing {
 
         .timeline-hidden-content {
@@ -260,7 +289,7 @@
       }
 
       &.timeline-waiting {
-        
+
         .timeline-hidden-content {
           & > div {
             &:before {
@@ -283,7 +312,7 @@
 // Widget Override
 .flat-picker {
   .flatpickr-input {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     font-size: .875rem;
     border-top: none;
     border-right: none;
