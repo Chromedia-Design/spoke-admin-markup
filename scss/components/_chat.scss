@@ -662,6 +662,7 @@ $light-gray-hex: #CBCFD3;
       padding: 1rem 0;
       overflow-y: scroll;
       overflow-x: hidden;
+      height: 0;
     }
 
     .footer-content {
@@ -690,6 +691,7 @@ $light-gray-hex: #CBCFD3;
 
     &:only-child {
       width: 100%;
+      height: 100%;
 
       &::-webkit-scrollbar {
         display: none;
