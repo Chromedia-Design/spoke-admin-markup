@@ -1,7 +1,6 @@
 #master-container {
   display: grid;
-  height: 99vh;
-  min-height: 100vh;
+  height: 100vh;
 
   &.header-sidebar-body {
     grid-template-columns: repeat(12, 1fr);
