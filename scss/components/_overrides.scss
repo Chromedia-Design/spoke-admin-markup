@@ -1,3 +1,42 @@
+body {
+  &:not(.frontend) {
+    height: 100vh;
+    overflow: hidden;
+
+    &::-webkit-scrollbar {
+      display: none !important;
+    }
+
+  }
+
+}
+
+#root {
+  &:not(.builder) {
+    overflow-y: scroll;
+    height: 100vh;
+
+    .no-scroll {
+      &::-webkit-scrollbar {
+        display: none !important;
+      }
+
+    }
+
+    > div {
+      > * {
+        &:last-child {
+          padding-bottom: 5rem;
+        }
+      }
+
+      > .large-8 {
+        padding-bottom: 5rem;
+      }
+    }
+  }
+}
+
 #jsd-widget {
   //Jira Widget button
   right: 5rem !important;
