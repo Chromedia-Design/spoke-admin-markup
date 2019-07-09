@@ -1,4 +1,4 @@
-
+$color-ongoing: #ecaf00;
 
 .stick-to-top {
   position: sticky !important;
@@ -30,6 +30,7 @@
 .disp-inline { display: inline; }
 .disp-inline-block { display: inline-block; }
 .hidden { display: none;}
+.hidden-o { opacity: 0;}
 
 
 // Margins --------------------------------------------------------------------------------
@@ -235,6 +236,10 @@
 
 .clr-alert { color: $alert-color !important; }
 .clr-alert-lighten { color: rgba($alert-color, .5) !important; }
+
+.clr-ongoing { color: $color-ongoing !important; }
+.clr-ongoing-lighten { color: rgba($color-ongoing, .5) !important; }
+
 
 
 // List
