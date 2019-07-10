@@ -248,7 +248,7 @@
       <div id="inner-container">
 
         <div class="inner-sidebar box-shadow">
-          <div class="secondary site-nav stick-to-top">
+          <div class="secondary site-nav">
             <ul class="menu vertical" data-accordion-menu>
               <li>
                 <a href="advocate-employees.html">
@@ -1516,18 +1516,17 @@
 
 <script type="text/javascript">
 
-  // var topBarHeight = $('.top-bar').outerHeight();
+  var topBarHeight = $('.top-bar').outerHeight();
 
-  // $(function () {
-  //   var timer;
-  //   $(window).resize(function () {
-  //     clearTimeout(timer);
-  //     timer = setTimeout(function () {
-  //       $('#chatSupport, #chatSupport .offcanvas-area-inner, .site-nav, .content').css("height", $(window).height());
-  //       $('.site-nav.secondary, #profileContent, #chatClient .chat-wrapper').css("height", $(window).height() - topBarHeight);
-  //     }, 40);
-  //   }).resize();
-  // });
+  $(function () {
+    var timer;
+    $(window).resize(function () {
+      clearTimeout(timer);
+      timer = setTimeout(function () {
+        $('#root, #inner-container').css("min-height", $(window).height());
+      }, 40);
+    }).resize();
+  });
 
   $('.wysiwyg').trumbowyg({
     btns: [['bold', 'italic'], ['link']]

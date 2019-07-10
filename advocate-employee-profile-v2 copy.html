@@ -99,7 +99,8 @@
               <li>
                 <a href="#">
                   <!-- <small><i class="fa fa-long-arrow-left"></i>&nbsp; <span class="hide-on-collapsed">Back To All Employees</span></small> -->
-                  <small><i class="fa fa-expand"></i>&nbsp; <span class="hide-on-collapsed">Back To All Employees</span></small>
+                  <small><i class="fa fa-expand"></i>&nbsp; <span class="hide-on-collapsed">Back To All Employees</span>
+                  </small>
                 </a>
               </li>
               <li class="hide-on-collapsed">
@@ -121,16 +122,20 @@
                 </div>
               </li>
               <li class="is-active">
-                <a href="advocate-employee-profile-v2.html" ><i class="fa fa-address-book"></i> <span class="hide-on-collapsed">&nbsp;Overview</span></a>
+                <a href="advocate-employee-profile-v2.html"><i class="fa fa-address-book"></i> <span
+                  class="hide-on-collapsed">&nbsp;Overview</span></a>
               </li>
               <li>
-                <a href="advocate-employee-episodes-list-v2.html" ><i class="fa fa-stethoscope"></i> <span class="hide-on-collapsed">&nbsp;Episodes</span></a>
+                <a href="advocate-employee-episodes-list-v2.html"><i class="fa fa-stethoscope"></i> <span
+                  class="hide-on-collapsed">&nbsp;Episodes</span></a>
               </li>
               <li>
-                <a href="advocate-employee-notes-v2.html" ><i class="fa fa-sticky-note"></i> <span class="hide-on-collapsed">&nbsp;Notes</span></a>
+                <a href="advocate-employee-notes-v2.html"><i class="fa fa-sticky-note"></i> <span
+                  class="hide-on-collapsed">&nbsp;Notes</span></a>
               </li>
               <li>
-                <a href="advocate-employee-activity-v2.html" ><i class="fa fa-exchange-alt"></i> <span class="hide-on-collapsed">&nbsp;Activity</span></a>
+                <a href="advocate-employee-activity-v2.html"><i class="fa fa-exchange-alt"></i> <span
+                  class="hide-on-collapsed">&nbsp;Activity</span></a>
               </li>
               <li class="hide-on-expand">
                 <a href="#"><i class="fa fa-phone fa-fw"></i></a>
@@ -139,7 +144,8 @@
                 <a href="#"><i class="fa fa-video-camera fa-fw"></i></a>
               </li>
               <li>
-                <a href="advocate-employee-inbox-v2.html"><i class="fa fa-comment-o"></i> <span class="hide-on-collapsed">&nbsp;Inbox</span></a>
+                <a href="advocate-employee-inbox-v2.html"><i class="fa fa-comment-o"></i> <span
+                  class="hide-on-collapsed">&nbsp;Inbox</span></a>
               </li>
             </ul>
           </div>
@@ -346,28 +352,28 @@
 
 <script type="text/javascript">
 
-    var topBarHeight = $('.top-bar').outerHeight(true);
+  var topBarHeight = $('.top-bar').outerHeight(true);
 
-    $(function () {
-        var timer;
-        $(window).resize(function () {
-            clearTimeout(timer);
-            timer = setTimeout(function () {
-                $('#chatSupport, #chatSupport .offcanvas-area-inner, .site-nav, .content').css("height", $(window).height());
-                $('.site-nav.secondary, #profileContent, #chatClient .chat-wrapper').css("height", $(window).height() - topBarHeight);
-            }, 40);
-        }).resize();
-    });
+  $(function () {
+    var timer;
+    $(window).resize(function () {
+      clearTimeout(timer);
+      timer = setTimeout(function () {
+        $('#chatSupport, #chatSupport .offcanvas-area-inner, .site-nav, .content').css("height", $(window).height());
+        $('.site-nav.secondary, #profileContent, #chatClient .chat-wrapper').css("height", $(window).height() - topBarHeight);
+      }, 40);
+    }).resize();
+  });
 
-    $('#generalNote .button').click(function () {
-        $('#generalNote').css("display", "none");
-        $('#generalNoteEdit').css("display", "block");
-    });
+  $('#generalNote .button').click(function () {
+    $('#generalNote').css("display", "none");
+    $('#generalNoteEdit').css("display", "block");
+  });
 
-    $('#generalNoteEdit .button').click(function () {
-        $('#generalNote').css("display", "block");
-        $('#generalNoteEdit').css("display", "none");
-    });
+  $('#generalNoteEdit .button').click(function () {
+    $('#generalNote').css("display", "block");
+    $('#generalNoteEdit').css("display", "none");
+  });
 
 </script>
 
