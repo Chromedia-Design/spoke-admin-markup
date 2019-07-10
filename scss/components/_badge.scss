@@ -1,3 +1,7 @@
+  $color-done: $success-color;
+  $color-ongoing: #ecaf00;
+  $color-waiting: darken(#fff, 20%);
+
 .badge {
   line-height: 1.45em;
 
@@ -30,6 +34,10 @@
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     border-radius: 50%;
+  }
+  &.ongoing {
+    background: $color-ongoing;
+    color: $white;
   }
 }
 
@@ -111,6 +119,16 @@
       }
     }
 
+    &.ongoing {
+      background: lighten($color-ongoing, 15%);
+      border: 1px solid lighten($color-ongoing, 15%);
+
+      .img-wrapper {
+        border: 1px solid lighten($color-ongoing, 25%);
+        background-color: lighten($color-ongoing, 25%);
+      }
+    }
+
     &.alert {
       background: lighten($alert-color, 15%);
       border: 1px solid lighten($alert-color, 15%);
@@ -152,6 +170,15 @@
         }
       }
 
+      &.ongoing {
+        background: $color-ongoing;
+        border-color: $color-ongoing;
+
+        .fa {
+          color: $color-ongoing;
+        }
+      }
+
       &.alert {
         background: $alert-color;
         border-color: $alert-color;
@@ -185,6 +212,14 @@
 
       &.warning {
         color: $warning-color;
+
+        &:hover {
+          color: $white;
+        }
+      }
+
+      &.ongoing {
+        color: $color-ongoing;
 
         &:hover {
           color: $white;
