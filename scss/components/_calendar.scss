@@ -59,59 +59,47 @@
 }
 
 #eventCalendar {
-  .fc-toolbar {
-    margin-bottom: .55em !important;
-
-    .fc-left, .fc-right {
-      button {
-        background-image: none !important;
-        background-color: transparent !important;
-        box-shadow: none !important;
-        border: none !important;
-      }
-    }
-
-    .fc-left {
-    }
-
-    .fc-center {
-    }
-
-    .fc-right {
-    }
-  }
-
-  .fc-view-container {
-    // border-radius: 5px !important;
-    // overflow: hidden !important;
-  }
+	.fc-toolbar {
+		margin-bottom: .55em !important;
+		.fc-left, .fc-right {
+			button {
+				background-image: none !important;
+				background-color: transparent !important;
+				box-shadow: none !important;
+				border: none !important;
+			}
+		}
+		.fc-left {}
+		.fc-center {}
+		.fc-right {}
+	}
+	.fc-view-container {
+		// border-radius: 5px !important;
+		// overflow: hidden !important;
+	}
 }
 
 #eventScheduler {
-  .fc-toolbar {
-    margin-bottom: .5rem !important;
-
-    .fc-left {
-    }
-
-    .fc-right {
-      button.fc-today-button {
-        background-image: none !important;
-        background-color: transparent !important;
-        box-shadow: none !important;
-        border: none !important;
-        font-weight: bold;
-        color: $primary-color !important;
-      }
-
-      .fc-button-group {
-        button {
-          background-image: none !important;
-          background-color: transparent !important;
-          box-shadow: none !important;
-          border: none !important;
-        }
-      }
-    }
-  }
+	.fc-toolbar {
+		margin-bottom: .5rem !important;
+		.fc-left {}
+		.fc-right {
+			button.fc-today-button {
+				background-image: none !important;
+				background-color: transparent !important;
+				box-shadow: none !important;
+				border: none !important;
+				font-weight: bold;
+				color: $primary-color !important;
+			} 
+			.fc-button-group {
+				button {
+					background-image: none !important;
+					background-color: transparent !important;
+					box-shadow: none !important;
+					border: none !important;
+				}
+			}
+		}
+	}
 }

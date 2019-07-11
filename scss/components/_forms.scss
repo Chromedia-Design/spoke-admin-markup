@@ -254,10 +254,9 @@ textarea, select, .bold-div {
 [type='date'],
 [type="time"] {
   &.compact {
-    padding: 0 .5rem !important;
+    padding: 0rem .5rem !important;
     border-radius: 4px !important;
     font-size: .75rem;
-    // border: 0px;
     background-color: transparent;
   }
 }
@@ -786,23 +785,6 @@ label.image-upload {
     border: 1px solid rgba($black, $B-dividers);
     height: 100%;
 
-    [type='text'],
-    [type='password'],
-    [type='date'],
-    [type='datetime'],
-    [type='datetime-local'],
-    [type='month'],
-    [type='week'],
-    [type='email'],
-    [type='number'],
-    [type='search'],
-    [type='tel'],
-    [type='time'],
-    [type='url'],
-    [type='color'],
-    textarea,
-    select {
-    }
   }
 
   .columns {
@@ -999,7 +981,7 @@ input {
 .fancy-input-tag {
   border-radius: 3px;
   padding: .5rem;
-  border: none;
+  border: 0px;
 
   input {
     display: inline-block;
@@ -1183,9 +1165,6 @@ input {
     font-size: 0.6875rem;
     height: 2rem;
   }
-
-  .inline-edit {
-  }
 }
 
 .fancy-checkbox,
@@ -1204,33 +1183,29 @@ input {
   [type='checkbox'],
   [type='radio'] {
     position: relative;
-    display: table-cell !important;
+    display: table-cell;
     z-index: 1;
     margin: 0;
     width: $fancy-checkbox-normal-size !important;
     height: $fancy-checkbox-normal-size !important;
     cursor: pointer;
     appearance: none;
-    opacity: 0;
     -webkit-appearance: none;
     -moz-appearance: none;
     background: transparent !important;
 
     + label,
     + span {
-      position: relative;
       display: inline-block;
       margin: 0 0 0 0.875rem;
 
       &:after {
         display: block;
         position: absolute;
-        z-index: 0;
         content: '';
         top: 0;
         bottom: 0;
-        margin: auto 0;
-        left: -2rem;
+        left: 0;
         cursor: pointer;
         width: $fancy-checkbox-normal-size;
         height: $fancy-checkbox-normal-size;
@@ -1266,7 +1241,7 @@ input {
       + label,
       + span {
         &:after {
-          top: 2px;
+          top: 5px;
           width: $fancy-checkbox-small-size;
           height: $fancy-checkbox-small-size;
           background-size: 1rem;
@@ -1321,11 +1296,11 @@ input {
     position: absolute;
     background-color: #fff;
     min-width: 160px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     top: 40px;
     &.dock-right {
-      right: 0;
+      right: 0px;
     }
 
     [type='checkbox'] {
@@ -1339,7 +1314,6 @@ input {
     &.expanded {
       width: max-content;
     }
-
   }
 
   .show {
@@ -1397,7 +1371,7 @@ $bg-instruction: #17659B;
     .input-group-button {
       .button {
         &:first-child {
-          border-radius: 0;
+          border-radius: 0px;
         }
       }
     }
@@ -1413,7 +1387,7 @@ $bg-instruction: #17659B;
   .Select-menu-outer {
     position: absolute !important;
     top: 2.5rem !important;
-    left: 0 !important;
+    left: 0px  !important;
   }
 }
 
@@ -1421,7 +1395,6 @@ $bg-instruction: #17659B;
 .question-item {
   padding: 0 .5rem;
   margin-bottom: 1rem;
-  // @extend .box-shadow-sm;
   @extend .border-radius-md;
   > div {
     padding-left: 0;
@@ -1443,7 +1416,7 @@ $bg-instruction: #17659B;
     .item-question {
       padding-bottom: .5rem;
       margin-bottom: 0;
-      font-weight: normal;
+      font-weight: regular;
       font-size: .875rem;
       @extend .subheader;
       span {
@@ -1501,9 +1474,8 @@ $bg-instruction: #17659B;
 }
 
 .form-func-text {
-  input[type='text'],
-  textarea {
-    margin-bottom: 0 !important;
+  input[type='text'], textarea {
+    margin-bottom: 0px !important;
   }
 
   span {

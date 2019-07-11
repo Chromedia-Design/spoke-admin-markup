@@ -107,19 +107,12 @@
 			&.is-active {
 				position: relative;
 				z-index: 10;
-				// background-color: $white;
 				@extend .bg-black20;
-				// border-top-left-radius: 8px;
-				// border-top-right-radius: 8px;
-				// border-top: 1px solid rgba($black, $B-dividers);
-				// border-left: 1px solid rgba($black, $B-dividers);
-				// border-right: 1px solid rgba($black, $B-dividers);
 				border-bottom: none;
 				&:after {
 					position: absolute;
 					content: "";
 					width: 100%;
-					// border: 1px solid $white;
 					bottom: -1px;
 					z-index: 2;
 					background-color: transparent;
@@ -135,9 +128,6 @@
 			background: $white;
 			padding: 0.5rem 1rem 1rem;
 			border-top: none;
-			// border-left: 1px solid rgba($black, $B-dividers);
-			// border-right: 1px solid rgba($black, $B-dividers);
-			// border-bottom: 1px solid rgba($black, $B-dividers);
 		}
 	}
 	&.combinational {

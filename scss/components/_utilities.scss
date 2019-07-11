@@ -178,6 +178,8 @@ $color-ongoing: #ecaf00;
 .bg-note { background-color: $note !important; }
 .bg-note-darken { background-color: darken($note, 40%) !important; }
 
+.bg-yellow { background-color: #ecaf00 !important; }
+
 .bg-light { background: #eef0f3 !important; }
 
 .bg-none { background-color: transparent !important; }
@@ -212,6 +214,7 @@ $color-ongoing: #ecaf00;
 // Text color
 .clr-none { color: transparent !important; }
 .clr-note { color: $note !important; }
+.clr-yellow { color: #ecaf00 !important; }
 .clr-note-darken { color: darken($note, 40%) !important; }
 
 .clr-white { color: $white !important; }
@@ -430,7 +433,12 @@ $color-ongoing: #ecaf00;
 }
 
 .hide-scrollbar {
+  scrollbar-width: none !important;
   &::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  &::-moz-scrollbar {
     display: none !important;
   }
 }

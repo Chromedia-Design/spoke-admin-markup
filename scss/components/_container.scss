@@ -17,10 +17,6 @@
 
     &.full-page-body-scrollable {
       overflow-y: scroll;
-
-      &::-webkit-scrollbar {
-        display: none;
-      }
     }
 
     .full-page-body-sidebar {
@@ -39,10 +35,6 @@
       height: 100%;
       overflow: hidden;
       overflow-y: scroll;
-
-      &::-webkit-scrollbar {
-        display: none;
-      }
     }
   }
 }

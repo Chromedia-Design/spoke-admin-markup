@@ -37,6 +37,7 @@ body {
   }
 }
 
+// IMPORTANT: Reposition Jira Button
 #jsd-widget {
   //Jira Widget button
   right: 5rem !important;
@@ -276,8 +277,12 @@ $allowance-bg: #81A714;
 //------- MOBILE OVERRIDES ENDS HERE -------- //
 
 /* Fixes Safari layout issue on blog & archive pages */
-.row::before, .row::after {
-  content: none;
+.row::before, .row::after { content: none; }
+
+/* Fixes novant support floating icon  */
+
+ul.input-list.widget-choices li:last-child {
+	padding-bottom: 2.5em !important;
 }
 
 
