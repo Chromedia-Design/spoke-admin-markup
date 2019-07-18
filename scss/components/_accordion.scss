@@ -60,3 +60,16 @@
     margin-left: -0.9rem !important;
   }
 }
+
+.dd-checkbox {
+  width: 100%;
+  .nested {
+    position: absolute;
+    padding: unset !important;
+    padding: 1em 1.2em !important;
+    width: 18.5% !important;
+    /*width: inherit;*/
+    margin-left: -1px;
+    z-index: 999999;
+  }
+}

@@ -311,3 +311,10 @@ ul.input-list.widget-choices li:last-child {
   }
 }
 
+
+//------- MOBILE OVERRIDES ENDS HERE -------- //
+.page-lead {
+	.switch label {
+		margin-bottom: -5px !important;
+	}
+}
