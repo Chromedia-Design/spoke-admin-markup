@@ -1584,9 +1584,6 @@ ul.vertical-list {
 .spoke-list {
   width: 100%;
   font-size: 0.875rem;
-  border-top: 1px solid rgba($black, $B-dividers);
-  border-left: 1px solid rgba($black, $B-dividers);
-  border-right: 1px solid rgba($black, $B-dividers);
   background: $white;
 
   &.bg-alternate-items {
@@ -1626,27 +1623,24 @@ ul.vertical-list {
   }
 
   .spoke-list-item {
-    background: $primary-light;
+    background: $white;
+    border-radius: $global-radius;
+    border: 1px solid rgba($black, $B-dividers);
     cursor: pointer;
-    padding: 1rem 0.5rem;
-    border-bottom: 1px solid rgba($black, $B-dividers);
+    padding: 0.5rem;
     z-index: 1;
 
-    &:last-child {
-      // border-bottom: 1px solid rgba($black, $B-dividers) !important;
+    + .spoke-list-item {
+      margin-top: 0.5rem;
+      border-top: 1px solid rgba($black, $B-dividers);
     }
 
     &.large {
-      padding-top: 1rem !important;
-      padding-bottom: 1rem !important;
+      padding: 1rem !important;
     }
 
     p {
       margin-bottom: 0;
-      width: 100%;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
 
       a {
         color: $secondary-color;
@@ -1655,6 +1649,14 @@ ul.vertical-list {
 
     &:hover {
       background: $white;
+    }
+  }
+
+  .spoke-list-sub-item {
+    padding: 0.5rem;
+    + .spoke-list-sub-item {
+      background: $primary-light;
+      border-top: 1px solid rgba($black, $B-dividers);
     }
   }
 
