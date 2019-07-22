@@ -47,6 +47,9 @@ $color-waiting: darken(#fff, 20%);
   border-radius: $global-radius;
   padding: 0.4rem 0.5rem 0.333rem;
   margin: -3px 0 0;
+  &.rounded {
+    border-radius: 1rem;
+  }
 
   &.hollow {
     background: transparent;
