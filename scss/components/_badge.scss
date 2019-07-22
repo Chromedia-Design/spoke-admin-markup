@@ -1,6 +1,6 @@
-  $color-done: $success-color;
-  $color-ongoing: #ecaf00;
-  $color-waiting: darken(#fff, 20%);
+$color-done: $success-color;
+$color-ongoing: #ecaf00;
+$color-waiting: darken(#fff, 20%);
 
 .badge {
   line-height: 1.45em;
@@ -35,6 +35,7 @@
     padding-right: 0.5rem;
     border-radius: 50%;
   }
+
   &.ongoing {
     background: $color-ongoing;
     color: $white;
@@ -43,9 +44,35 @@
 
 .label {
   vertical-align: middle;
-  border-radius: 2px;
+  border-radius: $global-radius;
   padding: 0.4rem 0.5rem 0.333rem;
   margin: -3px 0 0;
+
+  &.hollow {
+    background: transparent;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+
+    &.secondary {
+      color: $secondary-color;
+      border: 1px solid $secondary-color;
+    }
+
+    &.success {
+      color: $success-color;
+      border: 1px solid $success-color;
+    }
+
+    &.warning {
+      color: $warning-color;
+      border: 1px solid $warning-color;
+    }
+
+    &.alert {
+      color: $alert-color;
+      border: 1px solid $alert-color;
+    }
+  }
 }
 
 .tag-cloud {
