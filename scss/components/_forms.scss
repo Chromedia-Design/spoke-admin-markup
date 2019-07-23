@@ -931,10 +931,7 @@ input {
 }
 
 .inline-form-group {
-  label {
-    margin: 0 0.5rem;
-    display: inline-block;
-  }
+  display: table;
 
   [type='text'],
   [type='password'],
@@ -956,8 +953,16 @@ input {
   select,
   textarea,
   .button {
-    width: auto;
+    display: table-cell;
     margin: 0 0.5rem;
+    vertical-align: center;
+  }
+
+  label {
+    width: 33%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 

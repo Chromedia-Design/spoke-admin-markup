@@ -61,3 +61,9 @@
 		}
 	}
 }
+
+@mixin hollownize($color) {
+	background: transparent;
+	color: $color;
+	border: 1px solid $color;
+}

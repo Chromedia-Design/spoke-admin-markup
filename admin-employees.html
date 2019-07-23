@@ -1,11 +1,11 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Spoke Admin Portal</title>
-	<link rel="stylesheet" href="css/app.css">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spoke Admin Portal</title>
+  <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
 	
@@ -500,6 +500,528 @@
     	});
 
     </script>
+=======
+
+<div class="expanded row medium-collapse">
+  <div class="medium-2 columns">
+    <div class="site-nav">
+      <header>
+        <a href="#" class="logo text-center">
+          <img src="img/logo.png" title="Spoke">
+        </a>
+      </header>
+      <ul class="menu vertical" data-accordion-menu>
+        <li>
+          <a href="#">Dashboard</a>
+        </li>
+        <li class="is-active">
+          <a href="#">Members</a>
+          <ul class="nested vertical menu is-active">
+            <li class="is-active">
+              <a href="#">All Members</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="medium-10 columns">
+    <div class="content">
+
+      <div class="top-bar">
+        <div class="top-bar-left">
+          <form>
+            <div class="input-group rounded">
+              <input type="search" class="input-group-field" placeholder="Search members" value="">
+              <div class="input-group-button">
+                <input type="submit" class="button hollow plain info" value="Submit">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="top-bar-right">
+          <ul class="dropdown menu" data-dropdown-menu="yk2de3-dropdown-menu" role="menubar">
+            <li class="drop-text is-dropdown-submenu-parent opens-left" role="menuitem" aria-haspopup="true"
+                aria-expanded="false" aria-label="">
+              <a href="#">
+                <i class="fa fa-bell fa-lg" aria-describedby="notifCount">
+                </i>
+              </a>
+              <ul class="notifications menu vertical dev-submenu submenu is-dropdown-submenu first-sub" data-submenu=""
+                  aria-hidden="true" role="menu">
+                <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item">
+                  <ol>
+                    <li class="heading" role="menuitem">
+                      <h6 class="text-center mb-0">Notifications</h6>
+                    </li>
+                    <li class="subheader text-center" role="menuitem">
+                      You have no new notifications.
+                    </li>
+                  </ol>
+                </li>
+              </ul>
+              <span class="granted"></span>
+            </li>
+
+            <li class="is-dropdown-submenu-parent opens-left" role="menuitem" aria-haspopup="true" aria-expanded="false"
+                aria-label="J" data-is-click="false">
+              <a class="vertical-block" href="#" tabindex="0">
+                <div class="img-wrapper tiny circle">
+                  <img src="https://s3.amazonaws.com/assets.spoke.devs/media/adminUsers/5afbd23a8fc81222370041a7.jpeg"
+                       alt="James Bond Cleene">
+                </div>
+              </a>
+
+              <ul class="menu vertical submenu is-dropdown-submenu first-sub" data-submenu="" aria-hidden="true"
+                  role="menu" style="">
+                <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item">
+                  <a class="logout_open" href="/app_dev.php/admin/logout">
+                    <i class="fa fa-sign-out"></i><!-- react-text: 26 -->&nbsp; Sign Out<!-- /react-text -->
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="page-lead row align-middle expanded">
+        <div class="shrink columns">
+          <span class="h5">Members (2000)</span>
+        </div>
+
+        <div class="medium-3 columns align-middle">
+          <div class="input-group mb-0">
+            <ul class="vertical menu accordion-menu b-all-1-darker dd-checkbox" data-accordion-menu
+                data-submenu-toggle="true">
+              <li>
+                <a href="#" class="">3 Selected Filter</a>
+                <ul class="menu vertical nested bg-white b-all-1-darker">
+                  <li>
+                    <input id="checkbox1" type="checkbox">
+                    <label for="checkbox1">Select All</label>
+                  </li>
+                  <li>
+                    <input id="checkbox2" type="checkbox">
+                    <label for="checkbox2">Preliminary</label>
+                  </li>
+                  <li>
+                    <input id="checkbox3" type="checkbox">
+                    <label for="checkbox3">Confirmed </label>
+                  </li>
+                  <li>
+                    <input id="checkbox4" type="checkbox">
+                    <label for="checkbox4">Canceled</label>
+                  </li>
+                  <li>
+                    <input id="checkbox5" type="checkbox">
+                    <label for="checkbox5">Not Completed</label>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="shrink columns">
+          <a class="button secondary small hollow ml-0 mb-0" data-toggle="filters" aria-controls="filters">
+            <!-- react-text: 17 -->Hide More Filters<!-- /react-text --><i class="fa fa-angle-up fa-fw"></i></a>
+        </div>
+
+        <!-- <div class="columns shrink end">
+          <div class="switch tiny mb-0 disp-inline">
+            <span class="h6 subheader">View All Members</span>
+            <input class="switch-input" id="tinySwitch1" type="checkbox" name="exampleSwitch" checked="true" data-toggle="adult-info-form">
+            <label class="switch-paddle" for="tinySwitch1">
+            </label>
+          </div>
+        </div> -->
+      </div>
+
+
+      <div class="row expanded">
+        <div class="medium-12 columns">
+          <div id="filters" class="submenu menu-options mb-1" data-toggler="true" data-animate="fade-in fade-out">
+            <div class="row">
+              <div class="large-2 columns align-middle">
+                <label class="text-right">Selected Facility</label>
+              </div>
+
+              <div class="large-2 columns">
+                <select class="small-input">
+                  <option value="0">All</option>
+                  <option value="31">Dallas Mavericks Company</option>
+                  <option value="32">Dallas Mavericks Company 1</option>
+                  <option value="33">Dallas Mavericks Company 2</option>
+                  <option value="34">COMPANY TEST</option>
+                </select>
+              </div>
+              <div class="large-1 columns align-middle">
+                <label class="text-left">Company</label>
+              </div>
+
+              <div class="large-3 columns">
+                <select class="small-input">
+                  <option value="0">All</option>
+                  <option value="31">Dallas Mavericks Company</option>
+                  <option value="32">Dallas Mavericks Company 1</option>
+                  <option value="33">Dallas Mavericks Company 2</option>
+                  <option value="34">COMPANY TEST</option>
+                </select>
+              </div>
+              <div class="large-2 columns align-middle">
+                <label class="text-left">Member Type</label>
+              </div>
+
+              <div class="large-2 columns">
+                <select class="small-input">
+                  <option value="0">Primary</option>
+                  <option value="31">Dependent</option>
+                </select>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row expanded">
+        <div class="auto columns">
+
+          <div class="spoke-list">
+
+            <div class="spoke-list-heading row expanded align-middle">
+              <div class="medium-4 columns">
+                <!-- <input type="checkbox" class="mb-0 mr-1" name="">&nbsp;  -->
+                <a href="#">Name <i class="fa fa-caret-up fa-fw"></i></a>
+              </div>
+              <div class="medium-5 columns">
+                <a href="#">Company Name <i class="fa fa-caret-up fa-fw"></i></a>
+              </div>
+              <div class="medium-3 columns">
+                <a href="#">Recent Activity <i class="fa fa-caret-up fa-fw"></i></a>
+              </div>
+            </div>
+
+            <div class="spoke-list-item row expanded align-middle"
+                 onclick="location.href='advocate-employee-profile-v2.html'">
+              <div class="medium-4 columns">
+                <div class="row collapse align-middle">
+                  <div class="columns">
+                    <p class="h6 mb-0">John Doe</p>
+                    <!-- <p class="subheader"><small>Advocate: Christine Lambert</small></p> -->
+                  </div>
+                </div>
+              </div>
+              <div class="medium-5 columns">
+                <p>Magellan Health Inc.</p>
+              </div>
+              <div class="medium-3 columns">
+                <p>June 17, 2018 3:45PM</p>
+                <!-- <a href="#" class="button success hollow rounded tiny">Create Episode</a> -->
+              </div>
+              <div class="medium-12 columns mt-1">
+                <div class="row pt-0 pb-0 marginless expanded callout small bg-none spoke-list-heading">
+                  <div class="medium-3 columns">
+                    <p class="">
+                      <small>Episode Name</small>
+                    </p>
+                  </div>
+                  <div class="medium-2 columns">
+                    <p class="">
+                      <small>Status</small>
+                    </p>
+                  </div>
+                  <div class="medium-2 columns">
+                    <p class="">
+                      <small>Mile Stone</small>
+                    </p>
+                  </div>
+                  <div class="medium-3 columns">
+                    <p class="">
+                      <small>Selected Facility</small>
+                    </p>
+                  </div>
+                  <div class="medium-2 columns">
+                    <p class="">
+                      <small>Care Coordinator</small>
+                    </p>
+                  </div>
+                </div>
+
+
+                <div class="row expanded mb-0 callout small mt-1-less">
+                  <div class="medium-3 columns">
+                    <p class="">
+                      <small><a href="">Extended Bifrontal Craniotomy</a></small>
+                    </p>
+                    <div class="row mb-0">
+                      <div class="medium-3 collapse">
+                        <small class="tiny subheader">#102345</small>
+                      </div>
+                      <div class="medium-9 collapse">
+                        <small class="tiny">August 10, 2018</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="medium-2 columns">
+                    <p class="">
+                      <small>Confirmed</small>
+                    </p>
+                  </div>
+                  <div class="medium-2 columns">
+                    <p class="">
+                      <small>Link Followed</small>
+                    </p>
+                  </div>
+                  <div class="medium-3 columns">
+                    <p class="">
+                      <small>Presbyterian St. Luke's Medical Center</small>
+                    </p>
+                  </div>
+                  <div class="medium-2 columns">
+                    <p class="">
+                      <small>Jamie G. Ronda</small>
+                    </p>
+                    <p class="">
+                      <small>Kate B. Brylle</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="spoke-list-item row expanded align-middle"
+                 onclick="location.href='advocate-employee-profile-v2.html'">
+              <div class="medium-4 columns">
+                <div class="row collapse align-middle">
+                  <div class="columns">
+                    <p class="h6 mb-0">Jacqueline Miller</p>
+                    <!-- <p class="subheader"><small>Advocate: Christine Lambert</small></p> -->
+                  </div>
+                </div>
+              </div>
+              <div class="medium-5 columns">
+                <p>Novant Health</p>
+              </div>
+              <div class="medium-3 columns">
+                <p>July 11, 2019 11:30AM</p>
+                <!-- <a href="#" class="button success hollow rounded tiny">Create Episode</a> -->
+              </div>
+              <div class="medium-12 columns mt-1">
+                <div class="row pt-0 pb-0 marginless expanded callout small bg-none spoke-list-heading">
+                  <div class="medium-3 columns">
+                    <p class="">
+                      <small>Episode Name</small>
+                    </p>
+                  </div>
+                  <div class="medium-2 columns">
+                    <p class="">
+                      <small>Status</small>
+                    </p>
+                  </div>
+                  <div class="medium-2 columns">
+                    <p class="">
+                      <small>Mile Stone</small>
+                    </p>
+                  </div>
+                  <div class="medium-3 columns">
+                    <p class="">
+                      <small>Selected Facility</small>
+                    </p>
+                  </div>
+                  <div class="medium-2 columns">
+                    <p class="">
+                      <small>Care Coordinator</small>
+                    </p>
+                  </div>
+                </div>
+
+
+                <div class="row expanded mb-0 callout small mt-1-less">
+                  <div class="medium-3 columns">
+                    <p class="">
+                      <small><a href="">Total Knee Replacement</a></small>
+                    </p>
+                  </div>
+                  <div class="medium-2 columns">
+                    <p class="clr-success">
+                      <small>Completed</small>
+                    </p>
+                  </div>
+                  <div class="medium-2 columns">
+                    <p class="clr-success">
+                      <small></small>
+                    </p>
+                  </div>
+                  <div class="medium-3 columns">
+                    <p class="">
+                      <small>Presbyterian St. Luke's Medical Center</small>
+                    </p>
+                  </div>
+                  <div class="medium-2 columns">
+                    <p class="">
+                      <small>Jennifer K. Franksmith</small>
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="spoke-list-item row expanded align-middle"
+                 onclick="location.href='advocate-employee-profile-v2.html'">
+              <div class="medium-4 columns">
+                <div class="row collapse align-middle">
+                  <div class="columns">
+                    <p class="h6 mb-0">Keith Dumptle</p>
+                    <!-- <p class="subheader"><small>Advocate: Christine Lambert</small></p> -->
+                  </div>
+                </div>
+              </div>
+              <div class="medium-5 columns">
+                <p>Deam Health Corp.</p>
+              </div>
+              <div class="medium-3 columns">
+                <p>April 7, 2019 8:00AM</p>
+                <!-- <a href="#" class="button success hollow rounded tiny">Create Episode</a> -->
+              </div>
+              <div class="medium-12 columns mt-1">
+                <div class="row pt-0 pb-0 marginless expanded callout small bg-none spoke-list-heading">
+                  <div class="medium-3 columns">
+                    <p class="">
+                      <small>Episode Name</small>
+                    </p>
+                  </div>
+                  <div class="medium-2 columns">
+                    <p class="">
+                      <small>Status</small>
+                    </p>
+                  </div>
+                  <div class="medium-2 columns">
+                    <p class="">
+                      <small>Mile Stone</small>
+                    </p>
+                  </div>
+                  <div class="medium-3 columns">
+                    <p class="">
+                      <small>Selected Facility</small>
+                    </p>
+                  </div>
+                  <div class="medium-2 columns">
+                    <p class="">
+                      <small>Care Coordinator</small>
+                    </p>
+                  </div>
+                </div>
+
+
+                <div class="row expanded mb-0 callout small mt-1-less">
+                  <div class="medium-3 columns">
+                    <p class="">
+                      <small><a href="">Extended Bifrontal Craniotomy</a></small>
+                    </p>
+                  </div>
+                  <div class="medium-2 columns">
+                    <p class="clr-alert">
+                      <small>Canceled</small>
+                    </p>
+                  </div>
+                  <div class="medium-2 columns">
+                    <p class="">
+                      <small></small>
+                    </p>
+                  </div>
+                  <div class="medium-3 columns">
+                    <p class="">
+                      <small>St. Matthew Medical Center</small>
+                    </p>
+                  </div>
+                  <div class="medium-2 columns">
+                    <p class="">
+                      <small>Steven J. Doss</small>
+                    </p>
+                  </div>
+                </div>
+
+
+                <div class="row expanded mb-0 callout small mt-1-less">
+                  <div class="medium-3 columns">
+                    <p class="">
+                      <small><a href="">Total Knee Replacement</a></small>
+                    </p>
+                  </div>
+                  <div class="medium-2 columns">
+                    <p class="clr-alert">
+                      <small>Canceled</small>
+                    </p>
+                  </div>
+                  <div class="medium-2 columns">
+                    <p class="">
+                      <small></small>
+                    </p>
+                  </div>
+                  <div class="medium-3 columns">
+                    <p class="">
+                      <small>St. Matthew Medical Center</small>
+                    </p>
+                  </div>
+                  <div class="medium-2 columns">
+                    <p class="">
+                      <small>David O. Szuates</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <ul class="pagination text-center" role="navigation" aria-label="Pagination">
+            <li class="pagination-previous disabled">Previous</li>
+            <li class="current"><a href="#">1</a></li>
+            <li><a href="#" aria-label="Page 2">2</a></li>
+            <li><a href="#" aria-label="Page 3">3</a></li>
+            <li><a href="#" aria-label="Page 4">4</a></li>
+            <li class="ellipsis"></li>
+            <li><a href="#" aria-label="Page 12">12</a></li>
+            <li><a href="#" aria-label="Page 13">13</a></li>
+            <li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/what-input/what-input.js"></script>
+<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+
+<script src="js/app.js"></script>
+
+<script type="text/javascript">
+  $(function () {
+    var timer;
+
+    $(window).resize(function () {
+      clearTimeout(timer);
+      timer = setTimeout(function () {
+        $('.site-nav, .content').css("height", $(window).height());
+      }, 40);
+    }).resize();
+  });
+
+  $('.page-lead .button.secondary').click(function () {
+    $('.fa-angle-down, .fa-angle-up').toggleClass('fa-angle-down fa-angle-up');
+  });
+
+</script>
 
 </body>
 </html>
