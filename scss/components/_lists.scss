@@ -1588,7 +1588,6 @@ ul.vertical-list {
 
   &.bg-alternate-items {
     .spoke-list-item {
-      border-bottom: 0;
 
       &:nth-child(odd) {
         background: darken($primary-light, 3%);
