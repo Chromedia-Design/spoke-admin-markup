@@ -36,7 +36,7 @@
     .main-content {
       grid-area: 1/2/1/2;
       display: grid;
-      grid-template-rows: 72px auto;
+      grid-template-rows: auto auto;
       height: 100%;
       overflow: hidden;
 
@@ -171,16 +171,25 @@
       width: 25%;
     }
     .inner-content {
-      width: 80%;
+      width: 75%;
     }
   }
 
-  @include breakpoint(1300px down) {
+  @include breakpoint(970px down) {
     .inner-sidebar {
-      width: 25%;
+      width: 30%;
     }
     .inner-content {
-      width: 75%;
+      width: 70%;
+    }
+  }
+
+  @include breakpoint(830px down) {
+    .inner-sidebar {
+      width: 40%;
+    }
+    .inner-content {
+      width: 60%;
     }
   }
 }
