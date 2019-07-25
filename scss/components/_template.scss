@@ -36,7 +36,7 @@
     .main-content {
       grid-area: 1/2/1/2;
       display: grid;
-      grid-template-rows: auto auto;
+      grid-template-rows: auto 1fr;
       height: 100%;
       overflow: hidden;
 

@@ -1886,7 +1886,7 @@ ul.vertical-list {
     &.ul-tree-parent,
     &.ul-tree-sub-parent {
       display: list-item;
-      white-space: nowrap;
+      /*white-space: nowrap;*/
       text-overflow: ellipsis;
       cursor: pointer;
       border-left: 0;
