@@ -86,6 +86,12 @@
         .timeline-hidden-item-head {
           position: relative;
 
+          .mark-status {
+            position: absolute !important;
+            top: -23px !important;
+            right: 0 !important;
+          }
+
           &:before {
             content: "\f0f3";
             background-color: #ffffff;

@@ -53,7 +53,16 @@
       </div>
 
       <!-- MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT  -->
-      <div class="content main-content pb-0">
+
+      <iframe src="" frameborder="0" class="positioner">
+        
+      </iframe>
+
+      <small class="positioner">
+        
+      </small>
+
+      <div class="content main-content pb-0 scrollable">
 
         <div class="top-bar">
           <div class="top-bar-left">
@@ -282,7 +291,7 @@
 
 
                     <div class="row bg-note b-bottom-1">
-                      <div class="small warning-bg talk-bubble pt-0-25 pb-0-25">
+                      <div class="small warning-bg talk-bubble pt-0-5 pb-0-5">
                         <div class="talktext row collapse">
                           <div class="columns">
                             <span class="tiny">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora accusantium odio, perferendis nesciunt odit iure itaque maiores ex voluptate!</span>
@@ -290,14 +299,14 @@
                           <div class="columns shrink tiny"></div>
                             <p class="tiny mb-0">
                             <small>7/29/18</small>&nbsp;
-                            <button href="#" class="button link mb-0 pt-0-25 pb-0-25"><span><i class="fa fa-thumbtack tiny"></i>&nbsp</span></button>
+                            <button href="#" class="button link mb-0 pt-0-5 pb-0-5"><span><i class="fa fa-thumbtack tiny"></i>&nbsp</span></button>
                           </p>
                         </div>
                       </div>
                     </div>
 
                     <div class="row bg-note b-bottom-1">
-                      <div class="small warning-bg talk-bubble pt-0-25 pb-0-25">
+                      <div class="small warning-bg talk-bubble pt-0-5 pb-0-5">
                         <div class="talktext row collapse">
                           <div class="columns">
                             <span class="tiny">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis iusto officiis, repellat illum, eum unde similique perspiciatis mollitia?</span>
@@ -305,7 +314,7 @@
                           <div class="columns shrink tiny"></div>
                             <p class="tiny mb-0">
                             <small>7/29/18</small>&nbsp;
-                            <button href="#" class="button link mb-0 pt-0-25 pb-0-25"><span><i class="fa fa-thumbtack tiny"></i>&nbsp</span></button>
+                            <button href="#" class="button link mb-0 pt-0-5 pb-0-5"><span><i class="fa fa-thumbtack tiny"></i>&nbsp</span></button>
                           </p>
                         </div>
                       </div>
@@ -430,7 +439,7 @@
                         <span class="h5">Clinical Pathway</span>
                       </div>
                       <div class="shrink columns">
-                        <div class="button-align small mb-0 pull-right">
+                        <div class="button-align small mb-0 pull-right mr-1">
                           <button  class="button success hollow tiny" data-open="addEvent"><i class="fa fa-edit"></i>&nbsp; Add Event</a>
                         </div>
                       </div>
@@ -438,27 +447,25 @@
 
                     
 
-                    <div class="align-middle">
-                      
-                    </div>
-
-                    <div class="row box-shadow-sm border-radius-sm mb-2">
+                    <div class="row box-shadow-sm border-radius-sm mb-0-5">
                       <div class="columns pl-0 pr-0">
                         <div class="row collapse">
                           <div class="columns auto">
                             <div class="row collapse label-block">
                               <div class="auto columns end">
                                 <div class="label-group label-group-light">
-                                  <p>Facility</p>
-                                  <h6>Aurora Sinai Medical Center</h6>
+                                  <p>Specialist</p>
+                                  <h6>
+                                    <span class="">No facility selected.</span>
+                                  </h6>
                                 </div>
                               </div>
                               <div class="auto columns end">
                                 <div class="label-group label-group-light">
-                                  <p>Date of surgery</p>
-                                  <button data-open="eventDate">
-                                    <h6 class="clr-success">Jan 19, 2019 <small class="clr-success"><i class="fa fa-pencil-alt"></i></small></h6>
-                                  </button>
+                                  <p>Engagement Specialist</p>
+                                  <h6>
+                                    <span class="">Kornchi Pichulla</span>
+                                  </h6>
                                 </div>
                               </div>
                             </div>
@@ -469,24 +476,38 @@
                             <div class="row collapse label-block">
                               <div class="large-6 columns end">
                                 <div class="label-group label-group-light">
-                                  <p>Engagement Specialist</p>
-                                  <h6>
-                                    <!-- <i class="fa fa-circle clr-secondary-lighten tiny"></i> -->
-                                    <span class="clr-secondary"><strong>Julie Kloster</strong></span>
-                                  </h6>
+                                  <p>Date of surgery</p>
+                                  <h6 class="">Jan 19, 2019</h6>
+
+                                  <!-- <button data-open="eventDate">
+                                    <h6 class="clr-success">Jan 19, 2019 <small class="clr-success"><i class="fa fa-pencil-alt"></i></small></h6>
+                                  </button> -->
                                 </div>
                               </div>
                               <div class="large-6 columns end">
                                 <div class="label-group label-group-light">
                                   <p>Care Coordinator</p>
                                   <h6>
-                                    <!-- <i class="fa fa-circle clr-warning tiny"></i> -->
-                                    <span class="clr-warning"><strong>Chachi Gonzales</strong></span>
+                                    <span class="">Chachi Gonzales</span>
                                   </h6>
                                 </div>
                               </div>
                             </div>
                           </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row collapse mb-2">
+                      <div class="columns medium-12">
+                        <div class=" p05 text-center pad05">
+                          <p class="mb-0 pl-1 pr-1 clr-alert disp-inline">
+                            <i class="fa fa-exclamation-triangle"></i>
+                            <small>Attention! There are empty date on some Pathway Event</small>
+                          </p>
+                          <a class="button secondary hollow tiny mb-0 disp-inline" data-open="eventCalendar"> 
+                            <i class="fa fa-clipboard-list"></i>&nbsp; Event Date Setting
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -632,8 +653,8 @@
                             <div class="columns medium-4">
                               <div class="pb-0-5 pl-1 pr-1 borderless middle border-radius-sm hide-overflow">
                                 <p class="mb-0 clr-black20 small align-middle">
-                                  <button data-open="eventDate">
-                                    <span class="clr-black20 mr-0-5"><small>Jan 9, 2019</span> <i class="fa fa-pencil-alt clr-black20"></i></small>
+                                  <button data-open="">
+                                    <span class="clr-black20 mr-0-5"><small>Jan 9, 2019</span> <!-- <i class="fa fa-pencil-alt clr-black20"></i> --></small>
                                   </button>
                                 </p>
                               </div>
@@ -997,11 +1018,11 @@
 
                         <div class="toggler timeline-item">
                           <div class="row toggler-handler timeline-content">
-                            <div class="columns medium-4">
+                            <div class="columns medium-4"> READ OVER THE PHONE
                               <div class="pt-0-5 pb-0-5 pl-1 pr-1 borderless middle border-radius-sm hide-overflow">
                                 <p class="mb-0 clr-black20 small align-middle">
-                                  <button data-open="eventDate">
-                                    <small class="clr-black20">Jan 19, 2019  <i class="fa fa-pencil-alt clr-black20"></i></small>
+                                  <button data-open="">
+                                    <small class="clr-black20">Jan 19, 2019  <!-- <i class="fa fa-pencil-alt clr-black20"></i></small> -->
                                   </button>
                                 </p>
                               </div>
@@ -1392,7 +1413,7 @@
                                               </div>
                                             </div>
                                             <div class="row bg-note">
-                                              <div class="small warning-bg talk-bubble pt-0-25 pb-0-25 borderless">
+                                              <div class="small warning-bg talk-bubble pt-0-5 pb-0-5 borderless">
                                                 <div class="talktext row collapse">
                                                   <div class="columns">
                                                     <span class="tiny">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora accusantium odio, perferendis nesciunt odit iure itaque maiores ex voluptate!</span>
@@ -1400,7 +1421,7 @@
                                                   <div class="columns shrink tiny"></div>
                                                     <p class="tiny mb-0">
                                                     <small>3/25/19</small>&nbsp;
-                                                    <button href="#" class="button link mb-0 pt-0-25 pb-0-25"><span><i class="fa fa-thumbtack tiny"></i>&nbsp</span></button>
+                                                    <button href="#" class="button link mb-0 pt-0-5 pb-0-5"><span><i class="fa fa-thumbtack tiny"></i>&nbsp</span></button>
                                                   </p>
                                                 </div>
                                               </div>
@@ -1505,8 +1526,10 @@
                                   <div class="columns toggler">
                                     
                                     <div class="timeline-hidden-item-head item-message completed">
-                                        <span class="sub-item-title"><strong><small>Regarding your Diet</small></strong></span>
-                                        <button class="button tiny clear hollow success mb-0 pb-0-25 pt-0-25 pull-right">Read over the phone</button>
+                                        <span class="sub-item-title disp-block"><strong><small>Regarding your Diet</small></strong></span>
+                                        <div class="mark-status">
+                                          <button class="button tiny clear hollow success mb-0 pb-0-25 pt-0-25">Read over the phone</button>
+                                        </div>
                                     </div>
 
                                     <!-- Task Content -->
@@ -2157,7 +2180,7 @@
                                               </div>
                                             </div>
                                             <div class="row bg-note">
-                                              <div class="small warning-bg talk-bubble pt-0-25 pb-0-25 borderless">
+                                              <div class="small warning-bg talk-bubble pt-0-5 pb-0-5 borderless">
                                                 <div class="talktext row collapse">
                                                   <div class="columns">
                                                     <span class="tiny">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora accusantium odio, perferendis nesciunt odit iure itaque maiores ex voluptate!</span>
@@ -2165,7 +2188,7 @@
                                                   <div class="columns shrink tiny"></div>
                                                     <p class="tiny mb-0">
                                                     <small>3/25/19</small>&nbsp;
-                                                    <button href="#" class="button link mb-0 pt-0-25 pb-0-25"><span><i class="fa fa-thumbtack tiny"></i>&nbsp</span></button>
+                                                    <button href="#" class="button link mb-0 pt-0-5 pb-0-5"><span><i class="fa fa-thumbtack tiny"></i>&nbsp</span></button>
                                                   </p>
                                                 </div>
                                               </div>
@@ -2807,6 +2830,158 @@
       <!-- <div class="reveal-footer">
         <h1>Footer</h1>
       </div> -->
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <div class="reveal medium" id="eventCalendar" data-reveal>
+      <div class="reveal-heading">
+        <strong>Event Date Setting</strong>
+      </div>
+      <div class="reveal-body">
+        <div class="row bg-black10">
+          <div class="medium-8 columns">
+            <small class="subheader text-uppercase mb-0">
+              <strong>Event Title</strong>
+            </small>
+          </div>
+          <div class="medium-4 columns">
+            <small class="subheader text-uppercase mb-0">
+              <strong>Event Date</strong>
+            </small>
+          </div>
+        </div>
+        <!-- LIST START HERE -->
+
+        <div class="row bg-white b-all-1-darker mt-1-less pt-0-5 pb-0-5">
+          <div class="medium-8 columns">
+            <p class="subheader clr-secondary mb-0">
+              Pre-op Consultation
+            </p>
+          </div>
+          <div class="medium-4 columns">
+            <p class="subheader clr-primary mb-0">
+              <button data-open="">
+                <p class="clr-success mb-0">Jan 19, 2019 
+                  <small class="clr-success"><i class="fa fa-pencil-alt"></i></small>
+                </p>
+              </button>
+            </p>
+          </div>
+        </div>
+
+        <div class="row bg-white b-all-1-darker mt-1-less pt-0-5 pb-0-5">
+          <div class="medium-8 columns">
+            <p class="subheader clr-secondary mb-0">
+              Pre-op Infection Avoidance
+            </p>
+          </div>
+          <div class="medium-4 columns">
+            <p class="subheader clr-primary mb-0">
+              <button data-open="">
+                <p class="clr-success mb-0">Set a Date <small class="clr-success"><i class="fa fa-pencil-alt"></i></small></p>
+              </button>
+            </p>
+          </div>
+        </div>
+
+        <div class="row bg-white b-all-1-darker mt-1-less pt-0-5 pb-0-5">
+          <div class="medium-8 columns">
+            <p class="subheader clr-secondary mb-0">
+              Pre-op Antibiotics
+            </p>
+          </div>
+          <div class="medium-4 columns">
+            <p class="subheader clr-primary mb-0">
+              <button data-open="">
+                <p class="clr-success mb-0">Set a Date <small class="clr-success"><i class="fa fa-pencil-alt"></i></small></p>
+              </button>
+            </p>
+          </div>
+        </div>
+
+        <div class="row bg-white b-all-1-darker mt-1-less pt-0-5 pb-0-5">
+          <div class="medium-8 columns">
+            <p class="subheader clr-secondary mb-0">
+              Pre-op Evaluation and clearance
+            </p>
+          </div>
+          <div class="medium-4 columns">
+            <p class="subheader clr-primary mb-0">
+              <button data-open="">
+                <p class="clr-success mb-0">Set a Date <small class="clr-success"><i class="fa fa-pencil-alt"></i></small></p>
+              </button>
+            </p>
+          </div>
+        </div>
+
+        <div class="row bg-white b-all-1-darker mt-1-less pt-0-5 pb-0-5">
+          <div class="medium-8 columns">
+            <p class="subheader clr-secondary mb-0">
+              Pre-hab check in (one week before surgery)
+            </p>
+          </div>
+          <div class="medium-4 columns">
+            <p class="subheader clr-primary mb-0">
+              <button data-open="">
+                <p class="clr-success mb-0">Set a Date <small class="clr-success"><i class="fa fa-pencil-alt"></i></small></p>
+              </button>
+            </p>
+          </div>
+        </div>
+
+        <div class="row bg-white b-all-1-darker mt-1-less pt-0-5 pb-0-5">
+          <div class="medium-8 columns">
+            <p class="subheader clr-secondary mb-0">
+              Surgery
+            </p>
+          </div>
+          <div class="medium-4 columns">
+            <p class="subheader clr-primary mb-0">
+              <button data-open="">
+                <p class="clr-success mb-0">Set a Date <small class="clr-success"><i class="fa fa-pencil-alt"></i></small></p>
+              </button>
+            </p>
+          </div>
+        </div>
+
+        <div class="row bg-white b-all-1-darker mt-1-less pt-0-5 pb-0-5">
+          <div class="medium-8 columns">
+            <p class="subheader clr-secondary mb-0">
+              Pain Survey
+            </p>
+          </div>
+          <div class="medium-4 columns">
+            <p class="subheader clr-primary mb-0">
+              <button data-open="">
+                <p class="clr-success mb-0">Set a Date <small class="clr-success"><i class="fa fa-pencil-alt"></i></small></p>
+              </button>
+            </p>
+          </div>
+        </div>
+
+        <div class="row bg-white b-all-1-darker mt-1-less pt-0-5 pb-0-5">
+          <div class="medium-8 columns">
+            <p class="subheader clr-secondary mb-0">
+              Post-Op visit scheduled
+            </p>
+          </div>
+          <div class="medium-4 columns">
+            <p class="subheader clr-primary mb-0">
+              <button data-open="">
+                <p class="clr-success mb-0">Set a Date <small class="clr-success"><i class="fa fa-pencil-alt"></i></small></p>
+              </button>
+            </p>
+          </div>
+        </div>
+        <!-- LIST END HERE -->
+      </div>
+      <div class="reveal-footer text-center">
+        <a href="" class="button success">Save Changes</a>
+        <a href="" class="button hollow">Cancel</a>
+      </div>
+
       <button class="close-button" data-close aria-label="Close modal" type="button">
         <span aria-hidden="true">&times;</span>
       </button>
