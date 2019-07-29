@@ -81,18 +81,37 @@
       }
 
       .timeline-hidden-item {
-        &:before {
-          position: absolute;
-          content: " ";
-          background-color: red;
-          width: 2px !important;
-          height: 100% !important;
-        }
-        &:after {
-          content: "";
-        }
-
         padding-left: 1.5rem !important;
+        
+        .row {
+          position: relative;
+        }
+        .nested-parent {
+          &:before {
+            position: absolute;
+            content: " ";
+            width: 2.8rem !important;
+            height: 2px;
+            top: -0.2em;
+            left: -1.6rem;
+            background: $color-done;
+          }
+
+
+          &.completed {
+            &:before {
+              color: $color-done !important;
+              background: $color-done !important;
+            }
+          }
+
+          &.on-going {
+            &:before {
+              color: $color-ongoing !important;
+              background: $color-ongoing !important;
+            }
+          }
+        }
 
         .timeline-hidden-item-head {
           position: relative;
@@ -195,6 +214,14 @@
               background-color: $secondary-color;
             }
           }
+
+          &.nested {
+            &:before {
+              left: -1em;
+              top: -1em;
+            }
+          }
+
         }
 
       }
