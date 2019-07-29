@@ -81,6 +81,17 @@
       }
 
       .timeline-hidden-item {
+        &:before {
+          position: absolute;
+          content: " ";
+          background-color: red;
+          width: 2px !important;
+          height: 100% !important;
+        }
+        &:after {
+          content: "";
+        }
+
         padding-left: 1.5rem !important;
 
         .timeline-hidden-item-head {
