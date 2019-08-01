@@ -5,7 +5,7 @@
   height: 100vh !important;
   max-height: 100vh !important;
 
-  grid-template-rows: auto 1rf;
+  grid-template-rows: auto 1fr;
 
   .full-page-header {
     margin: 0 !important;
@@ -297,7 +297,6 @@
         display: inline-block;
         position: relative;
         color: $text-black;
-        padding: 0;
         font-size: 12px;
         border-radius: 10px;
         padding: 0 8px;
@@ -488,7 +487,7 @@
 
   .column,
   .columns {
-    flex: 1 1 0px;
+    flex: 1 1 0;
   }
 }
 
