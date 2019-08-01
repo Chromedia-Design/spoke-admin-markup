@@ -453,6 +453,10 @@ $color-ongoing: #ecaf00;
     border-color: $alert-color !important;
   }
 
+  &.border-color-white {
+    border-color: $white !important;
+  }
+
   &.border-color-light {
     border-color: darken(#fff, 6%);
   }
