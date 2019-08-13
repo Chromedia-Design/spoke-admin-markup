@@ -1,365 +1,366 @@
 .timeline {
 
-  $color-done: $success-color;
-  $color-ongoing: #ecaf00;
-  $color-waiting: darken(#fff, 20%);
+	$color-done: $success-color;
+	$color-ongoing: #ecaf00;
+	$color-waiting: darken(#fff, 20%);
 
-  $line-size: 2px;
-  $line-pos-x: 19px;
+	$line-size: 2px;
+	$line-pos-x: 19px;
 
-  .timeline-item {
-    position: relative;
-    border-bottom: solid 0.06rem #f6f6f6 !important;
+	.timeline-item {
+		position: relative;
+		border-bottom: solid 0.06rem #f6f6f6 !important;
 
-    &:before, &:after {
-      content: " ";
-      background-color: $color-done;
+		&:before, &:after {
+			content: " ";
+			background-color: $color-done;
 
-      position: absolute;
-      left: $line-pos-x;
+			position: absolute;
+			left: $line-pos-x;
 
-      width: $line-size;
+			width: $line-size;
 
-      z-index: 1;
-    }
+			z-index: 1;
+		}
 
-    &:before {
-      top: 0px;
-      height: 13px;
-    }
+		&:before {
+			top: 0px;
+			height: 13px;
+		}
 
-    &:after {
-      top: 34px;
-      height: 100%;
-    }
+		&:after {
+			top: 34px;
+			height: 100%;
+		}
 
-    &:first-child {
-      &:before {
-        content: none;
-      }
-    }
+		&:first-child {
+			&:before {
+				content: none;
+			}
+		}
 
-    .timeline-content {
-      padding-left: 2rem;
-      position: relative;
+		.timeline-content {
+			padding-left: 2rem;
+			position: relative;
 
-      &:before {
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        font-size: 1.15rem;
-        content: "\f00c";
-        color: #fff;
-        background-color: $color-done;
-        border-radius: 50%;
-        padding: .1rem .35rem;
-        top: 5px;
-        left: 5px;
-        position: absolute;
+			&:before {
+				font-family: "Font Awesome 5 Free";
+				font-weight: 900;
+				font-size: 1.15rem;
+				content: "\f00c";
+				color: #fff;
+				background-color: $color-done;
+				border-radius: 50%;
+				padding: .1rem .35rem;
+				top: 5px;
+				left: 5px;
+				position: absolute;
 
-        z-index: 5;
-      }
-    }
+				z-index: 5;
+			}
+		}
 
-    .timeline-hidden-content {
-      & > div {
-        padding-left: 0px;
-        margin-left: $line-pos-x;
-        border-left: $line-size solid $color-done;
-        position: relative;
+		.timeline-hidden-content {
+			& > div {
+				padding-left: 0px;
+				margin-left: $line-pos-x;
+				border-left: $line-size solid $color-done;
+				position: relative;
 
-        &:after {
-          content: "";
-          background-color: $color-done;
+				&:after {
+					content: "";
+					background-color: $color-done;
 
-          position: absolute;
-          bottom: -3px;
-          left: $line-pos-x - $line-pos-x - 2px;
+					position: absolute;
+					bottom: -3px;
+					left: $line-pos-x - $line-pos-x - 2px;
 
-          width: $line-size;
-          height: 10px;
-        }
-      }
+					width: $line-size;
+					height: 10px;
+				}
+			}
 
-      .timeline-hidden-item {
-        padding-left: 1.5rem !important;
-        
-        .row {
-          position: relative;
-        }
-        .nested-parent {
-          &:before {
-            position: absolute;
-            content: " ";
-            width: 2.8rem !important;
-            height: 2px;
-            top: -0.2em;
-            left: -1.6rem;
-            background: $color-done;
-          }
+			.timeline-hidden-item {
+				padding-left: 1.5rem !important;
+				.row {
+					position: relative;
+				}
+				.nested-parent {
+					margin-bottom: 2em;
+
+					&:before {
+						position: absolute;
+						content: " ";
+						width: 2.8rem !important;
+						height: 2px;
+						top: -0.2em;
+						left: -1.6rem;
+						background: $color-done;
+					}
 
 
-          &.completed {
-            &:before {
-              color: $color-done !important;
-              background: $color-done !important;
-            }
-          }
+					&.completed {
+						&:before {
+							color: $color-done !important;
+							background: $color-done !important;
+						}
+					}
 
-          &.on-going {
-            &:before {
-              color: $color-ongoing !important;
-              background: $color-ongoing !important;
-            }
-          }
-        }
+					&.on-going {
+						&:before {
+							color: $color-ongoing !important;
+							background: $color-ongoing !important;
+						}
+					}
+				}
 
-        .timeline-hidden-item-head {
-          position: relative;
+				.timeline-hidden-item-head {
+					position: relative;
 
-          .mark-status {
-            position: absolute !important;
-            top: -23px !important;
-            right: 0 !important;
-          }
+					.mark-status {
+						position: absolute !important;
+						top: -23px !important;
+						right: 0 !important;
+					}
 
-          &:before {
-            content: "\f0f3";
-            background-color: #ffffff;
-            border-radius: 5rem;
-            overflow: hidden;
-            position: absolute;
-            left: -3.4rem;
-            top: 0rem;
-            width: 27px;
-            height: 27px;
-            font-family: "Font Awesome 5 Free";
-            padding-left: .3rem;
-            border: 2px solid $color-done;
-            color: $color-done;
-            z-index: 2;
-          }
+					&:before {
+						content: "\f0f3";
+						background-color: #ffffff;
+						border-radius: 5rem;
+						overflow: hidden;
+						position: absolute;
+						left: -3.4rem;
+						top: 0rem;
+						width: 27px;
+						height: 27px;
+						font-family: "Font Awesome 5 Free";
+						padding-left: .3rem;
+						border: 2px solid $color-done;
+						color: $color-done;
+						z-index: 2;
+					}
 
-          &:after {
-            background-color: $color-done;
+					&:after {
+						background-color: $color-done;
 
-            position: absolute;
-            left: -1.7rem;
-            top: .8rem;
+						position: absolute;
+						left: -1.7rem;
+						top: .8rem;
 
-            width: 1rem;
-            height: $line-size;
-          }
+						width: 1rem;
+						height: $line-size;
+					}
 
-          &.completed {
-            &:before {
-              color: $color-done !important;
-              border-color: $color-done !important;
-            }
-          }
+					&.completed {
+						&:before {
+							color: $color-done !important;
+							border-color: $color-done !important;
+						}
+					}
 
-          .sub-item-title {
-            padding: .25rem .5rem;
-            @extend .bg-cloud;
-            color: $primary-color;
-          }
+					.sub-item-title {
+						padding: .25rem .5rem;
+						@extend .bg-cloud;
+						color: $primary-color;
+					}
 
-          &.item-tasks {
-            &:before {
-              content: "\f0ae" !important;
-              font-size: .85rem !important;
-              padding-top: .1rem !important;
-            }
-          }
+					&.item-tasks {
+						&:before {
+							content: "\f0ae" !important;
+							font-size: .85rem !important;
+							padding-top: .1rem !important;
+						}
+					}
 
-          &.item-message {
-            &:before {
-              content: "\f075" !important;
-              padding-left: .27rem !important;
-            }
-          }
+					&.item-message {
+						&:before {
+							content: "\f075" !important;
+							padding-left: .27rem !important;
+						}
+					}
 
-          &.item-email {
-            &:before {
-              content: "\f0e0" !important;
-              padding-left: .27rem !important;
-              font-size: .9rem !important;
-            }
-          }
+					&.item-email {
+						&:before {
+							content: "\f0e0" !important;
+							padding-left: .27rem !important;
+							font-size: .9rem !important;
+						}
+					}
 
-          &.item-todo {
-            &:before {
-              content: "\f0ae" !important;
-              font-size: .85rem !important;
-              padding-top: .1rem !important;
-            }
-          }
+					&.item-todo {
+						&:before {
+							content: "\f0ae" !important;
+							font-size: .85rem !important;
+							padding-top: .1rem !important;
+						}
+					}
 
-          &.item-question {
-            &:before {
-              content: "\f46d" !important;
-              padding-left: .36rem !important;
-              font-size: .95rem !important;
-            }
-          }
+					&.item-question {
+						&:before {
+							content: "\f46d" !important;
+							padding-left: .36rem !important;
+							font-size: .95rem !important;
+						}
+					}
 
-          &.item-reminder {
-            &:before {
-              content: "\f0f3" !important;
-              color: #fff;
-              border-color: $secondary-color;
-              background-color: $secondary-color;
-            }
+					&.item-reminder {
+						&:before {
+							content: "\f0f3" !important;
+							color: #fff;
+							border-color: $secondary-color;
+							background-color: $secondary-color;
+						}
 
-            &:after {
-              background-color: $secondary-color;
-            }
-          }
+						&:after {
+							background-color: $secondary-color;
+						}
+					}
 
-          &.nested {
-            &:before {
-              left: -1em;
-              top: -1em;
-            }
-          }
+					&.nested {
+						&:before {
+							left: -1em;
+							top: -1em;
+						}
+					}
 
-        }
+				}
 
-      }
-    }
+			}
+		}
 
-    &.timeline-ongoing {
-      &:before {
-        background-color: $color-ongoing;
-      }
+		&.timeline-ongoing {
+			&:before {
+				background-color: $color-ongoing;
+			}
 
-      &:after {
-        background-color: $color-ongoing;
-      }
+			&:after {
+				background-color: $color-ongoing;
+			}
 
-      .timeline-content {
-        &:before {
-          color: #fff;
-          background-color: $color-ongoing;
-        }
-      }
+			.timeline-content {
+				&:before {
+					color: #fff;
+					background-color: $color-ongoing;
+				}
+			}
 
-      .timeline-hidden-content {
-        & > div {
-          border-left: $line-size solid $color-ongoing;
+			.timeline-hidden-content {
+				& > div {
+					border-left: $line-size solid $color-ongoing;
 
-          &:after {
-            background-color: $color-ongoing;
-          }
-        }
+					&:after {
+						background-color: $color-ongoing;
+					}
+				}
 
-        .timeline-hidden-item {
-          .timeline-hidden-item-head {
-            &:before {
-              border: $line-size solid $color-ongoing;
-              color: $color-ongoing;
-            }
+				.timeline-hidden-item {
+					.timeline-hidden-item-head {
+						&:before {
+							border: $line-size solid $color-ongoing;
+							color: $color-ongoing;
+						}
 
-            &:after {
-              background-color: $color-ongoing;
-            }
+						&:after {
+							background-color: $color-ongoing;
+						}
 
-          }
-        }
-      }
-    }
+					}
+				}
+			}
+		}
 
-    &.timeline-waiting {
-      &:before, &:after {
-        background-color: darken(#fff, 20%);
-      }
+		&.timeline-waiting {
+			&:before, &:after {
+				background-color: darken(#fff, 20%);
+			}
 
-      .timeline-content {
-        &:before {
-          color: #fff;
-          background-color: darken(#fff, 20%) !important;
-        }
-      }
+			.timeline-content {
+				&:before {
+					color: #fff;
+					background-color: darken(#fff, 20%) !important;
+				}
+			}
 
-      .timeline-hidden-content {
-        & > div {
-          border-left: $line-size solid darken(#fff, 20%);
+			.timeline-hidden-content {
+				& > div {
+					border-left: $line-size solid darken(#fff, 20%);
 
-          &:after {
-            background-color: darken(#fff, 20%);
-          }
-        }
+					&:after {
+						background-color: darken(#fff, 20%);
+					}
+				}
 
-        .timeline-hidden-item {
-          .timeline-hidden-item-head {
-            &:before {
-              border: $line-size solid darken(#fff, 20%);
-              color: darken(#fff, 20%);
-            }
+				.timeline-hidden-item {
+					.timeline-hidden-item-head {
+						&:before {
+							border: $line-size solid darken(#fff, 20%);
+							color: darken(#fff, 20%);
+						}
 
-            &:after {
-              background-color: darken(#fff, 20%);
-            }
-          }
-        }
-      }
-    }
+						&:after {
+							background-color: darken(#fff, 20%);
+						}
+					}
+				}
+			}
+		}
 
-    &:last-child {
-      .timeline-hidden-content {
-        & > div {
-          &:before {
-            content: " ";
-            background-color: $color-done;
+		&:last-child {
+			.timeline-hidden-content {
+				& > div {
+					&:before {
+						content: " ";
+						background-color: $color-done;
 
-            position: absolute;
-            left: 0;
-            top: 0;
+						position: absolute;
+						left: 0;
+						top: 0;
 
-            width: $line-size;
-            height: 30px;
-          }
-        }
-      }
+						width: $line-size;
+						height: 30px;
+					}
+				}
+			}
 
-      &.timeline-ongoing {
+			&.timeline-ongoing {
 
-        .timeline-hidden-content {
-          & > div {
-            &:before {
-              background-color: $color-ongoing;
-            }
-          }
-        }
-      }
+				.timeline-hidden-content {
+					& > div {
+						&:before {
+							background-color: $color-ongoing;
+						}
+					}
+				}
+			}
 
-      &.timeline-waiting {
+			&.timeline-waiting {
 
-        .timeline-hidden-content {
-          & > div {
-            &:before {
-              background-color: darken(#fff, 20%);
-              content: none !important;
-            }
-          }
-        }
-      }
+				.timeline-hidden-content {
+					& > div {
+						&:before {
+							background-color: darken(#fff, 20%);
+							content: none !important;
+						}
+					}
+				}
+			}
 
-      &:after {
-        height: 50%;
-        // this height should be dynamic;
-      }
-    }
+			&:after {
+				height: 50%;
+				// this height should be dynamic;
+			}
+		}
 
-  }
+	}
 }
 
 // Widget Override
 .flat-picker {
-  .flatpickr-input {
-    margin-bottom: 0;
-    font-size: .875rem;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-  }
+	.flatpickr-input {
+		margin-bottom: 0;
+		font-size: .875rem;
+		border-top: none;
+		border-right: none;
+		border-left: none;
+	}
 }
