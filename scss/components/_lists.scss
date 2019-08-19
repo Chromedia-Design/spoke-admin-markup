@@ -1649,6 +1649,10 @@ ul.vertical-list {
     &:hover {
       background: $white;
     }
+
+    &:last-child {
+      margin-bottom: 2em;
+    }
   }
 
   .spoke-list-sub-item {

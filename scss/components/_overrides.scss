@@ -38,11 +38,11 @@ body {
 }
 
 // IMPORTANT: Reposition Jira Button
-#jsd-widget {
+/*#jsd-widget {
   //Jira Widget button
-  right: 5rem !important;
-  bottom: .15rem !important;
-}
+  //right: 5rem !important;
+  //bottom: .15rem !important;
+}*/
 
 .chat-support, .chat-area {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.21);
@@ -317,6 +317,43 @@ ul.input-list.widget-choices li:last-child {
 	.switch label {
 		margin-bottom: -5px !important;
 	}
+}
+
+
+
+//------- REACT SELECT OVERRIDES --------//
+.Select-multi-value-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 152px;
+  
+  .Select-value {
+    span {
+      &.Select-value-label {
+        // max-width: 50px !important;
+        // overflow: hidden !important;
+        // text-overflow: ellipsis !important;
+        // white-space: nowrap !important;
+      }
+    }
+  }
+}
+
+
+#jsd-widget {
+  .form.help-form.aui.top-label {
+    height: unset !important;
+  }
+}
+
+
+
+@media only screen and (min-height: 320px) {
+  #jsd-widget {
+    .form.help-form.aui.top-label {
+      height: unset !important;
+    }
+  }
 }
 
 
