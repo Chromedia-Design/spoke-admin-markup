@@ -28,10 +28,10 @@
 			height: 13px;
 		}
 
-		&:after {
-			top: 34px;
-			height: 100%;
-		}
+    &:after {
+      top: 34px;
+      height: 100%;
+    }
 
 		&:first-child {
 			&:before {
@@ -106,7 +106,7 @@
 						}
 					}
 
-					&.on-going {
+					&.ongoing {
 						&:before {
 							color: $color-ongoing !important;
 							background: $color-ongoing !important;
@@ -228,41 +228,41 @@
 			}
 		}
 
-		&.timeline-ongoing {
-			&:before {
-				background-color: $color-ongoing;
-			}
+    &.timeline-ongoing {
+      &:before {
+        background-color: $color-ongoing;
+      }
 
-			&:after {
-				background-color: $color-ongoing;
-			}
+      &:after {
+        background-color: $color-ongoing;
+      }
 
-			.timeline-content {
-				&:before {
-					color: #fff;
-					background-color: $color-ongoing;
-				}
-			}
+      .timeline-content {
+        &:before {
+          color: #fff;
+          background-color: $color-ongoing;
+        }
+      }
 
-			.timeline-hidden-content {
-				& > div {
-					border-left: $line-size solid $color-ongoing;
+      .timeline-hidden-content {
+        & > div {
+          border-left: $line-size solid $color-ongoing;
 
-					&:after {
-						background-color: $color-ongoing;
-					}
-				}
+          &:after {
+            background-color: $color-ongoing;
+          }
+        }
 
-				.timeline-hidden-item {
-					.timeline-hidden-item-head {
-						&:before {
-							border: $line-size solid $color-ongoing;
-							color: $color-ongoing;
-						}
+        .timeline-hidden-item {
+          .timeline-hidden-item-head {
+            &:before {
+              border: $line-size solid $color-ongoing;
+              color: $color-ongoing;
+            }
 
-						&:after {
-							background-color: $color-ongoing;
-						}
+            &:after {
+              background-color: $color-ongoing;
+            }
 
 					}
 				}
