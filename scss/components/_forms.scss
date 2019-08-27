@@ -118,6 +118,20 @@ form {
 
 fieldset {
   margin-bottom: 1rem;
+  .fancy-checkbox {
+    label {
+      margin-left: 5px !important;
+    }
+  }
+  ul {
+    margin-bottom: -3px !important;
+    li {
+      padding-left: 0px !important;
+      &:last-child {
+        padding-right: 0px !important;
+      }
+    }
+  }
 }
 
 .checkbox-wrapper {
@@ -959,10 +973,17 @@ input {
   }
 
   label {
-    width: 33%;
+    // width: 33%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+
+  fieldset {
+    border: 1px solid rgba(10,16,35,0.06125);
+    background-color: #FBFBFB;
+    padding: 10px;
+    margin: 0 auto;
   }
 }
 

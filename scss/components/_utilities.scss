@@ -27,7 +27,7 @@ $color-ongoing: #ecaf00;
 .inline-child * { display: inline; }
 .inline-block { display: inline-block; }
 .disp-block { display: block !important; }
-.disp-inline { display: inline; }
+.disp-inline { display: inline !important; }
 .disp-inline-block { display: inline-block; }
 .hidden { display: none;}
 .hidden-o { opacity: 0;}

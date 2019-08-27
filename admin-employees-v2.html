@@ -1,923 +1,966 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spoke Admin Portal</title>
-  <link rel="stylesheet" href="css/app.css">
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spoke Admin Portal</title>
+	<link rel="stylesheet" href="css/app.css">
 </head>
 <body>
 
 <div id="master-container" class="sidebar-body">
 
-  <div class="site-nav sidebar">
-    <header>
-      <a href="/admin/" class="logo text-center">
-        <img src="https://s3.amazonaws.com/assets.spokehealth.com/static/spoke-logo-300x60.png" alt="Spoke Health">
-      </a>
-    </header>
+	<div class="site-nav sidebar">
+		<header>
+			<a href="/admin/" class="logo text-center">
+				<img src="https://s3.amazonaws.com/assets.spokehealth.com/static/spoke-logo-300x60.png" alt="Spoke Health">
+			</a>
+		</header>
 
-    <ul class="menu vertical" data-accordion-menu="edx32b-accordion-menu" role="menu" aria-multiselectable="true">
-      <li id="sideNavDashboard" class="" role="menuitem">
-        <a href="/admin/" tabindex="0">My Dashboard</a>
-      </li>
+		<ul class="menu vertical" data-accordion-menu="edx32b-accordion-menu" role="menu" aria-multiselectable="true">
+			<li id="sideNavDashboard" class="" role="menuitem">
+				<a href="/admin/" tabindex="0">My Dashboard</a>
+			</li>
 
-      <li id="sideNavEmployees" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
-          aria-expanded="false" aria-label="Members" aria-controls="3te1pf-acc-menu">
-        <a href="#">Members</a>
-        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
-            aria-labelledby="sideNavEmployees" id="3te1pf-acc-menu" style="display: none;">
-          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
-            <a id="allEmployees" href="/admin/employees">All Members</a>
-          </li>
-        </ul>
-      </li>
-      <li id="sideNavMedProcedures" role="menuitem">
-        <a href="/admin/medical-procedures/" class="">Medical Procedures</a>
+			<li id="sideNavEmployees" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
+					aria-expanded="false" aria-label="Members" aria-controls="3te1pf-acc-menu">
+				<a href="#">Members</a>
+				<ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
+						aria-labelledby="sideNavEmployees" id="3te1pf-acc-menu" style="display: none;">
+					<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+						<a id="allEmployees" href="/admin/employees">All Members</a>
+					</li>
+				</ul>
+			</li>
+			<li id="sideNavMedProcedures" role="menuitem">
+				<a href="/admin/medical-procedures/" class="">Medical Procedures</a>
 
-      </li>
-      <li id="sideNavCompanies" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
-          aria-expanded="false" aria-label="Companies" aria-controls="iulued-acc-menu">
-        <a href="#">Companies</a>
-        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
-            aria-labelledby="sideNavCompanies" id="iulued-acc-menu" style="display: none;">
-          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
-            <a href="/admin/clients">All Companies</a>
-          </li>
-        </ul>
-      </li>
-      <li id="sideNavFacilities" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
-          aria-expanded="false" aria-label="Facilities" aria-controls="2fhgsf-acc-menu">
-        <a href="#">Facilities</a>
-        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
-            aria-labelledby="sideNavFacilities" id="2fhgsf-acc-menu" style="display: none;">
-          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
-            <a href="/admin/facilities">All Facilities</a>
-          </li>
-          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
-            <a href="/admin/facility-services">Ancillary Services</a>
-          </li>
-          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
-            <a href="/admin/awards">Awards</a>
-          </li>
-        </ul>
-      </li>
-      <li id="sideNavDoctors" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
-          aria-expanded="false" aria-label="Doctors" aria-controls="2xkwmt-acc-menu">
-        <a href="#">Doctors</a>
-        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
-            aria-labelledby="sideNavDoctors" id="2xkwmt-acc-menu" style="display: none;">
-          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
-            <a href="/admin/doctors">All Doctors</a>
-          </li>
-        </ul>
-      </li>
-      <li id="sideNavContent" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
-          aria-expanded="false" aria-label="Content" aria-controls="lrjcue-acc-menu">
-        <a href="#">Content</a>
-        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
-            aria-labelledby="sideNavContent" id="lrjcue-acc-menu" style="display: none;">
-          <li role="menuitem" class="is-accordion-submenu-parent is-submenu-item is-accordion-submenu-item"
-              aria-haspopup="true" aria-expanded="false" aria-label="Geo Data" aria-controls="oau1zl-acc-menu"
-              id="4lvc70-acc-menu-link">
-            <a href="#">Geo Data</a>
-            <ul class="geo-nav nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true"
-                role="menu" aria-labelledby="4lvc70-acc-menu-link" id="oau1zl-acc-menu" style="display: none;">
-              <li class="regions is-submenu-item is-accordion-submenu-item" role="menuitem">
-                <a href="/admin/regions">World Regions</a>
-              </li>
+			</li>
+			<li id="sideNavCompanies" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
+					aria-expanded="false" aria-label="Companies" aria-controls="iulued-acc-menu">
+				<a href="#">Companies</a>
+				<ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
+						aria-labelledby="sideNavCompanies" id="iulued-acc-menu" style="display: none;">
+					<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+						<a href="/admin/clients">All Companies</a>
+					</li>
+				</ul>
+			</li>
+			<li id="sideNavFacilities" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
+					aria-expanded="false" aria-label="Facilities" aria-controls="2fhgsf-acc-menu">
+				<a href="#">Facilities</a>
+				<ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
+						aria-labelledby="sideNavFacilities" id="2fhgsf-acc-menu" style="display: none;">
+					<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+						<a href="/admin/facilities">All Facilities</a>
+					</li>
+					<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+						<a href="/admin/facility-services">Ancillary Services</a>
+					</li>
+					<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+						<a href="/admin/awards">Awards</a>
+					</li>
+				</ul>
+			</li>
+			<li id="sideNavDoctors" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
+					aria-expanded="false" aria-label="Doctors" aria-controls="2xkwmt-acc-menu">
+				<a href="#">Doctors</a>
+				<ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
+						aria-labelledby="sideNavDoctors" id="2xkwmt-acc-menu" style="display: none;">
+					<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+						<a href="/admin/doctors">All Doctors</a>
+					</li>
+				</ul>
+			</li>
+			<li id="sideNavContent" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
+					aria-expanded="false" aria-label="Content" aria-controls="lrjcue-acc-menu">
+				<a href="#">Content</a>
+				<ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
+						aria-labelledby="sideNavContent" id="lrjcue-acc-menu" style="display: none;">
+					<li role="menuitem" class="is-accordion-submenu-parent is-submenu-item is-accordion-submenu-item"
+							aria-haspopup="true" aria-expanded="false" aria-label="Geo Data" aria-controls="oau1zl-acc-menu"
+							id="4lvc70-acc-menu-link">
+						<a href="#">Geo Data</a>
+						<ul class="geo-nav nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true"
+								role="menu" aria-labelledby="4lvc70-acc-menu-link" id="oau1zl-acc-menu" style="display: none;">
+							<li class="regions is-submenu-item is-accordion-submenu-item" role="menuitem">
+								<a href="/admin/regions">World Regions</a>
+							</li>
 
-              <li class="countries is-submenu-item is-accordion-submenu-item" role="menuitem">
-                <a href="/admin/countries">Countries</a>
-              </li>
+							<li class="countries is-submenu-item is-accordion-submenu-item" role="menuitem">
+								<a href="/admin/countries">Countries</a>
+							</li>
 
-              <li class="us-states is-submenu-item is-accordion-submenu-item" role="menuitem">
-                <a href="/admin/states">US States</a>
-              </li>
-            </ul>
-          </li>
-          <li role="menuitem" class="is-accordion-submenu-parent is-submenu-item is-accordion-submenu-item"
-              aria-haspopup="true" aria-expanded="false" aria-label="Migrations" aria-controls="2x61zh-acc-menu"
-              id="y09efp-acc-menu-link">
-            <a href="#">Migrations</a>
-            <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true"
-                role="menu" aria-labelledby="y09efp-acc-menu-link" id="2x61zh-acc-menu" style="display: none;">
-              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
-                <a href="/admin/migrations">Dashboard</a>
-              </li>
-              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
-                <a class="" href="/admin/migration_lists/specializations">
-                  Specializations
-                </a>
-              </li>
-              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
-                <a class="" href="/admin/migration_lists/subspecializations">
-                  Subspecializations
-                </a>
-              </li>
-              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
-                <a class="" href="/admin/migration_lists/treatments">
-                  Treatments
-                </a>
-              </li>
-              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
-                <a class="" href="/admin/migration_lists/awarding_bodies">
-                  Awarding Bodies
-                </a>
-              </li>
-              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
-                <a class="" href="/admin/migration_lists/awards">
-                  Awards
-                </a>
-              </li>
-              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
-                <a class="" href="/admin/migration_lists/countries">
-                  Countries
-                </a>
-              </li>
-              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
-                <a class="" href="/admin/migration_lists/facility_services">
-                  Facility Services
-                </a>
-              </li>
-              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
-                <a class="" href="/admin/migration_lists/facilities">
-                  Facilities
-                </a>
-              </li>
-              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
-                <a class="" href="/admin/migration_lists/doctors">
-                  Doctors
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
-            <a href="/admin/questions/">Questions</a>
-          </li>
-          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
-            <a href="/admin/questionnaires/">Questionnaires</a>
-          </li>
-          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
-            <a href="/admin/forms/master-company-psq">Master Company HRA</a>
-          </li>
-        </ul>
-      </li>
-      <li id="sideNavUserAccounts" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
-          aria-expanded="false" aria-label="User Accounts" aria-controls="fs3oxf-acc-menu">
-        <a href="#">User Accounts</a>
-        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
-            aria-labelledby="sideNavUserAccounts" id="fs3oxf-acc-menu" style="display: none;">
-          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
-            <a href="/admin/users">Users List</a>
-          </li>
-        </ul>
-      </li>
-      <li id="sideNavProfile" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
-          aria-expanded="false" aria-label="Profile" aria-controls="a0vsqp-acc-menu">
-        <a href="#">Profile</a>
-        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
-            aria-labelledby="sideNavProfile" id="a0vsqp-acc-menu" style="display: none;">
-          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
-            <a href="/admin/users/4/change-password">Change My Password</a>
-          </li>
-        </ul>
-      </li>
-      <li id="sideNavActivityLogs" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
-          aria-expanded="false" aria-label="Activity Logs" aria-controls="5usvyk-acc-menu">
-        <a href="#">Activity Logs</a>
-        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
-            aria-labelledby="sideNavActivityLogs" id="5usvyk-acc-menu" style="display: none;">
-          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
-            <a href="/admin/activity-logs">All Logs</a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
+							<li class="us-states is-submenu-item is-accordion-submenu-item" role="menuitem">
+								<a href="/admin/states">US States</a>
+							</li>
+						</ul>
+					</li>
+					<li role="menuitem" class="is-accordion-submenu-parent is-submenu-item is-accordion-submenu-item"
+							aria-haspopup="true" aria-expanded="false" aria-label="Migrations" aria-controls="2x61zh-acc-menu"
+							id="y09efp-acc-menu-link">
+						<a href="#">Migrations</a>
+						<ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true"
+								role="menu" aria-labelledby="y09efp-acc-menu-link" id="2x61zh-acc-menu" style="display: none;">
+							<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+								<a href="/admin/migrations">Dashboard</a>
+							</li>
+							<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+								<a class="" href="/admin/migration_lists/specializations">
+									Specializations
+								</a>
+							</li>
+							<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+								<a class="" href="/admin/migration_lists/subspecializations">
+									Subspecializations
+								</a>
+							</li>
+							<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+								<a class="" href="/admin/migration_lists/treatments">
+									Treatments
+								</a>
+							</li>
+							<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+								<a class="" href="/admin/migration_lists/awarding_bodies">
+									Awarding Bodies
+								</a>
+							</li>
+							<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+								<a class="" href="/admin/migration_lists/awards">
+									Awards
+								</a>
+							</li>
+							<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+								<a class="" href="/admin/migration_lists/countries">
+									Countries
+								</a>
+							</li>
+							<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+								<a class="" href="/admin/migration_lists/facility_services">
+									Facility Services
+								</a>
+							</li>
+							<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+								<a class="" href="/admin/migration_lists/facilities">
+									Facilities
+								</a>
+							</li>
+							<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+								<a class="" href="/admin/migration_lists/doctors">
+									Doctors
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+						<a href="/admin/questions/">Questions</a>
+					</li>
+					<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+						<a href="/admin/questionnaires/">Questionnaires</a>
+					</li>
+					<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+						<a href="/admin/forms/master-company-psq">Master Company HRA</a>
+					</li>
+				</ul>
+			</li>
+			<li id="sideNavUserAccounts" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
+					aria-expanded="false" aria-label="User Accounts" aria-controls="fs3oxf-acc-menu">
+				<a href="#">User Accounts</a>
+				<ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
+						aria-labelledby="sideNavUserAccounts" id="fs3oxf-acc-menu" style="display: none;">
+					<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+						<a href="/admin/users">Users List</a>
+					</li>
+				</ul>
+			</li>
+			<li id="sideNavProfile" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
+					aria-expanded="false" aria-label="Profile" aria-controls="a0vsqp-acc-menu">
+				<a href="#">Profile</a>
+				<ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
+						aria-labelledby="sideNavProfile" id="a0vsqp-acc-menu" style="display: none;">
+					<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+						<a href="/admin/users/4/change-password">Change My Password</a>
+					</li>
+				</ul>
+			</li>
+			<li id="sideNavActivityLogs" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
+					aria-expanded="false" aria-label="Activity Logs" aria-controls="5usvyk-acc-menu">
+				<a href="#">Activity Logs</a>
+				<ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
+						aria-labelledby="sideNavActivityLogs" id="5usvyk-acc-menu" style="display: none;">
+					<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+						<a href="/admin/activity-logs">All Logs</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
 
-  <div class="main-content">
+	<div class="main-content">
 
-    <div id="menu-bar" class="box-shadow">
-      <div data-reactroot="" class="top-bar">
-        <div class="top-bar-left">
-          <form>
-            <div class="input-group rounded"><input type="search" class="input-group-field" placeholder="Search members"
-                                                    value="">
-              <div class="input-group-button"><input type="submit" class="button hollow plain info" value="Submit">
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="top-bar-right">
-          <ul class="dropdown menu" data-dropdown-menu="yk2de3-dropdown-menu" role="menubar">
-            <li class="drop-text is-dropdown-submenu-parent opens-left" role="menuitem" aria-haspopup="true"
-                aria-expanded="false" aria-label=""><a href="#"><i class="fa fa-bell fa-lg"
-                                                                   aria-describedby="notifCount"></i></a>
-              <ul class="notifications menu vertical dev-submenu submenu is-dropdown-submenu first-sub" data-submenu=""
-                  aria-hidden="true" role="menu">
-                <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item">
-                  <ol>
-                    <li class="heading" role="menuitem"><h6 class="text-center mb-0">Notifications</h6></li>
-                    <li class="subheader text-center" role="menuitem">You have no new notifications.</li>
-                  </ol>
-                </li>
-              </ul>
-              <span class="granted"></span></li>
-            <li class="is-dropdown-submenu-parent opens-left" role="menuitem" aria-haspopup="true" aria-expanded="false"
-                aria-label="J"><a class="vertical-block" href="#" tabindex="0">
-              <div class="img-wrapper tiny circle"><img
-                src="https://s3.amazonaws.com/assets.spoke.chromedia.com/media/adminUsers/5b62b3096a161c9e418b4567.jpeg"
-                alt="James James"></div>
-            </a>
-              <ul class="menu vertical submenu is-dropdown-submenu first-sub" data-submenu="" aria-hidden="true"
-                  role="menu">
-                <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a class="logout_open"
-                                                                                        href="/admin/logout"><i
-                  class="fa fa-sign-out"></i><!-- react-text: 26 -->&nbsp; Sign Out<!-- /react-text --></a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+		<div id="menu-bar" class="box-shadow">
+			<div data-reactroot="" class="top-bar">
+				<div class="top-bar-left">
+					<form>
+						<div class="input-group rounded"><input type="search" class="input-group-field" placeholder="Search members"
+																										value="">
+							<div class="input-group-button"><input type="submit" class="button hollow plain info" value="Submit">
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="top-bar-right">
+					<ul class="dropdown menu" data-dropdown-menu="yk2de3-dropdown-menu" role="menubar">
+						<li class="drop-text is-dropdown-submenu-parent opens-left" role="menuitem" aria-haspopup="true"
+								aria-expanded="false" aria-label=""><a href="#"><i class="fa fa-bell fa-lg"
+																																	 aria-describedby="notifCount"></i></a>
+							<ul class="notifications menu vertical dev-submenu submenu is-dropdown-submenu first-sub" data-submenu=""
+									aria-hidden="true" role="menu">
+								<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item">
+									<ol>
+										<li class="heading" role="menuitem"><h6 class="text-center mb-0">Notifications</h6></li>
+										<li class="subheader text-center" role="menuitem">You have no new notifications.</li>
+									</ol>
+								</li>
+							</ul>
+							<span class="granted"></span></li>
+						<li class="is-dropdown-submenu-parent opens-left" role="menuitem" aria-haspopup="true" aria-expanded="false"
+								aria-label="J"><a class="vertical-block" href="#" tabindex="0">
+							<div class="img-wrapper tiny circle"><img
+								src="https://s3.amazonaws.com/assets.spoke.chromedia.com/media/adminUsers/5b62b3096a161c9e418b4567.jpeg"
+								alt="James James"></div>
+						</a>
+							<ul class="menu vertical submenu is-dropdown-submenu first-sub" data-submenu="" aria-hidden="true"
+									role="menu">
+								<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a class="logout_open"
+																																												href="/admin/logout"><i
+									class="fa fa-sign-out"></i><!-- react-text: 26 -->&nbsp; Sign Out<!-- /react-text --></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-    <div id="root">
+		<div id="root">
 
-      <div class="row expanded">
-        <div class="auto columns">
+			<div class="row expanded">
+				<div class="auto columns">
 
-          <div class="page-lead row align-middle expanded">
-            <div class="shrink columns">
-              <span class="h5">Members</span>
-            </div>
+					<div class="page-lead row align-middle expanded">
+						<div class=" shrink auto columns">
+							<span class="h4">Members</span>
+						</div>
 
-            <div class="auto columns align-middle">
-              <div class="inline-form-group">
-                <label for="">Assigned To:</label>
-                <select>
-                  <option value="0" selected>Me</option>
-                  <option value="31">Test</option>
-                  <option value="32">Test</option>
-                  <option value="33">Test</option>
-                  <option value="34">Test</option>
-                </select>
-              </div>
-            </div>
+						<div class="auto columns align-middle">
+							<div class="inline-form-group">
+								<label for="">Assigned To:</label>
+								<select>
+									<option value="0" selected>Me</option>
+									<option value="31">Test</option>
+									<option value="32">Test</option>
+									<option value="33">Test</option>
+									<option value="34">Test</option>
+								</select>
+							</div>
+						</div>
 
-            <div class="auto columns align-middle">
-              <div class="inline-form-group">
-                <label for="">Episode Status:</label>
-                <div class="input-group">
-                  <input type="text" data-open="statusDropdown" value="Preliminary, Cancelled, Confirmed">
-                  <div class="dropdown-pane" id="statusDropdown" data-dropdown data-auto-focus="true">
-                    <div>
-                      <a href="#" class="small float-right primary" data-close="statusDropdown"><i class="fa fa-times-circle"></i></a>
-                    </div>
-                    <form>
-                      <div class="row">
-                        <div class="medium-12 columns">
-                          <div class="checkbox-wrapper">
-                            <input type="checkbox">
-                            <label for="checkbox1">Select All</label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="medium-12 columns">
-                          <div class="checkbox-wrapper">
-                            <input type="checkbox">
-                            <label for="checkbox1">Preliminary</label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="medium-12 columns">
-                          <div class="checkbox-wrapper">
-                            <input type="checkbox">
-                            <label for="checkbox1">Confirmed</label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="medium-12 columns">
-                          <div class="checkbox-wrapper">
-                            <input type="checkbox">
-                            <label for="checkbox1">Cancelled</label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="medium-12 columns">
-                          <div class="checkbox-wrapper">
-                            <input type="checkbox">
-                            <label for="checkbox1">Completed</label>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
+						<!-- <div class="shrink columns">
+							<a href="" class="button success small ml-0 mb-0 pull-right">Add New Member<i class="fa fa-plus fa-fw"></i></a>
+						</div> -->
+					</div>
 
-            <div class="shrink columns">
-              <a href="" class="button success small ml-0 mb-0 pull-right">Add New Member<i class="fa fa-plus fa-fw"></i></a>
-              <a class="button secondary small hollow mr-1 mb-0 pull-right" data-toggle="filters" aria-controls="filters">
-                <!-- react-text: 17 -->Hide More Filters<!-- /react-text --><i class="fa fa-angle-up fa-fw"></i></a>
+					<div class="row align-middle expanded mb-1">
 
-            </div>
-          </div>
+						<div class="auto columns align-middle">
+							<div class="inline-form-group align-middle">
+								<label for="">Episode Status:</label>
+								<!-- <div class="input-group">
+									<input type="text" data-open="statusDropdown" value="Preliminary, Cancelled, Confirmed">
+									<div class="dropdown-pane" id="statusDropdown" data-dropdown data-auto-focus="true">
+										<div>
+											<a href="#" class="small float-right primary" data-close="statusDropdown"><i class="fa fa-times-circle"></i></a>
+										</div>
+										<form>
+											<div class="row">
+												<div class="medium-12 columns">
+													<div class="checkbox-wrapper">
+														<input type="checkbox">
+														<label for="checkbox1">Select All</label>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="medium-12 columns">
+													<div class="checkbox-wrapper">
+														<input type="checkbox">
+														<label for="checkbox1">Preliminary</label>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="medium-12 columns">
+													<div class="checkbox-wrapper">
+														<input type="checkbox">
+														<label for="checkbox1">Confirmed</label>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="medium-12 columns">
+													<div class="checkbox-wrapper">
+														<input type="checkbox">
+														<label for="checkbox1">Cancelled</label>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="medium-12 columns">
+													<div class="checkbox-wrapper">
+														<input type="checkbox">
+														<label for="checkbox1">Completed</label>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div> -->
+								
+								<fieldset>
+									<ul class="inline-list">
+										<li>
+											<div class="fancy-checkbox small mb-0">
+												<input id="checkbox12" type="checkbox" class="">
+												<label for="checkbox12" class="disp-inline align-middle">All</label>
+											</div>
+										</li>
+										<li>
+											<div class="fancy-checkbox small mb-0">
+												<input id="checkbox22" type="checkbox" class="">
+												<label for="checkbox22" class="disp-inline">Preliminary</label>
+											</div>
+										</li>
+										<li>
+											<div class="fancy-checkbox small mb-0">
+												<input id="checkbox32" type="checkbox" class="">
+												<label for="checkbox32" class="disp-inline">Cancelled</label>
+											</div>
+										</li>
+										<li>
+											<div class="fancy-checkbox small mb-0">
+												<input id="checkbox42" type="checkbox" class="">
+												<label for="checkbox42" class="disp-inline">Confirmed</label>
+											</div>
+										</li>
+										<li>
+											<div class="fancy-checkbox small mb-0">
+												<input id="checkbox52" type="checkbox" class="mb-0">
+												<label for="checkbox52" class="disp-inline">Completed</label>
+											</div>
+										</li>
+									</ul>
+								</fieldset>
+							</div>
+						</div>
 
-          <div id="filters" class="submenu menu-options mb-1" data-toggler="true" data-animate="fade-in fade-out">
+						<div class="shrink columns">
+							<a href="" class="button success small ml-0 mb-0 pull-right">Add New Member<i class="fa fa-plus fa-fw"></i></a>
 
-            <div class="row expanded">
-              <div class="medium-3 columns">
-                <div class="inline-form-group">
-                  <label for="">Selected Facility:</label>
-                  <select>
-                    <option value="0">All</option>
-                    <option value="31">Dallas Mavericks Company</option>
-                    <option value="32">Dallas Mavericks Company 1</option>
-                    <option value="33">Dallas Mavericks Company 2</option>
-                    <option value="34">COMPANY TEST</option>
-                  </select>
-                </div>
-              </div>
-              <div class="medium-3 columns">
-                <div class="inline-form-group">
-                  <label for="">Company:</label>
-                  <select>
-                    <option value="0">All</option>
-                    <option value="31">Dallas Mavericks Company</option>
-                    <option value="32">Dallas Mavericks Company 1</option>
-                    <option value="33">Dallas Mavericks Company 2</option>
-                    <option value="34">COMPANY TEST</option>
-                  </select>
-                </div>
-              </div>
-              <div class="medium-3 columns">
-                <div class="inline-form-group">
-                  <label for="">Member Type:</label>
-                  <select>
-                    <option value="0">Primary</option>
-                    <option value="31">Dependent</option>
-                  </select>
-                </div>
-              </div>
-              <div class="medium-3 columns">
-                <div class="inline-form-group">
-                  <label for="">Episode Name:</label>
-                  <select>
-                    <option>Total Knee Replacement</option>
-                    <option>Dental Surgery</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-          </div>
+							<a class="button secondary small hollow mr-1  mb-0 pull-right" data-toggle="filters" aria-controls="filters">
+								<!-- react-text: 17 -->Hide More Filters<!-- /react-text --><i class="fa fa-angle-up fa-fw"></i></a>
+						</div>
 
-          <div class="row expanded">
-            <div class="auto columns">
+					</div>
 
-              <div class="spoke-list">
+					<div id="filters" class="submenu menu-options mb-1" data-toggler="true" data-animate="fade-in fade-out">
 
-                <div class="spoke-list-heading row expanded collapse align-middle">
-                  <div class="medium-4 columns">
-                    <!-- <input type="checkbox" class="mb-0 mr-1" name="">&nbsp;  -->
-                    <a href="#">Name <i class="fa fa-caret-up fa-fw"></i></a>
-                  </div>
-                  <div class="medium-5 columns">
-                    <a href="#">Company Name <i class="fa fa-caret-up fa-fw"></i></a>
-                  </div>
-                  <div class="medium-3 columns">
-                    <a href="#">Last Login <i class="fa fa-caret-up fa-fw"></i></a>
-                  </div>
-                </div>
+						<div class="row expanded">
+							<div class="medium-3 columns">
+								<div class="inline-form-group">
+									<label for="">Selected Facility:</label>
+									<select>
+										<option value="0">All</option>
+										<option value="31">Dallas Mavericks Company</option>
+										<option value="32">Dallas Mavericks Company 1</option>
+										<option value="33">Dallas Mavericks Company 2</option>
+										<option value="34">COMPANY TEST</option>
+									</select>
+								</div>
+							</div>
+							<div class="medium-3 columns">
+								<div class="inline-form-group">
+									<label for="">Company:</label>
+									<select>
+										<option value="0">All</option>
+										<option value="31">Dallas Mavericks Company</option>
+										<option value="32">Dallas Mavericks Company 1</option>
+										<option value="33">Dallas Mavericks Company 2</option>
+										<option value="34">COMPANY TEST</option>
+									</select>
+								</div>
+							</div>
+							<div class="medium-3 columns">
+								<div class="inline-form-group">
+									<label for="">Member Type:</label>
+									<select>
+										<option value="0">Primary</option>
+										<option value="31">Dependent</option>
+									</select>
+								</div>
+							</div>
+							<div class="medium-3 columns">
+								<div class="inline-form-group">
+									<label for="">Episode Name:</label>
+									<select>
+										<option>Total Knee Replacement</option>
+										<option>Dental Surgery</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
 
-                <div class="spoke-list-item row expanded collapse align-middle paddingless">
-                  <div class="auto columns">
+					<div class="row expanded">
+						<div class="auto columns">
 
-                    <div class="spoke-list-sub-item row expanded collapse align-middle">
-                      <div class="medium-4 columns">
-                        <div class="row collapse align-middle">
-                          <div class="columns">
-                            <p class="h6 mb-0"><b>Keith Dumptle</b></p>
-                            <!-- <p class="subheader"><small>CC: Christine Lambert</small></p> -->
-                          </div>
-                        </div>
-                      </div>
-                      <div class="medium-5 columns">
-                        <p>Deam Health Corp.</p>
-                      </div>
-                      <div class="medium-3 columns">
-                        <p>April 7, 2019 8:00AM</p>
-                        <!-- <a href="#" class="button success hollow rounded tiny">Create Episode</a> -->
-                      </div>
-                    </div>
+							<div class="spoke-list">
 
-                    <div class="spoke-list-sub-item row expanded collapse align-middle">
-                      <div class="medium-3 columns">
-                        <p class="">
-                          <small><a href="">Extended Bifrontal Craniotomy</a></small>
-                        </p>
-                        <div class="row">
-                          <div class="medium-3 collapse">
-                            <small class="tiny subheader">#102345</small>
-                          </div>
-                          <div class="medium-9 collapse">
-                            <small class="tiny">Date Created: August 10, 2018</small>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="medium-2 columns">
-                        <span class="label alert small hollow rounded">Cancelled</span>
-                      </div>
-                      <div class="medium-2 columns">
-                        <p>
-                          <small>Send Link</small>
-                        </p>
-                        <div class="row">
-                          <div class="medium-12 collapse">
-                            <small class="tiny subheader mb-0">A week ago</small>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="medium-3 columns">
-                        <p>
-                          <small>St. Matthew Medical Center</small>
-                        </p>
-                        <div class="row">
-                          <div class="medium-12 collapse">
-                            <small class="tiny subheader mb-0"> Colorado, Denver</small>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="medium-2 columns">
-                        <p class="subheader">
-                          <small>ES: Steve Doss</small>
-                        </p>
-                        <p class="subheader">
-                          <small>CC: Christine Lambert</small>
-                        </p>
-                      </div>
-                    </div>
+								<div class="spoke-list-heading row expanded collapse align-middle">
+									<div class="medium-4 columns">
+										<!-- <input type="checkbox" class="mb-0 mr-1" name="">&nbsp;  -->
+										<a href="#">Name <i class="fa fa-caret-up fa-fw"></i></a>
+									</div>
+									<div class="medium-5 columns">
+										<a href="#">Company Name <i class="fa fa-caret-up fa-fw"></i></a>
+									</div>
+									<div class="medium-3 columns">
+										<a href="#">Last Login <i class="fa fa-caret-up fa-fw"></i></a>
+									</div>
+								</div>
 
-                    <div class="spoke-list-sub-item row expanded collapse align-middle">
-                      <div class="medium-3 columns">
-                        <p class="">
-                          <small><a href="">Total Knee Replacement</a></small>
-                        </p>
-                        <div class="row">
-                          <div class="medium-3 collapse">
-                            <small class="tiny subheader">#102345</small>
-                          </div>
-                          <div class="medium-9 collapse">
-                            <small class="tiny">Date Created: August 10, 2018</small>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="medium-2 columns">
-                        <span class="label success small hollow rounded">Confirmed</span>
-                      </div>
-                      <div class="medium-2 columns">
-                        <p>
-                          <small>Send Link</small>
-                        </p>
-                      </div>
-                      <div class="medium-3 columns">
-                        <p>
-                          <small>St. Matthew Medical Center</small>
-                        </p>
-                      </div>
-                      <div class="medium-2 columns">
-                        <p class="subheader">
-                          <small>ES: Steve Doss</small>
-                        </p>
-                        <p class="subheader">
-                          <small>CC: Christine Lambert</small>
-                        </p>
-                      </div>
-                    </div>
+								<div class="spoke-list-item row expanded collapse align-middle paddingless">
+									<div class="auto columns">
 
-                  </div>
-                </div>
+										<div class="spoke-list-sub-item row expanded collapse align-middle">
+											<div class="medium-4 columns">
+												<div class="row collapse align-middle">
+													<div class="columns">
+														<p class="h6 mb-0"><b>Keith Dumptle</b></p>
+														<!-- <p class="subheader"><small>CC: Christine Lambert</small></p> -->
+													</div>
+												</div>
+											</div>
+											<div class="medium-5 columns">
+												<p>Deam Health Corp.</p>
+											</div>
+											<div class="medium-3 columns">
+												<p>April 7, 2019 8:00AM</p>
+												<!-- <a href="#" class="button success hollow rounded tiny">Create Episode</a> -->
+											</div>
+										</div>
 
-                <div class="spoke-list-item row expanded collapse align-middle paddingless">
-                  <div class="auto columns">
+										<div class="spoke-list-sub-item row expanded collapse align-middle">
+											<div class="medium-3 columns">
+												<p class="">
+													<small><a href="">Extended Bifrontal Craniotomy</a></small>
+												</p>
+												<div class="row">
+													<div class="medium-3 collapse">
+														<small class="tiny subheader">#102345</small>
+													</div>
+													<div class="medium-9 collapse">
+														<small class="tiny">Date Created: August 10, 2018</small>
+													</div>
+												</div>
+											</div>
+											<div class="medium-2 columns">
+												<span class="label preliminary small hollow rounded">Preliminary</span>
+											</div>
+											<div class="medium-2 columns">
+												<p>
+													<small>Send Link</small>
+												</p>
+												<div class="row">
+													<div class="medium-12 collapse">
+														<small class="tiny subheader mb-0">A week ago</small>
+													</div>
+												</div>
+											</div>
+											<div class="medium-3 columns">
+												<p>
+													<small>St. Matthew Medical Center</small>
+												</p>
+												<div class="row">
+													<div class="medium-12 collapse">
+														<small class="tiny subheader mb-0"> Colorado, Denver</small>
+													</div>
+												</div>
+											</div>
+											<div class="medium-2 columns">
+												<p class="subheader">
+													<small>ES: Steve Doss</small>
+												</p>
+												<p class="subheader">
+													<small>CC: Christine Lambert</small>
+												</p>
+											</div>
+										</div>
 
-                    <div class="spoke-list-sub-item row expanded collapse align-middle">
-                      <div class="medium-4 columns">
-                        <div class="row collapse align-middle">
-                          <div class="columns">
-                            <p class="h6 mb-0"><b>Norman Campbell</b></p>
-                            <!-- <p class="subheader"><small>CC: Christine Lambert</small></p> -->
-                          </div>
-                        </div>
-                      </div>
-                      <div class="medium-5 columns">
-                        <p>Deam Health Corp.</p>
-                      </div>
-                      <div class="medium-3 columns">
-                        <p>April 7, 2019 8:00AM</p>
-                        <!-- <a href="#" class="button success hollow rounded tiny">Create Episode</a> -->
-                      </div>
-                    </div>
+										<div class="spoke-list-sub-item row expanded collapse align-middle">
+											<div class="medium-3 columns">
+												<p class="">
+													<small><a href="">Total Knee Replacement</a></small>
+												</p>
+												<div class="row">
+													<div class="medium-3 collapse">
+														<small class="tiny subheader">#102345</small>
+													</div>
+													<div class="medium-9 collapse">
+														<small class="tiny">Date Created: August 10, 2018</small>
+													</div>
+												</div>
+											</div>
+											<div class="medium-2 columns">
+												<span class="label secondary small hollow rounded">Completed</span>
+											</div>
+											<div class="medium-2 columns">
+												<p>
+													<small>Send Link</small>
+												</p>
+											</div>
+											<div class="medium-3 columns">
+												<p>
+													<small>St. Matthew Medical Center</small>
+												</p>
+											</div>
+											<div class="medium-2 columns">
+												<p class="subheader">
+													<small>ES: Steve Doss</small>
+												</p>
+												<p class="subheader">
+													<small>CC: Christine Lambert</small>
+												</p>
+											</div>
+										</div>
 
-                    <div class="spoke-list-sub-item row expanded collapse align-middle">
-                      <div class="medium-3 columns">
-                        <p class="">
-                          <small><a href="">Extended Bifrontal Craniotomy</a></small>
-                        </p>
-                        <div class="row">
-                          <div class="medium-3 collapse">
-                            <small class="tiny subheader">#102345</small>
-                          </div>
-                          <div class="medium-9 collapse">
-                            <small class="tiny">Date Created: August 10, 2018</small>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="medium-2 columns">
-                        <span class="label alert small hollow rounded">Cancelled</span>
-                      </div>
-                      <div class="medium-2 columns">
-                        <p>
-                          <small>Send Link</small>
-                        </p>
-                      </div>
-                      <div class="medium-3 columns">
-                        <p>
-                          <small>St. Matthew Medical Center</small>
-                        </p>
-                      </div>
-                      <div class="medium-2 columns">
-                        <p class="subheader">
-                          <small>ES: Steve Doss</small>
-                        </p>
-                        <p class="subheader">
-                          <small>CC: Christine Lambert</small>
-                        </p>
-                      </div>
-                    </div>
+									</div>
+								</div>
 
-                    <div class="spoke-list-sub-item row expanded collapse align-middle">
-                      <div class="medium-3 columns">
-                        <p class="">
-                          <small><a href="">Total Knee Replacement</a></small>
-                        </p>
-                        <div class="row">
-                          <div class="medium-3 collapse">
-                            <small class="tiny subheader">#102345</small>
-                          </div>
-                          <div class="medium-9 collapse">
-                            <small class="tiny">Date Created: August 10, 2018</small>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="medium-2 columns">
-                        <span class="label success small hollow rounded">Confirmed</span>
-                      </div>
-                      <div class="medium-2 columns">
-                        <p>
-                          <small>Send Link</small>
-                        </p>
-                      </div>
-                      <div class="medium-3 columns">
-                        <p>
-                          <small>St. Matthew Medical Center</small>
-                        </p>
-                      </div>
-                      <div class="medium-2 columns">
-                        <p class="subheader">
-                          <small>ES: Steve Doss</small>
-                        </p>
-                        <p class="subheader">
-                          <small>CC: Christine Lambert</small>
-                        </p>
-                      </div>
-                    </div>
+								<div class="spoke-list-item row expanded collapse align-middle paddingless">
+									<div class="auto columns">
 
-                  </div>
-                </div>
+										<div class="spoke-list-sub-item row expanded collapse align-middle">
+											<div class="medium-4 columns">
+												<div class="row collapse align-middle">
+													<div class="columns">
+														<p class="h6 mb-0"><b>Norman Campbell</b></p>
+														<!-- <p class="subheader"><small>CC: Christine Lambert</small></p> -->
+													</div>
+												</div>
+											</div>
+											<div class="medium-5 columns">
+												<p>Deam Health Corp.</p>
+											</div>
+											<div class="medium-3 columns">
+												<p>April 7, 2019 8:00AM</p>
+												<!-- <a href="#" class="button success hollow rounded tiny">Create Episode</a> -->
+											</div>
+										</div>
 
-                <div class="spoke-list-item row expanded collapse align-middle paddingless">
-                  <div class="auto columns">
+										<div class="spoke-list-sub-item row expanded collapse align-middle">
+											<div class="medium-3 columns">
+												<p class="">
+													<small><a href="">Extended Bifrontal Craniotomy</a></small>
+												</p>
+												<div class="row">
+													<div class="medium-3 collapse">
+														<small class="tiny subheader">#102345</small>
+													</div>
+													<div class="medium-9 collapse">
+														<small class="tiny">Date Created: August 10, 2018</small>
+													</div>
+												</div>
+											</div>
+											<div class="medium-2 columns">
+												<span class="label cancelled small hollow rounded">Cancelled</span>
+											</div>
+											<div class="medium-2 columns">
+												<p>
+													<small>Send Link</small>
+												</p>
+											</div>
+											<div class="medium-3 columns">
+												<p>
+													<small>St. Matthew Medical Center</small>
+												</p>
+											</div>
+											<div class="medium-2 columns">
+												<p class="subheader">
+													<small>ES: Steve Doss</small>
+												</p>
+												<p class="subheader">
+													<small>CC: Christine Lambert</small>
+												</p>
+											</div>
+										</div>
 
-                    <div class="spoke-list-sub-item row expanded collapse align-middle">
-                      <div class="medium-4 columns">
-                        <div class="row collapse align-middle">
-                          <div class="columns">
-                            <p class="h6 mb-0"><b>Norman Campbell</b></p>
-                            <!-- <p class="subheader"><small>CC: Christine Lambert</small></p> -->
-                          </div>
-                        </div>
-                      </div>
-                      <div class="medium-5 columns">
-                        <p>Deam Health Corp.</p>
-                      </div>
-                      <div class="medium-3 columns">
-                        <p>April 7, 2019 8:00AM</p>
-                        <!-- <a href="#" class="button success hollow rounded tiny">Create Episode</a> -->
-                      </div>
-                    </div>
+										<div class="spoke-list-sub-item row expanded collapse align-middle">
+											<div class="medium-3 columns">
+												<p class="">
+													<small><a href="">Total Knee Replacement</a></small>
+												</p>
+												<div class="row">
+													<div class="medium-3 collapse">
+														<small class="tiny subheader">#102345</small>
+													</div>
+													<div class="medium-9 collapse">
+														<small class="tiny">Date Created: August 10, 2018</small>
+													</div>
+												</div>
+											</div>
+											<div class="medium-2 columns">
+												<span class="label confirmed small hollow rounded">Confirmed</span>
+											</div>
+											<div class="medium-2 columns">
+												<p>
+													<small>Send Link</small>
+												</p>
+											</div>
+											<div class="medium-3 columns">
+												<p>
+													<small>St. Matthew Medical Center</small>
+												</p>
+											</div>
+											<div class="medium-2 columns">
+												<p class="subheader">
+													<small>ES: Steve Doss</small>
+												</p>
+												<p class="subheader">
+													<small>CC: Christine Lambert</small>
+												</p>
+											</div>
+										</div>
 
-                    <div class="spoke-list-sub-item row expanded collapse align-middle">
-                      <div class="medium-3 columns">
-                        <p class="">
-                          <small><a href="">Extended Bifrontal Craniotomy</a></small>
-                        </p>
-                        <div class="row">
-                          <div class="medium-3 collapse">
-                            <small class="tiny subheader">#102345</small>
-                          </div>
-                          <div class="medium-9 collapse">
-                            <small class="tiny">Date Created: August 10, 2018</small>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="medium-2 columns">
-                        <span class="label alert small hollow rounded">Cancelled</span>
-                      </div>
-                      <div class="medium-2 columns">
-                        <p>
-                          <small>Send Link</small>
-                        </p>
-                      </div>
-                      <div class="medium-3 columns">
-                        <p>
-                          <small>St. Matthew Medical Center</small>
-                        </p>
-                      </div>
-                      <div class="medium-2 columns">
-                        <p class="subheader">
-                          <small>ES: Steve Doss</small>
-                        </p>
-                        <p class="subheader">
-                          <small>CC: Christine Lambert</small>
-                        </p>
-                      </div>
-                    </div>
+									</div>
+								</div>
 
-                    <div class="spoke-list-sub-item row expanded collapse align-middle">
-                      <div class="medium-3 columns">
-                        <p class="">
-                          <small><a href="">Total Knee Replacement</a></small>
-                        </p>
-                        <div class="row">
-                          <div class="medium-3 collapse">
-                            <small class="tiny subheader">#102345</small>
-                          </div>
-                          <div class="medium-9 collapse">
-                            <small class="tiny">Date Created: August 10, 2018</small>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="medium-2 columns">
-                        <span class="label success small hollow rounded">Confirmed</span>
-                      </div>
-                      <div class="medium-2 columns">
-                        <p>
-                          <small>Send Link</small>
-                        </p>
-                      </div>
-                      <div class="medium-3 columns">
-                        <p>
-                          <small>St. Matthew Medical Center</small>
-                        </p>
-                      </div>
-                      <div class="medium-2 columns">
-                        <p class="subheader">
-                          <small>ES: Steve Doss</small>
-                        </p>
-                        <p class="subheader">
-                          <small>CC: Christine Lambert</small>
-                        </p>
-                      </div>
-                    </div>
+								<div class="spoke-list-item row expanded collapse align-middle paddingless">
+									<div class="auto columns">
 
-                  </div>
-                </div>
+										<div class="spoke-list-sub-item row expanded collapse align-middle">
+											<div class="medium-4 columns">
+												<div class="row collapse align-middle">
+													<div class="columns">
+														<p class="h6 mb-0"><b>Norman Campbell</b></p>
+														<!-- <p class="subheader"><small>CC: Christine Lambert</small></p> -->
+													</div>
+												</div>
+											</div>
+											<div class="medium-5 columns">
+												<p>Deam Health Corp.</p>
+											</div>
+											<div class="medium-3 columns">
+												<p>April 7, 2019 8:00AM</p>
+												<!-- <a href="#" class="button success hollow rounded tiny">Create Episode</a> -->
+											</div>
+										</div>
 
-                <div class="spoke-list-item row expanded collapse align-middle paddingless">
-                  <div class="auto columns">
+										<div class="spoke-list-sub-item row expanded collapse align-middle">
+											<div class="medium-3 columns">
+												<p class="">
+													<small><a href="">Extended Bifrontal Craniotomy</a></small>
+												</p>
+												<div class="row">
+													<div class="medium-3 collapse">
+														<small class="tiny subheader">#102345</small>
+													</div>
+													<div class="medium-9 collapse">
+														<small class="tiny">Date Created: August 10, 2018</small>
+													</div>
+												</div>
+											</div>
+											<div class="medium-2 columns">
+												<span class="label cancelled small hollow rounded">Cancelled</span>
+											</div>
+											<div class="medium-2 columns">
+												<p>
+													<small>Send Link</small>
+												</p>
+											</div>
+											<div class="medium-3 columns">
+												<p>
+													<small>St. Matthew Medical Center</small>
+												</p>
+											</div>
+											<div class="medium-2 columns">
+												<p class="subheader">
+													<small>ES: Steve Doss</small>
+												</p>
+												<p class="subheader">
+													<small>CC: Christine Lambert</small>
+												</p>
+											</div>
+										</div>
 
-                    <div class="spoke-list-sub-item row expanded collapse align-middle">
-                      <div class="medium-4 columns">
-                        <div class="row collapse align-middle">
-                          <div class="columns">
-                            <p class="h6 mb-0"><b>Norman Campbell</b></p>
-                            <!-- <p class="subheader"><small>CC: Christine Lambert</small></p> -->
-                          </div>
-                        </div>
-                      </div>
-                      <div class="medium-5 columns">
-                        <p>Deam Health Corp.</p>
-                      </div>
-                      <div class="medium-3 columns">
-                        <p>April 7, 2019 8:00AM</p>
-                        <!-- <a href="#" class="button success hollow rounded tiny">Create Episode</a> -->
-                      </div>
-                    </div>
+										<div class="spoke-list-sub-item row expanded collapse align-middle">
+											<div class="medium-3 columns">
+												<p class="">
+													<small><a href="">Total Knee Replacement</a></small>
+												</p>
+												<div class="row">
+													<div class="medium-3 collapse">
+														<small class="tiny subheader">#102345</small>
+													</div>
+													<div class="medium-9 collapse">
+														<small class="tiny">Date Created: August 10, 2018</small>
+													</div>
+												</div>
+											</div>
+											<div class="medium-2 columns">
+												<span class="label confirmed small hollow rounded">Confirmed</span>
+											</div>
+											<div class="medium-2 columns">
+												<p>
+													<small>Send Link</small>
+												</p>
+											</div>
+											<div class="medium-3 columns">
+												<p>
+													<small>St. Matthew Medical Center</small>
+												</p>
+											</div>
+											<div class="medium-2 columns">
+												<p class="subheader">
+													<small>ES: Steve Doss</small>
+												</p>
+												<p class="subheader">
+													<small>CC: Christine Lambert</small>
+												</p>
+											</div>
+										</div>
 
-                    <div class="spoke-list-sub-item row expanded collapse align-middle">
-                      <div class="medium-3 columns">
-                        <p class="">
-                          <small><a href="">Extended Bifrontal Craniotomy</a></small>
-                        </p>
-                        <div class="row">
-                          <div class="medium-3 collapse">
-                            <small class="tiny subheader">#102345</small>
-                          </div>
-                          <div class="medium-9 collapse">
-                            <small class="tiny">Date Created: August 10, 2018</small>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="medium-2 columns">
-                        <span class="label alert small hollow rounded">Cancelled</span>
-                      </div>
-                      <div class="medium-2 columns">
-                        <p>
-                          <small>Send Link</small>
-                        </p>
-                      </div>
-                      <div class="medium-3 columns">
-                        <p>
-                          <small>St. Matthew Medical Center</small>
-                        </p>
-                      </div>
-                      <div class="medium-2 columns">
-                        <p class="subheader">
-                          <small>ES: Steve Doss</small>
-                        </p>
-                        <p class="subheader">
-                          <small>CC: Christine Lambert</small>
-                        </p>
-                      </div>
-                    </div>
+									</div>
+								</div>
 
-                    <div class="spoke-list-sub-item row expanded collapse align-middle">
-                      <div class="medium-3 columns">
-                        <p class="">
-                          <small><a href="">Total Knee Replacement</a></small>
-                        </p>
-                        <div class="row">
-                          <div class="medium-3 collapse">
-                            <small class="tiny subheader">#102345</small>
-                          </div>
-                          <div class="medium-9 collapse">
-                            <small class="tiny">Date Created: August 10, 2018</small>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="medium-2 columns">
-                        <span class="label success small hollow rounded">Confirmed</span>
-                      </div>
-                      <div class="medium-2 columns">
-                        <p>
-                          <small>Send Link</small>
-                        </p>
-                      </div>
-                      <div class="medium-3 columns">
-                        <p>
-                          <small>St. Matthew Medical Center</small>
-                        </p>
-                      </div>
-                      <div class="medium-2 columns">
-                        <p class="subheader">
-                          <small>ES: Steve Doss</small>
-                        </p>
-                        <p class="subheader">
-                          <small>CC: Christine Lambert</small>
-                        </p>
-                      </div>
-                    </div>
+								<div class="spoke-list-item row expanded collapse align-middle paddingless">
+									<div class="auto columns">
 
-                  </div>
-                </div>
+										<div class="spoke-list-sub-item row expanded collapse align-middle">
+											<div class="medium-4 columns">
+												<div class="row collapse align-middle">
+													<div class="columns">
+														<p class="h6 mb-0"><b>Norman Campbell</b></p>
+														<!-- <p class="subheader"><small>CC: Christine Lambert</small></p> -->
+													</div>
+												</div>
+											</div>
+											<div class="medium-5 columns">
+												<p>Deam Health Corp.</p>
+											</div>
+											<div class="medium-3 columns">
+												<p>April 7, 2019 8:00AM</p>
+												<!-- <a href="#" class="button success hollow rounded tiny">Create Episode</a> -->
+											</div>
+										</div>
 
-                <div class="spoke-list-item row expanded collapse align-middle paddingless">
-                  <div class="auto columns">
+										<div class="spoke-list-sub-item row expanded collapse align-middle">
+											<div class="medium-3 columns">
+												<p class="">
+													<small><a href="">Extended Bifrontal Craniotomy</a></small>
+												</p>
+												<div class="row">
+													<div class="medium-3 collapse">
+														<small class="tiny subheader">#102345</small>
+													</div>
+													<div class="medium-9 collapse">
+														<small class="tiny">Date Created: August 10, 2018</small>
+													</div>
+												</div>
+											</div>
+											<div class="medium-2 columns">
+												<span class="label cancelled small hollow rounded">Cancelled</span>
+											</div>
+											<div class="medium-2 columns">
+												<p>
+													<small>Send Link</small>
+												</p>
+											</div>
+											<div class="medium-3 columns">
+												<p>
+													<small>St. Matthew Medical Center</small>
+												</p>
+											</div>
+											<div class="medium-2 columns">
+												<p class="subheader">
+													<small>ES: Steve Doss</small>
+												</p>
+												<p class="subheader">
+													<small>CC: Christine Lambert</small>
+												</p>
+											</div>
+										</div>
 
-                    <div class="spoke-list-sub-item row expanded collapse align-middle">
-                      <div class="medium-4 columns">
-                        <div class="row collapse align-middle">
-                          <div class="columns">
-                            <p class="h6 mb-0"><b>Norman Campbell</b></p>
-                            <!-- <p class="subheader"><small>CC: Christine Lambert</small></p> -->
-                          </div>
-                        </div>
-                      </div>
-                      <div class="medium-5 columns">
-                        <p>Deam Health Corp.</p>
-                      </div>
-                      <div class="medium-3 columns">
-                        <p>April 7, 2019 8:00AM</p>
-                        <!-- <a href="#" class="button success hollow rounded tiny">Create Episode</a> -->
-                      </div>
-                    </div>
+										<div class="spoke-list-sub-item row expanded collapse align-middle">
+											<div class="medium-3 columns">
+												<p class="">
+													<small><a href="">Total Knee Replacement</a></small>
+												</p>
+												<div class="row">
+													<div class="medium-3 collapse">
+														<small class="tiny subheader">#102345</small>
+													</div>
+													<div class="medium-9 collapse">
+														<small class="tiny">Date Created: August 10, 2018</small>
+													</div>
+												</div>
+											</div>
+											<div class="medium-2 columns">
+												<span class="label confirmed small hollow rounded">Confirmed</span>
+											</div>
+											<div class="medium-2 columns">
+												<p>
+													<small>Send Link</small>
+												</p>
+											</div>
+											<div class="medium-3 columns">
+												<p>
+													<small>St. Matthew Medical Center</small>
+												</p>
+											</div>
+											<div class="medium-2 columns">
+												<p class="subheader">
+													<small>ES: Steve Doss</small>
+												</p>
+												<p class="subheader">
+													<small>CC: Christine Lambert</small>
+												</p>
+											</div>
+										</div>
 
-                    <div class="spoke-list-sub-item row expanded collapse align-middle">
-                      <div class="medium-3 columns">
-                        <p class="">
-                          <small><a href="">Extended Bifrontal Craniotomy</a></small>
-                        </p>
-                        <div class="row">
-                          <div class="medium-3 collapse">
-                            <small class="tiny subheader">#102345</small>
-                          </div>
-                          <div class="medium-9 collapse">
-                            <small class="tiny">Date Created: August 10, 2018</small>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="medium-2 columns">
-                        <span class="label alert small hollow rounded">Cancelled</span>
-                      </div>
-                      <div class="medium-2 columns">
-                        <p>
-                          <small>Send Link</small>
-                        </p>
-                      </div>
-                      <div class="medium-3 columns">
-                        <p>
-                          <small>St. Matthew Medical Center</small>
-                        </p>
-                      </div>
-                      <div class="medium-2 columns">
-                        <p class="subheader">
-                          <small>ES: Steve Doss</small>
-                        </p>
-                        <p class="subheader">
-                          <small>CC: Christine Lambert</small>
-                        </p>
-                      </div>
-                    </div>
+									</div>
+								</div>
 
-                    <div class="spoke-list-sub-item row expanded collapse align-middle">
-                      <div class="medium-3 columns">
-                        <p class="">
-                          <small><a href="">Total Knee Replacement</a></small>
-                        </p>
-                        <div class="row">
-                          <div class="medium-3 collapse">
-                            <small class="tiny subheader">#102345</small>
-                          </div>
-                          <div class="medium-9 collapse">
-                            <small class="tiny">Date Created: August 10, 2018</small>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="medium-2 columns">
-                        <span class="label success small hollow rounded">Confirmed</span>
-                      </div>
-                      <div class="medium-2 columns">
-                        <p>
-                          <small>Send Link</small>
-                        </p>
-                      </div>
-                      <div class="medium-3 columns">
-                        <p>
-                          <small>St. Matthew Medical Center</small>
-                        </p>
-                      </div>
-                      <div class="medium-2 columns">
-                        <p class="subheader">
-                          <small>ES: Steve Doss</small>
-                        </p>
-                        <p class="subheader">
-                          <small>CC: Christine Lambert</small>
-                        </p>
-                      </div>
-                    </div>
+								<div class="spoke-list-item row expanded collapse align-middle paddingless">
+									<div class="auto columns">
 
-                  </div>
-                </div>
+										<div class="spoke-list-sub-item row expanded collapse align-middle">
+											<div class="medium-4 columns">
+												<div class="row collapse align-middle">
+													<div class="columns">
+														<p class="h6 mb-0"><b>Norman Campbell</b></p>
+														<!-- <p class="subheader"><small>CC: Christine Lambert</small></p> -->
+													</div>
+												</div>
+											</div>
+											<div class="medium-5 columns">
+												<p>Deam Health Corp.</p>
+											</div>
+											<div class="medium-3 columns">
+												<p>April 7, 2019 8:00AM</p>
+												<!-- <a href="#" class="button success hollow rounded tiny">Create Episode</a> -->
+											</div>
+										</div>
 
-              </div>
+										<div class="spoke-list-sub-item row expanded collapse align-middle">
+											<div class="medium-3 columns">
+												<p class="">
+													<small><a href="">Extended Bifrontal Craniotomy</a></small>
+												</p>
+												<div class="row">
+													<div class="medium-3 collapse">
+														<small class="tiny subheader">#102345</small>
+													</div>
+													<div class="medium-9 collapse">
+														<small class="tiny">Date Created: August 10, 2018</small>
+													</div>
+												</div>
+											</div>
+											<div class="medium-2 columns">
+												<span class="label cancelled small hollow rounded">Cancelled</span>
+											</div>
+											<div class="medium-2 columns">
+												<p>
+													<small>Send Link</small>
+												</p>
+											</div>
+											<div class="medium-3 columns">
+												<p>
+													<small>St. Matthew Medical Center</small>
+												</p>
+											</div>
+											<div class="medium-2 columns">
+												<p class="subheader">
+													<small>ES: Steve Doss</small>
+												</p>
+												<p class="subheader">
+													<small>CC: Christine Lambert</small>
+												</p>
+											</div>
+										</div>
 
-              <ul class="pagination text-center" role="navigation" aria-label="Pagination">
-                <li class="pagination-previous disabled">Previous</li>
-                <li class="current"><a href="#">1</a></li>
-                <li><a href="#" aria-label="Page 2">2</a></li>
-                <li><a href="#" aria-label="Page 3">3</a></li>
-                <li><a href="#" aria-label="Page 4">4</a></li>
-                <li class="ellipsis"></li>
-                <li><a href="#" aria-label="Page 12">12</a></li>
-                <li><a href="#" aria-label="Page 13">13</a></li>
-                <li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
-              </ul>
+										<div class="spoke-list-sub-item row expanded collapse align-middle">
+											<div class="medium-3 columns">
+												<p class="">
+													<small><a href="">Total Knee Replacement</a></small>
+												</p>
+												<div class="row">
+													<div class="medium-3 collapse">
+														<small class="tiny subheader">#102345</small>
+													</div>
+													<div class="medium-9 collapse">
+														<small class="tiny">Date Created: August 10, 2018</small>
+													</div>
+												</div>
+											</div>
+											<div class="medium-2 columns">
+												<span class="label confirmed small hollow rounded">Confirmed</span>
+											</div>
+											<div class="medium-2 columns">
+												<p>
+													<small>Send Link</small>
+												</p>
+											</div>
+											<div class="medium-3 columns">
+												<p>
+													<small>St. Matthew Medical Center</small>
+												</p>
+											</div>
+											<div class="medium-2 columns">
+												<p class="subheader">
+													<small>ES: Steve Doss</small>
+												</p>
+												<p class="subheader">
+													<small>CC: Christine Lambert</small>
+												</p>
+											</div>
+										</div>
 
-            </div>
-          </div>
-        </div>
-      </div>
+									</div>
+								</div>
 
-    </div>
+							</div>
 
-  </div>
+							<ul class="pagination text-center" role="navigation" aria-label="Pagination">
+								<li class="pagination-previous disabled">Previous</li>
+								<li class="current"><a href="#">1</a></li>
+								<li><a href="#" aria-label="Page 2">2</a></li>
+								<li><a href="#" aria-label="Page 3">3</a></li>
+								<li><a href="#" aria-label="Page 4">4</a></li>
+								<li class="ellipsis"></li>
+								<li><a href="#" aria-label="Page 12">12</a></li>
+								<li><a href="#" aria-label="Page 13">13</a></li>
+								<li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
 
 </div>
 

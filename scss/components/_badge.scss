@@ -1,3 +1,6 @@
+$color-preliminary: #00cec9;
+$color-cancelled: #d63031;
+$color-confirmed: #00b894;
 $color-done: $success-color;
 $color-ongoing: #ecaf00;
 $color-waiting: darken(#fff, 20%);
@@ -69,6 +72,21 @@ $color-waiting: darken(#fff, 20%);
     &.warning {
       color: $warning-color;
       border: 1px solid $warning-color;
+    }
+
+    &.preliminary {
+      color: $color-preliminary;
+      border: 1px solid $color-preliminary;
+    }
+
+    &.cancelled {
+      color: $color-cancelled;
+      border: 1px solid $color-cancelled;
+    }
+
+    &.confirmed {
+      color: $color-confirmed;
+      border: 1px solid $color-confirmed;
     }
 
     &.alert {
