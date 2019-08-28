@@ -2,6 +2,7 @@
 	$color-done: $success-color;
 	$color-ongoing: #ecaf00;
 	$color-waiting: darken(#fff, 20%);
+	$color-force-complete: $secondary-color;
 
 	$line-size: 2px;
 	$line-pos-x: 19px;
@@ -243,30 +244,71 @@
         }
       }
 
-      .timeline-hidden-content {
-        & > div {
-          border-left: $line-size solid $color-ongoing;
+	      .timeline-hidden-content {
+	        & > div {
+	          border-left: $line-size solid $color-ongoing;
 
-          &:after {
-            background-color: $color-ongoing;
-          }
-        }
+	          &:after {
+	            background-color: $color-ongoing;
+	          }
+	        }
 
-        .timeline-hidden-item {
-          .timeline-hidden-item-head {
-            &:before {
-              border: $line-size solid $color-ongoing;
-              color: $color-ongoing;
-            }
+        	.timeline-hidden-item {
+          		.timeline-hidden-item-head {
+		            &:before {
+		              border: $line-size solid $color-ongoing;
+		              color: $color-ongoing;
+		            }
 
-            &:after {
-              background-color: $color-ongoing;
-            }
-
-					}
+		            &:after {
+		              background-color: $color-ongoing;
+		            }
 				}
 			}
 		}
+	}
+
+
+
+    &.timeline-force-complete {
+      &:before {
+        background-color: $color-force-complete;
+      }
+
+      &:after {
+        background-color: $color-force-complete
+      }
+
+      .timeline-content {
+        &:before {
+          color: #fff;
+          background-color: $color-force-complete;
+        }
+      }
+
+	      .timeline-hidden-content {
+	        & > div {
+	          border-left: $line-size solid $color-force-complete;
+
+	          &:after {
+	            background-color: $color-force-complete;
+	          }
+	        }
+
+        	.timeline-hidden-item {
+          		.timeline-hidden-item-head {
+		            &:before {
+		              border: $line-size solid $color-force-complete;
+		              color: $color-force-complete;
+		            }
+
+		            &:after {
+		              background-color: $color-force-complete;
+		            }
+				}
+			}
+		}
+	}
 
 		&.timeline-waiting {
 			&:before, &:after {
@@ -327,6 +369,17 @@
 					& > div {
 						&:before {
 							background-color: $color-ongoing;
+						}
+					}
+				}
+			}
+
+			&.timeline-force-complete {
+
+				.timeline-hidden-content {
+					& > div {
+						&:before {
+							background-color: $color-force-complete;
 						}
 					}
 				}

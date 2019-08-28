@@ -1,3 +1,5 @@
+@import 'components/_badge';
+
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: rgba($black, $B-hinttext);
   font-size: rem-calc(14);
@@ -124,7 +126,7 @@ fieldset {
     }
   }
   ul {
-    margin-bottom: -3px !important;
+    margin-bottom: -5px !important;
     li {
       padding-left: 0px !important;
       &:last-child {
@@ -1205,6 +1207,7 @@ input {
 
   $fancy-checkbox-normal-size: rem-calc(32);
   $fancy-checkbox-small-size:  rem-calc(20);
+  $fancy-checkbox-tiny-size:  rem-calc(16);
 
   [type='checkbox'],
   [type='radio'] {
@@ -1256,6 +1259,54 @@ input {
         }
       }
     }
+
+    &.preliminary {
+    	&:checked {
+    		+ label,
+    		+ span {
+    			&:after {
+      				background-color:  $color-preliminary;
+          			box-shadow: 0 0 0 2px $color-preliminary;
+    			}
+    		}
+    	}
+    }
+
+    &.cancelled {
+    	&:checked {
+    		+ label,
+    		+ span {
+    			&:after {
+      				background-color:  $color-cancelled;
+          			box-shadow: 0 0 0 2px $color-cancelled;
+    			}
+    		}
+    	}
+    }
+
+    &.confirmed {
+    	&:checked {
+    		+ label,
+    		+ span {
+    			&:after {
+      				background-color:  $color-confirmed;
+          			box-shadow: 0 0 0 2px $color-confirmed;
+    			}
+    		}
+    	}
+    }
+
+    &.completed {
+    	&:checked {
+    		+ label,
+    		+ span {
+    			&:after {
+      				background-color:  $secondary-color;
+          			box-shadow: 0 0 0 2px $secondary-color;
+    			}
+    		}
+    	}
+    }
   }
 
   &.small {
@@ -1270,6 +1321,24 @@ input {
           top: 5px;
           width: $fancy-checkbox-small-size;
           height: $fancy-checkbox-small-size;
+          background-size: 1rem;
+        }
+      }
+    }
+  }
+
+  &.tiny {
+    [type='checkbox'],
+    [type='radio'] {
+      width: $fancy-checkbox-tiny-size !important;
+      height: $fancy-checkbox-tiny-size !important;
+
+      + label,
+      + span {
+        &:after {
+          top: 5px;
+          width: $fancy-checkbox-tiny-size;
+          height: $fancy-checkbox-tiny-size;
           background-size: 1rem;
         }
       }
