@@ -1,0 +1,1251 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spoke Sales Portal</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<div id="master-container" class="sidebar-body">
+  <div class="site-nav sidebar"> 
+    <header>
+      <a href="/admin/" class="logo text-center">
+        <img src="https://s3.amazonaws.com/assets.spokehealth.com/static/spoke-logo-300x60.png" alt="Spoke Health">
+      </a>
+    </header>
+
+    <ul class="menu vertical" data-accordion-menu="edx32b-accordion-menu" role="menu" aria-multiselectable="true">
+      <li id="sideNavDashboard" class="" role="menuitem">
+        <a href="/admin/" tabindex="0">My Dashboard</a>
+      </li>
+
+      <li id="sideNavEmployees" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"aria-expanded="false" aria-label="Members" aria-controls="3te1pf-acc-menu">
+        <a href="#">Members</a>
+        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu" aria-labelledby="sideNavEmployees" id="3te1pf-acc-menu" style="display: none;">
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a id="allEmployees" href="/admin/employees">All Members</a>
+          </li>
+        </ul>
+      </li>
+
+      <li id="sideNavMedProcedures" role="menuitem">
+        <a href="/admin/medical-procedures/" class="">Medical Procedures</a>
+      </li>
+
+      <li id="sideNavCompanies" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true" aria-expanded="false" aria-label="Companies" aria-controls="iulued-acc-menu">
+        <a href="#">Companies</a>
+        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu" aria-labelledby="sideNavCompanies" id="iulued-acc-menu" style="display: none;">
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/clients">All Companies</a>
+          </li>
+        </ul>
+      </li>
+
+      <li id="sideNavFacilities" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true" aria-expanded="false" aria-label="Facilities" aria-controls="2fhgsf-acc-menu">
+        <a href="#">Facilities</a>
+        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu" aria-labelledby="sideNavFacilities" id="2fhgsf-acc-menu" style="display: none;">
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/facilities">All Facilities</a>
+          </li>
+
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/facility-services">Ancillary Services</a>
+          </li>
+
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/awards">Awards</a>
+          </li>
+        </ul>
+      </li>
+
+      <li id="sideNavDoctors" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"aria-expanded="false" aria-label="Doctors" aria-controls="2xkwmt-acc-menu">
+        <a href="#">Doctors</a>
+        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu" aria-labelledby="sideNavDoctors" id="2xkwmt-acc-menu" style="display: none;">
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/doctors">All Doctors</a>
+          </li>
+        </ul>
+      </li>
+
+      <li id="sideNavContent" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true" aria-expanded="false" aria-label="Content" aria-controls="lrjcue-acc-menu">
+        <a href="#">Content</a>
+        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu" aria-labelledby="sideNavContent" id="lrjcue-acc-menu" style="display: none;">
+          <li role="menuitem" class="is-accordion-submenu-parent is-submenu-item is-accordion-submenu-item" aria-haspopup="true" aria-expanded="false" aria-label="Geo Data" aria-controls="oau1zl-acc-menu" id="4lvc70-acc-menu-link">
+            <a href="#">Geo Data</a>
+            <ul class="geo-nav nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu" aria-labelledby="4lvc70-acc-menu-link" id="oau1zl-acc-menu" style="display: none;">
+              <li class="regions is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a href="/admin/regions">World Regions</a>
+              </li>
+
+              <li class="countries is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a href="/admin/countries">Countries</a>
+              </li>
+
+              <li class="us-states is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a href="/admin/states">US States</a>
+              </li>
+            </ul>
+          </li>
+
+          <li role="menuitem" class="is-accordion-submenu-parent is-submenu-item is-accordion-submenu-item"aria-haspopup="true" aria-expanded="false" aria-label="Migrations" aria-controls="2x61zh-acc-menu" id="y09efp-acc-menu-link">
+            <a href="#">Migrations</a>
+            <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu" aria-labelledby="y09efp-acc-menu-link" id="2x61zh-acc-menu" style="display: none;">
+              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a href="/admin/migrations">Dashboard</a>
+              </li>
+
+              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a class="" href="/admin/migration_lists/specializations">
+                  Specializations
+                </a>
+              </li>
+
+              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a class="" href="/admin/migration_lists/subspecializations">
+                  Subspecializations
+                </a>
+              </li>
+
+              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a class="" href="/admin/migration_lists/treatments">
+                  Treatments
+                </a>
+              </li>
+
+              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a class="" href="/admin/migration_lists/awarding_bodies">
+                  Awarding Bodies
+                </a>
+              </li>
+
+              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a class="" href="/admin/migration_lists/awards">
+                  Awards
+                </a>
+              </li>
+
+              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a class="" href="/admin/migration_lists/countries">
+                  Countries
+                </a>
+              </li>
+
+              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a class="" href="/admin/migration_lists/facility_services">
+                  Facility Services
+                </a>
+              </li>
+
+              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a class="" href="/admin/migration_lists/facilities">
+                  Facilities
+                </a>
+              </li>
+
+              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a class="" href="/admin/migration_lists/doctors">
+                  Doctors
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/questions/">Questions</a>
+          </li>
+
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/questionnaires/">Questionnaires</a>
+          </li>
+
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/forms/master-company-psq">Master Company HRA</a>
+          </li>
+        </ul>
+      </li>
+
+      <li id="sideNavUserAccounts" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"aria-expanded="false" aria-label="User Accounts" aria-controls="fs3oxf-acc-menu">
+        <a href="#">User Accounts</a>
+        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu" aria-labelledby="sideNavUserAccounts" id="fs3oxf-acc-menu" style="display: none;">
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/users">Users List</a>
+          </li>
+        </ul>
+      </li>
+
+      <li id="sideNavProfile" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"aria-expanded="false" aria-label="Profile" aria-controls="a0vsqp-acc-menu">
+        <a href="#">Profile</a>
+        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"aria-labelledby="sideNavProfile" id="a0vsqp-acc-menu" style="display: none;">
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/users/4/change-password">Change My Password</a>
+          </li>
+        </ul>
+      </li>
+
+      <li id="sideNavActivityLogs" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"aria-expanded="false" aria-label="Activity Logs" aria-controls="5usvyk-acc-menu">
+        <a href="#">Activity Logs</a>
+        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"aria-labelledby="sideNavActivityLogs" id="5usvyk-acc-menu" style="display: none;">
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/activity-logs">All Logs</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+
+
+  <div class="main-content">
+    <div id="menu-bar" class="box-shadow">
+      <div data-reactroot="" class="top-bar">
+        <div class="top-bar-left">
+          <form>
+            <div class="input-group rounded"><input type="search" class="input-group-field" placeholder="Search members"
+                                                    value="">
+              <div class="input-group-button"><input type="submit" class="button hollow plain info" value="Submit">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="top-bar-right">
+          <ul class="dropdown menu" data-dropdown-menu="yk2de3-dropdown-menu" role="menubar">
+            <li class="drop-text is-dropdown-submenu-parent opens-left" role="menuitem" aria-haspopup="true" aria-expanded="false" aria-label=""><a href="#"><i class="fa fa-bell fa-lg" aria-describedby="notifCount"></i></a>
+              <ul class="notifications menu vertical dev-submenu submenu is-dropdown-submenu first-sub" data-submenu="" aria-hidden="true" role="menu">
+                <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item">
+                  <ol>
+                    <li class="heading" role="menuitem"><h6 class="text-center mb-0">Notifications</h6></li>
+                    <li class="subheader text-center" role="menuitem">You have no new notifications.</li>
+                  </ol>
+                </li>
+              </ul>
+              <span class="granted"></span></li>
+            <li class="is-dropdown-submenu-parent opens-left" role="menuitem" aria-haspopup="true" aria-expanded="false" aria-label="J"><a class="vertical-block" href="#" tabindex="0">
+              <div class="img-wrapper tiny circle"><img src="https://s3.amazonaws.com/assets.spoke.chromedia.com/media/adminUsers/5b62b3096a161c9e418b4567.jpeg"
+                alt="James James"></div> </a>
+              <ul class="menu vertical submenu is-dropdown-submenu first-sub" data-submenu="" aria-hidden="true" role="menu">
+                <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a class="logout_open" href="/admin/logout"><i
+                  class="fa fa-sign-out"></i><!-- react-text: 26 -->&nbsp; Sign Out<!-- /react-text --></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="root">
+      <div class="row expanded mt-1">
+        <div class="large-12 columns">
+
+          <div class="row expanded">
+            <div class="large-6 columns pl-0">
+              <input type="text" class="fancy-input round-corner outlined mb-0" value="" placeholder="Search...">
+            </div>
+          </div>
+
+          <div class="row expanded">
+            <div class="column pl-0">
+              <nav aria-label="You are here:" role="navigation">
+                <ul class="breadcrumbs">
+                  <li><a href="#">Specializations</a></li>
+                  <li><a href="#">Orthopedic</a></li>
+                  <li><a href="#">Orthopedic Surgery</a></li>
+                  <li>Knee Surgery</li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="page-lead row align-middle expanded">
+            <div class="medium-9 columns">
+              <span class="h5"><strong>Knee Surgery</strong></span>
+              <p class="subheader">
+                <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga consequuntur praesentium ab, amet,
+                  aut dignissimos rem quia nostrum doloremque. Veniam labore incidunt nostrum ipsa, inventore in, harum
+                  corporis rem ducimus ad adipisci nisi nam recusandae officiis rerum dolorum illum ab ullam laborum
+                  similique.
+                </small>
+              </p>
+            </div>
+            <div class="columns">
+              <div class="button-group small pull-right">
+                <a href="#" class="button alert rounded mr-0-5"><i class="fa fa-trash"></i>&nbsp; Delete</a>
+                <a href="#" class="button info rounded" data-open="edit"><i class="fa fa-edit"></i>&nbsp; Edit</a>
+              </div>
+            </div>
+          </div>
+
+          <ul class="tabs" data-tabs id="medicalProcedures">
+            <li class="tabs-title"><a href="#panel1" aria-selected="true">Surgery Bundle</a></li>
+            <li class="tabs-title"><a href="#panel2">Health Risk Assessment</a></li>
+            <li class="tabs-title is-active"><a href="#panel3 ">Pathway Events</a></li>
+          </ul>
+
+          <div class="tabs-content" data-tabs-content="medicalProcedures">
+
+            <div class="tabs-panel" id="panel1">
+              <div class="row expanded">
+                <div class="columns pl-0">
+                  <a data-open="exampleModal1" class="button success small rounded pull-right">+ Add New Surgery
+                    bundle</a>
+                </div>
+              </div>
+
+              <div class="row expanded border-radius-sm bg-black10 auto-columns-3 pad1">
+                <div class="linked-list columns medium-4 align-top mb-0">
+                  <a class="list-item" href="#">Meniscectomy</a>
+                </div>
+                <div class="linked-list columns medium-4 align-top mb-0">
+                  <a class="list-item" href="#">Meniscus Repair</a>
+                </div>
+                <div class="linked-list columns medium-4 align-top mb-0">
+                  <a class="list-item" href="#">Meniscus Transplant</a>
+                </div>
+                <div class="linked-list columns medium-4 align-top mb-0">
+                  <a class="list-item" href="#">Plica Removal</a>
+                </div>
+                <div class="linked-list columns medium-4 align-top mb-0">
+                  <a class="list-item" href="#">Lateral Release</a>
+                </div>
+                <div class="linked-list columns medium-4 align-top mb-0">
+                  <a class="list-item" href="#">ACL Reconstruction</a>
+                </div>
+                <div class="linked-list columns medium-4 align-top mb-0">
+                  <a class="list-item" href="#">Tendon Repair</a>
+                </div>
+                <div class="linked-list columns medium-4 align-top mb-0">
+                  <a class="list-item" href="#">Total Knee Replacement</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="tabs-panel" id="panel2">
+              <div class="row expanded">
+                <div class="columns ">
+                  <input type="text" class="fancy-input round-corner" placeholder="Add Question">
+                </div>
+                <div class="columns"></div>
+              </div>
+              <div class="row expanded mb-3 ml-1 mr-1">
+                <div class="columns pl-0 pr-0">
+
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm show-on-hover">
+                    <div class="columns shrink pt-1 pb-1">
+                      <p class="mb-0 clr-black20"><i class="fa fa-bars"></i></a></p>
+                    </div>
+                    <div class="columns pt-1 pb-1">
+                      <p class="mb-0 subheader">
+                        <small>What is your gender?</small>
+                        </a></p>
+                      <p class="mb-0">What is your gender?</a></p>
+                    </div>
+                    <div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+                      <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm show-on-hover">
+                    <div class="columns shrink pt-1 pb-1">
+                      <p class="mb-0 clr-black20"><i class="fa fa-bars"></i></a></p>
+                    </div>
+                    <div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+                      <p class="mb-0 subheader">
+                        <small>What medical or diagnostic test/s have you had in the past two years?</small>
+                        </a></p>
+                      <p class="mb-0">What medical or diagnostic test/s have you had in the past two years?</p>
+                    </div>
+                    <div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+                      <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm show-on-hover">
+                    <div class="columns shrink pt-1 pb-1">
+                      <p class="mb-0 clr-black20"><i class="fa fa-bars"></i></a></p>
+                    </div>
+                    <div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+                      <p class="mb-0 subheader">
+                        <small>When was your last complete physical examination?</small>
+                        </a></p>
+                      <p class="mb-0">When was your last complete physical examination?</p>
+                    </div>
+                    <div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+                      <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm show-on-hover">
+                    <div class="columns shrink pt-1 pb-1">
+                      <p class="mb-0 clr-black20"><i class="fa fa-bars"></i></a></p>
+                    </div>
+                    <div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+                      <p class="mb-0 subheader">
+                        <small>Are you currently taking any medications?</small>
+                        </a></p>
+                      <p class="mb-0">Are you currently taking any medications?</p>
+                    </div>
+                    <div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+                      <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm show-on-hover">
+                    <div class="columns shrink pt-1 pb-1">
+                      <p class="mb-0 clr-black20"><i class="fa fa-bars"></i></a></p>
+                    </div>
+                    <div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+                      <p class="mb-0 subheader">
+                        <small>Have you had any of the following medical conditions?</small>
+                        </a></p>
+                      <p class="mb-0">Have you had any of the following medical conditions?</p>
+                    </div>
+                    <div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+                      <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row expanded mb-3 ml-1 mr-1">
+                <div class="columns pl-0 pr-0">
+
+                  <div class="row expanded">
+                    <div class="columns pl-0">
+                      <p class="clr-secondary"><strong>ORTHOPEDICS</strong></p>
+                    </div>
+                  </div>
+
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm">
+                    <div class="columns pt-1 pb-1">
+                      <p class="mb-0">
+                        <small>What is your gender?</small>
+                        </a></p>
+                    </div>
+                  </div>
+
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm">
+                    <div class="columns  pt-1 pb-1 border-radius-sm">
+                      <p class="mb-0">
+                        <small>What medical or diagnostic test/s have you had in the past two years?</small>
+                        </a></p>
+                    </div>
+                  </div>
+
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm">
+                    <div class="columns pt-1 pb-1">
+                      <p class="mb-0">
+                        <small>When was your last complete physical examination?</small>
+                        </a></p>
+                    </div>
+                  </div>
+
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm">
+                    <div class="columns pt-1 pb-1">
+                      <p class="mb-0">
+                        <small>Are you currently taking any medications?</small>
+                        </a></p>
+                    </div>
+                  </div>
+
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm">
+                    <div class="columns pt-1 pb-1">
+                      <p class="mb-0">
+                        <small>Have you had any of the following medical conditions?</small>
+                        </a></p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row expanded mb-3 ml-1 mr-1">
+                <div class="columns pl-0 pr-0">
+
+                  <div class="row expanded">
+                    <div class="columns pl-0">
+                      <p class="clr-secondary"><strong>ORTHOPEDICS SURGERY</strong></p>
+                    </div>
+                  </div>
+
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm">
+                    <div class="columns pt-1 pb-1">
+                      <p class="mb-0">
+                        <small>What is your gender?</small>
+                        </a></p>
+                    </div>
+                  </div>
+
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm">
+                    <div class="columns  pt-1 pb-1 border-radius-sm">
+                      <p class="mb-0">
+                        <small>What medical or diagnostic test/s have you had in the past two years?</small>
+                        </a></p>
+                    </div>
+                  </div>
+
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm">
+                    <div class="columns pt-1 pb-1">
+                      <p class="mb-0">
+                        <small>When was your last complete physical examination?</small>
+                        </a></p>
+                    </div>
+                  </div>
+
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm">
+                    <div class="columns pt-1 pb-1">
+                      <p class="mb-0">
+                        <small>Are you currently taking any medications?</small>
+                        </a></p>
+                    </div>
+                  </div>
+
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm">
+                    <div class="columns pt-1 pb-1">
+                      <p class="mb-0">
+                        <small>Have you had any of the following medical conditions?</small>
+                        </a></p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="tabs-panel is-active" id="panel3">
+              <div class="row expanded full-page-body">
+
+                <div class="full-page-body-sidebar columns medium-3 pl-0 pr-0 pt-0">
+
+                  <div class="row ">
+                    <div class="medium-12 columns pr-0 pl-0">
+
+                      <div class="row pr-1 pb-1 pt-1 align-middle bg-black10">
+                        <div class="columns">
+                          <h6 class="mb-0">Pathway Events</h6>
+                        </div>
+                        <div class="columns shrink">
+                          <button class="button hollow clear success mb-0">
+                            <i class="fa fa-plus"></i>
+                          </button>
+                        </div>
+                      </div>
+
+                      <ul class="ul-tree ul-tree-expanded mt-0-5 mb-0-5">
+                        <li class="ul-tree-parent toggler-handler selected">
+                          <div class="row collapse align-middle">
+                            <div class="columns shrink">
+                              <i class="fa fa-lg fa-calendar clr-success"></i>
+                            </div>
+                            <div class="medium-11 columns">
+                              <a href="" class="tree-wrapper pl-0-5 pr-0-5">
+                                <p class="truncate"><strong>Pre-op Questionnaire</strong></p>
+                                <div class="row collapse align-middle">
+                                  <div class="medium-9 columns">
+                                    <div class="subheader mb-0 clr-black20">
+                                      <small>1 Hour After Facility is Selected</small>
+                                    </div>
+                                  </div>
+                                  <div class="medium-3 columns">
+                                    <ul class="tag-cloud compact mt-0 mb-0 pull-right">
+                                      <li class="tag-cloud-individual-tag">
+                                        COMPANY
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="toggler-target ul-tree-child">
+                          <div class="row collapse">
+                            <div class="columns shrink">
+                              <i class="fa fa-lg fa-clipboard-list clr-secondary"></i>
+                            </div>
+                            <div class="medium-11 columns">
+                              <span class="truncate">Send Pre-op Questionnaire</span>
+                            </div>
+                            <!-- <div class="columns shrink pr-0">
+                              <button class="button hollow clear success small mb-0 pt-0 pb-0">
+                                <i class="fa fa-plus"></i>
+                              </button>
+                            </div> -->
+                          </div>
+                        </li>
+                        <li class="toggler-target ul-tree-child">
+                          <div class="row collapse">
+                            <div class="columns shrink">
+                              <i class="fa fa-lg fa-tasks clr-secondary"></i>
+                            </div>
+                            <div class="medium-11 columns">
+                              <span class="truncate">Remind member to answer the questionnaire.</span>
+                            </div>
+                            <!-- <div class="columns shrink pr-0">
+                              <button class="button hollow clear success small mb-0 pt-0 pb-0">
+                                <i class="fa fa-plus"></i>
+                              </button>
+                            </div> -->
+                          </div>
+                        </li>
+                      </ul>
+
+                      <ul class="ul-tree ul-tree-expanded mt-0-5 mb-0-5">
+                        <li class="ul-tree-parent toggler-handler selected">
+                          <div class="row collapse align-middle">
+                            <div class="columns shrink">
+                              <i class="fa fa-lg fa-calendar clr-success"></i>
+                            </div>
+                            <div class="medium-11 columns">
+                              <a href="" class="tree-wrapper pl-0-5 pr-0-5">
+                                <p class="truncate"><strong>Pre-op Evaluation and Clearance</strong></p>
+                                <div class="row collapse align-middle">
+                                  <div class="medium-9 columns">
+                                    <div class="subheader mb-0 clr-black20">
+                                      <small>1 Hour After Facility is Selected</small>
+                                    </div>
+                                  </div>
+                                  <div class="medium-3 columns">
+                                    <ul class="tag-cloud compact mt-0 mb-0 pull-right">
+                                      <li class="tag-cloud-individual-tag">
+                                        COMPANY
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="toggler-target ul-tree-child">
+                          <div class="row collapse">
+                            <div class="columns shrink">
+                              <i class="fa fa-lg fa-clipboard-list clr-secondary"></i>
+                            </div>
+                            <div class="medium-11 columns">
+                              <span class="truncate">Send Pre-op Evaluation and Clearance</span>
+                            </div>
+                            <!-- <div class="columns shrink pr-0">
+                              <button class="button hollow clear success small mb-0 pt-0 pb-0">
+                                <i class="fa fa-plus"></i>
+                              </button>
+                            </div> -->
+                          </div>
+                        </li>
+                      </ul>
+
+                      <ul class="ul-tree ul-tree-expanded mt-0-5 mb-0-5">
+                        <li class="ul-tree-parent toggler-handler selected">
+                          <div class="row collapse align-middle">
+                            <div class="columns shrink">
+                              <i class="fa fa-lg fa-calendar clr-success"></i>
+                            </div>
+                            <div class="medium-11 columns">
+                              <a href="" class="tree-wrapper pl-0-5 pr-0-5">
+                                <p class="truncate"><strong>Pre-op Infection Avoidance</strong></p>
+                                <div class="row collapse align-middle">
+                                  <div class="medium-9 columns">
+                                    <div class="subheader mb-0 clr-black20">
+                                      <small>1 Hour After Facility is Selected</small>
+                                    </div>
+                                  </div>
+                                  <div class="medium-3 columns">
+                                    <ul class="tag-cloud compact mt-0 mb-0 pull-right">
+                                      <li class="tag-cloud-individual-tag">
+                                        COMPANY
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="toggler-target ul-tree-child">
+                          <div class="row collapse">
+                            <div class="columns shrink">
+                              <i class="fa fa-lg fa-clipboard-list clr-secondary"></i>
+                            </div>
+                            <div class="medium-11 columns">
+                              <span class="truncate">Send Pain Threshold</span>
+                            </div>
+                            <!-- <div class="columns shrink pr-0">
+                              <button class="button hollow clear success small mb-0 pt-0 pb-0">
+                                <i class="fa fa-plus"></i>
+                              </button>
+                            </div> -->
+                          </div>
+                        </li>
+                      </ul>
+
+                      <ul class="ul-tree ul-tree-expanded mt-0-5 mb-0-5 is-active">
+                        <li class="ul-tree-parent toggler-handler selected">
+                          <div class="row collapse align-middle">
+                            <div class="columns shrink">
+                              <i class="fa fa-lg fa-calendar clr-success"></i>
+                            </div>
+                            <div class="medium-11 columns">
+                              <a href="" class="tree-wrapper pl-0-5 pr-0-5">
+                                <p class="truncate"><strong>Pre-op Antibiotics</strong></p>
+                                <div class="row collapse align-middle">
+                                  <div class="medium-9 columns">
+                                    <div class="subheader mb-0 clr-black20">
+                                      <small>1 Hour After Facility is Selected</small>
+                                    </div>
+                                  </div>
+                                  <div class="medium-3 columns">
+                                    <ul class="tag-cloud compact mt-0 mb-0 pull-right">
+                                      <li class="tag-cloud-individual-tag">
+                                        COMPANY
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="toggler-target ul-tree-child">
+                          <div class="row collapse">
+                            <div class="columns shrink">
+                              <i class="fa fa-lg fa-clipboard-list clr-secondary"></i>
+                            </div>
+                            <div class="medium-11 columns">
+                              <span class="truncate">Send Medication Compliance Follow-up</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="toggler-target ul-tree-child">
+                          <div class="row collapse">
+                            <div class="columns shrink">
+                              <i class="fa fa-lg fa-tasks clr-secondary"></i>
+                            </div>
+                            <div class="medium-11 columns">
+                              <span class="truncate">Member todo</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="toggler-target ul-tree-child">
+                          <div class="row collapse">
+                            <div class="columns shrink">
+                              <i class="fa fa-lg fa-tasks clr-warning"></i>
+                            </div>
+                            <div class="medium-11 columns">
+                              <span class="truncate clr-warning">Concierge todo</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="toggler-target ul-tree-child">
+                          <div class="row collapse">
+                            <div class="columns shrink">
+                              <i class="fa fa-lg fa-envelope clr-secondary"></i>
+                            </div>
+                            <div class="medium-11 columns">
+                              <span class="truncate">Send message to Member</span>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="full-page-body-content bg-white columns pt-1">
+
+                  <div class="row mb-2">
+                    <div class="columns pad-1">
+                      <p class="subheader"><strong>
+                        <small>Title</small>
+                      </strong></p>
+                      <input type="text" class="fancy-input" value="Pre-op Antibiotics">
+                      <div class="row">
+                        <div class="columns shrink">
+                          <p class="fancy-checkbox small">
+                            <input id="enab" type="checkbox" name="enab" class="mr-0">
+                            <label class="h6 subheader" for="enab">Enabled</label>
+                          </p>
+                        </div>
+                        <div class="columns shrink">
+                          <p class="fancy-checkbox small">
+                            <input id="enab" type="checkbox" name="enab" class="mr-0">
+                            <label class="h6 subheader" for="enab">Handoff</label>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row mb-2 ">
+                    <div class="columns pr-0 pl-0">
+                      <ul class="tabs tabs-inverse " data-tabs id="example-tabs">
+                        <!-- <li class="tabs-title"><a data-tabs-target="panel0" href="#panel0" >Event</a></li> -->
+                        <li class="tabs-title is-active" role="presentation"><a href="#panel3_1"
+                                                                                role="tab" aria-controls="panel3_1"
+                                                                                aria-selected="true" id="panel1-label">Triggers</a>
+                        </li>
+                        <li class="tabs-title" role="presentation"><a href="#panel3_2"
+                                                                      role="tab" aria-controls="panel3_2"
+                                                                      aria-selected="false" id="panel2-label">tasks</a>
+                        </li>
+                        <!-- <li class="tabs-title"><a data-tabs-target="panel3" href="#panel3">Escalation</a></li> -->
+                      </ul>
+
+                      <div class="tabs-content bg-black20" data-tabs-content="example-tabs">
+
+
+                        <div class="tabs-panel pad-1 bg-black20 is-active" id="panel3_1" role="tabpanel"
+                             aria-hidden="false" aria-labelledby="panel1-label">
+
+                          <div class="mb-1 toggler">
+                            <div class="fancy-checkbox small mb-1">
+                              <input name="custname1" id="custname" type="checkbox" class="mr-0">
+                              <label class="h6" for="custname">Dated Event</label>
+                            </div>
+                            <div class="row expanded bg-white pt-0-5 pb-0-5 border-radius-sm toggler-handler">
+                              <div class="columns pl-0 pr-0">
+                                <div class="row expanded">
+                                  <div class="columns pl-0-5 pr-0-5">
+                                    <input type="number" class="fancy-input mb-0" value="1">
+                                  </div>
+                                  <div class="columns pl-0-5 pr-0-5">
+                                    <select name="" id="" class="fancy-input mb-0">
+                                      <option value="">Hour</option>
+                                      <option value="">Days</option>
+                                      <option value="">Weeks</option>
+                                      <option value="">Month</option>
+                                      <option value="">Year</option>
+                                    </select>
+                                  </div>
+                                  <div class="columns pl-0-5 pr-0-5 shrink">
+                                    <select name="" id="" class="fancy-input mb-0">
+                                      <option value="">After</option>
+                                      <option value="">Before</option>
+                                    </select>
+                                  </div>
+                                  <div class="columns pl-0-5 pr-0-5 medium-6">
+                                    <select name="" id="" class="fancy-input mb-0">
+                                      <option value="">Facility Is Selected</option>
+                                      <option value="">Surgery</option>
+                                      <option value="">Member Reported Pain Survey</option>
+                                      <option value="">Post-Op visit scheduled</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- <div class="columns pl-0 pr-0-5 shrink">
+                                <div class="pull-right">
+                                  <button class="button hollow alert clear mb-0"><i class="fa fa-trash"></i></button>
+                                </div>
+                              </div> -->
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="tabs-panel pad-1 bg-black20" id="panel3_2" role="tabpanel" aria-hidden="true"
+                             aria-labelledby="panel2-label">
+
+                          <div class="row">
+                            <div class="columns">
+                              <div class="dropdown pull-right">
+                                <button class="dropbtn button pull-right hollow clear small success mb-0 pull-right"><i
+                                  class="fa fa-plus"></i> Add task
+                                </button>
+                                <div class="dropdown-content dock-right pl-0 pr-0 pb-0">
+                                  <ul class="ml-0 ">
+                                    <li class="list-style-type-none"><a class="pl-0-5 pr-0-5">Add to-do</a></li>
+                                    <li class="list-style-type-none"><a class="pl-0-5 pr-0-5">Add Message</a></li>
+                                    <li class="list-style-type-none"><a class="pl-0-5 pr-0-5">Add Question</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="mb-1 toggler task">
+
+                            <div class="row expanded task-heading">
+                              <div class="columns shrink toggler-handler">
+                                <i class="fa fa-lg fa-clipboard-list mt-0-5 task-icon"></i>
+                              </div>
+                              <div class="columns toggler-handler">
+                                <p class="mb-0 task-title"><strong>Medication Compliance Follow-up</strong></p>
+                              </div>
+                              <div class="columns shrink">
+                                <button class="button hollow clear toggler-handler mb-0"><i class="fa fa-chevron-down"></i></button>
+                              </div>
+                            </div>
+
+                            <div class="toggler-target task-body" style="display: none;">                              
+                              <div class="row mb-1">
+                                <div class="columns">
+                                  <p class="subheader"><strong><small>Question</small></strong></p>
+                                  <input type="text" class="fancy-input" value="Medical Compliance Follow-up">
+                                </div>
+                              </div>
+                              <hr>
+                              <div class="row mb-1">
+                                <div class="columns">
+                                  <p class="subheader"><strong><small>Assign as monitor until this question has been answered</small></strong></p>
+                                <select name="" id="" class="fancy-input">
+                                  <option value="">Engagement Specialist</option>
+                                  <option value="">Care Coordinator</option>
+                                </select>
+                                </div>
+                              </div>
+                              <div class="row mb-1">
+                                <div class="columns">
+                                  <p class="subheader"><strong>
+                                    <small>Flag red if not answered by</small>
+                                  </strong></p>
+                                  <div class="row">
+                                    <div class="columns pl-0">
+                                      <input type="text" class="fancy-input" placeholder="Value" value="1">
+                                    </div>
+                                    <div class="columns pr-0">
+                                      <select name="" id="" class="fancy-input">
+                                        <option value="Day">Day(s)</option>
+                                        <option value="Week">Week(s)</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row mb-1">
+                                <div class="columns"></div>
+                                <div class="columns shrink">
+                                  <button class="button hollow tiny alert mb-0"><i class="fa fa-trash"></i> Delete Task</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="mb-1 toggler task">
+
+                            <div class="row expanded task-heading">
+                              <div class="columns shrink toggler-handler">
+                                <i class="fa fa-lg fa-tasks mt-0-5 task-icon"></i>
+                              </div>
+                              <div class="columns toggler-handler">
+                                <p class="mb-0 task-title"><strong>Member todo</strong></p>
+                              </div>
+                              <div class="columns shrink">
+                                <button class="button hollow clear toggler-handler mb-0"><i class="fa fa-chevron-down"></i></button>
+                              </div>
+                            </div>
+                            <div class="toggler-target task-body" style="display: none;">
+                              <div class="row mb-1">
+                                <div class="columns">
+                                  <p class="subheader"><strong><small>To-do task</small></strong></p>
+                                  <input type="text" class="fancy-input" value="Remind member to answer the questionnaire.">
+                                </div>
+                              </div>
+                              <hr>
+                              <div class="row mb-1">
+                                <div class="columns">
+                                  <p class="subheader"><strong><small>Assign as monitor until this to-do has been completed</small></strong></p>
+                                <select name="" id="" class="fancy-input">
+                                  <option value="">Engagement Specialist</option>
+                                  <option value="">Care Coordinator</option>
+                                </select>
+                                </div>
+                              </div>
+                              <div class="row mb-1">
+                                <div class="columns">
+                                  <p class="subheader"><strong>
+                                    <small>Flag red if not completed by</small>
+                                  </strong></p>
+                                  <div class="row">
+                                    <div class="columns pl-0">
+                                      <input type="text" class="fancy-input" placeholder="Value" value="1">
+                                    </div>
+                                    <div class="columns pr-0">
+                                      <select name="" id="" class="fancy-input">
+                                        <option value="Day">Day(s)</option>
+                                        <option value="Week">Week(s)</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row mb-1">
+                                <div class="columns"></div>
+                                <div class="columns shrink">
+                                  <button class="button hollow tiny alert mb-0"><i class="fa fa-trash"></i> Delete Task</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="mb-1 toggler task task-admin">
+
+                            <div class="row expanded task-heading">
+                              <div class="columns shrink toggler-handler">
+                                <i class="fa fa-lg fa-tasks mt-0-5 task-icon"></i>
+                              </div>
+                              <div class="columns toggler-handler">
+                                <p class="mb-0 task-title"><strong>Concierge todo</strong></p>
+                              </div>
+                              <div class="columns shrink">
+                                <button class="button hollow clear toggler-handler mb-0"><i class="fa fa-chevron-down"></i></button>
+                              </div>
+                            </div>
+                            <div class="toggler-target task-body" style="display: none;">
+                              <div class="row mb-1">
+                                <div class="columns">
+                                  <p class="subheader"><strong><small>To-do task</small></strong></p>
+                                  <input type="text" class="fancy-input" value="Remind member to answer the questionnaire.">
+                                </div>
+                              </div>
+                              
+                              <div class="row mb-1">
+                                <div class="columns">
+                                  <p class="subheader"><strong><small>Assigned to</small></strong></p>
+                                <select name="" id="" class="fancy-input">
+                                  <option value="">Engagement Specialist</option>
+                                  <option value="">Care Coordinator</option>
+                                </select>
+                                </div>
+                              </div>
+
+                              <div class="row mb-1">
+                                <div class="columns">
+                                  <p class="subheader"><strong>
+                                    <small>Flag red if not completed by</small>
+                                  </strong></p>
+                                  <div class="row">
+                                    <div class="columns pl-0">
+                                      <input type="text" class="fancy-input" placeholder="Value" value="1">
+                                    </div>
+                                    <div class="columns pr-0">
+                                      <select name="" id="" class="fancy-input">
+                                        <option value="Day">Day(s)</option>
+                                        <option value="Week">Week(s)</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="row mb-1">
+                                <div class="columns"></div>
+                                <div class="columns shrink">
+                                  <button class="button hollow tiny alert mb-0"><i class="fa fa-trash"></i> Delete Task</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="mb-1 toggler task">
+                            <div class="row expanded task-heading">
+                              <div class="columns shrink toggler-handler">
+                                <i class="fa fa-lg fa-comment mt-0-5 task-icon"></i>
+                              </div>
+                              <div class="columns toggler-handler">
+                                <p class="mb-0 task-title"><strong>Send message to Member</strong></p>
+                                <!-- <p class="subheader mb-0">Member</p> -->
+                              </div>
+                              <div class="columns shrink">
+                                <button class="button hollow clear mb-0 toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                              </div>
+                            </div>
+                            <div class="toggler-target task-body" style="display: none;">
+                              <div class="row mb-1">
+                                <div class="columns">
+                                  <p class="subheader"><small><strong>Title</strong> <span class="helper-text">(Not seen by member)</span></small></p>
+                                  <input type="text" value="Send message to Member" class="fancy-input">
+                                </div>
+                              </div>
+                              <div class="row mb-1">
+                                <div class="columns">
+                                  <p class="subheader"><small><strong>Message</strong></small></p>
+                                  <textarea name="" id="" cols="30" rows="3" class="fancy-input mb-0"></textarea>
+                                  <p class="helper-text">The message will be sent to the same person who is assigned to monitor below</p>
+                                </div>
+                              </div>
+                              <hr>
+                              <div class="row mb-1">
+                                <div class="columns">
+                                  <p class="subheader"><strong><small>Assign as monitor until this message has been read</small></strong></p>
+                                <select name="" id="" class="fancy-input">
+                                  <option value="">Engagement Specialist</option>
+                                  <option value="">Care Coordinator</option>
+                                </select>
+                                </div>
+                              </div>
+                              <div class="row mb-1">
+                                <div class="columns">
+                                  <p class="subheader"><strong>
+                                    <small>Flag Red if message is not read by</small>
+                                  </strong></p>
+                                  <div class="row">
+                                    <div class="columns pl-0">
+                                      <input type="text" class="fancy-input" placeholder="Value" value="1">
+                                    </div>
+                                    <div class="columns pr-0">
+                                      <select name="" id="" class="fancy-input">
+                                        <option value="Day">Day(s)</option>
+                                        <option value="Week">Week(s)</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row mb-1">
+                                <div class="columns">
+                                  <button class="button hollow tiny mb-0"><i class="fa fa-paperclip"></i> Attach Files</button>
+                                  <button class="button hollow tiny mb-0"><i class="fa fa-paperclip"></i> Attach Videos</button>
+                                </div>
+                              </div>
+                              <div class="row mb-1">
+                                <div class="columns"></div>
+                                <div class="columns shrink">
+                                  <button class="button hollow tiny alert mb-0"><i class="fa fa-trash"></i> Delete Task</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row mb-3">
+                    <div class="columns">
+                      <a href="#" class="button alert pull-right"><i class="fa fa-trash"></i> Delete Event</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    
+
+      <div class="reveal" id="exampleModal1" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+        <div class="row collapse">
+          <div class="large-12 columns">
+            <h5 class="reveal-heading">Add New Sub-specialization</h5>
+          </div>
+        </div>
+        <div class="row collapse">
+          <div class="large-12 columns">
+            <div class="reveal-body">
+              <div class="row">
+                <div class="large-12 columns">
+                  <label for="">
+                    Sub-specialization Name
+                    <input type="text">
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-12 columns">
+                  <label>
+                    Description
+                    <textarea name="" id="" cols="30" rows="5"></textarea>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row collapse">
+          <div class="large-12 columns">
+            <div class="reveal-footer">
+              <div class="button-group pull-right">
+                <a class="button link" data-close>Cancel</a>
+                <a href="#" data-open="exampleModal2" class="button success">Save</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button> -->
+      </div>
+
+      <div class="reveal" id="edit" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+        <div class="row collapse">
+          <div class="large-12 columns">
+            <h5 class="reveal-heading">Edit Specialization</h5>
+          </div>
+        </div>
+        <form>
+          <div class="row collapse">
+            <div class="auto columns">
+              <div class="reveal-body">
+                <div class="row">
+                  <div class="large-12 columns">
+                    <label>
+                      Specialization Name
+                      <input type="text" value="General Surgery">
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-12 columns">
+                    <label>
+                      Description
+                      <textarea rows="5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos vitae iure, magni dolorem quis aliquam, quam ipsum natus quod magnam laudantium. Asperiores saepe illo tempore qui commodi, assumenda minus sapiente nam. Rerum, repudiandae, architecto!</textarea>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row collapse">
+            <div class="large-12 columns">
+              <div class="reveal-footer">
+                <div class="submit button-group pull-right">
+                  <a class="button link" data-close>Cancel</a>
+                  <button type="submit" class="button primary">Save Changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <!-- <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/what-input/what-input.js"></script>
+<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+
+<script src="js/app.js"></script>
+
+<script type="text/javascript">
+  $(function () {
+    var timer;
+
+    $(window).resize(function () {
+      clearTimeout(timer);
+      timer = setTimeout(function () {
+        $('.site-nav, .content').css("height", $(window).height());
+      }, 40);
+    }).resize();
+  });
+</script>
+
+</body>
+</html>
