@@ -1097,6 +1097,21 @@ input {
     color: white;
   }
 
+  &.preliminary {
+    background-color: $color-preliminary !important;
+    color: white;
+  }
+
+  &.cancelled {
+    background-color: $color-cancelled !important;
+    color: white;
+  }
+
+  &.confirmed {
+    background-color: $color-confirmed !important;
+    color: white;
+  }
+
 
   &.outlined {
     border: .05rem solid #e1e1e1;
@@ -1131,6 +1146,24 @@ input {
       border-color: $alert-color !important;
 
     }
+
+	 &.preliminary {
+	   background-color: $color-preliminary !important;
+	   color: white;
+
+	 }
+
+	 &.cancelled {
+	   background-color: $color-cancelled !important;
+	   color: white;
+
+	 }
+
+	 &.confirmed {
+	   background-color: $color-confirmed !important;
+	   color: white;
+
+	 }
   }
 
   &.small {
@@ -1296,7 +1329,7 @@ input {
     	}
     }
 
-    &.completed {
+    &.secondary {
     	&:checked {
     		+ label,
     		+ span {

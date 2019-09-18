@@ -37,13 +37,6 @@ body {
   }
 }
 
-// IMPORTANT: Reposition Jira Button
-/*#jsd-widget {
-  //Jira Widget button
-  //right: 5rem !important;
-  //bottom: .15rem !important;
-}*/
-
 .chat-support, .chat-area {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.21);
 }
@@ -338,22 +331,4 @@ ul.input-list.widget-choices li:last-child {
     }
   }
 }
-
-
-#jsd-widget {
-  .form.help-form.aui.top-label {
-    height: unset !important;
-  }
-}
-
-
-
-@media only screen and (min-height: 320px) {
-  #jsd-widget {
-    .form.help-form.aui.top-label {
-      height: unset !important;
-    }
-  }
-}
-
 
