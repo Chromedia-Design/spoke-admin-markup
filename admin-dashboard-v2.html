@@ -1,0 +1,1295 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Spoke Admin Portal</title>
+		<link rel="stylesheet" href="js/fullcalendar/fullcalendar.min.css">
+		<link rel="stylesheet" href="js/fullcalendar/fullcalendar.print.min.css" media="print">
+		<link rel="stylesheet" href="css/app.css">
+	</head>
+	<body>
+
+		<div id="master-container" class="sidebar-body">
+			<!-- SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR  -->
+			<div class="site-nav sidebar"> 
+				<header>
+					<a href="/admin/" class="logo text-center">
+						<img src="https://s3.amazonaws.com/assets.spokehealth.com/static/spoke-logo-300x60.png" alt="Spoke Health">
+					</a>
+				</header>
+
+				<ul class="menu vertical" data-accordion-menu="edx32b-accordion-menu" role="menu" aria-multiselectable="true">
+					<li id="sideNavDashboard" class="" role="menuitem">
+						<a href="/admin/" tabindex="0">My Dashboard</a>
+					</li>
+
+					<li id="sideNavEmployees" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"aria-expanded="false" aria-label="Members" aria-controls="3te1pf-acc-menu">
+						<a href="#">Members</a>
+						<ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu" aria-labelledby="sideNavEmployees" id="3te1pf-acc-menu" style="display: none;">
+							<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+								<a id="allEmployees" href="/admin/employees">All Members</a>
+							</li>
+						</ul>
+					</li>
+
+					<li id="sideNavMedProcedures" role="menuitem">
+						<a href="/admin/medical-procedures/" class="">Medical Procedures</a>
+					</li>
+
+					<li id="sideNavCompanies" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true" aria-expanded="false" aria-label="Companies" aria-controls="iulued-acc-menu">
+						<a href="#">Companies</a>
+						<ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu" aria-labelledby="sideNavCompanies" id="iulued-acc-menu" style="display: none;">
+							<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+								<a href="/admin/clients">All Companies</a>
+							</li>
+						</ul>
+					</li>
+
+					<li id="sideNavFacilities" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true" aria-expanded="false" aria-label="Facilities" aria-controls="2fhgsf-acc-menu">
+						<a href="#">Facilities</a>
+						<ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu" aria-labelledby="sideNavFacilities" id="2fhgsf-acc-menu" style="display: none;">
+							<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+								<a href="/admin/facilities">All Facilities</a>
+							</li>
+
+							<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+								<a href="/admin/facility-services">Ancillary Services</a>
+							</li>
+
+							<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+								<a href="/admin/awards">Awards</a>
+							</li>
+						</ul>
+					</li>
+
+					<li id="sideNavDoctors" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"aria-expanded="false" aria-label="Doctors" aria-controls="2xkwmt-acc-menu">
+						<a href="#">Doctors</a>
+						<ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu" aria-labelledby="sideNavDoctors" id="2xkwmt-acc-menu" style="display: none;">
+							<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+								<a href="/admin/doctors">All Doctors</a>
+							</li>
+						</ul>
+					</li>
+
+					<li id="sideNavContent" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true" aria-expanded="false" aria-label="Content" aria-controls="lrjcue-acc-menu">
+						<a href="#">Content</a>
+						<ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu" aria-labelledby="sideNavContent" id="lrjcue-acc-menu" style="display: none;">
+							<li role="menuitem" class="is-accordion-submenu-parent is-submenu-item is-accordion-submenu-item" aria-haspopup="true" aria-expanded="false" aria-label="Geo Data" aria-controls="oau1zl-acc-menu" id="4lvc70-acc-menu-link">
+								<a href="#">Geo Data</a>
+								<ul class="geo-nav nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu" aria-labelledby="4lvc70-acc-menu-link" id="oau1zl-acc-menu" style="display: none;">
+									<li class="regions is-submenu-item is-accordion-submenu-item" role="menuitem">
+										<a href="/admin/regions">World Regions</a>
+									</li>
+
+									<li class="countries is-submenu-item is-accordion-submenu-item" role="menuitem">
+										<a href="/admin/countries">Countries</a>
+									</li>
+
+									<li class="us-states is-submenu-item is-accordion-submenu-item" role="menuitem">
+										<a href="/admin/states">US States</a>
+									</li>
+								</ul>
+							</li>
+
+							<li role="menuitem" class="is-accordion-submenu-parent is-submenu-item is-accordion-submenu-item"aria-haspopup="true" aria-expanded="false" aria-label="Migrations" aria-controls="2x61zh-acc-menu" id="y09efp-acc-menu-link">
+								<a href="#">Migrations</a>
+								<ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu" aria-labelledby="y09efp-acc-menu-link" id="2x61zh-acc-menu" style="display: none;">
+									<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+										<a href="/admin/migrations">Dashboard</a>
+									</li>
+
+									<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+										<a class="" href="/admin/migration_lists/specializations">
+											Specializations
+										</a>
+									</li>
+
+									<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+										<a class="" href="/admin/migration_lists/subspecializations">
+											Subspecializations
+										</a>
+									</li>
+
+									<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+										<a class="" href="/admin/migration_lists/treatments">
+											Treatments
+										</a>
+									</li>
+
+									<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+										<a class="" href="/admin/migration_lists/awarding_bodies">
+											Awarding Bodies
+										</a>
+									</li>
+
+									<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+										<a class="" href="/admin/migration_lists/awards">
+											Awards
+										</a>
+									</li>
+
+									<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+										<a class="" href="/admin/migration_lists/countries">
+											Countries
+										</a>
+									</li>
+
+									<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+										<a class="" href="/admin/migration_lists/facility_services">
+											Facility Services
+										</a>
+									</li>
+
+									<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+										<a class="" href="/admin/migration_lists/facilities">
+											Facilities
+										</a>
+									</li>
+
+									<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+										<a class="" href="/admin/migration_lists/doctors">
+											Doctors
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+								<a href="/admin/questions/">Questions</a>
+							</li>
+
+							<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+								<a href="/admin/questionnaires/">Questionnaires</a>
+							</li>
+
+							<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+								<a href="/admin/forms/master-company-psq">Master Company HRA</a>
+							</li>
+						</ul>
+					</li>
+
+					<li id="sideNavUserAccounts" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"aria-expanded="false" aria-label="User Accounts" aria-controls="fs3oxf-acc-menu">
+						<a href="#">User Accounts</a>
+						<ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu" aria-labelledby="sideNavUserAccounts" id="fs3oxf-acc-menu" style="display: none;">
+							<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+								<a href="/admin/users">Users List</a>
+							</li>
+						</ul>
+					</li>
+
+					<li id="sideNavProfile" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"aria-expanded="false" aria-label="Profile" aria-controls="a0vsqp-acc-menu">
+						<a href="#">Profile</a>
+						<ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"aria-labelledby="sideNavProfile" id="a0vsqp-acc-menu" style="display: none;">
+							<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+								<a href="/admin/users/4/change-password">Change My Password</a>
+							</li>
+						</ul>
+					</li>
+
+					<li id="sideNavActivityLogs" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"aria-expanded="false" aria-label="Activity Logs" aria-controls="5usvyk-acc-menu">
+						<a href="#">Activity Logs</a>
+						<ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"aria-labelledby="sideNavActivityLogs" id="5usvyk-acc-menu" style="display: none;">
+							<li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+								<a href="/admin/activity-logs">All Logs</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<!-- MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT  -->
+			<div class="main-content">
+				<div id="menu-bar" class="box-shadow">
+					<div data-reactroot="" class="top-bar">
+						<div class="top-bar-left">
+							<form>
+								<div class="input-group rounded"><input type="search" class="input-group-field" placeholder="Search members"
+																												value="">
+									<div class="input-group-button"><input type="submit" class="button hollow plain info" value="Submit">
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="top-bar-right">
+							<ul class="dropdown menu" data-dropdown-menu="yk2de3-dropdown-menu" role="menubar">
+								<li class="drop-text is-dropdown-submenu-parent opens-left" role="menuitem" aria-haspopup="true" aria-expanded="false" aria-label=""><a href="#"><i class="fa fa-bell fa-lg" aria-describedby="notifCount"></i></a>
+									<ul class="notifications menu vertical dev-submenu submenu is-dropdown-submenu first-sub" data-submenu="" aria-hidden="true" role="menu">
+										<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item">
+											<ol>
+												<li class="heading" role="menuitem"><h6 class="text-center mb-0">Notifications</h6></li>
+												<li class="subheader text-center" role="menuitem">You have no new notifications.</li>
+											</ol>
+										</li>
+									</ul>
+									<span class="granted"></span></li>
+								<li class="is-dropdown-submenu-parent opens-left" role="menuitem" aria-haspopup="true" aria-expanded="false" aria-label="J"><a class="vertical-block" href="#" tabindex="0">
+									<div class="img-wrapper tiny circle"><img src="https://s3.amazonaws.com/assets.spoke.chromedia.com/media/adminUsers/5b62b3096a161c9e418b4567.jpeg"
+										alt="James James"></div> </a>
+									<ul class="menu vertical submenu is-dropdown-submenu first-sub" data-submenu="" aria-hidden="true" role="menu">
+										<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a class="logout_open" href="/admin/logout"><i
+											class="fa fa-sign-out"></i><!-- react-text: 26 -->&nbsp; Sign Out<!-- /react-text --></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+
+				<div id="root">
+					<div class="row expanded">
+						<div class="columns">
+							
+							<!-- CALENDAR -->
+							<!-- <div class="page-lead row  collapse toggler align-middle border-radius-sm b-all-1-darker mb-2">
+								<div class="columns">
+
+									<div class="row collapse">
+										<div class="columns">
+											
+											<div class="row align-middle mb-1 pt-0-5">
+												<div class="columns shrink">
+													<button class="button clear hollow small mb-0">
+														<i class="fa fa-chevron-left"></i>
+													</button>
+												</div>
+												<div class="columns shrink text-capitalize">
+													<p class="text-center circle mb-0"><small><strong>Apr 16</strong></small></p>
+												</div>
+												<div class="columns shrink">
+													<button class="button clear hollow small mb-0">
+														<i class="fa fa-chevron-right"></i>
+													</button>
+												</div>
+												<div class="columns">
+													<p class="strong center-content mb-0 text-uppercase">
+														<small><strong>Tuesday</strong></small>
+													</p>
+												</div>
+												<div class="columns shrink">
+													<button class="button clear hollow mb-0 toggler-handler">
+														<i class="fa fa-calendar"></i>
+													</button>
+												</div>
+											</div>
+
+											<div class="row mb-1">
+												<div class="columns text-center">
+													<small><span class="clr-black20">1:00</span></small>
+												</div>
+												<div class="columns text-center">
+													<small><span class="clr-black20">2:00</span></small>
+												</div>
+												<div class="columns text-center">
+													<small><span class="clr-black20">3:00</span></small>
+													<br>
+													<span class="badge secondary small"><i class="fa fa-phone"></i></span>
+												</div>
+												<div class="columns text-center">
+													<small><span class="clr-black20">4:00</span></small>
+												</div>
+												<div class="columns text-center">
+													<small><span class="clr-black20">5:00</span></small>
+												</div>
+												<div class="columns text-center">
+													<small><span class="clr-black20">6:00</span></small>
+													<br>
+													<span class="badge secondary small"><i class="fa fa-phone"></i></span>
+												</div>
+												<div class="columns text-center">
+													<small><span class="clr-black20">7:00</span></small>
+													<br>
+													<span class="badge secondary small"><i class="fa fa-phone"></i></span>
+												</div>
+												<div class="columns text-center">
+													<small><span class="clr-black20">8:00</span></small>
+												</div>
+												<div class="columns text-center">
+													<small><span class="clr-black20">9:00</span></small>
+													<br>
+													<span class="badge secondary small"><i class="fa fa-phone"></i></span>
+												</div>
+												<div class="columns text-center">
+													<small><span class="clr-black20">10:00</span></small>
+												</div>
+												<div class="columns text-center">
+													<small><span class="clr-black20">11:00</span></small>
+												</div>
+												<div class="columns text-center">
+													<small><span class="clr-black20">12:00</span></small>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+									<div class="row columns expanded collapse toggler-target">
+										<div id="eventCalendar"></div>
+									</div>
+
+								</div>
+							</div> -->
+
+							<div class="page-lead row expanded">
+								<div class="columns pl-0 align-middle">
+									<span class="h5">My Members' Milestones and Tasks</span>
+									<!-- <span class="badge success indicator"></span> -->
+								</div>
+							</div>
+
+							<div class="row collapse mb-2 border-radius-sm  hide-overflow b-all-1-darker expanded">
+
+								<div class="columns medium-2 b-right-1">
+									<div class="row collapse pl-1 label-block pr-0-5">
+										<div class="columns tiny pt-0-5 pb-0-5">
+											<span class="clr-primary">New Episode Created</span>
+										</div>
+									</div>
+
+									<div class="row collapse pl-1 label-block pr-0-5">
+										<div class="columns tiny pt-0-5 pb-0-5">
+											<span class="clr-primary">Invite Sent</span>
+										</div>
+									</div>
+
+									<div class="row collapse pl-1 label-block pr-0-5">
+										<div class="columns tiny pt-0-5 pb-0-5">
+											<span class="clr-primary">Account Created</span>
+										</div>
+									</div>
+
+									<div class="row collapse pl-1 label-block pr-0-5">
+										<div class="columns tiny pt-0-5 pb-0-5">
+											<span class="clr-primary">Facility Selected</span>
+										</div>
+									</div>
+
+									<div class="row collapse pl-1 label-block pr-0-5">
+										<div class="columns tiny pt-0-5 pb-0-5">
+											<span class="clr-primary">Need Initial Consultation Date</span>
+										</div>
+									</div>
+
+									<div class="row collapse pl-1 label-block pr-0-5">
+										<div class="columns tiny pt-0-5 pb-0-5">
+											<span class="clr-primary">Awaiting Initial Consultation</span>
+										</div>
+									</div>
+
+									<div class="row collapse pl-1 label-block pr-0-5">
+										<div class="columns tiny pt-0-5 pb-0-5">
+											<span class="clr-primary mr-0-5">Need Surgery Date</span>
+										</div>
+									</div>
+
+									<div class="row collapse pl-1 label-block pr-0-5">
+										<div class="columns tiny pt-0-5 pb-0-5">
+											<!-- <span class="badge mt-0-5 mr-0-5">24</span> -->
+											<span class="clr-primary">Awaiting Surgery</span>
+										</div>
+									</div>
+
+									<div class="row collapse pl-1 label-block pr-0-5">
+										<div class="columns tiny pt-0-5 pb-0-5">
+											<span class="clr-primary">Need Post Op Surgical Visit Date</span>
+										</div>
+									</div>
+
+									<div class="row collapse pl-1 label-block pr-0-5">
+										<div class="columns tiny pt-0-5 pb-0-5">
+											<span class="clr-primary">Awaiting Post Op Surgical Visit</span>
+										</div>
+									</div>
+
+									<div class="row collapse pl-1 label-block pr-0-5">
+										<div class="columns tiny pt-0-5 pb-0-5">
+											<span class="clr-primary">Completing Episode</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="columns medium-3 b-right-1">
+
+									<div class="row collapse pl-1 label-block pr-0-5">
+										<div class="columns tiny pt-0-5 pb-0-5">
+											<span class="clr-primary">New Episode Created</span>
+										</div>
+										<div class="columns shrink tiny pt-0-5 pb-0-5 pr-0-5">
+											<!-- <small><i class="fa fa-user"> 3</i></small> -->
+											<span class="badge success small">8</span>
+										</div>
+									</div>
+
+									<div class="row collapse pl-1 label-block pr-0-5">
+										<div class="columns tiny pt-0-5 pb-0-5">
+											<span class="clr-primary">Invite Sent</span>
+										</div>
+										<div class="columns shrink tiny pt-0-5 pb-0-5 pr-0-5">
+											<span class="badge success small">8</span>
+										</div>
+									</div>
+
+									<div class="row collapse pl-1 label-block pr-0-5">
+										<div class="columns tiny pt-0-5 pb-0-5">
+											<span class="clr-primary">Account Created</span>
+										</div>
+										<div class="columns shrink tiny pt-0-5 pb-0-5 pr-0-5">
+											<span class="badge success small">3</span>
+										</div>
+									</div>
+
+									<div class="row collapse pl-1 label-block pr-0-5">
+										<div class="columns tiny pt-0-5 pb-0-5">
+											<span class="clr-primary">Facility Selected</span>
+										</div>
+										<div class="columns shrink tiny pt-0-5 pb-0-5 pr-0-5">
+											<span class="badge ongoing small">3</span>
+										</div>  
+									</div>
+
+									<div class="row collapse pl-1 label-block pr-0-5 bg-black20">
+										<div class="columns tiny pt-0-5 pb-0-5">
+											<span class="clr-primary"><strong>Need Initial Consultation Date</strong></span>
+										</div>
+										<div class="columns shrink tiny pt-0-5 pb-0-5 pr-0-5">
+											<span class="badge alert small">1</span>
+											<span class="badge ongoing small">1</span>
+											<span class="badge success small">2</span>
+										</div>
+									</div>
+
+									<div class="row collapse pl-1 label-block pr-0-5">
+										<div class="columns tiny pt-0-5 pb-0-5">
+											<span class="clr-primary">Awaiting Initial Consultation</span>
+										</div>
+										<div class="columns shrink tiny pt-0-5 pb-0-5 pr-0-5">
+											<span class="badge ongoing small">3</span>
+										</div>
+									</div>
+
+									<div class="row collapse pl-1 label-block pr-0-5">
+										<div class="columns tiny pt-0-5 pb-0-5">
+											<span class="clr-primary mr-0-5">Need Surgery Date</span>
+										</div>
+									</div>
+
+									<div class="row collapse pl-1 label-block pr-0-5">
+										<div class="columns tiny pt-0-5 pb-0-5">
+											<!-- <span class="badge mt-0-5 mr-0-5">24</span> -->
+											<span class="clr-primary">Awaiting Surgery</span>
+										</div>
+										<div class="columns shrink tiny pt-0-5 pb-0-5 pr-0-5">
+											<span class="badge ongoing small">2</span>
+										</div>
+									</div>
+
+									<div class="row collapse pl-1 label-block pr-0-5">
+										<div class="columns tiny pt-0-5 pb-0-5">
+											<span class="clr-primary">Need Post Op Surgical Visit Date</span>
+										</div>
+										<div class="columns shrink tiny pt-0-5 pb-0-5 pr-0-5">
+											<span class="badge ongoing small">2</span>
+											<span class="badge alert small">2</span>
+										</div>
+									</div>
+
+									<div class="row collapse pl-1 label-block pr-0-5">
+										<div class="columns tiny pt-0-5 pb-0-5">
+											<span class="clr-primary">Awaiting Post Op Surgical Visit</span>
+										</div>
+										<div class="columns shrink tiny pt-0-5 pb-0-5 pr-0-5">
+											<span class="badge ongoing small">7</span>
+										</div>
+									</div>
+
+									<div class="row collapse pl-1 label-block pr-0-5">
+										<div class="columns tiny pt-0-5 pb-0-5">
+											<span class="clr-primary">Completing Episode</span>
+										</div>
+									</div>
+								</div>
+								<!-- OLD LISTS -->
+
+								<div class="columns medium-7">
+
+									<div class="row mb-2">
+										<div class="columns pl-0 pr-0">
+
+											<div class="toggler pt-0-5 pb-0-5">
+												
+												<div class="row align-middle toggler-handler mb-0-5">
+													<div class="columns">
+															Brendon Martin
+													</div>
+													<div class="columns shrink">
+														<!-- <span class="badge ongoing small">&nbsp;</span> -->
+														<span class="badge alert small">&nbsp;</span>
+													</div>
+													<div class="columns shrink">
+														<button class="button clear hollow tiny mb-0">
+															<i class="fa fa-caret-down"></i>
+														</button>
+													</div>
+												</div>
+												
+												<div class="row toggler-target ml-1 mr-1 mb-1"> 
+													<div class="columns">
+
+														<div class="row b-all-1-darker pb-0-5 pt-0-5 align-middle">
+															<div class="columns">
+																<label for="" class="">
+																	<strong>Episode Title</strong>
+																</label>
+																<small class="tiny clr-black20">date triggered</small>
+															</div>
+															<div class="columns shrink align-vertical-center">
+																<label for="">
+																	<small>Episode # 00150</small>
+																<label for="">
+															</div>
+														</div>
+
+														<div class="row b-bottom-1 pb-0-5 pt-0-5 align-middle">
+															<div class="columns shrink clr-alert">
+																<i class="fa fa-comment"></i>
+															</div>
+															<div class="columns">
+																<p class="mb-0 clr-alert"><strong><small>Task title</small></strong></p>
+																<!-- <span class="tiny clr-black20"><strong>Episode Title</strong></span> -->
+															</div>
+															<div class="columns">
+																<p class="mb-0"><small>date triggered</small></p>
+															</div>
+															<div class="columns shrink">
+																<span class="clr-alert"><small>due date</small></span><br />
+																<span class="tiny clr-black20">3 days ago</span>
+															</div>
+														</div>
+
+														<div class="row b-bottom-1 pb-0-5 pt-0-5 align-middle">
+															<div class="columns shrink clr-alert"><i class="fa fa-envelope"></i></div>
+															<div class="columns">
+																<p class="mb-0 clr-alert"><strong><small>Task title</small></strong></p>
+															</div>
+															<div class="columns">
+																<p class="mb-0"><small>date triggered</small></p>
+															</div>
+															<div class="columns shrink">
+																<span class="clr-alert"><small>due date</small></span><br />
+																<span class="tiny clr-black20">1 day ago</span>
+															</div>
+														</div>
+
+														<div class="row b-bottom-1 pb-0-5 pt-0-5 align-middle">
+															<div class="columns shrink"><i class="fa fa-list clr-ongoing"></i></div>
+															<div class="columns">
+																<p class="mb-0 clr-ongoing"><strong><small>Task title</small></strong></p>
+															</div>
+															<div class="columns">
+																<p class="mb-0"><small>date triggered</small></p>
+															</div>
+															<div class="columns shrink">
+																<small class="clr-ongoing">due date</small>
+															</div>
+														</div>
+
+														<!-- <div class="row pb-0-5 pt-0-5">
+															<div class="columns shrink"><i class="fa fa-clipboard clr-ongoing"></i></div>
+															<div class="columns">
+																<p class="mb-0 clr-ongoing"><strong><small>Task title</small></strong></p>
+																<span class="tiny clr-black20"><strong>Episode Title</strong></span>
+															</div>
+															<div class="columns">
+																<p class="mb-0"><small>date triggered</small></p>
+															</div>
+															<div class="columns shrink">
+																<small class="clr-ongoing">due date</small>
+															</div>
+														</div> -->
+
+													</div>
+												</div>
+
+											</div>
+
+											<div class="toggler pt-0-5 pb-0-5">
+
+												<div class="row align-middle toggler-handler mb-0-5">
+													<div class="columns">
+															Sandra Lee
+													</div>
+													<div class="columns shrink">
+														<span class="badge ongoing small">&nbsp;</span>
+														<!-- <span class="badge alert small">1</span> -->
+													</div>
+													<div class="columns shrink">
+														<button class="button clear hollow tiny mb-0">
+															<i class="fa fa-caret-down"></i>
+														</button>
+													</div>
+												</div>
+												<div class="row toggler-target ml-1 mr-1 mb-1"> 
+													<div class="columns">
+														<div class="row b-bottom-1 pb-0-5 pt-0-5">
+															<div class="columns shrink"><i class="fa fa-bell"></i></div>
+															<div class="columns">
+																<p class="mb-0 clr-alert"><strong><small>Task title</small></strong></p>
+																<span class="tiny clr-black20"><strong>Episode Title</strong></span>
+															</div>
+															<div class="columns shrink">
+																<span class="clr-alert"><small>due date</small></span>
+															</div>
+														</div>
+														<div class="row b-bottom-1 pb-0-5 pt-0-5">
+															<div class="columns shrink"><i class="fa fa-bell"></i></div>
+															<div class="columns">
+																<p class="mb-0 clr-alert"><strong><small>Task title</small></strong></p>
+																<span class="tiny clr-black20"><strong>Episode Title</strong></span>
+															</div>
+															<div class="columns shrink">
+																<span class="clr-alert"><small>due date</small></span>
+															</div>
+														</div>
+														<div class="row b-bottom-1 pb-0-5 pt-0-5">
+															<div class="columns shrink"><i class="fa fa-bell"></i></div>
+															<div class="columns">
+																<p class="mb-0"><strong><small>Task title</small></strong></p>
+																<span class="tiny clr-black20"><strong>Episode Title</strong></span>
+															</div>
+															<div class="columns shrink">
+																<small>due date</small>
+															</div>
+														</div>
+														<div class="row pb-0-5 pt-0-5">
+															<div class="columns shrink"><i class="fa fa-bell"></i></div>
+															<div class="columns">
+																<p class="mb-0"><strong><small>Task title</small></strong></p>
+																<span class="tiny clr-black20"><strong>Episode Title</strong></span>
+															</div>
+															<div class="columns shrink">
+																<small>due date</small>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											
+
+											<div class="toggler pt-0-5 pb-0-5">
+
+												<div class="row align-middle toggler-handler mb-0-5">
+													<div class="columns">
+															Kate Newman
+													</div>
+													<div class="columns shrink">
+														<span class="badge success small">&nbsp;</span>
+														<!-- <span class="badge alert small">2</span> -->
+													</div>
+													<div class="columns shrink">
+														<button class="button clear hollow tiny mb-0 hidden-o">
+															<i class="fa fa-caret-down"></i>
+														</button>
+													</div>
+												</div>
+												<div class="row toggler-target ml-1 mr-1 mb-1"> 
+													<div class="columns">
+														<div class="row b-bottom-1 pb-0-5 pt-0-5">
+															<div class="columns shrink"><i class="fa fa-bell"></i></div>
+															<div class="columns">
+																<p class="mb-0 clr-alert"><strong><small>Task title</small></strong></p>
+																<span class="tiny clr-black20"><strong>Episode Title</strong></span>
+															</div>
+															<div class="columns shrink">
+																<span class="clr-alert"><small>due date</small></span>
+															</div>
+														</div>
+														<div class="row b-bottom-1 pb-0-5 pt-0-5">
+															<div class="columns shrink"><i class="fa fa-bell"></i></div>
+															<div class="columns">
+																<p class="mb-0 clr-alert"><strong><small>Task title</small></strong></p>
+																<span class="tiny clr-black20"><strong>Episode Title</strong></span>
+															</div>
+															<div class="columns shrink">
+																<span class="clr-alert"><small>due date</small></span>
+															</div>
+														</div>
+														<div class="row b-bottom-1 pb-0-5 pt-0-5">
+															<div class="columns shrink"><i class="fa fa-bell"></i></div>
+															<div class="columns">
+																<p class="mb-0"><strong><small>Task title</small></strong></p>
+																<span class="tiny clr-black20"><strong>Episode Title</strong></span>
+															</div>
+															<div class="columns shrink">
+																<small>due date</small>
+															</div>
+														</div>
+														<div class="row pb-0-5 pt-0-5">
+															<div class="columns shrink"><i class="fa fa-bell"></i></div>
+															<div class="columns">
+																<p class="mb-0"><strong><small>Task title</small></strong></p>
+																<span class="tiny clr-black20"><strong>Episode Title</strong></span>
+															</div>
+															<div class="columns shrink">
+																<small>due date</small>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="toggler pt-0-5 pb-0-5">
+
+												<div class="row align-middle toggler-handler mb-0-5">
+													<div class="columns">
+															Harry Yap
+													</div>
+													<div class="columns shrink">
+														<span class="badge success small">&nbsp;</span>
+													</div>
+													<div class="columns shrink">
+														<button class="button clear hollow tiny mb-0 hidden-o">
+															<i class="fa fa-caret-down"></i>
+														</button>
+													</div>
+												</div>
+												<div class="row toggler-target ml-1 mr-1 mb-1"> 
+													<div class="columns">
+														<div class="row b-bottom-1 pb-0-5 pt-0-5">
+															<div class="columns shrink"><i class="fa fa-bell"></i></div>
+															<div class="columns">
+																<p class="mb-0 clr-alert"><strong><small>Task title</small></strong></p>
+																<span class="tiny clr-black20"><strong>Episode Title</strong></span>
+															</div>
+															<div class="columns shrink">
+																<span class="clr-alert"><small>due date</small></span>
+															</div>
+														</div>
+														<div class="row b-bottom-1 pb-0-5 pt-0-5">
+															<div class="columns shrink"><i class="fa fa-bell"></i></div>
+															<div class="columns">
+																<p class="mb-0 clr-alert"><strong><small>Task title</small></strong></p>
+																<span class="tiny clr-black20"><strong>Episode Title</strong></span>
+															</div>
+															<div class="columns shrink">
+																<span class="clr-alert"><small>due date</small></span>
+															</div>
+														</div>
+														<div class="row b-bottom-1 pb-0-5 pt-0-5">
+															<div class="columns shrink"><i class="fa fa-bell"></i></div>
+															<div class="columns">
+																<p class="mb-0"><strong><small>Task title</small></strong></p>
+																<span class="tiny clr-black20"><strong>Episode Title</strong></span>
+															</div>
+															<div class="columns shrink">
+																<small>due date</small>
+															</div>
+														</div>
+														<div class="row pb-0-5 pt-0-5">
+															<div class="columns shrink"><i class="fa fa-bell"></i></div>
+															<div class="columns">
+																<p class="mb-0"><strong><small>Task title</small></strong></p>
+																<span class="tiny clr-black20"><strong>Episode Title</strong></span>
+															</div>
+															<div class="columns shrink">
+																<small>due date</small>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+												
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="page-lead row  expanded">
+								<div class="columns pl-0">
+									<span class="h5">My Messages</span>
+								</div>
+							</div>
+
+							<div class="row mb-2 border-radius-sm b-all-1-darker expanded">
+								<div class="columns pl-0 pr-0">
+									<div class="panel lighten">
+										
+										<ul class="well-list message-preview pl-0-5 pr-0-5">
+											<li class="unread transparent">
+													<span class="list-wrap borderless" id="expandChat">
+														<div class="list-item-image align-middle text-center">
+															<div class="img-wrapper circle logo small">
+																<span class="h5">B</span>
+															</div>
+														</div>
+														<div class="list-detail">
+																<span class="truncate">Brendon Martin</span>
+																<span class="truncate"><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore repellat ab ad et exercitationem at eligendi dolorem, repudiandae blanditiis itaque autem nulla perspiciatis qui culpa soluta. Delectus architecto consequuntur perferendis!.</small></span>
+														</div>
+														<div class="list-note text-center">
+																<span class="badge success">12</span>
+																<span class="subheader"><small>Feb-12</small></span>
+														</div>
+														<div class="pull-right">
+															<ul class="dropdown menu mt-0-5" data-dropdown-menu>
+																<li>
+																	<a></a>
+																	<ul class="menu vertical">
+																			<li><a href="#"><i
+																				class="fa fa-phone"></i>&nbsp; Call</a></li>
+																		<li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</a></li>
+																			<li><a href="#"><i class="fa fa-trash"></i>&nbsp; Archive</a></li>
+																	</ul>
+																</li>
+															</ul>
+														</div>
+													</span>
+											</li>
+											<li class="unread transparent">
+													<span class="list-wrap borderless" id="expandChat">
+														<div class="list-item-image align-middle text-center">
+															<div class="img-wrapper circle logo small">
+																<span class="h5">K</span>
+															</div>
+														</div>
+														<div class="list-detail">
+																<span class="truncate">Kate Newman</span>
+																<span class="truncate"><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore repellat ab ad et exercitationem at eligendi dolorem, repudiandae blanditiis itaque autem nulla perspiciatis qui culpa soluta. Delectus architecto consequuntur perferendis!.</small></span>
+														</div>
+														<div class="list-note text-center">
+																<span class="badge success">12</span>
+																<span class="subheader"><small>Feb-12</small></span>
+														</div>
+														<div class="pull-right">
+															<ul class="dropdown menu mt-0-5" data-dropdown-menu>
+																<li>
+																	<a></a>
+																	<ul class="menu vertical">
+																			<li><a href="#"><i
+																				class="fa fa-phone"></i>&nbsp; Call</a></li>
+																		<li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</a></li>
+																			<li><a href="#"><i class="fa fa-trash"></i>&nbsp; Archive</a></li>
+																	</ul>
+																</li>
+															</ul>
+														</div>
+													</span>
+											</li>
+
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="page-lead row expanded expanded">
+								<div class="shrink columns pl-0">
+									<span class="h5">My To-Do's</span>
+								</div>
+
+							</div>
+
+							<div class="row mb-2 border-radius-sm b-all-1-darker  expanded">
+								<div class="columns">
+									<div class="callout lo-padded bg-none pb-0 pl-0 pr-0 borderless">
+										<ul class="tasks-list well-list">
+											<li class="alert">
+												<div class="list-wrap toggler">
+
+													<div class="row collapse align-middle  expanded">
+														<div class="medium-4 columns">
+															<div class="media-object">
+																<div class="media-object-section middle">
+																	<div class="fancy-checkbox">
+																		<input type="checkbox">
+																	</div>
+																</div>
+																<div class="media-object-section middle">
+																	<!-- <small class="preamble"><b>OVERDUE</b></small> -->
+																	<p class="mb-0">Joe Ortho</p>
+																</div>
+															</div>
+														</div>
+														<div class="columns">
+															<p class="mb-0">Joe reported a Pain of <span class="clr-alert"><strong>7 (Severe)</strong></span>.</p>
+															<p class="mb-0">Please call within 1 hour</p>
+														</div>
+														<div class="shrink columns">
+															<button class="button clear hollow mb-0 toggler-handler"><i class="fa fa-paperclip"></i></button>
+														</div>
+														<div class="shrink columns">
+															<small class="preamble"><b>1 day</b></small>
+														</div>
+														<div class="shrink columns">
+															<ul class="dropdown menu" data-dropdown-menu>
+																<li>
+																	<a></a>
+																	<ul class="menu vertical">
+																		<li><a href="#"><i class="fa fa-refresh"></i>&nbsp;
+																			Assign To</a></li>
+																		<li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp;
+																			Set New Date</a></li>
+																		<li><a href="#"><i class="fa fa-trash"></i>&nbsp;
+																			Archive</a></li>
+																	</ul>
+																</li>
+															</ul>
+														</div>
+													</div>
+
+													<div class="row toggler-target mt-0-5 bg-black20 ">
+														<div class="columns">
+
+															<div class="row collapse pt-0-5 pb-0-5">
+																<div class="columns">
+																	<span class="clr-black50 ml-1"><strong><small>ATTACHEMNTS</small></strong></span>
+																</div>
+																<div class="columns shrink">
+																	<button class="button clear hollow small mb-0"><i class="fa fa-download"></i> Download All</button>
+																</div>
+															</div>
+
+															<div class="row pt-0-5 pb-0-5">
+																<div class="columns shrink">
+																	<i class="fa fa-file-pdf"></i>
+																</div>
+																<div class="columns">
+																	Lorem ipsum dolor sit.
+																</div>
+																<div class="columns shrink">
+																	<button class="buttom clear hollow small">
+																		<i class="fa fa-download"></i>
+																	</button>
+																</div>
+															</div>
+
+															<div class="row pt-0-5 pb-0-5">
+																<div class="columns shrink">
+																	<i class="fa fa-file-video"></i>
+																</div>
+																<div class="columns">
+																	Lorem ipsum dolor sit amet.
+																</div>
+																<div class="columns shrink">
+																	<button class="buttom clear hollow small">
+																		<i class="fa fa-download"></i>
+																	</button>
+																</div>
+															</div>
+
+															<div class="row pt-0-5 pb-0-5">
+																<div class="columns shrink">
+																	<i class="fa fa-file-word"></i>
+																</div>
+																<div class="columns">
+																	Lorem ipsum dolor sit amet, consectetur adipisicing.
+																</div>
+																<div class="columns shrink">
+																	<button class="buttom clear hollow small">
+																		<i class="fa fa-download"></i>
+																	</button>
+																</div>
+															</div>
+
+															<div class="row pt-0-5 pb-0-5">
+																<div class="columns shrink">
+																	<i class="fa fa-file-image"></i>
+																</div>
+																<div class="columns">
+																	Lorem ipsum.
+																</div>
+																<div class="columns shrink">
+																	<button class="buttom clear hollow small">
+																		<i class="fa fa-download"></i>
+																	</button>
+																</div>
+															</div>
+
+															<div class="row pt-0-5 pb-0-5">
+																<div class="columns shrink">
+																	<i class="fa fa-file-prescription"></i>
+																</div>
+																<div class="columns">
+																	Lorem ipsum dolor sit.
+																</div>
+																<div class="columns shrink">
+																	<button class="buttom clear hollow small">
+																		<i class="fa fa-download"></i>
+																	</button>
+																</div>
+															</div>
+
+
+														</div>
+													</div>
+
+												</div>
+											</li>
+											
+											<li class="warning">
+												<div class="list-wrap">
+													<div class="row collapse align-middle  expanded">
+														<div class="medium-4 columns">
+															<div class="media-object">
+																<div class="media-object-section middle">
+																	<div class="fancy-checkbox">
+																		<input type="checkbox">
+																	</div>
+																</div>
+																<div class="media-object-section middle">
+																	<!-- <small class="preamble"><b>OVERDUE</b></small> -->
+																	<p class="mb-0">Brendon Martin</p>
+																</div>
+															</div>
+														</div>
+														<div class="columns">
+															<p class="mb-0">Pre-op infection avoidance adherence</p>
+														</div>
+														<div class="shrink columns">
+															<small class="preamble"><b>4 days</b></small>
+														</div>
+														<div class="shrink columns">
+															<ul class="dropdown menu" data-dropdown-menu>
+																<li>
+																	<a></a>
+																	<ul class="menu vertical">
+																		<li><a href="#"><i class="fa fa-refresh"></i>&nbsp;
+																			Assign To</a></li>
+																		<li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp;
+																			Set New Date</a></li>
+																		<li><a href="#"><i class="fa fa-trash"></i>&nbsp;
+																			Archive</a></li>
+																	</ul>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="warning">
+												<div class="list-wrap">
+													<div class="row collapse align-middle  expanded">
+														<div class="medium-4 columns">
+															<div class="media-object">
+																<div class="media-object-section middle">
+																	<div class="fancy-checkbox">
+																		<input type="checkbox" checked>
+																	</div>
+																</div>
+																<div class="media-object-section middle">
+																	<small class="preamble"><b>FOLLOW UP</b></small>
+																	<p class="mb-0">Matthew Perry</p>
+																</div>
+															</div>
+														</div>
+														<div class="columns">
+															<p class="mb-0">Low score - Experience survey</p>
+														</div>
+														<div class="shrink columns">
+															<small class="preamble"><b>2 days</b></small>
+														</div>
+														<div class="shrink columns">
+															<ul class="dropdown menu" data-dropdown-menu>
+																<li>
+																	<a></a>
+																	<ul class="menu vertical">
+																		<li><a href="#"><i class="fa fa-refresh"></i>&nbsp;
+																			Assign To</a></li>
+																		<li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp;
+																			Set New Date</a></li>
+																		<li><a href="#"><i class="fa fa-trash"></i>&nbsp;
+																			Archive</a></li>
+																	</ul>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="warning">
+												<div class="list-wrap">
+													<div class="row collapse align-middle  expanded">
+														<div class="medium-4 columns">
+															<div class="media-object">
+																<div class="media-object-section middle">
+																	<div class="fancy-checkbox">
+																		<input type="checkbox" checked>
+																	</div>
+																</div>
+																<div class="media-object-section middle">
+																	<!--<small class="preamble"><b>FOLLOW UP</b></small>-->
+																	<p class="mb-0">Kate Newman</p>
+																</div>
+															</div>
+														</div>
+														<div class="columns">
+															<p class="mb-0">Schedule second consultation with facility</p>
+														</div>
+														<div class="shrink columns">
+															<button class="button clear hollow mb-0 toggler-handler"><i class="fa fa-paperclip"></i></button>
+														</div>
+														<div class="shrink columns">
+															<small class="preamble"><b>1 day</b></small>
+														</div>
+														<div class="shrink columns">
+															<ul class="dropdown menu" data-dropdown-menu>
+																<li>
+																	<a></a>
+																	<ul class="menu vertical">
+																		<li><a href="#"><i class="fa fa-refresh"></i>&nbsp;
+																			Assign To</a></li>
+																		<li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp;
+																			Set New Date</a></li>
+																		<li><a href="#"><i class="fa fa-trash"></i>&nbsp;
+																			Archive</a></li>
+																	</ul>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+		
+			<!-- CHat Component -->
+			<div id="chat-toggle">
+				<i class="fa fa-comment"></i>
+			</div>
+
+			<div id="chat-container" style="display: none;">
+
+				<div class="chat-video-incoming align-center-middle text-center pt-2">
+					<div class="row video-call-caller mb-2">
+						<div class="columns col-md-12">
+							<p class="h4 white-color mb-4">Liam Neeson Calling...</p>
+							<img src="http://i.pravatar.cc/200" alt="" class="user-image circle">
+						</div>
+					</div>
+					<div class="row video-call-action">
+						<div class="columns col-md-2">
+							<button id="btn-call-reject" class="button clear large circle alert">
+								<i class="fa fa-times"></i>
+							</button>
+						</div>
+						<div class="columns col-md-2">
+							<button id="btn-call-answer" class="button clear large circle success" data-close="" aria-label="Close modal">
+								<i class="fa fa-phone"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="chat-video-container">
+					<div id="videos" class="compact">
+						<div id="subscriber" class="compact"></div>
+						<div id="publisher" class="compact"></div>
+					</div>
+					<div class="chat-video-control row align-center">
+						<div class="columns col-md-2 center-text pr-0">
+							<button id="chat-video-compress" class="button large circle"><i class="fa fa-compress"></i></button>
+						</div>
+						<div class="columns col-md-2 center-text pad0">
+							<button id="chat-video-message" class="button success large circle mb-0"><i class="fa fa-sticky-note"></i>
+							</button>
+						</div>
+						<div class="columns col-md-2 center-text pl-0">
+							<button id="chat-video-end-call" class="button alert large circle"><i class="fa fa-phone"></i></button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="bower_components/what-input/what-input.js"></script>
+		<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+		<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+		<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+		<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+
+		<script src='js/fullcalendar/lib/moment.min.js'></script>
+		<script src='js/fullcalendar/fullcalendar.min.js'></script>
+
+		<script src="js/app.js"></script>
+
+		<script type="text/javascript">
+
+				var sampleEvents = {
+						"events": [
+								{
+										title: 'Scheduled Call with Kate Newman',
+										start: '2017-09-25T13:00:00'
+								},
+								{
+										title: 'Scheduled Call with Amy Thompson',
+										start: '2017-09-25T15:00:00',
+										end: '2017-09-25T16:00:00'
+								},
+								{
+										title: 'Scheduled Call with Brendon Martin',
+										start: '14:00:00',
+										end: '15:00:00',
+										dow: [1, 2, 3, 4, 5, 6, 7]
+								}
+						]
+				};
+
+				$('#eventCalendar').fullCalendar({
+						header: {
+								left: 'prev',
+								center: 'title',
+								right: 'next'
+						},
+						aspectRatio: 1,
+						height: 'auto',
+						fixedWeekCount: false,
+						events: sampleEvents
+				});
+
+				$('#eventScheduler').fullCalendar({
+						defaultView: 'agendaDay',
+						header: {
+								left: 'title',
+								center: '',
+								right: 'today prev,next'
+						},
+						allDayText: 'All-Day',
+						slotLabelFormat: 'h(:mm) A',
+						minTime: '07:00:00',
+						maxTime: '20:00:00',
+						height: 'auto',
+						editable: true,
+						eventLimit: true, // allow "more" link when too many events
+						titleFormat: 'MMM D',
+						events: sampleEvents
+				});
+
+				$(function () {
+						var timer;
+
+						$(window).resize(function () {
+								clearTimeout(timer);
+								timer = setTimeout(function () {
+										$('.site-nav, .content').css("height", $(window).height());
+								}, 40);
+						}).resize();
+				});
+
+		</script>
+	</body>
+</html>
