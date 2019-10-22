@@ -136,6 +136,16 @@ fieldset {
   }
 }
 
+label.require {
+  content: "";
+  display: block;
+  &::after {
+    content:" *";
+    display: inline;
+    color: $alert-color;
+  }
+}
+
 .checkbox-wrapper {
   display: flex;
 
