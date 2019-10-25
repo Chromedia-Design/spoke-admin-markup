@@ -1632,6 +1632,9 @@ ul.vertical-list {
     + .spoke-list-item {
       margin-top: 0.5rem;
       border-top: 1px solid rgba($black, $B-dividers);
+
+      &.marginless { margin-top: -1px !important;}
+
     }
 
     &.large {
