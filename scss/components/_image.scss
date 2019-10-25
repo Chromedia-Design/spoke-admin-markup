@@ -200,3 +200,42 @@
     height: 64px;
   }
 }
+
+.fa {
+  &.fa-circle {
+    @extend .fa-border;
+    border-radius: 50%;
+    padding: 0.3rem;
+  }
+
+  &.primary-bg {
+    color: $white;
+    background: $primary-color;
+  }
+
+  &.secondary-bg {
+    color: $white;
+    background: $secondary-color;
+  }
+
+  &.success-bg {
+    color: $white;
+    background: $success-color;
+  }
+
+  &.warning-bg {
+    color: $white;
+    background: $warning-color;
+  }
+
+  &.alert-bg {
+    color: $white;
+    background: $alert-color;
+
+    &.hollow {
+      background: $white;
+      color: $alert-color;
+      border-color: $alert-color;
+    }
+  }
+}
