@@ -1,0 +1,790 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spoke Admin Portal</title>
+  <link rel="stylesheet" href="js/fullcalendar/fullcalendar.min.css">
+  <link rel="stylesheet" href="js/fullcalendar/fullcalendar.print.min.css" media="print">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<div id="master-container" class="sidebar-body">
+  <!-- SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR  -->
+  <div class="site-nav sidebar">
+    <header>
+      <a href="/admin/" class="logo text-center">
+        <img src="https://s3.amazonaws.com/assets.spokehealth.com/static/spoke-logo-300x60.png" alt="Spoke Health">
+      </a>
+    </header>
+
+    <ul class="menu vertical" data-accordion-menu="edx32b-accordion-menu" role="menu" aria-multiselectable="true">
+      <li id="sideNavDashboard" class="" role="menuitem">
+        <a href="/admin/" tabindex="0">My Dashboard</a>
+      </li>
+
+      <li id="sideNavEmployees" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
+          aria-expanded="false" aria-label="Members" aria-controls="3te1pf-acc-menu">
+        <a href="#">Members</a>
+        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
+            aria-labelledby="sideNavEmployees" id="3te1pf-acc-menu" style="display: none;">
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a id="allEmployees" href="/admin/employees">All Members</a>
+          </li>
+        </ul>
+      </li>
+
+      <li id="sideNavMedProcedures" role="menuitem">
+        <a href="/admin/medical-procedures/" class="">Medical Procedures</a>
+      </li>
+
+      <li id="sideNavCompanies" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
+          aria-expanded="false" aria-label="Companies" aria-controls="iulued-acc-menu">
+        <a href="#">Companies</a>
+        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
+            aria-labelledby="sideNavCompanies" id="iulued-acc-menu" style="display: none;">
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/clients">All Companies</a>
+          </li>
+        </ul>
+      </li>
+
+      <li id="sideNavFacilities" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
+          aria-expanded="false" aria-label="Facilities" aria-controls="2fhgsf-acc-menu">
+        <a href="#">Facilities</a>
+        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
+            aria-labelledby="sideNavFacilities" id="2fhgsf-acc-menu" style="display: none;">
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/facilities">All Facilities</a>
+          </li>
+
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/facility-services">Ancillary Services</a>
+          </li>
+
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/awards">Awards</a>
+          </li>
+        </ul>
+      </li>
+
+      <li id="sideNavDoctors" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
+          aria-expanded="false" aria-label="Doctors" aria-controls="2xkwmt-acc-menu">
+        <a href="#">Doctors</a>
+        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
+            aria-labelledby="sideNavDoctors" id="2xkwmt-acc-menu" style="display: none;">
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/doctors">All Doctors</a>
+          </li>
+        </ul>
+      </li>
+
+      <li id="sideNavContent" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
+          aria-expanded="false" aria-label="Content" aria-controls="lrjcue-acc-menu">
+        <a href="#">Content</a>
+        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
+            aria-labelledby="sideNavContent" id="lrjcue-acc-menu" style="display: none;">
+          <li role="menuitem" class="is-accordion-submenu-parent is-submenu-item is-accordion-submenu-item"
+              aria-haspopup="true" aria-expanded="false" aria-label="Geo Data" aria-controls="oau1zl-acc-menu"
+              id="4lvc70-acc-menu-link">
+            <a href="#">Geo Data</a>
+            <ul class="geo-nav nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true"
+                role="menu" aria-labelledby="4lvc70-acc-menu-link" id="oau1zl-acc-menu" style="display: none;">
+              <li class="regions is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a href="/admin/regions">World Regions</a>
+              </li>
+
+              <li class="countries is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a href="/admin/countries">Countries</a>
+              </li>
+
+              <li class="us-states is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a href="/admin/states">US States</a>
+              </li>
+            </ul>
+          </li>
+
+          <li role="menuitem" class="is-accordion-submenu-parent is-submenu-item is-accordion-submenu-item"
+              aria-haspopup="true" aria-expanded="false" aria-label="Migrations" aria-controls="2x61zh-acc-menu"
+              id="y09efp-acc-menu-link">
+            <a href="#">Migrations</a>
+            <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true"
+                role="menu" aria-labelledby="y09efp-acc-menu-link" id="2x61zh-acc-menu" style="display: none;">
+              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a href="/admin/migrations">Dashboard</a>
+              </li>
+
+              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a class="" href="/admin/migration_lists/specializations">
+                  Specializations
+                </a>
+              </li>
+
+              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a class="" href="/admin/migration_lists/subspecializations">
+                  Subspecializations
+                </a>
+              </li>
+
+              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a class="" href="/admin/migration_lists/treatments">
+                  Treatments
+                </a>
+              </li>
+
+              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a class="" href="/admin/migration_lists/awarding_bodies">
+                  Awarding Bodies
+                </a>
+              </li>
+
+              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a class="" href="/admin/migration_lists/awards">
+                  Awards
+                </a>
+              </li>
+
+              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a class="" href="/admin/migration_lists/countries">
+                  Countries
+                </a>
+              </li>
+
+              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a class="" href="/admin/migration_lists/facility_services">
+                  Facility Services
+                </a>
+              </li>
+
+              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a class="" href="/admin/migration_lists/facilities">
+                  Facilities
+                </a>
+              </li>
+
+              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a class="" href="/admin/migration_lists/doctors">
+                  Doctors
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/questions/">Questions</a>
+          </li>
+
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/questionnaires/">Questionnaires</a>
+          </li>
+
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/forms/master-company-psq">Master Company HRA</a>
+          </li>
+        </ul>
+      </li>
+
+      <li id="sideNavUserAccounts" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
+          aria-expanded="false" aria-label="User Accounts" aria-controls="fs3oxf-acc-menu">
+        <a href="#">User Accounts</a>
+        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
+            aria-labelledby="sideNavUserAccounts" id="fs3oxf-acc-menu" style="display: none;">
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/users">Users List</a>
+          </li>
+        </ul>
+      </li>
+
+      <li id="sideNavProfile" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
+          aria-expanded="false" aria-label="Profile" aria-controls="a0vsqp-acc-menu">
+        <a href="#">Profile</a>
+        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
+            aria-labelledby="sideNavProfile" id="a0vsqp-acc-menu" style="display: none;">
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/users/4/change-password">Change My Password</a>
+          </li>
+        </ul>
+      </li>
+
+      <li id="sideNavActivityLogs" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
+          aria-expanded="false" aria-label="Activity Logs" aria-controls="5usvyk-acc-menu">
+        <a href="#">Activity Logs</a>
+        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
+            aria-labelledby="sideNavActivityLogs" id="5usvyk-acc-menu" style="display: none;">
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/activity-logs">All Logs</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT  -->
+  <div class="main-content">
+    <div id="menu-bar" class="box-shadow">
+      <div data-reactroot="" class="top-bar">
+        <div class="top-bar-left">
+          <form>
+            <div class="input-group rounded"><input type="search" class="input-group-field" placeholder="Search members"
+                                                    value="">
+              <div class="input-group-button"><input type="submit" class="button hollow plain info" value="Submit">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="top-bar-right">
+          <ul class="dropdown menu" data-dropdown-menu="yk2de3-dropdown-menu" role="menubar">
+            <li class="drop-text is-dropdown-submenu-parent opens-left" role="menuitem" aria-haspopup="true"
+                aria-expanded="false" aria-label="">
+              <a href="#" class="button rounded alert hollow tiny">What's New</a>
+              <ul class="system-alert notifications menu vertical dev-submenu submenu is-dropdown-submenu first-sub" data-submenu=""
+                  aria-hidden="true" role="menu">
+                <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item">
+                  <ol>
+                    <li class="heading" role="menuitem">
+                      <div class="row align-middle">
+                        <div class="auto columns paddingless">
+                          <h4 class="mb-0">What's New, Updated, or Fixed</h4>
+                        </div>
+                        <div class="shrink columns paddingless">
+                          <p class="subheader pull-right mb-0">Version 10.2.1</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li role="menuitem">
+                      <div class="callout alert mb-0">
+                        <div class="media-object">
+                          <div class="media-object-section logo small">
+                            <i class="fa fa-exclamation-circle fa-border fa-circle alert-bg hollow"></i>
+                          </div>
+                          <div class="media-object-section">
+                            <h6>This Is A System Alert</h6>
+                            <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Donec sed odio dui. Cum sociis natoque
+                              penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque
+                              ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at
+                              eros.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li role="menuitem">
+                      <div class="system-alert-wrapper">
+                        <h5>Version 10.1.24 - Oct 21, 2019</h5>
+                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Donec sed odio dui. Cum sociis natoque
+                          penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque
+                          ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at
+                          eros.</p>
+                        <div class="media-object">
+                          <div class="media-object-section logo small">
+                            <i class="fa fa-gift fa-border fa-circle success-bg"></i>
+                          </div>
+                          <div class="media-object-section">
+                            <h6>This Is A New Feature</h6>
+                          </div>
+                        </div>
+                        <div class="img-wrapper auto mt-0-5">
+                          <img src="https://picsum.photos/300/200" alt="">
+                        </div>
+                      </div>
+                      <div class="system-alert-wrapper">
+                        <div class="media-object">
+                          <div class="media-object-section logo small">
+                            <i class="fa fa-pencil-alt fa-border fa-circle secondary-bg"></i>
+                          </div>
+                          <div class="media-object-section">
+                            <h6>This Is An Updated Feature</h6>
+                            <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Donec sed odio dui. Cum sociis natoque
+                              penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque
+                              ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at
+                              eros.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="system-alert-wrapper">
+                        <div class="media-object">
+                          <div class="media-object-section logo small">
+                            <i class="fa fa-magic fa-border fa-circle alert-bg"></i>
+                          </div>
+                          <div class="media-object-section">
+                            <h6>This Is A Fixed Issue</h6>
+                            <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Donec sed odio dui. Cum sociis natoque
+                              penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque
+                              ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at
+                              eros.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ol>
+                </li>
+              </ul>
+            </li>
+            <li class="drop-text is-dropdown-submenu-parent opens-left" role="menuitem" aria-haspopup="true"
+                aria-expanded="false" aria-label="">
+              <a href="#"><i class="fa fa-bell fa-lg" aria-describedby="notifCount"></i></a>
+              <ul class="notifications menu vertical dev-submenu submenu is-dropdown-submenu first-sub" data-submenu=""
+                  aria-hidden="true" role="menu">
+                <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item">
+                  <ol>
+                    <li class="heading" role="menuitem"><h6 class="text-center mb-0">Notifications</h6></li>
+                    <li class="subheader text-center" role="menuitem">You have no new notifications.</li>
+                  </ol>
+                </li>
+              </ul>
+              <span class="granted"></span>
+            </li>
+            <li class="is-dropdown-submenu-parent opens-left" role="menuitem" aria-haspopup="true" aria-expanded="false"
+                aria-label="J"><a class="vertical-block" href="#" tabindex="0">
+              <div class="img-wrapper tiny circle"><img
+                src="https://s3.amazonaws.com/assets.spoke.chromedia.com/media/adminUsers/5b62b3096a161c9e418b4567.jpeg"
+                alt="James James"></div>
+            </a>
+              <ul class="menu vertical submenu is-dropdown-submenu first-sub" data-submenu="" aria-hidden="true"
+                  role="menu">
+                <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a class="logout_open"
+                                                                                        href="/admin/logout"><i
+                  class="fa fa-sign-out"></i><!-- react-text: 26 -->&nbsp; Sign Out<!-- /react-text --></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="root">
+      <div class="row expanded">
+        <div class="columns">
+
+          <div class="page-lead row align-middle expanded">
+            <div class="auto columns">
+              <span class="h4">Notification System Drafts</span>
+            </div>
+            <div class="shrink columns">
+              <div class="button-align small">
+                <a data-open="publishDrafts" class="button hollow">Publish Selected</a>
+                <a data-open="createNewDraft" class="button success">Create New</a>
+
+                <div id="createNewDraft" class="reveal" data-reveal>
+                  <div class="reveal-heading">
+                    <strong>Create New Draft</strong>
+                  </div>
+                  <div class="reveal-body">
+                    <div class="row align-middle">
+                      <div class="auto columns">
+                        <div class="form-group">
+                          <label for="">Title</label>
+                          <input type="text">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row align-middle">
+                      <div class="medium-8 columns">
+                        <div class="form-group">
+                          <label for="">Type of Notification</label>
+                          <select name="" id="">
+                            <option value="" selected>New Feature</option>
+                            <option value="">Updated</option>
+                            <option value="">Fixed</option>
+                            <option value="">Alert</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row align-middle">
+                      <div class="auto columns">
+                        <div class="fancy-checkbox small">
+                          <input type="radio">
+                          <label for="" class="disp-inline align-middle"><b>Expire on first view</b></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row align-middle">
+                      <div class="shrink columns">
+                        <div class="fancy-checkbox small">
+                          <input type="radio">
+                          <label for="" class="disp-inline align-middle"><b>Expire on Date:</b></label>
+                        </div>
+                      </div>
+                      <div class="medium-4 columns">
+                        <input type="text" placeholder="Select Date">
+                      </div>
+                    </div>
+                    <div class="row align-middle">
+                      <div class="auto columns">
+                        <div class="form-group">
+                          <label for="">Description</label>
+                          <textarea name="" id="" cols="30" rows="5"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row align-middle">
+                      <div class="auto columns">
+                        <div class="form-group">
+                          <label for="">Upload Image</label>
+                          <input type="file">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reveal-footer">
+                    <div class="button-align small pull-right">
+                      <a href="#" class="button hollow">Cancel</a>
+                      <a href="#" class="button success">Create</a>
+                    </div>
+                  </div>
+                  <button class="close-button" data-close aria-label="Close modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+
+                <div id="publishDrafts" class="reveal" data-reveal>
+                  <div class="reveal-heading">
+                    <strong>Publish Selected Drafts</strong>
+                  </div>
+                  <div class="reveal-body">
+                    <div class="row align-middle">
+                      <div class="auto columns">
+                        <div class="form-group">
+                          <label for="">Title</label>
+                          <input type="text">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row align-middle">
+                      <div class="auto columns">
+                        <div class="form-group">
+                          <label for="">Description</label>
+                          <textarea name="" id="" cols="30" rows="5"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row align-middle">
+                      <div class="auto columns">
+                        <label for="">Selected Notifications</label>
+                        <div class="spoke-list">
+
+                          <div class="spoke-list-item row expanded">
+                            <div class="medium-2 columns">
+                              <div class="row collapse align-middle">
+                                <div class="shrink columns">
+                                  <i class="fa fa-bars fa-fw"></i>
+                                </div>
+                                <div class="auto columns text-center">
+                                  <i class="fa fa-gift fa-border fa-circle success-bg"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="medium-8 columns">
+                              <h6 class="mb-0-5">This Is A New Feature</h6>
+                              <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Donec sed odio dui. Cum sociis natoque
+                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque
+                                ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at
+                                eros.</p>
+                              <div class="img-wrapper auto mt-0-5">
+                                <img src="https://picsum.photos/300/200" alt="">
+                              </div>
+                            </div>
+                            <div class="auto columns">
+                              <div class="button-align tiny pull-right">
+                                <a href="#" class="button alert hollow">Remove</a>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="spoke-list-item row expanded">
+                            <div class="medium-2 columns">
+                              <div class="row collapse align-middle">
+                                <div class="shrink columns">
+                                  <i class="fa fa-bars fa-fw"></i>
+                                </div>
+                                <div class="auto columns text-center">
+                                  <i class="fa fa-pencil-alt fa-border fa-circle secondary-bg"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="medium-8 columns">
+                              <h6 class="mb-0-5">This Is An Updated Feature</h6>
+                              <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Donec sed odio dui. Cum sociis natoque
+                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque
+                                ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at
+                                eros.</p>
+                            </div>
+                            <div class="auto columns">
+                              <div class="button-align tiny pull-right">
+                                <a href="#" class="button alert hollow">Remove</a>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="spoke-list-item row expanded">
+                            <div class="medium-2 columns">
+                              <div class="row collapse align-middle">
+                                <div class="shrink columns">
+                                  <i class="fa fa-bars fa-fw"></i>
+                                </div>
+                                <div class="auto columns text-center">
+                                  <i class="fa fa-magic fa-border fa-circle alert-bg"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="medium-8 columns">
+                              <h6 class="mb-0-5">This Is A Fixed Issue</h6>
+                              <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Donec sed odio dui. Cum sociis natoque
+                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque
+                                ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at
+                                eros.</p>
+                            </div>
+                            <div class="auto columns">
+                              <div class="button-align tiny pull-right">
+                                <a href="#" class="button alert hollow">Remove</a>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reveal-footer">
+                    <div class="button-align small pull-right">
+                      <a href="#" class="button hollow">Cancel</a>
+                      <a href="#" class="button success">Publish</a>
+                    </div>
+                  </div>
+                  <button class="close-button" data-close aria-label="Close modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="spoke-list">
+
+            <div class="spoke-list-heading row expanded align-middle">
+              <div class="medium-2 columns">
+                <input type="checkbox" class="mb-0 mr-1" name="">&nbsp;
+                <a href="#">Type <i class="fa fa-caret-up fa-fw"></i></a>
+              </div>
+              <div class="medium-6 columns">
+                <a href="#">Title</a>
+              </div>
+              <div class="medium-2 columns">
+                <a href="#">Date Created <i class="fa fa-caret-up fa-fw"></i></a>
+              </div>
+              <div class="shrink columns">
+              </div>
+            </div>
+
+            <div class="spoke-list-item row expanded"
+                 onclick="location.href=''">
+              <div class="medium-2 columns">
+                <div class="row collapse align-middle">
+                  <div class="shrink columns">
+                    <input type="checkbox" class="mb-0 mr-1" name="">
+                  </div>
+                  <div class="auto columns">
+                    <i class="fa fa-gift fa-border fa-circle success-bg"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="medium-6 columns">
+                <h6 class="mb-0-5">This Is A New Feature</h6>
+                <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Donec sed odio dui. Cum sociis natoque
+                  penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque
+                  ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at
+                  eros.</p>
+                <div class="img-wrapper auto mt-0-5">
+                  <img src="https://picsum.photos/300/200" alt="">
+                </div>
+              </div>
+              <div class="medium-2 columns">
+                <span>Oct 21, 2019</span>
+              </div>
+              <div class="auto columns">
+                <div class="button-align tiny pull-right">
+                  <a href="#" class="button hollow">Edit</a>
+                  <a href="#" class="button alert hollow">Delete</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="spoke-list-item row expanded"
+                 onclick="location.href=''">
+              <div class="medium-2 columns">
+                <div class="row collapse align-middle">
+                  <div class="shrink columns">
+                    <input type="checkbox" class="mb-0 mr-1" name="">
+                  </div>
+                  <div class="auto columns">
+                    <i class="fa fa-pencil-alt fa-border fa-circle secondary-bg"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="medium-6 columns">
+                <h6 class="mb-0-5">This Is An Updated Feature</h6>
+                <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Donec sed odio dui. Cum sociis natoque
+                  penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque
+                  ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at
+                  eros.</p>
+              </div>
+              <div class="medium-2 columns">
+                <span>Oct 21, 2019</span>
+              </div>
+              <div class="auto columns">
+                <div class="button-align tiny pull-right">
+                  <a href="#" class="button hollow">Edit</a>
+                  <a href="#" class="button alert hollow">Delete</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="spoke-list-item row expanded"
+                 onclick="location.href=''">
+              <div class="medium-2 columns">
+                <div class="row collapse align-middle">
+                  <div class="shrink columns">
+                    <input type="checkbox" class="mb-0 mr-1" name="">
+                  </div>
+                  <div class="auto columns">
+                    <i class="fa fa-magic fa-border fa-circle alert-bg"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="medium-6 columns">
+                <h6 class="mb-0-5">This Is A Fixed Issue</h6>
+                <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Donec sed odio dui. Cum sociis natoque
+                  penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque
+                  ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at
+                  eros.</p>
+              </div>
+              <div class="medium-2 columns">
+                <span>Oct 21, 2019</span>
+              </div>
+              <div class="auto columns">
+                <div class="button-align tiny pull-right">
+                  <a href="#" class="button hollow">Edit</a>
+                  <a href="#" class="button alert hollow">Delete</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="spoke-list-item row expanded"
+                 onclick="location.href=''">
+              <div class="medium-2 columns">
+                <div class="row collapse align-middle">
+                  <div class="shrink columns">
+                    <input type="checkbox" class="mb-0 mr-1" name="">
+                  </div>
+                  <div class="auto columns">
+                    <i class="fa fa-exclamation-circle fa-border fa-circle alert-bg hollow"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="medium-6 columns">
+                <h6 class="mb-0-5">This Is A System Alert</h6>
+                <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Donec sed odio dui. Cum sociis natoque
+                  penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque
+                  ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at
+                  eros.</p>
+              </div>
+              <div class="medium-2 columns">
+                <span>Oct 21, 2019</span>
+              </div>
+              <div class="auto columns">
+                <div class="button-align tiny pull-right">
+                  <a href="#" class="button hollow">Edit</a>
+                  <a href="#" class="button alert hollow">Delete</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- CHat Component -->
+  <div id="chat-toggle">
+    <i class="fa fa-comment"></i>
+  </div>
+
+  <div id="chat-container" style="display: none;">
+
+    <div class="chat-video-incoming align-center-middle text-center pt-2">
+      <div class="row video-call-caller mb-2">
+        <div class="columns col-md-12">
+          <p class="h4 white-color mb-4">Liam Neeson Calling...</p>
+          <img src="http://i.pravatar.cc/200" alt="" class="user-image circle">
+        </div>
+      </div>
+      <div class="row video-call-action">
+        <div class="columns col-md-2">
+          <button id="btn-call-reject" class="button clear large circle alert">
+            <i class="fa fa-times"></i>
+          </button>
+        </div>
+        <div class="columns col-md-2">
+          <button id="btn-call-answer" class="button clear large circle success" data-close="" aria-label="Close modal">
+            <i class="fa fa-phone"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="chat-video-container">
+      <div id="videos" class="compact">
+        <div id="subscriber" class="compact"></div>
+        <div id="publisher" class="compact"></div>
+      </div>
+      <div class="chat-video-control row align-center">
+        <div class="columns col-md-2 center-text pr-0">
+          <button id="chat-video-compress" class="button large circle"><i class="fa fa-compress"></i></button>
+        </div>
+        <div class="columns col-md-2 center-text pad0">
+          <button id="chat-video-message" class="button success large circle mb-0"><i class="fa fa-sticky-note"></i>
+          </button>
+        </div>
+        <div class="columns col-md-2 center-text pl-0">
+          <button id="chat-video-end-call" class="button alert large circle"><i class="fa fa-phone"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/what-input/what-input.js"></script>
+<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+
+<script src="js/app.js"></script>
+
+<script type="text/javascript">
+
+  $(function () {
+    var timer;
+
+    $(window).resize(function () {
+      clearTimeout(timer);
+      timer = setTimeout(function () {
+        $('.site-nav, .content').css("height", $(window).height());
+      }, 40);
+    }).resize();
+  });
+
+</script>
+</body>
+</html>

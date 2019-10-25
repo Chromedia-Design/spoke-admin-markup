@@ -1626,7 +1626,7 @@ ul.vertical-list {
     border-radius: $global-radius;
     border: 1px solid rgba($black, $B-dividers);
     cursor: pointer;
-    padding: 0.5rem;
+    padding: 0.5rem 0.3125rem;
     z-index: 1;
 
     + .spoke-list-item {
