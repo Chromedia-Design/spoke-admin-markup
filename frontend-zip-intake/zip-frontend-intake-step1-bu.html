@@ -1,0 +1,141 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spoke</title>
+	<link rel="stylesheet" href="../css/app.css">
+</head>
+<body class="frontend">
+
+	<header class="top-bar">
+		<div class="row">
+			<div class="top-bar-title">
+				<span data-responsive-toggle="responsive-menu" data-hide-for="large">
+					<span class="menu-icon dark" data-toggle></span>
+				</span>
+				<a href="#" class="logo zip">
+					<img src="../img/zip-temp-logo-1.png" alt="Spoke">
+				</a>
+			</div>
+			<div id="responsive-menu">
+				<div class="top-bar-right">
+					<ul class="menu">
+						<!-- <li><a href="#">Need Support?</a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="mb-6 white-bg">
+		<div class="container">
+			<div class="row">
+				<div class="medium-10 columns small-centered">
+					<div class="page-lead tall">
+						<div class="media-object">
+							<!-- <div class="media-object-section logo large middle">
+								<div class="img-wrapper circle">
+									<img src= "../img/Smiling-Middle-Aged-Lady-Arms-Square.png">
+								</div>
+							</div> -->
+							<div class="media-object-section middle">
+								<p class="subheader"><small>STEP 1 OF 3</small></p>
+								<div class="talk-bubble border tri-right left-in">
+									<div class="talktext">
+										<p class="h5 full">First, let’s setup your account for privacy and security.</p>
+										<p class="subheader">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="medium-10 columns small-centered">
+					<form class="">
+						<div class="row">
+							<div class="large-6 columns end small-12">
+								<label>
+									First Name
+									<input type="text" value="Brendon" class="fancy-input">
+								</label>
+							</div>
+							<div class="large-6 columns end small-12">
+								<label>
+									Last Name
+									<input type="text" value="Martin" class="fancy-input">
+								</label>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="large-3 columns end small-4">
+                <label>
+                  Phone Number
+                  <select class="fancy-input">
+                    <option>PH - 63</option>
+                  </select>
+                </label>
+              </div>
+
+							<div class="large-6 columns end small-8">
+								<label>
+									&nbsp;
+									<input type="text" placeholder="Enter 10-digit number" class="fancy-input">
+								</label>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="large-6 columns small-12">
+								<label>
+									Password
+									<input type="password" class="fancy-input">
+								</label>
+							</div>
+							<div class="large-6 columns small-12">
+								<label>
+									Confirm Password
+									<input type="password" class="fancy-input">
+								</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="large-12 columns end">
+								<a href="frontend-intake-step2.html" class="submit button primary pull-right">Continue &nbsp;<i class="fa fa-long-arrow-right"></i></a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>   
+		</div>
+	</section>
+
+	<script src="../bower_components/jquery/dist/jquery.js"></script>
+	<script src="../bower_components/what-input/what-input.js"></script>
+	<script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+	<script src="../bower_components/foundation-sites/js/foundation.toggler.js"></script>
+	<script src="../bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+	<script src="../bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+	
+	<script src="../js/app.js"></script>
+
+	<script type="text/javascript">
+		$(function () {
+			var timer;
+
+			$(window).resize(function() {
+				clearTimeout(timer);
+				timer = setTimeout(function() {
+				  $('.frontend').css("height", $(window).height());
+				}, 40); 
+			}).resize();
+		});
+	</script>
+
+</body>
+</html>
