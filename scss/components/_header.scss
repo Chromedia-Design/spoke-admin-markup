@@ -36,6 +36,13 @@ header {
         height: auto;
       }
     }
+
+    &.zip {
+      img {
+        height: 5rem !important;
+        width: auto;
+      }
+    }
   }
 
   .menu {
