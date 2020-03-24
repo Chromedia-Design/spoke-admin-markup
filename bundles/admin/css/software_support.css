@@ -1,0 +1,45 @@
+.login-support {
+  right: 30px !important;
+  bottom: 114px !important; }
+
+.forgot-pass-support {
+  right: 30px !important;
+  bottom: 10px !important; }
+
+.admin-support {
+  left: -4px !important;
+  bottom: 2px !important; }
+  .admin-support .support-button {
+    box-shadow: none;
+    border: 1px #fff solid; }
+
+#jsd-widget {
+  opacity: 0; }
+  #jsd-widget.show {
+    opacity: 1; }
+
+.support-wrapper {
+  width: 213px;
+  height: 80px;
+  position: fixed;
+  z-index: 999;
+  padding: 8px; }
+
+.support-button {
+  background: #512D6D;
+  width: 194px;
+  height: 55px;
+  color: #fff;
+  border-radius: 999px;
+  box-shadow: 0 1px 2px 0 #7a869a; }
+  .support-button span {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 18px;
+    display: block;
+    font-weight: 700;
+    line-height: 20px; }
+  .support-button small {
+    display: block;
+    text-align: center;
+    font-size: 11px; }
