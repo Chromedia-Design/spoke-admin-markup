@@ -1,0 +1,244 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spoke</title>
+
+  <!-- Important Owl stylesheet -->
+  <link rel="stylesheet" href="../js/owl-carousel/owl.carousel.css">
+
+  <!-- Default Theme -->
+  <link rel="stylesheet" href="../js/owl-carousel/owl.theme.css">
+
+  <link rel="stylesheet" href="../js/fullcalendar/fullcalendar.min.css">
+  <link rel="stylesheet" href="../js/fullcalendar/fullcalendar.print.min.css" media="print">
+
+  <link rel="stylesheet" href="../css/app.css">
+</head>
+<body class="frontend">
+
+  <div class="container bordered">
+    <div class="row collapse">
+      <div class="columns">
+        <header class="top-bar">
+          <div class="top-bar-title">
+            <a href="#" class="logo">
+              <img src="../img/logo.png" alt="Spoke">
+            </a>
+          </div>
+          <div id="responsive-menu">
+            <div class="top-bar-right">
+              <ul id="mainMenu" class="dropdown menu" data-dropdown-menu>
+                <li>
+                  <a href="#">Brendon Martin &nbsp;</a>
+                  <ul class="menu vertical">
+                    <li><a href="frontend-edit.html"><i class="fa fa-user"></i>&nbsp; Account Details</a></li>
+                    <li><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Sign Out</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column text-center">
+        <button class="button clear small hollow">Communication</button></div>
+      <div class="column text-center"><button class="button clear small hollow">Todo</button></div>
+      <div class="column text-center"><button class="button clear small hollow">Questionnaire</button></div>
+  
+    </div>
+  </div>
+
+  <div id="patientDashboard" class="row collapse expanded">
+    <div id="main-content" class="auto columns">
+        <!-- <div class="page-lead row align-middle">
+            <div class="auto columns"><span class="h4">March 23, 2020</span></div>
+        </div> -->
+        <div class="row">
+            <div class="auto columns">
+                <div class="page-lead row align-middle">
+                    <div class="shrink columns"><span class="h5">My To-Do's</span></div>
+                    <div class="columns">
+                        <div class="button-align small pull-right mb-0">
+                            <select>
+                                <option value="0">Current</option>
+                                <option value="1">Completed</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <ul class="tasks-list well-list">
+                            <li class="alert ">
+                                <div class="list-wrap ">
+                                    <div class="row collapse align-middle timeline-content">
+                                        <div class="auto columns">
+                                            <div class="media-object">
+                                                <div class="media-object-section pt-0-5">
+                                                    <div class="fancy-checkbox">
+                                                        <input type="checkbox" value="on">
+                                                        <label></label>
+                                                    </div>
+                                                </div>
+                                                <div class="media-object-section middle"><small class="preamble"><b>TO-DO</b></small>
+                                                    <p class="h6 mb-0"><a href="#">
+                                                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta corrupti rem necessitatibus!<!-- /react-text --></a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="shrink columns"><small class="preamble"><b>DUE a month ago</b></small></div> -->
+                                    </div>
+                                    <div class="row toggler-target mt-0-5 bg-black20 timeline-hidden-content pb-0-5">
+                                        <div class="columns">
+                                            <div class="row collapse pt-0-5 pb-0-5">
+                                                <div class="columns"><span class="clr-black50 ml-1"><strong><small>ATTACHMENTS</small></strong></span></div>
+                                            </div>
+                                            <div class="row pt-0-5 pb-0-5 hover-me">
+                                                <a href="/api/v1/attachments/8702/view?access_token=OGRmNTFmYWM4OThlNWU5MDAwZDJjYmViMGE5MjM4NDI1MGQ5ZjhhNzY5YmM3Mzc2ZmE1ODEyMWE1MTJiMzhiZQ&amp;type=TaskAttachment" target="_blank" class="columns">
+                                                    <div class="row">
+                                                        <div class="columns shrink"><i class="image-attachment fa fa-file-image "></i></div>
+                                                        <div class="columns">Denver Spine logo.png</div>
+                                                    </div>
+                                                </a>
+                                                <div class="columns shrink"><a class="buttom clear hollow small" target="_blank" href="/api/v1/tasks/20353/attachments/8702/download?access_token=OGRmNTFmYWM4OThlNWU5MDAwZDJjYmViMGE5MjM4NDI1MGQ5ZjhhNzY5YmM3Mzc2ZmE1ODEyMWE1MTJiMzhiZQ"><i class="fa fa-download"></i></a></div>
+                                            </div>
+                                            <div class="row pt-0-5 pb-0-5 hover-me">
+                                                <a class="columns">
+                                                    <div class="row">
+                                                        <div class="columns shrink"><i class="fa fa-file-video "></i></div>
+                                                        <div class="columns">https://vimeo.com/288603891</div>
+                                                    </div>
+                                                </a>
+                                                <div class="columns shrink"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="scheduleCalendar" class="reveal" data-reveal>
+  <div class="row collapse">
+    <div class="large-12 columns">
+      <h5 class="reveal-heading">Schedule A Call</h5>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </div>
+  <div class="row collapse">
+    <div class="large-12 columns">
+      <div class="reveal-body">
+        <iframe src="https://richard-youradvocate.youcanbook.me/?noframe=true&skipHeaderFooter=true"
+                id="ycbmiframerichard-youradvocate"
+                style="width:100%;height:1000px;border:0px;background-color:transparent;" frameborder="0"
+                allowtransparency="true"></iframe>
+        <script>window.addEventListener && window.addEventListener("message", function (event) {
+          if (event.origin === "https://richard-youradvocate.youcanbook.me") {
+            document.getElementById("ycbmiframerichard-youradvocate").style.height = event.data + "px";
+          }
+        }, false);</script>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/what-input/what-input.js"></script>
+<script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+<script src="../bower_components/foundation-sites/js/foundation.toggler.js"></script>
+<script src="../bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+<script src="../bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+
+<script src="../js/owl-carousel/owl.carousel.js"></script>
+<script src='../js/fullcalendar/lib/moment.min.js'></script>
+<script src='../js/fullcalendar/fullcalendar.min.js'></script>
+
+<script src="../js/app.js"></script>
+
+<script type="text/javascript">
+
+  var sampleEvents = {
+    "events": [
+      {
+        title: 'Scheduled Call with Kate Newman',
+        start: '2017-09-25T13:00:00'
+      },
+      {
+        title: 'Scheduled Call with Amy Thompson',
+        start: '2017-09-25T15:00:00',
+        end: '2017-09-25T16:00:00'
+      },
+      {
+        title: 'Scheduled Call with Brendon Martin',
+        start: '14:00:00',
+        end: '15:00:00',
+        dow: [1, 2, 3, 4, 5, 6, 7]
+      }
+    ]
+  };
+
+  $('#eventCalendar').fullCalendar({
+    header: {
+      left: 'prev',
+      center: 'title',
+      right: 'next'
+    },
+    aspectRatio: 1,
+    height: 'auto',
+    fixedWeekCount: false,
+    events: sampleEvents
+  });
+
+  $('#eventScheduler').fullCalendar({
+    defaultView: 'agendaDay',
+    header: {
+      left: 'title',
+      center: '',
+      right: 'today prev,next'
+    },
+    allDayText: 'All-Day',
+    slotLabelFormat: 'h(:mm) A',
+    minTime: '07:00:00',
+    maxTime: '20:00:00',
+    height: 'auto',
+    editable: true,
+    eventLimit: true, // allow "more" link when too many events
+    titleFormat: 'MMM D',
+    events: sampleEvents
+  });
+
+  $(document).ready(function () {
+
+    $("#facilityImages").owlCarousel({
+      items: 2,
+      nav: true,
+      loop: true
+      // itemsScaleUp: true
+    });
+
+    $("#facilityList").owlCarousel({
+      items: 3,
+      padding: 30,
+      nav: true,
+      loop: false
+      // itemsScaleUp: true
+    });
+
+  });
+</script>
+
+</body>
+</html>
