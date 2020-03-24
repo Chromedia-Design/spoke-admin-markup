@@ -333,6 +333,47 @@ ul.input-list.widget-choices li:last-child {
 }
 
 
+
+
+
+
+//Hardiest overrides of Rey for Zip
+
+label {
+  select{
+    &.phone {
+      width: 20%;
+    }
+  }
+
+  input {
+    &.phone {
+      width: 40%;
+    }
+  }
+}
+
+@media only screen and (max-width: 505px) {
+  label {
+    select{
+      &.phone {
+        width: 30% !important;
+      }
+    }
+
+    input {
+      &.phone {
+        width: 69%  !important;
+      }
+    }
+  }
+}
+
+
+
+
+
+
 //Hard overrides of Arthur for Zip
 #chat-container {
   display: flex;
