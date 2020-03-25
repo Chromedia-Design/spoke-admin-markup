@@ -375,16 +375,18 @@ label {
 
 
 //Hard overrides of Arthur for Zip
-    #chat-container {
+ #chat-container {
         display: flex;
         flex-flow: column;
         user-select: none;
         background-color: #f5f7f9;
-        box-shadow: none;
+        box-shadow: none !important;
         height: 100vh;
         max-height: 90vhpx;
         overflow-y: scroll; 
         position: relative;
+        max-width: 1080px !important;
+        margin: 0 auto !important;
         .chat-body-scroll {
         height: 425px;
         }
@@ -408,13 +410,11 @@ label {
         width: 100%;
         z-index: 1000;
         background-color: rgba(10, 16, 35, 0.9) !important;
-        // display: none;
         }
     }
     @media (min-width: 1281px) {
         #chat-container {
-            max-height: 83vh;
-            // display: none;
+            max-height: 82.3vh;
         }
     }
     @media only screen and (max-width: 390px) {
@@ -460,6 +460,14 @@ label {
     @media only screen and (max-width: 375px) {
         #chat-container {
         max-height: 81vh;
+        }
+    }
+    @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
+        #chat-container {
+            max-height: 84vh;
         }
     }
     @media only screen and (max-width: 375px) and (min-height: 813) {
@@ -653,4 +661,14 @@ label {
         }
         }
     }
+.frontend {
+    .main-container {
+        height: 100vh;
+        max-height: 100vh;
+        overflow: hidden;
+    } 
+}
+.pb-5 {
+    padding-bottom: 5rem;
+}
 
