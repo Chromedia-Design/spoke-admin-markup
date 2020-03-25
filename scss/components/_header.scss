@@ -37,6 +37,13 @@ header {
       }
     }
 
+    &.portal {
+      padding: 0 1rem;
+        img {
+          height: 2rem;
+        }
+    }
+
     &.zip {
       img {
         height: 5rem !important;
