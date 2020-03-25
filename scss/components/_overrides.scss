@@ -445,13 +445,25 @@ label {
   and (-webkit-min-device-pixel-ratio: 1.5) {
         #chat-container {
             max-height: 91vh;
+            /*max-height: 82vh;*/
+
         }
     }
     @media only screen and (max-width: 768px) {
         #chat-container {
-            max-height: 88vh;
+            max-height: 83vh;
         }
     }
+
+    /*SUPER POWER OVERRIDE NI REY*/
+    @media only screen and (max-width: 1200px) {
+        #chat-container {
+            max-height: 82vh;
+        }
+    }
+    /*END HERE*/
+
+
     @media only screen and (max-width: 414px) {
         #chat-container {
         max-height: 83vh;
