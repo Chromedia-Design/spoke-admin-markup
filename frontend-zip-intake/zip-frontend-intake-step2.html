@@ -44,20 +44,25 @@
     </div>
   </div>
   <div class="row">
-    <div class="columns medium-3 small-12">
-      <label>Gender
-        <select>
-          <option>Male</option>
-          <option>Female</option>
-        </select>
+    <div class="columns medium-12 small-12">
+      <label class="optional">Email Address
       </label>
+      <input type="text" name="" value="bren.martin@gmail.com">
     </div>
     <div class="columns medium-3 small-12">
-      <label>Birthdate
-        <select>
-          <option>March</option>
-        </select>
+      <label class="require">Gender
       </label>
+      <select>
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+    </div>
+    <div class="columns medium-3 small-12">
+      <label class="require">Birthdate
+      </label>
+      <select>
+        <option>March</option>
+      </select>
     </div>
     <div class="columns medium-3 small-12">
       <label><span class="show-for-medium">&nbsp;</span>
@@ -78,34 +83,34 @@
   <div class="row">
     <div class="columns medium-12">
       <div class="callout">
-        <label for="" class="subheader text-uppercase clr-warning h6">Current Address</label>
+        <label for="" class="subheader text-uppercase clr-warning h6 ">Current Address</label>
         <div class="row">
           <div class="columns medium-12">
-            <label>
+            <label class="require">
               Street Address
-              <input type="text" placeholder="Enter Street Address" value="101, Arcilla, Corner St.">
             </label>
+            <input type="text" placeholder="Enter Street Address" value="101, Arcilla, Corner St.">
           </div>
         
           <div class="columns medium-3 small-12">
-            <label>Province
-              <input type="text" name="" value="Cebu">
+            <label class="require">Province
             </label>
+            <input type="text" name="" value="Cebu">
           </div>
           <div class="columns medium-3 small-12">
-            <label>City / Municipality
-              <input type="text" name="" value="Cebu City">
+            <label class="require">City / Municipality
             </label>
+            <input type="text" name="" value="Cebu City">
           </div>
           <div class="columns medium-3 small-12">
-            <label>Barangay
-              <input type="text" name="" value="Mabolo">
+            <label class="require">Barangay
             </label>
+            <input type="text" name="" value="Mabolo">
           </div>
           <div class="columns medium-3 small-12">
-            <label>Postal Code
-              <input type="text" name="" value="6000">
+            <label class="require">Postal Code
             </label>
+            <input type="text" name="" value="6000">
           </div>
         </div>
       </div>
@@ -124,38 +129,38 @@
           <div class="columns medium-12 small-12 ">
             <div class="tiny button success mt-1 centered">
               <input id="checkbox12" type="checkbox" class="mb-0">
-              <label for="checkbox12">
+              <label for="checkbox12" class="">
                 <small class="require tiny clr-white"><strong>Check if same with 'Current Address'</strong></small>
               </label>
             </div>
           </div>
 
           <div class="columns medium-12 small-12 text-left">
-            <label>
+            <label class="require">
               Street Address
-              <input type="text" placeholder="Enter Street Address" value="101, Arcilla, Corner St.">
             </label>
+            <input type="text" placeholder="Enter Street Address" value="101, Arcilla, Corner St.">
           </div>
         
           <div class="columns medium-3 small-12 text-left">
-            <label>Province
-              <input type="text" name="" value="Cebu">
+            <label class="require">Province
             </label>
+            <input type="text" name="" value="Cebu">
           </div>
           <div class="columns medium-3 small-12 text-left">
-            <label>City / Municipality
-              <input type="text" name="" value="Cebu City">
+            <label class="require">City / Municipality
             </label>
+            <input type="text" name="" value="Cebu City">
           </div>
           <div class="columns medium-3 small-12 text-left">
-            <label>Barangay
-              <input type="text" name="" value="Mabolo">
+            <label class="require">Barangay
             </label>
+            <input type="text" name="" value="Mabolo">
           </div>
           <div class="columns medium-3 small-12 text-left">
-            <label>Postal Code
-              <input type="text" name="" value="6000">
+            <label class="require">Postal Code
             </label>
+            <input type="text" name="" value="6000">
           </div>
         </div>
       </div>
