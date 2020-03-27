@@ -136,15 +136,29 @@ fieldset {
   }
 }
 
-label.require {
-  content: "";
-  display: block;
-  &::after {
-    content:" *";
-    display: inline;
-    color: $alert-color;
+label{
+  &.require {
+    content: "";
+    display: block;
+    &::after {
+      content:" *";
+      display: inline;
+      color: $alert-color;
+    }
+  }
+
+  &.optional {
+   content: "";
+    display: block;
+    &::after {
+      content:" (Optional)";
+      display: inline;
+      color: $B-subtext;
+      font-style: italic;
+    }
   }
 }
+
 
 .checkbox-wrapper {
   display: flex;

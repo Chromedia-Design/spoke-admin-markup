@@ -45,19 +45,17 @@
 	</div>
 	<div class="row">
 		<div class="columns medium-6 small-12">
-			<label>First Name
-				<input type="text" name="" value="Brendon" placeholder="Enter First Name">
-			</label>
+			<label class="require">First Name</label>
+			<input type="text" name="" value="Brendon" placeholder="Enter First Name">
 		</div>
 		<div class="columns medium-6 small-12">
-			<label>Last Name
-				<input type="text" name="" value="Martin" placeholder="Enter Last Name">
-			</label>
+			<label class="require">Last Name</label>
+			<input type="text" name="" value="Martin" placeholder="Enter Last Name">
 		</div>
 	</div>
 
 	<div class="row">
-		<div class="medium-2 columns small-4">
+		<div class="medium-3 columns small-4">
       <!-- <label>   ---- ALTERNATIVE APPROACH
         Phone Number<br />
         <select class="disp-inline phone">
@@ -66,12 +64,12 @@
 				<input type="text" placeholder="Enter 10-digit number" class="disp-inline phone">
       </label> -->
 
-      <label>
-        Phone Number<br />
-        <select class="disp-inline">
-          <option>PH +63</option>
-        </select>
+      <label class="require">
+        Phone Number
       </label>
+      <select class="disp-inline">
+        <option>PH +63</option>
+      </select>
     </div>
 
 		<div class="large-6 columns end small-8">
@@ -111,17 +109,17 @@
     	</div>
 		</div>
 		<div class="columns medium-12">
-			<label>Password
-				<input type="password" name="" value="testvalue">
+			<label class="require">Password
 			</label>
+			<input type="password" name="" value="testvalue">
 		</div>
 	</div>
 
 	<div class="row b-bottom-1">
 		<div class="columns medium-12 mb-2">
-			<label>Confirm Password
-				<input type="password" name="" value="">
+			<label class="require">Confirm Password
 			</label>
+			<input type="password" name="" value="">
 		</div>
 	</div>
 
@@ -140,7 +138,7 @@
 				</p>
 				<div class="tiny button bg-light mt-1 centered">
 					<input id="checkbox12" type="checkbox" class="mb-0">
-					<label for="checkbox12">
+					<label for="checkbox12" class="require">
 						<small class="require tiny"><strong>I agree with these terms</strong></small>
 					</label>
 				</div>
