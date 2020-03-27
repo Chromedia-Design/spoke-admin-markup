@@ -17,7 +17,7 @@ body {
     h4,
     h5,
     h6 {
-      font-family: 'IBM Plex Serif', serif;
+      font-family: "IBM Plex Serif", serif;
     }
   }
 }
@@ -103,7 +103,6 @@ section {
         font-weight: normal;
       }
     }
-
   }
 
   &.section {
@@ -251,12 +250,16 @@ section {
   &.home {
     position: relative;
     // background: transparent url('../img/breather.jpg') center center no-repeat;
-    background: transparent url('https://s3.amazonaws.com/assets.spoke.com/images/breather.jpg') center center no-repeat;
+    background: transparent
+      url("https://s3.amazonaws.com/assets.spoke.com/images/breather.jpg")
+      center center no-repeat;
     background-size: cover;
 
     &.whitepaper {
       position: relative;
-      background: $novant-primary-color url('https://s3.amazonaws.com/assets.cobrands.spokehealth.com/novant/breather-novant-2-min.jpg') center center no-repeat;
+      background: $novant-primary-color
+        url("https://s3.amazonaws.com/assets.cobrands.spokehealth.com/novant/breather-novant-2-min.jpg")
+        center center no-repeat;
       background-size: cover;
     }
 
@@ -278,8 +281,8 @@ section {
 
       .device {
         position: absolute;
-        -webkit-animation: fadeInDown .7s;
-        animation: fadeInDown .7s;
+        -webkit-animation: fadeInDown 0.7s;
+        animation: fadeInDown 0.7s;
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
 
@@ -299,13 +302,13 @@ section {
         }
 
         &.one {
-          -webkit-animation-delay: .5s;
-          animation-delay: .5s;
+          -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
         }
 
         &.two {
-          -webkit-animation-delay: .7s;
-          animation-delay: .7s;
+          -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
         }
       }
     }
@@ -313,31 +316,41 @@ section {
 
   &.employer {
     position: relative;
-    background: transparent url('https://s3.amazonaws.com/assets.spoke.com/images/med-employer-bg.jpg') center center no-repeat;
+    background: transparent
+      url("https://s3.amazonaws.com/assets.spoke.com/images/med-employer-bg.jpg")
+      center center no-repeat;
     background-size: cover;
   }
 
   &.employer-section-2 {
     position: relative;
-    background: $primary-color url('https://s3.amazonaws.com/assets.spoke.com/images/employer-section-2.png') top center no-repeat;
+    background: $primary-color
+      url("https://s3.amazonaws.com/assets.spoke.com/images/employer-section-2.png")
+      top center no-repeat;
     background-size: cover;
   }
 
   &.employer-section-3 {
     position: relative;
-    background: $white url('https://s3.amazonaws.com/assets.spoke.com/images/employer-section-3.png') top center no-repeat;
+    background: $white
+      url("https://s3.amazonaws.com/assets.spoke.com/images/employer-section-3.png")
+      top center no-repeat;
     background-size: cover;
   }
 
   &.provider {
     position: relative;
-    background: transparent url('https://s3.amazonaws.com/assets.spoke.com/images/med-provider-bg.png') center center no-repeat;
+    background: transparent
+      url("https://s3.amazonaws.com/assets.spoke.com/images/med-provider-bg.png")
+      center center no-repeat;
     background-size: cover;
   }
 
   &.provider-section-2 {
     position: relative;
-    background: $primary-color url('https://s3.amazonaws.com/assets.spoke.com/images/provider-section-2.jpg') center center no-repeat;
+    background: $primary-color
+      url("https://s3.amazonaws.com/assets.spoke.com/images/provider-section-2.jpg")
+      center center no-repeat;
     background-size: cover;
     overflow: hidden;
 
@@ -348,7 +361,7 @@ section {
       }
 
       &:before {
-        content: '';
+        content: "";
         position: absolute;
         width: 1000px;
         height: 100%;
@@ -360,7 +373,7 @@ section {
       }
 
       &:after {
-        content: '';
+        content: "";
         position: absolute;
         width: 1000px;
         height: 100%;
@@ -375,7 +388,9 @@ section {
 
   &.provider-section-3 {
     position: relative;
-    background: $primary-color url('https://s3.amazonaws.com/assets.spoke.com/images/provider-section-3.jpg') center center no-repeat;
+    background: $primary-color
+      url("https://s3.amazonaws.com/assets.spoke.com/images/provider-section-3.jpg")
+      center center no-repeat;
     background-size: cover;
     overflow: hidden;
 
@@ -386,7 +401,7 @@ section {
       }
 
       &:before {
-        content: '';
+        content: "";
         position: absolute;
         width: 1000px;
         height: 100%;
@@ -398,7 +413,7 @@ section {
       }
 
       &:after {
-        content: '';
+        content: "";
         position: absolute;
         width: 1000px;
         height: 100%;
@@ -453,7 +468,8 @@ section {
         h3,
         h4,
         h5,
-        h6, .button {
+        h6,
+        .button {
           margin-bottom: 0;
         }
 
@@ -463,7 +479,6 @@ section {
           font-weight: normal;
         }
       }
-
     }
 
     .lead-testimonial {
@@ -587,7 +602,8 @@ section {
       }
     }
 
-    .button.success, .success.brick {
+    .button.success,
+    .success.brick {
       background: $novant-primary-color;
     }
 
@@ -621,6 +637,11 @@ section {
       background: $white;
       border: 1px solid rgba($black, $B-dividers);
       border-radius: 2px;
+
+      .login-logo {
+        width: 60%;
+        height: auto;
+      }
 
       form {
         margin-top: 2rem;
@@ -665,7 +686,6 @@ section {
   }
 }
 
-
 // Primarily used for the sidebar menu
 .content {
   // overflow-y: scroll;
@@ -677,7 +697,7 @@ section {
       border-color: rgba($black, $B-subtext) transparent transparent;
     }
 
-    [type='submit'] {
+    [type="submit"] {
       margin-top: 0;
       margin-bottom: 0;
     }
@@ -738,8 +758,8 @@ section {
     font-size: rem-calc(14);
   }
 
-  [type='checkbox'] + label,
-  [type='radio'] + label {
+  [type="checkbox"] + label,
+  [type="radio"] + label {
     font-size: rem-calc(14);
   }
 
@@ -775,7 +795,7 @@ section {
 
         &:after {
           position: absolute;
-          content: '';
+          content: "";
           width: 0.5rem;
           height: 100%;
           top: 0;
@@ -799,7 +819,7 @@ section {
 
       &:before {
         position: absolute;
-        content: '';
+        content: "";
         top: rem-calc(-135);
         height: rem-calc(160);
         width: rem-calc(16);
@@ -865,7 +885,8 @@ section {
     }
 
     &.thirds-spacing {
-      thead, tbody {
+      thead,
+      tbody {
         th,
         td {
           &:first-child {
