@@ -625,7 +625,7 @@ section {
   table-layout: fixed;
 
   .login-inner {
-    padding-top: 2rem;
+    // padding-top: 2rem;
     display: table-cell;
     vertical-align: middle;
 
@@ -635,7 +635,7 @@ section {
       width: 90%;
       max-width: rem-calc(480);
       background: $white;
-      border: 1px solid rgba($black, $B-dividers);
+      // border: 1px solid rgba($black, $B-dividers);
       border-radius: 2px;
 
       .login-logo {

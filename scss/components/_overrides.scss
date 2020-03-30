@@ -406,6 +406,11 @@ label {
     width: 100%;
   }
 }
+@media only screen and (min-width: 1025px) {
+  #chat-container {
+    max-height: 85vh;
+  }
+}
 @media only screen and (max-width: 1024px) {
   #chat-container {
     max-height: 90.5vh;
