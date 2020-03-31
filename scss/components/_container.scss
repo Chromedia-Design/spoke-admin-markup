@@ -772,3 +772,48 @@ $card-user-profile-text-color: $text-black;
     }
   }
 }
+
+.zip-frontend {
+  $color-primary-zip: #4C616F;
+  $color-secondary-zip: #79C8D3;
+
+  /*GENERAL CLASSES*/
+  .clr-primary-zip {
+    color: $color-primary-zip;
+  }
+  .clr-secondary-zip {
+    color: $color-secondary-zip;
+  }
+
+
+
+  
+  .zip {
+    img {
+      max-width: 67px;
+      width: 70%;
+    }
+  }
+
+  .top-bar-right {
+    .button {
+      padding: 2.5rem 5rem;
+      margin: 0rem;
+      background: $color-primary-zip;
+    }
+  }
+
+  .bg-rectangle {
+    background: transparent;
+    &::before {
+      position: absolute;
+      content: '';
+      background: lighten($color-secondary-zip, 30%);
+      z-index: -1;
+      width: 40rem;
+      height: 5rem;
+      margin-top: -7rem;
+      margin-left: 5rem;
+    }
+  }
+}

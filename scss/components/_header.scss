@@ -46,8 +46,8 @@ header {
 
     &.zip {
       img {
-        height: 5rem !important;
-        width: auto;
+        max-width: 200px;
+        width: 100%;
       }
     }
   }
