@@ -817,7 +817,7 @@ $card-user-profile-text-color: $text-black;
     
     img {
       &.dummy-img {
-        width:80%;
+        /*width:80%;*/
       }
     }
 
@@ -848,6 +848,32 @@ $card-user-profile-text-color: $text-black;
       }
     }
 
+
+    div.button {
+      &.zip-btn {
+        &:hover {
+          background: $color-primary-zip !important;
+          small {
+            color: $white;
+          }
+        }
+      }
+    }
+
+    .cities {
+      background: transparent;
+      &::after {
+        position: absolute;
+        content: '';
+        background: lighten($color-primary-zip, 60%);
+        z-index: -1;
+        width: 5rem;
+        height: 20rem;
+        margin-top: -16rem;
+        margin-left: 14rem;
+      }
+    }
+
     .bg-rectangle {
       background: transparent;
       &::before {
@@ -856,9 +882,27 @@ $card-user-profile-text-color: $text-black;
         background: lighten($color-secondary-zip, 30%);
         z-index: -1;
         width: 40rem;
-        height: 10rem;
-        margin-top: -3rem;
-        margin-left: 5rem;
+        height: 7rem;
+        margin-top: -4rem;
+        margin-left: 7rem;
+      }
+      &::after {
+        position: absolute;
+        content: '';
+        background: $white;
+        z-index: -1;
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50% !important;
+        margin-top: -5rem;
+        margin-left: -26rem;
+      }
+    }
+
+    footer {
+      img {
+       /* max-width: 65px;
+        width: 15%;*/
       }
     }
 
