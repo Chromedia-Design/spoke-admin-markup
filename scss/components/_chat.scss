@@ -18,7 +18,7 @@
 
   &.small {
     margin: 0;
-    padding: 0.5rem .75rem;
+    padding: 0.5rem 0.75rem;
     border-radius: 8px 0 8px 8px;
     min-width: rem-calc(224);
 
@@ -156,8 +156,8 @@
 
   &.warning-bg {
     position: relative;
-    background-color: #FFFFA5;
-    border: 1px solid #FFFFA5;
+    background-color: #ffffa5;
+    border: 1px solid #ffffa5;
     border-radius: 1px;
     margin: 0;
     width: 100%;
@@ -185,7 +185,7 @@
         right: -13px;
         border-width: 0 16px 16px 0;
         border-style: solid;
-        border-color: darken(#FFFFA5, 40%) $background-white;
+        border-color: darken(#ffffa5, 40%) $background-white;
         display: block;
         width: 0;
       }
@@ -334,7 +334,7 @@
 
 /* Right triangle, right side slightly down*/
 .tri-right.border.right-in:before {
-  content: ' ';
+  content: " ";
   position: absolute;
   width: 0;
   height: 0;
@@ -347,7 +347,7 @@
 }
 
 .tri-right.right-in:after {
-  content: ' ';
+  content: " ";
   position: absolute;
   width: 0;
   height: 0;
@@ -364,7 +364,7 @@
 }
 
 // Threading of Notes Variables
-$light-gray-hex: #CBCFD3;
+$light-gray-hex: #cbcfd3;
 
 // Main Chat Panels for the
 // Provider and the Client
@@ -394,7 +394,7 @@ $light-gray-hex: #CBCFD3;
 
       &:before {
         position: absolute;
-        content: '';
+        content: "";
         width: 100%;
         height: rem-calc(49);
         top: rem-calc(-49);
@@ -467,7 +467,7 @@ $light-gray-hex: #CBCFD3;
 
       &:before {
         position: absolute;
-        content: '';
+        content: "";
         width: 100%;
         height: 1px;
         background-color: rgba($black, $B-dividers);
@@ -676,7 +676,8 @@ $light-gray-hex: #CBCFD3;
         color: rgba($black, $B-text);
       }
 
-      .input-group, .button {
+      .input-group,
+      .button {
         margin-bottom: 0;
       }
 
@@ -803,7 +804,8 @@ $light-gray-hex: #CBCFD3;
       line-height: 1.2em;
     }
 
-    .button, .button-align {
+    .button,
+    .button-align {
       margin-top: 0.5rem;
       margin-bottom: 0.5rem;
     }
@@ -968,10 +970,11 @@ $light-gray-hex: #CBCFD3;
 
 $main-color: #1ebd44;
 
-#chat-toggle, #chat-question-preview {
+#chat-toggle,
+#chat-question-preview {
   position: fixed;
   border-radius: 50%;
-  box-shadow: 0 5px 40px rgba(0, 0, 0, .16) !important;
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.16) !important;
 
   display: flex;
   align-items: center;
@@ -980,9 +983,21 @@ $main-color: #1ebd44;
 
   text-align: center;
   background: $success-color; /* Old browsers */
-  background: -moz-linear-gradient(-45deg, $success-color 0%, #30de59 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, $success-color 0%, #30de59 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, $success-color 0%, #30de59 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(
+    -45deg,
+    $success-color 0%,
+    #30de59 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    -45deg,
+    $success-color 0%,
+    #30de59 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    135deg,
+    $success-color 0%,
+    #30de59 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$success-color', endColorstr='#30de59', GradientType=1); /* IE6-9 fallback on horizontal gradient */
 
   i {
@@ -1027,8 +1042,8 @@ $main-color: #1ebd44;
     line-height: 1.2em;
     border-radius: 50%;
     color: #fff;
-    font-size: .85rem;
-    padding: .25rem;
+    font-size: 0.85rem;
+    padding: 0.25rem;
     left: -4px;
     top: -7px;
   }
@@ -1064,7 +1079,8 @@ $main-color: #1ebd44;
       padding-bottom: 1rem;
 
       .chat-header-user {
-        .user-name, .user-role {
+        .user-name,
+        .user-role {
           // color: #fff !important;
         }
 
@@ -1083,14 +1099,13 @@ $main-color: #1ebd44;
           // color: #fff !important;
         }
       }
-
     }
   }
 
   .form-notification {
     box-shadow: 0px 2px 15px rgba(31, 31, 31, 0.25);
     background-color: #fff;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     // padding: 1rem 1rem .5rem 1rem;
     margin: 0px 1rem;
     border: 1px solid #c5c5c5;
@@ -1100,7 +1115,7 @@ $main-color: #1ebd44;
   .modal-notification {
     box-shadow: 0px 2px 15px rgba(31, 31, 31, 0.25);
     background-color: #fff;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     // padding: 1rem 1rem .5rem 1rem;
     margin: 0px 1rem;
     border: 1px solid #c5c5c5;
@@ -1113,7 +1128,7 @@ $main-color: #1ebd44;
   flex-flow: column;
   user-select: none;
   background-color: #f5f7f9;
-  box-shadow: 0 5px 40px rgba(0, 0, 0, .16) !important;
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.16) !important;
   height: 450px;
   max-height: 700px;
   overflow-y: scroll;
@@ -1153,7 +1168,8 @@ $main-color: #1ebd44;
   }
 }
 
-#chat-container, #chat-notification {
+#chat-container,
+#chat-notification {
   z-index: 10;
   position: fixed;
   bottom: 6rem;
@@ -1186,7 +1202,8 @@ $main-color: #1ebd44;
         background-color: $main-color !important;
 
         .chat-header-user {
-          .user-name, .user-role {
+          .user-name,
+          .user-role {
             color: #fff;
           }
         }
@@ -1217,13 +1234,14 @@ $main-color: #1ebd44;
 
       // Columns Begin
       .chat-header-user {
-        .user-name, .user-role {
+        .user-name,
+        .user-role {
           margin: 0;
           color: $white;
         }
 
         .user-role {
-          @extend .timestamp
+          @extend .timestamp;
         }
       }
 
@@ -1241,8 +1259,8 @@ $main-color: #1ebd44;
 
       // States Begin
       &.shrinked {
-        border-radius: .5rem;
-        margin: .5rem 1rem;
+        border-radius: 0.5rem;
+        margin: 0.5rem 1rem;
         background-color: transparent;
 
         .chat-header-action {
@@ -1295,10 +1313,10 @@ $main-color: #1ebd44;
           border-radius: 50%;
           background-color: $alert-color;
           color: #fff;
-          font-size: .85rem;
-          padding: .25rem;
+          font-size: 0.85rem;
+          padding: 0.25rem;
           position: absolute;
-          right: -.3rem;
+          right: -0.3rem;
           bottom: -5px;
         }
       }
@@ -1318,9 +1336,22 @@ $main-color: #1ebd44;
   }
 
   .chat-input-container {
-    background-color: #fff;
-    border-top: 1px solid #eaeaea;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #f5f7f9;
+    // border-top: 1px solid #eaeaea;
     flex: 1 1 auto;
+    // .chat-input {
+    //   background-color: #fff;
+    //   margin: 0.25rem 0.5rem;
+    //   border-radius: 4px;
+    // }
+    div textarea {
+      background-color: #fff;
+      margin: 0.25rem 0.5rem;
+      border-radius: 4px;
+    }
 
     .help-text {
       margin: 0.3125rem 1rem 1rem;
@@ -1338,11 +1369,11 @@ $main-color: #1ebd44;
       white-space: nowrap;
 
       .file-attachment {
-        margin: .25rem 1rem;
+        margin: 0.25rem 1rem;
       }
     }
 
-    [type='text'],
+    [type="text"],
     textarea {
       width: 100%;
       margin: 0.5rem 0 0;
@@ -1351,7 +1382,7 @@ $main-color: #1ebd44;
       box-shadow: none;
       font-size: rem-calc(14);
       resize: none;
-      height: 2rem;
+      // height: 2rem;
       background-color: transparent;
     }
 
@@ -1360,4 +1391,12 @@ $main-color: #1ebd44;
       padding: 0.5rem;
     }
   }
+}
+
+.counter-notif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 1rem;
+  background-color: red;
 }

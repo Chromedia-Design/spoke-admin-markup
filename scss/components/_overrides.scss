@@ -406,6 +406,11 @@ label {
     width: 100%;
   }
 }
+@media only screen and (min-width: 1025px) {
+  #chat-container {
+    max-height: 85vh;
+  }
+}
 @media only screen and (max-width: 1024px) {
   #chat-container {
     max-height: 90.5vh;
@@ -466,7 +471,7 @@ label {
 #chat-container,
 #chat-notification {
   z-index: 10;
-  position: fixed;
+  position: relative !important;
   bottom: 0;
   left: 0;
   max-width: 100%;
@@ -605,13 +610,10 @@ label {
     }
   }
   .chat-input-container {
-    background-color: #fff;
-    border-top: 1px solid #eaeaea;
     flex: 1 1 auto;
     .help-text {
       margin: 0.3125rem 1rem 1rem;
       font-size: rem-calc(10);
-      // color: rgba($black, $B-text);
     }
     .attachments {
       display: block;
@@ -634,7 +636,7 @@ label {
       box-shadow: none;
       font-size: rem-calc(14);
       resize: none;
-      height: 2rem;
+      // height: 2rem;
       background-color: transparent;
     }
     button {
