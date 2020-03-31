@@ -566,6 +566,10 @@ $color-ongoing: #ecaf00;
   overflow: hidden !important;
 }
 
+.hide-overflow-x {
+  overflow-x: hidden !important;
+}
+
 .remove {
   cursor: pointer;
   margin-left: 0.5rem;
