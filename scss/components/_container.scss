@@ -802,6 +802,16 @@ $card-user-profile-text-color: $text-black;
       background: $color-primary-zip;
     }
   }
+  
+  img {
+    &.dummy-img {
+      width:80%;
+    }
+  }
+
+  .policy {
+    background: lighten($color-primary-zip, 40%);
+  }
 
   .bg-rectangle {
     background: transparent;
@@ -811,8 +821,8 @@ $card-user-profile-text-color: $text-black;
       background: lighten($color-secondary-zip, 30%);
       z-index: -1;
       width: 40rem;
-      height: 5rem;
-      margin-top: -7rem;
+      height: 10rem;
+      margin-top: -3rem;
       margin-left: 5rem;
     }
   }
