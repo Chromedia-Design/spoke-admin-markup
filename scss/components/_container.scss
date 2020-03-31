@@ -777,134 +777,138 @@ $card-user-profile-text-color: $text-black;
 
 
 
-  .zip-frontend {
-    $color-primary-zip: #4C616F;
-    $color-secondary-zip: #79C8D3;
 
-    /*GENERAL CLASSES*/
-    .clr-primary-zip {
-      color: $color-primary-zip;
-    }
-    .clr-secondary-zip {
-      color: $color-secondary-zip;
-    }
 
-    .bg-primary-zip {
+/*ZIP FRONTEND / LANDING PAGE SCSS*/
+
+.zip-frontend {
+  $color-primary-zip: #4C616F;
+  $color-secondary-zip: #79C8D3;
+
+  /*GENERAL CLASSES*/
+  .clr-primary-zip {
+    color: $color-primary-zip;
+  }
+  .clr-secondary-zip {
+    color: $color-secondary-zip;
+  }
+
+  .bg-primary-zip {
+    background: $color-primary-zip;
+  }
+
+  .bg-secondary-zip {
+    background: $color-secondary-zip;
+  }
+
+
+
+  
+  .zip {
+    img {
+      max-width: 67px;
+      width: 70%;
+    }
+  }
+
+  .top-bar-right {
+    .button {
+      padding: 2.5rem 5rem;
+      margin: 0rem;
       background: $color-primary-zip;
     }
+  }
+  
+  img {
+    &.dummy-img {
+      /*width:80%;*/
+    }
+  }
 
-    .bg-secondary-zip {
-      background: $color-secondary-zip;
+  .policy {
+    background: lighten($color-primary-zip, 40%);
+    &::before {
+      position: absolute;
+      content: '';
+      background: lighten($color-primary-zip, 55%);
+      z-index: -1;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      margin-top: -9rem;
+      margin-left: 10rem;
     }
 
-
-
-    
-    .zip {
-      img {
-        max-width: 67px;
-        width: 70%;
-      }
+    &::after {
+      position: absolute;
+      content: '';
+      background: lighten($color-secondary-zip, 30%);
+      z-index: -1;
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+      margin-top: -13rem;
+      /*margin-left: 5rem;*/
     }
-
-    .top-bar-right {
-      .button {
-        padding: 2.5rem 5rem;
-        margin: 0rem;
-        background: $color-primary-zip;
-      }
-    }
-    
-    img {
-      &.dummy-img {
-        /*width:80%;*/
-      }
-    }
-
-    .policy {
-      background: lighten($color-primary-zip, 40%);
-      &::before {
-        position: absolute;
-        content: '';
-        background: lighten($color-primary-zip, 55%);
-        z-index: -1;
-        width: 4rem;
-        height: 4rem;
-        border-radius: 50%;
-        margin-top: -9rem;
-        margin-left: 10rem;
-      }
-
-      &::after {
-        position: absolute;
-        content: '';
-        background: lighten($color-secondary-zip, 30%);
-        z-index: -1;
-        width: 10rem;
-        height: 10rem;
-        border-radius: 50%;
-        margin-top: -13rem;
-        /*margin-left: 5rem;*/
-      }
-    }
+  }
 
 
-    div.button {
-      &.zip-btn {
-        &:hover {
-          background: $color-primary-zip !important;
-          small {
-            color: $white;
-          }
+  div.button {
+    &.zip-btn {
+      &:hover {
+        background: $color-primary-zip !important;
+        small {
+          color: $white;
         }
       }
     }
-
-    .cities {
-      background: transparent;
-      &::after {
-        position: absolute;
-        content: '';
-        background: lighten($color-primary-zip, 60%);
-        z-index: -1;
-        width: 5rem;
-        height: 20rem;
-        margin-top: -16rem;
-        margin-left: 14rem;
-      }
-    }
-
-    .bg-rectangle {
-      background: transparent;
-      &::before {
-        position: absolute;
-        content: '';
-        background: lighten($color-secondary-zip, 30%);
-        z-index: -1;
-        width: 40rem;
-        height: 7rem;
-        margin-top: -4rem;
-        margin-left: 7rem;
-      }
-      &::after {
-        position: absolute;
-        content: '';
-        background: $white;
-        z-index: -1;
-        width: 7rem;
-        height: 7rem;
-        border-radius: 50% !important;
-        margin-top: -5rem;
-        margin-left: -26rem;
-      }
-    }
-
-    footer {
-      img {
-       /* max-width: 65px;
-        width: 15%;*/
-      }
-    }
-
   }
+
+  .cities {
+    background: transparent;
+    &::after {
+      position: absolute;
+      content: '';
+      background: lighten($color-primary-zip, 60%);
+      z-index: -1;
+      width: 5rem;
+      height: 20rem;
+      margin-top: -16rem;
+      margin-left: 14rem;
+    }
+  }
+
+  .bg-rectangle {
+    background: transparent;
+    &::before {
+      position: absolute;
+      content: '';
+      background: lighten($color-secondary-zip, 30%);
+      z-index: -1;
+      width: 40rem;
+      height: 7rem;
+      margin-top: -4rem;
+      margin-left: 7rem;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      background: $white;
+      z-index: -1;
+      width: 7rem;
+      height: 7rem;
+      border-radius: 50% !important;
+      margin-top: -5rem;
+      margin-left: -26rem;
+    }
+  }
+
+  footer {
+    img {
+     /* max-width: 65px;
+      width: 15%;*/
+    }
+  }
+
+}
 
