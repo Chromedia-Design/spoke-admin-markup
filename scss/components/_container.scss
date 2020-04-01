@@ -773,6 +773,14 @@ $card-user-profile-text-color: $text-black;
   }
 }
 
+
+
+
+
+
+
+/*ZIP FRONTEND / LANDING PAGE SCSS*/
+
 .zip-frontend {
   $color-primary-zip: #4C616F;
   $color-secondary-zip: #79C8D3;
@@ -783,6 +791,14 @@ $card-user-profile-text-color: $text-black;
   }
   .clr-secondary-zip {
     color: $color-secondary-zip;
+  }
+
+  .bg-primary-zip {
+    background: $color-primary-zip;
+  }
+
+  .bg-secondary-zip {
+    background: $color-secondary-zip;
   }
 
 
@@ -805,12 +821,61 @@ $card-user-profile-text-color: $text-black;
   
   img {
     &.dummy-img {
-      width:80%;
+      /*width:80%;*/
     }
   }
 
   .policy {
     background: lighten($color-primary-zip, 40%);
+    &::before {
+      position: absolute;
+      content: '';
+      background: lighten($color-primary-zip, 55%);
+      z-index: -1;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      margin-top: -9rem;
+      margin-left: 10rem;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      background: lighten($color-secondary-zip, 30%);
+      z-index: -1;
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+      margin-top: -13rem;
+      /*margin-left: 5rem;*/
+    }
+  }
+
+
+  div.button {
+    &.zip-btn {
+      &:hover {
+        background: $color-primary-zip !important;
+        small {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .cities {
+    background: transparent;
+    &::after {
+      position: absolute;
+      content: '';
+      background: lighten($color-primary-zip, 60%);
+      z-index: -1;
+      width: 5rem;
+      height: 20rem;
+      margin-top: -16rem;
+      margin-left: 14rem;
+    }
   }
 
   .bg-rectangle {
@@ -821,9 +886,37 @@ $card-user-profile-text-color: $text-black;
       background: lighten($color-secondary-zip, 30%);
       z-index: -1;
       width: 40rem;
-      height: 10rem;
-      margin-top: -3rem;
-      margin-left: 5rem;
+      height: 7rem;
+      margin-top: -4rem;
+      margin-left: 7rem;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      background: $white;
+      z-index: -1;
+      width: 7rem;
+      height: 7rem;
+      border-radius: 50% !important;
+      margin-top: -5rem;
+      margin-left: -26rem;
     }
   }
+
+  img {
+    &.dummy-img {
+      width: 20%;
+      position: absolute;
+      margin-top: -9rem;
+    }
+  }
+
+  footer {
+    img {
+     /* max-width: 65px;
+      width: 15%;*/
+    }
+  }
+
 }
+
