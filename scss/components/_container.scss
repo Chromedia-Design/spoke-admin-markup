@@ -903,6 +903,14 @@ $card-user-profile-text-color: $text-black;
     }
   }
 
+  img {
+    &.dummy-img {
+      width: 20%;
+      position: absolute;
+      margin-top: -9rem;
+    }
+  }
+
   footer {
     img {
      /* max-width: 65px;
