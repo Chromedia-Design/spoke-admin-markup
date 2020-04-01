@@ -26,7 +26,7 @@
       <div class="container bordered">
         <div class="row">
           <div class="column text-center">
-            <button class="button clear hollow clr-secondary mb-0-5 mt-0-5">
+            <button class="button clear hollow clr-black20 mb-0-5 mt-0-5">
               <i class="fa fa-home"></i
               ><span class="hide-for-small-only"> &nbsp; Dashboard</span>
             </button>
@@ -37,8 +37,9 @@
               ><span class="hide-for-small-only"> &nbsp; Inbox</span>
             </button>
           </div>
+          <!-- <div class="column text-center"><button class="button clear hollow clr-secondary"><i class="fa fa-list"></i><span class="hide-for-small-only"> &nbsp; Todo</span></button></div> -->
           <div class="column text-center">
-            <button class="button clear hollow  clr-black20 mb-0-5 mt-0-5">
+            <button class="button clear hollow  clr-secondary mb-0-5 mt-0-5">
               <i class="fa fa-user"></i
               ><span class="hide-for-small-only"> &nbsp; Profile</span>
             </button>
@@ -54,26 +55,38 @@
 
       <div id="patientDashboard" class="row collapse expanded">
         <div id="main-content" class="auto columns">
-          <div class="row expanded pb-5">
-            <div class="auto columns pb-5">
-              <div class="row mt-1">
-                <div class="columns">
-                  <p class="h4 clr-secondary">Facilty</p>
-                </div>
-              </div>
-              <div class="row mt-1">
-                <div class="columns">
-                  <p class="h4 clr-secondary">Scheduled Calls</p>
-                </div>
-              </div>
-              <div class="row mt-1">
-                <div class="columns">
-                  <p class="h4 clr-secondary">Questionnaire</p>
-                </div>
-              </div>
-              <div class="row mt-1">
-                <div class="columns">
-                  <p class="h4 clr-secondary">Todo</p>
+          <div class="row expanded mt-1 mb-1">
+            <div class="columns">
+              <div class="row">
+                <div class="column">
+                  <p>Name</p>
+                  <p>address</p>
+                  <p>Date of Birth</p>
+                  <p>Address</p>
+                  <p>etc...</p>
+                  <hr />
+                  <div>
+                    <a href="">
+                      <div class="row pt-0-5 pb-0-5">
+                        <div class="column small-2">
+                          <i class="fa fa-edit mr-1"></i>
+                        </div>
+                        <div class="column small-10">
+                          Edit Profile
+                        </div>
+                      </div>
+                    </a>
+                    <a href="">
+                      <div class="row pt-0-5 pb-0-5">
+                        <div class="column small-2">
+                          <i class="fa fa-key mr-1"></i>
+                        </div>
+                        <div class="column small-10">
+                          Change Password
+                        </div>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
