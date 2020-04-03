@@ -57,23 +57,220 @@
           <div class="row expanded pb-5">
             <div class="auto columns pb-5">
               <div class="row mt-1">
-                <div class="columns">
-                  <p class="h4 clr-secondary">Facilty</p>
+                <div class="columns small-12 facilty-selection">
+                  <div class="position-relative">
+                    <img
+                      src="https://s3.amazonaws.com/assets.spoke.com/static/thumb-precision-center.jpg"
+                      class="dashboard-card mb-1"
+                    />
+                    <span class="facilty-previous">
+                      <i class="fa fa-arrow-left"></i>
+                    </span>
+                    <span class="facilty-next">
+                      <i class="fa fa-arrow-right"></i>
+                    </span>
+                  </div>
+
+                  <p class="h5 mb-0-5">
+                    <strong>Chong hua hospital cebu</strong>
+                  </p>
+                  <p>
+                    <small
+                      >Don Mariano Cui Street, Fuente Osmeña Cir, Cebu City,
+                      6000 Cebu</small
+                    >
+                  </p>
+                  <p>
+                    <small>Phone: (032) 255 8000</small>
+                  </p>
+                  <p>
+                    <small>2.2 km • <a href="">Get direction</a></small>
+                  </p>
+                  <button class="button expanded">More details</button>
                 </div>
               </div>
+
+              <hr />
+
               <div class="row mt-1">
-                <div class="columns">
-                  <p class="h4 clr-secondary">Scheduled Calls</p>
+                <div class="columns small-12 mt-1 mb-1">
+                  <p class="h5 clr-secondary">Upcoming Schedule</p>
+                  <div class="mb-1">
+                    <div class="row mb-0-5">
+                      <div class="columns">
+                        <small
+                          ><strong
+                            ><i class="fa fa-calendar"></i>&nbsp;
+                            04/10/2020</strong
+                          ></small
+                        >
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="columns">
+                        <small>
+                          You have a scheduled call with the President</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-1">
+                    <div class="row mb-0-5">
+                      <div class="columns">
+                        <small
+                          ><strong
+                            ><i class="fa fa-calendar"></i>&nbsp;
+                            04/10/2020</strong
+                          ></small
+                        >
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="columns">
+                        <small>
+                          placing this here just in case we need to include
+                          multiple schedule and long description right over
+                          here</small
+                        >
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+
+              <hr />
+
               <div class="row mt-1">
-                <div class="columns">
-                  <p class="h4 clr-secondary">Questionnaire</p>
+                <div class="columns small-12 mt-1 mb-1">
+                  <p class="h5 clr-secondary">Questions to answer</p>
+                  <div class="">
+                    <div>
+                      <label>
+                        <p class="mb-0-5">
+                          At vero eos et accusamus et iusto odio dignissimos?
+                        </p>
+                        <select class="">
+                          <option>As soon as possible</option>
+                        </select>
+                      </label>
+                    </div>
+                    <hr />
+                    <label class="mb-0-5">
+                      Nam libero tempore, cum soluta nobis est?</label
+                    >
+                    <div class="checkbox-wrapper mb-0-5">
+                      <input
+                        type="radio"
+                        id="checka"
+                        value="yes"
+                        name="checka"
+                        checked
+                      />
+                      <label for="checka">Yes</label>
+                    </div>
+                    <div class="checkbox-wrapper">
+                      <input
+                        type="radio"
+                        id="checka"
+                        value="no"
+                        name="checka"
+                      />
+                      <label for="checka">No</label>
+                    </div>
+                  </div>
                 </div>
               </div>
+
               <div class="row mt-1">
-                <div class="columns">
-                  <p class="h4 clr-secondary">Todo</p>
+                <div class="columns small-12 mt-1 mb-1">
+                  <p class="h5 clr-secondary">Todo</p>
+                  <div class="dashboard-card pad-1">
+                    <ul class="tasks-list well-list">
+                      <li class="alert ">
+                        <div class="list-wrap ">
+                          <div
+                            class="row collapse align-middle timeline-content"
+                          >
+                            <div class="auto columns">
+                              <div class="media-object">
+                                <div class="media-object-section pt-0-5">
+                                  <div class="">
+                                    <input type="checkbox" value="on" />
+                                    <label></label>
+                                  </div>
+                                </div>
+                                <div class="media-object-section middle">
+                                  <small class="preamble"><b>TO-DO</b></small>
+                                  <p class="h6 mb-0">
+                                    <a href="#">
+                                      Lorem ipsum, dolor sit amet consectetur
+                                      adipisicing elit. Dicta corrupti rem
+                                      necessitatibus!<!-- /react-text --></a
+                                    >
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- <div class="shrink columns"><small class="preamble"><b>DUE a month ago</b></small></div> -->
+                          </div>
+                          <div
+                            class="row toggler-target mt-0-5 bg-black20 timeline-hidden-content pb-0-5"
+                          >
+                            <div class="columns">
+                              <div class="row collapse pt-0-5 pb-0-5">
+                                <div class="columns">
+                                  <span class="clr-black50 ml-1"
+                                    ><strong
+                                      ><small>ATTACHMENTS</small></strong
+                                    ></span
+                                  >
+                                </div>
+                              </div>
+                              <div class="row pt-0-5 pb-0-5 hover-me">
+                                <a
+                                  href="/api/v1/attachments/8702/view?access_token=OGRmNTFmYWM4OThlNWU5MDAwZDJjYmViMGE5MjM4NDI1MGQ5ZjhhNzY5YmM3Mzc2ZmE1ODEyMWE1MTJiMzhiZQ&amp;type=TaskAttachment"
+                                  target="_blank"
+                                  class="columns"
+                                >
+                                  <div class="row">
+                                    <div class="columns shrink">
+                                      <i
+                                        class="image-attachment fa fa-file-image "
+                                      ></i>
+                                    </div>
+                                    <div class="columns">
+                                      Denver Spine logo.png
+                                    </div>
+                                  </div>
+                                </a>
+                                <div class="columns shrink">
+                                  <a
+                                    class="buttom clear hollow small"
+                                    target="_blank"
+                                    href="/api/v1/tasks/20353/attachments/8702/download?access_token=OGRmNTFmYWM4OThlNWU5MDAwZDJjYmViMGE5MjM4NDI1MGQ5ZjhhNzY5YmM3Mzc2ZmE1ODEyMWE1MTJiMzhiZQ"
+                                    ><i class="fa fa-download"></i
+                                  ></a>
+                                </div>
+                              </div>
+                              <div class="row pt-0-5 pb-0-5 hover-me">
+                                <a class="columns">
+                                  <div class="row">
+                                    <div class="columns shrink">
+                                      <i class="fa fa-file-video "></i>
+                                    </div>
+                                    <div class="columns">
+                                      https://vimeo.com/288603891
+                                    </div>
+                                  </div>
+                                </a>
+                                <div class="columns shrink"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>

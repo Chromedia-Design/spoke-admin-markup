@@ -1,8 +1,8 @@
 @charset 'utf-8';
 
-@import 'settings';
-@import 'foundation';
-@import 'motion-ui';
+@import "settings";
+@import "foundation";
+@import "motion-ui";
 
 @include foundation-global-styles;
 @include foundation-grid;
@@ -51,56 +51,57 @@
 
 // Custom Styles
 // Vendor
-@import 'vendor/fontawesome5/scss/fontawesome';
-@import 'vendor/fontawesome5/scss/solid';
+@import "vendor/fontawesome5/scss/fontawesome";
+@import "vendor/fontawesome5/scss/solid";
 // @import 'vendor/fontawesome5/scss/regular';
 
 // React Components Override
-@import 'components/react-components-override/_react-select';
+@import "components/react-components-override/_react-select";
 
 // Components
-@import 'components/_mixins';
-@import 'components/_typography';
-@import 'components/_color';
-@import 'components/_utilities';
-@import 'components/_header';
-@import 'components/_main-content';
-@import 'components/_top-bar';
-@import 'components/_badge';
-@import 'components/_buttons';
-@import 'components/_forms';
-@import 'components/_lists';
-@import 'components/_callouts';
-@import 'components/_panels';
-@import 'components/_breadcrumbs';
-@import 'components/_pagination';
-@import 'components/_tab';
-@import 'components/_container';
-@import 'components/_media-object';
-@import 'components/_select2';
-@import 'components/_image';
-@import 'components/_tables';
-@import 'components/_modals';
-@import 'components/_graphs';
-@import 'components/_carousel';
-@import 'components/_sliders';
-@import 'components/_footer';
-@import 'components/_accordion';
-@import 'components/_offcanvas';
-@import 'components/_chat';
-@import 'components/_calendar';
-@import 'components/_form-builder';
-@import 'components/_orbit';
-@import 'components/_clinical-pathway';
-@import 'components/_pseudo-classes';
-@import 'components/_dropdown';
-@import 'components/_message';
-@import 'components/_media-queries';
-@import 'components/_frontend-overrides';
-@import 'components/_template';
-@import 'components/_task';
-@import 'components/_overrides';
-@import 'components/_timeline';
+@import "components/_mixins";
+@import "components/_typography";
+@import "components/_color";
+@import "components/_utilities";
+@import "components/_header";
+@import "components/_main-content";
+@import "components/_top-bar";
+@import "components/_badge";
+@import "components/_buttons";
+@import "components/_forms";
+@import "components/_lists";
+@import "components/_callouts";
+@import "components/_panels";
+@import "components/_breadcrumbs";
+@import "components/_pagination";
+@import "components/_tab";
+@import "components/_container";
+@import "components/_media-object";
+@import "components/_select2";
+@import "components/_image";
+@import "components/_tables";
+@import "components/_modals";
+@import "components/_graphs";
+@import "components/_carousel";
+@import "components/_sliders";
+@import "components/_footer";
+@import "components/_accordion";
+@import "components/_offcanvas";
+@import "components/_chat";
+@import "components/_calendar";
+@import "components/_form-builder";
+@import "components/_orbit";
+@import "components/_clinical-pathway";
+@import "components/_pseudo-classes";
+@import "components/_dropdown";
+@import "components/_message";
+@import "components/_media-queries";
+@import "components/_frontend-overrides";
+@import "components/_template";
+@import "components/_task";
+@import "components/_dashboard";
+@import "components/_timeline";
+@import "components/_overrides";
 
 .Select-menu-outer {
   position: relative !important;
@@ -126,7 +127,8 @@
   vertical-align: middle;
   height: 84px;
   width: 84px;
-  background: url("https://s3.amazonaws.com/assets.spoke.com/images/ripple.svg") no-repeat center;
+  background: url("https://s3.amazonaws.com/assets.spoke.com/images/ripple.svg")
+    no-repeat center;
 }
 
 .loader {
@@ -140,6 +142,10 @@
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
