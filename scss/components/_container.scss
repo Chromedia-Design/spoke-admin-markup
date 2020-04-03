@@ -819,9 +819,11 @@ $card-user-profile-text-color: $text-black;
     }
   }
   
-  img {
-    &.dummy-img {
-      /*width:80%;*/
+  a {
+    &.lgu-logo {
+      img {
+        display: none;
+      }
     }
   }
 
@@ -911,12 +913,101 @@ $card-user-profile-text-color: $text-black;
     }
   }
 
-  footer {
-    img {
-     /* max-width: 65px;
-      width: 15%;*/
+
+/*ZIP MEDIA QUERIES*/
+
+  @media only screen and (max-width: 945px) {
+    .header-lgu-desc {
+      padding: unset !important;
+      margin: unset !important;
+      margin-right: 1rem !important;
+    }
+
+    .top-bar-right {
+      .button {
+        padding: 1rem !important;
+      }
     }
   }
 
+  @media only screen and (max-width: 771px) {
+    .top-bar-title {
+      a {
+        margin-left: 1rem !important;
+        margin-right: 1rem !important;
+      }
+    }
+
+    .top-bar .top-bar-right {
+      width: auto !important;
+    }
+
+    .banner-main {
+      margin-top: 1rem !important;
+      padding-top: unset !important;
+      h2 {
+      font-size: 1.5rem !important;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 640px) {
+    .banner-main {
+    
+      display: flex !important;
+      flex-direction: column-reverse !important;
+
+      h2 {
+      font-size: 2rem !important;
+      }
+    }
+
+    .bg-rectangle {
+      img {
+        margin: 0 auto !important;
+        max-width: 20rem !important;
+        width: 100% !important;
+        height: auto !important;
+        margin-bottom: 1rem !important;
+      }
+      &::before {
+        display: none !important;
+      }
+      &::after {
+        display: none !important;
+      }
+    }
+
+    .section-banner {
+      padding: unset !important;
+    }
+
+    .section-policy {
+      h3 {
+        font-size: 2rem !important;
+      }
+    }
+
+    footer {
+      .columns {
+        justify-content: center !important;
+        text-align: center !important;
+      }
+    }
+  }
+
+
+  @media only screen and (max-width: 500px) {
+    .top-bar-title {
+      a {
+        margin-left: 0.5rem !important;
+        margin-right: 05rem !important;
+      }
+    }
+    .header-lgu-desc1{
+      font-size: 0.9rem !important;
+      /*display: none;*/
+    }
+  }
 }
 
