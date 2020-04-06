@@ -408,7 +408,7 @@ label {
 }
 @media only screen and (min-width: 1025px) {
   #chat-container {
-    max-height: 85vh;
+    max-height: 94vh;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -428,29 +428,29 @@ label {
 }
 @media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
   #chat-container {
-    max-height: 91vh;
+    max-height: 96vh;
     /*max-height: 82vh;*/
   }
 }
 @media only screen and (max-width: 768px) {
   #chat-container {
-    max-height: 83vh;
+    max-height: 95vh;
   }
 }
 
 @media only screen and (max-width: 414px) {
   #chat-container {
-    max-height: 83vh;
+    max-height: 93vh;
   }
 }
 @media only screen and (max-width: 375px) {
   #chat-container {
-    max-height: 81vh;
+    max-height: 92vh;
   }
 }
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
   #chat-container {
-    max-height: 84vh;
+    max-height: 94vh;
   }
 }
 @media only screen and (max-width: 375px) and (min-height: 813) {
@@ -465,7 +465,7 @@ label {
     width: 100%;
   }
   #chat-container {
-    max-height: 77vh;
+    max-height: 92vh;
   }
 }
 #chat-container,
@@ -604,10 +604,6 @@ label {
   .chat-body-container {
     overflow: hidden;
     overflow-y: scroll;
-    height: 1000px;
-    .chat-body {
-      padding: 1rem;
-    }
   }
   .chat-input-container {
     flex: 1 1 auto;
