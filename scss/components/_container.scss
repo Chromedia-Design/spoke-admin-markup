@@ -931,6 +931,18 @@ $card-user-profile-text-color: $text-black;
     }
   }
 
+  @media only screen and (max-width: 840px) {
+    .landing-2 {
+      .v-align-center.text-center {
+        display: unset !important;
+      }
+      .lgu-logo {
+        margin-right: 0rem !important;
+        margin-bottom: 1.5rem !important;
+      }
+    }
+  }
+
   @media only screen and (max-width: 771px) {
     .top-bar-title {
       a {
@@ -947,19 +959,20 @@ $card-user-profile-text-color: $text-black;
       margin-top: 1rem !important;
       padding-top: unset !important;
       h2 {
-      font-size: 1.5rem !important;
+        font-size: 1.5rem !important;
       }
     }
   }
 
   @media only screen and (max-width: 640px) {
     .banner-main {
-    
-      display: flex !important;
-      flex-direction: column-reverse !important;
+      &.col-reverse {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+      }
 
       h2 {
-      font-size: 2rem !important;
+        font-size: 2rem !important;
       }
     }
 
@@ -986,6 +999,12 @@ $card-user-profile-text-color: $text-black;
     .section-policy {
       h3 {
         font-size: 2rem !important;
+      }
+    }
+
+    .landing-2 {
+      .steps {
+        padding: 1rem !important;
       }
     }
 
