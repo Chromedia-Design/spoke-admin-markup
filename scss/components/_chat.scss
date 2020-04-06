@@ -1329,10 +1329,11 @@ $main-color: #1ebd44;
   .chat-body-container {
     overflow: hidden;
     overflow-y: scroll;
-    height: 1000px;
+    // height: 1000px;
 
     .chat-body {
       padding: 1rem;
+      padding-bottom: 5rem;
     }
   }
 
