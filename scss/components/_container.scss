@@ -822,7 +822,8 @@ $card-user-profile-text-color: $text-black;
   a {
     &.lgu-logo {
       img {
-        display: none;
+        width: 4rem !important;
+        height: auto !important;
       }
     }
   }
