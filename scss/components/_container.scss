@@ -822,7 +822,7 @@ $card-user-profile-text-color: $text-black;
   a {
     &.lgu-logo {
       img {
-        width: 4rem !important;
+        width: 6rem !important;
         height: auto !important;
       }
     }
@@ -1003,8 +1003,16 @@ $card-user-profile-text-color: $text-black;
     }
 
     .landing-2 {
-      .steps {
+      .container {
         padding: 1rem !important;
+        border: 1px solid rgba($black, $B-dividers) !important;
+        margin: .6rem !important;
+      }
+
+      .steps {
+        h3 {
+          text-align: center !important;
+        }
       }
     }
 
