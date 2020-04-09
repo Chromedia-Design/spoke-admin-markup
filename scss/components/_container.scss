@@ -1064,6 +1064,22 @@ $card-user-profile-text-color: $text-black;
         text-align: center !important;
       }
     }
+
+    .linked-containers {
+      .columns {
+        border-bottom: 1px solid rgba(10,16,35,0.06125);
+        &::before {
+          display: none !important;
+        }
+        &::after {
+          display: none !important;
+        }
+
+        &:last-child {
+          border-bottom: 0px !important;
+        };
+      }
+    }
   }
 
 
