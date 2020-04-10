@@ -861,7 +861,8 @@ $card-user-profile-text-color: $text-black;
     }
 
     .columns {
-      padding: 2rem;
+      padding: 1.5rem;
+      padding-left: 2rem;
       position: relative;
       &::before {
         position: absolute;
@@ -911,7 +912,7 @@ $card-user-profile-text-color: $text-black;
 
   .cities {
     background: transparent;
-    &::after {
+    /*&::after {
       position: absolute;
       content: '';
       background: lighten($color-primary-zip, 60%);
@@ -920,7 +921,7 @@ $card-user-profile-text-color: $text-black;
       height: 20rem;
       margin-top: -16rem;
       margin-left: 14rem;
-    }
+    }*/
   }
 
   .bg-rectangle {
