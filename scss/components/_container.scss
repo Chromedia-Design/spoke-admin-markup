@@ -947,6 +947,14 @@ $card-user-profile-text-color: $text-black;
       margin-top: -5rem;
       margin-left: -26rem;
     }
+    &.spoke {
+      &::before {
+        display: none !important;
+      }
+      &::after {
+        display: none !important;
+      }
+    }
   }
 
   img {
