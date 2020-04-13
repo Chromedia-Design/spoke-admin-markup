@@ -1095,8 +1095,19 @@ $card-user-profile-text-color: $text-black;
   @media only screen and (max-width: 500px) {
     .top-bar-title {
       a {
-        margin-left: 0.5rem !important;
-        margin-right: 05rem !important;
+        /*margin-left: 0rem !important;*/
+        margin-right: 0rem !important;
+
+        img {
+          width: 80% !important;
+          height: auto !important;
+        }
+      }
+    }
+
+    .top-bar-right {
+      .header-lgu-desc1 {
+        padding-right: 0rem !important;
       }
     }
     .header-lgu-desc1{
