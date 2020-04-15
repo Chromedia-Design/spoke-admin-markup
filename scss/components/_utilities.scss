@@ -685,6 +685,10 @@ $color-ongoing: #ecaf00;
   text-transform: capitalize !important;
 }
 
+.line-through {
+  text-decoration: line-through;
+}
+
 .rotate45 {
   transform: rotate(-45deg) !important;
 }
