@@ -1384,7 +1384,8 @@ $main-color: #1ebd44;
       box-shadow: none;
       font-size: rem-calc(14);
       resize: none;
-      // height: 2rem;
+      min-height: 2em;
+      height: 2rem;
       background-color: transparent;
     }
 
