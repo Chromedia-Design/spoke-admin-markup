@@ -403,7 +403,13 @@
               <div class="row mt-1">
                 <div class="columns small-12 mt-1 mb-1">
                   <p class="clr-secondary"><small><strong> QUESTIONNAIRE</strong></small></p>
-                  <div class="mb-1 pb-1">
+                  <div class="">
+                      <div class="progress success" role="progressbar" tabindex="0" aria-valuenow="50" aria-valuemin="0" aria-valuetext="50 percent" aria-valuemax="100">
+                        <div class="progress-meter" style="width: 30%">
+                        </div>
+                      </div>
+                  </div>
+                  <div class="mb-1 pb-1 ">
                     <p class="mb-0-5">Nam libero tempore, cum soluta nobis est?</p>
                     <div
                       class="checkbox-wrapper mb-0-5 fancy-radio fancy-hover small"
@@ -429,83 +435,15 @@
                       />
                       <label for="radiob">No</label>
                     </div>
-                  </div>
-                  <div class="mb-1 pb-1">
-                    <p class="mb-0-5">Nam libero tempore, cum soluta nobis est?</p>
-                    <div
-                      class="checkbox-wrapper mb-0-5 fancy-radio fancy-hover small"
-                    >
-                      <input
-                        type="radio"
-                        id="radiohurt1"
-                        value="yes"
-                        name="radiohurt"
-                        class="align-middle"
-                      />
-                      <label for="radiohurt1">Yes</label>
-                    </div>
-                    <div
-                      class="checkbox-wrapper mb-0-5 fancy-radio fancy-hover small"
-                    >
-                      <input
-                        type="radio"
-                        id="radiohurt2"
-                        value="yes"
-                        name="radiohurt"
-                        class="align-middle"
-                      />
-                      <label for="radiohurt2">kinda</label>
-                    </div>
-                    <div
-                      class="checkbox-wrapper mb-0-5 fancy-radio fancy-hover small"
-                    >
-                      <input
-                        type="radio"
-                        id="radiohurt3"
-                        value="no"
-                        name="radiohurt"
-                      />
-                      <label for="radiohurt3">No</label>
+                    <div class="row mt-2">
+                      <div class="columns">
+                        <button class="button primary mb-0 small expanded clr-white">Next <i class="fa fa-arrow-right"></i> </button>
+                      </div>
                     </div>
                   </div>
-                  <div class="mb-1 pb-1">
-                    <p class="mb-0-5">Nam libero tempore, cum soluta nobis est?</p>
-                    <div
-                      class="checkbox-wrapper mb-0-5 fancy-checkbox fancy-hover small"
-                    >
-                      <input
-                        type="checkbox"
-                        id="check1"
-                        value="yes"
-                        name="checkhurt"
-                        class="align-middle"
-                      />
-                      <label for="check1">Yes</label>
-                    </div>
-                    <div
-                      class="checkbox-wrapper mb-0-5 fancy-radio fancy-hover small"
-                    >
-                      <input
-                        type="checkbox"
-                        id="check2"
-                        value="yes"
-                        name="checkhurt"
-                        class="align-middle"
-                      />
-                      <label for="check2">kinda</label>
-                    </div>
-                    <div
-                      class="checkbox-wrapper mb-0-5 fancy-radio fancy-hover small"
-                    >
-                      <input
-                        type="checkbox"
-                        id="check3"
-                        value="no"
-                        name="checkhurt"
-                      />
-                      <label for="check3">No</label>
-                    </div>
-                  </div>
+                  
+                  
+                
                 </div>
               </div>
 
@@ -513,7 +451,7 @@
 
               <div class="row mt-1">
                 <div class="columns small-12 mt-1 mb-1">
-                  <p class="clr-secondary"><small><strong> TODO</strong></small> <button class="button small primary clear hollow pull-right mb-0"><i class="fa fa-broom"></i> Remove Completed</button></p>
+                  <p class="clr-secondary"><small><strong> TODO</strong></small> <button class="button small alert clear hollow pull-right mb-0"> Remove Completed</button></p>
                   <div class="mb-1 pb-1">
                     <div class="checkbox-wrapper mb-0-5 fancy-checkbox small">
                       <input

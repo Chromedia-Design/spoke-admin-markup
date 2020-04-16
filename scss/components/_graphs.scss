@@ -1,3 +1,9 @@
+.progress {
+  background-color: $off-white;
+  .progress-meter {
+  }
+}
+
 .spk-gain-graph {
   .progress {
     background-color: rgba($black, $B-dividers);
@@ -115,9 +121,27 @@
   .progress {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff1b19+0,fdc513+56,fdc513+56,81a714+84 */
     background: #ff1b19; /* Old browsers */
-    background: -moz-linear-gradient(left, #ff1b19 0%, #fdc513 56%, #fdc513 56%, #81a714 84%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #ff1b19 0%, #fdc513 56%, #fdc513 56%, #81a714 84%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #ff1b19 0%, #fdc513 56%, #fdc513 56%, #81a714 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(
+      left,
+      #ff1b19 0%,
+      #fdc513 56%,
+      #fdc513 56%,
+      #81a714 84%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      left,
+      #ff1b19 0%,
+      #fdc513 56%,
+      #fdc513 56%,
+      #81a714 84%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      to right,
+      #ff1b19 0%,
+      #fdc513 56%,
+      #fdc513 56%,
+      #81a714 84%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1b19', endColorstr='#81a714', GradientType=1); /* IE6-9 */
     border-radius: 8px;
     height: 0.5rem;
@@ -156,7 +180,7 @@
           width: 0;
           height: 0;
           border: inset 0.25rem;
-          content: '';
+          content: "";
           border-bottom-width: 0;
           border-top-style: solid;
           border-color: $success-color transparent transparent;
@@ -184,7 +208,7 @@
           top: -1rem;
           right: 0;
           content: "|";
-          color: $success-color
+          color: $success-color;
         }
       }
     }
@@ -199,7 +223,6 @@
         height: 35px;
 
         span.rating {
-
         }
 
         > img {
@@ -312,11 +335,11 @@ $primary-color-orange-dark: #e08833;
   transform: rotate(180deg);
 }
 
-
 // main
 .c100 {
-
-  *, *:before, *:after {
+  *,
+  *:before,
+  *:after {
     box-sizing: content-box;
   }
 
@@ -374,7 +397,6 @@ $primary-color-orange-dark: #e08833;
     width: 1 - (2 * $circle-width);
     height: 1 - (2 * $circle-width);
     transition: all ease-in-out 0.2s;
-
   }
 
   // the slice (mask)
@@ -390,10 +412,8 @@ $primary-color-orange-dark: #e08833;
     @extend .pie;
   }
 
-
   // loop to create all needed elements automatically
   @for $j from 51 through 100 {
-
     &.p#{$j} .slice {
       @extend .rect-auto;
     }
@@ -406,21 +426,18 @@ $primary-color-orange-dark: #e08833;
       @extend .pie;
       @extend .pie-fill;
     }
-
   }
 
   // loop to rotate all 100 circles
   @for $j from 1 through 100 {
     &.p#{$j} .bar {
       //@include rotate((360/100*$j) + deg);
-      transform: rotate((360/100*$j) + deg)
+      transform: rotate((360/100 * $j) + deg);
     }
   }
 
-
   // hover styles
   &:hover {
-
     cursor: default;
 
     > span {
@@ -436,13 +453,10 @@ $primary-color-orange-dark: #e08833;
       width: 1 - (2 * $circle-width-hover);
       height: 1 - (2 * $circle-width-hover);
     }
-
   }
-
 
   // override colors for the dark skin
   &.dark {
-
     background-color: $secondary-color-dark;
 
     .bar,
@@ -454,26 +468,21 @@ $primary-color-orange-dark: #e08833;
       color: $secondary-color-dark;
     }
 
-
     &:after {
       background-color: $bg-color-dark;
     }
 
     &:hover {
-
       > span {
         color: $primary-color-dark;
       }
-
     }
-
   }
-
 
   // green skin
   &.green {
-
-    .bar, .fill {
+    .bar,
+    .fill {
       border-color: $primary-color-green !important;
     }
 
@@ -482,12 +491,11 @@ $primary-color-orange-dark: #e08833;
         color: $primary-color-green;
       }
     }
-
   }
 
   &.green.dark {
-
-    .bar, .fill {
+    .bar,
+    .fill {
       border-color: $primary-color-green-dark !important;
     }
 
@@ -496,14 +504,12 @@ $primary-color-orange-dark: #e08833;
         color: $primary-color-green-dark;
       }
     }
-
   }
-
 
   // orange skin
   &.orange {
-
-    .bar, .fill {
+    .bar,
+    .fill {
       border-color: $primary-color-orange !important;
     }
 
@@ -512,12 +518,11 @@ $primary-color-orange-dark: #e08833;
         color: $primary-color-orange;
       }
     }
-
   }
 
   &.orange.dark {
-
-    .bar, .fill {
+    .bar,
+    .fill {
       border-color: $primary-color-orange-dark !important;
     }
 
@@ -526,8 +531,5 @@ $primary-color-orange-dark: #e08833;
         color: $primary-color-orange-dark;
       }
     }
-
   }
-
-
 }
