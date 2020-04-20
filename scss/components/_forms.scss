@@ -1516,7 +1516,8 @@ $bg-instruction: #17659b;
   .content {
     overflow-y: hidden;
     z-index: 0;
-    background-color: $bg-instruction;
+    @extend .bg-secondary;
+    // background-color: $bg-secondary;
     color: #fff;
     padding: 1.75em 1em 0.25em 1em;
     border-radius: 5px;
