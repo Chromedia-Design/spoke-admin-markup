@@ -1,0 +1,312 @@
+<!doctype html>
+<html class="no-js" lang="en" id='ZIP'>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spoke</title>
+
+  <!-- Important Owl stylesheet -->
+  <link rel="stylesheet" href="../js/owl-carousel/owl.carousel.css">
+
+  <!-- Default Theme -->
+  <link rel="stylesheet" href="../js/owl-carousel/owl.theme.css">
+
+  <link rel="stylesheet" href="../js/fullcalendar/fullcalendar.min.css">
+  <link rel="stylesheet" href="../js/fullcalendar/fullcalendar.print.min.css" media="print">
+
+  <link rel="stylesheet" href="../css/app.css">
+</head>
+<body class="frontend">
+  <div class="main-container">
+    <div class="container bordered">
+      <div class="row collapse">
+        <div class="columns">
+          <header class="top-bar">
+            <div class="top-bar-title">
+              <a href="#" class="logo portal">
+                <img src="../img/logo.png" alt="Spoke">
+              </a>
+            </div>
+            <div id="responsive-menu">
+              <div class="top-bar-right">
+                <ul id="mainMenu" class="dropdown menu" data-dropdown-menu data-close-on-click-inside="false">
+                  <li>
+                    <a href="#">Brendon Martin &nbsp;</a>
+                    <ul class="menu vertical">
+                      <li><a href="frontend-edit.html"><i class="fa fa-user"></i>&nbsp; Account Details</a></li>
+                      <li><a href="#"><i class="fa fa-sign-out-alt"></i>&nbsp; Sign Out</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </header>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column text-center"><button class="button clear hollow clr-black20"><i class="fa fa-comment"></i><span class="hide-for-small-only"> &nbsp; Communication</span></button></div>
+        <div class="column text-center"><button class="button clear hollow clr-secondary"><i class="fa fa-list"></i><span class="hide-for-small-only"> &nbsp; Todo</span></button></div>
+        <div class="column text-center"><button class="button clear hollow clr-black20"><i class="fa fa-clipboard"></i><span class="hide-for-small-only"> &nbsp; Questionnaire</span></button></div>
+        <div class="column text-center"><button class="button clear hollow clr-black20"><i class="fa fa-file"></i><span class="hide-for-small-only"> &nbsp; Files</span></button></div>
+        <div class="column text-center"><button class="button clear hollow clr-black20"><i class="fa fa-user"></i><span class="hide-for-small-only"> &nbsp; Profile</span></button></div>      
+      </div>
+    </div>
+
+    <div id="patientDashboard" class="row collapse expanded">
+      
+      <div id="main-content" class="auto columns pb-5 pt-2 mb-2">
+          <!-- <div class="row expanded pb-5"> -->
+              <!-- <div class="auto columns pb-5 pt-2"> -->
+
+                  <form class="pb-5">
+                      <div class="panel-body mb-2">
+                          <div class="row mb-1">
+                            <div class="columns">
+                                <span class="h6">Contact Information</span>
+                            </div>
+                          </div>
+                          <div class="row mb-1">
+                              <div class="large-3 small-12 columns end">
+                                  <label class=" middle mb-0">Email Address</label>
+                              </div>
+                              <div class="large-6 small-12 columns end">
+                                  <input type="text" name="" value="william.pinkerton@domain.com">
+                              </div>
+                          </div>
+                          <div class="row mb-1">
+                              <div class="large-3 small-12 columns end">
+                                  <label class=" middle mb-0">Phone Number</label>
+                              </div>
+                              <div class="large-6 small-12 columns end">
+                                  <input type="text" name="" value="123-4567-8900">
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="panel-body mb-2">
+                            <div class="row mb-1">
+                              <div class="columns">
+                                  <span class="h6">Basic Information</span>
+                              </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-3 small-12 columns end">
+                                    <label class="middle mb-0">First Name</label>
+                                </div>
+                                <div class="large-6 small-12 columns end">
+                                    <input type="text" name="" value="William">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-3 small-12 columns end">
+                                    <label class="middle mb-0">Last Name</label>
+                                </div>
+                                <div class="large-6 small-12 columns end">
+                                    <input type="text" name="" value="Pinkerton">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-3 small-12 columns end">
+                                    <label class="middle mb-0">Company Name</label>
+                                </div>
+                                <div class="large-6 small-12 columns end">
+                                    <select disabled="true">
+                                        <option value="" disabled selected>ACME, Inc.</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-3 small-12 columns end">
+                                    <label class="middle mb-0">Policy Number</label>
+                                </div>
+                                <div class="large-6 small-12 columns end">
+                                    <input type="text" name="" value="123-4567-7890" disabled="true">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-3 small-12 columns end">
+                                    <label class="middle mb-0">Birthdate</label>
+                                </div>
+                                <div class="large-6 small-12 columns end">
+                                    <div class="row multi-part-input">
+                                        <div class="large-4 columns end">
+                                            <select>
+                                                <option>March</option>
+                                            </select>
+                                        </div>
+                                        <div class="large-4 columns end">
+                                            <select>
+                                                <option>17</option>
+                                            </select>
+                                        </div>
+                                        <div class="large-4 columns end">
+                                            <select>
+                                                <option>1976</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-3 small-12 columns end">
+                                    <label class="middle mb-0">Gender</label>
+                                </div>
+                                <div class="large-6 small-12 columns end">                                    
+                                      <input type="radio" name="gender" value="male" id="gender" checked=""><label for="gender">Male</label>                                    
+                                      <input type="radio" name="gender" value="female" id="gender"><label for="gender">Female</label>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="panel-body mb-2">
+                          <div class="row mb-1">
+                              <div class="columns">
+                                  <span class="h6">Current Address</span>
+                              </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-3 small-12 columns end">
+                                    <label class="middle mb-0">Street Address</label>
+                                </div>
+                                <div class="large-6 small-12 columns end">
+                                    <input type="text" name="" value="46 Platte St.">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-3 small-12 columns end">
+                                    <label class="middle mb-0">State</label>
+                                </div>
+                                <div class="large-6 small-12 columns end">
+                                    <select>
+                                        <option>Colorado</option>
+                                    </select>
+                                </div>
+                                
+                            </div>
+
+                            <div class="row">
+                                <div class="large-3 small-12 columns end">
+                                    <label class="middle mb-0">City</label>
+                                </div>
+                                <div class="large-6 small-12 columns end">
+                                    <select>
+                                        <option>Denver</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="large-3 small-12 columns end">
+                                    <label class="middle mb-0">Zip Code</label>
+                                </div>
+                                <div class="large-6 small-12 columns end">
+                                    <input type="text" name="" value="654512">
+                                </div>
+                            </div>
+                        </div>
+
+                      <div class="row">
+                          <div class="large-12 columns end">
+                              <div class="button-group submit">
+                                  <a href="#" class="button primary">Save Changes</a>
+                                  <a href="#" class="info button link">Cancel</a>
+                              </div>
+                          </div>
+                      </div>
+                  </form> 
+
+              <!-- </div> -->
+          <!-- </div> -->
+      </div>
+    </div>
+  </div>
+
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/what-input/what-input.js"></script>
+<script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+<script src="../bower_components/foundation-sites/js/foundation.toggler.js"></script>
+<script src="../bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+<script src="../bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+
+<script src="../js/owl-carousel/owl.carousel.js"></script>
+<script src='../js/fullcalendar/lib/moment.min.js'></script>
+<script src='../js/fullcalendar/fullcalendar.min.js'></script>
+
+<script src="../js/app.js"></script>
+
+<script type="text/javascript">
+
+  var sampleEvents = {
+    "events": [
+      {
+        title: 'Scheduled Call with Kate Newman',
+        start: '2017-09-25T13:00:00'
+      },
+      {
+        title: 'Scheduled Call with Amy Thompson',
+        start: '2017-09-25T15:00:00',
+        end: '2017-09-25T16:00:00'
+      },
+      {
+        title: 'Scheduled Call with Brendon Martin',
+        start: '14:00:00',
+        end: '15:00:00',
+        dow: [1, 2, 3, 4, 5, 6, 7]
+      }
+    ]
+  };
+
+  $('#eventCalendar').fullCalendar({
+    header: {
+      left: 'prev',
+      center: 'title',
+      right: 'next'
+    },
+    aspectRatio: 1,
+    height: 'auto',
+    fixedWeekCount: false,
+    events: sampleEvents
+  });
+
+  $('#eventScheduler').fullCalendar({
+    defaultView: 'agendaDay',
+    header: {
+      left: 'title',
+      center: '',
+      right: 'today prev,next'
+    },
+    allDayText: 'All-Day',
+    slotLabelFormat: 'h(:mm) A',
+    minTime: '07:00:00',
+    maxTime: '20:00:00',
+    height: 'auto',
+    editable: true,
+    eventLimit: true, // allow "more" link when too many events
+    titleFormat: 'MMM D',
+    events: sampleEvents
+  });
+
+  $(document).ready(function () {
+
+    $("#facilityImages").owlCarousel({
+      items: 2,
+      nav: true,
+      loop: true
+      // itemsScaleUp: true
+    });
+
+    $("#facilityList").owlCarousel({
+      items: 3,
+      padding: 30,
+      nav: true,
+      loop: false
+      // itemsScaleUp: true
+    });
+
+  });
+</script>
+
+</body>
+</html>
