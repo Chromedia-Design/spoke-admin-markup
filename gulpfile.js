@@ -8,7 +8,7 @@ var sassPaths = [
 
 gulp.task('sass', function() {
   // only need to change cobrand here
-  return gulp.src('scss/spoke.scss')
+  return gulp.src('scss/zip.scss')
     .pipe($.sass({
       includePaths: sassPaths,
       outputStyle: 'compressed' // if css compressed **file size**
