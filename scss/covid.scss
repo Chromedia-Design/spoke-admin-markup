@@ -2,12 +2,13 @@
  * Dedicated rules, imports for spoke
  */
 
-$foundation-palette: (// spoke
-        primary: #273C4B,
-        secondary: #005776,
-        success: #1ebe44,
-        warning: #d4822d,
-        alert: #be1e2b
+$foundation-palette: (
+  // spoke
+    primary: #273c4b,
+  secondary: #005776,
+  success: #1ebe44,
+  warning: #d4822d,
+  alert: #be1e2b
 );
 
-import "core";
+@import "core";
