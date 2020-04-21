@@ -1,0 +1,428 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spoke Admin Portal</title>
+  <link rel="stylesheet" href="js/fullcalendar/fullcalendar.min.css">
+  <link rel="stylesheet" href="js/fullcalendar/fullcalendar.print.min.css" media="print">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<div id="master-container" class="sidebar-body">
+  <!-- SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR  -->
+  <div class="site-nav sidebar">
+    <header>
+      <a href="/admin/" class="logo text-center">
+        <img src="https://s3.amazonaws.com/assets.spokehealth.com/static/spoke-logo-300x60.png" alt="Spoke Health">
+      </a>
+    </header>
+
+    <ul class="menu vertical" data-accordion-menu="edx32b-accordion-menu" role="menu" aria-multiselectable="true">
+      <li id="sideNavDashboard" class="" role="menuitem">
+        <a href="/admin/" tabindex="0">My Dashboard</a>
+      </li>
+
+      <li id="sideNavEmployees" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
+          aria-expanded="false" aria-label="Members" aria-controls="3te1pf-acc-menu">
+        <a href="#">Members</a>
+        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
+            aria-labelledby="sideNavEmployees" id="3te1pf-acc-menu" style="display: none;">
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a id="allEmployees" href="/admin/employees">All Members</a>
+          </li>
+        </ul>
+      </li>
+
+      <li id="sideNavMedProcedures" role="menuitem">
+        <a href="/admin/medical-procedures/" class="">Medical Procedures</a>
+      </li>
+
+      <li id="sideNavCompanies" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
+          aria-expanded="false" aria-label="Companies" aria-controls="iulued-acc-menu">
+        <a href="#">Companies</a>
+        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
+            aria-labelledby="sideNavCompanies" id="iulued-acc-menu" style="display: none;">
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/clients">All Companies</a>
+          </li>
+        </ul>
+      </li>
+
+      <li id="sideNavFacilities" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
+          aria-expanded="false" aria-label="Facilities" aria-controls="2fhgsf-acc-menu">
+        <a href="#">Facilities</a>
+        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
+            aria-labelledby="sideNavFacilities" id="2fhgsf-acc-menu" style="display: none;">
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/facilities">All Facilities</a>
+          </li>
+
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/facility-services">Ancillary Services</a>
+          </li>
+
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/awards">Awards</a>
+          </li>
+        </ul>
+      </li>
+
+      <li id="sideNavDoctors" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
+          aria-expanded="false" aria-label="Doctors" aria-controls="2xkwmt-acc-menu">
+        <a href="#">Doctors</a>
+        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
+            aria-labelledby="sideNavDoctors" id="2xkwmt-acc-menu" style="display: none;">
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/doctors">All Doctors</a>
+          </li>
+        </ul>
+      </li>
+
+      <li id="sideNavContent" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
+          aria-expanded="false" aria-label="Content" aria-controls="lrjcue-acc-menu">
+        <a href="#">Content</a>
+        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
+            aria-labelledby="sideNavContent" id="lrjcue-acc-menu" style="display: none;">
+          <li role="menuitem" class="is-accordion-submenu-parent is-submenu-item is-accordion-submenu-item"
+              aria-haspopup="true" aria-expanded="false" aria-label="Geo Data" aria-controls="oau1zl-acc-menu"
+              id="4lvc70-acc-menu-link">
+            <a href="#">Geo Data</a>
+            <ul class="geo-nav nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true"
+                role="menu" aria-labelledby="4lvc70-acc-menu-link" id="oau1zl-acc-menu" style="display: none;">
+              <li class="regions is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a href="/admin/regions">World Regions</a>
+              </li>
+
+              <li class="countries is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a href="/admin/countries">Countries</a>
+              </li>
+
+              <li class="us-states is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a href="/admin/states">US States</a>
+              </li>
+            </ul>
+          </li>
+
+          <li role="menuitem" class="is-accordion-submenu-parent is-submenu-item is-accordion-submenu-item"
+              aria-haspopup="true" aria-expanded="false" aria-label="Migrations" aria-controls="2x61zh-acc-menu"
+              id="y09efp-acc-menu-link">
+            <a href="#">Migrations</a>
+            <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true"
+                role="menu" aria-labelledby="y09efp-acc-menu-link" id="2x61zh-acc-menu" style="display: none;">
+              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a href="/admin/migrations">Dashboard</a>
+              </li>
+
+              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a class="" href="/admin/migration_lists/specializations">
+                  Specializations
+                </a>
+              </li>
+
+              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a class="" href="/admin/migration_lists/subspecializations">
+                  Subspecializations
+                </a>
+              </li>
+
+              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a class="" href="/admin/migration_lists/treatments">
+                  Treatments
+                </a>
+              </li>
+
+              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a class="" href="/admin/migration_lists/awarding_bodies">
+                  Awarding Bodies
+                </a>
+              </li>
+
+              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a class="" href="/admin/migration_lists/awards">
+                  Awards
+                </a>
+              </li>
+
+              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a class="" href="/admin/migration_lists/countries">
+                  Countries
+                </a>
+              </li>
+
+              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a class="" href="/admin/migration_lists/facility_services">
+                  Facility Services
+                </a>
+              </li>
+
+              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a class="" href="/admin/migration_lists/facilities">
+                  Facilities
+                </a>
+              </li>
+
+              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a class="" href="/admin/migration_lists/doctors">
+                  Doctors
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/questions/">Questions</a>
+          </li>
+
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/questionnaires/">Questionnaires</a>
+          </li>
+
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/forms/master-company-psq">Master Company HRA</a>
+          </li>
+
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/forms/master-company-psq">Master Company EA</a>
+            <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true"
+                role="menu" aria-labelledby="y09efp-acc-menu-link" id="2x61zh-acc-menu" style="display: none;">
+              <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+                <a href="/admin/migrations">Form Logic EA</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li id="sideNavUserAccounts" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
+          aria-expanded="false" aria-label="User Accounts" aria-controls="fs3oxf-acc-menu">
+        <a href="#">User Accounts</a>
+        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
+            aria-labelledby="sideNavUserAccounts" id="fs3oxf-acc-menu" style="display: none;">
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/users">Users List</a>
+          </li>
+        </ul>
+      </li>
+
+      <li id="sideNavProfile" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
+          aria-expanded="false" aria-label="Profile" aria-controls="a0vsqp-acc-menu">
+        <a href="#">Profile</a>
+        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
+            aria-labelledby="sideNavProfile" id="a0vsqp-acc-menu" style="display: none;">
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/users/4/change-password">Change My Password</a>
+          </li>
+        </ul>
+      </li>
+
+      <li id="sideNavActivityLogs" role="menuitem" class="is-accordion-submenu-parent" aria-haspopup="true"
+          aria-expanded="false" aria-label="Activity Logs" aria-controls="5usvyk-acc-menu">
+        <a href="#">Activity Logs</a>
+        <ul class="nested vertical menu  submenu is-accordion-submenu" data-submenu="" aria-hidden="true" role="menu"
+            aria-labelledby="sideNavActivityLogs" id="5usvyk-acc-menu" style="display: none;">
+          <li class="is-submenu-item is-accordion-submenu-item" role="menuitem">
+            <a href="/admin/activity-logs">All Logs</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT MAIN CONTENT  -->
+  <div class="main-content">
+    <div id="menu-bar" class="box-shadow">
+      <div data-reactroot="" class="top-bar">
+        <div class="top-bar-left">
+          <form>
+            <div class="input-group rounded"><input type="search" class="input-group-field" placeholder="Search members"
+                                                    value="">
+              <div class="input-group-button"><input type="submit" class="button hollow plain info" value="Submit">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="top-bar-right">
+          <ul class="dropdown menu" data-dropdown-menu="yk2de3-dropdown-menu" role="menubar">
+            <li class="drop-text is-dropdown-submenu-parent opens-left" role="menuitem" aria-haspopup="true"
+                aria-expanded="false" aria-label=""><a href="#"><i class="fa fa-bell fa-lg"
+                                                                   aria-describedby="notifCount"></i></a>
+              <ul class="notifications menu vertical dev-submenu submenu is-dropdown-submenu first-sub" data-submenu=""
+                  aria-hidden="true" role="menu">
+                <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item">
+                  <ol>
+                    <li class="heading" role="menuitem"><h6 class="text-center mb-0">Notifications</h6></li>
+                    <li class="subheader text-center" role="menuitem">You have no new notifications.</li>
+                  </ol>
+                </li>
+              </ul>
+              <span class="granted"></span></li>
+            <li class="is-dropdown-submenu-parent opens-left" role="menuitem" aria-haspopup="true" aria-expanded="false"
+                aria-label="J"><a class="vertical-block" href="#" tabindex="0">
+              <div class="img-wrapper tiny circle"><img
+                src="https://s3.amazonaws.com/assets.spoke.chromedia.com/media/adminUsers/5b62b3096a161c9e418b4567.jpeg"
+                alt="James James"></div>
+            </a>
+              <ul class="menu vertical submenu is-dropdown-submenu first-sub" data-submenu="" aria-hidden="true"
+                  role="menu">
+                <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a class="logout_open"
+                  href="/admin/logout"><i class="fa fa-sign-out"></i><!-- react-text: 26 -->&nbsp; Sign Out<!-- /react-text --></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="root">
+      <div class="row expanded">
+        <div class="columns">
+          
+          <div class="row expanded">
+            <div class="auto columns">
+              <nav aria-label="You are here:" role="navigation">
+                <ul class="breadcrumbs">
+                  <li><a href="#">EA Form Logic</a></li>
+                  <li>Liloan Covid19</li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="page-lead row expanded">
+            <div class="columns align-middle">
+              <span class="h5">Liloan Covid19 (1)</span>
+            </div>
+
+            <div class="auto align-right align-middle columns">
+              <button href="" class="button border-radius-round success small ml-0 mb-0 pull-right" data-open="newEAForm"><i class="fa fa-plus fa-fw"></i> Add New Logic Statement</button>
+            </div>
+          </div>
+
+          <div class="row expanded">
+            <div class="auto columns">
+              <div class="spoke-list">
+
+                <div class="spoke-list-heading row expanded collapse align-middle">
+                  <div class="medium-5 columns">
+                    <a href="#">Logic Statement <i class="fa fa-caret-up fa-fw"></i></a>
+                  </div>
+                  <!-- <div class="medium-4  columns">
+                    <a href="#">Bundle <i class="fa fa-caret-up fa-fw"></i></a>
+                  </div> -->
+                  <div class="auto  columns">
+                    <a href="#">Date Created <i class="fa fa-caret-up fa-fw"></i></a>
+                  </div>
+                </div>
+
+                <div class="spoke-list-item row expanded collapse align-middle paddingless marginless">
+                  <div class="auto columns">
+
+                    <div class="spoke-list-sub-item row expanded collapse align-middle">
+                      <div class="medium-5 columns">
+                        <div class="row collapse align-middle">
+                          <div class="columns">
+                            <small class=" mb-0">Symptom Check</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="auto columns">
+                        <small>April 7, 2019 8:00AM</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/what-input/what-input.js"></script>
+<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+
+<script src='js/fullcalendar/lib/moment.min.js'></script>
+<script src='js/fullcalendar/fullcalendar.min.js'></script>
+
+<script src="js/app.js"></script>
+
+<script type="text/javascript">
+
+  var sampleEvents = {
+    "events": [
+      {
+        title: 'Scheduled Call with Kate Newman',
+        start: '2017-09-25T13:00:00'
+      },
+      {
+        title: 'Scheduled Call with Amy Thompson',
+        start: '2017-09-25T15:00:00',
+        end: '2017-09-25T16:00:00'
+      },
+      {
+        title: 'Scheduled Call with Brendon Martin',
+        start: '14:00:00',
+        end: '15:00:00',
+        dow: [1, 2, 3, 4, 5, 6, 7]
+      }
+    ]
+  };
+
+  $('#eventCalendar').fullCalendar({
+    header: {
+      left: 'prev',
+      center: 'title',
+      right: 'next'
+    },
+    aspectRatio: 1,
+    height: 'auto',
+    fixedWeekCount: false,
+    events: sampleEvents
+  });
+
+  $('#eventScheduler').fullCalendar({
+    defaultView: 'agendaDay',
+    header: {
+      left: 'title',
+      center: '',
+      right: 'today prev,next'
+    },
+    allDayText: 'All-Day',
+    slotLabelFormat: 'h(:mm) A',
+    minTime: '07:00:00',
+    maxTime: '20:00:00',
+    height: 'auto',
+    editable: true,
+    eventLimit: true, // allow "more" link when too many events
+    titleFormat: 'MMM D',
+    events: sampleEvents
+  });
+
+  $(function () {
+    var timer;
+
+    $(window).resize(function () {
+      clearTimeout(timer);
+      timer = setTimeout(function () {
+        $('.site-nav, .content').css("height", $(window).height());
+      }, 40);
+    }).resize();
+  });
+
+</script>
+</body>
+</html>
