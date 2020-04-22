@@ -2,8 +2,6 @@
  * Dedicated rules, imports for zip
  */
 
-@import "app";
-
 $foundation-palette: (
   // zip
     primary: #7ac6d2,
@@ -12,3 +10,5 @@ $foundation-palette: (
   warning: #d4822d,
   alert: #de4351
 );
+
+@import "core";

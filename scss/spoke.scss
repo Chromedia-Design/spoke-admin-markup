@@ -2,8 +2,6 @@
  * Dedicated rules, imports for spoke
  */
 
-@import "app";
-
 $foundation-palette: (
   // spoke
     primary: #273c4b,
@@ -12,3 +10,5 @@ $foundation-palette: (
   warning: #d4822d,
   alert: #be1e2b
 );
+
+@import "core";
