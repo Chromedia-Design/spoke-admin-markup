@@ -6,13 +6,12 @@ var sassPaths = [
   "bower_components/motion-ui/src"
 ];
 
-var cobrand = ["spoke", "zip", "covid", "app"];
-
-for (var brand in cobrand) {
+cobrand.forEach(brand => {
+  console.log("scss/" + brand + ".scss");
   gulp.task("sass", function() {
     // only need to change cobrand here
     return gulp
-      .src("scss/app.scss")
+      .src(["scss/*.scss"])
       .pipe(
         $.sass({
           includePaths: sassPaths,
@@ -26,7 +25,7 @@ for (var brand in cobrand) {
       )
       .pipe(gulp.dest("css"));
   });
-}
+});
 
 gulp.task("default", ["sass"], function() {
   gulp.watch(["scss/**/*.scss"], ["sass"]);
