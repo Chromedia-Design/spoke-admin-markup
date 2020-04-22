@@ -49,6 +49,7 @@ $global-font-size: 100%;
 $global-width: rem-calc(1080);
 $global-lineheight: 1.5;
 
+<<<<<<< HEAD
 /*$foundation-palette: (
   // zip
     primary: #7ac6d2,
@@ -64,6 +65,15 @@ $foundation-palette: ( // spoke
    success: #1ebe44,
    warning: #d4822d,
    alert: #be1e2b
+=======
+$foundation-palette: (
+  // spoke
+    primary: #273c4b,
+  secondary: #005776,
+  success: #1ebe44,
+  warning: #d4822d,
+  alert: #be1e2b
+>>>>>>> exp/spk-2766
 );
 
 $light-gray: #e3e3e3;
