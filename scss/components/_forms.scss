@@ -1425,7 +1425,7 @@ input {
     label {
       transition: all 0.25s;
       padding: 0.1rem 1rem;
-      border-radius: 50rem;
+      border-radius: 4px;
       width: 100%;
     }
 
@@ -1654,3 +1654,10 @@ $bg-instruction: #17659b;
 }
 
 //----- DROPDOWN CHECKBOX -----//
+
+// REMOVE INPUT HIGHLIGHT
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
