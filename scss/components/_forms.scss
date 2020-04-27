@@ -1289,6 +1289,7 @@ input {
     -webkit-appearance: none;
     -moz-appearance: none;
     background: transparent !important;
+    visibility: hidden;
 
     + label,
     + span {
