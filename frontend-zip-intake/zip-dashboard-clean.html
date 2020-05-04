@@ -23,74 +23,52 @@
   </head>
   <body class="frontend">
     <div class="main-container">
-      <div id="patientDashboard" class="row collapse expanded">
-        <div id="main-content" class="auto columns">
-          <!-- <div class="page-lead row align-middle">
-              <div class="auto columns"><span class="h4">March 23, 2020</span></div>
-          </div> -->
-          <div class="row expanded pb-5">
-            <div class="auto columns pb-5">
-              <div class="row mt-1">
-                <div class="columns small-6 medium-4 pad05">
-                  <div
-                    class="border-radius-sm b-all-1-darker pad1 clr-secondary"
-                  >
-                    Profile
-                    <span class="pull-right"> <i class="fa fa-user"></i></span>
-                  </div>
-                </div>
-                <div class="columns small-6 medium-4 pad05 position-relative">
-                  <div
-                    class="border-radius-sm b-all-1-darker pad1 clr-secondary"
-                  >
-                    Todo
-                    <span class="pull-right"> <i class="fa fa-list"></i></span>
-                  </div>
-                  <span class="alert badge counter-notif">!</span>
-                </div>
-                <div class="columns small-6 medium-4 pad05">
-                  <div
-                    class="border-radius-sm b-all-1-darker pad1 clr-secondary"
-                  >
-                    Files
-                    <span class="pull-right"> <i class="fa fa-file"></i></span>
-                  </div>
-                </div>
-                <div class="columns small-6 medium-4 pad05">
-                  <div
-                    class="border-radius-sm b-all-1-darker pad1 clr-secondary"
-                  >
-                    Facility
-                    <span class="pull-right">
-                      <i class="fa fa-building"></i
-                    ></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="container bordered">
         <div class="row">
           <div class="column text-center">
-            <button class="button mb-0-5 mt-0-5 clear hollow clr-secondary">
+            <button class="button clear hollow clr-secondary mb-0-5 mt-0-5">
               <i class="fa fa-home"></i
               ><span class="hide-for-small-only"> &nbsp; Dashboard</span>
             </button>
           </div>
           <div class="column text-center">
-            <button class="button mb-0-5 mt-0-5 clear hollow clr-black20">
+            <button class="button clear hollow clr-black20 mb-0-5 mt-0-5">
               <i class="fa fa-comment"></i
               ><span class="hide-for-small-only"> &nbsp; Inbox</span>
             </button>
           </div>
-          <!-- <div class="column text-center"><button class="button mb-0-5 mt-0-5 clear hollow clr-secondary"><i class="fa fa-list"></i><span class="hide-for-small-only"> &nbsp; Todo</span></button></div> -->
           <div class="column text-center">
-            <button class="button mb-0-5 mt-0-5 clear hollow clr-black20">
-              <i class="fa fa-clipboard"></i
-              ><span class="hide-for-small-only"> &nbsp; Question</span>
+            <button class="button clear hollow  clr-black20 mb-0-5 mt-0-5">
+              <i class="fa fa-user"></i
+              ><span class="hide-for-small-only"> &nbsp; Profile</span>
             </button>
+          </div>
+          <div class="column text-center">
+            <button class="button clear hollow  clr-black20 mb-0-5 mt-0-5">
+              <i class="fa fa-ellipsis-h"></i
+              ><span class="hide-for-small-only"> &nbsp; More</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="patientDashboard" class="row collapse expanded">
+        <div id="main-content" class="auto columns">
+          <div class="row expanded pb-5">
+            <div class="auto columns pb-5">
+              <div class="row">
+                <div class="columns">
+                  <img
+                    src="../img/all-caught-up.svg"
+                    alt=""
+                    class="mt-1 pt-1 mb-1"
+                  />
+                  <p class="h2 text-center clr-secondary">
+                    You're All Caught Up
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
