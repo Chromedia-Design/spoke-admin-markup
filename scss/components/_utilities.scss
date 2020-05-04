@@ -678,6 +678,13 @@ $color-ongoing: #ecaf00;
   }
 }
 
+.auto-truncate {
+  width: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .text-lowercase {
   text-transform: lowercase !important;
 }
