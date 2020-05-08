@@ -425,7 +425,7 @@
 		$color-force-complete: $secondary-color;
 	
 		$line-size: 2px;
-		$line-pos-x: 19px;
+		$line-pos-x: 24px;
 	
 		.timeline-item {
 			position: relative;
@@ -460,7 +460,8 @@
 			}
 	
 			.timeline-content {
-				padding-left: 2rem;
+				padding-left: 1.25,arthur
+				rem;
 				position: relative;
 	
 				&:before {
@@ -475,7 +476,7 @@
 					border-radius: 50%;
 					padding: 0;
 					top: 10px;
-					left: 10px;
+					left: 15px;
 					position: absolute;
 
 					display: flex;
