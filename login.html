@@ -13,17 +13,28 @@
         <div class="login-wrap">
           <!-- <h1 class="text-center"> -->
           <div class="text-center">
-            <img src="/img/logo.png" alt="" class="login-logo" />
+            <img src="img/spoke-logo-300x60.png" alt="" class="" />
           </div>
           <!-- </h1> -->
           <form action="">
-            <div class="callout alert">
+
+            <div class="callout alert hidden">
               <p>
-                <small
-                  >You are automatically logged out due to inactivity.</small
-                >
+                <small class="">You are automatically logged out due to inactivity.</small>
               </p>
             </div>
+
+            <div class="callout alert mb-0">
+              <p>
+                <small class="">Invalid Credentials</small>
+              </p>
+            </div>
+            <div class=" mb-1 text-center">
+              <small class="clr-alert">
+               <em>** After 6 failed attempts your account will be locked. **</em>
+              </small>
+            </div>
+
             <label>
               Username/Email
               <input type="text" />

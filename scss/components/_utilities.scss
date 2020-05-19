@@ -520,6 +520,16 @@ $color-ongoing: #ecaf00;
   color: darken(#f7f7f7, 50%) !important ;
 }
 
+.clr-black-lighten-10 {
+  color: lighten(#f7f7f7, 10%) !important ;
+}
+.clr-black-lighten-20 {
+  color: lighten(#f7f7f7, 20%) !important ;
+}
+.clr-black-lighten-50 {
+  color: lighten(#f7f7f7, 50%) !important ;
+}
+
 .clr-primary {
   color: $primary-color !important;
 }
@@ -812,4 +822,8 @@ $color-ongoing: #ecaf00;
 
 .position-relative {
   position: relative;
+}
+
+.width-auto {
+  width: auto;
 }
