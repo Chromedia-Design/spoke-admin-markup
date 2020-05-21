@@ -103,6 +103,8 @@
 @import "components/_timeline";
 @import "components/_overrides";
 
+@import "components/portal/nav";
+
 .Select-menu-outer {
   position: relative !important;
   z-index: 100;
@@ -128,7 +130,7 @@
   height: 84px;
   width: 84px;
   background: url("https://s3.amazonaws.com/assets.spoke.com/images/ripple.svg")
-  no-repeat center;
+    no-repeat center;
 }
 
 .loader {
