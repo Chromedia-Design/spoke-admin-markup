@@ -660,6 +660,7 @@ $color-ongoing: #ecaf00;
 .disabled {
   pointer-events: none;
   opacity: 0.25;
+  color: darken(#f7f7f7, 20%);
 }
 
 .truncate {
