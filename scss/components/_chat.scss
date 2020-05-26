@@ -1,3 +1,6 @@
+$chat-main-bg: #fff;
+$chat-user-bg: #f5f7f9;
+
 /* CSS talk bubble */
 .talk-bubble {
   user-select: text;
@@ -35,18 +38,6 @@
       }
     }
 
-    // &.tri-right.border.left-in:before {
-    // 	left: -20px;
-    // 	top: 15px;
-    // 	border: 10px solid;
-    // 	border-color: $secondary-color $secondary-color transparent transparent;
-    // }
-    // &.tri-right.left-in:after {
-    // 	left: -15px;
-    // 	top: 17px;
-    // 	border: 8px solid;
-    // 	border-color: $secondary-color $secondary-color transparent transparent;
-    // }
     &.tri-right.border.right-in:before {
       right: -20px;
       top: -2px;
@@ -64,21 +55,21 @@
 
   // This is for the owner's dialog box
   &.white-bg {
-    background-color: $white;
-    border: 1px solid $light-gray;
+    background-color: $chat-user-bg;
+    border: 1px solid $chat-user-bg;
 
     &.tri-right.border.right-in:before {
       right: -20px;
       top: -1px;
       border: 10px solid;
-      border-color: $light-gray transparent transparent $light-gray;
+      border-color: $chat-user-bg transparent transparent $chat-user-bg;
     }
 
     &.tri-right.right-in:after {
       right: -17px;
       top: 0;
       border: 9px solid;
-      border-color: $white transparent transparent $white;
+      border-color: $chat-user-bg transparent transparent $chat-user-bg;
     }
 
     .talktext {
@@ -304,33 +295,6 @@
 .border {
   border: 2px solid $secondary-color;
 }
-
-/* Right triangle, left side slightly down */
-// .tri-right.border.left-in:before {
-// 	content: ' ';
-// 	position: absolute;
-// 	width: 0;
-// 	height: 0;
-//   	left: -2.5rem;
-// 	right: auto;
-//   	top: 20px;
-// 	bottom: auto;
-// 	border: 20px solid;
-// 	border-color: $secondary-color $secondary-color transparent transparent;
-// }
-
-// .tri-right.left-in:after {
-// 	content: ' ';
-// 	position: absolute;
-// 	width: 0;
-// 	height: 0;
-//   	left: -35px;
-// 	right: auto;
-//   	top: 22px;
-// 	bottom: auto;
-// 	border: 20px solid;
-// 	border-color: $secondary-color $secondary-color transparent transparent;
-// }
 
 /* Right triangle, right side slightly down*/
 .tri-right.border.right-in:before {
@@ -1128,12 +1092,13 @@ $main-color: #1ebd44;
   display: flex;
   flex-flow: column;
   user-select: none;
-  background-color: #f5f7f9;
-  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.16) !important;
-  height: 450px;
-  max-height: 700px;
+  background-color: $chat-main-bg;
+  height: 100vh;
+  max-height: 90vh;
   overflow-y: scroll;
   position: relative;
+  max-width: 1080px !important;
+  margin: 0 auto !important;
 
   &.non-scrollable {
     overflow-y: hidden !important;
@@ -1341,7 +1306,7 @@ $main-color: #1ebd44;
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: #f5f7f9;
+    background-color: $chat-main-bg;
     // border-top: 1px solid #eaeaea;
     flex: 1 1 auto;
     // .chat-input {
@@ -1350,7 +1315,7 @@ $main-color: #1ebd44;
     //   border-radius: 4px;
     // }
     div textarea {
-      background-color: #fff;
+      background-color: $chat-user-bg;
       margin: 0.25rem 0.5rem;
       border-radius: 4px;
     }

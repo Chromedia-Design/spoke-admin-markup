@@ -357,43 +357,6 @@ label {
 }
 
 //Hard overrides of Arthur for Zip
-#chat-container {
-  display: flex;
-  flex-flow: column;
-  user-select: none;
-  background-color: #f5f7f9;
-  box-shadow: none !important;
-  height: 100vh;
-  max-height: 90vhpx;
-  overflow-y: scroll;
-  position: relative;
-  max-width: 1080px !important;
-  margin: 0 auto !important;
-  .chat-body-scroll {
-    height: 425px;
-  }
-  .chat-video-container {
-    position: relative;
-    height: 100%;
-    display: none;
-    .chat-video-control {
-      clear: both;
-      width: 100%;
-      position: absolute;
-      bottom: 10px;
-      z-index: 100;
-    }
-  }
-  .chat-video-incoming {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 1000;
-    background-color: rgba(10, 16, 35, 0.9) !important;
-  }
-}
 @media (min-width: 1281px) {
   #chat-container {
     max-height: 82.3vh;
