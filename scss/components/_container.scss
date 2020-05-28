@@ -721,9 +721,6 @@ $card-user-profile-text-color: $text-black;
 }
 
 #patientDashboard {
-  @media only screen and (min-width: 1025px) {
-    margin-top: 3.3rem;
-  }
   #main-content {
     height: 100vh;
     overflow-y: scroll;
