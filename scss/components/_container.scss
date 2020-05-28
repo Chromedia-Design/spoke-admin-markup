@@ -49,7 +49,7 @@
   margin: 0 0 rem-calc(16);
   background-color: $white;
   border-radius: $global-radius;
-  box-shadow: 1px 1px 2px #F2F5F6;
+  box-shadow: 1px 1px 2px #f2f5f6;
 
   // Use this for transition in pseudo-class :hover
   // box-shadow: 1px 5px 10px #E1E1E1;
@@ -63,8 +63,8 @@
   &:active {
     .card-person {
       & > div {
-        border: 1px solid #F2F5F6;
-        box-shadow: 5px 5px 7px #F2F5F6;
+        border: 1px solid #f2f5f6;
+        box-shadow: 5px 5px 7px #f2f5f6;
       }
     }
   }
@@ -124,7 +124,8 @@
       object-fit: cover;
     }
 
-    .header, .footer {
+    .header,
+    .footer {
       position: absolute;
       z-index: 2;
       width: 100%;
@@ -134,7 +135,6 @@
       .button {
         margin: 0;
       }
-
     }
 
     .header {
@@ -332,7 +332,10 @@
   }
 
   .person-info {
-    .info-name, .info-position, .info-email, .info-phone {
+    .info-name,
+    .info-position,
+    .info-email,
+    .info-phone {
       width: 100%;
       white-space: nowrap;
       overflow: hidden;
@@ -344,7 +347,8 @@
       font-family: $body-font-family;
     }
 
-    .info-email, .info-phone {
+    .info-email,
+    .info-phone {
       color: $primary-color;
       font-size: 0.75rem;
     }
@@ -433,7 +437,8 @@
   }
 }
 
-.block-container, .block-container-fade {
+.block-container,
+.block-container-fade {
   padding: 1rem;
 }
 
@@ -716,6 +721,9 @@ $card-user-profile-text-color: $text-black;
 }
 
 #patientDashboard {
+  @media only screen and (min-width: 1025px) {
+    margin-top: 3.3rem;
+  }
   #main-content {
     height: 100vh;
     overflow-y: scroll;
@@ -773,17 +781,11 @@ $card-user-profile-text-color: $text-black;
   }
 }
 
-
-
-
-
-
-
 /*ZIP FRONTEND / LANDING PAGE SCSS*/
 
 .zip-frontend {
-  $color-primary-zip: #4C616F;
-  $color-secondary-zip: #79C8D3;
+  $color-primary-zip: #4c616f;
+  $color-secondary-zip: #79c8d3;
 
   /*GENERAL CLASSES*/
   .clr-primary-zip {
@@ -801,9 +803,6 @@ $card-user-profile-text-color: $text-black;
     background: $color-secondary-zip;
   }
 
-
-
-  
   .zip {
     img {
       max-width: 67px;
@@ -818,7 +817,7 @@ $card-user-profile-text-color: $text-black;
       background: $color-primary-zip;
     }
   }
-  
+
   a {
     &.lgu-logo {
       img {
@@ -832,7 +831,7 @@ $card-user-profile-text-color: $text-black;
     background: lighten($color-primary-zip, 40%);
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       background: lighten($color-primary-zip, 55%);
       z-index: -1;
       width: 4rem;
@@ -844,7 +843,7 @@ $card-user-profile-text-color: $text-black;
 
     &::after {
       position: absolute;
-      content: '';
+      content: "";
       background: lighten($color-secondary-zip, 30%);
       z-index: -1;
       width: 10rem;
@@ -854,10 +853,10 @@ $card-user-profile-text-color: $text-black;
       /*margin-left: 5rem;*/
     }
   }
-  
+
   .linked-containers {
     .row {
-      border: 1px solid rgba(10,16,35,0.06125);
+      border: 1px solid rgba(10, 16, 35, 0.06125);
     }
 
     .columns {
@@ -866,36 +865,36 @@ $card-user-profile-text-color: $text-black;
       position: relative;
       &::before {
         position: absolute;
-        content: '';
+        content: "";
         right: 0;
         top: 0;
         width: 1rem;
         height: 51.5%;
-        border-right: 1px solid rgba(10,16,35,0.06125);
+        border-right: 1px solid rgba(10, 16, 35, 0.06125);
         -webkit-transform: rotate(-15deg);
         -ms-transform: rotate(-15deg);
         transform: rotate(-15deg);
       }
       &::after {
         position: absolute;
-        content: '';
+        content: "";
         right: 0;
         bottom: 0;
         width: 1rem;
         height: 51.5%;
-        border-right: 1px solid rgba(10,16,35,0.06125);
+        border-right: 1px solid rgba(10, 16, 35, 0.06125);
         -webkit-transform: rotate(15deg);
         -ms-transform: rotate(15deg);
         transform: rotate(15deg);
       }
       &:last-child {
-        &::before  {
+        &::before {
           display: none !important;
-        };
-        &::after  {
+        }
+        &::after {
           display: none !important;
-        };
-      };
+        }
+      }
     }
   }
 
@@ -928,7 +927,7 @@ $card-user-profile-text-color: $text-black;
     background: transparent;
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       background: lighten($color-secondary-zip, 30%);
       z-index: -1;
       width: 40rem;
@@ -938,7 +937,7 @@ $card-user-profile-text-color: $text-black;
     }
     &::after {
       position: absolute;
-      content: '';
+      content: "";
       background: $white;
       z-index: -1;
       width: 7rem;
@@ -965,8 +964,7 @@ $card-user-profile-text-color: $text-black;
     }
   }
 
-
-/*ZIP MEDIA QUERIES*/
+  /*ZIP MEDIA QUERIES*/
 
   @media only screen and (max-width: 945px) {
     .header-lgu-desc {
@@ -1057,7 +1055,7 @@ $card-user-profile-text-color: $text-black;
       .container {
         padding: 1rem !important;
         border: 1px solid rgba($black, $B-dividers) !important;
-        margin: .6rem !important;
+        margin: 0.6rem !important;
       }
 
       .steps {
@@ -1076,7 +1074,7 @@ $card-user-profile-text-color: $text-black;
 
     .linked-containers {
       .columns {
-        border-bottom: 1px solid rgba(10,16,35,0.06125);
+        border-bottom: 1px solid rgba(10, 16, 35, 0.06125);
         &::before {
           display: none !important;
         }
@@ -1086,11 +1084,10 @@ $card-user-profile-text-color: $text-black;
 
         &:last-child {
           border-bottom: 0px !important;
-        };
+        }
       }
     }
   }
-
 
   @media only screen and (max-width: 500px) {
     .top-bar-title {
@@ -1110,10 +1107,9 @@ $card-user-profile-text-color: $text-black;
         padding-right: 0rem !important;
       }
     }
-    .header-lgu-desc1{
+    .header-lgu-desc1 {
       font-size: 0.9rem !important;
       /*display: none;*/
     }
   }
 }
-
