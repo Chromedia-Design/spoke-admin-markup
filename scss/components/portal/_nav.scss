@@ -22,16 +22,24 @@
     // /* Extra large devices (large laptops and desktops, 1200px and up) */
     // @media only screen and (min-width: 1200px) {...}
 
-    @media only screen and (min-width: 1025px) {
+    @media only screen and (min-width: 769px) {
       position: relative;
+      top: 0;
+      bottom: unset;
       border-top: 0;
       border-bottom: solid 1px darken(#fff, 8%);
+
+      scroll-margin-top: 3.5rem;
     }
   }
   .secondary-nav-portal {
     border-bottom: solid 1px darken(#fff, 8%);
-    @media only screen and (min-width: 1025px) {
+    @media only screen and (min-width: 769px) {
       border-bottom: 0;
     }
   }
+}
+
+.scroll-margin-top {
+  scroll-margin-top: 3.5rem;
 }
