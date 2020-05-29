@@ -1095,7 +1095,8 @@ $main-color: #1ebd44;
   background-color: $chat-main-bg;
   height: 100vh;
   max-height: 90vh;
-  overflow-y: scroll;
+  /*overflow-y: scroll;*/
+  overflow-y: hidden;
   position: relative;
   max-width: 1080px !important;
   margin: 0 auto !important;
