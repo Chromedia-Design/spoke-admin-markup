@@ -1,0 +1,109 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spoke Admin Portal</title>
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+	<section class="section">
+		<div class="row">
+			<div class="large-6 columns medium-centered">
+				<div class="img-wrapper text-center">
+					<img src="img/spoke-logo-300x60.png" alt="">
+				</div>
+				<div class="callout hi-padded mt-2">
+					<h6>Welcome to Spoke Health!</h6>
+					<p class="mb-2">Before we can show you the possibilities for treatments, we have a couple quick questions to ask.</p>
+					<form>
+						<div class="row">
+							<div class="large-12 columns end">
+								<label>Has a physician recommended that you receive a surgical procedure? If so, what procedure?
+			  						<select>
+			  							<option>I don’t need a surgery at this time</option>
+			  							<option>Total Knee Replacement</option>
+			  							<option>Partial Knee Replacement</option>
+			  							<option>Hip Replacement</option>
+			  							<option>Spinal Fusion</option>
+			  							<option>Coronary Artery Bypass Graft (CABG)</option>
+			  							<option>I don’t see my procedure listed here.</option>
+			  						</select>
+			  					</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="large-12 columns end">
+								<label> If you do need a surgery, when would you hope to be getting treatment?
+			  						<select>
+			  							<option>ASAP</option>
+			  							<option>2-4 Weeks</option>
+			  							<option>4-8 Weeks</option>
+			  							<option>2-4 Months</option>
+			  							<option>4-6 Months</option>
+			  							<option>6+ Months</option>
+			  						</select>
+			  					</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="large-12 columns">
+								<p class="help-text">For your security, we need to create an account so you are able to access your personalized recommendations.</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="large-12 columns">
+								<label>Password
+			  						<input type="password" name="" value="">
+			  					</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="large-12 columns end">
+								<label>Confirm Password
+			  						<input type="password" name="" value="Malone">
+			  					</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="large-12 columns">
+								<p class="help-text subheader"><small></small>By submitting this form, you authorize us to retrieve your insurance and deductible information, so we can provide customized results for you.</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="large-12 columns end">
+								<a href="frontend-index.html" class="submit button success rounded expanded">Submit and PROCEED <i class="fa fa-angle-right fa-fw"></i></a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/what-input/what-input.js"></script>
+	<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+
+	<script src="js/app.js"></script>
+
+	<script type="text/javascript">
+        $(function () {
+            var timer;
+
+            $(window).resize(function() {
+                clearTimeout(timer);
+                timer = setTimeout(function() {
+                  $('.site-nav').css("height", $(window).height());
+                }, 40); 
+            }).resize();
+        });
+    </script>
+
+</body>
+</html>

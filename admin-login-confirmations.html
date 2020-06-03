@@ -1,0 +1,73 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spoke</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="frontend">
+
+    <header class="top-bar">
+        <div class="row">
+            <div class="top-bar-title">
+                <!-- <span data-responsive-toggle="responsive-menu" data-hide-for="large">
+                    <span class="menu-icon dark" data-toggle></span>
+                </span> -->
+                <a href="#" class="logo">
+                    <img src="img/logo.png" alt="Spoke">
+                </a>
+            </div>
+            <div id="responsive-menu">
+                <div class="top-bar-right">
+                    <ul class="menu">
+                        <!-- <li><a href="#">Need Support?</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="mb-6">
+        <div class="container">
+            <div class="row">
+                <div class="medium-9 columns medium-centered">
+                    <div class="page-lead tall">
+                        <p class="h3 full text-center">Request sent.</p>
+                        <p class="text-center">An authorized administrator has been notified of your password reset request. Expect to be contacted soon for verification.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-12 columns text-center">
+                    <a href="#" class="submit button primary">Return To Login Page</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+    
+    <script src="../js/app.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            var timer;
+
+            $(window).resize(function() {
+                clearTimeout(timer);
+                timer = setTimeout(function() {
+                  $('.frontend').css("height", $(window).height());
+                }, 40); 
+            }).resize();
+        });
+    </script>
+
+</body>
+</html>
