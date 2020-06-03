@@ -1,0 +1,148 @@
+$spk-prim: #273A4E;
+$spk-sec: #AFC64D;
+$spk-gray-dark: #42494A;
+$spk-gray-light: #42494A;
+$spk-white: #f9f9f9;
+$spk-nav: #061A27;
+$transition-all: all 0.3s ease-in-out;
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+body.spoke-frontend {
+  background: $spk-white;
+
+  .spk-prim {
+    color: $spk-prim;
+  }
+
+  .spk-sec {
+    color: $spk-sec;
+  }
+
+  .spk-gray-dark {
+    color: $spk-gray-dark;
+  }
+
+  .spk-gray-light {
+    color: $spk-gray-light;
+  }
+
+  .spk-white {
+    color: $spk-white;
+  }
+
+  a.logo {
+    img {
+      width: 100%;
+      max-width: 133px;
+    }
+  }
+
+  p {
+    color: $spk-gray-dark;
+  }
+
+  .sub-header {
+    color: $spk-prim;
+  }
+
+  div.header-nav {
+    background-color: rgba($spk-nav, 0.9);
+    z-index: 2 !important;
+    position: relative;
+    transition: $transition-all;
+
+    ul {
+      li {
+        list-style-type: none !important;
+        display: inline;
+        padding: 1.75em;
+
+        &.active {
+          border-bottom: 3px $spk-sec solid;
+        }
+
+        &:hover {
+          background-color: rgba($spk-prim, 0.2);
+          transition: $transition-all;
+        }
+      }
+    }
+  }
+
+  div.connector {
+    border-right: 1px solid #1EBE44;
+    height: 1em;
+    max-width: 100em;
+    width: 50%;
+  }
+
+  section {
+    padding-top: 5em;
+    padding-bottom: 5em;
+
+    &.banner {
+      background-image: url('../img/employer-section-2.png'), url('../img/spk-sec-container1.jpg');
+      background-size: cover;
+
+      h1, h2, h3, h4, h5, h6, p {
+        text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
+      }
+
+      button.cta-banner {
+        background: $spk-sec;
+      }
+
+      .full-content-center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+
+  footer {
+    background: $spk-prim;
+
+    div.input-group-button {
+      input {
+        background: rgba($spk-sec, 0.8);
+
+        &:hover {
+          background: $spk-sec;
+        }
+      ;
+      }
+    }
+
+    div.border-color-light {
+      border-top: 1px rgba(255, 255, 255, .05) solid !important;
+    }
+
+    .creds {
+      opacity: 0.5;
+    }
+  }
+
+  // FOUNDATION CLASSES OVERRRIDES
+  //Navigation Bar
+  .title-bar {
+    background: transparent;
+    height: 73px;
+
+    div.title-bar-right {
+      justify-content: right;
+      position: absolute;
+      right: 15%;
+    }
+
+    div.title-bar-left {
+      justify-content: left;
+
+    }
+  }
+}

@@ -1,0 +1,695 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spoke</title>
+	<link rel="stylesheet" href="../js/powertour/css/powertour.min.3.2.0.css" />
+	<link rel="stylesheet" href="../js/powertour/css/powertour-style-clean.min.css" />
+	<link rel="stylesheet" href="../js/powertour/css/powertour-connectors.min.css" />
+	<link rel="stylesheet" href="../js/powertour/css/animate.min.css" />
+	  <link rel="stylesheet" href="../css/app.css">
+	<!-- <script src="https://static.opentok.com/v2/js/opentok.min.js"></script> -->
+</head>
+<body class="frontend">
+
+	<div class="container bordered">
+	  <div class="row collapse">
+		<div class="columns">
+		  <header class="top-bar">
+			<div class="top-bar-title">
+				<span data-responsive-toggle="responsive-menu" data-hide-for="large">
+					<span class="menu-icon dark" data-toggle></span>
+				</span>
+			  <a href="#" class="logo">
+				<img src="../img/logo.png" alt="Spoke">
+			  </a>
+			</div>
+			<div id="responsive-menu">
+			  <div class="top-bar-right">
+				<ul id="mainMenu" class="dropdown menu" data-dropdown-menu>
+				  <li>
+					<a data-open="scheduleCalendar" class="button hollow success small"><i class="fa fa-calendar"></i>&nbsp; Schedule A Call</a>
+				  </li>
+				  <li class="drop-text">
+					<a data-toggle="chatSupport"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">24</span></a>
+					<ul class="notifications menu vertical">
+					  <li>
+						<ol>
+						  <li class="heading">
+							<h6 class="text-center mb-0">Notifications</h6>
+						  </li>
+						  <li class="active">
+							<span>You have a new email from <a href="#">John Doe</a>.</span>
+							<small class="subheader">12 months ago</small>
+						  </li>
+						  <li class="active">
+							<span>You have a missed call from <a href="#">Alex Quesada</a>.</span>
+							<small class="subheader">12 months ago</small>
+						  </li>
+						  <li>
+							<span>You have a new email from <a href="#">Janet Ellis</a>.</span>
+							<small class="subheader">12 months ago</small>
+						  </li>
+						  <li>
+							<span>You have a new email from <a href="#">Kathleen Jordan</a>.</span>
+							<small class="subheader">12 months ago</small>
+						  </li>
+						  <li>
+							<span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+							<small class="subheader">12 months ago</small>
+						  </li>
+						  <li>
+							<span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+							<small class="subheader">12 months ago</small>
+						  </li>
+						  <li>
+							<span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+							<small class="subheader">12 months ago</small>
+						  </li>
+						  <li>
+							<span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+							<small class="subheader">12 months ago</small>
+						  </li>
+						  <li>
+							<span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+							<small class="subheader">12 months ago</small>
+						  </li>
+						  <!-- <li>
+							  <a href="#" class="button info hollow tiny expanded">View All Notifications</a>
+						  </li> -->
+						</ol>
+					  </li>
+					</ul>
+				  </li>
+				  <li>
+					<a href="#">John Doe &nbsp;</a>
+					<ul class="menu vertical">
+					  <li><a href="frontend-edit.html"><i class="fa fa-user"></i>&nbsp; Account Details</a></li>
+					  <li><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Sign Out</a></li>
+					</ul>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </header>
+		</div>
+	  </div>
+	</div>
+
+	<section class="section no-padded">
+		<div class="container">
+			<div class="page-lead row align-middle mt-0">
+				<div class="small-12 columns b-bottom-1-darker pb-0-5   pt-0-5 bg-black10">
+					<span class="h5 pl-1">
+						Pre Surgery Questions: 1 of 4
+					</span>
+				</div>
+
+				<div class="small-12 columns pt-1">
+					<div class="form-notification">
+						<!-- <div class="pl-1 pr-1 pt-1 pb-0-5 clr-black50 bg-black10 mb-1">
+							<span><strong>Pre surgery questions: </strong> 1 of 4</span>
+						</div> -->
+						<div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit data-auto-play="false">
+							  <ul class="orbit-container pl-1 pr-1">
+								<li class="orbit-slide is-active">
+								  <div class="">
+									<p>On a scale of 0 to 5, How much pain you felt after she left you?</p>
+									<div class="row">
+										<div class="columns">
+											<ul class="list-style-type-none ml-0">
+												<li name="scale"><input type="radio" name="q1"><label>1</label></li>
+												<li name="scale"><input type="radio" name="q1"><label>2</label></li>
+												<li name="scale"><input type="radio" name="q1"><label>3</label></li>
+												<li name="scale"><input type="radio" name="q1"><label>4</label></li>
+												<li name="scale"><input type="radio" name="q1"><label>5</label></li>
+											</ul> 
+										</div>
+									</div>
+								  </div>
+								</li>
+								<li class="orbit-slide">
+								  <div class="">
+									<p>Did you sleep well last saturday night after the party?</p>
+									<div class="row">
+										<div class="columns">
+											<ul class="list-style-type-none ml-0">
+												<li class="" name="scale"><input type="radio" name="q2" ><label>Yes</label></li>
+												<li class="" name="scale"><input type="radio" name="q2"><label>No</label></li>
+											</ul> 
+										</div>
+									</div>
+								  </div>
+								</li>                
+								<li class="orbit-slide">
+								  <div class="">
+									<p>I'm really sorry about this but will you tell me your name again.</p>
+									<div class="row">
+										<div class="columns">
+											<input type="text" placeholder="your name" class=" mb-0">
+										</div>
+									</div>
+								  </div>
+								</li>
+								<li class="orbit-slide">
+								  <div class="">
+									<p>W/c of the following games you've finished playing?</p>
+									<div class="row">
+										<div class="columns">
+											<ul class="list-style-type-none ml-0">
+												<li class="" name="game"><input type="checkbox"><label>Super Mario Bros.</label></li>
+												<li class="" name="game"><input type="checkbox"><label>Metal Gear Solid 5</label></li>
+												<li class="" name="game"><input type="checkbox"><label>Horizon: Zero Dawn</label></li>
+												<li class="" name="game"><input type="checkbox"><label>Devil May Cry</label></li>
+												<li class="" name="game"><input type="checkbox"><label>Goat Simulator</label></li>
+											</ul>
+										</div>
+									</div>
+								  </div>
+								</li>
+							  </ul>
+							<div class="orbit-controls bottom row  pl-1 pr-1 bg-black10 pt-1 pb-1">
+								<div class="columns center-content">
+								  	<button class="orbit-previous button tiny expanded mb-0 pt-0-5 pb-0-5"><span class="">Previous</span></button>  
+								</div>
+								<div class="columns center-content">
+								  	<button class="orbit-next button tiny expanded mb-0 pt-0-5 pb-0-5"><span class="">Next</span></button>  
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- CHat Component -->
+	<!-- <div id="chat-toggle">
+		<i class="fa fa-comment"></i>
+	</div>
+
+	<div id="chat-notification">
+		<div class="chat-header-container">
+			<div class="chat-header row shrinked active pb-1">
+				<div class="columns small-2 chat-header-action pl-0 pr-0">
+					<button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
+					<img src="http://i.pravatar.cc/300" align="left" class="user-image circle tiny">
+				</div>
+				<div class="columns small-10 chat-header-user pr-0">
+					<p class="mb-0 user-name"><b>John Robert</b></p>
+					<span class=" user-role">You have to drink your medecine three times a day or you will have to do the surgery next week. Remeber that it's cheaper and drinking the medecine</span>
+				</div>
+				<div class="counter">3</div>
+			</div>
+		</div>
+	</div> -->
+	
+	<div id="chat-container" style="display: none;">
+
+		<div class="chat-video-container">            
+			<div id="videos" class="compact">
+				<div id="subscriber" class="compact"></div>
+				<div id="publisher" class="compact"></div>
+			</div>
+			<div class="chat-video-control row align-center">
+				<div class="columns col-md-2 center-text pr-0">
+					<button id="chat-video-compress" class="button large circle"><i class="fa fa-compress"></i></button>
+				</div>
+				<div class="columns col-md-2 center-text pad0">
+					<button id="chat-video-message" class="button success large circle mb-0"><i class="fa fa-comment"></i></button>
+				</div>
+				<div class="columns col-md-2 center-text pl-0">
+					<button id="chat-video-end-call" class="button alert large circle"><i class="fa fa-phone"></i></button>
+				</div>
+			</div>
+		</div>
+
+		<div class="chat-header-intro">
+			<span class="h5 white-color">Messages</span>
+			<button data-open="exampleModal1" class="btn-new button clear circle large white"><i class="fa fa-phone large"></i></button>
+		</div>
+
+		<div class="chat-header-container">
+			<div class="chat-header row shrinked active align-middle">
+				<!--<div class="columns small-2 chat-header-action pl-0 pr-0">-->
+					<!--<button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>-->
+					<!---->
+					<!--<img src="https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602499.jpg" align="left" class="user-image circle tiny">-->
+
+				<!--</div>-->
+				<div class="columns small-7 chat-header-user">
+					<p class="mb-0 user-name"><b>John Robert</b></p>
+					<!--<span class=" user-role">Customer Support</span>-->
+				</div>
+				<div class="columns auto chat-header-video">
+					<button class="btn-video button hollow clear align-vertical-top mb-0 white-text large pull-right"><i class="fa fa-video-camera"></i></button>
+					<p class="timestamp mt-0-5 pull-right">12:32</p>
+				</div>
+				<div class="counter">4</div>
+			</div>
+		</div>
+		<div class="chat-header-container">
+			<div class="chat-header row shrinked active">
+				<div class="columns small-2 chat-header-action pl-0 pr-0">
+					<button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
+					<img src="http://i.pravatar.cc/300" align="left" class="user-image circle tiny">
+				</div>
+				<div class="columns small-7 chat-header-user">
+					<p class="mb-0 user-name"><b>John Robert</b></p>
+					<span class=" user-role">Customer Support</span>
+				</div>
+				<div class="columns small-3 chat-header-video">
+					<button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
+					<p class="timestamp mt-0-5 pull-right">12:32</p>
+				</div>
+				<div class="counter">4</div>
+			</div>
+		</div>
+		<div class="chat-header-container">
+			<div class="chat-header row shrinked active">
+				<div class="columns small-2 chat-header-action pl-0 pr-0">
+					<button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
+					<img src="http://i.pravatar.cc/299" align="left" class="user-image circle tiny">
+				</div>
+				<div class="columns small-7 chat-header-user">
+					<p class="mb-0 user-name"><b>John Robert</b></p>
+					<span class=" user-role">Customer Support</span>
+				</div>
+				<div class="columns small-3 chat-header-video">
+					<button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
+					<p class="timestamp mt-0-5 pull-right">12:32</p>
+				</div>
+				<div class="counter">4</div>
+			</div>
+		</div>
+		<div class="chat-header-container">
+			<div class="chat-header row shrinked">
+				<div class="columns small-2 chat-header-action pl-0 pr-0">
+					<button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
+					<img src="http://i.pravatar.cc/298" align="left" class="user-image circle tiny">
+				</div>
+				<div class="columns small-7 chat-header-user">
+					<p class="mb-0 user-name"><b>John Robert</b></p>
+					<span class=" user-role">Customer Support</span>
+				</div>
+				<div class="columns small-3 chat-header-video">
+					<button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
+					<p class="timestamp mt-0-5 pull-right">12:32</p>
+				</div>
+				<div class="counter">4</div>
+			</div>
+		</div>
+		<div class="chat-header-container">
+			<div class="chat-header row shrinked">
+				<div class="columns small-2 chat-header-action pl-0 pr-0">
+					<button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
+					<img src="http://i.pravatar.cc/297" align="left" class="user-image circle tiny">
+				</div>
+				<div class="columns small-7 chat-header-user">
+					<p class="mb-0 user-name"><b>John Robert</b></p>
+					<span class=" user-role">Customer Support</span>
+				</div>
+				<div class="columns small-3 chat-header-video">
+					<button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
+					<p class="timestamp mt-0-5 pull-right">12:32</p>
+				</div>
+				<div class="counter">4</div>
+			</div>
+		</div>
+		<div class="chat-header-container">
+			<div class="chat-header row shrinked">
+				<div class="columns small-2 chat-header-action pl-0 pr-0">
+					<button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
+					<img src="http://i.pravatar.cc/296" align="left" class="user-image circle tiny">
+				</div>
+				<div class="columns small-7 chat-header-user">
+					<p class="mb-0 user-name"><b>John Robert</b></p>
+					<span class=" user-role">Customer Support</span>
+				</div>
+				<div class="columns small-3 chat-header-video">
+					<button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
+					<p class="timestamp mt-0-5 pull-right">12:32</p>
+				</div>
+				<div class="counter">4</div>
+			</div>
+		</div>
+		<div class="chat-header-container">
+			<div class="chat-header row shrinked">
+				<div class="columns small-2 chat-header-action pl-0 pr-0">
+					<button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
+					<img src="http://i.pravatar.cc/295" align="left" class="user-image circle tiny">
+				</div>
+				<div class="columns small-7 chat-header-user">
+					<p class="mb-0 user-name"><b>John Robert</b></p>
+					<span class=" user-role">Customer Support</span>
+				</div>
+				<div class="columns small-3 chat-header-video">
+					<button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
+					<p class="timestamp mt-0-5 pull-right">12:32</p>
+				</div>
+				<div class="counter">4</div>
+			</div>
+		</div>
+		<div class="chat-header-container">
+			<div class="chat-header row shrinked">
+				<div class="columns small-2 chat-header-action pl-0 pr-0">
+					<button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>
+					<img src="http://i.pravatar.cc/294" align="left" class="user-image circle tiny">
+				</div>
+				<div class="columns small-7 chat-header-user">
+					<p class="mb-0 user-name"><b>John Robert</b></p>
+					<span class=" user-role">Customer Support</span>
+				</div>
+				<div class="columns small-3 chat-header-video">
+					<button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-video-camera"></i></button>
+					<p class="timestamp mt-0-5 pull-right">12:32</p>
+				</div>
+				<div class="counter">4</div>
+			</div>
+		</div>
+
+		<div class="chat-body-container hide">
+			<div class="chat-body">
+				<div class="wrapper">
+					<div class="media-object" data-animate="slide-in-right slide-out-right">
+						<div class="media-object-section">
+							<img src="http://i.pravatar.cc/300" align="left" class="user-image circle small">
+						</div>
+						<div class="media-object-section middle">
+							<div class="small talk-bubble border tri-right left-in">
+								<div class="talktext">
+									<p>If you have questions, you can reach me anytime by sending me a secure message or schedule a call and we can go over it on the phone together.</p>
+								</div>
+							</div>
+							<span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+						</div>
+					</div>
+				</div>
+				<!--<div class="wrapper pull-right">-->
+					<!--<div class="media-object pull-right" data-animate="slide-in-right slide-out-right">-->
+						<!--<div class="small white-bg talk-bubble border tri-right right-in">-->
+							<!--<div class="talktext">-->
+								<!--<p> you have questions, you can reach me anytime by sending me a secure message or schedule a call and we can go over it on the phon</p>-->
+							<!--</div>-->
+						<!--</div>-->
+						<!--<span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>-->
+					<!--</div>-->
+				<!--</div>-->
+				<!--<div class="wrapper">-->
+					<!--<div class="media-object" data-animate="slide-in-right slide-out-right">-->
+						<!--<div class="media-object-section">-->
+							<!--<img src="http://i.pravatar.cc/300" align="left" class="user-image circle small">-->
+						<!--</div>-->
+						<!--<div class="media-object-section middle">-->
+							<!--<div class="small talk-bubble border tri-right left-in">-->
+								<!--<div class="talktext">-->
+									<!--<p>If you have questions, you can reach me anytime by sending me a secure message or schedule a call and we can go over it on the phone together.</p>-->
+								<!--</div>-->
+							<!--</div>-->
+							<!--<span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>-->
+						<!--</div>-->
+					<!--</div>-->
+				<!--</div>-->
+			</div>
+		</div>
+		<div class="chat-input-container hide">
+			<div class="collapse row align-middle">
+				<div class="auto columns">
+					<textarea name="" id="" placeholder="What's on your mind?"></textarea>
+				</div>
+				<div class="shrink columns">
+					<button id="btnAttach" class="button secondary hollow large clear pull-left">
+						<i class="fa fa-paperclip"></i>
+					</button>
+					<button id="btnSend" class="button success hollow large clear pull-right">
+						<i class="fa fa-paper-plane"></i>
+					</button>
+				</div>
+			</div>
+			<div class="row collapse">
+				<div class="columns">
+					<p class="help-text">* Acceptable file formats are .pdf, .rtf, .doc, .docx, .xls, .xlsx. Total size limit of all attachments in one upload instance: 25 mb</p>
+				</div>
+			</div>
+
+			<ul class="attachments inline-list" style="display: none;">
+				<li class="image-attachment fa fa-file-o fa-lg">
+					<a class="btn-close"><i class="fa fa-trash"></i></a>
+					<span class="filename" data-tooltip tabindex="1" title="Screenshot_Screen_2018-19-823.jpg">Screenshot_Screen_2018-19-823.jpg</span>
+				</li>
+				<li class="image-attachment fa fa-file-image-o fa-lg">
+					<a class="btn-close"><i class="fa fa-trash"></i></a>
+					<span class="filename" data-tooltip tabindex="1" title="Screenshot_Screen_2018-19-823.jpg">Screenshot_Screen_2018-19-823.jpg</span>
+				</li>
+				<li class="image-attachment fa fa-file-excel-o fa-lg">
+					<a class="btn-close"><i class="fa fa-trash"></i></a>
+					<span class="filename" data-tooltip tabindex="1" title="Screenshot_Screen_2018-19-823.jpg">Filename.jpg</span>
+				</li>
+				<li class="image-attachment fa fa-file-word-o fa-lg">
+					<a class="btn-close"><i class="fa fa-trash"></i></a>
+					<span class="filename" data-tooltip tabindex="1" title="Screenshot_Screen_2018-19-823.jpg">Filename.jpg</span>
+				</li>
+				<li class="image-attachment fa fa-file-pdf-o fa-lg">
+					<a class="btn-close"><i class="fa fa-trash"></i></a>
+					<span class="filename" data-tooltip tabindex="1" title="Screenshot_Screen_2018-19-823.jpg">Filename.jpg</span>
+				</li>
+				<li class="image-attachment fa fa-file-archive-o fa-lg">
+					<a class="btn-close"><i class="fa fa-trash"></i></a>
+					<span class="filename" data-tooltip tabindex="1" title="Screenshot_Screen_2018-19-823.jpg">Filename.jpg</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="reveal align-center-middle text-center video-call" id="exampleModal1" data-reveal>
+		<div class="row video-call-caller mb-2">
+			<div class="columns col-md-12">
+				<p class="h2 white-color mb-4">Liam Neeson Calling...</p>
+				<img src="http://i.pravatar.cc/300" alt="" class="user-image circle">
+			</div>
+		</div>
+		<div class="row video-call-action">
+		  <div class="columns col-md-2">
+			<button id="btn-call-reject" class="button clear large circle alert">
+				<i class="fa fa-times"></i>
+			</button>
+		</div>
+		  <div class="columns col-md-2">
+			  <button id="btn-call-answer" class="button clear large circle success" data-close aria-label="Close modal">
+				<i class="fa fa-phone"></i>
+			</button>
+		  </div>
+	  </div>
+	</div>
+
+	<script src="../bower_components/jquery/dist/jquery.js"></script>
+	<script src="../bower_components/what-input/what-input.js"></script>
+	<script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+	<script src="../bower_components/foundation-sites/js/foundation.toggler.js"></script>
+	<script src="../bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+	<script src="../bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+	<!-- Powertour -->
+	<script src="../js/powertour/js/powertour.3.2.0.min.js"></script>
+	<!-- PDF Maker -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
+	
+	<script src="../js/app.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+
+			$.powerTour({
+				tours : [
+					{
+						trigger            : '#startTour',
+						startWith          : 1,
+						easyCancel         : false,
+						escKeyCancel       : true,
+						scrollHorizontal   : false,
+						keyboardNavigation : true,
+						loopTour           : false,
+						highlightStartSpeed : 200,// new 2.5.0
+						highlightEndSpeed  : 200,// new 2.3.0
+						onStartTour        : function(ui){ },
+						onEndTour          : function(ui){ },   
+						onProgress         : function(ui){ },
+						steps : [
+							  {
+								  hookTo          : '#hookOne',
+								  content         : '#stepOne',
+								  width           : 700,
+								  position        : 'sc',
+								  offsetY         : 0,
+								  offsetX         : 0,
+								  fxIn            : 'fadeIn',
+								  fxOut           : 'fadeOut',
+								  showStepDelay   : 0,
+								  center          : 'step',
+								  scrollSpeed     : 400,
+								  scrollEasing    : 'swing',
+								  scrollDelay     : 0,
+								  timer           : false,
+								  highlight       : true,
+								  keepHighlighted : true,
+								  keepVisible     : false,// new 2.2.0
+								  onShowStep      : function(ui){},
+								  onHideStep      : function(ui){ }
+							  },
+							  {
+								  hookTo          : '#hookTwo',
+								  content         : '#stepTwo',
+								  width           : 700,
+								  position        : 'rt',
+								  offsetY         : -90,
+								  offsetX         : 20,
+								  fxIn            : 'fadeIn',
+								  fxOut           : 'fadeOut',
+								  showStepDelay   : 0,
+								  center          : 'step',
+								  scrollSpeed     : 400,
+								  scrollEasing    : 'swing',
+								  scrollDelay     : 0,
+								  timer           : false,
+								  highlight       : true,
+								  keepHighlighted : true,
+								  keepVisible     : false,// new 2.2.0
+								  onShowStep      : function(ui){},
+								  onHideStep      : function(ui){ }
+							  },
+							  {
+								  hookTo          : '#hookTwo',
+								  content         : '#stepThree',
+								  width           : 700,
+								  position        : 'rb',
+								  offsetY         : 275,
+								  offsetX         : 40,
+								  fxIn            : 'fadeIn',
+								  fxOut           : 'fadeOut',
+								  showStepDelay   : 0,
+								  center          : 'step',
+								  scrollSpeed     : 400,
+								  scrollEasing    : 'swing',
+								  scrollDelay     : 0,
+								  timer           : false,
+								  highlight       : true,
+								  keepHighlighted : true,
+								  keepVisible     : false,// new 2.2.0
+								  onShowStep      : function(ui){},
+								  onHideStep      : function(ui){ }
+							  },
+							  {
+								  hookTo          : '#hookTwo',
+								  content         : '#stepFour',
+								  width           : 700,
+								  position        : 'rb',
+								  offsetY         : -85,
+								  offsetX         : 20,
+								  fxIn            : 'fadeIn',
+								  fxOut           : 'fadeOut',
+								  showStepDelay   : 0,
+								  center          : 'step',
+								  scrollSpeed     : 400,
+								  scrollEasing    : 'swing',
+								  scrollDelay     : 0,
+								  timer           : false,
+								  highlight       : true,
+								  keepHighlighted : true,
+								  keepVisible     : false,// new 2.2.0
+								  onShowStep      : function(ui){},
+								  onHideStep      : function(ui){ }
+							  },
+							  {
+								  hookTo          : '#hookTwo',
+								  content         : '#stepFive',
+								  width           : 700,
+								  position        : 'rb',
+								  offsetY         : 240,
+								  offsetX         : 70,
+								  fxIn            : 'fadeIn',
+								  fxOut           : 'fadeOut',
+								  showStepDelay   : 0,
+								  center          : 'step',
+								  scrollSpeed     : 400,
+								  scrollEasing    : 'swing',
+								  scrollDelay     : 0,
+								  timer           : false,
+								  highlight       : true,
+								  keepHighlighted : true,
+								  keepVisible     : false,// new 2.2.0
+								  onShowStep      : function(ui){},
+								  onHideStep      : function(ui){ }
+							  },
+							  {
+								  hookTo          : '#mainMenu',
+								  content         : '#stepSix',
+								  width           : 580,
+								  position        : 'bm',
+								  offsetY         : 0,
+								  offsetX         : 0,
+								  fxIn            : 'fadeIn',
+								  fxOut           : 'bounceOutLeft',
+								  showStepDelay   : 0,
+								  center          : 'step',
+								  scrollSpeed     : 400,
+								  scrollEasing    : 'swing',
+								  scrollDelay     : 0,
+								  timer           : false,
+								  highlight       : true,
+								  keepHighlighted : true,
+								  keepVisible     : false,// new 2.2.0
+								  onShowStep      : function(ui){
+									$('#chatSupport').foundation('open');
+								  },
+								  onHideStep      : function(ui){ 
+									$('#chatSupport').foundation('close');
+								  }
+							  }
+						],
+						stepDefaults : [
+							{
+								width           : 300,
+								position        : 'tr',
+								offsetY         : 0,
+								offsetX         : 0,
+								fxIn            : 'fadeIn',
+								fxOut           : 'fadeOut',
+								showStepDelay   : 0,
+								center          : 'step',
+								scrollSpeed     : 400,
+								scrollEasing    : 'swing',
+								scrollDelay     : 0,
+								timer           : '00:00',
+								highlight       : true,
+								keepHighlighted : false,
+								keepVisible     : false,// new 2.2.0
+								onShowStep      : function(ui){ },
+								onHideStep      : function(ui){ }
+							}
+						 ]
+					}
+				]
+			});
+
+		});
+
+		$(function () {
+			var timer;
+
+			$(window).resize(function() {
+				clearTimeout(timer);
+
+				timer = setTimeout(function() {
+				  $('#chatSupport .offcanvas-area-inner').css("height", $(window).height());
+				}, 40);
+			}).resize();
+		});
+
+	</script>
+
+</body>
+</html>
+ 

@@ -40,7 +40,7 @@
 //  35. Tooltip
 //  36. Top Bar
 
-@import 'util/util';
+@import "util/util";
 
 // 1. Global
 // ---------
@@ -48,56 +48,74 @@
 $global-font-size: 100%;
 $global-width: rem-calc(1080);
 $global-lineheight: 1.5;
-$foundation-palette: (
-  primary:         #283D4B,
-  secondary:       #17659B,
-  success:         #1EBE44,
-  warning:         #D4822D,
-  alert:           #BE1E2B,
-);
 
-$light-gray:       #E3E3E3;
-$medium-gray:      #73746f;
-$dark-gray:        #2C2C2C;
+/*$foundation-palette: (
+  // zip
+    primary: #7ac6d2,
+  secondary: #4c616f,
+  success: #1ebe44,
+  warning: #d4822d,
+  alert: #de4351
+);*/
 
-$black:            #0A1023;
-$white:            #FFFFFF;
-$off-white:        #F4F4F4;
-$background-white: #F1F4F5;
-$primary-light:    #FBFBFB;
+// $foundation-palette: (
+//   // spoke
+//     primary: #273c4b,
+//   secondary: #005776,
+//   success: #1ebe44,
+//   warning: #d4822d,
+//   alert: #be1e2b
+// );
+
+$light-gray: #e3e3e3;
+$medium-gray: #73746f;
+$dark-gray: #2c2c2c;
+
+$black: #0a1023;
+$white: #ffffff;
+$off-white: #f4f4f4;
+$background-white: #f1f4f5;
+$primary-light: #fbfbfb;
+
+$note: #ffffa5;
 
 // * Opacity change/add per project requirements | these defaults help with many elements on the project
 // * Text Opacity refers to the opacity of Black or White text in the project.
 // Black
-$B-hinttext:        0.26 !default;
-$B-subtext:         0.54 !default;
-$B-text:            0.87 !default;
+$B-hinttext: 0.26 !default;
+$B-subtext: 0.54 !default;
+$B-text: 0.87 !default;
 
 // White
-$W-hinttext:        0.30 !default;
-$W-subtext:         0.70 !default;
-$W-text:            1.00 !default;
+$W-hinttext: 0.3 !default;
+$W-subtext: 0.7 !default;
+$W-text: 1 !default;
 
 // * Text Colors I only change the opacity of text and stay in this defaults all the time.
-$text-white:        #FFFFFF;
-$text-black:        rgba($black, $B-text) !default;
+$text-white: #ffffff;
+$text-black: rgba($black, $B-text) !default;
 
 // * Element Opacity refers to the opacity of Black or White elements in the project
 // * these variables need to be changed/added per project, since they are relative to context
 // Black
-$B-dividers:        0.12 !default;
-$B-disabled:        0.26 !default;
-$B-icons:           0.54 !default;
+$B-dividers: 0.06125 !default;
+$B-disabled: 0.26 !default;
+$B-icons: 0.54 !default;
 
 // White
-$W-dividers:        0.12 !default;
-$W-disabled:        0.30 !default;
-$W-icons:           1.00 !default;
+$W-dividers: 0.06125 !default;
+$W-disabled: 0.3 !default;
+$W-icons: 1 !default;
 
-$body-background: $primary-light;
+// $body-background: $primary-light;
+$body-background: #fff;
 $body-font-color: $text-black;
-$body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Nueue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$header-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Nueue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+  "Helvetica Nueue", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol";
+$header-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+  "Helvetica Nueue", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol";
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -119,7 +137,7 @@ $breakpoints: (
   medium: 640px,
   large: 1024px,
   xlarge: 1200px,
-  xxlarge: 1440px,
+  xxlarge: 1440px
 );
 $breakpoint-classes: (small medium large);
 
@@ -130,7 +148,7 @@ $grid-row-width: $global-width;
 $grid-column-count: 12;
 $grid-column-gutter: (
   small: 20px,
-  medium: 30px,
+  medium: 30px
 );
 $grid-column-align-edge: true;
 $block-grid-max: 8;
@@ -141,24 +159,24 @@ $block-grid-max: 8;
 $header-font-family: $header-font-family;
 $header-font-weight: $global-weight-bold;
 $header-font-style: normal;
-$font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
+$font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 $header-sizes: (
   small: (
-    'h1': 24,
-    'h2': 20,
-    'h3': 19,
-    'h4': 18,
-    'h5': 17,
-    'h6': 16,
+    "h1": 24,
+    "h2": 20,
+    "h3": 19,
+    "h4": 18,
+    "h5": 17,
+    "h6": 16
   ),
   medium: (
-    'h1': 67,
-    'h2': 50,
-    'h3': 37,
-    'h4': 28,
-    'h5': 21,
-    'h6': 16,
-  ),
+    "h1": 67,
+    "h2": 50,
+    "h3": 37,
+    "h4": 28,
+    "h5": 21,
+    "h6": 16
+  )
 );
 $header-color: $black;
 $header-lineheight: 1.4;
@@ -281,7 +299,7 @@ $button-sizes: (
   tiny: 0.6rem,
   small: 0.75rem,
   default: 0.9rem,
-  large: 1.25rem,
+  large: 1.25rem
 );
 $button-opacity-disabled: 0.25;
 
@@ -290,7 +308,7 @@ $button-opacity-disabled: 0.25;
 
 $buttongroup-margin: 1rem;
 $buttongroup-spacing: 1px;
-$buttongroup-child-selector: '.button';
+$buttongroup-child-selector: ".button";
 $buttongroup-expand-max: 6;
 
 // 13. Callout
@@ -336,7 +354,7 @@ $dropdown-radius: $global-radius;
 $dropdown-sizes: (
   tiny: 100px,
   small: 200px,
-  large: 400px,
+  large: 400px
 );
 
 // 17. Dropdown Menu
@@ -439,7 +457,7 @@ $offcanvas-transition-length: 0.5s;
 $offcanvas-transition-timing: ease;
 $offcanvas-fixed-reveal: true;
 $offcanvas-exit-background: rgba($white, 0.25);
-$maincontent-class: 'off-canvas-content';
+$maincontent-class: "off-canvas-content";
 $maincontent-shadow: 0 0 10px rgba($black, 0.5);
 
 // 25. Orbit
@@ -534,7 +552,10 @@ $table-border: 1px solid smart-scale($table-background, $table-color-scale);
 $table-padding: rem-calc(8 10 10);
 $table-hover-scale: 2%;
 $table-row-hover: darken($table-background, $table-hover-scale);
-$table-row-stripe-hover: darken($table-background, $table-color-scale + $table-hover-scale);
+$table-row-stripe-hover: darken(
+  $table-background,
+  $table-color-scale + $table-hover-scale
+);
 $table-striped-background: smart-scale($table-background, $table-color-scale);
 $table-stripe: even;
 $table-head-background: smart-scale($table-background, $table-color-scale / 2);

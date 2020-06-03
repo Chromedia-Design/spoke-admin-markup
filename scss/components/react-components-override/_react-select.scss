@@ -1,0 +1,14 @@
+.select-customized {
+	background-color: red !important;
+	.Select-control {
+		background-color: red !important;
+		.Select-multi-value-wrapper {
+			.Select-placeholder {}
+			.Select-input {}
+		}
+		.Seelct-arrow-zone {}
+	}
+	.Select-menu-outer {
+		margin-topn: 1rem !important;
+	}
+}

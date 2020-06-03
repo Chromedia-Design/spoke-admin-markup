@@ -1,0 +1,20 @@
+.dropdown-pane {
+  z-index: 9999 !important;
+}
+
+.dropdown-content {
+  a {
+    color: black;
+    padding: 12px 1.5rem;
+    text-decoration: none;
+    display: block;
+
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+}
+
+.show {
+  display: block;
+}

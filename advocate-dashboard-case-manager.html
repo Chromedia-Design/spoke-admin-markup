@@ -1,0 +1,717 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spoke Admin Portal</title>
+  <link rel="stylesheet" href="js/fullcalendar/fullcalendar.min.css">
+  <link rel="stylesheet" href="js/fullcalendar/fullcalendar.print.min.css" media="print">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<div class="expanded row medium-collapse">
+  <div class="medium-2 columns">
+    <div class="site-nav">
+      <header>
+        <a href="#" class="logo text-center">
+          <img src="img/logo-holista.png" title="Spoke">
+        </a>
+      </header>
+      <ul class="menu vertical" data-accordion-menu>
+        <li class="is-active">
+          <a href="advocate-dashboard.html">My Dashboard</a>
+        </li>
+        <li>
+          <a href="advocate-employees.html">Employees</a>
+        </li>
+        <li>
+          <a href="#">Doctors</a>
+        </li>
+        <li>
+          <a href="advocate-facilities.html">Facilities</a>
+        </li>
+        <li>
+          <a href="#">Activity Logs</a>
+        </li>
+        <li>
+          <a href="advocate-profile.html">Profile</a>
+          <ul class="nested vertical menu">
+            <li>
+              <a href="advocate-profile.html">User Information</a>
+            </li>
+            <li>
+              <a href="advocate-password.html">Change My Password</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="medium-10 columns">
+    <div class="content">
+
+      <div class="top-bar">
+        <div class="top-bar-left">
+          <div class="input-group rounded">
+            <input class="input-group-field" type="search" placeholder="Search employees">
+            <div class="input-group-button">
+              <input type="submit" class="button hollow plain info" value="Submit">
+            </div>
+          </div>
+        </div>
+        <div class="top-bar-right">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li class="warning-color">
+              <a class="vertical-block" href="#"><i class="fa fa-list-ol fa-lg"></i>&nbsp; <b>New Task</b></a>
+            </li>
+            <li class="success-color">
+              <a class="vertical-block" href="#"><i class="fa fa-calendar-plus-o fa-lg"></i></a>
+            </li>
+            <li class="drop-text">
+              <a data-toggle="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span
+                class="alert badge" id="notifCount">24</span></a>
+              <ul class="notifications menu vertical">
+                <li>
+                  <ol>
+                    <li class="heading">
+                      <h6 class="text-center mb-0">Notifications</h6>
+                    </li>
+                    <li class="active">
+                      <span>You have a new email from <a href="#">John Doe</a>.</span>
+                      <small class="subheader">12 months ago</small>
+                    </li>
+                    <li class="active">
+                      <span>You have a missed call from <a href="#">Alex Quesada</a>.</span>
+                      <small class="subheader">12 months ago</small>
+                    </li>
+                    <li>
+                      <span>You have a new email from <a href="#">Janet Ellis</a>.</span>
+                      <small class="subheader">12 months ago</small>
+                    </li>
+                    <li>
+                      <span>You have a new email from <a href="#">Kathleen Jordan</a>.</span>
+                      <small class="subheader">12 months ago</small>
+                    </li>
+                    <li>
+                      <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+                      <small class="subheader">12 months ago</small>
+                    </li>
+                    <li>
+                      <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+                      <small class="subheader">12 months ago</small>
+                    </li>
+                    <li>
+                      <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+                      <small class="subheader">12 months ago</small>
+                    </li>
+                    <li>
+                      <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+                      <small class="subheader">12 months ago</small>
+                    </li>
+                    <li>
+                      <span>You have a new email from <a href="#">Albert Gibson</a>.</span>
+                      <small class="subheader">12 months ago</small>
+                    </li>
+                  </ol>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="vertical-block" href="#">
+                <div class="img-wrapper tiny circle mr-0-5">
+                  <img src="img/chachi-gonzales.png" alt="John Doe">
+                </div>
+              </a>
+              <ul class="menu vertical">
+                <li><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Sign Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row collapse expanded">
+
+        <div class="large-8 columns">
+
+          <div class="page-lead row align-middle">
+            <div class="auto columns">
+              <span class="h5 warning-color">Patients who need a Care Coordinator</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="columns">
+              <div class="spoke-list compact warning">
+
+                <div class="spoke-list-heading row expanded align-middle">
+                  <div class="medium-4 columns">
+                    <a href="#">Employee</a>
+                  </div>
+                  <div class="medium-3 columns">
+                    <a href="#">Episode</a>
+                  </div>
+                  <div class="medium-3 columns">
+                    <a href="#"></a>
+                  </div>
+                  <div class="columns">
+                  </div>
+                </div>
+
+                <div class="spoke-list-item row expanded align-middle"
+                     onclick="location.href='advocate-employee-profile-v2.html'">
+                  <div class="medium-4 columns">
+                    <div class="row collapse align-middle">
+                      <div class="columns">
+                        <p class="mb-0">Brendon Martin</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="medium-3 columns">
+                    <p><a href="advocate-employee-episode-v2.html">Total Knee
+                      Replacement</a></p>
+                  </div>
+                  <div class="medium-2 columns">
+                    <p class="subheader text-right">4 hours ago</p>
+                  </div>
+                  <div class="medium-3 columns">
+                    <div class="button-group tiny mb-0 pull-right">
+                      <a href="#" class="button hollow success">Assign To Me</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="spoke-list-item row expanded align-middle"
+                     onclick="location.href='advocate-employee-profile-v2.html'">
+                  <div class="medium-4 columns">
+                    <div class="row collapse align-middle">
+                      <div class="columns">
+                        <p class="mb-0">John Doe</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="medium-3 columns">
+                    <p><a href="advocate-employee-episode-v2.html">Total Knee
+                      Replacement</a></p>
+                  </div>
+                  <div class="medium-2 columns">
+                    <p class="subheader text-right">4 hours ago</p>
+                  </div>
+                  <div class="medium-3 columns">
+                    <div class="button-group tiny mb-0 pull-right">
+                      <a href="#" class="button hollow success">Assign To Me</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="spoke-list-item row expanded align-middle"
+                     onclick="location.href='advocate-employee-profile-v2.html'">
+                  <div class="medium-4 columns">
+                    <div class="row collapse align-middle">
+                      <div class="columns">
+                        <p class="mb-0">Joe Ortho</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="medium-3 columns">
+                    <p><a href="advocate-employee-episode-v2.html">Total Knee
+                      Replacement</a></p>
+                  </div>
+                  <div class="medium-2 columns">
+                    <p class="subheader text-right">4 hours ago</p>
+                  </div>
+                  <div class="medium-3 columns">
+                    <div class="button-group tiny mb-0 pull-right">
+                      <a href="#" class="button hollow success">Assign To Me</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="page-lead row align-middle">
+            <div class="auto columns">
+              <span class="h5">My Patients' Statuses</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="auto columns">
+
+              <div class="row collapse label-block">
+                <div class="medium-6 columns">
+                  <div class="label-group">
+                    <p>Awaiting Surgery Date</p>
+                    <div class="row collapse align-middle">
+                      <div class="medium-8 columns">
+                        <h3><a href="#"><b>2</b></a></h3>
+                      </div>
+                      <div class="medium-4 columns">
+                        <a href="#" class="button info tiny circle hollow pull-right mb-0"><i
+                          class="fa fa-angle-down"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="medium-6 columns">
+                  <div class="label-group">
+                    <p>Awaiting Post-Op Visit Date</p>
+                    <div class="row collapse align-middle">
+                      <div class="medium-8 columns">
+                        <h3><a href="#"><b>24</b></a></h3>
+                      </div>
+                      <div class="medium-4 columns">
+                        <a href="#" class="button info tiny circle hollow pull-right mb-0"><i
+                          class="fa fa-angle-down"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row collapse label-block flex collapsible">
+                <div class="columns">
+                  <div class="spoke-list">
+
+                    <div class="spoke-list-heading row expanded align-middle">
+                      <div class="medium-4 columns">
+                        <a href="#">Employee</a>
+                      </div>
+                      <div class="medium-3 columns">
+                        <a href="#">Episode</a>
+                      </div>
+                      <div class="medium-3 columns">
+                        <a href="#"></a>
+                      </div>
+                      <div class="columns">
+                      </div>
+                    </div>
+
+                    <div class="spoke-list-item row expanded align-middle"
+                         onclick="location.href='advocate-employee-profile-v2.html'">
+                      <div class="medium-4 columns">
+                        <div class="row collapse align-middle">
+                          <div class="columns">
+                            <p class="mb-0">John Doe</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="medium-3 columns">
+                        <p><a href="advocate-employee-episode-v2.html">Total Knee
+                          Replacement</a></p>
+                      </div>
+                      <div class="medium-3 columns">
+                        <p class="subheader text-right">4 hours ago</p>
+                      </div>
+                      <div class="columns">
+                        <ul class="dropdown menu pull-right" data-dropdown-menu>
+                          <li>
+                            <a></a>
+                            <ul class="menu vertical">
+                              <li><a href="#"><i class="fa fa-comment-o"></i>&nbsp;
+                                Chat</a></li>
+                              <li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp;
+                                Add Note</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="spoke-list-item row expanded align-middle"
+                         onclick="location.href='advocate-employee-profile-v2.html'">
+                      <div class="medium-4 columns">
+                        <div class="row collapse align-middle">
+                          <div class="columns">
+                            <p class="mb-0">Joe Ortho</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="medium-3 columns">
+                        <p><a href="advocate-employee-episode-v2.html">Total Knee
+                          Replacement</a></p>
+                      </div>
+                      <div class="medium-3 columns">
+                        <p class="subheader text-right">4 hours ago</p>
+                      </div>
+                      <div class="columns">
+                        <ul class="dropdown menu pull-right" data-dropdown-menu>
+                          <li>
+                            <a></a>
+                            <ul class="menu vertical">
+                              <li><a href="#"><i class="fa fa-comment-o"></i>&nbsp;
+                                Chat</a></li>
+                              <li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp;
+                                Add Note</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="page-lead row align-middle">
+            <div class="columns">
+              <span class="h5">My Messages</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="columns">
+              <div class="panel">
+                <ul class="well-list message-preview">
+                  <li class="unread">
+                    <span id="expandChat" class="list-wrap">
+                      <div class="list-item-image align-middle text-center">
+                        <div class="img-wrapper circle logo small">
+                          <span class="h5">B</span>
+                        </div>
+                      </div>
+                      <div class="list-detail">
+                          <span class="truncate">Brendon Martin</span>
+                          <span class="truncate"><small>I've decided to go with Dr Hai Lan at Milwaukee Surgery Center...</small></span>
+                      </div>
+                      <div class="list-note text-center">
+                          <span class="badge success">2</span>
+                          <span class="subheader"><small>Yesterday</small></span>
+                      </div>
+                      <div class="pull-right">
+                        <ul class="dropdown menu mt-0-5" data-dropdown-menu>
+                          <li>
+                            <a></a>
+                            <ul class="menu vertical">
+                                <li><a href="#"><i
+                                  class="fa fa-phone"></i>&nbsp; Call</a></li>
+                              <li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</a></li>
+                                <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Archive</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </span>
+                  </li>
+                  <li class="unread">
+                    <span id="expandChat" class="list-wrap">
+                      <div class="list-item-image align-middle text-center">
+                        <div class="img-wrapper circle logo small">
+                          <span class="h5">K</span>
+                        </div>
+                      </div>
+                      <div class="list-detail">
+                          <span class="truncate">Kate Newman</span>
+                          <span class="truncate"><small>My hip is causing me pain this week. Should I schedule a follow up with my surgeon in the next few days?</small></span>
+                      </div>
+                      <div class="list-note text-center">
+                          <span class="badge success">12</span>
+                          <span class="subheader"><small>Feb-12</small></span>
+                      </div>
+                      <div class="pull-right">
+                        <ul class="dropdown menu mt-0-5" data-dropdown-menu>
+                          <li>
+                            <a></a>
+                            <ul class="menu vertical">
+                                <li><a href="#"><i
+                                  class="fa fa-phone"></i>&nbsp; Call</a></li>
+                              <li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</a></li>
+                                <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Archive</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </span>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="page-lead row align-middle">
+            <div class="shrink columns">
+              <span class="h5">My To-Do's</span>
+            </div>
+            <!-- <div class="columns">
+                <div class="button-align small pull-right mb-0">
+                      <select>
+                        <option value="" disabled selected>Today</option>
+                        <option value="">One Week From Now</option>
+                        <option value="starbuck">One Month From Now</option>
+                        <option value="hotdog">Six Months From Now</option>
+                      </select>
+                </div>
+            </div> -->
+          </div>
+          <div class="row">
+            <div class="columns">
+              <div class="callout lo-padded">
+                <ul class="tasks-list well-list">
+                  <li>
+                    <div class="list-wrap">
+                      <div class="row collapse align-middle">
+                        <div class="medium-4 columns">
+                          <div class="media-object">
+                            <div class="media-object-section middle">
+                              <div class="fancy-checkbox">
+                                <input type="checkbox">
+                              </div>
+                            </div>
+                            <div class="media-object-section middle">
+                              <p class="mb-0">Brendon Martin</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="columns">
+                          <p class="alert -color mb-0">Reported Pain is 8 (Severe)</p>
+                        </div>
+                        <div class="shrink columns">
+                          <small class="preamble"><b>a few hours ago</b></small>
+                        </div>
+                        <div class="shrink columns">
+                          <ul class="dropdown menu" data-dropdown-menu>
+                            <li>
+                              <a></a>
+                              <ul class="menu vertical">
+                                <li><a href="#"><i class="fa fa-refresh"></i>&nbsp;
+                                  Assign To</a></li>
+                                <li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp;
+                                  Set New Date</a></li>
+                                <li><a href="#"><i class="fa fa-trash"></i>&nbsp;
+                                  Archive</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="list-wrap">
+                      <div class="row collapse align-middle">
+                        <div class="medium-4 columns">
+                          <div class="media-object">
+                            <div class="media-object-section middle">
+                              <div class="fancy-checkbox">
+                                <input type="checkbox">
+                              </div>
+                            </div>
+                            <div class="media-object-section middle">
+                              <p class="mb-0">Matthew Perry</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="columns">
+                          <p class="mb-0">Reported not following Physical Therapy</p>
+                        </div>
+                        <div class="shrink columns">
+                          <small class="preamble"><b>1 day ago</b></small>
+                        </div>
+                        <div class="shrink columns">
+                          <ul class="dropdown menu" data-dropdown-menu>
+                            <li>
+                              <a></a>
+                              <ul class="menu vertical">
+                                <li><a href="#"><i class="fa fa-refresh"></i>&nbsp;
+                                  Assign To</a></li>
+                                <li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp;
+                                  Set New Date</a></li>
+                                <li><a href="#"><i class="fa fa-trash"></i>&nbsp;
+                                  Archive</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="list-wrap">
+                      <div class="row collapse align-middle">
+                        <div class="medium-4 columns">
+                          <div class="media-object">
+                            <div class="media-object-section middle">
+                              <div class="fancy-checkbox">
+                                <input type="checkbox" checked>
+                              </div>
+                            </div>
+                            <div class="media-object-section middle">
+                              <p class="mb-0">Raymond Peterson</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="columns">
+                          <p class="mb-0">Completed functional capacity survey</p>
+                        </div>
+                        <div class="shrink columns">
+                          <small class="preamble"><b>2 days ago</b></small>
+                        </div>
+                        <div class="shrink columns">
+                          <ul class="dropdown menu" data-dropdown-menu>
+                            <li>
+                              <a></a>
+                              <ul class="menu vertical">
+                                <li><a href="#"><i class="fa fa-refresh"></i>&nbsp;
+                                  Assign To</a></li>
+                                <li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp;
+                                  Set New Date</a></li>
+                                <li><a href="#"><i class="fa fa-trash"></i>&nbsp;
+                                  Archive</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="list-wrap">
+                      <div class="row collapse align-middle">
+                        <div class="medium-4 columns">
+                          <div class="media-object">
+                            <div class="media-object-section middle">
+                              <div class="fancy-checkbox">
+                                <input type="checkbox" checked>
+                              </div>
+                            </div>
+                            <div class="media-object-section middle">
+                              <!--<small class="preamble"><b>FOLLOW UP</b></small>-->
+                              <p class="mb-0">Kate Newman</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="columns">
+                          <p class="mb-0">Schedule second consultation with facility</p>
+                        </div>
+                        <div class="shrink columns">
+                          <small class="preamble"><b>1 day</b></small>
+                        </div>
+                        <div class="shrink columns">
+                          <ul class="dropdown menu" data-dropdown-menu>
+                            <li>
+                              <a></a>
+                              <ul class="menu vertical">
+                                <li><a href="#"><i class="fa fa-refresh"></i>&nbsp;
+                                  Assign To</a></li>
+                                <li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp;
+                                  Set New Date</a></li>
+                                <li><a href="#"><i class="fa fa-trash"></i>&nbsp;
+                                  Archive</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="large-4 columns">
+
+          <div class="row">
+            <div class="large-12 columns">
+
+              <div id="eventCalendar" class="mt-1 mb-0-5"></div>
+
+              <div id="eventScheduler" class="mt-1 mb-0-5"></div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/what-input/what-input.js"></script>
+<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+
+<script src='js/fullcalendar/lib/moment.min.js'></script>
+<script src='js/fullcalendar/fullcalendar.min.js'></script>
+
+<script src="js/app.js"></script>
+
+<script type="text/javascript">
+
+    var sampleEvents = {
+        "events": [
+            {
+                title: 'Scheduled Call with Kate Newman',
+                start: '2017-09-25T13:00:00'
+            },
+            {
+                title: 'Scheduled Call with Amy Thompson',
+                start: '2017-09-25T15:00:00',
+                end: '2017-09-25T16:00:00'
+            },
+            {
+                title: 'Scheduled Call with Brendon Martin',
+                start: '14:00:00',
+                end: '15:00:00',
+                dow: [1, 2, 3, 4, 5, 6, 7]
+            }
+        ]
+    };
+
+    $('#eventCalendar').fullCalendar({
+        header: {
+            left: 'prev',
+            center: 'title',
+            right: 'next'
+        },
+        aspectRatio: 1,
+        height: 'auto',
+        fixedWeekCount: false,
+        events: sampleEvents
+    });
+
+    $('#eventScheduler').fullCalendar({
+        defaultView: 'agendaDay',
+        header: {
+            left: 'title',
+            center: '',
+            right: 'today prev,next'
+        },
+        allDayText: 'All-Day',
+        slotLabelFormat: 'h(:mm) A',
+        minTime: '07:00:00',
+        maxTime: '20:00:00',
+        height: 'auto',
+        editable: true,
+        eventLimit: true, // allow "more" link when too many events
+        titleFormat: 'MMM D',
+        events: sampleEvents
+    });
+
+    $(function () {
+        var timer;
+
+        $(window).resize(function () {
+            clearTimeout(timer);
+            timer = setTimeout(function () {
+                $('.site-nav, .content').css("height", $(window).height());
+            }, 40);
+        }).resize();
+    });
+
+</script>
+
+</body>
+</html>

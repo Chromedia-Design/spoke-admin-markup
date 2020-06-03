@@ -1,1303 +1,2018 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Spoke Admin Portal</title>
-	<link rel="stylesheet" href="js/select2/css/select2.min.css">
-	<link rel="stylesheet" href="css/app.css">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spoke Admin Portal</title>
+  <link rel="stylesheet" href="js/select2/css/select2.min.css">
+  <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-	
-	<div class="expanded row medium-collapse">
-		<div class="medium-2 columns">
-			<div class="site-nav">
-				<header>
-					<a href="#" class="logo text-center">
-						<img src="img/logo.png" title="Spoke">
-					</a>
-				</header>
-				<ul class="menu vertical" data-accordion-menu>
-					<li class="">
-						<a href="/admin/">Dashboard</a>
-					</li>
-					<li class="is-active">
-						<a href="#">Medical Procedures</a>
-						<ul class="nested vertical menu ">
-							<li class="">
-								<a href="/admin/specializations">Specializations</a>
-							</li>
 
-							<li class="">
-								<a href="/admin/sub-specializations">Subspecializations</a>
-							</li>
-							<li class="">
-								<a href="/admin/treatments">Treatments</a>
-							</li>
-							<li class="is-active">
-								<a href="/admin/packages/index">Treatment Packages</a>
-							</li>
-							<li class="">
-								<a href="/admin/categories">Categories</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">Facilities</a>
-						<ul class="nested vertical menu ">
-							<li class="">
-								<a href="/admin/facilities">All Facilities</a>
-							</li>
-							<li class="">
-								<a href="/admin/facility-services">Ancillary Services</a>
-							</li>
-							<li class="">
-								<a href="/admin/awards">Awards</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">Doctors</a>
-						<ul class="nested vertical menu ">
-							<li class="">
-								<a href="/admin/doctors">All Doctors</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">Companies</a>
-						<ul class="nested vertical menu ">
-							<li class="">
-								<a href="/admin/clients">All Companies</a>
-							</li>
-						</ul>
-					</li>
+<div class="expanded row medium-collapse">
+  <div class="medium-2 columns">
+    <div class="site-nav">
+      <header>
+        <a href="#" class="logo text-center">
+          <img src="img/logo.png" title="Spoke">
+        </a>
+      </header>
+      <ul class="menu vertical" data-accordion-menu>
+        <li class="">
+          <a href="/admin/">Dashboard</a>
+        </li>
+        <li class="is-active">
+          <a href="#">Medical Procedures</a>
+          <ul class="nested vertical menu ">
+            <li class="">
+              <a href="/admin/specializations">Specializations</a>
+            </li>
 
-					<li>
-						<a href="#">Content</a>
-						<ul class="nested vertical menu">
-							<li>
-								<a href="#">Geo Data</a>
-								<ul class="geo-nav nested vertical menu ">
-									<li class="regions">
-										<a href="/admin/regions">World Regions</a>
-									</li>
+            <li class="">
+              <a href="/admin/sub-specializations">Subspecializations</a>
+            </li>
+            <li class="">
+              <a href="/admin/treatments">Treatments</a>
+            </li>
+            <li class="is-active">
+              <a href="/admin/packages/index">Treatment Packages</a>
+            </li>
+            <li class="">
+              <a href="/admin/categories">Categories</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Facilities</a>
+          <ul class="nested vertical menu ">
+            <li class="">
+              <a href="/admin/facilities">All Facilities</a>
+            </li>
+            <li class="">
+              <a href="/admin/facility-services">Ancillary Services</a>
+            </li>
+            <li class="">
+              <a href="/admin/awards">Awards</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Doctors</a>
+          <ul class="nested vertical menu ">
+            <li class="">
+              <a href="/admin/doctors">All Doctors</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Companies</a>
+          <ul class="nested vertical menu ">
+            <li class="">
+              <a href="/admin/clients">All Companies</a>
+            </li>
+          </ul>
+        </li>
 
-									<li class="countries">
-										<a href="/admin/countries">Countries</a>
-									</li>
+        <li>
+          <a href="#">Content</a>
+          <ul class="nested vertical menu">
+            <li>
+              <a href="#">Geo Data</a>
+              <ul class="geo-nav nested vertical menu ">
+                <li class="regions">
+                  <a href="/admin/regions">World Regions</a>
+                </li>
 
-									<li class="us-states">
-										<a href="/admin/states">US States</a>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Migrations</a>
-								
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">Users</a>
-						<ul class="nested vertical menu ">
-							<li class="">
-								<a href="/admin/users">Users</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="medium-10 columns">
-			<div class="content">
+                <li class="countries">
+                  <a href="/admin/countries">Countries</a>
+                </li>
 
-				<div class="top-bar">
-				  	<div class="top-bar-left">
-						<!-- <ul class="menu">
-				      		<li><input type="search" placeholder="Search"></li>
-				      		<li><button type="button" class="button">Search</button></li>
-			    		</ul> -->
-				  	</div>
-				  	<div class="top-bar-right">
-				    	<ul class="dropdown menu" data-dropdown-menu>
-				    		<li>
-				    			<a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">6</span></a>
-			    			</li>
-				      		<li>
-				        		<a href="#">Administrator</a>
-				        		<ul class="menu vertical">
-				          			<li><a href="#">One</a></li>
-				          			<li><a href="#">Two</a></li>
-				          			<li><a href="#">Three</a></li>
-				        		</ul>
-				      		</li>
-				    	</ul>
-				  	</div>
-				</div>
+                <li class="us-states">
+                  <a href="/admin/states">US States</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Migrations</a>
 
-				<div class="row">
-					<div class="medium-12 columns">
-						<nav aria-label="You are here:" role="navigation">
-						  	<ul class="breadcrumbs">
-						    	<li><a href="admin-packages.html">Packages</a></li>
-						    	<li>Molar Root Canal</li>
-						  	</ul>
-						</nav>
-						
-						<div class="page-lead">
-							<span class="h4">Molar Root Canal <a href="#" class="action-link subheader" data-open="editPackage"><i class="fa fa-pencil fa-fw"></i></a></span>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Users</a>
+          <ul class="nested vertical menu ">
+            <li class="">
+              <a href="/admin/users">Users</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="medium-10 columns">
+    <div class="content">
 
-							<div class="reveal" id="editPackage" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-				                <div class="row collapse">
-				                    <div class="large-12 columns">
-				                        <h5 class="reveal-heading">Edit Package</h5>
-				                    </div>
-				                </div>
-				                <form>
-				                	<div class="row collapse">
-				                		<div class="reveal-body">
-				                			<div class="row">
-						                        <div class="large-12 columns">
-						                            <label>
-						                                Package Name
-						                                <input type="text" value="Molar Root Canal">
-						                            </label>
-						                        </div>
-						                    </div>
-						                     <div class="row">
-						                        <div class="large-12 columns">
-						                            <label>
-						                                Package Description
-						                                <textarea>Root canal therapy is performed when the pulp which is composed of nerves and blood vessels in the tooth becomes infected or damaged. During root canal therapy, the pulp is removed, and the inside of the tooth is cleaned and sealed.</textarea>
-						                            </label>
-						                        </div>
-						                    </div>
-				                		</div>
-				                	</div>
-				                    
-				                    <div class="row collapse">
-				                        <div class="large-12 columns">
-				                        	<div class="reveal-footer">
-				                        		<div class="submit button-group pull-right">
-					                                <a class="button link" data-close>Cancel</a>
-					                                <button type="submit" class="button primary">Add Package</button>
-					                            </div>
-				                        	</div>
-				                        </div>
-				                    </div>
-				                </form>
-				                <button class="close-button" data-close aria-label="Close modal" type="button">
-				                    <span aria-hidden="true">&times;</span>
-				                </button>
-				            </div>
+      <div class="top-bar">
+        <div class="top-bar-left">
+          <!-- <ul class="menu">
+                <li><input type="search" placeholder="Search"></li>
+                <li><button type="button" class="button">Search</button></li>
+            </ul> -->
+        </div>
+        <div class="top-bar-right">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li>
+              <a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge"
+                                                                                                id="notifCount">6</span></a>
+            </li>
+            <li>
+              <a href="#">Administrator</a>
+              <ul class="menu vertical">
+                <li><a href="#">One</a></li>
+                <li><a href="#">Two</a></li>
+                <li><a href="#">Three</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-						</div>
+      <div class="row expanded">
+        <div class="auto columns">
+          <nav aria-label="You are here:" role="navigation">
+            <ul class="breadcrumbs">
+              <li><a href="#">Specializations</a></li>
+              <li><a href="#">Orthopedic</a></li>
+              <li><a href="#">Orthopedic Surgery</a></li>
+              <li><a href="#">Knee Surgery</a></li>
+              <li>Total Knee Replacement</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
 
-						<p class="mb-2">Root canal therapy is performed when the pulp which is composed of nerves and blood vessels in the tooth becomes infected or damaged. During root canal therapy, the pulp is removed, and the inside of the tooth is cleaned and sealed.</p>
+      <div class="page-lead row align-middle expanded">
+        <div class="medium-9 columns">
+          <span class="h5"><strong>Total Knee Replacement</strong></span>
+          <p class="subheader">
+            <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, quia quos provident nesciunt, omnis maiores sapiente atque minus hic, repudiandae facere. Natus soluta praesentium voluptate eos modi animi ipsum blanditiis minima vero, excepturi dignissimos atque saepe voluptatibus assumenda magni rerum eius alias, nemo porro qui rem voluptas error laudantium doloremque ratione. Enim, libero.</small>
+          </p>
+        </div>
+        <div class="columns">
+          <div class="button-group small pull-right">
+            <a href="#" class="button info rounded" data-open="editPackage"><i class="fa fa-edit"></i>&nbsp; Edit</a>
+          </div>
+        </div>
+      </div>
 
-						<ul class="tabs" data-tabs id="example-tabs">
-							<li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Package Components</a></li>
-							<li class="tabs-title"><a href="#panel2">Package Clinical Indicator Triggers</a></li>
-							<li class="tabs-title"><a href="#panel3">Baseline Prices</a></li>
-						</ul>
+      <div class="reveal" id="editPackage" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+        <div class="row collapse">
+          <div class="large-12 columns">
+            <h5 class="reveal-heading">Edit Package</h5>
+          </div>
+        </div>
+        <form>
+          <div class="row collapse">
+            <div class="auto columns">
+              <div class="reveal-body">
+                <div class="row">
+                  <div class="large-12 columns">
+                    <label>
+                      Package Name
+                      <input type="text" value="Molar Root Canal">
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-12 columns">
+                    <label>
+                      Package Description
+                      <textarea rows="5">Root canal therapy is performed when the pulp which is composed of nerves and blood vessels in the tooth becomes infected or damaged. During root canal therapy, the pulp is removed, and the inside of the tooth is cleaned and sealed.</textarea>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-						<div class="tabs-content" data-tabs-content="example-tabs">
-						  	<div class="tabs-panel is-active" id="panel1">
+          <div class="row collapse">
+            <div class="large-12 columns">
+              <div class="reveal-footer">
+                <div class="submit button-group pull-right">
+                  <a class="button link" data-close>Cancel</a>
+                  <button type="submit" class="button primary">Save Changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
 
-								<div class="page-lead">
-									<span class="h5">Categories (5)</span>
-									<a href="#" class="button success pull-right" data-open="addCategory">Add Category +</a>
+      <div class="row expanded">
+        <div class="auto columns">
 
-									<div class="reveal" id="addCategory" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-						                <div class="row collapse">
-						                    <div class="large-12 columns">
-						                        <h5 class="reveal-heading">Add Category</h5>
-						                    </div>
-						                </div>
-						                <form>
-						                	<div class="row collapse">
-						                		<div class="reveal-body">
-						                			<div class="row">
-								                        <div class="large-12 columns">
-								                            <label>
-								                                Category Name
-								                                <input type="text" value="Molar Root Canal">
-								                            </label>
-								                        </div>
-								                    </div>
-						                		</div>
-						                	</div>
-						                    
-						                    <div class="row collapse">
-						                        <div class="large-12 columns">
-						                        	<div class="reveal-footer">
-						                        		<div class="submit button-group pull-right">
-							                                <a class="button link" data-close>Cancel</a>
-							                                <button type="submit" class="button primary">Add Category</button>
-							                            </div>
-						                        	</div>
-						                        </div>
-						                    </div>
-						                </form>
-						                <button class="close-button" data-close aria-label="Close modal" type="button">
-						                    <span aria-hidden="true">&times;</span>
-						                </button>
-						            </div>
+          <ul class="tabs" data-tabs id="example-tabs">
+            <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Package Components</a></li>
+            <li class="tabs-title"><a href="#panel2">Indicator Triggers</a></li>
+            <li class="tabs-title"><a href="#panel3">Baseline Prices</a></li>
+            <li class="tabs-title"><a href="#panel4">Pre-Surgery Questionnaire</a></li>
+            <li class="tabs-title"><a href="#panel5">Clinical Pathways</a></li>
+          </ul>
 
-								</div>
-								
-								<div class="panel">
-									<ul class="well-list">
+          <div class="tabs-content" data-tabs-content="example-tabs">
 
-										<!-- Category Start -->
-										<li>
-											<div class="list-wrap">
-												<div class="list-item-name">
-													<a data-toggle="category1"><i class="fa fa-caret-down fa-fw"></i> Post Surgery</a>
-												</div>
-												<div class="list-detail">
-													<span>3/5 Required</span>
-												</div>
-												<div class="pull-right">
-													<!-- <button class="action-link dropdown" type="button" data-toggle="data-dropdown-1"><i class="fa fa-gear fa-fw"></i><i class="fa fa-caret-down fa-fw"></i></button>
-													<div class="dropdown-pane bottom" id="data-dropdown-1" data-dropdown data-auto-focus="true">
-													  	<h6 class="subheader">PACKAGE CONDITION</h6>
-													  	<form>
-													  		<div class="row expanded">
-													  			<div class="medium-12 columns">
-													  				<input name="package-condition" id="package-condition" type="radio" checked><label for="package-condition">Require ALL checked items.</label>
-													  			</div>
-													  		</div>
-													   		
-													   		<div class="row expanded">
-													  			<div class="medium-12 columns">
-													  				<input name="package-condition" id="checkbox1" type="radio">
-													  				<label for="package-condition">
-													  					Require at least
-													  					<select>
-													  						<option>1</option>
-													  						<option>2</option>
-													  						<option>3</option>
-													  					</select>
-													  					checked items.
-													  				</label>
-													  			</div>
-													  		</div>
-													  	</form>
-													</div> -->
-													<a href="#" class="action-link"><i class="fa fa-edit"></i></a>
-													<a href="#" class="action-link"><i class="fa fa-remove"></i></a>
-												</div>
-											</div>
-											<div id="category1" class="list-panel" data-toggler data-animate="fade-in fade-out">
+            <div class="tabs-panel is-active" id="panel1">
 
-												<ul class="well-list striped">
+              <div class=" page-lead row align-middle collapse expanded">
+                <div class="auto columns">
+                  <span class="h5">Categories</span>
+                  <span class="subheader"><small>5 Items</small></span>
+                </div>
+                <div class="auto-columns">
+                  <a class="button success hollow small rounded pull-right" data-open="addCategory"><i
+                    class="fa fa-plus"></i>&nbsp; Add Category</a>
 
-													<li class="headline">
-														<div class="list-wrap">
-															<div class="list-item-name">
-																<b>Component Name</b>
-															</div>
-															<div class="list-detail">
-																<b>Code</b>
-															</div>
-															<div class="pull-right">
-																<a href="#" class="button primary small" data-open="addComponent">Add Component +</a>
+                  <div class="reveal" id="addCategory" data-reveal data-animation-in="fade-in"
+                       data-animation-out="fade-out">
+                    <div class="row collapse">
+                      <div class="large-12 columns">
+                        <h5 class="reveal-heading">Add Category</h5>
+                      </div>
+                    </div>
+                    <form>
+                      <div class="row collapse">
+                        <div class="auto columns">
+                          <div class="reveal-body">
+                            <div class="row">
+                              <div class="large-12 columns">
+                                <label>
+                                  Category Name
+                                  <input type="text" value="Molar Root Canal">
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
 
-																<div class="reveal" id="addComponent" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-													                <div class="row collapse">
-													                    <div class="large-12 columns">
-													                        <h5 class="reveal-heading">Add Component</h5>
-													                    </div>
-													                </div>
-													                <form>
-													                	<div class="row collapse">
-													                		<div class="reveal-body">
-													                			<div class="row">
-															                        <div class="large-12 columns">
-															                            <label>
-															                                Component Name
-															                                <input type="text" value="Molar Root Canal">
-															                            </label>
-															                        </div>
-															                    </div>
-													                		</div>
-													                	</div>
-													                    
-													                    <div class="row collapse">
-													                        <div class="large-12 columns">
-													                        	<div class="reveal-footer">
-													                        		<div class="submit button-group pull-right">
-														                                <a class="button link" data-close>Cancel</a>
-														                                <button type="submit" class="button primary">Add Component</button>
-														                            </div>
-													                        	</div>
-													                        </div>
-													                    </div>
-													                </form>
-													                <button class="close-button" data-close aria-label="Close modal" type="button">
-													                    <span aria-hidden="true">&times;</span>
-													                </button>
-													            </div>
+                      <div class="row collapse">
+                        <div class="large-12 columns">
+                          <div class="reveal-footer">
+                            <div class="submit button-group pull-right">
+                              <a class="button link" data-close>Cancel</a>
+                              <button type="submit" class="button primary">Add Category</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                    <button class="close-button" data-close aria-label="Close modal" type="button">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
 
-															</div>
-														</div>
-													</li>
-													<li>
-														<div class="list-wrap">
-															<div class="list-item-name">
-																<input id="checkbox1" type="checkbox" checked><label for="checkbox1">4-Day Admission that is applicable to senior citizens and disabled persons.</label>
-															</div>
-															<div class="list-detail">
-																<span>005267</span>
-															</div>
-															<div class="pull-right">
-																<a href="#" class="action-link"><i class="fa fa-remove"></i></a>
-															</div>
-														</div>
-													</li>
-													<li>
-														<div class="list-wrap">
-															<div class="list-item-name">
-																<input id="checkbox1" type="checkbox" checked><label for="checkbox1">Room and Board</label>
-															</div>
-															<div class="list-detail">
-																<span>005267</span>
-															</div>
-															<div class="pull-right">
-																<a href="#" class="action-link"><i class="fa fa-remove"></i></a>
-															</div>
-														</div>
-													</li>
-													<li>
-														<div class="list-wrap">
-															<div class="list-item-name">
-																<input id="checkbox1" type="checkbox" checked><label for="checkbox1">Complete Blood Count</label>
-															</div>
-															<div class="list-detail">
-																<span>005267</span>
-															</div>
-															<div class="pull-right">
-																<a href="#" class="action-link"><i class="fa fa-remove"></i></a>
-															</div>
-														</div>
-													</li>
-													<li>
-														<div class="list-wrap">
-															<div class="list-item-name">
-																<input id="checkbox1" type="checkbox"><label for="checkbox1">Complete Urinalysis</label>
-															</div>
-															<div class="list-detail">
-																<span>005267</span>
-															</div>
-															<div class="pull-right">
-																<a href="#" class="action-link"><i class="fa fa-remove"></i></a>
-															</div>
-														</div>
-													</li>
-													<li>
-														<div class="list-wrap">
-															<div class="list-item-name">
-																<input id="checkbox1" type="checkbox"><label for="checkbox1">X-Ray</label>
-															</div>
-															<div class="list-detail">
-																<span>005267</span>
-															</div>
-															<div class="pull-right">
-																<a href="#" class="action-link"><i class="fa fa-remove"></i></a>
-															</div>
-														</div>
-													</li>
-												</ul>
+                </div>
+              </div>
 
-											</div>
-										</li> <!-- End of Category -->
+              <ul class="tabs combinational" data-tabs="true" id="secondary-tabs" role="158">
+                <li class="tabs-text"><span class="h6">1.</span></li>
+                <li class="tabs-text"><span class="h6">Surgeon</span></li>
+                <li class="tabs-title is-active" role="presentation">
+                  <a href="#components-1" role="tab" aria-controls="components-1" aria-selected="true"
+                     id="prices-158-label">Components&nbsp; <span class="badge success">5</span></a>
+                </li>
+                <li class="tabs-title" role="presentation"><a href="#staff-1" role="tab" aria-controls="scores-158"
+                                                              aria-selected="false" id="scores-158-label">Staff&nbsp;
+                  <span class="badge success">2</span></a></li>
+                <li class="tabs-option">
+                  <div class="button-align tiny pull-right mb-0">
+                    <a href="#" class="button circle hollow info"><i class="fa fa-edit"></i></a>
+                    <a href="#" class="button circle hollow info"><i class="fa fa-times"></i></a>
+                  </div>
+                </li>
+              </ul>
+              <div class="tabs-content mb-1" data-tabs-content="secondary-tabs">
+                <div class="tabs-panel is-active" id="components-1" role="tabpanel" aria-hidden="false"
+                     aria-labelledby="prices-158-label">
+                  <div class="page-lead row align-middle collapse">
+                    <div class="shrink columns">
+                      <span class="h6">Components</span>
+                      <span class="subheader"><small>5 Items</small></span>
+                    </div>
+                    <div class="columns">
+                      <a href="#" class="button small hollow rounded success mb-0 pull-right"
+                         data-open="addComponent"><i class="fa fa-plus"></i>&nbsp; Add Component</a>
 
-										<!-- Category Start -->
-										<li>
-											<div class="list-wrap">
-												<div class="list-item-name">
-													<a data-toggle="category2"><i class="fa fa-caret-down fa-fw"></i> Doctors/Surgeons</a>
-												</div>
-												<div class="list-detail">
-													<span></span>
-												</div>
-												<div class="pull-right">
-													<!-- <button class="action-link dropdown" type="button" data-toggle="data-dropdown-2"><i class="fa fa-gear fa-fw"></i><i class="fa fa-caret-down fa-fw"></i></button>
-													<div class="dropdown-pane bottom" id="data-dropdown-2" data-dropdown data-auto-focus="true">
-													  <h6 class="subheader">PACKAGE CONDITION</h6>
-													  	<form>
-													  		<div class="row expanded">
-													  			<div class="medium-12 columns">
-													  				<input name="package-condition" id="package-condition" type="radio" checked><label for="package-condition">Require ALL checked items.</label>
-													  			</div>
-													  		</div>
-													   		
-													   		<div class="row expanded">
-													  			<div class="medium-12 columns">
-													  				<input name="package-condition" id="checkbox1" type="radio">
-													  				<label for="package-condition">
-													  					Require at least
-													  					<select>
-													  						<option>1</option>
-													  						<option>2</option>
-													  						<option>3</option>
-													  					</select>
-													  					checked items.
-													  				</label>
-													  			</div>
-													  		</div>
-													  	</form>
-													</div> -->
-													<a href="#" class="action-link"><i class="fa fa-edit"></i></a>
-													<a href="#" class="action-link"><i class="fa fa-remove"></i></a>
-												</div>
-											</div>
-											<div id="category2" class="list-panel" data-toggler data-animate="fade-in fade-out">
+                      <div class="reveal" id="addComponent" data-reveal data-animation-in="fade-in"
+                           data-animation-out="fade-out">
+                        <div class="row collapse">
+                          <div class="large-12 columns">
+                            <h5 class="reveal-heading">Add Component</h5>
+                          </div>
+                        </div>
+                        <form>
+                          <div class="row collapse">
+                            <div class="columns">
+                              <div class="reveal-body">
+                                <div class="row">
+                                  <div class="large-12 columns">
+                                    <label>
+                                      Component Name
+                                      <input type="text" value="Molar Root Canal">
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row collapse">
+                            <div class="large-12 columns">
+                              <div class="reveal-footer">
+                                <div class="submit button-group pull-right">
+                                  <a class="button link" data-close>Cancel</a>
+                                  <button type="submit" class="button primary">Add Component</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                        <button class="close-button" data-close aria-label="Close modal" type="button">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <table class="thirds-spacing striped mb-0">
+                    <tbody>
+                    <tr>
+                      <td>
+                        <p class="mb-0">4-Day Admission that is applicable to senior citizens and disabled persons.</p>
+                      </td>
+                      <td>
+                        <div class="checkbox-wrapper align-middle">
+                          <input id="checkbox1" type="checkbox" class="mb-0" checked>
+                          <label for="checkbox1" class="mb-0">Make Required</label>
+                        </div>
+                      </td>
+                      <td>
+                        <span>005267</span>
+                      </td>
+                      <td>
+                        <div class="button-align tiny pull-right">
+                          <a href="#" class="button circle hollow info"><i class="fa fa-edit"></i></a>
+                          <a href="#" class="button circle hollow info"><i class="fa fa-times"></i></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="mb-0">Room and Board</p>
+                      </td>
+                      <td>
+                        <div class="checkbox-wrapper align-middle">
+                          <input id="checkbox1" type="checkbox" class="mb-0" checked>
+                          <label for="checkbox1" class="mb-0">Make Required</label>
+                        </div>
+                      </td>
+                      <td>
+                        <span>005267</span>
+                      </td>
+                      <td>
+                        <div class="button-align tiny pull-right">
+                          <a href="#" class="button circle hollow info"><i class="fa fa-edit"></i></a>
+                          <a href="#" class="button circle hollow info"><i class="fa fa-times"></i></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="mb-0">Complete Blood Count</p>
+                      </td>
+                      <td>
+                        <div class="checkbox-wrapper align-middle">
+                          <input id="checkbox1" type="checkbox" class="mb-0" checked>
+                          <label for="checkbox1" class="mb-0">Make Required</label>
+                        </div>
+                      </td>
+                      <td>
+                        <span>005267</span>
+                      </td>
+                      <td>
+                        <div class="button-align tiny pull-right">
+                          <a href="#" class="button circle hollow info"><i class="fa fa-edit"></i></a>
+                          <a href="#" class="button circle hollow info"><i class="fa fa-times"></i></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="mb-0">Complete Urinalysis</p>
+                      </td>
+                      <td>
+                        <div class="checkbox-wrapper align-middle">
+                          <input id="checkbox1" type="checkbox" class="mb-0" checked>
+                          <label for="checkbox1" class="mb-0">Make Required</label>
+                        </div>
+                      </td>
+                      <td>
+                        <span>005267</span>
+                      </td>
+                      <td>
+                        <div class="button-align tiny pull-right">
+                          <a href="#" class="button circle hollow info"><i class="fa fa-edit"></i></a>
+                          <a href="#" class="button circle hollow info"><i class="fa fa-times"></i></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="mb-0">X-Ray</p>
+                      </td>
+                      <td>
+                        <div class="checkbox-wrapper align-middle">
+                          <input id="checkbox1" type="checkbox" class="mb-0" checked>
+                          <label for="checkbox1" class="mb-0">Make Required</label>
+                        </div>
+                      </td>
+                      <td>
+                        <span>005267</span>
+                      </td>
+                      <td>
+                        <div class="button-align tiny pull-right">
+                          <a href="#" class="button circle hollow info"><i class="fa fa-edit"></i></a>
+                          <a href="#" class="button circle hollow info"><i class="fa fa-times"></i></a>
+                        </div>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
 
-												<ul class="well-list">
-													<li class="headline">
-														<div class="list-wrap">
-															<div class="list-item-name">
-																<b>Component Name</b>
-															</div>
-															<div class="list-detail">
-																<b>Code</b>
-															</div>
-															<div class="pull-right">
-																<a href="#" class="button primary small" data-open="addComponent">Add Component +</a>
+                <div class="tabs-panel " id="staff-1" role="tabpanel" aria-hidden="true"
+                     aria-labelledby="scores-158-label">
+                  <div class="tabs-panel is-active" id="prices-158" role="tabpanel" aria-hidden="false"
+                       aria-labelledby="prices-158-label">
+                    <div class="page-lead row align-middle collapse">
+                      <div class="shrink columns">
+                        <span class="h6">Staff</span>
+                        <span class="subheader"><small>2 Items</small></span>
+                      </div>
+                      <div class="columns">
+                        <a href="#" class="button small hollow rounded success mb-0 pull-right" data-open="addStaff"><i
+                          class="fa fa-plus"></i>&nbsp; Add Staff</a>
 
-																<div class="reveal" id="addComponent" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-													                <div class="row collapse">
-													                    <div class="large-12 columns">
-													                        <h5 class="reveal-heading">Add Component</h5>
-													                    </div>
-													                </div>
-													                <form>
-													                	<div class="row collapse">
-													                		<div class="reveal-body">
-													                			<div class="row">
-															                        <div class="large-12 columns">
-															                            <label>
-															                                Component Name
-															                                <input type="text" value="Molar Root Canal">
-															                            </label>
-															                        </div>
-															                    </div>
-													                		</div>
-													                	</div>
-													                    
-													                    <div class="row collapse">
-													                        <div class="large-12 columns">
-													                        	<div class="reveal-footer">
-													                        		<div class="submit button-group pull-right">
-														                                <a class="button link" data-close>Cancel</a>
-														                                <button type="submit" class="button primary">Add Component</button>
-														                            </div>
-													                        	</div>
-													                        </div>
-													                    </div>
-													                </form>
-													                <button class="close-button" data-close aria-label="Close modal" type="button">
-													                    <span aria-hidden="true">&times;</span>
-													                </button>
-													            </div>
+                        <div class="reveal" id="addStaff" data-reveal data-animation-in="fade-in"
+                             data-animation-out="fade-out">
+                          <div class="row collapse">
+                            <div class="large-12 columns">
+                              <h5 class="reveal-heading">Add Staff</h5>
+                            </div>
+                          </div>
+                          <form>
+                            <div class="row collapse">
+                              <div class="columns">
+                                <div class="reveal-body">
+                                  <div class="row">
+                                    <div class="large-12 columns">
+                                      <label>
+                                        Staff Type
+                                        <select name="" id=""></select>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row collapse">
+                              <div class="large-12 columns">
+                                <div class="reveal-footer">
+                                  <div class="submit button-group pull-right">
+                                    <a class="button link" data-close>Cancel</a>
+                                    <button type="submit" class="button primary">Add Staff</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                          <button class="close-button" data-close aria-label="Close modal" type="button">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <table class="base-spacing striped mb-0">
+                      <tbody>
+                      <tr>
+                        <td>
+                          <div class="media-object full-table mb-0 mt-0">
+                            <div class="media-object-section logo tiny middle">
+                              <div class="img-wrapper circle">
+                                <img src="img/avatar_placeholder.png" alt="">
+                              </div>
+                            </div>
+                            <div class="media-object-section middle">
+                              <p class="mb-0">Assistant Surgeon</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="checkbox-wrapper align-middle">
+                            <input id="checkbox1" type="checkbox" class="mb-0" checked>
+                            <label for="checkbox1" class="mb-0">Make Required</label>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="button-align tiny pull-right">
+                            <a href="#" class="button circle hollow info"><i class="fa fa-edit"></i></a>
+                            <a href="#" class="button circle hollow info"><i class="fa fa-times"></i></a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="media-object full-table mb-0 mt-0">
+                            <div class="media-object-section logo tiny middle">
+                              <div class="img-wrapper circle">
+                                <img src="img/avatar_placeholder.png" alt="">
+                              </div>
+                            </div>
+                            <div class="media-object-section middle">
+                              <p class="mb-0">Primary Surgeon</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="checkbox-wrapper align-middle">
+                            <input id="checkbox1" type="checkbox" class="mb-0" checked>
+                            <label for="checkbox1" class="mb-0">Make Required</label>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="button-align tiny pull-right">
+                            <a href="#" class="button circle hollow info"><i class="fa fa-edit"></i></a>
+                            <a href="#" class="button circle hollow info"><i class="fa fa-times"></i></a>
+                          </div>
+                        </td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
 
-															</div>
-														</div>
-													</li>
-													<li>
-														<div class="list-wrap">
-															<p>Add an item using the form above...</p>
-														</div>
-													</li>
-												</ul>
+              <ul class="tabs combinational" data-tabs="true" id="secondary-tabs" role="158">
+                <li class="tabs-text"><span class="h6">2.</span></li>
+                <li class="tabs-text"><span class="h6">Anaesthetics</span></li>
+                <li class="tabs-title is-active" role="presentation">
+                  <a href="#components-2" role="tab" aria-controls="components-2" aria-selected="true"
+                     id="prices-158-label">Components&nbsp; <span class="badge success">5</span></a>
+                </li>
+                <li class="tabs-title" role="presentation"><a href="#staff-2" role="tab" aria-controls="scores-158"
+                                                              aria-selected="false" id="scores-158-label">Staff&nbsp;
+                  <span class="badge success">2</span></a></li>
+                <li class="tabs-option">
+                  <div class="button-align tiny pull-right mb-0">
+                    <a href="#" class="button circle hollow info"><i class="fa fa-edit"></i></a>
+                    <a href="#" class="button circle hollow info"><i class="fa fa-times"></i></a>
+                  </div>
+                </li>
+              </ul>
+              <div class="tabs-content mb-1" data-tabs-content="secondary-tabs">
+                <div class="tabs-panel is-active" id="components-2" role="tabpanel" aria-hidden="false"
+                     aria-labelledby="prices-158-label">
+                  <div class="page-lead row align-middle collapse">
+                    <div class="shrink columns">
+                      <span class="h6">Components</span>
+                      <span class="subheader"><small>5 Items</small></span>
+                    </div>
+                    <div class="columns">
+                      <a href="#" class="button small hollow rounded success mb-0 pull-right"
+                         data-open="addComponent"><i class="fa fa-plus"></i>&nbsp; Add Component</a>
 
-											</div>
-										</li> <!-- End of Category -->
+                      <div class="reveal" id="addComponent" data-reveal data-animation-in="fade-in"
+                           data-animation-out="fade-out">
+                        <div class="row collapse">
+                          <div class="large-12 columns">
+                            <h5 class="reveal-heading">Add Component</h5>
+                          </div>
+                        </div>
+                        <form>
+                          <div class="row collapse">
+                            <div class="columns">
+                              <div class="reveal-body">
+                                <div class="row">
+                                  <div class="large-12 columns">
+                                    <label>
+                                      Component Name
+                                      <input type="text" value="Molar Root Canal">
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row collapse">
+                            <div class="large-12 columns">
+                              <div class="reveal-footer">
+                                <div class="submit button-group pull-right">
+                                  <a class="button link" data-close>Cancel</a>
+                                  <button type="submit" class="button primary">Add Component</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                        <button class="close-button" data-close aria-label="Close modal" type="button">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <table class="thirds-spacing striped mb-0">
+                    <tbody>
+                    <tr>
+                      <td>
+                        <p class="mb-0">4-Day Admission that is applicable to senior citizens and disabled persons.</p>
+                      </td>
+                      <td>
+                        <div class="checkbox-wrapper align-middle">
+                          <input id="checkbox1" type="checkbox" class="mb-0" checked>
+                          <label for="checkbox1" class="mb-0">Make Required</label>
+                        </div>
+                      </td>
+                      <td>
+                        <span>005267</span>
+                      </td>
+                      <td>
+                        <div class="button-align tiny pull-right">
+                          <a href="#" class="button circle hollow info"><i class="fa fa-edit"></i></a>
+                          <a href="#" class="button circle hollow info"><i class="fa fa-times"></i></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="mb-0">Room and Board</p>
+                      </td>
+                      <td>
+                        <div class="checkbox-wrapper align-middle">
+                          <input id="checkbox1" type="checkbox" class="mb-0" checked>
+                          <label for="checkbox1" class="mb-0">Make Required</label>
+                        </div>
+                      </td>
+                      <td>
+                        <span>005267</span>
+                      </td>
+                      <td>
+                        <div class="button-align tiny pull-right">
+                          <a href="#" class="button circle hollow info"><i class="fa fa-edit"></i></a>
+                          <a href="#" class="button circle hollow info"><i class="fa fa-times"></i></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="mb-0">Complete Blood Count</p>
+                      </td>
+                      <td>
+                        <div class="checkbox-wrapper align-middle">
+                          <input id="checkbox1" type="checkbox" class="mb-0" checked>
+                          <label for="checkbox1" class="mb-0">Make Required</label>
+                        </div>
+                      </td>
+                      <td>
+                        <span>005267</span>
+                      </td>
+                      <td>
+                        <div class="button-align tiny pull-right">
+                          <a href="#" class="button circle hollow info"><i class="fa fa-edit"></i></a>
+                          <a href="#" class="button circle hollow info"><i class="fa fa-times"></i></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="mb-0">Complete Urinalysis</p>
+                      </td>
+                      <td>
+                        <div class="checkbox-wrapper align-middle">
+                          <input id="checkbox1" type="checkbox" class="mb-0" checked>
+                          <label for="checkbox1" class="mb-0">Make Required</label>
+                        </div>
+                      </td>
+                      <td>
+                        <span>005267</span>
+                      </td>
+                      <td>
+                        <div class="button-align tiny pull-right">
+                          <a href="#" class="button circle hollow info"><i class="fa fa-edit"></i></a>
+                          <a href="#" class="button circle hollow info"><i class="fa fa-times"></i></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="mb-0">X-Ray</p>
+                      </td>
+                      <td>
+                        <div class="checkbox-wrapper align-middle">
+                          <input id="checkbox1" type="checkbox" class="mb-0" checked>
+                          <label for="checkbox1" class="mb-0">Make Required</label>
+                        </div>
+                      </td>
+                      <td>
+                        <span>005267</span>
+                      </td>
+                      <td>
+                        <div class="button-align tiny pull-right">
+                          <a href="#" class="button circle hollow info"><i class="fa fa-edit"></i></a>
+                          <a href="#" class="button circle hollow info"><i class="fa fa-times"></i></a>
+                        </div>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
 
-										<!-- Category Start -->
-										<li>
-											<div class="list-wrap">
-												<div class="list-item-name">
-													<a data-toggle="category3"><i class="fa fa-caret-down fa-fw"></i> Anesthesiology</a>
-												</div>
-												<div class="list-detail">
-													<span></span>
-												</div>
-												<div class="pull-right">
-													<!-- <button class="action-link dropdown" type="button" data-toggle="data-dropdown-3"><i class="fa fa-gear fa-fw"></i><i class="fa fa-caret-down fa-fw"></i></button>
-													<div class="dropdown-pane bottom" id="data-dropdown-3" data-dropdown data-auto-focus="true">
-													  <h6 class="subheader">PACKAGE CONDITION</h6>
-													  	<form>
-													  		<div class="row expanded">
-													  			<div class="medium-12 columns">
-													  				<input name="package-condition" id="package-condition" type="radio" checked><label for="package-condition">Require ALL checked items.</label>
-													  			</div>
-													  		</div>
-													   		
-													   		<div class="row expanded">
-													  			<div class="medium-12 columns">
-													  				<input name="package-condition" id="checkbox1" type="radio">
-													  				<label for="package-condition">
-													  					Require at least
-													  					<select>
-													  						<option>1</option>
-													  						<option>2</option>
-													  						<option>3</option>
-													  					</select>
-													  					checked items.
-													  				</label>
-													  			</div>
-													  		</div>
-													  	</form>
-													</div> -->
-													<a href="#" class="action-link"><i class="fa fa-edit"></i></a>
-													<a href="#" class="action-link"><i class="fa fa-remove"></i></a>
-												</div>
-											</div>
-											<div id="category3" class="list-panel" data-toggler data-animate="fade-in fade-out">
+                <div class="tabs-panel " id="staff-2" role="tabpanel" aria-hidden="true"
+                     aria-labelledby="scores-158-label">
+                  <div class="tabs-panel is-active" id="prices-158" role="tabpanel" aria-hidden="false"
+                       aria-labelledby="prices-158-label">
+                    <div class="page-lead row align-middle collapse">
+                      <div class="shrink columns">
+                        <span class="h6">Staff</span>
+                        <span class="subheader"><small>2 Items</small></span>
+                      </div>
+                      <div class="columns">
+                        <a href="#" class="button small hollow rounded success mb-0 pull-right" data-open="addStaff"><i
+                          class="fa fa-plus"></i>&nbsp; Add Staff</a>
 
-												<ul class="well-list">
-													<li class="headline">
-														<div class="list-wrap">
-															<div class="list-item-name">
-																<b>Component Name</b>
-															</div>
-															<div class="list-detail">
-																<b>Code</b>
-															</div>
-															<div class="pull-right">
-																<a href="#" class="button primary small" data-open="addComponent">Add Component +</a>
+                        <div class="reveal" id="addStaff" data-reveal data-animation-in="fade-in"
+                             data-animation-out="fade-out">
+                          <div class="row collapse">
+                            <div class="large-12 columns">
+                              <h5 class="reveal-heading">Add Staff</h5>
+                            </div>
+                          </div>
+                          <form>
+                            <div class="row collapse">
+                              <div class="columns">
+                                <div class="reveal-body">
+                                  <div class="row">
+                                    <div class="large-12 columns">
+                                      <label>
+                                        Staff Type
+                                        <select name="" id=""></select>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row collapse">
+                              <div class="large-12 columns">
+                                <div class="reveal-footer">
+                                  <div class="submit button-group pull-right">
+                                    <a class="button link" data-close>Cancel</a>
+                                    <button type="submit" class="button primary">Add Staff</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                          <button class="close-button" data-close aria-label="Close modal" type="button">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <table class="base-spacing striped mb-0">
+                      <tbody>
+                      <tr>
+                        <td>
+                          <div class="media-object full-table mb-0 mt-0">
+                            <div class="media-object-section logo tiny middle">
+                              <div class="img-wrapper circle">
+                                <img src="img/avatar_placeholder.png" alt="">
+                              </div>
+                            </div>
+                            <div class="media-object-section middle">
+                              <p class="mb-0">Assistant Surgeon</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="checkbox-wrapper align-middle">
+                            <input id="checkbox1" type="checkbox" class="mb-0" checked>
+                            <label for="checkbox1" class="mb-0">Make Required</label>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="button-align tiny pull-right">
+                            <a href="#" class="button circle hollow info"><i class="fa fa-edit"></i></a>
+                            <a href="#" class="button circle hollow info"><i class="fa fa-times"></i></a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="media-object full-table mb-0 mt-0">
+                            <div class="media-object-section logo tiny middle">
+                              <div class="img-wrapper circle">
+                                <img src="img/avatar_placeholder.png" alt="">
+                              </div>
+                            </div>
+                            <div class="media-object-section middle">
+                              <p class="mb-0">Primary Surgeon</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="checkbox-wrapper align-middle">
+                            <input id="checkbox1" type="checkbox" class="mb-0" checked>
+                            <label for="checkbox1" class="mb-0">Make Required</label>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="button-align tiny pull-right">
+                            <a href="#" class="button circle hollow info"><i class="fa fa-edit"></i></a>
+                            <a href="#" class="button circle hollow info"><i class="fa fa-times"></i></a>
+                          </div>
+                        </td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
 
-																<div class="reveal" id="addComponent" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-													                <div class="row collapse">
-													                    <div class="large-12 columns">
-													                        <h5 class="reveal-heading">Add Component</h5>
-													                    </div>
-													                </div>
-													                <form>
-													                	<div class="row collapse">
-													                		<div class="reveal-body">
-													                			<div class="row">
-															                        <div class="large-12 columns">
-															                            <label>
-															                                Component Name
-															                                <input type="text" value="Molar Root Canal">
-															                            </label>
-															                        </div>
-															                    </div>
-													                		</div>
-													                	</div>
-													                    
-													                    <div class="row collapse">
-													                        <div class="large-12 columns">
-													                        	<div class="reveal-footer">
-													                        		<div class="submit button-group pull-right">
-														                                <a class="button link" data-close>Cancel</a>
-														                                <button type="submit" class="button primary">Add Component</button>
-														                            </div>
-													                        	</div>
-													                        </div>
-													                    </div>
-													                </form>
-													                <button class="close-button" data-close aria-label="Close modal" type="button">
-													                    <span aria-hidden="true">&times;</span>
-													                </button>
-													            </div>
+              <ul class="tabs combinational" data-tabs="true" id="secondary-tabs" role="158">
+                <li class="tabs-text"><span class="h6">3.</span></li>
+                <li class="tabs-text"><span class="h6">Post Surgery</span></li>
+                <li class="tabs-title is-active" role="presentation">
+                  <a href="#components-3" role="tab" aria-controls="prices-158" aria-selected="true"
+                     id="prices-158-label">Components&nbsp; <span class="badge success">5</span></a>
+                </li>
+                <li class="tabs-title" role="presentation"><a href="#staff-3" role="tab" aria-controls="scores-158"
+                                                              aria-selected="false" id="scores-158-label">Staff&nbsp;
+                  <span class="badge success">2</span></a></li>
+                <li class="tabs-option">
+                  <div class="button-align tiny pull-right mb-0">
+                    <a href="#" class="button circle hollow info"><i class="fa fa-edit"></i></a>
+                    <a href="#" class="button circle hollow info"><i class="fa fa-times"></i></a>
+                  </div>
+                </li>
+              </ul>
+              <div class="tabs-content mb-1" data-tabs-content="secondary-tabs">
+                <div class="tabs-panel is-active" id="components-3" role="tabpanel" aria-hidden="false"
+                     aria-labelledby="prices-158-label">
+                  <div class="page-lead row align-middle collapse">
+                    <div class="shrink columns">
+                      <span class="h6">Components</span>
+                      <span class="subheader"><small>5 Items</small></span>
+                    </div>
+                    <div class="columns">
+                      <a href="#" class="button small hollow rounded success mb-0 pull-right"
+                         data-open="addComponent"><i class="fa fa-plus"></i>&nbsp; Add Component</a>
 
-															</div>
-														</div>
-													</li>
-													<li>
-														<div class="list-wrap">
-															<p>Add an item using the form above...</p>
-														</div>
-													</li>
-												</ul>
+                      <div class="reveal" id="addComponent" data-reveal data-animation-in="fade-in"
+                           data-animation-out="fade-out">
+                        <div class="row collapse">
+                          <div class="large-12 columns">
+                            <h5 class="reveal-heading">Add Component</h5>
+                          </div>
+                        </div>
+                        <form>
+                          <div class="row collapse">
+                            <div class="columns">
+                              <div class="reveal-body">
+                                <div class="row">
+                                  <div class="large-12 columns">
+                                    <label>
+                                      Component Name
+                                      <input type="text" value="Molar Root Canal">
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row collapse">
+                            <div class="large-12 columns">
+                              <div class="reveal-footer">
+                                <div class="submit button-group pull-right">
+                                  <a class="button link" data-close>Cancel</a>
+                                  <button type="submit" class="button primary">Add Component</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                        <button class="close-button" data-close aria-label="Close modal" type="button">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <table class="thirds-spacing striped mb-0">
+                    <tbody>
+                    <tr>
+                      <td>
+                        <p class="mb-0">4-Day Admission that is applicable to senior citizens and disabled persons.</p>
+                      </td>
+                      <td>
+                        <div class="checkbox-wrapper align-middle">
+                          <input id="checkbox1" type="checkbox" class="mb-0" checked>
+                          <label for="checkbox1" class="mb-0">Make Required</label>
+                        </div>
+                      </td>
+                      <td>
+                        <span>005267</span>
+                      </td>
+                      <td>
+                        <div class="button-align tiny pull-right">
+                          <a href="#" class="button circle hollow info"><i class="fa fa-edit"></i></a>
+                          <a href="#" class="button circle hollow info"><i class="fa fa-times"></i></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="mb-0">Room and Board</p>
+                      </td>
+                      <td>
+                        <div class="checkbox-wrapper align-middle">
+                          <input id="checkbox1" type="checkbox" class="mb-0" checked>
+                          <label for="checkbox1" class="mb-0">Make Required</label>
+                        </div>
+                      </td>
+                      <td>
+                        <span>005267</span>
+                      </td>
+                      <td>
+                        <div class="button-align tiny pull-right">
+                          <a href="#" class="button circle hollow info"><i class="fa fa-edit"></i></a>
+                          <a href="#" class="button circle hollow info"><i class="fa fa-times"></i></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="mb-0">Complete Blood Count</p>
+                      </td>
+                      <td>
+                        <div class="checkbox-wrapper align-middle">
+                          <input id="checkbox1" type="checkbox" class="mb-0" checked>
+                          <label for="checkbox1" class="mb-0">Make Required</label>
+                        </div>
+                      </td>
+                      <td>
+                        <span>005267</span>
+                      </td>
+                      <td>
+                        <div class="button-align tiny pull-right">
+                          <a href="#" class="button circle hollow info"><i class="fa fa-edit"></i></a>
+                          <a href="#" class="button circle hollow info"><i class="fa fa-times"></i></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="mb-0">Complete Urinalysis</p>
+                      </td>
+                      <td>
+                        <div class="checkbox-wrapper align-middle">
+                          <input id="checkbox1" type="checkbox" class="mb-0" checked>
+                          <label for="checkbox1" class="mb-0">Make Required</label>
+                        </div>
+                      </td>
+                      <td>
+                        <span>005267</span>
+                      </td>
+                      <td>
+                        <div class="button-align tiny pull-right">
+                          <a href="#" class="button circle hollow info"><i class="fa fa-edit"></i></a>
+                          <a href="#" class="button circle hollow info"><i class="fa fa-times"></i></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="mb-0">X-Ray</p>
+                      </td>
+                      <td>
+                        <div class="checkbox-wrapper align-middle">
+                          <input id="checkbox1" type="checkbox" class="mb-0" checked>
+                          <label for="checkbox1" class="mb-0">Make Required</label>
+                        </div>
+                      </td>
+                      <td>
+                        <span>005267</span>
+                      </td>
+                      <td>
+                        <div class="button-align tiny pull-right">
+                          <a href="#" class="button circle hollow info"><i class="fa fa-edit"></i></a>
+                          <a href="#" class="button circle hollow info"><i class="fa fa-times"></i></a>
+                        </div>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
 
-											</div>
-										</li> <!-- End of Category -->
+                <div class="tabs-panel " id="staff-3" role="tabpanel" aria-hidden="true"
+                     aria-labelledby="scores-158-label">
+                  <div class="tabs-panel is-active" id="prices-158" role="tabpanel" aria-hidden="false"
+                       aria-labelledby="prices-158-label">
+                    <div class="page-lead row align-middle collapse">
+                      <div class="shrink columns">
+                        <span class="h6">Staff</span>
+                        <span class="subheader"><small>2 Items</small></span>
+                      </div>
+                      <div class="columns">
+                        <a href="#" class="button small hollow rounded success mb-0 pull-right" data-open="addStaff"><i
+                          class="fa fa-plus"></i>&nbsp; Add Staff</a>
 
-										<!-- Category Start -->
-										<li>
-											<div class="list-wrap">
-												<div class="list-item-name">
-													<a data-toggle="category4"><i class="fa fa-caret-down fa-fw"></i> Post Operation</a>
-												</div>
-												<div class="list-detail">
-													<span></span>
-												</div>
-												<div class="pull-right">
-													<!-- <button class="action-link dropdown" type="button" data-toggle="data-dropdown-4"><i class="fa fa-gear fa-fw"></i><i class="fa fa-caret-down fa-fw"></i></button>
-													<div class="dropdown-pane bottom" id="data-dropdown-4" data-dropdown data-auto-focus="true">
-													  <h6 class="subheader">PACKAGE CONDITION</h6>
-													  	<form>
-													  		<div class="row expanded">
-													  			<div class="medium-12 columns">
-													  				<input name="package-condition" id="package-condition" type="radio" checked><label for="package-condition">Require ALL checked items.</label>
-													  			</div>
-													  		</div>
-													   		
-													   		<div class="row expanded">
-													  			<div class="medium-12 columns">
-													  				<input name="package-condition" id="checkbox1" type="radio">
-													  				<label for="package-condition">
-													  					Require at least
-													  					<select>
-													  						<option>1</option>
-													  						<option>2</option>
-													  						<option>3</option>
-													  					</select>
-													  					checked items.
-													  				</label>
-													  			</div>
-													  		</div>
-													  	</form>
-													</div> -->
-													<a href="#" class="action-link"><i class="fa fa-edit"></i></a>
-													<a href="#" class="action-link"><i class="fa fa-remove"></i></a>
-												</div>
-											</div>
-											<div id="category4" class="list-panel" data-toggler data-animate="fade-in fade-out">
+                        <div class="reveal" id="addStaff" data-reveal data-animation-in="fade-in"
+                             data-animation-out="fade-out">
+                          <div class="row collapse">
+                            <div class="large-12 columns">
+                              <h5 class="reveal-heading">Add Staff</h5>
+                            </div>
+                          </div>
+                          <form>
+                            <div class="row collapse">
+                              <div class="columns">
+                                <div class="reveal-body">
+                                  <div class="row">
+                                    <div class="large-12 columns">
+                                      <label>
+                                        Staff Type
+                                        <select name="" id=""></select>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row collapse">
+                              <div class="large-12 columns">
+                                <div class="reveal-footer">
+                                  <div class="submit button-group pull-right">
+                                    <a class="button link" data-close>Cancel</a>
+                                    <button type="submit" class="button primary">Add Staff</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                          <button class="close-button" data-close aria-label="Close modal" type="button">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <table class="base-spacing striped mb-0">
+                      <tbody>
+                      <tr>
+                        <td>
+                          <div class="media-object full-table mb-0 mt-0">
+                            <div class="media-object-section logo tiny middle">
+                              <div class="img-wrapper circle">
+                                <img src="img/avatar_placeholder.png" alt="">
+                              </div>
+                            </div>
+                            <div class="media-object-section middle">
+                              <p class="mb-0">Assistant Surgeon</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="checkbox-wrapper align-middle">
+                            <input id="checkbox1" type="checkbox" class="mb-0" checked>
+                            <label for="checkbox1" class="mb-0">Make Required</label>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="button-align tiny pull-right">
+                            <a href="#" class="button circle hollow info"><i class="fa fa-edit"></i></a>
+                            <a href="#" class="button circle hollow info"><i class="fa fa-times"></i></a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="media-object full-table mb-0 mt-0">
+                            <div class="media-object-section logo tiny middle">
+                              <div class="img-wrapper circle">
+                                <img src="img/avatar_placeholder.png" alt="">
+                              </div>
+                            </div>
+                            <div class="media-object-section middle">
+                              <p class="mb-0">Primary Surgeon</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="checkbox-wrapper align-middle">
+                            <input id="checkbox1" type="checkbox" class="mb-0" checked>
+                            <label for="checkbox1" class="mb-0">Make Required</label>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="button-align tiny pull-right">
+                            <a href="#" class="button circle hollow info"><i class="fa fa-edit"></i></a>
+                            <a href="#" class="button circle hollow info"><i class="fa fa-times"></i></a>
+                          </div>
+                        </td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
 
-												<ul class="well-list">
-													<li class="headline">
-														<div class="list-wrap">
-															<div class="list-item-name">
-																<b>Component Name</b>
-															</div>
-															<div class="list-detail">
-																<b>Code</b>
-															</div>
-															<div class="pull-right">
-																<a href="#" class="button primary small" data-open="addComponent">Add Component +</a>
+            </div> <!-- End of tab panel 1 -->
 
-																<div class="reveal" id="addComponent" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-													                <div class="row collapse">
-													                    <div class="large-12 columns">
-													                        <h5 class="reveal-heading">Add Component</h5>
-													                    </div>
-													                </div>
-													                <form>
-													                	<div class="row collapse">
-													                		<div class="reveal-body">
-													                			<div class="row">
-															                        <div class="large-12 columns">
-															                            <label>
-															                                Component Name
-															                                <input type="text" value="Molar Root Canal">
-															                            </label>
-															                        </div>
-															                    </div>
-													                		</div>
-													                	</div>
-													                    
-													                    <div class="row collapse">
-													                        <div class="large-12 columns">
-													                        	<div class="reveal-footer">
-													                        		<div class="submit button-group pull-right">
-														                                <a class="button link" data-close>Cancel</a>
-														                                <button type="submit" class="button primary">Add Component</button>
-														                            </div>
-													                        	</div>
-													                        </div>
-													                    </div>
-													                </form>
-													                <button class="close-button" data-close aria-label="Close modal" type="button">
-													                    <span aria-hidden="true">&times;</span>
-													                </button>
-													            </div>
+            <div class="tabs-panel" id="panel2">
 
-															</div>
-														</div>
-													</li>
-													<li>
-														<div class="list-wrap">
-															<p>Add an item using the form above...</p>
-														</div>
-													</li>
-												</ul>
+              <div class="row expanded">
+                <div class="large-12 columns">
 
-											</div>
-										</li> <!-- End of Category -->
+                  <div class="page-lead row align-middle collapse">
+                    <div class="shrink columns">
+                      <span class="h5">Qualifying Diagnosis <span>(10)</span></span>
+                    </div>
+                    <div class="columns">
+                      <a class="button success hollow small rounded pull-right" href="#" data-open="addTrigger">+ Add
+                        Qualifying Diagnosis</a>
 
-										<!-- Category Start -->
-										<li>
-											<div class="list-wrap">
-												<div class="list-item-name">
-													<a data-toggle="category5"><i class="fa fa-caret-down fa-fw"></i> Physical Therapy</a>
-												</div>
-												<div class="list-detail">
-													<span></span>
-												</div>
-												<div class="pull-right">
-													<!-- <button class="action-link dropdown" type="button" data-toggle="data-dropdown-5"><i class="fa fa-gear fa-fw"></i><i class="fa fa-caret-down fa-fw"></i></button>
-													<div class="dropdown-pane bottom" id="data-dropdown-5" data-dropdown data-auto-focus="true">
-													  <h6 class="subheader">PACKAGE CONDITION</h6>
-													  	<form>
-													  		<div class="row expanded">
-													  			<div class="medium-12 columns">
-													  				<input name="package-condition" id="package-condition" type="radio" checked><label for="package-condition">Require ALL checked items.</label>
-													  			</div>
-													  		</div>
-													   		
-													   		<div class="row expanded">
-													  			<div class="medium-12 columns">
-													  				<input name="package-condition" id="checkbox1" type="radio">
-													  				<label for="package-condition">
-													  					Require at least
-													  					<select>
-													  						<option>1</option>
-													  						<option>2</option>
-													  						<option>3</option>
-													  					</select>
-													  					checked items.
-													  				</label>
-													  			</div>
-													  		</div>
-													  	</form>
-													</div> -->
-													<a href="#" class="action-link"><i class="fa fa-edit"></i></a>
-													<a href="#" class="action-link"><i class="fa fa-remove"></i></a>
-												</div>
-											</div>
-											<div id="category5" class="list-panel" data-toggler data-animate="fade-in fade-out">
+                      <div class="reveal" id="addTrigger" data-reveal data-animation-in="fade-in"
+                           data-animation-out="fade-out">
+                        <div class="row collapse">
+                          <div class="large-12 columns">
+                            <h5 class="reveal-heading">Add Add Qualifying Diagnosis</h5>
+                          </div>
+                        </div>
+                        <form>
+                          <div class="reveal-body">
+                            <div class="row collapse">
+                              <div class="large-12 columns">
+                                <label>
+                                  Search Code/Descriptor
+                                  <select>
+                                    <option disabled></option>
+                                  </select>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
 
-												<ul class="well-list">
-													<li class="headline">
-														<div class="list-wrap">
-															<div class="list-item-name">
-																<b>Component Name</b>
-															</div>
-															<div class="list-detail">
-																<b>Code</b>
-															</div>
-															<div class="pull-right">
-																<a href="#" class="button primary small" data-open="addComponent">Add Component +</a>
+                          <div class="reveal-footer">
+                            <div class="row collapse">
+                              <div class="medium-12 columns">
+                                <div class="submit button-group pull-right">
+                                  <a class="button link" data-close>Cancel</a>
+                                  <button type="submit" class="button primary">Add Trigger</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                        <button class="close-button" data-close aria-label="Close modal" type="button">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
 
-																<div class="reveal" id="addComponent" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-													                <div class="row collapse">
-													                    <div class="large-12 columns">
-													                        <h5 class="reveal-heading">Add Component</h5>
-													                    </div>
-													                </div>
-													                <form>
-													                	<div class="row collapse">
-													                		<div class="reveal-body">
-													                			<div class="row">
-															                        <div class="large-12 columns">
-															                            <label>
-															                                Component Name
-															                                <input type="text" value="Molar Root Canal">
-															                            </label>
-															                        </div>
-															                    </div>
-													                		</div>
-													                	</div>
-													                    
-													                    <div class="row collapse">
-													                        <div class="large-12 columns">
-													                        	<div class="reveal-footer">
-													                        		<div class="submit button-group pull-right">
-														                                <a class="button link" data-close>Cancel</a>
-														                                <button type="submit" class="button primary">Add Component</button>
-														                            </div>
-													                        	</div>
-													                        </div>
-													                    </div>
-													                </form>
-													                <button class="close-button" data-close aria-label="Close modal" type="button">
-													                    <span aria-hidden="true">&times;</span>
-													                </button>
-													            </div>
+                    </div>
+                  </div>
 
-															</div>
-														</div>
-													</li>
-													<li>
-														<div class="list-wrap">
-															<p>Add an item using the form above...</p>
-														</div>
-													</li>
-												</ul>
+                  <div class="row">
+                    <div class="columns">
+                      <table>
+                        <thead>
+                        <th>Code</th>
+                        <th>Descriptor</th>
+                        <th></th>
+                        </thead>
+                        <tbody>
+                        <tr>
+                          <td>0089</td>
+                          <td>This is a description of this code</td>
+                          <td>
+                            <div class="pull-right">
+                              <a class="action-link"><i class="fa fa-remove"></i></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>0089</td>
+                          <td>This is a description of this code</td>
+                          <td>
+                            <div class="pull-right">
+                              <a class="action-link"><i class="fa fa-remove"></i></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>0089</td>
+                          <td>This is a description of this code</td>
+                          <td>
+                            <div class="pull-right">
+                              <a class="action-link"><i class="fa fa-remove"></i></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>0089</td>
+                          <td>This is a description of this code</td>
+                          <td>
+                            <div class="pull-right">
+                              <a class="action-link"><i class="fa fa-remove"></i></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>0089</td>
+                          <td>This is a description of this code</td>
+                          <td>
+                            <div class="pull-right">
+                              <a class="action-link"><i class="fa fa-remove"></i></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>0089</td>
+                          <td>This is a description of this code</td>
+                          <td>
+                            <div class="pull-right">
+                              <a class="action-link"><i class="fa fa-remove"></i></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>0089</td>
+                          <td>This is a description of this code</td>
+                          <td>
+                            <div class="pull-right">
+                              <a class="action-link"><i class="fa fa-remove"></i></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>0089</td>
+                          <td>This is a description of this code</td>
+                          <td>
+                            <div class="pull-right">
+                              <a class="action-link"><i class="fa fa-remove"></i></a>
+                            </div>
+                          </td>
+                        </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-											</div>
-										</li> <!-- End of Category -->
+              <div class="row">
+                <div class="large-12 columns">
 
-									</ul>
-								</div>
-						  	</div> <!-- End of tab panel 1 -->
+                  <div class="page-lead row align-middle collapse">
+                    <div class="shrink columns">
+                      <span class="h5">Triggers <span>(10)</span></span>
+                    </div>
+                    <div class="columns">
+                      <a class="button success hollow small rounded pull-right" href="#" data-open="addTrigger">+ Add
+                        Trigger</a>
 
-						  	<div class="tabs-panel" id="panel2">
+                      <div class="reveal" id="addTrigger" data-reveal data-animation-in="fade-in"
+                           data-animation-out="fade-out">
+                        <div class="row">
+                          <div class="large-12 columns">
+                            <h5 class="reveal-heading">Add Clinical Indicator Trigger</h5>
+                          </div>
+                        </div>
+                        <form>
+                          <div class="row">
+                            <div class="large-12 columns">
+                              <label>
+                                Search Code/Descriptor
+                                <select>
+                                  <option disabled></option>
+                                </select>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="medium-12 columns">
+                              <div class="submit button-group pull-right">
+                                <a class="button link" data-close>Cancel</a>
+                                <button type="submit" class="button primary">Add Trigger</button>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                        <button class="close-button" data-close aria-label="Close modal" type="button">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                    </div>
 
-				      			<div class="row">
-				      				<div class="large-12 columns">
-				      					<div class="page-lead">
-							                <span class="h5">Qualifying Diagnosis <span>(10)</span></span>
-							                <a class="button primary pull-right" href="#" data-open="addTrigger">+ Add Qualifying Diagnosis</a>
+                  </div>
 
-											<div class="reveal" id="addTrigger" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-								                <div class="row collapse">
-								                    <div class="large-12 columns">
-								                        <h5 class="reveal-heading">Add Add Qualifying Diagnosis</h5>
-								                    </div>
-								                </div>
-								                <form>
-								                	<div class="reveal-body">
-								                		 <div class="row collapse">
-									                        <div class="large-12 columns">
-									                            <label>
-									                                Search Code/Descriptor
-									                                <select>
-									                                    <option disabled></option>
-									                                </select>
-									                            </label>
-									                        </div>
-									                    </div>
-								                	</div>
-								                   
-								                	<div class="reveal-footer">
-								                		<div class="row collapse">
-									                        <div class="medium-12 columns">
-									                            <div class="submit button-group pull-right">
-									                                <a class="button link" data-close>Cancel</a>
-									                                <button type="submit" class="button primary">Add Trigger</button>
-									                            </div>
-									                        </div>
-									                    </div>
-								                	</div>
-								                </form>
-								                <button class="close-button" data-close aria-label="Close modal" type="button">
-								                    <span aria-hidden="true">&times;</span>
-								                </button>
-								            </div>
-							            </div>
+                  <div class="row">
+                    <div class="columns">
+                      <table>
+                        <thead>
+                        <th>Code</th>
+                        <th>Descriptor</th>
+                        <th></th>
+                        </thead>
+                        <tbody>
+                        <tr>
+                          <td>0089</td>
+                          <td>This is a description of this code</td>
+                          <td>
+                            <div class="pull-right">
+                              <a class="action-link"><i class="fa fa-remove"></i></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>0089</td>
+                          <td>This is a description of this code</td>
+                          <td>
+                            <div class="pull-right">
+                              <a class="action-link"><i class="fa fa-remove"></i></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>0089</td>
+                          <td>This is a description of this code</td>
+                          <td>
+                            <div class="pull-right">
+                              <a class="action-link"><i class="fa fa-remove"></i></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>0089</td>
+                          <td>This is a description of this code</td>
+                          <td>
+                            <div class="pull-right">
+                              <a class="action-link"><i class="fa fa-remove"></i></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>0089</td>
+                          <td>This is a description of this code</td>
+                          <td>
+                            <div class="pull-right">
+                              <a class="action-link"><i class="fa fa-remove"></i></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>0089</td>
+                          <td>This is a description of this code</td>
+                          <td>
+                            <div class="pull-right">
+                              <a class="action-link"><i class="fa fa-remove"></i></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>0089</td>
+                          <td>This is a description of this code</td>
+                          <td>
+                            <div class="pull-right">
+                              <a class="action-link"><i class="fa fa-remove"></i></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>0089</td>
+                          <td>This is a description of this code</td>
+                          <td>
+                            <div class="pull-right">
+                              <a class="action-link"><i class="fa fa-remove"></i></a>
+                            </div>
+                          </td>
+                        </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
 
-								    	<table>
-								    		<thead>
-								    			<th>Code</th>
-								    			<th>Descriptor</th>
-								    			<th></th>
-								    		</thead>
-								    		<tbody>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    		</tbody>
-								    	</table>
-				      				</div>
-				      			</div>
+                </div>
+              </div>
 
-				      			<div class="row">
-					      			<div class="large-12 columns">
-					      				<div class="page-lead">
-							                <span class="h5">Triggers <span>(10)</span></span>
-							                <a class="button primary pull-right" href="#" data-open="addTrigger">+ Add Trigger</a>
+            </div> <!-- End of tab panel 2 -->
 
-											<div class="reveal" id="addTrigger" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
-								                <div class="row">
-								                    <div class="large-12 columns">
-								                        <h5 class="reveal-heading">Add Clinical Indicator Trigger</h5>
-								                    </div>
-								                </div>
-								                <form>
-								                    <div class="row">
-								                        <div class="large-12 columns">
-								                            <label>
-								                                Search Code/Descriptor
-								                                <select>
-								                                    <option disabled></option>
-								                                </select>
-								                            </label>
-								                        </div>
-								                    </div>
-								                    <div class="row">
-								                        <div class="medium-12 columns">
-								                            <div class="submit button-group pull-right">
-								                                <a class="button link" data-close>Cancel</a>
-								                                <button type="submit" class="button primary">Add Trigger</button>
-								                            </div>
-								                        </div>
-								                    </div>
-								                </form>
-								                <button class="close-button" data-close aria-label="Close modal" type="button">
-								                    <span aria-hidden="true">&times;</span>
-								                </button>
-								            </div>
+            <div class="tabs-panel" id="panel3">
 
-							            </div>
+              <div class="row expanded">
+                <div class="columns">
+                  <table>
+                    <thead>
+                    <tr>
+                      <th>
+                        <input type="checkbox" name="">
+                        <span class="ml-1">State Name</span>
+                      </th>
+                      <th>Price</th>
+                      <th>
+                        <!-- <select class="table-control">
+                                  <option value="">Edit Prices</option>
+                              </select>
+                              <a href="#" class="button table-control small" disabled>Apply</a> -->
+                        <a href="#" data-open="batchEdit" class="button success hollow small rounded pull-right mb-0">Edit
+                          Price</a>
+                        <div class="reveal" id="batchEdit" data-reveal>
+                          <div className="row">
+                            <div className="medium-12 columns">
+                              <h5 className="reveal-heading">Edit Price</h5>
+                            </div>
+                          </div>
 
-								    	<table>
-								    		<thead>
-								    			<th>Code</th>
-								    			<th>Descriptor</th>
-								    			<th></th>
-								    		</thead>
-								    		<tbody>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    			<tr>
-								    				<td>0089</td>
-								    				<td>This is a description of this code</td>
-								    				<td>
-								    					<div class="pull-right">
-								    						<a class="action-link"><i class="fa fa-remove"></i></a>
-								    					</div>
-								    				</td>
-								    			</tr>
-								    		</tbody>
-								    	</table>
-					      			</div>
-					      		</div>
+                          <form>
+                            <div className="row">
+                              <div className="large-12 columns">
+                                <label>
+                                  Baseline Price
+                                  <input type="text" name="">
+                                </label>
+                              </div>
+                            </div>
+                            <div className="row">
+                              <div className="medium-12 columns">
+                                <div className="button-group submit pull-right">
+                                  <a className="button link">Cancel</a>
+                                  <button type="submit" className="button primary">Save Changes</button>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                          <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                      </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>
+                        <input type="checkbox" name="">
+                        <span class="ml-1">Alabama</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <span class="input-group-label">$</span>
+                          <input class="input-group-field" type="text" value="0.00">
+                        </div>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" name="">
+                        <span class="ml-1">Alaska</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <span class="input-group-label">$</span>
+                          <input class="input-group-field" type="text" value="0.00">
+                        </div>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" name="">
+                        <span class="ml-1">Arizona</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <span class="input-group-label">$</span>
+                          <input class="input-group-field" type="text" value="0.00">
+                        </div>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" name="">
+                        <span class="ml-1">Arkansas</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <span class="input-group-label">$</span>
+                          <input class="input-group-field" type="text" value="0.00">
+                        </div>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" name="">
+                        <span class="ml-1">California</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <span class="input-group-label">$</span>
+                          <input class="input-group-field" type="text" value="0.00">
+                        </div>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" name="">
+                        <span class="ml-1">Colorado</span>
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <span class="input-group-label">$</span>
+                          <input class="input-group-field" type="text" value="0.00">
+                        </div>
+                      </td>
+                      <td></td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
 
-						  	</div> <!-- End of tab panel 2 -->
+            </div> <!-- End of tab panel 3 -->
 
-						  	<div class="tabs-panel" id="panel3">
+            <div class="tabs-panel" id="panel4">
+              <div class="row expanded">
+                <div class="columns ">
+                  <input type="text" class="fancy-input round-corner" placeholder="Add Question">
+                </div>
+                <div class="columns"></div>
+              </div>
+              <div class="row expanded mb-3 ml-1 mr-1">
+                <div class="columns pl-0 pr-0">
+                          
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm show-on-hover">
+                    <div class="columns shrink pt-1 pb-1">
+                      <p class="mb-0 clr-black20"><i class="fa fa-bars"></i></a></p>
+                    </div>
+                    <div class="columns pt-1 pb-1">
+                      <p class="mb-0 subheader"><small>What is your gender?</small></a></p>
+                      <p class="mb-0">What is your gender?</a></p>
+                    </div>
+                    <div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+                      <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
 
-								<!-- <div class="menu-options mt-1">
-					                <div class="row collapse">
-					                    <div class="large-4 columns end">
-					                        <div class="input-group">
-					                            <input class="input-group-field" type="text" placeholder="Search state..."></input>
-					                            <div class="input-group-button">
-					                                <input type="submit" class="button secondary" value="Search">
-					                            </div>
-					                        </div>
-					                    </div>
-					                    <div class="large-8 columns">
-					                        <div class="row collapse">
-					                            <div class="large-5 large-offset-2 columns">
-					                                <div class="row">
-					                                    <div class="large-4 columns">
-					                                        <label for="" class="small-label text-right middle">Specialization</label>
-					                                    </div>
-					                                    <div class="large-8 columns">
-					                                        <select class="small-input">
-					                                            <option>All Specializations</option>
-					                                        </select>
-					                                    </div>  
-					                                </div> 
-					                            </div>
-					                            <div class="large-5 columns end">
-					                                <div class="row">
-					                                    <div class="large-4 columns">
-					                                        <label for="" class="small-label text-right middle">Sub-Spec</label>
-					                                    </div>
-					                                    <div class="large-8 columns">
-					                                        <select class="small-input">
-					                                            <option>All Subspecializations</option>
-					                                        </select>
-					                                    </div>
-					                                </div>    
-					                            </div>
-					                        </div>
-					                    </div>
-					                </div>
-					            </div> -->
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm show-on-hover">
+                    <div class="columns shrink pt-1 pb-1">
+                      <p class="mb-0 clr-black20"><i class="fa fa-bars"></i></a></p>
+                    </div>
+                    <div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+                      <p class="mb-0 subheader"><small>What medical or diagnostic test/s have you had in the past two years?</small></a></p>
+                      <p class="mb-0">What medical or diagnostic test/s have you had in the past two years?</p>
+                    </div>
+                    <div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+                      <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
 
-								<table>
-									<thead>
-										<tr>
-											<th>
-												<input type="checkbox" name="">
-												<span class="ml-1">State Name</span>
-											</th>
-											<th>Price</th>
-											<th>
-												<!-- <select class="table-control">
-									                <option value="">Edit Prices</option>
-									          	</select>
-									          	<a href="#" class="button table-control small" disabled>Apply</a> -->
-									          	<a href="#" data-open="batchEdit" class="button table-control secondary small pull-right">Edit Price</a>
-									          	<div class="reveal" id="batchEdit" data-reveal>
-													<div className="row">
-								                    	<div className="medium-12 columns">
-								                        	<h5 className="reveal-heading">Edit Price</h5>
-								                    	</div>
-								                	</div>
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm show-on-hover">
+                    <div class="columns shrink pt-1 pb-1">
+                      <p class="mb-0 clr-black20"><i class="fa fa-bars"></i></a></p>
+                    </div>
+                    <div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+                      <p class="mb-0 subheader"><small>When was your last complete physical examination?</small></a></p>
+                      <p class="mb-0">When was your last complete physical examination?</p>
+                    </div>
+                    <div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+                      <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
 
-									                <form>
-									                    <div className="row">
-									                        <div className="large-12 columns">
-									                            <label>
-									                                Baseline Price
-									                                <input type="text" name="">
-									                            </label>
-									                        </div>
-									                    </div>
-									                    <div className="row">
-									                        <div className="medium-12 columns">
-									                            <div className="button-group submit pull-right">
-									                                <a className="button link">Cancel</a>
-									                                <button type="submit" className="button primary">Save Changes</button>
-									                            </div>
-									                        </div>
-									                    </div>
-									                </form>
-													<span aria-hidden="true">&times;</span>
-													</button>
-												</div>
-											</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>
-												<input type="checkbox" name="">
-												<span class="ml-1">Alabama</span>
-											</td>
-											<td>
-												<div class="input-group">
-													<span class="input-group-label">$</span>
-													<input class="input-group-field" type="text" value="0.00">
-												</div>
-											</td>
-											<td></td>
-										</tr>
-										<tr>
-											<td>
-												<input type="checkbox" name="">
-												<span class="ml-1">Alaska</span>
-											</td>
-											<td>
-												<div class="input-group">
-													<span class="input-group-label">$</span>
-													<input class="input-group-field" type="text" value="0.00">
-												</div>
-											</td>
-											<td></td>
-										</tr>
-										<tr>
-											<td>
-												<input type="checkbox" name="">
-												<span class="ml-1">Arizona</span>
-											</td>
-											<td>
-												<div class="input-group">
-													<span class="input-group-label">$</span>
-													<input class="input-group-field" type="text" value="0.00">
-												</div>
-											</td>
-											<td></td>
-										</tr>
-										<tr>
-											<td>
-												<input type="checkbox" name="">
-												<span class="ml-1">Arkansas</span>
-											</td>
-											<td>
-												<div class="input-group">
-													<span class="input-group-label">$</span>
-													<input class="input-group-field" type="text" value="0.00">
-												</div>
-											</td>
-											<td></td>
-										</tr>
-										<tr>
-											<td>
-												<input type="checkbox" name="">
-												<span class="ml-1">California</span>
-											</td>
-											<td>
-												<div class="input-group">
-													<span class="input-group-label">$</span>
-													<input class="input-group-field" type="text" value="0.00">
-												</div>
-											</td>
-											<td></td>
-										</tr>
-										<tr>
-											<td>
-												<input type="checkbox" name="">
-												<span class="ml-1">Colorado</span>
-											</td>
-											<td>
-												<div class="input-group">
-													<span class="input-group-label">$</span>
-													<input class="input-group-field" type="text" value="0.00">
-												</div>
-											</td>
-											<td></td>
-										</tr>
-									</tbody>
-								</table>
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm show-on-hover">
+                    <div class="columns shrink pt-1 pb-1">
+                      <p class="mb-0 clr-black20"><i class="fa fa-bars"></i></a></p>
+                    </div>
+                    <div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+                      <p class="mb-0 subheader"><small>Are you currently taking any medications?</small></a></p>
+                      <p class="mb-0">Are you currently taking any medications?</p>
+                    </div>
+                    <div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+                      <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
 
-						  	</div>
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm show-on-hover">
+                    <div class="columns shrink pt-1 pb-1">
+                      <p class="mb-0 clr-black20"><i class="fa fa-bars"></i></a></p>
+                    </div>
+                    <div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+                      <p class="mb-0 subheader"><small>Have you had any of the following medical conditions?</small></a></p>
+                      <p class="mb-0">Have you had any of the following medical conditions?</p>
+                    </div>
+                    <div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+                      <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
 
-						</div>	<!-- End of tabs content		 -->
+                </div>
+              </div>
 
-					</div>
-				</div>
+                <div class="row expanded mb-3 ml-1 mr-1">
+                  <div class="columns pl-0 pr-0">
+
+                    <div class="row expanded">
+                      <div class="columns pl-0">
+                        <p class="clr-secondary"><strong>KNEE SURGERY</strong></p>
+                      </div>
+                    </div>
+                    
+                    <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm">
+                      <div class="columns pt-1 pb-1">
+                        <p class="mb-0"><small>What is your gender?</small></a></p>
+                      </div>
+                    </div>
+
+                    <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm">
+                      <div class="columns  pt-1 pb-1 border-radius-sm">
+                        <p class="mb-0"><small>What medical or diagnostic test/s have you had in the past two years?</small></a></p>
+                      </div>
+                    </div>
+
+                    <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm">
+                      <div class="columns pt-1 pb-1">
+                        <p class="mb-0"><small>When was your last complete physical examination?</small></a></p>
+                      </div>
+                    </div>
+
+                    <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm">
+                      <div class="columns pt-1 pb-1">
+                        <p class="mb-0"><small>Are you currently taking any medications?</small></a></p>
+                      </div>
+                    </div>
+
+                    <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm">
+                      <div class="columns pt-1 pb-1">
+                        <p class="mb-0"><small>Have you had any of the following medical conditions?</small></a></p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="row expanded mb-3 ml-1 mr-1">
+                  <div class="columns pl-0 pr-0">
+
+                    <div class="row expanded">
+                      <div class="columns pl-0">
+                        <p class="clr-secondary"><strong>ORTHOPEDICS</strong></p>
+                      </div>
+                    </div>
+                    
+                    <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm">
+                      <div class="columns pt-1 pb-1">
+                        <p class="mb-0"><small>What is your gender?</small></a></p>
+                      </div>
+                    </div>
+
+                    <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm">
+                      <div class="columns  pt-1 pb-1 border-radius-sm">
+                        <p class="mb-0"><small>What medical or diagnostic test/s have you had in the past two years?</small></a></p>
+                      </div>
+                    </div>
+
+                    <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm">
+                      <div class="columns pt-1 pb-1">
+                        <p class="mb-0"><small>When was your last complete physical examination?</small></a></p>
+                      </div>
+                    </div>
+
+                    <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm">
+                      <div class="columns pt-1 pb-1">
+                        <p class="mb-0"><small>Are you currently taking any medications?</small></a></p>
+                      </div>
+                    </div>
+
+                    <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm">
+                      <div class="columns pt-1 pb-1">
+                        <p class="mb-0"><small>Have you had any of the following medical conditions?</small></a></p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="row expanded mb-3 ml-1 mr-1">
+                        <div class="columns pl-0 pr-0">
+
+                          <div class="row expanded">
+                            <div class="columns pl-0">
+                              <p class="clr-secondary"><strong>ORTHOPEDICS SURGERY</strong></p>
+                            </div>
+                          </div>
+                          
+                          <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm">
+                            <div class="columns pt-1 pb-1">
+                              <p class="mb-0"><small>What is your gender?</small></a></p>
+                            </div>
+                          </div>
+
+                          <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm">
+                            <div class="columns  pt-1 pb-1 border-radius-sm">
+                              <p class="mb-0"><small>What medical or diagnostic test/s have you had in the past two years?</small></a></p>
+                            </div>
+                          </div>
+
+                          <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm">
+                            <div class="columns pt-1 pb-1">
+                              <p class="mb-0"><small>When was your last complete physical examination?</small></a></p>
+                            </div>
+                          </div>
+
+                          <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm">
+                            <div class="columns pt-1 pb-1">
+                              <p class="mb-0"><small>Are you currently taking any medications?</small></a></p>
+                            </div>
+                          </div>
+
+                          <div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm">
+                            <div class="columns pt-1 pb-1">
+                              <p class="mb-0"><small>Have you had any of the following medical conditions?</small></a></p>
+                            </div>
+                          </div>
+
+                        </div>
+                </div>
+              </div>
+
+              <div class="tabs-panel" id="panel5">
+                <div class="row expanded">
+                  <div class="columns pl-0">
+                    <a href="#" class="button primary small rounded pull-right">+ Manage Event Pathway</a>
+                  </div>
+                </div>
+
+                <div class="ml-1 mr-1 mb-3">
+                        
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 show-on-hover">
+                    <div class="columns pt-1 pb-1 border-radius-sm">
+                      <p class="mb-0">General Surgery pathway Event 1</p>
+                    </div>
+                    <div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+                      <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 show-on-hover">
+                    <div class="columns pt-1 pb-1 border-radius-sm">
+                      <p class="mb-0">General Surgery pathway Event 2</p>
+                    </div>
+                    <div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+                      <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 show-on-hover">
+                    <div class="columns pt-1 pb-1 border-radius-sm">
+                      <p class="mb-0">General Surgery pathway Event 3</p>
+                    </div>
+                    <div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+                      <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 show-on-hover">
+                    <div class="columns pt-1 pb-1 border-radius-sm">
+                      <p class="mb-0">General Surgery pathway Event 4</p>
+                    </div>
+                    <div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+                      <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 show-on-hover">
+                    <div class="columns pt-1 pb-1 border-radius-sm">
+                      <p class="mb-0">General Surgery pathway Event 5</p>
+                    </div>
+                    <div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+                      <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ml-1 mr-1 mb-3">
+
+                  <div class="row expanded">
+                    <div class="columns pl-0">
+                      <p class="clr-secondary"><strong>KNEE SURGERY</strong></p>
+                    </div>
+                  </div>
+                    
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 show-on-hover">
+                    <div class="columns pt-1 pb-1 border-radius-sm">
+                      <p class="mb-0"><small>General Surgery pathway Event 1</small></p>
+                    </div>
+                    <div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+                      <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 show-on-hover">
+                    <div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+                      <p class="mb-0"><small>General Surgery pathway Event 2</small></p>
+                    </div>
+                    <div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+                      <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 show-on-hover">
+                    <div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+                      <p class="mb-0"><small>General Surgery pathway Event 3</small></p>
+                    </div>
+                    <div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+                      <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 show-on-hover">
+                    <div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+                      <p class="mb-0"><small>General Surgery pathway Event 4</small></p>
+                    </div>
+                    <div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+                      <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 show-on-hover">
+                    <div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+                      <p class="mb-0"><small>General Surgery pathway Event 5</small></p>
+                    </div>
+                    <div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+                      <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ml-1 mr-1 mb-3">
+
+                  <div class="row expanded">
+                    <div class="columns pl-0">
+                      <p class="clr-secondary"><strong>ORTHOPEDICS</strong></p>
+                    </div>
+                  </div>
+                    
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 show-on-hover">
+                    <div class="columns pt-1 pb-1 border-radius-sm">
+                      <p class="mb-0"><small>General Surgery pathway Event 1</small></p>
+                    </div>
+                    <div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+                      <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 show-on-hover">
+                    <div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+                      <p class="mb-0"><small>General Surgery pathway Event 2</small></p>
+                    </div>
+                    <div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+                      <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 show-on-hover">
+                    <div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+                      <p class="mb-0"><small>General Surgery pathway Event 3</small></p>
+                    </div>
+                    <div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+                      <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 show-on-hover">
+                    <div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+                      <p class="mb-0"><small>General Surgery pathway Event 4</small></p>
+                    </div>
+                    <div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+                      <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 show-on-hover">
+                    <div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+                      <p class="mb-0"><small>General Surgery pathway Event 5</small></p>
+                    </div>
+                    <div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+                      <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ml-1 mr-1">
+
+                  <div class="row expanded">
+                    <div class="columns pl-0">
+                      <p class="clr-secondary"><strong>ORTHOPEDICS SURGERY</strong></p>
+                    </div>
+                  </div>
+                  
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 show-on-hover">
+                    <div class="columns pt-1 pb-1 border-radius-sm">
+                            <p class="mb-0"><small>General Surgery pathway Event 1</small></p>
+                    </div>
+                    <div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+                      <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 show-on-hover">
+                    <div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+                            <p class="mb-0"><small>General Surgery pathway Event 2</small></p>
+                    </div>
+                    <div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+                      <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 show-on-hover">
+                    <div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+                            <p class="mb-0"><small>General Surgery pathway Event 3</small></p>
+                    </div>
+                    <div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+                      <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 show-on-hover">
+                    <div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+                            <p class="mb-0"><small>General Surgery pathway Event 4</small></p>
+                    </div>
+                    <div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+                      <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="row expanded bg-black20 pt-0 mb-0-5 show-on-hover">
+                    <div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+                            <p class="mb-0"><small>General Surgery pathway Event 5</small></p>
+                    </div>
+                    <div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+                      <a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
 
 
-				
-			</div>
-		</div>
-	</div>
+      </div>
+    </div>
+  </div>
 
-	<script src="bower_components/jquery/dist/jquery.js"></script>
-	<script src="bower_components/what-input/what-input.js"></script>
-	<script src="bower_components/foundation-sites/dist/foundation.js"></script>
-	<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
-	<script src="bower_components/foundation-sites/js/foundation.dropdown.js"></script>
-	<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
-	<script src="bower_components/foundation-sites/js/foundation.util.keyboard.js"></script>
-	<script src="bower_components/foundation-sites/js/foundation.util.box.js"></script>
-	
-	<script src="js/select2/js/select2.min.js"></script>
-	<script src="js/app.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/what-input/what-input.js"></script>
+  <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+  <script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+  <script src="bower_components/foundation-sites/js/foundation.dropdown.js"></script>
+  <script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+  <script src="bower_components/foundation-sites/js/foundation.util.keyboard.js"></script>
+  <script src="bower_components/foundation-sites/js/foundation.util.box.js"></script>
 
-	<script type="text/javascript">
+  <script src="js/select2/js/select2.min.js"></script>
+  <script src="js/app.js"></script>
 
-        $(function () {
-            var timer;
+  <script type="text/javascript">
 
-            $(window).resize(function() {
-                clearTimeout(timer);
-                timer = setTimeout(function() {
+      $(function () {
+          var timer;
+
+          $(window).resize(function () {
+              clearTimeout(timer);
+              timer = setTimeout(function () {
                   $('.site-nav, .content').css("height", $(window).height());
-                }, 40); 
-            }).resize();
-        });
+              }, 40);
+          }).resize();
+      });
 
-        $(document).ready(function () {
-        	$('.select2').select2();
-        });
+      $(document).ready(function () {
+          $('.select2').select2();
+      });
 
-    </script>
+  </script>
 
 </body>
 </html>

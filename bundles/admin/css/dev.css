@@ -1,0 +1,196 @@
+/**
+  To avoid confusion with the frontend developer,
+  add dev prefix in your class or id
+  (e.g .dev-yourClass or #dev-yourId)
+ */
+.editor-one .rdw-editor-main {
+  margin-bottom: 0 !important; }
+
+.editor-two .rdw-editor-main {
+  height: 18.25rem !important; }
+
+.public-DraftStyleDefault-block {
+  margin: 0 !important; }
+
+.public-DraftEditorPlaceholder-root {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem; }
+
+.rdw-editor-main {
+  margin: 0;
+  padding: 0; }
+
+.public-DraftEditor-content {
+  padding: 0.5rem; }
+
+.in-height {
+  min-height: 300px; }
+
+.dev-submenu {
+  display: none; }
+
+table.base-spacing.pb-facilities thead th:nth-child(2), table.base-spacing.pb-facilities tbody th:nth-child(2) {
+  width: 30%; }
+
+label[required]::after, legend[required]::after {
+  content: "*"; }
+
+.content {
+  position: relative; }
+
+ul.password-requirement-text {
+  display: block;
+  margin-top: 6px;
+  margin-left: 0px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #808080;
+  list-style: none; }
+
+ul.password-requirement-text-profile-edit {
+  display: block;
+  margin-left: 0px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #808080;
+  list-style: none; }
+
+li.password-valid:before {
+  content: '\2714'; }
+
+p#password-confirm-match {
+  font-size: 18px;
+  color: #dd2c1e; }
+
+p.password-confirm-match-profile-edit {
+  font-size: 15px !important;
+  color: #dd2c1e !important; }
+
+li.password-valid {
+  color: #1fb247; }
+
+div#constraints-picker-box {
+  text-align: left; }
+
+.top-search-employee .Select-arrow-zone {
+  display: none; }
+
+.top-search-employee .Select-loading-zone {
+  right: 10px;
+  display: none; }
+
+.top-search-employee .Select-menu-outer {
+  top: 38px; }
+
+div.img-wrapper.tiny.circle {
+  width: 2.4375rem;
+  display: block; }
+
+.categoryCheck {
+  color: #1EBE44;
+  margin: 7px 6px 0 0; }
+
+.mpiricaScore {
+  padding-left: 100%; }
+
+.dev-contactNumber .medium-4 {
+  padding-left: 0; }
+
+.button.success.preview:focus {
+  color: #1EBE44;
+  border-color: #1EBE44; }
+
+.button.success.preview:hover {
+  border-color: #0f5f22;
+  color: #0f5f22; }
+
+.ul-tree.ul-tree-expanded > li:first-child:after,
+.ul-tree.ul-tree-expanded > li:first-child:before {
+  display: none; }
+
+.date-widget select, .time-widget select {
+  width: 120px;
+  margin-right: 10px;
+  float: left; }
+
+.date-widget div, .time-widget div {
+  margin-right: 10px;
+  float: left; }
+
+.rdw-editor-main {
+  height: 100% !important; }
+
+.remove-red {
+  background: none !important; }
+
+.clinical-pathway.timeline .timeline-item:last-child:after {
+  display: none; }
+
+.clinical-pathway.timeline .timeline-item.in:last-child:after {
+  display: block; }
+
+.formatted-text-editor {
+  background: #fff; }
+
+.me.disabled {
+  opacity: 1; }
+
+.modal-video {
+  height: 350px; }
+
+.pathway-task-attachment a {
+  font-size: 0.6875rem !important;
+  color: rgba(10, 16, 35, 0.87); }
+
+.button.primary {
+  background-color: #1EBE44; }
+  .button.primary:hover, .button.primary:focus {
+    background-color: #189836; }
+
+.primary.brick {
+  background-color: #1EBE44; }
+  .primary.brick:hover, .primary.brick:focus {
+    background-color: #189836; }
+
+.tag.no-action.tiny.warning {
+  background-color: #ecaf00 !important;
+  color: white; }
+
+.truncate.full-text:hover {
+  position: relative;
+  display: inline !important;
+  width: 100%;
+  z-index: 100;
+  background: #e3e3e3 !important;
+  overflow: visible; }
+
+#inner-container.dev-inner-container, .dev-main-wrap {
+  min-height: 100%; }
+
+.dev-wrapper {
+  padding-bottom: 2.5rem; }
+
+.dev-company-wrapper {
+  min-height: 600px; }
+  .dev-company-wrapper .Select-menu-outer {
+    max-height: 130px; }
+  .dev-company-wrapper .Select-menu {
+    max-height: 120px; }
+
+#root:not(.builder) > div > :last-child {
+  padding-bottom: 6rem; }
+
+.dev-question-tree {
+  padding-bottom: 30px; }
+
+#help-button p {
+  top: -6px !important;
+  position: relative !important;
+  z-index: 9999; }
+
+.small-form #modal-body {
+  overflow-y: visible !important; }
+
+.input-group-button.no-vmiddle {
+  vertical-align: baseline; }

@@ -1,0 +1,414 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spoke Admin Portal</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<div class="expanded row medium-collapse">
+  <div class="medium-2 columns">
+    <div class="site-nav">
+      <header>
+        <a href="#" class="logo text-center">
+          <img src="img/logo.png" title="Spoke">
+        </a>
+      </header>
+      <ul class="menu vertical" data-accordion-menu>
+        <li>
+          <a href="advocate-dashboard.html">Dashboard</a>
+        </li>
+        <li class="is-active">
+          <a href="advocate-employees.html">Employees</a>
+        </li>
+        <li>
+          <a href="advocate-communications.html">Inbox</a>
+        </li>
+        <li>
+          <a href="#">Doctors</a>
+        </li>
+        <li>
+          <a href="advocate-facilities.html">Facilities</a>
+        </li>
+        <li>
+          <a href="#">Activity Logs</a>
+        </li>
+        <li>
+          <a href="advocate-profile.html">Profile</a>
+          <ul class="nested vertical menu">
+            <li>
+              <a href="advocate-profile.html">User Information</a>
+            </li>
+            <li>
+              <a href="advocate-password.html">Change My Password</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="medium-10 columns">
+    <div class="content">
+
+      <div class="top-bar">
+        <div class="top-bar-left">
+          <!-- <ul class="menu">
+                <li><input type="search" placeholder="Search"></li>
+                <li><button type="button" class="button">Search</button></li>
+          </ul> -->
+        </div>
+        <div class="top-bar-right">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li class="drop-text">
+              <a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span
+                class="alert badge" id="notifCount">24</span></a>
+              <ul class="notifications menu vertical">
+                <li>
+                  <span>Admin Admin recently made changes to <a href="#">Denver Vail Orthopedics</a>.</span>
+                </li>
+                <li>
+                  <span>Admin Admin recently made changes to <a href="#">Denver Vail Orthopedics</a>.</span>
+                </li>
+                <li>
+                  <a href="#" class="button info hollow tiny expanded">View All</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a data-toggle="chatSupport"><i class="fa fa-phone-square fa-lg"></i><span
+                class="success badge" id="notifCount2">1</span></a>
+            </li>
+            <li>
+              <a href="#">Spoke Advocate &nbsp;</a>
+              <ul class="menu vertical">
+                <li><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Sign Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row expanded collapse">
+
+        <div class="columns shrink">
+          <div class="secondary site-nav nav-collapsed"> 
+            <ul class="menu vertical" data-accordion-menu>
+              <li class="hide-on-collapsed">
+                <div class="card-user-profile">
+                </div>
+              </li>
+              <li>
+                <a href="advocate-employee-profile-v3.html" ><i class="fa fa-address-book"></i> <span class="hide-on-collapsed">&nbsp;Overview</span></a>
+              </li>
+              <li class="is-active">
+                <a href="advocate-employee-episodes-list-v2.html" ><i class="fa fa-stethoscope"></i> <span class="hide-on-collapsed">&nbsp;Episodes</span></a>
+              </li>
+              <li>
+                <a href="advocate-employee-activity-v3.html" ><i class="fa fa-exchange-alt"></i> <span class="hide-on-collapsed">&nbsp;Activity</span></a>
+              </li>
+    
+            </ul>
+          </div>
+        </div>
+
+        <div id="profileContent" class="columns">
+          <div class="row expanded">
+            <div class="large-12 columns">
+              <div class="page-lead row collapse expanded align-middle">
+                <div class="large-4 columns"><span class="h5">List of Episodes</span></div>
+                <div class="auto columns">
+                  <div class="button-align small pull-right">
+                    <a class="button secondary mb-0" href="advocate-employee-episode-add.html"><i
+                      class="fa fa-plus fa-fw"></i>&nbsp; Create New Episode
+                    </a></div>
+                </div>
+              </div>
+              <!-- <div class="row expanded mb-0-5">
+                <div class="columns">
+                  <a href="#" class="subheader text-uppercase tiny"><strong>Surgery Package</strong> <i class="fa fa-caret-up fa-fw"></i></a>
+                </div>
+                <div class="columns medium-2">
+                  <a href="#" class="subheader text-uppercase tiny"><strong>Date Created</strong> <i class="fa fa-caret-up fa-fw"></i></a>
+                </div>
+                <div class="columns medium-2">
+                  <span class="subheader text-uppercase tiny"><strong>Status</strong></span>
+                </div>
+                <div class="columns shrink disabled">
+                  <a class="button link info small disabled clr-none mb-0" href="#"><i class="fa fa-eye fa-fw"></i></a>
+                  <a class="button link info small disabled clr-none mb-0" href="#"><i class="fa fa-edit fa-fw"></i></a></td>
+                </div>
+              </div> -->
+              <!-- <div class="row expanded columns striped table">
+                <div class="row expanded pad05">
+                  <div class="columns">
+                    <a href="advocate-employee-episode-v4.html" class="clr-black">
+                      <strong><small>Total Knee Replacement</small></strong>
+                    </a>
+                    <p class="mb-0"><small><span class="clr-black20">Assigned: </span> Diane Cortes</small></p>
+                  </div>
+                  <div class="columns medium-2">
+                    <small>Aug 24, 2018</small>
+                  </div>
+                  <div class="columns medium-2">
+                    <button class="button hollow primary tiny mb-0">Confirm</button>
+                  </div>
+                  <div class="columns shrink">
+                    <a class="button link info small" href="#"><i class="fa fa-eye fa-fw"></i></a>
+                    <a class="button link info small" href="#"><i class="fa fa-edit fa-fw"></i></a></td>
+                  </div>
+                </div>
+                <div class="row expanded pad05">
+                  <div class="columns">
+                    <a href="advocate-employee-episode-v4.html" class="clr-black">
+                      <strong><small>Total Knee Replacement</small></strong>
+                    </a>
+                    <p class="mb-0"><small><span class="clr-black20">Assigned: </span> Diane Cortes</small></p>
+                  </div>
+                  <div class="columns medium-2">
+                    <small>Aug 24, 2018</small>
+                  </div>
+                  <div class="columns medium-2">
+                    <button class="button hollow primary tiny mb-0">Confirm</button>
+                  </div>
+                  <div class="columns shrink">
+                    <a class="button link info small" href="#"><i class="fa fa-eye fa-fw"></i></a>
+                    <a class="button link info small" href="#"><i class="fa fa-edit fa-fw"></i></a></td>
+                  </div>
+                </div>
+                <div class="row expanded pad05">
+                  <div class="columns">
+                    <a href="advocate-employee-episode-v4.html" class="clr-black">
+                      <strong><small>Total Knee Replacement</small></strong>
+                    </a>
+                    <p class="mb-0"><small><span class="clr-black20">Assigned: </span> Diane Cortes</small></p>
+                  </div>
+                  <div class="columns medium-2">
+                    <small>Aug 24, 2018</small>
+                  </div>
+                  <div class="columns medium-2">
+                    <button class="button hollow primary tiny mb-0">Confirm</button>
+                  </div>
+                  <div class="columns shrink">
+                    <a class="button link info small" href="#"><i class="fa fa-eye fa-fw"></i></a>
+                    <a class="button link info small" href="#"><i class="fa fa-edit fa-fw"></i></a></td>
+                  </div>
+                </div>
+                <div class="row expanded pad05">
+                  <div class="columns">
+                    <a href="advocate-employee-episode-v4.html" class="clr-black">
+                      <strong><small>Total Knee Replacement</small></strong>
+                    </a>
+                    <p class="mb-0"><small><span class="clr-black20">Assigned: </span> Diane Cortes</small></p>
+                  </div>
+                  <div class="columns medium-2">
+                    <small>Aug 24, 2018</small>
+                  </div>
+                  <div class="columns medium-2">
+                    <button class="button hollow primary tiny mb-0">Confirm</button>
+                  </div>
+                  <div class="columns shrink">
+                    <a class="button link info small" href="#"><i class="fa fa-eye fa-fw"></i></a>
+                    <a class="button link info small" href="#"><i class="fa fa-edit fa-fw"></i></a></td>
+                  </div>
+                </div>
+              </div> -->
+
+              <div class="spoke-list">
+
+								<!-- <div class="spoke-list-heading row expanded collapse align-middle">
+									<div class="medium-4 columns">
+										<a href="#">Name <i class="fa fa-caret-up fa-fw"></i></a>
+									</div>
+									<div class="medium-5 columns">
+										<a href="#">Company Name <i class="fa fa-caret-up fa-fw"></i></a>
+									</div>
+									<div class="medium-3 columns">
+										<a href="#">Last Login <i class="fa fa-caret-up fa-fw"></i></a>
+									</div>
+								</div> -->
+
+								<div class="spoke-list-item row expanded collapse align-middle paddingless">
+									<div class="auto columns">
+
+										<!-- <div class="spoke-list-sub-item row expanded collapse align-middle">
+											<div class="medium-4 columns">
+												<div class="row collapse align-middle">
+													<div class="columns">
+														<p class="h6 mb-0"><b>Keith Dumptle</b></p>
+													</div>
+												</div>
+											</div>
+											<div class="medium-5 columns">
+												<p>Deam Health Corp.</p>
+											</div>
+											<div class="medium-3 columns">
+												<p>April 7, 2019 8:00AM</p>
+											</div>
+										</div> -->
+
+										<div class="spoke-list-sub-item row expanded collapse align-middle">
+											<div class="medium-3 columns">
+												<p class="">
+													<small><a href="">Extended Bifrontal Craniotomy</a></small>
+												</p>
+												<div class="row">
+													<div class="medium-3 collapse">
+														<small class="tiny subheader">#102345</small>
+													</div>
+													<div class="medium-9 collapse">
+														<small class="tiny">Date Created: August 10, 2018</small>
+													</div>
+												</div>
+											</div>
+											<div class="medium-2 columns">
+												<span class="label preliminary small hollow rounded">Preliminary</span>
+											</div>
+											<div class="medium-2 columns">
+												<p>
+													<small>Send Link</small>
+												</p>
+												<div class="row">
+													<div class="medium-12 collapse">
+														<small class="tiny subheader mb-0">A week ago</small>
+													</div>
+												</div>
+											</div>
+											<div class="medium-3 columns">
+												<p>
+													<small>St. Matthew Medical Center</small>
+												</p>
+												<div class="row">
+													<div class="medium-12 collapse">
+														<small class="tiny subheader mb-0"> Colorado, Denver</small>
+													</div>
+												</div>
+											</div>
+											<div class="medium-2 columns">
+												<p class="subheader">
+													<small>ES: Steve Doss</small>
+												</p>
+												<p class="subheader">
+													<small>CC: Christine Lambert</small>
+												</p>
+											</div>
+										</div>
+
+										<div class="spoke-list-sub-item row expanded collapse align-middle">
+											<div class="medium-3 columns">
+												<p class="">
+													<small><a href="">Total Knee Replacement</a></small>
+												</p>
+												<div class="row">
+													<div class="medium-3 collapse">
+														<small class="tiny subheader">#102345</small>
+													</div>
+													<div class="medium-9 collapse">
+														<small class="tiny">Date Created: August 10, 2018</small>
+													</div>
+												</div>
+											</div>
+											<div class="medium-2 columns">
+												<span class="label confirmed small hollow rounded">Confirmed</span>
+											</div>
+											<div class="medium-2 columns">
+												<p>
+													<small>Send Link</small>
+												</p>
+											</div>
+											<div class="medium-3 columns">
+												<p>
+													<small>St. Matthew Medical Center</small>
+												</p>
+											</div>
+											<div class="medium-2 columns">
+												<p class="subheader">
+													<small>ES: Steve Doss</small>
+												</p>
+												<p class="subheader">
+													<small>CC: Christine Lambert</small>
+												</p>
+											</div>
+										</div>
+
+										<div class="spoke-list-sub-item row expanded collapse align-middle">
+											<div class="medium-3 columns">
+												<p class="">
+													<small><a href="">Total Knee Replacement</a></small>
+												</p>
+												<div class="row">
+													<div class="medium-3 collapse">
+														<small class="tiny subheader">#102345</small>
+													</div>
+													<div class="medium-9 collapse">
+														<small class="tiny">Date Created: August 10, 2018</small>
+													</div>
+												</div>
+											</div>
+											<div class="medium-2 columns">
+												<span class="label secondary small hollow rounded">Completed</span>
+											</div>
+											<div class="medium-2 columns">
+												<p>
+													<small>Send Link</small>
+												</p>
+											</div>
+											<div class="medium-3 columns">
+												<p>
+													<small>St. Matthew Medical Center</small>
+												</p>
+											</div>
+											<div class="medium-2 columns">
+												<p class="subheader">
+													<small>ES: Steve Doss</small>
+												</p>
+												<p class="subheader">
+													<small>CC: Christine Lambert</small>
+												</p>
+											</div>
+										</div>
+
+									</div>
+                </div>
+                
+							</div>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/what-input/what-input.js"></script>
+<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+
+<script src="js/app.js"></script>
+
+<script type="text/javascript">
+
+    var topBarHeight = $('.top-bar').outerHeight(true);
+
+    $(function () {
+        var timer;
+        $(window).resize(function () {
+            clearTimeout(timer);
+            timer = setTimeout(function () {
+                $('#chatSupport, #chatSupport .offcanvas-area-inner, .site-nav, .content').css("height", $(window).height());
+                $('.site-nav.secondary, #profileContent, #chatClient .chat-wrapper').css("height", $(window).height() - topBarHeight);
+            }, 40);
+        }).resize();
+    });
+
+</script>
+
+</body>
+</html>

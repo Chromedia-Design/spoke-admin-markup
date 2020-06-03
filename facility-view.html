@@ -1,0 +1,1452 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spoke Admin Portal</title>
+  <link rel="stylesheet" href="js/trumbowyg/ui/trumbowyg.min.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+<div class="expanded row medium-collapse">
+  <div class="medium-2 columns">
+    <div class="site-nav">
+      <header>
+        <a href="#" class="logo text-center">
+          <img src="img/logo.png" title="Spoke">
+        </a>
+      </header>
+      <ul class="menu vertical" data-accordion-menu>
+        <li>
+          <a href="#">Dashboard</a>
+        </li>
+        <li>
+          <a href="#">Practices</a>
+          <ul class="nested vertical menu is-active">
+            <li>
+              <a href="#">Specializations</a>
+            </li>
+            <li>
+              <a href="#">Treatments</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Packages</a>
+        </li>
+        <li class="is-active">
+          <a href="#">Facilities</a>
+        </li>
+        <li>
+          <a href="#">Doctors</a>
+        </li>
+        <li>
+          <a href="#">Companies</a>
+        </li>
+        <li>
+          <a href="#">Content</a>
+        </li>
+        <li>
+          <a href="#">Users</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="medium-10 columns">
+    <div class="content">
+      <div class="top-bar">
+        <div class="top-bar-left">
+          <!-- <ul class="menu">
+            <li><input type="search" placeholder="Search"></li>
+            <li><button type="button" class="button">Search</button></li>
+          </ul> -->
+        </div>
+        <div class="top-bar-right">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li>
+              <a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge"
+                                                                                                id="notifCount">6</span></a>
+            </li>
+            <li>
+              <a href="#">Administrator</a>
+              <ul class="menu vertical">
+                <li><a href="#">One</a></li>
+                <li><a href="#">Two</a></li>
+                <li><a href="#">Three</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row expanded">
+        <div class="auto columns">
+          <nav aria-label="You are here:" role="navigation">
+            <ul class="breadcrumbs">
+              <li><a href="admin-facilities.html">Facilities</a></li>
+              <li>Florida Hospital-Orlando</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="row expanded align-middle">
+        <div class="columns">
+          <div class="media-object">
+            <div class="media-object-section middle logo">
+              <div class="img-wrapper">
+                <img src="img/fh_orlando_logo.png" alt="">
+              </div>
+            </div>
+            <div class="media-object-section middle">
+              <span class="h5">Florida Hospital - Orlando</span>
+              <p class="subheader">
+                <small>1861 Powder Mill Road, York, PA</small>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="button-align small pull-right">
+            <a href="#" class="button primary rounded"><i class="fa fa-eye"></i>&nbsp; Preview</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row expanded">
+        <div class="auto columns">
+          <ul class="tabs" data-tabs id="spoke-tabs">
+            <!--use data-tabs to use foundation tabs -->
+            <li class="tabs-title"><a href="#Profile">Facility Profile</a></li>
+            <li class="tabs-title is-active"><a href="#Packages" aria-selected="true">Packages</a></li>
+            <li class="tabs-title"><a href="#Media">Media</a></li>
+            <li class="tabs-title"><a href="#Staff">Staff</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row expanded">
+        <div class="auto columns">
+          <!-- tab content -->
+          <div class="tabs-content" data-tabs-content="spoke-tabs">
+            <div class="tabs-panel" id="Profile">
+
+              <div class="callout">
+                <div class="row collapse">
+                  <div class="columns">
+                    <p class="lead">Overview</p>
+                  </div>
+                  <div class="shrink columns">
+                    <div class="button-align small pull-right">
+                      <a data-open="editFacility" class="button hollow rounded"><i class="fa fa-edit fa-fw"></i>&nbsp;
+                        Edit</a>
+
+                      <div class="reveal large" id="editFacility" data-reveal data-animation-in="fade-in"
+                           data-animation-out="fade-out">
+                        <div class="row collapse">
+                          <div class="large-12 columns">
+                            <h5 class="reveal-heading">Edit Profile</h5>
+                          </div>
+                        </div>
+                        <div class="row collapse">
+                          <div class="large-12 columns">
+                            <div class="reveal-body">
+                              <div class="row">
+                                <div class="columns">
+                                  <div class="media-object">
+                                    <div class="media-object-section logo middle">
+                                      <div class="img-wrapper">
+                                        <img src="img/facility_logo.png">
+                                      </div>
+                                    </div>
+                                    <div class="media-object-section middle">
+                                      <label>
+                                        <small class="subheader">Facility Logo. JPG, GIF or PNG. Image must be at least
+                                          69x69 in size.
+                                        </small>
+                                        <input type="file" name="">
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="large-12 columns">
+                                  <label for="">
+                                    Facility Name
+                                    <input type="text" value="Florida Hospital - Orlando">
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="columns">
+                                  <label for="">Description
+                                    <textarea name="" id="" cols="30" rows="10">At the Florida Hospital Orlando, our primary goal is to cure every patient's cancer. Since we know that in many cases advanced stage cancers cannot be cured, our next goal is to make cancer a chronic disease, with which our patients can live and lead relatively normal lives.
+																			</textarea>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="large-12 columns">
+                                  <label for="">
+                                    Address
+                                    <input type="text">
+                                    <input type="text">
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="columns">
+                                  <label for="">
+                                    Country
+                                    <select>
+                                      <option>United States of America</option>
+                                    </select>
+                                  </label>
+                                </div>
+                                <div class="columns">
+                                  <label for="">
+                                    State
+                                    <select>
+                                      <option>Select State</option>
+                                    </select>
+                                  </label>
+                                </div>
+                                <div class="columns">
+                                  <label for="">
+                                    City
+                                    <select>
+                                      <option>Select City</option>
+                                    </select>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="large-4 columns">
+                                  <label for="">
+                                    Zip Code
+                                    <input type="text" name="">
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row collapse">
+                          <div class="large-12 columns">
+                            <div class="reveal-footer">
+                              <div class="button-group pull-right">
+                                <a class="button link" data-close>Cancel</a>
+                                <a href="#" class="button success">Save</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="close-button" data-close aria-label="Close modal" type="button">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="row collapse expanded">
+                  <div class="columns">
+                    <p>
+                      At the Florida Hospital Orlando, our primary goal is to cure every patient's cancer. Since we know
+                      that in many cases advanced stage cancers cannot be cured, our next goal is to make cancer a
+                      chronic disease, with which our patients can live and lead relatively normal lives.
+                    </p>
+                    <p>
+                      We accomplish our goals daily in our Florida facility, which provides state-of-the-art, cutting
+                      edge medical treatment, and caring attention to the mind, body and soul of each and every patient.
+                      With this fusion of science and caring, we find that we are able to provide our patients with the
+                      best possible healing, and among the best cancer treatment available in Florida, and the world.
+                    </p>
+                  </div>
+                </div>
+                <div class="row collapse label-block expanded">
+                  <div class="large-4 columns end">
+                    <div class="label-group">
+                      <p>Phone Number</p>
+                      <h6>123-456-7890</h6>
+                    </div>
+                  </div>
+                  <div class="large-4 columns end">
+                    <div class="label-group">
+                      <p>LinkedIn</p>
+                      <h6>http://www.linkedinurl.com/username</h6>
+                    </div>
+                  </div>
+                  <div class="large-4 columns end">
+                    <div class="label-group">
+                      <p>Facebook</p>
+                      <h6>facebookurl</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- START OF PROFILE HIGHLIGHTS -->
+              <div class="block">
+                <div class="block-heading row align-middle collapse expanded">
+                  <div class="columns">
+                    <span class="h6">Profile Highlights</span>
+                  </div>
+                  <div class="shrink columns">
+                    <div class="button-align mb-0 small pull-right">
+                      <a href="#" class="button hollow rounded"><i class="fa fa-plus"></i>&nbsp; Add</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-container">
+                  <table class="base-spacing">
+                    <thead>
+                    <tr>
+                      <th>Highlight Title</th>
+                      <th>Description</th>
+                      <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>
+                        <div class="media-object">
+                          <div class="media-object-section logo middle">
+                            <div class="img-wrapper">
+                              <img src="img/specialist.png">
+                            </div>
+                          </div>
+                          <div class="media-object-section middle">
+                            <p>One of the Top Hospitals in the World</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="truncate">With a 94% approval rating from patients, HIAE is the first institution
+                          outside the U.S. to be accredited by Joint Commission International in 1999</p>
+                      </td>
+                      <td class="text-right">
+                        <a href="#" class="button tiny alert hollow circle"><i class="fa fa-trash"></i></a>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- END OF PROFILE HIGHLIGHTS -->
+              </div>
+              <!-- START OF AWARDS AND ACCREDITATIONS -->
+              <div class="block">
+                <div class="block-heading row align-middle collapse expanded">
+                  <div class="columns">
+                    <span class="h6">Awards & Accreditations</span>
+                  </div>
+                  <div class="shrink columns">
+                    <div class="button-align mb-0 small pull-right">
+                      <a href="#" class="button hollow rounded"><i class="fa fa-plus"></i>&nbsp; Add</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-container">
+                  <table class="base-spacing">
+                    <thead>
+                    <tr>
+                      <th>Title</th>
+                      <th>Year</th>
+                      <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>
+                        <p class="truncate">ISO 9000 - Quality Management Systems</p>
+                      </td>
+                      <td>
+                        <span>2015</span>
+                      </td>
+                      <td class="text-right">
+                        <a href="#" class="button tiny alert hollow circle"><i class="fa fa-trash"></i></a>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- END OF AWARDS & ACCREDITATIONS -->
+              </div>
+              <!-- // END OF PROFILE HIGHLIGHTS -->
+            </div>
+
+            <div class="tabs-panel is-active" id="Packages">
+
+              <div class="page-lead row align-middle expanded">
+                <div class="shrink columns">
+                  <span class="h5">Packages</span>
+                  <span class="subheader"><small>1 of 4 Packages Completed</small></span>
+                </div>
+                <div class="medium-3 columns">
+                  <input type="search" name="search" placeholder="Search packages..." class="animated-search-form">
+                </div>
+                <div class="columns">
+                  <div class="button-align small pull-right mb-0">
+                    <select class="borderless">
+                      <option value="" disabled selected>Completed</option>
+                      <option value="starbuck">Starbuck</option>
+                      <option value="hotdog">Hot Dog</option>
+                      <option value="apollo">Apollo</option>
+                    </select>
+                    <select class="borderless">
+                      <option value="" disabled selected>Treatment</option>
+                      <option value="starbuck">Starbuck</option>
+                      <option value="hotdog">Hot Dog</option>
+                      <option value="apollo">Apollo</option>
+                    </select>
+                    <a class="button success rounded" href="admin-facility-package-edit.html">+ Add New Package</a>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="row expanded">
+                <div class="medium-12 columns">
+
+                  <div class="spoke-list">
+
+                    <div class="spoke-list-heading row expanded align-middle">
+                      <div class="medium-4 columns">
+                        <a href="#">Package Name</a>
+                      </div>
+                      <div class="columns">
+                      </div>
+                      <div class="columns">
+                      </div>
+                      <div class="columns">
+                      </div>
+                      <div class="columns">
+                      </div>
+                    </div>
+
+                    <div class="spoke-list-item row expanded align-middle"
+                         onclick="location.href='admin-facility-package-edit.html'">
+                      <div class="medium-4 columns">
+                        <div class="row align-middle">
+                          <div class="medium-2 columns">
+                            <div class="fancy-checkbox">
+                              <input id="option1" name="option1" type="checkbox" checked="true"/>
+                            </div>
+                          </div>
+                          <div class="medium-10 columns">
+                            <p class="h6 mb-0">Molar Root Canal</p>
+                            <p class="subheader">
+                              <small>Complete</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="columns">
+                        <span class="h6">4</span>
+                        <p class="subheader mb-0">
+                          <small>of 4 Staff Filled</small>
+                        </p>
+                      </div>
+                      <div class="columns">
+                        <span class="h6">3</span>
+                        <p class="subheader mb-0">
+                          <small>of 3 Categories Filled</small>
+                        </p>
+                      </div>
+                      <div class="columns">
+                        <span class="h6">$3,800</span>
+                        <p class="subheader mb-0">
+                          <small>Total Price</small>
+                        </p>
+                      </div>
+                      <div class="columns">
+                        <ul class="dropdown menu pull-right" data-dropdown-menu>
+                          <li>
+                            <a></a>
+                            <ul class="menu vertical">
+                              <li><a href="#"><i class="fa fa-edit"></i>&nbsp; Edit</a></li>
+                              <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Delete</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="spoke-list-item row expanded align-middle"
+                         onclick="location.href='admin-facility-package-edit.html'">
+                      <div class="medium-4 columns">
+                        <div class="row align-middle">
+                          <div class="medium-2 columns">
+                            <div class="fancy-checkbox">
+                              <input id="option1" name="option1" type="checkbox"/>
+                            </div>
+                          </div>
+                          <div class="medium-10 columns">
+                            <p class="h6 mb-0">Front Teeth Canal</p>
+                            <p class="subheader">
+                              <small>Incomplete</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="columns">
+                        <span class="h6 alert-color">3</span>
+                        <p class="subheader mb-0">
+                          <small>of 4 Staff Filled</small>
+                        </p>
+                      </div>
+                      <div class="columns">
+                        <span class="h6">3</span>
+                        <p class="subheader mb-0">
+                          <small>of 3 Categories Filled</small>
+                        </p>
+                      </div>
+                      <div class="columns">
+                        <span class="h6">-</span>
+                        <p class="subheader mb-0">
+                          <small>Total Price</small>
+                        </p>
+                      </div>
+                      <div class="columns">
+                        <ul class="dropdown menu pull-right" data-dropdown-menu>
+                          <li>
+                            <a></a>
+                            <ul class="menu vertical">
+                              <li><a href="#"><i class="fa fa-edit"></i>&nbsp; Edit</a></li>
+                              <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Delete</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="spoke-list-item row expanded align-middle"
+                         onclick="location.href='admin-facility-package-edit.html'">
+                      <div class="medium-4 columns">
+                        <div class="row align-middle">
+                          <div class="medium-2 columns">
+                            <div class="fancy-checkbox">
+                              <input id="option1" name="option1" type="checkbox"/>
+                            </div>
+                          </div>
+                          <div class="medium-10 columns">
+                            <p class="h6 mb-0">Front Teeth Canal</p>
+                            <p class="subheader">
+                              <small>Incomplete</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="columns">
+                        <span class="h6 alert-color">3</span>
+                        <p class="subheader mb-0">
+                          <small>of 4 Staff Filled</small>
+                        </p>
+                      </div>
+                      <div class="columns">
+                        <span class="h6">3</span>
+                        <p class="subheader mb-0">
+                          <small>of 3 Categories Filled</small>
+                        </p>
+                      </div>
+                      <div class="columns">
+                        <span class="h6">-</span>
+                        <p class="subheader mb-0">
+                          <small>Total Price</small>
+                        </p>
+                      </div>
+                      <div class="columns">
+                        <ul class="dropdown menu pull-right" data-dropdown-menu>
+                          <li>
+                            <a></a>
+                            <ul class="menu vertical">
+                              <li><a href="#"><i class="fa fa-edit"></i>&nbsp; Edit</a></li>
+                              <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Delete</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="spoke-list-item row expanded align-middle"
+                         onclick="location.href='admin-facility-package-edit.html'">
+                      <div class="medium-4 columns">
+                        <div class="row align-middle">
+                          <div class="medium-2 columns">
+                            <div class="fancy-checkbox">
+                              <input id="option2" name="option1" type="checkbox"/>
+                            </div>
+                          </div>
+                          <div class="medium-10 columns">
+                            <p class="h6 mb-0">Front Teeth Canal</p>
+                            <p class="subheader">
+                              <small>Incomplete</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="columns">
+                        <span class="h6 alert-color">3</span>
+                        <p class="subheader mb-0">
+                          <small>of 4 Staff Filled</small>
+                        </p>
+                      </div>
+                      <div class="columns">
+                        <span class="h6">3</span>
+                        <p class="subheader mb-0">
+                          <small>of 3 Categories Filled</small>
+                        </p>
+                      </div>
+                      <div class="columns">
+                        <span class="h6">-</span>
+                        <p class="subheader mb-0">
+                          <small>Total Price</small>
+                        </p>
+                      </div>
+                      <div class="columns">
+                        <ul class="dropdown menu pull-right" data-dropdown-menu>
+                          <li>
+                            <a></a>
+                            <ul class="menu vertical">
+                              <li><a href="#"><i class="fa fa-edit"></i>&nbsp; Edit</a></li>
+                              <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Delete</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="reveal full" id="editPackages" data-reveal data-animation-in="fade-in"
+                   data-animation-out="fade-out">
+                <div class="row align-middle collapse expanded reveal-heading">
+                  <div class="columns">
+                    <span class="h6">Edit Packages</span>
+                  </div>
+                  <div class="shrink columns">
+                    <div class="button-align small mb-0 pull-right">
+                      <a href="#" class="button success">Save Changes</a>
+                      <a class="button rounded hollow white" data-close><i class="fa fa-close"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="reveal-body">
+                  <div class="page-lead row align-middle collapse expanded">
+                    <div class="auto columns">
+                      <h6 class="mb-0">Package Builder</h6>
+                      <p class="subheader mb-0">
+                        <small>Start by creating/selecting a treatment and a package under it. Some conditions must be
+                          met in order for the package to be active.
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Start of Package Roullette -->
+                  <div id="packageBuilder" class="row expanded collapse">
+
+                    <div class="transparent medium-3 columns">
+
+                      <div class="page-lead row align-middle">
+                        <div class="medium-9 columns">
+                          <h6 class="mb-0">Treatments</h6>
+                          <p class="subheader mb-0">
+                            <small>1/2 Active Treatment</small>
+                          </p>
+                        </div>
+                        <div class="medium-3 columns">
+                          <div class="button-group pull-right tiny mb-0">
+                            <a href="#" class="button success rounded">Add</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <ul class="menu vertical" data-accordion-menu>
+                        <li class="is-active">
+                          <a href="#">Root Canal Treatment</a>
+                          <ul class="nested vertical menu">
+                            <li class="is-active">
+                              <a href="#">
+                                <i class="fa fa-check-circle success-color"></i>&nbsp; Molar Root Canal
+                                <p class="subheader mb-0">
+                                  <small>3 Categories</small>
+                                </p>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-exclamation-circle alert-color"></i>&nbsp; Front Teeth Canal
+                                <p class="subheader mb-0">
+                                  <small>3 Incomplete Categories</small>
+                                </p>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">Total Knee Replacement</a>
+                          <ul class="nested vertical menu">
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-check-circle alert-color"></i>&nbsp; Molar Root Canal
+                                <p class="subheader mb-0">
+                                  <small>3 Categories</small>
+                                </p>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-exclamation-circle warning-color"></i>&nbsp; Front Teeth Canal
+                                <p class="subheader mb-0">
+                                  <small>3 Incomplete Categories</small>
+                                </p>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="medium-3 columns">
+                      <div class="page-lead row align-middle">
+                        <div class="medium-9 columns">
+                          <h6 class="mb-0">Doctors</h6>
+                          <p class="subheader mb-0">
+                            <small>1/2 Active Doctors</small>
+                          </p>
+                        </div>
+                        <div class="medium-3 columns">
+                          <div class="button-group pull-right tiny mb-0">
+                            <a href="#" class="button success rounded">Add</a>
+                          </div>
+                        </div>
+                      </div>
+                      <ul class="tabs" data-tabs id="example-tabs">
+                        <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">ALL</a></li>
+                        <li class="tabs-title"><a href="#panel2">ACTIVE</a></li>
+                        <li class="tabs-title"><a href="#panel3">INACTIVE</a></li>
+                        <li class="tabs-title"><a href="#panel4">LINKED</a></li>
+                      </ul>
+                      <div class="media-object card-person full-table mt-0 mb-0-5">
+                        <div class="media-object-section logo small middle">
+                          <div class="img-wrapper circle">
+                            <img src="img/specialist.png" alt="">
+                          </div>
+                        </div>
+                        <div class="media-object-section description middle">
+                          <small data-tooltip tabindex="1" title="Theodore Constantinople" class="truncate">Theodore
+                            Constantinople
+                          </small>
+                          <small class="subheader"><i class="fa fa-check-circle success-color"></i>&nbsp; 3 Categories
+                          </small>
+                        </div>
+                        <div class="media-object-section middle">
+                          <div class="button-group tiny pull-right">
+                            <a href="#" class="button info circle"><i class="fa fa-close"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="media-object card-person full-table mt-0 mb-0-5">
+                        <div class="media-object-section logo small middle">
+                          <div class="img-wrapper circle">
+                            <img src="img/specialist.png" alt="">
+                          </div>
+                        </div>
+                        <div class="media-object-section description middle">
+                          <small data-tooltip tabindex="1" title="Katherine Wallace McPhee" class="truncate">Katherine
+                            Wallace McPhee
+                          </small>
+                          <small class="subheader"><i class="fa fa-check-circle alert-color"></i>&nbsp; Unassigned
+                          </small>
+                        </div>
+                        <div class="media-object-section middle">
+                          <div class="button-group tiny pull-right">
+                            <a href="#" class="button info circle"><i class="fa fa-close"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="medium-6 columns">
+                      <div class="page-lead row align-middle">
+                        <div class="auto columns">
+                          <h6 class="mb-0">Package Categories</h6>
+                          <p class="subheader mb-0">
+                            <small>1/12 Completed Categories</small>
+                          </p>
+                        </div>
+                      </div>
+                      <ul class="tabs" data-tabs id="example-tabs">
+                        <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">ALL</a></li>
+                        <li class="tabs-title"><a href="#panel2">COMPLETE</a></li>
+                        <li class="tabs-title"><a href="#panel3">INCOMPLETE</a></li>
+                      </ul>
+                      <div class="page-lead row align-middle">
+                        <div class="large-3 columns">
+                          <p class="subheader mb-0">Total Price</p>
+                        </div>
+                        <div class="large-9 columns">
+                          <div class="row align-middle collapse">
+                            <div class="large-6 columns">
+                              <div class="row align-middle">
+                                <div class="large-6 columns">
+                                  <small class="subheader mb-0">AUTOSUM</small>
+                                </div>
+                                <div class="large-6 columns">
+                                  <div class="switch tiny mb-0">
+                                    <input class="switch-input" id="tinySwitch1" type="checkbox" name="exampleSwitch"
+                                           checked="true">
+                                    <label class="switch-paddle" for="tinySwitch1">
+                                      <span class="show-for-sr">Tiny Sandwiches Enabled</span>
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="large-6 columns">
+                              <div class="input-group mb-0">
+                                <span class="input-group-label">$</span>
+                                <input type="text" class="input-group-field" value="0">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <ul class="well-list">
+                        <li>
+                          <div class="list-wrap row align-middle collapse">
+                            <div class="auto columns">
+                              <a data-toggle="category1"><i class="fa fa-caret-down fa-fw"></i> <b>Surgeon</b></a>
+                            </div>
+                            <div class="auto columns">
+                              <span class="badge success">2 Required</span>
+                              <span class="badge success">Doctor Required</span>
+                            </div>
+                            <div class="auto columns">
+                              <div class="input-group mb-0">
+                                <span class="input-group-label">$</span>
+                                <input type="text" class="input-group-field" value="0">
+                              </div>
+                            </div>
+                          </div>
+                          <div id="category1" class="list-panel" data-toggler data-animate="fade-in fade-out"
+                               style="display: none;">
+                            <ul class="tabs" data-tabs id="package-category-tabs">
+                              <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">COMPONENTS</a>
+                              </li>
+                              <li class="tabs-title"><a href="#panel2">DOCTORS</a></li>
+                            </ul>
+                            <div class="tabs-content" data-tabs-content="package-category-tabs">
+                              <div class="tabs-panel is-active" id="panel1">
+                                <table class="single-spacing striped">
+                                  <thead>
+                                  <tr>
+                                    <th>COMPONENT NAME</th>
+                                    <th>CODE</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr>
+                                    <td>
+                                      <input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1"
+                                                                                                        class=" mb-0">4-Day
+                                      Admission that is applicable to senior citizens and disabled persons.</label>
+                                    </td>
+                                    <td>
+                                      <span>005267</span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1"
+                                                                                                        class=" mb-0">Room
+                                      and Board</label>
+                                    </td>
+                                    <td>
+                                      <span>005267</span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1"
+                                                                                                        class=" mb-0">Complete
+                                      Blood Count</label>
+                                    </td>
+                                    <td>
+                                      <span>005267</span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1"
+                                                                                                        class=" mb-0">Complete
+                                      Urinalysis</label>
+                                    </td>
+                                    <td>
+                                      <span>005267</span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1"
+                                                                                                        class=" mb-0">X-Ray</label>
+                                    </td>
+                                    <td>
+                                      <span>005267</span>
+                                    </td>
+                                  </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <div class="tabs-panel" id="panel2">
+                                <div class="media-object card-person full-table mt-0 mb-0-5">
+                                  <div class="media-object-section logo small middle">
+                                    <div class="img-wrapper circle">
+                                      <img src="img/specialist.png" alt="">
+                                    </div>
+                                  </div>
+                                  <div class="media-object-section description middle">
+                                    <small data-tooltip tabindex="1" title="Theodore Constantinople" class="truncate">
+                                      Theodore Constantinople
+                                    </small>
+                                    <small class="subheader"><i class="fa fa-check-circle success-color"></i>&nbsp; 3
+                                      Categories
+                                    </small>
+                                  </div>
+                                  <div class="media-object-section middle">
+                                    <div class="button-group tiny pull-right">
+                                      <a href="#" class="button info circle"><i class="fa fa-close"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="media-object card-person full-table mt-0 mb-0-5">
+                                  <div class="media-object-section logo small middle">
+                                    <div class="img-wrapper circle">
+                                      <img src="img/specialist.png" alt="">
+                                    </div>
+                                  </div>
+                                  <div class="media-object-section description middle">
+                                    <small data-tooltip tabindex="1" title="Katherine Wallace McPhee" class="truncate">
+                                      Katherine Wallace McPhee
+                                    </small>
+                                    <small class="subheader"><i class="fa fa-check-circle alert-color"></i>&nbsp;
+                                      Unassigned
+                                    </small>
+                                  </div>
+                                  <div class="media-object-section middle">
+                                    <div class="button-group tiny pull-right">
+                                      <a href="#" class="button info circle"><i class="fa fa-close"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="list-wrap row align-middle collapse">
+                            <div class="auto columns">
+                              <a data-toggle="category1"><i class="fa fa-caret-down fa-fw"></i> <b>Anaesthetics</b></a>
+                            </div>
+                            <div class="auto columns">
+                              <span class="badge success">2 Required</span>
+                              <span class="badge success">Doctor Required</span>
+                            </div>
+                            <div class="auto columns">
+                              <div class="input-group mb-0">
+                                <span class="input-group-label">$</span>
+                                <input type="text" class="input-group-field" value="0">
+                              </div>
+                            </div>
+                          </div>
+                          <div id="category1" class="list-panel" data-toggler data-animate="fade-in fade-out"
+                               style="display: none;">
+                            <ul class="tabs" data-tabs id="package-category-tabs">
+                              <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">COMPONENTS</a>
+                              </li>
+                              <li class="tabs-title"><a href="#panel2">DOCTORS</a></li>
+                            </ul>
+                            <div class="tabs-content" data-tabs-content="package-category-tabs">
+                              <div class="tabs-panel is-active" id="panel1">
+                                <table class="single-spacing striped">
+                                  <thead>
+                                  <tr>
+                                    <th>COMPONENT NAME</th>
+                                    <th>CODE</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr>
+                                    <td>
+                                      <input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1"
+                                                                                                        class=" mb-0">4-Day
+                                      Admission that is applicable to senior citizens and disabled persons.</label>
+                                    </td>
+                                    <td>
+                                      <span>005267</span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1"
+                                                                                                        class=" mb-0">Room
+                                      and Board</label>
+                                    </td>
+                                    <td>
+                                      <span>005267</span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1"
+                                                                                                        class=" mb-0">Complete
+                                      Blood Count</label>
+                                    </td>
+                                    <td>
+                                      <span>005267</span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1"
+                                                                                                        class=" mb-0">Complete
+                                      Urinalysis</label>
+                                    </td>
+                                    <td>
+                                      <span>005267</span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1"
+                                                                                                        class=" mb-0">X-Ray</label>
+                                    </td>
+                                    <td>
+                                      <span>005267</span>
+                                    </td>
+                                  </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <div class="tabs-panel" id="panel2">
+                                <div class="media-object card-person full-table mt-0 mb-0-5">
+                                  <div class="media-object-section logo small middle">
+                                    <div class="img-wrapper circle">
+                                      <img src="img/specialist.png" alt="">
+                                    </div>
+                                  </div>
+                                  <div class="media-object-section description middle">
+                                    <small data-tooltip tabindex="1" title="Theodore Constantinople" class="truncate">
+                                      Theodore Constantinople
+                                    </small>
+                                    <small class="subheader"><i class="fa fa-check-circle success-color"></i>&nbsp; 3
+                                      Categories
+                                    </small>
+                                  </div>
+                                  <div class="media-object-section middle">
+                                    <div class="button-group tiny pull-right">
+                                      <a href="#" class="button info circle"><i class="fa fa-close"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="media-object card-person full-table mt-0 mb-0-5">
+                                  <div class="media-object-section logo small middle">
+                                    <div class="img-wrapper circle">
+                                      <img src="img/specialist.png" alt="">
+                                    </div>
+                                  </div>
+                                  <div class="media-object-section description middle">
+                                    <small data-tooltip tabindex="1" title="Katherine Wallace McPhee" class="truncate">
+                                      Katherine Wallace McPhee
+                                    </small>
+                                    <small class="subheader"><i class="fa fa-check-circle alert-color"></i>&nbsp;
+                                      Unassigned
+                                    </small>
+                                  </div>
+                                  <div class="media-object-section middle">
+                                    <div class="button-group tiny pull-right">
+                                      <a href="#" class="button info circle"><i class="fa fa-close"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="list-wrap row align-middle collapse">
+                            <div class="auto columns">
+                              <a data-toggle="category1"><i class="fa fa-caret-down fa-fw"></i> <b>Post Surgery</b></a>
+                            </div>
+                            <div class="auto columns">
+                              <span class="badge success">2 Required</span>
+                              <span class="badge success">Doctor Required</span>
+                            </div>
+                            <div class="auto columns">
+                              <div class="input-group mb-0">
+                                <span class="input-group-label">$</span>
+                                <input type="text" class="input-group-field" value="0">
+                              </div>
+                            </div>
+                          </div>
+                          <div id="category1" class="list-panel" data-toggler data-animate="fade-in fade-out"
+                               style="display: none;">
+                            <ul class="tabs" data-tabs id="package-category-tabs">
+                              <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">COMPONENTS</a>
+                              </li>
+                              <li class="tabs-title"><a href="#panel2">DOCTORS</a></li>
+                            </ul>
+                            <div class="tabs-content" data-tabs-content="package-category-tabs">
+                              <div class="tabs-panel is-active" id="panel1">
+                                <table class="single-spacing striped">
+                                  <thead>
+                                  <tr>
+                                    <th>COMPONENT NAME</th>
+                                    <th>CODE</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr>
+                                    <td>
+                                      <input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1"
+                                                                                                        class=" mb-0">4-Day
+                                      Admission that is applicable to senior citizens and disabled persons.</label>
+                                    </td>
+                                    <td>
+                                      <span>005267</span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1"
+                                                                                                        class=" mb-0">Room
+                                      and Board</label>
+                                    </td>
+                                    <td>
+                                      <span>005267</span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1"
+                                                                                                        class=" mb-0">Complete
+                                      Blood Count</label>
+                                    </td>
+                                    <td>
+                                      <span>005267</span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1"
+                                                                                                        class=" mb-0">Complete
+                                      Urinalysis</label>
+                                    </td>
+                                    <td>
+                                      <span>005267</span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <input id="checkbox1" type="checkbox" class="mb-0" checked><label for="checkbox1"
+                                                                                                        class=" mb-0">X-Ray</label>
+                                    </td>
+                                    <td>
+                                      <span>005267</span>
+                                    </td>
+                                  </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <div class="tabs-panel" id="panel2">
+                                <div class="media-object card-person full-table mt-0 mb-0-5">
+                                  <div class="media-object-section logo small middle">
+                                    <div class="img-wrapper circle">
+                                      <img src="img/specialist.png" alt="">
+                                    </div>
+                                  </div>
+                                  <div class="media-object-section description middle">
+                                    <small data-tooltip tabindex="1" title="Theodore Constantinople" class="truncate">
+                                      Theodore Constantinople
+                                    </small>
+                                    <small class="subheader"><i class="fa fa-check-circle success-color"></i>&nbsp; 3
+                                      Categories
+                                    </small>
+                                  </div>
+                                  <div class="media-object-section middle">
+                                    <div class="button-group tiny pull-right">
+                                      <a href="#" class="button info circle"><i class="fa fa-close"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="media-object card-person full-table mt-0 mb-0-5">
+                                  <div class="media-object-section logo small middle">
+                                    <div class="img-wrapper circle">
+                                      <img src="img/specialist.png" alt="">
+                                    </div>
+                                  </div>
+                                  <div class="media-object-section description middle">
+                                    <small data-tooltip tabindex="1" title="Katherine Wallace McPhee" class="truncate">
+                                      Katherine Wallace McPhee
+                                    </small>
+                                    <small class="subheader"><i class="fa fa-check-circle alert-color"></i>&nbsp;
+                                      Unassigned
+                                    </small>
+                                  </div>
+                                  <div class="media-object-section middle">
+                                    <div class="button-group tiny pull-right">
+                                      <a href="#" class="button info circle"><i class="fa fa-close"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+
+                      </ul>
+
+                    </div>
+                  </div> <!-- End of Package Roullette -->
+                </div>
+              </div>
+
+            </div>
+
+            <div class="tabs-panel" id="Media">
+              <div class="block">
+                <div class="block-heading row align-middle collapse expanded">
+                  <div class="columns">
+                    <span class="h6">Photo Gallery</span>
+                  </div>
+                  <div class="shrink columns">
+                    <div class="button-align mb-0 small pull-right">
+                      <a data-open="addPhoto" class="button hollow rounded"><i class="fa fa-plus"></i>&nbsp; Add</a>
+
+                      <div class="reveal" id="addPhoto" data-reveal data-animation-in="fade-in"
+                           data-animation-out="fade-out">
+                        <div class="row collapse">
+                          <div class="large-12 columns">
+                            <h5 class="reveal-heading">Add Photo</h5>
+                          </div>
+                        </div>
+                        <div class="row collapse">
+                          <div class="large-12 columns">
+                            <div class="reveal-body">
+                              <div class="row">
+                                <div class="medium-12 columns end">
+                                  <label>
+                                    JPG, GIF or PNG. Image must be at least 400x300 in size.
+                                    <div class="input-group">
+                                      <input class="input-group-field" type="file">
+                                      <div class="input-group-button">
+                                        <input type="submit" class="button success" value="Upload">
+                                      </div>
+                                    </div>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="close-button" data-close aria-label="Close modal" type="button">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="block-container">
+                  <div class="row expanded">
+                    <div class="medium-3 columns end">
+                      <div class="gallery-item">
+                        <div class="image">
+                          <img src="img/slide-arete-surgical-center-1.jpg">
+                        </div>
+                        <div class="action">
+                          <a href="#" class="button tiny">Make Primary</a>
+                          <a href="#" class="button tiny alert"><i class="fa fa-trash"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="block">
+                <div class="block-heading row align-middle collapse expanded">
+                  <div class="columns">
+                    <span class="h6">Videos</span>
+                  </div>
+                  <div class="shrink columns">
+                    <div class="button-align mb-0 small pull-right">
+                      <a data-open="addVideo" class="button hollow rounded"><i class="fa fa-plus"></i>&nbsp; Add</a>
+
+                      <div class="reveal" id="addVideo" data-reveal data-animation-in="fade-in"
+                           data-animation-out="fade-out">
+                        <div class="row collapse">
+                          <div class="large-12 columns">
+                            <h5 class="reveal-heading">Add Video</h5>
+                          </div>
+                        </div>
+                        <div class="row collapse">
+                          <div class="large-12 columns">
+                            <div class="reveal-body">
+                              <div class="row">
+                                <div class="large-12 columns">
+                                  <label>
+                                    Add URL
+                                    <div class="input-group">
+                                      <input type="text" class="input-group-field" placeholder="Enter URL here">
+                                      <div class="input-group-button">
+                                        <a href="#" class="button success">Add</a>
+                                      </div>
+                                    </div>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="close-button" data-close aria-label="Close modal" type="button">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="block-container">
+                  <div class="row expanded">
+                    <div class="medium-4 columns end">
+                      <div class="gallery-item">
+                        <iframe src="https://www.youtube.com/embed/WFoWdI9x5oQ" frameborder="0" allowfullscreen></iframe>
+                        <div class="action">
+                          <a href="#" class="button tiny">Make Primary</a>
+                          <a href="#" class="button tiny alert"><i class="fa fa-trash"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="medium-4 columns end">
+                      <div class="gallery-item">
+                        <iframe src="https://www.youtube.com/embed/WFoWdI9x5oQ" frameborder="0" allowfullscreen></iframe>
+                        <div class="action">
+                          <a href="#" class="button tiny">Make Primary</a>
+                          <a href="#" class="button tiny alert"><i class="fa fa-trash"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="medium-4 columns end">
+                      <div class="gallery-item">
+                        <iframe src="https://www.youtube.com/embed/WFoWdI9x5oQ" frameborder="0" allowfullscreen></iframe>
+                        <div class="action">
+                          <a href="#" class="button tiny">Make Primary</a>
+                          <a href="#" class="button tiny alert"><i class="fa fa-trash"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- // END OF MEDIA -->
+            </div>
+            <div class="tabs-panel" id="Staff">
+              <div class="block">
+                <div class="block-heading row align-middle collapse expanded">
+                  <div class="columns">
+                    <span class="h6">Medical Staff</span>
+                  </div>
+                  <div class="shrink columns">
+                    <div class="button-align mb-0 small pull-right">
+                      <a href="#" class="button hollow rounded"><i class="fa fa-plus"></i>&nbsp; Add</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-container">
+                  <!-- Admin Items -->
+                  <div class="row expanded">
+                    <div class="columns medium-6 end">
+                      <div class="card card-person">
+                        <div class="media-object">
+                          <div class="media-object-section logo">
+                            <div class="img-wrapper">
+                              <img src="img/avatar_placeholder.png">
+                            </div>
+                          </div>
+                          <div class="media-object-section">
+                            <div class="person-info">
+                              <p class="info-name">David Warkentin</p>
+                              <p class="info-email">david_warkentin@hilll.com</p>
+                              <p class="info-phone">058-818-3600</p>
+                              <ul class="tag-cloud compact">
+                                <li class="tag-cloud-individual-tag">
+                                  Total Knee Replacement - 780
+                                </li>
+                                <li class="tag-cloud-individual-tag">
+                                  Hip Surgery - 780
+                                </li>
+                                <li class="tag-cloud-individual-tag">
+                                  Molar Root Canal - 780
+                                </li>
+                                <li class="tag-cloud-individual-tag">
+                                  Brain Surgery - 780
+                                </li>
+                                <li class="tag-cloud-individual-tag">
+                                  Heart Surgery - 780
+                                </li>
+                                <li class="tag-cloud-individual-tag">
+                                  Facial Surgery - 780
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // Admin Items -->
+                </div>
+              </div>
+              <!-- // END OF STAFF -->
+            </div>
+          </div>
+          <!-- // tab content -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/what-input/what-input.js"></script>
+<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+<script src="js/trumbowyg/trumbowyg.min.js"></script>
+<script src="js/app.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var timer;
+
+        $(window).resize(function () {
+            clearTimeout(timer);
+            timer = setTimeout(function () {
+                $('.site-nav, .content').css("height", $(window).height());
+            }, 40);
+        }).resize();
+    });
+
+    $('.wysiwyg').trumbowyg();
+</script>
+</body>
+
+</html>

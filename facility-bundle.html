@@ -1,0 +1,252 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spoke Admin Portal</title>
+  <link rel="stylesheet" href="js/trumbowyg/ui/trumbowyg.min.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+<div id="full-page">
+  <div class="row collapse expanded full-page-header">
+    <div class="auto column">
+      <div class="row align-middle expanded reveal-heading">
+        <div class="shrink columns">
+          <div class="button-align small mb-0">
+            <a class="button rounded hollow white" href="clinical-pathway-builder.html"><i class="fa fa-arrow-left"></i></a>
+          </div>
+        </div>
+        <div class="columns">
+          <span class="h6">Total Knee Replacement</span>
+          <p class="mb-0"><small>Brendon Martin</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row expanded full-page-body" id="ui-add-new-clinical-pathway">
+
+    <div class="columns medium-3 bg-black10 full-page-body-sidebar">
+
+      <div class=" clinical-pathway-new-entry-list">
+
+        <div class="row">
+          <div class="columns large-12">
+            <h6 class="mt-1 mb-1">LOCATION</h6>
+            <div class="label-group bg-none">
+              <div class="checkbox-wrapper fancy-checkbox small">
+                <input type="checkbox" name="local" value="" id="local" checked=""><label for="local">Local
+                Facilities</label>
+              </div>
+
+              <div class="checkbox-wrapper fancy-checkbox small">
+                <input type="checkbox" name="national" value="" id="national"><label for="national">National
+                Facilities</label>
+              </div>
+              <div class="checkbox-wrapper fancy-checkbox small">
+                <input type="checkbox" name="international" value="" id="international"><label for="international">International
+                Facilities</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="columns large-12">
+            <h6 class="mt-1 mb-1">RATING</h6>
+            <div class="label-group bg-none">
+              <div class="checkbox-wrapper fancy-checkbox small">
+                <input type="checkbox" name="100" value="" id="100" checked=""><label for="100">100 - 200</label>
+              </div>
+              <div class="checkbox-wrapper fancy-checkbox small">
+                <input type="checkbox" name="200" value="" id="200"><label for="200">200 - 300</label>
+              </div>
+              <div class="checkbox-wrapper fancy-checkbox small">
+                <input type="checkbox" name="300" value="" id="300"><label for="300">300 - 400</label>
+              </div>
+              <div class="checkbox-wrapper fancy-checkbox small">
+                <input type="checkbox" name="400" value="" id="400"><label for="400">400 - 500</label>
+              </div>
+              <div class="checkbox-wrapper fancy-checkbox small">
+                <input type="checkbox" name="500" value="" id="500"><label for="500">500 - 600</label>
+              </div>
+              <div class="checkbox-wrapper fancy-checkbox small">
+                <input type="checkbox" name="600" value="" id="600"><label for="600">600 - 700</label>
+              </div>
+              <div class="checkbox-wrapper fancy-checkbox small">
+                <input type="checkbox" name="700" value="" id="700"><label for="700">700 - 800</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="columns large-12">
+            <h6 class="mt-1 mb-1">COST</h6>
+            <div class="label-group bg-none">
+              <div class="checkbox-wrapper fancy-checkbox small">
+                <input type="checkbox" name="1000" value="" id="1000" checked=""><label for="1000">$1,000 -
+                $5,000</label>
+              </div>
+              <div class="checkbox-wrapper fancy-checkbox small">
+                <input type="checkbox" name="5000" value="" id="5000"><label for="5000">$5,000 - $10,000</label>
+              </div>
+              <div class="checkbox-wrapper fancy-checkbox small">
+                <input type="checkbox" name="10000" value="" id="10000"><label for="10000">$10,000 - $50,000</label>
+              </div>
+              <div class="checkbox-wrapper fancy-checkbox small">
+                <input type="checkbox" name="50000" value="" id="50000"><label for="50000">$50,000 -
+                $100,000</label>
+              </div>
+              <div class="checkbox-wrapper fancy-checkbox small">
+                <input type="checkbox" name="100000" value="" id="100000"><label for="100000">$100,000 -
+                $500,000</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="columns full-page-body-content">
+      <div class="row">
+        <div class="auto columns">
+          <div class="input-group mt-1">
+            <input class="input-group-field" type="text" placeholder="Search facilities..."></input>
+            <div class="input-group-button">
+              <input type="submit" class="button secondary" value="Search">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="auto columns">
+          <ul class="tag-cloud compact">
+            <li class="tag-cloud-individual-tag">Local Facilities <i class="fa fa-times"></i></li>
+            <li class="tag-cloud-individual-tag">International Facilities <i class="fa fa-times"></i></li>
+            <li class="tag-cloud-individual-tag">100 - 200 <i class="fa fa-times"></i></li>
+            <li class="tag-cloud-individual-tag">600 - 700 <i class="fa fa-times"></i></li>
+            <li class="tag-cloud-individual-tag">$1,000 - $5,000 <i class="fa fa-times"></i></li>
+            <li class="tag-cloud-individual-tag">$100,000 - $500,000 <i class="fa fa-times"></i></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="page-lead row align-middle">
+        <div class="auto columns">
+          <span class="h5">3 Selected Facilities</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="auto columns">
+          <div class="spoke-list">
+
+            <div class="spoke-list-heading row expanded align-middle">
+              <div class="medium-6 columns">
+                <input type="checkbox" class="mb-0 mr-1" name="">&nbsp;
+                <a href="#">Facility Name <i class="fa fa-caret-up fa-fw"></i></a>
+              </div>
+              <div class="medium-2 columns">
+                <a href="#">Cost <i class="fa fa-caret-up fa-fw"></i></a>
+              </div>
+              <div class="medium-2 columns">
+                <a href="#">Rating <i class="fa fa-caret-up fa-fw"></i></a>
+              </div>
+              <div class="medium-2 columns">
+                <a href="#">Distance <i class="fa fa-caret-up fa-fw"></i></a>
+              </div>
+            </div>
+
+            <div class="spoke-list-item row expanded align-middle" onclick="location.href='#'">
+              <div class="medium-6 columns">
+                <div class="checkbox-wrapper fancy-checkbox small mb-0">
+                  <input type="checkbox" name="fa1" value="" id="fa1" checked=""><label class="truncate" for="fa1">University Of Colorado
+                  Hospital Phm</label>
+                </div>
+              </div>
+              <div class="medium-2 columns">
+                <p>$25000.00</p>
+              </div>
+              <div class="medium-2 columns">
+                <p>800</p>
+              </div>
+              <div class="medium-2 columns">
+                <p>64.2 mi</p>
+              </div>
+            </div>
+
+            <div class="spoke-list-item row expanded align-middle" onclick="location.href='#'">
+              <div class="medium-6 columns">
+                <div class="checkbox-wrapper fancy-checkbox small mb-0">
+                  <input type="checkbox" name="fa1" value="" id="fa1" checked=""><label class="truncate" for="fa1">Denver Health</label>
+                </div>
+              </div>
+              <div class="medium-2 columns">
+                <p>$25000.00</p>
+              </div>
+              <div class="medium-2 columns">
+                <p>800</p>
+              </div>
+              <div class="medium-2 columns">
+                <p>64.2 mi</p>
+              </div>
+            </div>
+
+            <div class="spoke-list-item row expanded align-middle" onclick="location.href='#'">
+              <div class="medium-6 columns">
+                <div class="checkbox-wrapper fancy-checkbox small mb-0">
+                  <input type="checkbox" name="fa1" value="" id="fa1" checked=""><label class="truncate" for="fa1">Saint Joseph Hospital</label>
+                </div>
+              </div>
+              <div class="medium-2 columns">
+                <p>$25000.00</p>
+              </div>
+              <div class="medium-2 columns">
+                <p>800</p>
+              </div>
+              <div class="medium-2 columns">
+                <p>64.2 mi</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/what-input/what-input.js"></script>
+<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+<script src="js/trumbowyg/trumbowyg.min.js"></script>
+<script src="js/app.js"></script>
+<script type="text/javascript">
+  $(function () {
+    var timer;
+
+    $(window).resize(function () {
+      clearTimeout(timer);
+      timer = setTimeout(function () {
+        $('.site-nav, .content').css("height", $(window).height());
+      }, 40);
+    }).resize();
+  });
+
+  $('.wysiwyg').trumbowyg();
+</script>
+</body>
+
+</html>

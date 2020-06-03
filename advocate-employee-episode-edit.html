@@ -1,298 +1,564 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Spoke Admin Portal</title>
-	<link rel="stylesheet" href="css/app.css">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spoke Admin Portal</title>
+  <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-	
-	<div class="expanded row medium-collapse">
-		<div class="medium-2 columns">
-			<div class="site-nav">
-				<header>
-					<a href="#" class="logo text-center">
-						<img src="img/logo.png" title="Spoke">
-					</a>
-				</header>
-				<ul class="menu vertical"  data-accordion-menu>
-					<li>
-						<a href="advocate-dashboard.html"><i class="material-icons">dashboard</i> Dashboard</a>
-					</li>
-					<li class="is-active">
-						<a href="advocate-employees.html"><i class="material-icons">face</i>Employees</a>
-					</li>
-					<li>
-						<a href="advocate-communications.html">Inbox</a>
-					</li>
-					<li>
-						<a href="#">Doctors</a>
-					</li>
-					<li>
-						<a href="advocate-facilities.html">Facilities</a>
-					</li>
-					<li>
-						<a href="#">Activity Logs</a>
-					</li>
-					<li>
-						<a href="advocate-profile.html"><i class="material-icons">account_circle</i> Profile</a>
-						<ul class="nested vertical menu">
-							<li>
-								<a href="advocate-profile.html">User Information</a>
-							</li>
-							<li>
-								<a href="advocate-password.html">Change My Password</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="medium-10 columns">
-			<div class="content">
 
-				<div class="top-bar">
-				  	<div class="top-bar-left">
-						<!-- <ul class="menu">
-				      		<li><input type="search" placeholder="Search"></li>
-				      		<li><button type="button" class="button">Search</button></li>
-			    		</ul> -->
-				  	</div>
-				  	<div class="top-bar-right">
-				    	<ul class="dropdown menu" data-dropdown-menu>
-				    		<li class="drop-text">
-				    			<a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">24</span></a>
-				    			<ul class="notifications menu vertical">
-				          			<li>
-				          				<span>Admin Admin recently made changes to <a href="#">Denver Vail Orthopedics</a>.</span>
-				          			</li>
-				          			<li>
-				          				<span>Admin Admin recently made changes to <a href="#">Denver Vail Orthopedics</a>.</span>
-				          			</li>
-				          			<li>
-				          				<a href="#" class="button info hollow tiny expanded">View All</a>
-				          			</li>
-				        		</ul>
-			    			</li>
-			    			<li>
-				        		<a data-toggle="chatSupport"><i class="fa fa-phone-square fa-lg"></i><span class="success badge" id="notifCount">1</span></a>
-				      		</li>
-				      		<li>
-				        		<a href="#">Spoke Advocate &nbsp;</a>
-				        		<ul class="menu vertical">
-				          			<li><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Sign Out</a></li>
-				        		</ul>
-				      		</li>
-				    	</ul>
-				  	</div>
-				</div>
+<div class="expanded row medium-collapse">
+  <div class="medium-2 columns">
+    <div class="site-nav">
+      <header>
+        <a href="#" class="logo text-center">
+          <img src="img/logo.png" title="Spoke">
+        </a>
+      </header>
+      <ul class="menu vertical" data-accordion-menu>
+        <li>
+          <a href="advocate-dashboard.html">Dashboard</a>
+        </li>
+        <li class="is-active">
+          <a href="advocate-employees.html">Employees</a>
+        </li>
+        <li>
+          <a href="advocate-communications.html">Inbox</a>
+        </li>
+        <li>
+          <a href="#">Doctors</a>
+        </li>
+        <li>
+          <a href="advocate-facilities.html">Facilities</a>
+        </li>
+        <li>
+          <a href="#">Activity Logs</a>
+        </li>
+        <li>
+          <a href="advocate-profile.html">Profile</a>
+          <ul class="nested vertical menu">
+            <li>
+              <a href="advocate-profile.html">User Information</a>
+            </li>
+            <li>
+              <a href="advocate-password.html">Change My Password</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="medium-10 columns">
+    <div class="content">
 
-				<div class="row expanded collapse">
+      <div class="top-bar">
+        <div class="top-bar-left">
+          <!-- <ul class="menu">
+                <li><input type="search" placeholder="Search"></li>
+                <li><button type="button" class="button">Search</button></li>
+            </ul> -->
+        </div>
+        <div class="top-bar-right">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li class="drop-text">
+              <a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge"
+                                                                                                id="notifCount">24</span></a>
+              <ul class="notifications menu vertical">
+                <li>
+                  <span>Admin Admin recently made changes to <a href="#">Denver Vail Orthopedics</a>.</span>
+                </li>
+                <li>
+                  <span>Admin Admin recently made changes to <a href="#">Denver Vail Orthopedics</a>.</span>
+                </li>
+                <li>
+                  <a href="#" class="button info hollow tiny expanded">View All</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a data-toggle="chatSupport"><i class="fa fa-phone-square fa-lg"></i><span class="success badge"
+                                                                                         id="notifCount">1</span></a>
+            </li>
+            <li>
+              <a href="#">Spoke Advocate &nbsp;</a>
+              <ul class="menu vertical">
+                <li><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Sign Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-					<div class="large-3 columns">
-						<div class="secondary site-nav">
-							<ul class="menu vertical"  data-accordion-menu>
-								<li>
-									<a href="advocate-employees.html"><small><i class="fa fa-long-arrow-left"></i>&nbsp; Back To All Employees</small></a>
-								</li>
-								<li>
-									<div class="card-user-profile">
-									  	<div class="card-user-profile-content card-section">
-									    	<div class="card-user-profile-avatar">
-									      		<span class="h5">R</span>
-									    	</div>
-									    	<p class="card-user-profile-name">Raymond Peterson</p>
-									 	 </div>
+      <div class="row expanded collapse">
 
-									  	<div class="card-user-profile-actions text-center">
-									    	<div class="button-align">
-									    		<a href="#" class="button circle success"><i class="fa fa-phone fa-fw"></i></a>
-												<a href="#" class="button circle success"><i class="fa fa-video-camera fa-fw"></i></a>
-												<a href="#" class="button circle success"><i class="fa fa-comments fa-fw"></i></a>
-									    	</div>
-									  	</div>
-									</div>
-								</li>
-								<li>
-									<a href="advocate-employee-profile-v2.html"><i class="fa fa-address-book-o"></i> &nbsp;Overview</a>
-								</li>
-								<li class="is-active">
-									<a href="advocate-employee-episode-v2.html"><i class="fa fa-stethoscope"></i> &nbsp;Episode Details</a>
-								</li>
-								<li>
-									<a href="advocate-employee-notes-v2.html"><i class="fa fa-sticky-note-o"></i> &nbsp;Notes</a>
-								</li>
-								<li>
-									<a href="advocate-employee-activity-v2.html"><i class="fa fa-exchange"></i> &nbsp;Activity</a>
-								</li>
-								<li>
-									<a href="advocate-employee-inbox-v2.html"><i class="fa fa-comment-o"></i> &nbsp;Inbox</a>
-								</li>
-							</ul>
-						</div>
-					</div>
+        <div class="shrink columns">
+          <div class="secondary site-nav">
+            <ul class="menu vertical" data-accordion-menu>
+              <li>
+                <a href="advocate-employees.html">
+                  <small><i class="fa fa-long-arrow-left"></i>&nbsp; Back To All Employees</small>
+                </a>
+              </li>
+              <li>
+                <div class="card-user-profile">
+                  <div class="card-user-profile-content card-section">
+                    <div class="card-user-profile-avatar">
+                      <span class="h5">R</span>
+                    </div>
+                    <p class="card-user-profile-name">Ray Pite</p>
+                  </div>
 
-					<div id="profileContent" class="large-9 columns">
+                  <div class="card-user-profile-actions text-center">
+                    <div class="button-align">
+                      <a href="#" class="button circle success"><i class="fa fa-phone"></i></a>
+                      <a href="#" class="button circle success"><i class="fa fa-video"></i></a>
+                      <a href="#" class="button circle success"><i class="fa fa-comments"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="advocate-employee-profile-v2.html"><i class="fa fa-address-book-o"></i> &nbsp;Overview</a>
+              </li>
+              <li class="is-active">
+                <a href="advocate-employee-episode-v2.html"><i class="fa fa-stethoscope"></i> &nbsp;Episode Details</a>
+              </li>
+              <li>
+                <a href="advocate-employee-notes-v2.html"><i class="fa fa-sticky-note-o"></i> &nbsp;Notes</a>
+              </li>
+              <li>
+                <a href="advocate-employee-activity-v2.html"><i class="fa fa-exchange"></i> &nbsp;Activity</a>
+              </li>
+              <li>
+                <a href="advocate-employee-inbox-v2.html"><i class="fa fa-comment-o"></i> &nbsp;Inbox</a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-						<div class="row">
-							<div class="medium-12 columns">
-								<nav aria-label="You are here:" role="navigation">
-								  	<ul class="breadcrumbs">
-								    	<li><a href="advocate-employee-episode-v2.html">Episode Details</a></li>
-								    	<li>Edit Episode</li>
-								  	</ul>
-								</nav>				
-							</div>
-						</div>
-								
-						<div class="row">
-							<div class="large-12 columns">
+        <div id="profileContent" class="large-9 columns">
 
-								<div class="row collapse">
-									<div class="large-12 columns">
-										<div class="page-lead">
-											<span class="h5">Episode Details</span>
-										</div>
-									</div>
-								</div>
+          <div class="row">
+            <div class="medium-12 columns">
+              <nav aria-label="You are here:" role="navigation">
+                <ul class="breadcrumbs">
+                  <li><a href="advocate-employee-episode-v2.html">Episode Details</a></li>
+                  <li>Edit Episode</li>
+                </ul>
+              </nav>
+            </div>
+          </div>
 
-								<div class="callout">
+          <div class="row">
+            <div class="large-12 columns">
 
-									<form>
-										<div class="row">
-											<div class="large-6 columns end">
-												<label>Surgery Needed
-							  						<select>
-							  							<option value="" disabled selected>Total Knee Replacement</option>
-							  						</select>
-							  					</label>
-											</div>
-										</div>
-										<div class="row">
-											<div class="large-6 columns end">
-												<label>Spoke Health Advocate
-							  						<select>
-							  							<option value="" disabled selected>Search Advocates</option>
-							  						</select>
-							  					</label>
-											</div>
-										</div>
-										<hr>
-										<div class="row">
-											<div class="large-6 columns end">
-												<label>Referring Physician
-							  						<input type="text" value="Florence Nightingale">
-							  					</label>
-											</div>
-										</div>
-										<div class="row">
-											<div class="large-6 columns end">
-												<label>Referring Physician Contact Number
-							  						<input type="text" value="123-456-7890">
-							  					</label>
-											</div>
-										</div>
-										<div class="row">
-											<div class="large-6 columns end">
-												<label>Negotiated Rate for Procedure Package
-							  						<div class="input-group">
-												  		<span class="input-group-label">$</span>
-												  		<input class="input-group-field" type="text" value="10,000">
-													</div>
-							  					</label>
-											</div>
-										</div>
-										<hr>
-										<div class="row">
-											<div class="large-6 columns end">
-												<label>Total Deductible
-							  						<div class="input-group">
-												  		<span class="input-group-label">$</span>
-												  		<input class="input-group-field" type="text" value="10,000">
-													</div>
-							  					</label>
-											</div>
-										</div>
-										<div class="row">
-											<div class="large-6 columns end">
-												<label>Remaining Deductible
-							  						<div class="input-group">
-												  		<span class="input-group-label">$</span>
-												  		<input class="input-group-field" type="text" value="10,000">
-													</div>
-							  					</label>
-											</div>
-										</div>
-										<div class="row">
-											<div class="large-6 columns end">
-												<label>Co-insurance %
-							  						<div class="input-group">
-												  		<input class="input-group-field" type="text" value="10,000">
-												  		<span class="input-group-label">%</span>
-													</div>
-							  					</label>
-											</div>
-										</div>
-										<div class="row">
-											<div class="large-6 columns end">
-												<label>Out-Of-Pocket Maximum
-							  						<div class="input-group">
-												  		<span class="input-group-label">$</span>
-												  		<input class="input-group-field" type="text" value="10,000">
-													</div>
-							  					</label>
-											</div>
-										</div>
-										<div class="row">
-											<div class="large-12 columns">
-												<div class="button-align submit">
-													<a href="admin-employee-profile-v2.html" class="button link">Cancel</a>
-													<a href="admin-employee-profile-v2.html" class="button success">Save Changes</a>
-												</div>
-											</div>
-										</div>
+              <div class="page-lead row collapse expanded align-middle">
+                <div class="shrink columns">
+                  <span class="h6">Episode Information</span>
+                </div>
+                <div class="shrink columns">
+                  <div class="button-align tiny">
+                    <a data-open="changeEpisode" class="button hollow rounded success"><i class="fa fa-edit"></i>&nbsp;
+                      Change</a>
 
-									</form>
+                    <div class="reveal" id="changeEpisode" data-reveal data-animation-in="fade-in"
+                         data-animation-out="fade-out">
+                      <div class="row collapse">
+                        <div class="large-12 columns">
+                          <h5 class="reveal-heading">Change Contact Information</h5>
+                        </div>
+                      </div>
+                      <form>
+                        <div class="row collapse">
+                          <div class="large-12 columns">
+                            <div class="reveal-body">
+                              <div class="row">
+                                <div class="auto columns">
+                                  <label>
+                                    Episode
+                                    <select name="" id="">
+                                      <option value="">Test</option>
+                                    </select>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row collapse">
+                          <div class="large-12 columns">
+                            <div class="reveal-footer">
+                              <div class="button-group pull-right">
+                                <a class="button link" data-close>Cancel</a>
+                                <a href="#" class="button success">Save Changess</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                      <button class="close-button" data-close aria-label="Close modal" type="button">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
 
-								</div>	
-							</div>
-						</div>
+                  </div>
+                </div>
+              </div>
 
-					</div>
+              <div class="row">
+                <div class="large-3 columns end">
+                  <label class="text-center middle">Surgery Needed</label>
+                </div>
+                <div class="large-9 columns end">
+                  <select disabled>
+                    <option value="" disabled selected>Total Knee Replacement</option>
+                    <option value="">Dental Surgery</option>
+                  </select>
+                </div>
+              </div>
 
-				</div>
-				
-			</div>
-		</div>
-	</div>
+              <div class="row label-block collapse">
+                <div class="large-3 columns end">
+                  <div class="label-group">
+                    <p>Total Deductible</p>
+                    <h6>10,000.00
+                      <small>USD</small>
+                    </h6>
+                    <p class="subheader">
+                      <small>From PoKitDoc Jan-12 8:00am</small>
+                    </p>
+                  </div>
+                </div>
+                <div class="large-3 columns end">
+                  <div class="label-group">
+                    <p>Remaining Deductible</p>
+                    <h6>10,000.00
+                      <small>USD</small>
+                    </h6>
+                    <p class="subheader">
+                      <small>Edited by Emman C. Jan-12 8:00am</small>
+                    </p>
+                  </div>
+                </div>
+                <div class="large-3 columns end">
+                  <div class="label-group">
+                    <p>Co-insurance %</p>
+                    <h6>10,000.00
+                      <small>USD</small>
+                    </h6>
+                    <p class="subheader">
+                      <small>From PoKitDoc Jan-12 8:00am</small>
+                    </p>
+                  </div>
+                </div>
+                <div class="large-3 columns end">
+                  <div class="label-group">
+                    <p>Out-of-Pocket Maximum</p>
+                    <h6>10,000.00
+                      <small>USD</small>
+                    </h6>
+                    <p class="subheader">
+                      <small>From PoKitDoc Jan-12 8:00am</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-	<script src="bower_components/jquery/dist/jquery.js"></script>
-	<script src="bower_components/what-input/what-input.js"></script>
-	<script src="bower_components/foundation-sites/dist/foundation.js"></script>
-	<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
-	<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
-	<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+              <div class="page-lead row collapse expanded align-middle">
+                <div class="shrink columns">
+                  <span class="h6">Contact Information</span>
+                </div>
+                <div class="shrink columns">
+                  <div class="button-align tiny">
+                    <a data-open="changeContact" class="button hollow rounded success"><i class="fa fa-edit"></i>&nbsp;
+                      Change</a>
 
-	<script src="js/app.js"></script>
+                    <div class="reveal" id="changeContact" data-reveal data-animation-in="fade-in"
+                         data-animation-out="fade-out">
+                      <div class="row collapse">
+                        <div class="large-12 columns">
+                          <h5 class="reveal-heading">Change Contact Information</h5>
+                        </div>
+                      </div>
+                      <form>
+                        <div class="row collapse">
+                          <div class="large-12 columns">
+                            <div class="reveal-body">
+                              <div class="row">
+                                <div class="auto columns">
+                                  <label>
+                                    Email Address
+                                    <input type="email" value="john.doe@domain.com">
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="auto columns">
+                                  <label>
+                                    Phone Number
+                                    <input type="email" value="john.doe@domain.com">
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="large-12 columns end">
+                                  <label>Street Address
+                                    <input type="text" name="" value="46 Platte St.">
+                                    <input type="text" name="" value="">
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="large-4 columns end">
+                                  <label>Country
+                                    <select>
+                                      <option>United States of America</option>
+                                    </select>
+                                  </label>
+                                </div>
+                                <div class="large-4 columns end">
+                                  <label>State
+                                    <select>
+                                      <option>Denver</option>
+                                    </select>
+                                  </label>
+                                </div>
+                                <div class="large-4 columns end">
+                                  <label>City
+                                    <select>
+                                      <option>Denver</option>
+                                    </select>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="large-4 columns end">
+                                  <label>Postal Code
+                                    <input type="text" name="" value="654512">
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row collapse">
+                          <div class="large-12 columns">
+                            <div class="reveal-footer">
+                              <div class="button-group pull-right">
+                                <a class="button link" data-close>Cancel</a>
+                                <a href="#" class="button success">Save Changes</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                      <button class="close-button" data-close aria-label="Close modal" type="button">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
 
-	<script type="text/javascript">
+                  </div>
+                </div>
+              </div>
 
-		var topBarHeight = $('.top-bar').outerHeight(true);
+              <div class="row collapse label-block">
+                <div class="large-6 columns end">
+                  <div class="label-group">
+                    <p>Email Address</p>
+                    <h6>r.peterson@domain.com</h6>
+                  </div>
+                </div>
+                <div class="large-6 columns end">
+                  <div class="label-group">
+                    <p>Phone Number</p>
+                    <h6>123-456-7890</h6>
+                  </div>
+                </div>
+              </div>
 
-        $(function () {
-            var timer;
-            $(window).resize(function() {
-                clearTimeout(timer);
-                timer = setTimeout(function() {
-                  $('#chatSupport, #chatSupport .offcanvas-area-inner, .site-nav, .content').css("height", $(window).height());
-                  $('.site-nav.secondary, #profileContent, #chatClient .chat-wrapper').css("height", $(window).height() - topBarHeight);
-                }, 40); 
-            }).resize();
-        });
+              <div class="row collapse label-block">
+                <div class="large-12 columns end">
+                  <div class="label-group">
+                    <p>Address</p>
+                    <h6>336 1st Dr, El Paso, NJ, USA 23654</h6>
+                  </div>
+                </div>
+              </div>
 
-    </script>
+              <!--<div class="page-lead row collapse expanded align-middle">-->
+                <!--<div class="auto columns">-->
+                  <!--<span class="h6 mb-0">Pre-surgery Questionnaire</span>-->
+                  <!--<p class="subheader">-->
+                    <!--<small>7 of 10 Answered</small>-->
+                  <!--</p>-->
+                <!--</div>-->
+              <!--</div>-->
+
+              <!--<div class="row label-block collapse">-->
+                <!--<div class="shrink columns">-->
+                  <!--<div class="label-group">-->
+                    <!--<span for="" class="badge success mb-0-5">1</span>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="columns">-->
+                  <!--<div class="label-group">-->
+                    <!--<label>-->
+                      <!--When were you thinking of having your surgery?-->
+                      <!--<select>-->
+                        <!--<option value=""></option>-->
+                        <!--<option>As soon as possible</option>-->
+                        <!--<option selected>2 - 4 Weeks</option>-->
+                        <!--<option>4 - 8 Weeks</option>-->
+                        <!--<option>2 - 4 Months</option>-->
+                        <!--<option>4 - 6 Months</option>-->
+                        <!--<option>6+ months</option>-->
+                      <!--</select>-->
+                    <!--</label>-->
+                  <!--</div>-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--<div class="row label-block collapse">-->
+                <!--<div class="shrink columns">-->
+                  <!--<div class="label-group">-->
+                    <!--<span for="" class="badge alert mb-0-5">2</span>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="columns">-->
+                  <!--<div class="label-group">-->
+                    <!--<label>-->
+                      <!--Are you willing to be flexible on the schedule if we were able to secure a larger bonus?-->
+                      <!--<select>-->
+                        <!--<option value=""></option>-->
+                        <!--<option>Yes</option>-->
+                        <!--<option>No</option>-->
+                      <!--</select>-->
+                    <!--</label>-->
+                  <!--</div>-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--<div class="row label-block collapse">-->
+                <!--<div class="shrink columns">-->
+                  <!--<div class="label-group">-->
+                    <!--<span for="" class="badge success mb-0-5">3</span>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="columns">-->
+                  <!--<div class="label-group">-->
+                    <!--<label>-->
+                      <!--Are you willing to travel outside your local area if a larger bonus were available?-->
+                      <!--<select>-->
+                        <!--<option value=""></option>-->
+                        <!--<option>No, I want only local facilities.</option>-->
+                        <!--<option>Yes, I'm willing to travel outside my immediate area.</option>-->
+                        <!--<option selected>I'm interested in seeing options throughout the USA.</option>-->
+                        <!--<option>If the bonus was big enough, I'd consider travelling to another country.</option>-->
+                      <!--</select>-->
+                    <!--</label>-->
+                  <!--</div>-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--<div class="row label-block collapse">-->
+                <!--<div class="shrink columns">-->
+                  <!--<div class="label-group">-->
+                    <!--<span for="" class="badge success mb-0-5">4</span>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="columns">-->
+                  <!--<div class="label-group">-->
+                    <!--<legend>Select the countries that you'd entertain travelling to:</legend>-->
+                    <!--<div class="checkbox-wrapper">-->
+                      <!--<input class="mb-0" type="checkbox" name="country" value="" id="country" checked=""><label-->
+                      <!--class="mb-0" for="country">Costa Rica</label>-->
+                    <!--</div>-->
+                    <!--<div class="checkbox-wrapper">-->
+                      <!--<input class="mb-0" type="checkbox" name="country" value="" id="country" checked=""><label-->
+                      <!--class="mb-0" for="country">Mexico</label>-->
+                    <!--</div>-->
+                    <!--<div class="checkbox-wrapper">-->
+                      <!--<input class="mb-0" type="checkbox" name="country" value="" id="country" checked=""><label-->
+                      <!--class="mb-0" for="country">Brazil</label>-->
+                    <!--</div>-->
+                  <!--</div>-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--<div class="row label-block collapse">-->
+                <!--<div class="shrink columns">-->
+                  <!--<div class="label-group">-->
+                    <!--<span for="" class="badge success mb-0-5">5</span>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="columns">-->
+                  <!--<div class="label-group">-->
+                    <!--<legend>Are you using any other health benefit programs?</legend>-->
+                    <!--<div class="checkbox-wrapper">-->
+                      <!--<input type="checkbox" name="programs" value="" id="programs" checked=""><label for="programs">Tele-Medicine</label>-->
+                    <!--</div>-->
+                    <!--<div class="checkbox-wrapper">-->
+                      <!--<input type="checkbox" name="programs" value="" id="programs"><label for="programs">Wellness-->
+                      <!--Programs</label>-->
+                    <!--</div>-->
+                    <!--<div class="checkbox-wrapper">-->
+                      <!--<input type="checkbox" name="programs" value="" id="programs"><label for="programs">Prescription-->
+                      <!--Drug Programs</label>-->
+                    <!--</div>-->
+                    <!--<div class="checkbox-wrapper">-->
+                      <!--<input type="checkbox" name="programs" value="" id="programs"><label for="programs">Gym and-->
+                      <!--Fitness Programs</label>-->
+                    <!--</div>-->
+                    <!--<div class="checkbox-wrapper">-->
+                      <!--<input type="checkbox" name="programs" value="" id="programs"><label for="programs">Other: <input-->
+                      <!--type="text" name="programs" value=""></label>-->
+                    <!--</div>-->
+                  <!--</div>-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--<hr>-->
+              <!--<div class="row collapse">-->
+                <!--<div class="columns">-->
+                  <!--<div class="button-align small">-->
+                    <!--<a href="#" class="button rounded">Save Changes</a>-->
+                  <!--</div>-->
+                <!--</div>-->
+              <!--</div>-->
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/what-input/what-input.js"></script>
+<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+
+<script src="js/app.js"></script>
+
+<script type="text/javascript">
+
+    var topBarHeight = $('.top-bar').outerHeight(true);
+
+    $(function () {
+        var timer;
+        $(window).resize(function () {
+            clearTimeout(timer);
+            timer = setTimeout(function () {
+                $('#chatSupport, #chatSupport .offcanvas-area-inner, .site-nav, .content').css("height", $(window).height());
+                $('.site-nav.secondary, #profileContent, #chatClient .chat-wrapper').css("height", $(window).height() - topBarHeight);
+            }, 40);
+        }).resize();
+    });
+
+</script>
 
 </body>
 </html>

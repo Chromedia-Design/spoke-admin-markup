@@ -1,793 +1,1371 @@
+$chat-main-bg: #fff;
+$chat-user-bg: #f5f7f9;
+
 /* CSS talk bubble */
 .talk-bubble {
-	margin: 0 0 0 2.5rem;
-	padding: 1.5rem;
-  	display: inline-block;
-  	position: relative;
-	// width: 100%;
-	height: auto;
-	background-color: $secondary-color;
-	border-radius: 6px;
-	+ .timestamp {
-		margin: 0.3125rem 0 0.3125rem 1rem;
-		text-align: left;
-		clear: both;
-	}
-	&.small {
-		margin: 0 0 0 1rem;
-		padding: 0.75rem 1rem;
-		border-radius: 8px;
-		.talktext {
-			> * {
-				font-size: 0.875rem;
-			}
-		}
-		&.tri-right.border.left-in:before {
-			left: -20px;
-			top: 15px;
-			border: 10px solid;
-			border-color: $secondary-color $secondary-color transparent transparent;
-		}
-		&.tri-right.left-in:after {
-			left: -15px;
-			top: 17px;
-			border: 8px solid;
-			border-color: $secondary-color $secondary-color transparent transparent;
-		}
-		&.tri-right.border.right-in:before {
-			right: -20px;
-			top: 15px;
-			border: 10px solid;
-			border-color: $secondary-color transparent transparent $secondary-color;
-		}
-		&.tri-right.right-in:after {
-			right: -15px;
-			top: 17px;
-			border: 8px solid;
-			border-color: $secondary-color transparent transparent $secondary-color;
-		}
-	}
-	// This is for the owner's dialog box
-	&.white-bg {
-		background-color: $white;
-		border: 1px solid $light-gray;
-		&.tri-right.border.right-in:before {
-			right: -20px;
-			top: 15px;
-			border: 10px solid;
-			border-color: $light-gray transparent transparent $light-gray;
-		}
-		&.tri-right.right-in:after {
-			right: -17px;
-			top: 16px;
-			border: 9px solid;
-			border-color: $white transparent transparent $white;
-		}
-		.talktext {
-			color: $text-black;
-			.h1,
-			.h2,
-			.h3,
-			.h4,
-			.h5,
-			.h6 {
-				color: $text-black;
-			}
-			a {
-				color: $secondary-color;
-			}
-		}
-		+ .timestamp {
-			margin: 0.3125rem 1rem 0.3125rem 0;
-			text-align: right;
-		}
-	}
-	// This is for the owner's call dialog box
-	&.success-bg {
-		background-color: $success-color;
-		border: 1px solid $success-color;
-		&.tri-right.border.right-in:before {
-			right: -20px;
-			top: 15px;
-			border: 10px solid;
-			border-color: $success-color transparent transparent $success-color;
-		}
-		&.tri-right.right-in:after {
-			right: -17px;
-			top: 16px;
-			border: 9px solid;
-			border-color: $success-color transparent transparent $success-color;
-		}
-		.talktext {
-			a {
-				text-decoration: none;
-			}
-		}
-		+ .timestamp {
-			margin: 0.3125rem 1rem 0.3125rem 0;
-			text-align: right;
-		}
-	}
-	&.alert-bg {
-		background-color: $alert-color;
-		border: 1px solid $alert-color;
-		&.tri-right.border.right-in:before {
-			right: -20px;
-			top: 15px;
-			border: 10px solid;
-			border-color: $alert-color transparent transparent $alert-color;
-		}
-		&.tri-right.right-in:after {
-			right: -17px;
-			top: 16px;
-			border: 9px solid;
-			border-color: $alert-color transparent transparent $alert-color;
-		}
-	}
-	&.warning-bg {
-		position: relative;
-		background-color: #FFFFA5;
-		border: 1px solid #FFFFA5;
-		border-radius: 1px;
-		margin: 0;
-		width: 100%;
-		// box-shadow: 2px 2px 10px 5px rgba($black, $B-dividers);
-		&.tri-right.border.right-in:before {
-			display: none;
-		}
-		&.tri-right.right-in:after {
-			display: none;
-		}
-		.talktext {
-			position: relative;
-			color: $text-black;
-			a {
-				color: $text-black;
-			}
-			&:before {
-				content: "";
-			  	position: absolute;
-		  		top: -13px;
-			  	right: -20px;
-			  	border-width: 0 16px 16px 0;
-			  	border-style: solid;
-			  	border-color: darken(#FFFFA5, 40%) $background-white;
-			  	display: block;
-			  	width: 0;
-			}
-		}
-		+ .timestamp {
-			margin: 0.3125rem 0;
-			line-height: 1.8em;
-		}
-	}
-	&.info-bg {
-		position: relative;
-		background-color: $background-white;
-		border: $light-gray;
-		border-radius: 1px;
-		margin: 0;
-		padding: 0.75rem 1rem;
-		.talktext {
-			color: $text-black;
-			p {
-				margin-bottom: 0;
-			}
-		}
-		+ .timestamp {
-			text-align: center;
-		}
-	}
+  user-select: text;
+  margin: 0 0 0 2.5rem;
+  padding: 1.5rem;
+  display: inline-block;
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  background-color: $secondary-color;
+  border-radius: 6px;
+
+  + .timestamp {
+    margin: 0.3125rem 0 0.3125rem 1rem;
+    text-align: left;
+    clear: both;
+  }
+
+  &.small {
+    margin: 0;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px 0 8px 8px;
+    min-width: rem-calc(224);
+
+    &.media {
+      padding: 0 !important;
+      border: 0 !important;
+      border-radius: 8px;
+      overflow: hidden !important;
+    }
+
+    .talktext {
+      > * {
+        font-size: 0.875rem;
+      }
+    }
+
+    &.tri-right.border.right-in:before {
+      right: -20px;
+      top: -2px;
+      border: 10px solid;
+      border-color: $secondary-color transparent transparent $secondary-color;
+    }
+
+    &.tri-right.right-in:after {
+      right: -15px;
+      top: 0;
+      border: 8px solid;
+      border-color: $secondary-color transparent transparent $secondary-color;
+    }
+  }
+
+  // This is for the owner's dialog box
+  &.white-bg {
+    background-color: $chat-user-bg;
+    border: 1px solid $chat-user-bg;
+
+    &.tri-right.border.right-in:before {
+      right: -20px;
+      top: -1px;
+      border: 10px solid;
+      border-color: $chat-user-bg transparent transparent $chat-user-bg;
+    }
+
+    &.tri-right.right-in:after {
+      right: -17px;
+      top: 0;
+      border: 9px solid;
+      border-color: $chat-user-bg transparent transparent $chat-user-bg;
+    }
+
+    .talktext {
+      color: $text-black;
+
+      .h1,
+      .h2,
+      .h3,
+      .h4,
+      .h5,
+      .h6 {
+        color: $text-black;
+      }
+
+      a {
+        color: $secondary-color;
+      }
+    }
+
+    + .timestamp {
+      margin: 0.3125rem 1rem 0.3125rem 0;
+      text-align: right;
+    }
+  }
+
+  // This is for the owner's call dialog box
+  &.success-bg {
+    background-color: $success-color;
+    border: 1px solid $success-color;
+
+    &.tri-right.border.right-in:before {
+      right: -20px;
+      top: -1px;
+      border: 10px solid;
+      border-color: $success-color transparent transparent $success-color;
+    }
+
+    &.tri-right.right-in:after {
+      right: -17px;
+      top: 0;
+      border: 9px solid;
+      border-color: $success-color transparent transparent $success-color;
+    }
+
+    .talktext {
+      a {
+        text-decoration: none;
+      }
+    }
+
+    + .timestamp {
+      margin: 0.3125rem 1rem 0.3125rem 0;
+      text-align: right;
+    }
+  }
+
+  &.alert-bg {
+    background-color: $alert-color;
+    border: 1px solid $alert-color;
+
+    &.tri-right.border.right-in:before {
+      right: -20px;
+      top: -1px;
+      border: 10px solid;
+      border-color: $alert-color transparent transparent $alert-color;
+    }
+
+    &.tri-right.right-in:after {
+      right: -17px;
+      top: 0;
+      border: 9px solid;
+      border-color: $alert-color transparent transparent $alert-color;
+    }
+  }
+
+  &.warning-bg {
+    position: relative;
+    background-color: #ffffa5;
+    border: 1px solid #ffffa5;
+    border-radius: 1px;
+    margin: 0;
+    width: 100%;
+
+    &.tri-right.border.right-in:before {
+      display: none;
+    }
+
+    &.tri-right.right-in:after {
+      display: none;
+    }
+
+    .talktext {
+      position: relative;
+      color: $text-black;
+
+      a {
+        color: $text-black;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: -9px;
+        right: -13px;
+        border-width: 0 16px 16px 0;
+        border-style: solid;
+        border-color: darken(#ffffa5, 40%) $background-white;
+        display: block;
+        width: 0;
+      }
+    }
+
+    + .timestamp {
+      margin: 0.3125rem 0;
+      line-height: 1.8em;
+    }
+  }
+
+  &.info-bg {
+    position: relative;
+    background-color: $background-white;
+    border: $light-gray;
+    border-radius: 1px;
+    margin: 0;
+    padding: 0.75rem 1rem;
+
+    .talktext {
+      color: $text-black;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+
+    + .timestamp {
+      text-align: center;
+    }
+  }
 }
 
 .timestamp {
-	display: block;
-	text-align: left;
-	margin: 0.3125rem 0;
-	font-size: 0.875rem;
-	color: rgba($black, $B-subtext);
-	.pull-left {
-		line-height: 1.8em;
-	}
-	.button {
-		margin: 0 0 0 1rem;
-		color: rgba($black, $B-subtext);
-		background: transparent;
-		padding: 0;
-		font-size:  0.875rem;
-		text-transform: none;
-		font-weight: normal;
-		&:hover {
-			color: rgba($black, $B-subtext);
-		}
-	}
-	.button-align,
-	.button-group {
-		margin: 0 0 0 1rem;
-		.button {
-			color: rgba($black, $B-subtext);
-			background: transparent;
-			padding: 0;
-			font-size:  0.875rem;
-			text-transform: none;
-			font-weight: normal;
-			&:hover {
-				color: rgba($black, $B-subtext);
-			}
-		}
-	}
+  display: block;
+  text-align: left;
+  margin: 0.3125rem 0;
+  font-size: 0.875rem;
+  color: rgba($black, $B-subtext);
+
+  .pull-left {
+    line-height: 1.8em;
+  }
+
+  .button {
+    margin: 0 0 0 1rem;
+    color: rgba($black, $B-subtext);
+    background: transparent;
+    padding: 0;
+    font-size: rem-calc(13);
+    text-transform: none;
+    font-weight: normal;
+
+    &:hover {
+      color: rgba($black, $B-subtext);
+    }
+  }
+
+  .button-align,
+  .button-group {
+    margin: 0 0 0 1rem;
+
+    .button {
+      color: rgba($black, $B-subtext);
+      background: transparent;
+      padding: 0;
+      font-size: rem-calc(13);
+      text-transform: none;
+      font-weight: normal;
+
+      &:hover {
+        color: rgba($black, $B-subtext);
+      }
+    }
+  }
 }
 
 .talktext {
-	color: $white;
-	word-break: break-word;
-	.h1,
-	.h2,
-	.h3,
-	.h4,
-	.h5,
-	.h6 {
-		color: $white;
-		margin-top: 0;
-		line-height: 1.5em;
-	}
-	.subheader {
-		line-height: 1.5em;
-		color: rgba($white, $W-subtext);
-	}
-	> * {
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
-	a {
-		color: $white;
-		text-decoration: underline;
-	}
-	.attachments {
-		> li {
-			margin: 0 1rem 2rem 0;
-		}
-	}
+  color: $white;
+  word-break: break-word;
+
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    color: $white;
+    margin-top: 0;
+    line-height: 1.5em;
+  }
+
+  .subheader {
+    line-height: 1.5em;
+    color: rgba($white, $W-subtext);
+  }
+
+  > * {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    color: $white;
+    text-decoration: underline;
+  }
+
+  .attachments {
+    > li {
+      margin: 0 1rem 2rem 0;
+    }
+  }
 }
 
 .border {
-  	border: 2px solid $secondary-color;
-}
-
-/* Right triangle, left side slightly down */
-.tri-right.border.left-in:before {
-	content: ' ';
-	position: absolute;
-	width: 0;
-	height: 0;
-  	left: -2.5rem;
-	right: auto;
-  	top: 20px;
-	bottom: auto;
-	border: 20px solid;
-	border-color: $secondary-color $secondary-color transparent transparent;
-}
-
-.tri-right.left-in:after {
-	content: ' ';
-	position: absolute;
-	width: 0;
-	height: 0;
-  	left: -35px;
-	right: auto;
-  	top: 22px;
-	bottom: auto;
-	border: 20px solid;
-	border-color: $secondary-color $secondary-color transparent transparent;
+  border: 2px solid $secondary-color;
 }
 
 /* Right triangle, right side slightly down*/
 .tri-right.border.right-in:before {
-	content: ' ';
-	position: absolute;
-	width: 0;
-	height: 0;
-    left: auto;
-	right: -2.5rem;
-    top: 20px;
-	bottom: auto;
-	border: 20px solid;
-	border-color: $secondary-color transparent transparent $secondary-color;
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: -2.5rem;
+  top: -2px;
+  bottom: auto;
+  border: 20px solid;
+  border-color: $secondary-color transparent transparent $secondary-color;
 }
-.tri-right.right-in:after{
-	content: ' ';
-	position: absolute;
-	width: 0;
-	height: 0;
-    left: auto;
-	right: -35px;
-    top: 22px;
-	bottom: auto;
-	border: 20px solid;
-	border-color: $secondary-color transparent transparent $secondary-color;
+
+.tri-right.right-in:after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: -35px;
+  top: 0;
+  bottom: auto;
+  border: 20px solid;
+  border-color: $secondary-color transparent transparent $secondary-color;
 }
 
 #chat-tabs {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
+
+// Threading of Notes Variables
+$light-gray-hex: #cbcfd3;
 
 // Main Chat Panels for the
 // Provider and the Client
-#chatSupport, #chatClient {
-	background-color: $white;
-	//Chat wrappers CSS
-	.wrapper {
-		position: relative;
-		display: block;
-		clear: both;
-		width: 90%;
-		padding: 0.5rem 1rem;
-		// CSS for the notes
-		.media-object {
-			position: relative;
-			z-index: 9;
-			margin: 0;
-			float: left;
-			// CSS for the owner's chat box
-			&.pull-right {
-				float: right;
-				clear: both;
-				.media-object-section {
-					.talk-bubble {
-						float: right;
-						margin: 0 1rem 0 0;
-						&.warning-bg {
-							margin: 0;
-						}
-					}
-				}
-			}
-			//Button placement CSS (expanding threads)
-			.btn-expand {
-				position: absolute;
-				z-index: 10;
-				bottom: rem-calc(35);
-				right: rem-calc(12);
-				width: rem-calc(25);
-				height: rem-calc(25);
-				background: $white;
-				color: $secondary-color;
-				border: 1px solid $secondary-color;
-				font-size: rem-calc(12);
-				text-align: center;
-				border-radius: 50%;
-				vertical-align: middle;
-				line-height: 2em;
-			}
-		}
-		
-		// Threading of Notes
-		$light-gray-hex:	#CBCFD3;
+#chatSupport,
+#chatClient {
+  background-color: $white;
+  //Chat wrappers CSS
+  .wrapper {
+    position: relative;
+    display: block;
+    clear: both;
+    width: 90%;
+    padding: 0.5rem 1rem;
+    // Thread Styles Start
+    > .wrapper {
+      position: relative;
+      padding: 1rem 1rem 0.5rem 2.5rem;
+      margin: 0 0 1rem;
+      background: $primary-light;
+      border: 1px solid $light-gray-hex;
+      z-index: 5;
+      border-radius: $global-radius;
 
-		&.text-center {
-			position: relative;
-			width: 100%;
-			&:before {
-				position: absolute;
-				content: '';
-				width: 100%;
-				height: 1px;
-				background-color: rgba($black, $B-dividers);
-				top: 30%;
-				left: 0;
-			}
-			> .media-object {
-				display: inline-block;
-				margin: 0 auto;
-				float: none;
-				.talk-bubble {
-					* {
-						text-align: left;
-					}
-				}
-				//Button placement CSS (expanding threads)
-				.btn-expand {
-					left: rem-calc(-14);
-				}
-			}
-			> .wrapper {
-				&:before {
-					width: 50%;
-					height: 3rem; 
-					top: -3rem;
-				    left: -5rem;
-				    border-right: none;
-				    border-left: 1px solid $light-gray-hex;
-				}
-				.talktext {
-					text-align: left;
-				}
-			}
-		}
-		// Thread Styles Start
-		> .wrapper {
-			position: relative;
-			padding: 1rem 1rem 0.5rem 2.5rem;
-			margin: 0 0 1rem;
-			background: $primary-light;
-			border: 1px solid $light-gray-hex;
-			z-index: 5;
-			border-radius: $global-radius;
-			.talk-bubble.warning-bg .talktext:before {
-				border-color: #d8d800 $primary-light;
-			}
-			&:before {
-			    position: absolute;
-			    content: '';
-			    width: 100%;
-			    height: rem-calc(49);
-			    top: rem-calc(-49);
-			    right: -5rem;
-			    border-radius: $global-radius;
-			    background-color: transparent;
-			    border-right: 1px solid $light-gray-hex;
-			    border-top: 1px solid $light-gray-hex;
-			    border-bottom: 1px solid $light-gray-hex;
-			    z-index: 1;
-			}
-			// Deep threads
-			.wrapper {
-				padding: 1rem 1rem 0.5rem 1rem;
-				background: $background-white;
-				margin-bottom: 0.5rem;
-				.talk-bubble.warning-bg .talktext:before {
-					border-color: #d8d800 $background-white;
-				}
-			}
-		}
-		&.pull-right {
-			.media-object {
-				//Button placement CSS (expanding threads)
-				.btn-expand {
-					left: rem-calc(-14);
-				}
-			}
-			.wrapper {
-				&:before {
-				    left: -5rem;
-				    border-right: none;
-				    border-left: 1px solid $light-gray-hex;
-				}
-			}
-		}
-	}
-	.offcanvas-area-inner {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start; /*align items in main axis*/
-		align-items: stretch; /* align items in Cross Axis */
-    	align-content: stretch; /* Extra space in Cross Axis */
-    	overflow-y: scroll;
-    	height: 100vh;
-		&::-webkit-scrollbar {
-			display: none;
-		}
-		&::-moz-scrollbar {
-			display: none;
-		}
-		// React selectors
-		> [data-reactroot] {
-			display: flex;
-			height: 100%;
-			flex-direction: column;
-			justify-content: flex-start; /*align items in main axis*/
-			align-items: stretch; /* align items in Cross Axis */
-	    	align-content: stretch; /* Extra space in Cross Axis */
-	    	overflow-y: scroll;
-			&::-webkit-scrollbar {
-				display: none;
-			}
-			&::-moz-scrollbar {
-				display: none;
-			}
-		}
-	}
-	.offcanvas-header,
-	#chatStatus,
-	#videoCall,
-	.offcanvas-body {
-		width: 100%;
-	}
-	#chatStatus {
-		display: block;
-		.h1,
-		.h2,
-		.h3,
-		.h4,
-		.h5,
-		.h6 {
-			span.subheader {
-				line-height: 1em;
-			}
-		}
-		.badge {
-			width: 0.5rem;
-			height: 0.5rem;
-			min-width: 0.5rem;
-			padding: 0;
-			vertical-align: middle;
-		}
-	}
-	#videoCall {
-		display: block;
-    	width: 100%;
-    	background-color: $black;
-	}
-	.offcanvas-body {
-		// min-height: 570px;
-		flex: 1 1 auto; /*grows*/
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-start; /*align items in main axis*/
-		align-items: stretch; /* align items in Cross Axis */
-    	align-content: stretch; /* Extra space in Cross Axis */
-	}
-	.main-content,
-	.side-content {
-		width: 50%;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start; /*align items in main axis*/
-		align-items: stretch; /* align items in Cross Axis */
-    	align-content: stretch; /* Extra space in Cross Axis */
-    	border-top: 1px solid rgba($black, $B-dividers);
-    	border-bottom: 1px solid rgba($black, $B-dividers);
-		.inner {
-			flex: 1 1 auto;
-			padding: 1rem 0;
-			overflow-y: scroll;
-			overflow-x: hidden;
-			// &::-webkit-scrollbar {
-			// 	display: none;
-			// }
-			// &::-moz-scrollbar {
-			// 	display: none;
-			// }
-		}
-		.footer-content {
-			padding: 1rem;
-			background-color: $white;
-			border-top: 1px solid rgba($black, $B-dividers);
-			.input-group, .button {
-				margin-bottom: 0;
-			}
-			.tabs-title {
-				> a {
-					font-size: rem-calc(12);
-					text-transform: uppercase;
-					padding: 0 1.5rem 0.5rem;
-				}
-			}
-		}
-		&:only-child {
-			width: 100%;
-			&::-webkit-scrollbar {
-				display: none;
-			}
-			&::-moz-scrollbar {
-				display: none;
-			}
-		}
-	}
-	.main-content {
-		background-color: $white;
-		.panel {
-			border-right: none;
-			border-left: none;
-			border-radius: 0;
-		}
-		.inner {
-			box-shadow: inset -1px 0 0 rgba($black, $B-dividers);
-			> .panel:first-child {
-				border-top: none;
-			}
-		}
-		.well-list {
-			&.message-preview {
-				> li {
-					border-right: 1px solid rgba($black, $B-dividers);
-					.list-detail {
-						width: 75%;
-					}
-					&.selected {
-						border-right: none;
-					}
-				}
-			}
-		}
-		.footer-content {
-			border-right: 1px solid rgba($black, $B-dividers);
-		}
-		.menu {
-			&.is-dropdown-submenu {
-				> li {
-					> a {
-						color: $text-black;
-						padding: 0.7rem 1rem;
-					}
-				}
-			}
-			&.dropdown {
-				> li {
-					> a {
-						display: inline-block;
-						vertical-align: bottom;
-						width: 100%;
-						color: $text-black;
-						padding: 0.7rem;
-						img,
-						i,
-						svg {
-							&:only-child {
-								margin: 0;
-							}
-						}
-					}
-					&.opens-left {
-						> .is-dropdown-submenu {
-							left: auto !important;
-						    right: 0 !important;
-						    top: 100% !important;
-						    &:after {
-						    	right: 3% !important;
-						    	left: auto !important;
-						    }
-						    > li {
-						    	a {
-						    		&:hover {
-										background-color: rgba($medium-gray, $B-dividers);
-									}
-						    	}
-						    }
-						}
-					}
-				}
-			}
-		}
-	}
-	.side-content {
-		background-color: $background-white;
-	}
-	.page-lead {
-		.h1,
-		.h2,
-		.h3,
-		.h4,
-		.h5,
-		.h6 {
-			line-height: 1.2em;
-		}
-		.button, .button-align {
-			margin-top: 0.5rem;
-			margin-bottom: 0.5rem;
-		}
-		.button-align {
-			.button {
-				margin-top: 0;
-				margin-bottom: 0;
-			}
-		}
-	}
-	.panel {
-		.panel-heading {
-			border-right: 1px solid rgba($black, $B-dividers);
-			.h6 {
-				color: $medium-gray;
-			}
-		}
-		.panel-body {
-			border-right: 1px solid rgba($black, $B-dividers);
-			&.wide {
-				border-right: none;
-			}
-		}
-	}
+      .talk-bubble.warning-bg .talktext:before {
+        border-color: #d8d800 $primary-light;
+      }
+
+      &:before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: rem-calc(49);
+        top: rem-calc(-49);
+        right: -5rem;
+        border-radius: $global-radius;
+        background-color: transparent;
+        border-right: 1px solid $light-gray-hex;
+        border-top: 1px solid $light-gray-hex;
+        border-bottom: 1px solid $light-gray-hex;
+        z-index: 1;
+      }
+
+      // Deep threads
+      .wrapper {
+        padding: 1rem 1rem 0.5rem 1rem;
+        background: $background-white;
+        margin-bottom: 0.5rem;
+
+        .talk-bubble.warning-bg .talktext:before {
+          border-color: #d8d800 $background-white;
+        }
+      }
+    }
+
+    // CSS for the notes
+    .media-object {
+      position: relative;
+      z-index: 9;
+      margin: 0;
+      float: left;
+      // CSS for the owner's chat box
+      &.pull-right {
+        float: right;
+        clear: both;
+
+        .media-object-section {
+          .talk-bubble {
+            float: right;
+            // border: 5px solid red !important;
+            // margin: 0 1rem 0 0;
+            &.warning-bg {
+              margin: 0;
+            }
+          }
+        }
+      }
+
+      //Button placement CSS (expanding threads)
+      .btn-expand {
+        position: absolute;
+        z-index: 10;
+        bottom: rem-calc(35);
+        right: rem-calc(4);
+        width: rem-calc(25);
+        height: rem-calc(25);
+        background: $white;
+        color: $secondary-color;
+        border: 1px solid $secondary-color;
+        font-size: rem-calc(12);
+        text-align: center;
+        border-radius: 50%;
+        vertical-align: middle;
+        line-height: 2em;
+      }
+    }
+
+    &.text-center {
+      position: relative;
+      width: 100%;
+
+      &:before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: rgba($black, $B-dividers);
+        top: 50%;
+        left: 0;
+      }
+
+      // Style usually for notes
+      > .media-object {
+        max-width: 80%;
+        background-color: $background-white;
+        display: inline-block;
+        margin: 0 auto;
+        float: none;
+
+        .talk-bubble {
+          * {
+            text-align: left;
+          }
+
+          &.media {
+            padding: 0px !important;
+          }
+        }
+
+        //Button placement CSS (expanding threads)
+        .btn-expand {
+          left: -1.25rem;
+          bottom: 1.5rem;
+        }
+
+        // Usually for emails
+        &.bordered {
+          border: 1px solid rgba($black, $B-dividers);
+        }
+      }
+
+      > .wrapper {
+        &:before {
+          width: 50%;
+          height: 2.6rem;
+          top: -2.6rem;
+          left: -5rem;
+          border-right: none;
+          border-left: 1px solid $light-gray-hex;
+          border-radius: 25px 0 0 25px;
+        }
+
+        ~ .media-object {
+          position: relative;
+
+          &:before {
+            height: 2rem;
+            width: 2rem;
+            background: $black;
+          }
+        }
+
+        .talktext {
+          text-align: left;
+        }
+      }
+    }
+
+    &.pull-right {
+      .media-object {
+        //Button placement CSS (expanding threads)
+        .btn-expand {
+          left: rem-calc(-14);
+        }
+      }
+
+      .wrapper {
+        &:before {
+          left: -5rem;
+          border-right: none;
+          border-left: 1px solid $light-gray-hex;
+          border-radius: 25px 0 0 25px;
+        }
+      }
+    }
+
+    &.pull-left {
+      .inline-list {
+        &.attachments {
+          > li {
+            .filename {
+              color: rgba($white, $W-text);
+            }
+          }
+        }
+      }
+
+      .wrapper {
+        &:before {
+          border-radius: 0 25px 25px 0;
+        }
+      }
+    }
+  }
+
+  .offcanvas-area-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /*align items in main axis*/
+    align-items: stretch; /* align items in Cross Axis */
+    align-content: stretch; /* Extra space in Cross Axis */
+    overflow-y: scroll;
+    height: 100vh;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    // React selectors
+    > [data-reactroot] {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content: flex-start; /*align items in main axis*/
+      align-items: stretch; /* align items in Cross Axis */
+      align-content: stretch; /* Extra space in Cross Axis */
+      overflow-y: scroll;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+
+  .offcanvas-header,
+  #chatStatus,
+  #videoCall,
+  .offcanvas-body {
+    width: 100%;
+  }
+
+  #chatStatus {
+    display: block;
+
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6 {
+      span.subheader {
+        line-height: 1em;
+      }
+    }
+
+    .badge {
+      width: 0.5rem;
+      height: 0.5rem;
+      min-width: 0.5rem;
+      padding: 0;
+      vertical-align: middle;
+    }
+  }
+
+  #videoCall {
+    display: block;
+    width: 100%;
+    background-color: $black;
+  }
+
+  .offcanvas-body {
+    // min-height: 570px;
+    flex: 1 1 auto; /*grows*/
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: flex-start; /*align items in main axis*/
+    align-items: stretch; /* align items in Cross Axis */
+    align-content: stretch; /* Extra space in Cross Axis */
+  }
+
+  .main-content,
+  .side-content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /*align items in main axis*/
+    align-items: stretch; /* align items in Cross Axis */
+    align-content: stretch; /* Extra space in Cross Axis */
+    border-top: 1px solid rgba($black, $B-dividers);
+    border-bottom: 1px solid rgba($black, $B-dividers);
+
+    .inner {
+      flex: 1 1 auto;
+      padding: 1rem 0;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      height: 0;
+    }
+
+    .footer-content {
+      padding: 1rem;
+      background-color: $white;
+      border-top: 1px solid rgba($black, $B-dividers);
+
+      .help-text {
+        margin: 0.5rem 0;
+        font-size: rem-calc(10);
+        color: rgba($black, $B-text);
+      }
+
+      .input-group,
+      .button {
+        margin-bottom: 0;
+      }
+
+      .tabs-title {
+        > a {
+          font-size: rem-calc(12);
+          text-transform: uppercase;
+          padding: 0 1.5rem 0.5rem;
+        }
+      }
+    }
+
+    &:only-child {
+      width: 100%;
+      height: 100%;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+
+  .main-content {
+    background-color: $white;
+
+    .panel {
+      border-right: none;
+      border-left: none;
+      border-radius: 0;
+    }
+
+    .inner {
+      box-shadow: inset -1px 0 0 rgba($black, $B-dividers);
+
+      > .panel:first-child {
+        border-top: none;
+      }
+    }
+
+    .well-list {
+      &.message-preview {
+        > li {
+          border-right: 1px solid rgba($black, $B-dividers);
+
+          .list-detail {
+            width: 75%;
+          }
+
+          &.selected {
+            border-right: none;
+          }
+        }
+      }
+    }
+
+    .footer-content {
+      border-right: 1px solid rgba($black, $B-dividers);
+    }
+
+    .menu {
+      &.is-dropdown-submenu {
+        > li {
+          > a {
+            color: $text-black;
+            padding: 0.7rem 1rem;
+          }
+        }
+      }
+
+      &.dropdown {
+        > li {
+          > a {
+            display: inline-block;
+            vertical-align: bottom;
+            width: 100%;
+            color: $text-black;
+            padding: 0.7rem;
+
+            img,
+            i,
+            svg {
+              &:only-child {
+                margin: 0;
+              }
+            }
+          }
+
+          &.opens-left {
+            > .is-dropdown-submenu {
+              left: auto !important;
+              right: 0 !important;
+              top: 100% !important;
+
+              &:after {
+                right: 3% !important;
+                left: auto !important;
+              }
+
+              > li {
+                a {
+                  &:hover {
+                    background-color: rgba($medium-gray, $B-dividers);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .side-content {
+    background-color: $background-white;
+  }
+
+  .page-lead {
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6 {
+      line-height: 1.2em;
+    }
+
+    .button,
+    .button-align {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .button-align {
+      .button {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .panel {
+    .panel-heading {
+      border-right: 1px solid rgba($black, $B-dividers);
+
+      .h6 {
+        color: $medium-gray;
+      }
+    }
+
+    .panel-body {
+      border-right: 1px solid rgba($black, $B-dividers);
+
+      &.wide {
+        border-right: none;
+      }
+    }
+  }
 }
 
 // Set Provider chat window size
 #chatSupport {
-	width: 40rem;
+  width: 40rem;
 }
 
 // Set Client chat window styles
 #chatClient {
-	width: 100%;
-	.chat-wrapper {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start; /*align items in main axis*/
-		align-items: stretch; /* align items in Cross Axis */
-    	align-content: stretch; /* Extra space in Cross Axis */
-    	overflow-y: scroll;
-		&::-webkit-scrollbar {
-			display: none;
-		}
-		&::-moz-scrollbar {
-			display: none;
-		}
-		.chat-header,
-		.chat-body {
-			width: 100%;
-		}
-		.chat-header {
-			margin: 0.5rem 0;
-			.button,
-			.button-group {
-				margin-bottom: 0;
-			}
-		}
-		.chat-body {
-			flex: 1 1 auto;
-			display: flex;
-			flex-direction: row;
-			justify-content: flex-start; /*align items in main axis*/
-			align-items: stretch; /* align items in Cross Axis */
-	    	align-content: stretch; /* Extra space in Cross Axis */
-		}
-		.main-content {
-			.well-list {
-				&.message-preview {
-					> li {
-						.list-detail {
-							width: 50%;
-						}
-					}
-				}
-			}
-		}
-	}
+  width: 100%;
+  height: 100%;
+
+  .chat-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /*align items in main axis*/
+    align-items: stretch; /* align items in Cross Axis */
+    align-content: stretch; /* Extra space in Cross Axis */
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .chat-header,
+    .chat-body {
+      width: 100%;
+    }
+
+    .chat-header {
+      margin: 0.5rem 0;
+
+      .button,
+      .button-group {
+        margin-bottom: 0;
+      }
+    }
+
+    .chat-body {
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start; /*align items in main axis*/
+      align-items: stretch; /* align items in Cross Axis */
+      align-content: stretch; /* Extra space in Cross Axis */
+    }
+
+    .main-content {
+      .well-list {
+        &.message-preview {
+          > li {
+            .list-detail {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // TokBox Defaults
 #videos {
-    position: relative;
-    width: auto;
-    height: 30vh;
-    margin: 0 auto;
-    background-color: $text-black;
+  position: relative;
+  width: auto;
+  height: 30vh;
+  margin: 0 auto;
+  background-color: $text-black;
+
+  &.compact {
+    height: 100% !important;
+
+    #subscriber {
+      height: 100% !important;
+      width: 100%;
+    }
+
+    #publisher {
+      // height: 600px !important;
+      top: 10px;
+      bottom: 0;
+    }
+  }
 }
 
 #subscriber {
-    position: relative;
-    left: 0;
-    top: 0;
+  position: relative;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  // Aspect ration of 16:9
+  height: 30vh;
+  width: 53vh;
+  padding-bottom: 30vh;
+  z-index: 10;
+
+  > * {
     width: 100%;
-    padding-bottom: 30vh;
-    z-index: 10;
-    > * {
-    	width: 100%;
-    	height: 100%;
-    	position: absolute !important;
-    	top: 0;
-    	left: 0;
-    	right: 0;
-    	bottom: 0;
-    	z-index: 0;
-    }
+    height: 100%;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
 }
 
 #publisher {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  padding-bottom: 10%;
+  bottom: 10px;
+  left: 10px;
+  z-index: 100;
+  border: 1px solid white;
+
+  > * {
+    width: 100%;
+    height: 100%;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+}
+
+$main-color: #1ebd44;
+
+#chat-toggle,
+#chat-question-preview {
+  position: fixed;
+  border-radius: 50%;
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.16) !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+
+  text-align: center;
+  background: $success-color; /* Old browsers */
+  background: -moz-linear-gradient(
+    -45deg,
+    $success-color 0%,
+    #30de59 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    -45deg,
+    $success-color 0%,
+    #30de59 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    135deg,
+    $success-color 0%,
+    #30de59 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$success-color', endColorstr='#30de59', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+
+  i {
+    font-size: 2rem;
+    margin-top: 0;
+    color: $white;
+    transition: all ease-in-out 0.2s;
+  }
+}
+
+#chat-toggle {
+  z-index: 2000;
+  bottom: 1rem;
+  right: 1rem;
+  width: 4rem;
+  height: 4rem;
+  // border: 1px solid #323232;
+}
+
+#chat-question-preview {
+  bottom: 1.5rem;
+  right: 5.5rem;
+  width: 3rem;
+  height: 3rem;
+  z-index: 998;
+  background: $primary-color !important;
+
+  i {
+    font-size: 1.5rem;
+  }
+
+  .counter {
+    display: block;
     position: absolute;
-    width: 10%;
-    padding-bottom: 10%;
-    bottom: 10px;
-    left: 10px;
-    z-index: 100;
-    border: 1px solid white;
-    > * {
-    	width: 100%;
-    	height: 100%;
-    	position: absolute !important;
-    	top: 0;
-    	left: 0;
-    	right: 0;
-    	bottom: 0;
-    	z-index: 0;
+    // top: 0;
+    // left: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+
+    background-color: $alert-color;
+    overflow: hidden;
+    text-align: center;
+    line-height: 1.2em;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 0.85rem;
+    padding: 0.25rem;
+    left: -4px;
+    top: -7px;
+  }
+}
+
+#form-question-container {
+  .chat-header-intro {
+    background-color: $primary-color;
+  }
+}
+
+#chat-notification {
+  user-select: none;
+
+  #form-question-container {
+    .chat-header-intro {
+      background-color: $primary-color !important;
     }
+
+    .chat-header-container {
+      &:hover {
+        .chat-header {
+          background-color: $primary-color !important;
+        }
+      }
+    }
+  }
+
+  .chat-header-container {
+    .chat-header {
+      background-color: #fff !important;
+      border: 1px solid #c5c5c5;
+      padding-bottom: 1rem;
+
+      .chat-header-user {
+        .user-name,
+        .user-role {
+          // color: #fff !important;
+        }
+
+        .user-role {
+          // white-space: nowrap;
+          //    text-overflow: ellipsis;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+        }
+      }
+
+      .chat-header-video {
+        .timestamp {
+          // color: #fff !important;
+        }
+      }
+    }
+  }
+
+  .form-notification {
+    box-shadow: 0px 2px 15px rgba(31, 31, 31, 0.25);
+    background-color: #fff;
+    border-radius: 0.5rem;
+    // padding: 1rem 1rem .5rem 1rem;
+    margin: 0px 1rem;
+    border: 1px solid #c5c5c5;
+    overflow: hidden;
+  }
+
+  .modal-notification {
+    box-shadow: 0px 2px 15px rgba(31, 31, 31, 0.25);
+    background-color: #fff;
+    border-radius: 0.5rem;
+    // padding: 1rem 1rem .5rem 1rem;
+    margin: 0px 1rem;
+    border: 1px solid #c5c5c5;
+    overflow: hidden;
+  }
+}
+
+#chat-container {
+  display: flex;
+  flex-flow: column;
+  user-select: none;
+  background-color: $chat-main-bg;
+  height: 100vh;
+  max-height: 90vh;
+  /*overflow-y: scroll;*/
+  overflow-y: hidden;
+  position: relative;
+  max-width: 1080px !important;
+  margin: 0 auto !important;
+
+  &.non-scrollable {
+    overflow-y: hidden !important;
+  }
+
+  .chat-body-scroll {
+    height: 425px;
+  }
+
+  .chat-video-incoming {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(10, 16, 35, 0.9) !important;
+    // display: none;
+  }
+}
+
+.chat-video-container {
+  position: relative;
+  height: 100%;
+  display: none;
+
+  .chat-video-control {
+    clear: both;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    z-index: 100;
+  }
+}
+
+#chat-container,
+#chat-notification {
+  z-index: 10;
+  position: fixed;
+  bottom: 6rem;
+  right: 1rem;
+  max-width: 376px;
+  width: 100%;
+  border-radius: 8px !important;
+  // overflow: hidden;
+  .chat-header-intro {
+    padding: 1rem;
+    background-color: $main-color;
+    position: sticky;
+    top: 0;
+    margin-bottom: 1.5rem;
+    z-index: 999;
+
+    .btn-new {
+      position: absolute;
+      right: 1rem;
+      bottom: -2.8rem;
+      box-shadow: 0 4px 10px #b2bbc1c4;
+    }
+  }
+
+  .chat-header-container {
+    cursor: pointer;
+    // height: 80px;
+    &:hover {
+      .chat-header {
+        background-color: $main-color !important;
+
+        .chat-header-user {
+          .user-name,
+          .user-role {
+            color: #fff;
+          }
+        }
+
+        .chat-header-video {
+          .timestamp {
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .chat-header {
+      background-color: $main-color;
+      box-shadow: 0px 2px 15px rgba(31, 31, 31, 0.25);
+      padding: 1rem;
+      transition: all 0.2s ease-in-out;
+
+      .button {
+        padding: 0;
+      }
+
+      .chat-header-action {
+        img {
+          display: none;
+        }
+      }
+
+      // Columns Begin
+      .chat-header-user {
+        .user-name,
+        .user-role {
+          margin: 0;
+          color: $white;
+        }
+
+        .user-role {
+          @extend .timestamp;
+        }
+      }
+
+      .chat-header-video {
+        .timestamp {
+          display: none;
+        }
+      }
+
+      .counter {
+        display: none;
+      }
+
+      // Columns End
+
+      // States Begin
+      &.shrinked {
+        border-radius: 0.5rem;
+        margin: 0.5rem 1rem;
+        background-color: transparent;
+
+        .chat-header-action {
+          img {
+            display: block;
+            margin: 0.5rem auto 0;
+            float: none;
+          }
+
+          button {
+            display: none;
+          }
+        }
+
+        .chat-header-user {
+          p {
+            color: black;
+          }
+
+          span {
+            color: #323232;
+          }
+        }
+
+        .chat-header-video {
+          .btn-video {
+            display: none;
+          }
+
+          .timestamp {
+            display: inherit;
+          }
+        }
+
+        .counter {
+          display: none;
+        }
+      }
+
+      &.active {
+        background-color: #fff;
+        position: relative;
+
+        .counter {
+          display: block;
+          text-align: center;
+          width: 1.5rem;
+          height: 1.5rem;
+          line-height: 1.2em;
+          border-radius: 50%;
+          background-color: $alert-color;
+          color: #fff;
+          font-size: 0.85rem;
+          padding: 0.25rem;
+          position: absolute;
+          right: -0.3rem;
+          bottom: -5px;
+        }
+      }
+
+      // States End
+    }
+  }
+
+  .chat-body-container {
+    overflow: hidden;
+    overflow-y: scroll;
+    // height: 1000px;
+
+    .chat-body {
+      padding: 1rem;
+      padding-bottom: 5rem;
+    }
+  }
+
+  .chat-input-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: $chat-main-bg;
+    // border-top: 1px solid #eaeaea;
+    flex: 1 1 auto;
+    // .chat-input {
+    //   background-color: #fff;
+    //   margin: 0.25rem 0.5rem;
+    //   border-radius: 4px;
+    // }
+    div textarea {
+      background-color: $chat-user-bg;
+      margin: 0.25rem 0.5rem;
+      border-radius: 4px;
+    }
+
+    .help-text {
+      margin: 0.3125rem 1rem 1rem;
+      font-size: rem-calc(10);
+      color: rgba($black, $B-text);
+    }
+
+    .attachments {
+      display: block;
+      max-height: 456px;
+      padding: 0.25rem 1rem;
+      background: transparent;
+      border-bottom: 1px solid rgba($black, $B-dividers);
+      overflow-x: auto;
+      white-space: nowrap;
+
+      .file-attachment {
+        margin: 0.25rem 1rem;
+      }
+    }
+
+    [type="text"],
+    textarea {
+      width: 100%;
+      margin: 0.5rem 0 0;
+      padding: 0.3125rem 1rem;
+      border: 0px;
+      box-shadow: none;
+      font-size: rem-calc(14);
+      resize: none;
+      min-height: 2em;
+      height: 2rem;
+      background-color: transparent;
+    }
+
+    button {
+      margin: 0.5rem 1rem;
+      padding: 0.5rem;
+    }
+  }
+}
+
+.counter-notif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 1rem;
+  background-color: red;
 }

@@ -1,305 +1,535 @@
+.progress {
+  background-color: $off-white;
+  .progress-meter {
+  }
+}
+
 .spk-gain-graph {
-	.progress {
-		background-color: rgba($black, $B-dividers);
-		border-radius: 8px;
-		height: 1.2rem;
-		.progress-meter {
-			display: inline-block;
-			float: left;
-			&.deductible {
-				position: relative;
-				background-color: $primary-color;
-				border-top-left-radius: 8px;
-				border-bottom-left-radius: 8px;
-				&:after {
-					position: absolute;
-					top: 0.9rem;
-					right: -2px;
-					content: "|";
-					color: rgba($black, $B-dividers);
-				}
-				.deductible-label {
-					position: absolute;
-					margin: 0;
-					top: 2rem;
-					bottom: -2rem;
-					right: 0.5rem;
-					font-size: 0.875rem;
-					color: rgba($black, $B-subtext);
-					text-align: right;
-				}
-			}
-			&.negate {
-				float: right;
-				background-color: $alert-color;
-			}
-			&.bonus {
-				background-color: $success-color;
-				border-top-right-radius: 8px;
-				border-bottom-right-radius: 8px;
-				.bonus-label {
-					position: absolute;
-					margin: 0;
-					top: 2rem;
-					bottom: -2rem;
-					right: 0rem;
-					font-size: 0.875rem;
-					color: rgba($black, $B-subtext);
-					text-align: right;
-				}
-			}
-		}
-		&.small {
-			height: 0.5rem;
-			.progress-meter {
-				&.deductible {
-					&:after {
-						position: absolute;
-						top: 0rem;
-						right: -2px;
-						content: "|";
-						color: rgba($black, $B-hinttext);
-					}
-					// &:before {
-					// 	position: absolute;
-					// 	bottom: 0.25rem;
-					// 	right: 0;
-					// 	content: ":";
-					// 	color: rgba($black, $B-hinttext);
-					// }
-				}
-			}
-		}
-	}
-}
+  .progress {
+    background-color: rgba($black, $B-dividers);
+    border-radius: 8px;
+    height: 1.2rem;
 
-.mpirica-graph {
-	padding: 70px 0 0;
-	.label-text {
-		// color: $white;
-		font-size: 0.875rem;
-		font-weight: $global-weight-bold;
-		text-transform: uppercase;
-	}
-	.progress {
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff1b19+0,fdc513+56,fdc513+56,81a714+84 */
-		background: #ff1b19; /* Old browsers */
-        background: -moz-linear-gradient(left,  #ff1b19 0%, #fdc513 56%, #fdc513 56%, #81a714 84%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(left,  #ff1b19 0%,#fdc513 56%,#fdc513 56%,#81a714 84%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to right,  #ff1b19 0%,#fdc513 56%,#fdc513 56%,#81a714 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff1b19', endColorstr='#81a714',GradientType=1 ); /* IE6-9 */
-		border-radius: 8px;
-		height: 0.5rem;
-		margin-bottom: 0;
-		.progress-meter {
-			border-radius: 8px;
-			position: relative;
-			display: inline-block;
-			float: left;
-			// visibility: hidden;
-			background-color: transparent;
-			.mpirica-wrapper {
-				position: absolute;
-				right: 0;
-				top: -70px;
-				visibility: visible;
-			}
-			.mpirica-bubble {
-				visibility: visible;
-				position: absolute;
-				right: 0;
-				top: -2.5rem;
-				background-color: $success-color;
-				max-width: 10rem;
-				padding: 0.5rem 0.75rem 0.25rem;
-				color: $white;
-				border-radius: 4px;
-				font-weight: bold;
-				&:before {
-					position: absolute;
-				    display: block;
-				    width: 0;
-				    height: 0;
-				    border: inset 0.25rem;
-				    content: '';
-				    border-bottom-width: 0;
-				    border-top-style: solid;
-				    border-color: $success-color transparent transparent;
-				    top: 100%;
-				    bottom: auto;
-				    left: 43%;
-				}
-			}
-		}
-	}
-	&.bubble {
-		padding: 50px 15px 15px;
-	}
-	&.compacted {
-		padding: 1rem 0 0;
-		.progress {
-			.progress-meter {
-				position: relative;
-				&:after {
-					position: absolute;
-					top: -1rem;
-					right: 0;
-					content: "|";
-					color: $success-color
-				}
-			}
-		}
-	}
-	&.small {
-		.progress {
-			height: 0.25rem;
-			.mpirica-wrapper {
-				width: 35px;
-				height: 35px;
-				span.rating {
+    .progress-meter {
+      display: inline-block;
+      float: left;
 
-				}
-				> img {
-					width: 35px;
-					height: 35px;
-				}
-			}
-		}
-	}
-}
+      &.deductible {
+        position: relative;
+        background-color: $primary-color;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
 
-.mpirica-wrapper {
-	width: 70px;
-	height: 70px;
-	position: relative;
-	span.rating {
-		display: block;
-		position: absolute;
-		width: 80%;
-		top: 30px;
-		left: 8px;
-		z-index: 4;
-		text-align: center;
-		color: $white;
-		font-weight: bold;
-	}
-	> img {
-		width: 70px;
-		height: 70px;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		z-index: 3;
-	}
-	&.large {
-		width: 400px;
-		height: 400px;
-		position: relative;
-		span.rating {
-			display: block;
-			position: absolute;
-			width: 80%;
-			top: 165px;
-			left: 40px;
-			z-index: 4;
-			text-align: center;
-			color: $white;
-			font-weight: bold;
-			font-size: 6rem;
-		}
-		> img {
-			width: 400px;
-			height: 400px;
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			z-index: 3;
-		}
-	}
-}
+        &:after {
+          position: absolute;
+          top: 0.9rem;
+          right: -2px;
+          content: "|";
+          color: rgba($black, $B-dividers);
+        }
 
-@mixin circle-graph-circle($size) {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  left: calc(50% - #{$size/2});
-  top: calc(50% - #{$size/2});
-  width: $size;
-  height: $size;
-}
+        .progress-meter-text {
+          &.detach {
+            position: absolute;
+            top: -1rem;
+            color: $primary-color;
+            left: 1.5rem;
+          }
+        }
 
-$circle-graph-size: rem-calc(180);
-$circle-graph-percent-number-size: rem-calc(24);
-$circle-graph-percent-unit-size: rem-calc(16);
-$circle-graph-background-color: $light-gray;
-$circle-graph-empty-color: $dark-gray;
-$circle-graph-fill-color: $secondary-color;
+        .deductible-label {
+          position: absolute;
+          margin: 0;
+          top: 2rem;
+          bottom: -2rem;
+          right: 0.5rem;
+          font-size: 0.875rem;
+          color: rgba($black, $B-subtext);
+          text-align: right;
+          white-space: nowrap;
+        }
+      }
 
-.circle-graph {
-  width: $circle-graph-size;
-  height: $circle-graph-size;
-  border-radius: 50%;
-  background-color: $circle-graph-empty-color;
-  position: relative;
-  margin: 0 auto;
+      &.negate {
+        float: right;
+        background-color: $alert-color;
+      }
 
-  &.gt-50 {
-    background-color: $circle-graph-fill-color;
-  }
-}
+      &.bonus {
+        background-color: $success-color;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
 
-.circle-graph-progress {
-  @include circle-graph-circle($circle-graph-size);
-  clip: rect(0, $circle-graph-size, $circle-graph-size, #{$circle-graph-size/2});
+        .progress-meter-text {
+          &.detach {
+            position: absolute;
+            top: -1rem;
+            color: $primary-color;
+            right: 1.5rem;
+          }
+        }
 
-  .circle-graph-progress-fill {
-    @include circle-graph-circle($circle-graph-size);
-    clip: rect(0, #{$circle-graph-size/2}, $circle-graph-size, 0);
-    background: $circle-graph-fill-color;
-    transform: rotate(60deg);
-  }
+        .bonus-label {
+          position: absolute;
+          margin: 0;
+          top: 2rem;
+          bottom: -2rem;
+          right: 0rem;
+          font-size: 0.875rem;
+          color: rgba($black, $B-subtext);
+          text-align: right;
+        }
+      }
+    }
 
-  .gt-50 & {
-    clip: rect(0, #{$circle-graph-size/2}, $circle-graph-size, 0);
+    &.small {
+      height: 0.5rem;
 
-    .circle-graph-progress-fill {
-      clip: rect(0, $circle-graph-size, $circle-graph-size, #{$circle-graph-size/2});
-      background: $circle-graph-empty-color;
+      .progress-meter {
+        &.deductible {
+          &:after {
+            position: absolute;
+            top: 0rem;
+            right: -2px;
+            content: "|";
+            color: rgba($black, $B-hinttext);
+          }
+
+          // &:before {
+          // 	position: absolute;
+          // 	bottom: 0.25rem;
+          // 	right: 0;
+          // 	content: ":";
+          // 	color: rgba($black, $B-hinttext);
+          // }
+        }
+      }
     }
   }
 }
 
-.circle-graph-percents {
-  @include circle-graph-circle(#{$circle-graph-size/1.45});
-  background: $circle-graph-background-color;
-  text-align: center;
-  display: table;
-  z-index: 4;
+.mpirica-graph {
+  padding: 70px 0 0;
 
-  .circle-graph-percents-number {
-    display: block;
-    font-size: $circle-graph-percent-number-size;
-    font-weight: bold;
-    color: $circle-graph-fill-color;
+  .label-text {
+    // color: $white;
+    font-size: 0.875rem;
+    font-weight: $global-weight-bold;
+    text-transform: uppercase;
   }
 
-  .circle-graph-percents-units {
-    display: block;
-    font-size: $circle-graph-percent-unit-size;
-    font-weight: bold;
+  .progress {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff1b19+0,fdc513+56,fdc513+56,81a714+84 */
+    background: #ff1b19; /* Old browsers */
+    background: -moz-linear-gradient(
+      left,
+      #ff1b19 0%,
+      #fdc513 56%,
+      #fdc513 56%,
+      #81a714 84%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      left,
+      #ff1b19 0%,
+      #fdc513 56%,
+      #fdc513 56%,
+      #81a714 84%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      to right,
+      #ff1b19 0%,
+      #fdc513 56%,
+      #fdc513 56%,
+      #81a714 84%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1b19', endColorstr='#81a714', GradientType=1); /* IE6-9 */
+    border-radius: 8px;
+    height: 0.5rem;
+    margin-bottom: 0;
+
+    .progress-meter {
+      border-radius: 8px;
+      position: relative;
+      display: inline-block;
+      float: left;
+      // visibility: hidden;
+      background-color: transparent;
+
+      .mpirica-wrapper {
+        position: absolute;
+        right: 0;
+        top: -70px;
+        visibility: visible;
+      }
+
+      .mpirica-bubble {
+        visibility: visible;
+        position: absolute;
+        right: 0;
+        top: -2.5rem;
+        background-color: $success-color;
+        max-width: 10rem;
+        padding: 0.5rem 0.75rem 0.25rem;
+        color: $white;
+        border-radius: 4px;
+        font-weight: bold;
+
+        &:before {
+          position: absolute;
+          display: block;
+          width: 0;
+          height: 0;
+          border: inset 0.25rem;
+          content: "";
+          border-bottom-width: 0;
+          border-top-style: solid;
+          border-color: $success-color transparent transparent;
+          top: 100%;
+          bottom: auto;
+          left: 43%;
+        }
+      }
+    }
+  }
+
+  &.bubble {
+    padding: 50px 15px 15px;
+  }
+
+  &.compacted {
+    padding: 1rem 0 0;
+
+    .progress {
+      .progress-meter {
+        position: relative;
+
+        &:after {
+          position: absolute;
+          top: -1rem;
+          right: 0;
+          content: "|";
+          color: $success-color;
+        }
+      }
+    }
+  }
+
+  &.small {
+    .progress {
+      height: 0.25rem;
+
+      .mpirica-wrapper {
+        width: 35px;
+        height: 35px;
+
+        span.rating {
+        }
+
+        > img {
+          width: 35px;
+          height: 35px;
+        }
+      }
+    }
   }
 }
 
-.circle-graph-percents-wrapper {
-  display: table-cell;
-  vertical-align: middle;
-  line-height: 0;
+.mpirica-wrapper {
+  width: 70px;
+  height: 70px;
+  position: relative;
 
-  span {
-    line-height: 1;
+  span.rating {
+    display: block;
+    position: absolute;
+    width: 80%;
+    top: 30px;
+    left: 8px;
+    z-index: 4;
+    text-align: center;
+    color: $white;
+    font-weight: bold;
+  }
+
+  > img {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+  }
+
+  &.large {
+    width: 400px;
+    height: 400px;
+    position: relative;
+
+    span.rating {
+      display: block;
+      position: absolute;
+      width: 80%;
+      top: 165px;
+      left: 40px;
+      z-index: 4;
+      text-align: center;
+      color: $white;
+      font-weight: bold;
+      font-size: 6rem;
+    }
+
+    > img {
+      width: 400px;
+      height: 400px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 3;
+    }
+  }
+}
+
+// VARS
+$circle-width: 0.08em;
+$circle-width-hover: 0.04em;
+
+// colors default
+$primary-color-graph: #307bbb;
+$secondary-color-graph: #ccc;
+$bg-color-graph: #f5f5f5;
+
+$primary-color-green: #4db53c;
+$primary-color-orange: #dd9d22;
+
+// colors dark skin
+$primary-color-dark: #c6ff00;
+$secondary-color-dark: #777;
+$bg-color-dark: #666;
+
+$primary-color-green-dark: #5fd400;
+$primary-color-orange-dark: #e08833;
+
+// CIRCLE
+// classes 2 extend
+.rect-auto {
+  clip: rect(auto, auto, auto, auto);
+}
+
+.pie {
+  position: absolute;
+  border: $circle-width solid $primary-color-graph;
+  width: 1 - (2 * $circle-width);
+  height: 1 - (2 * $circle-width);
+  clip: rect(0em, 0.5em, 1em, 0em);
+  border-radius: 50%;
+  //@include rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.pie-fill {
+  //@include rotate(180deg);
+  transform: rotate(180deg);
+}
+
+// main
+.c100 {
+  *,
+  *:before,
+  *:after {
+    box-sizing: content-box;
+  }
+
+  position: relative;
+  font-size: 120px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  float: left;
+  margin: 0;
+  background-color: $secondary-color-graph;
+
+  // center circle to its parent
+  &.center {
+    float: none;
+    margin: 0 auto;
+  }
+
+  // bigger size
+  &.big {
+    font-size: 240px;
+  }
+
+  // smaller size
+  &.small {
+    font-size: 80px;
+  }
+
+  // centered value inside circle
+  > span {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 5em;
+    line-height: 5em;
+    font-size: 0.2em;
+    color: $secondary-color-graph;
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+    transition: all ease-in-out 0.2s;
+  }
+
+  // background inside the circle
+  &:after {
+    position: absolute;
+    top: $circle-width;
+    left: $circle-width;
+    display: block;
+    content: " ";
+    border-radius: 50%;
+    background-color: $bg-color-graph;
+    width: 1 - (2 * $circle-width);
+    height: 1 - (2 * $circle-width);
+    transition: all ease-in-out 0.2s;
+  }
+
+  // the slice (mask)
+  .slice {
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    clip: rect(0em, 1em, 1em, 0.5em);
+  }
+
+  // circle to show the status
+  .bar {
+    @extend .pie;
+  }
+
+  // loop to create all needed elements automatically
+  @for $j from 51 through 100 {
+    &.p#{$j} .slice {
+      @extend .rect-auto;
+    }
+
+    &.p#{$j} .bar:after {
+      @extend .pie-fill;
+    }
+
+    &.p#{$j} .fill {
+      @extend .pie;
+      @extend .pie-fill;
+    }
+  }
+
+  // loop to rotate all 100 circles
+  @for $j from 1 through 100 {
+    &.p#{$j} .bar {
+      //@include rotate((360/100*$j) + deg);
+      transform: rotate((360/100 * $j) + deg);
+    }
+  }
+
+  // hover styles
+  &:hover {
+    cursor: default;
+
+    > span {
+      width: 3.33em;
+      line-height: 3.33em;
+      font-size: 0.3em;
+      color: $primary-color-graph;
+    }
+
+    &:after {
+      top: $circle-width-hover;
+      left: $circle-width-hover;
+      width: 1 - (2 * $circle-width-hover);
+      height: 1 - (2 * $circle-width-hover);
+    }
+  }
+
+  // override colors for the dark skin
+  &.dark {
+    background-color: $secondary-color-dark;
+
+    .bar,
+    .fill {
+      border-color: $primary-color-dark !important;
+    }
+
+    > span {
+      color: $secondary-color-dark;
+    }
+
+    &:after {
+      background-color: $bg-color-dark;
+    }
+
+    &:hover {
+      > span {
+        color: $primary-color-dark;
+      }
+    }
+  }
+
+  // green skin
+  &.green {
+    .bar,
+    .fill {
+      border-color: $primary-color-green !important;
+    }
+
+    &:hover {
+      > span {
+        color: $primary-color-green;
+      }
+    }
+  }
+
+  &.green.dark {
+    .bar,
+    .fill {
+      border-color: $primary-color-green-dark !important;
+    }
+
+    &:hover {
+      > span {
+        color: $primary-color-green-dark;
+      }
+    }
+  }
+
+  // orange skin
+  &.orange {
+    .bar,
+    .fill {
+      border-color: $primary-color-orange !important;
+    }
+
+    &:hover {
+      > span {
+        color: $primary-color-orange;
+      }
+    }
+  }
+
+  &.orange.dark {
+    .bar,
+    .fill {
+      border-color: $primary-color-orange-dark !important;
+    }
+
+    &:hover {
+      > span {
+        color: $primary-color-orange-dark;
+      }
+    }
   }
 }

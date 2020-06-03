@@ -1,0 +1,28 @@
+.task {
+	.task-heading {
+		border-radius: 4px;
+		background-color: #fff;
+		padding-top: .5rem;
+		padding-bottom: .5rem;
+		.task-icon {
+			@extend .clr-secondary;
+		}
+	}
+	.task-body {
+		padding-top: 1rem !important;
+		padding: 1rem !important;
+		@extend .bg-black10;
+	}
+
+	&.task-admin {
+		.task-heading {
+			border: .1rem solid $warning-color;
+			.task-icon {
+				@extend .clr-warning;
+			}
+			.task-title {
+				@extend .clr-warning;
+			}
+		}
+	}
+}

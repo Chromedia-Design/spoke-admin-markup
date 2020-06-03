@@ -1,0 +1,14 @@
+/**
+ * Dedicated rules, imports for zip
+ */
+
+$foundation-palette: (
+  // zip
+    primary: #7ac6d2,
+  secondary: #4c616f,
+  success: #1ebe44,
+  warning: #d4822d,
+  alert: #de4351
+);
+
+@import "core";

@@ -1,142 +1,194 @@
 .breadcrumbs {
-	padding: 1rem 0;
-	margin: 0;
-	a {
-		color: $text-black;
-	}
-	li {
-		font-family: $body-font-family;
-		font-size: 0.5625rem;
-		font-weight: $global-weight-bold;
-		text-transform: uppercase;
-		color: rgba($black, $B-hinttext);
-		@media only screen and (min-width: 40em) {
-			font-size: 0.75rem;
-		}
-		&:not(:last-child) {
-			&:after {
-				content: "→";
-				color: rgba($black, $B-hinttext);
-				top: 0;
-			}
-		}
-	}
+  padding: 0.875rem 0;
+  margin: 0;
+
+  a {
+    color: $text-black;
+  }
+
+  li {
+    font-family: $body-font-family;
+    font-size: 0.5625rem;
+    font-weight: $global-weight-bold;
+    text-transform: uppercase;
+    color: rgba($black, $B-hinttext);
+    @media only screen and (min-width: 40em) {
+      font-size: 0.75rem;
+    }
+
+    &:not(:last-child) {
+      &:after {
+        content: "→";
+        color: rgba($black, $B-hinttext);
+        top: 0;
+      }
+    }
+  }
 }
 
 #facilitySection {
-	.breadcrumbs {
-		background-color: $white;
-	}
-	.is-stuck {
-		.breadcrumbs {
-			margin: 0;
-			padding: 1.8rem;
-			border: 1px solid rgba($black, $B-dividers);
-			border-radius: 4px;
-			background-color: $light-gray;
-			li {
-				font-size: 1rem;
-				&:not(:last-child) {
-					a {
-						margin-left: 1rem;
-					}
-					&:before {
-						content: "<";
-						color: rgba($black, $B-text);
-						top: 0;
-					}
-					&:after {
-						content: "";
-					}
-				}
-				&:last-child {
-					display: none;
-				}
-			}
-		}
-	}
+  .breadcrumbs {
+    background-color: $white;
+  }
+
+  .is-stuck {
+    .breadcrumbs {
+      margin: 0;
+      padding: 1.8rem;
+      border: 1px solid rgba($black, $B-dividers);
+      border-radius: 4px;
+      background-color: $light-gray;
+
+      li {
+        font-size: 1rem;
+
+        &:not(:last-child) {
+          a {
+            margin-left: 1rem;
+          }
+
+          &:before {
+            content: "<";
+            color: rgba($black, $B-text);
+            top: 0;
+          }
+
+          &:after {
+            content: "";
+          }
+        }
+
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
- .hierarchs {
- 	padding: 0;
-	margin: 0.25rem 0;
-	display: inline-block;
-	li {
-		color: $text-black;
-		display: inline-block;
-		font-family: $body-font-family;
-		font-size: 1rem;
-		font-weight: $global-weight-bold;
-		@media only screen and (min-width: 40em) {
-			font-size: 1rem;
-		}
-		&:not(:last-child) {
-			color: rgba($black, $B-hinttext);
-			&:after {
-				content: ">";
-				color: rgba($black, $B-hinttext);
-				margin: 0 .75rem;
-			}
-		}
-	}
- }
+.hierarchs {
+  padding: 0;
+  margin: 0.25rem 0;
+  display: inline-block;
 
- .stepbars {
-	padding: 0;
-	margin: 30px auto;
-	overflow: hidden;
-	/*CSS counters to number the steps*/
-	counter-reset: step;
-	li {
-		list-style-type: none;
-		color: rgba($black, $B-text);
-		text-transform: uppercase;
-		font-size: 12px;
-		width: 16.66%;
-		float: left;
-		position: relative;
-		text-align: center;
-		&:before {
-			position: relative;
-			content: counter(step);
-			counter-increment: step;
-			width: 28px;
-			line-height: 28px;
-			display: block;
-			font-size: 1rem;
-			color: #333;
-			background: $light-gray;
-			border-radius: 50%;
-			margin: 0 auto 15px auto;
-			z-index: 5;
-			font-weight: $global-weight-bold;
-		}
-		&:after {
-			/*progressbar connectors*/
-			content: '';
-			width: 100%;
-			height: 2px;
-			background: $light-gray;
-			position: absolute;
-			left: -50%;
-			top: 12px;
-		}
-		&:first-child {
-			&:after {
-				/*connector not needed before the first step*/
-				content: none;
-			}
-		}
-		&.active {
-			/*marking active/completed steps green*/
-			/*The number of the step and the connector before it = green*/
-			&:before, &:after {
-				background: $success-color;
-				color: white;
-			}
-		}
-	}
-	.button {
-		margin-bottom: 0;
-	}
+  li {
+    color: $text-black;
+    display: inline-block;
+    font-family: $body-font-family;
+    font-size: 1rem;
+    font-weight: $global-weight-bold;
+    @media only screen and (min-width: 40em) {
+      font-size: 1rem;
+    }
+
+    &:not(:last-child) {
+      color: rgba($black, $B-hinttext);
+
+      &:after {
+        content: ">";
+        color: rgba($black, $B-hinttext);
+        margin: 0 .75rem;
+      }
+    }
+  }
+}
+
+.stepbars {
+  padding: 0;
+  margin: 30px auto;
+  overflow: hidden;
+  /*CSS counters to number the steps*/
+  counter-reset: step;
+
+  li {
+    list-style-type: none;
+    color: rgba($black, $B-text);
+    text-transform: uppercase;
+    font-size: 12px;
+    width: 16.66%;
+    float: left;
+    position: relative;
+    text-align: center;
+
+    &:before {
+      position: relative;
+      content: counter(step);
+      counter-increment: step;
+      width: 28px;
+      line-height: 28px;
+      display: block;
+      font-size: 1rem;
+      color: #333;
+      background: $light-gray;
+      border-radius: 50%;
+      margin: 0 auto 15px auto;
+      z-index: 5;
+      font-weight: $global-weight-bold;
+    }
+
+    &:after {
+      /*progressbar connectors*/
+      content: '';
+      width: 100%;
+      height: 2px;
+      background: $light-gray;
+      position: absolute;
+      left: -50%;
+      top: 12px;
+    }
+
+    &:first-child {
+      &:after {
+        /*connector not needed before the first step*/
+        content: none;
+      }
+    }
+
+    &.active {
+      /*marking active/completed steps green*/
+      /*The number of the step and the connector before it = green*/
+      &:before, &:after {
+        background: $success-color;
+        color: white;
+      }
+
+
+    }
+  }
+
+  &.pain-scale {
+    li {
+      &:before {
+        width: 3rem;
+        height: 3rem;
+        // font-size: 1.5rem;
+        line-height: 3rem;
+      }
+
+      &:after {
+        top: 1.2rem;
+        height: .5rem;
+      }
+
+      &.active {
+        &.alert {
+          &:before {
+            background-color: $alert-color;
+          }
+        }
+
+        &:after {
+          background-color: $light-gray;
+        }
+      }
+    }
+
+  }
+
+
+  .button {
+    margin-bottom: 0;
+  }
+
+
 }

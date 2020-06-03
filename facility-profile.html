@@ -1,0 +1,545 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spoke Admin Portal</title>
+	<link rel="stylesheet" href="js/trumbowyg/ui/trumbowyg.min.css">
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+	<div class="expanded row medium-collapse">
+		<div class="medium-2 columns">
+			<div class="site-nav">
+				<header>
+					<a href="#" class="logo text-center">
+						<img src="img/logo.png" title="Spoke">
+					</a>
+				</header>
+				<ul class="menu vertical"  data-accordion-menu>
+					<li>
+						<a href="#">Dashboard</a>
+					</li>
+					<li>
+						<a href="#">Practices</a>
+						<ul class="nested vertical menu is-active">
+							<li>
+								<a href="#">Specializations</a>
+							</li>
+							<li>
+								<a href="#">Treatments</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Packages</a>
+					</li>
+					<li class="is-active">
+						<a href="#">Facilities</a>
+					</li>
+					<li>
+						<a href="#">Doctors</a>
+					</li>
+					<li>
+						<a href="#">Companies</a>
+					</li>
+					<li>
+						<a href="#">Content</a>
+					</li>
+					<li>
+						<a href="#">Users</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="medium-10 columns">
+			<div class="content">
+
+				<div class="top-bar">
+				  	<div class="top-bar-left">
+						<!-- <ul class="menu">
+					  		<li><input type="search" placeholder="Search"></li>
+					  		<li><button type="button" class="button">Search</button></li>
+						</ul> -->
+				  	</div>
+				  	<div class="top-bar-right">
+						<ul class="dropdown menu" data-dropdown-menu>
+							<li>
+								<a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">6</span></a>
+							</li>
+					  		<li>
+								<a href="#">Administrator</a>
+								<ul class="menu vertical">
+						  			<li><a href="#">One</a></li>
+						  			<li><a href="#">Two</a></li>
+						  			<li><a href="#">Three</a></li>
+								</ul>
+					  		</li>
+						</ul>
+				  	</div>
+				</div>
+
+				<div class="row">
+					<div class="medium-12 columns">
+
+						<nav aria-label="You are here:" role="navigation">
+						  	<ul class="breadcrumbs">
+						    	<li><a href="admin-facilities.html">Facilities</a></li>
+						    	<li><a href="admin-facility-view.html">Florida Hospital-Orlando</a></li>
+						    	<li>Edit Facility Profile</li>
+						  	</ul>
+						</nav>
+
+						<div class="page-lead">
+							<span class="h5">Edit Facility</span>
+							<a href="admin-facility-view.html" class="button info pull-right"><i class="fa fa-angle-left fa-fw"></i>&nbsp; Save All and Back To Profile</a>
+						</div>
+						
+						<ul class="tabs justified" id="spoke-tabs"> <!--use data-tabs to use foundation tabs -->
+							<li class="tabs-title is-active"><a href="admin-facility-profile.html" aria-selected="true">Facility Profile</a></li>
+							<li class="tabs-title"><a href="admin-facility-packages.html">Packages</a></li>
+							<li class="tabs-title"><a href="admin-facility-media.html">Media</a></li>
+							<li class="tabs-title"><a href="admin-facility-staff.html">Staff</a></li>
+						</ul>
+
+						<!-- tab content -->
+						<div class="tabs-content" data-tabs-content="spoke-tabs">
+							<div class="tabs-panel is-active" id="Profile">
+
+								<!-- START OF OVERVIEW AND SUMAMRY -->
+								<div class="block">
+									<div class="block-heading">
+										<span class="h5">Facility Overview</span>
+									</div>
+									<div class="block-container">
+										<div class="row">
+
+											<div class="large-12 columns end">
+												<div class="media-object">
+												  	<div class="media-object-section logo large middle">
+												    	<div class="img-wrapper">
+												      		<img src= "img/facility_logo.png">
+												    	</div>
+												  	</div>
+												  	<div class="media-object-section middle">
+												   		<label>
+												   			<small class="subheader">JPG, GIF or PNG. Image must be at least 69x69 in size.</small>
+												   			<input type="file" name="">
+												   		</label>
+												  	</div>
+												</div>
+											</div>
+										</div>
+										<form>
+											<div class="row">
+								  				<div class="medium-12 columns">
+								  					<label>Facility Name
+								  						<input type="text" name="" value="Florida Hospital - Orlando">
+								  					</label>
+								  				</div>
+								  			</div>
+											<div class="row">
+												<div class="medium-12 columns">
+													<label>Overview
+													<textarea class="wysiwyg">At the Florida Hospital Orlando, our primary goal is to cure every patient's cancer. Since we know that in many cases advanced stage cancers cannot be cured, our next goal is to make cancer a chronic disease, with which our patients can live and lead relatively normal lives.
+
+													We accomplish our goals daily in our Florida facility, which provides state-of-the-art, cutting edge medical treatment, and caring attention to the mind, body and soul of each and every patient. With this fusion of science and caring, we find that we are able to provide our patients with the best possible healing, and among the best cancer treatment available in Florida, and the world.</textarea>
+													</label>
+												</div>
+											</div>
+											<div class="row">
+												<div class="medium-12 columns">
+													<label>Summary
+													<textarea class="wysiwyg">Your comfort and care are most important to our physicians, nurses, imaging specialists, technicians, integrative medicine staff and support staff of the Beverly Hills Cancer Center. Our group is dedicated to providing our patients with the best cancer treatment available in Los Angeles and across the globe.
+
+												Our Center includes all of the facilities offered by a major hospital in one convenient location with an environment that features spacious, comfortable and private treatment rooms, infused with color and natural light. We are determined to provide unparalleled care, maintaining high-quality state-of-the-art treatment and dedicated clinical research while providing comfort and sustenance to the whole patient, in a healing and supportive environment.</textarea>
+													</label>
+												</div>
+											</div>
+											<div class="row">
+												<div class="medium-12 columns">
+													<div class="pull-right">
+														<a href="#" class="submit button success">Save Changes</a>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+								
+								<!-- END OF OVERVIEW AND SUMAMRY -->
+
+								<!-- START OF CONTACT AND ADRESS -->
+								<div class="block">
+									<div class="block-heading">
+										<span class="h5">Address and Contact Information</span>
+									</div>
+									<div class="block-container">
+										<div class="row">
+											<div class="medium-12 columns">
+												<label for="streetaddress">
+													Street Address
+													<input type="text" name="streetaddress" value="Colleen Cliff, Mountain side duplex bridge">
+													<input type="text" name="streetaddress" value="">
+												</label>	
+											</div>									
+										</div>
+										<div class="row">
+											<div class="medium-6 columns">
+												<label for="unitrooms">
+													Unit/Room # (Optional)
+													<input type="text" name="unitrooms" value="174 Olson Path">
+												</label>
+											</div>
+											<div class="medium-6 columns">
+												<label for="buildingroom">
+													Building Name (Optional)
+													<input type="text" name="buildingroom" value="08 Conroy Heights">
+												</label>	
+											</div>										
+										</div>
+										<div class="row">
+											<div class="medium-4 columns">
+												<label for="state/province">
+													State/Province
+													<select class="normal-input">
+														<option>
+															Denver
+														</option>
+														<option>
+															Bankok
+														</option>
+														<option>
+															Manila
+														</option>														
+													</select>
+												</label>										
+											</div>
+											<div class="medium-3 columns">
+												<label for="city">
+													City
+													<select>
+														<option>
+															Los Angeles
+														</option>
+														<option>
+															Bankok
+														</option>
+														<option>
+															Pasay
+														</option>														
+													</select>
+												</label>											
+											</div>
+											<div class="medium-2 columns end">
+												<label for="zipcode">
+													Postal Code
+													<input type="text" name="postalcode" value="8600">
+												</label>
+											</div>
+											<div class="medium-3 columns">
+												<label for="country">
+													Country
+													<select disabled>
+														<option>
+															United States
+														</option>
+														<option>
+															Thailand
+														</option>
+														<option>
+															Philippines
+														</option>														
+													</select>
+												</label>											
+											</div>								
+										</div>
+										<div class="row">
+											<div class="medium-4 columns end">
+												<label for="contactnumber">
+													Contact Number
+													<input type="text" name="postalcode" value="" placeholder="Contact No.">
+												</label>
+											</div>
+											<div class="medium-4 columns">
+												<label for="contactnumber">
+													LinkedIn
+													<input type="text" name="postalcode" value="" placeholder="User ID">
+												</label>											
+											</div>
+											<div class="medium-4 columns">
+												<label for="contactnumber">
+													Facebook
+													<input type="text" name="postalcode" value="" placeholder="User ID">
+												</label>											
+											</div>
+										</div>
+										<div class="row">
+											<div class="medium-12 columns">
+												<div class="pull-right">
+													<!-- <a href="#" class="button link">Cancel</a> -->
+													<a href="#" class="submit button success">Save Changes</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- END OF CONTACT AND ADRESS -->
+								</div>
+								
+
+								<!-- START OF PROFILE HIGHLIGHTS -->
+								<div class="block">
+									<div class="block-heading">
+										<span class="h5">Profile Highlights</span>
+										<a data-open="addHighlight" class="button pull-right white hollow small">Add Highlight +</a>
+
+										<div class="reveal" id="addHighlight" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+											<div class="row collapse">
+												<div class="large-12 columns">
+													<h5 class="reveal-heading">Add Highlight</h5>
+												</div>
+											</div>
+											<form>
+												<div class="row collapse">
+													<div class="large-12 columns">
+														<div class="reveal-body">
+															<div class="row">
+																<div class="large-12 columns end">
+																	<div class="media-object">
+																	  	<div class="media-object-section logo large middle">
+																	    	<div class="img-wrapper">
+																	      		<img src= "img/specialist.png">
+																	    	</div>
+																	  	</div>
+																	  	<div class="media-object-section middle">
+																	   		<label>
+																	   			<small class="subheader">JPG, GIF or PNG. Image must be at least 69x69 in size.</small>
+																	   			<input type="file" name="">
+																	   		</label>
+																	  	</div>
+																	</div>
+																</div>
+															</div>
+															<div class="row">
+												  				<div class="medium-12 columns">
+												  					<label>Highlight Title
+												  						<input type="text" name="" value="">
+												  					</label>
+												  				</div>
+												  			</div>
+												  			<div class="row">
+												  				<div class="medium-12 columns">
+												  					<label>Description
+												  						<textarea></textarea>
+												  					</label>
+												  				</div>
+												  			</div>
+														</div>
+													</div>
+												</div>
+												<div class="row collapse">
+													<div class="large-12 columns">
+														<div class="reveal-footer">
+															<div class="button-group pull-right">
+																<a class="button link" data-close>Cancel</a>
+																<a href="#" class="button success">Add Highlight</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</form>
+										  	<button class="close-button" data-close aria-label="Close modal" type="button">
+										    	<span aria-hidden="true">&times;</span>
+										  	</button>
+										</div>
+
+									</div>
+									<div class="block-container">
+
+										<table class="base-spacing">
+							                <thead>
+							                <tr>
+							                    <th>Highlight Title</th>
+							                    <th>Description</th>
+							                    <th></th>
+							                </tr>
+							                </thead>
+							                <tbody>
+							                    <tr>
+							                        <td>
+							                        	<div class="media-object">
+														  	<div class="media-object-section logo middle">
+														    	<div class="img-wrapper">
+														      		<img src= "img/specialist.png">
+														    	</div>
+														  	</div>
+														  	<div class="media-object-section middle">
+														   		<p>One of the Top Hospitals in the World</p>
+														  	</div>
+														</div>
+							                        </td>
+							                        <td><p class="truncate">With a 94% approval rating from patients, HIAE is the first institution outside the U.S. to be accredited by Joint Commission International in 1999</p></td>
+							                        <td class="text-right"> 
+							                            <a data-open="" class="action-link subheader"><i class="fa fa-edit fa-fw"></i></a>
+							                            <a href="#" class="action-link subheader"><i class="fa fa-remove fa-fw"></i></a>
+							                        </td>
+							                    </tr>
+							                </tbody>
+							            </table>
+						
+									</div>
+									
+									<!-- END OF PROFILE HIGHLIGHTS -->
+								</div>
+
+								<!-- START OF AWARDS AND ACCREDITATIONS -->
+								<div class="block">
+									<div class="block-heading">
+										<span class="h5">Awards & Accreditations</span>
+										<a data-open="addAward" class="button pull-right white hollow small">Add Award/Accreditation +</a>
+
+										<div class="reveal" id="addAward" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+											<div class="row collapse">
+												<div class="large-12 columns">
+													<h5 class="reveal-heading">Add Award/Accreditation</h5>
+												</div>
+											</div>
+											<form>
+												<div class="row collapse">
+													<div class="large-12 columns">
+														<div class="reveal-body">
+															<div class="row">
+												  				<div class="medium-6 columns">
+												  					<label>Awards & Certificate
+													        			<select>
+																			<option>
+																				Awards
+																			</option>
+																			<option>
+																				Certificate
+																			</option>													
+																		</select>
+														      		</label>
+												  				</div>
+												  			</div>
+												  			<div class="row">
+												  				<div class="medium-12 columns">
+												  					<label>Title
+														        		<select>
+																			<option>
+																				Joint Commission International (JCI) - Hospital Accreditation
+																			</option>
+																			<option>
+																				ISO 9001:2000 System Conversion Certification by SIRIM QAS International Sdn. Bhd.
+																			</option>
+																			<option>
+																				ISO 14001- Environmental Management Systems
+																			</option>	
+																			<option>
+																				ISO 9000 - Quality Management Systems
+																			</option>														
+																		</select>
+														      		</label>
+												  				</div>
+												  			</div>
+												  			<div class="row">
+												  				<div class="medium-3 columns">
+																	<label>
+																		Add Year
+																		<input type="text">
+																	</label>											
+																</div>
+												  			</div>	
+														</div>
+													</div>
+												</div>
+												<div class="row collapse">
+													<div class="large-12 columns">
+														<div class="reveal-footer">
+															<div class="button-group pull-right">
+																<a class="button link" data-close>Cancel</a>
+																<a href="#" class="button success">Add Award</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</form>
+										  	<button class="close-button" data-close aria-label="Close modal" type="button">
+										    	<span aria-hidden="true">&times;</span>
+										  	</button>
+										</div>
+
+									</div>
+									<div class="block-container">
+
+										<table class="base-spacing">
+							                <thead>
+							                <tr>
+							                    <th>Title</th>
+							                    <th>Year</th>
+							                    <th></th>
+							                </tr>
+							                </thead>
+							                <tbody>
+							                    <tr>
+							                        <td><p class="truncate">ISO 9000 - Quality Management Systems</p></td>
+							                        <td>
+							                        	<span>2015</span>
+							                        </td>
+							                        <td class="text-right"> 
+							                            <a data-open="" class="action-link subheader"><i class="fa fa-edit fa-fw"></i></a>
+							                            <a href="#" class="action-link subheader"><i class="fa fa-remove fa-fw"></i></a>
+							                        </td>
+							                    </tr>
+							                </tbody>
+							            </table>			
+
+									</div>
+									
+									<!-- END OF AWARDS & ACCRDITATIONS -->
+								</div>
+
+								<!-- // END OF PROFILE HIGHLIGHTS -->
+						  	</div>
+
+						</div>
+						<!-- // tab content -->
+
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/what-input/what-input.js"></script>
+	<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+		
+	<script src="js/trumbowyg/trumbowyg.min.js"></script>
+	<script src="js/app.js"></script>
+
+	<script type="text/javascript">
+		$(function () {
+            var timer;
+
+            $(window).resize(function() {
+                clearTimeout(timer);
+                timer = setTimeout(function() {
+                  $('.site-nav, .content').css("height", $(window).height());
+                }, 40); 
+            }).resize();
+        });
+
+        $('.wysiwyg').trumbowyg();
+
+	</script>
+
+</body>
+</html>

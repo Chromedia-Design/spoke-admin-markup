@@ -29,11 +29,11 @@
 			&:after {
 				position: absolute;
 				content: '';
-				bottom: -3px;
+				bottom: -2px;
 				left: 20%;
 				margin: 0 auto;
 				width: 60%;
-				height: 0.2rem;
+				height: 0.15rem;
 				background-color: lighten($secondary-color, 15%);
 			}
 			a {
@@ -51,8 +51,8 @@
 					width: 0.875rem;
 					background-color: $alert-color;
 					border-radius: 50%;
-					right: 1rem;
-					top: .6rem;
+					right: 0.5rem;
+					top: .3rem;
 					border: 2px solid $white;
 				}
 			}
@@ -85,28 +85,67 @@
 	&.justified {
 		display: table;
 		width: 100%;
+		table-layout: fixed;
+		&:before,
+		&:after {
+			display: none;
+		}
 		.tabs-title {
 			display: table-cell;
 			float: none;
 			text-align: center;
 		}
 	}
-	&.combinational {
-		margin-bottom: 0;
-		border-bottom: none;
+	&.tabs-inverse {
+		display: flex;
+		align-items: center;
+		margin: 0;
+		border-bottom: 1px solid rgba($black, $B-dividers);
+		@extend .borderless;
 		li {
 			text-transform: none;
-			> a {
-				padding: 1.25rem 1.5rem;
-			}
 			&.is-active {
 				position: relative;
+				z-index: 10;
+				@extend .bg-black20;
+				border-bottom: none;
+				&:after {
+					position: absolute;
+					content: "";
+					width: 100%;
+					bottom: -1px;
+					z-index: 2;
+					background-color: transparent;
+				    height: 0;
+				    left: 0;
+				}
+			}
+			&.tabs-text {
+				margin-right: 1rem;
+			}
+		}
+		+ .tabs-content {
+			background: $white;
+			padding: 0.5rem 1rem 1rem;
+			border-top: none;
+		}
+	}
+	&.combinational {
+		display: flex;
+		align-items: center;
+		margin: 0;
+		border-bottom: 1px solid rgba($black, $B-dividers);
+		li {
+			text-transform: none;
+			&.is-active {
+				position: relative;
+				z-index: 10;
 				background-color: $white;
 				border-top-left-radius: 8px;
 				border-top-right-radius: 8px;
-				border-top: 1px solid rgba($black, $B-hinttext);
-				border-left: 1px solid rgba($black, $B-hinttext);
-				border-right: 1px solid rgba($black, $B-hinttext);
+				border-top: 1px solid rgba($black, $B-dividers);
+				border-left: 1px solid rgba($black, $B-dividers);
+				border-right: 1px solid rgba($black, $B-dividers);
 				border-bottom: none;
 				&:after {
 					position: absolute;
@@ -121,18 +160,16 @@
 				}
 			}
 			&.tabs-text {
-				text-transform: none;
+				margin-right: 1rem;
 			}
 		}
 		+ .tabs-content {
-			margin-top: -3px;
-			.callout {
-				margin-bottom: 0;
-				// z-index: -1;
-			}
-			&:not(:last-child) {
-				margin-bottom: 1rem;
-			}
+			background: $white;
+			padding: 0.5rem 1rem 1rem;
+			border-top: none;
+			border-left: 1px solid rgba($black, $B-dividers);
+			border-right: 1px solid rgba($black, $B-dividers);
+			border-bottom: 1px solid rgba($black, $B-dividers);
 		}
 	}
 	&.spk-suggestions {
@@ -144,7 +181,7 @@
 		border: none;
 		background: transparent;
 		li {
-			padding: none;
+			padding: 0;
 			border-top-left-radius: 4px;
 			border-top-right-radius: 4px;
 			background-color: rgba($black, $B-dividers);
@@ -182,32 +219,17 @@
 
 .tabs-title {
 	> a {
-		padding: 1rem 1.5rem;
+		padding: 0.875rem 1rem;
 		font-size: 1rem;
-		line-height: 1.5em;
-	}
-}
-
-.tabs-text {
-	float: left;
-	text-transform: none;
-	> span, > a {
-		font-family: $body-font-family;
-		display: inline-block;
-	    padding: 1.25rem 1.5rem 1.25rem 0;
+		line-height: 1.6em;
+		.badge {
+			vertical-align: middle;
+		}
 	}
 }
 
 .tabs-option {
-	float: right;
-	.button {
-		margin-bottom: 0;
-	}
-	> .button-group, > .button-align {
-		padding: 0.625rem 1.5rem;
-		display: inline-block;
-		margin-bottom: 0;
-	}
+	flex: 1 1 auto;
 }
 
 .tabs-input {
@@ -231,7 +253,7 @@
 	}
 }
 
-.tabs-content{
+.tabs-content {
 	border: none;
 	background-color: transparent;
 	&.vertical {
@@ -250,6 +272,14 @@
 	padding: 0;
 	.breadcrumbs {
 		margin-top: 0;
+	}
+
+	.mobile-orbit {
+		.next, .prev {
+			position: relative !important;
+			margin-top: -50% !important;
+			background: rgba(40,61,75,0.75) !important;
+		}
 	}
 }
 

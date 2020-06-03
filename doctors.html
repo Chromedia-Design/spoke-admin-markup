@@ -1,0 +1,321 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spoke Admin Portal</title>
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+	
+	<div class="expanded row medium-collapse">
+		<div class="medium-2 columns">
+			<div class="site-nav">
+				<header>
+					<a href="#" class="logo text-center">
+						<img src="img/logo.png" title="Spoke">
+					</a>
+				</header>
+				<ul class="menu vertical"  data-accordion-menu>
+					<li>
+						<a href="#">Dashboard</a>
+					</li>
+					<li class="">
+						<a href="#">Packages</a>
+					</li>
+					<li class="">
+						<a href="#">Facilities</a>
+					</li>
+					<li class="">
+						<a href="#">Medical Procedures</a>
+						<ul class="nested vertical menu">
+							<li class="">
+								<a href="#">All Patients</a>
+							</li>
+						</ul>
+					</li>
+					<li class="">
+						<a href="#">Geo Data</a>
+					</li>
+					<li class="">
+						<a href="#">Awards</a>
+					</li>
+					<li class="is-active">
+						<a href="#" class=>Doctors</a>
+					</li>
+					<li class="">
+						<a href="#">Users</a>
+					</li>
+					<li class="">
+						<a href="#">Companies</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="medium-10 columns">
+			<div class="content">
+
+				<div class="top-bar">
+				  	<div class="top-bar-left">
+						<!-- <ul class="menu">
+				      		<li><input type="search" placeholder="Search"></li>
+				      		<li><button type="button" class="button">Search</button></li>
+			    		</ul> -->
+				  	</div>
+				  	<div class="top-bar-right">
+				    	<ul class="dropdown menu" data-dropdown-menu>
+				    		<li>
+				    			<a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">6</span></a>
+			    			</li>
+				      		<li>
+				        		<a href="#">Administrator</a>
+				        		<ul class="menu vertical">
+				          			<li><a href="#">One</a></li>
+				          			<li><a href="#">Two</a></li>
+				          			<li><a href="#">Three</a></li>
+				        		</ul>
+				      		</li>
+				    	</ul>
+				  	</div>
+				</div>
+
+				<div class="page-lead row align-middle expanded">
+					<div class="shrink columns">
+						<span class="h5">Doctors</span>
+						<span class="subheader"><small>216 Items</small></span>
+					</div>
+					<div class="medium-3 columns">
+						<input type="search" name="search" placeholder="Search employees..." class="animated-search-form">
+					</div>
+					<div class="columns">
+						<div class="button-align small pull-right mb-0">
+							<a class="button success rounded" data-open="addDoctor">+ Create New Doctor</a>
+
+							<div class="reveal" id="addDoctor" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+				                <div class="row collapse">
+				                    <div class="large-12 columns">
+				                        <h5 class="reveal-heading">Create New Doctor</h5>
+				                    </div>
+				                </div>
+				                <form>
+				                	<div class="row collapse">
+				                		<div class="auto columns">
+				                			<div class="reveal-body">
+				                				<div class="row">
+													<div class="auto columns end">
+														<div class="media-object">
+														  	<div class="media-object-section logo middle">
+														    	<div class="img-wrapper circle">
+														      		<img src= "img/specialist.png">
+														    	</div>
+														  	</div>
+														  	<div class="media-object-section middle">
+														   		<label>
+														   			<small class="subheader">JPG, GIF or PNG. Image must be at least 69x69 in size.</small>
+														   			<input type="file" name="">
+														   		</label>
+														  	</div>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="large-6 columns end">
+														<label>
+															First Name
+															<input type="text">
+														</label>
+													</div>
+													<div class="large-6 columns end">
+														<label>
+															Last Name
+															<input type="text">
+														</label>
+													</div>
+												</div>
+												<div class="row">
+													<div class="auto columns end">
+														<label>
+															Email Address
+															<input type="text">
+														</label>
+													</div>
+												</div>	
+												<div class="row">
+													<div class="auto columns end">
+														<label>
+															Contact Number
+															<input type="text">
+														</label>
+													</div>
+												</div>
+					                		</div>
+				                		</div>
+				                	</div>
+				                    
+				                    <div class="row collapse">
+				                        <div class="large-12 columns">
+				                        	<div class="reveal-footer">
+				                        		<div class="submit button-group pull-right">
+					                                <a class="button link" data-close>Cancel</a>
+					                                <button type="submit" class="button primary">Add Doctor</button>
+					                            </div>
+				                        	</div>
+				                        </div>
+				                    </div>
+				                </form>
+				                <button class="close-button" data-close aria-label="Close modal" type="button">
+				                    <span aria-hidden="true">&times;</span>
+				                </button>
+				            </div>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="row expanded">
+					<div class="medium-12 columns">
+
+						<table class="base-spacing">
+			                <thead>
+			                <tr>
+			                    <th><a href="#">Name <i class="fa fa-caret-up fa-fw"></i></a></th>
+			                    <th><a href="#">Linked Facilities <i class="fa fa-caret-up fa-fw"></i></a></th>
+			                    <th></th>
+			                </tr>
+			                </thead>
+			                <tbody>
+			                    <tr>
+			                        <td>
+			                        	<div class="media-object">
+										  	<div class="media-object-section logo small middle">
+										    	<div class="img-wrapper circle">
+										      		<img src= "img/specialist.png">
+										    	</div>
+										  	</div>
+										  	<div class="media-object-section middle">
+										   		<p><a href="admin-doctor-view.html">Johnny Kennedy</a></p>
+										  	</div>
+										</div>
+			                        </td>
+			                        <td><a href="#">4</a></td>
+			                        <td class="text-right">
+			                            <a  class="action-link subheader" href="admin-doctor-view.html"><i class="fa fa-eye fa-fw"></i></a>
+			                            <a href="admin-doctor-edit.html" class="action-link subheader"><i class="fa fa-edit fa-fw"></i></a>
+			                        </td>
+			                    </tr>
+			                    <tr>
+			                        <td>
+			                        	<div class="media-object">
+										  	<div class="media-object-section logo small middle">
+										    	<div class="img-wrapper circle">
+										      		<img src= "img/specialist.png">
+										    	</div>
+										  	</div>
+										  	<div class="media-object-section middle">
+										   		<p><a href="admin-doctor-view.html">Anthony Martin</a></p>
+										  	</div>
+										</div>
+			                        </td>
+			                        <td><a href="#">4</a></td>
+			                        <td class="text-right">
+			                            <a  class="action-link subheader" href="admin-doctor-view.html"><i class="fa fa-eye fa-fw"></i></a>
+			                            <a href="admin-doctor-edit.html" class="action-link subheader"><i class="fa fa-edit fa-fw"></i></a>
+			                        </td>
+			                    </tr>
+			                    <tr>
+			                        <td>
+			                        	<div class="media-object">
+										  	<div class="media-object-section logo small middle">
+										    	<div class="img-wrapper circle">
+										      		<img src= "img/specialist.png">
+										    	</div>
+										  	</div>
+										  	<div class="media-object-section middle">
+										   		<p><a href="admin-doctor-view.html">Chris Powell</a></p>
+										  	</div>
+										</div>
+			                        </td>
+			                        <td><a href="#">4</a></td>
+			                        <td class="text-right">
+			                            <a  class="action-link subheader" href="admin-doctor-view.html"><i class="fa fa-eye fa-fw"></i></a>
+			                            <a href="admin-doctor-edit.html" class="action-link subheader"><i class="fa fa-edit fa-fw"></i></a>
+			                        </td>
+			                    </tr>
+			                    <tr>
+			                        <td>
+			                        	<div class="media-object">
+										  	<div class="media-object-section logo small middle">
+										    	<div class="img-wrapper circle">
+										      		<img src= "img/specialist.png">
+										    	</div>
+										  	</div>
+										  	<div class="media-object-section middle">
+										   		<p><a href="admin-doctor-view.html">Jimmy Ramirez</a></p>
+										  	</div>
+										</div>
+			                        </td>
+			                        <td><a href="#">4</a></td>
+			                        <td class="text-right">
+			                            <a  class="action-link subheader" href="admin-doctor-view.html"><i class="fa fa-eye fa-fw"></i></a>
+			                            <a href="admin-doctor-edit.html" class="action-link subheader"><i class="fa fa-edit fa-fw"></i></a>
+			                        </td>
+			                    </tr>
+			                    <tr>
+			                        <td>
+			                        	<div class="media-object">
+										  	<div class="media-object-section logo small middle">
+										    	<div class="img-wrapper circle">
+										      		<img src= "img/specialist.png">
+										    	</div>
+										  	</div>
+										  	<div class="media-object-section middle">
+										   		<p><a href="admin-doctor-view.html">Chris Powell</a></p>
+										  	</div>
+										</div>
+			                        </td>
+			                        <td><a href="#">4</a></td>
+			                        <td class="text-right">
+			                            <a  class="action-link subheader" href="admin-doctor-view.html"><i class="fa fa-eye fa-fw"></i></a>
+			                            <a href="admin-doctor-edit.html" class="action-link subheader"><i class="fa fa-edit fa-fw"></i></a>
+			                        </td>
+			                    </tr>
+			                </tbody>
+			            </table>		
+
+					</div>
+				</div>
+
+
+				
+			</div>
+		</div>
+	</div>
+
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/what-input/what-input.js"></script>
+	<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+
+	<script src="js/app.js"></script>
+
+	<script type="text/javascript">
+        $(function () {
+            var timer;
+
+            $(window).resize(function() {
+                clearTimeout(timer);
+                timer = setTimeout(function() {
+                  $('.site-nav, .content').css("height", $(window).height());
+                }, 40); 
+            }).resize();
+        });
+
+        
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,1236 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spoke Admin Portal</title>
+  <link rel="stylesheet" href="js/trumbowyg/ui/trumbowyg.min.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+  <div class="full-height" id="full-page">
+    <div class="row expanded full-page-header">
+      <div class="column medium-12 pl-0 pr-0">
+        <div class="row align-middle expanded reveal-heading">
+          <div class="shrink columns">
+            <div class="button-align small mb-0">
+              <a class="button rounded hollow white" href="admin-facility-view.html"><i class="fa fa-times"></i></a>
+            </div>
+          </div>
+          <div class="columns">   
+            <span class="h5">Total Knee Replacement</span>
+            <!-- <a href="#" class="link white-color ml-1 mb-0"><i class="fa fa-edit"></i></a> -->
+            <!-- <span class="h6">Add New Clinical Pathway</span> -->
+            <!-- <input type="text" class="editable clr-white mb-0" value="Total Knee Replacement">
+            <p class="subheader mb-0 white">
+              <small>Pathway Description</small>
+            </p> -->
+          </div>
+          <div class="shrink columns">
+            <!-- <div class="button-align small mb-0 pull-right">
+              <a href="#" class="button success">Save</a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row expanded full-page-body" >
+
+      <div class="full-page-body-sidebar columns medium-3 pl-0 pr-0 pt-0">
+
+        <div class="row ">
+          <div class="medium-12 columns pr-0 pl-0">
+
+            <div class="row pr-1 pb-1 pt-1 align-middle bg-black10">
+              <div class="columns">
+                <h5 class="mb-0-5">Pathway Events</h5>
+              </div>
+              <div class="columns shrink">
+                <!-- <button class="button hollow success tiny pull-right">Add Event <i class="fa fa-plus"></i></button> -->
+                <div class="dropdown pull-right">
+                  <button class="dropbtn button pull-right hollow clear small success mb-0 pull-right"><i class="fa fa-plus"></i> Add Event</button>
+                  <div class="dropdown-content">                          
+                    <ul class="ml-0 mb-1 mt-1">
+                      <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
+                      <li class="list-style-type-none"><a href="">Assign Task</a></li>
+                      <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                    </ul>
+                    <ul class="ml-0 mb-1 mt-1">
+                      <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>PATIENT</strong></small></span></li>
+                      <li class="list-style-type-none"><a href="">Send Form</a></li>
+                      <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class=" clinical-pathway-new-entry-list">
+
+              <div class="row clinical-pathway-new-entry">
+                <div class="column new-entry-title">
+                  <div class="subheader mb-0 clr-black20"><small><strong>COMPANY</strong></small></div>
+                  <span>Pre-op Questionnaire</span>
+                </div>
+                <!-- <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
+                </div> -->
+              </div>
+
+              <div class="row clinical-pathway-new-entry">
+                <div class="column new-entry-title">
+                  <div class="subheader mb-0 clr-black20"><small><strong>COMPANY</strong></small></div>
+                  <span>Pre-op Patient reported functional capacity survey</span>
+                </div>
+                <!-- <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
+                </div> -->
+              </div>
+
+              <div class="row clinical-pathway-new-entry">
+                <div class="column new-entry-title">
+                  <div class="subheader mb-0 clr-black20"><small><strong>COMPANY</strong></small></div>
+                  <span>Pre-op Evaluation and clearance</span>
+                </div>
+                <!-- <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
+                </div> -->
+              </div>
+
+              <div class="row clinical-pathway-new-entry">
+                <div class="column new-entry-title">
+                  <div class="subheader mb-0 clr-black20"><small><strong>COMPANY</strong></small></div>
+                  <span>Pre-op infection avoidance adherence</span>
+                </div>
+                <!-- <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
+                </div> -->
+              </div>
+
+              <div class="row clinical-pathway-new-entry">
+                <div class="column new-entry-title">
+                  <div class="subheader mb-0 clr-black20"><small><strong>TREATMENT</strong></small></div>
+                  <span>Pre-op antibiotics as indicated</span>
+                </div>
+                <!-- <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
+                </div> -->
+              </div>
+
+              <div class="row clinical-pathway-new-entry">
+                <div class="column new-entry-title">
+                  <div class="subheader mb-0 clr-black20"><small><strong>TREATMENT</strong></small></div>
+                  <span>Pre-hab check in (one week before surgery)</span>
+                </div>
+                <!-- <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
+                </div> -->
+              </div>
+
+              <div class="row clinical-pathway-new-entry">
+                <div class="column new-entry-title">
+                  <div class="subheader mb-0 clr-black20"><small><strong>TREATMENT</strong></small></div>
+                  <span>Pre-op Consultation</span>
+                </div>
+                <!-- <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
+                </div> -->
+              </div>
+
+              <div class="row clinical-pathway-new-entry">
+                <div class="column new-entry-title">
+                  <div class="subheader mb-0 clr-black20"><small><strong>TREATMENT</strong></small></div>
+                  <span>Surgery</span>
+                </div>
+                <!-- <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
+                </div> -->
+              </div>
+
+              <div class="row clinical-pathway-new-entry">
+                <div class="column new-entry-title">
+                  <div class="subheader mb-0 clr-black20"><small><strong>TREATMENT</strong></small></div>
+                  <span>Patient Reported Pain Survey</span>
+                </div>
+                <!-- <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
+                </div> -->
+              </div>
+
+              <div class="row clinical-pathway-new-entry">
+                <div class="column new-entry-title">
+                  <div class="subheader mb-0 clr-black20"><small><strong>TREATMENT</strong></small></div>
+                  <span>Post-Op visit scheduled</span>
+                </div>
+                <!-- <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
+                </div> -->
+              </div>
+
+              <div class="row clinical-pathway-new-entry">
+                <div class="column new-entry-title">
+                  <div class="subheader mb-0 clr-black20"><small><strong>TREATMENT</strong></small></div>
+                  <span>Compliance with Physical Therapy regimen (1 week post)</span>
+                </div>
+                <!-- <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
+                </div> -->
+              </div>
+
+              <div class="row clinical-pathway-new-entry">
+                <div class="column new-entry-title">
+                  <div class="subheader mb-0 clr-black20"><small><strong>SU-SPECIALIZATION</strong></small></div>
+                  <span>Compliance with Physical Therapy regimen (3 weeks post)</span>
+                </div>
+                <!-- <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
+                </div> -->
+              </div>
+
+              <div class="row clinical-pathway-new-entry  active">
+                <div class="column new-entry-title">
+                  <div class="subheader mb-0 clr-black20"><small><strong>SU-SPECIALIZATION</strong></small></div>
+                  <span>Patient reported service experience survey - Physical Therapy Check in</span>
+                </div>
+                <!-- <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
+                </div> -->
+              </div>
+
+              <div class="row clinical-pathway-new-entry">
+                <div class="column new-entry-title">
+                  <div class="subheader mb-0 clr-black20"><small><strong>SU-SPECIALIZATION</strong></small></div>
+                  <span>Compliance with Physical Therapy regimen (5 weeks post)</span>
+                </div>
+                <!-- <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
+                </div> -->
+              </div>
+
+              <div class="row clinical-pathway-new-entry">
+                <div class="column new-entry-title">
+                  <div class="subheader mb-0 clr-black20"><small><strong>SU-SPECIALIZATION</strong></small></div>
+                  <span>Patient reported functional capacity survey (6 weeks post)</span>
+                </div>
+                <!-- <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
+                </div> -->
+              </div>
+
+              <div class="row clinical-pathway-new-entry">
+                <div class="column new-entry-title">
+                  <div class="subheader mb-0 clr-black20"><small><strong>SPECIALIZATION</strong></small></div>
+                  <span>Compliance with Physical Therapy regimen (7 weeks post)</span>
+                </div>
+                <!-- <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
+                </div> -->
+              </div>
+
+              <div class="row clinical-pathway-new-entry">
+                <div class="column new-entry-title">
+                  <div class="subheader mb-0 clr-black20"><small><strong>SPECIALIZATION</strong></small></div>
+                  <span>Patient reported service experience survey - Post Physical Therapy</span>
+                </div>
+                <!-- <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
+                </div> -->
+              </div>
+
+              <div class="row clinical-pathway-new-entry">
+                <div class="column new-entry-title">
+                  <div class="subheader mb-0 clr-black20"><small><strong>SPECIALIZATION</strong></small></div>
+                  <span>Patient reported functional capacity survey (3 months post)</span>
+                </div>
+                <!-- <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
+                </div> -->
+              </div>
+
+              <div class="row clinical-pathway-new-entry">
+                <div class="column new-entry-title">
+                  <div class="subheader mb-0 clr-black20"><small><strong>SPECIALIZATION</strong></small></div>
+                  <span>Patient reported functional capacity survey (6 months post)</span>
+                </div>
+                <!-- <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
+                </div> -->
+              </div>
+
+              <div class="row clinical-pathway-new-entry">
+                <div class="column new-entry-title">
+                  <div class="subheader mb-0 clr-black20"><small><strong>COMPANY</strong></small></div>
+                  <span>Patient reported functional capacity survey (1 year post)</span>
+                </div>
+                <!-- <div class="column shrink align-middle new-entry-action">                  
+                  <span class="switch tiny mb-0">
+                    <input class="switch-input" id="dat" type="checkbox" name="dat"> 
+                    <label class="switch-paddle" for="dat">
+                      <span class="show-for-sr">Date and Time</span>
+                    </label>
+                  </span>
+                </div> -->
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="full-page-body-content bg-white columns">
+
+        <div class="row mb-2">
+          <div class="columns bg-black20 pad-1">
+            <p class="subheader"><strong><small>Title</small></strong></p>
+            <input type="text" class="fancy-input" value="Patient reported service experience survey - Physical Therapy Check in">
+          </div>          
+        </div>
+
+        <div class="row mb-2 border-radius-sm">
+          <div class="columns bg-black20 pad-1">
+            <div class="mb-1">
+              <div>
+                <p class="subheader mb-1"><strong><small>Advocate assigned to this event</small></strong></p>
+              </div>
+              <div>
+                <fieldset>
+                  <p class="fancy-checkbox small align-middle">
+                    <input id="spcp1" type="checkbox" class="mr-0">
+                    <label class="h6 subheader" for="checkbox1">Care Coordinator</label>
+                  </p>
+                  <p class="fancy-checkbox small align-middle">
+                    <input id="spcp1" type="checkbox" class="mr-0">
+                    <label class="h6 subheader" for="checkbox1">Case manager</label>
+                  </p>                    
+                </fieldset>
+              </div>
+            </div>
+            
+          </div>
+          <div class="columns bg-black20 pad-1">
+            <!-- <div class="mb-1">
+              <div>
+                <p class="subheader mb-1"><strong><small>Deadline/Duration</small></strong></p>
+              </div>
+              <div class="row">
+                <div class="columns pl-0 pr-0-5">
+                  <fieldset>
+                    <input type="text" class="fancy-input" value="1">
+                  </fieldset>
+                </div>
+                <div class="columns pr-0 pl-0-5">
+                  <fieldset>
+                    <select name="" id="" class="fancy-input">
+                      <option value="1">Day(s)</option>
+                      <option value="2">Week(s)</option>
+                      <option value="3">Month(s)</option>
+                      <option value="4">Year(s)</option>
+                    </select>
+                  </fieldset>
+                </div>
+                  
+              </div>
+            </div> -->
+            
+          </div>
+        </div>
+
+        <div class="row mb-2 ">
+          <div class="columns pr-0 pl-0">
+            <ul class="tabs tabs-inverse " data-tabs id="example-tabs">
+                  <!-- <li class="tabs-title"><a data-tabs-target="panel0" href="#panel0" >Event</a></li> -->
+                  <li class="tabs-title is-active"><a data-tabs-target="panel1" href="#panel1" >Triggers</a></li>
+                  <li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">tasks</a></li>
+                  <li class="tabs-title"><a data-tabs-target="panel3" href="#panel3">Escalation</a></li>
+            </ul>
+
+            <div class="tabs-content bg-black20" data-tabs-content="example-tabs">
+              
+              <!-- <div class="tabs-panel pad-1 bg-black20" id="panel0">
+
+                <div class="row">
+                  <div class="columns">
+                    <div class="row mb-2">
+                        <p class="subheader"><strong><small>Title</small></strong></p>
+                        <input type="text" class="fancy-input light" value="Patient reported service experience survey - Physical Therapy Check in">
+                    </div>
+
+                    <div class="row mb-2 border-radius-sm">
+                      <div class="columns pad-1">
+                        <div class="mb-1">
+                          <div>
+                            <p class="subheader mb-1"><strong><small>Advocate assigned to this event</small></strong></p>
+                          </div>
+                          <div>
+                            <fieldset>
+                              <p class="fancy-checkbox small align-middle">
+                                <input id="spcp1" type="checkbox" class="mr-0">
+                                <label class="h6 subheader" for="checkbox1">Care Coordinator</label>
+                              </p>
+                              <p class="fancy-checkbox small align-middle">
+                                <input id="spcp1" type="checkbox" class="mr-0">
+                                <label class="h6 subheader" for="checkbox1">Case manager</label>
+                              </p>                    
+                            </fieldset>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="columns pad-1">
+                        <div class="mb-1">
+                          <div>
+                            <p class="subheader mb-1"><strong><small>Deadline/Duration</small></strong></p>
+                          </div>
+                          <div>
+                            <fieldset>
+                              <select name="" id="" class="fancy-input light">
+                                <option value="1">1 Day(s)</option>
+                                <option value="2">2 Day(s)</option>
+                                <option value="3">3 Day(s)</option>
+                                <option value="4">4 Day(s)</option>
+                                <option value="5">5 Day(s)</option>
+                              </select>
+                            </fieldset>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div> -->
+
+              <div class="tabs-panel pad-1 bg-black20 is-active" id="panel1">
+
+                <div class="row">
+                  <div class="columns pl-0 shrink">
+                    <!-- <span class="h5">Condition: </span> -->
+                    <select name="" id="" class="fancy-input">
+                      <option value="">Select Condition</option>
+                      <option value="">Match All of the Criteria</option>
+                      <option value="" selected>Match Any of the Criteria</option>
+                    </select>
+                    
+                  </div>
+                  <div class="columns pr-0">                      
+                      <div class="dropdown pull-right">
+                        <button class="dropbtn button pull-right hollow clear small success mb-0 pull-right">
+                          <i class="fa fa-plus"></i> Add Trigger
+                        </button>
+                      </div>
+                  </div>
+                </div>
+                    
+
+                <div class="mb-1 toggler">
+                  <div class="row expanded bg-white pt-1 border-radius-sm toggler-handler">
+                    <div class="columns pl-0 pr-0">
+                      <div class="row expanded">
+                        <div class="columns">
+                          <input type="text" class="fancy-input" value="4">
+                        </div>
+                        <div class="columns">
+                          <select name="" id="" class="fancy-input">
+                            <option value="">Days</option>
+                            <option value="">Weeks</option>
+                            <option value="">Month</option>
+                            <option value="">Year</option>
+                          </select>
+                        </div>
+                        <div class="columns shrink">
+                          <select name="" id="" class="fancy-input">
+                            <option value="">After</option>
+                            <option value="">Before</option>
+                          </select>
+                        </div>
+                        <div class="columns medium-6">
+                          <select name="" id="" class="fancy-input">
+                            <option value="">Surgery</option>
+                            <option value="">Patient Reported Pain Survey</option>
+                            <option value="">Post-Op visit scheduled</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="columns pl-0 shrink">
+                      <div class="pull-right">
+                        <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-1 toggler">
+                  <div class="row expanded bg-white pt-1 border-radius-sm toggler-handler">
+                    <div class="columns pl-0 pr-0">
+                      <div class="row expanded">
+                        <div class="columns">
+                          <input type="text" class="fancy-input" value="6">
+                        </div>
+                        <div class="columns">
+                          <select name="" id="" class="fancy-input">
+                            <option value="">Days</option>
+                            <option value="">Weeks</option>
+                            <option value="">Month</option>
+                            <option value="">Year</option>
+                          </select>
+                        </div>
+                        <div class="columns shrink">
+                          <select name="" id="" class="fancy-input">
+                            <option value="">After</option>
+                            <option value="">Before</option>
+                          </select>
+                        </div>
+                        <div class="columns medium-6">
+                          <select name="" id="" class="fancy-input">
+                            <option value="">Pre-op Consultation</option>
+                            <option value="">Surgery</option>
+                            <option value="">Patient Reported Pain Survey</option>
+                            <option value="">Post-Op visit scheduled</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="columns pl-0 shrink">
+                      <div class="pull-right">
+                        <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- <div class="mb-1 toggler">
+                  <div class="row expanded bg-white pt-1 border-radius-sm toggler-handler">
+                    <div class="columns pl-0 pr-0">
+                      <div class="row expanded">
+                        <div class="columns">
+                          <select name="" id="" class="fancy-input">
+                            <option value="">Surgery</option>
+                            <option value="">Patient Reported Pain Survey</option>
+                            <option value="">Post-Op visit scheduled</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="columns pl-0 shrink">
+                      <div class="pull-right">
+                        <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-1 toggler">
+                  <div class="row expanded bg-white pt-1 border-radius-sm toggler-handler">
+                    <div class="columns pl-0 pr-0">
+                      <div class="row expanded">
+                        <div class="columns">
+                          <select name="" id="" class="fancy-input">
+                            <option value="">Pre-op Consultation</option>
+                            <option value="">Surgery</option>
+                            <option value="">Patient Reported Pain Survey</option>
+                            <option value="">Post-Op visit scheduled</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="columns pl-0 shrink">
+                      <div class="pull-right">
+                        <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-1">
+                  <div class="row expanded bg-white pt-1 border-radius-sm toggler-handler">
+                    <div class="columns pl-0 pr-0">
+                      <div class="row expanded">
+                        <div class="columns shrink pt-0-5">
+                          Activate After
+                        </div>
+                        <div class="columns medium-3 pl-0">
+                          <input type="text" class="fancy-input" value="6">
+                        </div>
+                        <div class="columns medium-3">
+                          <select name="" id="" class="fancy-input">
+                            <option value="">Days</option>
+                            <option value="">Weeks</option>
+                            <option value="">Month</option>
+                            <option value="">Year</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+
+              </div>
+
+              <div class="tabs-panel pad-1 bg-black20" id="panel2">
+
+                <div class="row">
+                  <div class="columns">                      
+                      <div class="dropdown pull-right">
+                        <button class="dropbtn button pull-right hollow clear small success mb-0 pull-right"><i class="fa fa-plus"></i> Add task</button>
+                        <div class="dropdown-content">                          
+                          <ul class="ml-0 mb-1 mt-1">
+                            <li class="list-style-type-none"><a href="">Add to-do</a></li>
+                            <li class="list-style-type-none"><a href="">Add Message</a></li>
+                            <li class="list-style-type-none"><a href="">Add Question</a></li>
+                          </ul>                          
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                
+                <div class="mb-1 toggler">
+                      
+                  <div class="row expanded bg-white pt-1 border-radius-sm">
+                    <div class="columns shrink toggler-handler">
+                      <i class="fa fa-lg fa-envelope mt-0-5 clr-secondary"></i>
+                    </div>
+                    <div class="columns toggler-handler">
+                      <p class="mb-0"><strong>This is a message y'll</strong></p>
+                      <p class="subheader">Patient</p>
+                    </div>
+                    <div class="columns shrink">
+                      <div class="pull-right">                            
+                        <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                        <button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row pt-1 toggler-target bg-black10">
+                    <div class="columns">
+                      <div class="row mb-1">
+                        <div class="columns medium-6">
+                          <p class="subheader">Title</p>
+                          <input type="text" value="THE Title"  class="fancy-input">
+                        </div>
+                      </div>
+                      <div class="row mb-1">
+                        <div class="columns">
+                          <textarea name="" id="" cols="30" rows="3" class="fancy-input">This is a message y'll</textarea>                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="mb-1 toggler">
+                  
+                  <div class="row expanded bg-white pt-1 border-radius-sm">
+                    <div class="columns shrink toggler-handler">
+                      <i class="fa fa-lg fa-list-ol mt-0-5 clr-secondary"></i>
+                    </div>
+                    <div class="columns toggler-handler">
+                      <p class="mb-0"><strong>Feed the Cats</strong></p>
+                      <p class="subheader">Advocate</p>
+                    </div>
+                    <div class="columns shrink">
+                      <div class="pull-right">                            
+                        <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                        <button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row pt-1 toggler-target bg-black10">
+                    <div class="columns">
+                      <div class="row mb-1">
+                        <div class="columns">
+                          <p class="subheader">Task</p>             
+                          <input type="text" class="fancy-input" value="Feed the Cats">
+                          <!-- <select name="" id="" class="fancy-input">
+                            <option value="">Feed the Cats</option>
+                            <option value="">Feed the Dogs</option>
+                            <option value="">Feed the Cats to the Dogs</option>
+                          </select> -->
+                        </div>
+                      </div>
+                      <div class="row mb-1">
+                        <div class="columns medium-6">
+                          <p class="subheader">Select Assignee</p>                          
+                          <select name="" id="" class="fancy-input">
+                            <option value="">Patient</option>
+                            <option value="" selected="">Advocate</option>
+                          </select>
+                        </div>                            
+                      </div>
+                      <div class="row mb-1">
+                        <div class="columns">
+                          <p class="subheader"><strong><small>Mark as overdue if not completed by</small></strong></p>
+                          <input type="text" class="fancy-input" placeholder="Overdue">
+                        </div>
+                        <div class="columns">
+                          <!-- <p class="subheader"><strong><small>Once overdue, escalate notices as</small></strong></p>
+                          <select name="" id="" class="fancy-input">
+                            <option value="">Low</option>
+                            <option value="">Medium</option>
+                            <option value="">High</option>
+                            <option value="">Critical</option>
+                          </select> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-1 toggler">
+                  
+                  <div class="row expanded bg-white pt-1 border-radius-sm">
+                    <div class="columns shrink toggler-handler">
+                      <i class="fa fa-lg fa-question-circle mt-0-5 clr-secondary"></i>
+                    </div>
+                    <div class="columns toggler-handler">
+                      <p class="mb-0"><strong>How is it going?</strong></p>
+                      <p class="subheader">Patient</p>
+                    </div>
+                    <div class="columns shrink">
+                      <div class="pull-right">
+                        <a href="Builder-Form-Task.html" class="button hollow success small clear" data-open="subtask">Subtask</a>
+                        <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                        <button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row pt-1 toggler-target bg-black10">
+                    <div class="columns">
+                      <div class="row mb-1">
+                        <div class="columns">
+                          <p class="subheader">Task</p> 
+                          <input type="text" class="fancy-input" value="How is it going?">
+                          <!-- <select name="" id="" class="fancy-input">
+                            <option value="">Feed the Cats</option>
+                            <option value="">Feed the Dogs</option>
+                            <option value="">Feed the Cats to the Dogs</option>
+                          </select> -->
+                        </div>
+                      </div>
+                      <!-- <div class="row mb-1">
+                        <div class="columns medium-6">
+                          <p class="subheader">Select Assignee</p>                          
+                          <select name="" id="" class="fancy-input">
+                            <option value="">Patient</option>
+                            <option value="">Advocate</option>
+                          </select>
+                        </div>                            
+                      </div> -->                          
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tabs-panel pad-1 bg-black20" id="panel3">
+                <div class="row">
+                  <div class="columns medium-6">
+                    <div>
+                      <p class="subheader mb-1"><strong>Priority Level</strong></p>
+                    </div>
+                    <div>
+                      <select name="" id=""class="fancy-input">
+                        <option value="1">Critical</option>
+                        <option value="2">Important</option>
+                        <option value="3">Normal</option>
+                        <option value="4" selected>Low</option>
+                        <!-- <option value="1">Critical - 4 Hours</option>
+                        <option value="2">Important - 24 Hours</option>
+                        <option value="3">Normal - 3 Days</option>
+                        <option value="4" selected>Low - 5 Days</option> -->
+                      </select>
+                    </div>
+                    
+                  </div>
+                  <div class="column">
+                    <div>
+                      <small class="subheader">
+                        <strong>crit·i·cal</strong> - expressing or involving an analysis of the merits and faults of a work of literature, music, or art.
+                        <br>
+                        "she never won the critical acclaim she sought"
+                        <br>
+                        <br>
+                        <strong>synonyms:</strong> evaluative, analytical, interpretative, expository, explanatory "a critical essay"
+                      </small>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="columns">
+
+                    <div>
+                      <div class="dropdown align-middle">
+                        <span class="h5">Day 1</span>
+                        <!-- <button class="dropbtn button hollow clear tiny success mb-0"><i class="fa fa-plus"></i> Add</button> -->
+                        
+                        <div class="dropdown-content">                          
+                          <ul class="ml-0 mb-1 mt-1">
+                            <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
+                            <li class="list-style-type-none"><a href="">Assign Task</a></li>
+                            <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                          </ul>
+                          <ul class="ml-0 mb-1 mt-1">
+                            <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>PATIENT</strong></small></span></li>
+                            <li class="list-style-type-none"><a href="">Send Form</a></li>
+                            <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                          </ul>
+                        </div>
+                      </div>
+                      <div>
+                        
+                        <div class="mb-1 toggler">
+                          
+                          <div class="row expanded bg-white pt-1 border-radius-sm">
+                            <div class="columns shrink toggler-handler">
+                              <i class="fa fa-lg fa-list-ol mt-0-5 clr-secondary"></i>
+                            </div>
+                            <div class="columns toggler-handler">
+                              <p class="mb-0"><strong>Remind the patient to fill up the form.</strong></p>
+                              <p class="subheader">Advocate</p>
+                            </div>
+                            <div class="columns shrink">
+                              <!-- <div class="pull-right">                                                        
+                                <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                                <button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                              </div> -->
+                            </div>
+                          </div>
+                          <!-- <div class="row pt-1 toggler-target bg-black10">
+                            <div class="columns">
+                              <div class="row mb-1">
+                                <div class="columns">
+                                  <p class="subheader">Task</p>
+                                  <select name="" id="">
+                                    <option value="">Remind the patient to fill up the form</option>
+                                    <option value="">Feed the Cats</option>
+                                    <option value="">Feed the Dogs</option>
+                                    <option value="">Feed the Cats to the Dogs</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="row mb-1">
+                                <div class="columns medium-6">
+                                  <p class="subheader">Select Advocate</p>
+                                  <select name="" id="">
+                                    <option value="">Sarah Burbon</option>
+                                    <option value="">Chachi Gonzales</option>
+                                  </select>
+                                </div>                            
+                              </div>                          
+                            </div>
+                          </div> -->
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div>
+                      <div class="dropdown align-middle">
+                        <span class="h5">Day 2</span>
+                        <!-- <button class="dropbtn button hollow clear tiny success mb-0"><i class="fa fa-plus"></i> Add</button> -->
+                        
+                        <div class="dropdown-content">                          
+                          <ul class="ml-0 mb-1 mt-1">
+                            <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
+                            <li class="list-style-type-none"><a href="">Assign Task</a></li>
+                            <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                          </ul>
+                          <ul class="ml-0 mb-1 mt-1">
+                            <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>PATIENT</strong></small></span></li>
+                            <li class="list-style-type-none"><a href="">Send Form</a></li>
+                            <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                          </ul>
+                        </div>
+                      </div>
+                      <div>
+                        
+                        <div class="mb-1 toggler">
+                          
+                          <div class="row expanded bg-white pt-1 border-radius-sm">
+                            <div class="columns shrink toggler-handler">
+                              <i class="fa fa-lg fa-list-ol mt-0-5 clr-secondary"></i>
+                            </div>
+                            <div class="columns toggler-handler">
+                              <p class="mb-0"><strong>Please call the patient and remind him/her about the form.</strong></p>
+                              <p class="subheader">Advocate</p>
+                            </div>
+                            <div class="columns shrink">
+                              <!-- <div class="pull-right">                                                        
+                                <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                                <button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                              </div> -->
+                            </div>
+                          </div>
+                          <!-- <div class="row pt-1 toggler-target bg-black10">
+                            <div class="columns">
+                              <div class="row mb-1">
+                                <div class="columns">
+                                  <p class="subheader">Task</p>
+                                  <select name="" id="">
+                                    <option value="">Please call the patient and remind him/her about the form</option>
+                                    <option value="">Feed the Cats</option>
+                                    <option value="">Feed the Dogs</option>
+                                    <option value="">Feed the Cats to the Dogs</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="row mb-1">
+                                <div class="columns medium-6">
+                                  <p class="subheader">Select Advocate</p>
+                                  <select name="" id="">
+                                    <option value="">Sarah Burbon</option>
+                                    <option value="">Chachi Gonzales</option>
+                                  </select>
+                                </div>                            
+                              </div>                          
+                            </div>
+                          </div> -->
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div>
+                      <div class="dropdown align-middle">
+                        <span class="h5">Day 3</span>
+                        <!-- <button class="dropbtn button hollow clear tiny success mb-0"><i class="fa fa-plus"></i> Add</button> -->
+                        
+                        <div class="dropdown-content">                          
+                          <ul class="ml-0 mb-1 mt-1">
+                            <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
+                            <li class="list-style-type-none"><a href="">Assign Task</a></li>
+                            <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                          </ul>
+                          <ul class="ml-0 mb-1 mt-1">
+                            <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>PATIENT</strong></small></span></li>
+                            <li class="list-style-type-none"><a href="">Send Form</a></li>
+                            <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                          </ul>
+                        </div>
+                      </div>
+                      <div>
+                        
+                        <div class="mb-1 toggler">
+                          
+                          <div class="row expanded bg-white pt-1 border-radius-sm">
+                            <div class="columns shrink toggler-handler">
+                              <i class="fa fa-lg fa-list-ol mt-0-5 clr-secondary"></i>
+                            </div>
+                            <div class="columns toggler-handler">
+                              <p class="mb-0"><strong>Ok, that patient did not fill up the form, you know what to do.</strong></p>
+                              <p class="subheader">Advocate</p>
+                            </div>
+                            <div class="columns shrink">
+                              <!-- <div class="pull-right">                                                        
+                                <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                                <button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                              </div> -->
+                            </div>
+                          </div>
+                          <!-- <div class="row pt-1 toggler-target bg-black10">
+                            <div class="columns">
+                              <div class="row mb-1">
+                                <div class="columns">
+                                  <p class="subheader">Task</p>
+                                  <select name="" id="">
+                                    <option value="">Ok, that patient did not fill up the form, you know what to do</option>
+                                    <option value="">Feed the Cats</option>
+                                    <option value="">Feed the Dogs</option>
+                                    <option value="">Feed the Cats to the Dogs</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="row mb-1">
+                                <div class="columns medium-6">
+                                  <p class="subheader">Select Advocate</p>
+                                  <select name="" id="">
+                                    <option value="">Sarah Burbon</option>
+                                    <option value="">Chachi Gonzales</option>
+                                  </select>
+                                </div>                            
+                              </div>                          
+                            </div>
+                          </div> -->
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div>
+                      <div class="dropdown align-middle">
+                        <span class="h5">Day 4</span>
+                        <!-- <button class="dropbtn button hollow clear tiny success mb-0"><i class="fa fa-plus"></i> Add</button> -->
+                        
+                        <div class="dropdown-content">                          
+                          <ul class="ml-0 mb-1 mt-1">
+                            <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
+                            <li class="list-style-type-none"><a href="">Assign Task</a></li>
+                            <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                          </ul>
+                          <ul class="ml-0 mb-1 mt-1">
+                            <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>PATIENT</strong></small></span></li>
+                            <li class="list-style-type-none"><a href="">Send Form</a></li>
+                            <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                          </ul>
+                        </div>
+                      </div>
+                      <div>
+                        
+                        <div class="mb-1 toggler">
+                          
+                          <div class="row expanded bg-white pt-0-5 border-radius-sm">
+                            <div class="columns shrink toggler-handler">
+                              <i class="fa fa-lg fa-list-ol mt-0-5 clr-secondary"></i>
+                            </div>
+                            <div class="columns toggler-handler">
+                              <p class="mb-0"><strong>I think it's time to bring out the big gun.</strong></p>
+                              <p class="subheader">Advocate</p>
+                            </div>
+                            <div class="columns shrink">
+                              <!-- <div class="pull-right">                                                        
+                                <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                                <button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                              </div> -->
+                            </div>
+                          </div>
+                          <!-- <div class="row pt-1 toggler-target bg-black10">
+                            <div class="columns">
+                              <div class="row mb-1">
+                                <div class="columns">
+                                  <p class="subheader">Task</p>
+                                  <select name="" id="">
+                                    <option value="">I think it's time to bring out the big gun</option>
+                                    <option value="">Feed the Cats</option>
+                                    <option value="">Feed the Dogs</option>
+                                    <option value="">Feed the Cats to the Dogs</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="row mb-1">
+                                <div class="columns medium-6">
+                                  <p class="subheader">Select Advocate</p>
+                                  <select name="" id="">
+                                    <option value="">Sarah Burbon</option>
+                                    <option value="">Chachi Gonzales</option>
+                                  </select>
+                                </div>                            
+                              </div>                          
+                            </div>
+                          </div> -->
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div>
+                      <div class="dropdown align-middle">
+                        <span class="h5">Day 5</span>
+                        <!-- <button class="dropbtn button hollow clear tiny success mb-0"><i class="fa fa-plus"></i> Add</button> -->
+                        
+                        <div class="dropdown-content">                          
+                          <ul class="ml-0 mb-1 mt-1">
+                            <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>ADVOCATE</strong></small></span></li>
+                            <li class="list-style-type-none"><a href="">Assign Task</a></li>
+                            <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                          </ul>
+                          <ul class="ml-0 mb-1 mt-1">
+                            <li class="list-style-type-none pl-1 pr-1 pb-0-5"><span class="subheader"><small><strong>PATIENT</strong></small></span></li>
+                            <li class="list-style-type-none"><a href="">Send Form</a></li>
+                            <li class="list-style-type-none"><a href="">Reminder</a></li>                            
+                          </ul>
+                        </div>
+                      </div>
+                      <div>
+                        
+                        <div class="mb-1 toggler">
+                          
+                          <div class="row expanded bg-white pt-0-5 border-radius-sm">
+                            <div class="columns shrink toggler-handler">
+                              <i class="fa fa-lg fa-list-ol mt-0-5 clr-secondary"></i>
+                            </div>
+                            <div class="columns toggler-handler">
+                              <p class="mb-0"><strong>OK, THAT'S IT, I"LL GIVE THAT PATIENT A VISIT..</strong></p>
+                              <p class="subheader">THE BOSS</p>
+                            </div>
+                            <div class="columns shrink">
+                              <!-- <div class="pull-right">                                                        
+                                <button class="button hollow alert clear"><i class="fa fa-trash"></i></button>
+                                <button class="button hollow clear toggler-handler"><i class="fa fa-chevron-down"></i></button>
+                              </div> -->
+                            </div>
+                          </div>
+                          <!-- <div class="row pt-1 toggler-target bg-black10">
+                            <div class="columns">
+                              <div class="row mb-1">
+                                <div class="columns">
+                                  <p class="subheader">Task</p>
+                                  <select name="" id="">
+                                    <option value="">OK, THAT'S IT, I"LL GIVE THAT PATIENT A VISIT..</option>
+                                    <option value="">Feed the Cats</option>
+                                    <option value="">Feed the Dogs</option>
+                                    <option value="">Feed the Cats to the Dogs</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="row mb-1">
+                                <div class="columns medium-6">
+                                  <p class="subheader">Select Advocate</p>
+                                  <select name="" id="">
+                                    <option value="">Sarah Burbon</option>
+                                    <option value="">Chachi Gonzales</option>
+                                  </select>
+                                </div>                            
+                              </div>                          
+                            </div>
+                          </div> -->
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="columns">
+            <a href="#" class="button success pull-right"> Save Changes</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/what-input/what-input.js"></script>
+  <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+  <script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+  <script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+  <script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+  <script src="js/trumbowyg/trumbowyg.min.js"></script>
+  <script src="js/app.js"></script>
+  <script type="text/javascript">
+      $(function () {
+          var timer;
+
+          $(window).resize(function () {
+              clearTimeout(timer);
+              timer = setTimeout(function () {
+                  $('.site-nav, .content').css("height", $(window).height());
+              }, 40);
+          }).resize();
+      });
+
+      $('.wysiwyg').trumbowyg();
+  </script>
+</body>
+
+</html>

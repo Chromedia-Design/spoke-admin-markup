@@ -67,6 +67,10 @@
 	&.primary {
 		border: 1px solid lighten($primary-color, 64%);
 	}
+	&.lighten {
+		border: 0 !important;
+		background-color: transparent !important;
+	}
 }
 
 // This is used for the dates on the activity log

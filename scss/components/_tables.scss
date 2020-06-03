@@ -21,10 +21,6 @@ table {
 	.input-group {
 		margin-bottom: 0;
 	}
-	[type='checkbox'],
-	[type='radio'] {
-		margin-top: 0.15rem;
-	}
 	thead {
 		background: transparent;
 		border: none;
@@ -32,20 +28,13 @@ table {
 		text-transform: uppercase;
 		font-size: 0.75rem;
 		th {
-			padding: 0 1rem 0.875rem;
+			padding: 0.5rem 1rem;
 			a {
 				color: rgba($black, $B-subtext);
 			}
 		}
 	}
 	tbody {
-		border-radius: 2px;
-		border: 1px solid $light-gray;
-		tr {
-			&:nth-child(even) {
-				background-color: $primary-light;
-			}
-		}
 		td {
 			padding: 0.5rem 0.875rem;
 			a {
@@ -88,7 +77,8 @@ table {
 	}
 	&.base-spacing {
 		thead, tbody {
-			th {
+			th,
+			td {
 				&:first-child {
 					width: 40%;
 				}
@@ -100,7 +90,8 @@ table {
 	}
 	&.thirds-spacing {
 		thead, tbody {
-			th {
+			th,
+			td {
 				&:first-child {
 					width: 30%;
 				}
@@ -113,11 +104,39 @@ table {
 			}
 		}
 	}
+	&.quad-spacing {
+		thead, tbody {
+			th,
+			td {
+				&:first-child {
+					width: 40%;
+				}
+				&:nth-child(2) {
+					width: 20%;
+				}
+				&:nth-child(3) {
+					width: 15%;
+				}
+				&:nth-child(4) {
+					width: 15%;
+				}
+			}
+		}
+	}
 	.media-object-section {
 		p,
 		a,
 		span {
 			word-break: break-all;
+		}
+	}
+	&.striped {
+		tbody {
+			tr {
+				&:nth-child(even) {
+					background-color: $primary-light;
+				}
+			}
 		}
 	}
 }
@@ -138,4 +157,11 @@ select.table-control {
     padding: 0.85em 0.5em;
     margin: 0;
     width: 33%;
+}
+
+.table {
+	border:  .07rem solid #ececec;
+	.table-head {
+		
+	}
 }

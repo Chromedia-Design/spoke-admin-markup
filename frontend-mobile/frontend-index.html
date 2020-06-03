@@ -1,0 +1,715 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spoke Health</title>
+	<link rel="stylesheet" href="../css/app.css">
+</head>
+<body>
+
+<header class="top-bar">
+	<div class="top-bar-title">
+		<a href="#" class="logo">
+			<img src="../img/logo.png" alt="Spoke">
+		</a>
+	</div>
+	<div id="responsive-menu">
+		<div class="top-bar-right">
+			<ul id="mainMenu" class="dropdown menu" data-dropdown-menu>
+				<li>
+					<a><i class="fa fa-calendar"></i></a>
+				</li>
+				<li class="drop-text">
+					<a><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">24</span></a>
+				</li>
+				<li>
+					<a class="vertical-block" href="#">
+						<div class="img-wrapper tiny circle mr-0-5">
+							<img src="http://i.pravatar.cc/300" alt="John Doe">
+						</div>
+					</a>
+					<ul class="menu vertical">
+						<li><a href="frontend-edit.html"><i class="fa fa-user"></i>&nbsp; Account Details</a></li>
+						<li><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Sign Out</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>
+
+<section class="white-bg">
+	<div class="page-lead row align-middle mt-0">
+		<div class="columns">
+			<span class="h6">Provider Options (4) <a id="startTour" class="button info hollow tiny ml-1 mb-0">What's this?</a></span>
+		</div>
+		<!--<div class="shrink columns">-->
+		<!--<div class="button-group small mb-0 pull-right">-->
+		<!--<span class="brick link subheader">Nearest to you</span>-->
+		<!--<a id="createPDF" href="#" class="button warning"><i class="fa fa-print"></i>&nbsp; Print</a>-->
+		<!--</div>-->
+		<!--</div>-->
+	</div>
+
+	<!-- NEW SLIDE WITHOUT JS -->
+	<div class="row">
+		<div class="columns">
+			<a class="img-card selected" href="frontend-facility-profile.html">
+				<div class="img-card-head">
+					<div class="header">
+						<div class="story-card">
+							<h6>TOP 20%</h6>
+							<p class="subheader">
+								<small>QUALITY PROVIDER</small>
+							</p>
+						</div>
+						<span data-open="exampleModal1" class="button success circle small pull-right"><i
+							class="fa fa-check fa-fw"></i></span>
+					</div>
+					<img src="https://s3.amazonaws.com/assets.spoke.com/static/thumb-precision-center.jpg">
+				</div>
+				<div class="img-card-body">
+					<div class="img-card-body-section">
+						<div class="media-object full-table fixed">
+							<div class="media-object-section logo small middle">
+								<div class="img-wrapper">
+									<img src="../img/logo-Saint-Joseph-Hospital.png">
+								</div>
+							</div>
+							<div class="media-object-section middle">
+								<h6>Center for Spine and Orthopedics and The Center for Great Medicine</h6>
+								<p class="subheader">
+									<small>DENVER &nbsp;
+										<small>2.1 miles</small>
+									</small>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="img-card-body-section">
+						<div class="row align-middle collapse">
+							<div class="small-12 columns">
+								<p>
+									<small class="subheader mr-1">YOUR BONUS</small>
+									<strong class="success-color pull-right">$5,500</strong></p>
+							</div>
+						</div>
+					</div>
+					<div class="img-card-body-section">
+						<div class="row">
+							<div class="small-12 columns">
+								<div class="media-object full-table fixed">
+									<div class="media-object-section tiny logo middle">
+										<div class="img-wrapper circle">
+											<img src="../img/specialist.png">
+										</div>
+									</div>
+									<div class="media-object-section middle">
+										<span><small><strong>Randy Moss</strong></small></span>
+									</div>
+									<div class="media-object-section middle">
+										<span class="pull-right subheader"><small>Surgeon</small></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="small-12 columns">
+								<div class="media-object full-table fixed">
+									<div class="media-object-section tiny logo middle">
+										<div class="img-wrapper circle">
+											<img src="../img/specialist.png">
+										</div>
+									</div>
+									<div class="media-object-section middle">
+										<span><small><strong>Gabriel Santos</strong></small></span>
+									</div>
+									<div class="media-object-section middle">
+										<span class="subheader pull-right"><small>Assitant Surgeon</small></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="small-12 columns">
+								<div class="media-object full-table fixed">
+									<div class="media-object-section tiny logo middle">
+										<div class="img-wrapper circle">
+											<img src="../img/specialist.png">
+										</div>
+									</div>
+									<div class="media-object-section middle">
+										<span><small><strong>Dan Stevens</strong></small></span>
+									</div>
+									<div class="media-object-section middle">
+										<span class="subheader pull-right"><small>Anaesthesiologist</small></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="img-card-body-section">
+						<div class="row collapse">
+							<div class="small-12 columns">
+								<p class="h6 subheader">
+									<small>What's Included:</small>
+								</p>
+								<ul class="inline-list">
+									<li><i class="fa fa-check"></i>&nbsp;Pre-op evaluation</li>
+									<li><i class="fa fa-check"></i>&nbsp;Pre-op antibiotics as indicate</li>
+									<li><i class="fa fa-check"></i>&nbsp;Facility surgeon</li>
+									<li><i class="fa fa-check"></i>&nbsp;Assistant surgeon</li>
+									<li><i class="fa fa-check"></i>&nbsp;Anesthesia</li>
+									<li><i class="fa fa-check"></i>&nbsp;Rehabilitation/physical therapy regimen</li>
+									<li><i class="fa fa-check"></i>&nbsp;Post-op follow-up</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="img-card-body-section">
+						<div class="row collapse">
+							<div class="small-12 columns">
+								<span class="button hollow small success expanded">Learn More</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="columns">
+			<a class="img-card selected" href="frontend-facility-profile.html">
+				<div class="img-card-head">
+					<div class="header">
+						<div class="story-card">
+							<h6>TOP 20%</h6>
+							<p class="subheader">
+								<small>QUALITY PROVIDER</small>
+							</p>
+						</div>
+						<span data-open="exampleModal1" class="button success circle small pull-right"><i
+							class="fa fa-check fa-fw"></i></span>
+					</div>
+					<img src="https://s3.amazonaws.com/assets.spoke.com/static/thumb-precision-center.jpg">
+				</div>
+				<div class="img-card-body">
+					<div class="img-card-body-section">
+						<div class="media-object full-table fixed">
+							<div class="media-object-section logo small middle">
+								<div class="img-wrapper">
+									<img src="../img/logo-Saint-Joseph-Hospital.png">
+								</div>
+							</div>
+							<div class="media-object-section middle">
+								<h6>Center for Spine and Orthopedics and The Center for Great Medicine</h6>
+								<p class="subheader">
+									<small>DENVER &nbsp;
+										<small>2.1 miles</small>
+									</small>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="img-card-body-section">
+						<div class="row align-middle collapse">
+							<div class="small-12 columns">
+								<p>
+									<small class="subheader mr-1">YOUR BONUS</small>
+									<strong class="success-color pull-right">$5,500</strong></p>
+							</div>
+						</div>
+					</div>
+					<div class="img-card-body-section">
+						<div class="row">
+							<div class="small-12 columns">
+								<div class="media-object full-table fixed">
+									<div class="media-object-section tiny logo middle">
+										<div class="img-wrapper circle">
+											<img src="../img/specialist.png">
+										</div>
+									</div>
+									<div class="media-object-section middle">
+										<span><small><strong>Randy Moss</strong></small></span>
+									</div>
+									<div class="media-object-section middle">
+										<span class="pull-right subheader"><small>Surgeon</small></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="small-12 columns">
+								<div class="media-object full-table fixed">
+									<div class="media-object-section tiny logo middle">
+										<div class="img-wrapper circle">
+											<img src="../img/specialist.png">
+										</div>
+									</div>
+									<div class="media-object-section middle">
+										<span><small><strong>Gabriel Santos</strong></small></span>
+									</div>
+									<div class="media-object-section middle">
+										<span class="subheader pull-right"><small>Assitant Surgeon</small></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="small-12 columns">
+								<div class="media-object full-table fixed">
+									<div class="media-object-section tiny logo middle">
+										<div class="img-wrapper circle">
+											<img src="../img/specialist.png">
+										</div>
+									</div>
+									<div class="media-object-section middle">
+										<span><small><strong>Dan Stevens</strong></small></span>
+									</div>
+									<div class="media-object-section middle">
+										<span class="subheader pull-right"><small>Anaesthesiologist</small></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="img-card-body-section">
+						<div class="row collapse">
+							<div class="small-12 columns">
+								<p class="h6 subheader">
+									<small>What's Included:</small>
+								</p>
+								<ul class="inline-list">
+									<li><i class="fa fa-check"></i>&nbsp;Pre-op evaluation</li>
+									<li><i class="fa fa-check"></i>&nbsp;Pre-op antibiotics as indicate</li>
+									<li><i class="fa fa-check"></i>&nbsp;Facility surgeon</li>
+									<li><i class="fa fa-check"></i>&nbsp;Assistant surgeon</li>
+									<li><i class="fa fa-check"></i>&nbsp;Anesthesia</li>
+									<li><i class="fa fa-check"></i>&nbsp;Rehabilitation/physical therapy regimen</li>
+									<li><i class="fa fa-check"></i>&nbsp;Post-op follow-up</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="img-card-body-section">
+						<div class="row collapse">
+							<div class="small-12 columns">
+								<span class="button hollow small success expanded">Learn More</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+</section>
+
+<!-- Chat Component -->
+<div id="chat-toggle">
+	<i class="fa fa-comment"></i>
+</div>
+
+<div id="chat-notification">
+	<a href="frontend-presurgery.html">
+		<div class="chat-header-container">
+			<div class="form-notification bg-primary ">
+				<div class="pad1 clr-white active">
+					<span><strong>Pre surgery questions: </strong> 1 of 4</span>
+				</div>
+		<!-- 		<div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit data-auto-play="false">
+					<ul class="orbit-container pl-1 pr-1">
+						<li class="orbit-slide is-active">
+							<div class="">
+								<p>On a scale of 0 to 5, How much pain you felt after she left you?</p>
+								<div class="row">
+									<div class="columns">
+										<ul class="list-style-type-none ml-0">
+											<li name="scale"><input type="radio"><label>1</label></li>
+											<li name="scale"><input type="radio"><label>2</label></li>
+											<li name="scale"><input type="radio"><label>3</label></li>
+											<li name="scale"><input type="radio"><label>4</label></li>
+											<li name="scale"><input type="radio"><label>5</label></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="orbit-slide">
+							<div class="">
+								<p>Did you sleep well last saturday night after the party?</p>
+								<div class="row">
+									<div class="columns">
+										<ul class="list-style-type-none ml-0">
+											<li class="" name="scale"><input type="radio"><label>Yes</label></li>
+											<li class="" name="scale"><input type="radio"><label>No</label></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="orbit-slide">
+							<div class="">
+								<p>I'm really sorry about this but will you tell me your name again.</p>
+								<div class="row">
+									<div class="columns">
+										<input type="text" placeholder="your name" class=" mb-0">
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="orbit-slide">
+							<div class="">
+								<p>W/c of the following games you've finished playing?</p>
+								<div class="row">
+									<div class="columns">
+										<ul class="list-style-type-none ml-0">
+											<li class="" name="game"><input type="checkbox"><label>Super Mario Bros.</label></li>
+											<li class="" name="game"><input type="checkbox"><label>Metal Gear Solid 5</label></li>
+											<li class="" name="game"><input type="checkbox"><label>Horizon: Zero Dawn</label></li>
+											<li class="" name="game"><input type="checkbox"><label>Devil May Cry</label></li>
+											<li class="" name="game"><input type="checkbox"><label>Goat Simulator</label></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="orbit-controls bottom row  pl-1 pr-1 bg-black10 pt-1 pb-1">
+						<div class="columns center-content">
+							<button class="orbit-previous button tiny expanded mb-0 pt-0-5 pb-0-5"><span class="">Previous</span></button>
+						</div>
+						<div class="columns center-content">
+							<button class="orbit-next button tiny expanded mb-0 pt-0-5 pb-0-5"><span class="">Next</span></button>
+						</div>
+
+
+					</div>
+				</div> -->
+			</div>
+		</div>
+	</a>
+	<div class="chat-header-container">
+		<div class="chat-header row shrinked active pb-1">
+			<!-- <div class="columns small-2 chat-header-action pl-0 pr-0">
+				<button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i
+					class="fa fa-chevron-left"></i></button>
+				<img src="http://i.pravatar.cc/300" align="left" class="user-image circle tiny">
+			</div> -->
+			<div class="columns small-12 chat-header-user pr-0">
+				<p class="mb-0 user-name"><strong>You have a new message from <em>John Robert!</em></strong></p>
+				<span class="user-role">15 Total unread messages</span>
+			</div>
+			<div class="counter">15</div>
+		</div>
+	</div>
+</div>
+
+<div id="chat-container" style="display: none;">
+
+	<div class="chat-video-container">
+		<div id="videos" class="compact">
+			<div id="subscriber" class="compact"></div>
+			<div id="publisher" class="compact"></div>
+		</div>
+		<div class="chat-video-control row align-center">
+			<div class="columns col-md-2 center-text pr-0">
+				<button id="chat-video-compress" class="button large circle"><i class="fa fa-compress"></i></button>
+			</div>
+			<div class="columns col-md-2 center-text pad0">
+				<button id="chat-video-message" class="button success large circle mb-0"><i class="fa fa-comment"></i></button>
+			</div>
+			<div class="columns col-md-2 center-text pl-0">
+				<button id="chat-video-end-call" class="button alert large circle"><i class="fa fa-phone"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div class="chat-header-intro">
+		<span class="h5 white-color">Messages</span>
+		<button data-open="exampleModal1" class="btn-new button clear circle large white"><i class="fa fa-phone large"></i>
+		</button>
+	</div>
+
+	<div class="chat-header-container">
+		<div class="chat-header row shrinked active align-middle">
+			<!--<div class="columns small-2 chat-header-action pl-0 pr-0">-->
+			<!--<button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i class="fa fa-chevron-left"></i></button>-->
+			<!---->
+			<!--<img src="https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-vector-stock-91602499.jpg" align="left" class="user-image circle tiny">-->
+
+			<!--</div>-->
+			<div class="columns small-7 chat-header-user">
+				<p class="mb-0 user-name"><b>John Robert</b></p>
+				<!--<span class=" user-role">Customer Support</span>-->
+			</div>
+			<div class="columns auto chat-header-video">
+				<button class="btn-video button hollow clear align-vertical-top mb-0 white-text large pull-right"><i
+					class="fa fa-video-camera"></i></button>
+				<p class="timestamp mt-0-5 pull-right">12:32</p>
+			</div>
+			<div class="counter">4</div>
+		</div>
+	</div>
+	<div class="chat-header-container">
+		<div class="chat-header row shrinked active">
+			<div class="columns small-2 chat-header-action pl-0 pr-0">
+				<button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i
+					class="fa fa-chevron-left"></i></button>
+				<img src="http://i.pravatar.cc/300" align="left" class="user-image circle tiny">
+			</div>
+			<div class="columns small-7 chat-header-user">
+				<p class="mb-0 user-name"><b>John Robert</b></p>
+				<span class=" user-role">Customer Support</span>
+			</div>
+			<div class="columns small-3 chat-header-video">
+				<button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i
+					class="fa fa-video-camera"></i></button>
+				<p class="timestamp mt-0-5 pull-right">12:32</p>
+			</div>
+			<div class="counter">4</div>
+		</div>
+	</div>
+	<div class="chat-header-container">
+		<div class="chat-header row shrinked active">
+			<div class="columns small-2 chat-header-action pl-0 pr-0">
+				<button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i
+					class="fa fa-chevron-left"></i></button>
+				<img src="http://i.pravatar.cc/299" align="left" class="user-image circle tiny">
+			</div>
+			<div class="columns small-7 chat-header-user">
+				<p class="mb-0 user-name"><b>John Robert</b></p>
+				<span class=" user-role">Customer Support</span>
+			</div>
+			<div class="columns small-3 chat-header-video">
+				<button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i
+					class="fa fa-video-camera"></i></button>
+				<p class="timestamp mt-0-5 pull-right">12:32</p>
+			</div>
+			<div class="counter">4</div>
+		</div>
+	</div>
+	<div class="chat-header-container">
+		<div class="chat-header row shrinked">
+			<div class="columns small-2 chat-header-action pl-0 pr-0">
+				<button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i
+					class="fa fa-chevron-left"></i></button>
+				<img src="http://i.pravatar.cc/298" align="left" class="user-image circle tiny">
+			</div>
+			<div class="columns small-7 chat-header-user">
+				<p class="mb-0 user-name"><b>John Robert</b></p>
+				<span class=" user-role">Customer Support</span>
+			</div>
+			<div class="columns small-3 chat-header-video">
+				<button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i
+					class="fa fa-video-camera"></i></button>
+				<p class="timestamp mt-0-5 pull-right">12:32</p>
+			</div>
+			<div class="counter">4</div>
+		</div>
+	</div>
+	<div class="chat-header-container">
+		<div class="chat-header row shrinked">
+			<div class="columns small-2 chat-header-action pl-0 pr-0">
+				<button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i
+					class="fa fa-chevron-left"></i></button>
+				<img src="http://i.pravatar.cc/297" align="left" class="user-image circle tiny">
+			</div>
+			<div class="columns small-7 chat-header-user">
+				<p class="mb-0 user-name"><b>John Robert</b></p>
+				<span class=" user-role">Customer Support</span>
+			</div>
+			<div class="columns small-3 chat-header-video">
+				<button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i
+					class="fa fa-video-camera"></i></button>
+				<p class="timestamp mt-0-5 pull-right">12:32</p>
+			</div>
+			<div class="counter">4</div>
+		</div>
+	</div>
+	<div class="chat-header-container">
+		<div class="chat-header row shrinked">
+			<div class="columns small-2 chat-header-action pl-0 pr-0">
+				<button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i
+					class="fa fa-chevron-left"></i></button>
+				<img src="http://i.pravatar.cc/296" align="left" class="user-image circle tiny">
+			</div>
+			<div class="columns small-7 chat-header-user">
+				<p class="mb-0 user-name"><b>John Robert</b></p>
+				<span class=" user-role">Customer Support</span>
+			</div>
+			<div class="columns small-3 chat-header-video">
+				<button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i
+					class="fa fa-video-camera"></i></button>
+				<p class="timestamp mt-0-5 pull-right">12:32</p>
+			</div>
+			<div class="counter">4</div>
+		</div>
+	</div>
+	<div class="chat-header-container">
+		<div class="chat-header row shrinked">
+			<div class="columns small-2 chat-header-action pl-0 pr-0">
+				<button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i
+					class="fa fa-chevron-left"></i></button>
+				<img src="http://i.pravatar.cc/295" align="left" class="user-image circle tiny">
+			</div>
+			<div class="columns small-7 chat-header-user">
+				<p class="mb-0 user-name"><b>John Robert</b></p>
+				<span class=" user-role">Customer Support</span>
+			</div>
+			<div class="columns small-3 chat-header-video">
+				<button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i
+					class="fa fa-video-camera"></i></button>
+				<p class="timestamp mt-0-5 pull-right">12:32</p>
+			</div>
+			<div class="counter">4</div>
+		</div>
+	</div>
+	<div class="chat-header-container">
+		<div class="chat-header row shrinked">
+			<div class="columns small-2 chat-header-action pl-0 pr-0">
+				<button class="btnBack button hollow clear align-vertical-top mb-0 white-text large"><i
+					class="fa fa-chevron-left"></i></button>
+				<img src="http://i.pravatar.cc/294" align="left" class="user-image circle tiny">
+			</div>
+			<div class="columns small-7 chat-header-user">
+				<p class="mb-0 user-name"><b>John Robert</b></p>
+				<span class=" user-role">Customer Support</span>
+			</div>
+			<div class="columns small-3 chat-header-video">
+				<button class="btn-video button hollow clear align-vertical-top mb-0 white-text large"><i
+					class="fa fa-video-camera"></i></button>
+				<p class="timestamp mt-0-5 pull-right">12:32</p>
+			</div>
+			<div class="counter">4</div>
+		</div>
+	</div>
+
+	<div class="chat-body-container hide">
+		<div class="chat-body">
+			<div class="wrapper">
+				<div class="media-object" data-animate="slide-in-right slide-out-right">
+					<div class="media-object-section">
+						<img src="http://i.pravatar.cc/300" align="left" class="user-image circle small">
+					</div>
+					<div class="media-object-section middle">
+						<div class="small talk-bubble border tri-right left-in">
+							<div class="talktext">
+								<p>If you have questions, you can reach me anytime by sending me a secure message or schedule a call and
+									we can go over it on the phone together.</p>
+							</div>
+						</div>
+						<span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>
+					</div>
+				</div>
+			</div>
+			<!--<div class="wrapper pull-right">-->
+			<!--<div class="media-object pull-right" data-animate="slide-in-right slide-out-right">-->
+			<!--<div class="small white-bg talk-bubble border tri-right right-in">-->
+			<!--<div class="talktext">-->
+			<!--<p> you have questions, you can reach me anytime by sending me a secure message or schedule a call and we can go over it on the phon</p>-->
+			<!--</div>-->
+			<!--</div>-->
+			<!--<span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>-->
+			<!--</div>-->
+			<!--</div>-->
+			<!--<div class="wrapper">-->
+			<!--<div class="media-object" data-animate="slide-in-right slide-out-right">-->
+			<!--<div class="media-object-section">-->
+			<!--<img src="http://i.pravatar.cc/300" align="left" class="user-image circle small">-->
+			<!--</div>-->
+			<!--<div class="media-object-section middle">-->
+			<!--<div class="small talk-bubble border tri-right left-in">-->
+			<!--<div class="talktext">-->
+			<!--<p>If you have questions, you can reach me anytime by sending me a secure message or schedule a call and we can go over it on the phone together.</p>-->
+			<!--</div>-->
+			<!--</div>-->
+			<!--<span class="subheader timestamp"><small>Jun 29, 4:30 PM</small></span>-->
+			<!--</div>-->
+			<!--</div>-->
+			<!--</div>-->
+		</div>
+	</div>
+	<div class="chat-input-container hide">
+		<div class="collapse row align-middle">
+			<div class="auto columns">
+				<textarea name="" id="" placeholder="What's on your mind?"></textarea>
+			</div>
+			<div class="shrink columns">
+				<button id="btnAttach" class="button secondary hollow large clear pull-left">
+					<i class="fa fa-paperclip"></i>
+				</button>
+				<button id="btnSend" class="button success hollow large clear pull-right">
+					<i class="fa fa-paper-plane"></i>
+				</button>
+			</div>
+		</div>
+		<div class="row collapse">
+			<div class="columns">
+				<p class="help-text">* Acceptable file formats are .pdf, .rtf, .doc, .docx, .xls, .xlsx. Total size limit of all
+					attachments in one upload instance: 25 mb</p>
+			</div>
+		</div>
+
+		<ul class="attachments inline-list" style="display: none;">
+			<li class="image-attachment fa fa-file-o fa-lg">
+				<a class="btn-close"><i class="fa fa-trash"></i></a>
+				<span class="filename" data-tooltip tabindex="1" title="Screenshot_Screen_2018-19-823.jpg">Screenshot_Screen_2018-19-823.jpg</span>
+			</li>
+			<li class="image-attachment fa fa-file-image-o fa-lg">
+				<a class="btn-close"><i class="fa fa-trash"></i></a>
+				<span class="filename" data-tooltip tabindex="1" title="Screenshot_Screen_2018-19-823.jpg">Screenshot_Screen_2018-19-823.jpg</span>
+			</li>
+			<li class="image-attachment fa fa-file-excel-o fa-lg">
+				<a class="btn-close"><i class="fa fa-trash"></i></a>
+				<span class="filename" data-tooltip tabindex="1" title="Screenshot_Screen_2018-19-823.jpg">Filename.jpg</span>
+			</li>
+			<li class="image-attachment fa fa-file-word-o fa-lg">
+				<a class="btn-close"><i class="fa fa-trash"></i></a>
+				<span class="filename" data-tooltip tabindex="1" title="Screenshot_Screen_2018-19-823.jpg">Filename.jpg</span>
+			</li>
+			<li class="image-attachment fa fa-file-pdf-o fa-lg">
+				<a class="btn-close"><i class="fa fa-trash"></i></a>
+				<span class="filename" data-tooltip tabindex="1" title="Screenshot_Screen_2018-19-823.jpg">Filename.jpg</span>
+			</li>
+			<li class="image-attachment fa fa-file-archive-o fa-lg">
+				<a class="btn-close"><i class="fa fa-trash"></i></a>
+				<span class="filename" data-tooltip tabindex="1" title="Screenshot_Screen_2018-19-823.jpg">Filename.jpg</span>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="reveal align-center-middle text-center video-call" id="exampleModal1" data-reveal>
+	<div class="row video-call-caller mb-2">
+		<div class="columns col-md-12">
+			<p class="h2 white-color mb-4">Liam Neeson Calling...</p>
+			<img src="http://i.pravatar.cc/300" alt="" class="user-image circle">
+		</div>
+	</div>
+	<div class="row video-call-action">
+		<div class="columns col-md-2">
+			<button id="btn-call-reject" class="button clear large circle alert">
+				<i class="fa fa-times"></i>
+			</button>
+		</div>
+		<div class="columns col-md-2">
+			<button id="btn-call-answer" class="button clear large circle success" data-close aria-label="Close modal">
+				<i class="fa fa-phone"></i>
+			</button>
+		</div>
+	</div>
+</div>
+
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/what-input/what-input.js"></script>
+<script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+<script src="../bower_components/foundation-sites/js/foundation.toggler.js"></script>
+<script src="../bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+<script src="../bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+
+<script src="../js/app.js"></script>
+</body>
+</html>

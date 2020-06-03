@@ -1,0 +1,59 @@
+.message-container {
+	height: 62vh;
+	overflow-y: scroll;
+	.message-sent, .message-received {
+		padding: .5em 1em;
+		width: 90%;
+		font-size: .9em;
+		.message {
+			padding: .5em .7em;					
+			margin-bottom: .25em;
+		}
+		.time {
+			color: rgba($text-black, .4);
+			font-size: .8em;
+		}
+	}
+
+	.message-sent { 
+		margin: 0em 0em .25em auto;
+		.message { 
+			background-color: #fff;
+			color: #323232;
+			border: 1px solid rgba(#e1e1e1,.5);			
+			border-radius: .5em .2em .2em .5em;
+		}
+		.time { 
+			text-align: right;
+			margin-right: .5em;
+		}
+
+	}
+
+	.message-received { 
+		.message { 
+			background-color: map-get($foundation-palette, primary);
+			color: #fff;
+			border: 1px solid map-get($foundation-palette, primary);
+			border-radius: .2em .5em .5em .2em;
+		}
+		.time { 
+			text-align: left;
+			margin-left: .5em;
+		}
+	}
+}
+
+.write-message {
+	width: 100%;
+	padding: 1em;
+	.message-text-area {
+		textarea {
+		}
+	}
+	.message-button {
+		button {
+			width: 100%;
+		}
+	}
+}

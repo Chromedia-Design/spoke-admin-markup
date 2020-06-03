@@ -1,0 +1,64 @@
+.owl-dots {
+  margin-top: 5px;
+  text-align: center; }
+  .owl-dots .owl-dot {
+    width: 12px;
+    height: 12px;
+    display: inline-block; }
+    .owl-dots .owl-dot span {
+      width: 9px;
+      display: block;
+      height: 9px;
+      background-color: #bbb;
+      border-radius: 50%; }
+    .owl-dots .owl-dot.active span {
+      background-color: #0c334e; }
+
+.top-zIndex {
+  z-index: 998; }
+
+ul.password-requirement-text {
+  display: block;
+  margin-top: 6px;
+  margin-left: 0px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #808080;
+  list-style: none; }
+
+ul.password-requirement-text-profile-edit {
+  display: block;
+  margin-left: 0px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #808080;
+  list-style: none; }
+
+li.password-valid:before {
+  content: '\2714'; }
+
+p#password-confirm-match {
+  font-size: 18px;
+  color: #dd2c1e; }
+
+p.password-confirm-match-profile-edit {
+  font-size: 15px !important;
+  color: #dd2c1e !important; }
+
+li.password-valid {
+  color: #1fb247; }
+
+.custom-marked.activity-listing > div:last-child .well-list:before {
+  display: none; }
+
+.modal-video {
+  height: 350px; }
+
+.dev-question-scroll {
+  overflow-y: scroll;
+  height: 417px; }
+  .dev-question-scroll.small-screen {
+    height: 300px; }
+
+.dev-chat-content {
+  font-size: 87%; }

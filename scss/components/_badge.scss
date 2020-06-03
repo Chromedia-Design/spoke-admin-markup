@@ -1,22 +1,395 @@
+$color-preliminary: #00cec9;
+$color-cancelled: #d63031;
+$color-confirmed: #008a81;
+$color-done: $success-color;
+$color-ongoing: #ecaf00;
+$color-waiting: darken(#fff, 20%);
+
 .badge {
-	line-height: 1.5em;
-	&.alert {
-		background-color: $alert-color;
-		color: $white;
-		border: none;
-	}
-	&.small {
-	    width: 0.5rem;
-	    height: 0.5rem;
-	    min-width: 0.5rem;
-	    padding: 0;
-	    vertical-align: middle;
-	}
+  line-height: 1.45em;
+  
+  &.indicator {
+    width: .775rem !important;
+    height: .775rem !important;
+    padding: 0 !important;
+    min-width: 0;
+  }
+
+  &.alert {
+    background-color: $alert-color;
+    color: $white;
+    border: none;
+  }
+
+  &.small {
+    // width: 0.5rem;
+    // height: 0.5rem;
+    min-width: 1.6em;
+    padding: .1em;
+    // vertical-align: middle;
+  }
+
+  &.large {
+    font-size: 1.5rem;
+  }
+
+  &.rounded {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 50%;
+  }
+
+  &.ongoing {
+    background: $color-ongoing;
+    color: $white;
+  }
 }
 
 .label {
-	vertical-align: middle;
-	border-radius: 2px;
-	padding: 0.4rem 0.5rem 0.333rem;
-	margin: -3px 0 0;
+  vertical-align: middle;
+  border-radius: $global-radius;
+  padding: 0.4rem 0.5rem 0.333rem;
+  margin: -3px 0 0;
+  &.rounded {
+    border-radius: 1rem;
+  }
+
+  &.hollow {
+    background: transparent;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+
+    &.secondary {
+      color: $secondary-color;
+      border: 1px solid $secondary-color;
+    }
+
+    &.success {
+      color: $success-color;
+      border: 1px solid $success-color;
+    }
+
+    &.warning {
+      color: $warning-color;
+      border: 1px solid $warning-color;
+    }
+
+    &.preliminary {
+      color: $color-preliminary;
+      border: 1px solid $color-preliminary;
+    }
+
+    &.cancelled {
+      color: $color-cancelled;
+      border: 1px solid $color-cancelled;
+    }
+
+    &.confirmed {
+      color: $color-confirmed;
+      border: 1px solid $color-confirmed;
+    }
+
+    &.alert {
+      color: $alert-color;
+      border: 1px solid $alert-color;
+    }
+  }
+}
+
+.tag-cloud {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  .tag-cloud-individual-tag {
+    @include label;
+    display: inline-block;
+    border-radius: 500px;
+    margin: 0 3px;
+    font-weight: bold;
+    color: $white;
+    line-height: 1.2em;
+    background: lighten($primary-color, 15%);
+    border: 1px solid lighten($primary-color, 15%);
+    transition: all .2s ease-in-out;
+    vertical-align: middle;
+
+    .img-wrapper {
+      height: 10rem;
+      display: inline-flex;
+      border: 1px solid lighten($primary-color, 25%);
+      background-color: lighten($primary-color, 25%);
+      color: $white;
+
+      &.tiny {
+        width: rem-calc(27);
+        height: rem-calc(27);
+
+        span {
+          font-size: rem-calc(10);
+        }
+      }
+    }
+
+    .fa {
+      margin: 0 3px;
+      color: $white;
+    }
+
+    &.secondary {
+      background: lighten($secondary-color, 15%);
+      border: 1px solid lighten($secondary-color, 15%);
+
+      .img-wrapper {
+        border: 1px solid lighten($secondary-color, 25%);
+        background-color: lighten($secondary-color, 25%);
+      }
+    }
+
+    &.success {
+      background: lighten($success-color, 15%);
+      border: 1px solid lighten($success-color, 15%);
+
+      .img-wrapper {
+        border: 1px solid lighten($success-color, 25%);
+        background-color: lighten($success-color, 25%);
+      }
+    }
+
+    &.warning {
+      background: lighten($warning-color, 15%);
+      border: 1px solid lighten($warning-color, 15%);
+
+      .img-wrapper {
+        border: 1px solid lighten($warning-color, 25%);
+        background-color: lighten($warning-color, 25%);
+      }
+    }
+
+    &.ongoing {
+      background: lighten($color-ongoing, 15%);
+      border: 1px solid lighten($color-ongoing, 15%);
+
+      .img-wrapper {
+        border: 1px solid lighten($color-ongoing, 25%);
+        background-color: lighten($color-ongoing, 25%);
+      }
+    }
+
+    &.alert {
+      background: lighten($alert-color, 15%);
+      border: 1px solid lighten($alert-color, 15%);
+
+      .img-wrapper {
+        border: 1px solid lighten($alert-color, 25%);
+        background-color: lighten($alert-color, 25%);
+      }
+    }
+
+    &.preliminary {
+      background: lighten($color-preliminary, 15%);
+      border: 1px solid lighten($alert-color, 15%);
+
+      .img-wrapper {
+        border: 1px solid lighten($color-preliminary, 25%);
+        background-color: lighten($color-preliminary, 25%);
+      }
+    }
+
+    &.cancelled {
+      background: lighten($color-cancelled, 15%);
+      border: 1px solid lighten($color-cancelled, 15%);
+
+      .img-wrapper {
+        border: 1px solid lighten($color-cancelled, 25%);
+        background-color: lighten($color-cancelled, 25%);
+      }
+    }
+
+    &.confirmed {
+      background: lighten($color-confirmed, 15%);
+      border: 1px solid lighten($color-confirmed, 15%);
+
+      .img-wrapper {
+        border: 1px solid lighten($color-confirmed, 25%);
+        background-color: lighten($color-confirmed, 25%);
+      }
+    }
+
+    //Upon Hover Classes
+    &:hover {
+      background: $primary-color;
+
+      &.secondary {
+        background: $secondary-color;
+        border-color: $secondary-color;
+
+        .fa {
+          color: $secondary-color;
+        }
+      }
+
+      &.success {
+        background: $success-color;
+        border-color: $success-color;
+
+        .fa {
+          color: $success-color;
+        }
+      }
+
+      &.warning {
+        background: $warning-color;
+        border-color: $warning-color;
+
+        .fa {
+          color: $warning-color;
+        }
+      }
+
+      &.ongoing {
+        background: $color-ongoing;
+        border-color: $color-ongoing;
+
+        .fa {
+          color: $color-ongoing;
+        }
+      }
+
+      &.alert {
+        background: $alert-color;
+        border-color: $alert-color;
+
+        .fa {
+          color: $alert-color;
+        }
+      }
+
+      &.preliminary {
+        background: $color-preliminary;
+        border-color: $color-preliminary;
+
+        .fa {
+          color: $color-preliminary;
+        }
+      }
+
+      &.cancelled {
+        background: $color-cancelled;
+        border-color: $color-cancelled;
+
+        .fa {
+          color: $color-cancelled;
+        }
+      }
+
+      &.confirmed {
+        background: $color-confirmed;
+        border-color: $color-confirmed;
+
+        .fa {
+          color: $color-confirmed;
+        }
+      }
+    }
+
+    //Hollow Versions
+    &.hollow {
+      color: $primary-color;
+      background: transparent;
+
+      &.secondary {
+        color: $secondary-color;
+
+        &:hover {
+          color: $white;
+        }
+      }
+
+      &.success {
+        color: $success-color;
+
+        &:hover {
+          color: $white;
+        }
+      }
+
+      &.warning {
+        color: $warning-color;
+
+        &:hover {
+          color: $white;
+        }
+      }
+
+      &.ongoing {
+        color: $color-ongoing;
+
+        &:hover {
+          color: $white;
+        }
+      }
+
+      &.alert {
+        color: $alert-color;
+
+        &:hover {
+          color: $white;
+        }
+      }
+
+      &.preliminary {
+        color: $color-preliminary;
+
+        &:hover {
+          color: $white;
+        }
+      }
+
+      &.cancelled {
+        color: $color-cancelled;
+
+        &:hover {
+          color: $white;
+        }
+      }
+
+      &.confirmed {
+        color: $color-confirmed;
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &.white {
+    .tag-cloud-individual-tag {
+
+      .fa {
+        color: $white;
+      }
+
+      &:hover {
+        color: $white;
+        background: darken($secondary-color, 15%);
+      }
+    }
+  }
+
+  &.compact {
+    .tag-cloud-individual-tag {
+      font-size: rem-calc(9);
+      padding: 3px 6px;
+      text-transform: uppercase;
+    }
+  }
+
+  &.borderless {
+    .tag-cloud-individual-tag {
+      border: none;
+    }
+  }
 }

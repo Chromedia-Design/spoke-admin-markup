@@ -1,0 +1,20 @@
+.orbit {
+	.orbit-container {
+		.orbit-slide {
+			padding-bottom: 1rem;
+			&.active {
+
+			}
+		}
+	}
+	.orbit-bullets {}
+	.orbit-controls {
+
+		&.bottom {
+			.orbit-previous, .orbit-next {
+				position: initial !important;
+				transform: initial !important;
+			}
+		}
+	}
+}

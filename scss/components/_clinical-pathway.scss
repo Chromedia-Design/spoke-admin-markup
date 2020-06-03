@@ -1,0 +1,72 @@
+// Add New Pathway Page
+.clinical-pathway-details {
+  padding: 0.5rem 0;
+}
+
+.clinical-pathway-new-entry-list {
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &::-moz-scrollbar {
+    display: none;
+  }
+
+  .clinical-pathway-new-entry {
+    position: relative;
+    margin-left: 1rem;
+    cursor: pointer;
+    font-size: .875rem;
+    @extend .bg-black10;
+
+    small {
+      color: rgba($black, $B-subtext);
+      font-size: rem-calc(9);
+    }
+
+    + .clinical-pathway-new-entry {
+      margin-top: rem-calc(6);
+      margin-bottom: rem-calc(6);
+    }
+
+    &.is-active {
+      @extend .bg-black20;
+      border-left: 5px solid $success-color;
+
+      &:hover {
+        .new-entry-action {
+          @extend .bg-black10;
+        }
+      }
+
+      .new-entry-action {
+        @extend .bg-black20;
+      }
+    }
+
+    &:hover {
+      @extend .bg-black20;
+      color: $primary-color;
+
+      &:hover {
+        .new-entry-action {
+          @extend .bg-black20;
+        }
+      }
+
+      .new-entry-action {
+        opacity: 1;
+      }
+    }
+
+    .new-entry-title {
+      user-select: none;
+    }
+
+    .new-entry-action {
+      height: 100%;
+    }
+  }
+}
