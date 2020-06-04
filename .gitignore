@@ -1,7 +1,4 @@
 .DS_Store
 node_modules/
-<<<<<<< HEAD
 bower_components/
-=======
->>>>>>> 3974c2ad612eef2d5bf5a10fe800641f79d93aa8
 .idea/
