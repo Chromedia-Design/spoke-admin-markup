@@ -26,6 +26,6 @@
   "private": true,
   "dependencies": {
     "gulp-autoprefixer": "^3.1.0",
-    "yarn": "^1.9.2"
+    "yarn": "^1.22.0"
   }
 }
