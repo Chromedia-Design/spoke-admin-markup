@@ -1,0 +1,310 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spoke Admin Portal</title>
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+	
+	<div class="expanded row medium-collapse">
+		<div class="medium-2 columns">
+			<div class="site-nav">
+				<header>
+					<a href="#" class="logo text-center">
+						<img src="img/logo.png" title="Spoke">
+					</a>
+				</header>
+				<ul class="menu vertical"  data-accordion-menu>
+					<li>
+						<a href="#">Dashboard</a>
+					</li>
+					<li class="">
+						<a href="#">Packages</a>
+					</li>
+					<li class="">
+						<a href="#">Facilities</a>
+					</li>
+					<li class="">
+						<a href="#">Medical Procedures</a>
+						<ul class="nested vertical menu">
+							<li class="">
+								<a href="#">All Patients</a>
+							</li>
+						</ul>
+					</li>
+					<li class="">
+						<a href="#">Geo Data</a>
+					</li>
+					<li class="">
+						<a href="#">Awards</a>
+					</li>
+					<li class="is-active">
+						<a href="#" class=>Doctors</a>
+					</li>
+					<li class="">
+						<a href="#">Users</a>
+					</li>
+					<li class="">
+						<a href="#">Companies</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="medium-10 columns">
+			<div class="content">
+
+				<div class="top-bar">
+				  	<div class="top-bar-left">
+						<!-- <ul class="menu">
+				      		<li><input type="search" placeholder="Search"></li>
+				      		<li><button type="button" class="button">Search</button></li>
+			    		</ul> -->
+				  	</div>
+				  	<div class="top-bar-right">
+				    	<ul class="dropdown menu" data-dropdown-menu>
+				    		<li>
+				    			<a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">6</span></a>
+			    			</li>
+				      		<li>
+				        		<a href="#">Administrator</a>
+				        		<ul class="menu vertical">
+				          			<li><a href="#">One</a></li>
+				          			<li><a href="#">Two</a></li>
+				          			<li><a href="#">Three</a></li>
+				        		</ul>
+				      		</li>
+				    	</ul>
+				  	</div>
+				</div>
+
+				<div class="row">
+					<div class="medium-12 columns">
+
+						<nav aria-label="You are here:" role="navigation">
+						  	<ul class="breadcrumbs">
+						    	<li><a href="admin-doctors.html">Doctors</a></li>
+						    	<li>Johnny Kennedy</li>
+						  	</ul>
+						</nav>	
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="medium-12 columns">
+
+						<div class="callout hi-padded">
+							<div class="row collapse">
+								<div class="large-12 columns end">
+									<div class="page-lead"> 
+										<div class="media-object full-table">
+											<div class="media-object-section middle logo small">
+												<div class="img-wrapper circle">
+													<img src="img/specialist-1.png" alt="">
+												</div>
+											</div>
+											<div class="media-object-section middle">
+												<h6>Johnny Kennedy</h6>
+											</div>
+											<div class="media-object-section middle">
+												<div class="button-align pull-right">
+													<a href="#" class="button circle hollow"><i class="fa fa-envelope fa-fw"></i></a>
+													<a href="#" class="button success circle hollow"><i class="fa fa-phone fa-fw"></i></a>
+													<a href="#" class="button success circle hollow"><i class="fa fa-video-camera fa-fw"></i></a>
+													<a href="admin-doctor-edit.html" class="button circle info hollow"><i class="fa fa-edit fa-fw"></i></a>
+													<!-- <a href="#" class="button alert"><i class="fa fa-trash fa-fw"></i></a> -->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>	
+							<div class="row collapse label-block">
+								<div class="large-6 columns end">
+									<div class="label-group">
+										<p>Email Address</p>
+										<h6>johnny.kennedy@domain.com</h6>
+									</div>
+								</div>
+								<div class="large-6 columns end">
+									<div class="label-group">
+										<p>Phone Number</p>
+										<h6>123-456-7890</h6>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="callout">
+							<div class="row collapse">
+								<div class="large-12 columns">
+									<div class="page-lead">
+										<span class="h6">Facilities</span>
+										<a href="#" data-open="addFacility" class="button hollow primary small pull-right">Add Facility +</a>
+
+										<div class="reveal" id="addFacility" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+							                <div class="row collapse">
+							                    <div class="large-12 columns">
+							                        <h5 class="reveal-heading">Add Facility</h5>
+							                    </div>
+							                </div>
+							                <form>
+							                	<div class="reveal-body">
+							                		 <div class="row collapse">
+								                        <div class="large-12 columns">
+								                            <label>
+								                                Search Facility
+								                                <select>
+								                                    <option disabled></option>
+								                                </select>
+								                            </label>
+								                        </div>
+								                        <div class="large-12 columns">
+								                            <label>
+								                                Surgery Package
+								                                <select>
+								                                    <option disabled></option>
+								                                </select>
+								                            </label>
+								                        </div>
+								                        <div class="large-4 columns end">
+								                            <label>
+								                                Score <small class="pull-right">Optional.</small>
+								                                <input type="text" name="">
+								                            </label>
+								                        </div>
+								                    </div>
+							                	</div>
+							                   
+							                	<div class="reveal-footer">
+							                		<div class="row collapse">
+								                        <div class="medium-12 columns">
+								                            <div class="submit button-group pull-right">
+								                                <a class="button link" data-close>Cancel</a>
+								                                <button type="submit" class="button primary">Add Facility</button>
+								                            </div>
+								                        </div>
+								                    </div>
+							                	</div>
+							                </form>
+							                <button class="close-button" data-close aria-label="Close modal" type="button">
+							                    <span aria-hidden="true">&times;</span>
+							                </button>
+							            </div>
+
+									</div>	
+								</div>
+							</div>
+
+							<table class="thirds-spacing">
+				                <thead>
+				                <tr>
+				                    <th>Facility Name</th>
+				                    <th>Surgery Package</th>
+				                    <th>MPIRICA Score</th>
+				                    <th></th>
+				                </tr>
+				                </thead>
+				                <tbody>
+
+				                	<tr>
+				                        <td><a href="#">Center for Spine and Orthopedics</a></td>
+				                        <td>Total Knee Replacement</td>
+				                        <td>780</td>
+				                        <td class="text-right">
+				                        	<a href="#" class="button link info"><i class="fa fa-edit fa-fw"></i></a>
+				                            <a href="#" class="button link info"><i class="fa fa-remove fa-fw"></i></a>
+				                        </td>
+				                    </tr>
+
+				                    <tr>
+				                        <td><a href="#">Precision Surgery Center</a></td>
+				                        <td>Total Knee Replacement</td>
+				                        <td>780</td>
+				                        <td class="text-right">
+				                        	<a href="#" class="button link info"><i class="fa fa-edit fa-fw"></i></a>
+				                            <a href="#" class="button link info"><i class="fa fa-remove fa-fw"></i></a>
+				                        </td>
+				                    </tr>
+
+				                    <tr>
+				                        <td><a href="#">Arete Surgical Center</a></td>
+				                        <td>Total Knee Replacement</td>
+				                        <td>780</td>
+				                        <td class="text-right">
+				                        	<a href="#" class="button link info"><i class="fa fa-edit fa-fw"></i></a>
+				                            <a href="#" class="button link info"><i class="fa fa-remove fa-fw"></i></a>
+				                        </td>
+				                    </tr>
+
+				                    <tr>
+				                        <td><a href="#">Denver Spine Surgeons</a></td>
+				                        <td>Total Knee Replacement</td>
+				                        <td>780</td>
+				                        <td class="text-right">
+				                        	<a href="#" class="button link info"><i class="fa fa-edit fa-fw"></i></a>
+				                            <a href="#" class="button link info"><i class="fa fa-remove fa-fw"></i></a>
+				                        </td>
+				                    </tr>
+
+				                    <tr>
+				                        <td><a href="#">Boulder Surgery Center</a></td>
+				                        <td>Total Knee Replacement</td>
+			                         	<td>780</td>
+				                        <td class="text-right">
+				                        	<a href="#" class="button link info"><i class="fa fa-edit fa-fw"></i></a>
+				                            <a href="#" class="button link info"><i class="fa fa-remove fa-fw"></i></a>
+				                        </td>
+				                    </tr>
+
+				                    <tr>
+				                        <td><a href="#">Denver Vail Orthopedics</a></td>
+				                        <td>Total Knee Replacement</td>
+				                        <td>780</td>
+				                        <td class="text-right">
+				                        	<a href="#" class="button link info"><i class="fa fa-edit fa-fw"></i></a>
+				                            <a href="#" class="button link info"><i class="fa fa-remove fa-fw"></i></a>
+				                        </td>
+				                    </tr>
+				                    
+				                </tbody>
+				            </table>
+						</div>
+
+					</div>
+				</div>
+
+				
+			</div>
+		</div>
+	</div>
+
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/what-input/what-input.js"></script>
+	<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+
+	<script src="js/app.js"></script>
+
+	<script type="text/javascript">
+        $(function () {
+            var timer;
+
+            $(window).resize(function() {
+                clearTimeout(timer);
+                timer = setTimeout(function() {
+                  $('.site-nav, .content').css("height", $(window).height());
+                }, 40); 
+            }).resize();
+        });
+
+        
+
+    </script>
+
+</body>
+</html>

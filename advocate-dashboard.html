@@ -1,0 +1,624 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spoke Admin Portal</title>
+	<link rel="stylesheet" href="js/fullcalendar/fullcalendar.min.css">
+	<link rel="stylesheet" href="js/fullcalendar/fullcalendar.print.min.css" media="print">
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+	
+	<div class="expanded row medium-collapse">
+		<div class="medium-2 columns">
+			<div class="site-nav">
+				<header>
+					<a href="#" class="logo text-center">
+						<img src="img/logo.png" title="Spoke">
+					</a>
+				</header>
+				<ul class="menu vertical"  data-accordion-menu>
+					<li class="is-active">
+						<a href="advocate-dashboard.html"><i class="material-icons">dashboard</i> Dashboard</a>
+					</li>
+					<li>
+						<a href="advocate-employees.html"><i class="material-icons">face</i>Employees</a>
+					</li>
+					<li>
+						<a href="advocate-communications.html">Inbox</a>
+					</li>
+					<li>
+						<a href="#">Doctors</a>
+					</li>
+					<li>
+						<a href="advocate-facilities.html">Facilities</a>
+					</li>
+					<li>
+						<a href="#">Activity Logs</a>
+					</li>
+					<li>
+						<a href="advocate-profile.html"><i class="material-icons">account_circle</i> Profile</a>
+						<ul class="nested vertical menu">
+							<li>
+								<a href="advocate-profile.html">User Information</a>
+							</li>
+							<li>
+								<a href="advocate-password.html">Change My Password</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="medium-10 columns">
+			<div class="content">
+
+				<div class="top-bar">
+				  	<div class="top-bar-left">
+						<!-- <ul class="menu">
+				      		<li><input type="search" placeholder="Search"></li>
+				      		<li><button type="button" class="button">Search</button></li>
+			    		</ul> -->
+				  	</div>
+				  	<div class="top-bar-right">
+				    	<ul class="dropdown menu" data-dropdown-menu>
+				    		<li class="drop-text">
+				    			<a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">24</span></a>
+				    			<ul class="notifications menu vertical">
+				          			<li>
+				          				<span>Admin Admin recently made changes to <a href="#">Denver Vail Orthopedics</a>.</span>
+				          			</li>
+				          			<li>
+				          				<span>Admin Admin recently made changes to <a href="#">Denver Vail Orthopedics</a>.</span>
+				          			</li>
+				          			<li>
+				          				<a href="#" class="button info hollow tiny expanded">View All</a>
+				          			</li>
+				        		</ul>
+			    			</li>
+			    			<li>
+				        		<a data-toggle="chatSupport"><i class="fa fa-phone-square fa-lg"></i><span class="success badge" id="notifCount">1</span></a>
+				      		</li>
+				      		<li>
+				        		<a href="#">Spoke Advocate &nbsp;</a>
+				        		<ul class="menu vertical">
+				          			<li><a href="#"><i class="fa fa-sign-out"></i>&nbsp; Sign Out</a></li>
+				        		</ul>
+				      		</li>
+				    	</ul>
+				  	</div>
+				</div>
+
+				<div class="row collapse expanded">
+
+					<div class="large-8 columns" style="background-color: #FFFFFF;">
+
+						<div class="row">
+							<div class="large-12 columns">
+								<div class="callout mt-1 mb-0 warning">
+									<p class="subheader">You have employees that recently selected a facility.</p>
+									<table class="mt-1">
+										<tr>
+											<td><a href="#">Jeremy Foster</a>&nbsp; <a data-open="quickNote-11" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-chevron-circle-right"></i></a></td>
+
+											<div class="dropdown-pane" id="quickNote-11" data-dropdown data-close-on-click="true">
+											  	<form>
+									    			<div class="row collapse">
+											      		<div class="medium-12 columns">
+											        		<label>
+											          			<textarea placeholder="Add a note..."></textarea>
+											        		</label>
+											      		</div>
+											    	</div>
+											    	<div class="row collapse">
+											      		<div class="medium-12 columns">
+											        		<button class="button expanded mb-0"><i class="fa fa-plus"></i>&nbsp; Add Note</button>
+											      		</div>
+											    	</div>
+											  	</form>
+											</div>
+											<td><a href="#">Denver Vail Orthopedics</a></td>
+											<td class="text-right">a few seconds ago</td>
+										</tr>
+
+										<tr>
+											<td><a href="#">Marie Roberts</a>&nbsp; <span class="badge success small"></span>&nbsp; <a data-open="quickNote-12" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-chevron-circle-right"></i></a></td>
+
+											<div class="dropdown-pane" id="quickNote-12" data-dropdown data-close-on-click="true">
+											  	<form>
+									    			<div class="row collapse">
+											      		<div class="medium-12 columns">
+											        		<label>
+											          			<textarea placeholder="Add a note..."></textarea>
+											        		</label>
+											      		</div>
+											    	</div>
+											    	<div class="row collapse">
+											      		<div class="medium-12 columns">
+											        		<button class="button expanded mb-0"><i class="fa fa-plus"></i>&nbsp; Add Note</button>
+											      		</div>
+											    	</div>
+											  	</form>
+											</div>
+											<td><a href="#">Arete Surgical Center</a></td>
+											<td class="text-right">a few days ago</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>	
+
+						<ul class="accordion mt-1" data-accordion data-multi-expand="true">
+
+							<li class="accordion-item is-active" data-accordion-item>
+								<a class="accordion-title"><i class="fa fa-angle-right"></i>&nbsp; Messages <span class="badge alert">2</span></a>
+								<div class="accordion-content" data-tab-content>
+									<div class="panel">
+										<ul class="well-list message-preview">
+		                                    <li class="unread">
+		                                        <span id="expandChat" class="list-wrap">
+		                                        	<div class="list-item-image align-middle text-center">
+		                            					<div class="img-wrapper circle logo small">
+		                                					<span class="h5">H</span>
+		                            					</div>
+		                        					</div>
+		                                            <div class="list-detail">
+		                                                <span class="truncate">Heidi McRoberts</span>
+		                                                <span class="truncate"><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ipsam voluptatibus doloribus consectetur voluptate facere non! Perferendis quod, tempora consequuntur vel nemo mollitia accusamus possimus? Sequi, labore voluptate sed sit.</small></span>
+		                                            </div>
+		                                            <div class="list-note text-center">
+		                                                <span class="badge success">2</span>
+		                                                <span class="subheader"><small>Yesterday</small></span>
+		                                            </div>
+		                                            <div class="pull-right">
+		                                            	<ul class="dropdown menu mt-0-5" data-dropdown-menu>
+				                                            <li>
+				                                                <a></a>
+				                                                <ul class="menu vertical">
+				                                                    <li><a href="#"><i class="fa fa-phone"></i>&nbsp; Call</a></li>
+				                                                	<li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</a></li>
+				                                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Archive</a></li>
+				                                                </ul>
+				                                            </li>
+				                                        </ul>
+		                                            </div>	
+		                                        </span>
+		                                    </li>
+		                                    <li class="unread">
+		                                        <span id="expandChat" class="list-wrap">
+		                                        	<div class="list-item-image align-middle text-center">
+		                            					<div class="img-wrapper circle logo small">
+		                                					<span class="h5">S</span>
+		                            					</div>
+		                        					</div>
+		                                            <div class="list-detail">
+		                                                <span class="truncate">Shawna Barnhart</span>
+		                                                <span class="truncate"><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore repellat ab ad et exercitationem at eligendi dolorem, repudiandae blanditiis itaque autem nulla perspiciatis qui culpa soluta. Delectus architecto consequuntur perferendis!.</small></span>
+		                                            </div>
+		                                            <div class="list-note text-center">
+		                                                <span class="badge success">12</span>
+		                                                <span class="subheader"><small>Feb-12</small></span>
+		                                            </div>
+		                                            <div class="pull-right">
+		                                            	<ul class="dropdown menu mt-0-5" data-dropdown-menu>
+				                                            <li>
+				                                                <a></a>
+				                                                <ul class="menu vertical">
+				                                                    <li><a href="#"><i class="fa fa-phone"></i>&nbsp; Call</a></li>
+				                                                	<li><a href="#"><i class="fa fa-sticky-note-o"></i>&nbsp; Add Note</a></li>
+				                                                    <li><a href="#"><i class="fa fa-trash"></i>&nbsp; Archive</a></li>
+				                                                </ul>
+				                                            </li>
+				                                        </ul>
+		                                            </div>	
+		                                        </span>
+		                                    </li>
+		                                    
+		                                </ul>
+									</div>
+								</div>
+							</li>
+							<li class="accordion-item is-active" data-accordion-item>
+								<a class="accordion-title"><i class="fa fa-angle-right"></i>&nbsp; Recent Activities</a>
+								<div class="accordion-content" data-tab-content>
+									<div class="menu-options mt-1 mb-1">
+										<div class="row collapse">
+											<div class="large-5 columns end">
+												<div class="row">
+				                                    <div class="large-6 columns">
+				                                        <label for="" class="small-label text-right middle">CHANGE VIEW:</label>
+				                                    </div>
+				                                    <div class="large-6 columns">
+				                                        <select class="small-input">
+				                                            <option selected="true">Default</option>
+				                                            <option>All RecentActivities</option>
+				                                        </select>
+				                                    </div>  
+				                                </div> 
+											</div>
+										</div>
+									</div>
+									<table class="striped hover">
+										<tr>
+											<td><a href="#">Jeremy Foster</a>&nbsp; <a data-open="quickNote-1" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-chevron-circle-right"></i></a></td>
+
+											<div class="dropdown-pane" id="quickNote-1" data-dropdown data-close-on-click="true">
+											  	<form>
+									    			<div class="row collapse">
+											      		<div class="medium-12 columns">
+											        		<label>
+											          			<textarea placeholder="Add a note..."></textarea>
+											        		</label>
+											      		</div>
+											    	</div>
+											    	<div class="row collapse">
+											      		<div class="medium-12 columns">
+											        		<button class="button expanded mb-0"><i class="fa fa-plus"></i>&nbsp; Add Note</button>
+											      		</div>
+											    	</div>
+											  	</form>
+											</div>
+											<td>Interested in <a href="#">Denver Vail Orthopedics</a></td>
+											<td class="text-right">a few seconds ago</td>
+										</tr>
+										<tr>
+											<td><a href="#">Steven Black</a>&nbsp; <span class="badge success small"></span>&nbsp; <a data-open="quickNote-2" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-chevron-circle-right"></i></a></td>
+
+											<div class="dropdown-pane" id="quickNote-2" data-dropdown data-close-on-click="true">
+											  	<form>
+									    			<div class="row collapse">
+											      		<div class="medium-12 columns">
+											        		<label>
+											          			<textarea placeholder="Add a note..."></textarea>
+											        		</label>
+											      		</div>
+											    	</div>
+											    	<div class="row collapse">
+											      		<div class="medium-12 columns">
+											        		<button class="button expanded mb-0"><i class="fa fa-plus"></i>&nbsp; Add Note</button>
+											      		</div>
+											    	</div>
+											  	</form>
+											</div>
+											<td>Viewed his landing page.</td>
+											<td class="text-right">a few days ago</td>
+										</tr>
+										<tr>
+											<td><a href="#">Marie Roberts</a>&nbsp; <span class="badge success small"></span>&nbsp; <a data-open="quickNote-3" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-chevron-circle-right"></i></a></td>
+
+											<div class="dropdown-pane" id="quickNote-3" data-dropdown data-close-on-click="true">
+											  	<form>
+									    			<div class="row collapse">
+											      		<div class="medium-12 columns">
+											        		<label>
+											          			<textarea placeholder="Add a note..."></textarea>
+											        		</label>
+											      		</div>
+											    	</div>
+											    	<div class="row collapse">
+											      		<div class="medium-12 columns">
+											        		<button class="button expanded mb-0"><i class="fa fa-plus"></i>&nbsp; Add Note</button>
+											      		</div>
+											    	</div>
+											  	</form>
+											</div>
+											<td>Logged in to his account.</td>
+											<td class="text-right">a few days ago</td>
+										</tr>
+										<tr>
+											<td><a href="#">Walter Foster</a>&nbsp; <span class="badge success small"></span>&nbsp; <a data-open="quickNote-4" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-chevron-circle-right"></i></a></td>
+
+											<div class="dropdown-pane" id="quickNote-4" data-dropdown data-close-on-click="true">
+											  	<form>
+									    			<div class="row collapse">
+											      		<div class="medium-12 columns">
+											        		<label>
+											          			<textarea placeholder="Add a note..."></textarea>
+											        		</label>
+											      		</div>
+											    	</div>
+											    	<div class="row collapse">
+											      		<div class="medium-12 columns">
+											        		<button class="button expanded mb-0"><i class="fa fa-plus"></i>&nbsp; Add Note</button>
+											      		</div>
+											    	</div>
+											  	</form>
+											</div>
+											<td>Sent a <a href="#">message</a>.</td>
+											<td class="text-right">a few days ago</td>
+										</tr>
+										<tr>
+											<td><a href="#">Shawn Peterson</a>&nbsp; <span class="badge success small"></span>&nbsp; <a data-open="quickNote-5" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-chevron-circle-right"></i></a></td>
+
+											<div class="dropdown-pane" id="quickNote-5" data-dropdown data-close-on-click="true">
+											  	<form>
+									    			<div class="row collapse">
+											      		<div class="medium-12 columns">
+											        		<label>
+											          			<textarea placeholder="Add a note..."></textarea>
+											        		</label>
+											      		</div>
+											    	</div>
+											    	<div class="row collapse">
+											      		<div class="medium-12 columns">
+											        		<button class="button expanded mb-0"><i class="fa fa-plus"></i>&nbsp; Add Note</button>
+											      		</div>
+											    	</div>
+											  	</form>
+											</div>
+											<td>Scheduled a call.</td>
+											<td class="text-right">a few days ago</td>
+										</tr>
+										<tr>
+											<td><a href="#">Teresa Marshall</a>&nbsp; </span>&nbsp; <a data-open="quickNote-6" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-chevron-circle-right"></i></a></td>
+
+											<div class="dropdown-pane" id="quickNote-6" data-dropdown data-close-on-click="true">
+											  	<form>
+									    			<div class="row collapse">
+											      		<div class="medium-12 columns">
+											        		<label>
+											          			<textarea placeholder="Add a note..."></textarea>
+											        		</label>
+											      		</div>
+											    	</div>
+											    	<div class="row collapse">
+											      		<div class="medium-12 columns">
+											        		<button class="button expanded mb-0"><i class="fa fa-plus"></i>&nbsp; Add Note</button>
+											      		</div>
+											    	</div>
+											  	</form>
+											</div>
+											<td>Logged in to his account.</td>
+											<td class="text-right">a few days ago</td>
+										</tr>
+										<tr>
+											<td><a href="#">Cheryl Barnes</a>&nbsp; <span class="badge success small"></span>&nbsp; <a data-open="quickNote-7" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-chevron-circle-right"></i></a></td>
+
+											<div class="dropdown-pane" id="quickNote-7" data-dropdown data-close-on-click="true">
+											  	<form>
+									    			<div class="row collapse">
+											      		<div class="medium-12 columns">
+											        		<label>
+											          			<textarea placeholder="Add a note..."></textarea>
+											        		</label>
+											      		</div>
+											    	</div>
+											    	<div class="row collapse">
+											      		<div class="medium-12 columns">
+											        		<button class="button expanded mb-0"><i class="fa fa-plus"></i>&nbsp; Add Note</button>
+											      		</div>
+											    	</div>
+											  	</form>
+											</div>
+											<td>Logged in to his account.</td>
+											<td class="text-right">a few days ago</td>
+										</tr>
+										<tr>
+											<td><a href="#">Patrick Thompson</a>&nbsp; <span class="badge success small"></span>&nbsp; <a data-open="quickNote-8" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-chevron-circle-right"></i></a></td>
+
+											<div class="dropdown-pane" id="quickNote-8" data-dropdown data-close-on-click="true">
+											  	<form>
+									    			<div class="row collapse">
+											      		<div class="medium-12 columns">
+											        		<label>
+											          			<textarea placeholder="Add a note..."></textarea>
+											        		</label>
+											      		</div>
+											    	</div>
+											    	<div class="row collapse">
+											      		<div class="medium-12 columns">
+											        		<button class="button expanded mb-0"><i class="fa fa-plus"></i>&nbsp; Add Note</button>
+											      		</div>
+											    	</div>
+											  	</form>
+											</div>
+											<td>Logged in to his account.</td>
+											<td class="text-right">a few days ago</td>
+										</tr>
+										<tr>
+											<td><a href="#">Mark Nelson</a>&nbsp; </span>&nbsp; <a data-open="quickNote-9" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-chevron-circle-right"></i></a></td>
+
+											<div class="dropdown-pane" id="quickNote-9" data-dropdown data-close-on-click="true">
+											  	<form>
+									    			<div class="row collapse">
+											      		<div class="medium-12 columns">
+											        		<label>
+											          			<textarea placeholder="Add a note..."></textarea>
+											        		</label>
+											      		</div>
+											    	</div>
+											    	<div class="row collapse">
+											      		<div class="medium-12 columns">
+											        		<button class="button expanded mb-0"><i class="fa fa-plus"></i>&nbsp; Add Note</button>
+											      		</div>
+											    	</div>
+											  	</form>
+											</div>
+											<td>Logged in to his account.</td>
+											<td class="text-right">a few days ago</td>
+										</tr>
+										<tr>
+											<td><a href="#">Simmy Woods</a>&nbsp; </span>&nbsp; <a data-open="quickNote-10" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-chevron-circle-right"></i></a></td>
+
+											<div class="dropdown-pane" id="quickNote-10" data-dropdown data-close-on-click="true">
+											  	<form>
+									    			<div class="row collapse">
+											      		<div class="medium-12 columns">
+											        		<label>
+											          			<textarea placeholder="Add a note..."></textarea>
+											        		</label>
+											      		</div>
+											    	</div>
+											    	<div class="row collapse">
+											      		<div class="medium-12 columns">
+											        		<button class="button expanded mb-0"><i class="fa fa-plus"></i>&nbsp; Add Note</button>
+											      		</div>
+											    	</div>
+											  	</form>
+											</div>
+											<td>Logged in to his account.</td>
+											<td class="text-right">a few days ago</td>
+										</tr>
+									</table>
+									<a href="#" class="button success small">View All</a>
+								</div>
+							</li>
+							<li>
+								<a class="accordion-title is-active"><i class="fa fa-angle-right"></i>&nbsp; Recent Matches</a>
+								<div class="accordion-content" data-tab-content>
+									<p class="subheader"><small>These employees have been matched with a need for surgery.</small></p>
+									<table class="striped hover">
+										<tr>
+											<td><a href="#">Nicole Murray</a>&nbsp; <a data-open="quickNote-1" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-chevron-circle-right"></i></a></td>
+
+											<div class="dropdown-pane" id="quickNote-1" data-dropdown data-close-on-click="true">
+											  	<form>
+									    			<div class="row collapse">
+											      		<div class="medium-12 columns">
+											        		<label>
+											          			<textarea placeholder="Add a note..."></textarea>
+											        		</label>
+											      		</div>
+											    	</div>
+											    	<div class="row collapse">
+											      		<div class="medium-12 columns">
+											        		<button class="button expanded mb-0"><i class="fa fa-plus"></i>&nbsp; Add Note</button>
+											      		</div>
+											    	</div>
+											  	</form>
+											</div>
+											<td>Excel Energy Inc.</td>
+											<td class="text-right">a few seconds ago</td>
+										</tr>
+										<tr>
+											<td><a href="#">Walter Mason</a>&nbsp; <span class="badge success small"></span>&nbsp; <a data-open="quickNote-2" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Add a quick note."><i class="fa fa-chevron-circle-right"></i></a></td>
+
+											<div class="dropdown-pane" id="quickNote-2" data-dropdown data-close-on-click="true">
+											  	<form>
+									    			<div class="row collapse">
+											      		<div class="medium-12 columns">
+											        		<label>
+											          			<textarea placeholder="Add a note..."></textarea>
+											        		</label>
+											      		</div>
+											    	</div>
+											    	<div class="row collapse">
+											      		<div class="medium-12 columns">
+											        		<button class="button expanded mb-0"><i class="fa fa-plus"></i>&nbsp; Add Note</button>
+											      		</div>
+											    	</div>
+											  	</form>
+											</div>
+											<td>Excel Energy Inc.</td>
+											<td class="text-right">a few days ago</td>
+										</tr>
+										
+									</table>
+									<a href="#" class="button success small">View All</a>
+
+								</div>
+							</li>
+						</ul>
+
+					</div>
+
+					<div class="large-4 columns">
+						
+						<div class="row">
+							<div class="large-12 columns">
+
+								<div id="eventCalendar" class="mt-1 mb-1"></div>
+
+		                        <div id="eventScheduler" class="mt-1 mb-1"></div>
+
+							</div>
+						</div>	
+
+					</div>
+
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/what-input/what-input.js"></script>
+	<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+
+	<script src='js/fullcalendar/lib/moment.min.js'></script>
+	<script src='js/fullcalendar/fullcalendar.min.js'></script>
+
+	<script src="js/app.js"></script>
+
+	<script type="text/javascript">
+
+        var sampleEvents = {
+        	"events": [
+				{
+					title: 'Scheduled Call with John Doe',
+					start: '2017-09-25T13:00:00'
+				},
+				{
+					title: 'Scheduled Call with Amy Thompson',
+					start: '2017-09-25T15:00:00',
+					end: '2017-09-25T16:00:00'
+				},
+				{
+					title: 'Scheduled Call with Dorothy White',
+					start: '2017-09-25T16:00:00',
+					end: '2017-09-25T17:00:00'
+				}
+			]
+        };
+
+        $('#eventCalendar').fullCalendar({
+			header: {
+				left: 'prev',
+				center: 'title',
+				right: 'next'
+			},
+			aspectRatio: 1,
+			height: 'auto',
+			fixedWeekCount: false,
+			events: sampleEvents
+		});
+
+        $('#eventScheduler').fullCalendar({
+			defaultView: 'agendaDay',
+			header: {
+				left: 'title',
+				center: '',
+				right: 'today prev,next'
+			},
+			allDayText: 'All-Day',
+			slotLabelFormat: 'h(:mm) A',
+			minTime: '07:00:00',
+			maxTime: '20:00:00',
+			height: 'auto',
+			editable: true,
+			eventLimit: true, // allow "more" link when too many events
+			titleFormat: 'MMM D',
+			events: sampleEvents
+		});
+
+		$(function () {
+            var timer;
+
+            $(window).resize(function() {
+                clearTimeout(timer);
+                timer = setTimeout(function() {
+                  $('.site-nav, .content').css("height", $(window).height());
+                }, 40); 
+            }).resize();
+        });
+
+    </script>
+
+</body>
+</html>
