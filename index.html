@@ -10,8 +10,49 @@
   <body>
     <div class="expanded row medium-collapse pad1">
       <div class="columns">
-        <h1>Zip Files</h1>
-        <div id="fileNames"></div>
+        <div class="row">
+          <div class="columns">
+            <h1>Zip Files</h1>
+          </div>
+        </div>
+        <div class="row" id="generateLinks">
+          <div class="columns">
+            <div class="links" data-location="zip-admin">
+              <p>
+                <a href="/zip-admin/advocate-employee-episode.html"
+                  >advocate-employee-episode.html</a
+                >
+              </p>
+              <p>
+                <a href="/zip-admin/advocate-employee-progile.html"
+                  >advocate-employee-progile.html</a
+                >
+              </p>
+              <p>
+                <a href="/zip-admin/advocate-employee-HSA.html"
+                  >advocate-employee-HSA.html</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="columns">
+            <p>
+              <a href="/frontend-zip-intake/zip-dashboard.html"
+                >zip-dashboard.html</a
+              >
+            </p>
+            <p>
+              <a href="/frontend-zip-intake/zip-episode.html"
+                >zip-episode.html</a
+              >
+            </p>
+            <p>
+              <a href="/frontend-zip-intake/advocate-employee-HSA.html"
+                >zip-com.html</a
+              >
+            </p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -40,61 +81,53 @@
 
       // console.log(document.location.hostname);
 
-      function loadFileNames(dir) {
-        return new Promise((resolve, reject) => {
-          try {
-            var fileNames = new Array();
-            $.ajax({
-              url: dir,
-              success: function(data) {
-                for (var i = 1; i < $(data).find("span.name").length; i++) {
-                  var elem = $(data).find("span.name")[i];
-                  console.log(
-                    "<a href=" +
-                      document.location.hostname +
-                      "/" +
-                      dir +
-                      "/" +
-                      elem.innerHTML +
-                      ">" +
-                      elem.innerHTML +
-                      "</a>"
-                  );
-                  fileNames.push(
-                    "<p class='pad1 mb-0'><a href=" +
-                      document.location.hostname +
-                      "/" +
-                      dir +
-                      "/" +
-                      elem.innerHTML +
-                      ">" +
-                      elem.innerHTML +
-                      "</a></p>"
-                  );
-                }
-                return resolve(fileNames);
-              }
-            });
-          } catch (ex) {
-            return reject(new Error(ex));
-          }
-        });
-      }
-      loadFileNames("zip-admin")
-        .then(data => {
-          $("#fileNames").append(data);
-        })
-        .catch(error => {
-          alert("Files could not be loaded. please check console for details");
-          console.error(error);
-        });
+      // function loadFileNames(dir) {
+      //   return new Promise((resolve, reject) => {
+      //     var fileNames = new Array();
 
-      write("The contents of " + getCurrentFolder());
-      fileName = findFirstFile("*.*"); // Find the first file matching the filter
-      while (fileName.length) {
-        write(fileName);
-        fileName = findNextFile(); // Find the next file matching the filter
-      }
+      //     for (var i = 1; i < $(data).find("span.name").length; i++) {
+      //       var elem = $(data).find("span.name")[i];
+      //       console.log(
+      //         "<a href=" +
+      //           document.location.hostname +
+      //           "/" +
+      //           dir +
+      //           "/" +
+      //           elem.innerHTML +
+      //           ">" +
+      //           elem.innerHTML +
+      //           "</a>"
+      //       );
+      //       fileNames.push(
+      //         "<p class='pad1 mb-0'><a href=" +
+      //           document.location.hostname +
+      //           "/" +
+      //           dir +
+      //           "/" +
+      //           elem.innerHTML +
+      //           ">" +
+      //           elem.innerHTML +
+      //           "</a></p>"
+      //       );
+      //     }
+      //     return resolve(fileNames);
+      //   });
+      // }
+      // loadFileNames("zip-admin")
+      //   .then(data => {
+      //     $("#fileNames").append(data);
+      //   })
+      //   .catch(error => {
+      //     alert("Files could not be loaded. please check console for details");
+      //     console.error(error);
+      //   });
+
+      // write("The contents of " + getCurrentFolder());
+      // fileName = findFirstFile("*.*"); // Find the first file matching the filter
+      // while (fileName.length) {
+      //   write(fileName);
+      //   fileName = findNextFile(); // Find the next file matching the filter
+      // }
     </script>
   </body>
 </html>
