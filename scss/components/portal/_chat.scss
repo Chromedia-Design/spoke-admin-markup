@@ -1,9 +1,14 @@
 .frontend {
   .chat-input-container {
-    position: fixed;
-    bottom: 0;
-    @media only screen and (min-width: 769px) {
-      bottom: 3em;
+    position: fixed !important;
+  }
+}
+
+
+@media only screen and (max-width: 769px) {
+  .frontend {
+    .chat-input-container {
+      bottom: 3em !important;
     }
   }
 }
