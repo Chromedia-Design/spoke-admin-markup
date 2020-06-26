@@ -2,8 +2,10 @@
   .chat-input-container {
     position: fixed !important;
   }
+  #chat-container {
+    overflow: visible !important;
+  }
 }
-
 
 @media only screen and (max-width: 769px) {
   .frontend {
