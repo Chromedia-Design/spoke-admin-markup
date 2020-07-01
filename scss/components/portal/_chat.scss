@@ -1,6 +1,7 @@
 $zip-chat-user-bg: #f5f7f9;
 
 .frontend {
+  background-color: $zip-chat-user-bg;
   .chat-input-container {
     position: fixed !important;
   }
