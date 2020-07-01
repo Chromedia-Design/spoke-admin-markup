@@ -1,9 +1,12 @@
+$zip-chat-user-bg: #f5f7f9;
+
 .frontend {
   .chat-input-container {
     position: fixed !important;
   }
   #chat-container {
     overflow: visible !important;
+    background-color: $zip-chat-user-bg;
   }
 }
 
