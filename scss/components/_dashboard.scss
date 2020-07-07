@@ -5,6 +5,101 @@
 
 .facilty-selection {
   position: relative;
+
+  /* REY ADDED THIS */
+    .img-card-head {
+    position: relative;
+    // height: 55%;
+    padding-bottom: 75%;
+    background-color: $text-black;
+    border-top-left-radius: $global-radius;
+    border-top-right-radius: $global-radius;
+
+    > img {
+      position: absolute;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      object-fit: cover;
+    }
+
+    .header,
+    .footer {
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      padding: 0.5rem;
+      background-color: rgba($black, $B-hinttext);
+
+      .button {
+        margin: 0;
+      }
+    }
+
+    .header {
+      top: 0;
+      background-color: transparent;
+    }
+
+    .footer {
+      bottom: 0;
+
+      .label-text {
+        color: $white;
+        font-size: 0.875rem;
+        font-weight: $global-weight-bold;
+        text-transform: uppercase;
+      }
+    }
+
+    .story-card {
+      position: absolute;
+      left: 0;
+      margin-left: -10px;
+      padding: 0.5rem 1rem;
+      background-color: $secondary-color;
+      display: inline-block;
+      font-family: $body-font-family;
+
+      &:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: -15px;
+        width: 15px;
+        height: 100%;
+        border-top: 50px solid $secondary-color;
+        border-right: 15px solid transparent;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        font-family: $body-font-family;
+        font-size: 87%;
+        margin: 0;
+        color: $white;
+      }
+
+      p small {
+        font-size: 60%;
+        line-height: 1em;
+      }
+    }
+
+    .mpirica-graph {
+      border: none;
+      padding: 55px 15px 15px;
+    }
+  }
 }
 
 .facilty-previous,
