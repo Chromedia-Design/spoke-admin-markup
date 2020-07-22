@@ -1,9 +1,6 @@
 $zip-chat-user-bg: #f5f7f9;
-html {
-  background-color: $zip-chat-user-bg;
-}
+
 .frontend {
-  background-color: $zip-chat-user-bg;
   .chat-input-container {
     position: fixed !important;
   }
@@ -14,6 +11,9 @@ html {
 }
 
 @media only screen and (max-width: 769px) {
+  html {
+    background-color: $zip-chat-user-bg;
+  }
   .frontend {
     .chat-input-container {
       bottom: 3em !important;
