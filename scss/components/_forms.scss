@@ -1049,6 +1049,10 @@ input {
   }
 }
 
+.fancy-select {
+  
+}
+
 .fancy-input-tag {
   border-radius: 3px;
   padding: 0.5rem;
@@ -1267,7 +1271,7 @@ input {
   display: table;
   position: relative;
   margin: 0 0 0.5rem 0;
-  width: 95%;
+  width: auto;
   height: auto;
   text-align: left;
   cursor: pointer;

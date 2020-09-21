@@ -8,10 +8,11 @@
 	<link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-	
-	<div class="expanded row medium-collapse">
-		<div class="medium-2 columns">
-			<div class="site-nav">
+
+		<div id="master-container" class="sidebar-body">
+
+			<!-- SIDEBAR -->
+			<div class="site-nav sidebar">
 				<header>
 					<a href="#" class="logo text-center">
 						<img src="img/logo.png" title="Spoke">
@@ -52,930 +53,1555 @@
 					</li>
 				</ul>
 			</div>
-		</div>
-		<div class="medium-10 columns">
-			<div class="content">
+			<!-- SIDEBAR -->
 
-				<div class="top-bar">
-				  	<div class="top-bar-left">
+			<!-- MAIN CONTENT -->
+			<div class="content main-content scrollable">
+
+				<div class="top-bar stick-to-top">
+						<div class="top-bar-left">
 						<!-- <ul class="menu">
-				      		<li><input type="search" placeholder="Search"></li>
-				      		<li><button type="button" class="button">Search</button></li>
-			    		</ul> -->
-				  	</div>
-				  	<div class="top-bar-right">
-				    	<ul class="dropdown menu" data-dropdown-menu>
-				    		<li>
-				    			<a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">6</span></a>
-			    			</li>
-				      		<li>
-				        		<a href="#">Administrator</a>
-				        		<ul class="menu vertical">
-				          			<li><a href="#">One</a></li>
-				          			<li><a href="#">Two</a></li>
-				          			<li><a href="#">Three</a></li>
-				        		</ul>
-				      		</li>
-				    	</ul>
-				  	</div>
+									<li><input type="search" placeholder="Search"></li>
+									<li><button type="button" class="button">Search</button></li>
+							</ul> -->
+						</div>
+						<div class="top-bar-right">
+							<ul class="dropdown menu" data-dropdown-menu>
+								<li>
+									<a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">6</span></a>
+								</li>
+									<li>
+										<a href="#">Administrator</a>
+										<ul class="menu vertical">
+												<li><a href="#">One</a></li>
+												<li><a href="#">Two</a></li>
+												<li><a href="#">Three</a></li>
+										</ul>
+									</li>
+							</ul>
+						</div>
 				</div>
+				<div>
+					<div class="row expanded mb-2">
+						<div class="medium-12 columns">
 
-				<div class="row">
-					<div class="medium-12 columns">
-
-						<div class="row expanded">
-							<div class="auto columns">
-								<nav aria-label="You are here:" role="navigation">
-									<ul class="breadcrumbs">
-										<li><a href="admin-companies.html">Companies</a></li>
-										<li>Harley-Davidson Inc.</li>
-									</ul>
-								</nav>
-							</div>
-						</div>
-
-						<div class="row expanded align-middle">
-							<div class="columns">
-								<div class="media-object">
-									<div class="media-object-section middle logo">
-										<div class="img-wrapper">
-											<img src="img/fh_orlando_logo.png" alt="">
-										</div>
-									</div>
-									<div class="media-object-section middle">
-										<span class="h5">Harley-Davidson, Inc.</span>
-										<p class="subheader"><small>Assigned Advocate: Emman Calabroso</small></p>
-									</div>
+							<div class="row expanded">
+								<div class="auto columns">
+									<nav aria-label="You are here:" role="navigation">
+										<ul class="breadcrumbs">
+											<li><a href="admin-companies.html">Companies</a></li>
+											<li>Harley-Davidson Inc.</li>
+										</ul>
+									</nav>
 								</div>
 							</div>
-							<div class="columns">
-								<div class="button-align small mb-0 pull-right">
-									<a href="admin-company-add.html" class="button primary"><i class="fa fa-edit fa-fw"></i>&nbsp; Edit</a>
-								</div>
-							</div>
-						</div>
 
-						<div class="row expanded mb-2">
-							<div class="auto columns">
-								<div class="row collapse label-block flex">
-									<div class="columns end">
-										<div class="label-group">
-											<p>Percentage of Savings</p>
-											<h3>50%</h3>
-										</div>
-									</div>
-									<div class="columns end">
-										<div class="label-group">
-											<p>Custom Page Title</p>
-											<div class="media-object">
-												<div class="media-object-section middle tiny logo">
-													<div class="img-wrapper">
-														<img src="img/fh_orlando_logo.png" alt="">
-													</div>
-												</div>
-												<div class="media-object-section middle">
-													<p>Harley-Davidson, Inc.</p>
-												</div>
+							<div class="row expanded align-middle">
+								<div class="columns">
+									<div class="media-object">
+										<div class="media-object-section middle logo">
+											<div class="img-wrapper">
+												<img src="img/fh_orlando_logo.png" alt="">
 											</div>
 										</div>
+										<div class="media-object-section middle">
+											<span class="h5">Harley-Davidson, Inc.</span>
+											<p class="subheader"><small>Assigned Advocate: Emman Calabroso</small></p>
+										</div>
+									</div>
+								</div>
+								<div class="columns">
+									<div class="button-align small mb-0 pull-right">
+										<a href="admin-company-add.html" class="button primary"><i class="fa fa-edit fa-fw"></i>&nbsp; Edit</a>
 									</div>
 								</div>
 							</div>
-						</div>
 
-						<!-- <div class="page-lead row expanded align-middle">
-							<div class="shrink columns">
-								<span class="h6 mb-0">Pre-Surgery Questions</span>
-								<p class="subheader"><small>5 Questions</small></p>
-							</div>
-			            </div> -->
+							<ul class="tabs" data-tabs id="medicalProcedures">
+								<li class="tabs-title is-active"><a href="#overview" aria-selected="true">Overview</a></li>
+								<li class="tabs-title"><a href="#facility">Facility</a></li>
+								<li class="tabs-title"><a href="#PSQ">Pre-Surgery Questionnaire</a></li>
+								<li class="tabs-title"><a href="#pathway">Pathway Events</a></li>
+								<li class="tabs-title"><a href="#employee">Employee</a></li>
+								<li class="tabs-title"><a href="#medicalprocedure">Medical Procedure</a></li>
+								<li class="tabs-title"><a href="#responders">Responders</a></li>
+								<li class="tabs-title"><a href="#corporatehsa">Corporate HSA</a></li>
+							</ul>
 
-			            <ul class="tabs" data-tabs id="medicalProcedures">
-							<li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Facility</a></li>
-							<li class="tabs-title"><a href="#panel2">Pre-Surgery Questionnaire</a></li>
-							<li class="tabs-title"><a href="#panel3">Pathway Events</a></li>
-							<li class="tabs-title"><a href="#panel4">Employee</a></li>
-							<li class="tabs-title"><a href="#panel5">Medical Procedure</a></li>
-							<li class="tabs-title"><a href="#panel6">Responders</a></li>
+							<div class="tabs-content" data-tabs-content="medicalProcedures">
 
-						</ul>
-
-						<div class="tabs-content" data-tabs-content="medicalProcedures">
-
-							<div class="tabs-panel is-active" id="panel1">
-
+								<div class="tabs-panel is-active" id="overview">
+								<h3>INVOICE SUMMARY</h3>
+								<h3>CORPORATE HSA SUMMARY</h3>
+								<h3>HEALTH REPORT</h3>
 								<div class="row expanded">
-									<div class="medium-12 columns">
-										<div class="row">
-											<div class="columns">
-												<nav aria-label="You are here:" role="navigation">
-										            <ul class="breadcrumbs">
-										              <li><a href="#">States</a></li>
-										              <li>Washington</li>
-										            </ul>
-									          	</nav>
-											</div>
-										</div>
-												
-							          	<div class="row bg-black10">
-							          		<div class="columns shrink mb-1 pl-0">
-								                <button class="button small secondary hollow clear mb-0 mt-1">Select All</button>
-								                <button class="button small secondary hollow clear mb-0 mt-1">Select None</button>
-							          		</div>
-							          	</div>
-
-							          	<div class="row">
-							          		<div class="columns pl-0 pr-0">
-							          			<div class="row expanded bg-black10">
-													<div class="columns shrink">
-														<p class="mb-0 subheader"><small><strong>BOTHELL</strong></small></p>
-													</div>
-												</div>
-
-												<div class="border-radius-sm bg-black10 auto-columns-3 pad1 row expanded pt-0-5 pb-2">
-													<div class="linked-list columns medium-12 align-top mb-0 border-radius-round pl-1">
-														<div class="fancy-checkbox small mb-0">
-										                    <input id="spcp1" type="checkbox" class="mr-0" checked="true">
-										                    <label class="" for="spcp1">
-										                    	<!-- <p class="mb-0 subheader"><small><strong>BOTHELL</strong></small></p> -->
-										                    	<p class="mb-0">Virginia Mason Hospital and Seattle Medical Center</p>
-										                    </label>
-										                </div>
-													</div>
-													<div class="linked-list columns medium-12 align-top mb-0 border-radius-round pl-1">
-														<div class="fancy-checkbox small mb-0">
-										                    <input id="spcp1" type="checkbox" class="mr-0" checked="true">
-										                    <label class="" for="spcp1">
-										                    	<!-- <p class="mb-0 subheader"><small><strong>BOTHELL</strong></small></p> -->
-										                    	<p class="mb-0">Kindred Hospital Seattle - First Hill</p>
-										                    </label>
-										                </div>
-													</div>
-													<div class="linked-list columns medium-12 align-top mb-0 border-radius-round pl-1">
-														<div class="fancy-checkbox small mb-0">
-										                    <input id="spcp1" type="checkbox" class="mr-0" checked="true">
-										                    <label class="" for="spcp1">
-										                    	<!-- <p class="mb-0 subheader"><small><strong>BOTHELL</strong></small></p> -->
-										                    	<p class="mb-0">Seattle Children's Hospital</p>
-										                    </label>
-										                </div>
-													</div>
-													<div class="linked-list columns medium-12 align-top mb-0 border-radius-round pl-1">
-														<div class="fancy-checkbox small mb-0">
-										                    <input id="spcp1" type="checkbox" class="mr-0">
-										                    <label class="" for="spcp1">
-										                    	<!-- <p class="mb-0 subheader"><small><strong>BOTHELL</strong></small></p> -->
-										                    	<p class="mb-0">Kindred Hospital Seattle - Northgate</p>
-										                    </label>
-										                </div>
-													</div>
-												</div>
-							          		</div>
-							          	</div>
-
-							          	<div class="row">
-							          		<div class="columns pl-0 pr-0">
-							          			<div class="row expanded bg-black10">
-													<div class="columns shrink">
-														<p class="mb-0 subheader"><small><strong>FEDERAL WAY</strong></small></p>
-													</div>
-												</div>
-
-												<div class="border-radius-sm bg-black10 auto-columns-3 pad1 row expanded pt-0-5 pb-2">
-													<div class="linked-list columns medium-12 align-top mb-0 border-radius-round pl-1">
-														<div class="fancy-checkbox small mb-0">
-										                    <input id="spcp1" type="checkbox" class="mr-0" checked="true">
-										                    <label class="" for="spcp1">
-										                    	<p class="mb-0">Virginia Mason Hospital: Seattle</p>
-										                    </label>
-										                </div>
-													</div>
-													<div class="linked-list columns medium-12 align-top mb-0 border-radius-round pl-1">
-														<div class="fancy-checkbox small mb-0">
-										                    <input id="spcp1" type="checkbox" class="mr-0" checked="true">
-										                    <label class="" for="spcp1">
-										                    	<p class="mb-0">First Hill Medical Swedish Hospital</p>
-										                    </label>
-										                </div>
-													</div>
-													<div class="linked-list columns medium-12 align-top mb-0 border-radius-round pl-1">
-														<div class="fancy-checkbox small mb-0">
-										                    <input id="spcp1" type="checkbox" class="mr-0" checked="true">
-										                    <label class="" for="spcp1">
-										                    	<p class="mb-0">Northwest Hospital & Medical Center</p>
-										                    </label>
-										                </div>
-													</div>
-													<div class="linked-list columns medium-12 align-top mb-0 border-radius-round pl-1">
-														<div class="fancy-checkbox small mb-0">
-										                    <input id="spcp1" type="checkbox" class="mr-0" checked="true">
-										                    <label class="" for="spcp1">
-										                    	<p class="mb-0">Schick Shadel Hospital</p>
-										                    </label>
-										                </div>
-													</div>
-												</div>
-							          		</div>
-							          	</div>
-
-							          	<div class="row">
-							          		<div class="columns pl-0 pr-0">
-							          			<div class="row expanded bg-black10">
-													<div class="columns shrink">
-														<p class="mb-0 subheader"><small><strong>GIG HARBOR</strong></small></p>
-													</div>
-												</div>
-
-												<div class="border-radius-sm bg-black10 auto-columns-3 pad1 row expanded pt-0-5 pb-2">
-													<div class="linked-list columns medium-12 align-top mb-0 border-radius-round pl-1">
-														<div class="fancy-checkbox small mb-0">
-										                    <input id="spcp1" type="checkbox" class="mr-0">
-										                    <label class="" for="spcp1">
-										                    	<p class="mb-0">Swedish Medical Center Ballard Campus</p>
-										                    </label>
-										                </div>
-													</div>
-													<div class="linked-list columns medium-12 align-top mb-0 border-radius-round pl-1">
-														<div class="fancy-checkbox small mb-0">
-										                    <input id="spcp1" type="checkbox" class="mr-0">
-										                    <label class="" for="spcp1">
-										                    	<p class="mb-0">Swedish Cherry Hill Campus</p>
-										                    </label>
-										                </div>
-													</div>
-													<div class="linked-list columns medium-12 align-top mb-0 border-radius-round pl-1">
-														<div class="fancy-checkbox small mb-0">
-										                    <input id="spcp1" type="checkbox" class="mr-0">
-										                    <label class="" for="spcp1">
-										                    	<p class="mb-0">Seattle Children's Odessa Brown Children's Clinic</p>
-										                    </label>
-										                </div>
-													</div>
-												</div>
-							          		</div>
-							          	</div>
-
-							          	<div class="row">
-							          		<div class="columns pl-0 pr-0">
-							          			<div class="row expanded bg-black10">
-													<div class="columns shrink">
-														<p class="mb-0 subheader"><small><strong>SEATTLE</strong></small></p>
-													</div>
-												</div>
-
-												<div class="border-radius-sm bg-black10 auto-columns-3 pad1 row expanded pt-0-5 pb-2">
-													<div class="linked-list columns medium-12 align-top mb-0 border-radius-round pl-1">
-														<div class="fancy-checkbox small mb-0">
-										                    <input id="spcp1" type="checkbox" class="mr-0" checked="true">
-										                    <label class="" for="spcp1">
-										                    	<p class="mb-0">Harborview Medical Center</p>
-										                    </label>
-										                </div>
-													</div>
-													<div class="linked-list columns medium-12 align-top mb-0 border-radius-round pl-1">
-														<div class="fancy-checkbox small mb-0">
-										                    <input id="spcp1" type="checkbox" class="mr-0" checked="true">
-										                    <label class="" for="spcp1">
-										                    	<p class="mb-0">Infectious Diseases at Virginia Mason</p>
-										                    </label>
-										                </div>
-													</div>
-												</div>
-							          		</div>
-							          	</div>
-
-							          	<div class="row">
-							          		<div class="columns pl-0 pr-0">
-							          			<div class="row expanded bg-black10">
-													<div class="columns shrink">
-														<p class="mb-0 subheader"><small><strong>VANCOUVER</strong></small></p>
-													</div>
-												</div>
-
-												<div class="border-radius-sm bg-black10 auto-columns-3 pad1 row expanded pt-0-5 pb-2">
-													<div class="linked-list columns medium-12 align-top mb-0 border-radius-round pl-1">
-														<div class="fancy-checkbox small mb-0">
-										                    <input id="spcp1" type="checkbox" class="mr-0">
-										                    <label class="" for="spcp1">
-										                    	<p class="mb-0">Seattle Children's Nephrology</p>
-										                    </label>
-										                </div>
-													</div>
-													<div class="linked-list columns medium-12 align-top mb-0 border-radius-round pl-1">
-														<div class="fancy-checkbox small mb-0">
-										                    <input id="spcp1" type="checkbox" class="mr-0" checked="true">
-										                    <label class="" for="spcp1">
-										                    	<p class="mb-0">Children's University Medical Group</p>
-										                    </label>
-										                </div>
-													</div>
-													<div class="linked-list columns medium-12 align-top mb-0 border-radius-round pl-1">
-														<div class="fancy-checkbox small mb-0">
-										                    <input id="spcp1" type="checkbox" class="mr-0" checked="true">
-										                    <label class="" for="spcp1">
-										                    	<p class="mb-0">University of Washington: Department of Pediatrics</p>
-										                    </label>
-										                </div>
-													</div>
-													<div class="linked-list columns medium-12 align-top mb-0 border-radius-round pl-1">
-														<div class="fancy-checkbox small mb-0">
-										                    <input id="spcp1" type="checkbox" class="mr-0" checked="true">
-										                    <label class="" for="spcp1">
-										                    	<p class="mb-0">Swedish Medical Center First Hill 2nd Floor Endoscopy unit</p>
-										                    </label>
-										                </div>
-													</div>
-													<div class="linked-list columns medium-12 align-top mb-0 border-radius-round pl-1">
-														<div class="fancy-checkbox small mb-0">
-										                    <input id="spcp1" type="checkbox" class="mr-0" checked="true">
-										                    <label class="" for="spcp1">
-										                    	<p class="mb-0">Seattle Children's Gastroenterology and Hepatology</p>
-										                    </label>
-										                </div>
-													</div>
-												</div>
-							          		</div>
-							          	</div>
-									          	
+									<div class="columns medium-4">
+										<p><strong>Benefit Setting</strong></p>
+										<p><select name="" id="">
+											<option value="Maximum Benefit Level">Maximum Benefit Level</option>
+											<option value="Maximum Benefit Level">Minimum Benefit Level</option>
+											<option value="Maximum Benefit Level">Default Coverage Level</option>
+										</select></p>
 									</div>
 								</div>
-							</div>
-
-							<div class="tabs-panel" id="panel2">
-								<div class="row expanded">
-					            	<div class="columns pl-0">
-										<input type="text" class="fancy-input round-corner" placeholder="Add Question">
-									</div>
-									<div class="columns"></div>
-					            	<!-- <div class="columns shrink">
-					            		<a data-open="exampleModal1" class="button success small rounded pull-right"><i class="fa fa-plus"></i> Add Question</a>
-					            	</div> -->
-					            </div>
-					            <div class="row expanded">
-					            	<div class="columns pl-0 pr-0">
-					            		
-					            		<div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm show-on-hover">
-											<div class="columns shrink pt-1 pb-1">
-						          				<p class="mb-0 clr-black20"><i class="fa fa-bars"></i></a></p>
-											</div>
-											<div class="columns pt-1 pb-1">
-						          				<p class="mb-0">What is your gender?</a></p>
-											</div>
-											<div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
-												<a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
-											</div>
-										</div>
-
-										<div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm show-on-hover">
-											<div class="columns shrink pt-1 pb-1">
-						          				<p class="mb-0 clr-black20"><i class="fa fa-bars"></i></a></p>
-											</div>
-											<div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
-						          				<p class="mb-0">What medical or diagnostic test/s have you had in the past two years?</p>
-											</div>
-											<div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
-												<a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
-											</div>
-										</div>
-
-										<div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm show-on-hover">
-											<div class="columns shrink pt-1 pb-1">
-						          				<p class="mb-0 clr-black20"><i class="fa fa-bars"></i></a></p>
-											</div>
-											<div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
-						          				<p class="mb-0">When was your last complete physical examination?</p>
-											</div>
-											<div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
-												<a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
-											</div>
-										</div>
-
-										<div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm show-on-hover">
-											<div class="columns shrink pt-1 pb-1">
-						          				<p class="mb-0 clr-black20"><i class="fa fa-bars"></i></a></p>
-											</div>
-											<div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
-						          				<p class="mb-0">Are you currently taking any medications?</p>
-											</div>
-											<div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
-												<a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
-											</div>
-										</div>
-
-										<div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm show-on-hover">
-											<div class="columns shrink pt-1 pb-1">
-						          				<p class="mb-0 clr-black20"><i class="fa fa-bars"></i></a></p>
-											</div>
-											<div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
-						          				<p class="mb-0">Have you had any of the following medical conditions?</p>
-											</div>
-											<div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
-												<a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
-											</div>
-										</div>
-
-					            	</div>
-					            </div>
-							</div>
-
-							<div class="tabs-panel" id="panel3">
-								<div class="row expanded">
-					            	<div class="columns pl-0">
-					            		<a href="#" class="button primary small rounded pull-right">+ Manage Event Pathway</a>
-					            	</div>
-					            </div>
-					            <div class="ml-1 mr-1">
-				            		
-				            		<div class="row expanded bg-black20 pt-0 mb-0-5 show-on-hover">
-										<div class="columns pt-1 pb-1 border-radius-sm">
-					          				<p class="mb-0">General Surgery pathway Event 1</p>
-										</div>
-										<div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
-											<a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
-										</div>
-									</div>
-
-									<div class="row expanded bg-black20 pt-0 mb-0-5 show-on-hover">
-										<div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
-					          				<p class="mb-0">General Surgery pathway Event 2</p>
-										</div>
-										<div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
-											<a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
-										</div>
-									</div>
-
-									<div class="row expanded bg-black20 pt-0 mb-0-5 show-on-hover">
-										<div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
-					          				<p class="mb-0">General Surgery pathway Event 3</p>
-										</div>
-										<div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
-											<a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
-										</div>
-									</div>
-
-									<div class="row expanded bg-black20 pt-0 mb-0-5 show-on-hover">
-										<div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
-					          				<p class="mb-0">General Surgery pathway Event 4</p>
-										</div>
-										<div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
-											<a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
-										</div>
-									</div>
-
-									<div class="row expanded bg-black20 pt-0 mb-0-5 show-on-hover">
-										<div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
-					          				<p class="mb-0">General Surgery pathway Event 5</p>
-										</div>
-										<div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
-											<a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
-										</div>
-									</div>
-				            	</div>
-							</div>
-
-							<div class="tabs-panel" id="panel4">
-
-								<div class="row align-middle expanded mb-1">
-									<div class="columns pr-0-5">
-										<input type="text" class="fancy-input round-corner mb-0" placeholder="Search Employee">
-									</div>
-									<div class="columns shrink pl-0-5 dropdown">
-										<button class="dropbtn button clear hollow clr-black50 mb-0"><i class="fa fa-filter"></i></button>
-										<!-- <button class="dropbtn button hollow clear small success mb-0"><i class="fa fa-plus"></i> Add task</button> -->
-										<div class="dropdown-content expanded pad0">
-		        							<div>
-		        								<a href="#" class="pad0 pl-1 pr-1 pt-1 pb-1">
-			        								<p class="mb-0">All</p>
-		        								</a>
-		        							</div>
-		        							<div>
-		        								<a href="#" class="pad0 pl-1 pr-1 pt-1 pb-1">
-			        								<p class="mb-0">Awaiting Option</p>
-		        								</a>
-		        							</div>
-		        							<div>
-		        								<a href="#" class="pad0 pl-1 pr-1 pt-1 pb-1">
-			        								<p class="mb-0">pending Invites</p>
-			        							</a>
-		        							</div>
-		        							<div>
-		        								<a href="#" class="pad0 pl-1 pr-1 pt-1 pb-1">
-			        								<p class="mb-0">pending Selection</p>
-			        							</a>
-		        							</div>
-		        							<div>
-		        								<a href="#" class="pad0 pl-1 pr-1 pt-1 pb-1">
-			        								<p class="mb-0">Schedule Consultation</p>
-			        							</a>
-		        							</div>
-		            					</div>
-							            
-							        </div>
-									<div class="columns"></div>
-									<div class="columns shrink">
-										<div class="button-align small pull-right mb-0">
-											<a class="button success rounded" href="admin-employee-edit.html">+ Create New Employee</a>
-										</div>
-									</div>
-
-								</div>
-
-								<div class="row expanded">
-									<div class="medium-12 columns">
 										
-										<div class="spoke-list">
-
-											<div class="spoke-list-heading row expanded align-middle">
-												<div class="medium-3 columns">
-													<input type="checkbox" class="mb-0 mr-1" name="">&nbsp; 
-													<a href="#">Employee <i class="fa fa-caret-up fa-fw"></i></a>
-												</div>
-												<div class="medium-4 columns">
-													<a href="#">Episode <i class="fa fa-caret-up fa-fw"></i></a>
-												</div>
-												<div class="medium-2 columns">
-													<a href="#">Advocate <i class="fa fa-caret-up fa-fw"></i></a>
-												</div>
-												<div class="medium-2 columns">
-													<a href="#">Last Activity <i class="fa fa-caret-up fa-fw"></i></a>
-												</div>
-												<div class="shrink columns">
-												</div>
-											</div>
-
-											<div class="spoke-list-item row expanded align-middle" onclick="location.href='advocate-employee-profile-v2.html'">
-												<div class="medium-3 columns">
-													<div class="row collapse align-middle">
-														<div class="shrink columns">
-															<input type="checkbox" class="mb-0 mr-1" name="">
-														</div>
-														<div class="columns">
-															<p class="h6 mb-0">John Doe</p>
-															<p class="subheader"><small><span class="badge success small"> </span> Account Created</small></p>
-														</div>
-													</div>
-												</div>
-												<div class="medium-4 columns">
-													<p><a href="advocate-employee-episode-v2.html">Total Knee Replacement</a></p>
-													<!-- <a href="#" class="button success hollow rounded tiny">Create Episode</a> -->
-												</div>
-												<div class="medium-2 columns">
-													<div class="media-object full-table fixed mt-0 mb-0">
-													  	<div class="media-object-section logo tiny middle">
-													    	<div class="img-wrapper circle">
-													      		<img src="img/specialist.png">
-													    	</div>
-													  	</div>
-													  	<div class="media-object-section middle">
-													   		<p>Johnny Kennedy</p>
-													  	</div>
-													</div>
-												</div>
-												<div class="medium-2 columns">
-													June 15, 2018
-												</div>
-												<div class="shrink columns">
-													<ul class="dropdown menu" data-dropdown-menu="4h4po6-dropdown-menu" role="menubar">
-				                                        <li role="menuitem" class="is-dropdown-submenu-parent opens-right" aria-haspopup="true" aria-expanded="false" aria-label="">
-				                                            <a tabindex="0"></a>
-				                                            <ul class="menu vertical submenu is-dropdown-submenu first-sub" data-submenu="" aria-hidden="true" role="menu">
-				                                                <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="#"><i class="fa fa-edit"></i>&nbsp; Edit</a></li>
-				                                                <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="#"><i class="fa fa-trash"></i>&nbsp; Delete</a></li>
-				                                            </ul>
-				                                        </li>
-				                                    </ul>
-												</div>
-											</div>
-
-											<div class="spoke-list-item row expanded align-middle" onclick="location.href='advocate-employee-profile-v2.html'">
-												<div class="medium-3 columns">
-													<div class="row collapse align-middle">
-														<div class="shrink columns">
-															<input type="checkbox" class="mb-0 mr-1" name="">
-														</div>
-														<div class="columns">
-															<p class="h6 mb-0">Michelle Gonzalez</p>
-															<p class="subheader"><small><span class="badge alert small"> </span> No Active Episode</small></p>
-														</div>
-													</div>
-												</div>
-												<div class="medium-4 columns">
-													<!-- <p><a href="advocate-employee-episode-v2.html">Total Knee Replacement</a></p> -->
-													<a href="#" class="button success hollow rounded tiny">Create Episode</a>
-												</div>
-												<div class="medium-2 columns">
-													<div class="media-object full-table fixed mt-0 mb-0">
-													  	<div class="media-object-section logo tiny middle">
-													    	<div class="img-wrapper circle">
-													      		<img src="img/specialist.png">
-													    	</div>
-													  	</div>
-													  	<div class="media-object-section middle">
-													   		<p>Christine Lambert skjf sdlkfjals klsdjfl;a sdlkfjls</p>
-													  	</div>
-													</div>
-												</div>
-												<div class="medium-2 columns">
-													June 17, 2018
-												</div>
-												<div class="shrink columns">
-													<ul class="dropdown menu" data-dropdown-menu="x4540r-dropdown-menu" role="menubar">
-				                                        <li role="menuitem" class="is-dropdown-submenu-parent opens-right" aria-haspopup="true" aria-expanded="false" aria-label="">
-				                                            <a tabindex="0"></a>
-				                                            <ul class="menu vertical submenu is-dropdown-submenu first-sub" data-submenu="" aria-hidden="true" role="menu">
-				                                                <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="#"><i class="fa fa-edit"></i>&nbsp; Edit</a></li>
-				                                                <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="#"><i class="fa fa-trash"></i>&nbsp; Delete</a></li>
-				                                            </ul>
-				                                        </li>
-				                                    </ul>
-												</div>
-											</div>
-
-											<div class="spoke-list-item row expanded align-middle" onclick="location.href='advocate-employee-profile-v2.html'">
-												<div class="medium-3 columns">
-													<div class="row collapse align-middle">
-														<div class="shrink columns">
-															<input type="checkbox" class="mb-0 mr-1" name="">
-														</div>
-														<div class="columns">
-															<p class="h6">Craig Wilson</p>
-															<a href="#" class="button hollow rounded tiny mt-0-5"><i class="fa fa-envelope-o"></i>&nbsp; Send Invite</a>
-														</div>
-													</div>
-												</div>
-												<div class="medium-4 columns">
-													<p><a href="advocate-employee-episode-v2.html">Dental Surgery</a></p>
-													<!-- <a href="#" class="button success hollow rounded tiny">Create Episode</a> -->
-												</div>
-												<div class="medium-2 columns">
-													<div class="media-object full-table fixed mt-0 mb-0">
-													  	<div class="media-object-section logo tiny middle">
-													    	<div class="img-wrapper circle">
-													      		<img src="img/specialist.png">
-													    	</div>
-													  	</div>
-													  	<div class="media-object-section middle">
-													   		<p>Cheryl Mitchell</p>
-													  	</div>
-													</div>
-													<p></p>
-												</div>
-												<div class="medium-2 columns">
-													June 17, 2018
-												</div>
-												<div class="shrink columns">
-													<ul class="dropdown menu" data-dropdown-menu="6t1ov8-dropdown-menu" role="menubar">
-				                                        <li role="menuitem" class="is-dropdown-submenu-parent opens-right" aria-haspopup="true" aria-expanded="false" aria-label="">
-				                                            <a tabindex="0"></a>
-				                                            <ul class="menu vertical submenu is-dropdown-submenu first-sub" data-submenu="" aria-hidden="true" role="menu">
-				                                                <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="#"><i class="fa fa-edit"></i>&nbsp; Edit</a></li>
-				                                                <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="#"><i class="fa fa-trash"></i>&nbsp; Delete</a></li>
-				                                            </ul>
-				                                        </li>
-				                                    </ul>
-												</div>
-											</div>
-										</div>
-
-										<ul class="pagination text-center" role="navigation" aria-label="Pagination">
-											<li class="pagination-previous disabled">Previous</li>
-											<li class="current"><a href="#">1</a></li>
-											<li><a href="#" aria-label="Page 2">2</a></li>
-											<li><a href="#" aria-label="Page 3">3</a></li>
-											<li><a href="#" aria-label="Page 4">4</a></li>
-											<li class="ellipsis"></li>
-											<li><a href="#" aria-label="Page 12">12</a></li>
-											<li><a href="#" aria-label="Page 13">13</a></li>
-											<li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
-										</ul>	
-
-									</div>
 								</div>
-							</div>
+								
+								<div class="tabs-panel" id="facility">
 
-							<div class="tabs-panel" id="panel5">
+									<div class="row expanded">
+										<div class="medium-12 columns">
+											<div class="row expanded">
+												<div class="columns">
+													<nav aria-label="You are here:" role="navigation">
+														<ul class="breadcrumbs">
+															<li><a href="#">Region 7</a></li>
+															<li>Cebu</li>
+														</ul>
+													</nav>
+												</div>
+											</div>
+											<!-- <div class="row expanded">
+												<div class="columns shrink mb-1 pl-0">
+														<button class="button small secondary hollow clear mb-0 mt-1">Select All</button>
+														<button class="button small secondary hollow clear mb-0 mt-1">Select None</button>
+												</div>
+											</div> -->
+											<div class="border-radius-sm auto-columns-3 pad1 pb-0-5 pt-0-5 row expanded b-bottom-1">
+												<div class="columns medium-6 align-top mb-0">
+														<span class="clr-black50"><small><strong>FACILITIES</strong></small></span>
+												</div>
+												<!-- <div class="columns align-top mb-0">
+													<span class="clr-black50"><small><strong>CUSTOM</strong></small></span>
+												</div> -->
+												<div class="columns align-top mb-0">
+													<span class="clr-black50"><small><strong>START DATE</strong></small></span>
+												</div>
+												<div class="columns align-top mb-0">
+													<span class="clr-black50"><small><strong>END DATE</strong></small></span>
+												</div>
+												<div class="columns medium-1 align-top mb-0"></div>
+											</div>
+											<div class="border-radius-sm auto-columns-3 pad1 pb-0-5 pt-0-5 row expanded">
+												<div class="columns medium-4 align-top mb-0">
+														<span class="clr-warning"><small><strong>CEBU</strong></small></span>
+												</div>
+											</div>
+											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+												<div class="columns medium-6 mb-0 border-radius-round pl-1">
+													<div>
+														<div class="fancy-checkbox small mb-0 ml-1">
+																<input id="Virginia Mason Hospital and Seattle Medical Center" name="Virginia Mason Hospital and Seattle Medical Center" type="checkbox" class="mr-0" checked>
+																<label class="" for="Virginia Mason Hospital and Seattle Medical Center">Virginia Mason Hospital and Seattle Medical Center</label>
+															</div>
+														</div>	
+														<div class="ml-3">
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-user-md"> </i> DOCTORS <span class="tag no-action">19/24</span></button>
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-sticky-note"> </i> NOTES <span class="tag alert no-action">3</span></button>
+													</div>
+												</div>
+												<!-- <div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>None</small></option>
+														<option value="Enable">Enable</option>
+														<option value="Disable">Disable</option>
+													</select>
+												</div> -->
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+														<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns shrink align-top mb-0">
+													<button class="button small hollow clear secondary"> <i class="fa fa-clock"> </i> LOGS</button>
+												</div>
+											</div>
+											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+												<div class="columns medium-6 mb-0 border-radius-round pl-1">
+													<div>
+														<div class="fancy-checkbox small mb-0 ml-1">
+															<input id="Kindred Hospital Seattle - First Hill" name="Kindred Hospital Seattle - First Hill" type="checkbox" class="mr-0" checked>
+															<label class="" for="Kindred Hospital Seattle - First Hill">Kindred Hospital Seattle - First Hill</label>
+														</div>
+													</div>
+													<div class="ml-3">
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-user-md"> </i> DOCTORS <span class="tag no-action">19/24</span></button>
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-sticky-note"> </i> NOTES <span class="tag alert no-action">3</span></button>
+													</div>
+												</div>
+												<!-- <div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>None</small></option>
+														<option value="Enable">Enable</option>
+														<option value="Disable">Disable</option>
+													</select>
+												</div> -->
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+														<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns shrink align-top mb-0">
+													<button class="button small hollow clear secondary"> <i class="fa fa-clock"> </i> LOGS</button>
+												</div>
+											</div>
+											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+												<div class="columns medium-6 mb-0 border-radius-round pl-1">
+													<div>
+														<div class="fancy-checkbox small mb-0 ml-1">
+															<input id="Seattle Children's Hospital" name="Seattle Children's Hospital" type="checkbox" class="mr-0" checked>
+															<label class="" for="Seattle Children's Hospital">Seattle Children's Hospital</label>
+														</div>
+													</div>
+													<div class="ml-3">
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-user-md"> </i> DOCTORS <span class="tag no-action">19/24</span></button>
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-sticky-note"> </i> NOTES <span class="tag alert no-action">3</span></button>
+													</div>
+												</div>
+												<!-- <div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>None</small></option>
+														<option value="Enable">Enable</option>
+														<option value="Disable">Disable</option>
+													</select>
+												</div> -->
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+														<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns shrink align-top mb-0">
+													<button class="button small hollow clear secondary"> <i class="fa fa-clock"> </i> LOGS</button>
+												</div>
+											</div>
+											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+												<div class="columns medium-6 mb-0 border-radius-round pl-1">
+													<div>
+														<div class="fancy-checkbox small mb-0 ml-1">
+															<input id="Kindred Hospital Seattle - Northgate" name="Kindred Hospital Seattle - Northgate" type="checkbox" class="mr-0" checked>
+															<label class="" for="Kindred Hospital Seattle - Northgate">Kindred Hospital Seattle - Northgate</label>
+														</div>
+													</div>
+													<div class="ml-3">
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-user-md"> </i> DOCTORS <span class="tag no-action">19/24</span></button>
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-sticky-note"> </i> NOTES <span class="tag no-action">3</span></button>
+													</div>
+												</div>
+												<!-- <div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>None</small></option>
+														<option value="Enable">Enable</option>
+														<option value="Disable">Disable</option>
+													</select>
+												</div> -->
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+														<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns shrink align-top mb-0">
+													<button class="button small hollow clear secondary"> <i class="fa fa-clock"> </i> LOGS</button>
+												</div>
+											</div>
 
-								<div class="row expanded">
-									<div class="medium-12 columns">
-										<nav aria-label="You are here:" role="navigation">
-								            <ul class="breadcrumbs">
-								              <li><a href="#">Specializations OR Medical Procedures?</a></li>
-								              <li><a href="#">Orthopedic</a></li>
-								              <li>Orthopedic Surgery</li>						              
-								              <!-- <li><a href="#">Subspecialization</a></li> -->
-								              <!-- <li><a href="admin-packages.html">Teeth Surgery</a></li> -->
-								              <!-- <li>Molar Root Canal</li> -->
-								            </ul>
-								        </nav>
-								        <div class="row bg-black10">
-							          		<div class="columns shrink pl-0">
-								                <button class="button small secondary clear hollow mb-0 mt-1">Select All</button>
-								                <button class="button small secondary clear hollow mb-0 mt-1">Select None</button>
-							          		</div>
-							          	</div>
-										<div class="border-radius-sm bg-black10 auto-columns-3 pad1 row expanded">
-											<div class="linked-list columns medium-4 align-top mb-0 border-radius-round pl-1">
-												<div class="fancy-checkbox small mb-0">
-								                    <input id="spcp1" type="checkbox" class="mr-0" checked="true">
-								                    <label class="" for="spcp1">Alternative Medicine</label>
-								                </div>
+											<div class="border-radius-sm auto-columns-3 pad1 pb-0-5 pt-0-5 row expanded">
+												<div class="columns medium-4 align-top mb-0">
+														<span class="clr-warning"><small><strong>MANDAUE</strong></small></span>
+												</div>
 											</div>
-											<div class="linked-list columns medium-4 align-top mb-0 border-radius-round pl-1">
-												<div class="fancy-checkbox small mb-0">
-								                    <input id="spcp1" type="checkbox" class="mr-0" checked="true">
-								                    <label class="" for="spcp1">Cardiology</label>
-								                </div>
+											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+												<div class="columns medium-6 mb-0 border-radius-round pl-1">
+													<div>
+														<div class="fancy-checkbox small mb-0 ml-1">
+															<input id="Virginia Mason Hospital: Seattle" name="Virginia Mason Hospital: Seattle" type="checkbox" class="mr-0" checked>
+															<label class="" for="Virginia Mason Hospital: Seattle">Virginia Mason Hospital: Seattle</label>
+														</div>
+													</div>
+													<div class="ml-3">
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-user-md"> </i> DOCTORS <span class="tag no-action">19/24</span></button>
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-sticky-note"> </i> NOTES <span class="tag no-action">3</span></button>
+													</div>
+												</div>
+												<!-- <div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>None</small></option>
+														<option value="Enable">Enable</option>
+														<option value="Disable">Disable</option>
+													</select>
+												</div> -->
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+														<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns shrink align-top mb-0">
+													<button class="button small hollow clear secondary"> <i class="fa fa-clock"> </i> LOGS</button>
+												</div>
 											</div>
-											<div class="linked-list columns medium-4 align-top mb-0 border-radius-round pl-1">
-												<div class="fancy-checkbox small mb-0">
-								                    <input id="spcp1" type="checkbox" class="mr-0" checked="true">
-								                    <label class="" for="spcp1">Dentistry</label>
-								                </div>
+											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+												<div class="columns medium-6 mb-0 border-radius-round pl-1">
+													<div>
+														<div class="fancy-checkbox small mb-0 ml-1">
+															<input id="First Hill Medical Swedish Hospital" name="First Hill Medical Swedish Hospital" type="checkbox" class="mr-0" checked>
+															<label class="" for="First Hill Medical Swedish Hospital">First Hill Medical Swedish Hospital</label>
+														</div>
+													</div>
+													<div class="ml-3">
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-user-md"> </i> DOCTORS <span class="tag no-action">19/24</span></button>
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-sticky-note"> </i> NOTES <span class="tag no-action">3</span></button>
+													</div>
+												</div>
+												<!-- <div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>None</small></option>
+														<option value="Enable">Enable</option>
+														<option value="Disable">Disable</option>
+													</select>
+												</div> -->
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+														<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns shrink align-top mb-0">
+													<button class="button small hollow clear secondary"> <i class="fa fa-clock"> </i> LOGS</button>
+												</div>
 											</div>
-											<div class="linked-list columns medium-4 align-top mb-0 border-radius-round pl-1">
-												<div class="fancy-checkbox small mb-0">
-								                    <input id="spcp1" type="checkbox" class="mr-0">
-								                    <label class="" for="spcp1">Dermatology</label>
-								                </div>
+											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+												<div class="columns medium-6 mb-0 border-radius-round pl-1">
+													<div>
+														<div class="fancy-checkbox small mb-0 ml-1">
+															<input id="Northwest Hospital & Medical Center" name="Northwest Hospital & Medical Center" type="checkbox" class="mr-0" checked>
+															<label class="" for="Northwest Hospital & Medical Center">Northwest Hospital & Medical Center</label>
+														</div>
+													</div>
+													<div class="ml-3">
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-user-md"> </i> DOCTORS <span class="tag no-action">19/24</span></button>
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-sticky-note"> </i> NOTES <span class="tag no-action">3</span></button>
+													</div>
+												</div>
+												<!-- <div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>None</small></option>
+														<option value="Enable">Enable</option>
+														<option value="Disable">Disable</option>
+													</select>
+												</div> -->
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+														<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns shrink align-top mb-0">
+													<button class="button small hollow clear secondary"> <i class="fa fa-clock"> </i> LOGS</button>
+												</div>
 											</div>
-											<div class="linked-list columns medium-4 align-top mb-0 border-radius-round pl-1">
-												<div class="fancy-checkbox small mb-0">
-								                    <input id="spcp1" type="checkbox" class="mr-0" checked="true">
-								                    <label class="" for="spcp1">Gastroenterology</label>
-								                </div>
+											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+												<div class="columns medium-6 mb-0 border-radius-round pl-1">
+													<div>
+														<div class="fancy-checkbox small mb-0 ml-1">
+															<input id="Schick Shadel Hospital" name="Schick Shadel Hospital" type="checkbox" class="mr-0" checked>
+															<label class="" for="Schick Shadel Hospital">Schick Shadel Hospital</label>
+														</div>
+													</div>
+													<div class="ml-3">
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-user-md"> </i> DOCTORS <span class="tag no-action">19/24</span></button>
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-sticky-note"> </i> NOTES <span class="tag no-action">3</span></button>
+													</div>
+												</div>
+												<!-- <div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>None</small></option>
+														<option value="Enable">Enable</option>
+														<option value="Disable">Disable</option>
+													</select>
+												</div> -->
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+														<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns shrink align-top mb-0">
+													<button class="button small hollow clear secondary"> <i class="fa fa-clock"> </i> LOGS</button>
+												</div>
 											</div>
-											<div class="linked-list columns medium-4 align-top mb-0 border-radius-round pl-1">
-												<div class="fancy-checkbox small mb-0">
-								                    <input id="spcp1" type="checkbox" class="mr-0" checked="true">
-								                    <label class="" for="spcp1">General Medicine</label>
-								                </div>
+
+											<div class="border-radius-sm auto-columns-3 pad1 pb-0-5 pt-0-5 row expanded">
+												<div class="columns medium-4 align-top mb-0">
+														<span class="clr-warning"><small><strong>LAPU-LAPU</strong></small></span>
+												</div>
 											</div>
-											<div class="linked-list columns medium-4 align-top mb-0 border-radius-round pl-1">
-												<div class="fancy-checkbox small mb-0">
-								                    <input id="spcp1" type="checkbox" class="mr-0" checked="true">
-								                    <label class="" for="spcp1">General Surgery</label>
-								                </div>
+											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+												<div class="columns medium-6 mb-0 border-radius-round pl-1">
+													<div>
+														<div class="fancy-checkbox small mb-0 ml-1">
+															<input id="Swedish Medical Center Ballard Campus" name="Swedish Medical Center Ballard Campus" type="checkbox" class="mr-0" checked>
+															<label class="" for="Swedish Medical Center Ballard Campus">Swedish Medical Center Ballard Campus</label>
+														</div>
+													</div>
+													<div class="ml-3">
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-user-md"> </i> DOCTORS <span class="tag no-action">19/24</span></button>
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-sticky-note"> </i> NOTES <span class="tag no-action">3</span></button>
+													</div>
+												</div>
+												<!-- <div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>None</small></option>
+														<option value="Enable">Enable</option>
+														<option value="Disable">Disable</option>
+													</select>
+												</div> -->
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+														<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns shrink align-top mb-0">
+													<button class="button small hollow clear secondary"> <i class="fa fa-clock"> </i> LOGS</button>
+												</div>
 											</div>
-											<div class="linked-list columns medium-4 align-top mb-0 border-radius-round pl-1">
-												<div class="fancy-checkbox small mb-0">
-								                    <input id="spcp1" type="checkbox" class="mr-0" checked="true">
-								                    <label class="" for="spcp1">Internal Medicine</label>
-								                </div>
+											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+												<div class="columns medium-6 mb-0 border-radius-round pl-1">
+													<div>
+														<div class="fancy-checkbox small mb-0 ml-1">
+															<input id="Swedish Cherry Hill Campus" name="Swedish Cherry Hill Campus" type="checkbox" class="mr-0" checked>
+															<label class="" for="Swedish Cherry Hill Campus">Swedish Cherry Hill Campus</label>
+														</div>
+													</div>
+													<div class="ml-3">
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-user-md"> </i> DOCTORS <span class="tag no-action">19/24</span></button>
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-sticky-note"> </i> NOTES <span class="tag no-action">3</span></button>
+													</div>
+												</div>
+												<!-- <div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>None</small></option>
+														<option value="Enable">Enable</option>
+														<option value="Disable">Disable</option>
+													</select>
+												</div> -->
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+														<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns shrink align-top mb-0">
+													<button class="button small hollow clear secondary"> <i class="fa fa-clock"> </i> LOGS</button>
+												</div>
 											</div>
-											<div class="linked-list columns medium-4 align-top mb-0 border-radius-round pl-1">
-												<div class="fancy-checkbox small mb-0">
-								                    <input id="spcp1" type="checkbox" class="mr-0">
-								                    <label class="" for="spcp1">Nephrology</label>
-								                </div>
-											</div>
-											<div class="linked-list columns medium-4 align-top mb-0 border-radius-round pl-1">
-												<div class="fancy-checkbox small mb-0">
-								                    <input id="spcp1" type="checkbox" class="mr-0">
-								                    <label class="" for="spcp1">Obstetrics and Gybecology (OB/GYN)</label>
-								                </div>
-											</div>
-											<div class="linked-list columns medium-4 align-top mb-0 border-radius-round pl-1">
-												<div class="fancy-checkbox small mb-0">
-								                    <input id="spcp1" type="checkbox" class="mr-0">
-								                    <label class="" for="spcp1">Cardiology</label>
-								                </div>
-											</div>
-											<div class="linked-list columns medium-4 align-top mb-0 border-radius-round pl-1">
-												<div class="fancy-checkbox small mb-0">
-								                    <input id="spcp1" type="checkbox" class="mr-0" checked="true">
-								                    <label class="" for="spcp1">Oncology</label>
-								                </div>
-											</div>
-											<div class="linked-list columns medium-4 align-top mb-0 border-radius-round pl-1">
-												<div class="fancy-checkbox small mb-0">
-								                    <input id="spcp1" type="checkbox" class="mr-0" checked="true">
-								                    <label class="" for="spcp1">Opthalmology</label>
-								                </div>
-											</div>
-											<div class="linked-list columns medium-4 align-top mb-0 border-radius-round pl-1">
-												<div class="fancy-checkbox small mb-0">
-								                    <input id="spcp1" type="checkbox" class="mr-0">
-								                    <label class="" for="spcp1">Orthopedics</label>
-								                </div>
-											</div>
-											<div class="linked-list columns medium-4 align-top mb-0 border-radius-round pl-1">
-												<div class="fancy-checkbox small mb-0">
-								                    <input id="spcp1" type="checkbox" class="mr-0" checked="true">
-								                    <label class="" for="spcp1">Otolaryngology/E.N.T.</label>
-								                </div>
-											</div>
-											<div class="linked-list columns medium-4 align-top mb-0 border-radius-round pl-1">
-												<div class="fancy-checkbox small mb-0">
-								                    <input id="spcp1" type="checkbox" class="mr-0" checked="true">
-								                    <label class="" for="spcp1">Physical Theraphy</label>
-								                </div>
-											</div>
-											<div class="linked-list columns medium-4 align-top mb-0 border-radius-round pl-1">
-												<div class="fancy-checkbox small mb-0">
-								                    <input id="spcp1" type="checkbox" class="mr-0" checked="true">
-								                    <label class="" for="spcp1">Plastic Surgery</label>
-								                </div>
-											</div>
-											<div class="linked-list columns medium-4 align-top mb-0 border-radius-round pl-1">
-												<div class="fancy-checkbox small mb-0">
-								                    <input id="spcp1" type="checkbox" class="mr-0" checked="true">
-								                    <label class="" for="spcp1">Orthopedics</label>
-								                </div>
+											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+												<div class="columns medium-6 mb-0 border-radius-round pl-1">
+													<div>
+														<div class="fancy-checkbox small mb-0 ml-1">
+															<input id="Seattle Children's Odessa Brown Children's Clinic" name="Seattle Children's Odessa Brown Children's Clinic" type="checkbox" class="mr-0" checked>
+															<label class="" for="Seattle Children's Odessa Brown Children's Clinic">Seattle Children's Odessa Brown Children's Clinic</label>
+														</div>
+													</div>
+													<div class="ml-3">
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-user-md"> </i> DOCTORS <span class="tag no-action">19/24</span></button>
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-sticky-note"> </i> NOTES <span class="tag no-action">3</span></button>
+													</div>
+												</div>
+												<!-- <div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>None</small></option>
+														<option value="Enable">Enable</option>
+														<option value="Disable">Disable</option>
+													</select>
+												</div> -->
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+														<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns shrink align-top mb-0">
+													<button class="button small hollow clear secondary"> <i class="fa fa-clock"> </i> LOGS</button>
+												</div>
 											</div>
 											
-										</div>
-
-									</div>
-								</div>
-							</div>
-
-							<div class="tabs-panel" id="panel6">
-
-								<div class="row align-middle expanded mb-1">
-									<div class="columns pr-0-5">
-										<input type="text" class="fancy-input round-corner mb-0" placeholder="Search responder">
-									</div>
-									<div class="columns shrink pl-0-5 dropdown">
-										<button class="dropbtn button clear hollow clr-black50 mb-0 "><i class="fa fa-filter"></i></button>
-										<div class="dropdown-content expanded pad0">
-											<div>
-												<a href="#" class="pad0 pl-1 pr-1 pt-1 pb-1">
-													<p class="mb-0">All</p>
-												</a>
-											</div>
-											<div>
-												<a href="#" class="pad0 pl-1 pr-1 pt-1 pb-1">
-													<p class="mb-0">Awaiting Option</p>
-												</a>
-											</div>
-											<div>
-												<a href="#" class="pad0 pl-1 pr-1 pt-1 pb-1">
-													<p class="mb-0">pending Invites</p>
-												</a>
-											</div>
-											<div>
-												<a href="#" class="pad0 pl-1 pr-1 pt-1 pb-1">
-													<p class="mb-0">pending Selection</p>
-												</a>
-											</div>
-											<div>
-												<a href="#" class="pad0 pl-1 pr-1 pt-1 pb-1">
-													<p class="mb-0">Schedule Consultation</p>
-												</a>
-											</div>
-										</div>
-										<button class="dropbtn button clear hollow clr-black50 mb-0"><i class="fa fa-trash"></i></button>
-												
-									</div> 
-									<div class="columns"></div>
-									<!--<div class="columns shrink">
-										<div class="button-align small pull-right mb-0">
-											<a class="button success rounded" href="admin-employee-edit.html">+ Create New Employee</a>
-										</div>
-									</div> -->
-
-								</div>
-
-								<div class="row expanded">
-									<div class="medium-12 columns">
-										
-										<div class="spoke-list">
-
-											<div class="spoke-list-heading row expanded align-middle">
-												<div class="medium-4 columns">
-													<input type="checkbox" class="mb-0 mr-1" name="">&nbsp; 
-													<a href="#">Responder <i class="fa fa-caret-up fa-fw"></i></a>
-												</div>
-												<div class="medium-5 columns">
-													<a href="#">Episode <i class="fa fa-caret-up fa-fw"></i></a>
-												</div>
-												<div class="medium-2 columns">
-													<a href="#">Last Activity <i class="fa fa-caret-up fa-fw"></i></a>
-												</div>
-												<div class="shrink columns">
+											<div class="border-radius-sm auto-columns-3 pad1 pb-0-5 pt-0-5 row expanded">
+												<div class="columns medium-4 align-top mb-0">
+														<span class="clr-warning"><small><strong>TALISAY</strong></small></span>
 												</div>
 											</div>
-
-											<div class="spoke-list-item row expanded align-middle" onclick="location.href='advocate-employee-profile-v2.html'">
-												<div class="medium-4 columns">
-													<div class="row collapse align-middle">
-														<div class="shrink columns">
-															<input type="checkbox" class="mb-0 mr-1" name="">
-														</div>
-														<div class="columns">
-															<p class="h6 mb-0">Charlie Smith</p>
+											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+												<div class="columns medium-6 mb-0 border-radius-round pl-1">
+													<div>
+														<div class="fancy-checkbox small mb-0 ml-1">
+															<input id="Harborview Medical Center" name="Harborview Medical Center" type="checkbox" class="mr-0" checked>
+															<label class="" for="Harborview Medical Center">Harborview Medical Center</label>
 														</div>
 													</div>
+													<div class="ml-3">
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-user-md"> </i> DOCTORS <span class="tag no-action">19/24</span></button>
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-sticky-note"> </i> NOTES <span class="tag no-action">3</span></button>
+													</div>
 												</div>
-												<div class="medium-5 columns">
-													<p><a href="advocate-employee-episode-v2.html">Total Knee Replacement</a></p>
-													<!-- <a href="#" class="button success hollow rounded tiny">Create Episode</a> -->
+												<!-- <div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>None</small></option>
+														<option value="Enable">Enable</option>
+														<option value="Disable">Disable</option>
+													</select>
+												</div> -->
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<input type="date" class="mb-0 borderless">
 												</div>
-												<div class="medium-2 columns">
-													June 15, 2018
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+														<input type="date" class="mb-0 borderless">
 												</div>
-												<div class="shrink columns">
-													<ul class="dropdown menu" data-dropdown-menu="4h4po6-dropdown-menu" role="menubar">
+												<div class="columns shrink align-top mb-0">
+													<button class="button small hollow clear secondary"> <i class="fa fa-clock"> </i> LOGS</button>
+												</div>
+											</div>
+											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+												<div class="columns medium-6 mb-0 border-radius-round pl-1">
+													<div>
+														<div class="fancy-checkbox small mb-0 ml-1">
+															<input id="Infectious Diseases at Virginia Mason" name="Infectious Diseases at Virginia Mason" type="checkbox" class="mr-0" checked>
+															<label class="" for="Infectious Diseases at Virginia Mason">Infectious Diseases at Virginia Mason</label>
+														</div>
+													</div>
+													<div class="ml-3">
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-user-md"> </i> DOCTORS <span class="tag no-action">19/24</span></button>
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-sticky-note"> </i> NOTES <span class="tag no-action">3</span></button>
+													</div>
+												</div>
+												<!-- <div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>None</small></option>
+														<option value="Enable">Enable</option>
+														<option value="Disable">Disable</option>
+													</select>
+												</div> -->
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+														<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns shrink align-top mb-0">
+													<button class="button small hollow clear secondary"> <i class="fa fa-clock"> </i> LOGS</button>
+												</div>
+											</div>
+
+											<div class="border-radius-sm auto-columns-3 pad1 pb-0-5 pt-0-5 row expanded">
+												<div class="columns medium-4 align-top mb-0">
+														<span class="clr-warning"><small><strong>TOLEDO</strong></small></span>
+												</div>
+											</div>
+											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+												<div class="columns medium-6 mb-0 border-radius-round pl-1">
+													<div>
+														<div class="fancy-checkbox small mb-0 ml-1">
+															<input id="Seattle Children's Nephrology" name="Seattle Children's Nephrology" type="checkbox" class="mr-0" checked>
+															<label class="" for="Seattle Children's Nephrology">Seattle Children's Nephrology</label>
+														</div>
+													</div>
+													<div class="ml-3">
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-user-md"> </i> DOCTORS <span class="tag no-action">19/24</span></button>
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-sticky-note"> </i> NOTES <span class="tag no-action">3</span></button>
+													</div>
+												</div>
+												<!-- <div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>None</small></option>
+														<option value="Enable">Enable</option>
+														<option value="Disable">Disable</option>
+													</select>
+												</div> -->
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+														<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns shrink align-top mb-0">
+													<button class="button small hollow clear secondary"> <i class="fa fa-clock"> </i> LOGS</button>
+												</div>
+											</div>
+											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+												<div class="columns medium-6 mb-0 border-radius-round pl-1">
+													<div>
+														<div class="fancy-checkbox small mb-0 ml-1">
+															<input id="Children's University Medical Group" name="Children's University Medical Group" type="checkbox" class="mr-0" checked>
+															<label class="" for="Children's University Medical Group">Children's University Medical Group</label>
+														</div>
+													</div>
+													<div class="ml-3">
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-user-md"> </i> DOCTORS <span class="tag no-action">19/24</span></button>
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-sticky-note"> </i> NOTES <span class="tag no-action">3</span></button>
+													</div>
+												</div>
+												<!-- <div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>None</small></option>
+														<option value="Enable">Enable</option>
+														<option value="Disable">Disable</option>
+													</select>
+												</div> -->
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+														<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns shrink align-top mb-0">
+													<button class="button small hollow clear secondary"> <i class="fa fa-clock"> </i> LOGS</button>
+												</div>
+											</div>
+											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+												<div class="columns medium-6 mb-0 border-radius-round pl-1">
+													<div>
+														<div class="fancy-checkbox small mb-0 ml-1">
+															<input id="University of Washington: Department of Pediatrics" name="University of Washington: Department of Pediatrics" type="checkbox" class="mr-0" checked>
+															<label class="" for="University of Washington: Department of Pediatrics">University of Washington: Department of Pediatrics</label>
+														</div>
+													</div>
+													<div class="ml-3">
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-user-md"> </i> DOCTORS <span class="tag no-action">19/24</span></button>
+														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-sticky-note"> </i> NOTES <span class="tag no-action">3</span></button>
+													</div>
+												</div>
+												<!-- <div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>None</small></option>
+														<option value="Enable">Enable</option>
+														<option value="Disable">Disable</option>
+													</select>
+												</div> -->
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+														<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns shrink align-top mb-0">
+													<button class="button small hollow clear secondary"> <i class="fa fa-clock"> </i> LOGS</button>
+												</div>
+											</div>
+																
+										</div>
+									</div>
+								</div>
+
+								<div class="tabs-panel" id="PSQ">
+									<div class="row expanded">
+													<div class="columns pl-0">
+											<input type="text" class="fancy-input round-corner" placeholder="Add Question">
+										</div>
+										<div class="columns"></div>
+													<!-- <div class="columns shrink">
+														<a data-open="exampleModal1" class="button success small rounded pull-right"><i class="fa fa-plus"></i> Add Question</a>
+													</div> -->
+												</div>
+												<div class="row expanded">
+													<div class="columns pl-0 pr-0">
+														
+														<div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm show-on-hover">
+												<div class="columns shrink pt-1 pb-1">
+																<p class="mb-0 clr-black20"><i class="fa fa-bars"></i></a></p>
+												</div>
+												<div class="columns pt-1 pb-1">
+																<p class="mb-0">What is your gender?</a></p>
+												</div>
+												<div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+													<a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+												</div>
+											</div>
+
+											<div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm show-on-hover">
+												<div class="columns shrink pt-1 pb-1">
+																<p class="mb-0 clr-black20"><i class="fa fa-bars"></i></a></p>
+												</div>
+												<div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+																<p class="mb-0">What medical or diagnostic test/s have you had in the past two years?</p>
+												</div>
+												<div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+													<a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+												</div>
+											</div>
+
+											<div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm show-on-hover">
+												<div class="columns shrink pt-1 pb-1">
+																<p class="mb-0 clr-black20"><i class="fa fa-bars"></i></a></p>
+												</div>
+												<div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+																<p class="mb-0">When was your last complete physical examination?</p>
+												</div>
+												<div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+													<a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+												</div>
+											</div>
+
+											<div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm show-on-hover">
+												<div class="columns shrink pt-1 pb-1">
+																<p class="mb-0 clr-black20"><i class="fa fa-bars"></i></a></p>
+												</div>
+												<div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+																<p class="mb-0">Are you currently taking any medications?</p>
+												</div>
+												<div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+													<a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+												</div>
+											</div>
+
+											<div class="row expanded bg-black20 pt-0 mb-0-5 border-radius-sm show-on-hover">
+												<div class="columns shrink pt-1 pb-1">
+																<p class="mb-0 clr-black20"><i class="fa fa-bars"></i></a></p>
+												</div>
+												<div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+																<p class="mb-0">Have you had any of the following medical conditions?</p>
+												</div>
+												<div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+													<a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+												</div>
+											</div>
+
+													</div>
+												</div>
+								</div>
+
+								<div class="tabs-panel" id="pathway">
+									<div class="row expanded">
+													<div class="columns pl-0">
+														<a href="#" class="button primary small rounded pull-right">+ Manage Event Pathway</a>
+													</div>
+												</div>
+												<div class="ml-1 mr-1">
+													
+													<div class="row expanded bg-black20 pt-0 mb-0-5 show-on-hover">
+											<div class="columns pt-1 pb-1 border-radius-sm">
+															<p class="mb-0">General Surgery pathway Event 1</p>
+											</div>
+											<div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+												<a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+											</div>
+										</div>
+
+										<div class="row expanded bg-black20 pt-0 mb-0-5 show-on-hover">
+											<div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+															<p class="mb-0">General Surgery pathway Event 2</p>
+											</div>
+											<div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+												<a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+											</div>
+										</div>
+
+										<div class="row expanded bg-black20 pt-0 mb-0-5 show-on-hover">
+											<div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+															<p class="mb-0">General Surgery pathway Event 3</p>
+											</div>
+											<div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+												<a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+											</div>
+										</div>
+
+										<div class="row expanded bg-black20 pt-0 mb-0-5 show-on-hover">
+											<div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+															<p class="mb-0">General Surgery pathway Event 4</p>
+											</div>
+											<div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+												<a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+											</div>
+										</div>
+
+										<div class="row expanded bg-black20 pt-0 mb-0-5 show-on-hover">
+											<div class="columns bg-black20 pt-1 pb-1 border-radius-sm">
+															<p class="mb-0">General Surgery pathway Event 5</p>
+											</div>
+											<div class="columns shrink hover-target align-middle hover-target" style="display: flex;">
+												<a href="" class="button clear hollow alert mb-0 pt-0-5 pb-0-5"><i class="fa fa-times"></i></a>
+											</div>
+										</div>
+												</div>
+								</div>
+
+								<div class="tabs-panel" id="employee">
+
+									<div class="row align-middle expanded mb-1">
+										<div class="columns pr-0-5">
+											<input type="text" class="fancy-input round-corner mb-0" placeholder="Search Employee">
+										</div>
+										<div class="columns shrink pl-0-5 dropdown">
+											<button class="dropbtn button clear hollow clr-black50 mb-0"><i class="fa fa-filter"></i></button>
+											<!-- <button class="dropbtn button hollow clear small success mb-0"><i class="fa fa-plus"></i> Add task</button> -->
+											<div class="dropdown-content expanded pad0">
+												<div>
+													<a href="#" class="pad0 pl-1 pr-1 pt-1 pb-1">
+														<p class="mb-0">All</p>
+													</a>
+												</div>
+												<div>
+													<a href="#" class="pad0 pl-1 pr-1 pt-1 pb-1">
+														<p class="mb-0">Awaiting Option</p>
+													</a>
+												</div>
+												<div>
+													<a href="#" class="pad0 pl-1 pr-1 pt-1 pb-1">
+														<p class="mb-0">pending Invites</p>
+													</a>
+												</div>
+												<div>
+													<a href="#" class="pad0 pl-1 pr-1 pt-1 pb-1">
+														<p class="mb-0">pending Selection</p>
+													</a>
+												</div>
+												<div>
+													<a href="#" class="pad0 pl-1 pr-1 pt-1 pb-1">
+														<p class="mb-0">Schedule Consultation</p>
+													</a>
+												</div>
+											</div>
+														
+										</div>
+										<div class="columns"></div>
+										<div class="columns shrink">
+											<div class="button-align small pull-right mb-0">
+												<a class="button success rounded" href="admin-employee-edit.html">+ Create New Employee</a>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="row expanded">
+										<div class="medium-12 columns">
+											
+											<div class="spoke-list">
+
+												<div class="spoke-list-heading row expanded align-middle">
+													<div class="medium-3 columns">
+														<input type="checkbox" class="mb-0 mr-1" name="">&nbsp; 
+														<a href="#">Employee <i class="fa fa-caret-up fa-fw"></i></a>
+													</div>
+													<div class="medium-4 columns">
+														<a href="#">Episode <i class="fa fa-caret-up fa-fw"></i></a>
+													</div>
+													<div class="medium-2 columns">
+														<a href="#">Advocate <i class="fa fa-caret-up fa-fw"></i></a>
+													</div>
+													<div class="medium-2 columns">
+														<a href="#">Last Activity <i class="fa fa-caret-up fa-fw"></i></a>
+													</div>
+													<div class="shrink columns">
+													</div>
+												</div>
+
+												<div class="spoke-list-item row expanded align-middle" onclick="location.href='advocate-employee-profile-v2.html'">
+													<div class="medium-3 columns">
+														<div class="row collapse align-middle">
+															<div class="shrink columns">
+																<input type="checkbox" class="mb-0 mr-1" name="">
+															</div>
+															<div class="columns">
+																<p class="h6 mb-0">John Doe</p>
+																<p class="subheader"><small><span class="badge success small"> </span> Account Created</small></p>
+															</div>
+														</div>
+													</div>
+													<div class="medium-4 columns">
+														<p><a href="advocate-employee-episode-v2.html">Total Knee Replacement</a></p>
+														<!-- <a href="#" class="button success hollow rounded tiny">Create Episode</a> -->
+													</div>
+													<div class="medium-2 columns">
+														<div class="media-object full-table fixed mt-0 mb-0">
+															<div class="media-object-section logo tiny middle">
+																<div class="img-wrapper circle">
+																		<img src="img/specialist.png">
+																</div>
+															</div>
+															<div class="media-object-section middle">
+																<p>Johnny Kennedy</p>
+															</div>
+														</div>
+													</div>
+													<div class="medium-2 columns">
+														June 15, 2018
+													</div>
+													<div class="shrink columns">
+														<ul class="dropdown menu" data-dropdown-menu="4h4po6-dropdown-menu" role="menubar">
+															<li role="menuitem" class="is-dropdown-submenu-parent opens-right" aria-haspopup="true" aria-expanded="false" aria-label="">
+																<a tabindex="0"></a>
+																<ul class="menu vertical submenu is-dropdown-submenu first-sub" data-submenu="" aria-hidden="true" role="menu">
+																	<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="#"><i class="fa fa-edit"></i>&nbsp; Edit</a></li>
+																	<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="#"><i class="fa fa-trash"></i>&nbsp; Delete</a></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+												</div>
+
+												<div class="spoke-list-item row expanded align-middle" onclick="location.href='advocate-employee-profile-v2.html'">
+													<div class="medium-3 columns">
+														<div class="row collapse align-middle">
+															<div class="shrink columns">
+																<input type="checkbox" class="mb-0 mr-1" name="">
+															</div>
+															<div class="columns">
+																<p class="h6 mb-0">Michelle Gonzalez</p>
+																<p class="subheader"><small><span class="badge alert small"> </span> No Active Episode</small></p>
+															</div>
+														</div>
+													</div>
+													<div class="medium-4 columns">
+														<!-- <p><a href="advocate-employee-episode-v2.html">Total Knee Replacement</a></p> -->
+														<a href="#" class="button success hollow rounded tiny">Create Episode</a>
+													</div>
+													<div class="medium-2 columns">
+														<div class="media-object full-table fixed mt-0 mb-0">
+																<div class="media-object-section logo tiny middle">
+																	<div class="img-wrapper circle">
+																			<img src="img/specialist.png">
+																	</div>
+																</div>
+																<div class="media-object-section middle">
+																		<p>Christine Lambert skjf sdlkfjals klsdjfl;a sdlkfjls</p>
+																</div>
+														</div>
+													</div>
+													<div class="medium-2 columns">
+														June 17, 2018
+													</div>
+													<div class="shrink columns">
+														<ul class="dropdown menu" data-dropdown-menu="x4540r-dropdown-menu" role="menubar">
+																									<li role="menuitem" class="is-dropdown-submenu-parent opens-right" aria-haspopup="true" aria-expanded="false" aria-label="">
+																											<a tabindex="0"></a>
+																											<ul class="menu vertical submenu is-dropdown-submenu first-sub" data-submenu="" aria-hidden="true" role="menu">
+																													<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="#"><i class="fa fa-edit"></i>&nbsp; Edit</a></li>
+																													<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="#"><i class="fa fa-trash"></i>&nbsp; Delete</a></li>
+																											</ul>
+																									</li>
+																							</ul>
+													</div>
+												</div>
+
+												<div class="spoke-list-item row expanded align-middle" onclick="location.href='advocate-employee-profile-v2.html'">
+													<div class="medium-3 columns">
+														<div class="row collapse align-middle">
+															<div class="shrink columns">
+																<input type="checkbox" class="mb-0 mr-1" name="">
+															</div>
+															<div class="columns">
+																<p class="h6">Craig Wilson</p>
+																<a href="#" class="button hollow rounded tiny mt-0-5"><i class="fa fa-envelope-o"></i>&nbsp; Send Invite</a>
+															</div>
+														</div>
+													</div>
+													<div class="medium-4 columns">
+														<p><a href="advocate-employee-episode-v2.html">Dental Surgery</a></p>
+														<!-- <a href="#" class="button success hollow rounded tiny">Create Episode</a> -->
+													</div>
+													<div class="medium-2 columns">
+														<div class="media-object full-table fixed mt-0 mb-0">
+																<div class="media-object-section logo tiny middle">
+																	<div class="img-wrapper circle">
+																			<img src="img/specialist.png">
+																	</div>
+																</div>
+																<div class="media-object-section middle">
+																		<p>Cheryl Mitchell</p>
+																</div>
+														</div>
+														<p></p>
+													</div>
+													<div class="medium-2 columns">
+														June 17, 2018
+													</div>
+													<div class="shrink columns">
+														<ul class="dropdown menu" data-dropdown-menu="6t1ov8-dropdown-menu" role="menubar">
+																									<li role="menuitem" class="is-dropdown-submenu-parent opens-right" aria-haspopup="true" aria-expanded="false" aria-label="">
+																											<a tabindex="0"></a>
+																											<ul class="menu vertical submenu is-dropdown-submenu first-sub" data-submenu="" aria-hidden="true" role="menu">
+																													<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="#"><i class="fa fa-edit"></i>&nbsp; Edit</a></li>
+																													<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="#"><i class="fa fa-trash"></i>&nbsp; Delete</a></li>
+																											</ul>
+																									</li>
+																							</ul>
+													</div>
+												</div>
+											</div>
+
+											<ul class="pagination text-center" role="navigation" aria-label="Pagination">
+												<li class="pagination-previous disabled">Previous</li>
+												<li class="current"><a href="#">1</a></li>
+												<li><a href="#" aria-label="Page 2">2</a></li>
+												<li><a href="#" aria-label="Page 3">3</a></li>
+												<li><a href="#" aria-label="Page 4">4</a></li>
+												<li class="ellipsis"></li>
+												<li><a href="#" aria-label="Page 12">12</a></li>
+												<li><a href="#" aria-label="Page 13">13</a></li>
+												<li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
+											</ul>	
+
+										</div>
+									</div>
+								</div>
+
+								<div class="tabs-panel" id="medicalprocedure">
+
+									<div class="row expanded">
+										<div class="medium-12 columns">
+											<nav aria-label="You are here:" role="navigation" class="mb-1">
+													<ul class="breadcrumbs">
+														<li><a href="#">Specializations OR Medical Procedures?</a></li>
+														<li><a href="#">Orthopedic</a></li>
+														<li>Orthopedic Surgery</li>						              
+														<!-- <li><a href="#">Subspecialization</a></li> -->
+														<!-- <li><a href="admin-packages.html">Teeth Surgery</a></li> -->
+														<!-- <li>Molar Root Canal</li> -->
+													</ul>
+											</nav>
+											<!-- <div class="row b-bottom-1">
+												<div class="columns shrink pl-0">
+														<button class="button small secondary clear hollow mb-0 mt-1">Select All</button>
+														<button class="button small secondary clear hollow mb-0 mt-1">Select None</button>
+												</div>
+											</div> -->
+											<div class="border-radius-sm auto-columns-3 pad1 pb-0-5 pt-0-5 row expanded b-bottom-1">
+												<div class="columns medium-4 align-top mb-0">
+														<span class="clr-black50"><small><strong>PROCEDURE</strong></small></span>
+												</div>
+												<div class="columns align-top mb-0">
+														<span class="clr-black50"><small><strong>COVERAGE LEVEL</strong></small></span>
+												</div>
+												<div class="columns align-top mb-0">
+													<span class="clr-black50"><small><strong>CUSTOM</strong></small></span>
+												</div>
+												<div class="columns align-top mb-0">
+													<span class="clr-black50"><small><strong>START DATE</strong></small></span>
+												</div>
+												<div class="columns align-top mb-0">
+													<span class="clr-black50"><small><strong>END DATE</strong></small></span>
+												</div>
+											</div>
+											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+												<div class="columns medium-4 align-top mb-0 border-radius-round pl-1">
+													<div class="fancy-checkbox small mb-0 ml-1">
+														<input id="AlternativeMedicine" name="AlternativeMedicine" type="checkbox" class="mr-0" checked>
+														<label class="" for="AlternativeMedicine">Alternative Medicine</label>
+													</div>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>Full</small></option>
+														<option value="Enable">nope</option>
+														<option value="Disable">nope</option>
+													</select>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>None</small></option>
+														<option value="Enable">Enable</option>
+														<option value="Disable">Disable</option>
+													</select>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<input type="date" class="mb-0 borderless disabled" disabled>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+														<input type="date" class="mb-0 borderless disabled" disabled>
+												</div>
+											</div>
+
+											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+												<div class="columns medium-4 align-top mb-0 border-radius-round pl-1">
+													<div class="fancy-checkbox small mb-0 ml-1">
+														<input id="Cardiology" name="Cardiology" type="checkbox" class="mr-0">
+														<label class="" for="Cardiology">Cardiology</label>
+													</div>
+												</div>
+												<!-- <div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>Full</small></option>
+														<option value="Enable">nope</option>
+														<option value="Disable">nope</option>
+													</select>
+												</div> -->
+												<!-- <div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>None</small></option>
+														<option value="Enable">Enable</option>
+														<option value="Disable">Disable</option>
+													</select>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+														<input type="date" class="mb-0 borderless">
+												</div> -->
+											</div>
+											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+												<div class="columns medium-4 align-top mb-0 border-radius-round pl-1">
+													<div class="fancy-checkbox small mb-0 ml-1">
+														<input id="Dentistry" name="Dentistry" type="checkbox" class="mr-0" checked>
+														<label class="" for="Cardiology">Dentistry</label>
+													</div>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>Full</small></option>
+														<option value="Enable">nope</option>
+														<option value="Disable">nope</option>
+													</select>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>None</small></option>
+														<option value="Enable" selected>Enable</option>
+														<option value="Disable">Disable</option>
+													</select>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+														<input type="date" class="mb-0 borderless">
+												</div>
+											</div>
+											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+												<div class="columns medium-4 align-top mb-0 border-radius-round pl-1">
+													<div class="fancy-checkbox small mb-0 ml-1">
+														<input id="Dermatology" name="Dermatology" type="checkbox" class="mr-0" checked>
+														<label class="" for="Dermatology">Dermatology</label>
+													</div>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>Full</small></option>
+														<option value="Enable">nope</option>
+														<option value="Disable">nope</option>
+													</select>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>None</small></option>
+														<option value="Enable">Enable</option>
+														<option value="Disable">Disable</option>
+													</select>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<input type="date" class="mb-0 borderless disabled" disabled>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+														<input type="date" class="mb-0 borderless disabled" disabled>
+												</div>
+											</div>
+											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+												<div class="columns medium-4 align-top mb-0 border-radius-round pl-1">
+													<div class="fancy-checkbox small mb-0 ml-1">
+														<input id="General Medicine" name="General Medicine" type="checkbox" class="mr-0" checked>
+														<label class="" for="General Medicine">General Medicine</label>
+													</div>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>Full</small></option>
+														<option value="Enable">nope</option>
+														<option value="Disable">nope</option>
+													</select>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>None</small></option>
+														<option value="Enable">Enable</option>
+														<option value="Disable">Disable</option>
+													</select>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<input type="date" class="mb-0 borderless disabled" disabled>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+														<input type="date" class="mb-0 borderless disabled" disabled>
+												</div>
+											</div>
+											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+												<div class="columns medium-4 align-top mb-0 border-radius-round pl-1">
+													<div class="fancy-checkbox small mb-0 ml-1">
+														<input id="Gastroenterology" name="Gastroenterology" type="checkbox" class="mr-0">
+														<label class="" for="Gastroenterology">Gastroenterology</label>
+													</div>
+												</div>
+												<!-- <div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>Full</small></option>
+														<option value="Enable">nope</option>
+														<option value="Disable">nope</option>
+													</select>
+												</div> -->
+												<!-- <div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>None</small></option>
+														<option value="Enable">Enable</option>
+														<option value="Disable">Disable</option>
+													</select>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+														<input type="date" class="mb-0 borderless">
+												</div> -->
+											</div>
+											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+												<div class="columns medium-4 align-top mb-0 border-radius-round pl-1">
+													<div class="fancy-checkbox small mb-0 ml-1">
+														<input id="General Medicine" name="General Medicine" type="checkbox" class="mr-0">
+														<label class="" for="General Medicine">General Medicine</label>
+													</div>
+												</div>
+												<!-- <div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>Full</small></option>
+														<option value="Enable">nope</option>
+														<option value="Disable">nope</option>
+													</select>
+												</div> -->
+												<!-- <div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>None</small></option>
+														<option value="Enable">Enable</option>
+														<option value="Disable">Disable</option>
+													</select>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+														<input type="date" class="mb-0 borderless">
+												</div> -->
+											</div>
+											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+												<div class="columns medium-4 align-top mb-0 border-radius-round pl-1">
+													<div class="fancy-checkbox small mb-0 ml-1">
+														<input id="General Surgery" name="General Surgery" type="checkbox" class="mr-0" checked>
+														<label class="" for="General Surgery">General Surgery</label>
+													</div>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>Full</small></option>
+														<option value="Enable">nope</option>
+														<option value="Disable">nope</option>
+													</select>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>None</small></option>
+														<option value="Enable">Enable</option>
+														<option value="Disable">Disable</option>
+													</select>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<input type="date" class="mb-0 borderless disabled" disabled>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+														<input type="date" class="mb-0 borderless disabled" disabled>
+												</div>
+											</div>
+											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+												<div class="columns medium-4 align-top mb-0 border-radius-round pl-1">
+													<div class="fancy-checkbox small mb-0 ml-1">
+														<input id="Internal Medicine" name="Internal Medicine" type="checkbox" class="mr-0" checked>
+														<label class="" for="Internal Medicine">Internal Medicine</label>
+													</div>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>Full</small></option>
+														<option value="Enable">nope</option>
+														<option value="Disable">nope</option>
+													</select>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>None</small></option>
+														<option value="Enable">Enable</option>
+														<option value="Disable">Disable</option>
+													</select>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<input type="date" class="mb-0 borderless disabled" disabled>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+														<input type="date" class="mb-0 borderless disabled" disabled>
+												</div>
+											</div>
+											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+												<div class="columns medium-4 align-top mb-0 border-radius-round pl-1">
+													<div class="fancy-checkbox small mb-0 ml-1">
+														<input id="Nephrology" name="Nephrology" type="checkbox" class="mr-0" checked>
+														<label class="" for="Nephrology">Nephrology</label>
+													</div>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>Full</small></option>
+														<option value="Enable">nope</option>
+														<option value="Disable">nope</option>
+													</select>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>None</small></option>
+														<option value="Enable">Enable</option>
+														<option value="Disable">Disable</option>
+													</select>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<input type="date" class="mb-0 borderless disabled" disabled>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+														<input type="date" class="mb-0 borderless disabled" disabled>
+												</div>
+											</div>
+											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+												<div class="columns medium-4 align-top mb-0 border-radius-round pl-1">
+													<div class="fancy-checkbox small mb-0 ml-1">
+														<input id="Obstetrics and Gybecology (OB/GYN)" name="Obstetrics and Gybecology (OB/GYN)" type="checkbox" class="mr-0" checked>
+														<label class="" for="Obstetrics and Gybecology (OB/GYN)">Obstetrics and Gybecology (OB/GYN)</label>
+													</div>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>Full</small></option>
+														<option value="Enable">nope</option>
+														<option value="Disable">nope</option>
+													</select>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>None</small></option>
+														<option value="Enable">Enable</option>
+														<option value="Disable">Disable</option>
+													</select>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<input type="date" class="mb-0 borderless disabled" disabled>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+														<input type="date" class="mb-0 borderless disabled" disabled>
+												</div>
+											</div>
+											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+												<div class="columns medium-4 align-top mb-0 border-radius-round pl-1">
+													<div class="fancy-checkbox small mb-0 ml-1">
+														<input id="Cardiology" name="Cardiology" type="checkbox" class="mr-0">
+														<label class="" for="Cardiology">Cardiology</label>
+													</div>
+												</div>
+												<!-- <div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>Full</small></option>
+														<option value="Enable">nope</option>
+														<option value="Disable">nope</option>
+													</select>
+												</div> -->
+												<!-- <div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>None</small></option>
+														<option value="Enable">Enable</option>
+														<option value="Disable">Disable</option>
+													</select>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+														<input type="date" class="mb-0 borderless">
+												</div> -->
+											</div>
+											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+												<div class="columns medium-4 align-top mb-0 border-radius-round pl-1">
+													<div class="fancy-checkbox small mb-0 ml-1">
+														<input id="Oncology" name="Oncology" type="checkbox" class="mr-0">
+														<label class="" for="Oncology">Oncology</label>
+													</div>
+												</div>
+												<!-- <div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>Full</small></option>
+														<option value="Enable">nope</option>
+														<option value="Disable">nope</option>
+													</select>
+												</div> -->
+												<!-- <div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>None</small></option>
+														<option value="Enable">Enable</option>
+														<option value="Disable">Disable</option>
+													</select>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+														<input type="date" class="mb-0 borderless">
+												</div> -->
+											</div>
+											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+												<div class="columns medium-4 align-top mb-0 border-radius-round pl-1">
+													<div class="fancy-checkbox small mb-0 ml-1">
+														<input id="Opthalmology" name="Opthalmology" type="checkbox" class="mr-0">
+														<label class="" for="Opthalmology">Opthalmology</label>
+													</div>
+												</div>
+												<!-- <div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>Full</small></option>
+														<option value="Enable">nope</option>
+														<option value="Disable">nope</option>
+													</select>
+												</div> -->
+												<!-- <div class="columns align-top mb-0 border-radius-round pl-1">
+													<select class="fancy-select mb-0 borderless">
+														<option value="None"><small>None</small></option>
+														<option value="Enable">Enable</option>
+														<option value="Disable">Disable</option>
+													</select>
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+													<input type="date" class="mb-0 borderless">
+												</div>
+												<div class="columns align-top mb-0 border-radius-round pl-1">
+														<input type="date" class="mb-0 borderless">
+												</div> -->
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+								<div class="tabs-panel" id="responders">
+
+									<div class="row align-middle expanded mb-1">
+										<div class="columns pr-0-5">
+											<input type="text" class="fancy-input round-corner mb-0" placeholder="Search responder">
+										</div>
+										<div class="columns shrink pl-0-5 dropdown">
+											<button class="dropbtn button clear hollow clr-black50 mb-0 "><i class="fa fa-filter"></i></button>
+											<div class="dropdown-content expanded pad0">
+												<div>
+													<a href="#" class="pad0 pl-1 pr-1 pt-1 pb-1">
+														<p class="mb-0">All</p>
+													</a>
+												</div>
+												<div>
+													<a href="#" class="pad0 pl-1 pr-1 pt-1 pb-1">
+														<p class="mb-0">Awaiting Option</p>
+													</a>
+												</div>
+												<div>
+													<a href="#" class="pad0 pl-1 pr-1 pt-1 pb-1">
+														<p class="mb-0">pending Invites</p>
+													</a>
+												</div>
+												<div>
+													<a href="#" class="pad0 pl-1 pr-1 pt-1 pb-1">
+														<p class="mb-0">pending Selection</p>
+													</a>
+												</div>
+												<div>
+													<a href="#" class="pad0 pl-1 pr-1 pt-1 pb-1">
+														<p class="mb-0">Schedule Consultation</p>
+													</a>
+												</div>
+											</div>
+											<button class="dropbtn button clear hollow clr-black50 mb-0"><i class="fa fa-trash"></i></button>
+													
+										</div> 
+										<div class="columns"></div>
+										<!--<div class="columns shrink">
+											<div class="button-align small pull-right mb-0">
+												<a class="button success rounded" href="admin-employee-edit.html">+ Create New Employee</a>
+											</div>
+										</div> -->
+
+									</div>
+
+									<div class="row expanded">
+										<div class="medium-12 columns">
+											
+											<div class="spoke-list">
+
+												<div class="spoke-list-heading row expanded align-middle">
+													<div class="medium-4 columns">
+														<input type="checkbox" class="mb-0 mr-1" name="">&nbsp; 
+														<a href="#">Responder <i class="fa fa-caret-up fa-fw"></i></a>
+													</div>
+													<div class="medium-5 columns">
+														<a href="#">Episode <i class="fa fa-caret-up fa-fw"></i></a>
+													</div>
+													<div class="medium-2 columns">
+														<a href="#">Last Activity <i class="fa fa-caret-up fa-fw"></i></a>
+													</div>
+													<div class="shrink columns">
+													</div>
+												</div>
+
+												<div class="spoke-list-item row expanded align-middle" onclick="location.href='advocate-employee-profile-v2.html'">
+													<div class="medium-4 columns">
+														<div class="row collapse align-middle">
+															<div class="shrink columns">
+																<input type="checkbox" class="mb-0 mr-1" name="">
+															</div>
+															<div class="columns">
+																<p class="h6 mb-0">Charlie Smith</p>
+															</div>
+														</div>
+													</div>
+													<div class="medium-5 columns">
+														<p><a href="advocate-employee-episode-v2.html">Total Knee Replacement</a></p>
+														<!-- <a href="#" class="button success hollow rounded tiny">Create Episode</a> -->
+													</div>
+													<div class="medium-2 columns">
+														June 15, 2018
+													</div>
+													<div class="shrink columns">
+														<ul class="dropdown menu" data-dropdown-menu="4h4po6-dropdown-menu" role="menubar">
+																<li role="menuitem" class="is-dropdown-submenu-parent opens-right" aria-haspopup="true" aria-expanded="false" aria-label="">
+																		<a tabindex="0"></a>
+																		<ul class="menu vertical submenu is-dropdown-submenu first-sub" data-submenu="" aria-hidden="true" role="menu">
+																				<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="#"><i class="fa fa-edit"></i>&nbsp; Edit</a></li>
+																				<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="#"><i class="fa fa-trash"></i>&nbsp; Delete</a></li>
+																		</ul>
+																</li>
+														</ul>
+													</div>
+												</div>
+
+												<div class="spoke-list-item row expanded align-middle" onclick="location.href='advocate-employee-profile-v2.html'">
+													<div class="medium-4 columns">
+														<div class="row collapse align-middle">
+															<div class="shrink columns">
+																<input type="checkbox" class="mb-0 mr-1" name="">
+															</div>
+															<div class="columns">
+																<p class="h6 mb-0">Michelle Gonzalez</p>
+															</div>
+														</div>
+													</div>
+													<div class="medium-5 columns">
+														<p><a href="advocate-employee-episode-v2.html">Total Knee Replacement</a></p>
+														<!-- <a href="#" class="button success hollow rounded tiny">Create Episode</a>-->
+													</div>
+													
+													<div class="medium-2 columns">
+														June 17, 2018
+													</div>
+													<div class="shrink columns">
+														<ul class="dropdown menu" data-dropdown-menu="x4540r-dropdown-menu" role="menubar">
 															<li role="menuitem" class="is-dropdown-submenu-parent opens-right" aria-haspopup="true" aria-expanded="false" aria-label="">
 																	<a tabindex="0"></a>
 																	<ul class="menu vertical submenu is-dropdown-submenu first-sub" data-submenu="" aria-hidden="true" role="menu">
@@ -983,96 +1609,150 @@
 																			<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="#"><i class="fa fa-trash"></i>&nbsp; Delete</a></li>
 																	</ul>
 															</li>
-													</ul>
+														</ul>
+													</div>
+												</div>
+
+												<div class="spoke-list-item row expanded align-middle" onclick="location.href='advocate-employee-profile-v2.html'">
+													<div class="medium-4 columns">
+														<div class="row collapse align-middle">
+															<div class="shrink columns">
+																<input type="checkbox" class="mb-0 mr-1" name="">
+															</div>
+															<div class="columns">
+																<p class="h6">Craig Wilson</p>
+															</div>
+														</div>
+													</div>
+													<div class="medium-5 columns">
+														<p><a href="advocate-employee-episode-v2.html">Dental Surgery</a></p>
+														<!-- <a href="#" class="button success hollow rounded tiny">Create Episode</a> -->
+													</div>
+													<div class="medium-2 columns">
+														June 17, 2018
+													</div>
+													<div class="shrink columns">
+														<ul class="dropdown menu" data-dropdown-menu="6t1ov8-dropdown-menu" role="menubar">
+															<li role="menuitem" class="is-dropdown-submenu-parent opens-right" aria-haspopup="true" aria-expanded="false" aria-label="">
+																	<a tabindex="0"></a>
+																	<ul class="menu vertical submenu is-dropdown-submenu first-sub" data-submenu="" aria-hidden="true" role="menu">
+																			<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="#"><i class="fa fa-edit"></i>&nbsp; Edit</a></li>
+																			<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="#"><i class="fa fa-trash"></i>&nbsp; Delete</a></li>
+																	</ul>
+															</li>
+														</ul>
+													</div>
 												</div>
 											</div>
 
-											<div class="spoke-list-item row expanded align-middle" onclick="location.href='advocate-employee-profile-v2.html'">
-												<div class="medium-4 columns">
-													<div class="row collapse align-middle">
-														<div class="shrink columns">
-															<input type="checkbox" class="mb-0 mr-1" name="">
-														</div>
-														<div class="columns">
-															<p class="h6 mb-0">Michelle Gonzalez</p>
-														</div>
-													</div>
-												</div>
-												<div class="medium-5 columns">
-													<p><a href="advocate-employee-episode-v2.html">Total Knee Replacement</a></p>
-													<!-- <a href="#" class="button success hollow rounded tiny">Create Episode</a>-->
-												</div>
-												
-												<div class="medium-2 columns">
-													June 17, 2018
-												</div>
-												<div class="shrink columns">
-													<ul class="dropdown menu" data-dropdown-menu="x4540r-dropdown-menu" role="menubar">
-														<li role="menuitem" class="is-dropdown-submenu-parent opens-right" aria-haspopup="true" aria-expanded="false" aria-label="">
-																<a tabindex="0"></a>
-																<ul class="menu vertical submenu is-dropdown-submenu first-sub" data-submenu="" aria-hidden="true" role="menu">
-																		<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="#"><i class="fa fa-edit"></i>&nbsp; Edit</a></li>
-																		<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="#"><i class="fa fa-trash"></i>&nbsp; Delete</a></li>
-																</ul>
-														</li>
-													</ul>
-												</div>
-											</div>
+											<ul class="pagination text-center" role="navigation" aria-label="Pagination">
+												<li class="pagination-previous disabled">Previous</li>
+												<li class="current"><a href="#">1</a></li>
+												<li><a href="#" aria-label="Page 2">2</a></li>
+												<li><a href="#" aria-label="Page 3">3</a></li>
+												<li><a href="#" aria-label="Page 4">4</a></li>
+												<li class="ellipsis"></li>
+												<li><a href="#" aria-label="Page 12">12</a></li>
+												<li><a href="#" aria-label="Page 13">13</a></li>
+												<li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
+											</ul>	
 
-											<div class="spoke-list-item row expanded align-middle" onclick="location.href='advocate-employee-profile-v2.html'">
-												<div class="medium-4 columns">
-													<div class="row collapse align-middle">
-														<div class="shrink columns">
-															<input type="checkbox" class="mb-0 mr-1" name="">
-														</div>
-														<div class="columns">
-															<p class="h6">Craig Wilson</p>
-														</div>
-													</div>
-												</div>
-												<div class="medium-5 columns">
-													<p><a href="advocate-employee-episode-v2.html">Dental Surgery</a></p>
-													<!-- <a href="#" class="button success hollow rounded tiny">Create Episode</a> -->
-												</div>
-												<div class="medium-2 columns">
-													June 17, 2018
-												</div>
-												<div class="shrink columns">
-													<ul class="dropdown menu" data-dropdown-menu="6t1ov8-dropdown-menu" role="menubar">
-														<li role="menuitem" class="is-dropdown-submenu-parent opens-right" aria-haspopup="true" aria-expanded="false" aria-label="">
-																<a tabindex="0"></a>
-																<ul class="menu vertical submenu is-dropdown-submenu first-sub" data-submenu="" aria-hidden="true" role="menu">
-																		<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="#"><i class="fa fa-edit"></i>&nbsp; Edit</a></li>
-																		<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="#"><i class="fa fa-trash"></i>&nbsp; Delete</a></li>
-																</ul>
-														</li>
-													</ul>
-												</div>
-											</div>
 										</div>
-
-										<ul class="pagination text-center" role="navigation" aria-label="Pagination">
-											<li class="pagination-previous disabled">Previous</li>
-											<li class="current"><a href="#">1</a></li>
-											<li><a href="#" aria-label="Page 2">2</a></li>
-											<li><a href="#" aria-label="Page 3">3</a></li>
-											<li><a href="#" aria-label="Page 4">4</a></li>
-											<li class="ellipsis"></li>
-											<li><a href="#" aria-label="Page 12">12</a></li>
-											<li><a href="#" aria-label="Page 13">13</a></li>
-											<li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
-										</ul>	
-
 									</div>
 								</div>
-							</div>
 
+								<div class="tabs-panel" id="corporatehsa">
+
+									<div class="border-radius-sm auto-columns-3 pad1 pb-0-5 pt-0-5 row expanded b-bottom-1">
+										<div class="columns medium-3 align-top mb-0">
+												<span class="clr-black50"><small><strong>TRANSACTION#</strong></small></span>
+										</div>
+										<div class="columns align-top mb-0">
+												<span class="clr-black50"><small><strong>DATE <i class="fa fa-caret-up fa-fw"></i></strong></small></span>
+										</div>
+										<div class="columns align-top mb-0">
+											<span class="clr-black50"><small><strong>BALANCE</strong></small></span>
+										</div>
+										<div class="columns align-top mb-0">
+											<span class="clr-black50"><small><strong>AMOUNT</strong></small></span>
+										</div>
+										<div class="columns align-top mb-0">
+											<span class="clr-black50"><small><strong>NEW BALANCE</strong></small></span>
+										</div>
+									</div>
+
+									<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+										<div class="columns medium-3 align-top mb-0 border-radius-round pl-1">
+											<div class="fancy-checkbox small mb-0 ml-1">
+												<strong>DJRRD-345-QQ3EFF</strong>
+											</div>
+										</div>
+										<div class="columns align-top mb-0 border-radius-round pl-1">
+											09/02/2020
+										</div>
+										<div class="columns align-top mb-0 border-radius-round pl-1">
+											$1,000.00
+										</div>
+										<div class="columns align-top mb-0 border-radius-round pl-1">
+											<span class="clr-alert">- $500.00</span>
+										</div>
+										<div class="columns align-top mb-0 border-radius-round pl-1">
+											$500.00
+										</div>
+									</div>
+
+									<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+										<div class="columns medium-3 align-top mb-0 border-radius-round pl-1">
+											<div class="fancy-checkbox small mb-0 ml-1">
+												<strong>DJRRD-446-QQ3EDY</strong>
+											</div>
+										</div>
+										<div class="columns align-top mb-0 border-radius-round pl-1">
+												08/26/2020
+										</div>
+										<div class="columns align-top mb-0 border-radius-round pl-1">
+												$6,000.00
+										</div>
+										<div class="columns align-top mb-0 border-radius-round pl-1">
+												<span class="clr-alert">- $5000.00</span>
+										</div>
+										<div class="columns align-top mb-0 border-radius-round pl-1">
+											$1000.00
+										</div>
+									</div>
+
+									<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+										<div class="columns medium-3 align-top mb-0 border-radius-round pl-1">
+											<div class="fancy-checkbox small mb-0 ml-1">
+												<strong>DJRRD-951-QQ3ETV</strong>
+											</div>
+										</div>
+										<div class="columns align-top mb-0 border-radius-round pl-1">
+												07/15/2020
+										</div>
+										<div class="columns align-top mb-0 border-radius-round pl-1">
+												$1,000.00
+										</div>
+										<div class="columns align-top mb-0 border-radius-round pl-1">
+												<span class="clr-success">+ $5000.00</span>
+										</div>
+										<div class="columns align-top mb-0 border-radius-round pl-1">
+											$6000.00
+										</div>
+									</div>
+
+								</div>
+
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<!-- MAIN CONTENT -->
+
 		</div>
-	</div>
+	
+
 
 	<div class="reveal reveal-body-scrollable large" id="addQuestion" data-reveal>
 		<div class="reveal-heading">
@@ -1365,7 +2045,7 @@
 			                <div class="columns">
 			                	<div class="label-group borderless">
 			                		<label>
-			                    	    Are you willing to be flexible on the schedule if we were able to secure a larger bonus?
+			                    	    Are you willing to be flehible on the schedule if we were able to secure a larger bonus?
 			                        </label>
 			                	</div>
 			                </div>

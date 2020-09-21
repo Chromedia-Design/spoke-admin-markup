@@ -1,0 +1,783 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spoke Admin Portal</title>
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+		<div id="master-container" class="sidebar-body">
+
+			<!-- SIDEBAR -->
+			<div class="site-nav sidebar">
+				<header>
+					<a href="#" class="logo text-center">
+						<img src="img/logo.png" title="Spoke">
+					</a>
+				</header>
+				<ul class="menu vertical"  data-accordion-menu>
+					<li>
+						<a href="#">Dashboard</a>
+					</li>
+					<li>
+						<a href="#">Practices</a>
+						<ul class="nested vertical menu is-active">
+							<li>
+								<a href="#">Specializations</a>
+							</li>
+							<li>
+								<a href="#">Treatments</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Packages</a>
+					</li>
+					<li>
+						<a href="#">Facilities</a>
+					</li>
+					<li>
+						<a href="#">Doctors</a>
+					</li>
+					<li>
+						<a href="#">Companies</a>
+					</li>
+					<li class="is-active">
+						<a href="#">Claims</a>
+					</li>
+					<li>
+						<a href="#">Content</a>
+					</li>
+					<li>
+						<a href="#">Users</a>
+					</li>
+				</ul>
+			</div>
+			<!-- SIDEBAR -->
+
+			<!-- MAIN CONTENT -->
+			<div class="content main-content scrollable">
+
+				<div class="top-bar stick-to-top">
+						<div class="top-bar-left">
+						<!-- <ul class="menu">
+									<li><input type="search" placeholder="Search"></li>
+									<li><button type="button" class="button">Search</button></li>
+							</ul> -->
+						</div>
+						<div class="top-bar-right">
+							<ul class="dropdown menu" data-dropdown-menu>
+								<li>
+									<a href="#"><i class="fa fa-bell-o fa-lg" aria-describedby="notifCount"></i><span class="alert badge" id="notifCount">6</span></a>
+								</li>
+									<li>
+										<a href="#">Administrator</a>
+										<ul class="menu vertical">
+												<li><a href="#">One</a></li>
+												<li><a href="#">Two</a></li>
+												<li><a href="#">Three</a></li>
+										</ul>
+									</li>
+							</ul>
+						</div>
+				</div>
+				<div>
+					<div class="row expanded mb-2">
+						<div class="medium-12 columns">
+							<div class="border-radius-sm auto-columns-3 pad1 pb-0-5 pt-0-5 row expanded b-bottom-1">
+								<div class="columns medium-3">
+										<input type="text" class="search" placeholder="SEARCH">
+								</div>
+								<div class="columns medium-3">
+									<button class="button hollow clear secondary"><i class="fa fa-filter"></i></button>
+								</div>
+							</div>
+							<div class="border-radius-sm auto-columns-3 pad1 pb-0-5 pt-0-5 row expanded b-bottom-1">
+								<div class="columns medium-3 align-top mb-0">
+										<span class="clr-black50"><small><strong>FACILITIES</strong></small></span>
+								</div>
+								<div class="columns medium-3 align-top mb-0">
+									<span class="clr-black50"><small><strong>PATIENT</strong></small></span>
+								</div>
+								<div class="columns medium-2 align-top mb-0">
+										<span class="clr-black50"><small><strong>RECEIPT</strong></small></span>
+									</div>
+								<div class="columns medium-2 align-top mb-0">
+									<span class="clr-black50"><small><strong>AMOUNT</strong></small></span>
+								</div>
+								<div class="columns shrink align-top mb-0">
+										<span class="clr-black50"><small><strong>ACTION</strong></small></span>
+								</div>
+							</div>
+							<div class="border-radius-sm auto-columns-3 pad1 pb-0-5 pt-0-5 row expanded">
+								<div class="columns align-top mb-0">
+										<span class="clr-warning"><small><strong>April 4 2020</strong></small></span>
+								</div>
+							</div>
+							
+							<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+								<div class="columns medium-3 mb-0 border-radius-round pl-1">
+									<div class="ml-1">
+										<p class="mb-0 clr-secondary"><strong><i class="fa fa-hospital"></i> High Precision Cebu</strong></p>
+										<p class="mb-0 ml-0-5"><small><i class="fa fa-user-md clr-secondary"></i> Dr. Albuen Rosello</small></p>
+									</div>	
+								</div>
+								<div class="columns medium-3 align-top mb-0">
+									<div>
+											<p class="mb-0 clr-secondary"><strong>Episode Name</strong></p>
+											<p class="mb-0 ml-0-5"><small>Diane Cortes</small></p>
+											<p class="mb-0 ml-0-5"><small>Chromedia far east inc</small></p>
+										</div>	
+								</div>
+								<div class="columns medium-2 align-top mb-0">
+										<button class="button small hollow clear secondary">View Receipt</button>
+								</div>
+								<div class="columns medium-2 align-top mb-0">
+										<p>P500.00</p>
+								</div>
+								<div class="columns shrink align-top mb-0">
+									<button class="button small warning mr-0-5"> <i class="fa fa-"> </i> Reject</button> 
+									<button class="button small secondary"> <i class="fa fa-"> </i> Approve</button>
+								</div>
+							</div>
+
+							<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+								<div class="columns medium-3 mb-0 border-radius-round pl-1">
+									<div class="ml-1">
+										<p class="mb-0 clr-secondary"><strong><i class="fa fa-hospital"></i> High Precision Cebu</strong></p>
+										<p class="mb-0 ml-0-5"><small><i class="fa fa-user-md clr-secondary"></i> Dr. Albuen Rosello</small></p>
+									</div>	
+								</div>
+								<div class="columns medium-3 align-top mb-0">
+									<div>
+											<p class="mb-0 clr-secondary"><strong>Episode Name</strong></p>
+											<p class="mb-0 ml-0-5"><small>Emman Calabroso</small></p>
+											<p class="mb-0 ml-0-5"><small>Chromedia far east inc</small></p>
+										</div>	
+								</div>
+								<div class="columns medium-2 align-top mb-0">
+										<button class="button small hollow clear secondary">View Receipt</button>
+								</div>
+								<div class="columns medium-2 align-top mb-0">
+										<p>P500.00</p>
+								</div>
+								<div class="columns shrink align-top mb-0">
+									<button class="button small warning mr-0-5"> <i class="fa fa-"> </i> Reject</button> 
+									<button class="button small secondary"> <i class="fa fa-"> </i> Approve</button>
+								</div>
+							</div>
+
+							<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+								<div class="columns medium-3 mb-0 border-radius-round pl-1">
+									<div class="ml-1">
+										<p class="mb-0 clr-secondary"><strong><i class="fa fa-hospital"></i> Ordoñez Medical Clinic</strong></p>
+										<p class="mb-0 ml-0-5"><small><i class="fa fa-user-md clr-secondary"></i> Dr. James Limpiado</small></p>
+									</div>	
+								</div>
+								<div class="columns medium-3 align-top mb-0">
+									<div>
+											<p class="mb-0 clr-secondary"><strong>Episode Name</strong></p>
+											<p class="mb-0 ml-0-5"><small>James Kuizon</small></p>
+											<p class="mb-0 ml-0-5"><small>Chromedia far east inc</small></p>
+										</div>	
+								</div>
+								<div class="columns medium-2 align-top mb-0">
+										<button class="button small hollow clear secondary">View Receipt</button>
+								</div>
+								<div class="columns medium-2 align-top mb-0">
+										<p>P500.00</p>
+								</div>
+								<div class="columns shrink align-top mb-0">
+									<button class="button small warning mr-0-5"> <i class="fa fa-"> </i> Reject</button> 
+									<button class="button small secondary"> <i class="fa fa-"> </i> Approve</button>
+								</div>
+							</div>
+
+							<div class="border-radius-sm auto-columns-3 pad1 pb-0-5 pt-0-5 row expanded">
+									<div class="columns align-top mb-0">
+											<span class="clr-warning"><small><strong>April 5 2020</strong></small></span>
+									</div>
+								</div>
+								
+								<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+									<div class="columns medium-3 mb-0 border-radius-round pl-1">
+										<div class="ml-1">
+											<p class="mb-0 clr-secondary"><strong><i class="fa fa-hospital"></i> MyHealth Clinic-Cybergate Cebu</strong></p>
+											<p class="mb-0 ml-0-5"><small><i class="fa fa-user-md clr-secondary"></i> Dr. Abby Cinco</small></p>
+										</div>	
+									</div>
+									<div class="columns medium-3 align-top mb-0">
+										<div>
+												<p class="mb-0 clr-secondary"><strong>Episode Name</strong></p>
+												<p class="mb-0 ml-0-5"><small>Chris Velarde</small></p>
+												<p class="mb-0 ml-0-5"><small>Chromedia far east inc</small></p>
+											</div>	
+									</div>
+									<div class="columns medium-2 align-top mb-0">
+											<button class="button small hollow clear secondary">View Receipt</button>
+									</div>
+									<div class="columns medium-2 align-top mb-0">
+											<p>P500.00</p>
+									</div>
+									<div class="columns shrink align-top mb-0">
+										<button class="button small warning mr-0-5"> <i class="fa fa-"> </i> Reject</button> 
+										<button class="button small secondary"> <i class="fa fa-"> </i> Approve</button>
+									</div>
+								</div>
+	
+								<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+									<div class="columns medium-3 mb-0 border-radius-round pl-1">
+										<div class="ml-1">
+											<p class="mb-0 clr-secondary"><strong><i class="fa fa-hospital"></i> LH Prime Medical Clinic Labangon</strong></p>
+											<p class="mb-0 ml-0-5"><small><i class="fa fa-user-md clr-secondary"></i> Dr. Mign yap</small></p>
+										</div>	
+									</div>
+									<div class="columns medium-3 align-top mb-0">
+										<div>
+												<p class="mb-0 clr-secondary"><strong>Episode Name</strong></p>
+												<p class="mb-0 ml-0-5"><small>Rey Cucio</small></p>
+												<p class="mb-0 ml-0-5"><small>Chromedia far east inc</small></p>
+											</div>	
+									</div>
+									<div class="columns medium-2 align-top mb-0">
+											<button class="button small hollow clear secondary">View Receipt</button>
+									</div>
+									<div class="columns medium-2 align-top mb-0">
+											<p>P500.00</p>
+									</div>
+									<div class="columns shrink align-top mb-0">
+										<button class="button small warning mr-0-5"> <i class="fa fa-"> </i> Reject</button> 
+										<button class="button small secondary"> <i class="fa fa-"> </i> Approve</button>
+									</div>
+								</div>
+	
+								<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
+									<div class="columns medium-3 mb-0 border-radius-round pl-1">
+										<div class="ml-1">
+											<p class="mb-0 clr-secondary"><strong><i class="fa fa-hospital"></i> Affinity Dental Clinics Cebu</strong></p>
+											<p class="mb-0 ml-0-5"><small><i class="fa fa-user-md clr-secondary"></i> Dr. Jayvee Valdez</small></p>
+										</div>	
+									</div>
+									<div class="columns medium-3 align-top mb-0">
+										<div>
+												<p class="mb-0 clr-secondary"><strong>Episode Name</strong></p>
+												<p class="mb-0 ml-0-5"><small>John Dino</small></p>
+												<p class="mb-0 ml-0-5"><small>Chromedia far east inc</small></p>
+											</div>	
+									</div>
+									<div class="columns medium-2 align-top mb-0">
+											<button class="button small hollow clear secondary">View Receipt</button>
+									</div>
+									<div class="columns medium-2 align-top mb-0">
+											<p>P500.00</p>
+									</div>
+									<div class="columns shrink align-top mb-0">
+										<button class="button small warning mr-0-5"> <i class="fa fa-"> </i> Reject</button> 
+										<button class="button small secondary"> <i class="fa fa-"> </i> Approve</button>
+									</div>
+								</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- MAIN CONTENT -->
+
+		</div>
+	
+
+
+	<div class="reveal reveal-body-scrollable large" id="addQuestion" data-reveal>
+		<div class="reveal-heading">
+			<strong>Manage Form Questions</strong>
+			<button class="close-button" data-close aria-label="Close modal" type="button">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+
+		<div class="reveal-body pad-0">
+			<div class="pad-1">
+				<div class="row">					
+					<div class="columns">
+						<div class="input-group mb-0-5">
+							<input class="input-group-field" type="text" placeholder="Add Choices">
+							<div class="input-group-button">
+								<button class="button primary"><i class="fa fa-plus"></i></button>
+							</div>
+			            </div>
+					</div>
+					<div class="columns shrink">
+						<button class="button"><i class="fa fa-sort"></i></button>
+						<button class="button"><i class="fa fa-filter"></i></button>
+					</div>
+				</div>
+
+				<div>
+					<div class="mb-2">
+
+						<div class="row label-block collapse align-middle flex mb-1">
+			                <div class="columns">
+			                	<div class="label-group borderless">
+			                		<span class="subheader"><strong>Onboarding</strong></span>
+			                	</div>
+			                </div>
+			                <div class="columns">
+			                	<button class="button hollow clear success mb-0 pull-right">Select All</button>
+			                </div>
+			            </div>
+
+
+
+						<div class="row label-block collapse align-middle flex">
+							<div class="shrink columns">
+								<div class="label-group borderless">
+									<div class="switch tiny mb-0">
+									  	<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+									  	<label class="switch-paddle" for="Q1">
+									    	<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+									  	</label>
+									</div>
+								</div>
+							</div>
+			                <div class="columns">
+			                	<div class="label-group borderless">
+			                		<label>
+			                	    	When were you thinking of having your surgery?
+			                        </label>
+			                	</div>
+			                </div>
+			            </div>
+
+			            <div class="row label-block collapse align-middle flex">
+							<div class="shrink columns">
+								<div class="label-group borderless">
+									<div class="switch tiny mb-0">
+									  	<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+									  	<label class="switch-paddle" for="Q1">
+									    	<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+									  	</label>
+									</div>
+								</div>
+							</div>
+			                <div class="columns">
+			                	<div class="label-group borderless">
+			                		<label>
+			                    	    Are you willing to be flexible on the schedule if we were able to secure a larger bonus?
+			                        </label>
+			                	</div>
+			                </div>
+			            </div>
+
+			            <div class="row label-block collapse align-middle flex">
+							<div class="shrink columns">
+								<div class="label-group borderless">
+									<div class="switch tiny mb-0">
+									  	<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+									  	<label class="switch-paddle" for="Q1">
+									    	<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+									  	</label>
+									</div>
+								</div>
+							</div>
+			                <div class="columns">
+			                	<div class="label-group borderless">
+			                		<label>
+			                        	 Are you willing to travel outside your local area if a larger bonus were available?
+			                        </label>
+			                	</div>
+			                </div>
+			            </div>
+
+			            <div class="row label-block collapse align-middle flex">
+							<div class="shrink columns">
+								<div class="label-group borderless">
+									<div class="switch tiny mb-0">
+									  	<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+									  	<label class="switch-paddle" for="Q1">
+									    	<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+									  	</label>
+									</div>
+								</div>
+							</div>
+			                <div class="columns">
+			                	<div class="label-group borderless">
+			                		<label>
+			                    	   	Are you using any other health benefit programs?
+			                        </label>
+			                	</div>
+			                </div>
+			            </div>
+
+			            <div class="row label-block collapse align-middle flex">
+							<div class="shrink columns">
+								<div class="label-group borderless">
+									<div class="switch tiny mb-0">
+									  	<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+									  	<label class="switch-paddle" for="Q1">
+									    	<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+									  	</label>
+									</div>
+								</div>
+							</div>
+			                <div class="columns">
+			                	<div class="label-group borderless">
+			                		<label>
+			                        	 Are you willing to travel outside your local area if a larger bonus were available?
+			                        </label>
+			                	</div>
+			                </div>
+			            </div>
+
+			            <div class="row label-block collapse align-middle flex">
+							<div class="shrink columns">
+								<div class="label-group borderless">
+									<div class="switch tiny mb-0">
+									  	<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+									  	<label class="switch-paddle" for="Q1">
+									    	<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+									  	</label>
+									</div>
+								</div>
+							</div>
+			                <div class="columns">
+			                	<div class="label-group borderless">
+			                		<label>
+			                    	   	Are you using any other health benefit programs?
+			                        </label>
+			                	</div>
+			                </div>
+			            </div>
+
+			            <div class="row label-block collapse align-middle flex">
+							<div class="shrink columns">
+								<div class="label-group borderless">
+									<div class="switch tiny mb-0">
+									  	<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+									  	<label class="switch-paddle" for="Q1">
+									    	<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+									  	</label>
+									</div>
+								</div>
+							</div>
+			                <div class="columns">
+			                	<div class="label-group borderless">
+			                		<label>
+			                	    	When were you thinking of having your surgery?
+			                        </label>
+			                	</div>
+			                </div>
+			            </div>
+
+			            <div class="row label-block collapse align-middle flex">
+							<div class="shrink columns">
+								<div class="label-group borderless">
+									<div class="switch tiny mb-0">
+									  	<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+									  	<label class="switch-paddle" for="Q1">
+									    	<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+									  	</label>
+									</div>
+								</div>
+							</div>
+			                <div class="columns">
+			                	<div class="label-group borderless">
+			                		<label>
+			                    	    Are you willing to be flexible on the schedule if we were able to secure a larger bonus?
+			                        </label>
+			                	</div>
+			                </div>
+			            </div>
+
+			            <div class="row label-block collapse align-middle flex">
+							<div class="shrink columns">
+								<div class="label-group borderless">
+									<div class="switch tiny mb-0">
+									  	<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+									  	<label class="switch-paddle" for="Q1">
+									    	<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+									  	</label>
+									</div>
+								</div>
+							</div>
+			                <div class="columns">
+			                	<div class="label-group borderless">
+			                		<label>
+			                        	 Are you willing to travel outside your local area if a larger bonus were available?
+			                        </label>
+			                	</div>
+			                </div>
+			            </div>
+
+			            <div class="row label-block collapse align-middle flex">
+							<div class="shrink columns">
+								<div class="label-group borderless">
+									<div class="switch tiny mb-0">
+									  	<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+									  	<label class="switch-paddle" for="Q1">
+									    	<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+									  	</label>
+									</div>
+								</div>
+							</div>
+			                <div class="columns">
+			                	<div class="label-group borderless">
+			                		<label>
+			                    	   	Are you using any other health benefit programs?
+			                        </label>
+			                	</div>
+			                </div>
+			            </div>
+					</div>
+
+					<div class="mb-2">
+
+						<div class="row label-block collapse align-middle flex mb-1">
+			                <div class="columns">
+			                	<div class="label-group borderless">
+			                		<span class="subheader"><strong>After Surgery</strong></span>
+			                	</div>
+			                </div>
+			                <div class="columns">
+			                	<button class="button hollow clear success mb-0 pull-right">Select All</button>
+			                </div>
+			            </div>
+
+
+
+						<div class="row label-block collapse align-middle flex">
+							<div class="shrink columns">
+								<div class="label-group borderless">
+									<div class="switch tiny mb-0">
+									  	<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+									  	<label class="switch-paddle" for="Q1">
+									    	<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+									  	</label>
+									</div>
+								</div>
+							</div>
+			                <div class="columns">
+			                	<div class="label-group borderless">
+			                		<label>
+			                	    	When were you thinking of having your surgery?
+			                        </label>
+			                	</div>
+			                </div>
+			            </div>
+
+			            <div class="row label-block collapse align-middle flex">
+							<div class="shrink columns">
+								<div class="label-group borderless">
+									<div class="switch tiny mb-0">
+									  	<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+									  	<label class="switch-paddle" for="Q1">
+									    	<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+									  	</label>
+									</div>
+								</div>
+							</div>
+			                <div class="columns">
+			                	<div class="label-group borderless">
+			                		<label>
+			                    	    Are you willing to be flexible on the schedule if we were able to secure a larger bonus?
+			                        </label>
+			                	</div>
+			                </div>
+			            </div>
+
+			            <div class="row label-block collapse align-middle flex">
+							<div class="shrink columns">
+								<div class="label-group borderless">
+									<div class="switch tiny mb-0">
+									  	<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+									  	<label class="switch-paddle" for="Q1">
+									    	<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+									  	</label>
+									</div>
+								</div>
+							</div>
+			                <div class="columns">
+			                	<div class="label-group borderless">
+			                		<label>
+			                        	 Are you willing to travel outside your local area if a larger bonus were available?
+			                        </label>
+			                	</div>
+			                </div>
+			            </div>
+
+			            <div class="row label-block collapse align-middle flex">
+							<div class="shrink columns">
+								<div class="label-group borderless">
+									<div class="switch tiny mb-0">
+									  	<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+									  	<label class="switch-paddle" for="Q1">
+									    	<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+									  	</label>
+									</div>
+								</div>
+							</div>
+			                <div class="columns">
+			                	<div class="label-group borderless">
+			                		<label>
+			                    	   	Are you using any other health benefit programs?
+			                        </label>
+			                	</div>
+			                </div>
+			            </div>
+
+			            <div class="row label-block collapse align-middle flex">
+							<div class="shrink columns">
+								<div class="label-group borderless">
+									<div class="switch tiny mb-0">
+									  	<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+									  	<label class="switch-paddle" for="Q1">
+									    	<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+									  	</label>
+									</div>
+								</div>
+							</div>
+			                <div class="columns">
+			                	<div class="label-group borderless">
+			                		<label>
+			                        	 Are you willing to travel outside your local area if a larger bonus were available?
+			                        </label>
+			                	</div>
+			                </div>
+			            </div>
+
+			            <div class="row label-block collapse align-middle flex">
+							<div class="shrink columns">
+								<div class="label-group borderless">
+									<div class="switch tiny mb-0">
+									  	<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+									  	<label class="switch-paddle" for="Q1">
+									    	<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+									  	</label>
+									</div>
+								</div>
+							</div>
+			                <div class="columns">
+			                	<div class="label-group borderless">
+			                		<label>
+			                    	   	Are you using any other health benefit programs?
+			                        </label>
+			                	</div>
+			                </div>
+			            </div>
+
+			            <div class="row label-block collapse align-middle flex">
+							<div class="shrink columns">
+								<div class="label-group borderless">
+									<div class="switch tiny mb-0">
+									  	<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+									  	<label class="switch-paddle" for="Q1">
+									    	<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+									  	</label>
+									</div>
+								</div>
+							</div>
+			                <div class="columns">
+			                	<div class="label-group borderless">
+			                		<label>
+			                	    	When were you thinking of having your surgery?
+			                        </label>
+			                	</div>
+			                </div>
+			            </div>
+
+			            <div class="row label-block collapse align-middle flex">
+							<div class="shrink columns">
+								<div class="label-group borderless">
+									<div class="switch tiny mb-0">
+									  	<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+									  	<label class="switch-paddle" for="Q1">
+									    	<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+									  	</label>
+									</div>
+								</div>
+							</div>
+			                <div class="columns">
+			                	<div class="label-group borderless">
+			                		<label>
+			                    	    Are you willing to be flexible on the schedule if we were able to secure a larger bonus?
+			                        </label>
+			                	</div>
+			                </div>
+			            </div>
+
+			            <div class="row label-block collapse align-middle flex">
+							<div class="shrink columns">
+								<div class="label-group borderless">
+									<div class="switch tiny mb-0">
+									  	<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+									  	<label class="switch-paddle" for="Q1">
+									    	<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+									  	</label>
+									</div>
+								</div>
+							</div>
+			                <div class="columns">
+			                	<div class="label-group borderless">
+			                		<label>
+			                        	 Are you willing to travel outside your local area if a larger bonus were available?
+			                        </label>
+			                	</div>
+			                </div>
+			            </div>
+
+			            <div class="row label-block collapse align-middle flex">
+							<div class="shrink columns">
+								<div class="label-group borderless">
+									<div class="switch tiny mb-0">
+									  	<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+									  	<label class="switch-paddle" for="Q1">
+									    	<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+									  	</label>
+									</div>
+								</div>
+							</div>
+			                <div class="columns">
+			                	<div class="label-group borderless">
+			                		<label>
+			                    	   	Are you using any other health benefit programs?
+			                        </label>
+			                	</div>
+			                </div>
+			            </div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="reveal-footer b-top-1-darker">
+			<button class="button success pull-right">Done</button>
+		</div>	
+	</div>
+
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/what-input/what-input.js"></script>
+	<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.toggler.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.motion.js"></script>
+	<script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+
+	<script src="js/app.js"></script>
+
+	<script type="text/javascript">
+        $(function () {
+            var timer;
+
+            $(window).resize(function() {
+                clearTimeout(timer);
+                timer = setTimeout(function() {
+                  $('.site-nav, .content').css("height", $(window).height());
+                }, 40); 
+            }).resize();
+        });
+    </script>
+
+</body>
+</html>
