@@ -1050,7 +1050,6 @@ input {
 }
 
 .fancy-select {
-  
 }
 
 .fancy-input-tag {
@@ -1271,7 +1270,7 @@ input {
   display: table;
   position: relative;
   margin: 0 0 0.5rem 0;
-  width: auto;
+  width: 100%;
   height: auto;
   text-align: left;
   cursor: pointer;
@@ -1293,7 +1292,7 @@ input {
       }
     }
     label {
-      color: $success-color;
+      // color: $success-color;
     }
   }
 

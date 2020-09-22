@@ -167,20 +167,17 @@
 														<button class="button small secondary hollow clear mb-0 mt-1">Select None</button>
 												</div>
 											</div> -->
-											<div class="border-radius-sm auto-columns-3 pad1 pb-0-5 pt-0-5 row expanded b-bottom-1">
-												<div class="columns medium-6 align-top mb-0">
+											<div class="pad1 pb-0-5 pt-0-5 row expanded b-bottom-1 bg-cloud">
+												<div class="columns medium-4 align-top mb-0">
 														<span class="clr-black50"><small><strong>FACILITIES</strong></small></span>
 												</div>
-												<!-- <div class="columns align-top mb-0">
-													<span class="clr-black50"><small><strong>CUSTOM</strong></small></span>
-												</div> -->
-												<div class="columns align-top mb-0">
-													<span class="clr-black50"><small><strong>START DATE</strong></small></span>
+												<div class="columns medium-3 align-top mb-0">
+													<span class="clr-black50"><small><strong>CUSTOM DATE</strong></small></span>
 												</div>
+												<div class="columns medium-1 mb-0"></div>
 												<div class="columns align-top mb-0">
-													<span class="clr-black50"><small><strong>END DATE</strong></small></span>
+													<span class="clr-black50"><small><strong>NOTES</strong></small></span>
 												</div>
-												<div class="columns medium-1 align-top mb-0"></div>
 											</div>
 											<div class="border-radius-sm auto-columns-3 pad1 pb-0-5 pt-0-5 row expanded">
 												<div class="columns medium-4 align-top mb-0">
@@ -188,39 +185,83 @@
 												</div>
 											</div>
 											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
-												<div class="columns medium-6 mb-0 border-radius-round pl-1">
+												<div class="columns medium-4 mb-0 border-radius-round pl-1">
 													<div>
-														<div class="fancy-checkbox small mb-0 ml-1">
+														<div class="fancy-checkbox success small mb-0 ml-1">
 																<input id="Virginia Mason Hospital and Seattle Medical Center" name="Virginia Mason Hospital and Seattle Medical Center" type="checkbox" class="mr-0" checked>
 																<label class="" for="Virginia Mason Hospital and Seattle Medical Center">Virginia Mason Hospital and Seattle Medical Center</label>
 															</div>
 														</div>	
 														<div class="ml-3">
 														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-user-md"> </i> DOCTORS <span class="tag no-action">19/24</span></button>
-														<button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-sticky-note"> </i> NOTES <span class="tag alert no-action">3</span></button>
+														<button class="button tiny hollow clear secondary mb-0" data-open="companyFacilityLogs"> <i class="fa fa-clock"> </i> LOGS <span class="tag no-action">3</span></button>
+														<!-- <button class="button tiny hollow clear secondary mb-0"> <i class="fa fa-sticky-note"> </i> NOTES <span class="tag alert no-action">3</span></button> -->
 													</div>
 												</div>
-												<!-- <div class="columns align-top mb-0 border-radius-round pl-1">
-													<select class="fancy-select mb-0 borderless">
-														<option value="None"><small>None</small></option>
-														<option value="Enable">Enable</option>
-														<option value="Disable">Disable</option>
-													</select>
-												</div> -->
-												<div class="columns align-top mb-0 border-radius-round pl-1">
-													<input type="date" class="mb-0 borderless">
-												</div>
-												<div class="columns align-top mb-0 border-radius-round pl-1">
+												<div class="columns medium-3 mb-0">
+													<p>
+														<span class="clr-black50"><small><strong>START</strong></small></span>
 														<input type="date" class="mb-0 borderless">
+													</p>
+													<p>
+														<span class="clr-black50"><small><strong>END</strong></small></span>
+														<input type="date" class="mb-0 borderless"></p>
 												</div>
-												<div class="columns shrink align-top mb-0">
-													<button class="button small hollow clear secondary"> <i class="fa fa-clock"> </i> LOGS</button>
+												<div class="columns medium-1 mb-0"></div>
+												<div class="columns mb-0">
+													<div class="mb-0-5 row">
+														<div class="columns shrink">
+															<div class="circle">
+																	<img src="img/specialist.png" width="40px">
+															</div>
+														</div>
+														<div class="columns">
+															<p class="mb-0">
+																<small><strong>Jonard Puno • 07/12/2020 10:19 AM</strong></small> 
+																<button class="button clear hollow small secondary mb-0"><i class="fa fa-pen"></i></button> 
+																<button class="button clear hollow small alert mb-0"><i class="fa fa-trash"></i></button> 
+															</p>
+															<p class="mb-0"><small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem corporis ad, excepturi placeat harum quisquam debitis facilis minus repudiandae culpa natus dignissimos sit obcaecati voluptatem, labore mollitia fuga similique enim et dicta asperiores maiores.</small></p>
+														</div>
+													</div>
+													<div class="mb-0-5 row">
+														<div class="columns shrink">
+															<div class="circle">
+																	<img src="img/specialist-1.png" width="40px">
+															</div>
+														</div>
+														<div class="columns">
+																<p class="mb-0">
+																	<small><strong>Joshua Ramirez • 07/15/2020 08:33 AM</strong></small>
+																	<button class="button clear hollow tiny secondary mb-0"><i class="fa fa-pen"></i></button> 
+																	<button class="button clear hollow tiny alert mb-0"><i class="fa fa-trash"></i></button> 
+																</p>
+																<p class="mb-0"><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam minus expedita distinctio.</small></p>
+														</div>
+													</div>
+													<div class="mb-0-5 row">
+														<div class="columns shrink">
+															<div class="circle">
+																	<img src="img/middle-aged-lady-round.jpg" width="40px">
+															</div>
+														</div>
+														<div class="columns">
+															<p class="mb-0">
+																<small><strong>karen Alipio • 07/23/2020 04:19 PM</strong></small>
+																<button class="button clear hollow small secondary mb-0"><i class="fa fa-pen"></i></button> 
+																<button class="button clear hollow small alert mb-0"><i class="fa fa-trash"></i></button> 
+															</p>
+															<p class="mb-0"><small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus beatae sint similique eaque.</small></p>
+														</div>
+													</div>
+													
+													
 												</div>
 											</div>
 											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
 												<div class="columns medium-6 mb-0 border-radius-round pl-1">
 													<div>
-														<div class="fancy-checkbox small mb-0 ml-1">
+														<div class="fancy-checkbox success small mb-0 ml-1">
 															<input id="Kindred Hospital Seattle - First Hill" name="Kindred Hospital Seattle - First Hill" type="checkbox" class="mr-0" checked>
 															<label class="" for="Kindred Hospital Seattle - First Hill">Kindred Hospital Seattle - First Hill</label>
 														</div>
@@ -250,7 +291,7 @@
 											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
 												<div class="columns medium-6 mb-0 border-radius-round pl-1">
 													<div>
-														<div class="fancy-checkbox small mb-0 ml-1">
+														<div class="fancy-checkbox success small mb-0 ml-1">
 															<input id="Seattle Children's Hospital" name="Seattle Children's Hospital" type="checkbox" class="mr-0" checked>
 															<label class="" for="Seattle Children's Hospital">Seattle Children's Hospital</label>
 														</div>
@@ -280,7 +321,7 @@
 											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
 												<div class="columns medium-6 mb-0 border-radius-round pl-1">
 													<div>
-														<div class="fancy-checkbox small mb-0 ml-1">
+														<div class="fancy-checkbox success small mb-0 ml-1">
 															<input id="Kindred Hospital Seattle - Northgate" name="Kindred Hospital Seattle - Northgate" type="checkbox" class="mr-0" checked>
 															<label class="" for="Kindred Hospital Seattle - Northgate">Kindred Hospital Seattle - Northgate</label>
 														</div>
@@ -316,7 +357,7 @@
 											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
 												<div class="columns medium-6 mb-0 border-radius-round pl-1">
 													<div>
-														<div class="fancy-checkbox small mb-0 ml-1">
+														<div class="fancy-checkbox success small mb-0 ml-1">
 															<input id="Virginia Mason Hospital: Seattle" name="Virginia Mason Hospital: Seattle" type="checkbox" class="mr-0" checked>
 															<label class="" for="Virginia Mason Hospital: Seattle">Virginia Mason Hospital: Seattle</label>
 														</div>
@@ -346,7 +387,7 @@
 											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
 												<div class="columns medium-6 mb-0 border-radius-round pl-1">
 													<div>
-														<div class="fancy-checkbox small mb-0 ml-1">
+														<div class="fancy-checkbox success small mb-0 ml-1">
 															<input id="First Hill Medical Swedish Hospital" name="First Hill Medical Swedish Hospital" type="checkbox" class="mr-0" checked>
 															<label class="" for="First Hill Medical Swedish Hospital">First Hill Medical Swedish Hospital</label>
 														</div>
@@ -376,7 +417,7 @@
 											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
 												<div class="columns medium-6 mb-0 border-radius-round pl-1">
 													<div>
-														<div class="fancy-checkbox small mb-0 ml-1">
+														<div class="fancy-checkbox success small mb-0 ml-1">
 															<input id="Northwest Hospital & Medical Center" name="Northwest Hospital & Medical Center" type="checkbox" class="mr-0" checked>
 															<label class="" for="Northwest Hospital & Medical Center">Northwest Hospital & Medical Center</label>
 														</div>
@@ -406,7 +447,7 @@
 											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
 												<div class="columns medium-6 mb-0 border-radius-round pl-1">
 													<div>
-														<div class="fancy-checkbox small mb-0 ml-1">
+														<div class="fancy-checkbox success small mb-0 ml-1">
 															<input id="Schick Shadel Hospital" name="Schick Shadel Hospital" type="checkbox" class="mr-0" checked>
 															<label class="" for="Schick Shadel Hospital">Schick Shadel Hospital</label>
 														</div>
@@ -442,7 +483,7 @@
 											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
 												<div class="columns medium-6 mb-0 border-radius-round pl-1">
 													<div>
-														<div class="fancy-checkbox small mb-0 ml-1">
+														<div class="fancy-checkbox success small mb-0 ml-1">
 															<input id="Swedish Medical Center Ballard Campus" name="Swedish Medical Center Ballard Campus" type="checkbox" class="mr-0" checked>
 															<label class="" for="Swedish Medical Center Ballard Campus">Swedish Medical Center Ballard Campus</label>
 														</div>
@@ -472,7 +513,7 @@
 											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
 												<div class="columns medium-6 mb-0 border-radius-round pl-1">
 													<div>
-														<div class="fancy-checkbox small mb-0 ml-1">
+														<div class="fancy-checkbox success small mb-0 ml-1">
 															<input id="Swedish Cherry Hill Campus" name="Swedish Cherry Hill Campus" type="checkbox" class="mr-0" checked>
 															<label class="" for="Swedish Cherry Hill Campus">Swedish Cherry Hill Campus</label>
 														</div>
@@ -502,7 +543,7 @@
 											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
 												<div class="columns medium-6 mb-0 border-radius-round pl-1">
 													<div>
-														<div class="fancy-checkbox small mb-0 ml-1">
+														<div class="fancy-checkbox success small mb-0 ml-1">
 															<input id="Seattle Children's Odessa Brown Children's Clinic" name="Seattle Children's Odessa Brown Children's Clinic" type="checkbox" class="mr-0" checked>
 															<label class="" for="Seattle Children's Odessa Brown Children's Clinic">Seattle Children's Odessa Brown Children's Clinic</label>
 														</div>
@@ -538,7 +579,7 @@
 											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
 												<div class="columns medium-6 mb-0 border-radius-round pl-1">
 													<div>
-														<div class="fancy-checkbox small mb-0 ml-1">
+														<div class="fancy-checkbox success small mb-0 ml-1">
 															<input id="Harborview Medical Center" name="Harborview Medical Center" type="checkbox" class="mr-0" checked>
 															<label class="" for="Harborview Medical Center">Harborview Medical Center</label>
 														</div>
@@ -568,7 +609,7 @@
 											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
 												<div class="columns medium-6 mb-0 border-radius-round pl-1">
 													<div>
-														<div class="fancy-checkbox small mb-0 ml-1">
+														<div class="fancy-checkbox success small mb-0 ml-1">
 															<input id="Infectious Diseases at Virginia Mason" name="Infectious Diseases at Virginia Mason" type="checkbox" class="mr-0" checked>
 															<label class="" for="Infectious Diseases at Virginia Mason">Infectious Diseases at Virginia Mason</label>
 														</div>
@@ -604,7 +645,7 @@
 											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
 												<div class="columns medium-6 mb-0 border-radius-round pl-1">
 													<div>
-														<div class="fancy-checkbox small mb-0 ml-1">
+														<div class="fancy-checkbox success small mb-0 ml-1">
 															<input id="Seattle Children's Nephrology" name="Seattle Children's Nephrology" type="checkbox" class="mr-0" checked>
 															<label class="" for="Seattle Children's Nephrology">Seattle Children's Nephrology</label>
 														</div>
@@ -634,7 +675,7 @@
 											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
 												<div class="columns medium-6 mb-0 border-radius-round pl-1">
 													<div>
-														<div class="fancy-checkbox small mb-0 ml-1">
+														<div class="fancy-checkbox success small mb-0 ml-1">
 															<input id="Children's University Medical Group" name="Children's University Medical Group" type="checkbox" class="mr-0" checked>
 															<label class="" for="Children's University Medical Group">Children's University Medical Group</label>
 														</div>
@@ -664,7 +705,7 @@
 											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
 												<div class="columns medium-6 mb-0 border-radius-round pl-1">
 													<div>
-														<div class="fancy-checkbox small mb-0 ml-1">
+														<div class="fancy-checkbox success small mb-0 ml-1">
 															<input id="University of Washington: Department of Pediatrics" name="University of Washington: Department of Pediatrics" type="checkbox" class="mr-0" checked>
 															<label class="" for="University of Washington: Department of Pediatrics">University of Washington: Department of Pediatrics</label>
 														</div>
@@ -1068,7 +1109,7 @@
 														<button class="button small secondary clear hollow mb-0 mt-1">Select None</button>
 												</div>
 											</div> -->
-											<div class="border-radius-sm auto-columns-3 pad1 pb-0-5 pt-0-5 row expanded b-bottom-1">
+											<div class="pad1 pb-0-5 pt-0-5 row expanded b-bottom-1 bg-cloud">
 												<div class="columns medium-4 align-top mb-0">
 														<span class="clr-black50"><small><strong>PROCEDURE</strong></small></span>
 												</div>
@@ -1087,7 +1128,7 @@
 											</div>
 											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
 												<div class="columns medium-4 align-top mb-0 border-radius-round pl-1">
-													<div class="fancy-checkbox small mb-0 ml-1">
+													<div class="fancy-checkbox success small mb-0 ml-1">
 														<input id="AlternativeMedicine" name="AlternativeMedicine" type="checkbox" class="mr-0" checked>
 														<label class="" for="AlternativeMedicine">Alternative Medicine</label>
 													</div>
@@ -1116,7 +1157,7 @@
 
 											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
 												<div class="columns medium-4 align-top mb-0 border-radius-round pl-1">
-													<div class="fancy-checkbox small mb-0 ml-1">
+													<div class="fancy-checkbox success small mb-0 ml-1">
 														<input id="Cardiology" name="Cardiology" type="checkbox" class="mr-0">
 														<label class="" for="Cardiology">Cardiology</label>
 													</div>
@@ -1144,7 +1185,7 @@
 											</div>
 											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
 												<div class="columns medium-4 align-top mb-0 border-radius-round pl-1">
-													<div class="fancy-checkbox small mb-0 ml-1">
+													<div class="fancy-checkbox success small mb-0 ml-1">
 														<input id="Dentistry" name="Dentistry" type="checkbox" class="mr-0" checked>
 														<label class="" for="Cardiology">Dentistry</label>
 													</div>
@@ -1172,7 +1213,7 @@
 											</div>
 											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
 												<div class="columns medium-4 align-top mb-0 border-radius-round pl-1">
-													<div class="fancy-checkbox small mb-0 ml-1">
+													<div class="fancy-checkbox success small mb-0 ml-1">
 														<input id="Dermatology" name="Dermatology" type="checkbox" class="mr-0" checked>
 														<label class="" for="Dermatology">Dermatology</label>
 													</div>
@@ -1200,7 +1241,7 @@
 											</div>
 											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
 												<div class="columns medium-4 align-top mb-0 border-radius-round pl-1">
-													<div class="fancy-checkbox small mb-0 ml-1">
+													<div class="fancy-checkbox success small mb-0 ml-1">
 														<input id="General Medicine" name="General Medicine" type="checkbox" class="mr-0" checked>
 														<label class="" for="General Medicine">General Medicine</label>
 													</div>
@@ -1228,7 +1269,7 @@
 											</div>
 											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
 												<div class="columns medium-4 align-top mb-0 border-radius-round pl-1">
-													<div class="fancy-checkbox small mb-0 ml-1">
+													<div class="fancy-checkbox success small mb-0 ml-1">
 														<input id="Gastroenterology" name="Gastroenterology" type="checkbox" class="mr-0">
 														<label class="" for="Gastroenterology">Gastroenterology</label>
 													</div>
@@ -1256,7 +1297,7 @@
 											</div>
 											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
 												<div class="columns medium-4 align-top mb-0 border-radius-round pl-1">
-													<div class="fancy-checkbox small mb-0 ml-1">
+													<div class="fancy-checkbox success small mb-0 ml-1">
 														<input id="General Medicine" name="General Medicine" type="checkbox" class="mr-0">
 														<label class="" for="General Medicine">General Medicine</label>
 													</div>
@@ -1284,7 +1325,7 @@
 											</div>
 											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
 												<div class="columns medium-4 align-top mb-0 border-radius-round pl-1">
-													<div class="fancy-checkbox small mb-0 ml-1">
+													<div class="fancy-checkbox success small mb-0 ml-1">
 														<input id="General Surgery" name="General Surgery" type="checkbox" class="mr-0" checked>
 														<label class="" for="General Surgery">General Surgery</label>
 													</div>
@@ -1312,7 +1353,7 @@
 											</div>
 											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
 												<div class="columns medium-4 align-top mb-0 border-radius-round pl-1">
-													<div class="fancy-checkbox small mb-0 ml-1">
+													<div class="fancy-checkbox success small mb-0 ml-1">
 														<input id="Internal Medicine" name="Internal Medicine" type="checkbox" class="mr-0" checked>
 														<label class="" for="Internal Medicine">Internal Medicine</label>
 													</div>
@@ -1340,7 +1381,7 @@
 											</div>
 											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
 												<div class="columns medium-4 align-top mb-0 border-radius-round pl-1">
-													<div class="fancy-checkbox small mb-0 ml-1">
+													<div class="fancy-checkbox success small mb-0 ml-1">
 														<input id="Nephrology" name="Nephrology" type="checkbox" class="mr-0" checked>
 														<label class="" for="Nephrology">Nephrology</label>
 													</div>
@@ -1368,7 +1409,7 @@
 											</div>
 											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
 												<div class="columns medium-4 align-top mb-0 border-radius-round pl-1">
-													<div class="fancy-checkbox small mb-0 ml-1">
+													<div class="fancy-checkbox success small mb-0 ml-1">
 														<input id="Obstetrics and Gybecology (OB/GYN)" name="Obstetrics and Gybecology (OB/GYN)" type="checkbox" class="mr-0" checked>
 														<label class="" for="Obstetrics and Gybecology (OB/GYN)">Obstetrics and Gybecology (OB/GYN)</label>
 													</div>
@@ -1396,7 +1437,7 @@
 											</div>
 											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
 												<div class="columns medium-4 align-top mb-0 border-radius-round pl-1">
-													<div class="fancy-checkbox small mb-0 ml-1">
+													<div class="fancy-checkbox success small mb-0 ml-1">
 														<input id="Cardiology" name="Cardiology" type="checkbox" class="mr-0">
 														<label class="" for="Cardiology">Cardiology</label>
 													</div>
@@ -1424,7 +1465,7 @@
 											</div>
 											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
 												<div class="columns medium-4 align-top mb-0 border-radius-round pl-1">
-													<div class="fancy-checkbox small mb-0 ml-1">
+													<div class="fancy-checkbox success small mb-0 ml-1">
 														<input id="Oncology" name="Oncology" type="checkbox" class="mr-0">
 														<label class="" for="Oncology">Oncology</label>
 													</div>
@@ -1452,7 +1493,7 @@
 											</div>
 											<div class="border-radius-sm auto-columns-3 pad1 row expanded b-bottom-1">
 												<div class="columns medium-4 align-top mb-0 border-radius-round pl-1">
-													<div class="fancy-checkbox small mb-0 ml-1">
+													<div class="fancy-checkbox success small mb-0 ml-1">
 														<input id="Opthalmology" name="Opthalmology" type="checkbox" class="mr-0">
 														<label class="" for="Opthalmology">Opthalmology</label>
 													</div>
@@ -1664,6 +1705,15 @@
 								<div class="tabs-panel" id="corporatehsa">
 
 									<div class="border-radius-sm auto-columns-3 pad1 pb-0-5 pt-0-5 row expanded b-bottom-1">
+										<div class="columns medium-3">
+												<input type="text" class="search" placeholder="SEARCH">
+										</div>
+										<div class="columns medium-3">
+											<button class="button hollow clear secondary"><i class="fa fa-filter"></i></button>
+										</div>
+									</div>
+
+									<div class="pad1 pb-0-5 pt-0-5 row expanded b-bottom-1 bg-cloud">
 										<div class="columns medium-3 align-top mb-0">
 												<span class="clr-black50"><small><strong>TRANSACTION#</strong></small></span>
 										</div>
@@ -2220,6 +2270,473 @@
 			<button class="button success pull-right">Done</button>
 		</div>	
 	</div>
+
+	<div class="reveal reveal-body-scrollable large" id="companyFacilityLogs" data-reveal>
+			<div class="reveal-heading">
+				<strong>Manage Form Questions</strong>
+				<button class="close-button" data-close aria-label="Close modal" type="button">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+	
+			<div class="reveal-body pad-0">
+				<div class="pad-1">
+					<div class="row">					
+						<div class="columns">
+							<div class="input-group mb-0-5">
+								<input class="input-group-field" type="text" placeholder="Add Choices">
+								<div class="input-group-button">
+									<button class="button primary"><i class="fa fa-plus"></i></button>
+								</div>
+										</div>
+						</div>
+						<div class="columns shrink">
+							<button class="button"><i class="fa fa-sort"></i></button>
+							<button class="button"><i class="fa fa-filter"></i></button>
+						</div>
+					</div>
+	
+					<div>
+						<div class="mb-2">
+	
+							<div class="row label-block collapse align-middle flex mb-1">
+												<div class="columns">
+													<div class="label-group borderless">
+														<span class="subheader"><strong>Onboarding</strong></span>
+													</div>
+												</div>
+												<div class="columns">
+													<button class="button hollow clear success mb-0 pull-right">Select All</button>
+												</div>
+										</div>
+	
+	
+	
+							<div class="row label-block collapse align-middle flex">
+								<div class="shrink columns">
+									<div class="label-group borderless">
+										<div class="switch tiny mb-0">
+												<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+												<label class="switch-paddle" for="Q1">
+													<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+												</label>
+										</div>
+									</div>
+								</div>
+												<div class="columns">
+													<div class="label-group borderless">
+														<label>
+																When were you thinking of having your surgery?
+																</label>
+													</div>
+												</div>
+										</div>
+	
+										<div class="row label-block collapse align-middle flex">
+								<div class="shrink columns">
+									<div class="label-group borderless">
+										<div class="switch tiny mb-0">
+												<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+												<label class="switch-paddle" for="Q1">
+													<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+												</label>
+										</div>
+									</div>
+								</div>
+												<div class="columns">
+													<div class="label-group borderless">
+														<label>
+																	Are you willing to be flexible on the schedule if we were able to secure a larger bonus?
+																</label>
+													</div>
+												</div>
+										</div>
+	
+										<div class="row label-block collapse align-middle flex">
+								<div class="shrink columns">
+									<div class="label-group borderless">
+										<div class="switch tiny mb-0">
+												<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+												<label class="switch-paddle" for="Q1">
+													<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+												</label>
+										</div>
+									</div>
+								</div>
+												<div class="columns">
+													<div class="label-group borderless">
+														<label>
+																	 Are you willing to travel outside your local area if a larger bonus were available?
+																</label>
+													</div>
+												</div>
+										</div>
+	
+										<div class="row label-block collapse align-middle flex">
+								<div class="shrink columns">
+									<div class="label-group borderless">
+										<div class="switch tiny mb-0">
+												<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+												<label class="switch-paddle" for="Q1">
+													<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+												</label>
+										</div>
+									</div>
+								</div>
+												<div class="columns">
+													<div class="label-group borderless">
+														<label>
+																	 Are you using any other health benefit programs?
+																</label>
+													</div>
+												</div>
+										</div>
+	
+										<div class="row label-block collapse align-middle flex">
+								<div class="shrink columns">
+									<div class="label-group borderless">
+										<div class="switch tiny mb-0">
+												<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+												<label class="switch-paddle" for="Q1">
+													<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+												</label>
+										</div>
+									</div>
+								</div>
+												<div class="columns">
+													<div class="label-group borderless">
+														<label>
+																	 Are you willing to travel outside your local area if a larger bonus were available?
+																</label>
+													</div>
+												</div>
+										</div>
+	
+										<div class="row label-block collapse align-middle flex">
+								<div class="shrink columns">
+									<div class="label-group borderless">
+										<div class="switch tiny mb-0">
+												<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+												<label class="switch-paddle" for="Q1">
+													<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+												</label>
+										</div>
+									</div>
+								</div>
+												<div class="columns">
+													<div class="label-group borderless">
+														<label>
+																	 Are you using any other health benefit programs?
+																</label>
+													</div>
+												</div>
+										</div>
+	
+										<div class="row label-block collapse align-middle flex">
+								<div class="shrink columns">
+									<div class="label-group borderless">
+										<div class="switch tiny mb-0">
+												<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+												<label class="switch-paddle" for="Q1">
+													<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+												</label>
+										</div>
+									</div>
+								</div>
+												<div class="columns">
+													<div class="label-group borderless">
+														<label>
+																When were you thinking of having your surgery?
+																</label>
+													</div>
+												</div>
+										</div>
+	
+										<div class="row label-block collapse align-middle flex">
+								<div class="shrink columns">
+									<div class="label-group borderless">
+										<div class="switch tiny mb-0">
+												<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+												<label class="switch-paddle" for="Q1">
+													<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+												</label>
+										</div>
+									</div>
+								</div>
+												<div class="columns">
+													<div class="label-group borderless">
+														<label>
+																	Are you willing to be flexible on the schedule if we were able to secure a larger bonus?
+																</label>
+													</div>
+												</div>
+										</div>
+	
+										<div class="row label-block collapse align-middle flex">
+								<div class="shrink columns">
+									<div class="label-group borderless">
+										<div class="switch tiny mb-0">
+												<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+												<label class="switch-paddle" for="Q1">
+													<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+												</label>
+										</div>
+									</div>
+								</div>
+												<div class="columns">
+													<div class="label-group borderless">
+														<label>
+																	 Are you willing to travel outside your local area if a larger bonus were available?
+																</label>
+													</div>
+												</div>
+										</div>
+	
+										<div class="row label-block collapse align-middle flex">
+								<div class="shrink columns">
+									<div class="label-group borderless">
+										<div class="switch tiny mb-0">
+												<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+												<label class="switch-paddle" for="Q1">
+													<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+												</label>
+										</div>
+									</div>
+								</div>
+												<div class="columns">
+													<div class="label-group borderless">
+														<label>
+																	 Are you using any other health benefit programs?
+																</label>
+													</div>
+												</div>
+										</div>
+						</div>
+	
+						<div class="mb-2">
+	
+							<div class="row label-block collapse align-middle flex mb-1">
+												<div class="columns">
+													<div class="label-group borderless">
+														<span class="subheader"><strong>After Surgery</strong></span>
+													</div>
+												</div>
+												<div class="columns">
+													<button class="button hollow clear success mb-0 pull-right">Select All</button>
+												</div>
+										</div>
+	
+	
+	
+							<div class="row label-block collapse align-middle flex">
+								<div class="shrink columns">
+									<div class="label-group borderless">
+										<div class="switch tiny mb-0">
+												<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+												<label class="switch-paddle" for="Q1">
+													<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+												</label>
+										</div>
+									</div>
+								</div>
+												<div class="columns">
+													<div class="label-group borderless">
+														<label>
+																When were you thinking of having your surgery?
+																</label>
+													</div>
+												</div>
+										</div>
+	
+										<div class="row label-block collapse align-middle flex">
+								<div class="shrink columns">
+									<div class="label-group borderless">
+										<div class="switch tiny mb-0">
+												<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+												<label class="switch-paddle" for="Q1">
+													<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+												</label>
+										</div>
+									</div>
+								</div>
+												<div class="columns">
+													<div class="label-group borderless">
+														<label>
+																	Are you willing to be flehible on the schedule if we were able to secure a larger bonus?
+																</label>
+													</div>
+												</div>
+										</div>
+	
+										<div class="row label-block collapse align-middle flex">
+								<div class="shrink columns">
+									<div class="label-group borderless">
+										<div class="switch tiny mb-0">
+												<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+												<label class="switch-paddle" for="Q1">
+													<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+												</label>
+										</div>
+									</div>
+								</div>
+												<div class="columns">
+													<div class="label-group borderless">
+														<label>
+																	 Are you willing to travel outside your local area if a larger bonus were available?
+																</label>
+													</div>
+												</div>
+										</div>
+	
+										<div class="row label-block collapse align-middle flex">
+								<div class="shrink columns">
+									<div class="label-group borderless">
+										<div class="switch tiny mb-0">
+												<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+												<label class="switch-paddle" for="Q1">
+													<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+												</label>
+										</div>
+									</div>
+								</div>
+												<div class="columns">
+													<div class="label-group borderless">
+														<label>
+																	 Are you using any other health benefit programs?
+																</label>
+													</div>
+												</div>
+										</div>
+	
+										<div class="row label-block collapse align-middle flex">
+								<div class="shrink columns">
+									<div class="label-group borderless">
+										<div class="switch tiny mb-0">
+												<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+												<label class="switch-paddle" for="Q1">
+													<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+												</label>
+										</div>
+									</div>
+								</div>
+												<div class="columns">
+													<div class="label-group borderless">
+														<label>
+																	 Are you willing to travel outside your local area if a larger bonus were available?
+																</label>
+													</div>
+												</div>
+										</div>
+	
+										<div class="row label-block collapse align-middle flex">
+								<div class="shrink columns">
+									<div class="label-group borderless">
+										<div class="switch tiny mb-0">
+												<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+												<label class="switch-paddle" for="Q1">
+													<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+												</label>
+										</div>
+									</div>
+								</div>
+												<div class="columns">
+													<div class="label-group borderless">
+														<label>
+																	 Are you using any other health benefit programs?
+																</label>
+													</div>
+												</div>
+										</div>
+	
+										<div class="row label-block collapse align-middle flex">
+								<div class="shrink columns">
+									<div class="label-group borderless">
+										<div class="switch tiny mb-0">
+												<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+												<label class="switch-paddle" for="Q1">
+													<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+												</label>
+										</div>
+									</div>
+								</div>
+												<div class="columns">
+													<div class="label-group borderless">
+														<label>
+																When were you thinking of having your surgery?
+																</label>
+													</div>
+												</div>
+										</div>
+	
+										<div class="row label-block collapse align-middle flex">
+								<div class="shrink columns">
+									<div class="label-group borderless">
+										<div class="switch tiny mb-0">
+												<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+												<label class="switch-paddle" for="Q1">
+													<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+												</label>
+										</div>
+									</div>
+								</div>
+												<div class="columns">
+													<div class="label-group borderless">
+														<label>
+																	Are you willing to be flexible on the schedule if we were able to secure a larger bonus?
+																</label>
+													</div>
+												</div>
+										</div>
+	
+										<div class="row label-block collapse align-middle flex">
+								<div class="shrink columns">
+									<div class="label-group borderless">
+										<div class="switch tiny mb-0">
+												<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+												<label class="switch-paddle" for="Q1">
+													<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+												</label>
+										</div>
+									</div>
+								</div>
+												<div class="columns">
+													<div class="label-group borderless">
+														<label>
+																	 Are you willing to travel outside your local area if a larger bonus were available?
+																</label>
+													</div>
+												</div>
+										</div>
+	
+										<div class="row label-block collapse align-middle flex">
+								<div class="shrink columns">
+									<div class="label-group borderless">
+										<div class="switch tiny mb-0">
+												<input class="switch-input" id="Q1" type="checkbox" name="exampleSwitch" checked="true">
+												<label class="switch-paddle" for="Q1">
+													<span class="show-for-sr">Tiny Sandwiches Enabled</span>
+												</label>
+										</div>
+									</div>
+								</div>
+												<div class="columns">
+													<div class="label-group borderless">
+														<label>
+																	 Are you using any other health benefit programs?
+																</label>
+													</div>
+												</div>
+										</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+	
+			<div class="reveal-footer b-top-1-darker">
+				<button class="button success pull-right">Done</button>
+			</div>	
+		</div>
 
 	<script src="bower_components/jquery/dist/jquery.js"></script>
 	<script src="bower_components/what-input/what-input.js"></script>
