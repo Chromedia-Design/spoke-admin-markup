@@ -828,3 +828,15 @@ $color-ongoing: #ecaf00;
 .width-auto {
   width: auto;
 }
+
+.toggler {
+  .toggler-handler {
+  }
+  .toggler-target {
+    &.toggler-bg-fancy {
+      background: linear-gradient(0deg, #00577617, transparent);
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+}
