@@ -1240,7 +1240,11 @@ input {
   padding-left: 1rem;
   padding-right: 2rem;
   border: 0px;
-  background-color: darken(#fff, 11%) !important;
+  background-color: lighten($primary-color, 70%) !important;
+
+  &.compact {
+    max-width: 16rem;
+  }
 
   &.round-corner {
     border-radius: 5rem !important;
