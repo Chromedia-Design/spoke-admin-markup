@@ -1242,8 +1242,16 @@ input {
   border: 0px;
   background-color: lighten($primary-color, 70%) !important;
 
-  &.compact {
+  &.width-small {
     max-width: 16rem;
+  }
+
+  &.width-medium {
+    max-width: 24rem;
+  }
+
+  &.width-large {
+    max-width: 32rem;
   }
 
   &.round-corner {
