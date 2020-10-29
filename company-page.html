@@ -122,9 +122,15 @@
                                             <p class="mb-0"><small><strong>P45,285.00</strong></small></p>
                                         </div>
                                     </div>
+                                    <div class="media-object-section middle pl-2">
+                                        <div class="ml-2">
+                                            <p class="mb-0 clr-black50"><small>Subscription Date</small></p>
+                                            <p class="mb-0"><small><strong>08/01/2019</strong></small></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="columns">
+                            <div class="columns shrink">
                                 <div class="button-align small mb-0 pull-right">
                                     <a href="company-settings-edit.html" class="button primary"><i class="fa fa-cog"></i>&nbsp; Settings</a>
                                 </div>
@@ -137,7 +143,7 @@
                             <li class="tabs-title"><a href="#medicalprocedure">Procedure</a></li>
                             <li class="tabs-title"><a href="#facility">Providers</a></li>
                             <li class="tabs-title"><a href="#corporatehsa"> HSA</a></li>
-                            <li class="tabs-title"><a href="#currentclaims">Claims</a></li>
+                            <li class="tabs-title"><a href="#claims">Claims</a></li>
                             <li class="tabs-title"><a href="#reports">Reports</a></li>
                             <li class="tabs-title"><a href="#PSQ">Pre-Surgery Questionnaire</a></li>
                             <li class="tabs-title"><a href="#pathway">Pathway Events</a></li>
@@ -263,202 +269,6 @@
 
 
                             </div>
-
-                            <!-- <div class="tabs-panel" id="settings">
-                                <div class="row expanded">
-                                    <div class="columns">
-                                        
-                                        <div class="b-bottom-1 mb-2">
-                                            <div class="row expanded pb-0-5 pt-0-5">
-                                                <div class="columns">
-                                                    <strong><span class="clr-black50">ACCOUNT</span></strong>
-                                                </div>
-                                            </div>
-                                            <div class="row expanded pad1 mb-2">
-                                                <div class="columns">
-                                                    <div class="row expanded">
-                                                        <div class="columns medium-3">
-                                                            <label for="">Bank Name</label>
-                                                            <input type="text" class="fancy-input compact mb-0" placeholder="Bank Name" value="Unionbank">
-                                                        </div>
-                                                        <div class="columns medium-3">
-                                                            <label for="">Bank Account Number</label>
-                                                            <input type="text" class="fancy-input compact mb-0" placeholder="100" value="552366238490">
-                                                        </div>
-                                                        <div class="columns medium-3">
-                                                            <label for="">PEPM Cost</label>
-                                                            <input type="text" class="fancy-input compact mb-0" placeholder="100" value="P500">
-                                                        </div>
-                                                    </div>
-                                                    <div class="row expanded pad05">
-                                                        <div class="columns shrink mb-0 pl-1">
-                                                            <span class="tiny clr-black20"><strong>Last changed by 9/17/2020 by JC •</strong></span>
-                                                            <button class="button tiny hollow clear link mb-0 clr-black50" data-open="companyFacilityLogs" aria-controls="companyFacilityLogs" aria-haspopup="true" tabindex="0"> <i class="fa fa-clock"> </i> LOGS </button>
-                                                            <button class="button tiny clear hollow mb-0 clr-black50"><i class="fa fa-sticky-note"> Note</i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                        </div>
-                                        
-                                        <div class="b-bottom-1 mb-2">
-                                            <div class="row expanded pb-0-5 pt-0-5">
-                                                <div class="columns">
-                                                    <strong><span class="clr-black50">GLOBAL BENEFIT SETTING</span></strong>
-                                                </div>
-                                            </div>
-                                            <div class="row expanded pad1 mb-2">
-                                                <div class="columns">
-                                                    <div class="fancy-radio success small mb-1 ml-1">
-                                                        <input id="Default Coverage Level" name="benefitSetting" type="radio" class="mr-0" checked>
-                                                        <label class="" for="Default Coverage Level">
-                                                            <strong>Default Coverage Level</strong>
-                                                        </label>
-                                                    </div>
-                                                    <div class="fancy-radio success small mb-1 ml-1">
-                                                        <input id="Minimum Benefit Level" name="benefitSetting" type="radio" class="mr-0">
-                                                        <label class="" for="Minimum Benefit Level">
-                                                            <strong>Minimum Benefit Level</strong>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="b-bottom-1 mb-2">
-                                            <div class="row expanded pb-0-5 pt-0-5">
-                                                <div class="columns">
-                                                    <strong><span class="clr-black50">EMPLOYEE HEALTH SAVINGS ACCOUNT RULES</span></strong>
-                                                </div>
-                                            </div>
-                                            <div class="row expanded pad1 mb-2">
-                                                <div class="columns">
-                                                    <div class="row expanded">
-                                                        <div class="columns medium-3">
-                                                            <label for="">Employee Contribution</label>
-                                                            <input type="text" class="fancy-input compact" placeholder="100">
-                                                        </div>
-                                                        <div class="columns medium-3">
-                                                            <label for="">Employer Contribution</label>
-                                                            <input type="text" class="fancy-input compact" placeholder="100">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="b-bottom-1 mb-2">
-                                            <div class="row expanded pb-0-5 pt-0-5">
-                                                <div class="columns">
-                                                    <strong><span class="clr-black50">PORTAL USERS</span></strong>
-                                                    <button class="button hollow clear success small mb-0"><i class="fa fa-plus"> Add New</i></button>
-                                                </div>
-                                            </div>
-                                            <div class="row expanded pad1">
-                                                <div class="columns">
-                                                    <div class="media-object">
-                                                        <div class="media-object-section middle logo">
-                                                            <div class="img-wrapper circle">
-                                                                <img src="img/specialist.png" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="media-object-section middle">
-                                                            <span class="">Kurt Dela Cruz</span>
-                                                            <p class="subheader"><small>+639774839134 • kurt.delacruz@harleydavidson.com</small></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="columns align-middle">
-                                                    <button class="button hollow tiny alert mb-0">Remove</button>
-                                                </div>
-                                            </div>
-                                            <div class="row expanded pad1">
-                                                <div class="columns">
-                                                    <div class="media-object">
-                                                        <div class="media-object-section middle logo">
-                                                            <div class="img-wrapper circle">
-                                                                <img src="img/specialist.png" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="media-object-section middle">
-                                                            <span class="">Julius Ybañez</span>
-                                                            <p class="subheader"><small>+639775548635 • julius.ybañez@harleydavidson.com</small></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="columns align-middle">
-                                                    <button class="button hollow tiny alert mb-0">Remove</button>
-                                                </div>
-                                            </div>
-                                            <div class="row expanded pad1">
-                                                <div class="columns">
-                                                    <div class="media-object">
-                                                        <div class="media-object-section middle logo">
-                                                            <div class="img-wrapper circle">
-                                                                <img src="img/specialist.png" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="media-object-section middle">
-                                                            <span class="">Misty Salazar</span>
-                                                            <p class="subheader"><small>+639774839134 • misty.salazar@ziphealth.com</small></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="columns align-middle">
-                                                    <button class="button hollow tiny alert mb-0">Remove</button>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="b-bottom-1 mb-2">
-                                            <div class="row expanded pb-0-5 pt-0-5">
-                                                <div class="columns">
-                                                    <strong><span class="clr-black50">ASSIGNED ADVOCATES</span></strong>
-                                                    <button class="button hollow clear success small mb-0"><i class="fa fa-plus"> Add New</i></button>
-                                                </div>
-                                            </div>
-                                            <div class="row expanded pad1">
-                                                <div class="columns">
-                                                    <div class="media-object">
-                                                        <div class="media-object-section middle logo">
-                                                            <div class="img-wrapper circle">
-                                                                <img src="img/specialist.png" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="media-object-section middle">
-                                                            <span class="">Juan Dos</span>
-                                                            <p class="subheader"><small>+639773414519 • juan.dos@ziphealth.com</small></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="columns align-middle">
-                                                    <button class="button hollow tiny alert mb-0">Remove</button>
-                                                </div>
-                                            </div>
-                                            <div class="row expanded pad1">
-                                                <div class="columns">
-                                                    <div class="media-object">
-                                                        <div class="media-object-section middle logo">
-                                                            <div class="img-wrapper circle">
-                                                                <img src="img/specialist.png" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="media-object-section middle">
-                                                            <span class="">Sean Puno</span>
-                                                            <p class="subheader"><small>+639770038244 • sean.puno@ziphealth.com</small></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="columns align-middle">
-                                                    <button class="button hollow tiny alert mb-0">Remove</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                        
-                            </div> -->
 
                             <div class="tabs-panel" id="facility">
 
@@ -729,6 +539,299 @@
 
 
 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs-panel" id="claims">
+                                <div>
+                                    <div class="row expanded mb-2">
+                                        <div class="medium-12 columns">
+                                            <div class="border-radius-sm auto-columns-3 pad1 pb-0-5 pt-0-5 row expanded b-bottom-1">
+                                                <div class="columns medium-3">
+                                                        <input type="text" class="search fancy-input round-corner" placeholder="SEARCH">
+                                                </div>
+                                                <div class="columns medium-3">
+                                                    <button class="button hollow clear secondary"><i class="fa fa-filter"></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="pad1 pb-0-5 pt-0-5 row expanded b-bottom-1 bg-cloud">
+                                                <div class="columns mb-0">
+                                                        <span class="clr-black50"><small><strong>FACILITIES</strong></small></span>
+                                                </div>
+                                                <div class="columns medium-2 mb-0">
+                                                    <span class="clr-black50"><small><strong>PATIENT</strong></small></span>
+                                                </div>
+                                                <div class="columns medium-1 mb-0">
+                                                    <span class="clr-black50"><small><strong>BUNDLE</strong></small></span>
+                                                </div>
+                                                <div class="columns medium-1 mb-0">
+                                                    <span class="clr-black50"><small><strong>CLAIM</strong></small></span>
+                                                </div>
+                                                <div class="columns medium-1 mb-0">
+                                                    <span class="clr-black50"><small><strong>COMPANY</strong></small></span>
+                                                </div>
+                                                <div class="columns medium-1 mb-0">
+                                                    <span class="clr-black50"><small><strong>EMPLOYEE</strong></small></span>
+                                                </div>
+                                                <div class="columns medium-1 mb-0">
+                                                    <span class="clr-black50"><small><strong>AMOUNT</strong></small></span>
+                                                </div>
+                                                <div class="columns medium-1 mb-0">
+                                                    <span class="clr-black50"><small><strong>ACTION</strong></small></span>
+                                                </div>
+                                                <div class="columns shrink mb-0">
+                                                    <button class="button tiny hollow clear link mb-0 disabled clr-none"> <i class="fa fa-clock"> </i> LOGS </button>
+                                                    <button class="button tiny clear hollow mb-0 disabled clr-none"><i class="fa fa-sticky-note"> Note</i></button>
+                                                </div>
+                                            </div>
+                                            <div class="pad1 pb-0-5 pt-0-5 row expanded">
+                                                <div class="columns mb-0">
+                                                        <span class="clr-warning"><small><strong>April 4 2020</strong></small></span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="pad1 row expanded b-bottom-1">
+                                                <div class="columns mb-0 pl-1">
+                                                    <div class="ml-1">
+                                                        <p class="mb-0 clr-secondary">
+                                                            <strong><i class="fa fa-hospital"></i> High Precision Cebu</strong>
+                                                        </p><p class="mb-0 ml-0-5"><small><i class="fa fa-user-md clr-secondary"></i> Dr. Albuen Rosello</small></p>
+                                                    </div>	
+                                                </div>
+                                                <div class="columns medium-2 mb-0">
+                                                    <div>
+                                                            <p class="mb-0 clr-secondary"><strong>Episode Name</strong></p>
+                                                            <p class="mb-0 ml-0-5"><small>Diane Cortes</small></p>
+                                                            <p class="mb-0 ml-0-5"><small>Chromedia far east inc</small></p>
+                                                        </div>	
+                                                </div>
+                                                <div class="columns medium-1 mb-0">
+                                                    <small><span>P500.00</span></small>
+                                                </div>
+                                                <div class="columns medium-1 mb-0">
+                                                    <small><span>P450.00</span></small>
+                                                </div>
+                                                <div class="columns medium-1 mb-0">
+                                                    <small><span>P400.00</span></small>
+                                                </div>
+                                                <div class="columns medium-1 mb-0">
+                                                    <small><span>P50.00</span></small>
+                                                </div>
+                                                <div class="columns medium-1 mb-0">
+                                                    <small><span>P500.00</span></small>
+                                                </div>
+                                                <div class="columns medium-1 mb-0">
+                                                    <button class="button small success mb-0">Approve</button>
+                                                </div>
+                                                <div class="columns shrink mb-0">
+                                                    <button class="button tiny hollow clear clr-black50 link mb-0" data-open="companyFacilityLogs" aria-controls="companyFacilityLogs" aria-haspopup="true" tabindex="0"> <i class="fa fa-clock"> </i> LOGS </button>
+                                                    <button class="button tiny clear hollow mb-0 clr-black50"><i class="fa fa-sticky-note"> Note</i></button>
+                                                </div>
+                                            </div>
+                
+                                            <div class="pad1 row expanded b-bottom-1">
+                                                <div class="columns mb-0 pl-1">
+                                                    <div class="ml-1">
+                                                        <p class="mb-0 clr-secondary">
+                                                            <strong><i class="fa fa-hospital"></i> High Precision Cebu</strong>
+                                                        </p><p class="mb-0 ml-0-5"><small><i class="fa fa-user-md clr-secondary"></i> Dr. Albuen Rosello</small></p>
+                                                    </div>	
+                                                </div>
+                                                <div class="columns medium-2 mb-0">
+                                                    <div>
+                                                            <p class="mb-0 clr-secondary"><strong>Episode Name</strong></p>
+                                                            <p class="mb-0 ml-0-5"><small>Emman Calabroso</small></p>
+                                                            <p class="mb-0 ml-0-5"><small>Chromedia far east inc</small></p>
+                                                        </div>	
+                                                </div>
+                                                <div class="columns medium-1 mb-0">
+                                                    <small><span>P500.00</span></small>
+                                                </div>
+                                                <div class="columns medium-1 mb-0">
+                                                    <small><span class="clr-alert">P680.00</span></small>
+                                                </div>
+                                                <div class="columns medium-1 mb-0">
+                                                    <small><span>P400.00</span></small>
+                                                </div>
+                                                <div class="columns medium-1 mb-0">
+                                                    <small><span>P50.00</span></small>
+                                                </div>
+                                                <div class="columns medium-1 mb-0">
+                                                    <small><span>P500.00</span></small>
+                                                </div>
+                                                <div class="columns medium-1 mb-0">
+                                                    <button class="button small success mb-0 disabled">Approve</button>
+                                                </div>
+                                                <div class="columns shrink mb-0">
+                                                    <button class="button tiny hollow clear clr-black50 link mb-0" data-open="companyFacilityLogs" aria-controls="companyFacilityLogs" aria-haspopup="true" tabindex="0"> <i class="fa fa-clock"> </i> LOGS </button>
+                                                    <button class="button tiny clear hollow mb-0 clr-black50"><i class="fa fa-sticky-note"> Note</i></button>
+                                                </div>
+                                            </div>
+                
+                                            <div class="pad1 row expanded b-bottom-1">
+                                                <div class="columns mb-0 pl-1">
+                                                    <div class="ml-1">
+                                                        <p class="mb-0 clr-secondary">
+                                                            <strong><i class="fa fa-hospital"></i> Ordoñez Medical Clinic</strong>
+                                                        </p><p class="mb-0 ml-0-5"><small><i class="fa fa-user-md clr-secondary"></i> Dr. James Limpiado</small></p>
+                                                    </div>	
+                                                </div>
+                                                <div class="columns medium-2 mb-0">
+                                                    <div>
+                                                            <p class="mb-0 clr-secondary"><strong>Episode Name</strong></p>
+                                                            <p class="mb-0 ml-0-5"><small>James Kuizon</small></p>
+                                                            <p class="mb-0 ml-0-5"><small>Chromedia far east inc</small></p>
+                                                        </div>	
+                                                </div>
+                                                <div class="columns medium-1 mb-0">
+                                                    <small><span>P500.00</span></small>
+                                                </div>
+                                                <div class="columns medium-1 mb-0">
+                                                    <small><span>P450.00</span></small>
+                                                </div>
+                                                <div class="columns medium-1 mb-0">
+                                                    <small><span>P400.00</span></small>
+                                                </div>
+                                                <div class="columns medium-1 mb-0">
+                                                    <small><span>P50.00</span></small>
+                                                </div>
+                                                <div class="columns medium-1 mb-0">
+                                                    <small><span>P500.00</span></small>
+                                                </div>
+                                                <div class="columns medium-1 mb-0">
+                                                    <button class="button small success mb-0">Approve</button>
+                                                </div>
+                                                <div class="columns shrink mb-0">
+                                                    <button class="button tiny hollow clear clr-black50 link mb-0" data-open="companyFacilityLogs" aria-controls="companyFacilityLogs" aria-haspopup="true" tabindex="0"> <i class="fa fa-clock"> </i> LOGS </button>
+                                                    <button class="button tiny clear hollow mb-0 clr-black50"><i class="fa fa-sticky-note"> Note</i></button>
+                                                </div>
+                                            </div>
+                
+                                            <div class="pad1 pb-0-5 pt-0-5 row expanded">
+                                                    <div class="columns mb-0">
+                                                            <span class="clr-warning"><small><strong>April 5 2020</strong></small></span>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="pad1 row expanded b-bottom-1">
+                                                    <div class="columns mb-0 pl-1">
+                                                        <div class="ml-1">
+                                                            <p class="mb-0 clr-secondary">
+                                                                <strong><i class="fa fa-hospital"></i> MyHealth Clinic-Cybergate Cebu</strong>
+                                                            </p><p class="mb-0 ml-0-5"><small><i class="fa fa-user-md clr-secondary"></i> Dr. Abby Cinco</small></p>
+                                                        </div>	
+                                                    </div>
+                                                    <div class="columns medium-2 mb-0">
+                                                        <div>
+                                                                <p class="mb-0 clr-secondary"><strong>Episode Name</strong></p>
+                                                                <p class="mb-0 ml-0-5"><small>Chris Velarde</small></p>
+                                                                <p class="mb-0 ml-0-5"><small>Chromedia far east inc</small></p>
+                                                            </div>	
+                                                    </div>
+                                                    <div class="columns medium-1 mb-0">
+                                                        <small><span>P500.00</span></small>
+                                                    </div>
+                                                    <div class="columns medium-1 mb-0">
+                                                        <small><span>P450.00</span></small>
+                                                    </div>
+                                                    <div class="columns medium-1 mb-0">
+                                                        <small><span>P400.00</span></small>
+                                                    </div>
+                                                    <div class="columns medium-1 mb-0">
+                                                        <small><span>P50.00</span></small>
+                                                    </div>
+                                                    <div class="columns medium-1 mb-0">
+                                                        <small><span>P500.00</span></small>
+                                                    </div>
+                                                    <div class="columns medium-1 mb-0">
+                                                        <button class="button small success mb-0">Approve</button>
+                                                    </div>
+                                                    <div class="columns shrink mb-0">
+                                                    <button class="button tiny hollow clear clr-black50 link mb-0" data-open="companyFacilityLogs" aria-controls="companyFacilityLogs" aria-haspopup="true" tabindex="0"> <i class="fa fa-clock"> </i> LOGS </button>
+                                                    <button class="button tiny clear hollow mb-0 clr-black50"><i class="fa fa-sticky-note"> Note</i></button>
+                                                </div>
+                                                </div>
+                    
+                                                <div class="pad1 row expanded b-bottom-1">
+                                                    <div class="columns mb-0 pl-1">
+                                                        <div class="ml-1">
+                                                            <p class="mb-0 clr-secondary">
+                                                                <strong><i class="fa fa-hospital"></i> LH Prime Medical Clinic Labangon</strong>
+                                                            </p><p class="mb-0 ml-0-5"><small><i class="fa fa-user-md clr-secondary"></i> Dr. Mign yap</small></p>
+                                                        </div>	
+                                                    </div>
+                                                    <div class="columns medium-2 mb-0">
+                                                        <div>
+                                                                <p class="mb-0 clr-secondary"><strong>Episode Name</strong></p>
+                                                                <p class="mb-0 ml-0-5"><small>Rey Cucio</small></p>
+                                                                <p class="mb-0 ml-0-5"><small>Chromedia far east inc</small></p>
+                                                            </div>	
+                                                    </div>
+                                                    <div class="columns medium-1 mb-0">
+                                                        <small><span>P500.00</span></small>
+                                                    </div>
+                                                    <div class="columns medium-1 mb-0">
+                                                        <small><span>P450.00</span></small>
+                                                    </div>
+                                                    <div class="columns medium-1 mb-0">
+                                                        <small><span>P400.00</span></small>
+                                                    </div>
+                                                    <div class="columns medium-1 mb-0">
+                                                        <small><span>P50.00</span></small>
+                                                    </div>
+                                                    <div class="columns medium-1 mb-0">
+                                                        <small><span>P500.00</span></small>
+                                                    </div>
+                                                    <div class="columns medium-1 mb-0">
+                                                        <button class="button small success mb-0">Approve</button>
+                                                    </div>
+                                                    <div class="columns shrink mb-0">
+                                                    <button class="button tiny hollow clear clr-black50 link mb-0" data-open="companyFacilityLogs" aria-controls="companyFacilityLogs" aria-haspopup="true" tabindex="0"> <i class="fa fa-clock"> </i> LOGS </button>
+                                                    <button class="button tiny clear hollow mb-0 clr-black50"><i class="fa fa-sticky-note"> Note</i></button>
+                                                </div>
+                                                </div>
+                    
+                                                <div class="pad1 row expanded b-bottom-1">
+                                                    <div class="columns mb-0 pl-1">
+                                                        <div class="ml-1">
+                                                            <p class="mb-0 clr-secondary">
+                                                                <strong><i class="fa fa-hospital"></i> Affinity Dental Clinics Cebu</strong>
+                                                            </p><p class="mb-0 ml-0-5"><small><i class="fa fa-user-md clr-secondary"></i> Dr. Jayvee Valdez</small></p>
+                                                        </div>	
+                                                    </div>
+                                                    <div class="columns medium-2 mb-0">
+                                                        <div>
+                                                                <p class="mb-0 clr-secondary"><strong>Episode Name</strong></p>
+                                                                <p class="mb-0 ml-0-5"><small>John Dino</small></p>
+                                                                <p class="mb-0 ml-0-5"><small>Chromedia far east inc</small></p>
+                                                            </div>	
+                                                    </div>
+                                                    <div class="columns medium-1 mb-0">
+                                                        <small><span>P500.00</span></small>
+                                                    </div>
+                                                    <div class="columns medium-1 mb-0">
+                                                        <small><span>P450.00</span></small>
+                                                    </div>
+                                                    <div class="columns medium-1 mb-0">
+                                                        <small><span>P400.00</span></small>
+                                                    </div>
+                                                    <div class="columns medium-1 mb-0">
+                                                        <small><span>P50.00</span></small>
+                                                    </div>
+                                                    <div class="columns medium-1 mb-0">
+                                                        <small><span>P500.00</span></small>
+                                                    </div>
+                                                    <div class="columns medium-1 mb-0">
+                                                        <button class="button small success mb-0">Approve</button>
+                                                    </div>
+                                                    <div class="columns shrink mb-0">
+                                                    <button class="button tiny hollow clear clr-black50 link mb-0" data-open="companyFacilityLogs" aria-controls="companyFacilityLogs" aria-haspopup="true" tabindex="0"> <i class="fa fa-clock"> </i> LOGS </button>
+                                                    <button class="button tiny clear hollow mb-0 clr-black50"><i class="fa fa-sticky-note"> Note</i></button>
+                                                </div>
+                                                </div>
+                
+                                        </div>
                                     </div>
                                 </div>
                             </div>
