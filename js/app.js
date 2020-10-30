@@ -593,3 +593,53 @@ var chart = new Chart(ctx, {
   // Configuration options go here
   options: {}
 });
+
+var ctx = document.getElementById("chartUsage2").getContext("2d");
+var chart = new Chart(ctx, {
+  // The type of chart we want to create
+  type: "bar",
+
+  // The data for our dataset
+  data: {
+    labels: ["January", "February", "March", "April", "May", "June", "July"],
+    datasets: [
+      {
+        label: "TOTAL USAGE",
+        backgroundColor: "rgba(255, 99, 132, 0.25)",
+        borderColor: "rgb(255, 99, 132)",
+        data: [36, 75, 132, 144, 225, 279, 327]
+      },
+      {
+        label: "MONTHLY USAGE",
+        backgroundColor: "rgba(66, 204, 111, 0.25)",
+        borderColor: "rgb(66 204 111)",
+        data: [36, 39, 57, 12, 81, 54, 48]
+      }
+    ]
+  },
+
+  // Configuration options go here
+  options: {}
+});
+
+var ctx = document.getElementById("chartCost2").getContext("2d");
+var chart = new Chart(ctx, {
+  // The type of chart we want to create
+  type: "bar",
+
+  // The data for our dataset
+  data: {
+    labels: ["January", "February", "March", "April", "May", "June", "July"],
+    datasets: [
+      {
+        label: "MONTHLY COST",
+        backgroundColor: "rgba(66, 204, 111, 0.25)",
+        borderColor: "rgb(66 204 111)",
+        data: [25936, 27133, 25951, 26274, 25795, 27000, 26400]
+      }
+    ]
+  },
+
+  // Configuration options go here
+  options: {}
+});

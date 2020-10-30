@@ -1254,6 +1254,10 @@ input {
     max-width: 32rem;
   }
 
+  &.width-full {
+    max-width: 100%;
+  }
+
   &.round-corner {
     border-radius: 5rem !important;
   }
